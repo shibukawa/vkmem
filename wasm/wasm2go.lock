@@ -2,7 +2,9 @@
 # (goccy/wasm2go plus -symbol-names/-chunks/-group-files/-addr-consts and the
 # InitData export; see its README_ABOUT_FORK.md), pinned to a commit. A sibling
 # checkout ../wasm2go-fork is used when present, otherwise the repository is
-# cloned into toolchain/wasm2go-src.
+# cloned into toolchain/wasm2go-src. tag is informational: the fork release the
+# commit belongs to.
 repo=https://github.com/shibukawa/wasm2go-fork.git
 branch=pgmem
-commit=fd02ee4700e71737852a1ef2c6a71e13bdab7e15
+commit=721c2fb192abde7f0daf122daa00fd6e50b9ef21
+tag=v0.5.15-fork.6
