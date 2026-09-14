@@ -1,0 +1,4 @@
+wasm/out/
+toolchain/
+*.test
+*.prof
