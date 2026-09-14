@@ -41,6 +41,15 @@ func WithUnixSocket(on bool) Option {
 	}
 }
 
+// WithUnixSocketPath serves the Unix domain socket at path instead of a
+// generated temp path.
+func WithUnixSocketPath(path string) Option {
+	return func(c *engine.Config) { c.UnixSocket = path }
+}
+
+// ValkeyVersion is the Valkey release compiled into this package.
+const ValkeyVersion = "9.1.2"
+
 // Server is a running Valkey.
 type Server struct{ e *engine.Server }
 

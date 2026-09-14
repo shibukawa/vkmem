@@ -1,0 +1,51 @@
+{
+  "name": "@vkmem/core",
+  "version": "0.1.0",
+  "description": "Real Valkey server for tests, in one process spawn (vkmem-server launcher)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shibukawa/vkmem.git",
+    "directory": "packages/node/core"
+  },
+  "type": "module",
+  "main": "./index.js",
+  "types": "./index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "import": "./index.js",
+      "require": "./index.cjs"
+    }
+  },
+  "files": [
+    "index.js",
+    "index.cjs",
+    "index.d.ts",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node --test \"test/**/*.test.js\""
+  },
+  "optionalDependencies": {
+    "@vkmem/darwin-arm64": "0.1.0",
+    "@vkmem/linux-x64": "0.1.0",
+    "@vkmem/linux-arm64": "0.1.0",
+    "@vkmem/win32-x64": "0.1.0",
+    "@vkmem/win32-arm64": "0.1.0"
+  },
+  "keywords": [
+    "valkey",
+    "redis",
+    "testing",
+    "in-memory",
+    "test-server"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}

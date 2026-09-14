@@ -51,7 +51,7 @@ c, _ := valkey.NewClient(valkey.ClientOption{
 
 ## Status
 
-Feasibility prototype (2026-09-12). What works:
+What works:
 
 - Startup in ~2 ms (the server is ordinary Go code; the 29 MB generated
   package compiles once like any other dependency).
@@ -105,6 +105,28 @@ Not available (by design of a single-threaded, fork-less wasm build):
   `--save "" --appendonly no`.
 - I/O threads (`io-threads` stays 1), TLS, RDMA, loadable modules,
   replication/cluster (no outgoing `connect()`), IPv6 binding.
+
+## From other languages
+
+`vkmem-server` (`cmd/vkmem-server`) is the same server as a standalone
+binary: it prints a JSON line such as
+`{"addr":"127.0.0.1:51234","port":51234,"unix":"/tmp/...sock","pid":...,"valkey":"9.1.2"}`
+when ready and exits when its stdin closes or `--parent-pid` disappears,
+so a test runner that spawns it never leaves it behind. Extra
+`valkey-server` flags follow `--`.
+
+- Node.js: `@vkmem/core` (`packages/node/core`), binaries in
+  `@vkmem/<platform>` optional dependencies.
+- Java: `io.github.shibukawa.vkmem:vkmem` launcher + JUnit 5 extension
+  (`packages/java`), binaries as `vkmem-server-binaries` classifier jars.
+- Anything else: spawn the binary from a GitHub Release with a pipe on
+  stdin and read the ready line.
+
+`scripts/build-binaries.sh` cross-compiles for darwin-arm64, linux-amd64,
+linux-arm64, windows-amd64 and windows-arm64 (pure Go, no toolchain
+needed); tagging `vX.Y.Z` runs `.github/workflows/release.yml`, which
+builds everything and publishes to npm (trusted publishing) and Maven
+Central (Central Portal token and GPG key in the `release` environment).
 
 ## Generated backend
 

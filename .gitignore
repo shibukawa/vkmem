@@ -2,3 +2,8 @@ wasm/out/
 toolchain/
 *.test
 *.prof
+dist/
+packages/node/platforms/*/bin/
+packages/node/**/node_modules/
+packages/java/target/
+packages/java/*/target/

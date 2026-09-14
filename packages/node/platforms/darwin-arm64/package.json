@@ -1,0 +1,23 @@
+{
+  "name": "@vkmem/darwin-arm64",
+  "version": "0.1.0",
+  "description": "vkmem-server binary for darwin/arm64 (used by @vkmem/core)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shibukawa/vkmem.git",
+    "directory": "packages/node/platforms/darwin-arm64"
+  },
+  "os": [
+    "darwin"
+  ],
+  "cpu": [
+    "arm64"
+  ],
+  "files": [
+    "bin/"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}

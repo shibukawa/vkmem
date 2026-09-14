@@ -1,0 +1,145 @@
+name: Release
+
+# Tag a commit as vX.Y.Z to build every artifact and publish:
+#   - GitHub Release with the binaries and Java jars attached
+#   - npm: @vkmem/<platform> packages, then @vkmem/core, via trusted
+#     publishing (OIDC): each package must exist and list this repository,
+#     release.yml and the "release" environment as a trusted publisher on
+#     npmjs.com. The first version of each package is published manually
+#     with 2FA (see README "Releasing").
+#   - Maven Central: io.github.shibukawa.vkmem:vkmem and :vkmem-server-binaries
+#     (classifier jars) through the Central Publisher Portal; needs the
+#     CENTRAL_USERNAME / CENTRAL_PASSWORD (portal user token) and
+#     GPG_PRIVATE_KEY (or PGP_PRIVATE_KEY) / GPG_PASSPHRASE secrets.
+
+on:
+  push:
+    tags: ["v*"]
+  # Re-publish an existing version to some registries from main, e.g. after
+  # a registry-side failure: gh workflow run release.yml -f version=0.1.1 -f registries=maven
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "Version to publish (without the v prefix)"
+        required: true
+      registries:
+        description: "Comma separated subset of npm,maven"
+        default: "npm,maven"
+
+permissions:
+  contents: write
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    outputs:
+      version: ${{ steps.version.outputs.version }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with:
+          go-version-file: go.mod
+      - id: version
+        run: |
+          v="${{ inputs.version }}"
+          [ -n "$v" ] || v="${GITHUB_REF_NAME#v}"
+          echo "version=$v" >> "$GITHUB_OUTPUT"
+      - name: Stamp package versions
+        run: scripts/set-version.sh "${{ steps.version.outputs.version }}"
+      - name: Build binaries and packages
+        run: |
+          VERSION=${{ steps.version.outputs.version }} scripts/build-npm.sh
+          VERSION=${{ steps.version.outputs.version }} scripts/build-java-binaries.sh
+      - name: Archive binaries
+        run: |
+          cd dist
+          for d in *-*/; do d=${d%/}; tar -C "$d" -czf "vkmem-server-${{ steps.version.outputs.version }}-$d.tar.gz" .; done
+      - uses: actions/upload-artifact@v4
+        with:
+          name: dist
+          path: |
+            dist/*.tar.gz
+            dist/java/*.jar
+      - uses: actions/upload-artifact@v4
+        with:
+          name: npm
+          path: packages/node
+      - uses: softprops/action-gh-release@v2
+        if: github.event_name == 'push'
+        with:
+          files: |
+            dist/*.tar.gz
+            dist/java/*.jar
+
+  npm:
+    needs: build
+    if: github.event_name == 'push' || contains(inputs.registries, 'npm')
+    runs-on: ubuntu-latest
+    environment: release
+    permissions:
+      id-token: write # OIDC trusted publishing; no NPM_TOKEN
+      contents: read
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: npm
+          path: packages/node
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          registry-url: https://registry.npmjs.org
+      - name: npm >= 11.5.1 is required for trusted publishing
+        run: npm install -g npm@latest && npm --version
+      - name: Publish platform packages, then @vkmem/core (skipping versions already on npm)
+        env:
+          # npm silently falls back to the placeholder token when the OIDC
+          # exchange fails; verbose logging prints the "oidc" failure reason
+          NPM_CONFIG_LOGLEVEL: verbose
+        run: |
+          publish() {
+            name=$(node -p "require('./package.json').name")
+            version=$(node -p "require('./package.json').version")
+            if npm view "$name@$version" version >/dev/null 2>&1; then
+              echo "$name@$version is already published, skipping"
+              return
+            fi
+            npm publish --access public --provenance
+          }
+          for d in packages/node/platforms/*/; do
+            chmod +x "$d"/bin/* || true
+            (cd "$d" && publish)
+          done
+          (cd packages/node/core && publish)
+
+  maven:
+    needs: build
+    if: github.event_name == 'push' || contains(inputs.registries, 'maven')
+    runs-on: ubuntu-latest
+    environment: release
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          name: dist
+          path: dist
+      - name: Stamp package versions
+        run: scripts/set-version.sh "${{ needs.build.outputs.version }}"
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 17
+          cache: maven
+          server-id: central
+          server-username: CENTRAL_USERNAME
+          server-password: CENTRAL_PASSWORD
+          gpg-private-key: ${{ secrets.GPG_PRIVATE_KEY || secrets.PGP_PRIVATE_KEY }}
+          gpg-passphrase: GPG_PASSPHRASE
+      - name: Deploy to Maven Central
+        working-directory: packages/java
+        env:
+          CENTRAL_USERNAME: ${{ secrets.CENTRAL_USERNAME }}
+          CENTRAL_PASSWORD: ${{ secrets.CENTRAL_PASSWORD }}
+          GPG_PASSPHRASE: ${{ secrets.GPG_PASSPHRASE }}
+          MAVEN_GPG_PASSPHRASE: ${{ secrets.GPG_PASSPHRASE }}
+        run: mvn --batch-mode --no-transfer-progress -Prelease -DskipTests deploy
