@@ -17,7 +17,7 @@ import (
 
 	"sync"
 
-	"github.com/shibukawa/valkeymem/internal/vfs"
+	"github.com/shibukawa/vkmem/internal/vfs"
 )
 
 // Memory is the linear memory of the guest.

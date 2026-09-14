@@ -1,11 +1,11 @@
 package vkaot
 
 import (
-	base "github.com/shibukawa/valkeymem/internal/aot/vkaot/base"
+	base "github.com/shibukawa/vkmem/internal/aot/vkaot/base"
 	"sync"
 	"sync/atomic"
 	"unsafe"
-	_ "github.com/shibukawa/valkeymem/internal/aot/vkaot/p2"
+	_ "github.com/shibukawa/vkmem/internal/aot/vkaot/p2"
 	_ "embed"
 )
 

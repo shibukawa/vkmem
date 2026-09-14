@@ -38,7 +38,7 @@ mkdir -p "$OUT"
 #   -addr-consts   static-data addresses as named constants, not literals
 MODE="-pure -symbol-names -chunks 3 -group-files -addr-consts"
 "$WASM2GO" $MODE -i "$HERE/out/valkey-server.wasm" -out-dir "$OUT" \
-  -pkg vkaot -import github.com/shibukawa/valkeymem/internal/aot/vkaot 2>&1 | grep -v -E 'fixpoint cap|slab=' || true
+  -pkg vkaot -import github.com/shibukawa/vkmem/internal/aot/vkaot 2>&1 | grep -v -E 'fixpoint cap|slab=' || true
 (cd "$ROOT/internal/aot" && python3 gen.py "$HERE/out/valkey-server.wasm")
 gofmt -w "$ROOT/internal/aot"/*_gen.go
 (cd "$ROOT" && go build ./internal/aot)

@@ -1,5 +1,5 @@
 //go:build race
 
-package valkeymem
+package vkmem
 
 const raceEnabled = true

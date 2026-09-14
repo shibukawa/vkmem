@@ -1,6 +1,6 @@
 /*
  * vkmem_shim.c
- *   Host bridge for valkeymem: entry point helpers the Go host calls.
+ *   Host bridge for vkmem: entry point helpers the Go host calls.
  *   Compiled without any -D overrides, plain libc names.
  */
 #include <stdlib.h>
@@ -87,7 +87,7 @@ VKMEM_EXPORT void *vkmem_dlopen(const char *file, int mode)
 	(void) mode;
 	if (file == NULL)
 		return &vkmem_self_handle;
-	vkmem_dl_error = "valkeymem: loadable modules are not supported";
+	vkmem_dl_error = "vkmem: loadable modules are not supported";
 	return NULL;
 }
 
@@ -99,7 +99,7 @@ VKMEM_EXPORT void *vkmem_dlsym(void *handle, const char *name)
 			if (strcmp(vkmem_static_symbols[i].name, name) == 0)
 				return vkmem_static_symbols[i].fn;
 	}
-	vkmem_dl_error = "valkeymem: symbol not found";
+	vkmem_dl_error = "vkmem: symbol not found";
 	return NULL;
 }
 

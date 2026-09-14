@@ -11,10 +11,10 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/shibukawa/valkeymem/internal/aot/vkaot"
-	"github.com/shibukawa/valkeymem/internal/aot/vkaot/base"
-	"github.com/shibukawa/valkeymem/internal/guest"
-	"github.com/shibukawa/valkeymem/internal/host"
+	"github.com/shibukawa/vkmem/internal/aot/vkaot"
+	"github.com/shibukawa/vkmem/internal/aot/vkaot/base"
+	"github.com/shibukawa/vkmem/internal/guest"
+	"github.com/shibukawa/vkmem/internal/host"
 )
 
 // memoryMax is the linear-memory address space reserved per instance

@@ -13,9 +13,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/shibukawa/valkeymem/internal/guest"
-	"github.com/shibukawa/valkeymem/internal/host"
-	"github.com/shibukawa/valkeymem/internal/vfs"
+	"github.com/shibukawa/vkmem/internal/guest"
+	"github.com/shibukawa/vkmem/internal/host"
+	"github.com/shibukawa/vkmem/internal/vfs"
 )
 
 // Factory creates guest instances; the root package sets it to the
@@ -79,13 +79,13 @@ func Start(cfg Config) (*Server, error) {
 		cfg.StartTimeout = 30 * time.Second
 	}
 	if Factory == nil {
-		return nil, errors.New("valkeymem: no guest backend registered")
+		return nil, errors.New("vkmem: no guest backend registered")
 	}
 	// Reserve the port first: bind(2) in the guest is handed this
 	// listener, so the port the guest was told is the port it gets.
 	ln, err := net.Listen("tcp4", "127.0.0.1:"+strconv.Itoa(cfg.Port))
 	if err != nil {
-		return nil, fmt.Errorf("valkeymem: listen: %w", err)
+		return nil, fmt.Errorf("vkmem: listen: %w", err)
 	}
 	addr := ln.Addr().(*net.TCPAddr)
 
@@ -192,12 +192,12 @@ func Start(cfg Config) (*Server, error) {
 		return s, nil
 	case err := <-s.done:
 		if err == nil {
-			err = errors.New("valkeymem: server exited during startup")
+			err = errors.New("vkmem: server exited during startup")
 		}
 		s.done <- err
 		return fail(err)
 	case <-time.After(cfg.StartTimeout):
-		return fail(errors.New("valkeymem: server did not start listening in time"))
+		return fail(errors.New("vkmem: server did not start listening in time"))
 	}
 }
 
@@ -255,6 +255,6 @@ func (s *Server) shutdown() {
 	case <-s.done:
 		s.stopped = true
 	case <-time.After(5 * time.Second):
-		s.err = errors.New("valkeymem: server did not stop")
+		s.err = errors.New("vkmem: server did not stop")
 	}
 }

@@ -1,5 +1,5 @@
 #!/bin/bash
-# Build Valkey to a self-contained wasm module for valkeymem.
+# Build Valkey to a self-contained wasm module for vkmem.
 #   JOBS=N   parallelism
 set -euo pipefail
 HERE=$(cd "$(dirname "$0")" && pwd)

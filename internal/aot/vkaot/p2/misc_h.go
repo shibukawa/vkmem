@@ -1,7 +1,7 @@
 package p2
 
 import (
-	base "github.com/shibukawa/valkeymem/internal/aot/vkaot/base"
+	base "github.com/shibukawa/vkmem/internal/aot/vkaot/base"
 	"math"
 	"unsafe"
 )

@@ -1,4 +1,4 @@
-package valkeymem
+package vkmem
 
 import (
 	"bufio"

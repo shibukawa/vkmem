@@ -1,8 +1,8 @@
-package valkeymem
+package vkmem
 
 import (
-	"github.com/shibukawa/valkeymem/internal/aot"
-	"github.com/shibukawa/valkeymem/internal/engine"
+	"github.com/shibukawa/vkmem/internal/aot"
+	"github.com/shibukawa/vkmem/internal/engine"
 )
 
 // The backend is Go code generated ahead of time by wasm2go from the

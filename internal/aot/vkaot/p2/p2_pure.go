@@ -1,3 +1,3 @@
 package p2
 
-import _ "github.com/shibukawa/valkeymem/internal/aot/vkaot/p1"
+import _ "github.com/shibukawa/vkmem/internal/aot/vkaot/p1"

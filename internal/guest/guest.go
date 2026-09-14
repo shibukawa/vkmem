@@ -5,7 +5,7 @@ package guest
 import (
 	"context"
 
-	"github.com/shibukawa/valkeymem/internal/host"
+	"github.com/shibukawa/vkmem/internal/host"
 )
 
 // Instance is one running copy of a module bound to one host.Host.

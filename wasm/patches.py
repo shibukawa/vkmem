@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Idempotent valkeymem source patches for the Valkey checkout.
+"""Idempotent vkmem source patches for the Valkey checkout.
 
 usage: patches.py <valkey dir>
 

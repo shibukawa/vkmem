@@ -9,7 +9,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/shibukawa/valkeymem/internal/vfs"
+	"github.com/shibukawa/vkmem/internal/vfs"
 )
 
 // Sockets: the guest's BSD socket calls are served by real Go listeners and

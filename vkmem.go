@@ -1,8 +1,8 @@
-// Package valkeymem runs a real Valkey server inside the Go process for
+// Package vkmem runs a real Valkey server inside the Go process for
 // tests: the C server is compiled to WebAssembly, translated to Go by
 // wasm2go, and served over loopback TCP and a Unix socket so any client
 // library can talk to it.
-package valkeymem
+package vkmem
 
 import (
 	"fmt"
@@ -10,7 +10,7 @@ import (
 	"path/filepath"
 	"sync/atomic"
 
-	"github.com/shibukawa/valkeymem/internal/engine"
+	"github.com/shibukawa/vkmem/internal/engine"
 )
 
 // Option configures Start.
@@ -51,7 +51,7 @@ func Start(opts ...Option) (*Server, error) {
 		o(&cfg)
 	}
 	if cfg.UnixSocket == "auto" {
-		cfg.UnixSocket = filepath.Join(os.TempDir(), fmt.Sprintf("valkeymem-%d-%d.sock", os.Getpid(), nextID()))
+		cfg.UnixSocket = filepath.Join(os.TempDir(), fmt.Sprintf("vkmem-%d-%d.sock", os.Getpid(), nextID()))
 	}
 	e, err := engine.Start(cfg)
 	if err != nil {

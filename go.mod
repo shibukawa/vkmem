@@ -1,4 +1,4 @@
-module github.com/shibukawa/valkeymem
+module github.com/shibukawa/vkmem
 
 go 1.25.0
 

@@ -1,4 +1,4 @@
-# valkeymem
+# vkmem
 
 A real [Valkey](https://valkey.io) server that runs *inside* your Go test
 process. The C server (Valkey 9.1.2) is compiled to WebAssembly with
@@ -16,12 +16,12 @@ host design.
 import (
     "testing"
 
-    "github.com/shibukawa/valkeymem"
+    "github.com/shibukawa/vkmem"
     "github.com/valkey-io/valkey-go"
 )
 
 func TestSomething(t *testing.T) {
-    s, err := valkeymem.Start()
+    s, err := vkmem.Start()
     if err != nil {
         t.Fatal(err)
     }
@@ -150,7 +150,7 @@ intermediate build product (`wasm/out/`, not committed).
   connections, with one reader goroutine per connection feeding `select()`.
 - `internal/aot` — binds the generated package to the host table (linear
   memory is an anonymous 2 GiB mapping outside the Go heap);
-  `internal/engine` — start/stop orchestration; `valkeymem.go` — public
+  `internal/engine` — start/stop orchestration; `vkmem.go` — public
   API.
 
 ## Rebuilding

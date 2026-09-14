@@ -5,8 +5,8 @@ package aot
 import (
 	"math"
 
-	"github.com/shibukawa/valkeymem/internal/aot/vkaot"
-	"github.com/shibukawa/valkeymem/internal/aot/vkaot/base"
+	"github.com/shibukawa/vkmem/internal/aot/vkaot"
+	"github.com/shibukawa/vkmem/internal/aot/vkaot/base"
 )
 
 var _ = math.Float64bits
