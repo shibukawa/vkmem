@@ -2545,8 +2545,8 @@ L1:
 L2:
 	;
 	v214 = int32(0)
-	v215 = *(*int64)(unsafe.Add(mBase, _consts[850]))
-	v217 = *(*int64)(unsafe.Add(mBase, _consts[37]))
+	v215 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[0]))
+	v217 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[1]))
 	v218 = l2 | l1
 	if v218 != 0 {
 		goto L37
@@ -2571,7 +2571,7 @@ L4:
 	}
 L5:
 	;
-	v10498 = F_dictFind(m, v10292, int32(_a1377))
+	v10498 = F_dictFind(m, v10292, int32(_a_F_genValkeyInfoString_0))
 	mBase = m.M
 	v10499 = m.ExcPending
 	if v10499 != 0 {
@@ -2589,7 +2589,7 @@ L6:
 	}
 L7:
 	;
-	v10049 = F_dictFind(m, v9843, int32(_a1378))
+	v10049 = F_dictFind(m, v9843, int32(_a_F_genValkeyInfoString_1))
 	mBase = m.M
 	v10050 = m.ExcPending
 	if v10050 != 0 {
@@ -2607,7 +2607,7 @@ L8:
 	}
 L9:
 	;
-	v9615 = F_dictFind(m, v9409, int32(_a1379))
+	v9615 = F_dictFind(m, v9409, int32(_a_F_genValkeyInfoString_2))
 	mBase = m.M
 	v9616 = m.ExcPending
 	if v9616 != 0 {
@@ -2625,7 +2625,7 @@ L10:
 	}
 L11:
 	;
-	v9184 = F_dictFind(m, v8978, int32(_a1380))
+	v9184 = F_dictFind(m, v8978, int32(_a_F_genValkeyInfoString_3))
 	mBase = m.M
 	v9185 = m.ExcPending
 	if v9185 != 0 {
@@ -2643,7 +2643,7 @@ L12:
 	}
 L13:
 	;
-	v8748 = F_dictFind(m, v8542, int32(_a1381))
+	v8748 = F_dictFind(m, v8542, int32(_a_F_genValkeyInfoString_4))
 	mBase = m.M
 	v8749 = m.ExcPending
 	if v8749 != 0 {
@@ -2661,7 +2661,7 @@ L14:
 	}
 L15:
 	;
-	v7702 = F_dictFind(m, v7496, int32(_a1382))
+	v7702 = F_dictFind(m, v7496, int32(_a_F_genValkeyInfoString_5))
 	mBase = m.M
 	v7703 = m.ExcPending
 	if v7703 != 0 {
@@ -2679,7 +2679,7 @@ L16:
 	}
 L17:
 	;
-	v7271 = F_dictFind(m, v7065, int32(_a1383))
+	v7271 = F_dictFind(m, v7065, int32(_a_F_genValkeyInfoString_6))
 	mBase = m.M
 	v7272 = m.ExcPending
 	if v7272 != 0 {
@@ -2697,7 +2697,7 @@ L18:
 	}
 L19:
 	;
-	v6839 = F_dictFind(m, v6633, int32(_a1384))
+	v6839 = F_dictFind(m, v6633, int32(_a_F_genValkeyInfoString_7))
 	mBase = m.M
 	v6840 = m.ExcPending
 	if v6840 != 0 {
@@ -2715,7 +2715,7 @@ L20:
 	}
 L21:
 	;
-	v5817 = F_dictFind(m, v5611, int32(_a1385))
+	v5817 = F_dictFind(m, v5611, int32(_a_F_genValkeyInfoString_8))
 	mBase = m.M
 	v5818 = m.ExcPending
 	if v5818 != 0 {
@@ -2733,7 +2733,7 @@ L22:
 	}
 L23:
 	;
-	v4567 = F_dictFind(m, v4361, int32(_a1386))
+	v4567 = F_dictFind(m, v4361, int32(_a_F_genValkeyInfoString_9))
 	mBase = m.M
 	v4568 = m.ExcPending
 	if v4568 != 0 {
@@ -2744,7 +2744,7 @@ L23:
 L24:
 	;
 	v3541 = int64(0)
-	v3544 = *(*int64)(unsafe.Add(mBase, _consts[264]))
+	v3544 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[2]))
 	if v3544 == v3541 {
 		v3551 = v3541
 		goto L308
@@ -2753,7 +2753,7 @@ L24:
 	}
 L25:
 	;
-	v3332 = F_dictFind(m, l0, int32(_a581))
+	v3332 = F_dictFind(m, l0, int32(_a_F_genValkeyInfoString_10))
 	mBase = m.M
 	v3333 = m.ExcPending
 	if v3333 != 0 {
@@ -2764,7 +2764,7 @@ L25:
 L26:
 	;
 	v2743 = float64(0)
-	v2745 = *(*float64)(unsafe.Add(mBase, _consts[851]))
+	v2745 = *(*float64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[3]))
 	if base.F64_eq(v2745, v2743) != 0 {
 		goto L258
 	} else {
@@ -2772,7 +2772,7 @@ L26:
 	}
 L27:
 	;
-	v2536 = F_sdscat(m, v2334, int32(_a727))
+	v2536 = F_sdscat(m, v2334, int32(_a_F_genValkeyInfoString_11))
 	mBase = m.M
 	v2537 = m.ExcPending
 	if v2537 != 0 {
@@ -2787,7 +2787,7 @@ L28:
 	goto L27
 L29:
 	;
-	v2321 = F_dictFind(m, l0, int32(_a1387))
+	v2321 = F_dictFind(m, l0, int32(_a_F_genValkeyInfoString_12))
 	mBase = m.M
 	v2322 = m.ExcPending
 	if v2322 != 0 {
@@ -2798,7 +2798,7 @@ L29:
 L30:
 	;
 	v1665 = int32(0)
-	v1674 = *(*int32)(unsafe.Add(mBase, _consts[276]))
+	v1674 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[4]))
 	if v1674 < int32(261) {
 		goto L203
 	} else {
@@ -2806,7 +2806,7 @@ L30:
 	}
 L31:
 	;
-	v1456 = F_dictFind(m, l0, int32(_a1388))
+	v1456 = F_dictFind(m, l0, int32(_a_F_genValkeyInfoString_13))
 	mBase = m.M
 	v1457 = m.ExcPending
 	if v1457 != 0 {
@@ -2817,13 +2817,13 @@ L31:
 L32:
 	;
 	v553 = int32(0)
-	v554 = *(*int32)(unsafe.Add(mBase, _consts[852]))
-	v556 = *(*int32)(unsafe.Add(mBase, _consts[853]))
-	v558 = *(*int32)(unsafe.Add(mBase, _consts[854]))
-	v560 = *(*int32)(unsafe.Add(mBase, _consts[855]))
-	v562 = *(*int32)(unsafe.Add(mBase, _consts[856]))
-	v564 = *(*int32)(unsafe.Add(mBase, _consts[857]))
-	v566 = *(*int32)(unsafe.Add(mBase, _consts[858]))
+	v554 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[5]))
+	v556 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[6]))
+	v558 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[7]))
+	v560 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[8]))
+	v562 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[9]))
+	v564 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[10]))
+	v566 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[11]))
 	if base.Ui32(v566) < base.Ui32(v564) {
 		goto L118
 	} else {
@@ -2831,7 +2831,7 @@ L32:
 	}
 L33:
 	;
-	v535 = F_dictFind(m, l0, int32(_a1389))
+	v535 = F_dictFind(m, l0, int32(_a_F_genValkeyInfoString_14))
 	mBase = m.M
 	v536 = m.ExcPending
 	if v536 != 0 {
@@ -2842,7 +2842,7 @@ L33:
 L34:
 	;
 	v450 = int64(0)
-	v453 = *(*int64)(unsafe.Add(mBase, _consts[811]))
+	v453 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[12]))
 	if v453 < int64(1) {
 		v463 = v450
 		goto L89
@@ -2851,7 +2851,7 @@ L34:
 	}
 L35:
 	;
-	v436 = F_sdscat(m, v423, int32(_a727))
+	v436 = F_sdscat(m, v423, int32(_a_F_genValkeyInfoString_11))
 	mBase = m.M
 	v437 = m.ExcPending
 	if v437 != 0 {
@@ -2861,7 +2861,7 @@ L35:
 	}
 L36:
 	;
-	v431 = F_dictFind(m, l0, int32(_a1346))
+	v431 = F_dictFind(m, l0, int32(_a_F_genValkeyInfoString_15))
 	mBase = m.M
 	v432 = m.ExcPending
 	if v432 != 0 {
@@ -2871,7 +2871,7 @@ L36:
 	}
 L37:
 	;
-	v227 = *(*int32)(unsafe.Add(mBase, _consts[173]))
+	v227 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[13]))
 	if v227 != 0 {
 		goto L41
 	} else {
@@ -2879,7 +2879,7 @@ L37:
 	}
 L38:
 	;
-	v220 = F_dictFind(m, l0, int32(_a1390))
+	v220 = F_dictFind(m, l0, int32(_a_F_genValkeyInfoString_16))
 	mBase = m.M
 	v221 = m.ExcPending
 	if v221 != 0 {
@@ -2899,17 +2899,17 @@ L40:
 	goto L37
 L41:
 	;
-	v228 = int32(_a1132)
+	v228 = int32(_a_F_genValkeyInfoString_17)
 	goto L43
 L42:
 	;
-	v228 = int32(_a1391)
+	v228 = int32(_a_F_genValkeyInfoString_18)
 	goto L43
 L43:
 	;
 	v229 = int32(0)
-	v230 = *(*int32)(unsafe.Add(mBase, _consts[63]))
-	v232 = *(*int32)(unsafe.Add(mBase, _consts[859]))
+	v230 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[14]))
+	v232 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[15]))
 	if v232 != 0 {
 		goto L45
 	} else {
@@ -2925,7 +2925,7 @@ L44:
 	}
 L45:
 	;
-	v238 = *(*int32)(unsafe.Add(mBase, _consts[533]))
+	v238 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[16]))
 	if v238 == int32(2) {
 		goto L47
 	} else {
@@ -2933,15 +2933,15 @@ L45:
 	}
 L46:
 	;
-	v245 = int32(_a422)
+	v245 = int32(_a_F_genValkeyInfoString_19)
 	goto L44
 L47:
 	;
-	v241 = int32(_a1392)
+	v241 = int32(_a_F_genValkeyInfoString_20)
 	goto L49
 L48:
 	;
-	v241 = int32(_a242)
+	v241 = int32(_a_F_genValkeyInfoString_21)
 	goto L49
 L49:
 	;
@@ -2952,7 +2952,7 @@ L49:
 	}
 L50:
 	;
-	v244 = int32(_a1393)
+	v244 = int32(_a_F_genValkeyInfoString_22)
 	goto L52
 L51:
 	;
@@ -2964,7 +2964,7 @@ L52:
 	goto L44
 L53:
 	;
-	v248 = int32(_a1380)
+	v248 = int32(_a_F_genValkeyInfoString_3)
 	goto L55
 L54:
 	;
@@ -2972,7 +2972,7 @@ L54:
 	goto L55
 L55:
 	;
-	v250 = int32(*(*uint8)(unsafe.Add(mBase, _consts[860])))
+	v250 = int32(*(*uint8)(unsafe.Add(mBase, _c_F_genValkeyInfoString[17])))
 	if v250 != 0 {
 		goto L56
 	} else {
@@ -2983,7 +2983,7 @@ L56:
 	goto L59
 L57:
 	;
-	v252 = F___syscall_uname(m, int32(_a1394))
+	v252 = F___syscall_uname(m, int32(_a_F_genValkeyInfoString_23))
 	mBase = m.M
 	v253 = F___syscall_ret(m, v252)
 	mBase = m.M
@@ -2991,14 +2991,14 @@ L57:
 L58:
 	;
 	v255 = int32(1)
-	*(*uint8)(unsafe.Add(mBase, _consts[860])) = uint8(v255)
+	*(*uint8)(unsafe.Add(mBase, _c_F_genValkeyInfoString[17])) = uint8(v255)
 	goto L56
 L59:
 	;
 	goto L60
 L60:
 	;
-	v262 = F_strtox_2(m, int32(_a1395), int32(0), int32(10), int64(2147483648))
+	v262 = F_strtox_2(m, int32(_a_F_genValkeyInfoString_24), int32(0), int32(10), int64(2147483648))
 	mBase = m.M
 	goto L61
 L61:
@@ -3014,8 +3014,8 @@ L61:
 L62:
 	;
 	v266 = int32(0)
-	v267 = *(*int32)(unsafe.Add(mBase, _consts[783]))
-	v269 = *(*int32)(unsafe.Add(mBase, _consts[237]))
+	v267 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[18]))
+	v269 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[19]))
 	goto L63
 L63:
 	;
@@ -3027,7 +3027,7 @@ L64:
 	goto L65
 L65:
 	;
-	*(*int32)(unsafe.Add(mBase, uint32(v208+int32(1888)))) = int32(_a904)
+	*(*int32)(unsafe.Add(mBase, uint32(v208+int32(1888)))) = int32(_a_F_genValkeyInfoString_25)
 	*(*int32)(unsafe.Add(mBase, uint32(v208+int32(1892)))) = base.B2i32(int32(0) < base.I32_wrap_i64(v262))
 	*(*int32)(unsafe.Add(mBase, uint32(v208+int32(1896)))) = v264
 	if v269 != 0 {
@@ -3037,41 +3037,41 @@ L65:
 	}
 L66:
 	;
-	v288 = int32(_a1396)
+	v288 = int32(_a_F_genValkeyInfoString_26)
 	goto L68
 L67:
 	;
-	v288 = int32(_a1390)
+	v288 = int32(_a_F_genValkeyInfoString_16)
 	goto L68
 L68:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v208+int32(1900)))) = v288
 	*(*int32)(unsafe.Add(mBase, uint32(v208+int32(1904)))) = v248
-	*(*int32)(unsafe.Add(mBase, uint32(v208+int32(1908)))) = int32(_a1394)
-	*(*int32)(unsafe.Add(mBase, uint32(v208+int32(1912)))) = int32(_a1397)
-	*(*int32)(unsafe.Add(mBase, uint32(v208+int32(1916)))) = int32(_a1398)
+	*(*int32)(unsafe.Add(mBase, uint32(v208+int32(1908)))) = int32(_a_F_genValkeyInfoString_23)
+	*(*int32)(unsafe.Add(mBase, uint32(v208+int32(1912)))) = int32(_a_F_genValkeyInfoString_27)
+	*(*int32)(unsafe.Add(mBase, uint32(v208+int32(1916)))) = int32(_a_F_genValkeyInfoString_28)
 	*(*int32)(unsafe.Add(mBase, uint32(v208+int32(1920)))) = v267
-	*(*int32)(unsafe.Add(mBase, uint32(v208+int32(1924)))) = int32(_a1399)
-	*(*int32)(unsafe.Add(mBase, uint32(v208+int32(1928)))) = int32(_a1400)
-	*(*int32)(unsafe.Add(mBase, uint32(v208+int32(1932)))) = int32(_a1401)
+	*(*int32)(unsafe.Add(mBase, uint32(v208+int32(1924)))) = int32(_a_F_genValkeyInfoString_29)
+	*(*int32)(unsafe.Add(mBase, uint32(v208+int32(1928)))) = int32(_a_F_genValkeyInfoString_30)
+	*(*int32)(unsafe.Add(mBase, uint32(v208+int32(1932)))) = int32(_a_F_genValkeyInfoString_31)
 	*(*int32)(unsafe.Add(mBase, uint32(v208+int32(1944)))) = v245
-	*(*int32)(unsafe.Add(mBase, uint32(v208+int32(1948)))) = int32(_a1335)
+	*(*int32)(unsafe.Add(mBase, uint32(v208+int32(1948)))) = int32(_a_F_genValkeyInfoString_32)
 	*(*int64)(unsafe.Add(mBase, uint32(v208+int32(1968)))) = v246
 	v331 = base.I64_div_s(v246, int64(86400))
 	*(*int64)(unsafe.Add(mBase, uint32(v208+int32(1976)))) = v331
 	*(*int64)(unsafe.Add(mBase, uint32(v208+int32(1936)))) = base.I64_extend_i32_s(v272)
 	v339 = int32(0)
-	v340 = *(*int64)(unsafe.Add(mBase, _consts[277]))
+	v340 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[20]))
 	*(*int64)(unsafe.Add(mBase, uint32(v208+int32(1960)))) = v340
-	v345 = *(*int32)(unsafe.Add(mBase, _consts[149]))
+	v345 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[21]))
 	*(*int32)(unsafe.Add(mBase, uint32(v208+int32(1984)))) = v345
 	*(*int32)(unsafe.Add(mBase, uint32(v208+int32(1988)))) = v345
-	v353 = *(*int32)(unsafe.Add(mBase, _consts[861]))
+	v353 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[22]))
 	*(*int32)(unsafe.Add(mBase, uint32(v208+int32(1992)))) = v353
-	v358 = *(*int32)(unsafe.Add(mBase, _consts[862]))
+	v358 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[23]))
 	*(*int32)(unsafe.Add(mBase, uint32(v208+int32(2012)))) = v358
-	v363 = *(*int32)(unsafe.Add(mBase, _consts[103]))
-	v365 = *(*int32)(unsafe.Add(mBase, _consts[105]))
+	v363 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[24]))
+	v365 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[25]))
 	if v363 != 0 {
 		goto L69
 	} else {
@@ -3089,9 +3089,9 @@ L71:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v208+int32(1952)))) = v366
 	v370 = int32(0)
-	v371 = *(*int32)(unsafe.Add(mBase, _consts[37]))
+	v371 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[1]))
 	*(*int32)(unsafe.Add(mBase, uint32(v208+int32(1996)))) = v371 & int32(16777215)
-	v378 = *(*int32)(unsafe.Add(mBase, _consts[863]))
+	v378 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[26]))
 	if v378 != 0 {
 		goto L72
 	} else {
@@ -3103,12 +3103,12 @@ L72:
 	goto L74
 L73:
 	;
-	v380 = int32(_a188)
+	v380 = int32(_a_F_genValkeyInfoString_33)
 	goto L74
 L74:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v208+int32(2000)))) = v380
-	v385 = *(*int32)(unsafe.Add(mBase, _consts[178]))
+	v385 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[27]))
 	if v385 != 0 {
 		goto L75
 	} else {
@@ -3120,18 +3120,18 @@ L75:
 	goto L77
 L76:
 	;
-	v387 = int32(_a188)
+	v387 = int32(_a_F_genValkeyInfoString_33)
 	goto L77
 L77:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v208+int32(2004)))) = v387
-	v392 = *(*int32)(unsafe.Add(mBase, _consts[219]))
+	v392 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[28]))
 	*(*int32)(unsafe.Add(mBase, uint32(v208+int32(2008)))) = base.B2i32(int32(1) < v392)
-	*(*int32)(unsafe.Add(mBase, uint32(v208)+1872)) = int32(_a684)
-	*(*int32)(unsafe.Add(mBase, uint32(v208)+1876)) = int32(_a1402)
-	*(*int32)(unsafe.Add(mBase, uint32(v208)+1880)) = int32(_a535)
-	*(*int32)(unsafe.Add(mBase, uint32(v208)+1884)) = int32(_a1403)
-	v407 = F_sdscatfmt(m, v210, int32(_a1404), v208+int32(1872))
+	*(*int32)(unsafe.Add(mBase, uint32(v208)+1872)) = int32(_a_F_genValkeyInfoString_34)
+	*(*int32)(unsafe.Add(mBase, uint32(v208)+1876)) = int32(_a_F_genValkeyInfoString_35)
+	*(*int32)(unsafe.Add(mBase, uint32(v208)+1880)) = int32(_a_F_genValkeyInfoString_36)
+	*(*int32)(unsafe.Add(mBase, uint32(v208)+1884)) = int32(_a_F_genValkeyInfoString_37)
+	v407 = F_sdscatfmt(m, v210, int32(_a_F_genValkeyInfoString_38), v208+int32(1872))
 	mBase = m.M
 	v408 = m.ExcPending
 	if v408 != 0 {
@@ -3141,7 +3141,7 @@ L77:
 	}
 L78:
 	;
-	v410 = *(*int64)(unsafe.Add(mBase, _consts[801]))
+	v410 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[29]))
 	if v410 == int64(0) {
 		v422 = v407
 		goto L79
@@ -3160,9 +3160,9 @@ L79:
 	}
 L80:
 	;
-	v414 = *(*int64)(unsafe.Add(mBase, _consts[78]))
+	v414 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[30]))
 	*(*int64)(unsafe.Add(mBase, uint32(v208)+1856)) = v410 - v414
-	v420 = F_sdscatfmt(m, v407, int32(_a1405), v208+int32(1856))
+	v420 = F_sdscatfmt(m, v407, int32(_a_F_genValkeyInfoString_39), v208+int32(1856))
 	mBase = m.M
 	v421 = m.ExcPending
 	if v421 != 0 {
@@ -3183,7 +3183,7 @@ L82:
 	}
 L83:
 	;
-	v426 = F_dictFind(m, l0, int32(_a1346))
+	v426 = F_dictFind(m, l0, int32(_a_F_genValkeyInfoString_15))
 	mBase = m.M
 	v427 = m.ExcPending
 	if v427 != 0 {
@@ -3224,7 +3224,7 @@ L88:
 	goto L34
 L89:
 	;
-	v465 = *(*int64)(unsafe.Add(mBase, _consts[810]))
+	v465 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[31]))
 	if v465 < int64(1) {
 		v475 = v450
 		goto L94
@@ -3233,7 +3233,7 @@ L89:
 	}
 L90:
 	;
-	v457 = *(*int64)(unsafe.Add(mBase, _consts[37]))
+	v457 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[1]))
 	v458 = v453 - v457
 	v459 = int64(0)
 	if v459 < v458 {
@@ -3255,7 +3255,7 @@ L93:
 	goto L89
 L94:
 	;
-	v477 = *(*int64)(unsafe.Add(mBase, _consts[809]))
+	v477 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[32]))
 	if int64(1) <= v477 {
 		goto L100
 	} else {
@@ -3263,7 +3263,7 @@ L94:
 	}
 L95:
 	;
-	v469 = *(*int64)(unsafe.Add(mBase, _consts[37]))
+	v469 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[1]))
 	v470 = v465 - v469
 	v471 = int64(0)
 	if v471 < v470 {
@@ -3287,7 +3287,7 @@ L99:
 	;
 	*(*int64)(unsafe.Add(mBase, uint32(v208+int32(1832)))) = v475
 	*(*int64)(unsafe.Add(mBase, uint32(v208+int32(1848)))) = v488
-	v498 = *(*int32)(unsafe.Add(mBase, _consts[864]))
+	v498 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[33]))
 	if v498 != 0 {
 		goto L105
 	} else {
@@ -3295,7 +3295,7 @@ L99:
 	}
 L100:
 	;
-	v482 = *(*int64)(unsafe.Add(mBase, _consts[37]))
+	v482 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[1]))
 	v483 = v477 - v482
 	v484 = int64(0)
 	if v484 < v483 {
@@ -3325,12 +3325,12 @@ L105:
 	goto L107
 L106:
 	;
-	v500 = int32(_a489)
+	v500 = int32(_a_F_genValkeyInfoString_40)
 	goto L107
 L107:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v208+int32(1824)))) = v500
-	v505 = *(*int32)(unsafe.Add(mBase, _consts[812]))
+	v505 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[34]))
 	if v505 != 0 {
 		goto L108
 	} else {
@@ -3342,13 +3342,13 @@ L108:
 	goto L110
 L109:
 	;
-	v507 = int32(_a489)
+	v507 = int32(_a_F_genValkeyInfoString_40)
 	goto L110
 L110:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v208+int32(1840)))) = v507
 	*(*int64)(unsafe.Add(mBase, uint32(v208)+1816)) = v463
-	v511 = *(*int32)(unsafe.Add(mBase, _consts[808]))
+	v511 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[35]))
 	if v511 != 0 {
 		goto L111
 	} else {
@@ -3360,12 +3360,12 @@ L111:
 	goto L113
 L112:
 	;
-	v513 = int32(_a489)
+	v513 = int32(_a_F_genValkeyInfoString_40)
 	goto L113
 L113:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v208)+1808)) = v513
-	v518 = F_sdscatprintf(m, v439, int32(_a1406), v208+int32(1808))
+	v518 = F_sdscatprintf(m, v439, int32(_a_F_genValkeyInfoString_41), v208+int32(1808))
 	mBase = m.M
 	v519 = m.ExcPending
 	if v519 != 0 {
@@ -3487,14 +3487,14 @@ L134:
 L135:
 	;
 	v579 = int32(0)
-	v580 = *(*int32)(unsafe.Add(mBase, _consts[865]))
-	v582 = *(*int32)(unsafe.Add(mBase, _consts[866]))
-	v584 = *(*int32)(unsafe.Add(mBase, _consts[867]))
-	v586 = *(*int32)(unsafe.Add(mBase, _consts[868]))
-	v588 = *(*int32)(unsafe.Add(mBase, _consts[869]))
-	v590 = *(*int32)(unsafe.Add(mBase, _consts[870]))
-	v592 = *(*int32)(unsafe.Add(mBase, _consts[871]))
-	v594 = *(*int32)(unsafe.Add(mBase, _consts[872]))
+	v580 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[36]))
+	v582 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[37]))
+	v584 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[38]))
+	v586 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[39]))
+	v588 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[40]))
+	v590 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[41]))
+	v592 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[42]))
+	v594 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[43]))
 	if base.Ui32(v594) < base.Ui32(v592) {
 		goto L136
 	} else {
@@ -3586,8 +3586,8 @@ L152:
 L153:
 	;
 	v607 = int32(0)
-	v608 = *(*int32)(unsafe.Add(mBase, _consts[873]))
-	v613 = *(*int32)(unsafe.Add(mBase, _consts[10]))
+	v608 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[44]))
+	v613 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[45]))
 	if v613 < int32(1) {
 		v865 = v607
 		v866 = v607
@@ -3600,7 +3600,7 @@ L154:
 	;
 	v1063 = int32(2)
 	v1064 = int32(0)
-	v1065 = *(*int32)(unsafe.Add(mBase, _consts[874]))
+	v1065 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[46]))
 	if v1065&v1063 == v1064 {
 		goto L164
 	} else {
@@ -3609,7 +3609,7 @@ L154:
 L155:
 	;
 	v616 = int32(0)
-	v618 = *(*int32)(unsafe.Add(mBase, _consts[23]))
+	v618 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[47]))
 	v623 = v616
 	v631 = v616
 	v632 = v616
@@ -3671,7 +3671,7 @@ L161:
 	}
 L162:
 	;
-	v1153 = int32(_a489)
+	v1153 = int32(_a_F_genValkeyInfoString_40)
 	v1156 = v1153
 	v1157 = int64(0)
 	v1158 = v1153
@@ -3681,9 +3681,9 @@ L163:
 	v1080 = v208 + int32(2016)
 	v1081 = int64(0)
 	*(*int32)(unsafe.Add(mBase, uint32(v1080))) = int32(4)
-	v1086 = int32(_a69)
-	v1087 = *(*int64)(unsafe.Add(mBase, _consts[32]))
-	v1090 = *(*int32)(unsafe.Add(mBase, _consts[432]))
+	v1086 = int32(_a_F_genValkeyInfoString_42)
+	v1087 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[48]))
+	v1090 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[49]))
 	if v1090&v1077 == int32(0) {
 		v1101 = v1081
 		goto L168
@@ -3701,25 +3701,25 @@ L164:
 L165:
 	;
 	v1077 = v1063
-	v1078 = int32(_a1407)
+	v1078 = int32(_a_F_genValkeyInfoString_43)
 	goto L163
 L166:
 	;
 	v1077 = v1071
-	v1078 = int32(_a1360)
+	v1078 = int32(_a_F_genValkeyInfoString_44)
 	goto L163
 L167:
 	;
 	v1142 = *(*int32)(unsafe.Add(mBase, uint32(v208)+2016))
 	if base.Ui32(int32(4)) < base.Ui32(v1142) {
-		v1152 = int32(_a815)
+		v1152 = int32(_a_F_genValkeyInfoString_45)
 		goto L181
 	} else {
 		goto L182
 	}
 L168:
 	;
-	v1104 = *(*int32)(unsafe.Add(mBase, _consts[875]))
+	v1104 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[50]))
 	if v1104&v1077 == int32(0) {
 		v1114 = v1101
 		goto L171
@@ -3728,7 +3728,7 @@ L168:
 	}
 L169:
 	;
-	v1095 = *(*int64)(unsafe.Add(mBase, _consts[433]))
+	v1095 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[51]))
 	v1096 = v1095 - v1087
 	if v1096 < int64(1) {
 		v1101 = v1081
@@ -3743,7 +3743,7 @@ L170:
 	goto L168
 L171:
 	;
-	v1117 = *(*int32)(unsafe.Add(mBase, _consts[876]))
+	v1117 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[52]))
 	if v1117&v1077 == int32(0) {
 		v1127 = v1114
 		goto L174
@@ -3752,7 +3752,7 @@ L171:
 	}
 L172:
 	;
-	v1109 = *(*int64)(unsafe.Add(mBase, _consts[877]))
+	v1109 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[53]))
 	v1110 = v1109 - v1087
 	if v1110 <= v1101 {
 		v1114 = v1101
@@ -3767,7 +3767,7 @@ L173:
 	goto L171
 L174:
 	;
-	v1130 = *(*int32)(unsafe.Add(mBase, _consts[150]))
+	v1130 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[54]))
 	if v1130&v1077 == int32(0) {
 		v1141 = v1127
 		goto L177
@@ -3776,7 +3776,7 @@ L174:
 	}
 L175:
 	;
-	v1122 = *(*int64)(unsafe.Add(mBase, _consts[878]))
+	v1122 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[55]))
 	v1123 = v1122 - v1087
 	if v1123 <= v1114 {
 		v1127 = v1114
@@ -3794,7 +3794,7 @@ L177:
 	goto L167
 L178:
 	;
-	v1135 = *(*int64)(unsafe.Add(mBase, _consts[879]))
+	v1135 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[56]))
 	v1136 = v1135 - v1087
 	if v1136 <= v1127 {
 		v1141 = v1127
@@ -3818,7 +3818,7 @@ L181:
 	goto L180
 L182:
 	;
-	v1151 = *(*int32)(unsafe.Add(mBase, uint32(v1142<<(uint(int32(2))%32))+uint32(_consts[434])))
+	v1151 = *(*int32)(unsafe.Add(mBase, uint32(v1142<<(uint(int32(2))%32))+uint32(_c_F_genValkeyInfoString[57])))
 	v1152 = v1151
 	goto L181
 L183:
@@ -3856,11 +3856,11 @@ L189:
 	;
 	v1168 = v550 + int32(1)
 	v1169 = int32(0)
-	v1170 = *(*int32)(unsafe.Add(mBase, _consts[188]))
+	v1170 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[58]))
 	v1171 = *(*int32)(unsafe.Add(mBase, uint32(v1170)+20))
-	v1173 = *(*int32)(unsafe.Add(mBase, _consts[62]))
+	v1173 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[59]))
 	v1174 = *(*int32)(unsafe.Add(mBase, uint32(v1173)+20))
-	v1177 = *(*int32)(unsafe.Add(mBase, _consts[63]))
+	v1177 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[14]))
 	if v1177 != 0 {
 		goto L193
 	} else {
@@ -3868,7 +3868,7 @@ L189:
 	}
 L190:
 	;
-	v1164 = F_sdscat(m, v540, int32(_a727))
+	v1164 = F_sdscat(m, v540, int32(_a_F_genValkeyInfoString_11))
 	mBase = m.M
 	v1165 = m.ExcPending
 	if v1165 != 0 {
@@ -3883,17 +3883,17 @@ L191:
 L192:
 	;
 	v1191 = int32(0)
-	v1192 = *(*int32)(unsafe.Add(mBase, _consts[880]))
-	v1194 = *(*int32)(unsafe.Add(mBase, _consts[795]))
-	v1196 = *(*int32)(unsafe.Add(mBase, _consts[881]))
-	v1198 = *(*int32)(unsafe.Add(mBase, _consts[467]))
-	v1200 = *(*int32)(unsafe.Add(mBase, _consts[882]))
-	v1202 = *(*int32)(unsafe.Add(mBase, _consts[883]))
+	v1192 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[60]))
+	v1194 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[61]))
+	v1196 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[62]))
+	v1198 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[63]))
+	v1200 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[64]))
+	v1202 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[65]))
 	v1203 = *(*int64)(unsafe.Add(mBase, uint32(v1202)+8))
 	goto L195
 L193:
 	;
-	v1180 = *(*int32)(unsafe.Add(mBase, _consts[90]))
+	v1180 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[66]))
 	v1181 = *(*int32)(unsafe.Add(mBase, uint32(v1180)+32))
 	v1182 = *(*int32)(unsafe.Add(mBase, uint32(v1181)+16))
 	v1183 = *(*int32)(unsafe.Add(mBase, uint32(v1181)+12))
@@ -3921,7 +3921,7 @@ L195:
 	*(*int32)(unsafe.Add(mBase, uint32(v208)+1736)) = v1192
 	*(*int32)(unsafe.Add(mBase, uint32(v208)+1732)) = v1190
 	*(*int32)(unsafe.Add(mBase, uint32(v208)+1728)) = v1174 - v1171
-	v1248 = F_sdscatprintf(m, v1166, int32(_a1408), v208+int32(1728))
+	v1248 = F_sdscatprintf(m, v1166, int32(_a_F_genValkeyInfoString_46), v208+int32(1728))
 	mBase = m.M
 	v1249 = m.ExcPending
 	if v1249 != 0 {
@@ -3959,7 +3959,7 @@ L199:
 	goto L30
 L200:
 	;
-	v1759 = *(*int32)(unsafe.Add(mBase, _consts[884]))
+	v1759 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[67]))
 	v1760 = F_evictPolicyToString(m)
 	mBase = m.M
 	v1761 = m.ExcPending
@@ -3989,7 +3989,7 @@ L203:
 	}
 L204:
 	;
-	v1678 = *(*int32)(unsafe.Add(mBase, _consts[278]))
+	v1678 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[68]))
 	v1682 = v1678
 	v1683 = int32(260)
 	goto L202
@@ -4021,10 +4021,10 @@ L208:
 L209:
 	;
 	v1702 = v1695 << (uint(int32(2)) % 32)
-	v1705 = *(*int32)(unsafe.Add(mBase, uint32(v1702)+uint32(_consts[279])))
-	v1708 = *(*int32)(unsafe.Add(mBase, uint32(v1702)+uint32(_consts[280])))
-	v1711 = *(*int32)(unsafe.Add(mBase, uint32(v1702)+uint32(_consts[281])))
-	v1714 = *(*int32)(unsafe.Add(mBase, uint32(v1702)+uint32(_consts[282])))
+	v1705 = *(*int32)(unsafe.Add(mBase, uint32(v1702)+uint32(_c_F_genValkeyInfoString[69])))
+	v1708 = *(*int32)(unsafe.Add(mBase, uint32(v1702)+uint32(_c_F_genValkeyInfoString[70])))
+	v1711 = *(*int32)(unsafe.Add(mBase, uint32(v1702)+uint32(_c_F_genValkeyInfoString[71])))
+	v1714 = *(*int32)(unsafe.Add(mBase, uint32(v1702)+uint32(_c_F_genValkeyInfoString[72])))
 	v1718 = v1705 + (v1708 + (v1711 + (v1714 + v1694)))
 	v1719 = int32(4)
 	v1720 = v1695 + v1719
@@ -4053,7 +4053,7 @@ L212:
 	goto L213
 L213:
 	;
-	v1744 = *(*int32)(unsafe.Add(mBase, uint32(v1734<<(uint(int32(2))%32))+uint32(_consts[282])))
+	v1744 = *(*int32)(unsafe.Add(mBase, uint32(v1734<<(uint(int32(2))%32))+uint32(_c_F_genValkeyInfoString[72])))
 	v1745 = v1744 + v1733
 	v1746 = int32(1)
 	v1749 = v1736 + v1746
@@ -4106,7 +4106,7 @@ L219:
 	;
 	v1768 = base.I64_extend_i32_u(v1762)
 	v1769 = base.I64_extend_i32_u(v1764)
-	v1771 = *(*int32)(unsafe.Add(mBase, _consts[441]))
+	v1771 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[73]))
 	if base.Ui32(v1751) <= base.Ui32(v1771) {
 		goto L220
 	} else {
@@ -4124,11 +4124,11 @@ L220:
 	}
 L221:
 	;
-	*(*int32)(unsafe.Add(mBase, _consts[441])) = v1751
+	*(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[73])) = v1751
 	goto L220
 L222:
 	;
-	v1785 = int64(*(*uint32)(unsafe.Add(mBase, _consts[441])))
+	v1785 = int64(*(*uint32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[73])))
 	F_bytesToHuman(m, v208+int32(2480), int32(64), v1785)
 	mBase = m.M
 	v1787 = m.ExcPending
@@ -4182,7 +4182,7 @@ L226:
 	}
 L227:
 	;
-	v1818 = int64(*(*uint32)(unsafe.Add(mBase, _consts[442])))
+	v1818 = int64(*(*uint32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[74])))
 	F_bytesToHuman(m, v208+int32(2704), int32(64), v1818)
 	mBase = m.M
 	v1820 = m.ExcPending
@@ -4193,7 +4193,7 @@ L227:
 	}
 L228:
 	;
-	v1825 = *(*int64)(unsafe.Add(mBase, _consts[265]))
+	v1825 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[75]))
 	F_bytesToHuman(m, v208+int32(2640), int32(64), v1825)
 	mBase = m.M
 	v1827 = m.ExcPending
@@ -4213,21 +4213,21 @@ L229:
 L230:
 	;
 	v1834 = int32(0)
-	v1835 = *(*int32)(unsafe.Add(mBase, _consts[442]))
-	v1837 = *(*int32)(unsafe.Add(mBase, _consts[441]))
+	v1835 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[74]))
+	v1837 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[73]))
 	v1838 = *(*float32)(unsafe.Add(mBase, uint32(v1766)+72))
 	v1839 = *(*int32)(unsafe.Add(mBase, uint32(v1766)+52))
 	v1840 = *(*int32)(unsafe.Add(mBase, uint32(v1766)+8))
 	v1841 = *(*int32)(unsafe.Add(mBase, uint32(v1766)+56))
 	v1842 = *(*float32)(unsafe.Add(mBase, uint32(v1766)+68))
-	v1844 = *(*int64)(unsafe.Add(mBase, _consts[444]))
-	v1846 = *(*int64)(unsafe.Add(mBase, _consts[447]))
+	v1844 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[76]))
+	v1846 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[77]))
 	v1847 = int64(*(*uint32)(unsafe.Add(mBase, uint32(v1766)+44)))
-	v1849 = *(*int32)(unsafe.Add(mBase, _consts[252]))
+	v1849 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[78]))
 	goto L233
 L231:
 	;
-	v1831 = F_sdscat(m, v1464, int32(_a727))
+	v1831 = F_sdscat(m, v1464, int32(_a_F_genValkeyInfoString_11))
 	mBase = m.M
 	v1832 = m.ExcPending
 	if v1832 != 0 {
@@ -4242,19 +4242,19 @@ L232:
 L233:
 	;
 	v1850 = *(*int32)(unsafe.Add(mBase, uint32(v1849)+12))
-	v1852 = *(*int32)(unsafe.Add(mBase, _consts[252]))
+	v1852 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[78]))
 	goto L234
 L234:
 	;
 	v1853 = *(*int32)(unsafe.Add(mBase, uint32(v1852)+16))
-	v1856 = *(*int32)(unsafe.Add(mBase, _consts[18]))
+	v1856 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[79]))
 	v1857 = *(*int32)(unsafe.Add(mBase, uint32(v1856)+4))
 	v1858 = *(*int32)(unsafe.Add(mBase, uint32(v1857)+16))
 	v1859 = *(*int32)(unsafe.Add(mBase, uint32(v1857)+12))
 	goto L235
 L235:
 	;
-	v1863 = *(*int32)(unsafe.Add(mBase, _consts[18]))
+	v1863 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[79]))
 	v1864 = *(*int32)(unsafe.Add(mBase, uint32(v1863)))
 	v1865 = *(*int32)(unsafe.Add(mBase, uint32(v1864)+16))
 	v1866 = *(*int32)(unsafe.Add(mBase, uint32(v1864)+12))
@@ -4264,7 +4264,7 @@ L236:
 	v1868 = int64(*(*uint32)(unsafe.Add(mBase, uint32(v1766)+44)))
 	v1869 = int64(*(*uint32)(unsafe.Add(mBase, uint32(v1766)+48)))
 	v1870 = int32(0)
-	v1871 = *(*int64)(unsafe.Add(mBase, _consts[265]))
+	v1871 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[75]))
 	v1872 = *(*float32)(unsafe.Add(mBase, uint32(v1766)+84))
 	v1873 = *(*int32)(unsafe.Add(mBase, uint32(v1766)+88))
 	v1874 = *(*float32)(unsafe.Add(mBase, uint32(v1766)+92))
@@ -4273,9 +4273,9 @@ L236:
 	v1877 = *(*int32)(unsafe.Add(mBase, uint32(v1766)+104))
 	v1878 = *(*float32)(unsafe.Add(mBase, uint32(v1766)+76))
 	v1879 = *(*int32)(unsafe.Add(mBase, uint32(v1766)+80))
-	v1884 = int32(_a69)
-	v1885 = *(*int64)(unsafe.Add(mBase, _consts[266]))
-	v1887 = *(*int32)(unsafe.Add(mBase, _consts[267]))
+	v1884 = int32(_a_F_genValkeyInfoString_42)
+	v1885 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[80]))
+	v1887 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[81]))
 	if base.I64_extend_i32_u(v1887) <= v1885 {
 		v1902 = v1870
 		goto L238
@@ -4286,18 +4286,18 @@ L237:
 	;
 	v1918 = *(*int32)(unsafe.Add(mBase, uint32(v1766)+12))
 	v1919 = int32(0)
-	v1920 = *(*int32)(unsafe.Add(mBase, _consts[267]))
-	v1922 = *(*int32)(unsafe.Add(mBase, _consts[449]))
+	v1920 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[81]))
+	v1922 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[82]))
 	v1923 = *(*int64)(unsafe.Add(mBase, uint32(v1766)+20))
 	v1924 = *(*int64)(unsafe.Add(mBase, uint32(v1766)+28))
 	v1925 = *(*int64)(unsafe.Add(mBase, uint32(v1766)+36))
 	v1926 = *(*int32)(unsafe.Add(mBase, uint32(v1766)+116))
-	v1928 = *(*int32)(unsafe.Add(mBase, _consts[799]))
-	v1930 = *(*int32)(unsafe.Add(mBase, _consts[323]))
+	v1928 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[83]))
+	v1930 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[84]))
 	goto L247
 L238:
 	;
-	v1904 = *(*int32)(unsafe.Add(mBase, _consts[27]))
+	v1904 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[85]))
 	if v1904 == int32(0) {
 		v1911 = v1902
 		goto L243
@@ -4337,7 +4337,7 @@ L243:
 	}
 L244:
 	;
-	v1908 = *(*int32)(unsafe.Add(mBase, _consts[268]))
+	v1908 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[86]))
 	v1909 = F_sdsAllocSize(m, v1908)
 	mBase = m.M
 	v1911 = v1909 + v1902
@@ -4353,7 +4353,7 @@ L246:
 	goto L245
 L247:
 	;
-	v1934 = *(*int32)(unsafe.Add(mBase, _consts[324]))
+	v1934 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[87]))
 	goto L248
 L248:
 	;
@@ -4361,7 +4361,7 @@ L248:
 	*(*int32)(unsafe.Add(mBase, uint32(v208+int32(1712)))) = v1930
 	*(*int32)(unsafe.Add(mBase, uint32(v208+int32(1708)))) = v1928
 	*(*int32)(unsafe.Add(mBase, uint32(v208+int32(1704)))) = v1926
-	*(*int32)(unsafe.Add(mBase, uint32(v208+int32(1700)))) = int32(_a1409)
+	*(*int32)(unsafe.Add(mBase, uint32(v208+int32(1700)))) = int32(_a_F_genValkeyInfoString_47)
 	*(*int64)(unsafe.Add(mBase, uint32(v208+int32(1692)))) = v1925
 	*(*int64)(unsafe.Add(mBase, uint32(v208+int32(1684)))) = v1924
 	*(*int64)(unsafe.Add(mBase, uint32(v208+int32(1676)))) = v1923
@@ -4408,7 +4408,7 @@ L248:
 	*(*int32)(unsafe.Add(mBase, uint32(v208)+1408)) = v1751
 	*(*int32)(unsafe.Add(mBase, uint32(v208)+1420)) = v208 + int32(2704)
 	*(*int32)(unsafe.Add(mBase, uint32(v208)+1412)) = v208 + int32(2016)
-	v2109 = F_sdscatprintf(m, v1833, int32(_a1410), v208+int32(1408))
+	v2109 = F_sdscatprintf(m, v1833, int32(_a_F_genValkeyInfoString_48), v208+int32(1408))
 	mBase = m.M
 	v2110 = m.ExcPending
 	if v2110 != 0 {
@@ -4472,8 +4472,8 @@ L256:
 L257:
 	;
 	v2763 = int32(0)
-	v2765 = *(*int32)(unsafe.Add(mBase, _consts[43]))
-	v2768 = *(*int32)(unsafe.Add(mBase, _consts[116]))
+	v2765 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[88]))
+	v2768 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[89]))
 	if v2768 == v2763 {
 		v2775 = v2763
 		goto L261
@@ -4483,7 +4483,7 @@ L257:
 L258:
 	;
 	v2750 = int32(0)
-	v2751 = *(*int32)(unsafe.Add(mBase, _consts[885]))
+	v2751 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[90]))
 	if v2751 == v2750 {
 		v2762 = v2743
 		goto L257
@@ -4496,16 +4496,16 @@ L259:
 	goto L257
 L260:
 	;
-	v2755 = *(*int32)(unsafe.Add(mBase, _consts[886]))
+	v2755 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[91]))
 	v2762 = base.F64_mul(base.F64_div(base.F64_convert_i32_u(v2755), base.F64_convert_i32_u(v2751)), float64(100))
 	goto L257
 L261:
 	;
 	v2776 = int32(0)
-	v2777 = *(*int32)(unsafe.Add(mBase, _consts[887]))
-	v2779 = *(*int32)(unsafe.Add(mBase, _consts[888]))
-	v2781 = *(*int32)(unsafe.Add(mBase, _consts[482]))
-	v2783 = *(*int64)(unsafe.Add(mBase, _consts[889]))
+	v2777 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[92]))
+	v2779 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[93]))
+	v2781 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[94]))
+	v2783 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[95]))
 	if v2783 == int64(0) {
 		v2795 = v2763
 		goto L263
@@ -4515,20 +4515,20 @@ L261:
 L262:
 	;
 	v2771 = int32(0)
-	v2772 = *(*int32)(unsafe.Add(mBase, _consts[482]))
+	v2772 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[94]))
 	v2775 = base.B2i32(v2772 == v2771)
 	goto L261
 L263:
 	;
 	v2796 = int32(0)
-	v2797 = *(*int32)(unsafe.Add(mBase, _consts[608]))
-	v2799 = *(*int64)(unsafe.Add(mBase, _consts[890]))
-	v2801 = *(*int64)(unsafe.Add(mBase, _consts[891]))
-	v2803 = *(*int64)(unsafe.Add(mBase, _consts[60]))
-	v2805 = *(*int32)(unsafe.Add(mBase, _consts[885]))
-	v2807 = *(*int32)(unsafe.Add(mBase, _consts[886]))
+	v2797 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[96]))
+	v2799 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[97]))
+	v2801 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[98]))
+	v2803 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[99]))
+	v2805 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[90]))
+	v2807 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[91]))
 	v2808 = int64(-1)
-	v2810 = *(*int32)(unsafe.Add(mBase, _consts[38]))
+	v2810 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[100]))
 	if v2810 != int32(1) {
 		v2821 = v2810
 		v2822 = v2808
@@ -4538,7 +4538,7 @@ L263:
 	}
 L264:
 	;
-	v2787 = *(*int32)(unsafe.Add(mBase, _consts[271]))
+	v2787 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[101]))
 	v2788 = m.T0[v2787].(func(*base.Module) int64)(m)
 	mBase = m.M
 	v2791 = base.I64_div_u_s(v2788-v2783, int64(1000))
@@ -4557,30 +4557,30 @@ L266:
 	v2814 = int32(0)
 	v2815 = F___time(m, v2814)
 	mBase = m.M
-	v2817 = *(*int64)(unsafe.Add(mBase, _consts[892]))
-	v2820 = *(*int32)(unsafe.Add(mBase, _consts[38]))
+	v2817 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[102]))
+	v2820 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[100]))
 	v2821 = v2820
 	v2822 = v2815 - v2817
 	goto L265
 L267:
 	;
-	v2825 = int32(_a1411)
+	v2825 = int32(_a_F_genValkeyInfoString_49)
 	goto L269
 L268:
 	;
-	v2825 = int32(_a294)
+	v2825 = int32(_a_F_genValkeyInfoString_50)
 	goto L269
 L269:
 	;
 	v2828 = int32(2)
 	v2830 = int32(0)
-	v2831 = *(*int32)(unsafe.Add(mBase, _consts[27]))
-	v2835 = *(*int64)(unsafe.Add(mBase, _consts[792]))
-	v2837 = *(*int32)(unsafe.Add(mBase, _consts[45]))
-	v2839 = *(*int64)(unsafe.Add(mBase, _consts[486]))
-	v2841 = *(*int64)(unsafe.Add(mBase, _consts[484]))
-	v2843 = *(*int32)(unsafe.Add(mBase, _consts[893]))
-	v2845 = *(*int64)(unsafe.Add(mBase, _consts[489]))
+	v2831 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[85]))
+	v2835 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[103]))
+	v2837 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[104]))
+	v2839 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[105]))
+	v2841 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[106]))
+	v2843 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[107]))
+	v2845 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[108]))
 	if v2821 != v2828 {
 		v2855 = v2821
 		v2856 = v2808
@@ -4610,17 +4610,17 @@ L270:
 	*(*int64)(unsafe.Add(mBase, uint32(v208+int32(1336)))) = v2835
 	*(*int64)(unsafe.Add(mBase, uint32(v208+int32(1344)))) = v2856
 	v2914 = int32(0)
-	v2918 = *(*int64)(unsafe.Add(mBase, _consts[894]))
+	v2918 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[109]))
 	*(*int64)(unsafe.Add(mBase, uint32(v208+int32(1360)))) = v2918
-	v2923 = *(*int64)(unsafe.Add(mBase, _consts[34]))
+	v2923 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[110]))
 	*(*int64)(unsafe.Add(mBase, uint32(v208+int32(1368)))) = v2923
-	v2928 = *(*int32)(unsafe.Add(mBase, _consts[895]))
+	v2928 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[111]))
 	*(*int32)(unsafe.Add(mBase, uint32(v208+int32(1380)))) = v2928
 	*(*int32)(unsafe.Add(mBase, uint32(v208+int32(1384)))) = base.B2i32(v2855 == int32(4))
-	v2938 = *(*int32)(unsafe.Add(mBase, _consts[896]))
+	v2938 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[112]))
 	*(*int32)(unsafe.Add(mBase, uint32(v208+int32(1388)))) = v2938
 	*(*int32)(unsafe.Add(mBase, uint32(v208+int32(1392)))) = base.B2i32(v2855 == int32(5))
-	v2950 = *(*int32)(unsafe.Add(mBase, _consts[793]))
+	v2950 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[113]))
 	if v2950 != 0 {
 		goto L272
 	} else {
@@ -4631,23 +4631,23 @@ L271:
 	v2848 = int32(0)
 	v2849 = F___time(m, v2848)
 	mBase = m.M
-	v2851 = *(*int64)(unsafe.Add(mBase, _consts[40]))
-	v2854 = *(*int32)(unsafe.Add(mBase, _consts[38]))
+	v2851 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[114]))
+	v2854 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[100]))
 	v2855 = v2854
 	v2856 = v2849 - v2851
 	goto L270
 L272:
 	;
-	v2951 = int32(_a1411)
+	v2951 = int32(_a_F_genValkeyInfoString_49)
 	goto L274
 L273:
 	;
-	v2951 = int32(_a294)
+	v2951 = int32(_a_F_genValkeyInfoString_50)
 	goto L274
 L274:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v208+int32(1352)))) = v2951
-	v2958 = *(*int32)(unsafe.Add(mBase, _consts[44]))
+	v2958 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[115]))
 	if v2958|v2765 != 0 {
 		goto L275
 	} else {
@@ -4655,11 +4655,11 @@ L274:
 	}
 L275:
 	;
-	v2960 = int32(_a1411)
+	v2960 = int32(_a_F_genValkeyInfoString_49)
 	goto L277
 L276:
 	;
-	v2960 = int32(_a294)
+	v2960 = int32(_a_F_genValkeyInfoString_50)
 	goto L277
 L277:
 	;
@@ -4668,7 +4668,7 @@ L277:
 	*(*int32)(unsafe.Add(mBase, uint32(v208)+1204)) = v2781
 	*(*int32)(unsafe.Add(mBase, uint32(v208)+1208)) = v2779
 	*(*int32)(unsafe.Add(mBase, uint32(v208)+1212)) = v2777
-	v2969 = F_sdscatprintf(m, v2542, int32(_a1412), v208+int32(1200))
+	v2969 = F_sdscatprintf(m, v2542, int32(_a_F_genValkeyInfoString_51), v208+int32(1200))
 	mBase = m.M
 	v2970 = m.ExcPending
 	if v2970 != 0 {
@@ -4679,7 +4679,7 @@ L277:
 L278:
 	;
 	v2971 = int32(0)
-	v2972 = *(*int32)(unsafe.Add(mBase, _consts[182]))
+	v2972 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[116]))
 	if v2972 == v2971 {
 		v3031 = v2969
 		goto L279
@@ -4689,7 +4689,7 @@ L278:
 L279:
 	;
 	v3037 = int32(0)
-	v3038 = *(*int32)(unsafe.Add(mBase, _consts[116]))
+	v3038 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[89]))
 	if v3038 == v3037 {
 		v3119 = v3031
 		goto L289
@@ -4699,10 +4699,10 @@ L279:
 L280:
 	;
 	v2975 = int32(0)
-	v2976 = *(*int32)(unsafe.Add(mBase, _consts[45]))
-	v2978 = *(*int64)(unsafe.Add(mBase, _consts[788]))
-	v2980 = *(*int64)(unsafe.Add(mBase, _consts[897]))
-	v2982 = *(*int32)(unsafe.Add(mBase, _consts[268]))
+	v2976 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[104]))
+	v2978 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[117]))
+	v2980 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[118]))
+	v2982 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[86]))
 	v2985 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v2982+int32(-1)))))
 	switch v2985 & int32(7) {
 	case 0:
@@ -4721,7 +4721,7 @@ L280:
 	}
 L281:
 	;
-	v3008 = *(*int32)(unsafe.Add(mBase, _consts[58]))
+	v3008 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[119]))
 	goto L287
 L282:
 	;
@@ -4752,11 +4752,11 @@ L287:
 	*(*int32)(unsafe.Add(mBase, uint32(v208+int32(1184)))) = v2976
 	*(*int32)(unsafe.Add(mBase, uint32(v208+int32(1188)))) = v3002
 	*(*int32)(unsafe.Add(mBase, uint32(v208+int32(1192)))) = v3008
-	v3021 = *(*int32)(unsafe.Add(mBase, _consts[898]))
+	v3021 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[120]))
 	*(*int32)(unsafe.Add(mBase, uint32(v208+int32(1196)))) = v3021
 	*(*int64)(unsafe.Add(mBase, uint32(v208)+1168)) = v2980
 	*(*int64)(unsafe.Add(mBase, uint32(v208)+1176)) = v2978
-	v3028 = F_sdscatprintf(m, v2969, int32(_a1413), v208+int32(1168))
+	v3028 = F_sdscatprintf(m, v2969, int32(_a_F_genValkeyInfoString_52), v208+int32(1168))
 	mBase = m.M
 	v3029 = m.ExcPending
 	if v3029 != 0 {
@@ -4783,7 +4783,7 @@ L289:
 	}
 L290:
 	;
-	v3042 = *(*int64)(unsafe.Add(mBase, _consts[396]))
+	v3042 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[121]))
 	if v3042 == int64(0) {
 		goto L292
 	} else {
@@ -4794,8 +4794,8 @@ L291:
 	v3082 = int32(0)
 	v3083 = F___time(m, v3082)
 	mBase = m.M
-	v3085 = *(*int64)(unsafe.Add(mBase, _consts[397]))
-	v3088 = *(*int64)(unsafe.Add(mBase, _consts[483]))
+	v3085 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[122]))
+	v3088 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[123]))
 	if v3083 == v3088 {
 		v3095 = int64(1)
 		goto L302
@@ -4805,7 +4805,7 @@ L291:
 L292:
 	;
 	v3053 = int32(0)
-	v3054 = *(*int64)(unsafe.Add(mBase, _consts[485]))
+	v3054 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[124]))
 	if base.B2i32(v3054 == int64(0)) == v3053 {
 		goto L294
 	} else {
@@ -4813,13 +4813,13 @@ L292:
 	}
 L293:
 	;
-	v3046 = *(*int64)(unsafe.Add(mBase, _consts[397]))
+	v3046 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[122]))
 	v3080 = v3042 - v3046
 	v3081 = base.F64_mul(base.F64_div(base.F64_convert_i64_s(v3046), base.F64_convert_i64_s(v3042)), float64(100))
 	goto L291
 L294:
 	;
-	v3062 = *(*int64)(unsafe.Add(mBase, _consts[397]))
+	v3062 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[122]))
 	v3063 = v3054 - v3062
 	v3064 = int64(1)
 	if v3064 < v3063 {
@@ -4865,15 +4865,15 @@ L301:
 L302:
 	;
 	v3098 = int32(0)
-	v3099 = *(*int64)(unsafe.Add(mBase, _consts[485]))
+	v3099 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[124]))
 	*(*int64)(unsafe.Add(mBase, uint32(v208+int32(1136)))) = v3099
 	*(*int64)(unsafe.Add(mBase, uint32(v208+int32(1144)))) = v3085
 	*(*float64)(unsafe.Add(mBase, uint32(v208+int32(1152)))) = v3081
 	*(*int64)(unsafe.Add(mBase, uint32(v208+int32(1160)))) = v3095
 	*(*int64)(unsafe.Add(mBase, uint32(v208)+1120)) = v3088
-	v3112 = *(*int64)(unsafe.Add(mBase, _consts[396]))
+	v3112 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[121]))
 	*(*int64)(unsafe.Add(mBase, uint32(v208)+1128)) = v3112
-	v3117 = F_sdscatprintf(m, v3031, int32(_a1414), v208+int32(1120))
+	v3117 = F_sdscatprintf(m, v3031, int32(_a_F_genValkeyInfoString_53), v208+int32(1120))
 	mBase = m.M
 	v3118 = m.ExcPending
 	if v3118 != 0 {
@@ -4919,7 +4919,7 @@ L307:
 	goto L24
 L308:
 	;
-	v3553 = *(*int64)(unsafe.Add(mBase, _consts[899]))
+	v3553 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[125]))
 	if v3553 == int64(0) {
 		v3560 = v3541
 		goto L310
@@ -4928,7 +4928,7 @@ L308:
 	}
 L309:
 	;
-	v3548 = *(*int32)(unsafe.Add(mBase, _consts[271]))
+	v3548 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[101]))
 	v3549 = m.T0[v3548].(func(*base.Module) int64)(m)
 	mBase = m.M
 	v3551 = v3549 - v3544
@@ -4943,7 +4943,7 @@ L310:
 	}
 L311:
 	;
-	v3557 = *(*int32)(unsafe.Add(mBase, _consts[271]))
+	v3557 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[101]))
 	v3558 = m.T0[v3557].(func(*base.Module) int64)(m)
 	mBase = m.M
 	v3560 = v3558 - v3553
@@ -4953,112 +4953,112 @@ L312:
 	v3567 = int32(1)
 	v3568 = v3346 + v3567
 	v3569 = int32(0)
-	v3570 = *(*int64)(unsafe.Add(mBase, _consts[900]))
-	v3572 = *(*int64)(unsafe.Add(mBase, _consts[690]))
-	v3574 = *(*int64)(unsafe.Add(mBase, _consts[901]))
-	v3576 = *(*int64)(unsafe.Add(mBase, _consts[902]))
-	v3578 = *(*int64)(unsafe.Add(mBase, _consts[903]))
-	v3580 = *(*int64)(unsafe.Add(mBase, _consts[904]))
-	v3582 = *(*int64)(unsafe.Add(mBase, _consts[905]))
-	v3584 = *(*int64)(unsafe.Add(mBase, _consts[906]))
-	v3586 = *(*int64)(unsafe.Add(mBase, _consts[907]))
-	v3588 = *(*int64)(unsafe.Add(mBase, _consts[908]))
-	v3590 = *(*int64)(unsafe.Add(mBase, _consts[909]))
-	v3592 = *(*int64)(unsafe.Add(mBase, _consts[910]))
-	v3594 = *(*int64)(unsafe.Add(mBase, _consts[911]))
-	v3596 = *(*int64)(unsafe.Add(mBase, _consts[912]))
-	v3598 = *(*int64)(unsafe.Add(mBase, _consts[913]))
-	v3600 = *(*int64)(unsafe.Add(mBase, _consts[914]))
-	v3602 = *(*int64)(unsafe.Add(mBase, _consts[915]))
-	v3604 = *(*int64)(unsafe.Add(mBase, _consts[916]))
-	v3606 = *(*int64)(unsafe.Add(mBase, _consts[917]))
-	v3608 = *(*int64)(unsafe.Add(mBase, _consts[918]))
-	v3610 = *(*int64)(unsafe.Add(mBase, _consts[919]))
-	v3612 = *(*int64)(unsafe.Add(mBase, _consts[920]))
-	v3614 = *(*int64)(unsafe.Add(mBase, _consts[921]))
-	v3616 = *(*int64)(unsafe.Add(mBase, _consts[922]))
-	v3618 = *(*int64)(unsafe.Add(mBase, _consts[923]))
-	v3620 = *(*int64)(unsafe.Add(mBase, _consts[924]))
-	v3622 = *(*int64)(unsafe.Add(mBase, _consts[925]))
-	v3624 = *(*int64)(unsafe.Add(mBase, _consts[926]))
-	v3626 = *(*int64)(unsafe.Add(mBase, _consts[927]))
-	v3628 = *(*int64)(unsafe.Add(mBase, _consts[928]))
-	v3630 = *(*int64)(unsafe.Add(mBase, _consts[929]))
-	v3632 = *(*int64)(unsafe.Add(mBase, _consts[930]))
-	v3634 = *(*int64)(unsafe.Add(mBase, _consts[931]))
-	v3636 = *(*int64)(unsafe.Add(mBase, _consts[932]))
-	v3638 = *(*int64)(unsafe.Add(mBase, _consts[933]))
-	v3640 = *(*int64)(unsafe.Add(mBase, _consts[934]))
-	v3642 = *(*int64)(unsafe.Add(mBase, _consts[935]))
-	v3644 = *(*int64)(unsafe.Add(mBase, _consts[936]))
-	v3646 = *(*int64)(unsafe.Add(mBase, _consts[937]))
-	v3648 = *(*int64)(unsafe.Add(mBase, _consts[938]))
-	v3650 = *(*int64)(unsafe.Add(mBase, _consts[939]))
-	v3652 = *(*int64)(unsafe.Add(mBase, _consts[940]))
-	v3654 = *(*int64)(unsafe.Add(mBase, _consts[941]))
-	v3656 = *(*int64)(unsafe.Add(mBase, _consts[942]))
-	v3658 = *(*int64)(unsafe.Add(mBase, _consts[943]))
-	v3660 = *(*int64)(unsafe.Add(mBase, _consts[944]))
-	v3662 = *(*int64)(unsafe.Add(mBase, _consts[945]))
-	v3664 = *(*int64)(unsafe.Add(mBase, _consts[946]))
-	v3666 = *(*int64)(unsafe.Add(mBase, _consts[947]))
-	v3668 = *(*int64)(unsafe.Add(mBase, _consts[948]))
-	v3670 = *(*int64)(unsafe.Add(mBase, _consts[949]))
-	v3672 = *(*int64)(unsafe.Add(mBase, _consts[950]))
-	v3674 = *(*int64)(unsafe.Add(mBase, _consts[951]))
-	v3676 = *(*int64)(unsafe.Add(mBase, _consts[952]))
-	v3678 = *(*int64)(unsafe.Add(mBase, _consts[953]))
-	v3680 = *(*int64)(unsafe.Add(mBase, _consts[954]))
-	v3682 = *(*int64)(unsafe.Add(mBase, _consts[955]))
-	v3684 = *(*int64)(unsafe.Add(mBase, _consts[956]))
-	v3686 = *(*int64)(unsafe.Add(mBase, _consts[957]))
-	v3688 = *(*int64)(unsafe.Add(mBase, _consts[958]))
-	v3690 = *(*int64)(unsafe.Add(mBase, _consts[959]))
-	v3692 = *(*int64)(unsafe.Add(mBase, _consts[960]))
-	v3694 = *(*int64)(unsafe.Add(mBase, _consts[961]))
-	v3696 = *(*int64)(unsafe.Add(mBase, _consts[962]))
-	v3698 = *(*int64)(unsafe.Add(mBase, _consts[963]))
-	v3700 = *(*int64)(unsafe.Add(mBase, _consts[964]))
-	v3702 = *(*int64)(unsafe.Add(mBase, _consts[665]))
-	v3704 = *(*int64)(unsafe.Add(mBase, _consts[666]))
-	v3706 = *(*int64)(unsafe.Add(mBase, _consts[667]))
-	v3708 = *(*int64)(unsafe.Add(mBase, _consts[668]))
-	v3710 = *(*int64)(unsafe.Add(mBase, _consts[669]))
-	v3712 = *(*int64)(unsafe.Add(mBase, _consts[670]))
-	v3714 = *(*int64)(unsafe.Add(mBase, _consts[671]))
-	v3716 = *(*int64)(unsafe.Add(mBase, _consts[672]))
-	v3718 = *(*int64)(unsafe.Add(mBase, _consts[673]))
-	v3720 = *(*int64)(unsafe.Add(mBase, _consts[674]))
-	v3722 = *(*int64)(unsafe.Add(mBase, _consts[675]))
-	v3724 = *(*int64)(unsafe.Add(mBase, _consts[676]))
-	v3726 = *(*int64)(unsafe.Add(mBase, _consts[677]))
-	v3728 = *(*int64)(unsafe.Add(mBase, _consts[678]))
-	v3730 = *(*int64)(unsafe.Add(mBase, _consts[679]))
-	v3732 = *(*int64)(unsafe.Add(mBase, _consts[680]))
-	v3734 = *(*int64)(unsafe.Add(mBase, _consts[410]))
-	v3736 = *(*int64)(unsafe.Add(mBase, _consts[965]))
-	v3738 = *(*int64)(unsafe.Add(mBase, _consts[557]))
-	v3740 = *(*int64)(unsafe.Add(mBase, _consts[411]))
-	v3742 = *(*int64)(unsafe.Add(mBase, _consts[430]))
-	v3744 = *(*int64)(unsafe.Add(mBase, _consts[412]))
-	v3746 = *(*int64)(unsafe.Add(mBase, _consts[526]))
-	v3748 = *(*int64)(unsafe.Add(mBase, _consts[966]))
-	v3750 = *(*int64)(unsafe.Add(mBase, _consts[967]))
-	v3752 = *(*int64)(unsafe.Add(mBase, _consts[968]))
-	v3754 = *(*int64)(unsafe.Add(mBase, _consts[969]))
-	v3756 = *(*int64)(unsafe.Add(mBase, _consts[970]))
-	v3758 = *(*int64)(unsafe.Add(mBase, _consts[971]))
-	v3760 = *(*float64)(unsafe.Add(mBase, _consts[972]))
-	v3762 = *(*float64)(unsafe.Add(mBase, _consts[973]))
-	v3764 = *(*int64)(unsafe.Add(mBase, _consts[974]))
-	v3766 = *(*int64)(unsafe.Add(mBase, _consts[975]))
-	v3768 = *(*int64)(unsafe.Add(mBase, _consts[284]))
-	v3770 = *(*int64)(unsafe.Add(mBase, _consts[438]))
-	v3772 = *(*int64)(unsafe.Add(mBase, _consts[260]))
-	v3774 = *(*int64)(unsafe.Add(mBase, _consts[286]))
-	v3776 = *(*int64)(unsafe.Add(mBase, _consts[976]))
-	v3778 = *(*int64)(unsafe.Add(mBase, _consts[977]))
-	v3780 = *(*int32)(unsafe.Add(mBase, _consts[131]))
+	v3570 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[126]))
+	v3572 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[127]))
+	v3574 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[128]))
+	v3576 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[129]))
+	v3578 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[130]))
+	v3580 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[131]))
+	v3582 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[132]))
+	v3584 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[133]))
+	v3586 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[134]))
+	v3588 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[135]))
+	v3590 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[136]))
+	v3592 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[137]))
+	v3594 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[138]))
+	v3596 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[139]))
+	v3598 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[140]))
+	v3600 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[141]))
+	v3602 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[142]))
+	v3604 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[143]))
+	v3606 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[144]))
+	v3608 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[145]))
+	v3610 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[146]))
+	v3612 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[147]))
+	v3614 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[148]))
+	v3616 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[149]))
+	v3618 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[150]))
+	v3620 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[151]))
+	v3622 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[152]))
+	v3624 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[153]))
+	v3626 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[154]))
+	v3628 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[155]))
+	v3630 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[156]))
+	v3632 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[157]))
+	v3634 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[158]))
+	v3636 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[159]))
+	v3638 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[160]))
+	v3640 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[161]))
+	v3642 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[162]))
+	v3644 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[163]))
+	v3646 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[164]))
+	v3648 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[165]))
+	v3650 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[166]))
+	v3652 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[167]))
+	v3654 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[168]))
+	v3656 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[169]))
+	v3658 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[170]))
+	v3660 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[171]))
+	v3662 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[172]))
+	v3664 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[173]))
+	v3666 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[174]))
+	v3668 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[175]))
+	v3670 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[176]))
+	v3672 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[177]))
+	v3674 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[178]))
+	v3676 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[179]))
+	v3678 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[180]))
+	v3680 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[181]))
+	v3682 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[182]))
+	v3684 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[183]))
+	v3686 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[184]))
+	v3688 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[185]))
+	v3690 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[186]))
+	v3692 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[187]))
+	v3694 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[188]))
+	v3696 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[189]))
+	v3698 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[190]))
+	v3700 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[191]))
+	v3702 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[192]))
+	v3704 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[193]))
+	v3706 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[194]))
+	v3708 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[195]))
+	v3710 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[196]))
+	v3712 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[197]))
+	v3714 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[198]))
+	v3716 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[199]))
+	v3718 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[200]))
+	v3720 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[201]))
+	v3722 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[202]))
+	v3724 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[203]))
+	v3726 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[204]))
+	v3728 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[205]))
+	v3730 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[206]))
+	v3732 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[207]))
+	v3734 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[208]))
+	v3736 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[209]))
+	v3738 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[210]))
+	v3740 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[211]))
+	v3742 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[212]))
+	v3744 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[213]))
+	v3746 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[214]))
+	v3748 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[215]))
+	v3750 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[216]))
+	v3752 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[217]))
+	v3754 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[218]))
+	v3756 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[219]))
+	v3758 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[220]))
+	v3760 = *(*float64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[221]))
+	v3762 = *(*float64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[222]))
+	v3764 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[223]))
+	v3766 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[224]))
+	v3768 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[225]))
+	v3770 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[226]))
+	v3772 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[227]))
+	v3774 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[228]))
+	v3776 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[229]))
+	v3778 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[230]))
+	v3780 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[231]))
 	v3781 = *(*int32)(unsafe.Add(mBase, uint32(v3780)+12))
 	if v3781 == v3567 {
 		goto L316
@@ -5067,7 +5067,7 @@ L312:
 	}
 L313:
 	;
-	v3564 = F_sdscat(m, v3340, int32(_a727))
+	v3564 = F_sdscat(m, v3340, int32(_a_F_genValkeyInfoString_11))
 	mBase = m.M
 	v3565 = m.ExcPending
 	if v3565 != 0 {
@@ -5082,10 +5082,10 @@ L314:
 L315:
 	;
 	v3792 = int32(0)
-	v3793 = *(*int32)(unsafe.Add(mBase, _consts[132]))
+	v3793 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[232]))
 	v3794 = *(*int32)(unsafe.Add(mBase, uint32(v3793)+16))
 	v3795 = *(*int32)(unsafe.Add(mBase, uint32(v3793)+12))
-	v3797 = *(*int32)(unsafe.Add(mBase, _consts[120]))
+	v3797 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[233]))
 	v3798 = *(*int32)(unsafe.Add(mBase, uint32(v3797)+12))
 	if v3798 == int32(1) {
 		goto L321
@@ -5119,12 +5119,12 @@ L319:
 L320:
 	;
 	v3809 = int32(0)
-	v3810 = *(*int64)(unsafe.Add(mBase, _consts[978]))
-	v3812 = *(*int64)(unsafe.Add(mBase, _consts[979]))
-	v3814 = *(*int32)(unsafe.Add(mBase, _consts[804]))
+	v3810 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[234]))
+	v3812 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[235]))
+	v3814 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[236]))
 	v3815 = *(*int32)(unsafe.Add(mBase, uint32(v3814)+16))
 	v3816 = *(*int32)(unsafe.Add(mBase, uint32(v3814)+12))
-	v3821 = *(*int32)(unsafe.Add(mBase, _consts[980]))
+	v3821 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[237]))
 	if v3821 == v3809 {
 		v3827 = v3809
 		goto L326
@@ -5158,12 +5158,12 @@ L324:
 L325:
 	;
 	v3828 = int32(0)
-	v3829 = *(*int64)(unsafe.Add(mBase, _consts[981]))
-	v3831 = *(*int64)(unsafe.Add(mBase, _consts[982]))
-	v3833 = *(*int64)(unsafe.Add(mBase, _consts[983]))
-	v3835 = *(*int64)(unsafe.Add(mBase, _consts[984]))
-	v3837 = *(*int64)(unsafe.Add(mBase, _consts[985]))
-	v3840 = *(*int32)(unsafe.Add(mBase, _consts[986]))
+	v3829 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[238]))
+	v3831 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[239]))
+	v3833 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[240]))
+	v3835 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[241]))
+	v3837 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[242]))
+	v3840 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[243]))
 	if v3840 != 0 {
 		goto L329
 	} else {
@@ -5180,7 +5180,7 @@ L327:
 	goto L326
 L328:
 	;
-	v3845 = *(*int64)(unsafe.Add(mBase, _consts[987]))
+	v3845 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[244]))
 	goto L331
 L329:
 	;
@@ -5194,7 +5194,7 @@ L330:
 	goto L328
 L331:
 	;
-	v3848 = *(*int32)(unsafe.Add(mBase, _consts[988]))
+	v3848 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[245]))
 	if v3848 != 0 {
 		goto L333
 	} else {
@@ -5203,57 +5203,57 @@ L331:
 L332:
 	;
 	v3852 = int32(0)
-	v3853 = *(*int64)(unsafe.Add(mBase, _consts[989]))
-	v3855 = *(*int64)(unsafe.Add(mBase, _consts[990]))
-	v3857 = *(*int64)(unsafe.Add(mBase, _consts[991]))
-	v3859 = *(*int64)(unsafe.Add(mBase, _consts[992]))
-	v3861 = *(*int64)(unsafe.Add(mBase, _consts[993]))
-	v3863 = *(*int64)(unsafe.Add(mBase, _consts[994]))
-	v3865 = *(*int64)(unsafe.Add(mBase, _consts[995]))
-	v3867 = *(*int64)(unsafe.Add(mBase, _consts[996]))
-	v3869 = *(*int64)(unsafe.Add(mBase, _consts[997]))
-	v3871 = *(*int64)(unsafe.Add(mBase, _consts[998]))
-	v3873 = *(*int64)(unsafe.Add(mBase, _consts[999]))
-	v3875 = *(*int64)(unsafe.Add(mBase, _consts[1000]))
-	v3877 = *(*int64)(unsafe.Add(mBase, _consts[1001]))
-	v3879 = *(*int64)(unsafe.Add(mBase, _consts[1002]))
-	v3881 = *(*int64)(unsafe.Add(mBase, _consts[1003]))
-	v3883 = *(*int64)(unsafe.Add(mBase, _consts[1004]))
-	v3885 = *(*int64)(unsafe.Add(mBase, _consts[1005]))
-	v3887 = *(*int64)(unsafe.Add(mBase, _consts[1006]))
-	v3889 = *(*int64)(unsafe.Add(mBase, _consts[1007]))
-	v3891 = *(*int64)(unsafe.Add(mBase, _consts[1008]))
-	v3893 = *(*int64)(unsafe.Add(mBase, _consts[1009]))
-	v3895 = *(*int64)(unsafe.Add(mBase, _consts[1010]))
-	v3897 = *(*int64)(unsafe.Add(mBase, _consts[1011]))
-	v3899 = *(*int64)(unsafe.Add(mBase, _consts[1012]))
-	v3901 = *(*int64)(unsafe.Add(mBase, _consts[1013]))
-	v3903 = *(*int64)(unsafe.Add(mBase, _consts[1014]))
-	v3905 = *(*int64)(unsafe.Add(mBase, _consts[1015]))
-	v3907 = *(*int64)(unsafe.Add(mBase, _consts[1016]))
-	v3909 = *(*int64)(unsafe.Add(mBase, _consts[1017]))
-	v3911 = *(*int64)(unsafe.Add(mBase, _consts[1018]))
-	v3913 = *(*int64)(unsafe.Add(mBase, _consts[1019]))
-	v3915 = *(*int64)(unsafe.Add(mBase, _consts[1020]))
-	v3917 = *(*int64)(unsafe.Add(mBase, _consts[1021]))
-	v3919 = *(*int64)(unsafe.Add(mBase, _consts[844]))
-	v3921 = *(*int64)(unsafe.Add(mBase, _consts[1022]))
-	v3923 = *(*int64)(unsafe.Add(mBase, _consts[409]))
-	v3925 = *(*int64)(unsafe.Add(mBase, _consts[1023]))
-	v3927 = *(*int64)(unsafe.Add(mBase, _consts[1024]))
-	v3929 = *(*int64)(unsafe.Add(mBase, _consts[1025]))
-	v3931 = *(*int64)(unsafe.Add(mBase, _consts[221]))
-	v3933 = *(*int64)(unsafe.Add(mBase, _consts[1026]))
-	v3935 = *(*int64)(unsafe.Add(mBase, _consts[1027]))
-	v3937 = *(*int64)(unsafe.Add(mBase, _consts[1028]))
-	v3939 = *(*int64)(unsafe.Add(mBase, _consts[1029]))
-	v3941 = *(*int64)(unsafe.Add(mBase, _consts[1030]))
-	v3943 = *(*int64)(unsafe.Add(mBase, _consts[1031]))
-	v3945 = *(*int64)(unsafe.Add(mBase, _consts[684]))
-	v3947 = *(*int64)(unsafe.Add(mBase, _consts[683]))
-	v3949 = *(*int64)(unsafe.Add(mBase, _consts[1032]))
-	v3951 = *(*int64)(unsafe.Add(mBase, _consts[1033]))
-	v3955 = *(*int64)(unsafe.Add(mBase, _consts[1034]))
+	v3853 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[246]))
+	v3855 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[247]))
+	v3857 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[248]))
+	v3859 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[249]))
+	v3861 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[250]))
+	v3863 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[251]))
+	v3865 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[252]))
+	v3867 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[253]))
+	v3869 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[254]))
+	v3871 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[255]))
+	v3873 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[256]))
+	v3875 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[257]))
+	v3877 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[258]))
+	v3879 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[259]))
+	v3881 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[260]))
+	v3883 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[261]))
+	v3885 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[262]))
+	v3887 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[263]))
+	v3889 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[264]))
+	v3891 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[265]))
+	v3893 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[266]))
+	v3895 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[267]))
+	v3897 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[268]))
+	v3899 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[269]))
+	v3901 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[270]))
+	v3903 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[271]))
+	v3905 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[272]))
+	v3907 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[273]))
+	v3909 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[274]))
+	v3911 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[275]))
+	v3913 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[276]))
+	v3915 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[277]))
+	v3917 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[278]))
+	v3919 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[279]))
+	v3921 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[280]))
+	v3923 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[281]))
+	v3925 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[282]))
+	v3927 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[283]))
+	v3929 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[284]))
+	v3931 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[285]))
+	v3933 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[286]))
+	v3935 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[287]))
+	v3937 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[288]))
+	v3939 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[289]))
+	v3941 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[290]))
+	v3943 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[291]))
+	v3945 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[292]))
+	v3947 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[293]))
+	v3949 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[294]))
+	v3951 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[295]))
+	v3955 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[296]))
 	*(*int64)(unsafe.Add(mBase, uint32(v3339+int32(1096)))) = v3955
 	*(*int64)(unsafe.Add(mBase, uint32(v3339+int32(1088)))) = v3951
 	*(*int64)(unsafe.Add(mBase, uint32(v3339+int32(1080)))) = v3949
@@ -5338,7 +5338,7 @@ L332:
 	*(*int64)(unsafe.Add(mBase, uint32(v3339+int32(1104)))) = v4313
 	*(*int64)(unsafe.Add(mBase, uint32(v3339)+600)) = v3572
 	*(*int64)(unsafe.Add(mBase, uint32(v3339)+592)) = v3570
-	v4320 = F_sdscatprintf(m, v3566, int32(_a1415), v3339+int32(592))
+	v4320 = F_sdscatprintf(m, v3566, int32(_a_F_genValkeyInfoString_54), v3339+int32(592))
 	mBase = m.M
 	v4321 = m.ExcPending
 	if v4321 != 0 {
@@ -5359,19 +5359,19 @@ L334:
 L335:
 	;
 	v4326 = int32(0)
-	v4327 = *(*int64)(unsafe.Add(mBase, _consts[1035]))
+	v4327 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[297]))
 	*(*int64)(unsafe.Add(mBase, uint32(v3339+int32(560)))) = v4327
-	v4334 = *(*int64)(unsafe.Add(mBase, _consts[1036]))
+	v4334 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[298]))
 	*(*int64)(unsafe.Add(mBase, uint32(v3339+int32(568)))) = v4334
-	v4341 = *(*int64)(unsafe.Add(mBase, _consts[1037]))
+	v4341 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[299]))
 	*(*int64)(unsafe.Add(mBase, uint32(v3339+int32(576)))) = v4341
-	v4348 = *(*int64)(unsafe.Add(mBase, _consts[1038]))
+	v4348 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[300]))
 	*(*int64)(unsafe.Add(mBase, uint32(v3339+int32(584)))) = v4348
-	v4351 = *(*int64)(unsafe.Add(mBase, _consts[1039]))
+	v4351 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[301]))
 	*(*int64)(unsafe.Add(mBase, uint32(v3339)+544)) = v4351
-	v4354 = *(*int64)(unsafe.Add(mBase, _consts[1040]))
+	v4354 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[302]))
 	*(*int64)(unsafe.Add(mBase, uint32(v3339)+552)) = v4354
-	v4359 = F_sdscatprintf(m, v4320, int32(_a1416), v3339+int32(544))
+	v4359 = F_sdscatprintf(m, v4320, int32(_a_F_genValkeyInfoString_55), v3339+int32(544))
 	mBase = m.M
 	v4360 = m.ExcPending
 	if v4360 != 0 {
@@ -5425,7 +5425,7 @@ L339:
 	goto L22
 L340:
 	;
-	v4785 = *(*int32)(unsafe.Add(mBase, _consts[64]))
+	v4785 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[303]))
 	if v4785 != 0 {
 		goto L343
 	} else {
@@ -5433,7 +5433,7 @@ L340:
 	}
 L341:
 	;
-	v4779 = F_sdscat(m, v4575, int32(_a727))
+	v4779 = F_sdscat(m, v4575, int32(_a_F_genValkeyInfoString_11))
 	mBase = m.M
 	v4780 = m.ExcPending
 	if v4780 != 0 {
@@ -5447,16 +5447,16 @@ L342:
 	goto L340
 L343:
 	;
-	v4786 = int32(_a201)
+	v4786 = int32(_a_F_genValkeyInfoString_56)
 	goto L345
 L344:
 	;
-	v4786 = int32(_a200)
+	v4786 = int32(_a_F_genValkeyInfoString_57)
 	goto L345
 L345:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v4574)+528)) = v4786
-	v4791 = F_sdscatprintf(m, v4781, int32(_a1417), v4574+int32(528))
+	v4791 = F_sdscatprintf(m, v4781, int32(_a_F_genValkeyInfoString_58), v4574+int32(528))
 	mBase = m.M
 	v4792 = m.ExcPending
 	if v4792 != 0 {
@@ -5467,7 +5467,7 @@ L345:
 L346:
 	;
 	v4793 = int32(0)
-	v4794 = *(*int32)(unsafe.Add(mBase, _consts[64]))
+	v4794 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[303]))
 	if v4794 == v4793 {
 		v4962 = v4791
 		goto L347
@@ -5476,10 +5476,10 @@ L346:
 	}
 L347:
 	;
-	v4972 = *(*int32)(unsafe.Add(mBase, _consts[188]))
+	v4972 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[58]))
 	v4973 = *(*int32)(unsafe.Add(mBase, uint32(v4972)+20))
 	*(*int32)(unsafe.Add(mBase, uint32(v4574)+384)) = v4973
-	v4978 = F_sdscatprintf(m, v4962, int32(_a1418), v4574+int32(384))
+	v4978 = F_sdscatprintf(m, v4962, int32(_a_F_genValkeyInfoString_59), v4574+int32(384))
 	mBase = m.M
 	v4979 = m.ExcPending
 	if v4979 != 0 {
@@ -5489,7 +5489,7 @@ L347:
 	}
 L348:
 	;
-	v4798 = *(*int32)(unsafe.Add(mBase, _consts[133]))
+	v4798 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[304]))
 	if v4798 != 0 {
 		goto L350
 	} else {
@@ -5500,13 +5500,13 @@ L349:
 	*(*int32)(unsafe.Add(mBase, uint32(v4574+int32(496)))) = base.B2i32(v4840 == int32(13))
 	*(*int64)(unsafe.Add(mBase, uint32(v4574+int32(504)))) = v4839
 	*(*int64)(unsafe.Add(mBase, uint32(v4574+int32(512)))) = v4838
-	v4859 = *(*int64)(unsafe.Add(mBase, _consts[570]))
+	v4859 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[305]))
 	*(*int64)(unsafe.Add(mBase, uint32(v4574+int32(520)))) = v4859
 	*(*int32)(unsafe.Add(mBase, uint32(v4574)+480)) = v4794
 	*(*int32)(unsafe.Add(mBase, uint32(v4574)+484)) = v4842
 	*(*int32)(unsafe.Add(mBase, uint32(v4574)+488)) = v4841
 	*(*int32)(unsafe.Add(mBase, uint32(v4574)+492)) = v4843
-	v4868 = F_sdscatprintf(m, v4791, int32(_a1419), v4574+int32(480))
+	v4868 = F_sdscatprintf(m, v4791, int32(_a_F_genValkeyInfoString_60), v4574+int32(480))
 	mBase = m.M
 	v4869 = m.ExcPending
 	if v4869 != 0 {
@@ -5516,7 +5516,7 @@ L349:
 	}
 L350:
 	;
-	v4822 = *(*int32)(unsafe.Add(mBase, _consts[518]))
+	v4822 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[306]))
 	if v4822 == int32(14) {
 		goto L358
 	} else {
@@ -5524,7 +5524,7 @@ L350:
 	}
 L351:
 	;
-	v4800 = *(*int32)(unsafe.Add(mBase, _consts[134]))
+	v4800 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[307]))
 	if v4800 != 0 {
 		goto L353
 	} else {
@@ -5532,7 +5532,7 @@ L351:
 	}
 L352:
 	;
-	v4812 = *(*int32)(unsafe.Add(mBase, _consts[518]))
+	v4812 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[306]))
 	if v4812 == int32(14) {
 		goto L355
 	} else {
@@ -5554,15 +5554,15 @@ L354:
 	goto L352
 L355:
 	;
-	v4815 = int32(_a1420)
+	v4815 = int32(_a_F_genValkeyInfoString_61)
 	goto L357
 L356:
 	;
-	v4815 = int32(_a1421)
+	v4815 = int32(_a_F_genValkeyInfoString_62)
 	goto L357
 L357:
 	;
-	v4817 = *(*int32)(unsafe.Add(mBase, _consts[520]))
+	v4817 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[308]))
 	v4838 = v4806
 	v4839 = v4807
 	v4840 = v4812
@@ -5572,19 +5572,19 @@ L357:
 	goto L349
 L358:
 	;
-	v4825 = int32(_a1420)
+	v4825 = int32(_a_F_genValkeyInfoString_61)
 	goto L360
 L359:
 	;
-	v4825 = int32(_a1421)
+	v4825 = int32(_a_F_genValkeyInfoString_62)
 	goto L360
 L360:
 	;
 	v4826 = int32(0)
-	v4827 = *(*int64)(unsafe.Add(mBase, _consts[37]))
-	v4829 = *(*int32)(unsafe.Add(mBase, _consts[133]))
+	v4827 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[1]))
+	v4829 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[304]))
 	v4830 = *(*int64)(unsafe.Add(mBase, uint32(v4829)+88))
-	v4834 = *(*int32)(unsafe.Add(mBase, _consts[520]))
+	v4834 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[308]))
 	v4835 = *(*int32)(unsafe.Add(mBase, uint32(v4798)+104))
 	v4836 = *(*int64)(unsafe.Add(mBase, uint32(v4835)+40))
 	v4837 = *(*int64)(unsafe.Add(mBase, uint32(v4835)+48))
@@ -5597,7 +5597,7 @@ L360:
 	goto L349
 L361:
 	;
-	v4871 = *(*int32)(unsafe.Add(mBase, _consts[518]))
+	v4871 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[306]))
 	if v4871 != int32(13) {
 		v4919 = v4871
 		v4920 = v4868
@@ -5615,7 +5615,7 @@ L362:
 	}
 L363:
 	;
-	v4877 = *(*int32)(unsafe.Add(mBase, _consts[552]))
+	v4877 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[309]))
 	if v4877 != 0 {
 		goto L364
 	} else {
@@ -5623,11 +5623,11 @@ L363:
 	}
 L364:
 	;
-	v4878 = int32(_a1056)
+	v4878 = int32(_a_F_genValkeyInfoString_63)
 	goto L366
 L365:
 	;
-	v4878 = int32(_a1422)
+	v4878 = int32(_a_F_genValkeyInfoString_64)
 	goto L366
 L366:
 	;
@@ -5644,11 +5644,11 @@ L367:
 	*(*int64)(unsafe.Add(mBase, uint32(v4574)+432)) = v4883
 	*(*int64)(unsafe.Add(mBase, uint32(v4574+int32(448)))) = v4883 - v4879
 	v4906 = int32(0)
-	v4907 = *(*int64)(unsafe.Add(mBase, _consts[37]))
-	v4909 = *(*int64)(unsafe.Add(mBase, _consts[523]))
+	v4907 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[1]))
+	v4909 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[310]))
 	v4910 = v4907 - v4909
 	*(*uint32)(unsafe.Add(mBase, uint32(v4574+int32(464)))) = uint32(v4910)
-	v4915 = F_sdscatprintf(m, v4868, int32(_a1423), v4574+int32(432))
+	v4915 = F_sdscatprintf(m, v4868, int32(_a_F_genValkeyInfoString_65), v4574+int32(432))
 	mBase = m.M
 	v4916 = m.ExcPending
 	if v4916 != 0 {
@@ -5662,11 +5662,11 @@ L368:
 	goto L367
 L369:
 	;
-	v4882 = int32(_a975)
+	v4882 = int32(_a_F_genValkeyInfoString_66)
 	goto L371
 L370:
 	;
-	v4882 = int32(_a969)
+	v4882 = int32(_a_F_genValkeyInfoString_67)
 	goto L371
 L371:
 	;
@@ -5682,20 +5682,20 @@ L372:
 	goto L367
 L373:
 	;
-	v4918 = *(*int32)(unsafe.Add(mBase, _consts[518]))
+	v4918 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[306]))
 	v4919 = v4918
 	v4920 = v4915
 	goto L362
 L374:
 	;
 	v4947 = int32(0)
-	v4948 = *(*int32)(unsafe.Add(mBase, _consts[1041]))
+	v4948 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[311]))
 	*(*int32)(unsafe.Add(mBase, uint32(v4574)+400)) = v4948
-	v4951 = *(*int32)(unsafe.Add(mBase, _consts[231]))
+	v4951 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[312]))
 	*(*int32)(unsafe.Add(mBase, uint32(v4574)+404)) = v4951
-	v4954 = *(*int32)(unsafe.Add(mBase, _consts[1042]))
+	v4954 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[313]))
 	*(*int32)(unsafe.Add(mBase, uint32(v4574)+408)) = v4954
-	v4959 = F_sdscatprintf(m, v4945, int32(_a1424), v4574+int32(400))
+	v4959 = F_sdscatprintf(m, v4945, int32(_a_F_genValkeyInfoString_68), v4574+int32(400))
 	mBase = m.M
 	v4960 = m.ExcPending
 	if v4960 != 0 {
@@ -5706,7 +5706,7 @@ L374:
 L375:
 	;
 	v4926 = int32(0)
-	v4927 = *(*int64)(unsafe.Add(mBase, _consts[519]))
+	v4927 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[314]))
 	if base.B2i32(v4927 == int64(0)) == v4926 {
 		goto L377
 	} else {
@@ -5715,7 +5715,7 @@ L375:
 L376:
 	;
 	*(*int64)(unsafe.Add(mBase, uint32(v4574)+416)) = v4938
-	v4943 = F_sdscatprintf(m, v4920, int32(_a1425), v4574+int32(416))
+	v4943 = F_sdscatprintf(m, v4920, int32(_a_F_genValkeyInfoString_69), v4574+int32(416))
 	mBase = m.M
 	v4944 = m.ExcPending
 	if v4944 != 0 {
@@ -5726,8 +5726,8 @@ L376:
 L377:
 	;
 	v4933 = int32(0)
-	v4934 = *(*int64)(unsafe.Add(mBase, _consts[37]))
-	v4936 = *(*int64)(unsafe.Add(mBase, _consts[519]))
+	v4934 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[1]))
+	v4936 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[314]))
 	v4938 = v4934 - v4936
 	goto L376
 L378:
@@ -5745,7 +5745,7 @@ L380:
 L381:
 	;
 	v4980 = int32(0)
-	v4981 = *(*int32)(unsafe.Add(mBase, _consts[186]))
+	v4981 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[315]))
 	if v4981 == v4980 {
 		v4996 = v4978
 		goto L382
@@ -5755,7 +5755,7 @@ L381:
 L382:
 	;
 	v4997 = int32(0)
-	v4999 = *(*int32)(unsafe.Add(mBase, _consts[188]))
+	v4999 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[58]))
 	v5000 = *(*int32)(unsafe.Add(mBase, uint32(v4999)+20))
 	if v5000 == v4997 {
 		v5354 = v4996
@@ -5766,7 +5766,7 @@ L382:
 L383:
 	;
 	v4984 = int32(0)
-	v4985 = *(*int32)(unsafe.Add(mBase, _consts[187]))
+	v4985 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[316]))
 	if v4985 == v4984 {
 		v4996 = v4978
 		goto L382
@@ -5775,9 +5775,9 @@ L383:
 	}
 L384:
 	;
-	v4989 = *(*int32)(unsafe.Add(mBase, _consts[189]))
+	v4989 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[317]))
 	*(*int32)(unsafe.Add(mBase, uint32(v4574)+368)) = v4989
-	v4994 = F_sdscatprintf(m, v4978, int32(_a1426), v4574+int32(368))
+	v4994 = F_sdscatprintf(m, v4978, int32(_a_F_genValkeyInfoString_70), v4574+int32(368))
 	mBase = m.M
 	v4995 = m.ExcPending
 	if v4995 != 0 {
@@ -5791,7 +5791,7 @@ L385:
 	goto L382
 L386:
 	;
-	v5547 = *(*int32)(unsafe.Add(mBase, _consts[505]))
+	v5547 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[318]))
 	v5548 = *(*int64)(unsafe.Add(mBase, uint32(v5547)+8))
 	goto L421
 L387:
@@ -5863,12 +5863,12 @@ L396:
 	v5264 = *(*int32)(unsafe.Add(mBase, uint32(v5260)))
 	switch v5264 + int32(-6) {
 	case 0, 1:
-		v5271 = int32(_a1427)
+		v5271 = int32(_a_F_genValkeyInfoString_71)
 		goto L404
 	case 2:
 		goto L407
 	case 3:
-		v5279 = int32(_a1428)
+		v5279 = int32(_a_F_genValkeyInfoString_72)
 		goto L403
 	case 4:
 		goto L406
@@ -5929,7 +5929,7 @@ L402:
 	v5292 = *(*int32)(unsafe.Add(mBase, uint32(v5288)+148))
 	v5294 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v5236)+207)))
 	if v5294&int32(4) != 0 {
-		v5303 = int32(_a1429)
+		v5303 = int32(_a_F_genValkeyInfoString_73)
 		goto L411
 	} else {
 		goto L412
@@ -5956,19 +5956,19 @@ L404:
 	}
 L405:
 	;
-	v5271 = int32(_a188)
+	v5271 = int32(_a_F_genValkeyInfoString_33)
 	goto L404
 L406:
 	;
-	v5271 = int32(_a1430)
+	v5271 = int32(_a_F_genValkeyInfoString_74)
 	goto L404
 L407:
 	;
-	v5271 = int32(_a1431)
+	v5271 = int32(_a_F_genValkeyInfoString_75)
 	goto L404
 L408:
 	;
-	v5271 = int32(_a1432)
+	v5271 = int32(_a_F_genValkeyInfoString_76)
 	goto L404
 L409:
 	;
@@ -5993,7 +5993,7 @@ L411:
 	*(*int32)(unsafe.Add(mBase, uint32(v4574)+344)) = v5292
 	*(*int32)(unsafe.Add(mBase, uint32(v4574)+340)) = v5261
 	*(*int32)(unsafe.Add(mBase, uint32(v4574)+336)) = v5042
-	v5316 = F_sdscatprintf(m, v5044, int32(_a1433), v4574+int32(336))
+	v5316 = F_sdscatprintf(m, v5044, int32(_a_F_genValkeyInfoString_77), v4574+int32(336))
 	mBase = m.M
 	v5317 = m.ExcPending
 	if v5317 != 0 {
@@ -6011,11 +6011,11 @@ L412:
 	}
 L413:
 	;
-	v5302 = int32(_a1434)
+	v5302 = int32(_a_F_genValkeyInfoString_78)
 	goto L415
 L414:
 	;
-	v5302 = int32(_a204)
+	v5302 = int32(_a_F_genValkeyInfoString_79)
 	goto L415
 L415:
 	;
@@ -6050,9 +6050,9 @@ L420:
 	goto L394
 L421:
 	;
-	v5553 = *(*int32)(unsafe.Add(mBase, _consts[577]))
+	v5553 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[319]))
 	if base.Ui32(int32(2)) < base.Ui32(v5553) {
-		v5561 = int32(_a242)
+		v5561 = int32(_a_F_genValkeyInfoString_21)
 		goto L423
 	} else {
 		goto L424
@@ -6060,10 +6060,10 @@ L421:
 L422:
 	;
 	v5562 = int32(0)
-	v5563 = *(*int32)(unsafe.Add(mBase, _consts[448]))
-	v5567 = *(*int64)(unsafe.Add(mBase, _consts[266]))
-	v5569 = *(*int64)(unsafe.Add(mBase, _consts[508]))
-	v5571 = *(*int64)(unsafe.Add(mBase, _consts[31]))
+	v5563 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[320]))
+	v5567 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[80]))
+	v5569 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[321]))
+	v5571 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[322]))
 	if v5563 != 0 {
 		goto L426
 	} else {
@@ -6074,7 +6074,7 @@ L423:
 	goto L422
 L424:
 	;
-	v5560 = *(*int32)(unsafe.Add(mBase, uint32(v5553<<(uint(int32(2))%32))+uint32(_consts[1043])))
+	v5560 = *(*int32)(unsafe.Add(mBase, uint32(v5553<<(uint(int32(2))%32))+uint32(_c_F_genValkeyInfoString[323])))
 	v5561 = v5560
 	goto L423
 L425:
@@ -6086,11 +6086,11 @@ L425:
 	*(*int32)(unsafe.Add(mBase, uint32(v4574+int32(296)))) = base.B2i32(v5563 != v5562)
 	*(*int64)(unsafe.Add(mBase, uint32(v4574+int32(288)))) = v5569
 	*(*int64)(unsafe.Add(mBase, uint32(v4574+int32(280)))) = v5571
-	*(*int32)(unsafe.Add(mBase, uint32(v4574+int32(272)))) = int32(_a921)
-	*(*int32)(unsafe.Add(mBase, uint32(v4574)+268)) = int32(_a920)
+	*(*int32)(unsafe.Add(mBase, uint32(v4574+int32(272)))) = int32(_a_F_genValkeyInfoString_80)
+	*(*int32)(unsafe.Add(mBase, uint32(v4574)+268)) = int32(_a_F_genValkeyInfoString_81)
 	*(*int32)(unsafe.Add(mBase, uint32(v4574)+264)) = v5561
 	*(*int64)(unsafe.Add(mBase, uint32(v4574)+256)) = v5548
-	v5609 = F_sdscatprintf(m, v5354, int32(_a1435), v4574+int32(256))
+	v5609 = F_sdscatprintf(m, v5354, int32(_a_F_genValkeyInfoString_82), v4574+int32(256))
 	mBase = m.M
 	v5610 = m.ExcPending
 	if v5610 != 0 {
@@ -6171,7 +6171,7 @@ L432:
 	}
 L433:
 	;
-	v6029 = F_sdscat(m, v5825, int32(_a727))
+	v6029 = F_sdscat(m, v5825, int32(_a_F_genValkeyInfoString_11))
 	mBase = m.M
 	v6030 = m.ExcPending
 	if v6030 != 0 {
@@ -6237,7 +6237,7 @@ L438:
 	*(*uint32)(unsafe.Add(mBase, uint32(v5824)+232)) = uint32(v6120)
 	v6122 = *(*int32)(unsafe.Add(mBase, uint32(v5824)+2024))
 	*(*int32)(unsafe.Add(mBase, uint32(v5824)+236)) = v6122
-	v6127 = F_sdscatprintf(m, v6031, int32(_a1436), v5824+int32(224))
+	v6127 = F_sdscatprintf(m, v6031, int32(_a_F_genValkeyInfoString_83), v5824+int32(224))
 	mBase = m.M
 	v6128 = m.ExcPending
 	if v6128 != 0 {
@@ -6291,7 +6291,7 @@ L442:
 	*(*uint32)(unsafe.Add(mBase, uint32(v5824)+216)) = uint32(v6166)
 	v6168 = *(*int32)(unsafe.Add(mBase, uint32(v5824)+2328))
 	*(*int32)(unsafe.Add(mBase, uint32(v5824)+220)) = v6168
-	v6173 = F_sdscatprintf(m, v6127, int32(_a1437), v5824+int32(208))
+	v6173 = F_sdscatprintf(m, v6127, int32(_a_F_genValkeyInfoString_84), v5824+int32(208))
 	mBase = m.M
 	v6174 = m.ExcPending
 	if v6174 != 0 {
@@ -6323,12 +6323,12 @@ L444:
 	goto L443
 L445:
 	;
-	v6176 = *(*int64)(unsafe.Add(mBase, _consts[1044]))
+	v6176 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[324]))
 	v6177 = int64(1000000)
 	v6178 = base.I64_div_u_s(v6176, v6177)
 	*(*int64)(unsafe.Add(mBase, uint32(v5824)+192)) = v6178
 	*(*int64)(unsafe.Add(mBase, uint32(v5824)+200)) = v6176 - v6178*v6177
-	v6187 = F_sdscatprintf(m, v6173, int32(_a1438), v5824+int32(192))
+	v6187 = F_sdscatprintf(m, v6173, int32(_a_F_genValkeyInfoString_85), v5824+int32(192))
 	mBase = m.M
 	v6188 = m.ExcPending
 	if v6188 != 0 {
@@ -6338,7 +6338,7 @@ L445:
 	}
 L446:
 	;
-	v6190 = *(*int32)(unsafe.Add(mBase, _consts[418]))
+	v6190 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[325]))
 	if v6190 < int32(2) {
 		v6430 = v6187
 		goto L447
@@ -6366,7 +6366,7 @@ L448:
 	goto L449
 L449:
 	;
-	v6407 = *(*int64)(unsafe.Add(mBase, uint32(v6199<<(uint(int32(3))%32))+uint32(_consts[302])))
+	v6407 = *(*int64)(unsafe.Add(mBase, uint32(v6199<<(uint(int32(3))%32))+uint32(_c_F_genValkeyInfoString[326])))
 	goto L451
 L450:
 	;
@@ -6379,7 +6379,7 @@ L451:
 	*(*int64)(unsafe.Add(mBase, uint32(v5824)+168)) = v6409
 	*(*int64)(unsafe.Add(mBase, uint32(v5824+int32(176)))) = v6407 - v6409*v6408
 	*(*int32)(unsafe.Add(mBase, uint32(v5824)+160)) = v6199
-	v6419 = F_sdscatprintf(m, v6202, int32(_a1439), v5824+int32(160))
+	v6419 = F_sdscatprintf(m, v6202, int32(_a_F_genValkeyInfoString_86), v5824+int32(160))
 	mBase = m.M
 	v6420 = m.ExcPending
 	if v6420 != 0 {
@@ -6390,7 +6390,7 @@ L451:
 L452:
 	;
 	v6422 = v6199 + int32(1)
-	v6424 = *(*int32)(unsafe.Add(mBase, _consts[418]))
+	v6424 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[325]))
 	if v6422 < v6424 {
 		v6199 = v6422
 		v6202 = v6419
@@ -6425,7 +6425,7 @@ L455:
 	}
 L456:
 	;
-	v6842 = F_dictFind(m, v6633, int32(_a1440))
+	v6842 = F_dictFind(m, v6633, int32(_a_F_genValkeyInfoString_87))
 	mBase = m.M
 	v6843 = m.ExcPending
 	if v6843 != 0 {
@@ -6458,7 +6458,7 @@ L458:
 L459:
 	;
 	v7058 = v6856 + int32(1)
-	v7061 = F_sdscatprintf(m, v7056, int32(_a1441), int32(0))
+	v7061 = F_sdscatprintf(m, v7056, int32(_a_F_genValkeyInfoString_88), int32(0))
 	mBase = m.M
 	v7062 = m.ExcPending
 	if v7062 != 0 {
@@ -6468,7 +6468,7 @@ L459:
 	}
 L460:
 	;
-	v7054 = F_sdscat(m, v6850, int32(_a727))
+	v7054 = F_sdscat(m, v6850, int32(_a_F_genValkeyInfoString_11))
 	mBase = m.M
 	v7055 = m.ExcPending
 	if v7055 != 0 {
@@ -6537,7 +6537,7 @@ L466:
 L467:
 	;
 	v7487 = v7285 + int32(1)
-	v7490 = F_sdscatprintf(m, v7485, int32(_a1442), int32(0))
+	v7490 = F_sdscatprintf(m, v7485, int32(_a_F_genValkeyInfoString_89), int32(0))
 	mBase = m.M
 	v7491 = m.ExcPending
 	if v7491 != 0 {
@@ -6547,7 +6547,7 @@ L467:
 	}
 L468:
 	;
-	v7483 = F_sdscat(m, v7279, int32(_a727))
+	v7483 = F_sdscat(m, v7279, int32(_a_F_genValkeyInfoString_11))
 	mBase = m.M
 	v7484 = m.ExcPending
 	if v7484 != 0 {
@@ -6561,7 +6561,7 @@ L469:
 	goto L467
 L470:
 	;
-	v7493 = *(*int32)(unsafe.Add(mBase, _consts[822]))
+	v7493 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[327]))
 	v7494 = F_genValkeyInfoStringCommandStats(m, v7490, v7493)
 	mBase = m.M
 	v7495 = m.ExcPending
@@ -6616,7 +6616,7 @@ L474:
 	goto L14
 L475:
 	;
-	v7918 = F_sdscat(m, v7916, int32(_a1443))
+	v7918 = F_sdscat(m, v7916, int32(_a_F_genValkeyInfoString_90))
 	mBase = m.M
 	v7919 = m.ExcPending
 	if v7919 != 0 {
@@ -6626,7 +6626,7 @@ L475:
 	}
 L476:
 	;
-	v7914 = F_sdscat(m, v7710, int32(_a727))
+	v7914 = F_sdscat(m, v7710, int32(_a_F_genValkeyInfoString_11))
 	mBase = m.M
 	v7915 = m.ExcPending
 	if v7915 != 0 {
@@ -6641,7 +6641,7 @@ L477:
 L478:
 	;
 	v7921 = v7709 + int32(2016)
-	v7923 = *(*int32)(unsafe.Add(mBase, _consts[847]))
+	v7923 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[328]))
 	*(*int32)(unsafe.Add(mBase, uint32(v7921)+4)) = v7923
 	*(*int32)(unsafe.Add(mBase, uint32(v7921))) = int32(2)
 	*(*int32)(unsafe.Add(mBase, uint32(v7921)+20)) = int32(128)
@@ -6655,7 +6655,7 @@ L478:
 L479:
 	;
 	v7944 = int32(0)
-	v7946 = F_raxSeek(m, v7709+int32(2016), int32(_a4), v7944, v7944)
+	v7946 = F_raxSeek(m, v7709+int32(2016), int32(_a_F_genValkeyInfoString_91), v7944, v7944)
 	mBase = m.M
 	v7947 = m.ExcPending
 	if v7947 != 0 {
@@ -6771,7 +6771,7 @@ L495:
 	goto L496
 L496:
 	;
-	v8195 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v8191)+uint32(_consts[1045]))))
+	v8195 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v8191)+uint32(_c_F_genValkeyInfoString[329]))))
 	if v8183&int32(255) == v8195 {
 		v8226 = v8182
 		goto L489
@@ -6802,7 +6802,7 @@ L501:
 	*(*int64)(unsafe.Add(mBase, uint32(v7709)+136)) = v8228
 	*(*int32)(unsafe.Add(mBase, uint32(v7709)+132)) = v8160
 	*(*int32)(unsafe.Add(mBase, uint32(v7709)+128)) = v8161
-	v8235 = F_sdscatprintf(m, v7958, int32(_a1444), v7709+int32(128))
+	v8235 = F_sdscatprintf(m, v7958, int32(_a_F_genValkeyInfoString_92), v7709+int32(128))
 	mBase = m.M
 	v8236 = m.ExcPending
 	if v8236 != 0 {
@@ -6846,7 +6846,7 @@ L507:
 	*(*int64)(unsafe.Add(mBase, uint32(v7709)+152)) = v8313
 	*(*int32)(unsafe.Add(mBase, uint32(v7709)+148)) = v8244
 	*(*int32)(unsafe.Add(mBase, uint32(v7709)+144)) = v8161
-	v8320 = F_sdscatprintf(m, v7958, int32(_a1444), v7709+int32(144))
+	v8320 = F_sdscatprintf(m, v7958, int32(_a_F_genValkeyInfoString_92), v7709+int32(144))
 	mBase = m.M
 	v8321 = m.ExcPending
 	if v8321 != 0 {
@@ -6884,7 +6884,7 @@ L513:
 	goto L514
 L514:
 	;
-	v8284 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v8280)+uint32(_consts[1045]))))
+	v8284 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v8280)+uint32(_c_F_genValkeyInfoString[329]))))
 	if v8271&int32(255) != v8284 {
 		goto L516
 	} else {
@@ -6904,7 +6904,7 @@ L516:
 	}
 L517:
 	;
-	v8287 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v8280)+uint32(_consts[1046]))))
+	v8287 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v8280)+uint32(_c_F_genValkeyInfoString[330]))))
 	*(*uint8)(unsafe.Add(mBase, uint32(v8270))) = uint8(v8287)
 	goto L512
 L518:
@@ -6984,7 +6984,7 @@ L527:
 	goto L12
 L528:
 	;
-	v8965 = F_sdscatprintf(m, v8962, int32(_a1445), int32(0))
+	v8965 = F_sdscatprintf(m, v8962, int32(_a_F_genValkeyInfoString_93), int32(0))
 	mBase = m.M
 	v8966 = m.ExcPending
 	if v8966 != 0 {
@@ -6994,7 +6994,7 @@ L528:
 	}
 L529:
 	;
-	v8960 = F_sdscat(m, v8756, int32(_a727))
+	v8960 = F_sdscat(m, v8756, int32(_a_F_genValkeyInfoString_11))
 	mBase = m.M
 	v8961 = m.ExcPending
 	if v8961 != 0 {
@@ -7009,7 +7009,7 @@ L530:
 L531:
 	;
 	v8967 = int32(0)
-	v8968 = *(*int32)(unsafe.Add(mBase, _consts[1047]))
+	v8968 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[331]))
 	if v8968 == v8967 {
 		v8975 = v8965
 		goto L532
@@ -7032,7 +7032,7 @@ L532:
 	}
 L533:
 	;
-	v8972 = *(*int32)(unsafe.Add(mBase, _consts[822]))
+	v8972 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[327]))
 	v8973 = F_genValkeyInfoStringLatencyStats(m, v8965, v8972)
 	mBase = m.M
 	v8974 = m.ExcPending
@@ -7079,9 +7079,9 @@ L537:
 L538:
 	;
 	v9400 = v9198 + int32(1)
-	v9402 = *(*int32)(unsafe.Add(mBase, _consts[63]))
+	v9402 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[14]))
 	*(*int32)(unsafe.Add(mBase, uint32(v9191)+112)) = v9402
-	v9407 = F_sdscatprintf(m, v9398, int32(_a1446), v9191+int32(112))
+	v9407 = F_sdscatprintf(m, v9398, int32(_a_F_genValkeyInfoString_94), v9191+int32(112))
 	mBase = m.M
 	v9408 = m.ExcPending
 	if v9408 != 0 {
@@ -7091,7 +7091,7 @@ L538:
 	}
 L539:
 	;
-	v9396 = F_sdscat(m, v9192, int32(_a727))
+	v9396 = F_sdscat(m, v9192, int32(_a_F_genValkeyInfoString_11))
 	mBase = m.M
 	v9397 = m.ExcPending
 	if v9397 != 0 {
@@ -7149,7 +7149,7 @@ L544:
 	goto L8
 L545:
 	;
-	v9832 = F_sdscatprintf(m, v9829, int32(_a1447), int32(0))
+	v9832 = F_sdscatprintf(m, v9829, int32(_a_F_genValkeyInfoString_95), int32(0))
 	mBase = m.M
 	v9833 = m.ExcPending
 	if v9833 != 0 {
@@ -7159,7 +7159,7 @@ L545:
 	}
 L546:
 	;
-	v9827 = F_sdscat(m, v9623, int32(_a727))
+	v9827 = F_sdscat(m, v9623, int32(_a_F_genValkeyInfoString_11))
 	mBase = m.M
 	v9828 = m.ExcPending
 	if v9828 != 0 {
@@ -7174,7 +7174,7 @@ L547:
 L548:
 	;
 	v9834 = int32(0)
-	v9835 = *(*int32)(unsafe.Add(mBase, _consts[63]))
+	v9835 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[14]))
 	if v9835 == v9834 {
 		v9840 = v9832
 		goto L549
@@ -7253,7 +7253,7 @@ L555:
 	}
 L556:
 	;
-	v10261 = F_sdscat(m, v10057, int32(_a727))
+	v10261 = F_sdscat(m, v10057, int32(_a_F_genValkeyInfoString_11))
 	mBase = m.M
 	v10262 = m.ExcPending
 	if v10262 != 0 {
@@ -7286,7 +7286,7 @@ L559:
 	*(*int64)(unsafe.Add(mBase, uint32(v10056)+100)) = v10280
 	v10282 = *(*int32)(unsafe.Add(mBase, uint32(v10056)+2016))
 	*(*int32)(unsafe.Add(mBase, uint32(v10056)+108)) = v10282
-	v10287 = F_sdscatprintf(m, v10263, int32(_a1448), v10056+int32(96))
+	v10287 = F_sdscatprintf(m, v10263, int32(_a_F_genValkeyInfoString_96), v10056+int32(96))
 	mBase = m.M
 	v10288 = m.ExcPending
 	if v10288 != 0 {
@@ -7353,7 +7353,7 @@ L565:
 	;
 	v10714 = v10512 + int32(1)
 	v10715 = int32(0)
-	v10718 = F_sdscatprintf(m, v10712, int32(_a1449), v10715)
+	v10718 = F_sdscatprintf(m, v10712, int32(_a_F_genValkeyInfoString_97), v10715)
 	mBase = m.M
 	v10719 = m.ExcPending
 	if v10719 != 0 {
@@ -7363,7 +7363,7 @@ L565:
 	}
 L566:
 	;
-	v10710 = F_sdscat(m, v10506, int32(_a727))
+	v10710 = F_sdscat(m, v10506, int32(_a_F_genValkeyInfoString_11))
 	mBase = m.M
 	v10711 = m.ExcPending
 	if v10711 != 0 {
@@ -7377,7 +7377,7 @@ L567:
 	goto L565
 L568:
 	;
-	v10721 = *(*int32)(unsafe.Add(mBase, _consts[10]))
+	v10721 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[45]))
 	if v10721 < int32(1) {
 		v11003 = v10502
 		v11005 = v10504
@@ -7397,7 +7397,7 @@ L569:
 L570:
 	;
 	v10935 = int32(0)
-	v10936 = *(*int32)(unsafe.Add(mBase, _consts[23]))
+	v10936 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[47]))
 	v10940 = *(*int32)(unsafe.Add(mBase, uint32(v10936+v10731<<(uint(int32(2))%32))))
 	if v10940 == v10935 {
 		v10993 = v10734
@@ -7417,7 +7417,7 @@ L571:
 L572:
 	;
 	v10999 = v10731 + int32(1)
-	v11001 = *(*int32)(unsafe.Add(mBase, _consts[10]))
+	v11001 = *(*int32)(unsafe.Add(mBase, _c_F_genValkeyInfoString[45]))
 	if v10999 < v11001 {
 		v10731 = v10999
 		v10734 = v10993
@@ -7540,7 +7540,7 @@ L589:
 	*(*int64)(unsafe.Add(mBase, uint32(v10505+int32(64)))) = v10966
 	*(*int64)(unsafe.Add(mBase, uint32(v10505)+56)) = v10954
 	*(*int32)(unsafe.Add(mBase, uint32(v10505)+48)) = v10731
-	v10991 = F_sdscatprintf(m, v10734, int32(_a1450), v10505+int32(48))
+	v10991 = F_sdscatprintf(m, v10734, int32(_a_F_genValkeyInfoString_98), v10505+int32(48))
 	mBase = m.M
 	v10992 = m.ExcPending
 	if v10992 != 0 {
@@ -7557,7 +7557,7 @@ L591:
 	goto L571
 L592:
 	;
-	v11234 = F_dictFind(m, v11003, int32(_a713))
+	v11234 = F_dictFind(m, v11003, int32(_a_F_genValkeyInfoString_99))
 	mBase = m.M
 	v11235 = m.ExcPending
 	if v11235 != 0 {
@@ -7577,7 +7577,7 @@ L593:
 	}
 L594:
 	;
-	v11210 = F_dictFind(m, v11003, int32(_a1440))
+	v11210 = F_dictFind(m, v11003, int32(_a_F_genValkeyInfoString_87))
 	mBase = m.M
 	v11211 = m.ExcPending
 	if v11211 != 0 {
@@ -7587,7 +7587,7 @@ L594:
 	}
 L595:
 	;
-	v11224 = F_dictFind(m, v11003, int32(_a1440))
+	v11224 = F_dictFind(m, v11003, int32(_a_F_genValkeyInfoString_87))
 	mBase = m.M
 	v11225 = m.ExcPending
 	if v11225 != 0 {
@@ -7670,19 +7670,19 @@ L607:
 L608:
 	;
 	v11246 = int32(0)
-	v11247 = *(*int64)(unsafe.Add(mBase, _consts[1048]))
+	v11247 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[332]))
 	*(*int64)(unsafe.Add(mBase, uint32(v11006+int32(16)))) = v11247
-	v11252 = *(*int64)(unsafe.Add(mBase, _consts[1049]))
+	v11252 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[333]))
 	*(*int64)(unsafe.Add(mBase, uint32(v11006+int32(24)))) = v11252
-	v11257 = *(*int64)(unsafe.Add(mBase, _consts[320]))
+	v11257 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[334]))
 	*(*int64)(unsafe.Add(mBase, uint32(v11006+int32(32)))) = v11257
-	v11262 = *(*int64)(unsafe.Add(mBase, _consts[316]))
+	v11262 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[335]))
 	*(*int64)(unsafe.Add(mBase, uint32(v11006+int32(40)))) = v11262
-	v11265 = *(*int64)(unsafe.Add(mBase, _consts[1050]))
+	v11265 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[336]))
 	*(*int64)(unsafe.Add(mBase, uint32(v11006))) = v11265
-	v11268 = *(*int64)(unsafe.Add(mBase, _consts[1051]))
+	v11268 = *(*int64)(unsafe.Add(mBase, _c_F_genValkeyInfoString[337]))
 	*(*int64)(unsafe.Add(mBase, uint32(v11006)+8)) = v11268
-	v11271 = F_sdscatprintf(m, v11243, int32(_a1451), v11006)
+	v11271 = F_sdscatprintf(m, v11243, int32(_a_F_genValkeyInfoString_100), v11006)
 	mBase = m.M
 	v11272 = m.ExcPending
 	if v11272 != 0 {
@@ -7692,7 +7692,7 @@ L608:
 	}
 L609:
 	;
-	v11241 = F_sdscat(m, v11232, int32(_a727))
+	v11241 = F_sdscat(m, v11232, int32(_a_F_genValkeyInfoString_11))
 	mBase = m.M
 	v11242 = m.ExcPending
 	if v11242 != 0 {

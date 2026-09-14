@@ -398,7 +398,7 @@ L13:
 	}
 L14:
 	;
-	v76 = *(*int32)(unsafe.Add(mBase, _consts[941]))
+	v76 = *(*int32)(unsafe.Add(mBase, _c_F_zslDeleteRangeByLex[0]))
 	if v69 != v76 {
 		goto L16
 	} else {
@@ -410,7 +410,7 @@ L15:
 	goto L10
 L16:
 	;
-	v79 = *(*int32)(unsafe.Add(mBase, _consts[940]))
+	v79 = *(*int32)(unsafe.Add(mBase, _c_F_zslDeleteRangeByLex[1]))
 	if v70 == v79 {
 		v149 = v57
 		goto L10
@@ -441,7 +441,7 @@ L20:
 	goto L11
 L21:
 	;
-	v86 = *(*int32)(unsafe.Add(mBase, _consts[941]))
+	v86 = *(*int32)(unsafe.Add(mBase, _c_F_zslDeleteRangeByLex[0]))
 	if v69 != v86 {
 		goto L22
 	} else {
@@ -449,7 +449,7 @@ L21:
 	}
 L22:
 	;
-	v89 = *(*int32)(unsafe.Add(mBase, _consts[940]))
+	v89 = *(*int32)(unsafe.Add(mBase, _c_F_zslDeleteRangeByLex[1]))
 	if v70 == v89 {
 		v149 = v57
 		goto L10
@@ -662,7 +662,7 @@ L56:
 	}
 L57:
 	;
-	v216 = *(*int32)(unsafe.Add(mBase, _consts[941]))
+	v216 = *(*int32)(unsafe.Add(mBase, _c_F_zslDeleteRangeByLex[0]))
 	if v209 == v216 {
 		goto L53
 	} else {
@@ -670,7 +670,7 @@ L57:
 	}
 L58:
 	;
-	v219 = *(*int32)(unsafe.Add(mBase, _consts[940]))
+	v219 = *(*int32)(unsafe.Add(mBase, _c_F_zslDeleteRangeByLex[1]))
 	if v210 == v219 {
 		goto L53
 	} else {
@@ -819,7 +819,7 @@ L80:
 	goto L62
 L81:
 	;
-	v278 = *(*int32)(unsafe.Add(mBase, _consts[941]))
+	v278 = *(*int32)(unsafe.Add(mBase, _c_F_zslDeleteRangeByLex[0]))
 	if v209 == v278 {
 		goto L53
 	} else {
@@ -827,7 +827,7 @@ L81:
 	}
 L82:
 	;
-	v281 = *(*int32)(unsafe.Add(mBase, _consts[940]))
+	v281 = *(*int32)(unsafe.Add(mBase, _c_F_zslDeleteRangeByLex[1]))
 	if v210 == v281 {
 		goto L53
 	} else {
@@ -1889,7 +1889,7 @@ L2:
 	goto L1
 L3:
 	;
-	F__serverAssert(m, int32(_a1722), int32(_a1723), int32(259))
+	F__serverAssert(m, int32(_a_F_zslInsertNode_0), int32(_a_F_zslInsertNode_1), int32(259))
 	mBase = m.M
 	v216 = m.ExcPending
 	if v216 != 0 {
@@ -3320,7 +3320,7 @@ L3:
 	}
 L4:
 	;
-	v20 = *(*int32)(unsafe.Add(mBase, _consts[941]))
+	v20 = *(*int32)(unsafe.Add(mBase, _c_F_zslNthInLexRange[0]))
 	if v16 == v20 {
 		goto L2
 	} else {
@@ -3328,7 +3328,7 @@ L4:
 	}
 L5:
 	;
-	v23 = *(*int32)(unsafe.Add(mBase, _consts[940]))
+	v23 = *(*int32)(unsafe.Add(mBase, _c_F_zslNthInLexRange[1]))
 	if v17 == v23 {
 		goto L2
 	} else {
@@ -3555,7 +3555,7 @@ L35:
 	}
 L36:
 	;
-	v111 = *(*int32)(unsafe.Add(mBase, _consts[941]))
+	v111 = *(*int32)(unsafe.Add(mBase, _c_F_zslNthInLexRange[0]))
 	if v103 == v111 {
 		v1469 = v108
 		goto L1
@@ -3564,7 +3564,7 @@ L36:
 	}
 L37:
 	;
-	v114 = *(*int32)(unsafe.Add(mBase, _consts[940]))
+	v114 = *(*int32)(unsafe.Add(mBase, _c_F_zslNthInLexRange[1]))
 	if v104 == v114 {
 		v1469 = v108
 		goto L1
@@ -3592,7 +3592,7 @@ L40:
 L41:
 	;
 	v120 = int32(0)
-	v122 = *(*int32)(unsafe.Add(mBase, _consts[941]))
+	v122 = *(*int32)(unsafe.Add(mBase, _c_F_zslNthInLexRange[0]))
 	if v103 == v122 {
 		v1469 = v120
 		goto L1
@@ -3601,7 +3601,7 @@ L41:
 	}
 L42:
 	;
-	v125 = *(*int32)(unsafe.Add(mBase, _consts[940]))
+	v125 = *(*int32)(unsafe.Add(mBase, _c_F_zslNthInLexRange[1]))
 	if v104 == v125 {
 		v1469 = v120
 		goto L1
@@ -3777,7 +3777,7 @@ L69:
 	}
 L70:
 	;
-	v208 = *(*int32)(unsafe.Add(mBase, _consts[941]))
+	v208 = *(*int32)(unsafe.Add(mBase, _c_F_zslNthInLexRange[0]))
 	if v200 == v208 {
 		goto L66
 	} else {
@@ -3785,7 +3785,7 @@ L70:
 	}
 L71:
 	;
-	v211 = *(*int32)(unsafe.Add(mBase, _consts[940]))
+	v211 = *(*int32)(unsafe.Add(mBase, _c_F_zslNthInLexRange[1]))
 	if v201 == v211 {
 		goto L66
 	} else {
@@ -3934,7 +3934,7 @@ L93:
 	goto L75
 L94:
 	;
-	v270 = *(*int32)(unsafe.Add(mBase, _consts[941]))
+	v270 = *(*int32)(unsafe.Add(mBase, _c_F_zslNthInLexRange[0]))
 	if v200 == v270 {
 		goto L66
 	} else {
@@ -3942,7 +3942,7 @@ L94:
 	}
 L95:
 	;
-	v273 = *(*int32)(unsafe.Add(mBase, _consts[940]))
+	v273 = *(*int32)(unsafe.Add(mBase, _c_F_zslNthInLexRange[1]))
 	if v201 == v273 {
 		goto L66
 	} else {
@@ -4172,7 +4172,7 @@ L126:
 	}
 L127:
 	;
-	v385 = *(*int32)(unsafe.Add(mBase, _consts[941]))
+	v385 = *(*int32)(unsafe.Add(mBase, _c_F_zslNthInLexRange[0]))
 	if v378 == v385 {
 		goto L123
 	} else {
@@ -4180,7 +4180,7 @@ L127:
 	}
 L128:
 	;
-	v388 = *(*int32)(unsafe.Add(mBase, _consts[940]))
+	v388 = *(*int32)(unsafe.Add(mBase, _c_F_zslNthInLexRange[1]))
 	if v379 == v388 {
 		goto L123
 	} else {
@@ -4210,7 +4210,7 @@ L131:
 	goto L124
 L132:
 	;
-	v395 = *(*int32)(unsafe.Add(mBase, _consts[941]))
+	v395 = *(*int32)(unsafe.Add(mBase, _c_F_zslNthInLexRange[0]))
 	if v378 == v395 {
 		goto L123
 	} else {
@@ -4218,7 +4218,7 @@ L132:
 	}
 L133:
 	;
-	v398 = *(*int32)(unsafe.Add(mBase, _consts[940]))
+	v398 = *(*int32)(unsafe.Add(mBase, _c_F_zslNthInLexRange[1]))
 	if v379 == v398 {
 		goto L123
 	} else {
@@ -4526,7 +4526,7 @@ L175:
 	}
 L176:
 	;
-	v550 = *(*int32)(unsafe.Add(mBase, _consts[941]))
+	v550 = *(*int32)(unsafe.Add(mBase, _c_F_zslNthInLexRange[0]))
 	if v543 == v550 {
 		goto L172
 	} else {
@@ -4534,7 +4534,7 @@ L176:
 	}
 L177:
 	;
-	v553 = *(*int32)(unsafe.Add(mBase, _consts[940]))
+	v553 = *(*int32)(unsafe.Add(mBase, _c_F_zslNthInLexRange[1]))
 	if v544 == v553 {
 		goto L172
 	} else {
@@ -4564,7 +4564,7 @@ L180:
 	goto L173
 L181:
 	;
-	v560 = *(*int32)(unsafe.Add(mBase, _consts[941]))
+	v560 = *(*int32)(unsafe.Add(mBase, _c_F_zslNthInLexRange[0]))
 	if v543 == v560 {
 		goto L172
 	} else {
@@ -4572,7 +4572,7 @@ L181:
 	}
 L182:
 	;
-	v563 = *(*int32)(unsafe.Add(mBase, _consts[940]))
+	v563 = *(*int32)(unsafe.Add(mBase, _c_F_zslNthInLexRange[1]))
 	if v544 == v563 {
 		goto L172
 	} else {
@@ -5006,7 +5006,7 @@ L245:
 	}
 L246:
 	;
-	v880 = *(*int32)(unsafe.Add(mBase, _consts[941]))
+	v880 = *(*int32)(unsafe.Add(mBase, _c_F_zslNthInLexRange[0]))
 	if v873 != v880 {
 		goto L247
 	} else {
@@ -5014,7 +5014,7 @@ L246:
 	}
 L247:
 	;
-	v883 = *(*int32)(unsafe.Add(mBase, _consts[940]))
+	v883 = *(*int32)(unsafe.Add(mBase, _c_F_zslNthInLexRange[1]))
 	if v874 != v883 {
 		goto L249
 	} else {
@@ -5171,7 +5171,7 @@ L271:
 	goto L253
 L272:
 	;
-	v942 = *(*int32)(unsafe.Add(mBase, _consts[941]))
+	v942 = *(*int32)(unsafe.Add(mBase, _c_F_zslNthInLexRange[0]))
 	if v873 != v942 {
 		goto L274
 	} else {
@@ -5183,7 +5183,7 @@ L273:
 	goto L161
 L274:
 	;
-	v945 = *(*int32)(unsafe.Add(mBase, _consts[940]))
+	v945 = *(*int32)(unsafe.Add(mBase, _c_F_zslNthInLexRange[1]))
 	if v874 != v945 {
 		goto L276
 	} else {
@@ -5433,7 +5433,7 @@ L311:
 	}
 L312:
 	;
-	v1062 = *(*int32)(unsafe.Add(mBase, _consts[941]))
+	v1062 = *(*int32)(unsafe.Add(mBase, _c_F_zslNthInLexRange[0]))
 	if v1055 == v1062 {
 		goto L308
 	} else {
@@ -5441,7 +5441,7 @@ L312:
 	}
 L313:
 	;
-	v1065 = *(*int32)(unsafe.Add(mBase, _consts[940]))
+	v1065 = *(*int32)(unsafe.Add(mBase, _c_F_zslNthInLexRange[1]))
 	if v1056 == v1065 {
 		goto L308
 	} else {
@@ -5588,7 +5588,7 @@ L335:
 	goto L317
 L336:
 	;
-	v1124 = *(*int32)(unsafe.Add(mBase, _consts[941]))
+	v1124 = *(*int32)(unsafe.Add(mBase, _c_F_zslNthInLexRange[0]))
 	if v1055 == v1124 {
 		goto L308
 	} else {
@@ -5596,7 +5596,7 @@ L336:
 	}
 L337:
 	;
-	v1127 = *(*int32)(unsafe.Add(mBase, _consts[940]))
+	v1127 = *(*int32)(unsafe.Add(mBase, _c_F_zslNthInLexRange[1]))
 	if v1056 == v1127 {
 		goto L308
 	} else {
@@ -6007,7 +6007,7 @@ L396:
 	}
 L397:
 	;
-	v1375 = *(*int32)(unsafe.Add(mBase, _consts[941]))
+	v1375 = *(*int32)(unsafe.Add(mBase, _c_F_zslNthInLexRange[0]))
 	if v1368 == v1375 {
 		v1469 = v1229
 		goto L1
@@ -6016,7 +6016,7 @@ L397:
 	}
 L398:
 	;
-	v1378 = *(*int32)(unsafe.Add(mBase, _consts[940]))
+	v1378 = *(*int32)(unsafe.Add(mBase, _c_F_zslNthInLexRange[1]))
 	if v1369 == v1378 {
 		v1469 = v1229
 		goto L1
@@ -6051,7 +6051,7 @@ L403:
 	goto L161
 L404:
 	;
-	v1385 = *(*int32)(unsafe.Add(mBase, _consts[941]))
+	v1385 = *(*int32)(unsafe.Add(mBase, _c_F_zslNthInLexRange[0]))
 	if v1368 == v1385 {
 		v1469 = v1229
 		goto L1
@@ -6064,7 +6064,7 @@ L405:
 	goto L161
 L406:
 	;
-	v1388 = *(*int32)(unsafe.Add(mBase, _consts[940]))
+	v1388 = *(*int32)(unsafe.Add(mBase, _c_F_zslNthInLexRange[1]))
 	if v1369 == v1388 {
 		v1469 = v1229
 		goto L1

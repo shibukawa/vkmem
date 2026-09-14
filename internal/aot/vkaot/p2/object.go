@@ -123,7 +123,7 @@ func F_freeSetObject(m *base.Module, l0 int32) {
 				}
 				v53 = v28 + int32(1) + v49 + int32(1)
 			}
-			v68 = *(*int32)(unsafe.Add(mBase, _consts[601]))
+			v68 = *(*int32)(unsafe.Add(mBase, _c_F_freeSetObject[0]))
 			F_hashtableRelease(m, v53+v68)
 			mBase = m.M
 			v72 = m.ExcPending
@@ -134,7 +134,7 @@ func F_freeSetObject(m *base.Module, l0 int32) {
 			}
 		}
 	default:
-		F__serverPanic_1(m, int32(_a1051), int32(576), int32(_a1053), int32(0))
+		F__serverPanic_1(m, int32(_a_F_freeSetObject_0), int32(576), int32(_a_F_freeSetObject_1), int32(0))
 		mBase = m.M
 		v145 = m.ExcPending
 		if v145 != 0 {
@@ -191,7 +191,7 @@ func F_freeSetObject(m *base.Module, l0 int32) {
 				}
 				v117 = v92 + int32(1) + v113 + int32(1)
 			}
-			v132 = *(*int32)(unsafe.Add(mBase, _consts[601]))
+			v132 = *(*int32)(unsafe.Add(mBase, _c_F_freeSetObject[0]))
 			F_valkey_free(m, v117+v132)
 			mBase = m.M
 			v136 = m.ExcPending
@@ -266,7 +266,7 @@ func F_getObjectReadOnlyString(m *base.Module, l0 int32, l1 int32, l2 int32) int
 	} else {
 		v8 = *(*int32)(unsafe.Add(mBase, uint32(l0)))
 		if v8&int32(15) != 0 {
-			F__serverAssert(m, int32(_a181), int32(_a182), int32(671))
+			F__serverAssert(m, int32(_a_F_getObjectReadOnlyString_0), int32(_a_F_getObjectReadOnlyString_1), int32(671))
 			mBase = m.M
 			v105 = m.ExcPending
 			if v105 != 0 {
@@ -671,7 +671,7 @@ func F_getObjectTypeByName(m *base.Module, l0 int32) int64 {
 	var v318 int64
 	_ = v318
 	v2 = int32(0)
-	v4 = *(*int32)(unsafe.Add(mBase, _consts[339]))
+	v4 = *(*int32)(unsafe.Add(mBase, _c_F_getObjectTypeByName[0]))
 	if v4 == v2 {
 		goto L1
 	} else {
@@ -680,7 +680,7 @@ func F_getObjectTypeByName(m *base.Module, l0 int32) int64 {
 L1:
 	;
 	v47 = int32(0)
-	v48 = *(*int32)(unsafe.Add(mBase, _consts[340]))
+	v48 = *(*int32)(unsafe.Add(mBase, _c_F_getObjectTypeByName[1]))
 	if v48 == v47 {
 		goto L16
 	} else {
@@ -788,7 +788,7 @@ L15:
 L16:
 	;
 	v91 = int32(0)
-	v92 = *(*int32)(unsafe.Add(mBase, _consts[341]))
+	v92 = *(*int32)(unsafe.Add(mBase, _c_F_getObjectTypeByName[2]))
 	if v92 == v91 {
 		goto L31
 	} else {
@@ -896,7 +896,7 @@ L30:
 L31:
 	;
 	v135 = int32(0)
-	v136 = *(*int32)(unsafe.Add(mBase, _consts[342]))
+	v136 = *(*int32)(unsafe.Add(mBase, _c_F_getObjectTypeByName[3]))
 	if v136 == v135 {
 		goto L46
 	} else {
@@ -1004,7 +1004,7 @@ L45:
 L46:
 	;
 	v179 = int32(0)
-	v180 = *(*int32)(unsafe.Add(mBase, _consts[343]))
+	v180 = *(*int32)(unsafe.Add(mBase, _c_F_getObjectTypeByName[4]))
 	if v180 == v179 {
 		goto L61
 	} else {
@@ -1112,7 +1112,7 @@ L60:
 L61:
 	;
 	v223 = int32(0)
-	v224 = *(*int32)(unsafe.Add(mBase, _consts[344]))
+	v224 = *(*int32)(unsafe.Add(mBase, _c_F_getObjectTypeByName[5]))
 	if v224 == v223 {
 		goto L76
 	} else {
@@ -1220,7 +1220,7 @@ L75:
 L76:
 	;
 	v267 = int32(0)
-	v268 = *(*int32)(unsafe.Add(mBase, _consts[345]))
+	v268 = *(*int32)(unsafe.Add(mBase, _c_F_getObjectTypeByName[6]))
 	if v268 == v267 {
 		goto L91
 	} else {
@@ -1534,7 +1534,7 @@ func F_objectGetLRUIdleSecs(m *base.Module, l0 int32) int32 {
 	var v6 int32
 	_ = v6
 	v2 = *(*int32)(unsafe.Add(mBase, uint32(l0)))
-	v6 = *(*int32)(unsafe.Add(mBase, _consts[333]))
+	v6 = *(*int32)(unsafe.Add(mBase, _c_F_objectGetLRUIdleSecs[0]))
 	return (v6 - int32(base.Ui32(v2)>>(uint(int32(8))%32))) & int32(16777215)
 }
 func F_objectSetExpire(m *base.Module, l0 int32, l1 int64) int32 {
@@ -1798,7 +1798,7 @@ func F_objectSetKeyAndExpire(m *base.Module, l0 int32, l1 int32, l2 int64) int32
 				}
 			default:
 				if v255 == int32(0) {
-					F__serverAssert(m, int32(_a1050), int32(_a1051), int32(376))
+					F__serverAssert(m, int32(_a_F_objectSetKeyAndExpire_0), int32(_a_F_objectSetKeyAndExpire_1), int32(376))
 					mBase = m.M
 					v311 = m.ExcPending
 					if v311 != 0 {
@@ -1811,7 +1811,7 @@ func F_objectSetKeyAndExpire(m *base.Module, l0 int32, l1 int32, l2 int64) int32
 						}
 					}
 				} else {
-					F__serverPanic_1(m, int32(_a1051), int32(379), int32(_a1052), int32(0))
+					F__serverPanic_1(m, int32(_a_F_objectSetKeyAndExpire_1), int32(379), int32(_a_F_objectSetKeyAndExpire_2), int32(0))
 					mBase = m.M
 					v276 = m.ExcPending
 					if v276 != 0 {
@@ -1919,7 +1919,7 @@ func F_objectSetKeyAndExpire(m *base.Module, l0 int32, l1 int32, l2 int64) int32
 				}
 				v56 = v30 + int32(1) + v51 + int32(1)
 			}
-			v70 = *(*int32)(unsafe.Add(mBase, _consts[601]))
+			v70 = *(*int32)(unsafe.Add(mBase, _c_F_objectSetKeyAndExpire[0]))
 			v73 = *(*int32)(unsafe.Add(mBase, uint32(l0)+4))
 			v75 = v73
 			v77 = v56 + v70
@@ -1960,7 +1960,7 @@ func F_objectSetKeyAndExpire(m *base.Module, l0 int32, l1 int32, l2 int64) int32
 				}
 				v120 = v94 + int32(1) + v115 + int32(1)
 			}
-			v134 = *(*int32)(unsafe.Add(mBase, _consts[601]))
+			v134 = *(*int32)(unsafe.Add(mBase, _c_F_objectSetKeyAndExpire[0]))
 			v139 = v120 + v134
 		}
 		v145 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v139+int32(-1)))))
@@ -2005,7 +2005,7 @@ func F_objectSetKeyAndExpire(m *base.Module, l0 int32, l1 int32, l2 int64) int32
 				if base.Ui32(int32(4)) < base.Ui32(v203) {
 					v211 = int32(0)
 				} else {
-					v210 = *(*int32)(unsafe.Add(mBase, uint32(v203<<(uint(int32(2))%32))+uint32(_consts[602])))
+					v210 = *(*int32)(unsafe.Add(mBase, uint32(v203<<(uint(int32(2))%32))+uint32(_c_F_objectSetKeyAndExpire[1])))
 					v211 = v210
 				}
 				v215 = v187 + v211 + int32(10)
@@ -2017,7 +2017,7 @@ func F_objectSetKeyAndExpire(m *base.Module, l0 int32, l1 int32, l2 int64) int32
 			} else {
 				v221 = int32(9)
 			}
-			v235 = *(*int32)(unsafe.Add(mBase, _consts[601]))
+			v235 = *(*int32)(unsafe.Add(mBase, _c_F_objectSetKeyAndExpire[0]))
 			if base.Ui32(int32(128)) < base.Ui32(v221+v165+v215+v235) {
 				v245 = v165
 				v249 = F_sdsnewlen(m, v77, v245)
@@ -2110,7 +2110,7 @@ func F_objectSetKeyAndExpire(m *base.Module, l0 int32, l1 int32, l2 int64) int32
 				if base.Ui32(int32(4)) < base.Ui32(v203) {
 					v211 = int32(0)
 				} else {
-					v210 = *(*int32)(unsafe.Add(mBase, uint32(v203<<(uint(int32(2))%32))+uint32(_consts[602])))
+					v210 = *(*int32)(unsafe.Add(mBase, uint32(v203<<(uint(int32(2))%32))+uint32(_c_F_objectSetKeyAndExpire[1])))
 					v211 = v210
 				}
 				v215 = v187 + v211 + int32(10)
@@ -2122,7 +2122,7 @@ func F_objectSetKeyAndExpire(m *base.Module, l0 int32, l1 int32, l2 int64) int32
 			} else {
 				v221 = int32(9)
 			}
-			v235 = *(*int32)(unsafe.Add(mBase, _consts[601]))
+			v235 = *(*int32)(unsafe.Add(mBase, _c_F_objectSetKeyAndExpire[0]))
 			if base.Ui32(int32(128)) < base.Ui32(v221+v165+v215+v235) {
 				v245 = v165
 				v249 = F_sdsnewlen(m, v77, v245)
@@ -2246,7 +2246,7 @@ func F_objectSetKeyAndExpire(m *base.Module, l0 int32, l1 int32, l2 int64) int32
 					if base.Ui32(int32(4)) < base.Ui32(v203) {
 						v211 = int32(0)
 					} else {
-						v210 = *(*int32)(unsafe.Add(mBase, uint32(v203<<(uint(int32(2))%32))+uint32(_consts[602])))
+						v210 = *(*int32)(unsafe.Add(mBase, uint32(v203<<(uint(int32(2))%32))+uint32(_c_F_objectSetKeyAndExpire[1])))
 						v211 = v210
 					}
 					v215 = v187 + v211 + int32(10)
@@ -2258,7 +2258,7 @@ func F_objectSetKeyAndExpire(m *base.Module, l0 int32, l1 int32, l2 int64) int32
 				} else {
 					v221 = int32(9)
 				}
-				v235 = *(*int32)(unsafe.Add(mBase, _consts[601]))
+				v235 = *(*int32)(unsafe.Add(mBase, _c_F_objectSetKeyAndExpire[0]))
 				if base.Ui32(int32(128)) < base.Ui32(v221+v165+v215+v235) {
 					v245 = v165
 					v249 = F_sdsnewlen(m, v77, v245)
@@ -2383,7 +2383,7 @@ func F_objectSetKeyAndExpire(m *base.Module, l0 int32, l1 int32, l2 int64) int32
 					if base.Ui32(int32(4)) < base.Ui32(v203) {
 						v211 = int32(0)
 					} else {
-						v210 = *(*int32)(unsafe.Add(mBase, uint32(v203<<(uint(int32(2))%32))+uint32(_consts[602])))
+						v210 = *(*int32)(unsafe.Add(mBase, uint32(v203<<(uint(int32(2))%32))+uint32(_c_F_objectSetKeyAndExpire[1])))
 						v211 = v210
 					}
 					v215 = v187 + v211 + int32(10)
@@ -2395,7 +2395,7 @@ func F_objectSetKeyAndExpire(m *base.Module, l0 int32, l1 int32, l2 int64) int32
 				} else {
 					v221 = int32(9)
 				}
-				v235 = *(*int32)(unsafe.Add(mBase, _consts[601]))
+				v235 = *(*int32)(unsafe.Add(mBase, _c_F_objectSetKeyAndExpire[0]))
 				if base.Ui32(int32(128)) < base.Ui32(v221+v165+v215+v235) {
 					v245 = v165
 					v249 = F_sdsnewlen(m, v77, v245)
@@ -2520,7 +2520,7 @@ func F_objectSetKeyAndExpire(m *base.Module, l0 int32, l1 int32, l2 int64) int32
 					if base.Ui32(int32(4)) < base.Ui32(v203) {
 						v211 = int32(0)
 					} else {
-						v210 = *(*int32)(unsafe.Add(mBase, uint32(v203<<(uint(int32(2))%32))+uint32(_consts[602])))
+						v210 = *(*int32)(unsafe.Add(mBase, uint32(v203<<(uint(int32(2))%32))+uint32(_c_F_objectSetKeyAndExpire[1])))
 						v211 = v210
 					}
 					v215 = v187 + v211 + int32(10)
@@ -2532,7 +2532,7 @@ func F_objectSetKeyAndExpire(m *base.Module, l0 int32, l1 int32, l2 int64) int32
 				} else {
 					v221 = int32(9)
 				}
-				v235 = *(*int32)(unsafe.Add(mBase, _consts[601]))
+				v235 = *(*int32)(unsafe.Add(mBase, _c_F_objectSetKeyAndExpire[0]))
 				if base.Ui32(int32(128)) < base.Ui32(v221+v165+v215+v235) {
 					v245 = v165
 					v249 = F_sdsnewlen(m, v77, v245)
@@ -2625,7 +2625,7 @@ func F_objectSetKeyAndExpire(m *base.Module, l0 int32, l1 int32, l2 int64) int32
 				if base.Ui32(int32(4)) < base.Ui32(v203) {
 					v211 = int32(0)
 				} else {
-					v210 = *(*int32)(unsafe.Add(mBase, uint32(v203<<(uint(int32(2))%32))+uint32(_consts[602])))
+					v210 = *(*int32)(unsafe.Add(mBase, uint32(v203<<(uint(int32(2))%32))+uint32(_c_F_objectSetKeyAndExpire[1])))
 					v211 = v210
 				}
 				v215 = v187 + v211 + int32(10)
@@ -2637,7 +2637,7 @@ func F_objectSetKeyAndExpire(m *base.Module, l0 int32, l1 int32, l2 int64) int32
 			} else {
 				v221 = int32(9)
 			}
-			v235 = *(*int32)(unsafe.Add(mBase, _consts[601]))
+			v235 = *(*int32)(unsafe.Add(mBase, _c_F_objectSetKeyAndExpire[0]))
 			if base.Ui32(int32(128)) < base.Ui32(v221+v165+v215+v235) {
 				v245 = v165
 				v249 = F_sdsnewlen(m, v77, v245)
@@ -2876,7 +2876,7 @@ L15:
 	}
 L16:
 	;
-	v54 = F_rioWriteBulkString(m, l0, int32(_a167), int32(4))
+	v54 = F_rioWriteBulkString(m, l0, int32(_a_F_rewriteSetObject_0), int32(4))
 	mBase = m.M
 	v55 = m.ExcPending
 	if v55 != 0 {

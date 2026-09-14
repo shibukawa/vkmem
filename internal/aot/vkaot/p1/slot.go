@@ -150,7 +150,7 @@ L1:
 L2:
 	;
 	v213 = int32(-1)
-	v215 = *(*int32)(unsafe.Add(mBase, _consts[28]))
+	v215 = *(*int32)(unsafe.Add(mBase, _c_F_checkSlotExportOwnership[0]))
 	if int32(3) < v215 {
 		v227 = v213
 		goto L1
@@ -159,7 +159,7 @@ L2:
 	}
 L3:
 	;
-	F__serverAssert(m, int32(_a402), int32(_a386), int32(1793))
+	F__serverAssert(m, int32(_a_F_checkSlotExportOwnership_0), int32(_a_F_checkSlotExportOwnership_1), int32(1793))
 	mBase = m.M
 	v203 = m.ExcPending
 	if v203 != 0 {
@@ -255,7 +255,7 @@ L15:
 	}
 L16:
 	;
-	v61 = *(*int32)(unsafe.Add(mBase, _consts[111]))
+	v61 = *(*int32)(unsafe.Add(mBase, _c_F_checkSlotExportOwnership[1]))
 	v67 = v57
 	v68 = v52
 	goto L17
@@ -329,7 +329,7 @@ L28:
 L29:
 	;
 	v109 = int32(0)
-	v111 = *(*int32)(unsafe.Add(mBase, _consts[111]))
+	v111 = *(*int32)(unsafe.Add(mBase, _c_F_checkSlotExportOwnership[1]))
 	v112 = *(*int32)(unsafe.Add(mBase, uint32(v111)))
 	if v89 == v112 {
 		v227 = v109
@@ -453,7 +453,7 @@ L47:
 	;
 	v183 = int32(1)
 	*(*uint8)(unsafe.Add(mBase, uint32(l1))) = uint8(v183)
-	v186 = *(*int32)(unsafe.Add(mBase, _consts[28]))
+	v186 = *(*int32)(unsafe.Add(mBase, _c_F_checkSlotExportOwnership[0]))
 	if int32(2) < v186 {
 		v227 = v109
 		goto L1
@@ -464,7 +464,7 @@ L48:
 	;
 	v189 = *(*int32)(unsafe.Add(mBase, uint32(l0)+188))
 	*(*int32)(unsafe.Add(mBase, uint32(v11)+16)) = v189
-	F__serverLog(m, int32(2), int32(_a405), v11+int32(16))
+	F__serverLog(m, int32(2), int32(_a_F_checkSlotExportOwnership_2), v11+int32(16))
 	mBase = m.M
 	v198 = m.ExcPending
 	if v198 != 0 {
@@ -490,7 +490,7 @@ L52:
 	;
 	v218 = *(*int32)(unsafe.Add(mBase, uint32(l0)+188))
 	*(*int32)(unsafe.Add(mBase, uint32(v11))) = v218
-	F__serverLog(m, int32(3), int32(_a406), v11)
+	F__serverLog(m, int32(3), int32(_a_F_checkSlotExportOwnership_3), v11)
 	mBase = m.M
 	v223 = m.ExcPending
 	if v223 != 0 {
@@ -868,7 +868,7 @@ func F_freeSlotMigrationJob(m *base.Module, l0 int32) {
 		}
 	} else {
 		if v4 != 0 {
-			F__serverAssert(m, int32(_a393), int32(_a386), int32(2186))
+			F__serverAssert(m, int32(_a_F_freeSlotMigrationJob_0), int32(_a_F_freeSlotMigrationJob_1), int32(2186))
 			mBase = m.M
 			v48 = m.ExcPending
 			if v48 != 0 {
@@ -1130,15 +1130,15 @@ func F_slotExportJobBeginSnapshotToTargetSocket(m *base.Module, l0 int32) int32 
 	v9 = v7 - int32(112)
 	m.G0 = v9
 	v11 = int32(-1)
-	v13 = *(*int32)(unsafe.Add(mBase, _consts[61]))
+	v13 = *(*int32)(unsafe.Add(mBase, _c_F_slotExportJobBeginSnapshotToTargetSocket[0]))
 	if v13 != v11 {
 		v298 = v11
 		m.G0 = v9 + int32(112)
 		return v298
 	} else {
-		v17 = *(*int32)(unsafe.Add(mBase, _consts[220]))
+		v17 = *(*int32)(unsafe.Add(mBase, _c_F_slotExportJobBeginSnapshotToTargetSocket[1]))
 		if v17 != int32(-1) {
-			F__serverAssert(m, int32(_a397), int32(_a386), int32(1619))
+			F__serverAssert(m, int32(_a_F_slotExportJobBeginSnapshotToTargetSocket_0), int32(_a_F_slotExportJobBeginSnapshotToTargetSocket_1), int32(1619))
 			mBase = m.M
 			v310 = m.ExcPending
 			if v310 != 0 {
@@ -1151,9 +1151,9 @@ func F_slotExportJobBeginSnapshotToTargetSocket(m *base.Module, l0 int32) int32 
 				}
 			}
 		} else {
-			v21 = *(*int32)(unsafe.Add(mBase, _consts[221]))
+			v21 = *(*int32)(unsafe.Add(mBase, _c_F_slotExportJobBeginSnapshotToTargetSocket[2]))
 			if v21 != int32(-1) {
-				F__serverAssert(m, int32(_a397), int32(_a386), int32(1619))
+				F__serverAssert(m, int32(_a_F_slotExportJobBeginSnapshotToTargetSocket_0), int32(_a_F_slotExportJobBeginSnapshotToTargetSocket_1), int32(1619))
 				mBase = m.M
 				v310 = m.ExcPending
 				if v310 != 0 {
@@ -1199,7 +1199,7 @@ func F_slotExportJobBeginSnapshotToTargetSocket(m *base.Module, l0 int32) int32 
 					return v298
 				} else {
 					v100 = *(*int32)(unsafe.Add(mBase, uint32(v9)+104))
-					*(*int32)(unsafe.Add(mBase, _consts[220])) = v100
+					*(*int32)(unsafe.Add(mBase, _c_F_slotExportJobBeginSnapshotToTargetSocket[1])) = v100
 					v102 = *(*int32)(unsafe.Add(mBase, uint32(v9)+108))
 					v103 = int32(-1)
 					v110 = m.G0
@@ -1214,12 +1214,12 @@ func F_slotExportJobBeginSnapshotToTargetSocket(m *base.Module, l0 int32) int32 
 					}
 					m.G0 = v112 + int32(64)
 					if v172 != int32(-1) {
-						v185 = int32(_a20)
+						v185 = int32(_a_F_slotExportJobBeginSnapshotToTargetSocket_2)
 						v186 = *(*int32)(unsafe.Add(mBase, uint32(v9)+108))
-						*(*int32)(unsafe.Add(mBase, _consts[221])) = v186
+						*(*int32)(unsafe.Add(mBase, _c_F_slotExportJobBeginSnapshotToTargetSocket[2])) = v186
 						v189 = *(*int32)(unsafe.Add(mBase, uint32(l0)+152))
 						v190 = *(*int32)(unsafe.Add(mBase, uint32(v189)+8))
-						*(*int32)(unsafe.Add(mBase, _consts[222])) = v190
+						*(*int32)(unsafe.Add(mBase, _c_F_slotExportJobBeginSnapshotToTargetSocket[3])) = v190
 						v192 = *(*int32)(unsafe.Add(mBase, uint32(v9)+104))
 						v193 = int32(1)
 						v195 = F_serverFork(m, int32(5))
@@ -1230,27 +1230,27 @@ func F_slotExportJobBeginSnapshotToTargetSocket(m *base.Module, l0 int32) int32 
 						} else {
 							switch v195 + int32(1) {
 							case 0:
-								v243 = *(*int32)(unsafe.Add(mBase, _consts[28]))
+								v243 = *(*int32)(unsafe.Add(mBase, _c_F_slotExportJobBeginSnapshotToTargetSocket[4]))
 								if int32(3) < v243 {
 									v256 = F_close(m, v102)
 									mBase = m.M
-									v257 = int32(_a20)
-									v258 = *(*int32)(unsafe.Add(mBase, _consts[220]))
+									v257 = int32(_a_F_slotExportJobBeginSnapshotToTargetSocket_2)
+									v258 = *(*int32)(unsafe.Add(mBase, _c_F_slotExportJobBeginSnapshotToTargetSocket[1]))
 									v259 = F_close(m, v258)
 									mBase = m.M
-									v261 = *(*int32)(unsafe.Add(mBase, _consts[221]))
+									v261 = *(*int32)(unsafe.Add(mBase, _c_F_slotExportJobBeginSnapshotToTargetSocket[2]))
 									v262 = F_close(m, v261)
 									mBase = m.M
-									*(*int32)(unsafe.Add(mBase, _consts[222])) = int32(0)
+									*(*int32)(unsafe.Add(mBase, _c_F_slotExportJobBeginSnapshotToTargetSocket[3])) = int32(0)
 									v298 = int32(-1)
 									m.G0 = v9 + int32(112)
 									return v298
 								} else {
-									v247 = *(*int32)(unsafe.Add(mBase, _consts[18]))
+									v247 = *(*int32)(unsafe.Add(mBase, _c_F_slotExportJobBeginSnapshotToTargetSocket[5]))
 									v248 = F___strerror_l(m, v247, v247)
 									mBase = m.M
 									*(*int32)(unsafe.Add(mBase, uint32(v9)+16)) = v248
-									F__serverLog(m, int32(3), int32(_a398), v9+int32(16))
+									F__serverLog(m, int32(3), int32(_a_F_slotExportJobBeginSnapshotToTargetSocket_3), v9+int32(16))
 									mBase = m.M
 									v255 = m.ExcPending
 									if v255 != 0 {
@@ -1258,14 +1258,14 @@ func F_slotExportJobBeginSnapshotToTargetSocket(m *base.Module, l0 int32) int32 
 									} else {
 										v256 = F_close(m, v102)
 										mBase = m.M
-										v257 = int32(_a20)
-										v258 = *(*int32)(unsafe.Add(mBase, _consts[220]))
+										v257 = int32(_a_F_slotExportJobBeginSnapshotToTargetSocket_2)
+										v258 = *(*int32)(unsafe.Add(mBase, _c_F_slotExportJobBeginSnapshotToTargetSocket[1]))
 										v259 = F_close(m, v258)
 										mBase = m.M
-										v261 = *(*int32)(unsafe.Add(mBase, _consts[221]))
+										v261 = *(*int32)(unsafe.Add(mBase, _c_F_slotExportJobBeginSnapshotToTargetSocket[2]))
 										v262 = F_close(m, v261)
 										mBase = m.M
-										*(*int32)(unsafe.Add(mBase, _consts[222])) = int32(0)
+										*(*int32)(unsafe.Add(mBase, _c_F_slotExportJobBeginSnapshotToTargetSocket[3])) = int32(0)
 										v298 = int32(-1)
 										m.G0 = v9 + int32(112)
 										return v298
@@ -1278,7 +1278,7 @@ func F_slotExportJobBeginSnapshotToTargetSocket(m *base.Module, l0 int32) int32 
 								if v204 != 0 {
 									return int32(0)
 								} else {
-									v206 = *(*int32)(unsafe.Add(mBase, _consts[220]))
+									v206 = *(*int32)(unsafe.Add(mBase, _c_F_slotExportJobBeginSnapshotToTargetSocket[1]))
 									v207 = F_close(m, v206)
 									mBase = m.M
 									v214 = F_childSnapshotForSyncSlot(m, v9+int32(24), l0)
@@ -1297,7 +1297,7 @@ func F_slotExportJobBeginSnapshotToTargetSocket(m *base.Module, l0 int32) int32 
 											} else {
 												v233 = F_close(m, v102)
 												mBase = m.M
-												v235 = *(*int32)(unsafe.Add(mBase, _consts[221]))
+												v235 = *(*int32)(unsafe.Add(mBase, _c_F_slotExportJobBeginSnapshotToTargetSocket[2]))
 												v236 = F_close(m, v235)
 												mBase = m.M
 												v240 = F_read(m, v192, v9+int32(104), int32(1))
@@ -1326,7 +1326,7 @@ func F_slotExportJobBeginSnapshotToTargetSocket(m *base.Module, l0 int32) int32 
 													} else {
 														v233 = F_close(m, v102)
 														mBase = m.M
-														v235 = *(*int32)(unsafe.Add(mBase, _consts[221]))
+														v235 = *(*int32)(unsafe.Add(mBase, _c_F_slotExportJobBeginSnapshotToTargetSocket[2]))
 														v236 = F_close(m, v235)
 														mBase = m.M
 														v240 = F_read(m, v192, v9+int32(104), int32(1))
@@ -1338,7 +1338,7 @@ func F_slotExportJobBeginSnapshotToTargetSocket(m *base.Module, l0 int32) int32 
 														}
 													}
 												} else {
-													F_sendChildCowInfo(m, int32(4), int32(_a399))
+													F_sendChildCowInfo(m, int32(4), int32(_a_F_slotExportJobBeginSnapshotToTargetSocket_4))
 													mBase = m.M
 													v226 = m.ExcPending
 													if v226 != 0 {
@@ -1353,7 +1353,7 @@ func F_slotExportJobBeginSnapshotToTargetSocket(m *base.Module, l0 int32) int32 
 														} else {
 															v233 = F_close(m, v102)
 															mBase = m.M
-															v235 = *(*int32)(unsafe.Add(mBase, _consts[221]))
+															v235 = *(*int32)(unsafe.Add(mBase, _c_F_slotExportJobBeginSnapshotToTargetSocket[2]))
 															v236 = F_close(m, v235)
 															mBase = m.M
 															v240 = F_read(m, v192, v9+int32(104), int32(1))
@@ -1371,14 +1371,14 @@ func F_slotExportJobBeginSnapshotToTargetSocket(m *base.Module, l0 int32) int32 
 									}
 								}
 							default:
-								v268 = *(*int32)(unsafe.Add(mBase, _consts[28]))
+								v268 = *(*int32)(unsafe.Add(mBase, _c_F_slotExportJobBeginSnapshotToTargetSocket[4]))
 								if int32(2) < v268 {
 									v278 = F_close(m, v102)
 									mBase = m.M
 									v279 = int32(0)
-									v280 = int32(_a20)
-									v281 = *(*int32)(unsafe.Add(mBase, _consts[223]))
-									v283 = *(*int32)(unsafe.Add(mBase, _consts[220]))
+									v280 = int32(_a_F_slotExportJobBeginSnapshotToTargetSocket_2)
+									v281 = *(*int32)(unsafe.Add(mBase, _c_F_slotExportJobBeginSnapshotToTargetSocket[6]))
+									v283 = *(*int32)(unsafe.Add(mBase, _c_F_slotExportJobBeginSnapshotToTargetSocket[1]))
 									v287 = F_aeCreateFileEvent(m, v281, v283, int32(1), int32(108), v279)
 									mBase = m.M
 									v288 = m.ExcPending
@@ -1386,7 +1386,7 @@ func F_slotExportJobBeginSnapshotToTargetSocket(m *base.Module, l0 int32) int32 
 										return int32(0)
 									} else {
 										if v287 == int32(-1) {
-											F__serverPanic_1(m, int32(_a386), int32(1679), int32(_a400), int32(0))
+											F__serverPanic_1(m, int32(_a_F_slotExportJobBeginSnapshotToTargetSocket_1), int32(1679), int32(_a_F_slotExportJobBeginSnapshotToTargetSocket_5), int32(0))
 											mBase = m.M
 											v317 = m.ExcPending
 											if v317 != 0 {
@@ -1401,7 +1401,7 @@ func F_slotExportJobBeginSnapshotToTargetSocket(m *base.Module, l0 int32) int32 
 										} else {
 											v291 = F_close(m, v192)
 											mBase = m.M
-											v293 = *(*int32)(unsafe.Add(mBase, _consts[224]))
+											v293 = *(*int32)(unsafe.Add(mBase, _c_F_slotExportJobBeginSnapshotToTargetSocket[7]))
 											if v293 == int32(0) {
 												v298 = v279
 												m.G0 = v9 + int32(112)
@@ -1424,7 +1424,7 @@ func F_slotExportJobBeginSnapshotToTargetSocket(m *base.Module, l0 int32) int32 
 									v271 = *(*int32)(unsafe.Add(mBase, uint32(l0)+188))
 									*(*int32)(unsafe.Add(mBase, uint32(v9)+4)) = v271
 									*(*int32)(unsafe.Add(mBase, uint32(v9))) = v195
-									F__serverLog(m, int32(2), int32(_a401), v9)
+									F__serverLog(m, int32(2), int32(_a_F_slotExportJobBeginSnapshotToTargetSocket_6), v9)
 									mBase = m.M
 									v277 = m.ExcPending
 									if v277 != 0 {
@@ -1433,9 +1433,9 @@ func F_slotExportJobBeginSnapshotToTargetSocket(m *base.Module, l0 int32) int32 
 										v278 = F_close(m, v102)
 										mBase = m.M
 										v279 = int32(0)
-										v280 = int32(_a20)
-										v281 = *(*int32)(unsafe.Add(mBase, _consts[223]))
-										v283 = *(*int32)(unsafe.Add(mBase, _consts[220]))
+										v280 = int32(_a_F_slotExportJobBeginSnapshotToTargetSocket_2)
+										v281 = *(*int32)(unsafe.Add(mBase, _c_F_slotExportJobBeginSnapshotToTargetSocket[6]))
+										v283 = *(*int32)(unsafe.Add(mBase, _c_F_slotExportJobBeginSnapshotToTargetSocket[1]))
 										v287 = F_aeCreateFileEvent(m, v281, v283, int32(1), int32(108), v279)
 										mBase = m.M
 										v288 = m.ExcPending
@@ -1443,7 +1443,7 @@ func F_slotExportJobBeginSnapshotToTargetSocket(m *base.Module, l0 int32) int32 
 											return int32(0)
 										} else {
 											if v287 == int32(-1) {
-												F__serverPanic_1(m, int32(_a386), int32(1679), int32(_a400), int32(0))
+												F__serverPanic_1(m, int32(_a_F_slotExportJobBeginSnapshotToTargetSocket_1), int32(1679), int32(_a_F_slotExportJobBeginSnapshotToTargetSocket_5), int32(0))
 												mBase = m.M
 												v317 = m.ExcPending
 												if v317 != 0 {
@@ -1458,7 +1458,7 @@ func F_slotExportJobBeginSnapshotToTargetSocket(m *base.Module, l0 int32) int32 
 											} else {
 												v291 = F_close(m, v192)
 												mBase = m.M
-												v293 = *(*int32)(unsafe.Add(mBase, _consts[224]))
+												v293 = *(*int32)(unsafe.Add(mBase, _c_F_slotExportJobBeginSnapshotToTargetSocket[7]))
 												if v293 == int32(0) {
 													v298 = v279
 													m.G0 = v9 + int32(112)
@@ -1484,11 +1484,11 @@ func F_slotExportJobBeginSnapshotToTargetSocket(m *base.Module, l0 int32) int32 
 					} else {
 						v178 = F_close(m, v102)
 						mBase = m.M
-						v179 = int32(_a20)
-						v180 = *(*int32)(unsafe.Add(mBase, _consts[220]))
+						v179 = int32(_a_F_slotExportJobBeginSnapshotToTargetSocket_2)
+						v180 = *(*int32)(unsafe.Add(mBase, _c_F_slotExportJobBeginSnapshotToTargetSocket[1]))
 						v181 = F_close(m, v180)
 						mBase = m.M
-						*(*int32)(unsafe.Add(mBase, _consts[220])) = int32(-1)
+						*(*int32)(unsafe.Add(mBase, _c_F_slotExportJobBeginSnapshotToTargetSocket[1])) = int32(-1)
 						v298 = v103
 						m.G0 = v9 + int32(112)
 						return v298
@@ -1546,7 +1546,7 @@ func F_slotExportTryDoPause(m *base.Module, l0 int32) int32 {
 	m.G0 = v8
 	v10 = *(*int32)(unsafe.Add(mBase, uint32(l0)))
 	if v10 != 0 {
-		F__serverAssert(m, int32(_a402), int32(_a386), int32(1461))
+		F__serverAssert(m, int32(_a_F_slotExportTryDoPause_0), int32(_a_F_slotExportTryDoPause_1), int32(1461))
 		mBase = m.M
 		v66 = m.ExcPending
 		if v66 != 0 {
@@ -1560,19 +1560,19 @@ func F_slotExportTryDoPause(m *base.Module, l0 int32) int32 {
 		}
 	} else {
 		v11 = int32(-1)
-		v13 = int32(*(*uint8)(unsafe.Add(mBase, _consts[225])))
+		v13 = int32(*(*uint8)(unsafe.Add(mBase, _c_F_slotExportTryDoPause[0])))
 		if v13&int32(8) != 0 {
 			v55 = v11
 			m.G0 = v8 + int32(16)
 			return v55
 		} else {
-			v17 = *(*int32)(unsafe.Add(mBase, _consts[226]))
+			v17 = *(*int32)(unsafe.Add(mBase, _c_F_slotExportTryDoPause[1]))
 			if v17 < int32(0) {
-				v25 = *(*int32)(unsafe.Add(mBase, _consts[28]))
+				v25 = *(*int32)(unsafe.Add(mBase, _c_F_slotExportTryDoPause[2]))
 				if int32(2) < v25 {
 					v40 = F_mstime(m)
 					mBase = m.M
-					v42 = *(*int64)(unsafe.Add(mBase, _consts[227]))
+					v42 = *(*int64)(unsafe.Add(mBase, _c_F_slotExportTryDoPause[3]))
 					v45 = v40 + v42<<(uint(int64(1))%64)
 					*(*int64)(unsafe.Add(mBase, uint32(l0)+176)) = v45
 					F_pauseActions(m, int32(3), v45, int32(29))
@@ -1581,7 +1581,7 @@ func F_slotExportTryDoPause(m *base.Module, l0 int32) int32 {
 					if v50 != 0 {
 						return int32(0)
 					} else {
-						F_sendSyncSlotsMessage(m, l0, int32(_a403))
+						F_sendSyncSlotsMessage(m, l0, int32(_a_F_slotExportTryDoPause_2))
 						mBase = m.M
 						v53 = m.ExcPending
 						if v53 != 0 {
@@ -1598,7 +1598,7 @@ func F_slotExportTryDoPause(m *base.Module, l0 int32) int32 {
 					v30 = *(*int32)(unsafe.Add(mBase, uint32(l0)+188))
 					*(*int32)(unsafe.Add(mBase, uint32(v8)+8)) = v30
 					*(*int64)(unsafe.Add(mBase, uint32(v8))) = v29
-					F__serverLog(m, int32(2), int32(_a404), v8)
+					F__serverLog(m, int32(2), int32(_a_F_slotExportTryDoPause_3), v8)
 					mBase = m.M
 					v38 = m.ExcPending
 					if v38 != 0 {
@@ -1606,7 +1606,7 @@ func F_slotExportTryDoPause(m *base.Module, l0 int32) int32 {
 					} else {
 						v40 = F_mstime(m)
 						mBase = m.M
-						v42 = *(*int64)(unsafe.Add(mBase, _consts[227]))
+						v42 = *(*int64)(unsafe.Add(mBase, _c_F_slotExportTryDoPause[3]))
 						v45 = v40 + v42<<(uint(int64(1))%64)
 						*(*int64)(unsafe.Add(mBase, uint32(l0)+176)) = v45
 						F_pauseActions(m, int32(3), v45, int32(29))
@@ -1615,7 +1615,7 @@ func F_slotExportTryDoPause(m *base.Module, l0 int32) int32 {
 						if v50 != 0 {
 							return int32(0)
 						} else {
-							F_sendSyncSlotsMessage(m, l0, int32(_a403))
+							F_sendSyncSlotsMessage(m, l0, int32(_a_F_slotExportTryDoPause_2))
 							mBase = m.M
 							v53 = m.ExcPending
 							if v53 != 0 {
@@ -1636,11 +1636,11 @@ func F_slotExportTryDoPause(m *base.Module, l0 int32) int32 {
 					m.G0 = v8 + int32(16)
 					return v55
 				} else {
-					v25 = *(*int32)(unsafe.Add(mBase, _consts[28]))
+					v25 = *(*int32)(unsafe.Add(mBase, _c_F_slotExportTryDoPause[2]))
 					if int32(2) < v25 {
 						v40 = F_mstime(m)
 						mBase = m.M
-						v42 = *(*int64)(unsafe.Add(mBase, _consts[227]))
+						v42 = *(*int64)(unsafe.Add(mBase, _c_F_slotExportTryDoPause[3]))
 						v45 = v40 + v42<<(uint(int64(1))%64)
 						*(*int64)(unsafe.Add(mBase, uint32(l0)+176)) = v45
 						F_pauseActions(m, int32(3), v45, int32(29))
@@ -1649,7 +1649,7 @@ func F_slotExportTryDoPause(m *base.Module, l0 int32) int32 {
 						if v50 != 0 {
 							return int32(0)
 						} else {
-							F_sendSyncSlotsMessage(m, l0, int32(_a403))
+							F_sendSyncSlotsMessage(m, l0, int32(_a_F_slotExportTryDoPause_2))
 							mBase = m.M
 							v53 = m.ExcPending
 							if v53 != 0 {
@@ -1666,7 +1666,7 @@ func F_slotExportTryDoPause(m *base.Module, l0 int32) int32 {
 						v30 = *(*int32)(unsafe.Add(mBase, uint32(l0)+188))
 						*(*int32)(unsafe.Add(mBase, uint32(v8)+8)) = v30
 						*(*int64)(unsafe.Add(mBase, uint32(v8))) = v29
-						F__serverLog(m, int32(2), int32(_a404), v8)
+						F__serverLog(m, int32(2), int32(_a_F_slotExportTryDoPause_3), v8)
 						mBase = m.M
 						v38 = m.ExcPending
 						if v38 != 0 {
@@ -1674,7 +1674,7 @@ func F_slotExportTryDoPause(m *base.Module, l0 int32) int32 {
 						} else {
 							v40 = F_mstime(m)
 							mBase = m.M
-							v42 = *(*int64)(unsafe.Add(mBase, _consts[227]))
+							v42 = *(*int64)(unsafe.Add(mBase, _c_F_slotExportTryDoPause[3]))
 							v45 = v40 + v42<<(uint(int64(1))%64)
 							*(*int64)(unsafe.Add(mBase, uint32(l0)+176)) = v45
 							F_pauseActions(m, int32(3), v45, int32(29))
@@ -1683,7 +1683,7 @@ func F_slotExportTryDoPause(m *base.Module, l0 int32) int32 {
 							if v50 != 0 {
 								return int32(0)
 							} else {
-								F_sendSyncSlotsMessage(m, l0, int32(_a403))
+								F_sendSyncSlotsMessage(m, l0, int32(_a_F_slotExportTryDoPause_2))
 								mBase = m.M
 								v53 = m.ExcPending
 								if v53 != 0 {
@@ -2123,7 +2123,7 @@ L29:
 	}
 L30:
 	;
-	F_finishSlotMigrationJob(m, v24, int32(18), int32(_a394))
+	F_finishSlotMigrationJob(m, v24, int32(18), int32(_a_F_slotMigrationJobReadEstablishResponse_0))
 	mBase = m.M
 	v215 = m.ExcPending
 	if v215 != 0 {
@@ -2343,7 +2343,7 @@ L64:
 	;
 	v226 = *(*int32)(unsafe.Add(mBase, uint32(v24)+204))
 	*(*int32)(unsafe.Add(mBase, uint32(v11))) = v226
-	v230 = F_sdscatfmt(m, v224, int32(_a396), v11)
+	v230 = F_sdscatfmt(m, v224, int32(_a_F_slotMigrationJobReadEstablishResponse_2), v11)
 	mBase = m.M
 	v231 = m.ExcPending
 	if v231 != 0 {
@@ -2398,7 +2398,7 @@ L69:
 	}
 L70:
 	;
-	F_sendSyncSlotsMessage(m, v24, int32(_a395))
+	F_sendSyncSlotsMessage(m, v24, int32(_a_F_slotMigrationJobReadEstablishResponse_1))
 	mBase = m.M
 	v249 = m.ExcPending
 	if v249 != 0 {

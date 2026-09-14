@@ -214,7 +214,7 @@ func F_disableTracking(m *base.Module, l0 int32) {
 	}
 L1:
 	;
-	F__serverAssert(m, int32(_a1778), int32(_a2464), int32(77))
+	F__serverAssert(m, int32(_a_F_disableTracking_0), int32(_a_F_disableTracking_1), int32(77))
 	mBase = m.M
 	v326 = m.ExcPending
 	if v326 != 0 {
@@ -247,7 +247,7 @@ L3:
 L4:
 	;
 	v38 = int32(0)
-	v40 = F_raxSeek(m, v6+int32(12), int32(_a67), v38, v38)
+	v40 = F_raxSeek(m, v6+int32(12), int32(_a_F_disableTracking_2), v38, v38)
 	mBase = m.M
 	v41 = m.ExcPending
 	if v41 != 0 {
@@ -291,7 +291,7 @@ L9:
 L10:
 	;
 	v51 = int32(0)
-	v52 = *(*int32)(unsafe.Add(mBase, _consts[885]))
+	v52 = *(*int32)(unsafe.Add(mBase, _c_F_disableTracking[0]))
 	v53 = *(*int32)(unsafe.Add(mBase, uint32(v6)+20))
 	v54 = *(*int32)(unsafe.Add(mBase, uint32(v6)+28))
 	v56 = v6 + int32(8)
@@ -646,7 +646,7 @@ L56:
 L57:
 	;
 	v274 = int32(0)
-	v275 = *(*int32)(unsafe.Add(mBase, _consts[885]))
+	v275 = *(*int32)(unsafe.Add(mBase, _c_F_disableTracking[0]))
 	v276 = *(*int32)(unsafe.Add(mBase, uint32(v6)+20))
 	v277 = *(*int32)(unsafe.Add(mBase, uint32(v6)+28))
 	v279 = F_raxRemove(m, v275, v276, v277, v274)
@@ -698,9 +698,9 @@ L63:
 	return
 L64:
 	;
-	v309 = int32(_a20)
-	v311 = *(*int32)(unsafe.Add(mBase, _consts[780]))
-	*(*int32)(unsafe.Add(mBase, _consts[780])) = v311 + int32(-1)
+	v309 = int32(_a_F_disableTracking_3)
+	v311 = *(*int32)(unsafe.Add(mBase, _c_F_disableTracking[1]))
+	*(*int32)(unsafe.Add(mBase, _c_F_disableTracking[1])) = v311 + int32(-1)
 	v315 = *(*int32)(unsafe.Add(mBase, uint32(v302)+204))
 	*(*int32)(unsafe.Add(mBase, uint32(v302)+204)) = v315 & int32(-509)
 	goto L63
@@ -835,7 +835,7 @@ func F_sendTrackingMessage(m *base.Module, l0 int32, l1 int32, l2 int32, l3 int3
 			if v145 != 0 {
 				return
 			} else {
-				F_addReplyBulkCBuffer(m, v139, int32(_a2465), int32(10))
+				F_addReplyBulkCBuffer(m, v139, int32(_a_F_sendTrackingMessage_0), int32(10))
 				mBase = m.M
 				v149 = m.ExcPending
 				if v149 != 0 {
@@ -920,7 +920,7 @@ func F_sendTrackingMessage(m *base.Module, l0 int32, l1 int32, l2 int32, l3 int3
 		v36 = int64(8)
 		*(*int64)(unsafe.Add(mBase, uint32(v21)+8)) = v14<<(uint(v23)%64) | v14&v25<<(uint(v27)%64) | (v14&v30<<(uint(v32)%64) | v14&v34<<(uint(v36)%64)) | (int64(base.Ui64(v14)>>(uint(v36)%64))&v34 | int64(base.Ui64(v14)>>(uint(v32)%64))&v30 | (int64(base.Ui64(v14)>>(uint(v27)%64))&v25 | int64(base.Ui64(v14)>>(uint(v23)%64))))
 		*(*int32)(unsafe.Add(mBase, uint32(v21)+4)) = int32(0)
-		v62 = *(*int32)(unsafe.Add(mBase, _consts[444]))
+		v62 = *(*int32)(unsafe.Add(mBase, _c_F_sendTrackingMessage[0]))
 		v63 = int32(8)
 		v68 = F_raxFind(m, v62, v21+v63, v63, v21+int32(4))
 		mBase = m.M
@@ -945,7 +945,7 @@ func F_sendTrackingMessage(m *base.Module, l0 int32, l1 int32, l2 int32, l3 int3
 				if v89 != 0 {
 					return
 				} else {
-					F_addReplyBulkCBuffer(m, l0, int32(_a2466), int32(21))
+					F_addReplyBulkCBuffer(m, l0, int32(_a_F_sendTrackingMessage_1), int32(21))
 					mBase = m.M
 					v93 = m.ExcPending
 					if v93 != 0 {
@@ -986,8 +986,8 @@ func F_sendTrackingMessage(m *base.Module, l0 int32, l1 int32, l2 int32, l3 int3
 					v117 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v69)+202)))
 					if v117&int32(4) != 0 {
 						v132 = int32(0)
-						v133 = *(*int32)(unsafe.Add(mBase, _consts[886]))
-						v136 = *(*int32)(unsafe.Add(mBase, _consts[887]))
+						v133 = *(*int32)(unsafe.Add(mBase, _c_F_sendTrackingMessage[1]))
+						v136 = *(*int32)(unsafe.Add(mBase, _c_F_sendTrackingMessage[2]))
 						F_addReplyPubsubMessage(m, v69, v133, v132, v136)
 						mBase = m.M
 						v138 = m.ExcPending
@@ -1067,7 +1067,7 @@ func F_sendTrackingMessage(m *base.Module, l0 int32, l1 int32, l2 int32, l3 int3
 					if v145 != 0 {
 						return
 					} else {
-						F_addReplyBulkCBuffer(m, v139, int32(_a2465), int32(10))
+						F_addReplyBulkCBuffer(m, v139, int32(_a_F_sendTrackingMessage_0), int32(10))
 						mBase = m.M
 						v149 = m.ExcPending
 						if v149 != 0 {
@@ -1147,7 +1147,7 @@ func F_sendTrackingMessage(m *base.Module, l0 int32, l1 int32, l2 int32, l3 int3
 					if v89 != 0 {
 						return
 					} else {
-						F_addReplyBulkCBuffer(m, l0, int32(_a2466), int32(21))
+						F_addReplyBulkCBuffer(m, l0, int32(_a_F_sendTrackingMessage_1), int32(21))
 						mBase = m.M
 						v93 = m.ExcPending
 						if v93 != 0 {
@@ -1299,7 +1299,7 @@ func F_trackingBroadcastInvalidationMessages(m *base.Module) {
 	v13 = m.G0
 	v15 = v13 - int32(608)
 	m.G0 = v15
-	v18 = *(*int32)(unsafe.Add(mBase, _consts[888]))
+	v18 = *(*int32)(unsafe.Add(mBase, _c_F_trackingBroadcastInvalidationMessages[0]))
 	if v18 == v1 {
 		goto L1
 	} else {
@@ -1311,7 +1311,7 @@ L1:
 	return
 L2:
 	;
-	v22 = *(*int32)(unsafe.Add(mBase, _consts[780]))
+	v22 = *(*int32)(unsafe.Add(mBase, _c_F_trackingBroadcastInvalidationMessages[1]))
 	if v22 == int32(0) {
 		goto L1
 	} else {
@@ -1320,7 +1320,7 @@ L2:
 L3:
 	;
 	v26 = v15 + int32(304)
-	v28 = *(*int32)(unsafe.Add(mBase, _consts[885]))
+	v28 = *(*int32)(unsafe.Add(mBase, _c_F_trackingBroadcastInvalidationMessages[2]))
 	*(*int32)(unsafe.Add(mBase, uint32(v26)+4)) = v28
 	*(*int32)(unsafe.Add(mBase, uint32(v26))) = int32(2)
 	*(*int32)(unsafe.Add(mBase, uint32(v26)+20)) = int32(128)
@@ -1334,7 +1334,7 @@ L3:
 L4:
 	;
 	v49 = int32(0)
-	v51 = F_raxSeek(m, v15+int32(304), int32(_a67), v49, v49)
+	v51 = F_raxSeek(m, v15+int32(304), int32(_a_F_trackingBroadcastInvalidationMessages_0), v49, v49)
 	mBase = m.M
 	v52 = m.ExcPending
 	if v52 != 0 {
@@ -1429,7 +1429,7 @@ L15:
 L16:
 	;
 	v99 = int32(0)
-	v101 = F_raxSeek(m, v15, int32(_a67), v99, v99)
+	v101 = F_raxSeek(m, v15, int32(_a_F_trackingBroadcastInvalidationMessages_0), v99, v99)
 	mBase = m.M
 	v102 = m.ExcPending
 	if v102 != 0 {
@@ -1776,7 +1776,7 @@ func F_trackingInvalidateKeysOnFlush(m *base.Module, l0 int32) {
 	v9 = m.G0
 	v11 = v9 - int32(16)
 	m.G0 = v11
-	v14 = *(*int32)(unsafe.Add(mBase, _consts[780]))
+	v14 = *(*int32)(unsafe.Add(mBase, _c_F_trackingInvalidateKeysOnFlush[0]))
 	if v14 == int32(0) {
 		goto L1
 	} else {
@@ -1785,7 +1785,7 @@ func F_trackingInvalidateKeysOnFlush(m *base.Module, l0 int32) {
 L1:
 	;
 	v128 = int32(0)
-	v129 = *(*int32)(unsafe.Add(mBase, _consts[888]))
+	v129 = *(*int32)(unsafe.Add(mBase, _c_F_trackingInvalidateKeysOnFlush[1]))
 	if v129 == v128 {
 		goto L27
 	} else {
@@ -1793,7 +1793,7 @@ L1:
 	}
 L2:
 	;
-	v18 = *(*int32)(unsafe.Add(mBase, _consts[26]))
+	v18 = *(*int32)(unsafe.Add(mBase, _c_F_trackingInvalidateKeysOnFlush[2]))
 	v20 = v11 + int32(8)
 	v21 = *(*int32)(unsafe.Add(mBase, uint32(v18)))
 	*(*int32)(unsafe.Add(mBase, uint32(v20)+4)) = int32(0)
@@ -1851,7 +1851,7 @@ L10:
 	}
 L11:
 	;
-	v59 = *(*int32)(unsafe.Add(mBase, _consts[14]))
+	v59 = *(*int32)(unsafe.Add(mBase, _c_F_trackingInvalidateKeysOnFlush[3]))
 	if v52 != v59 {
 		goto L12
 	} else {
@@ -1861,11 +1861,11 @@ L12:
 	;
 	v66 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v52)+224)))
 	v67 = int32(2)
-	v70 = *(*int32)(unsafe.Add(mBase, uint32(v66<<(uint(v67)%32))+uint32(_consts[339])))
+	v70 = *(*int32)(unsafe.Add(mBase, uint32(v66<<(uint(v67)%32))+uint32(_c_F_trackingInvalidateKeysOnFlush[4])))
 	v71 = F_objectGetVal(m, v70)
 	mBase = m.M
 	v73 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v52)+224)))
-	v77 = *(*int32)(unsafe.Add(mBase, uint32(v73<<(uint(v67)%32))+uint32(_consts[339])))
+	v77 = *(*int32)(unsafe.Add(mBase, uint32(v73<<(uint(v67)%32))+uint32(_c_F_trackingInvalidateKeysOnFlush[4])))
 	v78 = F_objectGetVal(m, v77)
 	mBase = m.M
 	v81 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v78+int32(-1)))))
@@ -1886,7 +1886,7 @@ L12:
 	}
 L13:
 	;
-	v62 = *(*int32)(unsafe.Add(mBase, _consts[724]))
+	v62 = *(*int32)(unsafe.Add(mBase, _c_F_trackingInvalidateKeysOnFlush[5]))
 	v64 = F_listAddNodeTail(m, v62, int32(0))
 	mBase = m.M
 	v65 = m.ExcPending
@@ -2008,7 +2008,7 @@ L33:
 L34:
 	;
 	v141 = int32(0)
-	*(*int64)(unsafe.Add(mBase, _consts[889])) = int64(0)
-	*(*int32)(unsafe.Add(mBase, _consts[888])) = v139
+	*(*int64)(unsafe.Add(mBase, _c_F_trackingInvalidateKeysOnFlush[6])) = int64(0)
+	*(*int32)(unsafe.Add(mBase, _c_F_trackingInvalidateKeysOnFlush[1])) = v139
 	goto L27
 }

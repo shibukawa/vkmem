@@ -671,7 +671,7 @@ L6:
 	*(*int32)(unsafe.Add(mBase, uint32(v11)+20)) = v20
 	*(*int32)(unsafe.Add(mBase, uint32(v11)+16)) = l2
 	v26 = m.G3
-	v31 = F_luaL_error(m, l0, v26+int32(_a2754), v11+int32(16))
+	v31 = F_luaL_error(m, l0, v26+int32(_a_F_mp_unpack_full_0), v11+int32(16))
 	mBase = m.M
 	v32 = m.ExcPending
 	if v32 != 0 {
@@ -702,7 +702,7 @@ L9:
 	*(*int32)(unsafe.Add(mBase, uint32(v11)+4)) = v20
 	*(*int32)(unsafe.Add(mBase, uint32(v11))) = l2
 	v36 = m.G3
-	v39 = F_luaL_error(m, l0, v36+int32(_a2755), v11)
+	v39 = F_luaL_error(m, l0, v36+int32(_a_F_mp_unpack_full_1), v11)
 	mBase = m.M
 	v40 = m.ExcPending
 	if v40 != 0 {
@@ -790,7 +790,7 @@ L20:
 L21:
 	;
 	v75 = m.G3
-	v79 = F_luaL_error(m, l0, v75+int32(_a2756), int32(0))
+	v79 = F_luaL_error(m, l0, v75+int32(_a_F_mp_unpack_full_2), int32(0))
 	mBase = m.M
 	v80 = m.ExcPending
 	if v80 != 0 {
@@ -801,7 +801,7 @@ L21:
 L22:
 	;
 	v69 = m.G3
-	v73 = F_luaL_error(m, l0, v69+int32(_a2757), int32(0))
+	v73 = F_luaL_error(m, l0, v69+int32(_a_F_mp_unpack_full_3), int32(0))
 	mBase = m.M
 	v74 = m.ExcPending
 	if v74 != 0 {
@@ -840,7 +840,7 @@ L27:
 L28:
 	;
 	v102 = m.G3
-	F_luaL_checkstack(m, l0, int32(1), v102+int32(_a2758))
+	F_luaL_checkstack(m, l0, int32(1), v102+int32(_a_F_mp_unpack_full_4))
 	mBase = m.M
 	v106 = m.ExcPending
 	if v106 != 0 {

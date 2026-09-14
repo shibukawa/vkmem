@@ -49,7 +49,7 @@ func F_syncWithPrimaryHandleConnectingState(m *base.Module, l0 int32) int32 {
 	v4 = m.G0
 	v6 = v4 - int32(32)
 	m.G0 = v6
-	v9 = *(*int32)(unsafe.Add(mBase, _consts[28]))
+	v9 = *(*int32)(unsafe.Add(mBase, _c_F_syncWithPrimaryHandleConnectingState[0]))
 	if int32(2) < v9 {
 		v20 = *(*int32)(unsafe.Add(mBase, uint32(l0)))
 		v21 = *(*int32)(unsafe.Add(mBase, uint32(v20)+84))
@@ -69,7 +69,7 @@ func F_syncWithPrimaryHandleConnectingState(m *base.Module, l0 int32) int32 {
 				return int32(0)
 			} else {
 				*(*int32)(unsafe.Add(mBase, uint32(v6)+20)) = int32(0)
-				*(*int32)(unsafe.Add(mBase, uint32(v6)+16)) = int32(_a1970)
+				*(*int32)(unsafe.Add(mBase, uint32(v6)+16)) = int32(_a_F_syncWithPrimaryHandleConnectingState_0)
 				v37 = F_sendCommand(m, l0, v6+int32(16))
 				mBase = m.M
 				v38 = m.ExcPending
@@ -81,7 +81,7 @@ func F_syncWithPrimaryHandleConnectingState(m *base.Module, l0 int32) int32 {
 						m.G0 = v6 + int32(32)
 						return v53
 					} else {
-						v42 = *(*int32)(unsafe.Add(mBase, _consts[28]))
+						v42 = *(*int32)(unsafe.Add(mBase, _c_F_syncWithPrimaryHandleConnectingState[0]))
 						if int32(3) < v42 {
 							F_sdsfree(m, v37)
 							mBase = m.M
@@ -95,7 +95,7 @@ func F_syncWithPrimaryHandleConnectingState(m *base.Module, l0 int32) int32 {
 							}
 						} else {
 							*(*int32)(unsafe.Add(mBase, uint32(v6))) = v37
-							F__serverLog(m, int32(3), int32(_a1971), v6)
+							F__serverLog(m, int32(3), int32(_a_F_syncWithPrimaryHandleConnectingState_1), v6)
 							mBase = m.M
 							v49 = m.ExcPending
 							if v49 != 0 {
@@ -118,7 +118,7 @@ func F_syncWithPrimaryHandleConnectingState(m *base.Module, l0 int32) int32 {
 			}
 		}
 	} else {
-		F__serverLog(m, int32(2), int32(_a1972), int32(0))
+		F__serverLog(m, int32(2), int32(_a_F_syncWithPrimaryHandleConnectingState_2), int32(0))
 		mBase = m.M
 		v18 = m.ExcPending
 		if v18 != 0 {
@@ -142,7 +142,7 @@ func F_syncWithPrimaryHandleConnectingState(m *base.Module, l0 int32) int32 {
 					return int32(0)
 				} else {
 					*(*int32)(unsafe.Add(mBase, uint32(v6)+20)) = int32(0)
-					*(*int32)(unsafe.Add(mBase, uint32(v6)+16)) = int32(_a1970)
+					*(*int32)(unsafe.Add(mBase, uint32(v6)+16)) = int32(_a_F_syncWithPrimaryHandleConnectingState_0)
 					v37 = F_sendCommand(m, l0, v6+int32(16))
 					mBase = m.M
 					v38 = m.ExcPending
@@ -154,7 +154,7 @@ func F_syncWithPrimaryHandleConnectingState(m *base.Module, l0 int32) int32 {
 							m.G0 = v6 + int32(32)
 							return v53
 						} else {
-							v42 = *(*int32)(unsafe.Add(mBase, _consts[28]))
+							v42 = *(*int32)(unsafe.Add(mBase, _c_F_syncWithPrimaryHandleConnectingState[0]))
 							if int32(3) < v42 {
 								F_sdsfree(m, v37)
 								mBase = m.M
@@ -168,7 +168,7 @@ func F_syncWithPrimaryHandleConnectingState(m *base.Module, l0 int32) int32 {
 								}
 							} else {
 								*(*int32)(unsafe.Add(mBase, uint32(v6))) = v37
-								F__serverLog(m, int32(3), int32(_a1971), v6)
+								F__serverLog(m, int32(3), int32(_a_F_syncWithPrimaryHandleConnectingState_1), v6)
 								mBase = m.M
 								v49 = m.ExcPending
 								if v49 != 0 {
@@ -275,7 +275,7 @@ L7:
 	goto L8
 L8:
 	;
-	v24 = *(*int32)(unsafe.Add(mBase, _consts[18]))
+	v24 = *(*int32)(unsafe.Add(mBase, _c_F_syncWrite[0]))
 	if v24 == int32(6) {
 		v29 = v12
 		v30 = v16
@@ -359,6 +359,6 @@ L24:
 	goto L4
 L25:
 	;
-	*(*int32)(unsafe.Add(mBase, _consts[18])) = int32(73)
+	*(*int32)(unsafe.Add(mBase, _c_F_syncWrite[0])) = int32(73)
 	goto L2
 }

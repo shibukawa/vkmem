@@ -31,7 +31,7 @@ func F_functionsLibCtxSwapWithCurrent(m *base.Module, l0 int32, l1 int32) {
 	var v24 int32
 	_ = v24
 	v3 = int32(0)
-	v5 = *(*int32)(unsafe.Add(mBase, _consts[423]))
+	v5 = *(*int32)(unsafe.Add(mBase, _c_F_functionsLibCtxSwapWithCurrent[0]))
 	if l1 == v3 {
 		F_functionsLibCtxClear(m, v5, int32(0))
 		mBase = m.M
@@ -66,7 +66,7 @@ func F_functionsLibCtxSwapWithCurrent(m *base.Module, l0 int32, l1 int32) {
 						if v24 != 0 {
 							return
 						} else {
-							*(*int32)(unsafe.Add(mBase, _consts[423])) = l0
+							*(*int32)(unsafe.Add(mBase, _c_F_functionsLibCtxSwapWithCurrent[0])) = l0
 							return
 						}
 					}
@@ -80,7 +80,7 @@ func F_functionsLibCtxSwapWithCurrent(m *base.Module, l0 int32, l1 int32) {
 		if v10 != 0 {
 			return
 		} else {
-			*(*int32)(unsafe.Add(mBase, _consts[423])) = l0
+			*(*int32)(unsafe.Add(mBase, _c_F_functionsLibCtxSwapWithCurrent[0])) = l0
 			return
 		}
 	}
@@ -144,11 +144,11 @@ func F_functionsMemoryOverhead(m *base.Module) int32 {
 	_ = v36
 	var v39 int32
 	_ = v39
-	v2 = *(*int32)(unsafe.Add(mBase, _consts[425]))
+	v2 = *(*int32)(unsafe.Add(mBase, _c_F_functionsMemoryOverhead[0]))
 	v3 = F_dictMemUsage(m, v2)
 	mBase = m.M
 	v6 = int32(0)
-	v7 = *(*int32)(unsafe.Add(mBase, _consts[423]))
+	v7 = *(*int32)(unsafe.Add(mBase, _c_F_functionsMemoryOverhead[1]))
 	v8 = *(*int32)(unsafe.Add(mBase, uint32(v7)+4))
 	v12 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v8)+27)))
 	if v12 == int32(255) {
@@ -165,9 +165,9 @@ func F_functionsMemoryOverhead(m *base.Module) int32 {
 	v27 = *(*int32)(unsafe.Add(mBase, uint32(v8)+16))
 	v28 = *(*int32)(unsafe.Add(mBase, uint32(v8)+12))
 	v34 = int32(0)
-	v35 = *(*int32)(unsafe.Add(mBase, _consts[423]))
+	v35 = *(*int32)(unsafe.Add(mBase, _c_F_functionsMemoryOverhead[1]))
 	v36 = *(*int32)(unsafe.Add(mBase, uint32(v35)+8))
-	v39 = *(*int32)(unsafe.Add(mBase, _consts[426]))
+	v39 = *(*int32)(unsafe.Add(mBase, _c_F_functionsMemoryOverhead[2]))
 	return v3 + int32(8) + ((v16+v23)<<(uint(int32(2))%32) + (v27+v28)*int32(24)) + v36 + v39 + int32(16)
 }
 func F_functionsRemoveLibFromEngine(m *base.Module, l0 int32) {
@@ -291,7 +291,7 @@ func F_functionsRemoveLibFromEngine(m *base.Module, l0 int32) {
 	_ = v138
 	var v140 int32
 	_ = v140
-	v5 = *(*int32)(unsafe.Add(mBase, _consts[423]))
+	v5 = *(*int32)(unsafe.Add(mBase, _c_F_functionsRemoveLibFromEngine[0]))
 	v6 = *(*int32)(unsafe.Add(mBase, uint32(v5)))
 	v7 = F_dictGetSafeIterator(m, v6)
 	mBase = m.M
@@ -526,7 +526,7 @@ L33:
 	}
 L34:
 	;
-	v125 = *(*int32)(unsafe.Add(mBase, _consts[423]))
+	v125 = *(*int32)(unsafe.Add(mBase, _c_F_functionsRemoveLibFromEngine[0]))
 	F_libraryUnlink(m, v125, v121)
 	mBase = m.M
 	v127 = m.ExcPending

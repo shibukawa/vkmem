@@ -96,7 +96,7 @@ func F_aofDelHistoryFiles(m *base.Module) int32 {
 	v5 = m.G0
 	v7 = v5 - int32(16)
 	m.G0 = v7
-	v11 = *(*int32)(unsafe.Add(mBase, _consts[12]))
+	v11 = *(*int32)(unsafe.Add(mBase, _c_F_aofDelHistoryFiles[0]))
 	if v11 == v1 {
 		v111 = v1
 		goto L2
@@ -105,7 +105,7 @@ func F_aofDelHistoryFiles(m *base.Module) int32 {
 	}
 L1:
 	;
-	F__serverAssert(m, int32(_a85), int32(_a68), int32(670))
+	F__serverAssert(m, int32(_a_F_aofDelHistoryFiles_0), int32(_a_F_aofDelHistoryFiles_1), int32(670))
 	mBase = m.M
 	v122 = m.ExcPending
 	if v122 != 0 {
@@ -119,7 +119,7 @@ L2:
 	return v111
 L3:
 	;
-	v15 = *(*int32)(unsafe.Add(mBase, _consts[16]))
+	v15 = *(*int32)(unsafe.Add(mBase, _c_F_aofDelHistoryFiles[1]))
 	if v15 == int32(1) {
 		v111 = v1
 		goto L2
@@ -154,7 +154,7 @@ L6:
 	}
 L7:
 	;
-	v97 = *(*int32)(unsafe.Add(mBase, _consts[12]))
+	v97 = *(*int32)(unsafe.Add(mBase, _c_F_aofDelHistoryFiles[0]))
 	*(*int32)(unsafe.Add(mBase, uint32(v97)+32)) = int32(1)
 	v100 = F_getAofManifestAsString(m, v97)
 	mBase = m.M
@@ -198,7 +198,7 @@ L13:
 	goto L7
 L14:
 	;
-	v53 = *(*int32)(unsafe.Add(mBase, _consts[15]))
+	v53 = *(*int32)(unsafe.Add(mBase, _c_F_aofDelHistoryFiles[2]))
 	if int32(2) < v53 {
 		goto L15
 	} else {
@@ -206,7 +206,7 @@ L14:
 	}
 L15:
 	;
-	v65 = *(*int32)(unsafe.Add(mBase, _consts[13]))
+	v65 = *(*int32)(unsafe.Add(mBase, _c_F_aofDelHistoryFiles[3]))
 	v66 = *(*int32)(unsafe.Add(mBase, uint32(v48)))
 	v67 = F_makePath(m, v65, v66)
 	mBase = m.M
@@ -220,7 +220,7 @@ L16:
 	;
 	v56 = *(*int32)(unsafe.Add(mBase, uint32(v48)))
 	*(*int32)(unsafe.Add(mBase, uint32(v7))) = v56
-	F__serverLog(m, int32(2), int32(_a86), v7)
+	F__serverLog(m, int32(2), int32(_a_F_aofDelHistoryFiles_2), v7)
 	mBase = m.M
 	v63 = m.ExcPending
 	if v63 != 0 {
@@ -256,7 +256,7 @@ L20:
 	}
 L21:
 	;
-	v74 = *(*int32)(unsafe.Add(mBase, _consts[12]))
+	v74 = *(*int32)(unsafe.Add(mBase, _c_F_aofDelHistoryFiles[0]))
 	v75 = *(*int32)(unsafe.Add(mBase, uint32(v74)+8))
 	F_listDelNode(m, v75, v45)
 	mBase = m.M
@@ -436,12 +436,12 @@ L1:
 	v116 = *(*int64)(unsafe.Add(mBase, uint32(l1)+8))
 	v119 = *(*int32)(unsafe.Add(mBase, uint32(l1)+16))
 	*(*int32)(unsafe.Add(mBase, uint32(v11+int32(28)))) = v119
-	*(*int32)(unsafe.Add(mBase, uint32(v11+int32(24)))) = int32(_a63)
+	*(*int32)(unsafe.Add(mBase, uint32(v11+int32(24)))) = int32(_a_F_aofInfoFormat_0)
 	*(*int64)(unsafe.Add(mBase, uint32(v11+int32(16)))) = v116
-	*(*int32)(unsafe.Add(mBase, uint32(v11)+8)) = int32(_a64)
+	*(*int32)(unsafe.Add(mBase, uint32(v11)+8)) = int32(_a_F_aofInfoFormat_1)
 	*(*int32)(unsafe.Add(mBase, uint32(v11)+4)) = v114
-	*(*int32)(unsafe.Add(mBase, uint32(v11))) = int32(_a65)
-	v134 = F_sdscatprintf(m, l0, int32(_a66), v11)
+	*(*int32)(unsafe.Add(mBase, uint32(v11))) = int32(_a_F_aofInfoFormat_2)
+	v134 = F_sdscatprintf(m, l0, int32(_a_F_aofInfoFormat_3), v11)
 	mBase = m.M
 	v135 = m.ExcPending
 	if v135 != 0 {
@@ -695,7 +695,7 @@ func F_aofListDup(m *base.Module, l0 int32) int32 {
 			}
 		}
 	} else {
-		F__serverAssert(m, int32(_a67), int32(_a68), int32(112))
+		F__serverAssert(m, int32(_a_F_aofListDup_0), int32(_a_F_aofListDup_1), int32(112))
 		mBase = m.M
 		v9 = m.ExcPending
 		if v9 != 0 {
@@ -839,9 +839,9 @@ func F_aofLoadManifestFromDisk(m *base.Module) {
 				*(*int32)(unsafe.Add(mBase, uint32(v15)+12)) = v23
 				*(*int32)(unsafe.Add(mBase, uint32(v18)+8)) = v21
 				*(*int32)(unsafe.Add(mBase, uint32(v18)+12)) = v23
-				v29 = int32(_a69)
-				*(*int32)(unsafe.Add(mBase, _consts[12])) = v13
-				v32 = *(*int32)(unsafe.Add(mBase, _consts[13]))
+				v29 = int32(_a_F_aofLoadManifestFromDisk_0)
+				*(*int32)(unsafe.Add(mBase, _c_F_aofLoadManifestFromDisk[0])) = v13
+				v32 = *(*int32)(unsafe.Add(mBase, _c_F_aofLoadManifestFromDisk[1]))
 				v35 = m.G0
 				v36 = int32(96)
 				v37 = v35 - v36
@@ -857,16 +857,16 @@ func F_aofLoadManifestFromDisk(m *base.Module) {
 					if v63 != 0 {
 						return
 					} else {
-						*(*int32)(unsafe.Add(mBase, uint32(v10)+36)) = int32(_a70)
-						v67 = *(*int32)(unsafe.Add(mBase, _consts[14]))
+						*(*int32)(unsafe.Add(mBase, uint32(v10)+36)) = int32(_a_F_aofLoadManifestFromDisk_1)
+						v67 = *(*int32)(unsafe.Add(mBase, _c_F_aofLoadManifestFromDisk[2]))
 						*(*int32)(unsafe.Add(mBase, uint32(v10)+32)) = v67
-						v72 = F_sdscatprintf(m, v62, int32(_a71), v10+int32(32))
+						v72 = F_sdscatprintf(m, v62, int32(_a_F_aofLoadManifestFromDisk_2), v10+int32(32))
 						mBase = m.M
 						v73 = m.ExcPending
 						if v73 != 0 {
 							return
 						} else {
-							v75 = *(*int32)(unsafe.Add(mBase, _consts[13]))
+							v75 = *(*int32)(unsafe.Add(mBase, _c_F_aofLoadManifestFromDisk[1]))
 							v76 = F_makePath(m, v75, v72)
 							mBase = m.M
 							v77 = m.ExcPending
@@ -906,9 +906,9 @@ func F_aofLoadManifestFromDisk(m *base.Module) {
 												}
 											}
 										} else {
-											v112 = *(*int32)(unsafe.Add(mBase, _consts[12]))
+											v112 = *(*int32)(unsafe.Add(mBase, _c_F_aofLoadManifestFromDisk[0]))
 											if v112 == int32(0) {
-												*(*int32)(unsafe.Add(mBase, _consts[12])) = v107
+												*(*int32)(unsafe.Add(mBase, _c_F_aofLoadManifestFromDisk[0])) = v107
 												F_sdsfree(m, v72)
 												mBase = m.M
 												v147 = m.ExcPending
@@ -938,7 +938,7 @@ func F_aofLoadManifestFromDisk(m *base.Module) {
 															if v137 != 0 {
 																return
 															} else {
-																*(*int32)(unsafe.Add(mBase, _consts[12])) = v107
+																*(*int32)(unsafe.Add(mBase, _c_F_aofLoadManifestFromDisk[0])) = v107
 																F_sdsfree(m, v72)
 																mBase = m.M
 																v147 = m.ExcPending
@@ -969,7 +969,7 @@ func F_aofLoadManifestFromDisk(m *base.Module) {
 																if v137 != 0 {
 																	return
 																} else {
-																	*(*int32)(unsafe.Add(mBase, _consts[12])) = v107
+																	*(*int32)(unsafe.Add(mBase, _c_F_aofLoadManifestFromDisk[0])) = v107
 																	F_sdsfree(m, v72)
 																	mBase = m.M
 																	v147 = m.ExcPending
@@ -1004,7 +1004,7 @@ func F_aofLoadManifestFromDisk(m *base.Module) {
 																if v137 != 0 {
 																	return
 																} else {
-																	*(*int32)(unsafe.Add(mBase, _consts[12])) = v107
+																	*(*int32)(unsafe.Add(mBase, _c_F_aofLoadManifestFromDisk[0])) = v107
 																	F_sdsfree(m, v72)
 																	mBase = m.M
 																	v147 = m.ExcPending
@@ -1035,7 +1035,7 @@ func F_aofLoadManifestFromDisk(m *base.Module) {
 																	if v137 != 0 {
 																		return
 																	} else {
-																		*(*int32)(unsafe.Add(mBase, _consts[12])) = v107
+																		*(*int32)(unsafe.Add(mBase, _c_F_aofLoadManifestFromDisk[0])) = v107
 																		F_sdsfree(m, v72)
 																		mBase = m.M
 																		v147 = m.ExcPending
@@ -1076,7 +1076,7 @@ func F_aofLoadManifestFromDisk(m *base.Module) {
 																	if v137 != 0 {
 																		return
 																	} else {
-																		*(*int32)(unsafe.Add(mBase, _consts[12])) = v107
+																		*(*int32)(unsafe.Add(mBase, _c_F_aofLoadManifestFromDisk[0])) = v107
 																		F_sdsfree(m, v72)
 																		mBase = m.M
 																		v147 = m.ExcPending
@@ -1107,7 +1107,7 @@ func F_aofLoadManifestFromDisk(m *base.Module) {
 																		if v137 != 0 {
 																			return
 																		} else {
-																			*(*int32)(unsafe.Add(mBase, _consts[12])) = v107
+																			*(*int32)(unsafe.Add(mBase, _c_F_aofLoadManifestFromDisk[0])) = v107
 																			F_sdsfree(m, v72)
 																			mBase = m.M
 																			v147 = m.ExcPending
@@ -1142,7 +1142,7 @@ func F_aofLoadManifestFromDisk(m *base.Module) {
 																		if v137 != 0 {
 																			return
 																		} else {
-																			*(*int32)(unsafe.Add(mBase, _consts[12])) = v107
+																			*(*int32)(unsafe.Add(mBase, _c_F_aofLoadManifestFromDisk[0])) = v107
 																			F_sdsfree(m, v72)
 																			mBase = m.M
 																			v147 = m.ExcPending
@@ -1173,7 +1173,7 @@ func F_aofLoadManifestFromDisk(m *base.Module) {
 																			if v137 != 0 {
 																				return
 																			} else {
-																				*(*int32)(unsafe.Add(mBase, _consts[12])) = v107
+																				*(*int32)(unsafe.Add(mBase, _c_F_aofLoadManifestFromDisk[0])) = v107
 																				F_sdsfree(m, v72)
 																				mBase = m.M
 																				v147 = m.ExcPending
@@ -1219,7 +1219,7 @@ func F_aofLoadManifestFromDisk(m *base.Module) {
 																		if v137 != 0 {
 																			return
 																		} else {
-																			*(*int32)(unsafe.Add(mBase, _consts[12])) = v107
+																			*(*int32)(unsafe.Add(mBase, _c_F_aofLoadManifestFromDisk[0])) = v107
 																			F_sdsfree(m, v72)
 																			mBase = m.M
 																			v147 = m.ExcPending
@@ -1250,7 +1250,7 @@ func F_aofLoadManifestFromDisk(m *base.Module) {
 																			if v137 != 0 {
 																				return
 																			} else {
-																				*(*int32)(unsafe.Add(mBase, _consts[12])) = v107
+																				*(*int32)(unsafe.Add(mBase, _c_F_aofLoadManifestFromDisk[0])) = v107
 																				F_sdsfree(m, v72)
 																				mBase = m.M
 																				v147 = m.ExcPending
@@ -1285,7 +1285,7 @@ func F_aofLoadManifestFromDisk(m *base.Module) {
 																			if v137 != 0 {
 																				return
 																			} else {
-																				*(*int32)(unsafe.Add(mBase, _consts[12])) = v107
+																				*(*int32)(unsafe.Add(mBase, _c_F_aofLoadManifestFromDisk[0])) = v107
 																				F_sdsfree(m, v72)
 																				mBase = m.M
 																				v147 = m.ExcPending
@@ -1316,7 +1316,7 @@ func F_aofLoadManifestFromDisk(m *base.Module) {
 																				if v137 != 0 {
 																					return
 																				} else {
-																					*(*int32)(unsafe.Add(mBase, _consts[12])) = v107
+																					*(*int32)(unsafe.Add(mBase, _c_F_aofLoadManifestFromDisk[0])) = v107
 																					F_sdsfree(m, v72)
 																					mBase = m.M
 																					v147 = m.ExcPending
@@ -1346,7 +1346,7 @@ func F_aofLoadManifestFromDisk(m *base.Module) {
 										}
 									}
 								} else {
-									v97 = *(*int32)(unsafe.Add(mBase, _consts[15]))
+									v97 = *(*int32)(unsafe.Add(mBase, _c_F_aofLoadManifestFromDisk[3]))
 									if int32(0) < v97 {
 										F_sdsfree(m, v72)
 										mBase = m.M
@@ -1366,7 +1366,7 @@ func F_aofLoadManifestFromDisk(m *base.Module) {
 										}
 									} else {
 										*(*int32)(unsafe.Add(mBase, uint32(v10)+16)) = v72
-										F__serverLog(m, int32(0), int32(_a72), v10+int32(16))
+										F__serverLog(m, int32(0), int32(_a_F_aofLoadManifestFromDisk_3), v10+int32(16))
 										mBase = m.M
 										v106 = m.ExcPending
 										if v106 != 0 {
@@ -1395,14 +1395,14 @@ func F_aofLoadManifestFromDisk(m *base.Module) {
 						}
 					}
 				} else {
-					v52 = *(*int32)(unsafe.Add(mBase, _consts[15]))
+					v52 = *(*int32)(unsafe.Add(mBase, _c_F_aofLoadManifestFromDisk[3]))
 					if int32(0) < v52 {
 						m.G0 = v10 + int32(48)
 						return
 					} else {
-						v56 = *(*int32)(unsafe.Add(mBase, _consts[13]))
+						v56 = *(*int32)(unsafe.Add(mBase, _c_F_aofLoadManifestFromDisk[1]))
 						*(*int32)(unsafe.Add(mBase, uint32(v10))) = v56
-						F__serverLog(m, int32(0), int32(_a73), v10)
+						F__serverLog(m, int32(0), int32(_a_F_aofLoadManifestFromDisk_4), v10)
 						mBase = m.M
 						v61 = m.ExcPending
 						if v61 != 0 {
@@ -1958,7 +1958,7 @@ L13:
 	;
 	v59 = v6 + int32(288)
 	v61 = int32(256)
-	v63 = int32(_a94)
+	v63 = int32(_a_F_aofRemoveTempFile_0)
 	goto L15
 L14:
 	;
@@ -2007,7 +2007,7 @@ L21:
 L22:
 	;
 	v174 = v6 + int32(288)
-	v175 = int32(_a75)
+	v175 = int32(_a_F_aofRemoveTempFile_1)
 	v176 = int32(256)
 	goto L42
 L23:
@@ -2176,7 +2176,7 @@ L49:
 	goto L40
 L50:
 	;
-	v207 = int32(*(*uint8)(unsafe.Add(mBase, _consts[41])))
+	v207 = int32(*(*uint8)(unsafe.Add(mBase, _c_F_aofRemoveTempFile[0])))
 	if v207 != 0 {
 		goto L48
 	} else {
@@ -2239,7 +2239,7 @@ L61:
 	;
 	v258 = v6 + int32(32)
 	v260 = int32(256)
-	v262 = int32(_a95)
+	v262 = int32(_a_F_aofRemoveTempFile_2)
 	goto L63
 L62:
 	;
@@ -2288,7 +2288,7 @@ L69:
 L70:
 	;
 	v373 = v6 + int32(32)
-	v374 = int32(_a75)
+	v374 = int32(_a_F_aofRemoveTempFile_1)
 	v375 = int32(256)
 	goto L90
 L71:
@@ -2461,7 +2461,7 @@ L97:
 	goto L88
 L98:
 	;
-	v406 = int32(*(*uint8)(unsafe.Add(mBase, _consts[41])))
+	v406 = int32(*(*uint8)(unsafe.Add(mBase, _c_F_aofRemoveTempFile[0])))
 	if v406 != 0 {
 		goto L96
 	} else {
@@ -2600,13 +2600,13 @@ func F_aofRewriteLimited(m *base.Module) int32 {
 	v5 = m.G0
 	v7 = v5 - int32(16)
 	m.G0 = v7
-	v10 = *(*int64)(unsafe.Add(mBase, _consts[34]))
+	v10 = *(*int64)(unsafe.Add(mBase, _c_F_aofRewriteLimited[0]))
 	if int64(2) < v10 {
-		v21 = *(*int64)(unsafe.Add(mBase, _consts[35]))
+		v21 = *(*int64)(unsafe.Add(mBase, _c_F_aofRewriteLimited[1]))
 		if v21 == int64(0) {
 			v34 = int32(1)
 			v35 = int32(0)
-			v37 = *(*int32)(unsafe.Add(mBase, _consts[36]))
+			v37 = *(*int32)(unsafe.Add(mBase, _c_F_aofRewriteLimited[2]))
 			v39 = v37 << (uint(v34) % 32)
 			v40 = int32(60)
 			if v39 < v40 {
@@ -2619,18 +2619,18 @@ func F_aofRewriteLimited(m *base.Module) int32 {
 			} else {
 				v45 = int32(1)
 			}
-			*(*int32)(unsafe.Add(mBase, _consts[36])) = v45
-			v48 = int32(_a69)
-			v49 = *(*int64)(unsafe.Add(mBase, _consts[37]))
-			*(*int64)(unsafe.Add(mBase, _consts[35])) = v49 + base.I64_extend_i32_s(v45*int32(60))
-			v56 = *(*int32)(unsafe.Add(mBase, _consts[15]))
+			*(*int32)(unsafe.Add(mBase, _c_F_aofRewriteLimited[2])) = v45
+			v48 = int32(_a_F_aofRewriteLimited_0)
+			v49 = *(*int64)(unsafe.Add(mBase, _c_F_aofRewriteLimited[3]))
+			*(*int64)(unsafe.Add(mBase, _c_F_aofRewriteLimited[1])) = v49 + base.I64_extend_i32_s(v45*int32(60))
+			v56 = *(*int32)(unsafe.Add(mBase, _c_F_aofRewriteLimited[4]))
 			if int32(3) < v56 {
 				v66 = v34
 				m.G0 = v7 + int32(16)
 				return v66
 			} else {
 				*(*int32)(unsafe.Add(mBase, uint32(v7))) = v45
-				F__serverLog(m, int32(3), int32(_a92), v7)
+				F__serverLog(m, int32(3), int32(_a_F_aofRewriteLimited_1), v7)
 				mBase = m.M
 				v65 = m.ExcPending
 				if v65 != 0 {
@@ -2642,13 +2642,13 @@ func F_aofRewriteLimited(m *base.Module) int32 {
 				}
 			}
 		} else {
-			v26 = *(*int64)(unsafe.Add(mBase, _consts[37]))
-			v28 = *(*int64)(unsafe.Add(mBase, _consts[35]))
+			v26 = *(*int64)(unsafe.Add(mBase, _c_F_aofRewriteLimited[3]))
+			v28 = *(*int64)(unsafe.Add(mBase, _c_F_aofRewriteLimited[1]))
 			if v26 < v28 {
 				v66 = int32(1)
 			} else {
 				v30 = int32(0)
-				*(*int64)(unsafe.Add(mBase, _consts[35])) = int64(0)
+				*(*int64)(unsafe.Add(mBase, _c_F_aofRewriteLimited[1])) = int64(0)
 				v66 = v30
 			}
 			m.G0 = v7 + int32(16)
@@ -2656,8 +2656,8 @@ func F_aofRewriteLimited(m *base.Module) int32 {
 		}
 	} else {
 		v13 = int32(0)
-		*(*int64)(unsafe.Add(mBase, _consts[35])) = int64(0)
-		*(*int32)(unsafe.Add(mBase, _consts[36])) = v13
+		*(*int64)(unsafe.Add(mBase, _c_F_aofRewriteLimited[1])) = int64(0)
+		*(*int32)(unsafe.Add(mBase, _c_F_aofRewriteLimited[2])) = v13
 		v66 = v13
 		m.G0 = v7 + int32(16)
 		return v66
@@ -2840,10 +2840,10 @@ L1:
 	return int32(0)
 L2:
 	;
-	*(*int32)(unsafe.Add(mBase, uint32(v12)+116)) = int32(_a70)
-	v21 = *(*int32)(unsafe.Add(mBase, _consts[14]))
+	*(*int32)(unsafe.Add(mBase, uint32(v12)+116)) = int32(_a_F_writeAofManifestFile_0)
+	v21 = *(*int32)(unsafe.Add(mBase, _c_F_writeAofManifestFile[0]))
 	*(*int32)(unsafe.Add(mBase, uint32(v12)+112)) = v21
-	v26 = F_sdscatprintf(m, v14, int32(_a71), v12+int32(112))
+	v26 = F_sdscatprintf(m, v14, int32(_a_F_writeAofManifestFile_1), v12+int32(112))
 	mBase = m.M
 	v27 = m.ExcPending
 	if v27 != 0 {
@@ -2853,7 +2853,7 @@ L2:
 	}
 L3:
 	;
-	v29 = *(*int32)(unsafe.Add(mBase, _consts[13]))
+	v29 = *(*int32)(unsafe.Add(mBase, _c_F_writeAofManifestFile[1]))
 	v30 = F_makePath(m, v29, v26)
 	mBase = m.M
 	v31 = m.ExcPending
@@ -2874,11 +2874,11 @@ L4:
 	}
 L5:
 	;
-	*(*int32)(unsafe.Add(mBase, uint32(v12)+96)) = int32(_a78)
-	*(*int32)(unsafe.Add(mBase, uint32(v12)+104)) = int32(_a70)
-	v39 = *(*int32)(unsafe.Add(mBase, _consts[14]))
+	*(*int32)(unsafe.Add(mBase, uint32(v12)+96)) = int32(_a_F_writeAofManifestFile_2)
+	*(*int32)(unsafe.Add(mBase, uint32(v12)+104)) = int32(_a_F_writeAofManifestFile_0)
+	v39 = *(*int32)(unsafe.Add(mBase, _c_F_writeAofManifestFile[0]))
 	*(*int32)(unsafe.Add(mBase, uint32(v12)+100)) = v39
-	v44 = F_sdscatprintf(m, v32, int32(_a79), v12+int32(96))
+	v44 = F_sdscatprintf(m, v32, int32(_a_F_writeAofManifestFile_3), v12+int32(96))
 	mBase = m.M
 	v45 = m.ExcPending
 	if v45 != 0 {
@@ -2888,7 +2888,7 @@ L5:
 	}
 L6:
 	;
-	v47 = *(*int32)(unsafe.Add(mBase, _consts[13]))
+	v47 = *(*int32)(unsafe.Add(mBase, _c_F_writeAofManifestFile[1]))
 	v48 = F_makePath(m, v47, v44)
 	mBase = m.M
 	v49 = m.ExcPending
@@ -2937,7 +2937,7 @@ L9:
 	}
 L10:
 	;
-	v60 = *(*int32)(unsafe.Add(mBase, _consts[15]))
+	v60 = *(*int32)(unsafe.Add(mBase, _c_F_writeAofManifestFile[2]))
 	if int32(3) < v60 {
 		v262 = v52
 		goto L8
@@ -2949,7 +2949,7 @@ L11:
 	goto L12
 L12:
 	;
-	v64 = *(*int32)(unsafe.Add(mBase, _consts[9]))
+	v64 = *(*int32)(unsafe.Add(mBase, _c_F_writeAofManifestFile[3]))
 	v65 = F___strerror_l(m, v64, v64)
 	mBase = m.M
 	goto L13
@@ -2957,7 +2957,7 @@ L13:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v12)+4)) = v65
 	*(*int32)(unsafe.Add(mBase, uint32(v12))) = v44
-	F__serverLog(m, int32(3), int32(_a80), v12)
+	F__serverLog(m, int32(3), int32(_a_F_writeAofManifestFile_4), v12)
 	mBase = m.M
 	v71 = m.ExcPending
 	if v71 != 0 {
@@ -3048,7 +3048,7 @@ L27:
 	goto L28
 L28:
 	;
-	v107 = *(*int32)(unsafe.Add(mBase, _consts[9]))
+	v107 = *(*int32)(unsafe.Add(mBase, _c_F_writeAofManifestFile[3]))
 	if v107 == int32(27) {
 		goto L24
 	} else {
@@ -3057,7 +3057,7 @@ L28:
 L29:
 	;
 	v110 = int32(-1)
-	v112 = *(*int32)(unsafe.Add(mBase, _consts[15]))
+	v112 = *(*int32)(unsafe.Add(mBase, _c_F_writeAofManifestFile[2]))
 	if int32(3) < v112 {
 		v252 = v110
 		goto L15
@@ -3073,7 +3073,7 @@ L31:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v12)+68)) = v115
 	*(*int32)(unsafe.Add(mBase, uint32(v12)+64)) = v44
-	F__serverLog(m, int32(3), int32(_a81), v12+int32(64))
+	F__serverLog(m, int32(3), int32(_a_F_writeAofManifestFile_5), v12+int32(64))
 	mBase = m.M
 	v123 = m.ExcPending
 	if v123 != 0 {
@@ -3099,7 +3099,7 @@ L34:
 	}
 L35:
 	;
-	v140 = *(*int32)(unsafe.Add(mBase, _consts[15]))
+	v140 = *(*int32)(unsafe.Add(mBase, _c_F_writeAofManifestFile[2]))
 	if int32(3) < v140 {
 		v252 = v135
 		goto L15
@@ -3111,7 +3111,7 @@ L36:
 	goto L37
 L37:
 	;
-	v144 = *(*int32)(unsafe.Add(mBase, _consts[9]))
+	v144 = *(*int32)(unsafe.Add(mBase, _c_F_writeAofManifestFile[3]))
 	v145 = F___strerror_l(m, v144, v144)
 	mBase = m.M
 	goto L38
@@ -3119,7 +3119,7 @@ L38:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v12)+20)) = v145
 	*(*int32)(unsafe.Add(mBase, uint32(v12)+16)) = v44
-	F__serverLog(m, int32(3), int32(_a82), v12+int32(16))
+	F__serverLog(m, int32(3), int32(_a_F_writeAofManifestFile_6), v12+int32(16))
 	mBase = m.M
 	v153 = m.ExcPending
 	if v153 != 0 {
@@ -3146,7 +3146,7 @@ L40:
 L41:
 	;
 	v157 = int32(-1)
-	v159 = *(*int32)(unsafe.Add(mBase, _consts[15]))
+	v159 = *(*int32)(unsafe.Add(mBase, _c_F_writeAofManifestFile[2]))
 	if int32(3) < v159 {
 		v252 = v157
 		goto L15
@@ -3158,7 +3158,7 @@ L42:
 	goto L43
 L43:
 	;
-	v163 = *(*int32)(unsafe.Add(mBase, _consts[9]))
+	v163 = *(*int32)(unsafe.Add(mBase, _c_F_writeAofManifestFile[3]))
 	v164 = F___strerror_l(m, v163, v163)
 	mBase = m.M
 	goto L44
@@ -3167,7 +3167,7 @@ L44:
 	*(*int32)(unsafe.Add(mBase, uint32(v12)+56)) = v164
 	*(*int32)(unsafe.Add(mBase, uint32(v12)+52)) = v26
 	*(*int32)(unsafe.Add(mBase, uint32(v12)+48)) = v44
-	F__serverLog(m, int32(3), int32(_a83), v12+int32(48))
+	F__serverLog(m, int32(3), int32(_a_F_writeAofManifestFile_7), v12+int32(48))
 	mBase = m.M
 	v173 = m.ExcPending
 	if v173 != 0 {
@@ -3275,7 +3275,7 @@ L58:
 	goto L47
 L59:
 	;
-	v230 = *(*int32)(unsafe.Add(mBase, _consts[15]))
+	v230 = *(*int32)(unsafe.Add(mBase, _c_F_writeAofManifestFile[2]))
 	if int32(3) < v230 {
 		goto L60
 	} else {
@@ -3290,7 +3290,7 @@ L61:
 	goto L62
 L62:
 	;
-	v234 = *(*int32)(unsafe.Add(mBase, _consts[9]))
+	v234 = *(*int32)(unsafe.Add(mBase, _c_F_writeAofManifestFile[3]))
 	v235 = F___strerror_l(m, v234, v234)
 	mBase = m.M
 	goto L63
@@ -3298,7 +3298,7 @@ L63:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v12)+36)) = v235
 	*(*int32)(unsafe.Add(mBase, uint32(v12)+32)) = v30
-	F__serverLog(m, int32(3), int32(_a84), v12+int32(32))
+	F__serverLog(m, int32(3), int32(_a_F_writeAofManifestFile_8), v12+int32(32))
 	mBase = m.M
 	v243 = m.ExcPending
 	if v243 != 0 {

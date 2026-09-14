@@ -122,7 +122,7 @@ func F_dictCStringKeyHash(m *base.Module, l0 int32) int64 {
 	}
 L1:
 	;
-	v58 = F_siphash(m, l0, v56, int32(_a540))
+	v58 = F_siphash(m, l0, v56, int32(_a_F_dictCStringKeyHash_0))
 	mBase = m.M
 	goto L17
 L2:
@@ -1059,7 +1059,7 @@ func F_dictExpandIfNeeded(m *base.Module, l0 int32) int32 {
 		v11 = int32(*(*uint8)(unsafe.Add(mBase, uint32(l0)+26)))
 		if v11 != int32(255) {
 			v18 = int32(1)
-			v20 = *(*int32)(unsafe.Add(mBase, _consts[244]))
+			v20 = *(*int32)(unsafe.Add(mBase, _c_F_dictExpandIfNeeded[0]))
 			switch v20 {
 			case 0:
 				v22 = *(*int32)(unsafe.Add(mBase, uint32(l0)+12))
@@ -1619,10 +1619,10 @@ func F_dictGenCaseHashFunction(m *base.Module, l0 int32, l1 int32) int64 {
 	_ = v354
 	var v358 int64
 	_ = v358
-	v3 = int32(_a540)
-	v13 = *(*int64)(unsafe.Add(mBase, _consts[242]))
+	v3 = int32(_a_F_dictGenCaseHashFunction_0)
+	v13 = *(*int64)(unsafe.Add(mBase, _c_F_dictGenCaseHashFunction[0]))
 	v15 = v13 ^ int64(8317987319222330741)
-	v16 = *(*int64)(unsafe.Add(mBase, _consts[243]))
+	v16 = *(*int64)(unsafe.Add(mBase, _c_F_dictGenCaseHashFunction[1]))
 	v18 = v16 ^ int64(7237128888997146477)
 	v20 = v13 ^ int64(7816392313619706465)
 	v22 = v16 ^ int64(8387220255154660723)
@@ -2129,10 +2129,10 @@ func F_dictGenHashFunction(m *base.Module, l0 int32, l1 int32) int64 {
 	_ = v161
 	var v165 int64
 	_ = v165
-	v3 = int32(_a540)
-	v11 = *(*int64)(unsafe.Add(mBase, _consts[242]))
+	v3 = int32(_a_F_dictGenHashFunction_0)
+	v11 = *(*int64)(unsafe.Add(mBase, _c_F_dictGenHashFunction[0]))
 	v13 = v11 ^ int64(8317987319222330741)
-	v14 = *(*int64)(unsafe.Add(mBase, _consts[243]))
+	v14 = *(*int64)(unsafe.Add(mBase, _c_F_dictGenHashFunction[1]))
 	v16 = v14 ^ int64(7237128888997146477)
 	v18 = v11 ^ int64(7816392313619706465)
 	v20 = v14 ^ int64(8387220255154660723)
@@ -3215,15 +3215,15 @@ func F_dictGetRandomKey(m *base.Module, l0 int32) int32 {
 				v134 = int32(0)
 				F___lock(m, int32(9116960))
 				mBase = m.M
-				v141 = *(*int32)(unsafe.Add(mBase, _consts[245]))
-				v143 = *(*int32)(unsafe.Add(mBase, _consts[246]))
+				v141 = *(*int32)(unsafe.Add(mBase, _c_F_dictGetRandomKey[0]))
+				v143 = *(*int32)(unsafe.Add(mBase, _c_F_dictGetRandomKey[1]))
 				if v143 != 0 {
 					v147 = int32(0)
-					v148 = *(*int32)(unsafe.Add(mBase, _consts[247]))
+					v148 = *(*int32)(unsafe.Add(mBase, _c_F_dictGetRandomKey[2]))
 					v149 = int32(2)
 					v151 = v141 + v148<<(uint(v149)%32)
 					v152 = *(*int32)(unsafe.Add(mBase, uint32(v151)))
-					v154 = *(*int32)(unsafe.Add(mBase, _consts[248]))
+					v154 = *(*int32)(unsafe.Add(mBase, _c_F_dictGetRandomKey[3]))
 					v158 = *(*int32)(unsafe.Add(mBase, uint32(v141+v154<<(uint(v149)%32))))
 					v159 = v152 + v158
 					*(*int32)(unsafe.Add(mBase, uint32(v151))) = v159
@@ -3233,7 +3233,7 @@ func F_dictGetRandomKey(m *base.Module, l0 int32) int32 {
 					} else {
 						v166 = v164
 					}
-					*(*int32)(unsafe.Add(mBase, _consts[248])) = v166
+					*(*int32)(unsafe.Add(mBase, _c_F_dictGetRandomKey[3])) = v166
 					v168 = int32(0)
 					v171 = v148 + int32(1)
 					if v171 == v143 {
@@ -3241,7 +3241,7 @@ func F_dictGetRandomKey(m *base.Module, l0 int32) int32 {
 					} else {
 						v173 = v171
 					}
-					*(*int32)(unsafe.Add(mBase, _consts[247])) = v173
+					*(*int32)(unsafe.Add(mBase, _c_F_dictGetRandomKey[2])) = v173
 					v178 = int32(base.Ui32(v159) >> (uint(int32(1)) % 32))
 				} else {
 					v144 = *(*int32)(unsafe.Add(mBase, uint32(v141)))
@@ -3279,15 +3279,15 @@ func F_dictGetRandomKey(m *base.Module, l0 int32) int32 {
 			v205 = int32(0)
 			F___lock(m, int32(9116960))
 			mBase = m.M
-			v212 = *(*int32)(unsafe.Add(mBase, _consts[245]))
-			v214 = *(*int32)(unsafe.Add(mBase, _consts[246]))
+			v212 = *(*int32)(unsafe.Add(mBase, _c_F_dictGetRandomKey[0]))
+			v214 = *(*int32)(unsafe.Add(mBase, _c_F_dictGetRandomKey[1]))
 			if v214 != 0 {
 				v218 = int32(0)
-				v219 = *(*int32)(unsafe.Add(mBase, _consts[247]))
+				v219 = *(*int32)(unsafe.Add(mBase, _c_F_dictGetRandomKey[2]))
 				v220 = int32(2)
 				v222 = v212 + v219<<(uint(v220)%32)
 				v223 = *(*int32)(unsafe.Add(mBase, uint32(v222)))
-				v225 = *(*int32)(unsafe.Add(mBase, _consts[248]))
+				v225 = *(*int32)(unsafe.Add(mBase, _c_F_dictGetRandomKey[3]))
 				v229 = *(*int32)(unsafe.Add(mBase, uint32(v212+v225<<(uint(v220)%32))))
 				v230 = v223 + v229
 				*(*int32)(unsafe.Add(mBase, uint32(v222))) = v230
@@ -3297,7 +3297,7 @@ func F_dictGetRandomKey(m *base.Module, l0 int32) int32 {
 				} else {
 					v237 = v235
 				}
-				*(*int32)(unsafe.Add(mBase, _consts[248])) = v237
+				*(*int32)(unsafe.Add(mBase, _c_F_dictGetRandomKey[3])) = v237
 				v239 = int32(0)
 				v242 = v219 + int32(1)
 				if v242 == v214 {
@@ -3305,7 +3305,7 @@ func F_dictGetRandomKey(m *base.Module, l0 int32) int32 {
 				} else {
 					v244 = v242
 				}
-				*(*int32)(unsafe.Add(mBase, _consts[247])) = v244
+				*(*int32)(unsafe.Add(mBase, _c_F_dictGetRandomKey[2])) = v244
 				v249 = int32(base.Ui32(v230) >> (uint(int32(1)) % 32))
 			} else {
 				v215 = *(*int32)(unsafe.Add(mBase, uint32(v212)))
@@ -3388,15 +3388,15 @@ func F_dictGetRandomKey(m *base.Module, l0 int32) int32 {
 					v37 = int32(0)
 					F___lock(m, int32(9116960))
 					mBase = m.M
-					v44 = *(*int32)(unsafe.Add(mBase, _consts[245]))
-					v46 = *(*int32)(unsafe.Add(mBase, _consts[246]))
+					v44 = *(*int32)(unsafe.Add(mBase, _c_F_dictGetRandomKey[0]))
+					v46 = *(*int32)(unsafe.Add(mBase, _c_F_dictGetRandomKey[1]))
 					if v46 != 0 {
 						v50 = int32(0)
-						v51 = *(*int32)(unsafe.Add(mBase, _consts[247]))
+						v51 = *(*int32)(unsafe.Add(mBase, _c_F_dictGetRandomKey[2]))
 						v52 = int32(2)
 						v54 = v44 + v51<<(uint(v52)%32)
 						v55 = *(*int32)(unsafe.Add(mBase, uint32(v54)))
-						v57 = *(*int32)(unsafe.Add(mBase, _consts[248]))
+						v57 = *(*int32)(unsafe.Add(mBase, _c_F_dictGetRandomKey[3]))
 						v61 = *(*int32)(unsafe.Add(mBase, uint32(v44+v57<<(uint(v52)%32))))
 						v62 = v55 + v61
 						*(*int32)(unsafe.Add(mBase, uint32(v54))) = v62
@@ -3406,7 +3406,7 @@ func F_dictGetRandomKey(m *base.Module, l0 int32) int32 {
 						} else {
 							v69 = v67
 						}
-						*(*int32)(unsafe.Add(mBase, _consts[248])) = v69
+						*(*int32)(unsafe.Add(mBase, _c_F_dictGetRandomKey[3])) = v69
 						v71 = int32(0)
 						v74 = v51 + int32(1)
 						if v74 == v46 {
@@ -3414,7 +3414,7 @@ func F_dictGetRandomKey(m *base.Module, l0 int32) int32 {
 						} else {
 							v76 = v74
 						}
-						*(*int32)(unsafe.Add(mBase, _consts[247])) = v76
+						*(*int32)(unsafe.Add(mBase, _c_F_dictGetRandomKey[2])) = v76
 						v81 = int32(base.Ui32(v62) >> (uint(int32(1)) % 32))
 					} else {
 						v47 = *(*int32)(unsafe.Add(mBase, uint32(v44)))
@@ -3474,15 +3474,15 @@ func F_dictGetRandomKey(m *base.Module, l0 int32) int32 {
 				v205 = int32(0)
 				F___lock(m, int32(9116960))
 				mBase = m.M
-				v212 = *(*int32)(unsafe.Add(mBase, _consts[245]))
-				v214 = *(*int32)(unsafe.Add(mBase, _consts[246]))
+				v212 = *(*int32)(unsafe.Add(mBase, _c_F_dictGetRandomKey[0]))
+				v214 = *(*int32)(unsafe.Add(mBase, _c_F_dictGetRandomKey[1]))
 				if v214 != 0 {
 					v218 = int32(0)
-					v219 = *(*int32)(unsafe.Add(mBase, _consts[247]))
+					v219 = *(*int32)(unsafe.Add(mBase, _c_F_dictGetRandomKey[2]))
 					v220 = int32(2)
 					v222 = v212 + v219<<(uint(v220)%32)
 					v223 = *(*int32)(unsafe.Add(mBase, uint32(v222)))
-					v225 = *(*int32)(unsafe.Add(mBase, _consts[248]))
+					v225 = *(*int32)(unsafe.Add(mBase, _c_F_dictGetRandomKey[3]))
 					v229 = *(*int32)(unsafe.Add(mBase, uint32(v212+v225<<(uint(v220)%32))))
 					v230 = v223 + v229
 					*(*int32)(unsafe.Add(mBase, uint32(v222))) = v230
@@ -3492,7 +3492,7 @@ func F_dictGetRandomKey(m *base.Module, l0 int32) int32 {
 					} else {
 						v237 = v235
 					}
-					*(*int32)(unsafe.Add(mBase, _consts[248])) = v237
+					*(*int32)(unsafe.Add(mBase, _c_F_dictGetRandomKey[3])) = v237
 					v239 = int32(0)
 					v242 = v219 + int32(1)
 					if v242 == v214 {
@@ -3500,7 +3500,7 @@ func F_dictGetRandomKey(m *base.Module, l0 int32) int32 {
 					} else {
 						v244 = v242
 					}
-					*(*int32)(unsafe.Add(mBase, _consts[247])) = v244
+					*(*int32)(unsafe.Add(mBase, _c_F_dictGetRandomKey[2])) = v244
 					v249 = int32(base.Ui32(v230) >> (uint(int32(1)) % 32))
 				} else {
 					v215 = *(*int32)(unsafe.Add(mBase, uint32(v212)))
@@ -3588,15 +3588,15 @@ func F_dictGetRandomKey(m *base.Module, l0 int32) int32 {
 							v134 = int32(0)
 							F___lock(m, int32(9116960))
 							mBase = m.M
-							v141 = *(*int32)(unsafe.Add(mBase, _consts[245]))
-							v143 = *(*int32)(unsafe.Add(mBase, _consts[246]))
+							v141 = *(*int32)(unsafe.Add(mBase, _c_F_dictGetRandomKey[0]))
+							v143 = *(*int32)(unsafe.Add(mBase, _c_F_dictGetRandomKey[1]))
 							if v143 != 0 {
 								v147 = int32(0)
-								v148 = *(*int32)(unsafe.Add(mBase, _consts[247]))
+								v148 = *(*int32)(unsafe.Add(mBase, _c_F_dictGetRandomKey[2]))
 								v149 = int32(2)
 								v151 = v141 + v148<<(uint(v149)%32)
 								v152 = *(*int32)(unsafe.Add(mBase, uint32(v151)))
-								v154 = *(*int32)(unsafe.Add(mBase, _consts[248]))
+								v154 = *(*int32)(unsafe.Add(mBase, _c_F_dictGetRandomKey[3]))
 								v158 = *(*int32)(unsafe.Add(mBase, uint32(v141+v154<<(uint(v149)%32))))
 								v159 = v152 + v158
 								*(*int32)(unsafe.Add(mBase, uint32(v151))) = v159
@@ -3606,7 +3606,7 @@ func F_dictGetRandomKey(m *base.Module, l0 int32) int32 {
 								} else {
 									v166 = v164
 								}
-								*(*int32)(unsafe.Add(mBase, _consts[248])) = v166
+								*(*int32)(unsafe.Add(mBase, _c_F_dictGetRandomKey[3])) = v166
 								v168 = int32(0)
 								v171 = v148 + int32(1)
 								if v171 == v143 {
@@ -3614,7 +3614,7 @@ func F_dictGetRandomKey(m *base.Module, l0 int32) int32 {
 								} else {
 									v173 = v171
 								}
-								*(*int32)(unsafe.Add(mBase, _consts[247])) = v173
+								*(*int32)(unsafe.Add(mBase, _c_F_dictGetRandomKey[2])) = v173
 								v178 = int32(base.Ui32(v159) >> (uint(int32(1)) % 32))
 							} else {
 								v144 = *(*int32)(unsafe.Add(mBase, uint32(v141)))
@@ -3648,15 +3648,15 @@ func F_dictGetRandomKey(m *base.Module, l0 int32) int32 {
 							v37 = int32(0)
 							F___lock(m, int32(9116960))
 							mBase = m.M
-							v44 = *(*int32)(unsafe.Add(mBase, _consts[245]))
-							v46 = *(*int32)(unsafe.Add(mBase, _consts[246]))
+							v44 = *(*int32)(unsafe.Add(mBase, _c_F_dictGetRandomKey[0]))
+							v46 = *(*int32)(unsafe.Add(mBase, _c_F_dictGetRandomKey[1]))
 							if v46 != 0 {
 								v50 = int32(0)
-								v51 = *(*int32)(unsafe.Add(mBase, _consts[247]))
+								v51 = *(*int32)(unsafe.Add(mBase, _c_F_dictGetRandomKey[2]))
 								v52 = int32(2)
 								v54 = v44 + v51<<(uint(v52)%32)
 								v55 = *(*int32)(unsafe.Add(mBase, uint32(v54)))
-								v57 = *(*int32)(unsafe.Add(mBase, _consts[248]))
+								v57 = *(*int32)(unsafe.Add(mBase, _c_F_dictGetRandomKey[3]))
 								v61 = *(*int32)(unsafe.Add(mBase, uint32(v44+v57<<(uint(v52)%32))))
 								v62 = v55 + v61
 								*(*int32)(unsafe.Add(mBase, uint32(v54))) = v62
@@ -3666,7 +3666,7 @@ func F_dictGetRandomKey(m *base.Module, l0 int32) int32 {
 								} else {
 									v69 = v67
 								}
-								*(*int32)(unsafe.Add(mBase, _consts[248])) = v69
+								*(*int32)(unsafe.Add(mBase, _c_F_dictGetRandomKey[3])) = v69
 								v71 = int32(0)
 								v74 = v51 + int32(1)
 								if v74 == v46 {
@@ -3674,7 +3674,7 @@ func F_dictGetRandomKey(m *base.Module, l0 int32) int32 {
 								} else {
 									v76 = v74
 								}
-								*(*int32)(unsafe.Add(mBase, _consts[247])) = v76
+								*(*int32)(unsafe.Add(mBase, _c_F_dictGetRandomKey[2])) = v76
 								v81 = int32(base.Ui32(v62) >> (uint(int32(1)) % 32))
 							} else {
 								v47 = *(*int32)(unsafe.Add(mBase, uint32(v44)))
@@ -3735,15 +3735,15 @@ func F_dictGetRandomKey(m *base.Module, l0 int32) int32 {
 					v205 = int32(0)
 					F___lock(m, int32(9116960))
 					mBase = m.M
-					v212 = *(*int32)(unsafe.Add(mBase, _consts[245]))
-					v214 = *(*int32)(unsafe.Add(mBase, _consts[246]))
+					v212 = *(*int32)(unsafe.Add(mBase, _c_F_dictGetRandomKey[0]))
+					v214 = *(*int32)(unsafe.Add(mBase, _c_F_dictGetRandomKey[1]))
 					if v214 != 0 {
 						v218 = int32(0)
-						v219 = *(*int32)(unsafe.Add(mBase, _consts[247]))
+						v219 = *(*int32)(unsafe.Add(mBase, _c_F_dictGetRandomKey[2]))
 						v220 = int32(2)
 						v222 = v212 + v219<<(uint(v220)%32)
 						v223 = *(*int32)(unsafe.Add(mBase, uint32(v222)))
-						v225 = *(*int32)(unsafe.Add(mBase, _consts[248]))
+						v225 = *(*int32)(unsafe.Add(mBase, _c_F_dictGetRandomKey[3]))
 						v229 = *(*int32)(unsafe.Add(mBase, uint32(v212+v225<<(uint(v220)%32))))
 						v230 = v223 + v229
 						*(*int32)(unsafe.Add(mBase, uint32(v222))) = v230
@@ -3753,7 +3753,7 @@ func F_dictGetRandomKey(m *base.Module, l0 int32) int32 {
 						} else {
 							v237 = v235
 						}
-						*(*int32)(unsafe.Add(mBase, _consts[248])) = v237
+						*(*int32)(unsafe.Add(mBase, _c_F_dictGetRandomKey[3])) = v237
 						v239 = int32(0)
 						v242 = v219 + int32(1)
 						if v242 == v214 {
@@ -3761,7 +3761,7 @@ func F_dictGetRandomKey(m *base.Module, l0 int32) int32 {
 						} else {
 							v244 = v242
 						}
-						*(*int32)(unsafe.Add(mBase, _consts[247])) = v244
+						*(*int32)(unsafe.Add(mBase, _c_F_dictGetRandomKey[2])) = v244
 						v249 = int32(base.Ui32(v230) >> (uint(int32(1)) % 32))
 					} else {
 						v215 = *(*int32)(unsafe.Add(mBase, uint32(v212)))
@@ -4000,7 +4000,7 @@ func F_dictRehash(m *base.Module, l0 int32, l1 int32) int32 {
 	var v208 int32
 	_ = v208
 	v3 = int32(0)
-	v13 = *(*int32)(unsafe.Add(mBase, _consts[244]))
+	v13 = *(*int32)(unsafe.Add(mBase, _c_F_dictRehash[0]))
 	if v13 == int32(2) {
 		v195 = v3
 		goto L2
@@ -4009,7 +4009,7 @@ func F_dictRehash(m *base.Module, l0 int32, l1 int32) int32 {
 	}
 L1:
 	;
-	F__serverAssert(m, int32(_a541), int32(_a542), int32(343))
+	F__serverAssert(m, int32(_a_F_dictRehash_0), int32(_a_F_dictRehash_1), int32(343))
 	mBase = m.M
 	v208 = m.ExcPending
 	if v208 != 0 {
@@ -4423,33 +4423,33 @@ func F_dictSdsCaseHash(m *base.Module, l0 int32) int64 {
 	v7 = int32(*(*uint8)(unsafe.Add(mBase, uint32(l0+int32(-1)))))
 	switch v7 & int32(7) {
 	case 0:
-		v13 = F_siphash_nocase(m, l0, int32(base.Ui32(v7)>>(uint(int32(3))%32)), int32(_a540))
+		v13 = F_siphash_nocase(m, l0, int32(base.Ui32(v7)>>(uint(int32(3))%32)), int32(_a_F_dictSdsCaseHash_0))
 		mBase = m.M
 		return v13
 	case 1:
 		v17 = int32(*(*uint8)(unsafe.Add(mBase, uint32(l0+int32(-3)))))
-		v19 = F_siphash_nocase(m, l0, v17, int32(_a540))
+		v19 = F_siphash_nocase(m, l0, v17, int32(_a_F_dictSdsCaseHash_0))
 		mBase = m.M
 		return v19
 	case 2:
 		v23 = int32(*(*uint16)(unsafe.Add(mBase, uint32(l0+int32(-5)))))
-		v25 = F_siphash_nocase(m, l0, v23, int32(_a540))
+		v25 = F_siphash_nocase(m, l0, v23, int32(_a_F_dictSdsCaseHash_0))
 		mBase = m.M
 		return v25
 	case 3:
 		v29 = *(*int32)(unsafe.Add(mBase, uint32(l0+int32(-9))))
-		v31 = F_siphash_nocase(m, l0, v29, int32(_a540))
+		v31 = F_siphash_nocase(m, l0, v29, int32(_a_F_dictSdsCaseHash_0))
 		mBase = m.M
 		return v31
 	case 4:
 		v35 = *(*int32)(unsafe.Add(mBase, uint32(l0+int32(-17))))
 		v36 = v35
-		v38 = F_siphash_nocase(m, l0, v36, int32(_a540))
+		v38 = F_siphash_nocase(m, l0, v36, int32(_a_F_dictSdsCaseHash_0))
 		mBase = m.M
 		return v38
 	default:
 		v36 = int32(0)
-		v38 = F_siphash_nocase(m, l0, v36, int32(_a540))
+		v38 = F_siphash_nocase(m, l0, v36, int32(_a_F_dictSdsCaseHash_0))
 		mBase = m.M
 		return v38
 	}
@@ -4890,7 +4890,7 @@ L30:
 func F_dictSetResizeEnabled(m *base.Module, l0 int32) {
 	mBase := m.M
 	_ = mBase
-	*(*int32)(unsafe.Add(mBase, _consts[244])) = l0
+	*(*int32)(unsafe.Add(mBase, _c_F_dictSetResizeEnabled[0])) = l0
 	return
 }
 func F_dictStringHash(m *base.Module, l0 int32) int64 {
@@ -4930,7 +4930,7 @@ func F_dictStringHash(m *base.Module, l0 int32) int64 {
 	}
 L1:
 	;
-	v58 = F_siphash(m, l0, v56, int32(_a540))
+	v58 = F_siphash(m, l0, v56, int32(_a_F_dictStringHash_0))
 	mBase = m.M
 	goto L17
 L2:

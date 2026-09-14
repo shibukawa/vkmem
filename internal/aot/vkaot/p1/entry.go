@@ -44,7 +44,7 @@ func F_entryFree(m *base.Module, l0 int32) {
 		if base.Ui32(int32(4)) < base.Ui32(v24) {
 			v32 = int32(0)
 		} else {
-			v31 = *(*int32)(unsafe.Add(mBase, uint32(v24<<(uint(int32(2))%32))+uint32(_consts[307])))
+			v31 = *(*int32)(unsafe.Add(mBase, uint32(v24<<(uint(int32(2))%32))+uint32(_c_F_entryFree[0])))
 			v32 = v31
 		}
 		v36 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v5))))
@@ -84,7 +84,7 @@ func F_entryFree(m *base.Module, l0 int32) {
 			if base.Ui32(int32(4)) < base.Ui32(v24) {
 				v32 = int32(0)
 			} else {
-				v31 = *(*int32)(unsafe.Add(mBase, uint32(v24<<(uint(int32(2))%32))+uint32(_consts[307])))
+				v31 = *(*int32)(unsafe.Add(mBase, uint32(v24<<(uint(int32(2))%32))+uint32(_c_F_entryFree[0])))
 				v32 = v31
 			}
 			v36 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v5))))
@@ -129,7 +129,7 @@ func F_entryFree(m *base.Module, l0 int32) {
 				if base.Ui32(int32(4)) < base.Ui32(v24) {
 					v32 = int32(0)
 				} else {
-					v31 = *(*int32)(unsafe.Add(mBase, uint32(v24<<(uint(int32(2))%32))+uint32(_consts[307])))
+					v31 = *(*int32)(unsafe.Add(mBase, uint32(v24<<(uint(int32(2))%32))+uint32(_c_F_entryFree[0])))
 					v32 = v31
 				}
 				v36 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v5))))
@@ -228,7 +228,7 @@ func F_entryIsExpired(m *base.Module, l0 int32) int32 {
 			if base.Ui32(int32(4)) < base.Ui32(v26) {
 				v34 = v18
 			} else {
-				v33 = *(*int32)(unsafe.Add(mBase, uint32(v26<<(uint(int32(2))%32))+uint32(_consts[307])))
+				v33 = *(*int32)(unsafe.Add(mBase, uint32(v26<<(uint(int32(2))%32))+uint32(_c_F_entryIsExpired[0])))
 				v34 = v33
 			}
 			v38 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v8))))
@@ -423,7 +423,7 @@ func F_entryMemUsage(m *base.Module, l0 int32) int32 {
 		if base.Ui32(int32(4)) < base.Ui32(v34) {
 			v42 = int32(0)
 		} else {
-			v41 = *(*int32)(unsafe.Add(mBase, uint32(v34<<(uint(int32(2))%32))+uint32(_consts[309])))
+			v41 = *(*int32)(unsafe.Add(mBase, uint32(v34<<(uint(int32(2))%32))+uint32(_c_F_entryMemUsage[0])))
 			v42 = v41
 		}
 		v43 = v30 + v42
@@ -448,7 +448,7 @@ func F_entryMemUsage(m *base.Module, l0 int32) int32 {
 			if base.Ui32(int32(4)) < base.Ui32(v64) {
 				v72 = int32(0)
 			} else {
-				v71 = *(*int32)(unsafe.Add(mBase, uint32(v64<<(uint(int32(2))%32))+uint32(_consts[307])))
+				v71 = *(*int32)(unsafe.Add(mBase, uint32(v64<<(uint(int32(2))%32))+uint32(_c_F_entryMemUsage[1])))
 				v72 = v71
 			}
 			v76 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v7))))
@@ -500,7 +500,7 @@ func F_entryMemUsage(m *base.Module, l0 int32) int32 {
 			if base.Ui32(int32(4)) < base.Ui32(v34) {
 				v42 = int32(0)
 			} else {
-				v41 = *(*int32)(unsafe.Add(mBase, uint32(v34<<(uint(int32(2))%32))+uint32(_consts[309])))
+				v41 = *(*int32)(unsafe.Add(mBase, uint32(v34<<(uint(int32(2))%32))+uint32(_c_F_entryMemUsage[0])))
 				v42 = v41
 			}
 			v43 = v30 + v42
@@ -541,7 +541,7 @@ func F_entryMemUsage(m *base.Module, l0 int32) int32 {
 			default:
 				v163 = int32(0)
 			}
-			v176 = *(*int32)(unsafe.Add(mBase, _consts[308]))
+			v176 = *(*int32)(unsafe.Add(mBase, _c_F_entryMemUsage[2]))
 			v207 = l0 + v163 + v176 + int32(1)
 		} else {
 			if v103&int32(16) != 0 {
@@ -550,7 +550,7 @@ func F_entryMemUsage(m *base.Module, l0 int32) int32 {
 				if base.Ui32(int32(4)) < base.Ui32(v188) {
 					v196 = int32(0)
 				} else {
-					v195 = *(*int32)(unsafe.Add(mBase, uint32(v188<<(uint(int32(2))%32))+uint32(_consts[307])))
+					v195 = *(*int32)(unsafe.Add(mBase, uint32(v188<<(uint(int32(2))%32))+uint32(_c_F_entryMemUsage[1])))
 					v196 = v195
 				}
 				v200 = *(*int32)(unsafe.Add(mBase, uint32(l0+v196+int32(-4))))
@@ -583,7 +583,7 @@ func F_entryMemUsage(m *base.Module, l0 int32) int32 {
 				default:
 					v163 = int32(0)
 				}
-				v176 = *(*int32)(unsafe.Add(mBase, _consts[308]))
+				v176 = *(*int32)(unsafe.Add(mBase, _c_F_entryMemUsage[2]))
 				v207 = l0 + v163 + v176 + int32(1)
 			}
 		}
@@ -729,7 +729,7 @@ func F_entryMemUsage(m *base.Module, l0 int32) int32 {
 				default:
 					v163 = int32(0)
 				}
-				v176 = *(*int32)(unsafe.Add(mBase, _consts[308]))
+				v176 = *(*int32)(unsafe.Add(mBase, _c_F_entryMemUsage[2]))
 				v207 = l0 + v163 + v176 + int32(1)
 			} else {
 				if v103&int32(16) != 0 {
@@ -738,7 +738,7 @@ func F_entryMemUsage(m *base.Module, l0 int32) int32 {
 					if base.Ui32(int32(4)) < base.Ui32(v188) {
 						v196 = int32(0)
 					} else {
-						v195 = *(*int32)(unsafe.Add(mBase, uint32(v188<<(uint(int32(2))%32))+uint32(_consts[307])))
+						v195 = *(*int32)(unsafe.Add(mBase, uint32(v188<<(uint(int32(2))%32))+uint32(_c_F_entryMemUsage[1])))
 						v196 = v195
 					}
 					v200 = *(*int32)(unsafe.Add(mBase, uint32(l0+v196+int32(-4))))
@@ -771,7 +771,7 @@ func F_entryMemUsage(m *base.Module, l0 int32) int32 {
 					default:
 						v163 = int32(0)
 					}
-					v176 = *(*int32)(unsafe.Add(mBase, _consts[308]))
+					v176 = *(*int32)(unsafe.Add(mBase, _c_F_entryMemUsage[2]))
 					v207 = l0 + v163 + v176 + int32(1)
 				}
 			}
@@ -901,7 +901,7 @@ func F_entryMemUsage(m *base.Module, l0 int32) int32 {
 			if base.Ui32(int32(4)) < base.Ui32(v122) {
 				v130 = int32(0)
 			} else {
-				v129 = *(*int32)(unsafe.Add(mBase, uint32(v122<<(uint(int32(2))%32))+uint32(_consts[307])))
+				v129 = *(*int32)(unsafe.Add(mBase, uint32(v122<<(uint(int32(2))%32))+uint32(_c_F_entryMemUsage[1])))
 				v130 = v129
 			}
 			v134 = *(*int32)(unsafe.Add(mBase, uint32(l0+v130+int32(-4))))
@@ -1408,7 +1408,7 @@ func F_entryUpdate(m *base.Module, l0 int32, l1 int32, l2 int64) int32 {
 	}
 L1:
 	;
-	F__serverAssert(m, int32(_a604), int32(_a601), int32(489))
+	F__serverAssert(m, int32(_a_F_entryUpdate_0), int32(_a_F_entryUpdate_1), int32(489))
 	mBase = m.M
 	v943 = m.ExcPending
 	if v943 != 0 {
@@ -1418,7 +1418,7 @@ L1:
 	}
 L2:
 	;
-	F__serverAssert(m, int32(_a605), int32(_a601), int32(487))
+	F__serverAssert(m, int32(_a_F_entryUpdate_2), int32(_a_F_entryUpdate_1), int32(487))
 	mBase = m.M
 	v937 = m.ExcPending
 	if v937 != 0 {
@@ -1428,7 +1428,7 @@ L2:
 	}
 L3:
 	;
-	F__serverAssert(m, int32(_a600), int32(_a601), int32(135))
+	F__serverAssert(m, int32(_a_F_entryUpdate_4), int32(_a_F_entryUpdate_1), int32(135))
 	mBase = m.M
 	v931 = m.ExcPending
 	if v931 != 0 {
@@ -1438,7 +1438,7 @@ L3:
 	}
 L4:
 	;
-	F__serverAssert(m, int32(_a607), int32(_a601), int32(448))
+	F__serverAssert(m, int32(_a_F_entryUpdate_5), int32(_a_F_entryUpdate_1), int32(448))
 	mBase = m.M
 	v925 = m.ExcPending
 	if v925 != 0 {
@@ -1519,7 +1519,7 @@ L14:
 	goto L13
 L15:
 	;
-	v53 = *(*int32)(unsafe.Add(mBase, uint32(v46<<(uint(int32(2))%32))+uint32(_consts[307])))
+	v53 = *(*int32)(unsafe.Add(mBase, uint32(v46<<(uint(int32(2))%32))+uint32(_c_F_entryUpdate[0])))
 	v54 = v53
 	goto L14
 L16:
@@ -1570,7 +1570,7 @@ L22:
 	goto L21
 L23:
 	;
-	v87 = *(*int32)(unsafe.Add(mBase, uint32(v80<<(uint(int32(2))%32))+uint32(_consts[307])))
+	v87 = *(*int32)(unsafe.Add(mBase, uint32(v80<<(uint(int32(2))%32))+uint32(_c_F_entryUpdate[0])))
 	v88 = v87
 	goto L22
 L24:
@@ -2066,7 +2066,7 @@ L99:
 	goto L98
 L100:
 	;
-	v313 = *(*int32)(unsafe.Add(mBase, uint32(v306<<(uint(int32(2))%32))+uint32(_consts[309])))
+	v313 = *(*int32)(unsafe.Add(mBase, uint32(v306<<(uint(int32(2))%32))+uint32(_c_F_entryUpdate[1])))
 	v314 = v313
 	goto L99
 L101:
@@ -2109,7 +2109,7 @@ L105:
 	goto L104
 L106:
 	;
-	v336 = *(*int32)(unsafe.Add(mBase, _consts[308]))
+	v336 = *(*int32)(unsafe.Add(mBase, _c_F_entryUpdate[2]))
 	goto L105
 L107:
 	;
@@ -2144,7 +2144,7 @@ L111:
 	goto L110
 L112:
 	;
-	v362 = *(*int32)(unsafe.Add(mBase, _consts[308]))
+	v362 = *(*int32)(unsafe.Add(mBase, _c_F_entryUpdate[2]))
 	goto L111
 L113:
 	;
@@ -2466,7 +2466,7 @@ L163:
 	goto L150
 L164:
 	;
-	v869 = *(*int32)(unsafe.Add(mBase, _consts[113]))
+	v869 = *(*int32)(unsafe.Add(mBase, _c_F_entryUpdate[3]))
 	if v869 == int32(0) {
 		goto L272
 	} else {
@@ -2666,7 +2666,7 @@ L191:
 	goto L190
 L192:
 	;
-	v589 = *(*int32)(unsafe.Add(mBase, uint32(v582<<(uint(int32(2))%32))+uint32(_consts[307])))
+	v589 = *(*int32)(unsafe.Add(mBase, uint32(v582<<(uint(int32(2))%32))+uint32(_c_F_entryUpdate[0])))
 	v590 = v589
 	goto L191
 L193:
@@ -2808,7 +2808,7 @@ L217:
 	goto L216
 L218:
 	;
-	v655 = *(*int32)(unsafe.Add(mBase, _consts[308]))
+	v655 = *(*int32)(unsafe.Add(mBase, _c_F_entryUpdate[2]))
 	goto L217
 L219:
 	;
@@ -2834,7 +2834,7 @@ L220:
 	goto L219
 L221:
 	;
-	v668 = *(*int32)(unsafe.Add(mBase, _consts[308]))
+	v668 = *(*int32)(unsafe.Add(mBase, _c_F_entryUpdate[2]))
 	goto L220
 L222:
 	;
@@ -2894,7 +2894,7 @@ L229:
 	goto L228
 L230:
 	;
-	v706 = *(*int32)(unsafe.Add(mBase, uint32(v699<<(uint(int32(2))%32))+uint32(_consts[307])))
+	v706 = *(*int32)(unsafe.Add(mBase, uint32(v699<<(uint(int32(2))%32))+uint32(_c_F_entryUpdate[0])))
 	v707 = v706
 	goto L229
 L231:
@@ -3004,7 +3004,7 @@ L246:
 	goto L245
 L247:
 	;
-	v773 = *(*int32)(unsafe.Add(mBase, uint32(v766<<(uint(int32(2))%32))+uint32(_consts[307])))
+	v773 = *(*int32)(unsafe.Add(mBase, uint32(v766<<(uint(int32(2))%32))+uint32(_c_F_entryUpdate[0])))
 	v774 = v773
 	goto L246
 L248:
@@ -3017,7 +3017,7 @@ L249:
 	goto L248
 L250:
 	;
-	v793 = *(*int32)(unsafe.Add(mBase, uint32(v786<<(uint(int32(2))%32))+uint32(_consts[307])))
+	v793 = *(*int32)(unsafe.Add(mBase, uint32(v786<<(uint(int32(2))%32))+uint32(_c_F_entryUpdate[0])))
 	v794 = v793
 	goto L249
 L251:
@@ -3071,7 +3071,7 @@ L257:
 	goto L256
 L258:
 	;
-	v832 = *(*int32)(unsafe.Add(mBase, uint32(v825<<(uint(int32(2))%32))+uint32(_consts[307])))
+	v832 = *(*int32)(unsafe.Add(mBase, uint32(v825<<(uint(int32(2))%32))+uint32(_c_F_entryUpdate[0])))
 	v833 = v832
 	goto L257
 L259:
@@ -3183,7 +3183,7 @@ L277:
 	}
 L278:
 	;
-	F__serverAssert(m, int32(_a606), int32(_a601), int32(488))
+	F__serverAssert(m, int32(_a_F_entryUpdate_3), int32(_a_F_entryUpdate_1), int32(488))
 	mBase = m.M
 	v898 = m.ExcPending
 	if v898 != 0 {
@@ -3418,7 +3418,7 @@ func F_entryUpdateAsStringRef(m *base.Module, l0 int32, l1 int32, l2 int32, l3 i
 			if base.Ui32(int32(4)) < base.Ui32(v28) {
 				v36 = int32(0)
 			} else {
-				v35 = *(*int32)(unsafe.Add(mBase, uint32(v28<<(uint(int32(2))%32))+uint32(_consts[307])))
+				v35 = *(*int32)(unsafe.Add(mBase, uint32(v28<<(uint(int32(2))%32))+uint32(_c_F_entryUpdateAsStringRef[0])))
 				v36 = v35
 			}
 			v40 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v11))))
@@ -3482,7 +3482,7 @@ func F_entryUpdateAsStringRef(m *base.Module, l0 int32, l1 int32, l2 int32, l3 i
 			default:
 				v239 = int32(0)
 			}
-			v251 = *(*int32)(unsafe.Add(mBase, _consts[308]))
+			v251 = *(*int32)(unsafe.Add(mBase, _c_F_entryUpdateAsStringRef[1]))
 			v254 = int32(1)
 			v255 = v239 + v251 + v254
 			v259 = base.B2i32(l3 != int64(-1)) << (uint(int32(3)) % 32)
@@ -3501,7 +3501,7 @@ func F_entryUpdateAsStringRef(m *base.Module, l0 int32, l1 int32, l2 int32, l3 i
 					if base.Ui32(int32(4)) < base.Ui32(v287) {
 						v295 = int32(0)
 					} else {
-						v294 = *(*int32)(unsafe.Add(mBase, uint32(v287<<(uint(int32(2))%32))+uint32(_consts[307])))
+						v294 = *(*int32)(unsafe.Add(mBase, uint32(v287<<(uint(int32(2))%32))+uint32(_c_F_entryUpdateAsStringRef[0])))
 						v295 = v294
 					}
 					v299 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v11))))
@@ -3549,7 +3549,7 @@ func F_entryUpdateAsStringRef(m *base.Module, l0 int32, l1 int32, l2 int32, l3 i
 						if base.Ui32(int32(4)) < base.Ui32(v287) {
 							v295 = int32(0)
 						} else {
-							v294 = *(*int32)(unsafe.Add(mBase, uint32(v287<<(uint(int32(2))%32))+uint32(_consts[307])))
+							v294 = *(*int32)(unsafe.Add(mBase, uint32(v287<<(uint(int32(2))%32))+uint32(_c_F_entryUpdateAsStringRef[0])))
 							v295 = v294
 						}
 						v299 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v11))))
@@ -3602,7 +3602,7 @@ func F_entryUpdateAsStringRef(m *base.Module, l0 int32, l1 int32, l2 int32, l3 i
 							if base.Ui32(int32(4)) < base.Ui32(v287) {
 								v295 = int32(0)
 							} else {
-								v294 = *(*int32)(unsafe.Add(mBase, uint32(v287<<(uint(int32(2))%32))+uint32(_consts[307])))
+								v294 = *(*int32)(unsafe.Add(mBase, uint32(v287<<(uint(int32(2))%32))+uint32(_c_F_entryUpdateAsStringRef[0])))
 								v295 = v294
 							}
 							v299 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v11))))
@@ -3678,7 +3678,7 @@ func F_entryUpdateAsStringRef(m *base.Module, l0 int32, l1 int32, l2 int32, l3 i
 				default:
 					v239 = int32(0)
 				}
-				v251 = *(*int32)(unsafe.Add(mBase, _consts[308]))
+				v251 = *(*int32)(unsafe.Add(mBase, _c_F_entryUpdateAsStringRef[1]))
 				v254 = int32(1)
 				v255 = v239 + v251 + v254
 				v259 = base.B2i32(l3 != int64(-1)) << (uint(int32(3)) % 32)
@@ -3697,7 +3697,7 @@ func F_entryUpdateAsStringRef(m *base.Module, l0 int32, l1 int32, l2 int32, l3 i
 						if base.Ui32(int32(4)) < base.Ui32(v287) {
 							v295 = int32(0)
 						} else {
-							v294 = *(*int32)(unsafe.Add(mBase, uint32(v287<<(uint(int32(2))%32))+uint32(_consts[307])))
+							v294 = *(*int32)(unsafe.Add(mBase, uint32(v287<<(uint(int32(2))%32))+uint32(_c_F_entryUpdateAsStringRef[0])))
 							v295 = v294
 						}
 						v299 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v11))))
@@ -3745,7 +3745,7 @@ func F_entryUpdateAsStringRef(m *base.Module, l0 int32, l1 int32, l2 int32, l3 i
 							if base.Ui32(int32(4)) < base.Ui32(v287) {
 								v295 = int32(0)
 							} else {
-								v294 = *(*int32)(unsafe.Add(mBase, uint32(v287<<(uint(int32(2))%32))+uint32(_consts[307])))
+								v294 = *(*int32)(unsafe.Add(mBase, uint32(v287<<(uint(int32(2))%32))+uint32(_c_F_entryUpdateAsStringRef[0])))
 								v295 = v294
 							}
 							v299 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v11))))
@@ -3798,7 +3798,7 @@ func F_entryUpdateAsStringRef(m *base.Module, l0 int32, l1 int32, l2 int32, l3 i
 								if base.Ui32(int32(4)) < base.Ui32(v287) {
 									v295 = int32(0)
 								} else {
-									v294 = *(*int32)(unsafe.Add(mBase, uint32(v287<<(uint(int32(2))%32))+uint32(_consts[307])))
+									v294 = *(*int32)(unsafe.Add(mBase, uint32(v287<<(uint(int32(2))%32))+uint32(_c_F_entryUpdateAsStringRef[0])))
 									v295 = v294
 								}
 								v299 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v11))))
@@ -3873,7 +3873,7 @@ func F_entryUpdateAsStringRef(m *base.Module, l0 int32, l1 int32, l2 int32, l3 i
 					default:
 						v239 = int32(0)
 					}
-					v251 = *(*int32)(unsafe.Add(mBase, _consts[308]))
+					v251 = *(*int32)(unsafe.Add(mBase, _c_F_entryUpdateAsStringRef[1]))
 					v254 = int32(1)
 					v255 = v239 + v251 + v254
 					v259 = base.B2i32(l3 != int64(-1)) << (uint(int32(3)) % 32)
@@ -3892,7 +3892,7 @@ func F_entryUpdateAsStringRef(m *base.Module, l0 int32, l1 int32, l2 int32, l3 i
 							if base.Ui32(int32(4)) < base.Ui32(v287) {
 								v295 = int32(0)
 							} else {
-								v294 = *(*int32)(unsafe.Add(mBase, uint32(v287<<(uint(int32(2))%32))+uint32(_consts[307])))
+								v294 = *(*int32)(unsafe.Add(mBase, uint32(v287<<(uint(int32(2))%32))+uint32(_c_F_entryUpdateAsStringRef[0])))
 								v295 = v294
 							}
 							v299 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v11))))
@@ -3940,7 +3940,7 @@ func F_entryUpdateAsStringRef(m *base.Module, l0 int32, l1 int32, l2 int32, l3 i
 								if base.Ui32(int32(4)) < base.Ui32(v287) {
 									v295 = int32(0)
 								} else {
-									v294 = *(*int32)(unsafe.Add(mBase, uint32(v287<<(uint(int32(2))%32))+uint32(_consts[307])))
+									v294 = *(*int32)(unsafe.Add(mBase, uint32(v287<<(uint(int32(2))%32))+uint32(_c_F_entryUpdateAsStringRef[0])))
 									v295 = v294
 								}
 								v299 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v11))))
@@ -3993,7 +3993,7 @@ func F_entryUpdateAsStringRef(m *base.Module, l0 int32, l1 int32, l2 int32, l3 i
 									if base.Ui32(int32(4)) < base.Ui32(v287) {
 										v295 = int32(0)
 									} else {
-										v294 = *(*int32)(unsafe.Add(mBase, uint32(v287<<(uint(int32(2))%32))+uint32(_consts[307])))
+										v294 = *(*int32)(unsafe.Add(mBase, uint32(v287<<(uint(int32(2))%32))+uint32(_c_F_entryUpdateAsStringRef[0])))
 										v295 = v294
 									}
 									v299 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v11))))
@@ -4051,7 +4051,7 @@ func F_entryUpdateAsStringRef(m *base.Module, l0 int32, l1 int32, l2 int32, l3 i
 						*(*int32)(unsafe.Add(mBase, uint32(v114))) = l1
 						v120 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v11))))
 						if v120&int32(7) == int32(0) {
-							F__serverAssert(m, int32(_a600), int32(_a601), int32(135))
+							F__serverAssert(m, int32(_a_F_entryUpdateAsStringRef_0), int32(_a_F_entryUpdateAsStringRef_1), int32(135))
 							mBase = m.M
 							v348 = m.ExcPending
 							if v348 != 0 {
@@ -4065,7 +4065,7 @@ func F_entryUpdateAsStringRef(m *base.Module, l0 int32, l1 int32, l2 int32, l3 i
 							}
 						} else {
 							if v120&int32(16) == int32(0) {
-								F__serverAssert(m, int32(_a600), int32(_a601), int32(135))
+								F__serverAssert(m, int32(_a_F_entryUpdateAsStringRef_0), int32(_a_F_entryUpdateAsStringRef_1), int32(135))
 								mBase = m.M
 								v348 = m.ExcPending
 								if v348 != 0 {
@@ -4083,7 +4083,7 @@ func F_entryUpdateAsStringRef(m *base.Module, l0 int32, l1 int32, l2 int32, l3 i
 								if base.Ui32(int32(4)) < base.Ui32(v136) {
 									v144 = int32(0)
 								} else {
-									v143 = *(*int32)(unsafe.Add(mBase, uint32(v136<<(uint(int32(2))%32))+uint32(_consts[307])))
+									v143 = *(*int32)(unsafe.Add(mBase, uint32(v136<<(uint(int32(2))%32))+uint32(_c_F_entryUpdateAsStringRef[0])))
 									v144 = v143
 								}
 								v147 = l0 + v144 + int32(-4)
@@ -4107,7 +4107,7 @@ func F_entryUpdateAsStringRef(m *base.Module, l0 int32, l1 int32, l2 int32, l3 i
 									} else {
 										v164 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v11))))
 										if v164&int32(7) == int32(0) {
-											F__serverAssert(m, int32(_a602), int32(_a601), int32(204))
+											F__serverAssert(m, int32(_a_F_entryUpdateAsStringRef_2), int32(_a_F_entryUpdateAsStringRef_1), int32(204))
 											mBase = m.M
 											v354 = m.ExcPending
 											if v354 != 0 {
@@ -4121,7 +4121,7 @@ func F_entryUpdateAsStringRef(m *base.Module, l0 int32, l1 int32, l2 int32, l3 i
 											}
 										} else {
 											if v164&int32(8) == int32(0) {
-												F__serverAssert(m, int32(_a602), int32(_a601), int32(204))
+												F__serverAssert(m, int32(_a_F_entryUpdateAsStringRef_2), int32(_a_F_entryUpdateAsStringRef_1), int32(204))
 												mBase = m.M
 												v354 = m.ExcPending
 												if v354 != 0 {
@@ -4139,7 +4139,7 @@ func F_entryUpdateAsStringRef(m *base.Module, l0 int32, l1 int32, l2 int32, l3 i
 												if base.Ui32(int32(4)) < base.Ui32(v180) {
 													v188 = int32(0)
 												} else {
-													v187 = *(*int32)(unsafe.Add(mBase, uint32(v180<<(uint(int32(2))%32))+uint32(_consts[307])))
+													v187 = *(*int32)(unsafe.Add(mBase, uint32(v180<<(uint(int32(2))%32))+uint32(_c_F_entryUpdateAsStringRef[0])))
 													v188 = v187
 												}
 												v192 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v11))))
@@ -4175,7 +4175,7 @@ func F_entryUpdateAsStringRef(m *base.Module, l0 int32, l1 int32, l2 int32, l3 i
 					}
 				} else {
 					if v74 == int32(0) {
-						F__serverAssert(m, int32(_a603), int32(_a601), int32(146))
+						F__serverAssert(m, int32(_a_F_entryUpdateAsStringRef_3), int32(_a_F_entryUpdateAsStringRef_1), int32(146))
 						mBase = m.M
 						v342 = m.ExcPending
 						if v342 != 0 {
@@ -4190,7 +4190,7 @@ func F_entryUpdateAsStringRef(m *base.Module, l0 int32, l1 int32, l2 int32, l3 i
 					} else {
 						v87 = int32(48)
 						if v63&v87 != v87 {
-							F__serverAssert(m, int32(_a603), int32(_a601), int32(146))
+							F__serverAssert(m, int32(_a_F_entryUpdateAsStringRef_3), int32(_a_F_entryUpdateAsStringRef_1), int32(146))
 							mBase = m.M
 							v342 = m.ExcPending
 							if v342 != 0 {
@@ -4208,7 +4208,7 @@ func F_entryUpdateAsStringRef(m *base.Module, l0 int32, l1 int32, l2 int32, l3 i
 							if base.Ui32(int32(4)) < base.Ui32(v98) {
 								v106 = int32(0)
 							} else {
-								v105 = *(*int32)(unsafe.Add(mBase, uint32(v98<<(uint(int32(2))%32))+uint32(_consts[307])))
+								v105 = *(*int32)(unsafe.Add(mBase, uint32(v98<<(uint(int32(2))%32))+uint32(_c_F_entryUpdateAsStringRef[0])))
 								v106 = v105
 							}
 							v110 = *(*int32)(unsafe.Add(mBase, uint32(l0+v106+int32(-4))))
@@ -4220,7 +4220,7 @@ func F_entryUpdateAsStringRef(m *base.Module, l0 int32, l1 int32, l2 int32, l3 i
 							} else {
 								v164 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v11))))
 								if v164&int32(7) == int32(0) {
-									F__serverAssert(m, int32(_a602), int32(_a601), int32(204))
+									F__serverAssert(m, int32(_a_F_entryUpdateAsStringRef_2), int32(_a_F_entryUpdateAsStringRef_1), int32(204))
 									mBase = m.M
 									v354 = m.ExcPending
 									if v354 != 0 {
@@ -4234,7 +4234,7 @@ func F_entryUpdateAsStringRef(m *base.Module, l0 int32, l1 int32, l2 int32, l3 i
 									}
 								} else {
 									if v164&int32(8) == int32(0) {
-										F__serverAssert(m, int32(_a602), int32(_a601), int32(204))
+										F__serverAssert(m, int32(_a_F_entryUpdateAsStringRef_2), int32(_a_F_entryUpdateAsStringRef_1), int32(204))
 										mBase = m.M
 										v354 = m.ExcPending
 										if v354 != 0 {
@@ -4252,7 +4252,7 @@ func F_entryUpdateAsStringRef(m *base.Module, l0 int32, l1 int32, l2 int32, l3 i
 										if base.Ui32(int32(4)) < base.Ui32(v180) {
 											v188 = int32(0)
 										} else {
-											v187 = *(*int32)(unsafe.Add(mBase, uint32(v180<<(uint(int32(2))%32))+uint32(_consts[307])))
+											v187 = *(*int32)(unsafe.Add(mBase, uint32(v180<<(uint(int32(2))%32))+uint32(_c_F_entryUpdateAsStringRef[0])))
 											v188 = v187
 										}
 										v192 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v11))))

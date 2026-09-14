@@ -168,7 +168,7 @@ L12:
 	}
 L13:
 	;
-	v40 = *(*int64)(unsafe.Add(mBase, _consts[31]))
+	v40 = *(*int64)(unsafe.Add(mBase, _c_F_addNodeReplyForClusterSlot[0]))
 	v42 = v40
 	goto L10
 L14:
@@ -306,7 +306,7 @@ L34:
 	}
 L35:
 	;
-	v100 = *(*int64)(unsafe.Add(mBase, _consts[31]))
+	v100 = *(*int64)(unsafe.Add(mBase, _c_F_addNodeReplyForClusterSlot[0]))
 	v102 = v100
 	goto L32
 L36:
@@ -351,7 +351,7 @@ L42:
 	return
 L43:
 	;
-	F__serverAssert(m, int32(_a177), int32(_a144), int32(1507))
+	F__serverAssert(m, int32(_a_F_addNodeReplyForClusterSlot_0), int32(_a_F_addNodeReplyForClusterSlot_1), int32(1507))
 	mBase = m.M
 	v132 = m.ExcPending
 	if v132 != 0 {
@@ -517,7 +517,7 @@ L2:
 	return
 L3:
 	;
-	v12 = *(*int32)(unsafe.Add(mBase, _consts[87]))
+	v12 = *(*int32)(unsafe.Add(mBase, _c_F_addNodeToNodeReply[0]))
 	switch v12 {
 	case 0:
 		goto L5
@@ -530,7 +530,7 @@ L3:
 	}
 L4:
 	;
-	v37 = *(*int32)(unsafe.Add(mBase, _consts[88]))
+	v37 = *(*int32)(unsafe.Add(mBase, _c_F_addNodeToNodeReply[1]))
 	if v37 == int32(0) {
 		goto L19
 	} else {
@@ -548,7 +548,7 @@ L5:
 	}
 L6:
 	;
-	F__serverPanic_1(m, int32(_a144), int32(1424), int32(_a175), int32(0))
+	F__serverPanic_1(m, int32(_a_F_addNodeToNodeReply_1), int32(1424), int32(_a_F_addNodeToNodeReply_5), int32(0))
 	mBase = m.M
 	v30 = m.ExcPending
 	if v30 != 0 {
@@ -575,7 +575,7 @@ L8:
 	}
 L9:
 	;
-	F_addReplyBulkCString(m, l0, int32(_a176))
+	F_addReplyBulkCString(m, l0, int32(_a_F_addNodeToNodeReply_6))
 	mBase = m.M
 	v22 = m.ExcPending
 	if v22 != 0 {
@@ -639,7 +639,7 @@ L18:
 	}
 L19:
 	;
-	v49 = *(*int32)(unsafe.Add(mBase, _consts[89]))
+	v49 = *(*int32)(unsafe.Add(mBase, _c_F_addNodeToNodeReply[2]))
 	v50 = v49
 	goto L18
 L20:
@@ -752,7 +752,7 @@ L36:
 	}
 L37:
 	;
-	v79 = *(*int32)(unsafe.Add(mBase, _consts[87]))
+	v79 = *(*int32)(unsafe.Add(mBase, _c_F_addNodeToNodeReply[0]))
 	v81 = base.B2i32(v79 != int32(0))
 	if v79 == int32(1) {
 		v91 = v81
@@ -870,7 +870,7 @@ L54:
 	goto L47
 L55:
 	;
-	v122 = *(*int32)(unsafe.Add(mBase, _consts[87]))
+	v122 = *(*int32)(unsafe.Add(mBase, _c_F_addNodeToNodeReply[0]))
 	if v122 == int32(0) {
 		v138 = v117
 		goto L57
@@ -906,7 +906,7 @@ L57:
 	}
 L58:
 	;
-	F_addReplyBulkCString(m, l0, int32(_a174))
+	F_addReplyBulkCString(m, l0, int32(_a_F_addNodeToNodeReply_4))
 	mBase = m.M
 	v127 = m.ExcPending
 	if v127 != 0 {
@@ -937,7 +937,7 @@ L60:
 L61:
 	;
 	v133 = v117 + int32(-1)
-	v135 = *(*int32)(unsafe.Add(mBase, _consts[87]))
+	v135 = *(*int32)(unsafe.Add(mBase, _c_F_addNodeToNodeReply[0]))
 	if v135 == int32(1) {
 		v151 = v133
 		goto L56
@@ -959,7 +959,7 @@ L63:
 	}
 L64:
 	;
-	F_addReplyBulkCString(m, l0, int32(_a173))
+	F_addReplyBulkCString(m, l0, int32(_a_F_addNodeToNodeReply_3))
 	mBase = m.M
 	v146 = m.ExcPending
 	if v146 != 0 {
@@ -1022,7 +1022,7 @@ L73:
 	goto L68
 L74:
 	;
-	F_addReplyBulkCString(m, l0, int32(_a172))
+	F_addReplyBulkCString(m, l0, int32(_a_F_addNodeToNodeReply_2))
 	mBase = m.M
 	v177 = m.ExcPending
 	if v177 != 0 {
@@ -1050,7 +1050,7 @@ L77:
 	return
 L78:
 	;
-	F__serverAssert(m, int32(_a171), int32(_a144), int32(1468))
+	F__serverAssert(m, int32(_a_F_addNodeToNodeReply_0), int32(_a_F_addNodeToNodeReply_1), int32(1468))
 	mBase = m.M
 	v191 = m.ExcPending
 	if v191 != 0 {
@@ -1099,21 +1099,21 @@ func F_getNodeReplicationOffset(m *base.Module, l0 int32) int64 {
 		return v40
 	} else {
 		if v3&int32(2) == int32(0) {
-			v38 = *(*int64)(unsafe.Add(mBase, _consts[31]))
+			v38 = *(*int64)(unsafe.Add(mBase, _c_F_getNodeReplicationOffset[0]))
 			return v38
 		} else {
-			v16 = *(*int32)(unsafe.Add(mBase, _consts[64]))
+			v16 = *(*int32)(unsafe.Add(mBase, _c_F_getNodeReplicationOffset[1]))
 			if v16 == int32(0) {
 				v30 = int64(0)
 			} else {
-				v20 = *(*int32)(unsafe.Add(mBase, _consts[133]))
+				v20 = *(*int32)(unsafe.Add(mBase, _c_F_getNodeReplicationOffset[2]))
 				if v20 != 0 {
 					v27 = v20
 					v28 = *(*int32)(unsafe.Add(mBase, uint32(v27)+104))
 					v29 = *(*int64)(unsafe.Add(mBase, uint32(v28)+48))
 					v30 = v29
 				} else {
-					v23 = *(*int32)(unsafe.Add(mBase, _consts[134]))
+					v23 = *(*int32)(unsafe.Add(mBase, _c_F_getNodeReplicationOffset[3]))
 					if v23 == int32(0) {
 						v30 = int64(0)
 					} else {

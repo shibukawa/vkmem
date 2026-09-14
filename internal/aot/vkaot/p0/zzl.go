@@ -178,10 +178,10 @@ L13:
 	v52 = F___errno_location(m)
 	mBase = m.M
 	*(*int32)(unsafe.Add(mBase, uint32(v52))) = v44
-	v58 = *(*int64)(unsafe.Add(mBase, _consts[1101]))
+	v58 = *(*int64)(unsafe.Add(mBase, _c_F_zzlDeleteRangeByScore[0]))
 	*(*int64)(unsafe.Add(mBase, uint32(v50+int32(8)))) = v58
 	*(*int64)(unsafe.Add(mBase, uint32(v50)+24)) = int64(0)
-	v63 = *(*int64)(unsafe.Add(mBase, _consts[1102]))
+	v63 = *(*int64)(unsafe.Add(mBase, _c_F_zzlDeleteRangeByScore[1]))
 	*(*int64)(unsafe.Add(mBase, uint32(v50))) = v63
 	F_ffc_from_chars_double_options(m, v50+int32(16), v39, v39+v43, v50+int32(24), v50)
 	mBase = m.M
@@ -378,7 +378,7 @@ func F_zzlFind(m *base.Module, l0 int32, l1 int32, l2 int32) int32 {
 						return int32(0)
 					} else {
 						if v46 == int32(0) {
-							F__serverAssert(m, int32(_a1608), int32(_a1609), int32(1140))
+							F__serverAssert(m, int32(_a_F_zzlFind_0), int32(_a_F_zzlFind_1), int32(1140))
 							mBase = m.M
 							v123 = m.ExcPending
 							if v123 != 0 {
@@ -414,10 +414,10 @@ func F_zzlFind(m *base.Module, l0 int32, l1 int32, l2 int32) int32 {
 										v67 = F___errno_location(m)
 										mBase = m.M
 										*(*int32)(unsafe.Add(mBase, uint32(v67))) = v59
-										v73 = *(*int64)(unsafe.Add(mBase, _consts[1101]))
+										v73 = *(*int64)(unsafe.Add(mBase, _c_F_zzlFind[0]))
 										*(*int64)(unsafe.Add(mBase, uint32(v65+int32(8)))) = v73
 										*(*int64)(unsafe.Add(mBase, uint32(v65)+24)) = int64(0)
-										v78 = *(*int64)(unsafe.Add(mBase, _consts[1102]))
+										v78 = *(*int64)(unsafe.Add(mBase, _c_F_zzlFind[1]))
 										*(*int64)(unsafe.Add(mBase, uint32(v65))) = v78
 										F_ffc_from_chars_double_options(m, v65+int32(16), v54, v54+v58, v65+int32(24), v65)
 										mBase = m.M
@@ -504,7 +504,7 @@ L2:
 	}
 L3:
 	;
-	F__serverAssert(m, int32(_a1608), int32(_a1609), int32(1099))
+	F__serverAssert(m, int32(_a_F_zzlFirstInLexRange_0), int32(_a_F_zzlFirstInLexRange_1), int32(1099))
 	v42 = m.ExcPending
 	if v42 != 0 {
 		goto L1
@@ -662,7 +662,7 @@ func F_zzlGetScore(m *base.Module, l0 int32) float64 {
 	v6 = v4 - int32(16)
 	m.G0 = v6
 	if l0 == int32(0) {
-		F__serverAssert(m, int32(_a1608), int32(_a1609), int32(857))
+		F__serverAssert(m, int32(_a_F_zzlGetScore_0), int32(_a_F_zzlGetScore_1), int32(857))
 		mBase = m.M
 		v74 = m.ExcPending
 		if v74 != 0 {
@@ -693,10 +693,10 @@ func F_zzlGetScore(m *base.Module, l0 int32) float64 {
 				v27 = F___errno_location(m)
 				mBase = m.M
 				*(*int32)(unsafe.Add(mBase, uint32(v27))) = v19
-				v33 = *(*int64)(unsafe.Add(mBase, _consts[1101]))
+				v33 = *(*int64)(unsafe.Add(mBase, _c_F_zzlGetScore[0]))
 				*(*int64)(unsafe.Add(mBase, uint32(v25+int32(8)))) = v33
 				*(*int64)(unsafe.Add(mBase, uint32(v25)+24)) = int64(0)
-				v38 = *(*int64)(unsafe.Add(mBase, _consts[1102]))
+				v38 = *(*int64)(unsafe.Add(mBase, _c_F_zzlGetScore[1]))
 				*(*int64)(unsafe.Add(mBase, uint32(v25))) = v38
 				F_ffc_from_chars_double_options(m, v25+int32(16), v12, v12+v18, v25+int32(24), v25)
 				mBase = m.M
@@ -808,7 +808,7 @@ func F_zzlLexValueGteMin(m *base.Module, l0 int32, l1 int32) int32 {
 	v9 = v7 - int32(16)
 	m.G0 = v9
 	if l0 == int32(0) {
-		F__serverAssert(m, int32(_a1608), int32(_a1609), int32(894))
+		F__serverAssert(m, int32(_a_F_zzlLexValueGteMin_0), int32(_a_F_zzlLexValueGteMin_1), int32(894))
 		mBase = m.M
 		v126 = m.ExcPending
 		if v126 != 0 {
@@ -841,11 +841,11 @@ func F_zzlLexValueGteMin(m *base.Module, l0 int32, l1 int32) int32 {
 					if v29 == int32(0) {
 						if v27 != v28 {
 							v46 = int32(0)
-							v48 = *(*int32)(unsafe.Add(mBase, _consts[376]))
+							v48 = *(*int32)(unsafe.Add(mBase, _c_F_zzlLexValueGteMin[0]))
 							if v27 == v48 {
 								v113 = v46
 							} else {
-								v51 = *(*int32)(unsafe.Add(mBase, _consts[377]))
+								v51 = *(*int32)(unsafe.Add(mBase, _c_F_zzlLexValueGteMin[1]))
 								if v28 == v51 {
 									v113 = v46
 								} else {
@@ -921,11 +921,11 @@ func F_zzlLexValueGteMin(m *base.Module, l0 int32, l1 int32) int32 {
 						if v27 == v28 {
 							v113 = v32
 						} else {
-							v35 = *(*int32)(unsafe.Add(mBase, _consts[376]))
+							v35 = *(*int32)(unsafe.Add(mBase, _c_F_zzlLexValueGteMin[0]))
 							if v27 == v35 {
 								v113 = v32
 							} else {
-								v38 = *(*int32)(unsafe.Add(mBase, _consts[377]))
+								v38 = *(*int32)(unsafe.Add(mBase, _c_F_zzlLexValueGteMin[1]))
 								if v28 == v38 {
 									v113 = v32
 								} else {
@@ -1020,11 +1020,11 @@ func F_zzlLexValueGteMin(m *base.Module, l0 int32, l1 int32) int32 {
 					if v29 == int32(0) {
 						if v27 != v28 {
 							v46 = int32(0)
-							v48 = *(*int32)(unsafe.Add(mBase, _consts[376]))
+							v48 = *(*int32)(unsafe.Add(mBase, _c_F_zzlLexValueGteMin[0]))
 							if v27 == v48 {
 								v113 = v46
 							} else {
-								v51 = *(*int32)(unsafe.Add(mBase, _consts[377]))
+								v51 = *(*int32)(unsafe.Add(mBase, _c_F_zzlLexValueGteMin[1]))
 								if v28 == v51 {
 									v113 = v46
 								} else {
@@ -1100,11 +1100,11 @@ func F_zzlLexValueGteMin(m *base.Module, l0 int32, l1 int32) int32 {
 						if v27 == v28 {
 							v113 = v32
 						} else {
-							v35 = *(*int32)(unsafe.Add(mBase, _consts[376]))
+							v35 = *(*int32)(unsafe.Add(mBase, _c_F_zzlLexValueGteMin[0]))
 							if v27 == v35 {
 								v113 = v32
 							} else {
-								v38 = *(*int32)(unsafe.Add(mBase, _consts[377]))
+								v38 = *(*int32)(unsafe.Add(mBase, _c_F_zzlLexValueGteMin[1]))
 								if v28 == v38 {
 									v113 = v32
 								} else {

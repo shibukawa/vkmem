@@ -88,7 +88,7 @@ func F_aeApiPoll(m *base.Module, l0 int32, l1 int32) int32 {
 			m.G0 = v13 + int32(16)
 			return v133
 		} else {
-			v114 = *(*int32)(unsafe.Add(mBase, _consts[9]))
+			v114 = *(*int32)(unsafe.Add(mBase, _c_F_aeApiPoll[0]))
 			if v114 == int32(27) {
 				v133 = v32
 				m.G0 = v13 + int32(16)
@@ -97,7 +97,7 @@ func F_aeApiPoll(m *base.Module, l0 int32, l1 int32) int32 {
 				v117 = F___strerror_l(m, v114, v114)
 				mBase = m.M
 				*(*int32)(unsafe.Add(mBase, uint32(v13))) = v117
-				F__serverPanic_1(m, int32(_a51), int32(99), int32(_a52), v13)
+				F__serverPanic_1(m, int32(_a_F_aeApiPoll_0), int32(99), int32(_a_F_aeApiPoll_1), v13)
 				mBase = m.M
 				v125 = m.ExcPending
 				if v125 != 0 {

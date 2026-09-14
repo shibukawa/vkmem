@@ -2476,7 +2476,7 @@ L13:
 L14:
 	;
 	v4027 = int32(0)
-	F_rdbReportError(m, int32(1), int32(2920), int32(_a1837), v4027)
+	F_rdbReportError(m, int32(1), int32(2920), int32(_a_F_rdbLoadObject_0), v4027)
 	mBase = m.M
 	v4033 = m.ExcPending
 	if v4033 != 0 {
@@ -2504,7 +2504,7 @@ L16:
 	}
 L17:
 	;
-	v3692 = *(*int32)(unsafe.Add(mBase, _consts[540]))
+	v3692 = *(*int32)(unsafe.Add(mBase, _c_F_rdbLoadObject[0]))
 	if v3692 != int32(1) {
 		goto L1089
 	} else {
@@ -2524,7 +2524,7 @@ L19:
 	;
 	v2431 = *(*int32)(unsafe.Add(mBase, uint32(v25)+512))
 	*(*int32)(unsafe.Add(mBase, uint32(v25)+32)) = v2431
-	F_rdbReportError(m, int32(1), int32(2398), int32(_a1838), v25+int32(32))
+	F_rdbReportError(m, int32(1), int32(2398), int32(_a_F_rdbLoadObject_1), v25+int32(32))
 	mBase = m.M
 	v2439 = m.ExcPending
 	if v2439 != 0 {
@@ -2535,7 +2535,7 @@ L19:
 L20:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v25)+16)) = l0
-	F_rdbReportError(m, int32(1), int32(2595), int32(_a1839), v25+int32(16))
+	F_rdbReportError(m, int32(1), int32(2595), int32(_a_F_rdbLoadObject_2), v25+int32(16))
 	mBase = m.M
 	v2430 = m.ExcPending
 	if v2430 != 0 {
@@ -2545,9 +2545,9 @@ L20:
 	}
 L21:
 	;
-	v2388 = int32(_a20)
-	v2390 = *(*int64)(unsafe.Add(mBase, _consts[541]))
-	*(*int64)(unsafe.Add(mBase, _consts[541])) = v2390 + int64(1)
+	v2388 = int32(_a_F_rdbLoadObject_3)
+	v2390 = *(*int64)(unsafe.Add(mBase, _c_F_rdbLoadObject[1]))
+	*(*int64)(unsafe.Add(mBase, _c_F_rdbLoadObject[1])) = v2390 + int64(1)
 	v2394 = *(*int32)(unsafe.Add(mBase, uint32(v25)+192))
 	v2396 = F_lpValidateIntegrityAndDups(m, v1593, v2394, int32(1))
 	mBase = m.M
@@ -2570,9 +2570,9 @@ L22:
 	}
 L23:
 	;
-	v2292 = int32(_a20)
-	v2294 = *(*int64)(unsafe.Add(mBase, _consts[541]))
-	*(*int64)(unsafe.Add(mBase, _consts[541])) = v2294 + int64(1)
+	v2292 = int32(_a_F_rdbLoadObject_3)
+	v2294 = *(*int64)(unsafe.Add(mBase, _c_F_rdbLoadObject[1]))
+	*(*int64)(unsafe.Add(mBase, _c_F_rdbLoadObject[1])) = v2294 + int64(1)
 	v2298 = *(*int32)(unsafe.Add(mBase, uint32(v25)+192))
 	v2300 = F_lpValidateIntegrityAndDups(m, v1593, v2298, int32(1))
 	mBase = m.M
@@ -2595,9 +2595,9 @@ L24:
 	}
 L25:
 	;
-	v2187 = int32(_a20)
-	v2189 = *(*int64)(unsafe.Add(mBase, _consts[541]))
-	*(*int64)(unsafe.Add(mBase, _consts[541])) = v2189 + int64(1)
+	v2187 = int32(_a_F_rdbLoadObject_3)
+	v2189 = *(*int64)(unsafe.Add(mBase, _c_F_rdbLoadObject[1]))
+	*(*int64)(unsafe.Add(mBase, _c_F_rdbLoadObject[1])) = v2189 + int64(1)
 	v2193 = *(*int32)(unsafe.Add(mBase, uint32(v25)+192))
 	v2195 = F_lpValidateIntegrityAndDups(m, v1593, v2193, int32(0))
 	mBase = m.M
@@ -2609,9 +2609,9 @@ L25:
 	}
 L26:
 	;
-	v2069 = int32(_a20)
-	v2071 = *(*int64)(unsafe.Add(mBase, _consts[541]))
-	*(*int64)(unsafe.Add(mBase, _consts[541])) = v2071 + int64(1)
+	v2069 = int32(_a_F_rdbLoadObject_3)
+	v2071 = *(*int64)(unsafe.Add(mBase, _c_F_rdbLoadObject[1]))
+	*(*int64)(unsafe.Add(mBase, _c_F_rdbLoadObject[1])) = v2071 + int64(1)
 	v2075 = *(*int32)(unsafe.Add(mBase, uint32(v25)+192))
 	if base.Ui32(v2075) < base.Ui32(int32(8)) {
 		goto L638
@@ -2713,9 +2713,9 @@ L37:
 	}
 L38:
 	;
-	v59 = int32(_a20)
-	v60 = *(*int32)(unsafe.Add(mBase, _consts[542]))
-	v62 = *(*int32)(unsafe.Add(mBase, _consts[543]))
+	v59 = int32(_a_F_rdbLoadObject_3)
+	v60 = *(*int32)(unsafe.Add(mBase, _c_F_rdbLoadObject[2]))
+	v62 = *(*int32)(unsafe.Add(mBase, _c_F_rdbLoadObject[3]))
 	v63 = F_createQuicklistObject(m, v60, v62)
 	mBase = m.M
 	v64 = m.ExcPending
@@ -2907,7 +2907,7 @@ L62:
 	}
 L63:
 	;
-	v175 = *(*int32)(unsafe.Add(mBase, _consts[544]))
+	v175 = *(*int32)(unsafe.Add(mBase, _c_F_rdbLoadObject[4]))
 	v176 = int32(1073741824)
 	if base.Ui32(v175) < base.Ui32(v176) {
 		goto L70
@@ -3006,7 +3006,7 @@ L75:
 L76:
 	;
 	*(*int64)(unsafe.Add(mBase, uint32(v25)+176)) = v168
-	F_rdbReportError(m, int32(1), int32(1968), int32(_a1840), v25+int32(176))
+	F_rdbReportError(m, int32(1), int32(1968), int32(_a_F_rdbLoadObject_4), v25+int32(176))
 	mBase = m.M
 	v195 = m.ExcPending
 	if v195 != 0 {
@@ -3237,7 +3237,7 @@ L108:
 L109:
 	;
 	v300 = int32(0)
-	F_rdbReportError(m, int32(1), int32(1996), int32(_a1841), v300)
+	F_rdbReportError(m, int32(1), int32(1996), int32(_a_F_rdbLoadObject_5), v300)
 	mBase = m.M
 	v306 = m.ExcPending
 	if v306 != 0 {
@@ -3261,7 +3261,7 @@ L111:
 	}
 L112:
 	;
-	v310 = *(*int32)(unsafe.Add(mBase, _consts[545]))
+	v310 = *(*int32)(unsafe.Add(mBase, _c_F_rdbLoadObject[5]))
 	if base.Ui32(v310) <= base.Ui32(v307) {
 		goto L111
 	} else {
@@ -3269,7 +3269,7 @@ L112:
 	}
 L113:
 	;
-	v313 = *(*int32)(unsafe.Add(mBase, _consts[546]))
+	v313 = *(*int32)(unsafe.Add(mBase, _c_F_rdbLoadObject[6]))
 	if base.Ui32(v313) < base.Ui32(v255) {
 		goto L111
 	} else {
@@ -3314,7 +3314,7 @@ L121:
 L122:
 	;
 	*(*int64)(unsafe.Add(mBase, uint32(v25)+160)) = v168
-	F_rdbReportError(m, int32(1), int32(2008), int32(_a1840), v25+int32(160))
+	F_rdbReportError(m, int32(1), int32(2008), int32(_a_F_rdbLoadObject_4), v25+int32(160))
 	mBase = m.M
 	v340 = m.ExcPending
 	if v340 != 0 {
@@ -3378,7 +3378,7 @@ L128:
 	}
 L129:
 	;
-	v351 = *(*int32)(unsafe.Add(mBase, _consts[545]))
+	v351 = *(*int32)(unsafe.Add(mBase, _c_F_rdbLoadObject[5]))
 	if base.Ui32(v351) <= base.Ui32(v348) {
 		goto L128
 	} else {
@@ -3386,7 +3386,7 @@ L129:
 	}
 L130:
 	;
-	v354 = *(*int32)(unsafe.Add(mBase, _consts[546]))
+	v354 = *(*int32)(unsafe.Add(mBase, _c_F_rdbLoadObject[6]))
 	if base.Ui32(v354) < base.Ui32(v253) {
 		goto L128
 	} else {
@@ -3461,7 +3461,7 @@ L139:
 L140:
 	;
 	v376 = int32(0)
-	F_rdbReportError(m, int32(1), int32(2022), int32(_a1841), v376)
+	F_rdbReportError(m, int32(1), int32(2022), int32(_a_F_rdbLoadObject_5), v376)
 	mBase = m.M
 	v382 = m.ExcPending
 	if v382 != 0 {
@@ -3483,7 +3483,7 @@ L142:
 L143:
 	;
 	*(*int64)(unsafe.Add(mBase, uint32(v25)+144)) = v168
-	F_rdbReportError(m, int32(1), int32(2029), int32(_a1840), v25+int32(144))
+	F_rdbReportError(m, int32(1), int32(2029), int32(_a_F_rdbLoadObject_4), v25+int32(144))
 	mBase = m.M
 	v396 = m.ExcPending
 	if v396 != 0 {
@@ -3561,7 +3561,7 @@ L151:
 L152:
 	;
 	v413 = int32(0)
-	F_rdbReportError(m, int32(1), int32(2040), int32(_a1841), v413)
+	F_rdbReportError(m, int32(1), int32(2040), int32(_a_F_rdbLoadObject_5), v413)
 	mBase = m.M
 	v419 = m.ExcPending
 	if v419 != 0 {
@@ -3663,7 +3663,7 @@ L165:
 L166:
 	;
 	*(*int64)(unsafe.Add(mBase, uint32(v25)+128)) = v438
-	F_rdbReportError(m, int32(1), int32(2062), int32(_a1840), v25+int32(128))
+	F_rdbReportError(m, int32(1), int32(2062), int32(_a_F_rdbLoadObject_4), v25+int32(128))
 	mBase = m.M
 	v466 = m.ExcPending
 	if v466 != 0 {
@@ -3902,7 +3902,7 @@ L198:
 L199:
 	;
 	v584 = int32(0)
-	F_rdbReportError(m, int32(1), int32(2093), int32(_a1842), v584)
+	F_rdbReportError(m, int32(1), int32(2093), int32(_a_F_rdbLoadObject_6), v584)
 	mBase = m.M
 	v590 = m.ExcPending
 	if v590 != 0 {
@@ -4106,7 +4106,7 @@ L225:
 L226:
 	;
 	v655 = int32(0)
-	F_rdbReportError(m, int32(1), int32(2106), int32(_a1843), v655)
+	F_rdbReportError(m, int32(1), int32(2106), int32(_a_F_rdbLoadObject_7), v655)
 	mBase = m.M
 	v661 = m.ExcPending
 	if v661 != 0 {
@@ -4133,7 +4133,7 @@ L229:
 	goto L174
 L230:
 	;
-	v694 = *(*int32)(unsafe.Add(mBase, _consts[547]))
+	v694 = *(*int32)(unsafe.Add(mBase, _c_F_rdbLoadObject[7]))
 	if base.Ui32(v694) < base.Ui32(v691) {
 		v4010 = v444
 		goto L15
@@ -4142,7 +4142,7 @@ L230:
 	}
 L231:
 	;
-	v697 = *(*int32)(unsafe.Add(mBase, _consts[548]))
+	v697 = *(*int32)(unsafe.Add(mBase, _c_F_rdbLoadObject[8]))
 	if base.Ui32(v697) < base.Ui32(v683) {
 		v4010 = v444
 		goto L15
@@ -4269,7 +4269,7 @@ L248:
 	}
 L249:
 	;
-	v741 = F_hashtableCreate(m, int32(_a1844))
+	v741 = F_hashtableCreate(m, int32(_a_F_rdbLoadObject_8))
 	mBase = m.M
 	v742 = m.ExcPending
 	if v742 != 0 {
@@ -4289,7 +4289,7 @@ L250:
 	}
 L251:
 	;
-	v734 = int64(*(*uint32)(unsafe.Add(mBase, _consts[549])))
+	v734 = int64(*(*uint32)(unsafe.Add(mBase, _c_F_rdbLoadObject[9])))
 	if base.Ui64(v723) <= base.Ui64(v734) {
 		goto L249
 	} else {
@@ -4485,7 +4485,7 @@ L276:
 L277:
 	;
 	v803 = int32(0)
-	F_rdbReportError(m, int32(1), int32(2160), int32(_a1845), v803)
+	F_rdbReportError(m, int32(1), int32(2160), int32(_a_F_rdbLoadObject_9), v803)
 	mBase = m.M
 	v809 = m.ExcPending
 	if v809 != 0 {
@@ -4616,7 +4616,7 @@ L287:
 	}
 L288:
 	;
-	v851 = *(*int32)(unsafe.Add(mBase, _consts[550]))
+	v851 = *(*int32)(unsafe.Add(mBase, _c_F_rdbLoadObject[10]))
 	if base.Ui32(v851) < base.Ui32(v849) {
 		goto L286
 	} else {
@@ -4648,7 +4648,7 @@ L293:
 	goto L288
 L294:
 	;
-	v834 = *(*int32)(unsafe.Add(mBase, _consts[550]))
+	v834 = *(*int32)(unsafe.Add(mBase, _c_F_rdbLoadObject[10]))
 	v853 = v834
 	goto L287
 L295:
@@ -4848,7 +4848,7 @@ L324:
 L325:
 	;
 	v939 = int32(0)
-	F_rdbReportError(m, int32(1), int32(2178), int32(_a1846), v939)
+	F_rdbReportError(m, int32(1), int32(2178), int32(_a_F_rdbLoadObject_10), v939)
 	mBase = m.M
 	v945 = m.ExcPending
 	if v945 != 0 {
@@ -5073,7 +5073,7 @@ L354:
 L355:
 	;
 	*(*int64)(unsafe.Add(mBase, uint32(v25)+112)) = v1032
-	F_rdbReportError(m, int32(1), int32(2205), int32(_a1840), v25+int32(112))
+	F_rdbReportError(m, int32(1), int32(2205), int32(_a_F_rdbLoadObject_4), v25+int32(112))
 	mBase = m.M
 	v1393 = m.ExcPending
 	if v1393 != 0 {
@@ -5196,7 +5196,7 @@ L370:
 	goto L10
 L371:
 	;
-	v1266 = *(*int32)(unsafe.Add(mBase, _consts[110]))
+	v1266 = *(*int32)(unsafe.Add(mBase, _c_F_rdbLoadObject[11]))
 	if v1266 != 0 {
 		goto L399
 	} else {
@@ -5400,7 +5400,7 @@ L399:
 L400:
 	;
 	v1267 = int32(0)
-	v1268 = *(*int32)(unsafe.Add(mBase, _consts[166]))
+	v1268 = *(*int32)(unsafe.Add(mBase, _c_F_rdbLoadObject[12]))
 	v1275 = base.B2i32(v1268 == v1267)
 	goto L398
 L401:
@@ -5436,7 +5436,7 @@ L404:
 	}
 L405:
 	;
-	v1287 = *(*int32)(unsafe.Add(mBase, _consts[293]))
+	v1287 = *(*int32)(unsafe.Add(mBase, _c_F_rdbLoadObject[13]))
 	if v1287 == int32(0) {
 		goto L404
 	} else {
@@ -5449,7 +5449,7 @@ L406:
 	*(*int64)(unsafe.Add(mBase, uint32(v25)+192)) = v1291
 	*(*int32)(unsafe.Add(mBase, uint32(v25)+504)) = v1102
 	*(*int64)(unsafe.Add(mBase, uint32(v25)+496)) = v1291
-	v1297 = *(*int32)(unsafe.Add(mBase, _consts[551]))
+	v1297 = *(*int32)(unsafe.Add(mBase, _c_F_rdbLoadObject[14]))
 	*(*int32)(unsafe.Add(mBase, uint32(v25)+528)) = v1297
 	*(*int32)(unsafe.Add(mBase, uint32(v25)+536)) = v25 + int32(496)
 	*(*int32)(unsafe.Add(mBase, uint32(v25)+532)) = v25 + int32(192)
@@ -5516,7 +5516,7 @@ L413:
 L414:
 	;
 	v1321 = int32(0)
-	F_rdbReportError(m, int32(1), int32(2261), int32(_a1846), v1321)
+	F_rdbReportError(m, int32(1), int32(2261), int32(_a_F_rdbLoadObject_10), v1321)
 	mBase = m.M
 	v1327 = m.ExcPending
 	if v1327 != 0 {
@@ -5581,7 +5581,7 @@ L422:
 	goto L364
 L423:
 	;
-	F__serverAssert(m, int32(_a1847), int32(_a1848), int32(2273))
+	F__serverAssert(m, int32(_a_F_rdbLoadObject_11), int32(_a_F_rdbLoadObject_12), int32(2273))
 	mBase = m.M
 	v1384 = m.ExcPending
 	if v1384 != 0 {
@@ -5682,9 +5682,9 @@ L434:
 	}
 L435:
 	;
-	v1414 = int32(_a20)
-	v1415 = *(*int32)(unsafe.Add(mBase, _consts[542]))
-	v1417 = *(*int32)(unsafe.Add(mBase, _consts[543]))
+	v1414 = int32(_a_F_rdbLoadObject_3)
+	v1415 = *(*int32)(unsafe.Add(mBase, _c_F_rdbLoadObject[2]))
+	v1417 = *(*int32)(unsafe.Add(mBase, _c_F_rdbLoadObject[3]))
 	v1418 = F_createQuicklistObject(m, v1415, v1417)
 	mBase = m.M
 	v1419 = m.ExcPending
@@ -5798,7 +5798,7 @@ L449:
 L450:
 	;
 	v1461 = int32(0)
-	F_rdbReportError(m, int32(1), int32(2298), int32(_a1849), v1461)
+	F_rdbReportError(m, int32(1), int32(2298), int32(_a_F_rdbLoadObject_13), v1461)
 	mBase = m.M
 	v1467 = m.ExcPending
 	if v1467 != 0 {
@@ -5914,9 +5914,9 @@ L464:
 	}
 L465:
 	;
-	v1488 = int32(_a20)
-	v1490 = *(*int64)(unsafe.Add(mBase, _consts[541]))
-	*(*int64)(unsafe.Add(mBase, _consts[541])) = v1490 + int64(1)
+	v1488 = int32(_a_F_rdbLoadObject_3)
+	v1490 = *(*int64)(unsafe.Add(mBase, _c_F_rdbLoadObject[1]))
+	*(*int64)(unsafe.Add(mBase, _c_F_rdbLoadObject[1])) = v1490 + int64(1)
 	*(*int32)(unsafe.Add(mBase, uint32(v25)+496)) = v1474
 	v1495 = int32(0)
 	v1497 = F_lpValidateIntegrity(m, v1474, v1478, v1495, v1495)
@@ -5930,7 +5930,7 @@ L465:
 L466:
 	;
 	v1502 = int32(0)
-	F_rdbReportError(m, int32(1), int32(2320), int32(_a1850), v1502)
+	F_rdbReportError(m, int32(1), int32(2320), int32(_a_F_rdbLoadObject_14), v1502)
 	mBase = m.M
 	v1508 = m.ExcPending
 	if v1508 != 0 {
@@ -6007,7 +6007,7 @@ L474:
 L475:
 	;
 	v1524 = int32(0)
-	F_rdbReportError(m, int32(1), int32(2328), int32(_a1851), v1524)
+	F_rdbReportError(m, int32(1), int32(2328), int32(_a_F_rdbLoadObject_15), v1524)
 	mBase = m.M
 	v1530 = m.ExcPending
 	if v1530 != 0 {
@@ -6170,9 +6170,9 @@ L493:
 	}
 L494:
 	;
-	v2010 = int32(_a20)
-	v2011 = *(*int32)(unsafe.Add(mBase, _consts[542]))
-	v2013 = *(*int32)(unsafe.Add(mBase, _consts[543]))
+	v2010 = int32(_a_F_rdbLoadObject_3)
+	v2011 = *(*int32)(unsafe.Add(mBase, _c_F_rdbLoadObject[2]))
+	v2013 = *(*int32)(unsafe.Add(mBase, _c_F_rdbLoadObject[3]))
 	v2014 = F_quicklistNew(m, v2011, v2013)
 	mBase = m.M
 	v2015 = m.ExcPending
@@ -6405,7 +6405,7 @@ L527:
 	goto L497
 L528:
 	;
-	F_rdbReportError(m, int32(1), int32(2374), int32(_a1852), int32(0))
+	F_rdbReportError(m, int32(1), int32(2374), int32(_a_F_rdbLoadObject_16), int32(0))
 	mBase = m.M
 	v1722 = m.ExcPending
 	if v1722 != 0 {
@@ -6445,7 +6445,7 @@ L532:
 	goto L533
 L533:
 	;
-	v1736 = F_hashtableCreate(m, int32(_a1844))
+	v1736 = F_hashtableCreate(m, int32(_a_F_rdbLoadObject_8))
 	mBase = m.M
 	v1737 = m.ExcPending
 	if v1737 != 0 {
@@ -6993,7 +6993,7 @@ L614:
 	}
 L615:
 	;
-	v2002 = *(*int32)(unsafe.Add(mBase, _consts[549]))
+	v2002 = *(*int32)(unsafe.Add(mBase, _c_F_rdbLoadObject[9]))
 	if base.Ui32(v2002) < base.Ui32(v1999) {
 		goto L614
 	} else {
@@ -7001,7 +7001,7 @@ L615:
 	}
 L616:
 	;
-	v2005 = *(*int32)(unsafe.Add(mBase, _consts[550]))
+	v2005 = *(*int32)(unsafe.Add(mBase, _c_F_rdbLoadObject[10]))
 	if base.Ui32(v1968) <= base.Ui32(v2005) {
 		v4010 = v1598
 		goto L15
@@ -7047,7 +7047,7 @@ L621:
 L622:
 	;
 	v2021 = int32(0)
-	F_rdbReportError(m, int32(1), int32(2427), int32(_a1853), v2021)
+	F_rdbReportError(m, int32(1), int32(2427), int32(_a_F_rdbLoadObject_17), v2021)
 	mBase = m.M
 	v2027 = m.ExcPending
 	if v2027 != 0 {
@@ -7295,7 +7295,7 @@ L659:
 	goto L652
 L660:
 	;
-	F_rdbReportError(m, int32(1), int32(2452), int32(_a1854), int32(0))
+	F_rdbReportError(m, int32(1), int32(2452), int32(_a_F_rdbLoadObject_18), int32(0))
 	mBase = m.M
 	v2171 = m.ExcPending
 	if v2171 != 0 {
@@ -7329,7 +7329,7 @@ L663:
 	goto L10
 L664:
 	;
-	v2182 = *(*int32)(unsafe.Add(mBase, _consts[544]))
+	v2182 = *(*int32)(unsafe.Add(mBase, _c_F_rdbLoadObject[4]))
 	if base.Ui32(v2180) <= base.Ui32(v2182) {
 		v4010 = v1598
 		goto L15
@@ -7371,7 +7371,7 @@ L668:
 	}
 L669:
 	;
-	F_rdbReportError(m, int32(1), int32(2465), int32(_a1855), int32(0))
+	F_rdbReportError(m, int32(1), int32(2465), int32(_a_F_rdbLoadObject_19), int32(0))
 	mBase = m.M
 	v2202 = m.ExcPending
 	if v2202 != 0 {
@@ -7446,7 +7446,7 @@ L677:
 	goto L8
 L678:
 	;
-	v2220 = *(*int32)(unsafe.Add(mBase, _consts[545]))
+	v2220 = *(*int32)(unsafe.Add(mBase, _c_F_rdbLoadObject[5]))
 	if base.Ui32(v2217) <= base.Ui32(v2220) {
 		v4010 = v1598
 		goto L15
@@ -7522,7 +7522,7 @@ L685:
 	}
 L686:
 	;
-	F_rdbReportError(m, int32(1), int32(2485), int32(_a1856), int32(0))
+	F_rdbReportError(m, int32(1), int32(2485), int32(_a_F_rdbLoadObject_20), int32(0))
 	mBase = m.M
 	v2239 = m.ExcPending
 	if v2239 != 0 {
@@ -7542,7 +7542,7 @@ L688:
 	}
 L689:
 	;
-	F_rdbReportError(m, int32(1), int32(2497), int32(_a1857), int32(0))
+	F_rdbReportError(m, int32(1), int32(2497), int32(_a_F_rdbLoadObject_21), int32(0))
 	mBase = m.M
 	v2248 = m.ExcPending
 	if v2248 != 0 {
@@ -7637,7 +7637,7 @@ L699:
 	}
 L700:
 	;
-	v2282 = *(*int32)(unsafe.Add(mBase, _consts[547]))
+	v2282 = *(*int32)(unsafe.Add(mBase, _c_F_rdbLoadObject[7]))
 	if base.Ui32(v2279) <= base.Ui32(v2282) {
 		goto L699
 	} else {
@@ -7690,7 +7690,7 @@ L706:
 	}
 L707:
 	;
-	F_rdbReportError(m, int32(1), int32(2523), int32(_a1858), int32(0))
+	F_rdbReportError(m, int32(1), int32(2523), int32(_a_F_rdbLoadObject_22), int32(0))
 	mBase = m.M
 	v2307 = m.ExcPending
 	if v2307 != 0 {
@@ -7743,7 +7743,7 @@ L712:
 	}
 L713:
 	;
-	F_rdbReportError(m, int32(1), int32(2534), int32(_a1859), int32(0))
+	F_rdbReportError(m, int32(1), int32(2534), int32(_a_F_rdbLoadObject_23), int32(0))
 	mBase = m.M
 	v2320 = m.ExcPending
 	if v2320 != 0 {
@@ -7795,7 +7795,7 @@ L718:
 	}
 L719:
 	;
-	v2335 = *(*int32)(unsafe.Add(mBase, _consts[547]))
+	v2335 = *(*int32)(unsafe.Add(mBase, _c_F_rdbLoadObject[7]))
 	if base.Ui32(v2332) <= base.Ui32(v2335) {
 		v4010 = v1598
 		goto L15
@@ -7850,7 +7850,7 @@ L724:
 L725:
 	;
 	v2349 = int32(1)
-	F_rdbReportError(m, v2349, int32(2552), int32(_a1860), int32(0))
+	F_rdbReportError(m, v2349, int32(2552), int32(_a_F_rdbLoadObject_24), int32(0))
 	mBase = m.M
 	v2355 = m.ExcPending
 	if v2355 != 0 {
@@ -7951,7 +7951,7 @@ L735:
 	}
 L736:
 	;
-	v2378 = *(*int32)(unsafe.Add(mBase, _consts[549]))
+	v2378 = *(*int32)(unsafe.Add(mBase, _c_F_rdbLoadObject[9]))
 	if base.Ui32(v2375) <= base.Ui32(v2378) {
 		goto L735
 	} else {
@@ -8006,7 +8006,7 @@ L742:
 	}
 L743:
 	;
-	F_rdbReportError(m, int32(1), int32(2578), int32(_a1861), int32(0))
+	F_rdbReportError(m, int32(1), int32(2578), int32(_a_F_rdbLoadObject_25), int32(0))
 	mBase = m.M
 	v2403 = m.ExcPending
 	if v2403 != 0 {
@@ -8058,7 +8058,7 @@ L748:
 	}
 L749:
 	;
-	v2418 = *(*int32)(unsafe.Add(mBase, _consts[549]))
+	v2418 = *(*int32)(unsafe.Add(mBase, _c_F_rdbLoadObject[9]))
 	if base.Ui32(v2415) <= base.Ui32(v2418) {
 		v4010 = v1598
 		goto L15
@@ -8162,7 +8162,7 @@ L760:
 L761:
 	;
 	v2466 = int32(0)
-	F_rdbReportError(m, v2466, int32(2604), int32(_a1862), v2466)
+	F_rdbReportError(m, v2466, int32(2604), int32(_a_F_rdbLoadObject_26), v2466)
 	mBase = m.M
 	v2471 = m.ExcPending
 	if v2471 != 0 {
@@ -8228,7 +8228,7 @@ L769:
 	}
 L770:
 	;
-	F_rdbReportError(m, int32(1), int32(2665), int32(_a1863), int32(0))
+	F_rdbReportError(m, int32(1), int32(2665), int32(_a_F_rdbLoadObject_27), int32(0))
 	mBase = m.M
 	v2601 = m.ExcPending
 	if v2601 != 0 {
@@ -8264,7 +8264,7 @@ L772:
 L773:
 	;
 	v2504 = int32(0)
-	F_rdbReportError(m, v2504, int32(2619), int32(_a1864), v2504)
+	F_rdbReportError(m, v2504, int32(2619), int32(_a_F_rdbLoadObject_28), v2504)
 	mBase = m.M
 	v2509 = m.ExcPending
 	if v2509 != 0 {
@@ -8323,7 +8323,7 @@ L782:
 	goto L776
 L783:
 	;
-	F_rdbReportError(m, int32(1), int32(2625), int32(_a1865), int32(0))
+	F_rdbReportError(m, int32(1), int32(2625), int32(_a_F_rdbLoadObject_29), int32(0))
 	mBase = m.M
 	v2542 = m.ExcPending
 	if v2542 != 0 {
@@ -8347,9 +8347,9 @@ L785:
 	goto L10
 L786:
 	;
-	v2558 = int32(_a20)
-	v2560 = *(*int64)(unsafe.Add(mBase, _consts[541]))
-	*(*int64)(unsafe.Add(mBase, _consts[541])) = v2560 + int64(1)
+	v2558 = int32(_a_F_rdbLoadObject_3)
+	v2560 = *(*int64)(unsafe.Add(mBase, _c_F_rdbLoadObject[1]))
+	*(*int64)(unsafe.Add(mBase, _c_F_rdbLoadObject[1])) = v2560 + int64(1)
 	v2564 = *(*int32)(unsafe.Add(mBase, uint32(v25)+192))
 	v2567 = F_streamValidateListpackIntegrity(m, v2548, v2564, v25+int32(512))
 	mBase = m.M
@@ -8369,7 +8369,7 @@ L787:
 L788:
 	;
 	v2550 = int32(0)
-	F_rdbReportError(m, v2550, int32(2635), int32(_a1866), v2550)
+	F_rdbReportError(m, v2550, int32(2635), int32(_a_F_rdbLoadObject_30), v2550)
 	mBase = m.M
 	v2555 = m.ExcPending
 	if v2555 != 0 {
@@ -8410,7 +8410,7 @@ L792:
 	}
 L793:
 	;
-	F_rdbReportError(m, int32(1), int32(2642), int32(_a1867), int32(0))
+	F_rdbReportError(m, int32(1), int32(2642), int32(_a_F_rdbLoadObject_31), int32(0))
 	mBase = m.M
 	v2574 = m.ExcPending
 	if v2574 != 0 {
@@ -8441,7 +8441,7 @@ L796:
 	}
 L797:
 	;
-	F_rdbReportError(m, int32(1), int32(2654), int32(_a1868), int32(0))
+	F_rdbReportError(m, int32(1), int32(2654), int32(_a_F_rdbLoadObject_32), int32(0))
 	mBase = m.M
 	v2582 = m.ExcPending
 	if v2582 != 0 {
@@ -8741,7 +8741,7 @@ L841:
 L842:
 	;
 	v2734 = int32(0)
-	F_rdbReportError(m, v2734, int32(2703), int32(_a1869), v2734)
+	F_rdbReportError(m, v2734, int32(2703), int32(_a_F_rdbLoadObject_33), v2734)
 	mBase = m.M
 	v2739 = m.ExcPending
 	if v2739 != 0 {
@@ -8755,7 +8755,7 @@ L843:
 	goto L10
 L844:
 	;
-	F_rdbReportError(m, int32(1), int32(2709), int32(_a1870), int32(0))
+	F_rdbReportError(m, int32(1), int32(2709), int32(_a_F_rdbLoadObject_34), int32(0))
 	mBase = m.M
 	v3690 = m.ExcPending
 	if v3690 != 0 {
@@ -8804,7 +8804,7 @@ L850:
 	}
 L851:
 	;
-	F_rdbReportError(m, int32(1), int32(2722), int32(_a1871), int32(0))
+	F_rdbReportError(m, int32(1), int32(2722), int32(_a_F_rdbLoadObject_35), int32(0))
 	mBase = m.M
 	v2759 = m.ExcPending
 	if v2759 != 0 {
@@ -8819,7 +8819,7 @@ L852:
 L853:
 	;
 	v3679 = int32(0)
-	F_rdbReportError(m, v3679, int32(2730), int32(_a1872), v3679)
+	F_rdbReportError(m, v3679, int32(2730), int32(_a_F_rdbLoadObject_36), v3679)
 	mBase = m.M
 	v3684 = m.ExcPending
 	if v3684 != 0 {
@@ -8884,7 +8884,7 @@ L861:
 L862:
 	;
 	v2802 = int32(0)
-	F_rdbReportError(m, v2802, int32(2741), int32(_a1873), v2802)
+	F_rdbReportError(m, v2802, int32(2741), int32(_a_F_rdbLoadObject_37), v2802)
 	mBase = m.M
 	v2807 = m.ExcPending
 	if v2807 != 0 {
@@ -8958,7 +8958,7 @@ L872:
 L873:
 	;
 	v2835 = int32(0)
-	F_rdbReportError(m, v2835, int32(2749), int32(_a1874), v2835)
+	F_rdbReportError(m, v2835, int32(2749), int32(_a_F_rdbLoadObject_38), v2835)
 	mBase = m.M
 	v2840 = m.ExcPending
 	if v2840 != 0 {
@@ -9028,7 +9028,7 @@ L879:
 L880:
 	;
 	v2856 = int32(0)
-	F_rdbReportError(m, v2856, int32(2760), int32(_a1875), v2856)
+	F_rdbReportError(m, v2856, int32(2760), int32(_a_F_rdbLoadObject_39), v2856)
 	mBase = m.M
 	v2861 = m.ExcPending
 	if v2861 != 0 {
@@ -9448,7 +9448,7 @@ L945:
 	}
 L946:
 	;
-	v3023 = *(*int32)(unsafe.Add(mBase, _consts[481]))
+	v3023 = *(*int32)(unsafe.Add(mBase, _c_F_rdbLoadObject[15]))
 	if v3023 == int32(0) {
 		goto L948
 	} else {
@@ -9467,7 +9467,7 @@ L947:
 L948:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v25)+48)) = v2800
-	F_rdbReportError(m, int32(1), int32(2774), int32(_a1876), v25+int32(48))
+	F_rdbReportError(m, int32(1), int32(2774), int32(_a_F_rdbLoadObject_40), v25+int32(48))
 	mBase = m.M
 	v3039 = m.ExcPending
 	if v3039 != 0 {
@@ -9477,7 +9477,7 @@ L948:
 	}
 L949:
 	;
-	F_rdbReportError(m, int32(1), int32(2772), int32(_a1877), int32(0))
+	F_rdbReportError(m, int32(1), int32(2772), int32(_a_F_rdbLoadObject_41), int32(0))
 	mBase = m.M
 	v3031 = m.ExcPending
 	if v3031 != 0 {
@@ -9533,7 +9533,7 @@ L955:
 L956:
 	;
 	v3573 = int32(0)
-	F_rdbReportError(m, v3573, int32(2864), int32(_a1878), v3573)
+	F_rdbReportError(m, v3573, int32(2864), int32(_a_F_rdbLoadObject_42), v3573)
 	mBase = m.M
 	v3578 = m.ExcPending
 	if v3578 != 0 {
@@ -9544,7 +9544,7 @@ L956:
 L957:
 	;
 	v3566 = int32(0)
-	F_rdbReportError(m, v3566, int32(2789), int32(_a1879), v3566)
+	F_rdbReportError(m, v3566, int32(2789), int32(_a_F_rdbLoadObject_43), v3566)
 	mBase = m.M
 	v3571 = m.ExcPending
 	if v3571 != 0 {
@@ -9621,7 +9621,7 @@ L966:
 L967:
 	;
 	v3086 = int32(0)
-	F_rdbReportError(m, v3086, int32(2796), int32(_a1880), v3086)
+	F_rdbReportError(m, v3086, int32(2796), int32(_a_F_rdbLoadObject_44), v3086)
 	mBase = m.M
 	v3091 = m.ExcPending
 	if v3091 != 0 {
@@ -9693,7 +9693,7 @@ L975:
 L976:
 	;
 	v3114 = int32(0)
-	F_rdbReportError(m, v3114, int32(2804), int32(_a1881), v3114)
+	F_rdbReportError(m, v3114, int32(2804), int32(_a_F_rdbLoadObject_45), v3114)
 	mBase = m.M
 	v3119 = m.ExcPending
 	if v3119 != 0 {
@@ -9722,7 +9722,7 @@ L979:
 	}
 L980:
 	;
-	F_rdbReportError(m, int32(1), int32(2811), int32(_a1882), int32(0))
+	F_rdbReportError(m, int32(1), int32(2811), int32(_a_F_rdbLoadObject_46), int32(0))
 	mBase = m.M
 	v3132 = m.ExcPending
 	if v3132 != 0 {
@@ -9743,7 +9743,7 @@ L983:
 L984:
 	;
 	v3174 = int32(0)
-	F_rdbReportError(m, v3174, int32(2822), int32(_a1883), v3174)
+	F_rdbReportError(m, v3174, int32(2822), int32(_a_F_rdbLoadObject_47), v3174)
 	mBase = m.M
 	v3179 = m.ExcPending
 	if v3179 != 0 {
@@ -9792,7 +9792,7 @@ L990:
 	}
 L991:
 	;
-	F_rdbReportError(m, int32(1), int32(2897), int32(_a1884), int32(0))
+	F_rdbReportError(m, int32(1), int32(2897), int32(_a_F_rdbLoadObject_48), int32(0))
 	mBase = m.M
 	v3564 = m.ExcPending
 	if v3564 != 0 {
@@ -9821,7 +9821,7 @@ L993:
 L994:
 	;
 	v3206 = int32(0)
-	F_rdbReportError(m, v3206, int32(2829), int32(_a1885), v3206)
+	F_rdbReportError(m, v3206, int32(2829), int32(_a_F_rdbLoadObject_49), v3206)
 	mBase = m.M
 	v3211 = m.ExcPending
 	if v3211 != 0 {
@@ -9862,7 +9862,7 @@ L998:
 	}
 L999:
 	;
-	F_rdbReportError(m, int32(1), int32(2836), int32(_a1886), int32(0))
+	F_rdbReportError(m, int32(1), int32(2836), int32(_a_F_rdbLoadObject_50), int32(0))
 	mBase = m.M
 	v3224 = m.ExcPending
 	if v3224 != 0 {
@@ -9893,7 +9893,7 @@ L1002:
 L1003:
 	;
 	v3233 = int32(0)
-	F_rdbReportError(m, v3233, int32(2843), int32(_a1887), v3233)
+	F_rdbReportError(m, v3233, int32(2843), int32(_a_F_rdbLoadObject_51), v3233)
 	mBase = m.M
 	v3238 = m.ExcPending
 	if v3238 != 0 {
@@ -9941,7 +9941,7 @@ L1008:
 L1009:
 	;
 	v3247 = int32(0)
-	F_rdbReportError(m, v3247, int32(2851), int32(_a1888), v3247)
+	F_rdbReportError(m, v3247, int32(2851), int32(_a_F_rdbLoadObject_52), v3247)
 	mBase = m.M
 	v3252 = m.ExcPending
 	if v3252 != 0 {
@@ -10022,7 +10022,7 @@ L1020:
 L1021:
 	;
 	v3293 = int32(0)
-	F_rdbReportError(m, v3293, int32(2871), int32(_a1889), v3293)
+	F_rdbReportError(m, v3293, int32(2871), int32(_a_F_rdbLoadObject_53), v3293)
 	mBase = m.M
 	v3298 = m.ExcPending
 	if v3298 != 0 {
@@ -10317,7 +10317,7 @@ L1061:
 	goto L1057
 L1062:
 	;
-	F_rdbReportError(m, int32(1), int32(2878), int32(_a1890), int32(0))
+	F_rdbReportError(m, int32(1), int32(2878), int32(_a_F_rdbLoadObject_54), int32(0))
 	mBase = m.M
 	v3505 = m.ExcPending
 	if v3505 != 0 {
@@ -10350,7 +10350,7 @@ L1065:
 	}
 L1066:
 	;
-	F_rdbReportError(m, int32(1), int32(2889), int32(_a1891), int32(0))
+	F_rdbReportError(m, int32(1), int32(2889), int32(_a_F_rdbLoadObject_55), int32(0))
 	mBase = m.M
 	v3516 = m.ExcPending
 	if v3516 != 0 {
@@ -10400,7 +10400,7 @@ L1074:
 L1075:
 	;
 	v3626 = int32(0)
-	v3628 = F_raxSeek(m, v25+int32(192), int32(_a67), v3626, v3626)
+	v3628 = F_raxSeek(m, v25+int32(192), int32(_a_F_rdbLoadObject_56), v3626, v3626)
 	mBase = m.M
 	v3629 = m.ExcPending
 	if v3629 != 0 {
@@ -10462,7 +10462,7 @@ L1082:
 	goto L1079
 L1083:
 	;
-	F_rdbReportError(m, int32(1), int32(2912), int32(_a1892), int32(0))
+	F_rdbReportError(m, int32(1), int32(2912), int32(_a_F_rdbLoadObject_57), int32(0))
 	mBase = m.M
 	v3669 = m.ExcPending
 	if v3669 != 0 {
@@ -10498,7 +10498,7 @@ L1089:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v25))) = l0
 	v3701 = int32(0)
-	F_rdbReportError(m, v3701, int32(2986), int32(_a1839), v25)
+	F_rdbReportError(m, v3701, int32(2986), int32(_a_F_rdbLoadObject_2), v25)
 	mBase = m.M
 	v3706 = m.ExcPending
 	if v3706 != 0 {
@@ -10543,7 +10543,7 @@ L1094:
 L1095:
 	;
 	v3718 = int32(0)
-	F_rdbReportError(m, v3718, int32(2925), int32(_a1893), v3718)
+	F_rdbReportError(m, v3718, int32(2925), int32(_a_F_rdbLoadObject_58), v3718)
 	mBase = m.M
 	v3723 = m.ExcPending
 	if v3723 != 0 {
@@ -10576,7 +10576,7 @@ L1099:
 L1100:
 	;
 	v3731 = int32(0)
-	v3732 = *(*int32)(unsafe.Add(mBase, _consts[552]))
+	v3732 = *(*int32)(unsafe.Add(mBase, _c_F_rdbLoadObject[16]))
 	if v3732 == v3731 {
 		goto L1101
 	} else {
@@ -10593,7 +10593,7 @@ L1102:
 	;
 	v3736 = v25 + int32(192)
 	v3737 = int32(0)
-	v3740 = *(*int32)(unsafe.Add(mBase, _consts[439]))
+	v3740 = *(*int32)(unsafe.Add(mBase, _c_F_rdbLoadObject[17]))
 	*(*uint8)(unsafe.Add(mBase, uint32(v3736)+9)) = uint8(v3737)
 	v3743 = base.I32_wrap_i64(v3728)
 	v3746 = int32(63)
@@ -10655,7 +10655,7 @@ L1106:
 	;
 	v3816 = v25 + int32(192)
 	v3817 = int32(0)
-	v3820 = *(*int32)(unsafe.Add(mBase, _consts[439]))
+	v3820 = *(*int32)(unsafe.Add(mBase, _c_F_rdbLoadObject[17]))
 	*(*uint8)(unsafe.Add(mBase, uint32(v3816)+9)) = uint8(v3817)
 	v3823 = base.I32_wrap_i64(v3728)
 	v3826 = int32(63)
@@ -10681,7 +10681,7 @@ L1106:
 L1107:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v25)+64)) = v25 + int32(192)
-	F_rdbReportError(m, int32(1), int32(2939), int32(_a1894), v25+int32(64))
+	F_rdbReportError(m, int32(1), int32(2939), int32(_a_F_rdbLoadObject_59), v25+int32(64))
 	mBase = m.M
 	v3900 = m.ExcPending
 	if v3900 != 0 {
@@ -10818,7 +10818,7 @@ L1124:
 L1125:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v25)+80)) = v3964
-	F_rdbReportError(m, int32(1), int32(2966), int32(_a1895), v25+int32(80))
+	F_rdbReportError(m, int32(1), int32(2966), int32(_a_F_rdbLoadObject_60), v25+int32(80))
 	mBase = m.M
 	v3972 = m.ExcPending
 	if v3972 != 0 {
@@ -10896,7 +10896,7 @@ L1134:
 L1135:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v25)+96)) = v3989
-	F_rdbReportError(m, int32(1), int32(2977), int32(_a1896), v25+int32(96))
+	F_rdbReportError(m, int32(1), int32(2977), int32(_a_F_rdbLoadObject_61), v25+int32(96))
 	mBase = m.M
 	v3997 = m.ExcPending
 	if v3997 != 0 {

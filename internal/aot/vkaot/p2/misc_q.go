@@ -795,7 +795,7 @@ func F_queueSentinelConfig(m *base.Module, l0 int32, l1 int32, l2 int32, l3 int3
 	_ = v179
 	var v180 int32
 	_ = v180
-	v8 = *(*int32)(unsafe.Add(mBase, _consts[745]))
+	v8 = *(*int32)(unsafe.Add(mBase, _c_F_queueSentinelConfig[0]))
 	if v8 != 0 {
 		goto L1
 	} else {
@@ -826,7 +826,7 @@ L3:
 	return
 L4:
 	;
-	*(*int32)(unsafe.Add(mBase, _consts[745])) = v11
+	*(*int32)(unsafe.Add(mBase, _c_F_queueSentinelConfig[0])) = v11
 	v14 = F_listCreate(m)
 	mBase = m.M
 	v15 = m.ExcPending
@@ -837,7 +837,7 @@ L4:
 	}
 L5:
 	;
-	v17 = *(*int32)(unsafe.Add(mBase, _consts[745]))
+	v17 = *(*int32)(unsafe.Add(mBase, _c_F_queueSentinelConfig[0]))
 	*(*int32)(unsafe.Add(mBase, uint32(v17)+4)) = v14
 	v19 = F_listCreate(m)
 	mBase = m.M
@@ -849,7 +849,7 @@ L5:
 	}
 L6:
 	;
-	v22 = *(*int32)(unsafe.Add(mBase, _consts[745]))
+	v22 = *(*int32)(unsafe.Add(mBase, _c_F_queueSentinelConfig[0]))
 	*(*int32)(unsafe.Add(mBase, uint32(v22))) = v19
 	v24 = F_listCreate(m)
 	mBase = m.M
@@ -861,7 +861,7 @@ L6:
 	}
 L7:
 	;
-	v27 = *(*int32)(unsafe.Add(mBase, _consts[745]))
+	v27 = *(*int32)(unsafe.Add(mBase, _c_F_queueSentinelConfig[0]))
 	*(*int32)(unsafe.Add(mBase, uint32(v27)+8)) = v24
 	v29 = *(*int32)(unsafe.Add(mBase, uint32(v27)+4))
 	v30 = int32(1005)
@@ -904,7 +904,7 @@ L10:
 L11:
 	;
 	v78 = *(*int32)(unsafe.Add(mBase, uint32(l0)))
-	v79 = int32(_a1363)
+	v79 = int32(_a_F_queueSentinelConfig_0)
 	v82 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v78))))
 	if v82 != 0 {
 		goto L21
@@ -956,10 +956,10 @@ L17:
 	}
 L18:
 	;
-	v123 = *(*int32)(unsafe.Add(mBase, _consts[745]))
+	v123 = *(*int32)(unsafe.Add(mBase, _c_F_queueSentinelConfig[0]))
 	v124 = int32(0)
 	v125 = int32(1)
-	v127 = *(*int32)(unsafe.Add(mBase, _consts[736]))
+	v127 = *(*int32)(unsafe.Add(mBase, _c_F_queueSentinelConfig[1]))
 	v128 = F_strcasecmp(m, v127, v78)
 	mBase = m.M
 	if v128 == v124 {
@@ -1058,7 +1058,7 @@ L30:
 	goto L25
 L31:
 	;
-	v119 = *(*int32)(unsafe.Add(mBase, _consts[745]))
+	v119 = *(*int32)(unsafe.Add(mBase, _c_F_queueSentinelConfig[0]))
 	v177 = v119 + int32(4)
 	goto L17
 L32:
@@ -1071,7 +1071,7 @@ L33:
 L34:
 	;
 	v131 = int32(0)
-	v132 = *(*int32)(unsafe.Add(mBase, _consts[737]))
+	v132 = *(*int32)(unsafe.Add(mBase, _c_F_queueSentinelConfig[2]))
 	v133 = F_strcasecmp(m, v132, v78)
 	mBase = m.M
 	if v133 == v131 {
@@ -1083,7 +1083,7 @@ L34:
 L35:
 	;
 	v136 = int32(0)
-	v137 = *(*int32)(unsafe.Add(mBase, _consts[738]))
+	v137 = *(*int32)(unsafe.Add(mBase, _c_F_queueSentinelConfig[3]))
 	v138 = F_strcasecmp(m, v137, v78)
 	mBase = m.M
 	if v138 == v136 {
@@ -1095,7 +1095,7 @@ L35:
 L36:
 	;
 	v141 = int32(0)
-	v142 = *(*int32)(unsafe.Add(mBase, _consts[739]))
+	v142 = *(*int32)(unsafe.Add(mBase, _c_F_queueSentinelConfig[4]))
 	v143 = F_strcasecmp(m, v142, v78)
 	mBase = m.M
 	if v143 == v141 {
@@ -1107,7 +1107,7 @@ L36:
 L37:
 	;
 	v146 = int32(0)
-	v147 = *(*int32)(unsafe.Add(mBase, _consts[740]))
+	v147 = *(*int32)(unsafe.Add(mBase, _c_F_queueSentinelConfig[5]))
 	v148 = F_strcasecmp(m, v147, v78)
 	mBase = m.M
 	if v148 == v146 {
@@ -1119,7 +1119,7 @@ L37:
 L38:
 	;
 	v151 = int32(0)
-	v152 = *(*int32)(unsafe.Add(mBase, _consts[741]))
+	v152 = *(*int32)(unsafe.Add(mBase, _c_F_queueSentinelConfig[6]))
 	v153 = F_strcasecmp(m, v152, v78)
 	mBase = m.M
 	if v153 == v151 {
@@ -1131,7 +1131,7 @@ L38:
 L39:
 	;
 	v156 = int32(0)
-	v157 = *(*int32)(unsafe.Add(mBase, _consts[742]))
+	v157 = *(*int32)(unsafe.Add(mBase, _c_F_queueSentinelConfig[7]))
 	v158 = F_strcasecmp(m, v157, v78)
 	mBase = m.M
 	if v158 == v156 {
@@ -1143,7 +1143,7 @@ L39:
 L40:
 	;
 	v161 = int32(0)
-	v162 = *(*int32)(unsafe.Add(mBase, _consts[743]))
+	v162 = *(*int32)(unsafe.Add(mBase, _c_F_queueSentinelConfig[8]))
 	v163 = F_strcasecmp(m, v162, v78)
 	mBase = m.M
 	if v163 == v161 {
@@ -1155,7 +1155,7 @@ L40:
 L41:
 	;
 	v166 = int32(0)
-	v167 = *(*int32)(unsafe.Add(mBase, _consts[744]))
+	v167 = *(*int32)(unsafe.Add(mBase, _c_F_queueSentinelConfig[9]))
 	v168 = F_strcasecmp(m, v167, v78)
 	mBase = m.M
 	v171 = base.B2i32(v168 == v166)

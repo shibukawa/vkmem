@@ -100,7 +100,7 @@ func F_createStringObjectFromLongDouble(m *base.Module, l0 int64, l1 int64, l2 i
 			if v42 != 0 {
 				return int32(0)
 			} else {
-				*(*int32)(unsafe.Add(mBase, uint32(v8)+uint32(_consts[603]))) = int32(0)
+				*(*int32)(unsafe.Add(mBase, uint32(v8)+uint32(_c_F_createStringObjectFromLongDouble[0]))) = int32(0)
 				v48 = F_zmalloc_usable(m, int32(12), v8+int32(5132))
 				mBase = m.M
 				v49 = m.ExcPending
@@ -115,7 +115,7 @@ func F_createStringObjectFromLongDouble(m *base.Module, l0 int64, l1 int64, l2 i
 				}
 			}
 		} else {
-			v30 = *(*int32)(unsafe.Add(mBase, _consts[601]))
+			v30 = *(*int32)(unsafe.Add(mBase, _c_F_createStringObjectFromLongDouble[1]))
 			if base.Ui32(int32(128)) < base.Ui32(v13+v30+int32(9)) {
 				v41 = F_sdsnewlen(m, v8, v13)
 				mBase = m.M
@@ -123,7 +123,7 @@ func F_createStringObjectFromLongDouble(m *base.Module, l0 int64, l1 int64, l2 i
 				if v42 != 0 {
 					return int32(0)
 				} else {
-					*(*int32)(unsafe.Add(mBase, uint32(v8)+uint32(_consts[603]))) = int32(0)
+					*(*int32)(unsafe.Add(mBase, uint32(v8)+uint32(_c_F_createStringObjectFromLongDouble[0]))) = int32(0)
 					v48 = F_zmalloc_usable(m, int32(12), v8+int32(5132))
 					mBase = m.M
 					v49 = m.ExcPending
@@ -200,7 +200,7 @@ func F_createStringObjectFromSds(m *base.Module, l0 int32) int32 {
 	switch v12 & int32(7) {
 	case 0:
 		v32 = int32(base.Ui32(v12) >> (uint(int32(3)) % 32))
-		v44 = *(*int32)(unsafe.Add(mBase, _consts[601]))
+		v44 = *(*int32)(unsafe.Add(mBase, _c_F_createStringObjectFromSds[0]))
 		if base.Ui32(int32(128)) < base.Ui32(v32+v44+int32(9)) {
 			v57 = v32
 			v58 = F_sdsnewlen(m, l0, v57)
@@ -239,7 +239,7 @@ func F_createStringObjectFromSds(m *base.Module, l0 int32) int32 {
 	case 1:
 		v19 = int32(*(*uint8)(unsafe.Add(mBase, uint32(l0+int32(-3)))))
 		v32 = v19
-		v44 = *(*int32)(unsafe.Add(mBase, _consts[601]))
+		v44 = *(*int32)(unsafe.Add(mBase, _c_F_createStringObjectFromSds[0]))
 		if base.Ui32(int32(128)) < base.Ui32(v32+v44+int32(9)) {
 			v57 = v32
 			v58 = F_sdsnewlen(m, l0, v57)
@@ -303,7 +303,7 @@ func F_createStringObjectFromSds(m *base.Module, l0 int32) int32 {
 			}
 		} else {
 			v32 = v29
-			v44 = *(*int32)(unsafe.Add(mBase, _consts[601]))
+			v44 = *(*int32)(unsafe.Add(mBase, _c_F_createStringObjectFromSds[0]))
 			if base.Ui32(int32(128)) < base.Ui32(v32+v44+int32(9)) {
 				v57 = v32
 				v58 = F_sdsnewlen(m, l0, v57)
@@ -368,7 +368,7 @@ func F_createStringObjectFromSds(m *base.Module, l0 int32) int32 {
 			}
 		} else {
 			v32 = v29
-			v44 = *(*int32)(unsafe.Add(mBase, _consts[601]))
+			v44 = *(*int32)(unsafe.Add(mBase, _c_F_createStringObjectFromSds[0]))
 			if base.Ui32(int32(128)) < base.Ui32(v32+v44+int32(9)) {
 				v57 = v32
 				v58 = F_sdsnewlen(m, l0, v57)
@@ -433,7 +433,7 @@ func F_createStringObjectFromSds(m *base.Module, l0 int32) int32 {
 			}
 		} else {
 			v32 = v29
-			v44 = *(*int32)(unsafe.Add(mBase, _consts[601]))
+			v44 = *(*int32)(unsafe.Add(mBase, _c_F_createStringObjectFromSds[0]))
 			if base.Ui32(int32(128)) < base.Ui32(v32+v44+int32(9)) {
 				v57 = v32
 				v58 = F_sdsnewlen(m, l0, v57)
@@ -472,7 +472,7 @@ func F_createStringObjectFromSds(m *base.Module, l0 int32) int32 {
 		}
 	default:
 		v32 = int32(0)
-		v44 = *(*int32)(unsafe.Add(mBase, _consts[601]))
+		v44 = *(*int32)(unsafe.Add(mBase, _c_F_createStringObjectFromSds[0]))
 		if base.Ui32(int32(128)) < base.Ui32(v32+v44+int32(9)) {
 			v57 = v32
 			v58 = F_sdsnewlen(m, l0, v57)
@@ -724,7 +724,7 @@ func F_equalStringObjects(m *base.Module, l0 int32, l1 int32) int32 {
 					}
 					v190 = v164 + int32(1) + v185 + int32(1)
 				}
-				v204 = *(*int32)(unsafe.Add(mBase, _consts[601]))
+				v204 = *(*int32)(unsafe.Add(mBase, _c_F_equalStringObjects[0]))
 				v208 = v190 + v204
 			}
 			v215 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v208+int32(-1)))))
@@ -783,7 +783,7 @@ func F_equalStringObjects(m *base.Module, l0 int32, l1 int32) int32 {
 					}
 					v275 = v249 + int32(1) + v270 + int32(1)
 				}
-				v289 = *(*int32)(unsafe.Add(mBase, _consts[601]))
+				v289 = *(*int32)(unsafe.Add(mBase, _c_F_equalStringObjects[0]))
 				v295 = v275 + v289
 			}
 			v297 = int32(0)
@@ -870,7 +870,7 @@ func F_equalStringObjects(m *base.Module, l0 int32, l1 int32) int32 {
 					}
 					v59 = v34 + int32(1) + v55 + int32(1)
 				}
-				v74 = *(*int32)(unsafe.Add(mBase, _consts[601]))
+				v74 = *(*int32)(unsafe.Add(mBase, _c_F_equalStringObjects[0]))
 				v78 = v59 + v74
 			}
 			v82 = *(*int32)(unsafe.Add(mBase, uint32(l1)+4))
@@ -910,7 +910,7 @@ func F_equalStringObjects(m *base.Module, l0 int32, l1 int32) int32 {
 					}
 					v123 = v98 + int32(1) + v119 + int32(1)
 				}
-				v138 = *(*int32)(unsafe.Add(mBase, _consts[601]))
+				v138 = *(*int32)(unsafe.Add(mBase, _c_F_equalStringObjects[0]))
 				return base.B2i32(v78 == v123+v138)
 			}
 		}
@@ -994,7 +994,7 @@ func F_freeStringObject(m *base.Module, l0 int32) {
 				}
 				v49 = v24 + int32(1) + v45 + int32(1)
 			}
-			v64 = *(*int32)(unsafe.Add(mBase, _consts[601]))
+			v64 = *(*int32)(unsafe.Add(mBase, _c_F_freeStringObject[0]))
 			v68 = v49 + v64
 		}
 		F_sdsfree(m, v68)
@@ -1127,7 +1127,7 @@ func F_readString(m *base.Module, l0 int32, l1 int32) int32 {
 					if v56 != 0 {
 						return int32(0)
 					} else {
-						*(*int64)(unsafe.Add(mBase, _consts[958])) = v55
+						*(*int64)(unsafe.Add(mBase, _c_F_readString[0])) = v55
 						v59 = F_fread(m, v50, int32(1), v49, l0)
 						mBase = m.M
 						v60 = m.ExcPending
@@ -1142,17 +1142,17 @@ func F_readString(m *base.Module, l0 int32, l1 int32) int32 {
 								if v96 != int32(13) {
 									*(*int32)(unsafe.Add(mBase, uint32(v10)+48)) = v96
 									*(*int32)(unsafe.Add(mBase, uint32(v10)+52)) = v94
-									v109 = F_snprintf(m, v10+int32(96), int32(1024), int32(_a1770), v10+int32(48))
+									v109 = F_snprintf(m, v10+int32(96), int32(1024), int32(_a_F_readString_0), v10+int32(48))
 									mBase = m.M
 									v110 = m.ExcPending
 									if v110 != 0 {
 										return int32(0)
 									} else {
 										v111 = int32(0)
-										v113 = *(*int64)(unsafe.Add(mBase, _consts[958]))
+										v113 = *(*int64)(unsafe.Add(mBase, _c_F_readString[0]))
 										*(*int64)(unsafe.Add(mBase, uint32(v10)+32)) = v113
 										*(*int32)(unsafe.Add(mBase, uint32(v10)+40)) = v10 + int32(96)
-										v123 = F_snprintf(m, int32(_a1771), int32(1044), int32(_a1772), v10+int32(32))
+										v123 = F_snprintf(m, int32(_a_F_readString_1), int32(1044), int32(_a_F_readString_2), v10+int32(32))
 										mBase = m.M
 										v124 = m.ExcPending
 										if v124 != 0 {
@@ -1175,8 +1175,8 @@ func F_readString(m *base.Module, l0 int32, l1 int32) int32 {
 								} else {
 									if v94 == int32(10) {
 										v130 = int32(0)
-										v132 = *(*int64)(unsafe.Add(mBase, _consts[959]))
-										*(*int64)(unsafe.Add(mBase, _consts[959])) = v132 + int64(1)
+										v132 = *(*int64)(unsafe.Add(mBase, _c_F_readString[1]))
+										*(*int64)(unsafe.Add(mBase, _c_F_readString[1])) = v132 + int64(1)
 										*(*uint8)(unsafe.Add(mBase, uint32(v95))) = uint8(v130)
 										v140 = int32(1)
 										m.G0 = v10 + int32(1120)
@@ -1184,17 +1184,17 @@ func F_readString(m *base.Module, l0 int32, l1 int32) int32 {
 									} else {
 										*(*int32)(unsafe.Add(mBase, uint32(v10)+48)) = v96
 										*(*int32)(unsafe.Add(mBase, uint32(v10)+52)) = v94
-										v109 = F_snprintf(m, v10+int32(96), int32(1024), int32(_a1770), v10+int32(48))
+										v109 = F_snprintf(m, v10+int32(96), int32(1024), int32(_a_F_readString_0), v10+int32(48))
 										mBase = m.M
 										v110 = m.ExcPending
 										if v110 != 0 {
 											return int32(0)
 										} else {
 											v111 = int32(0)
-											v113 = *(*int64)(unsafe.Add(mBase, _consts[958]))
+											v113 = *(*int64)(unsafe.Add(mBase, _c_F_readString[0]))
 											*(*int64)(unsafe.Add(mBase, uint32(v10)+32)) = v113
 											*(*int32)(unsafe.Add(mBase, uint32(v10)+40)) = v10 + int32(96)
-											v123 = F_snprintf(m, int32(_a1771), int32(1044), int32(_a1772), v10+int32(32))
+											v123 = F_snprintf(m, int32(_a_F_readString_1), int32(1044), int32(_a_F_readString_2), v10+int32(32))
 											mBase = m.M
 											v124 = m.ExcPending
 											if v124 != 0 {
@@ -1219,16 +1219,16 @@ func F_readString(m *base.Module, l0 int32, l1 int32) int32 {
 							} else {
 								*(*int32)(unsafe.Add(mBase, uint32(v10)+80)) = v49
 								*(*int32)(unsafe.Add(mBase, uint32(v10)+84)) = v59
-								v70 = F_snprintf(m, v10+int32(96), int32(1024), int32(_a1774), v10+int32(80))
+								v70 = F_snprintf(m, v10+int32(96), int32(1024), int32(_a_F_readString_3), v10+int32(80))
 								mBase = m.M
 								v71 = m.ExcPending
 								if v71 != 0 {
 									return int32(0)
 								} else {
-									v73 = *(*int64)(unsafe.Add(mBase, _consts[958]))
+									v73 = *(*int64)(unsafe.Add(mBase, _c_F_readString[0]))
 									*(*int64)(unsafe.Add(mBase, uint32(v10)+64)) = v73
 									*(*int32)(unsafe.Add(mBase, uint32(v10)+72)) = v10 + int32(96)
-									v83 = F_snprintf(m, int32(_a1771), int32(1044), int32(_a1772), v10+int32(64))
+									v83 = F_snprintf(m, int32(_a_F_readString_1), int32(1044), int32(_a_F_readString_2), v10+int32(64))
 									mBase = m.M
 									v84 = m.ExcPending
 									if v84 != 0 {
@@ -1254,17 +1254,17 @@ func F_readString(m *base.Module, l0 int32, l1 int32) int32 {
 				}
 			} else {
 				*(*int32)(unsafe.Add(mBase, uint32(v10)+16)) = v24
-				v34 = F_snprintf(m, v10+int32(96), int32(1024), int32(_a1775), v10+int32(16))
+				v34 = F_snprintf(m, v10+int32(96), int32(1024), int32(_a_F_readString_4), v10+int32(16))
 				mBase = m.M
 				v35 = m.ExcPending
 				if v35 != 0 {
 					return int32(0)
 				} else {
 					v36 = int32(0)
-					v38 = *(*int64)(unsafe.Add(mBase, _consts[958]))
+					v38 = *(*int64)(unsafe.Add(mBase, _c_F_readString[0]))
 					*(*int64)(unsafe.Add(mBase, uint32(v10))) = v38
 					*(*int32)(unsafe.Add(mBase, uint32(v10)+8)) = v10 + int32(96)
-					v46 = F_snprintf(m, int32(_a1771), int32(1044), int32(_a1772), v10)
+					v46 = F_snprintf(m, int32(_a_F_readString_1), int32(1044), int32(_a_F_readString_2), v10)
 					mBase = m.M
 					v47 = m.ExcPending
 					if v47 != 0 {

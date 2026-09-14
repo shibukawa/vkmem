@@ -296,11 +296,11 @@ func F_luaX_lexerror(m *base.Module, l0 int32, l1 int32, l2 int32) {
 		*(*uint8)(unsafe.Add(mBase, uint32(v24+int32(79)))) = uint8(v28)
 	default:
 		v46 = m.G3
-		v49 = F_strcspn(m, v15, v46+int32(_a2653))
+		v49 = F_strcspn(m, v15, v46+int32(_a_F_luaX_lexerror_0))
 		mBase = m.M
-		v56 = int32(*(*uint16)(unsafe.Add(mBase, uint32(v46)+uint32(_consts[988]))))
+		v56 = int32(*(*uint16)(unsafe.Add(mBase, uint32(v46)+uint32(_c_F_luaX_lexerror[0]))))
 		*(*uint16)(unsafe.Add(mBase, uint32(v9+int32(72)))) = uint16(v56)
-		v58 = *(*int64)(unsafe.Add(mBase, uint32(v46)+uint32(_consts[989])))
+		v58 = *(*int64)(unsafe.Add(mBase, uint32(v46)+uint32(_c_F_luaX_lexerror[1])))
 		*(*int64)(unsafe.Add(mBase, uint32(v12))) = v58
 		v61 = int32(63)
 		if base.Ui32(v49) < base.Ui32(v61) {
@@ -323,9 +323,9 @@ func F_luaX_lexerror(m *base.Module, l0 int32, l1 int32, l2 int32) {
 		mBase = m.M
 		v76 = v12 + v75
 		v77 = m.G3
-		v80 = int32(*(*uint16)(unsafe.Add(mBase, uint32(v77)+uint32(_consts[990]))))
+		v80 = int32(*(*uint16)(unsafe.Add(mBase, uint32(v77)+uint32(_c_F_luaX_lexerror[2]))))
 		*(*uint16)(unsafe.Add(mBase, uint32(v76))) = uint16(v80)
-		v86 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v77)+uint32(_consts[991]))))
+		v86 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v77)+uint32(_c_F_luaX_lexerror[3]))))
 		*(*uint8)(unsafe.Add(mBase, uint32(v76+int32(2)))) = uint8(v86)
 	case 3:
 		v31 = v13 + int32(17)
@@ -351,7 +351,7 @@ func F_luaX_lexerror(m *base.Module, l0 int32, l1 int32, l2 int32) {
 	*(*int32)(unsafe.Add(mBase, uint32(v9)+52)) = v94
 	v97 = m.G3
 	*(*int32)(unsafe.Add(mBase, uint32(v9)+48)) = v9 + int32(64)
-	v105 = F_luaO_pushfstring(m, v93, v97+int32(_a2654), v9+int32(48))
+	v105 = F_luaO_pushfstring(m, v93, v97+int32(_a_F_luaX_lexerror_1), v9+int32(48))
 	mBase = m.M
 	v106 = m.ExcPending
 	if v106 != 0 {
@@ -378,7 +378,7 @@ func F_luaX_lexerror(m *base.Module, l0 int32, l1 int32, l2 int32) {
 					*(*int32)(unsafe.Add(mBase, uint32(v9)+4)) = v151
 					*(*int32)(unsafe.Add(mBase, uint32(v9))) = v105
 					v154 = m.G3
-					v157 = F_luaO_pushfstring(m, v109, v154+int32(_a2671), v9)
+					v157 = F_luaO_pushfstring(m, v109, v154+int32(_a_F_luaX_lexerror_2), v9)
 					mBase = m.M
 					v158 = m.ExcPending
 					if v158 != 0 {
@@ -399,7 +399,7 @@ func F_luaX_lexerror(m *base.Module, l0 int32, l1 int32, l2 int32) {
 					if base.B2i32(base.Ui32(l2) < base.Ui32(int32(32)))|base.B2i32(l2 == int32(127)) == int32(0) {
 						*(*int32)(unsafe.Add(mBase, uint32(v9)+16)) = l2
 						v137 = m.G3
-						v142 = F_luaO_pushfstring(m, v109, v137+int32(_a2669), v9+int32(16))
+						v142 = F_luaO_pushfstring(m, v109, v137+int32(_a_F_luaX_lexerror_3), v9+int32(16))
 						mBase = m.M
 						v143 = m.ExcPending
 						if v143 != 0 {
@@ -409,7 +409,7 @@ func F_luaX_lexerror(m *base.Module, l0 int32, l1 int32, l2 int32) {
 							*(*int32)(unsafe.Add(mBase, uint32(v9)+4)) = v151
 							*(*int32)(unsafe.Add(mBase, uint32(v9))) = v105
 							v154 = m.G3
-							v157 = F_luaO_pushfstring(m, v109, v154+int32(_a2671), v9)
+							v157 = F_luaO_pushfstring(m, v109, v154+int32(_a_F_luaX_lexerror_2), v9)
 							mBase = m.M
 							v158 = m.ExcPending
 							if v158 != 0 {
@@ -430,7 +430,7 @@ func F_luaX_lexerror(m *base.Module, l0 int32, l1 int32, l2 int32) {
 					} else {
 						*(*int32)(unsafe.Add(mBase, uint32(v9)+32)) = l2
 						v129 = m.G3
-						v134 = F_luaO_pushfstring(m, v109, v129+int32(_a2670), v9+int32(32))
+						v134 = F_luaO_pushfstring(m, v109, v129+int32(_a_F_luaX_lexerror_4), v9+int32(32))
 						mBase = m.M
 						v135 = m.ExcPending
 						if v135 != 0 {
@@ -440,7 +440,7 @@ func F_luaX_lexerror(m *base.Module, l0 int32, l1 int32, l2 int32) {
 							*(*int32)(unsafe.Add(mBase, uint32(v9)+4)) = v151
 							*(*int32)(unsafe.Add(mBase, uint32(v9))) = v105
 							v154 = m.G3
-							v157 = F_luaO_pushfstring(m, v109, v154+int32(_a2671), v9)
+							v157 = F_luaO_pushfstring(m, v109, v154+int32(_a_F_luaX_lexerror_2), v9)
 							mBase = m.M
 							v158 = m.ExcPending
 							if v158 != 0 {
@@ -473,7 +473,7 @@ func F_luaX_lexerror(m *base.Module, l0 int32, l1 int32, l2 int32) {
 					*(*int32)(unsafe.Add(mBase, uint32(v9)+4)) = v151
 					*(*int32)(unsafe.Add(mBase, uint32(v9))) = v105
 					v154 = m.G3
-					v157 = F_luaO_pushfstring(m, v109, v154+int32(_a2671), v9)
+					v157 = F_luaO_pushfstring(m, v109, v154+int32(_a_F_luaX_lexerror_2), v9)
 					mBase = m.M
 					v158 = m.ExcPending
 					if v158 != 0 {
@@ -606,7 +606,7 @@ func F_luaX_token2str(m *base.Module, l0 int32, l1 int32) int32 {
 		if base.B2i32(base.Ui32(l1) < base.Ui32(int32(32)))|base.B2i32(l1 == int32(127)) == int32(0) {
 			*(*int32)(unsafe.Add(mBase, uint32(v6))) = l1
 			v29 = m.G3
-			v32 = F_luaO_pushfstring(m, v10, v29+int32(_a2669), v6)
+			v32 = F_luaO_pushfstring(m, v10, v29+int32(_a_F_luaX_token2str_0), v6)
 			mBase = m.M
 			v33 = m.ExcPending
 			if v33 != 0 {
@@ -619,7 +619,7 @@ func F_luaX_token2str(m *base.Module, l0 int32, l1 int32) int32 {
 		} else {
 			*(*int32)(unsafe.Add(mBase, uint32(v6)+16)) = l1
 			v19 = m.G3
-			v24 = F_luaO_pushfstring(m, v10, v19+int32(_a2670), v6+int32(16))
+			v24 = F_luaO_pushfstring(m, v10, v19+int32(_a_F_luaX_token2str_1), v6+int32(16))
 			mBase = m.M
 			v27 = m.ExcPending
 			if v27 != 0 {

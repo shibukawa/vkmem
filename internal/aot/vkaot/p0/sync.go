@@ -125,7 +125,7 @@ func F_generateSyncSlotsEstablishCommand(m *base.Module, l0 int32) int32 {
 	}
 L1:
 	;
-	F__serverAssert(m, int32(_a324), int32(_a325), int32(1417))
+	F__serverAssert(m, int32(_a_F_generateSyncSlotsEstablishCommand_0), int32(_a_F_generateSyncSlotsEstablishCommand_1), int32(1417))
 	mBase = m.M
 	v239 = m.ExcPending
 	if v239 != 0 {
@@ -153,7 +153,7 @@ L4:
 	*(*int32)(unsafe.Add(mBase, uint32(v9)+24)) = l0 + int32(112)
 	*(*int32)(unsafe.Add(mBase, uint32(v9)+20)) = l0 + int32(72)
 	*(*int32)(unsafe.Add(mBase, uint32(v9)+16)) = v19<<(uint(int32(1))%32) + int32(8)
-	v34 = F_sdscatprintf(m, v14, int32(_a326), v9+int32(16))
+	v34 = F_sdscatprintf(m, v14, int32(_a_F_generateSyncSlotsEstablishCommand_2), v9+int32(16))
 	mBase = m.M
 	v35 = m.ExcPending
 	if v35 != 0 {
@@ -401,7 +401,7 @@ L46:
 	*(*int32)(unsafe.Add(mBase, uint32(v9)+8)) = v202
 	*(*int32)(unsafe.Add(mBase, uint32(v9)+4)) = v134
 	*(*int32)(unsafe.Add(mBase, uint32(v9))) = v133
-	v209 = F_sdscatfmt(m, v61, int32(_a327), v9)
+	v209 = F_sdscatfmt(m, v61, int32(_a_F_generateSyncSlotsEstablishCommand_3), v9)
 	mBase = m.M
 	v210 = m.ExcPending
 	if v210 != 0 {
@@ -944,14 +944,14 @@ func F_syncWithPrimaryHandleReceiveAuthReplyState(m *base.Module, l0 int32) int3
 	v4 = m.G0
 	v6 = v4 - int32(288)
 	m.G0 = v6
-	v10 = *(*int32)(unsafe.Add(mBase, _consts[147]))
+	v10 = *(*int32)(unsafe.Add(mBase, _c_F_syncWithPrimaryHandleReceiveAuthReplyState[0]))
 	if v10 == v2 {
 		v73 = v2
 		m.G0 = v6 + int32(288)
 		return v73
 	} else {
 		v13 = int32(-1)
-		v18 = *(*int32)(unsafe.Add(mBase, _consts[551]))
+		v18 = *(*int32)(unsafe.Add(mBase, _c_F_syncWithPrimaryHandleReceiveAuthReplyState[1]))
 		v22 = *(*int32)(unsafe.Add(mBase, uint32(l0)))
 		v23 = *(*int32)(unsafe.Add(mBase, uint32(v22)+100))
 		v24 = m.T0[v23].(func(*base.Module, int32, int32, int32, int64) int32)(m, l0, v6+int32(32), int32(256), base.I64_extend_i32_s(v18*int32(1000)))
@@ -961,9 +961,9 @@ func F_syncWithPrimaryHandleReceiveAuthReplyState(m *base.Module, l0 int32) int3
 			return int32(0)
 		} else {
 			if v24 != int32(-1) {
-				v43 = int32(_a69)
-				v45 = *(*int64)(unsafe.Add(mBase, _consts[37]))
-				*(*int64)(unsafe.Add(mBase, _consts[523])) = v45
+				v43 = int32(_a_F_syncWithPrimaryHandleReceiveAuthReplyState_0)
+				v45 = *(*int64)(unsafe.Add(mBase, _c_F_syncWithPrimaryHandleReceiveAuthReplyState[2]))
+				*(*int64)(unsafe.Add(mBase, _c_F_syncWithPrimaryHandleReceiveAuthReplyState[3])) = v45
 				v49 = F_sdsnew(m, v6+int32(32))
 				mBase = m.M
 				v50 = m.ExcPending
@@ -988,7 +988,7 @@ func F_syncWithPrimaryHandleReceiveAuthReplyState(m *base.Module, l0 int32) int3
 								return v73
 							}
 						} else {
-							v57 = *(*int32)(unsafe.Add(mBase, _consts[15]))
+							v57 = *(*int32)(unsafe.Add(mBase, _c_F_syncWithPrimaryHandleReceiveAuthReplyState[4]))
 							if int32(3) < v57 {
 								F_sdsfree(m, v49)
 								mBase = m.M
@@ -1002,7 +1002,7 @@ func F_syncWithPrimaryHandleReceiveAuthReplyState(m *base.Module, l0 int32) int3
 								}
 							} else {
 								*(*int32)(unsafe.Add(mBase, uint32(v6)+16)) = v49
-								F__serverLog(m, int32(3), int32(_a1040), v6+int32(16))
+								F__serverLog(m, int32(3), int32(_a_F_syncWithPrimaryHandleReceiveAuthReplyState_1), v6+int32(16))
 								mBase = m.M
 								v66 = m.ExcPending
 								if v66 != 0 {
@@ -1024,7 +1024,7 @@ func F_syncWithPrimaryHandleReceiveAuthReplyState(m *base.Module, l0 int32) int3
 					}
 				}
 			} else {
-				v31 = *(*int32)(unsafe.Add(mBase, _consts[15]))
+				v31 = *(*int32)(unsafe.Add(mBase, _c_F_syncWithPrimaryHandleReceiveAuthReplyState[4]))
 				if int32(3) < v31 {
 					v73 = v13
 					m.G0 = v6 + int32(288)
@@ -1039,7 +1039,7 @@ func F_syncWithPrimaryHandleReceiveAuthReplyState(m *base.Module, l0 int32) int3
 						return int32(0)
 					} else {
 						*(*int32)(unsafe.Add(mBase, uint32(v6))) = v36
-						F__serverLog(m, int32(3), int32(_a1010), v6)
+						F__serverLog(m, int32(3), int32(_a_F_syncWithPrimaryHandleReceiveAuthReplyState_2), v6)
 						mBase = m.M
 						v42 = m.ExcPending
 						if v42 != 0 {
@@ -1112,14 +1112,14 @@ func F_syncWithPrimaryHandleReceiveIPReplyState(m *base.Module, l0 int32) int32 
 	v4 = m.G0
 	v6 = v4 - int32(288)
 	m.G0 = v6
-	v10 = *(*int32)(unsafe.Add(mBase, _consts[588]))
+	v10 = *(*int32)(unsafe.Add(mBase, _c_F_syncWithPrimaryHandleReceiveIPReplyState[0]))
 	if v10 == v2 {
 		v71 = v2
 		m.G0 = v6 + int32(288)
 		return v71
 	} else {
 		v13 = int32(-1)
-		v18 = *(*int32)(unsafe.Add(mBase, _consts[551]))
+		v18 = *(*int32)(unsafe.Add(mBase, _c_F_syncWithPrimaryHandleReceiveIPReplyState[1]))
 		v22 = *(*int32)(unsafe.Add(mBase, uint32(l0)))
 		v23 = *(*int32)(unsafe.Add(mBase, uint32(v22)+100))
 		v24 = m.T0[v23].(func(*base.Module, int32, int32, int32, int64) int32)(m, l0, v6+int32(32), int32(256), base.I64_extend_i32_s(v18*int32(1000)))
@@ -1129,9 +1129,9 @@ func F_syncWithPrimaryHandleReceiveIPReplyState(m *base.Module, l0 int32) int32 
 			return int32(0)
 		} else {
 			if v24 != int32(-1) {
-				v43 = int32(_a69)
-				v45 = *(*int64)(unsafe.Add(mBase, _consts[37]))
-				*(*int64)(unsafe.Add(mBase, _consts[523])) = v45
+				v43 = int32(_a_F_syncWithPrimaryHandleReceiveIPReplyState_0)
+				v45 = *(*int64)(unsafe.Add(mBase, _c_F_syncWithPrimaryHandleReceiveIPReplyState[2]))
+				*(*int64)(unsafe.Add(mBase, _c_F_syncWithPrimaryHandleReceiveIPReplyState[3])) = v45
 				v49 = F_sdsnew(m, v6+int32(32))
 				mBase = m.M
 				v50 = m.ExcPending
@@ -1156,7 +1156,7 @@ func F_syncWithPrimaryHandleReceiveIPReplyState(m *base.Module, l0 int32) int32 
 								return v71
 							}
 						} else {
-							v57 = *(*int32)(unsafe.Add(mBase, _consts[15]))
+							v57 = *(*int32)(unsafe.Add(mBase, _c_F_syncWithPrimaryHandleReceiveIPReplyState[4]))
 							if int32(2) < v57 {
 								F_sdsfree(m, v49)
 								mBase = m.M
@@ -1170,7 +1170,7 @@ func F_syncWithPrimaryHandleReceiveIPReplyState(m *base.Module, l0 int32) int32 
 								}
 							} else {
 								*(*int32)(unsafe.Add(mBase, uint32(v6)+16)) = v49
-								F__serverLog(m, int32(2), int32(_a1041), v6+int32(16))
+								F__serverLog(m, int32(2), int32(_a_F_syncWithPrimaryHandleReceiveIPReplyState_1), v6+int32(16))
 								mBase = m.M
 								v66 = m.ExcPending
 								if v66 != 0 {
@@ -1192,7 +1192,7 @@ func F_syncWithPrimaryHandleReceiveIPReplyState(m *base.Module, l0 int32) int32 
 					}
 				}
 			} else {
-				v31 = *(*int32)(unsafe.Add(mBase, _consts[15]))
+				v31 = *(*int32)(unsafe.Add(mBase, _c_F_syncWithPrimaryHandleReceiveIPReplyState[4]))
 				if int32(3) < v31 {
 					v71 = v13
 					m.G0 = v6 + int32(288)
@@ -1207,7 +1207,7 @@ func F_syncWithPrimaryHandleReceiveIPReplyState(m *base.Module, l0 int32) int32 
 						return int32(0)
 					} else {
 						*(*int32)(unsafe.Add(mBase, uint32(v6))) = v36
-						F__serverLog(m, int32(3), int32(_a1010), v6)
+						F__serverLog(m, int32(3), int32(_a_F_syncWithPrimaryHandleReceiveIPReplyState_2), v6)
 						mBase = m.M
 						v42 = m.ExcPending
 						if v42 != 0 {
@@ -1276,7 +1276,7 @@ func F_syncWithPrimaryHandleReceiveNodeIDReplyState(m *base.Module, l0 int32) in
 	v6 = v4 - int32(288)
 	m.G0 = v6
 	v8 = int32(-1)
-	v13 = *(*int32)(unsafe.Add(mBase, _consts[551]))
+	v13 = *(*int32)(unsafe.Add(mBase, _c_F_syncWithPrimaryHandleReceiveNodeIDReplyState[0]))
 	v17 = *(*int32)(unsafe.Add(mBase, uint32(l0)))
 	v18 = *(*int32)(unsafe.Add(mBase, uint32(v17)+100))
 	v19 = m.T0[v18].(func(*base.Module, int32, int32, int32, int64) int32)(m, l0, v6+int32(32), int32(256), base.I64_extend_i32_s(v13*int32(1000)))
@@ -1286,9 +1286,9 @@ func F_syncWithPrimaryHandleReceiveNodeIDReplyState(m *base.Module, l0 int32) in
 		return int32(0)
 	} else {
 		if v19 != int32(-1) {
-			v38 = int32(_a69)
-			v40 = *(*int64)(unsafe.Add(mBase, _consts[37]))
-			*(*int64)(unsafe.Add(mBase, _consts[523])) = v40
+			v38 = int32(_a_F_syncWithPrimaryHandleReceiveNodeIDReplyState_0)
+			v40 = *(*int64)(unsafe.Add(mBase, _c_F_syncWithPrimaryHandleReceiveNodeIDReplyState[1]))
+			*(*int64)(unsafe.Add(mBase, _c_F_syncWithPrimaryHandleReceiveNodeIDReplyState[2])) = v40
 			v44 = F_sdsnew(m, v6+int32(32))
 			mBase = m.M
 			v45 = m.ExcPending
@@ -1313,7 +1313,7 @@ func F_syncWithPrimaryHandleReceiveNodeIDReplyState(m *base.Module, l0 int32) in
 							return v66
 						}
 					} else {
-						v52 = *(*int32)(unsafe.Add(mBase, _consts[15]))
+						v52 = *(*int32)(unsafe.Add(mBase, _c_F_syncWithPrimaryHandleReceiveNodeIDReplyState[3]))
 						if int32(2) < v52 {
 							F_sdsfree(m, v44)
 							mBase = m.M
@@ -1327,7 +1327,7 @@ func F_syncWithPrimaryHandleReceiveNodeIDReplyState(m *base.Module, l0 int32) in
 							}
 						} else {
 							*(*int32)(unsafe.Add(mBase, uint32(v6)+16)) = v44
-							F__serverLog(m, int32(2), int32(_a1042), v6+int32(16))
+							F__serverLog(m, int32(2), int32(_a_F_syncWithPrimaryHandleReceiveNodeIDReplyState_1), v6+int32(16))
 							mBase = m.M
 							v61 = m.ExcPending
 							if v61 != 0 {
@@ -1349,7 +1349,7 @@ func F_syncWithPrimaryHandleReceiveNodeIDReplyState(m *base.Module, l0 int32) in
 				}
 			}
 		} else {
-			v26 = *(*int32)(unsafe.Add(mBase, _consts[15]))
+			v26 = *(*int32)(unsafe.Add(mBase, _c_F_syncWithPrimaryHandleReceiveNodeIDReplyState[3]))
 			if int32(3) < v26 {
 				v66 = v8
 				m.G0 = v6 + int32(288)
@@ -1364,7 +1364,7 @@ func F_syncWithPrimaryHandleReceiveNodeIDReplyState(m *base.Module, l0 int32) in
 					return int32(0)
 				} else {
 					*(*int32)(unsafe.Add(mBase, uint32(v6))) = v31
-					F__serverLog(m, int32(3), int32(_a1010), v6)
+					F__serverLog(m, int32(3), int32(_a_F_syncWithPrimaryHandleReceiveNodeIDReplyState_2), v6)
 					mBase = m.M
 					v37 = m.ExcPending
 					if v37 != 0 {
@@ -1605,7 +1605,7 @@ func F_syncWithPrimaryHandleSendHandshakeState(m *base.Module, l0 int32) int32 {
 	v8 = m.G0
 	v10 = v8 - int32(192)
 	m.G0 = v10
-	v13 = *(*int32)(unsafe.Add(mBase, _consts[147]))
+	v13 = *(*int32)(unsafe.Add(mBase, _c_F_syncWithPrimaryHandleSendHandshakeState[0]))
 	if v13 == int32(0) {
 		goto L3
 	} else {
@@ -1617,7 +1617,7 @@ L1:
 	return v426
 L2:
 	;
-	v414 = *(*int32)(unsafe.Add(mBase, _consts[15]))
+	v414 = *(*int32)(unsafe.Add(mBase, _c_F_syncWithPrimaryHandleSendHandshakeState[1]))
 	if int32(3) < v414 {
 		goto L90
 	} else {
@@ -1625,7 +1625,7 @@ L2:
 	}
 L3:
 	;
-	v145 = *(*int32)(unsafe.Add(mBase, _consts[587]))
+	v145 = *(*int32)(unsafe.Add(mBase, _c_F_syncWithPrimaryHandleSendHandshakeState[2]))
 	if v145 != 0 {
 		v154 = v145
 		goto L33
@@ -1636,16 +1636,16 @@ L4:
 	;
 	v16 = int32(0)
 	v20 = v10 + int32(184)
-	v22 = *(*int32)(unsafe.Add(mBase, _consts[563]))
+	v22 = *(*int32)(unsafe.Add(mBase, _c_F_syncWithPrimaryHandleSendHandshakeState[3]))
 	*(*int32)(unsafe.Add(mBase, uint32(v20))) = v22
-	v25 = *(*int64)(unsafe.Add(mBase, _consts[564]))
+	v25 = *(*int64)(unsafe.Add(mBase, _c_F_syncWithPrimaryHandleSendHandshakeState[4]))
 	*(*int64)(unsafe.Add(mBase, uint32(v10)+176)) = v25
 	v30 = v10 + int32(168)
-	v32 = *(*int32)(unsafe.Add(mBase, _consts[565]))
+	v32 = *(*int32)(unsafe.Add(mBase, _c_F_syncWithPrimaryHandleSendHandshakeState[5]))
 	*(*int32)(unsafe.Add(mBase, uint32(v30))) = v32
-	v35 = *(*int64)(unsafe.Add(mBase, _consts[566]))
+	v35 = *(*int64)(unsafe.Add(mBase, _c_F_syncWithPrimaryHandleSendHandshakeState[6]))
 	*(*int64)(unsafe.Add(mBase, uint32(v10)+160)) = v35
-	v38 = *(*int32)(unsafe.Add(mBase, _consts[567]))
+	v38 = *(*int32)(unsafe.Add(mBase, _c_F_syncWithPrimaryHandleSendHandshakeState[7]))
 	if v38 != 0 {
 		goto L6
 	} else {
@@ -1833,9 +1833,9 @@ L33:
 	}
 L34:
 	;
-	v146 = int32(_a69)
-	v147 = *(*int32)(unsafe.Add(mBase, _consts[105]))
-	v149 = *(*int32)(unsafe.Add(mBase, _consts[103]))
+	v146 = int32(_a_F_syncWithPrimaryHandleSendHandshakeState_0)
+	v147 = *(*int32)(unsafe.Add(mBase, _c_F_syncWithPrimaryHandleSendHandshakeState[8]))
+	v149 = *(*int32)(unsafe.Add(mBase, _c_F_syncWithPrimaryHandleSendHandshakeState[9]))
 	if v147 != 0 {
 		goto L35
 	} else {
@@ -1851,7 +1851,7 @@ L36:
 	goto L37
 L37:
 	;
-	v152 = *(*int32)(unsafe.Add(mBase, _consts[119]))
+	v152 = *(*int32)(unsafe.Add(mBase, _c_F_syncWithPrimaryHandleSendHandshakeState[10]))
 	if v152 != 0 {
 		goto L38
 	} else {
@@ -1873,8 +1873,8 @@ L41:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v10)+60)) = int32(0)
 	*(*int32)(unsafe.Add(mBase, uint32(v10)+56)) = v157
-	*(*int32)(unsafe.Add(mBase, uint32(v10)+52)) = int32(_a1031)
-	*(*int32)(unsafe.Add(mBase, uint32(v10)+48)) = int32(_a935)
+	*(*int32)(unsafe.Add(mBase, uint32(v10)+52)) = int32(_a_F_syncWithPrimaryHandleSendHandshakeState_1)
+	*(*int32)(unsafe.Add(mBase, uint32(v10)+48)) = int32(_a_F_syncWithPrimaryHandleSendHandshakeState_2)
 	v168 = F_sendCommand(m, l0, v10+int32(48))
 	mBase = m.M
 	v169 = m.ExcPending
@@ -1903,7 +1903,7 @@ L43:
 	}
 L44:
 	;
-	v173 = *(*int32)(unsafe.Add(mBase, _consts[588]))
+	v173 = *(*int32)(unsafe.Add(mBase, _c_F_syncWithPrimaryHandleSendHandshakeState[11]))
 	if v173 == int32(0) {
 		goto L45
 	} else {
@@ -1911,7 +1911,7 @@ L44:
 	}
 L45:
 	;
-	v189 = *(*int32)(unsafe.Add(mBase, _consts[536]))
+	v189 = *(*int32)(unsafe.Add(mBase, _c_F_syncWithPrimaryHandleSendHandshakeState[12]))
 	if v189&int32(-2) == int32(2) {
 		goto L50
 	} else {
@@ -1921,8 +1921,8 @@ L46:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v10)+44)) = int32(0)
 	*(*int32)(unsafe.Add(mBase, uint32(v10)+40)) = v173
-	*(*int32)(unsafe.Add(mBase, uint32(v10)+36)) = int32(_a1032)
-	*(*int32)(unsafe.Add(mBase, uint32(v10)+32)) = int32(_a935)
+	*(*int32)(unsafe.Add(mBase, uint32(v10)+36)) = int32(_a_F_syncWithPrimaryHandleSendHandshakeState_3)
+	*(*int32)(unsafe.Add(mBase, uint32(v10)+32)) = int32(_a_F_syncWithPrimaryHandleSendHandshakeState_2)
 	v185 = F_sendCommand(m, l0, v10+int32(32))
 	mBase = m.M
 	v186 = m.ExcPending
@@ -1945,11 +1945,11 @@ L48:
 L49:
 	;
 	v266 = int32(0)
-	v267 = *(*int32)(unsafe.Add(mBase, _consts[589]))
+	v267 = *(*int32)(unsafe.Add(mBase, _c_F_syncWithPrimaryHandleSendHandshakeState[13]))
 	*(*int32)(unsafe.Add(mBase, uint32(v10+int32(144)))) = v267
-	v274 = *(*int64)(unsafe.Add(mBase, _consts[590]))
+	v274 = *(*int64)(unsafe.Add(mBase, _c_F_syncWithPrimaryHandleSendHandshakeState[14]))
 	*(*int64)(unsafe.Add(mBase, uint32(v10+int32(136)))) = v274
-	v279 = *(*int64)(unsafe.Add(mBase, _consts[591]))
+	v279 = *(*int64)(unsafe.Add(mBase, _c_F_syncWithPrimaryHandleSendHandshakeState[15]))
 	*(*int64)(unsafe.Add(mBase, uint32(v10+int32(128)))) = v279
 	v285 = int64(0)
 	*(*int64)(unsafe.Add(mBase, uint32(v10+int32(88)))) = v285
@@ -1957,9 +1957,9 @@ L49:
 	*(*int64)(unsafe.Add(mBase, uint32(v10)+80)) = v285
 	*(*int64)(unsafe.Add(mBase, uint32(v10)+72)) = int64(17179869187)
 	*(*int64)(unsafe.Add(mBase, uint32(v10)+64)) = int64(17179869192)
-	v300 = *(*int64)(unsafe.Add(mBase, _consts[592]))
+	v300 = *(*int64)(unsafe.Add(mBase, _c_F_syncWithPrimaryHandleSendHandshakeState[16]))
 	*(*int64)(unsafe.Add(mBase, uint32(v10)+120)) = v300
-	v303 = *(*int64)(unsafe.Add(mBase, _consts[593]))
+	v303 = *(*int64)(unsafe.Add(mBase, _c_F_syncWithPrimaryHandleSendHandshakeState[17]))
 	*(*int64)(unsafe.Add(mBase, uint32(v10)+112)) = v303
 	*(*int32)(unsafe.Add(mBase, uint32(v10)+80)) = int32(6)
 	if v261 == v266 {
@@ -1989,7 +1989,7 @@ L51:
 L52:
 	;
 	v197 = int64(0)
-	v201 = *(*int32)(unsafe.Add(mBase, _consts[10]))
+	v201 = *(*int32)(unsafe.Add(mBase, _c_F_syncWithPrimaryHandleSendHandshakeState[18]))
 	if v201 < int32(1) {
 		v223 = v197
 		goto L54
@@ -2029,7 +2029,7 @@ L57:
 L58:
 	;
 	v219 = v206 + int32(1)
-	v221 = *(*int32)(unsafe.Add(mBase, _consts[10]))
+	v221 = *(*int32)(unsafe.Add(mBase, _c_F_syncWithPrimaryHandleSendHandshakeState[18]))
 	if v219 < v221 {
 		v205 = v217
 		v206 = v219
@@ -2039,7 +2039,7 @@ L58:
 	}
 L59:
 	;
-	v209 = *(*int32)(unsafe.Add(mBase, _consts[23]))
+	v209 = *(*int32)(unsafe.Add(mBase, _c_F_syncWithPrimaryHandleSendHandshakeState[19]))
 	v213 = *(*int32)(unsafe.Add(mBase, uint32(v209+v206<<(uint(int32(2))%32))))
 	v214 = *(*int32)(unsafe.Add(mBase, uint32(v213)))
 	v215 = F_kvstoreSize(m, v214)
@@ -2077,7 +2077,7 @@ L64:
 	}
 L65:
 	;
-	v237 = *(*int32)(unsafe.Add(mBase, _consts[536]))
+	v237 = *(*int32)(unsafe.Add(mBase, _c_F_syncWithPrimaryHandleSendHandshakeState[12]))
 	if v237 != int32(2) {
 		goto L63
 	} else {
@@ -2092,7 +2092,7 @@ L66:
 	}
 L67:
 	;
-	v231 = *(*int32)(unsafe.Add(mBase, _consts[15]))
+	v231 = *(*int32)(unsafe.Add(mBase, _c_F_syncWithPrimaryHandleSendHandshakeState[1]))
 	if int32(2) < v231 {
 		goto L68
 	} else {
@@ -2104,7 +2104,7 @@ L68:
 	goto L49
 L69:
 	;
-	v247 = int32(_a1033)
+	v247 = int32(_a_F_syncWithPrimaryHandleSendHandshakeState_4)
 	goto L64
 L70:
 	;
@@ -2125,7 +2125,7 @@ L71:
 	}
 L72:
 	;
-	v243 = *(*int32)(unsafe.Add(mBase, _consts[15]))
+	v243 = *(*int32)(unsafe.Add(mBase, _c_F_syncWithPrimaryHandleSendHandshakeState[1]))
 	if int32(2) < v243 {
 		goto L62
 	} else {
@@ -2133,7 +2133,7 @@ L72:
 	}
 L73:
 	;
-	v247 = int32(_a1034)
+	v247 = int32(_a_F_syncWithPrimaryHandleSendHandshakeState_5)
 	goto L64
 L74:
 	;
@@ -2159,7 +2159,7 @@ L77:
 	goto L49
 L78:
 	;
-	v337 = *(*int32)(unsafe.Add(mBase, _consts[594]))
+	v337 = *(*int32)(unsafe.Add(mBase, _c_F_syncWithPrimaryHandleSendHandshakeState[20]))
 	if v337 == int32(0) {
 		v360 = v333
 		goto L81
@@ -2168,8 +2168,8 @@ L78:
 	}
 L79:
 	;
-	*(*int32)(unsafe.Add(mBase, uint32(v10)+132)) = int32(_a1035)
-	*(*int32)(unsafe.Add(mBase, uint32(v10)+136)) = int32(_a1036)
+	*(*int32)(unsafe.Add(mBase, uint32(v10)+132)) = int32(_a_F_syncWithPrimaryHandleSendHandshakeState_6)
+	*(*int32)(unsafe.Add(mBase, uint32(v10)+136)) = int32(_a_F_syncWithPrimaryHandleSendHandshakeState_7)
 	*(*int64)(unsafe.Add(mBase, uint32(v10)+84)) = int64(73014444036)
 	v333 = int32(7)
 	v334 = v10 + int32(140)
@@ -2193,13 +2193,13 @@ L81:
 	}
 L82:
 	;
-	*(*int32)(unsafe.Add(mBase, uint32(v334))) = int32(_a1035)
+	*(*int32)(unsafe.Add(mBase, uint32(v334))) = int32(_a_F_syncWithPrimaryHandleSendHandshakeState_6)
 	v342 = int32(4)
 	*(*int32)(unsafe.Add(mBase, uint32(v335))) = v342
 	v346 = int32(2)
 	v349 = v333<<(uint(v346)%32) + v342
 	*(*int32)(unsafe.Add(mBase, uint32(v10+int32(64)+v349))) = int32(12)
-	*(*int32)(unsafe.Add(mBase, uint32(v10+int32(112)+v349))) = int32(_a1037)
+	*(*int32)(unsafe.Add(mBase, uint32(v10+int32(112)+v349))) = int32(_a_F_syncWithPrimaryHandleSendHandshakeState_8)
 	v360 = v333 + v346
 	goto L81
 L83:
@@ -2214,9 +2214,9 @@ L84:
 	;
 	v368 = int32(0)
 	*(*int32)(unsafe.Add(mBase, uint32(v10)+28)) = v368
-	*(*int32)(unsafe.Add(mBase, uint32(v10)+24)) = int32(_a535)
-	*(*int32)(unsafe.Add(mBase, uint32(v10)+20)) = int32(_a678)
-	*(*int32)(unsafe.Add(mBase, uint32(v10)+16)) = int32(_a935)
+	*(*int32)(unsafe.Add(mBase, uint32(v10)+24)) = int32(_a_F_syncWithPrimaryHandleSendHandshakeState_9)
+	*(*int32)(unsafe.Add(mBase, uint32(v10)+20)) = int32(_a_F_syncWithPrimaryHandleSendHandshakeState_10)
+	*(*int32)(unsafe.Add(mBase, uint32(v10)+16)) = int32(_a_F_syncWithPrimaryHandleSendHandshakeState_2)
 	v379 = F_sendCommand(m, l0, v10+int32(16))
 	mBase = m.M
 	v380 = m.ExcPending
@@ -2235,7 +2235,7 @@ L85:
 	}
 L86:
 	;
-	v382 = *(*int32)(unsafe.Add(mBase, _consts[63]))
+	v382 = *(*int32)(unsafe.Add(mBase, _c_F_syncWithPrimaryHandleSendHandshakeState[21]))
 	if v382 == int32(0) {
 		v426 = v368
 		goto L1
@@ -2244,9 +2244,9 @@ L86:
 	}
 L87:
 	;
-	*(*int32)(unsafe.Add(mBase, uint32(v10)+180)) = int32(_a1038)
-	*(*int32)(unsafe.Add(mBase, uint32(v10)+176)) = int32(_a935)
-	v390 = *(*int32)(unsafe.Add(mBase, _consts[90]))
+	*(*int32)(unsafe.Add(mBase, uint32(v10)+180)) = int32(_a_F_syncWithPrimaryHandleSendHandshakeState_11)
+	*(*int32)(unsafe.Add(mBase, uint32(v10)+176)) = int32(_a_F_syncWithPrimaryHandleSendHandshakeState_2)
+	v390 = *(*int32)(unsafe.Add(mBase, _c_F_syncWithPrimaryHandleSendHandshakeState[22]))
 	v391 = *(*int32)(unsafe.Add(mBase, uint32(v390)))
 	*(*int32)(unsafe.Add(mBase, uint32(v10)+184)) = v391 + int32(8)
 	*(*int32)(unsafe.Add(mBase, uint32(v10)+168)) = int32(40)
@@ -2284,7 +2284,7 @@ L90:
 L91:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v10))) = v408
-	F__serverLog(m, int32(3), int32(_a1039), v10)
+	F__serverLog(m, int32(3), int32(_a_F_syncWithPrimaryHandleSendHandshakeState_12), v10)
 	mBase = m.M
 	v421 = m.ExcPending
 	if v421 != 0 {

@@ -397,7 +397,7 @@ func F_pubsubPublishMessageInternal(m *base.Module, l0 int32, l1 int32, l2 int32
 	m.G0 = v16
 	v18 = *(*int32)(unsafe.Add(mBase, uint32(l2)))
 	v20 = int32(-1)
-	v22 = *(*int32)(unsafe.Add(mBase, _consts[139]))
+	v22 = *(*int32)(unsafe.Add(mBase, _c_F_pubsubPublishMessageInternal[0]))
 	if v22 != 0 {
 		goto L2
 	} else {
@@ -754,7 +754,7 @@ L54:
 	return v637
 L55:
 	;
-	v229 = *(*int32)(unsafe.Add(mBase, _consts[18]))
+	v229 = *(*int32)(unsafe.Add(mBase, _c_F_pubsubPublishMessageInternal[1]))
 	v230 = F_dictGetIterator(m, v229)
 	mBase = m.M
 	v231 = m.ExcPending
@@ -1549,7 +1549,7 @@ func F_pubsubShardUnsubscribeAllChannelsInSlot(m *base.Module, l0 int32) {
 	v10 = m.G0
 	v12 = v10 - int32(96)
 	m.G0 = v12
-	v15 = *(*int32)(unsafe.Add(mBase, _consts[20]))
+	v15 = *(*int32)(unsafe.Add(mBase, _c_F_pubsubShardUnsubscribeAllChannelsInSlot[0]))
 	v16 = *(*int32)(unsafe.Add(mBase, uint32(v15)+8))
 	v20 = *(*int32)(unsafe.Add(mBase, uint32(v16+l0<<(uint(int32(2))%32))))
 	if v20 != 0 {
@@ -1559,7 +1559,7 @@ func F_pubsubShardUnsubscribeAllChannelsInSlot(m *base.Module, l0 int32) {
 	}
 L1:
 	;
-	F__serverAssertWithInfo(m, v93, v55, int32(_a1107), int32(_a1108), int32(384))
+	F__serverAssertWithInfo(m, v93, v55, int32(_a_F_pubsubShardUnsubscribeAllChannelsInSlot_0), int32(_a_F_pubsubShardUnsubscribeAllChannelsInSlot_1), int32(384))
 	mBase = m.M
 	v202 = m.ExcPending
 	if v202 != 0 {
@@ -1590,7 +1590,7 @@ L5:
 	goto L3
 L6:
 	;
-	v27 = *(*int32)(unsafe.Add(mBase, _consts[20]))
+	v27 = *(*int32)(unsafe.Add(mBase, _c_F_pubsubShardUnsubscribeAllChannelsInSlot[0]))
 	v29 = F_kvstoreGetHashtableIterator(m, v27, l0, int32(1))
 	mBase = m.M
 	v30 = m.ExcPending
@@ -1716,13 +1716,13 @@ L24:
 L25:
 	;
 	v100 = int32(0)
-	v101 = *(*int32)(unsafe.Add(mBase, _consts[619]))
+	v101 = *(*int32)(unsafe.Add(mBase, _c_F_pubsubShardUnsubscribeAllChannelsInSlot[1]))
 	*(*int32)(unsafe.Add(mBase, uint32(v12+int32(24)))) = v101
-	v104 = *(*int64)(unsafe.Add(mBase, _consts[620]))
+	v104 = *(*int64)(unsafe.Add(mBase, _c_F_pubsubShardUnsubscribeAllChannelsInSlot[2]))
 	*(*int64)(unsafe.Add(mBase, uint32(v12+int32(16)))) = v104
-	v107 = *(*int64)(unsafe.Add(mBase, _consts[621]))
+	v107 = *(*int64)(unsafe.Add(mBase, _c_F_pubsubShardUnsubscribeAllChannelsInSlot[3]))
 	*(*int64)(unsafe.Add(mBase, uint32(v12+int32(8)))) = v107
-	v110 = *(*int64)(unsafe.Add(mBase, _consts[622]))
+	v110 = *(*int64)(unsafe.Add(mBase, _c_F_pubsubShardUnsubscribeAllChannelsInSlot[4]))
 	*(*int64)(unsafe.Add(mBase, uint32(v12))) = v110
 	F_addReplyPubsubUnsubscribed(m, v93, v55, v12)
 	mBase = m.M
@@ -1781,9 +1781,9 @@ L31:
 L32:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v93)+200)) = v133 & int32(-262145)
-	v141 = int32(_a44)
-	v143 = *(*int32)(unsafe.Add(mBase, _consts[623]))
-	*(*int32)(unsafe.Add(mBase, _consts[623])) = v143 + int32(-1)
+	v141 = int32(_a_F_pubsubShardUnsubscribeAllChannelsInSlot_2)
+	v143 = *(*int32)(unsafe.Add(mBase, _c_F_pubsubShardUnsubscribeAllChannelsInSlot[5]))
+	*(*int32)(unsafe.Add(mBase, _c_F_pubsubShardUnsubscribeAllChannelsInSlot[5])) = v143 + int32(-1)
 	goto L27
 L33:
 	;
@@ -1797,7 +1797,7 @@ L34:
 	goto L23
 L35:
 	;
-	v168 = *(*int32)(unsafe.Add(mBase, _consts[20]))
+	v168 = *(*int32)(unsafe.Add(mBase, _c_F_pubsubShardUnsubscribeAllChannelsInSlot[0]))
 	v169 = F_kvstoreHashtableDelete(m, v168, l0, v55)
 	mBase = m.M
 	v170 = m.ExcPending
@@ -1930,7 +1930,7 @@ func F_pubsubSubscribePattern(m *base.Module, l0 int32, l1 int32) int32 {
 				if v39 != 0 {
 					return int32(0)
 				} else {
-					v41 = *(*int32)(unsafe.Add(mBase, _consts[18]))
+					v41 = *(*int32)(unsafe.Add(mBase, _c_F_pubsubSubscribePattern[0]))
 					v42 = F_dictFind(m, v41, l1)
 					mBase = m.M
 					v43 = m.ExcPending
@@ -1956,7 +1956,7 @@ func F_pubsubSubscribePattern(m *base.Module, l0 int32, l1 int32) int32 {
 										return v34
 									}
 								} else {
-									F__serverAssert(m, int32(_a1109), int32(_a1108), int32(415))
+									F__serverAssert(m, int32(_a_F_pubsubSubscribePattern_0), int32(_a_F_pubsubSubscribePattern_1), int32(415))
 									mBase = m.M
 									v61 = m.ExcPending
 									if v61 != 0 {
@@ -1971,13 +1971,13 @@ func F_pubsubSubscribePattern(m *base.Module, l0 int32, l1 int32) int32 {
 								}
 							}
 						} else {
-							v45 = F_hashtableCreate(m, int32(_a1110))
+							v45 = F_hashtableCreate(m, int32(_a_F_pubsubSubscribePattern_2))
 							mBase = m.M
 							v46 = m.ExcPending
 							if v46 != 0 {
 								return int32(0)
 							} else {
-								v48 = *(*int32)(unsafe.Add(mBase, _consts[18]))
+								v48 = *(*int32)(unsafe.Add(mBase, _c_F_pubsubSubscribePattern[0]))
 								v49 = F_dictAdd(m, v48, l1, v45)
 								mBase = m.M
 								v50 = m.ExcPending
@@ -2007,7 +2007,7 @@ func F_pubsubSubscribePattern(m *base.Module, l0 int32, l1 int32) int32 {
 													return v34
 												}
 											} else {
-												F__serverAssert(m, int32(_a1109), int32(_a1108), int32(415))
+												F__serverAssert(m, int32(_a_F_pubsubSubscribePattern_0), int32(_a_F_pubsubSubscribePattern_1), int32(415))
 												mBase = m.M
 												v61 = m.ExcPending
 												if v61 != 0 {
@@ -2037,7 +2037,7 @@ func F_pubsubSubscribePattern(m *base.Module, l0 int32, l1 int32) int32 {
 			return int32(0)
 		} else {
 			*(*int32)(unsafe.Add(mBase, uint32(l0)+100)) = v7
-			v13 = F_hashtableCreate(m, int32(_a1106))
+			v13 = F_hashtableCreate(m, int32(_a_F_pubsubSubscribePattern_3))
 			mBase = m.M
 			v14 = m.ExcPending
 			if v14 != 0 {
@@ -2045,7 +2045,7 @@ func F_pubsubSubscribePattern(m *base.Module, l0 int32, l1 int32) int32 {
 			} else {
 				v15 = *(*int32)(unsafe.Add(mBase, uint32(l0)+100))
 				*(*int32)(unsafe.Add(mBase, uint32(v15))) = v13
-				v18 = F_hashtableCreate(m, int32(_a1106))
+				v18 = F_hashtableCreate(m, int32(_a_F_pubsubSubscribePattern_3))
 				mBase = m.M
 				v19 = m.ExcPending
 				if v19 != 0 {
@@ -2053,7 +2053,7 @@ func F_pubsubSubscribePattern(m *base.Module, l0 int32, l1 int32) int32 {
 				} else {
 					v20 = *(*int32)(unsafe.Add(mBase, uint32(l0)+100))
 					*(*int32)(unsafe.Add(mBase, uint32(v20)+4)) = v18
-					v23 = F_hashtableCreate(m, int32(_a1106))
+					v23 = F_hashtableCreate(m, int32(_a_F_pubsubSubscribePattern_3))
 					mBase = m.M
 					v24 = m.ExcPending
 					if v24 != 0 {
@@ -2087,7 +2087,7 @@ func F_pubsubSubscribePattern(m *base.Module, l0 int32, l1 int32) int32 {
 								if v39 != 0 {
 									return int32(0)
 								} else {
-									v41 = *(*int32)(unsafe.Add(mBase, _consts[18]))
+									v41 = *(*int32)(unsafe.Add(mBase, _c_F_pubsubSubscribePattern[0]))
 									v42 = F_dictFind(m, v41, l1)
 									mBase = m.M
 									v43 = m.ExcPending
@@ -2113,7 +2113,7 @@ func F_pubsubSubscribePattern(m *base.Module, l0 int32, l1 int32) int32 {
 														return v34
 													}
 												} else {
-													F__serverAssert(m, int32(_a1109), int32(_a1108), int32(415))
+													F__serverAssert(m, int32(_a_F_pubsubSubscribePattern_0), int32(_a_F_pubsubSubscribePattern_1), int32(415))
 													mBase = m.M
 													v61 = m.ExcPending
 													if v61 != 0 {
@@ -2128,13 +2128,13 @@ func F_pubsubSubscribePattern(m *base.Module, l0 int32, l1 int32) int32 {
 												}
 											}
 										} else {
-											v45 = F_hashtableCreate(m, int32(_a1110))
+											v45 = F_hashtableCreate(m, int32(_a_F_pubsubSubscribePattern_2))
 											mBase = m.M
 											v46 = m.ExcPending
 											if v46 != 0 {
 												return int32(0)
 											} else {
-												v48 = *(*int32)(unsafe.Add(mBase, _consts[18]))
+												v48 = *(*int32)(unsafe.Add(mBase, _c_F_pubsubSubscribePattern[0]))
 												v49 = F_dictAdd(m, v48, l1, v45)
 												mBase = m.M
 												v50 = m.ExcPending
@@ -2164,7 +2164,7 @@ func F_pubsubSubscribePattern(m *base.Module, l0 int32, l1 int32) int32 {
 																	return v34
 																}
 															} else {
-																F__serverAssert(m, int32(_a1109), int32(_a1108), int32(415))
+																F__serverAssert(m, int32(_a_F_pubsubSubscribePattern_0), int32(_a_F_pubsubSubscribePattern_1), int32(415))
 																mBase = m.M
 																v61 = m.ExcPending
 																if v61 != 0 {
@@ -2231,11 +2231,11 @@ func F_pubsubTotalSubscriptions(m *base.Module) int32 {
 	_ = v32
 	var v35 int64
 	_ = v35
-	v3 = int32(_a44)
-	v4 = *(*int32)(unsafe.Add(mBase, _consts[18]))
+	v3 = int32(_a_F_pubsubTotalSubscriptions_0)
+	v4 = *(*int32)(unsafe.Add(mBase, _c_F_pubsubTotalSubscriptions[0]))
 	v5 = *(*int32)(unsafe.Add(mBase, uint32(v4)+12))
 	v6 = *(*int32)(unsafe.Add(mBase, uint32(v4)+16))
-	v8 = *(*int32)(unsafe.Add(mBase, _consts[19]))
+	v8 = *(*int32)(unsafe.Add(mBase, _c_F_pubsubTotalSubscriptions[1]))
 	v9 = *(*int32)(unsafe.Add(mBase, uint32(v8)+12))
 	if v9 == int32(1) {
 		v13 = *(*int32)(unsafe.Add(mBase, uint32(v8)+8))
@@ -2251,7 +2251,7 @@ func F_pubsubTotalSubscriptions(m *base.Module) int32 {
 		v12 = *(*int64)(unsafe.Add(mBase, uint32(v8)+40))
 		v19 = v12
 	}
-	v24 = *(*int32)(unsafe.Add(mBase, _consts[20]))
+	v24 = *(*int32)(unsafe.Add(mBase, _c_F_pubsubTotalSubscriptions[2]))
 	v25 = *(*int32)(unsafe.Add(mBase, uint32(v24)+12))
 	if v25 == int32(1) {
 		v29 = *(*int32)(unsafe.Add(mBase, uint32(v24)+8))

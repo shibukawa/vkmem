@@ -103,7 +103,7 @@ L5:
 L6:
 	;
 	v19 = m.G3
-	v22 = F_luaL_typerror(m, l0, int32(1), v19+int32(_a2162))
+	v22 = F_luaL_typerror(m, l0, int32(1), v19+int32(_a_F_bit_band_0))
 	mBase = m.M
 	v23 = m.ExcPending
 	if v23 != 0 {
@@ -187,7 +187,7 @@ L16:
 L17:
 	;
 	v44 = m.G3
-	v47 = F_luaL_typerror(m, l0, v33, v44+int32(_a2162))
+	v47 = F_luaL_typerror(m, l0, v33, v44+int32(_a_F_bit_band_0))
 	mBase = m.M
 	v48 = m.ExcPending
 	if v48 != 0 {
@@ -303,7 +303,7 @@ L5:
 L6:
 	;
 	v19 = m.G3
-	v22 = F_luaL_typerror(m, l0, int32(1), v19+int32(_a2162))
+	v22 = F_luaL_typerror(m, l0, int32(1), v19+int32(_a_F_bit_bor_0))
 	mBase = m.M
 	v23 = m.ExcPending
 	if v23 != 0 {
@@ -387,7 +387,7 @@ L16:
 L17:
 	;
 	v44 = m.G3
-	v47 = F_luaL_typerror(m, l0, v33, v44+int32(_a2162))
+	v47 = F_luaL_typerror(m, l0, v33, v44+int32(_a_F_bit_bor_0))
 	mBase = m.M
 	v48 = m.ExcPending
 	if v48 != 0 {
@@ -503,7 +503,7 @@ L5:
 L6:
 	;
 	v19 = m.G3
-	v22 = F_luaL_typerror(m, l0, int32(1), v19+int32(_a2162))
+	v22 = F_luaL_typerror(m, l0, int32(1), v19+int32(_a_F_bit_bxor_0))
 	mBase = m.M
 	v23 = m.ExcPending
 	if v23 != 0 {
@@ -587,7 +587,7 @@ L16:
 L17:
 	;
 	v44 = m.G3
-	v47 = F_luaL_typerror(m, l0, v33, v44+int32(_a2162))
+	v47 = F_luaL_typerror(m, l0, v33, v44+int32(_a_F_bit_bxor_0))
 	mBase = m.M
 	v48 = m.ExcPending
 	if v48 != 0 {
@@ -682,7 +682,7 @@ func F_bit_rol(m *base.Module, l0 int32) int32 {
 							return int32(1)
 						} else {
 							v33 = m.G3
-							v36 = F_luaL_typerror(m, l0, int32(2), v33+int32(_a2162))
+							v36 = F_luaL_typerror(m, l0, int32(2), v33+int32(_a_F_bit_rol_0))
 							mBase = m.M
 							v37 = m.ExcPending
 							if v37 != 0 {
@@ -737,7 +737,7 @@ func F_bit_rol(m *base.Module, l0 int32) int32 {
 									return int32(1)
 								} else {
 									v33 = m.G3
-									v36 = F_luaL_typerror(m, l0, int32(2), v33+int32(_a2162))
+									v36 = F_luaL_typerror(m, l0, int32(2), v33+int32(_a_F_bit_rol_0))
 									mBase = m.M
 									v37 = m.ExcPending
 									if v37 != 0 {
@@ -756,7 +756,7 @@ func F_bit_rol(m *base.Module, l0 int32) int32 {
 					}
 				} else {
 					v17 = m.G3
-					v20 = F_luaL_typerror(m, l0, int32(1), v17+int32(_a2162))
+					v20 = F_luaL_typerror(m, l0, int32(1), v17+int32(_a_F_bit_rol_0))
 					mBase = m.M
 					v21 = m.ExcPending
 					if v21 != 0 {
@@ -792,7 +792,7 @@ func F_bit_rol(m *base.Module, l0 int32) int32 {
 										return int32(1)
 									} else {
 										v33 = m.G3
-										v36 = F_luaL_typerror(m, l0, int32(2), v33+int32(_a2162))
+										v36 = F_luaL_typerror(m, l0, int32(2), v33+int32(_a_F_bit_rol_0))
 										mBase = m.M
 										v37 = m.ExcPending
 										if v37 != 0 {
@@ -1174,7 +1174,7 @@ L35:
 	goto L13
 L36:
 	;
-	F_addReplyError(m, l0, int32(_a180))
+	F_addReplyError(m, l0, int32(_a_F_getBitOffsetFromArgument_0))
 	mBase = m.M
 	v194 = m.ExcPending
 	if v194 != 0 {
@@ -1215,7 +1215,7 @@ L42:
 	goto L7
 L43:
 	;
-	F_addReplyError(m, l0, int32(_a180))
+	F_addReplyError(m, l0, int32(_a_F_getBitOffsetFromArgument_0))
 	mBase = m.M
 	v233 = m.ExcPending
 	if v233 != 0 {
@@ -1277,7 +1277,7 @@ L51:
 	goto L45
 L52:
 	;
-	v227 = *(*int64)(unsafe.Add(mBase, _consts[82]))
+	v227 = *(*int64)(unsafe.Add(mBase, _c_F_getBitOffsetFromArgument[0]))
 	if v223>>(uint(int64(3))%64) < v227 {
 		goto L42
 	} else {

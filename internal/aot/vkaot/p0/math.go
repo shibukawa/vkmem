@@ -243,11 +243,11 @@ func F_math_atan2(m *base.Module, l0 int32) int32 {
 									}
 								} else {
 									if v50 != int32(2146435072) {
-										v100 = *(*float64)(unsafe.Add(mBase, uint32(v45<<(uint(int32(3))%32))+uint32(_consts[290])))
+										v100 = *(*float64)(unsafe.Add(mBase, uint32(v45<<(uint(int32(3))%32))+uint32(_c_F_math_atan2[0])))
 										v102 = v100
 										v110 = v102
 									} else {
-										v68 = *(*float64)(unsafe.Add(mBase, uint32(v45<<(uint(int32(3))%32))+uint32(_consts[291])))
+										v68 = *(*float64)(unsafe.Add(mBase, uint32(v45<<(uint(int32(3))%32))+uint32(_c_F_math_atan2[1])))
 										v110 = v68
 									}
 								}
@@ -495,23 +495,23 @@ func F_math_exp(m *base.Module, l0 int32) int32 {
 				if base.Ui32(v15) < base.Ui32(v28) {
 					v45 = int32(0)
 					v46 = int32(0)
-					v47 = *(*float64)(unsafe.Add(mBase, _consts[1217]))
-					v50 = *(*float64)(unsafe.Add(mBase, _consts[1218]))
+					v47 = *(*float64)(unsafe.Add(mBase, _c_F_math_exp[0]))
+					v50 = *(*float64)(unsafe.Add(mBase, _c_F_math_exp[1]))
 					v51 = base.F64_add(base.F64_mul(v3, v47), v50)
 					v52 = base.F64_sub(v51, v50)
-					v54 = *(*float64)(unsafe.Add(mBase, _consts[1219]))
-					v57 = *(*float64)(unsafe.Add(mBase, _consts[1220]))
+					v54 = *(*float64)(unsafe.Add(mBase, _c_F_math_exp[2]))
+					v57 = *(*float64)(unsafe.Add(mBase, _c_F_math_exp[3]))
 					v60 = base.F64_add(base.F64_mul(v52, v54), base.F64_add(base.F64_mul(v52, v57), v3))
 					v61 = base.F64_mul(v60, v60)
-					v64 = *(*float64)(unsafe.Add(mBase, _consts[1221]))
-					v67 = *(*float64)(unsafe.Add(mBase, _consts[1222]))
-					v71 = *(*float64)(unsafe.Add(mBase, _consts[1223]))
-					v74 = *(*float64)(unsafe.Add(mBase, _consts[1224]))
+					v64 = *(*float64)(unsafe.Add(mBase, _c_F_math_exp[4]))
+					v67 = *(*float64)(unsafe.Add(mBase, _c_F_math_exp[5]))
+					v71 = *(*float64)(unsafe.Add(mBase, _c_F_math_exp[6]))
+					v74 = *(*float64)(unsafe.Add(mBase, _c_F_math_exp[7]))
 					v77 = base.I64_reinterpret_f64(v51)
 					v82 = base.I32_wrap_i64(v77) << (uint(int32(4)) % 32) & int32(2032)
-					v85 = *(*float64)(unsafe.Add(mBase, uint32(v82)+uint32(_consts[1225])))
+					v85 = *(*float64)(unsafe.Add(mBase, uint32(v82)+uint32(_c_F_math_exp[8])))
 					v88 = base.F64_add(base.F64_mul(base.F64_mul(v61, v61), base.F64_add(base.F64_mul(v60, v64), v67)), base.F64_add(base.F64_mul(v61, base.F64_add(base.F64_mul(v60, v71), v74)), base.F64_add(v85, v60)))
-					v91 = *(*int64)(unsafe.Add(mBase, uint32(v82)+uint32(_consts[1226])))
+					v91 = *(*int64)(unsafe.Add(mBase, uint32(v82)+uint32(_c_F_math_exp[9])))
 					v94 = v91 + v77<<(uint(int64(45))%64)
 					if v45 != 0 {
 						v96 = base.F64_reinterpret_i64(v94)
@@ -551,23 +551,23 @@ func F_math_exp(m *base.Module, l0 int32) int32 {
 		} else {
 			v45 = v15
 			v46 = int32(0)
-			v47 = *(*float64)(unsafe.Add(mBase, _consts[1217]))
-			v50 = *(*float64)(unsafe.Add(mBase, _consts[1218]))
+			v47 = *(*float64)(unsafe.Add(mBase, _c_F_math_exp[0]))
+			v50 = *(*float64)(unsafe.Add(mBase, _c_F_math_exp[1]))
 			v51 = base.F64_add(base.F64_mul(v3, v47), v50)
 			v52 = base.F64_sub(v51, v50)
-			v54 = *(*float64)(unsafe.Add(mBase, _consts[1219]))
-			v57 = *(*float64)(unsafe.Add(mBase, _consts[1220]))
+			v54 = *(*float64)(unsafe.Add(mBase, _c_F_math_exp[2]))
+			v57 = *(*float64)(unsafe.Add(mBase, _c_F_math_exp[3]))
 			v60 = base.F64_add(base.F64_mul(v52, v54), base.F64_add(base.F64_mul(v52, v57), v3))
 			v61 = base.F64_mul(v60, v60)
-			v64 = *(*float64)(unsafe.Add(mBase, _consts[1221]))
-			v67 = *(*float64)(unsafe.Add(mBase, _consts[1222]))
-			v71 = *(*float64)(unsafe.Add(mBase, _consts[1223]))
-			v74 = *(*float64)(unsafe.Add(mBase, _consts[1224]))
+			v64 = *(*float64)(unsafe.Add(mBase, _c_F_math_exp[4]))
+			v67 = *(*float64)(unsafe.Add(mBase, _c_F_math_exp[5]))
+			v71 = *(*float64)(unsafe.Add(mBase, _c_F_math_exp[6]))
+			v74 = *(*float64)(unsafe.Add(mBase, _c_F_math_exp[7]))
 			v77 = base.I64_reinterpret_f64(v51)
 			v82 = base.I32_wrap_i64(v77) << (uint(int32(4)) % 32) & int32(2032)
-			v85 = *(*float64)(unsafe.Add(mBase, uint32(v82)+uint32(_consts[1225])))
+			v85 = *(*float64)(unsafe.Add(mBase, uint32(v82)+uint32(_c_F_math_exp[8])))
 			v88 = base.F64_add(base.F64_mul(base.F64_mul(v61, v61), base.F64_add(base.F64_mul(v60, v64), v67)), base.F64_add(base.F64_mul(v61, base.F64_add(base.F64_mul(v60, v71), v74)), base.F64_add(v85, v60)))
-			v91 = *(*int64)(unsafe.Add(mBase, uint32(v82)+uint32(_consts[1226])))
+			v91 = *(*int64)(unsafe.Add(mBase, uint32(v82)+uint32(_c_F_math_exp[9])))
 			v94 = v91 + v77<<(uint(int64(45))%64)
 			if v45 != 0 {
 				v96 = base.F64_reinterpret_i64(v94)
@@ -1155,9 +1155,9 @@ func F_math_random(m *base.Module, l0 int32) int32 {
 	var v104 int32
 	_ = v104
 	v3 = int32(0)
-	v8 = *(*int64)(unsafe.Add(mBase, _consts[298]))
+	v8 = *(*int64)(unsafe.Add(mBase, _c_F_math_random[0]))
 	v12 = v8*int64(6364136223846793005) + int64(1)
-	*(*int64)(unsafe.Add(mBase, _consts[298])) = v12
+	*(*int64)(unsafe.Add(mBase, _c_F_math_random[0])) = v12
 	v18 = base.I32_rem_s(base.I32_wrap_i64(int64(base.Ui64(v12)>>(uint(int64(33))%64))), int32(2147483647))
 	v21 = base.F64_div(base.F64_convert_i32_s(v18), float64(2.147483647e+09))
 	v22 = *(*int32)(unsafe.Add(mBase, uint32(l0)+8))
@@ -1186,7 +1186,7 @@ func F_math_random(m *base.Module, l0 int32) int32 {
 				return int32(1)
 			} else {
 				v46 = m.G3
-				v49 = F_luaL_argerror(m, l0, int32(1), v46+int32(_a2320))
+				v49 = F_luaL_argerror(m, l0, int32(1), v46+int32(_a_F_math_random_0))
 				mBase = m.M
 				v50 = m.ExcPending
 				if v50 != 0 {
@@ -1223,7 +1223,7 @@ func F_math_random(m *base.Module, l0 int32) int32 {
 					return int32(1)
 				} else {
 					v75 = m.G3
-					v78 = F_luaL_argerror(m, l0, int32(2), v75+int32(_a2320))
+					v78 = F_luaL_argerror(m, l0, int32(2), v75+int32(_a_F_math_random_0))
 					mBase = m.M
 					v79 = m.ExcPending
 					if v79 != 0 {
@@ -1241,7 +1241,7 @@ func F_math_random(m *base.Module, l0 int32) int32 {
 		}
 	default:
 		v99 = m.G3
-		v103 = F_luaL_error(m, l0, v99+int32(_a2214), int32(0))
+		v103 = F_luaL_error(m, l0, v99+int32(_a_F_math_random_1), int32(0))
 		mBase = m.M
 		v104 = m.ExcPending
 		if v104 != 0 {

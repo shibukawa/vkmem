@@ -863,11 +863,11 @@ func F_geohashBoundingBox(m *base.Module, l0 int32, l1 int32) int32 {
 									}
 								} else {
 									if v438 != int32(2146435072) {
-										v488 = *(*float64)(unsafe.Add(mBase, uint32(v433<<(uint(int32(3))%32))+uint32(_consts[290])))
+										v488 = *(*float64)(unsafe.Add(mBase, uint32(v433<<(uint(int32(3))%32))+uint32(_c_F_geohashBoundingBox[0])))
 										v490 = v488
 										v498 = v490
 									} else {
-										v456 = *(*float64)(unsafe.Add(mBase, uint32(v433<<(uint(int32(3))%32))+uint32(_consts[291])))
+										v456 = *(*float64)(unsafe.Add(mBase, uint32(v433<<(uint(int32(3))%32))+uint32(_c_F_geohashBoundingBox[1])))
 										v498 = v456
 									}
 								}
@@ -954,11 +954,11 @@ func F_geohashBoundingBox(m *base.Module, l0 int32, l1 int32) int32 {
 									}
 								} else {
 									if v546 != int32(2146435072) {
-										v596 = *(*float64)(unsafe.Add(mBase, uint32(v541<<(uint(int32(3))%32))+uint32(_consts[290])))
+										v596 = *(*float64)(unsafe.Add(mBase, uint32(v541<<(uint(int32(3))%32))+uint32(_c_F_geohashBoundingBox[0])))
 										v598 = v596
 										v606 = v598
 									} else {
-										v564 = *(*float64)(unsafe.Add(mBase, uint32(v541<<(uint(int32(3))%32))+uint32(_consts[291])))
+										v564 = *(*float64)(unsafe.Add(mBase, uint32(v541<<(uint(int32(3))%32))+uint32(_c_F_geohashBoundingBox[1])))
 										v606 = v564
 									}
 								}

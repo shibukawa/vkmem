@@ -664,7 +664,7 @@ func F_auxTlsPortGetter(m *base.Module, l0 int32, l1 int32) int32 {
 	m.G0 = v6
 	v8 = *(*int32)(unsafe.Add(mBase, uint32(l0)+2328))
 	*(*int32)(unsafe.Add(mBase, uint32(v6))) = v8
-	v11 = F_sdscatfmt(m, l1, int32(_a248), v6)
+	v11 = F_sdscatfmt(m, l1, int32(_a_F_auxTlsPortGetter_0), v6)
 	mBase = m.M
 	v14 = m.ExcPending
 	if v14 != 0 {

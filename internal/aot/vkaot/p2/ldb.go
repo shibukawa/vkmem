@@ -348,7 +348,7 @@ L5:
 	v67 = m.G3
 	v73 = m.G8
 	v74 = *(*int32)(unsafe.Add(mBase, uint32(v73)))
-	m.T0[v74].(func(*base.Module, int32, int32, int32))(m, v67+int32(_a1922), v67+int32(_a1923), int32(67))
+	m.T0[v74].(func(*base.Module, int32, int32, int32))(m, v67+int32(_a_F_ldbStart_0), v67+int32(_a_F_ldbStart_1), int32(67))
 	mBase = m.M
 	v76 = m.ExcPending
 	if v76 != 0 {
@@ -487,7 +487,7 @@ L23:
 	v227 = m.G3
 	v233 = m.G10
 	v234 = *(*int32)(unsafe.Add(mBase, uint32(v233)))
-	m.T0[v234].(func(*base.Module, int32, int32, int32, int32))(m, v225, v227+int32(_a707), v227+int32(_a1924), v225)
+	m.T0[v234].(func(*base.Module, int32, int32, int32, int32))(m, v225, v227+int32(_a_F_ldbStart_2), v227+int32(_a_F_ldbStart_3), v225)
 	mBase = m.M
 	v236 = m.ExcPending
 	if v236 != 0 {

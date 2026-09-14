@@ -51,8 +51,8 @@ func F_bioCreateCloseAofJob(m *base.Module, l0 int32, l1 int64, l2 int32) {
 		v21 = l2<<(uint(v12)%32)&int32(2) | v16&int32(252) | v12
 		*(*uint8)(unsafe.Add(mBase, uint32(v6)+16)) = uint8(v21)
 		v23 = int32(0)
-		v25 = *(*int32)(unsafe.Add(mBase, _consts[70]))
-		*(*int32)(unsafe.Add(mBase, _consts[70])) = v25 + v12
+		v25 = *(*int32)(unsafe.Add(mBase, _c_F_bioCreateCloseAofJob[0]))
+		*(*int32)(unsafe.Add(mBase, _c_F_bioCreateCloseAofJob[0])) = v25 + v12
 		F_bioExecuteJob(m, v6)
 		mBase = m.M
 		v30 = m.ExcPending
@@ -95,8 +95,8 @@ func F_bioCreateCloseJob(m *base.Module, l0 int32, l1 int32, l2 int32) {
 		v18 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v6)+16)))
 		v21 = l2<<(uint(v11)%32)&int32(2) | l1&v11 | v18&int32(252)
 		*(*uint8)(unsafe.Add(mBase, uint32(v6)+16)) = uint8(v21)
-		v25 = *(*int32)(unsafe.Add(mBase, _consts[69]))
-		*(*int32)(unsafe.Add(mBase, _consts[69])) = v25 + v11
+		v25 = *(*int32)(unsafe.Add(mBase, _c_F_bioCreateCloseJob[0]))
+		*(*int32)(unsafe.Add(mBase, _c_F_bioCreateCloseJob[0])) = v25 + v11
 		F_bioExecuteJob(m, v6)
 		mBase = m.M
 		v30 = m.ExcPending
@@ -261,8 +261,8 @@ func F_bioCreateLazyFreeJob(m *base.Module, l0 int32, l1 int32, l2 int32) {
 		}
 		*(*int32)(unsafe.Add(mBase, uint32(v18))) = int32(2)
 		v132 = int32(0)
-		v134 = *(*int32)(unsafe.Add(mBase, _consts[68]))
-		*(*int32)(unsafe.Add(mBase, _consts[68])) = v134 + int32(1)
+		v134 = *(*int32)(unsafe.Add(mBase, _c_F_bioCreateLazyFreeJob[0]))
+		*(*int32)(unsafe.Add(mBase, _c_F_bioCreateLazyFreeJob[0])) = v134 + int32(1)
 		F_bioExecuteJob(m, v18)
 		mBase = m.M
 		v139 = m.ExcPending
@@ -279,6 +279,6 @@ func F_bioPendingJobsOfType(m *base.Module, l0 int32) int32 {
 	_ = mBase
 	var v6 int32
 	_ = v6
-	v6 = *(*int32)(unsafe.Add(mBase, uint32(l0<<(uint(int32(2))%32))+uint32(_consts[69])))
+	v6 = *(*int32)(unsafe.Add(mBase, uint32(l0<<(uint(int32(2))%32))+uint32(_c_F_bioPendingJobsOfType[0])))
 	return v6
 }

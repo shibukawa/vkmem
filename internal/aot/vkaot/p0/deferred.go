@@ -242,7 +242,7 @@ func F_setDeferredAggregateLen(m *base.Module, l0 int32, l1 int32, l2 int32, l3 
 	v10 = v8 - int32(128)
 	m.G0 = v10
 	if l2 <= int32(-1) {
-		F__serverAssert(m, int32(_a789), int32(_a774), int32(1246))
+		F__serverAssert(m, int32(_a_F_setDeferredAggregateLen_0), int32(_a_F_setDeferredAggregateLen_1), int32(1246))
 		mBase = m.M
 		v120 = m.ExcPending
 		if v120 != 0 {
@@ -341,7 +341,7 @@ func F_setDeferredAggregateLen(m *base.Module, l0 int32, l1 int32, l2 int32, l3 
 								return
 							}
 						} else {
-							v51 = *(*int32)(unsafe.Add(mBase, uint32(l2<<(uint(int32(2))%32))+uint32(_consts[422])))
+							v51 = *(*int32)(unsafe.Add(mBase, uint32(l2<<(uint(int32(2))%32))+uint32(_c_F_setDeferredAggregateLen[0])))
 							v52 = F_objectGetVal(m, v51)
 							mBase = m.M
 							F_setDeferredReply(m, l0, l1, v52, v20)
@@ -431,7 +431,7 @@ func F_setDeferredAggregateLen(m *base.Module, l0 int32, l1 int32, l2 int32, l3 
 									return
 								}
 							} else {
-								v51 = *(*int32)(unsafe.Add(mBase, uint32(l2<<(uint(int32(2))%32))+uint32(_consts[422])))
+								v51 = *(*int32)(unsafe.Add(mBase, uint32(l2<<(uint(int32(2))%32))+uint32(_c_F_setDeferredAggregateLen[0])))
 								v52 = F_objectGetVal(m, v51)
 								mBase = m.M
 								F_setDeferredReply(m, l0, l1, v52, v20)
@@ -446,7 +446,7 @@ func F_setDeferredAggregateLen(m *base.Module, l0 int32, l1 int32, l2 int32, l3 
 							}
 						}
 					} else {
-						v39 = *(*int32)(unsafe.Add(mBase, uint32(l2<<(uint(int32(2))%32))+uint32(_consts[423])))
+						v39 = *(*int32)(unsafe.Add(mBase, uint32(l2<<(uint(int32(2))%32))+uint32(_c_F_setDeferredAggregateLen[1])))
 						v40 = F_objectGetVal(m, v39)
 						mBase = m.M
 						F_setDeferredReply(m, l0, l1, v40, v20)
@@ -537,7 +537,7 @@ func F_setDeferredAggregateLen(m *base.Module, l0 int32, l1 int32, l2 int32, l3 
 									return
 								}
 							} else {
-								v51 = *(*int32)(unsafe.Add(mBase, uint32(l2<<(uint(int32(2))%32))+uint32(_consts[422])))
+								v51 = *(*int32)(unsafe.Add(mBase, uint32(l2<<(uint(int32(2))%32))+uint32(_c_F_setDeferredAggregateLen[0])))
 								v52 = F_objectGetVal(m, v51)
 								mBase = m.M
 								F_setDeferredReply(m, l0, l1, v52, v20)
@@ -627,7 +627,7 @@ func F_setDeferredAggregateLen(m *base.Module, l0 int32, l1 int32, l2 int32, l3 
 										return
 									}
 								} else {
-									v51 = *(*int32)(unsafe.Add(mBase, uint32(l2<<(uint(int32(2))%32))+uint32(_consts[422])))
+									v51 = *(*int32)(unsafe.Add(mBase, uint32(l2<<(uint(int32(2))%32))+uint32(_c_F_setDeferredAggregateLen[0])))
 									v52 = F_objectGetVal(m, v51)
 									mBase = m.M
 									F_setDeferredReply(m, l0, l1, v52, v20)
@@ -642,7 +642,7 @@ func F_setDeferredAggregateLen(m *base.Module, l0 int32, l1 int32, l2 int32, l3 
 								}
 							}
 						} else {
-							v39 = *(*int32)(unsafe.Add(mBase, uint32(l2<<(uint(int32(2))%32))+uint32(_consts[423])))
+							v39 = *(*int32)(unsafe.Add(mBase, uint32(l2<<(uint(int32(2))%32))+uint32(_c_F_setDeferredAggregateLen[1])))
 							v40 = F_objectGetVal(m, v39)
 							mBase = m.M
 							F_setDeferredReply(m, l0, l1, v40, v20)
@@ -657,7 +657,7 @@ func F_setDeferredAggregateLen(m *base.Module, l0 int32, l1 int32, l2 int32, l3 
 						}
 					}
 				} else {
-					v29 = *(*int32)(unsafe.Add(mBase, uint32(l2<<(uint(int32(2))%32))+uint32(_consts[424])))
+					v29 = *(*int32)(unsafe.Add(mBase, uint32(l2<<(uint(int32(2))%32))+uint32(_c_F_setDeferredAggregateLen[2])))
 					v30 = F_objectGetVal(m, v29)
 					mBase = m.M
 					F_setDeferredReply(m, l0, l1, v30, v20)
@@ -752,7 +752,7 @@ func F_setDeferredReplyBulkSds(m *base.Module, l0 int32, l1 int32, l2 int32) {
 		}
 		*(*int32)(unsafe.Add(mBase, uint32(v11)+4)) = l2
 		*(*int32)(unsafe.Add(mBase, uint32(v11))) = v36
-		v40 = F_sdscatprintf(m, v13, int32(_a796), v11)
+		v40 = F_sdscatprintf(m, v13, int32(_a_F_setDeferredReplyBulkSds_0), v11)
 		mBase = m.M
 		v41 = m.ExcPending
 		if v41 != 0 {
@@ -1178,7 +1178,7 @@ L38:
 	;
 	v96 = int64(100)
 	v97 = base.I64_div_u_s(v90, v96)
-	v106 = int32(*(*uint16)(unsafe.Add(mBase, uint32(base.I32_wrap_i64(v90-v97*v96)<<(uint(int32(1))%32))+uint32(_consts[185]))))
+	v106 = int32(*(*uint16)(unsafe.Add(mBase, uint32(base.I32_wrap_i64(v90-v97*v96)<<(uint(int32(1))%32))+uint32(_c_F_setDeferredReplyStreamID[0]))))
 	*(*uint16)(unsafe.Add(mBase, uint32(v8+int32(-1)+v92))) = uint16(v106)
 	v109 = v92 + int32(-2)
 	if base.Ui64(int64(9999)) < base.Ui64(v90) {
@@ -1198,7 +1198,7 @@ L40:
 	goto L39
 L41:
 	;
-	v133 = int32(*(*uint16)(unsafe.Add(mBase, uint32(base.I32_wrap_i64(v117)<<(uint(int32(1))%32))+uint32(_consts[185]))))
+	v133 = int32(*(*uint16)(unsafe.Add(mBase, uint32(base.I32_wrap_i64(v117)<<(uint(int32(1))%32))+uint32(_c_F_setDeferredReplyStreamID[0]))))
 	*(*uint16)(unsafe.Add(mBase, uint32(v119+int32(-1)))) = uint16(v133)
 	v147 = v77
 	goto L1
@@ -1438,7 +1438,7 @@ L82:
 	;
 	v239 = int64(100)
 	v240 = base.I64_div_u_s(v233, v239)
-	v249 = int32(*(*uint16)(unsafe.Add(mBase, uint32(base.I32_wrap_i64(v233-v240*v239)<<(uint(int32(1))%32))+uint32(_consts[185]))))
+	v249 = int32(*(*uint16)(unsafe.Add(mBase, uint32(base.I32_wrap_i64(v233-v240*v239)<<(uint(int32(1))%32))+uint32(_c_F_setDeferredReplyStreamID[0]))))
 	*(*uint16)(unsafe.Add(mBase, uint32(v148+int32(0)+v235))) = uint16(v249)
 	v252 = v235 + int32(-2)
 	if base.Ui64(int64(9999)) < base.Ui64(v233) {
@@ -1458,7 +1458,7 @@ L84:
 	goto L83
 L85:
 	;
-	v276 = int32(*(*uint16)(unsafe.Add(mBase, uint32(base.I32_wrap_i64(v260)<<(uint(int32(1))%32))+uint32(_consts[185]))))
+	v276 = int32(*(*uint16)(unsafe.Add(mBase, uint32(base.I32_wrap_i64(v260)<<(uint(int32(1))%32))+uint32(_c_F_setDeferredReplyStreamID[0]))))
 	*(*uint16)(unsafe.Add(mBase, uint32(v262+int32(-1)))) = uint16(v276)
 	v290 = v220
 	goto L45

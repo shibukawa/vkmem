@@ -358,7 +358,7 @@ func F_mp_decode_to_lua_type(m *base.Module, l0 int32, l1 int32) {
 	v8 = *(*int32)(unsafe.Add(mBase, uint32(l1)+4))
 	if v8 != 0 {
 		v12 = m.G3
-		F_luaL_checkstack(m, l0, int32(1), v12+int32(_a2349))
+		F_luaL_checkstack(m, l0, int32(1), v12+int32(_a_F_mp_decode_to_lua_type_0))
 		mBase = m.M
 		v16 = m.ExcPending
 		if v16 != 0 {

@@ -69,7 +69,7 @@ func F_extractLongLatOrReply(m *base.Module, l0 int32, l1 int32, l2 int32) int32
 					if base.F64_gt(base.F64_abs(v26), float64(180)) != 0 {
 						*(*float64)(unsafe.Add(mBase, uint32(v10)+8)) = v25
 						*(*float64)(unsafe.Add(mBase, uint32(v10))) = v26
-						F_addReplyErrorFormat(m, l0, int32(_a820), v10)
+						F_addReplyErrorFormat(m, l0, int32(_a_F_extractLongLatOrReply_0), v10)
 						mBase = m.M
 						v41 = m.ExcPending
 						if v41 != 0 {
@@ -88,7 +88,7 @@ func F_extractLongLatOrReply(m *base.Module, l0 int32, l1 int32, l2 int32) int32
 						} else {
 							*(*float64)(unsafe.Add(mBase, uint32(v10)+8)) = v25
 							*(*float64)(unsafe.Add(mBase, uint32(v10))) = v26
-							F_addReplyErrorFormat(m, l0, int32(_a820), v10)
+							F_addReplyErrorFormat(m, l0, int32(_a_F_extractLongLatOrReply_0), v10)
 							mBase = m.M
 							v41 = m.ExcPending
 							if v41 != 0 {
@@ -145,7 +145,7 @@ func F_getLongDoubleFromObjectOrReply(m *base.Module, l0 int32, l1 int32, l2 int
 			return v33
 		} else {
 			if l3 == int32(0) {
-				F_addReplyError(m, l0, int32(_a1060))
+				F_addReplyError(m, l0, int32(_a_F_getLongDoubleFromObjectOrReply_0))
 				mBase = m.M
 				v24 = m.ExcPending
 				if v24 != 0 {
@@ -211,7 +211,7 @@ func F_getLongFromObjectOrReply(m *base.Module, l0 int32, l1 int32, l2 int32, l3
 				return v40
 			} else {
 				if l3 == int32(0) {
-					F_addReplyError(m, l0, int32(_a1061))
+					F_addReplyError(m, l0, int32(_a_F_getLongFromObjectOrReply_0))
 					mBase = m.M
 					v36 = m.ExcPending
 					if v36 != 0 {
@@ -238,7 +238,7 @@ func F_getLongFromObjectOrReply(m *base.Module, l0 int32, l1 int32, l2 int32, l3
 			if l3 != 0 {
 				v20 = l3
 			} else {
-				v20 = int32(_a1062)
+				v20 = int32(_a_F_getLongFromObjectOrReply_1)
 			}
 			F_addReplyError(m, l0, v20)
 			mBase = m.M
@@ -349,7 +349,7 @@ func F_longLatFromMemberOrReply(m *base.Module, l0 int32, l1 int32, l2 int32, l3
 				m.G0 = v11 + int32(48)
 				return v86
 			} else {
-				v77 = int32(_a821)
+				v77 = int32(_a_F_longLatFromMemberOrReply_0)
 				v81 = F_objectGetVal(m, l2)
 				mBase = m.M
 				*(*int32)(unsafe.Add(mBase, uint32(v11))) = v81
@@ -365,7 +365,7 @@ func F_longLatFromMemberOrReply(m *base.Module, l0 int32, l1 int32, l2 int32, l3
 				}
 			}
 		} else {
-			v77 = int32(_a822)
+			v77 = int32(_a_F_longLatFromMemberOrReply_1)
 			v81 = F_objectGetVal(m, l2)
 			mBase = m.M
 			*(*int32)(unsafe.Add(mBase, uint32(v11))) = v81
@@ -449,7 +449,7 @@ func F_readLong(m *base.Module, l0 int32, l1 int32, l2 int32) int32 {
 	if v15 != 0 {
 		return int32(0)
 	} else {
-		*(*int64)(unsafe.Add(mBase, _consts[958])) = v12
+		*(*int64)(unsafe.Add(mBase, _c_F_readLong[0])) = v12
 		v20 = F_fgets(m, v8+int32(64), int32(128), l0)
 		mBase = m.M
 		v21 = m.ExcPending
@@ -472,17 +472,17 @@ func F_readLong(m *base.Module, l0 int32, l1 int32, l2 int32) int32 {
 					if v66 != int32(13) {
 						*(*int32)(unsafe.Add(mBase, uint32(v8)+16)) = v66
 						*(*int32)(unsafe.Add(mBase, uint32(v8)+20)) = v65
-						v79 = F_snprintf(m, v8+int32(192), int32(1024), int32(_a1770), v8+int32(16))
+						v79 = F_snprintf(m, v8+int32(192), int32(1024), int32(_a_F_readLong_0), v8+int32(16))
 						mBase = m.M
 						v80 = m.ExcPending
 						if v80 != 0 {
 							return int32(0)
 						} else {
 							v81 = int32(0)
-							v83 = *(*int64)(unsafe.Add(mBase, _consts[958]))
+							v83 = *(*int64)(unsafe.Add(mBase, _c_F_readLong[0]))
 							*(*int64)(unsafe.Add(mBase, uint32(v8))) = v83
 							*(*int32)(unsafe.Add(mBase, uint32(v8)+8)) = v8 + int32(192)
-							v91 = F_snprintf(m, int32(_a1771), int32(1044), int32(_a1772), v8)
+							v91 = F_snprintf(m, int32(_a_F_readLong_1), int32(1044), int32(_a_F_readLong_2), v8)
 							mBase = m.M
 							v92 = m.ExcPending
 							if v92 != 0 {
@@ -496,25 +496,25 @@ func F_readLong(m *base.Module, l0 int32, l1 int32, l2 int32) int32 {
 					} else {
 						if v65 == int32(10) {
 							v93 = int32(0)
-							v95 = *(*int64)(unsafe.Add(mBase, _consts[959]))
-							*(*int64)(unsafe.Add(mBase, _consts[959])) = v95 + int64(1)
+							v95 = *(*int64)(unsafe.Add(mBase, _c_F_readLong[1]))
+							*(*int64)(unsafe.Add(mBase, _c_F_readLong[1])) = v95 + int64(1)
 							v101 = int32(1)
 							m.G0 = v8 + int32(1216)
 							return v101
 						} else {
 							*(*int32)(unsafe.Add(mBase, uint32(v8)+16)) = v66
 							*(*int32)(unsafe.Add(mBase, uint32(v8)+20)) = v65
-							v79 = F_snprintf(m, v8+int32(192), int32(1024), int32(_a1770), v8+int32(16))
+							v79 = F_snprintf(m, v8+int32(192), int32(1024), int32(_a_F_readLong_0), v8+int32(16))
 							mBase = m.M
 							v80 = m.ExcPending
 							if v80 != 0 {
 								return int32(0)
 							} else {
 								v81 = int32(0)
-								v83 = *(*int64)(unsafe.Add(mBase, _consts[958]))
+								v83 = *(*int64)(unsafe.Add(mBase, _c_F_readLong[0]))
 								*(*int64)(unsafe.Add(mBase, uint32(v8))) = v83
 								*(*int32)(unsafe.Add(mBase, uint32(v8)+8)) = v8 + int32(192)
-								v91 = F_snprintf(m, int32(_a1771), int32(1044), int32(_a1772), v8)
+								v91 = F_snprintf(m, int32(_a_F_readLong_1), int32(1044), int32(_a_F_readLong_2), v8)
 								mBase = m.M
 								v92 = m.ExcPending
 								if v92 != 0 {
@@ -530,17 +530,17 @@ func F_readLong(m *base.Module, l0 int32, l1 int32, l2 int32) int32 {
 				} else {
 					*(*int32)(unsafe.Add(mBase, uint32(v8)+48)) = l1
 					*(*int32)(unsafe.Add(mBase, uint32(v8)+52)) = base.I32_extend8_s(v24)
-					v37 = F_snprintf(m, v8+int32(192), int32(1024), int32(_a1773), v8+int32(48))
+					v37 = F_snprintf(m, v8+int32(192), int32(1024), int32(_a_F_readLong_3), v8+int32(48))
 					mBase = m.M
 					v38 = m.ExcPending
 					if v38 != 0 {
 						return int32(0)
 					} else {
 						v39 = int32(0)
-						v41 = *(*int64)(unsafe.Add(mBase, _consts[958]))
+						v41 = *(*int64)(unsafe.Add(mBase, _c_F_readLong[0]))
 						*(*int64)(unsafe.Add(mBase, uint32(v8)+32)) = v41
 						*(*int32)(unsafe.Add(mBase, uint32(v8)+40)) = v8 + int32(192)
-						v51 = F_snprintf(m, int32(_a1771), int32(1044), int32(_a1772), v8+int32(32))
+						v51 = F_snprintf(m, int32(_a_F_readLong_1), int32(1044), int32(_a_F_readLong_2), v8+int32(32))
 						mBase = m.M
 						v52 = m.ExcPending
 						if v52 != 0 {
@@ -849,11 +849,11 @@ L9:
 	goto L7
 L10:
 	;
-	v40 = int32(_a2032)
+	v40 = int32(_a_F_read_long_string_0)
 	goto L12
 L11:
 	;
-	v40 = int32(_a2033)
+	v40 = int32(_a_F_read_long_string_1)
 	goto L12
 L12:
 	;
@@ -940,7 +940,7 @@ L21:
 	*(*int32)(unsafe.Add(mBase, uint32(v11)+20)) = v138
 	v141 = m.G3
 	*(*int32)(unsafe.Add(mBase, uint32(v11)+16)) = v11 + int32(32)
-	v149 = F_luaO_pushfstring(m, v137, v141+int32(_a2026), v11+int32(16))
+	v149 = F_luaO_pushfstring(m, v137, v141+int32(_a_F_read_long_string_2), v11+int32(16))
 	mBase = m.M
 	v150 = m.ExcPending
 	if v150 != 0 {
@@ -951,11 +951,11 @@ L21:
 L22:
 	;
 	v90 = m.G3
-	v93 = F_strcspn(m, v59, v90+int32(_a2027))
+	v93 = F_strcspn(m, v59, v90+int32(_a_F_read_long_string_3))
 	mBase = m.M
-	v100 = int32(*(*uint16)(unsafe.Add(mBase, uint32(v90)+uint32(_consts[1013]))))
+	v100 = int32(*(*uint16)(unsafe.Add(mBase, uint32(v90)+uint32(_c_F_read_long_string[0]))))
 	*(*uint16)(unsafe.Add(mBase, uint32(v11+int32(40)))) = uint16(v100)
-	v102 = *(*int64)(unsafe.Add(mBase, uint32(v90)+uint32(_consts[1014])))
+	v102 = *(*int64)(unsafe.Add(mBase, uint32(v90)+uint32(_c_F_read_long_string[1])))
 	*(*int64)(unsafe.Add(mBase, uint32(v56))) = v102
 	v105 = int32(63)
 	if base.Ui32(v93) < base.Ui32(v105) {
@@ -1002,9 +1002,9 @@ L27:
 	mBase = m.M
 	v120 = v56 + v119
 	v121 = m.G3
-	v124 = int32(*(*uint16)(unsafe.Add(mBase, uint32(v121)+uint32(_consts[1015]))))
+	v124 = int32(*(*uint16)(unsafe.Add(mBase, uint32(v121)+uint32(_c_F_read_long_string[2]))))
 	*(*uint16)(unsafe.Add(mBase, uint32(v120))) = uint16(v124)
-	v130 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v121)+uint32(_consts[1016]))))
+	v130 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v121)+uint32(_c_F_read_long_string[3]))))
 	*(*uint8)(unsafe.Add(mBase, uint32(v120+int32(2)))) = uint8(v130)
 	goto L21
 L28:
@@ -1039,9 +1039,9 @@ L32:
 L33:
 	;
 	v151 = *(*int32)(unsafe.Add(mBase, uint32(l0)+52))
-	*(*int32)(unsafe.Add(mBase, uint32(v11)+4)) = v141 + int32(_a2028)
+	*(*int32)(unsafe.Add(mBase, uint32(v11)+4)) = v141 + int32(_a_F_read_long_string_4)
 	*(*int32)(unsafe.Add(mBase, uint32(v11))) = v149
-	v158 = F_luaO_pushfstring(m, v151, v141+int32(_a2029), v11)
+	v158 = F_luaO_pushfstring(m, v151, v141+int32(_a_F_read_long_string_5), v11)
 	mBase = m.M
 	v159 = m.ExcPending
 	if v159 != 0 {

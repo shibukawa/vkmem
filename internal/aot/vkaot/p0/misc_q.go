@@ -21,7 +21,7 @@ func F_queueClientForReprocessing(m *base.Module, l0 int32) {
 		return
 	} else {
 		*(*int32)(unsafe.Add(mBase, uint32(l0)+200)) = v3 | int32(128)
-		v10 = *(*int32)(unsafe.Add(mBase, _consts[61]))
+		v10 = *(*int32)(unsafe.Add(mBase, _c_F_queueClientForReprocessing[0]))
 		v11 = F_listAddNodeTail(m, v10, l0)
 		mBase = m.M
 		v12 = m.ExcPending
@@ -324,7 +324,7 @@ func F_queueMultiCommand(m *base.Module, l0 int32, l1 int64) {
 													return
 												} else {
 													if v99 != 0 {
-														F__serverAssert(m, int32(_a765), int32(_a766), int32(125))
+														F__serverAssert(m, int32(_a_F_queueMultiCommand_0), int32(_a_F_queueMultiCommand_1), int32(125))
 														mBase = m.M
 														v154 = m.ExcPending
 														if v154 != 0 {
@@ -500,7 +500,7 @@ func F_queueMultiCommand(m *base.Module, l0 int32, l1 int64) {
 												return
 											} else {
 												if v99 != 0 {
-													F__serverAssert(m, int32(_a765), int32(_a766), int32(125))
+													F__serverAssert(m, int32(_a_F_queueMultiCommand_0), int32(_a_F_queueMultiCommand_1), int32(125))
 													mBase = m.M
 													v154 = m.ExcPending
 													if v154 != 0 {
@@ -697,7 +697,7 @@ func F_queueMultiCommand(m *base.Module, l0 int32, l1 int64) {
 												return
 											} else {
 												if v99 != 0 {
-													F__serverAssert(m, int32(_a765), int32(_a766), int32(125))
+													F__serverAssert(m, int32(_a_F_queueMultiCommand_0), int32(_a_F_queueMultiCommand_1), int32(125))
 													mBase = m.M
 													v154 = m.ExcPending
 													if v154 != 0 {
@@ -873,7 +873,7 @@ func F_queueMultiCommand(m *base.Module, l0 int32, l1 int64) {
 											return
 										} else {
 											if v99 != 0 {
-												F__serverAssert(m, int32(_a765), int32(_a766), int32(125))
+												F__serverAssert(m, int32(_a_F_queueMultiCommand_0), int32(_a_F_queueMultiCommand_1), int32(125))
 												mBase = m.M
 												v154 = m.ExcPending
 												if v154 != 0 {
@@ -1093,7 +1093,7 @@ func F_queueMultiCommand(m *base.Module, l0 int32, l1 int64) {
 														return
 													} else {
 														if v99 != 0 {
-															F__serverAssert(m, int32(_a765), int32(_a766), int32(125))
+															F__serverAssert(m, int32(_a_F_queueMultiCommand_0), int32(_a_F_queueMultiCommand_1), int32(125))
 															mBase = m.M
 															v154 = m.ExcPending
 															if v154 != 0 {
@@ -1269,7 +1269,7 @@ func F_queueMultiCommand(m *base.Module, l0 int32, l1 int64) {
 													return
 												} else {
 													if v99 != 0 {
-														F__serverAssert(m, int32(_a765), int32(_a766), int32(125))
+														F__serverAssert(m, int32(_a_F_queueMultiCommand_0), int32(_a_F_queueMultiCommand_1), int32(125))
 														mBase = m.M
 														v154 = m.ExcPending
 														if v154 != 0 {
@@ -1466,7 +1466,7 @@ func F_queueMultiCommand(m *base.Module, l0 int32, l1 int64) {
 													return
 												} else {
 													if v99 != 0 {
-														F__serverAssert(m, int32(_a765), int32(_a766), int32(125))
+														F__serverAssert(m, int32(_a_F_queueMultiCommand_0), int32(_a_F_queueMultiCommand_1), int32(125))
 														mBase = m.M
 														v154 = m.ExcPending
 														if v154 != 0 {
@@ -1642,7 +1642,7 @@ func F_queueMultiCommand(m *base.Module, l0 int32, l1 int64) {
 												return
 											} else {
 												if v99 != 0 {
-													F__serverAssert(m, int32(_a765), int32(_a766), int32(125))
+													F__serverAssert(m, int32(_a_F_queueMultiCommand_0), int32(_a_F_queueMultiCommand_1), int32(125))
 													mBase = m.M
 													v154 = m.ExcPending
 													if v154 != 0 {
@@ -1707,7 +1707,7 @@ func F_quitCommand(m *base.Module, l0 int32) {
 	_ = v5
 	var v6 int32
 	_ = v6
-	v3 = *(*int32)(unsafe.Add(mBase, _consts[77]))
+	v3 = *(*int32)(unsafe.Add(mBase, _c_F_quitCommand[0]))
 	F_addReply(m, l0, v3)
 	mBase = m.M
 	v5 = m.ExcPending

@@ -433,7 +433,7 @@ L29:
 	goto L10
 L30:
 	;
-	F__serverAssert(m, int32(_a775), int32(_a774), int32(4360))
+	F__serverAssert(m, int32(_a_F_readToQueryBuf_0), int32(_a_F_readToQueryBuf_1), int32(4360))
 	mBase = m.M
 	v320 = m.ExcPending
 	if v320 != 0 {
@@ -443,7 +443,7 @@ L30:
 	}
 L31:
 	;
-	F__serverAssert(m, int32(_a776), int32(_a774), int32(4334))
+	F__serverAssert(m, int32(_a_F_readToQueryBuf_2), int32(_a_F_readToQueryBuf_1), int32(4334))
 	mBase = m.M
 	v314 = m.ExcPending
 	if v314 != 0 {
@@ -454,7 +454,7 @@ L31:
 L32:
 	;
 	v140 = int32(0)
-	v142 = *(*int32)(unsafe.Add(mBase, _consts[407]))
+	v142 = *(*int32)(unsafe.Add(mBase, _c_F_readToQueryBuf[0]))
 	v144 = v43 & int32(16384)
 	if v144 != 0 {
 		goto L52
@@ -463,7 +463,7 @@ L32:
 	}
 L33:
 	;
-	v89 = *(*int32)(unsafe.Add(mBase, _consts[407]))
+	v89 = *(*int32)(unsafe.Add(mBase, _c_F_readToQueryBuf[0]))
 	v92 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v89+int32(-1)))))
 	switch v92 & int32(7) {
 	case 0:
@@ -742,7 +742,7 @@ L69:
 	}
 L70:
 	;
-	v219 = *(*int32)(unsafe.Add(mBase, _consts[407]))
+	v219 = *(*int32)(unsafe.Add(mBase, _c_F_readToQueryBuf[0]))
 	if v214 != v219 {
 		goto L30
 	} else {
@@ -896,7 +896,7 @@ L91:
 L92:
 	;
 	v283 = v282 + v277
-	v285 = *(*int32)(unsafe.Add(mBase, _consts[408]))
+	v285 = *(*int32)(unsafe.Add(mBase, _c_F_readToQueryBuf[1]))
 	if base.Ui32(v283) <= base.Ui32(v285) {
 		goto L95
 	} else {
@@ -1097,7 +1097,7 @@ func F_trySendWriteToIOThreads(m *base.Module, l0 int32) int32 {
 	_ = v258
 	var v269 int32
 	_ = v269
-	v9 = *(*int32)(unsafe.Add(mBase, _consts[219]))
+	v9 = *(*int32)(unsafe.Add(mBase, _c_F_trySendWriteToIOThreads[0]))
 	if int32(2) <= v9 {
 		goto L1
 	} else {
@@ -1128,7 +1128,7 @@ L4:
 	return int32(-1)
 L5:
 	;
-	F__serverAssert(m, int32(_a666), int32(_a663), int32(591))
+	F__serverAssert(m, int32(_a_F_trySendWriteToIOThreads_2), int32(_a_F_trySendWriteToIOThreads_3), int32(591))
 	mBase = m.M
 	v269 = m.ExcPending
 	if v269 != 0 {
@@ -1402,7 +1402,7 @@ L48:
 	goto L42
 L49:
 	;
-	v111 = *(*int32)(unsafe.Add(mBase, _consts[314]))
+	v111 = *(*int32)(unsafe.Add(mBase, _c_F_trySendWriteToIOThreads[1]))
 	v112 = *(*int32)(unsafe.Add(mBase, uint32(v111)+4))
 	*(*int32)(unsafe.Add(mBase, uint32(l0)+136)) = v112
 	v114 = *(*int32)(unsafe.Add(mBase, uint32(v112)+8))
@@ -1451,10 +1451,10 @@ L55:
 	goto L52
 L56:
 	;
-	v165 = int32(_a476)
-	v171 = *(*int32)(unsafe.Add(mBase, _consts[311]))
-	v172 = *(*int32)(unsafe.Add(mBase, _consts[312]))
-	v175 = *(*int32)(unsafe.Add(mBase, _consts[315]))
+	v165 = int32(_a_F_trySendWriteToIOThreads_0)
+	v171 = *(*int32)(unsafe.Add(mBase, _c_F_trySendWriteToIOThreads[2]))
+	v172 = *(*int32)(unsafe.Add(mBase, _c_F_trySendWriteToIOThreads[3]))
+	v175 = *(*int32)(unsafe.Add(mBase, _c_F_trySendWriteToIOThreads[4]))
 	v179 = v171 + (v172+int32(-1))&v175<<(uint(int32(6))%32)
 	v180 = *(*int32)(unsafe.Add(mBase, uint32(v179)))
 	if v180 != v175 {
@@ -1529,8 +1529,8 @@ L67:
 	*(*int32)(unsafe.Add(mBase, uint32(v179)+4)) = l0 | int32(1)
 	v183 = int32(1)
 	*(*int32)(unsafe.Add(mBase, uint32(v179))) = v180 + v183
-	v186 = *(*int32)(unsafe.Add(mBase, _consts[315]))
-	*(*int32)(unsafe.Add(mBase, _consts[315])) = v186 + v183
+	v186 = *(*int32)(unsafe.Add(mBase, _c_F_trySendWriteToIOThreads[4]))
+	*(*int32)(unsafe.Add(mBase, _c_F_trySendWriteToIOThreads[4])) = v186 + v183
 	goto L66
 L68:
 	;
@@ -1619,16 +1619,16 @@ L79:
 L80:
 	;
 	v245 = int32(0)
-	v248 = *(*int32)(unsafe.Add(mBase, _consts[220]))
-	*(*int32)(unsafe.Add(mBase, _consts[220])) = v248 + int32(1)
-	v252 = int32(_a69)
-	v254 = *(*int64)(unsafe.Add(mBase, _consts[316]))
-	*(*int64)(unsafe.Add(mBase, _consts[316])) = v254 + int64(1)
+	v248 = *(*int32)(unsafe.Add(mBase, _c_F_trySendWriteToIOThreads[5]))
+	*(*int32)(unsafe.Add(mBase, _c_F_trySendWriteToIOThreads[5])) = v248 + int32(1)
+	v252 = int32(_a_F_trySendWriteToIOThreads_1)
+	v254 = *(*int64)(unsafe.Add(mBase, _c_F_trySendWriteToIOThreads[6]))
+	*(*int64)(unsafe.Add(mBase, _c_F_trySendWriteToIOThreads[6])) = v254 + int64(1)
 	v258 = v245
 	goto L6
 L81:
 	;
-	v236 = *(*int32)(unsafe.Add(mBase, _consts[317]))
+	v236 = *(*int32)(unsafe.Add(mBase, _c_F_trySendWriteToIOThreads[7]))
 	F_listUnlinkNode(m, v236, l0+int32(168))
 	mBase = m.M
 	v240 = m.ExcPending
@@ -1812,7 +1812,7 @@ func F_writeToReplica(m *base.Module, l0 int32) {
 	}
 L1:
 	;
-	F__serverAssert(m, int32(_a804), int32(_a774), int32(2495))
+	F__serverAssert(m, int32(_a_F_writeToReplica_0), int32(_a_F_writeToReplica_1), int32(2495))
 	mBase = m.M
 	v239 = m.ExcPending
 	if v239 != 0 {
@@ -1822,7 +1822,7 @@ L1:
 	}
 L2:
 	;
-	F__serverAssert(m, int32(_a805), int32(_a774), int32(2487))
+	F__serverAssert(m, int32(_a_F_writeToReplica_2), int32(_a_F_writeToReplica_1), int32(2487))
 	mBase = m.M
 	v233 = m.ExcPending
 	if v233 != 0 {
@@ -1842,7 +1842,7 @@ L3:
 L4:
 	;
 	v23 = int32(0)
-	v24 = *(*int32)(unsafe.Add(mBase, _consts[299]))
+	v24 = *(*int32)(unsafe.Add(mBase, _c_F_writeToReplica[0]))
 	goto L8
 L5:
 	;
@@ -1875,7 +1875,7 @@ L8:
 	}
 L9:
 	;
-	v30 = *(*int32)(unsafe.Add(mBase, _consts[314]))
+	v30 = *(*int32)(unsafe.Add(mBase, _c_F_writeToReplica[1]))
 	v31 = *(*int32)(unsafe.Add(mBase, uint32(v30)+4))
 	if v31 == int32(0) {
 		goto L5

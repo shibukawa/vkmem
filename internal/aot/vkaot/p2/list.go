@@ -69,7 +69,7 @@ func F_addListListpackRangeReply(m *base.Module, l0 int32, l1 int32, l2 int32, l
 	}
 L1:
 	;
-	F__serverAssert(m, int32(_a890), int32(_a1674), int32(690))
+	F__serverAssert(m, int32(_a_F_addListListpackRangeReply_0), int32(_a_F_addListListpackRangeReply_1), int32(690))
 	mBase = m.M
 	v68 = m.ExcPending
 	if v68 != 0 {
@@ -441,7 +441,7 @@ func F_listTypeReplaceAtIndex(m *base.Module, l0 int32, l1 int32, l2 int32) int3
 				}
 			}
 		default:
-			F__serverPanic_1(m, int32(_a1674), int32(384), int32(_a1675), int32(0))
+			F__serverPanic_1(m, int32(_a_F_listTypeReplaceAtIndex_0), int32(384), int32(_a_F_listTypeReplaceAtIndex_1), int32(0))
 			mBase = m.M
 			v63 = m.ExcPending
 			if v63 != 0 {

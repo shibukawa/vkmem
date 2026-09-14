@@ -50,7 +50,7 @@ func F_functionDeleteCommand(m *base.Module, l0 int32) {
 	_ = v36
 	var v38 int32
 	_ = v38
-	v4 = *(*int32)(unsafe.Add(mBase, _consts[18]))
+	v4 = *(*int32)(unsafe.Add(mBase, _c_F_functionDeleteCommand[0]))
 	v5 = *(*int32)(unsafe.Add(mBase, uint32(v4)))
 	v6 = *(*int32)(unsafe.Add(mBase, uint32(l0)+20))
 	v7 = *(*int32)(unsafe.Add(mBase, uint32(v6)+8))
@@ -63,7 +63,7 @@ func F_functionDeleteCommand(m *base.Module, l0 int32) {
 		return
 	} else {
 		if v9 != 0 {
-			v15 = *(*int32)(unsafe.Add(mBase, _consts[18]))
+			v15 = *(*int32)(unsafe.Add(mBase, _c_F_functionDeleteCommand[0]))
 			F_libraryUnlink(m, v15, v9)
 			mBase = m.M
 			v17 = m.ExcPending
@@ -97,10 +97,10 @@ func F_functionDeleteCommand(m *base.Module, l0 int32) {
 							if v28 != 0 {
 								return
 							} else {
-								v29 = int32(_a69)
-								v31 = *(*int64)(unsafe.Add(mBase, _consts[60]))
-								*(*int64)(unsafe.Add(mBase, _consts[60])) = v31 + int64(1)
-								v36 = *(*int32)(unsafe.Add(mBase, _consts[77]))
+								v29 = int32(_a_F_functionDeleteCommand_0)
+								v31 = *(*int64)(unsafe.Add(mBase, _c_F_functionDeleteCommand[1]))
+								*(*int64)(unsafe.Add(mBase, _c_F_functionDeleteCommand[1])) = v31 + int64(1)
+								v36 = *(*int32)(unsafe.Add(mBase, _c_F_functionDeleteCommand[2]))
 								F_addReply(m, l0, v36)
 								mBase = m.M
 								v38 = m.ExcPending
@@ -115,7 +115,7 @@ func F_functionDeleteCommand(m *base.Module, l0 int32) {
 				}
 			}
 		} else {
-			F_addReplyError(m, l0, int32(_a580))
+			F_addReplyError(m, l0, int32(_a_F_functionDeleteCommand_1))
 			mBase = m.M
 			v13 = m.ExcPending
 			if v13 != 0 {
@@ -357,7 +357,7 @@ func F_functionLoadCommand(m *base.Module, l0 int32) {
 	}
 L1:
 	;
-	F__serverAssert(m, int32(_a583), int32(_a582), int32(1140))
+	F__serverAssert(m, int32(_a_F_functionLoadCommand_0), int32(_a_F_functionLoadCommand_1), int32(1140))
 	mBase = m.M
 	v146 = m.ExcPending
 	if v146 != 0 {
@@ -391,7 +391,7 @@ L6:
 	v73 = F_objectGetVal(m, v25)
 	mBase = m.M
 	*(*int32)(unsafe.Add(mBase, uint32(v8))) = v73
-	F_addReplyErrorFormat(m, l0, int32(_a584), v8)
+	F_addReplyErrorFormat(m, l0, int32(_a_F_functionLoadCommand_2), v8)
 	mBase = m.M
 	v77 = m.ExcPending
 	if v77 != 0 {
@@ -405,7 +405,7 @@ L7:
 	v25 = *(*int32)(unsafe.Add(mBase, uint32(v21+v20<<(uint(int32(2))%32))))
 	v26 = F_objectGetVal(m, v25)
 	mBase = m.M
-	v27 = int32(_a138)
+	v27 = int32(_a_F_functionLoadCommand_3)
 	v30 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v26))))
 	if v30 != 0 {
 		goto L11
@@ -536,7 +536,7 @@ L25:
 	}
 L26:
 	;
-	F_addReplyError(m, l0, int32(_a585))
+	F_addReplyError(m, l0, int32(_a_F_functionLoadCommand_4))
 	mBase = m.M
 	v86 = m.ExcPending
 	if v86 != 0 {
@@ -552,7 +552,7 @@ L28:
 	v111 = F_objectGetVal(m, v91)
 	mBase = m.M
 	v114 = int32(0)
-	v115 = *(*int32)(unsafe.Add(mBase, _consts[18]))
+	v115 = *(*int32)(unsafe.Add(mBase, _c_F_functionLoadCommand[0]))
 	if v110 != 0 {
 		goto L36
 	} else {
@@ -596,9 +596,9 @@ L34:
 	goto L28
 L35:
 	;
-	v126 = int32(_a69)
-	v128 = *(*int64)(unsafe.Add(mBase, _consts[60]))
-	*(*int64)(unsafe.Add(mBase, _consts[60])) = v128 + int64(1)
+	v126 = int32(_a_F_functionLoadCommand_5)
+	v128 = *(*int64)(unsafe.Add(mBase, _c_F_functionLoadCommand[1]))
+	*(*int64)(unsafe.Add(mBase, _c_F_functionLoadCommand[1])) = v128 + int64(1)
 	F_addReplyBulkSds(m, l0, v119)
 	mBase = m.M
 	v133 = m.ExcPending

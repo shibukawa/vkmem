@@ -94,7 +94,7 @@ func F_doubleCallback(m *base.Module, l0 int32, l1 float64) {
 				return
 			} else {
 				v44 = m.G3
-				F_lua_pushstring(m, v31, v44+int32(_a2237))
+				F_lua_pushstring(m, v31, v44+int32(_a_F_doubleCallback_0))
 				mBase = m.M
 				v48 = m.ExcPending
 				if v48 != 0 {
@@ -295,7 +295,7 @@ func F_getDoubleFromObject(m *base.Module, l0 int32, l1 int32) int32 {
 	if l0 != 0 {
 		v14 = *(*int32)(unsafe.Add(mBase, uint32(l0)))
 		if v14&int32(15) != 0 {
-			F__serverAssertWithInfo(m, int32(0), l0, int32(_a479), int32(_a838), int32(1032))
+			F__serverAssertWithInfo(m, int32(0), l0, int32(_a_F_getDoubleFromObject_0), int32(_a_F_getDoubleFromObject_1), int32(1032))
 			mBase = m.M
 			v330 = m.ExcPending
 			if v330 != 0 {
@@ -348,7 +348,7 @@ func F_getDoubleFromObject(m *base.Module, l0 int32, l1 int32) int32 {
 						}
 						v63 = v37 + int32(1) + v58 + int32(1)
 					}
-					v77 = *(*int32)(unsafe.Add(mBase, _consts[249]))
+					v77 = *(*int32)(unsafe.Add(mBase, _c_F_getDoubleFromObject[0]))
 					v80 = *(*int32)(unsafe.Add(mBase, uint32(l0)+4))
 					v82 = v80
 					v84 = v63 + v77
@@ -389,7 +389,7 @@ func F_getDoubleFromObject(m *base.Module, l0 int32, l1 int32) int32 {
 						}
 						v126 = v101 + int32(1) + v122 + int32(1)
 					}
-					v141 = *(*int32)(unsafe.Add(mBase, _consts[249]))
+					v141 = *(*int32)(unsafe.Add(mBase, _c_F_getDoubleFromObject[0]))
 					v147 = v126 + v141
 				}
 				v149 = int32(-1)
@@ -547,7 +547,7 @@ func F_getDoubleFromObject(m *base.Module, l0 int32, l1 int32) int32 {
 						}
 						v277 = v252 + int32(1) + v273 + int32(1)
 					}
-					v292 = *(*int32)(unsafe.Add(mBase, _consts[249]))
+					v292 = *(*int32)(unsafe.Add(mBase, _c_F_getDoubleFromObject[0]))
 					v308 = base.F64_convert_i32_s(v277 + v292)
 				}
 				*(*float64)(unsafe.Add(mBase, uint32(l1))) = v308
@@ -555,7 +555,7 @@ func F_getDoubleFromObject(m *base.Module, l0 int32, l1 int32) int32 {
 				m.G0 = v11 + int32(16)
 				return v315
 			default:
-				F__serverPanic_1(m, int32(_a838), int32(1038), int32(_a848), int32(0))
+				F__serverPanic_1(m, int32(_a_F_getDoubleFromObject_1), int32(1038), int32(_a_F_getDoubleFromObject_2), int32(0))
 				mBase = m.M
 				v303 = m.ExcPending
 				if v303 != 0 {

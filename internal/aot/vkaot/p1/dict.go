@@ -116,7 +116,7 @@ func F_dictAddRaw(m *base.Module, l0 int32, l1 int32, l2 int32) int32 {
 				v22 = base.B2i32(v20 != int32(-1))
 				v26 = *(*int32)(unsafe.Add(mBase, uint32(l0+v22<<(uint(int32(2))%32))+4))
 				if base.Ui32(v7) < base.Ui32(v26) {
-					F__serverAssert(m, int32(_a596), int32(_a597), int32(450))
+					F__serverAssert(m, int32(_a_F_dictAddRaw_0), int32(_a_F_dictAddRaw_1), int32(450))
 					mBase = m.M
 					v62 = m.ExcPending
 					if v62 != 0 {
@@ -137,7 +137,7 @@ func F_dictAddRaw(m *base.Module, l0 int32, l1 int32, l2 int32) int32 {
 						v37 = v29<<(uint(v31)%32) ^ v29
 					}
 					if base.Ui32(v26+v37<<(uint(int32(2))%32)) < base.Ui32(v7) {
-						F__serverAssert(m, int32(_a596), int32(_a597), int32(450))
+						F__serverAssert(m, int32(_a_F_dictAddRaw_0), int32(_a_F_dictAddRaw_1), int32(450))
 						mBase = m.M
 						v62 = m.ExcPending
 						if v62 != 0 {
@@ -179,7 +179,7 @@ func F_dictAddRaw(m *base.Module, l0 int32, l1 int32, l2 int32) int32 {
 					v22 = base.B2i32(v20 != int32(-1))
 					v26 = *(*int32)(unsafe.Add(mBase, uint32(l0+v22<<(uint(int32(2))%32))+4))
 					if base.Ui32(v7) < base.Ui32(v26) {
-						F__serverAssert(m, int32(_a596), int32(_a597), int32(450))
+						F__serverAssert(m, int32(_a_F_dictAddRaw_0), int32(_a_F_dictAddRaw_1), int32(450))
 						mBase = m.M
 						v62 = m.ExcPending
 						if v62 != 0 {
@@ -200,7 +200,7 @@ func F_dictAddRaw(m *base.Module, l0 int32, l1 int32, l2 int32) int32 {
 							v37 = v29<<(uint(v31)%32) ^ v29
 						}
 						if base.Ui32(v26+v37<<(uint(int32(2))%32)) < base.Ui32(v7) {
-							F__serverAssert(m, int32(_a596), int32(_a597), int32(450))
+							F__serverAssert(m, int32(_a_F_dictAddRaw_0), int32(_a_F_dictAddRaw_1), int32(450))
 							mBase = m.M
 							v62 = m.ExcPending
 							if v62 != 0 {
@@ -343,7 +343,7 @@ L1:
 	return
 L2:
 	;
-	v10 = *(*int32)(unsafe.Add(mBase, _consts[302]))
+	v10 = *(*int32)(unsafe.Add(mBase, _c_F_dictBucketRehash[0]))
 	if v10 == int32(2) {
 		goto L1
 	} else {
@@ -794,33 +794,33 @@ func F_dictEncObjHash(m *base.Module, l0 int32) int64 {
 		v21 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v18+int32(-1)))))
 		switch v21 & int32(7) {
 		case 0:
-			v27 = F_siphash(m, v16, int32(base.Ui32(v21)>>(uint(int32(3))%32)), int32(_a245))
+			v27 = F_siphash(m, v16, int32(base.Ui32(v21)>>(uint(int32(3))%32)), int32(_a_F_dictEncObjHash_0))
 			mBase = m.M
 			v108 = v27
 		case 1:
 			v30 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v18+int32(-3)))))
-			v32 = F_siphash(m, v16, v30, int32(_a245))
+			v32 = F_siphash(m, v16, v30, int32(_a_F_dictEncObjHash_0))
 			mBase = m.M
 			v108 = v32
 		case 2:
 			v35 = int32(*(*uint16)(unsafe.Add(mBase, uint32(v18+int32(-5)))))
-			v37 = F_siphash(m, v16, v35, int32(_a245))
+			v37 = F_siphash(m, v16, v35, int32(_a_F_dictEncObjHash_0))
 			mBase = m.M
 			v108 = v37
 		case 3:
 			v40 = *(*int32)(unsafe.Add(mBase, uint32(v18+int32(-9))))
-			v42 = F_siphash(m, v16, v40, int32(_a245))
+			v42 = F_siphash(m, v16, v40, int32(_a_F_dictEncObjHash_0))
 			mBase = m.M
 			v108 = v42
 		case 4:
 			v45 = *(*int32)(unsafe.Add(mBase, uint32(v18+int32(-17))))
 			v46 = v45
-			v48 = F_siphash(m, v16, v46, int32(_a245))
+			v48 = F_siphash(m, v16, v46, int32(_a_F_dictEncObjHash_0))
 			mBase = m.M
 			v108 = v48
 		default:
 			v46 = int32(0)
-			v48 = F_siphash(m, v16, v46, int32(_a245))
+			v48 = F_siphash(m, v16, v46, int32(_a_F_dictEncObjHash_0))
 			mBase = m.M
 			v108 = v48
 		}
@@ -851,13 +851,13 @@ func F_dictEncObjHash(m *base.Module, l0 int32) int64 {
 		} else {
 			v101 = v82 + v81
 		}
-		v103 = F_siphash(m, v9, v101, int32(_a245))
+		v103 = F_siphash(m, v9, v101, int32(_a_F_dictEncObjHash_0))
 		mBase = m.M
 		v108 = v103
 		m.G0 = v9 + int32(32)
 		return v108
 	default:
-		F__serverPanic_1(m, int32(_a2157), int32(505), int32(_a2158), int32(0))
+		F__serverPanic_1(m, int32(_a_F_dictEncObjHash_1), int32(505), int32(_a_F_dictEncObjHash_2), int32(0))
 		mBase = m.M
 		v56 = m.ExcPending
 		if v56 != 0 {
@@ -1783,8 +1783,8 @@ L1:
 	v119 = int32(0)
 	F___lock(m, int32(9116960))
 	mBase = m.M
-	v126 = *(*int32)(unsafe.Add(mBase, _consts[303]))
-	v128 = *(*int32)(unsafe.Add(mBase, _consts[304]))
+	v126 = *(*int32)(unsafe.Add(mBase, _c_F_dictGetSomeKeys[0]))
+	v128 = *(*int32)(unsafe.Add(mBase, _c_F_dictGetSomeKeys[1]))
 	if v128 != 0 {
 		goto L31
 	} else {
@@ -1960,11 +1960,11 @@ L30:
 L31:
 	;
 	v132 = int32(0)
-	v133 = *(*int32)(unsafe.Add(mBase, _consts[305]))
+	v133 = *(*int32)(unsafe.Add(mBase, _c_F_dictGetSomeKeys[2]))
 	v134 = int32(2)
 	v136 = v126 + v133<<(uint(v134)%32)
 	v137 = *(*int32)(unsafe.Add(mBase, uint32(v136)))
-	v139 = *(*int32)(unsafe.Add(mBase, _consts[306]))
+	v139 = *(*int32)(unsafe.Add(mBase, _c_F_dictGetSomeKeys[3]))
 	v143 = *(*int32)(unsafe.Add(mBase, uint32(v126+v139<<(uint(v134)%32))))
 	v144 = v137 + v143
 	*(*int32)(unsafe.Add(mBase, uint32(v136))) = v144
@@ -1992,7 +1992,7 @@ L34:
 	goto L35
 L35:
 	;
-	*(*int32)(unsafe.Add(mBase, _consts[306])) = v151
+	*(*int32)(unsafe.Add(mBase, _c_F_dictGetSomeKeys[3])) = v151
 	v153 = int32(0)
 	v156 = v133 + int32(1)
 	if v156 == v128 {
@@ -2010,7 +2010,7 @@ L37:
 	goto L38
 L38:
 	;
-	*(*int32)(unsafe.Add(mBase, _consts[305])) = v158
+	*(*int32)(unsafe.Add(mBase, _c_F_dictGetSomeKeys[2])) = v158
 	v163 = int32(base.Ui32(v144) >> (uint(int32(1)) % 32))
 	goto L30
 L39:
@@ -2193,8 +2193,8 @@ L64:
 	v251 = int32(0)
 	F___lock(m, int32(9116960))
 	mBase = m.M
-	v258 = *(*int32)(unsafe.Add(mBase, _consts[303]))
-	v260 = *(*int32)(unsafe.Add(mBase, _consts[304]))
+	v258 = *(*int32)(unsafe.Add(mBase, _c_F_dictGetSomeKeys[0]))
+	v260 = *(*int32)(unsafe.Add(mBase, _c_F_dictGetSomeKeys[1]))
 	if v260 != 0 {
 		goto L68
 	} else {
@@ -2220,11 +2220,11 @@ L67:
 L68:
 	;
 	v264 = int32(0)
-	v265 = *(*int32)(unsafe.Add(mBase, _consts[305]))
+	v265 = *(*int32)(unsafe.Add(mBase, _c_F_dictGetSomeKeys[2]))
 	v266 = int32(2)
 	v268 = v258 + v265<<(uint(v266)%32)
 	v269 = *(*int32)(unsafe.Add(mBase, uint32(v268)))
-	v271 = *(*int32)(unsafe.Add(mBase, _consts[306]))
+	v271 = *(*int32)(unsafe.Add(mBase, _c_F_dictGetSomeKeys[3]))
 	v275 = *(*int32)(unsafe.Add(mBase, uint32(v258+v271<<(uint(v266)%32))))
 	v276 = v269 + v275
 	*(*int32)(unsafe.Add(mBase, uint32(v268))) = v276
@@ -2252,7 +2252,7 @@ L71:
 	goto L72
 L72:
 	;
-	*(*int32)(unsafe.Add(mBase, _consts[306])) = v283
+	*(*int32)(unsafe.Add(mBase, _c_F_dictGetSomeKeys[3])) = v283
 	v285 = int32(0)
 	v288 = v265 + int32(1)
 	if v288 == v260 {
@@ -2270,7 +2270,7 @@ L74:
 	goto L75
 L75:
 	;
-	*(*int32)(unsafe.Add(mBase, _consts[305])) = v290
+	*(*int32)(unsafe.Add(mBase, _c_F_dictGetSomeKeys[2])) = v290
 	v295 = int32(base.Ui32(v276) >> (uint(int32(1)) % 32))
 	goto L67
 L76:
@@ -2303,8 +2303,8 @@ L79:
 	v325 = int32(0)
 	F___lock(m, int32(9116960))
 	mBase = m.M
-	v332 = *(*int32)(unsafe.Add(mBase, _consts[303]))
-	v334 = *(*int32)(unsafe.Add(mBase, _consts[304]))
+	v332 = *(*int32)(unsafe.Add(mBase, _c_F_dictGetSomeKeys[0]))
+	v334 = *(*int32)(unsafe.Add(mBase, _c_F_dictGetSomeKeys[1]))
 	if v334 != 0 {
 		goto L83
 	} else {
@@ -2333,11 +2333,11 @@ L82:
 L83:
 	;
 	v338 = int32(0)
-	v339 = *(*int32)(unsafe.Add(mBase, _consts[305]))
+	v339 = *(*int32)(unsafe.Add(mBase, _c_F_dictGetSomeKeys[2]))
 	v340 = int32(2)
 	v342 = v332 + v339<<(uint(v340)%32)
 	v343 = *(*int32)(unsafe.Add(mBase, uint32(v342)))
-	v345 = *(*int32)(unsafe.Add(mBase, _consts[306]))
+	v345 = *(*int32)(unsafe.Add(mBase, _c_F_dictGetSomeKeys[3]))
 	v349 = *(*int32)(unsafe.Add(mBase, uint32(v332+v345<<(uint(v340)%32))))
 	v350 = v343 + v349
 	*(*int32)(unsafe.Add(mBase, uint32(v342))) = v350
@@ -2365,7 +2365,7 @@ L86:
 	goto L87
 L87:
 	;
-	*(*int32)(unsafe.Add(mBase, _consts[306])) = v357
+	*(*int32)(unsafe.Add(mBase, _c_F_dictGetSomeKeys[3])) = v357
 	v359 = int32(0)
 	v362 = v339 + int32(1)
 	if v362 == v334 {
@@ -2383,7 +2383,7 @@ L89:
 	goto L90
 L90:
 	;
-	*(*int32)(unsafe.Add(mBase, _consts[305])) = v364
+	*(*int32)(unsafe.Add(mBase, _c_F_dictGetSomeKeys[2])) = v364
 	v369 = int32(base.Ui32(v350) >> (uint(int32(1)) % 32))
 	goto L82
 L91:
@@ -2865,33 +2865,33 @@ func F_dictObjHash(m *base.Module, l0 int32) int64 {
 	v10 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v7+int32(-1)))))
 	switch v10 & int32(7) {
 	case 0:
-		v16 = F_siphash(m, v5, int32(base.Ui32(v10)>>(uint(int32(3))%32)), int32(_a245))
+		v16 = F_siphash(m, v5, int32(base.Ui32(v10)>>(uint(int32(3))%32)), int32(_a_F_dictObjHash_0))
 		mBase = m.M
 		return v16
 	case 1:
 		v20 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v7+int32(-3)))))
-		v22 = F_siphash(m, v5, v20, int32(_a245))
+		v22 = F_siphash(m, v5, v20, int32(_a_F_dictObjHash_0))
 		mBase = m.M
 		return v22
 	case 2:
 		v26 = int32(*(*uint16)(unsafe.Add(mBase, uint32(v7+int32(-5)))))
-		v28 = F_siphash(m, v5, v26, int32(_a245))
+		v28 = F_siphash(m, v5, v26, int32(_a_F_dictObjHash_0))
 		mBase = m.M
 		return v28
 	case 3:
 		v32 = *(*int32)(unsafe.Add(mBase, uint32(v7+int32(-9))))
-		v34 = F_siphash(m, v5, v32, int32(_a245))
+		v34 = F_siphash(m, v5, v32, int32(_a_F_dictObjHash_0))
 		mBase = m.M
 		return v34
 	case 4:
 		v38 = *(*int32)(unsafe.Add(mBase, uint32(v7+int32(-17))))
 		v39 = v38
-		v41 = F_siphash(m, v5, v39, int32(_a245))
+		v41 = F_siphash(m, v5, v39, int32(_a_F_dictObjHash_0))
 		mBase = m.M
 		return v41
 	default:
 		v39 = int32(0)
-		v41 = F_siphash(m, v5, v39, int32(_a245))
+		v41 = F_siphash(m, v5, v39, int32(_a_F_dictObjHash_0))
 		mBase = m.M
 		return v41
 	}
@@ -2909,7 +2909,7 @@ func F_dictPtrHash(m *base.Module, l0 int32) int64 {
 	v6 = v4 - int32(16)
 	m.G0 = v6
 	*(*int32)(unsafe.Add(mBase, uint32(v6)+12)) = l0
-	v13 = F_siphash(m, v6+int32(12), int32(4), int32(_a245))
+	v13 = F_siphash(m, v6+int32(12), int32(4), int32(_a_F_dictPtrHash_0))
 	mBase = m.M
 	m.G0 = v6 + int32(16)
 	return v13
@@ -3118,7 +3118,7 @@ func F_dictResetIterator(m *base.Module, l0 int32) {
 			if v25 == (int64(base.Ui64(v152)>>(uint(int64(28))%64))^v152)*int64(2147483649) {
 				return
 			} else {
-				F__serverAssert(m, int32(_a598), int32(_a597), int32(833))
+				F__serverAssert(m, int32(_a_F_dictResetIterator_0), int32(_a_F_dictResetIterator_1), int32(833))
 				mBase = m.M
 				v163 = m.ExcPending
 				if v163 != 0 {
@@ -3140,7 +3140,7 @@ func F_dictResetIterator(m *base.Module, l0 int32) {
 			if v13 < base.I32_extend16_s(v14) {
 				return
 			} else {
-				F__serverAssert(m, int32(_a599), int32(_a597), int32(831))
+				F__serverAssert(m, int32(_a_F_dictResetIterator_2), int32(_a_F_dictResetIterator_1), int32(831))
 				mBase = m.M
 				v23 = m.ExcPending
 				if v23 != 0 {
@@ -3201,7 +3201,7 @@ func F_dictResetIterator(m *base.Module, l0 int32) {
 				if v25 == (int64(base.Ui64(v152)>>(uint(int64(28))%64))^v152)*int64(2147483649) {
 					return
 				} else {
-					F__serverAssert(m, int32(_a598), int32(_a597), int32(833))
+					F__serverAssert(m, int32(_a_F_dictResetIterator_0), int32(_a_F_dictResetIterator_1), int32(833))
 					mBase = m.M
 					v163 = m.ExcPending
 					if v163 != 0 {
@@ -3223,7 +3223,7 @@ func F_dictResetIterator(m *base.Module, l0 int32) {
 				if v13 < base.I32_extend16_s(v14) {
 					return
 				} else {
-					F__serverAssert(m, int32(_a599), int32(_a597), int32(831))
+					F__serverAssert(m, int32(_a_F_dictResetIterator_2), int32(_a_F_dictResetIterator_1), int32(831))
 					mBase = m.M
 					v23 = m.ExcPending
 					if v23 != 0 {
@@ -3357,7 +3357,7 @@ func F_dictShrinkIfNeeded(m *base.Module, l0 int32) int32 {
 			v75 = v2
 			return v75
 		} else {
-			v19 = *(*int32)(unsafe.Add(mBase, _consts[302]))
+			v19 = *(*int32)(unsafe.Add(mBase, _c_F_dictShrinkIfNeeded[0]))
 			switch v19 {
 			case 0:
 				v23 = *(*int32)(unsafe.Add(mBase, uint32(l0)+12))
@@ -3569,7 +3569,7 @@ func F_dictStrCaseHash_3(m *base.Module, l0 int32) int64 {
 	}
 L1:
 	;
-	v58 = F_siphash_nocase(m, l0, v56, int32(_a245))
+	v58 = F_siphash_nocase(m, l0, v56, int32(_a_F_dictStrCaseHash_3_0))
 	mBase = m.M
 	goto L17
 L2:

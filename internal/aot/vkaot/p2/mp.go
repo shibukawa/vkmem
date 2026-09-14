@@ -47,7 +47,7 @@ L1:
 L2:
 	;
 	v10 = m.G3
-	F_luaL_checkstack(m, l0, int32(1), v10+int32(_a2148))
+	F_luaL_checkstack(m, l0, int32(1), v10+int32(_a_F_mp_decode_to_lua_array_0))
 	mBase = m.M
 	v14 = m.ExcPending
 	if v14 != 0 {
@@ -687,7 +687,7 @@ L2:
 L3:
 	;
 	v13 = m.G3
-	F_luaL_checkstack(m, l0, int32(1), v13+int32(_a2143))
+	F_luaL_checkstack(m, l0, int32(1), v13+int32(_a_F_mp_encode_lua_table_as_array_0))
 	mBase = m.M
 	v17 = m.ExcPending
 	if v17 != 0 {
@@ -810,7 +810,7 @@ func F_mp_encode_lua_table_as_map(m *base.Module, l0 int32, l1 int32, l2 int32) 
 	var v160 int32
 	_ = v160
 	v7 = m.G3
-	F_luaL_checkstack(m, l0, int32(3), v7+int32(_a2144))
+	F_luaL_checkstack(m, l0, int32(3), v7+int32(_a_F_mp_encode_lua_table_as_map_0))
 	mBase = m.M
 	v11 = m.ExcPending
 	if v11 != 0 {
@@ -1176,7 +1176,7 @@ L3:
 L4:
 	;
 	v18 = m.G3
-	v21 = F_luaL_argerror(m, l0, int32(0), v18+int32(_a2145))
+	v21 = F_luaL_argerror(m, l0, int32(0), v18+int32(_a_F_mp_pack_0))
 	mBase = m.M
 	v24 = m.ExcPending
 	if v24 != 0 {
@@ -1210,7 +1210,7 @@ L8:
 L9:
 	;
 	v28 = m.G3
-	v31 = F_luaL_argerror(m, l0, int32(0), v28+int32(_a2146))
+	v31 = F_luaL_argerror(m, l0, int32(0), v28+int32(_a_F_mp_pack_1))
 	mBase = m.M
 	v32 = m.ExcPending
 	if v32 != 0 {
@@ -1275,7 +1275,7 @@ L17:
 L18:
 	;
 	v64 = m.G3
-	F_luaL_checkstack(m, l0, int32(1), v64+int32(_a2147))
+	F_luaL_checkstack(m, l0, int32(1), v64+int32(_a_F_mp_pack_2))
 	mBase = m.M
 	v68 = m.ExcPending
 	if v68 != 0 {

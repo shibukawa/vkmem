@@ -88,7 +88,7 @@ func F_intsetRandom(m *base.Module, l0 int32) int64 {
 	_ = v46
 	v4 = *(*int32)(unsafe.Add(mBase, uint32(l0)+4))
 	if v4 == int32(0) {
-		F__serverAssert(m, int32(_a659), int32(_a658), int32(263))
+		F__serverAssert(m, int32(_a_F_intsetRandom_0), int32(_a_F_intsetRandom_1), int32(263))
 		mBase = m.M
 		v46 = m.ExcPending
 		if v46 != 0 {
@@ -103,9 +103,9 @@ func F_intsetRandom(m *base.Module, l0 int32) int64 {
 	} else {
 		v8 = l0 + int32(8)
 		v10 = int32(0)
-		v12 = *(*int64)(unsafe.Add(mBase, _consts[298]))
+		v12 = *(*int64)(unsafe.Add(mBase, _c_F_intsetRandom[0]))
 		v16 = v12*int64(6364136223846793005) + int64(1)
-		*(*int64)(unsafe.Add(mBase, _consts[298])) = v16
+		*(*int64)(unsafe.Add(mBase, _c_F_intsetRandom[0])) = v16
 		v21 = base.I32_rem_u_s(base.I32_wrap_i64(int64(base.Ui64(v16)>>(uint(int64(33))%64))), v4)
 		v22 = int32(*(*uint8)(unsafe.Add(mBase, uint32(l0))))
 		switch v22 + int32(-4) {
@@ -350,7 +350,7 @@ L2:
 	goto L1
 L3:
 	;
-	F__serverAssert(m, int32(_a657), int32(_a658), int32(108))
+	F__serverAssert(m, int32(_a_F_intsetRemove_0), int32(_a_F_intsetRemove_1), int32(108))
 	mBase = m.M
 	v391 = m.ExcPending
 	if v391 != 0 {

@@ -451,15 +451,15 @@ func F_kvstoreGetFairRandomHashtableIndex(m *base.Module, l0 int32) int32 {
 				v26 = int32(0)
 				F___lock(m, int32(9116960))
 				mBase = m.M
-				v33 = *(*int32)(unsafe.Add(mBase, _consts[303]))
-				v35 = *(*int32)(unsafe.Add(mBase, _consts[304]))
+				v33 = *(*int32)(unsafe.Add(mBase, _c_F_kvstoreGetFairRandomHashtableIndex[0]))
+				v35 = *(*int32)(unsafe.Add(mBase, _c_F_kvstoreGetFairRandomHashtableIndex[1]))
 				if v35 != 0 {
 					v39 = int32(0)
-					v40 = *(*int32)(unsafe.Add(mBase, _consts[305]))
+					v40 = *(*int32)(unsafe.Add(mBase, _c_F_kvstoreGetFairRandomHashtableIndex[2]))
 					v41 = int32(2)
 					v43 = v33 + v40<<(uint(v41)%32)
 					v44 = *(*int32)(unsafe.Add(mBase, uint32(v43)))
-					v46 = *(*int32)(unsafe.Add(mBase, _consts[306]))
+					v46 = *(*int32)(unsafe.Add(mBase, _c_F_kvstoreGetFairRandomHashtableIndex[3]))
 					v50 = *(*int32)(unsafe.Add(mBase, uint32(v33+v46<<(uint(v41)%32))))
 					v51 = v44 + v50
 					*(*int32)(unsafe.Add(mBase, uint32(v43))) = v51
@@ -469,7 +469,7 @@ func F_kvstoreGetFairRandomHashtableIndex(m *base.Module, l0 int32) int32 {
 					} else {
 						v58 = v56
 					}
-					*(*int32)(unsafe.Add(mBase, _consts[306])) = v58
+					*(*int32)(unsafe.Add(mBase, _c_F_kvstoreGetFairRandomHashtableIndex[3])) = v58
 					v60 = int32(0)
 					v63 = v40 + int32(1)
 					if v63 == v35 {
@@ -477,7 +477,7 @@ func F_kvstoreGetFairRandomHashtableIndex(m *base.Module, l0 int32) int32 {
 					} else {
 						v65 = v63
 					}
-					*(*int32)(unsafe.Add(mBase, _consts[305])) = v65
+					*(*int32)(unsafe.Add(mBase, _c_F_kvstoreGetFairRandomHashtableIndex[2])) = v65
 					v70 = int32(base.Ui32(v51) >> (uint(int32(1)) % 32))
 				} else {
 					v36 = *(*int32)(unsafe.Add(mBase, uint32(v33)))
@@ -514,15 +514,15 @@ func F_kvstoreGetFairRandomHashtableIndex(m *base.Module, l0 int32) int32 {
 			v26 = int32(0)
 			F___lock(m, int32(9116960))
 			mBase = m.M
-			v33 = *(*int32)(unsafe.Add(mBase, _consts[303]))
-			v35 = *(*int32)(unsafe.Add(mBase, _consts[304]))
+			v33 = *(*int32)(unsafe.Add(mBase, _c_F_kvstoreGetFairRandomHashtableIndex[0]))
+			v35 = *(*int32)(unsafe.Add(mBase, _c_F_kvstoreGetFairRandomHashtableIndex[1]))
 			if v35 != 0 {
 				v39 = int32(0)
-				v40 = *(*int32)(unsafe.Add(mBase, _consts[305]))
+				v40 = *(*int32)(unsafe.Add(mBase, _c_F_kvstoreGetFairRandomHashtableIndex[2]))
 				v41 = int32(2)
 				v43 = v33 + v40<<(uint(v41)%32)
 				v44 = *(*int32)(unsafe.Add(mBase, uint32(v43)))
-				v46 = *(*int32)(unsafe.Add(mBase, _consts[306]))
+				v46 = *(*int32)(unsafe.Add(mBase, _c_F_kvstoreGetFairRandomHashtableIndex[3]))
 				v50 = *(*int32)(unsafe.Add(mBase, uint32(v33+v46<<(uint(v41)%32))))
 				v51 = v44 + v50
 				*(*int32)(unsafe.Add(mBase, uint32(v43))) = v51
@@ -532,7 +532,7 @@ func F_kvstoreGetFairRandomHashtableIndex(m *base.Module, l0 int32) int32 {
 				} else {
 					v58 = v56
 				}
-				*(*int32)(unsafe.Add(mBase, _consts[306])) = v58
+				*(*int32)(unsafe.Add(mBase, _c_F_kvstoreGetFairRandomHashtableIndex[3])) = v58
 				v60 = int32(0)
 				v63 = v40 + int32(1)
 				if v63 == v35 {
@@ -540,7 +540,7 @@ func F_kvstoreGetFairRandomHashtableIndex(m *base.Module, l0 int32) int32 {
 				} else {
 					v65 = v63
 				}
-				*(*int32)(unsafe.Add(mBase, _consts[305])) = v65
+				*(*int32)(unsafe.Add(mBase, _c_F_kvstoreGetFairRandomHashtableIndex[2])) = v65
 				v70 = int32(base.Ui32(v51) >> (uint(int32(1)) % 32))
 			} else {
 				v36 = *(*int32)(unsafe.Add(mBase, uint32(v33)))
@@ -584,7 +584,7 @@ func F_kvstoreGetFairRandomHashtableIndex(m *base.Module, l0 int32) int32 {
 				return v140
 			} else {
 				if base.Ui64(v102) < base.Ui64(base.I64_extend_i32_u(v93)) {
-					F__serverAssert(m, int32(_a679), int32(_a680), int32(576))
+					F__serverAssert(m, int32(_a_F_kvstoreGetFairRandomHashtableIndex_0), int32(_a_F_kvstoreGetFairRandomHashtableIndex_1), int32(576))
 					mBase = m.M
 					v149 = m.ExcPending
 					if v149 != 0 {
@@ -978,7 +978,7 @@ func F_kvstoreIteratorGetCurrentHashtableIndex(m *base.Module, l0 int32) int32 {
 	_ = v15
 	v3 = *(*int64)(unsafe.Add(mBase, uint32(l0)+8))
 	if v3 < int64(0) {
-		F__serverAssert(m, int32(_a681), int32(_a680), int32(699))
+		F__serverAssert(m, int32(_a_F_kvstoreIteratorGetCurrentHashtableIndex_0), int32(_a_F_kvstoreIteratorGetCurrentHashtableIndex_1), int32(699))
 		mBase = m.M
 		v15 = m.ExcPending
 		if v15 != 0 {
@@ -996,7 +996,7 @@ func F_kvstoreIteratorGetCurrentHashtableIndex(m *base.Module, l0 int32) int32 {
 		if v3 < v7 {
 			return base.I32_wrap_i64(v3)
 		} else {
-			F__serverAssert(m, int32(_a681), int32(_a680), int32(699))
+			F__serverAssert(m, int32(_a_F_kvstoreIteratorGetCurrentHashtableIndex_0), int32(_a_F_kvstoreIteratorGetCurrentHashtableIndex_1), int32(699))
 			mBase = m.M
 			v15 = m.ExcPending
 			if v15 != 0 {

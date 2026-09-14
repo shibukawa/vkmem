@@ -506,7 +506,7 @@ L9:
 L10:
 	;
 	v132 = m.G3
-	if v130 == v132+int32(_a2685) {
+	if v130 == v132+int32(_a_F_newkey_0) {
 		goto L18
 	} else {
 		goto L19
@@ -899,7 +899,7 @@ L59:
 L60:
 	;
 	v512 = m.G3
-	v516 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v512+int32(_a2665)+v510))))
+	v516 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v512+int32(_a_F_newkey_1)+v510))))
 	goto L59
 L61:
 	;
@@ -998,7 +998,7 @@ L74:
 L75:
 	;
 	v582 = m.G3
-	v586 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v582+int32(_a2665)+v580))))
+	v586 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v582+int32(_a_F_newkey_1)+v580))))
 	goto L74
 L76:
 	;
@@ -1152,7 +1152,7 @@ L98:
 	v688 = m.G3
 	switch v687 {
 	case 0:
-		v697 = v688 + int32(_a2686)
+		v697 = v688 + int32(_a_F_newkey_2)
 		goto L99
 	default:
 		goto L8
@@ -1180,7 +1180,7 @@ L100:
 	}
 L101:
 	;
-	v697 = v691 + int32(_a2687)
+	v697 = v691 + int32(_a_F_newkey_3)
 	goto L99
 L102:
 	;
@@ -1790,7 +1790,7 @@ L21:
 	*(*int32)(unsafe.Add(mBase, uint32(v11)+64)) = l1
 	v60 = int64(0) - v47
 	*(*int64)(unsafe.Add(mBase, uint32(v11)+72)) = v60
-	v65 = F_sdscatprintf(m, v56, int32(_a523), v11+int32(64))
+	v65 = F_sdscatprintf(m, v56, int32(_a_F_numericConfigRewrite_4), v11+int32(64))
 	mBase = m.M
 	v66 = m.ExcPending
 	if v66 != 0 {
@@ -1835,7 +1835,7 @@ L26:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v11)+80)) = l1
 	*(*int64)(unsafe.Add(mBase, uint32(v11)+88)) = v47
-	v84 = F_sdscatprintf(m, v77, int32(_a520), v11+int32(80))
+	v84 = F_sdscatprintf(m, v77, int32(_a_F_numericConfigRewrite_0), v11+int32(80))
 	mBase = m.M
 	v85 = m.ExcPending
 	if v85 != 0 {
@@ -1888,7 +1888,7 @@ L32:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v11)+48)) = l1
 	*(*int32)(unsafe.Add(mBase, uint32(v11)+52)) = v11 + int32(96)
-	v110 = F_sdscatprintf(m, v101, int32(_a518), v11+int32(48))
+	v110 = F_sdscatprintf(m, v101, int32(_a_F_numericConfigRewrite_3), v11+int32(48))
 	mBase = m.M
 	v111 = m.ExcPending
 	if v111 != 0 {
@@ -1936,7 +1936,7 @@ L37:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v11)+32)) = l1
 	*(*int64)(unsafe.Add(mBase, uint32(v11)+40)) = v89
-	v127 = F_sdscatprintf(m, v120, int32(_a522), v11+int32(32))
+	v127 = F_sdscatprintf(m, v120, int32(_a_F_numericConfigRewrite_2), v11+int32(32))
 	mBase = m.M
 	v128 = m.ExcPending
 	if v128 != 0 {
@@ -1968,7 +1968,7 @@ L41:
 	;
 	*(*int64)(unsafe.Add(mBase, uint32(v11)+8)) = v89
 	*(*int32)(unsafe.Add(mBase, uint32(v11))) = l1
-	v152 = F_sdscatprintf(m, v134, int32(_a520), v11)
+	v152 = F_sdscatprintf(m, v134, int32(_a_F_numericConfigRewrite_0), v11)
 	mBase = m.M
 	v153 = m.ExcPending
 	if v153 != 0 {
@@ -1980,7 +1980,7 @@ L42:
 	;
 	*(*int64)(unsafe.Add(mBase, uint32(v11)+24)) = v89
 	*(*int32)(unsafe.Add(mBase, uint32(v11)+16)) = l1
-	v145 = F_sdscatprintf(m, v134, int32(_a521), v11+int32(16))
+	v145 = F_sdscatprintf(m, v134, int32(_a_F_numericConfigRewrite_1), v11+int32(16))
 	mBase = m.M
 	v146 = m.ExcPending
 	if v146 != 0 {

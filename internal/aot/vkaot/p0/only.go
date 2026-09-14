@@ -465,7 +465,7 @@ func F_rewriteAppendOnlyFileRio(m *base.Module, l0 int32) int32 {
 	v14 = m.G0
 	v16 = v14 - int32(32)
 	m.G0 = v16
-	v19 = *(*int32)(unsafe.Add(mBase, _consts[17]))
+	v19 = *(*int32)(unsafe.Add(mBase, _c_F_rewriteAppendOnlyFileRio[0]))
 	if v19 == int32(0) {
 		goto L2
 	} else {
@@ -477,7 +477,7 @@ L1:
 	return v698
 L2:
 	;
-	v136 = *(*int32)(unsafe.Add(mBase, _consts[18]))
+	v136 = *(*int32)(unsafe.Add(mBase, _c_F_rewriteAppendOnlyFileRio[1]))
 	v137 = *(*int32)(unsafe.Add(mBase, uint32(v136)))
 	goto L36
 L3:
@@ -919,7 +919,7 @@ L67:
 L68:
 	;
 	v274 = int32(4)
-	v275 = int32(_a87)
+	v275 = int32(_a_F_rewriteAppendOnlyFileRio_0)
 	goto L69
 L69:
 	;
@@ -933,13 +933,13 @@ L70:
 	;
 	v304 = int32(24)
 	v307 = int32(0)
-	v308 = int32(*(*uint8)(unsafe.Add(mBase, _consts[19])))
+	v308 = int32(*(*uint8)(unsafe.Add(mBase, _c_F_rewriteAppendOnlyFileRio[2])))
 	*(*uint8)(unsafe.Add(mBase, uint32(v16+v304))) = uint8(v308)
-	v311 = *(*int64)(unsafe.Add(mBase, _consts[20]))
+	v311 = *(*int64)(unsafe.Add(mBase, _c_F_rewriteAppendOnlyFileRio[3]))
 	*(*int64)(unsafe.Add(mBase, uint32(v16+int32(16)))) = v311
-	v314 = *(*int64)(unsafe.Add(mBase, _consts[21]))
+	v314 = *(*int64)(unsafe.Add(mBase, _c_F_rewriteAppendOnlyFileRio[4]))
 	*(*int64)(unsafe.Add(mBase, uint32(v16)+8)) = v314
-	v317 = *(*int64)(unsafe.Add(mBase, _consts[22]))
+	v317 = *(*int64)(unsafe.Add(mBase, _c_F_rewriteAppendOnlyFileRio[5]))
 	*(*int64)(unsafe.Add(mBase, uint32(v16))) = v317
 	v319 = int32(*(*uint8)(unsafe.Add(mBase, uint32(l0)+32)))
 	if v319&int32(6) != 0 {
@@ -1385,7 +1385,7 @@ L134:
 	goto L66
 L135:
 	;
-	v505 = *(*int32)(unsafe.Add(mBase, _consts[10]))
+	v505 = *(*int32)(unsafe.Add(mBase, _c_F_rewriteAppendOnlyFileRio[6]))
 	if v505 < int32(1) {
 		goto L137
 	} else {
@@ -1429,7 +1429,7 @@ L140:
 L141:
 	;
 	v662 = v521 + int64(1)
-	v664 = int64(*(*int32)(unsafe.Add(mBase, _consts[10])))
+	v664 = int64(*(*int32)(unsafe.Add(mBase, _c_F_rewriteAppendOnlyFileRio[6])))
 	if v662 < v664 {
 		v514 = v650
 		v520 = v656
@@ -1454,7 +1454,7 @@ L143:
 	goto L142
 L144:
 	;
-	v531 = *(*int32)(unsafe.Add(mBase, _consts[10]))
+	v531 = *(*int32)(unsafe.Add(mBase, _c_F_rewriteAppendOnlyFileRio[6]))
 	if v531 <= v525 {
 		v546 = v527
 		goto L143
@@ -1464,7 +1464,7 @@ L144:
 L145:
 	;
 	v533 = int32(0)
-	v534 = *(*int32)(unsafe.Add(mBase, _consts[23]))
+	v534 = *(*int32)(unsafe.Add(mBase, _c_F_rewriteAppendOnlyFileRio[7]))
 	v538 = *(*int32)(unsafe.Add(mBase, uint32(v534+v525<<(uint(int32(2))%32))))
 	if v538 == v533 {
 		v546 = v527
@@ -1481,15 +1481,15 @@ L146:
 	goto L143
 L147:
 	;
-	v548 = *(*int32)(unsafe.Add(mBase, _consts[23]))
+	v548 = *(*int32)(unsafe.Add(mBase, _c_F_rewriteAppendOnlyFileRio[7]))
 	v552 = *(*int32)(unsafe.Add(mBase, uint32(v548+v525<<(uint(int32(2))%32))))
 	v553 = int32(16)
 	v556 = int32(0)
-	v557 = int32(*(*uint8)(unsafe.Add(mBase, _consts[24])))
+	v557 = int32(*(*uint8)(unsafe.Add(mBase, _c_F_rewriteAppendOnlyFileRio[8])))
 	*(*uint8)(unsafe.Add(mBase, uint32(v16+v553))) = uint8(v557)
-	v560 = *(*int64)(unsafe.Add(mBase, _consts[25]))
+	v560 = *(*int64)(unsafe.Add(mBase, _c_F_rewriteAppendOnlyFileRio[9]))
 	*(*int64)(unsafe.Add(mBase, uint32(v16)+8)) = v560
-	v563 = *(*int64)(unsafe.Add(mBase, _consts[26]))
+	v563 = *(*int64)(unsafe.Add(mBase, _c_F_rewriteAppendOnlyFileRio[10]))
 	*(*int64)(unsafe.Add(mBase, uint32(v16))) = v563
 	v565 = int32(*(*uint8)(unsafe.Add(mBase, uint32(l0)+32)))
 	if v565&int32(6) != 0 {
@@ -1687,7 +1687,7 @@ L173:
 	}
 L174:
 	;
-	F_sendChildInfo(m, int32(0), v628, int32(_a88))
+	F_sendChildInfo(m, int32(0), v628, int32(_a_F_rewriteAppendOnlyFileRio_1))
 	mBase = m.M
 	v639 = m.ExcPending
 	if v639 != 0 {
@@ -1799,7 +1799,7 @@ func F_startAppendOnly(m *base.Module) int32 {
 	_ = v117
 	var v121 int32
 	_ = v121
-	v4 = *(*int32)(unsafe.Add(mBase, _consts[27]))
+	v4 = *(*int32)(unsafe.Add(mBase, _c_F_startAppendOnly[0]))
 	if v4 != 0 {
 		goto L3
 	} else {
@@ -1810,10 +1810,10 @@ L1:
 	return v121
 L2:
 	;
-	v82 = int32(_a69)
-	v84 = *(*int64)(unsafe.Add(mBase, _consts[32]))
-	*(*int64)(unsafe.Add(mBase, _consts[33])) = v84
-	v87 = *(*int32)(unsafe.Add(mBase, _consts[43]))
+	v82 = int32(_a_F_startAppendOnly_2)
+	v84 = *(*int64)(unsafe.Add(mBase, _c_F_startAppendOnly[4]))
+	*(*int64)(unsafe.Add(mBase, _c_F_startAppendOnly[5])) = v84
+	v87 = *(*int32)(unsafe.Add(mBase, _c_F_startAppendOnly[6]))
 	if v87 != int32(-1) {
 		goto L27
 	} else {
@@ -1821,7 +1821,7 @@ L2:
 	}
 L3:
 	;
-	F__serverAssert(m, int32(_a96), int32(_a68), int32(964))
+	F__serverAssert(m, int32(_a_F_startAppendOnly_0), int32(_a_F_startAppendOnly_1), int32(964))
 	mBase = m.M
 	v79 = m.ExcPending
 	if v79 != 0 {
@@ -1831,12 +1831,12 @@ L3:
 	}
 L4:
 	;
-	*(*int32)(unsafe.Add(mBase, _consts[27])) = int32(2)
-	v9 = *(*int32)(unsafe.Add(mBase, _consts[39]))
+	*(*int32)(unsafe.Add(mBase, _c_F_startAppendOnly[0])) = int32(2)
+	v9 = *(*int32)(unsafe.Add(mBase, _c_F_startAppendOnly[1]))
 	goto L5
 L5:
 	;
-	v13 = *(*int32)(unsafe.Add(mBase, _consts[38]))
+	v13 = *(*int32)(unsafe.Add(mBase, _c_F_startAppendOnly[2]))
 	if base.B2i32(v9 != int32(-1)) == int32(0) {
 		goto L8
 	} else {
@@ -1861,7 +1861,7 @@ L7:
 	}
 L8:
 	;
-	v27 = *(*int32)(unsafe.Add(mBase, _consts[42]))
+	v27 = *(*int32)(unsafe.Add(mBase, _c_F_startAppendOnly[3]))
 	if v27 == int32(0) {
 		goto L6
 	} else {
@@ -1876,9 +1876,9 @@ L9:
 	}
 L10:
 	;
-	v18 = int32(_a69)
-	*(*int32)(unsafe.Add(mBase, _consts[45])) = int32(1)
-	v22 = *(*int32)(unsafe.Add(mBase, _consts[15]))
+	v18 = int32(_a_F_startAppendOnly_2)
+	*(*int32)(unsafe.Add(mBase, _c_F_startAppendOnly[9])) = int32(1)
+	v22 = *(*int32)(unsafe.Add(mBase, _c_F_startAppendOnly[8]))
 	if int32(2) < v22 {
 		goto L2
 	} else {
@@ -1886,13 +1886,13 @@ L10:
 	}
 L11:
 	;
-	v38 = int32(_a102)
+	v38 = int32(_a_F_startAppendOnly_8)
 	goto L7
 L12:
 	;
-	v30 = int32(_a69)
-	*(*int32)(unsafe.Add(mBase, _consts[45])) = int32(1)
-	v34 = *(*int32)(unsafe.Add(mBase, _consts[15]))
+	v30 = int32(_a_F_startAppendOnly_2)
+	*(*int32)(unsafe.Add(mBase, _c_F_startAppendOnly[9])) = int32(1)
+	v34 = *(*int32)(unsafe.Add(mBase, _c_F_startAppendOnly[8]))
 	if int32(2) < v34 {
 		goto L2
 	} else {
@@ -1900,7 +1900,7 @@ L12:
 	}
 L13:
 	;
-	v38 = int32(_a101)
+	v38 = int32(_a_F_startAppendOnly_7)
 	goto L7
 L14:
 	;
@@ -1921,7 +1921,7 @@ L16:
 	}
 L17:
 	;
-	v48 = *(*int32)(unsafe.Add(mBase, _consts[15]))
+	v48 = *(*int32)(unsafe.Add(mBase, _c_F_startAppendOnly[8]))
 	if int32(2) < v48 {
 		goto L18
 	} else {
@@ -1939,7 +1939,7 @@ L18:
 	}
 L19:
 	;
-	F__serverLog(m, int32(2), int32(_a100), int32(0))
+	F__serverLog(m, int32(2), int32(_a_F_startAppendOnly_6), int32(0))
 	mBase = m.M
 	v55 = m.ExcPending
 	if v55 != 0 {
@@ -1962,9 +1962,9 @@ L22:
 	}
 L23:
 	;
-	v63 = int32(_a69)
-	*(*int32)(unsafe.Add(mBase, _consts[27])) = int32(0)
-	v67 = *(*int32)(unsafe.Add(mBase, _consts[15]))
+	v63 = int32(_a_F_startAppendOnly_2)
+	*(*int32)(unsafe.Add(mBase, _c_F_startAppendOnly[0])) = int32(0)
+	v67 = *(*int32)(unsafe.Add(mBase, _c_F_startAppendOnly[8]))
 	if int32(3) < v67 {
 		v121 = v58
 		goto L1
@@ -1973,7 +1973,7 @@ L23:
 	}
 L24:
 	;
-	F__serverLog(m, int32(3), int32(_a99), int32(0))
+	F__serverLog(m, int32(3), int32(_a_F_startAppendOnly_5), int32(0))
 	mBase = m.M
 	v74 = m.ExcPending
 	if v74 != 0 {
@@ -1994,7 +1994,7 @@ L26:
 	}
 L27:
 	;
-	v104 = *(*int32)(unsafe.Add(mBase, _consts[44]))
+	v104 = *(*int32)(unsafe.Add(mBase, _c_F_startAppendOnly[7]))
 	if v104 != int32(-1) {
 		v121 = int32(0)
 		goto L1
@@ -2003,7 +2003,7 @@ L27:
 	}
 L28:
 	;
-	v91 = *(*int32)(unsafe.Add(mBase, _consts[15]))
+	v91 = *(*int32)(unsafe.Add(mBase, _c_F_startAppendOnly[8]))
 	if int32(3) < v91 {
 		goto L29
 	} else {
@@ -2011,11 +2011,11 @@ L28:
 	}
 L29:
 	;
-	*(*int32)(unsafe.Add(mBase, _consts[43])) = int32(0)
+	*(*int32)(unsafe.Add(mBase, _c_F_startAppendOnly[6])) = int32(0)
 	goto L27
 L30:
 	;
-	F__serverLog(m, int32(3), int32(_a98), int32(0))
+	F__serverLog(m, int32(3), int32(_a_F_startAppendOnly_4), int32(0))
 	mBase = m.M
 	v98 = m.ExcPending
 	if v98 != 0 {
@@ -2028,7 +2028,7 @@ L31:
 	goto L29
 L32:
 	;
-	v108 = *(*int32)(unsafe.Add(mBase, _consts[15]))
+	v108 = *(*int32)(unsafe.Add(mBase, _c_F_startAppendOnly[8]))
 	if int32(3) < v108 {
 		goto L33
 	} else {
@@ -2037,11 +2037,11 @@ L32:
 L33:
 	;
 	v117 = int32(0)
-	*(*int32)(unsafe.Add(mBase, _consts[44])) = v117
+	*(*int32)(unsafe.Add(mBase, _c_F_startAppendOnly[7])) = v117
 	return v117
 L34:
 	;
-	F__serverLog(m, int32(3), int32(_a97), int32(0))
+	F__serverLog(m, int32(3), int32(_a_F_startAppendOnly_3), int32(0))
 	mBase = m.M
 	v115 = m.ExcPending
 	if v115 != 0 {
@@ -2072,9 +2072,9 @@ func F_updateAppendOnly(m *base.Module, l0 int32) int32 {
 	_ = v21
 	var v27 int32
 	_ = v27
-	v5 = int32(_a69)
-	v6 = *(*int32)(unsafe.Add(mBase, _consts[27]))
-	v8 = *(*int32)(unsafe.Add(mBase, _consts[182]))
+	v5 = int32(_a_F_updateAppendOnly_0)
+	v6 = *(*int32)(unsafe.Add(mBase, _c_F_updateAppendOnly[0]))
+	v8 = *(*int32)(unsafe.Add(mBase, _c_F_updateAppendOnly[1]))
 	if v8 != 0 {
 		v17 = int32(1)
 		if v8 == int32(0) {
@@ -2094,7 +2094,7 @@ func F_updateAppendOnly(m *base.Module, l0 int32) int32 {
 					if v20 != int32(-1) {
 						v27 = v17
 					} else {
-						*(*int32)(unsafe.Add(mBase, uint32(l0))) = int32(_a424)
+						*(*int32)(unsafe.Add(mBase, uint32(l0))) = int32(_a_F_updateAppendOnly_1)
 						v27 = int32(0)
 					}
 					return v27
@@ -2121,7 +2121,7 @@ func F_updateAppendOnly(m *base.Module, l0 int32) int32 {
 						if v20 != int32(-1) {
 							v27 = v17
 						} else {
-							*(*int32)(unsafe.Add(mBase, uint32(l0))) = int32(_a424)
+							*(*int32)(unsafe.Add(mBase, uint32(l0))) = int32(_a_F_updateAppendOnly_1)
 							v27 = int32(0)
 						}
 						return v27

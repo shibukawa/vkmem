@@ -160,7 +160,7 @@ func F__lpEntryValidation(m *base.Module, l0 int32, l1 int32, l2 int32) int32 {
 			}
 		}
 	} else {
-		v12 = F_hashtableCreate(m, int32(_a1130))
+		v12 = F_hashtableCreate(m, int32(_a_F__lpEntryValidation_0))
 		mBase = m.M
 		v15 = m.ExcPending
 		if v15 != 0 {
@@ -393,7 +393,7 @@ func F_lpFirst(m *base.Module, l0 int32) int32 {
 			v20 = int32(0)
 			return v20
 		} else {
-			F__serverAssert(m, int32(_a888), int32(_a889), int32(426))
+			F__serverAssert(m, int32(_a_F_lpFirst_0), int32(_a_F_lpFirst_1), int32(426))
 			mBase = m.M
 			v18 = m.ExcPending
 			if v18 != 0 {
@@ -516,7 +516,7 @@ func F_lpGetWithSize(m *base.Module, l0 int32, l1 int32, l2 int32, l3 int32) int
 	var v214 int32
 	_ = v214
 	if l0 == int32(0) {
-		F__serverAssert(m, int32(_a890), int32(_a889), int32(504))
+		F__serverAssert(m, int32(_a_F_lpGetWithSize_0), int32(_a_F_lpGetWithSize_1), int32(504))
 		mBase = m.M
 		v214 = m.ExcPending
 		if v214 != 0 {
@@ -1158,7 +1158,7 @@ func F_lpPrepend(m *base.Module, l0 int32, l1 int32, l2 int32) int32 {
 	if v5 == int32(255) {
 		v10 = *(*int32)(unsafe.Add(mBase, uint32(l0)))
 		if v10 != int32(7) {
-			F__serverAssert(m, int32(_a888), int32(_a889), int32(426))
+			F__serverAssert(m, int32(_a_F_lpPrepend_0), int32(_a_F_lpPrepend_1), int32(426))
 			mBase = m.M
 			v28 = m.ExcPending
 			if v28 != 0 {
@@ -1370,7 +1370,7 @@ L2:
 	}
 L3:
 	;
-	F__serverAssert(m, int32(_a888), int32(_a889), int32(400))
+	F__serverAssert(m, int32(_a_F_lpRandomPairsUnique_0), int32(_a_F_lpRandomPairsUnique_1), int32(400))
 	mBase = m.M
 	v319 = m.ExcPending
 	if v319 != 0 {
@@ -1380,7 +1380,7 @@ L3:
 	}
 L4:
 	;
-	F__serverAssert(m, int32(_a888), int32(_a889), int32(400))
+	F__serverAssert(m, int32(_a_F_lpRandomPairsUnique_0), int32(_a_F_lpRandomPairsUnique_1), int32(400))
 	mBase = m.M
 	v313 = m.ExcPending
 	if v313 != 0 {
@@ -1390,7 +1390,7 @@ L4:
 	}
 L5:
 	;
-	F__serverAssert(m, int32(_a891), int32(_a889), int32(1438))
+	F__serverAssert(m, int32(_a_F_lpRandomPairsUnique_2), int32(_a_F_lpRandomPairsUnique_1), int32(1438))
 	mBase = m.M
 	v307 = m.ExcPending
 	if v307 != 0 {
@@ -1421,7 +1421,7 @@ L8:
 	}
 L9:
 	;
-	F__serverAssert(m, int32(_a888), int32(_a889), int32(426))
+	F__serverAssert(m, int32(_a_F_lpRandomPairsUnique_0), int32(_a_F_lpRandomPairsUnique_1), int32(426))
 	mBase = m.M
 	v36 = m.ExcPending
 	if v36 != 0 {
@@ -1601,7 +1601,7 @@ L34:
 	goto L28
 L35:
 	;
-	v152 = *(*int32)(unsafe.Add(mBase, uint32(v112<<(uint(int32(2))%32))+uint32(_consts[505])))
+	v152 = *(*int32)(unsafe.Add(mBase, uint32(v112<<(uint(int32(2))%32))+uint32(_c_F_lpRandomPairsUnique[0])))
 	v153 = v89
 	v154 = v152
 	goto L28
@@ -1702,7 +1702,7 @@ L50:
 	}
 L51:
 	;
-	F__serverAssert(m, int32(_a892), int32(_a889), int32(1441))
+	F__serverAssert(m, int32(_a_F_lpRandomPairsUnique_3), int32(_a_F_lpRandomPairsUnique_1), int32(1441))
 	mBase = m.M
 	v169 = m.ExcPending
 	if v169 != 0 {
@@ -1841,7 +1841,7 @@ L70:
 	goto L64
 L71:
 	;
-	v259 = *(*int32)(unsafe.Add(mBase, uint32(v219<<(uint(int32(2))%32))+uint32(_consts[505])))
+	v259 = *(*int32)(unsafe.Add(mBase, uint32(v219<<(uint(int32(2))%32))+uint32(_c_F_lpRandomPairsUnique[0])))
 	v260 = v196
 	v261 = v259
 	goto L64
@@ -2176,7 +2176,7 @@ L2:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v19)+52)) = v22
 	*(*int32)(unsafe.Add(mBase, uint32(v19)+48)) = v21
-	v29 = F_iprintf(m, int32(_a893), v19+int32(48))
+	v29 = F_iprintf(m, int32(_a_F_lpRepr_0), v19+int32(48))
 	mBase = m.M
 	v30 = m.ExcPending
 	if v30 != 0 {
@@ -2194,7 +2194,7 @@ L3:
 	}
 L4:
 	;
-	F__serverAssert(m, int32(_a888), int32(_a889), int32(400))
+	F__serverAssert(m, int32(_a_F_lpRepr_1), int32(_a_F_lpRepr_2), int32(400))
 	mBase = m.M
 	v375 = m.ExcPending
 	if v375 != 0 {
@@ -2204,7 +2204,7 @@ L4:
 	}
 L5:
 	;
-	v366 = F_puts(m, int32(_a894))
+	v366 = F_puts(m, int32(_a_F_lpRepr_3))
 	mBase = m.M
 	v367 = m.ExcPending
 	if v367 != 0 {
@@ -2215,7 +2215,7 @@ L5:
 L6:
 	;
 	v45 = int32(0)
-	v46 = *(*int32)(unsafe.Add(mBase, _consts[359]))
+	v46 = *(*int32)(unsafe.Add(mBase, _c_F_lpRepr[0]))
 	v57 = l0 + int32(6)
 	v62 = v45
 	goto L10
@@ -2229,7 +2229,7 @@ L7:
 	}
 L8:
 	;
-	F__serverAssert(m, int32(_a888), int32(_a889), int32(426))
+	F__serverAssert(m, int32(_a_F_lpRepr_1), int32(_a_F_lpRepr_2), int32(426))
 	mBase = m.M
 	v41 = m.ExcPending
 	if v41 != 0 {
@@ -2274,7 +2274,7 @@ L12:
 	*(*int32)(unsafe.Add(mBase, uint32(v19)+28)) = v172
 	*(*int32)(unsafe.Add(mBase, uint32(v19)+16)) = v57
 	*(*int32)(unsafe.Add(mBase, uint32(v19)+24)) = v57 - l0
-	v180 = F_iprintf(m, int32(_a895), v19+int32(16))
+	v180 = F_iprintf(m, int32(_a_F_lpRepr_4), v19+int32(16))
 	mBase = m.M
 	v181 = m.ExcPending
 	if v181 != 0 {
@@ -2507,7 +2507,7 @@ L45:
 L46:
 	;
 	v182 = int32(0)
-	v185 = F_iprintf(m, int32(_a896), v182)
+	v185 = F_iprintf(m, int32(_a_F_lpRepr_5), v182)
 	mBase = m.M
 	v186 = m.ExcPending
 	if v186 != 0 {
@@ -2540,7 +2540,7 @@ L50:
 	;
 	v206 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v57+v191))))
 	*(*int32)(unsafe.Add(mBase, uint32(v19))) = v206
-	v209 = F_iprintf(m, int32(_a897), v19)
+	v209 = F_iprintf(m, int32(_a_F_lpRepr_6), v19)
 	mBase = m.M
 	v210 = m.ExcPending
 	if v210 != 0 {
@@ -2575,7 +2575,7 @@ L54:
 	}
 L55:
 	;
-	v242 = F_iprintf(m, int32(_a898), int32(0))
+	v242 = F_iprintf(m, int32(_a_F_lpRepr_7), int32(0))
 	mBase = m.M
 	v243 = m.ExcPending
 	if v243 != 0 {
@@ -2593,7 +2593,7 @@ L56:
 	}
 L57:
 	;
-	v266 = F_puts(m, int32(_a899))
+	v266 = F_puts(m, int32(_a_F_lpRepr_8))
 	mBase = m.M
 	v267 = m.ExcPending
 	if v267 != 0 {
@@ -2623,7 +2623,7 @@ L59:
 	}
 L60:
 	;
-	v256 = F_iprintf(m, int32(_a900), int32(0))
+	v256 = F_iprintf(m, int32(_a_F_lpRepr_9), int32(0))
 	mBase = m.M
 	v257 = m.ExcPending
 	if v257 != 0 {
@@ -2640,7 +2640,7 @@ L61:
 	}
 L62:
 	;
-	F_perror(m, int32(_a901))
+	F_perror(m, int32(_a_F_lpRepr_10))
 	mBase = m.M
 	v253 = m.ExcPending
 	if v253 != 0 {
@@ -2663,7 +2663,7 @@ L65:
 	}
 L66:
 	;
-	F_perror(m, int32(_a901))
+	F_perror(m, int32(_a_F_lpRepr_10))
 	mBase = m.M
 	v264 = m.ExcPending
 	if v264 != 0 {
@@ -2738,7 +2738,7 @@ L76:
 	goto L70
 L77:
 	;
-	v336 = *(*int32)(unsafe.Add(mBase, uint32(v296<<(uint(int32(2))%32))+uint32(_consts[505])))
+	v336 = *(*int32)(unsafe.Add(mBase, uint32(v296<<(uint(int32(2))%32))+uint32(_c_F_lpRepr[1])))
 	v337 = v268
 	v338 = v336
 	goto L70
@@ -2882,7 +2882,7 @@ func F_lpSkip(m *base.Module, l0 int32) int32 {
 			if v6&int32(224) != int32(192) {
 				v28 = (v7 + int32(15)) & int32(255)
 				if base.Ui32(v28) < base.Ui32(int32(4)) {
-					v68 = *(*int32)(unsafe.Add(mBase, uint32(v28<<(uint(int32(2))%32))+uint32(_consts[505])))
+					v68 = *(*int32)(unsafe.Add(mBase, uint32(v28<<(uint(int32(2))%32))+uint32(_c_F_lpSkip[0])))
 					v69 = v5
 					v70 = v68
 				} else {

@@ -82,7 +82,7 @@ func F_createStringObject_1(m *base.Module, l0 int32, l1 int32) int32 {
 			}
 		}
 	} else {
-		v21 = *(*int32)(unsafe.Add(mBase, _consts[249]))
+		v21 = *(*int32)(unsafe.Add(mBase, _c_F_createStringObject_1[0]))
 		if base.Ui32(int32(128)) < base.Ui32(l1+v21+int32(9)) {
 			v34 = F_sdsnewlen(m, l0, l1)
 			mBase = m.M
@@ -209,7 +209,7 @@ func F_createStringObject_2(m *base.Module, l0 int32, l1 int32, l2 int32) int32 
 			v18 = *(*int32)(unsafe.Add(mBase, uint32(l0)))
 			if base.Ui32(int32(14)) < base.Ui32(v18) {
 				v102 = m.G3
-				m.Env.X__assert_fail(m, v102+int32(_a1710), v102+int32(_a1707), int32(128), v102+int32(_a1711))
+				m.Env.X__assert_fail(m, v102+int32(_a_F_createStringObject_2_0), v102+int32(_a_F_createStringObject_2_1), int32(128), v102+int32(_a_F_createStringObject_2_2))
 				mBase = m.M
 				base.Wasm_trap_unreachable()
 				for {
@@ -263,7 +263,7 @@ func F_createStringObject_2(m *base.Module, l0 int32, l1 int32, l2 int32) int32 
 								} else {
 									if v79 != int32(2) {
 										v111 = m.G3
-										m.Env.X__assert_fail(m, v111+int32(_a1712), v111+int32(_a1707), int32(158), v111+int32(_a1711))
+										m.Env.X__assert_fail(m, v111+int32(_a_F_createStringObject_2_3), v111+int32(_a_F_createStringObject_2_1), int32(158), v111+int32(_a_F_createStringObject_2_2))
 										mBase = m.M
 										base.Wasm_trap_unreachable()
 										for {
@@ -281,7 +281,7 @@ func F_createStringObject_2(m *base.Module, l0 int32, l1 int32, l2 int32) int32 
 				} else {
 					if v18 != int32(14) {
 						v102 = m.G3
-						m.Env.X__assert_fail(m, v102+int32(_a1710), v102+int32(_a1707), int32(128), v102+int32(_a1711))
+						m.Env.X__assert_fail(m, v102+int32(_a_F_createStringObject_2_0), v102+int32(_a_F_createStringObject_2_1), int32(128), v102+int32(_a_F_createStringObject_2_2))
 						mBase = m.M
 						base.Wasm_trap_unreachable()
 						for {
@@ -341,7 +341,7 @@ func F_createStringObject_2(m *base.Module, l0 int32, l1 int32, l2 int32) int32 
 									} else {
 										if v79 != int32(2) {
 											v111 = m.G3
-											m.Env.X__assert_fail(m, v111+int32(_a1712), v111+int32(_a1707), int32(158), v111+int32(_a1711))
+											m.Env.X__assert_fail(m, v111+int32(_a_F_createStringObject_2_3), v111+int32(_a_F_createStringObject_2_1), int32(158), v111+int32(_a_F_createStringObject_2_2))
 											mBase = m.M
 											base.Wasm_trap_unreachable()
 											for {
@@ -397,7 +397,7 @@ func F_getStringObjectSdsUsedMemory(m *base.Module, l0 int32) int32 {
 	_ = v62
 	v4 = *(*int32)(unsafe.Add(mBase, uint32(l0)))
 	if v4&int32(15) != 0 {
-		F__serverAssertWithInfo(m, int32(0), l0, int32(_a479), int32(_a774), int32(173))
+		F__serverAssertWithInfo(m, int32(0), l0, int32(_a_F_getStringObjectSdsUsedMemory_0), int32(_a_F_getStringObjectSdsUsedMemory_1), int32(173))
 		mBase = m.M
 		v62 = m.ExcPending
 		if v62 != 0 {
@@ -557,7 +557,7 @@ func F_stringConfigGet(m *base.Module, l0 int32) int32 {
 	if v3 != 0 {
 		v5 = v3
 	} else {
-		v5 = int32(_a188)
+		v5 = int32(_a_F_stringConfigGet_0)
 	}
 	v6 = F_sdsnew(m, v5)
 	mBase = m.M
@@ -1116,7 +1116,7 @@ func F_trimStringObjectIfNeeded(m *base.Module, l0 int32, l1 int32) {
 					return
 				}
 			} else {
-				v35 = *(*int32)(unsafe.Add(mBase, _consts[381]))
+				v35 = *(*int32)(unsafe.Add(mBase, _c_F_trimStringObjectIfNeeded[0]))
 				if v35 == int32(0) {
 					return
 				} else {
@@ -1267,7 +1267,7 @@ func F_tryCreateStringObject(m *base.Module, l0 int32, l1 int32) int32 {
 			}
 		}
 	} else {
-		v21 = *(*int32)(unsafe.Add(mBase, _consts[249]))
+		v21 = *(*int32)(unsafe.Add(mBase, _c_F_tryCreateStringObject[0]))
 		if base.Ui32(int32(128)) < base.Ui32(l1+v21+int32(9)) {
 			v34 = F_sdstrynewlen(m, l0, l1)
 			mBase = m.M

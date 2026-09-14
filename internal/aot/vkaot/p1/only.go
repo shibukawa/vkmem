@@ -59,14 +59,14 @@ func F_getAppendOnlyFileSize(m *base.Module, l0 int32, l1 int32) int64 {
 	v9 = m.G0
 	v11 = v9 - int32(112)
 	m.G0 = v11
-	v14 = *(*int32)(unsafe.Add(mBase, _consts[37]))
+	v14 = *(*int32)(unsafe.Add(mBase, _c_F_getAppendOnlyFileSize[0]))
 	v15 = F_makePath(m, v14, l0)
 	mBase = m.M
 	v18 = m.ExcPending
 	if v18 != 0 {
 		return int64(0)
 	} else {
-		v20 = *(*int64)(unsafe.Add(mBase, _consts[45]))
+		v20 = *(*int64)(unsafe.Add(mBase, _c_F_getAppendOnlyFileSize[1]))
 		if base.B2i32(v20 == int64(0)) == int32(0) {
 			v26 = F_ustime(m)
 			mBase = m.M
@@ -83,7 +83,7 @@ func F_getAppendOnlyFileSize(m *base.Module, l0 int32, l1 int32) int64 {
 			}
 			v63 = *(*int64)(unsafe.Add(mBase, uint32(v11)+40))
 			v64 = v63
-			v66 = *(*int64)(unsafe.Add(mBase, _consts[45]))
+			v66 = *(*int64)(unsafe.Add(mBase, _c_F_getAppendOnlyFileSize[1]))
 			if v66 == int64(0) {
 				F_sdsfree(m, v15)
 				mBase = m.M
@@ -97,7 +97,7 @@ func F_getAppendOnlyFileSize(m *base.Module, l0 int32, l1 int32) int64 {
 			} else {
 				v69 = F_ustime(m)
 				mBase = m.M
-				v71 = *(*int64)(unsafe.Add(mBase, _consts[45]))
+				v71 = *(*int64)(unsafe.Add(mBase, _c_F_getAppendOnlyFileSize[1]))
 				if v71 == int64(0) {
 					F_sdsfree(m, v15)
 					mBase = m.M
@@ -121,7 +121,7 @@ func F_getAppendOnlyFileSize(m *base.Module, l0 int32, l1 int32) int64 {
 							return v64
 						}
 					} else {
-						F_latencyAddSample(m, int32(_a150), v74)
+						F_latencyAddSample(m, int32(_a_F_getAppendOnlyFileSize_0), v74)
 						mBase = m.M
 						v80 = m.ExcPending
 						if v80 != 0 {
@@ -143,7 +143,7 @@ func F_getAppendOnlyFileSize(m *base.Module, l0 int32, l1 int32) int64 {
 		} else {
 			if l1 == int32(0) {
 			} else {
-				v40 = *(*int32)(unsafe.Add(mBase, _consts[18]))
+				v40 = *(*int32)(unsafe.Add(mBase, _c_F_getAppendOnlyFileSize[2]))
 				if v40 == int32(44) {
 					v43 = int32(1)
 				} else {
@@ -152,10 +152,10 @@ func F_getAppendOnlyFileSize(m *base.Module, l0 int32, l1 int32) int64 {
 				*(*int32)(unsafe.Add(mBase, uint32(l1))) = v43
 			}
 			v45 = int64(0)
-			v47 = *(*int32)(unsafe.Add(mBase, _consts[28]))
+			v47 = *(*int32)(unsafe.Add(mBase, _c_F_getAppendOnlyFileSize[3]))
 			if int32(3) < v47 {
 				v64 = v45
-				v66 = *(*int64)(unsafe.Add(mBase, _consts[45]))
+				v66 = *(*int64)(unsafe.Add(mBase, _c_F_getAppendOnlyFileSize[1]))
 				if v66 == int64(0) {
 					F_sdsfree(m, v15)
 					mBase = m.M
@@ -169,7 +169,7 @@ func F_getAppendOnlyFileSize(m *base.Module, l0 int32, l1 int32) int64 {
 				} else {
 					v69 = F_ustime(m)
 					mBase = m.M
-					v71 = *(*int64)(unsafe.Add(mBase, _consts[45]))
+					v71 = *(*int64)(unsafe.Add(mBase, _c_F_getAppendOnlyFileSize[1]))
 					if v71 == int64(0) {
 						F_sdsfree(m, v15)
 						mBase = m.M
@@ -193,7 +193,7 @@ func F_getAppendOnlyFileSize(m *base.Module, l0 int32, l1 int32) int64 {
 								return v64
 							}
 						} else {
-							F_latencyAddSample(m, int32(_a150), v74)
+							F_latencyAddSample(m, int32(_a_F_getAppendOnlyFileSize_0), v74)
 							mBase = m.M
 							v80 = m.ExcPending
 							if v80 != 0 {
@@ -213,19 +213,19 @@ func F_getAppendOnlyFileSize(m *base.Module, l0 int32, l1 int32) int64 {
 					}
 				}
 			} else {
-				v51 = *(*int32)(unsafe.Add(mBase, _consts[18]))
+				v51 = *(*int32)(unsafe.Add(mBase, _c_F_getAppendOnlyFileSize[2]))
 				v52 = F___strerror_l(m, v51, v51)
 				mBase = m.M
 				*(*int32)(unsafe.Add(mBase, uint32(v11)+4)) = v52
 				*(*int32)(unsafe.Add(mBase, uint32(v11))) = l0
-				F__serverLog(m, int32(3), int32(_a151), v11)
+				F__serverLog(m, int32(3), int32(_a_F_getAppendOnlyFileSize_1), v11)
 				mBase = m.M
 				v58 = m.ExcPending
 				if v58 != 0 {
 					return int64(0)
 				} else {
 					v64 = v45
-					v66 = *(*int64)(unsafe.Add(mBase, _consts[45]))
+					v66 = *(*int64)(unsafe.Add(mBase, _c_F_getAppendOnlyFileSize[1]))
 					if v66 == int64(0) {
 						F_sdsfree(m, v15)
 						mBase = m.M
@@ -239,7 +239,7 @@ func F_getAppendOnlyFileSize(m *base.Module, l0 int32, l1 int32) int64 {
 					} else {
 						v69 = F_ustime(m)
 						mBase = m.M
-						v71 = *(*int64)(unsafe.Add(mBase, _consts[45]))
+						v71 = *(*int64)(unsafe.Add(mBase, _c_F_getAppendOnlyFileSize[1]))
 						if v71 == int64(0) {
 							F_sdsfree(m, v15)
 							mBase = m.M
@@ -263,7 +263,7 @@ func F_getAppendOnlyFileSize(m *base.Module, l0 int32, l1 int32) int64 {
 									return v64
 								}
 							} else {
-								F_latencyAddSample(m, int32(_a150), v74)
+								F_latencyAddSample(m, int32(_a_F_getAppendOnlyFileSize_0), v74)
 								mBase = m.M
 								v80 = m.ExcPending
 								if v80 != 0 {
@@ -424,16 +424,16 @@ func F_rewriteAppendOnlyFile(m *base.Module, l0 int32) int32 {
 	v9 = F___syscall_getpid(m)
 	mBase = m.M
 	*(*int32)(unsafe.Add(mBase, uint32(v7)+64)) = v9
-	v17 = F_snprintf(m, v7+int32(80), int32(256), int32(_a144), v7+int32(64))
+	v17 = F_snprintf(m, v7+int32(80), int32(256), int32(_a_F_rewriteAppendOnlyFile_0), v7+int32(64))
 	mBase = m.M
 	v20 = m.ExcPending
 	if v20 != 0 {
 		return int32(0)
 	} else {
-		v24 = F_fopen(m, v7+int32(80), int32(_a145))
+		v24 = F_fopen(m, v7+int32(80), int32(_a_F_rewriteAppendOnlyFile_1))
 		mBase = m.M
 		if v24 != 0 {
-			v42 = F___memcpy(m, v7+int32(336), int32(_a146), int32(80))
+			v42 = F___memcpy(m, v7+int32(336), int32(_a_F_rewriteAppendOnlyFile_2), int32(80))
 			mBase = m.M
 			v43 = int64(0)
 			*(*int64)(unsafe.Add(mBase, uint32(v42)+56)) = v43
@@ -441,7 +441,7 @@ func F_rewriteAppendOnlyFile(m *base.Module, l0 int32) int32 {
 			*(*int64)(unsafe.Add(mBase, uint32(v42+int32(64)))) = v43
 			v52 = int32(0)
 			*(*uint8)(unsafe.Add(mBase, uint32(v42+int32(72)))) = uint8(v52)
-			v55 = *(*int32)(unsafe.Add(mBase, _consts[44]))
+			v55 = *(*int32)(unsafe.Add(mBase, _c_F_rewriteAppendOnlyFile[0]))
 			if v55 == int32(0) {
 			} else {
 				v59 = v7 + int32(336)
@@ -461,7 +461,7 @@ func F_rewriteAppendOnlyFile(m *base.Module, l0 int32) int32 {
 			if v77 != 0 {
 				return int32(0)
 			} else {
-				v79 = *(*int32)(unsafe.Add(mBase, _consts[43]))
+				v79 = *(*int32)(unsafe.Add(mBase, _c_F_rewriteAppendOnlyFile[1]))
 				if v79 == int32(0) {
 					v99 = F_rewriteAppendOnlyFileRio(m, v7+int32(336))
 					mBase = m.M
@@ -471,7 +471,7 @@ func F_rewriteAppendOnlyFile(m *base.Module, l0 int32) int32 {
 					} else {
 						if v99 == int32(-1) {
 							v198 = v24
-							v200 = *(*int32)(unsafe.Add(mBase, _consts[28]))
+							v200 = *(*int32)(unsafe.Add(mBase, _c_F_rewriteAppendOnlyFile[2]))
 							if int32(3) < v200 {
 								if v198 == int32(0) {
 									v219 = F_unlink(m, v7+int32(80))
@@ -508,11 +508,11 @@ func F_rewriteAppendOnlyFile(m *base.Module, l0 int32) int32 {
 									}
 								}
 							} else {
-								v204 = *(*int32)(unsafe.Add(mBase, _consts[18]))
+								v204 = *(*int32)(unsafe.Add(mBase, _c_F_rewriteAppendOnlyFile[3]))
 								v205 = F___strerror_l(m, v204, v204)
 								mBase = m.M
 								*(*int32)(unsafe.Add(mBase, uint32(v7)+16)) = v205
-								F__serverLog(m, int32(3), int32(_a147), v7+int32(16))
+								F__serverLog(m, int32(3), int32(_a_F_rewriteAppendOnlyFile_3), v7+int32(16))
 								mBase = m.M
 								v212 = m.ExcPending
 								if v212 != 0 {
@@ -563,7 +563,7 @@ func F_rewriteAppendOnlyFile(m *base.Module, l0 int32) int32 {
 							} else {
 								if v103 != 0 {
 									v198 = v24
-									v200 = *(*int32)(unsafe.Add(mBase, _consts[28]))
+									v200 = *(*int32)(unsafe.Add(mBase, _c_F_rewriteAppendOnlyFile[2]))
 									if int32(3) < v200 {
 										if v198 == int32(0) {
 											v219 = F_unlink(m, v7+int32(80))
@@ -600,11 +600,11 @@ func F_rewriteAppendOnlyFile(m *base.Module, l0 int32) int32 {
 											}
 										}
 									} else {
-										v204 = *(*int32)(unsafe.Add(mBase, _consts[18]))
+										v204 = *(*int32)(unsafe.Add(mBase, _c_F_rewriteAppendOnlyFile[3]))
 										v205 = F___strerror_l(m, v204, v204)
 										mBase = m.M
 										*(*int32)(unsafe.Add(mBase, uint32(v7)+16)) = v205
-										F__serverLog(m, int32(3), int32(_a147), v7+int32(16))
+										F__serverLog(m, int32(3), int32(_a_F_rewriteAppendOnlyFile_3), v7+int32(16))
 										mBase = m.M
 										v212 = m.ExcPending
 										if v212 != 0 {
@@ -675,7 +675,7 @@ func F_rewriteAppendOnlyFile(m *base.Module, l0 int32) int32 {
 									mBase = m.M
 									if v125 != 0 {
 										v198 = v24
-										v200 = *(*int32)(unsafe.Add(mBase, _consts[28]))
+										v200 = *(*int32)(unsafe.Add(mBase, _c_F_rewriteAppendOnlyFile[2]))
 										if int32(3) < v200 {
 											if v198 == int32(0) {
 												v219 = F_unlink(m, v7+int32(80))
@@ -712,11 +712,11 @@ func F_rewriteAppendOnlyFile(m *base.Module, l0 int32) int32 {
 												}
 											}
 										} else {
-											v204 = *(*int32)(unsafe.Add(mBase, _consts[18]))
+											v204 = *(*int32)(unsafe.Add(mBase, _c_F_rewriteAppendOnlyFile[3]))
 											v205 = F___strerror_l(m, v204, v204)
 											mBase = m.M
 											*(*int32)(unsafe.Add(mBase, uint32(v7)+16)) = v205
-											F__serverLog(m, int32(3), int32(_a147), v7+int32(16))
+											F__serverLog(m, int32(3), int32(_a_F_rewriteAppendOnlyFile_3), v7+int32(16))
 											mBase = m.M
 											v212 = m.ExcPending
 											if v212 != 0 {
@@ -789,7 +789,7 @@ func F_rewriteAppendOnlyFile(m *base.Module, l0 int32) int32 {
 										} else {
 											if v166 != 0 {
 												v198 = int32(0)
-												v200 = *(*int32)(unsafe.Add(mBase, _consts[28]))
+												v200 = *(*int32)(unsafe.Add(mBase, _c_F_rewriteAppendOnlyFile[2]))
 												if int32(3) < v200 {
 													if v198 == int32(0) {
 														v219 = F_unlink(m, v7+int32(80))
@@ -826,11 +826,11 @@ func F_rewriteAppendOnlyFile(m *base.Module, l0 int32) int32 {
 														}
 													}
 												} else {
-													v204 = *(*int32)(unsafe.Add(mBase, _consts[18]))
+													v204 = *(*int32)(unsafe.Add(mBase, _c_F_rewriteAppendOnlyFile[3]))
 													v205 = F___strerror_l(m, v204, v204)
 													mBase = m.M
 													*(*int32)(unsafe.Add(mBase, uint32(v7)+16)) = v205
-													F__serverLog(m, int32(3), int32(_a147), v7+int32(16))
+													F__serverLog(m, int32(3), int32(_a_F_rewriteAppendOnlyFile_3), v7+int32(16))
 													mBase = m.M
 													v212 = m.ExcPending
 													if v212 != 0 {
@@ -887,7 +887,7 @@ func F_rewriteAppendOnlyFile(m *base.Module, l0 int32) int32 {
 														return v224
 													}
 												} else {
-													v174 = *(*int32)(unsafe.Add(mBase, _consts[28]))
+													v174 = *(*int32)(unsafe.Add(mBase, _c_F_rewriteAppendOnlyFile[2]))
 													if int32(3) < v174 {
 														v189 = F_unlink(m, v7+int32(80))
 														mBase = m.M
@@ -902,11 +902,11 @@ func F_rewriteAppendOnlyFile(m *base.Module, l0 int32) int32 {
 															return v224
 														}
 													} else {
-														v178 = *(*int32)(unsafe.Add(mBase, _consts[18]))
+														v178 = *(*int32)(unsafe.Add(mBase, _c_F_rewriteAppendOnlyFile[3]))
 														v179 = F___strerror_l(m, v178, v178)
 														mBase = m.M
 														*(*int32)(unsafe.Add(mBase, uint32(v7)+32)) = v179
-														F__serverLog(m, int32(3), int32(_a148), v7+int32(32))
+														F__serverLog(m, int32(3), int32(_a_F_rewriteAppendOnlyFile_4), v7+int32(32))
 														mBase = m.M
 														v186 = m.ExcPending
 														if v186 != 0 {
@@ -951,7 +951,7 @@ func F_rewriteAppendOnlyFile(m *base.Module, l0 int32) int32 {
 							} else {
 								if v103 != 0 {
 									v198 = v24
-									v200 = *(*int32)(unsafe.Add(mBase, _consts[28]))
+									v200 = *(*int32)(unsafe.Add(mBase, _c_F_rewriteAppendOnlyFile[2]))
 									if int32(3) < v200 {
 										if v198 == int32(0) {
 											v219 = F_unlink(m, v7+int32(80))
@@ -988,11 +988,11 @@ func F_rewriteAppendOnlyFile(m *base.Module, l0 int32) int32 {
 											}
 										}
 									} else {
-										v204 = *(*int32)(unsafe.Add(mBase, _consts[18]))
+										v204 = *(*int32)(unsafe.Add(mBase, _c_F_rewriteAppendOnlyFile[3]))
 										v205 = F___strerror_l(m, v204, v204)
 										mBase = m.M
 										*(*int32)(unsafe.Add(mBase, uint32(v7)+16)) = v205
-										F__serverLog(m, int32(3), int32(_a147), v7+int32(16))
+										F__serverLog(m, int32(3), int32(_a_F_rewriteAppendOnlyFile_3), v7+int32(16))
 										mBase = m.M
 										v212 = m.ExcPending
 										if v212 != 0 {
@@ -1063,7 +1063,7 @@ func F_rewriteAppendOnlyFile(m *base.Module, l0 int32) int32 {
 									mBase = m.M
 									if v125 != 0 {
 										v198 = v24
-										v200 = *(*int32)(unsafe.Add(mBase, _consts[28]))
+										v200 = *(*int32)(unsafe.Add(mBase, _c_F_rewriteAppendOnlyFile[2]))
 										if int32(3) < v200 {
 											if v198 == int32(0) {
 												v219 = F_unlink(m, v7+int32(80))
@@ -1100,11 +1100,11 @@ func F_rewriteAppendOnlyFile(m *base.Module, l0 int32) int32 {
 												}
 											}
 										} else {
-											v204 = *(*int32)(unsafe.Add(mBase, _consts[18]))
+											v204 = *(*int32)(unsafe.Add(mBase, _c_F_rewriteAppendOnlyFile[3]))
 											v205 = F___strerror_l(m, v204, v204)
 											mBase = m.M
 											*(*int32)(unsafe.Add(mBase, uint32(v7)+16)) = v205
-											F__serverLog(m, int32(3), int32(_a147), v7+int32(16))
+											F__serverLog(m, int32(3), int32(_a_F_rewriteAppendOnlyFile_3), v7+int32(16))
 											mBase = m.M
 											v212 = m.ExcPending
 											if v212 != 0 {
@@ -1177,7 +1177,7 @@ func F_rewriteAppendOnlyFile(m *base.Module, l0 int32) int32 {
 										} else {
 											if v166 != 0 {
 												v198 = int32(0)
-												v200 = *(*int32)(unsafe.Add(mBase, _consts[28]))
+												v200 = *(*int32)(unsafe.Add(mBase, _c_F_rewriteAppendOnlyFile[2]))
 												if int32(3) < v200 {
 													if v198 == int32(0) {
 														v219 = F_unlink(m, v7+int32(80))
@@ -1214,11 +1214,11 @@ func F_rewriteAppendOnlyFile(m *base.Module, l0 int32) int32 {
 														}
 													}
 												} else {
-													v204 = *(*int32)(unsafe.Add(mBase, _consts[18]))
+													v204 = *(*int32)(unsafe.Add(mBase, _c_F_rewriteAppendOnlyFile[3]))
 													v205 = F___strerror_l(m, v204, v204)
 													mBase = m.M
 													*(*int32)(unsafe.Add(mBase, uint32(v7)+16)) = v205
-													F__serverLog(m, int32(3), int32(_a147), v7+int32(16))
+													F__serverLog(m, int32(3), int32(_a_F_rewriteAppendOnlyFile_3), v7+int32(16))
 													mBase = m.M
 													v212 = m.ExcPending
 													if v212 != 0 {
@@ -1275,7 +1275,7 @@ func F_rewriteAppendOnlyFile(m *base.Module, l0 int32) int32 {
 														return v224
 													}
 												} else {
-													v174 = *(*int32)(unsafe.Add(mBase, _consts[28]))
+													v174 = *(*int32)(unsafe.Add(mBase, _c_F_rewriteAppendOnlyFile[2]))
 													if int32(3) < v174 {
 														v189 = F_unlink(m, v7+int32(80))
 														mBase = m.M
@@ -1290,11 +1290,11 @@ func F_rewriteAppendOnlyFile(m *base.Module, l0 int32) int32 {
 															return v224
 														}
 													} else {
-														v178 = *(*int32)(unsafe.Add(mBase, _consts[18]))
+														v178 = *(*int32)(unsafe.Add(mBase, _c_F_rewriteAppendOnlyFile[3]))
 														v179 = F___strerror_l(m, v178, v178)
 														mBase = m.M
 														*(*int32)(unsafe.Add(mBase, uint32(v7)+32)) = v179
-														F__serverLog(m, int32(3), int32(_a148), v7+int32(32))
+														F__serverLog(m, int32(3), int32(_a_F_rewriteAppendOnlyFile_4), v7+int32(32))
 														mBase = m.M
 														v186 = m.ExcPending
 														if v186 != 0 {
@@ -1322,9 +1322,9 @@ func F_rewriteAppendOnlyFile(m *base.Module, l0 int32) int32 {
 							}
 						} else {
 							v95 = *(*int32)(unsafe.Add(mBase, uint32(v7)+76))
-							*(*int32)(unsafe.Add(mBase, _consts[18])) = v95
+							*(*int32)(unsafe.Add(mBase, _c_F_rewriteAppendOnlyFile[3])) = v95
 							v198 = v24
-							v200 = *(*int32)(unsafe.Add(mBase, _consts[28]))
+							v200 = *(*int32)(unsafe.Add(mBase, _c_F_rewriteAppendOnlyFile[2]))
 							if int32(3) < v200 {
 								if v198 == int32(0) {
 									v219 = F_unlink(m, v7+int32(80))
@@ -1361,11 +1361,11 @@ func F_rewriteAppendOnlyFile(m *base.Module, l0 int32) int32 {
 									}
 								}
 							} else {
-								v204 = *(*int32)(unsafe.Add(mBase, _consts[18]))
+								v204 = *(*int32)(unsafe.Add(mBase, _c_F_rewriteAppendOnlyFile[3]))
 								v205 = F___strerror_l(m, v204, v204)
 								mBase = m.M
 								*(*int32)(unsafe.Add(mBase, uint32(v7)+16)) = v205
-								F__serverLog(m, int32(3), int32(_a147), v7+int32(16))
+								F__serverLog(m, int32(3), int32(_a_F_rewriteAppendOnlyFile_3), v7+int32(16))
 								mBase = m.M
 								v212 = m.ExcPending
 								if v212 != 0 {
@@ -1413,17 +1413,17 @@ func F_rewriteAppendOnlyFile(m *base.Module, l0 int32) int32 {
 			}
 		} else {
 			v25 = int32(-1)
-			v27 = *(*int32)(unsafe.Add(mBase, _consts[28]))
+			v27 = *(*int32)(unsafe.Add(mBase, _c_F_rewriteAppendOnlyFile[2]))
 			if int32(3) < v27 {
 				v224 = v25
 				m.G0 = v7 + int32(416)
 				return v224
 			} else {
-				v31 = *(*int32)(unsafe.Add(mBase, _consts[18]))
+				v31 = *(*int32)(unsafe.Add(mBase, _c_F_rewriteAppendOnlyFile[3]))
 				v32 = F___strerror_l(m, v31, v31)
 				mBase = m.M
 				*(*int32)(unsafe.Add(mBase, uint32(v7))) = v32
-				F__serverLog(m, int32(3), int32(_a149), v7)
+				F__serverLog(m, int32(3), int32(_a_F_rewriteAppendOnlyFile_5), v7)
 				mBase = m.M
 				v37 = m.ExcPending
 				if v37 != 0 {

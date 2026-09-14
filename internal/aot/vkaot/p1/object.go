@@ -54,12 +54,12 @@ func F_initObjectLRUOrLFU(m *base.Module, l0 int32) {
 	v3 = *(*int32)(unsafe.Add(mBase, uint32(l0)+4))
 	if base.Ui32(int32(-9)) < base.Ui32(v3) {
 	} else {
-		v7 = int32(*(*uint8)(unsafe.Add(mBase, _consts[378])))
+		v7 = int32(*(*uint8)(unsafe.Add(mBase, _c_F_initObjectLRUOrLFU[0])))
 		if v7 != int32(1) {
-			v17 = *(*int32)(unsafe.Add(mBase, _consts[379]))
+			v17 = *(*int32)(unsafe.Add(mBase, _c_F_initObjectLRUOrLFU[1]))
 			v20 = v17 & int32(16777215)
 		} else {
-			v11 = int32(*(*uint16)(unsafe.Add(mBase, _consts[376])))
+			v11 = int32(*(*uint16)(unsafe.Add(mBase, _c_F_initObjectLRUOrLFU[2])))
 			v20 = v11<<(uint(int32(8))%32) | int32(5)
 		}
 		v21 = int32(*(*uint8)(unsafe.Add(mBase, uint32(l0))))
@@ -79,7 +79,7 @@ func F_makeObjectShared(m *base.Module, l0 int32) int32 {
 		*(*int32)(unsafe.Add(mBase, uint32(l0)+4)) = v3 | int32(-8)
 		return l0
 	} else {
-		F__serverAssert(m, int32(_a1757), int32(_a1758), int32(132))
+		F__serverAssert(m, int32(_a_F_makeObjectShared_0), int32(_a_F_makeObjectShared_1), int32(132))
 		mBase = m.M
 		v14 = m.ExcPending
 		if v14 != 0 {
@@ -132,8 +132,8 @@ func F_objectGetLFUFrequency(m *base.Module, l0 int32) int32 {
 	m.G0 = v6
 	v8 = *(*int32)(unsafe.Add(mBase, uint32(l0)))
 	v10 = int32(base.Ui32(v8) >> (uint(int32(8)) % 32))
-	v17 = int32(*(*uint16)(unsafe.Add(mBase, _consts[376])))
-	v20 = *(*int32)(unsafe.Add(mBase, _consts[377]))
+	v17 = int32(*(*uint16)(unsafe.Add(mBase, _c_F_objectGetLFUFrequency[0])))
+	v20 = *(*int32)(unsafe.Add(mBase, _c_F_objectGetLFUFrequency[1]))
 	if v20 == v2 {
 		v31 = v2
 	} else {

@@ -119,7 +119,7 @@ func F_getKeysPrepareResult(m *base.Module, l0 int32, l1 int32) int32 {
 	} else {
 		v7 = *(*int32)(unsafe.Add(mBase, uint32(l0)))
 		if v7 != 0 {
-			F__serverAssert(m, int32(_a512), int32(_a474), int32(2292))
+			F__serverAssert(m, int32(_a_F_getKeysPrepareResult_0), int32(_a_F_getKeysPrepareResult_1), int32(2292))
 			mBase = m.M
 			v47 = m.ExcPending
 			if v47 != 0 {
@@ -362,7 +362,7 @@ func F_getKeysSubcommandImpl(m *base.Module, l0 int32, l1 int32) {
 	v10 = v8 - int32(2064)
 	m.G0 = v10
 	v12 = *(*int32)(unsafe.Add(mBase, uint32(l0)+24))
-	v14 = *(*int32)(unsafe.Add(mBase, _consts[822]))
+	v14 = *(*int32)(unsafe.Add(mBase, _c_F_getKeysSubcommandImpl[0]))
 	v15 = *(*int32)(unsafe.Add(mBase, uint32(l0)+20))
 	*(*int32)(unsafe.Add(mBase, uint32(v10)+2060)) = v3
 	v18 = *(*int32)(unsafe.Add(mBase, uint32(v15)+8))
@@ -458,7 +458,7 @@ L11:
 	goto L5
 L12:
 	;
-	F_addReplyError(m, l0, int32(_a1372))
+	F_addReplyError(m, l0, int32(_a_F_getKeysSubcommandImpl_0))
 	mBase = m.M
 	v50 = m.ExcPending
 	if v50 != 0 {
@@ -600,7 +600,7 @@ L31:
 	goto L30
 L32:
 	;
-	F_addReplyError(m, l0, int32(_a1373))
+	F_addReplyError(m, l0, int32(_a_F_getKeysSubcommandImpl_1))
 	mBase = m.M
 	v178 = m.ExcPending
 	if v178 != 0 {
@@ -624,7 +624,7 @@ L34:
 	}
 L35:
 	;
-	F_addReplyError(m, l0, int32(_a1374))
+	F_addReplyError(m, l0, int32(_a_F_getKeysSubcommandImpl_2))
 	mBase = m.M
 	v192 = m.ExcPending
 	if v192 != 0 {
@@ -683,7 +683,7 @@ L42:
 	}
 L43:
 	;
-	F_addReplyError(m, l0, int32(_a1375))
+	F_addReplyError(m, l0, int32(_a_F_getKeysSubcommandImpl_3))
 	mBase = m.M
 	v209 = m.ExcPending
 	if v209 != 0 {
@@ -901,7 +901,7 @@ func F_getKeysUsingLegacyRangeSpec(m *base.Module, l0 int32, l1 int32, l2 int32,
 	}
 L1:
 	;
-	F__serverAssert(m, int32(_a512), int32(_a474), int32(2292))
+	F__serverAssert(m, int32(_a_F_getKeysUsingLegacyRangeSpec_0), int32(_a_F_getKeysUsingLegacyRangeSpec_1), int32(2292))
 	mBase = m.M
 	v140 = m.ExcPending
 	if v140 != 0 {
@@ -1118,7 +1118,7 @@ L31:
 	goto L2
 L32:
 	;
-	v100 = *(*int32)(unsafe.Add(mBase, _consts[237]))
+	v100 = *(*int32)(unsafe.Add(mBase, _c_F_getKeysUsingLegacyRangeSpec[0]))
 	if v100 != 0 {
 		goto L33
 	} else {
@@ -1126,16 +1126,16 @@ L32:
 	}
 L33:
 	;
-	v101 = int32(_a513)
+	v101 = int32(_a_F_getKeysUsingLegacyRangeSpec_2)
 	goto L35
 L34:
 	;
-	v101 = int32(_a184)
+	v101 = int32(_a_F_getKeysUsingLegacyRangeSpec_3)
 	goto L35
 L35:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v15))) = v101
-	F__serverPanic_1(m, int32(_a474), int32(2614), int32(_a514), v15)
+	F__serverPanic_1(m, int32(_a_F_getKeysUsingLegacyRangeSpec_1), int32(2614), int32(_a_F_getKeysUsingLegacyRangeSpec_4), v15)
 	mBase = m.M
 	v107 = m.ExcPending
 	if v107 != 0 {

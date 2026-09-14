@@ -15,8 +15,8 @@ func F_getConfigBindOption(m *base.Module, l0 int32) int32 {
 	_ = v8
 	var v11 int32
 	_ = v11
-	v6 = *(*int32)(unsafe.Add(mBase, _consts[135]))
-	v8 = F_sdsjoin(m, int32(_a261), v6, int32(_a6))
+	v6 = *(*int32)(unsafe.Add(mBase, _c_F_getConfigBindOption[0]))
+	v8 = F_sdsjoin(m, int32(_a_F_getConfigBindOption_0), v6, int32(_a_F_getConfigBindOption_1))
 	mBase = m.M
 	v11 = m.ExcPending
 	if v11 != 0 {
@@ -143,7 +143,7 @@ L1:
 L2:
 	;
 	v14 = int32(0)
-	v16 = *(*int32)(unsafe.Add(mBase, _consts[276]))
+	v16 = *(*int32)(unsafe.Add(mBase, _c_F_getConfigLatencyTrackingInfoPercentilesOutputOption[0]))
 	if v16 <= v14 {
 		v90 = v10
 		goto L3
@@ -161,11 +161,11 @@ L4:
 	goto L5
 L5:
 	;
-	v25 = *(*int32)(unsafe.Add(mBase, _consts[275]))
+	v25 = *(*int32)(unsafe.Add(mBase, _c_F_getConfigLatencyTrackingInfoPercentilesOutputOption[1]))
 	v29 = *(*float64)(unsafe.Add(mBase, uint32(v25+v22<<(uint(int32(3))%32))))
 	*(*float64)(unsafe.Add(mBase, uint32(v8))) = v29
 	v32 = v8 + int32(16)
-	v39 = F_snprintf(m, v32, int32(128), int32(_a546), v8)
+	v39 = F_snprintf(m, v32, int32(128), int32(_a_F_getConfigLatencyTrackingInfoPercentilesOutputOption_0), v8)
 	mBase = m.M
 	v40 = m.ExcPending
 	if v40 != 0 {
@@ -235,7 +235,7 @@ L15:
 	goto L9
 L16:
 	;
-	v73 = *(*int32)(unsafe.Add(mBase, _consts[276]))
+	v73 = *(*int32)(unsafe.Add(mBase, _c_F_getConfigLatencyTrackingInfoPercentilesOutputOption[0]))
 	if v22 == v73+int32(-1) {
 		v83 = v70
 		v84 = v73
@@ -255,7 +255,7 @@ L17:
 	}
 L18:
 	;
-	v79 = F_sdscatlen(m, v70, int32(_a6), int32(1))
+	v79 = F_sdscatlen(m, v70, int32(_a_F_getConfigLatencyTrackingInfoPercentilesOutputOption_1), int32(1))
 	mBase = m.M
 	v80 = m.ExcPending
 	if v80 != 0 {
@@ -265,7 +265,7 @@ L18:
 	}
 L19:
 	;
-	v82 = *(*int32)(unsafe.Add(mBase, _consts[276]))
+	v82 = *(*int32)(unsafe.Add(mBase, _c_F_getConfigLatencyTrackingInfoPercentilesOutputOption[0]))
 	v83 = v79
 	v84 = v82
 	goto L17
@@ -297,7 +297,7 @@ func F_getConfigReplicaOfOption(m *base.Module, l0 int32) int32 {
 	v4 = m.G0
 	v6 = v4 - int32(272)
 	m.G0 = v6
-	v9 = *(*int32)(unsafe.Add(mBase, _consts[166]))
+	v9 = *(*int32)(unsafe.Add(mBase, _c_F_getConfigReplicaOfOption[0]))
 	if v9 == int32(0) {
 		v24 = int32(0)
 		*(*uint8)(unsafe.Add(mBase, uint32(v6)+16)) = uint8(v24)
@@ -312,9 +312,9 @@ func F_getConfigReplicaOfOption(m *base.Module, l0 int32) int32 {
 		}
 	} else {
 		*(*int32)(unsafe.Add(mBase, uint32(v6))) = v9
-		v14 = *(*int32)(unsafe.Add(mBase, _consts[274]))
+		v14 = *(*int32)(unsafe.Add(mBase, _c_F_getConfigReplicaOfOption[1]))
 		*(*int32)(unsafe.Add(mBase, uint32(v6)+4)) = v14
-		v20 = F_snprintf(m, v6+int32(16), int32(256), int32(_a543), v6)
+		v20 = F_snprintf(m, v6+int32(16), int32(256), int32(_a_F_getConfigReplicaOfOption_0), v6)
 		mBase = m.M
 		v23 = m.ExcPending
 		if v23 != 0 {
@@ -411,7 +411,7 @@ func F_initConfigValues(m *base.Module) {
 	_ = v101
 	var v107 int32
 	_ = v107
-	v6 = F_dictCreate(m, int32(_a547))
+	v6 = F_dictCreate(m, int32(_a_F_initConfigValues_0))
 	mBase = m.M
 	v7 = m.ExcPending
 	if v7 != 0 {
@@ -424,7 +424,7 @@ L1:
 	return
 L2:
 	;
-	*(*int32)(unsafe.Add(mBase, _consts[247])) = v6
+	*(*int32)(unsafe.Add(mBase, _c_F_initConfigValues[0])) = v6
 	v10 = F_dictExpand(m, v6, int32(226))
 	mBase = m.M
 	v11 = m.ExcPending
@@ -436,7 +436,7 @@ L2:
 L3:
 	;
 	v12 = int32(0)
-	v13 = *(*int32)(unsafe.Add(mBase, _consts[277]))
+	v13 = *(*int32)(unsafe.Add(mBase, _c_F_initConfigValues[1]))
 	if v13 == v12 {
 		goto L8
 	} else {
@@ -444,7 +444,7 @@ L3:
 	}
 L4:
 	;
-	F__serverAssert(m, int32(_a548), int32(_a473), int32(3571))
+	F__serverAssert(m, int32(_a_F_initConfigValues_1), int32(_a_F_initConfigValues_2), int32(3571))
 	mBase = m.M
 	v107 = m.ExcPending
 	if v107 != 0 {
@@ -454,7 +454,7 @@ L4:
 	}
 L5:
 	;
-	F__serverAssert(m, int32(_a548), int32(_a473), int32(3565))
+	F__serverAssert(m, int32(_a_F_initConfigValues_1), int32(_a_F_initConfigValues_2), int32(3565))
 	mBase = m.M
 	v101 = m.ExcPending
 	if v101 != 0 {
@@ -464,7 +464,7 @@ L5:
 	}
 L6:
 	;
-	F__serverAssert(m, int32(_a549), int32(_a473), int32(3560))
+	F__serverAssert(m, int32(_a_F_initConfigValues_3), int32(_a_F_initConfigValues_2), int32(3560))
 	mBase = m.M
 	v95 = m.ExcPending
 	if v95 != 0 {
@@ -474,7 +474,7 @@ L6:
 	}
 L7:
 	;
-	F__serverAssert(m, int32(_a550), int32(_a473), int32(3555))
+	F__serverAssert(m, int32(_a_F_initConfigValues_4), int32(_a_F_initConfigValues_2), int32(3555))
 	mBase = m.M
 	v89 = m.ExcPending
 	if v89 != 0 {
@@ -487,7 +487,7 @@ L8:
 	return
 L9:
 	;
-	v17 = int32(_a551)
+	v17 = int32(_a_F_initConfigValues_5)
 	goto L10
 L10:
 	;
@@ -556,7 +556,7 @@ L19:
 	goto L22
 L20:
 	;
-	v48 = *(*int32)(unsafe.Add(mBase, _consts[247]))
+	v48 = *(*int32)(unsafe.Add(mBase, _c_F_initConfigValues[0]))
 	v49 = F_sdsnew(m, v38)
 	mBase = m.M
 	v50 = m.ExcPending
@@ -628,7 +628,7 @@ L29:
 	*(*int32)(unsafe.Add(mBase, uint32(v62))) = v68
 	v70 = *(*int32)(unsafe.Add(mBase, uint32(v17)))
 	*(*int32)(unsafe.Add(mBase, uint32(v62)+4)) = v70
-	v73 = *(*int32)(unsafe.Add(mBase, _consts[247]))
+	v73 = *(*int32)(unsafe.Add(mBase, _c_F_initConfigValues[0]))
 	v74 = F_sdsnew(m, v53)
 	mBase = m.M
 	v75 = m.ExcPending
@@ -744,7 +744,7 @@ func F_removeConfig(m *base.Module, l0 int32) {
 	_ = v56
 	var v57 int32
 	_ = v57
-	v6 = *(*int32)(unsafe.Add(mBase, _consts[247]))
+	v6 = *(*int32)(unsafe.Add(mBase, _c_F_removeConfig[0]))
 	v7 = F_dictFind(m, v6, l0)
 	mBase = m.M
 	v8 = m.ExcPending
@@ -787,7 +787,7 @@ L6:
 	}
 L7:
 	;
-	v55 = *(*int32)(unsafe.Add(mBase, _consts[247]))
+	v55 = *(*int32)(unsafe.Add(mBase, _c_F_removeConfig[0]))
 	v56 = F_dictDelete(m, v55, l0)
 	mBase = m.M
 	v57 = m.ExcPending
@@ -929,7 +929,7 @@ func F_rewriteConfigBindOption(m *base.Module, l0 int32, l1 int32, l2 int32, l3 
 	var v26 int32
 	_ = v26
 	if l3 < int32(1) {
-		v11 = F_sdsnew(m, int32(_a542))
+		v11 = F_sdsnew(m, int32(_a_F_rewriteConfigBindOption_0))
 		v12 = m.ExcPending
 		if v12 != 0 {
 			return
@@ -940,7 +940,7 @@ func F_rewriteConfigBindOption(m *base.Module, l0 int32, l1 int32, l2 int32, l3 
 			if v15 != 0 {
 				return
 			} else {
-				v18 = F_sdscatlen(m, v14, int32(_a6), int32(1))
+				v18 = F_sdscatlen(m, v14, int32(_a_F_rewriteConfigBindOption_1), int32(1))
 				v19 = m.ExcPending
 				if v19 != 0 {
 					return
@@ -968,7 +968,7 @@ func F_rewriteConfigBindOption(m *base.Module, l0 int32, l1 int32, l2 int32, l3 
 			}
 		}
 	} else {
-		v8 = F_sdsjoin(m, l2, l3, int32(_a6))
+		v8 = F_sdsjoin(m, l2, l3, int32(_a_F_rewriteConfigBindOption_1))
 		v9 = m.ExcPending
 		if v9 != 0 {
 			return
@@ -979,7 +979,7 @@ func F_rewriteConfigBindOption(m *base.Module, l0 int32, l1 int32, l2 int32, l3 
 			if v15 != 0 {
 				return
 			} else {
-				v18 = F_sdscatlen(m, v14, int32(_a6), int32(1))
+				v18 = F_sdscatlen(m, v14, int32(_a_F_rewriteConfigBindOption_1), int32(1))
 				v19 = m.ExcPending
 				if v19 != 0 {
 					return
@@ -1192,7 +1192,7 @@ L17:
 	goto L7
 L18:
 	;
-	v64 = F_sdscatlen(m, v60, int32(_a26), int32(1))
+	v64 = F_sdscatlen(m, v60, int32(_a_F_rewriteConfigGetContentFromState_0), int32(1))
 	mBase = m.M
 	v65 = m.ExcPending
 	if v65 != 0 {
@@ -1250,7 +1250,7 @@ func F_rewriteConfigNotifyKeyspaceEventsOption(m *base.Module, l0 int32, l1 int3
 	_ = v46
 	var v47 int32
 	_ = v47
-	v10 = *(*int32)(unsafe.Add(mBase, _consts[252]))
+	v10 = *(*int32)(unsafe.Add(mBase, _c_F_rewriteConfigNotifyKeyspaceEventsOption[0]))
 	v11 = F_keyspaceEventsFlagsToString(m, v10)
 	mBase = m.M
 	v12 = m.ExcPending
@@ -1263,7 +1263,7 @@ func F_rewriteConfigNotifyKeyspaceEventsOption(m *base.Module, l0 int32, l1 int3
 		if v14 != 0 {
 			return
 		} else {
-			v17 = F_sdscatlen(m, v13, int32(_a6), int32(1))
+			v17 = F_sdscatlen(m, v13, int32(_a_F_rewriteConfigNotifyKeyspaceEventsOption_0), int32(1))
 			mBase = m.M
 			v18 = m.ExcPending
 			if v18 != 0 {
@@ -1515,8 +1515,8 @@ func F_rewriteConfigOverwriteFile(m *base.Module, l0 int32, l1 int32) int32 {
 	v17 = v15 - int32(4224)
 	m.G0 = v17
 	*(*int32)(unsafe.Add(mBase, uint32(v17)+112)) = l0
-	*(*int32)(unsafe.Add(mBase, uint32(v17)+116)) = int32(_a500)
-	v28 = F_snprintf(m, v17+int32(128), int32(4096), int32(_a501), v17+int32(112))
+	*(*int32)(unsafe.Add(mBase, uint32(v17)+116)) = int32(_a_F_rewriteConfigOverwriteFile_0)
+	v28 = F_snprintf(m, v17+int32(128), int32(4096), int32(_a_F_rewriteConfigOverwriteFile_1), v17+int32(112))
 	mBase = m.M
 	v31 = m.ExcPending
 	if v31 != 0 {
@@ -1548,7 +1548,7 @@ L4:
 	}
 L5:
 	;
-	v37 = *(*int32)(unsafe.Add(mBase, _consts[28]))
+	v37 = *(*int32)(unsafe.Add(mBase, _c_F_rewriteConfigOverwriteFile[0]))
 	if int32(3) < v37 {
 		goto L6
 	} else {
@@ -1559,7 +1559,7 @@ L6:
 	goto L9
 L7:
 	;
-	F__serverLog(m, int32(3), int32(_a502), int32(0))
+	F__serverLog(m, int32(3), int32(_a_F_rewriteConfigOverwriteFile_2), int32(0))
 	mBase = m.M
 	v44 = m.ExcPending
 	if v44 != 0 {
@@ -1572,12 +1572,12 @@ L8:
 	goto L6
 L9:
 	;
-	*(*int32)(unsafe.Add(mBase, _consts[18])) = int32(37)
+	*(*int32)(unsafe.Add(mBase, _c_F_rewriteConfigOverwriteFile[1])) = int32(37)
 	v302 = int32(-1)
 	goto L1
 L10:
 	;
-	v288 = *(*int32)(unsafe.Add(mBase, _consts[28]))
+	v288 = *(*int32)(unsafe.Add(mBase, _c_F_rewriteConfigOverwriteFile[0]))
 	if int32(3) < v288 {
 		v302 = v49
 		goto L1
@@ -1728,7 +1728,7 @@ L31:
 	goto L32
 L32:
 	;
-	v109 = *(*int32)(unsafe.Add(mBase, _consts[18]))
+	v109 = *(*int32)(unsafe.Add(mBase, _c_F_rewriteConfigOverwriteFile[1]))
 	if v109 == int32(27) {
 		goto L14
 	} else {
@@ -1738,7 +1738,7 @@ L33:
 	;
 	v112 = int32(-1)
 	v113 = int32(0)
-	v115 = *(*int32)(unsafe.Add(mBase, _consts[28]))
+	v115 = *(*int32)(unsafe.Add(mBase, _c_F_rewriteConfigOverwriteFile[0]))
 	if int32(3) < v115 {
 		v276 = v112
 		v279 = v113
@@ -1755,7 +1755,7 @@ L35:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v17)+20)) = v118
 	*(*int32)(unsafe.Add(mBase, uint32(v17)+16)) = v81
-	F__serverLog(m, int32(3), int32(_a503), v17+int32(16))
+	F__serverLog(m, int32(3), int32(_a_F_rewriteConfigOverwriteFile_3), v17+int32(16))
 	mBase = m.M
 	v126 = m.ExcPending
 	if v126 != 0 {
@@ -1771,7 +1771,7 @@ L36:
 L37:
 	;
 	v148 = int32(-1)
-	v150 = *(*int32)(unsafe.Add(mBase, _consts[253]))
+	v150 = *(*int32)(unsafe.Add(mBase, _c_F_rewriteConfigOverwriteFile[2]))
 	v155 = F_fchmod(m, v54, (v150^v148)&int32(420))
 	mBase = m.M
 	if v155 != v148 {
@@ -1783,7 +1783,7 @@ L38:
 	;
 	v132 = int32(-1)
 	v133 = int32(0)
-	v135 = *(*int32)(unsafe.Add(mBase, _consts[28]))
+	v135 = *(*int32)(unsafe.Add(mBase, _c_F_rewriteConfigOverwriteFile[0]))
 	if int32(3) < v135 {
 		v276 = v132
 		v279 = v133
@@ -1796,14 +1796,14 @@ L39:
 	goto L40
 L40:
 	;
-	v139 = *(*int32)(unsafe.Add(mBase, _consts[18]))
+	v139 = *(*int32)(unsafe.Add(mBase, _c_F_rewriteConfigOverwriteFile[1]))
 	v140 = F___strerror_l(m, v139, v139)
 	mBase = m.M
 	goto L41
 L41:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v17)+96)) = v140
-	F__serverLog(m, int32(3), int32(_a504), v17+int32(96))
+	F__serverLog(m, int32(3), int32(_a_F_rewriteConfigOverwriteFile_4), v17+int32(96))
 	mBase = m.M
 	v147 = m.ExcPending
 	if v147 != 0 {
@@ -1828,7 +1828,7 @@ L43:
 L44:
 	;
 	v158 = int32(0)
-	v160 = *(*int32)(unsafe.Add(mBase, _consts[28]))
+	v160 = *(*int32)(unsafe.Add(mBase, _c_F_rewriteConfigOverwriteFile[0]))
 	if int32(3) < v160 {
 		v276 = v148
 		v279 = v158
@@ -1841,14 +1841,14 @@ L45:
 	goto L46
 L46:
 	;
-	v164 = *(*int32)(unsafe.Add(mBase, _consts[18]))
+	v164 = *(*int32)(unsafe.Add(mBase, _c_F_rewriteConfigOverwriteFile[1]))
 	v165 = F___strerror_l(m, v164, v164)
 	mBase = m.M
 	goto L47
 L47:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v17)+32)) = v165
-	F__serverLog(m, int32(3), int32(_a505), v17+int32(32))
+	F__serverLog(m, int32(3), int32(_a_F_rewriteConfigOverwriteFile_5), v17+int32(32))
 	mBase = m.M
 	v172 = m.ExcPending
 	if v172 != 0 {
@@ -1878,7 +1878,7 @@ L50:
 	;
 	v178 = int32(-1)
 	v179 = int32(0)
-	v181 = *(*int32)(unsafe.Add(mBase, _consts[28]))
+	v181 = *(*int32)(unsafe.Add(mBase, _c_F_rewriteConfigOverwriteFile[0]))
 	if int32(3) < v181 {
 		v276 = v178
 		v279 = v179
@@ -1891,14 +1891,14 @@ L51:
 	goto L52
 L52:
 	;
-	v185 = *(*int32)(unsafe.Add(mBase, _consts[18]))
+	v185 = *(*int32)(unsafe.Add(mBase, _c_F_rewriteConfigOverwriteFile[1]))
 	v186 = F___strerror_l(m, v185, v185)
 	mBase = m.M
 	goto L53
 L53:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v17)+48)) = v186
-	F__serverLog(m, int32(3), int32(_a506), v17+int32(48))
+	F__serverLog(m, int32(3), int32(_a_F_rewriteConfigOverwriteFile_6), v17+int32(48))
 	mBase = m.M
 	v193 = m.ExcPending
 	if v193 != 0 {
@@ -1913,7 +1913,7 @@ L54:
 	goto L13
 L55:
 	;
-	v248 = *(*int32)(unsafe.Add(mBase, _consts[28]))
+	v248 = *(*int32)(unsafe.Add(mBase, _c_F_rewriteConfigOverwriteFile[0]))
 	if v241 != int32(-1) {
 		goto L68
 	} else {
@@ -2031,14 +2031,14 @@ L70:
 	goto L71
 L71:
 	;
-	v255 = *(*int32)(unsafe.Add(mBase, _consts[18]))
+	v255 = *(*int32)(unsafe.Add(mBase, _c_F_rewriteConfigOverwriteFile[1]))
 	v256 = F___strerror_l(m, v255, v255)
 	mBase = m.M
 	goto L72
 L72:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v17)+64)) = v256
-	F__serverLog(m, int32(3), int32(_a507), v17+int32(64))
+	F__serverLog(m, int32(3), int32(_a_F_rewriteConfigOverwriteFile_7), v17+int32(64))
 	mBase = m.M
 	v263 = m.ExcPending
 	if v263 != 0 {
@@ -2055,7 +2055,7 @@ L74:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v17)+80)) = l0
 	v269 = int32(0)
-	F__serverLog(m, v269, int32(_a508), v17+int32(80))
+	F__serverLog(m, v269, int32(_a_F_rewriteConfigOverwriteFile_8), v17+int32(80))
 	mBase = m.M
 	v275 = m.ExcPending
 	if v275 != 0 {
@@ -2070,7 +2070,7 @@ L75:
 	goto L13
 L76:
 	;
-	v281 = *(*int32)(unsafe.Add(mBase, _consts[18]))
+	v281 = *(*int32)(unsafe.Add(mBase, _c_F_rewriteConfigOverwriteFile[1]))
 	v282 = F_close(m, v54)
 	mBase = m.M
 	if v279 != 0 {
@@ -2080,7 +2080,7 @@ L76:
 	}
 L77:
 	;
-	*(*int32)(unsafe.Add(mBase, _consts[18])) = v281
+	*(*int32)(unsafe.Add(mBase, _c_F_rewriteConfigOverwriteFile[1])) = v281
 	v302 = v276
 	goto L1
 L78:
@@ -2093,14 +2093,14 @@ L79:
 	goto L80
 L80:
 	;
-	v292 = *(*int32)(unsafe.Add(mBase, _consts[18]))
+	v292 = *(*int32)(unsafe.Add(mBase, _c_F_rewriteConfigOverwriteFile[1]))
 	v293 = F___strerror_l(m, v292, v292)
 	mBase = m.M
 	goto L81
 L81:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v17))) = v293
-	F__serverLog(m, int32(3), int32(_a509), v17)
+	F__serverLog(m, int32(3), int32(_a_F_rewriteConfigOverwriteFile_9), v17)
 	mBase = m.M
 	v298 = m.ExcPending
 	if v298 != 0 {
@@ -2176,7 +2176,7 @@ func F_rewriteConfigSocketBindOption(m *base.Module, l0 int32, l1 int32, l2 int3
 	_ = v86
 	var v91 int32
 	_ = v91
-	v6 = *(*int32)(unsafe.Add(mBase, _consts[135]))
+	v6 = *(*int32)(unsafe.Add(mBase, _c_F_rewriteConfigSocketBindOption[0]))
 	if v6 != int32(2) {
 		goto L2
 	} else {
@@ -2187,7 +2187,7 @@ L1:
 	return
 L2:
 	;
-	F_rewriteConfigBindOption(m, l1, l2, int32(_a261), v6)
+	F_rewriteConfigBindOption(m, l1, l2, int32(_a_F_rewriteConfigSocketBindOption_0), v6)
 	mBase = m.M
 	v91 = m.ExcPending
 	if v91 != 0 {
@@ -2197,9 +2197,9 @@ L2:
 	}
 L3:
 	;
-	v10 = *(*int32)(unsafe.Add(mBase, _consts[270]))
-	v11 = int32(_a540)
-	v14 = int32(*(*uint8)(unsafe.Add(mBase, _consts[271])))
+	v10 = *(*int32)(unsafe.Add(mBase, _c_F_rewriteConfigSocketBindOption[1]))
+	v11 = int32(_a_F_rewriteConfigSocketBindOption_1)
+	v14 = int32(*(*uint8)(unsafe.Add(mBase, _c_F_rewriteConfigSocketBindOption[2])))
 	v15 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v10))))
 	if v15 == int32(0) {
 		v38 = v14
@@ -2263,9 +2263,9 @@ L11:
 	goto L9
 L12:
 	;
-	v44 = *(*int32)(unsafe.Add(mBase, _consts[272]))
-	v45 = int32(_a541)
-	v48 = int32(*(*uint8)(unsafe.Add(mBase, _consts[273])))
+	v44 = *(*int32)(unsafe.Add(mBase, _c_F_rewriteConfigSocketBindOption[3]))
+	v45 = int32(_a_F_rewriteConfigSocketBindOption_2)
+	v48 = int32(*(*uint8)(unsafe.Add(mBase, _c_F_rewriteConfigSocketBindOption[4])))
 	v49 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v44))))
 	if v49 == int32(0) {
 		v72 = v48
@@ -2583,7 +2583,7 @@ L18:
 	goto L16
 L19:
 	;
-	v57 = F_sdscatlen(m, v53, int32(_a6), int32(1))
+	v57 = F_sdscatlen(m, v53, int32(_a_F_rewriteConfigStringOption_0), int32(1))
 	mBase = m.M
 	v58 = m.ExcPending
 	if v58 != 0 {
@@ -2842,7 +2842,7 @@ L6:
 	;
 	v41 = l1 + v34<<(uint(int32(2))%32)
 	v42 = *(*int32)(unsafe.Add(mBase, uint32(v41)))
-	v45 = F_strcasecmp(m, v42, int32(_a529))
+	v45 = F_strcasecmp(m, v42, int32(_a_F_setConfigClientOutputBufferLimitOption_0))
 	mBase = m.M
 	if v45 != 0 {
 		goto L11
@@ -2889,7 +2889,7 @@ L10:
 L11:
 	;
 	v47 = int32(1)
-	v49 = F_strcasecmp(m, v42, int32(_a530))
+	v49 = F_strcasecmp(m, v42, int32(_a_F_setConfigClientOutputBufferLimitOption_1))
 	mBase = m.M
 	if v49 == int32(0) {
 		v67 = v47
@@ -2907,7 +2907,7 @@ L13:
 	goto L10
 L14:
 	;
-	v53 = F_strcasecmp(m, v42, int32(_a531))
+	v53 = F_strcasecmp(m, v42, int32(_a_F_setConfigClientOutputBufferLimitOption_2))
 	mBase = m.M
 	if v53 == int32(0) {
 		v67 = v47
@@ -2917,7 +2917,7 @@ L14:
 	}
 L15:
 	;
-	v57 = F_strcasecmp(m, v42, int32(_a532))
+	v57 = F_strcasecmp(m, v42, int32(_a_F_setConfigClientOutputBufferLimitOption_3))
 	mBase = m.M
 	if v57 != 0 {
 		goto L16
@@ -2926,7 +2926,7 @@ L15:
 	}
 L16:
 	;
-	v60 = F_strcasecmp(m, v42, int32(_a533))
+	v60 = F_strcasecmp(m, v42, int32(_a_F_setConfigClientOutputBufferLimitOption_4))
 	mBase = m.M
 	if v60 != 0 {
 		goto L18
@@ -2939,7 +2939,7 @@ L17:
 	goto L10
 L18:
 	;
-	v65 = F_strcasecmp(m, v42, int32(_a534))
+	v65 = F_strcasecmp(m, v42, int32(_a_F_setConfigClientOutputBufferLimitOption_5))
 	mBase = m.M
 	if v65 != 0 {
 		goto L20
@@ -2964,7 +2964,7 @@ L22:
 	goto L13
 L23:
 	;
-	*(*int32)(unsafe.Add(mBase, uint32(l3))) = int32(_a535)
+	*(*int32)(unsafe.Add(mBase, uint32(l3))) = int32(_a_F_setConfigClientOutputBufferLimitOption_6)
 	v209 = v72
 	goto L1
 L24:
@@ -3027,7 +3027,7 @@ L30:
 	goto L26
 L31:
 	;
-	*(*int32)(unsafe.Add(mBase, uint32(l3))) = int32(_a536)
+	*(*int32)(unsafe.Add(mBase, uint32(l3))) = int32(_a_F_setConfigClientOutputBufferLimitOption_7)
 	v209 = v107
 	goto L1
 L32:
@@ -3036,11 +3036,11 @@ L32:
 L33:
 	;
 	v134 = *(*int64)(unsafe.Add(mBase, uint32(v14)+16))
-	*(*int64)(unsafe.Add(mBase, _consts[258])) = v134
+	*(*int64)(unsafe.Add(mBase, _c_F_setConfigClientOutputBufferLimitOption[0])) = v134
 	v139 = *(*int64)(unsafe.Add(mBase, uint32(v14)+24))
-	*(*int64)(unsafe.Add(mBase, _consts[259])) = v139
+	*(*int64)(unsafe.Add(mBase, _c_F_setConfigClientOutputBufferLimitOption[1])) = v139
 	v146 = *(*int64)(unsafe.Add(mBase, uint32(v14+int32(32))))
-	*(*int64)(unsafe.Add(mBase, _consts[260])) = v146
+	*(*int64)(unsafe.Add(mBase, _c_F_setConfigClientOutputBufferLimitOption[2])) = v146
 	goto L4
 L34:
 	;
@@ -3055,25 +3055,25 @@ L34:
 L35:
 	;
 	v163 = *(*int64)(unsafe.Add(mBase, uint32(v14)+40))
-	*(*int64)(unsafe.Add(mBase, _consts[261])) = v163
+	*(*int64)(unsafe.Add(mBase, _c_F_setConfigClientOutputBufferLimitOption[3])) = v163
 	v170 = *(*int64)(unsafe.Add(mBase, uint32(v14+int32(56))))
-	*(*int64)(unsafe.Add(mBase, _consts[262])) = v170
+	*(*int64)(unsafe.Add(mBase, _c_F_setConfigClientOutputBufferLimitOption[4])) = v170
 	v177 = *(*int64)(unsafe.Add(mBase, uint32(v14+int32(48))))
-	*(*int64)(unsafe.Add(mBase, _consts[263])) = v177
+	*(*int64)(unsafe.Add(mBase, _c_F_setConfigClientOutputBufferLimitOption[5])) = v177
 	goto L34
 L36:
 	;
 	v184 = *(*int64)(unsafe.Add(mBase, uint32(v14)+64))
-	*(*int64)(unsafe.Add(mBase, _consts[264])) = v184
+	*(*int64)(unsafe.Add(mBase, _c_F_setConfigClientOutputBufferLimitOption[6])) = v184
 	v191 = *(*int64)(unsafe.Add(mBase, uint32(v14+int32(80))))
-	*(*int64)(unsafe.Add(mBase, _consts[265])) = v191
+	*(*int64)(unsafe.Add(mBase, _c_F_setConfigClientOutputBufferLimitOption[7])) = v191
 	v198 = *(*int64)(unsafe.Add(mBase, uint32(v14+int32(72))))
-	*(*int64)(unsafe.Add(mBase, _consts[266])) = v198
+	*(*int64)(unsafe.Add(mBase, _c_F_setConfigClientOutputBufferLimitOption[8])) = v198
 	v209 = v179
 	goto L1
 L37:
 	;
-	*(*int32)(unsafe.Add(mBase, uint32(l3))) = int32(_a537)
+	*(*int32)(unsafe.Add(mBase, uint32(l3))) = int32(_a_F_setConfigClientOutputBufferLimitOption_8)
 	v209 = v5
 	goto L1
 }
@@ -3191,7 +3191,7 @@ func F_setConfigLatencyTrackingInfoPercentilesOutputOption(m *base.Module, l0 in
 	v12 = m.G0
 	v14 = v12 - int32(16)
 	m.G0 = v14
-	v17 = *(*int32)(unsafe.Add(mBase, _consts[275]))
+	v17 = *(*int32)(unsafe.Add(mBase, _c_F_setConfigLatencyTrackingInfoPercentilesOutputOption[0]))
 	F_valkey_free(m, v17)
 	mBase = m.M
 	v21 = m.ExcPending
@@ -3205,10 +3205,10 @@ L1:
 	return int32(0)
 L2:
 	;
-	v22 = int32(_a20)
-	*(*int32)(unsafe.Add(mBase, _consts[276])) = l2
+	v22 = int32(_a_F_setConfigLatencyTrackingInfoPercentilesOutputOption_0)
+	*(*int32)(unsafe.Add(mBase, _c_F_setConfigLatencyTrackingInfoPercentilesOutputOption[1])) = l2
 	v24 = int32(0)
-	*(*int32)(unsafe.Add(mBase, _consts[275])) = v24
+	*(*int32)(unsafe.Add(mBase, _c_F_setConfigLatencyTrackingInfoPercentilesOutputOption[0])) = v24
 	v28 = int32(1)
 	if l2 != v28 {
 		goto L5
@@ -3221,7 +3221,7 @@ L3:
 	return v216
 L4:
 	;
-	*(*int32)(unsafe.Add(mBase, _consts[276])) = int32(0)
+	*(*int32)(unsafe.Add(mBase, _c_F_setConfigLatencyTrackingInfoPercentilesOutputOption[1])) = int32(0)
 	v216 = v203
 	goto L3
 L5:
@@ -3291,8 +3291,8 @@ L13:
 	goto L5
 L14:
 	;
-	*(*int32)(unsafe.Add(mBase, _consts[275])) = v61
-	v65 = *(*int32)(unsafe.Add(mBase, _consts[276]))
+	*(*int32)(unsafe.Add(mBase, _c_F_setConfigLatencyTrackingInfoPercentilesOutputOption[0])) = v61
+	v65 = *(*int32)(unsafe.Add(mBase, _c_F_setConfigLatencyTrackingInfoPercentilesOutputOption[1]))
 	if v65 < int32(1) {
 		v216 = v28
 		goto L3
@@ -3325,7 +3325,7 @@ L16:
 L17:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(l3))) = v185
-	v189 = *(*int32)(unsafe.Add(mBase, _consts[275]))
+	v189 = *(*int32)(unsafe.Add(mBase, _c_F_setConfigLatencyTrackingInfoPercentilesOutputOption[0]))
 	F_valkey_free(m, v189)
 	mBase = m.M
 	v191 = m.ExcPending
@@ -3381,7 +3381,7 @@ L24:
 	goto L17
 L25:
 	;
-	v167 = int32(_a544)
+	v167 = int32(_a_F_setConfigLatencyTrackingInfoPercentilesOutputOption_1)
 	v168 = *(*float64)(unsafe.Add(mBase, uint32(v14)+8))
 	if base.F64_gt(v168, float64(100)) != 0 {
 		v185 = v167
@@ -3483,7 +3483,7 @@ L39:
 	goto L28
 L40:
 	;
-	v185 = int32(_a545)
+	v185 = int32(_a_F_setConfigLatencyTrackingInfoPercentilesOutputOption_2)
 	goto L24
 L41:
 	;
@@ -3495,12 +3495,12 @@ L41:
 	}
 L42:
 	;
-	v173 = int32(_a20)
-	v174 = *(*int32)(unsafe.Add(mBase, _consts[275]))
+	v173 = int32(_a_F_setConfigLatencyTrackingInfoPercentilesOutputOption_0)
+	v174 = *(*int32)(unsafe.Add(mBase, _c_F_setConfigLatencyTrackingInfoPercentilesOutputOption[0]))
 	*(*float64)(unsafe.Add(mBase, uint32(v174+v73<<(uint(int32(3))%32)))) = v168
 	v179 = int32(1)
 	v181 = v73 + v179
-	v183 = *(*int32)(unsafe.Add(mBase, _consts[276]))
+	v183 = *(*int32)(unsafe.Add(mBase, _c_F_setConfigLatencyTrackingInfoPercentilesOutputOption[1]))
 	if v181 < v183 {
 		v73 = v181
 		goto L16
@@ -3514,7 +3514,7 @@ L43:
 L44:
 	;
 	v192 = int32(0)
-	*(*int32)(unsafe.Add(mBase, _consts[275])) = v192
+	*(*int32)(unsafe.Add(mBase, _c_F_setConfigLatencyTrackingInfoPercentilesOutputOption[0])) = v192
 	v203 = v192
 	goto L4
 }
@@ -3579,7 +3579,7 @@ func F_setConfigOOMScoreAdjValuesOption(m *base.Module, l0 int32, l1 int32, l2 i
 	v11 = v9 - int32(16)
 	m.G0 = v11
 	if l2 != int32(3) {
-		*(*int32)(unsafe.Add(mBase, uint32(l3))) = int32(_a483)
+		*(*int32)(unsafe.Add(mBase, uint32(l3))) = int32(_a_F_setConfigOOMScoreAdjValuesOption_0)
 		v107 = int32(0)
 		m.G0 = v11 + int32(16)
 		return v107
@@ -3592,7 +3592,7 @@ func F_setConfigOOMScoreAdjValuesOption(m *base.Module, l0 int32, l1 int32, l2 i
 		if v22 != 0 {
 			if l3 == int32(0) {
 			} else {
-				*(*int32)(unsafe.Add(mBase, uint32(l3))) = int32(_a538)
+				*(*int32)(unsafe.Add(mBase, uint32(l3))) = int32(_a_F_setConfigOOMScoreAdjValuesOption_1)
 			}
 			v107 = int32(0)
 			m.G0 = v11 + int32(16)
@@ -3601,7 +3601,7 @@ func F_setConfigOOMScoreAdjValuesOption(m *base.Module, l0 int32, l1 int32, l2 i
 			if base.Ui64(int64(4001)) <= base.Ui64(v20+int64(2000)) {
 				if l3 == int32(0) {
 				} else {
-					*(*int32)(unsafe.Add(mBase, uint32(l3))) = int32(_a538)
+					*(*int32)(unsafe.Add(mBase, uint32(l3))) = int32(_a_F_setConfigOOMScoreAdjValuesOption_1)
 				}
 				v107 = int32(0)
 				m.G0 = v11 + int32(16)
@@ -3615,7 +3615,7 @@ func F_setConfigOOMScoreAdjValuesOption(m *base.Module, l0 int32, l1 int32, l2 i
 				if v34 != 0 {
 					if l3 == int32(0) {
 					} else {
-						*(*int32)(unsafe.Add(mBase, uint32(l3))) = int32(_a538)
+						*(*int32)(unsafe.Add(mBase, uint32(l3))) = int32(_a_F_setConfigOOMScoreAdjValuesOption_1)
 					}
 					v107 = int32(0)
 					m.G0 = v11 + int32(16)
@@ -3624,7 +3624,7 @@ func F_setConfigOOMScoreAdjValuesOption(m *base.Module, l0 int32, l1 int32, l2 i
 					if base.Ui64(int64(4000)) < base.Ui64(v32+int64(2000)) {
 						if l3 == int32(0) {
 						} else {
-							*(*int32)(unsafe.Add(mBase, uint32(l3))) = int32(_a538)
+							*(*int32)(unsafe.Add(mBase, uint32(l3))) = int32(_a_F_setConfigOOMScoreAdjValuesOption_1)
 						}
 						v107 = int32(0)
 						m.G0 = v11 + int32(16)
@@ -3638,7 +3638,7 @@ func F_setConfigOOMScoreAdjValuesOption(m *base.Module, l0 int32, l1 int32, l2 i
 						if v46 != 0 {
 							if l3 == int32(0) {
 							} else {
-								*(*int32)(unsafe.Add(mBase, uint32(l3))) = int32(_a538)
+								*(*int32)(unsafe.Add(mBase, uint32(l3))) = int32(_a_F_setConfigOOMScoreAdjValuesOption_1)
 							}
 							v107 = int32(0)
 							m.G0 = v11 + int32(16)
@@ -3647,7 +3647,7 @@ func F_setConfigOOMScoreAdjValuesOption(m *base.Module, l0 int32, l1 int32, l2 i
 							if base.Ui64(int64(4000)) < base.Ui64(v44+int64(2000)) {
 								if l3 == int32(0) {
 								} else {
-									*(*int32)(unsafe.Add(mBase, uint32(l3))) = int32(_a538)
+									*(*int32)(unsafe.Add(mBase, uint32(l3))) = int32(_a_F_setConfigOOMScoreAdjValuesOption_1)
 								}
 								v107 = int32(0)
 								m.G0 = v11 + int32(16)
@@ -3655,25 +3655,25 @@ func F_setConfigOOMScoreAdjValuesOption(m *base.Module, l0 int32, l1 int32, l2 i
 							} else {
 								v51 = base.I32_wrap_i64(v20)
 								if v32 < v20 {
-									v59 = *(*int32)(unsafe.Add(mBase, _consts[28]))
+									v59 = *(*int32)(unsafe.Add(mBase, _c_F_setConfigOOMScoreAdjValuesOption[0]))
 									if int32(3) < v59 {
 										v69 = base.I32_wrap_i64(v32)
-										v72 = *(*int32)(unsafe.Add(mBase, _consts[267]))
+										v72 = *(*int32)(unsafe.Add(mBase, _c_F_setConfigOOMScoreAdjValuesOption[1]))
 										if v72 == v51 {
 											v77 = int32(0)
 										} else {
-											*(*int32)(unsafe.Add(mBase, _consts[267])) = v51
+											*(*int32)(unsafe.Add(mBase, _c_F_setConfigOOMScoreAdjValuesOption[1])) = v51
 											v77 = int32(1)
 										}
 										v78 = base.I32_wrap_i64(v44)
-										v80 = *(*int32)(unsafe.Add(mBase, _consts[268]))
+										v80 = *(*int32)(unsafe.Add(mBase, _c_F_setConfigOOMScoreAdjValuesOption[2]))
 										if v80 == v69 {
 											v85 = v77
 										} else {
-											*(*int32)(unsafe.Add(mBase, _consts[268])) = v69
+											*(*int32)(unsafe.Add(mBase, _c_F_setConfigOOMScoreAdjValuesOption[2])) = v69
 											v85 = int32(1)
 										}
-										v87 = *(*int32)(unsafe.Add(mBase, _consts[269]))
+										v87 = *(*int32)(unsafe.Add(mBase, _c_F_setConfigOOMScoreAdjValuesOption[3]))
 										if v87 == v78 {
 											if v85 != 0 {
 												v94 = int32(1)
@@ -3682,35 +3682,35 @@ func F_setConfigOOMScoreAdjValuesOption(m *base.Module, l0 int32, l1 int32, l2 i
 											}
 											v107 = v94
 										} else {
-											*(*int32)(unsafe.Add(mBase, _consts[269])) = v78
+											*(*int32)(unsafe.Add(mBase, _c_F_setConfigOOMScoreAdjValuesOption[3])) = v78
 											v107 = int32(1)
 										}
 										m.G0 = v11 + int32(16)
 										return v107
 									} else {
-										F__serverLog(m, int32(3), int32(_a539), int32(0))
+										F__serverLog(m, int32(3), int32(_a_F_setConfigOOMScoreAdjValuesOption_2), int32(0))
 										mBase = m.M
 										v68 = m.ExcPending
 										if v68 != 0 {
 											return int32(0)
 										} else {
 											v69 = base.I32_wrap_i64(v32)
-											v72 = *(*int32)(unsafe.Add(mBase, _consts[267]))
+											v72 = *(*int32)(unsafe.Add(mBase, _c_F_setConfigOOMScoreAdjValuesOption[1]))
 											if v72 == v51 {
 												v77 = int32(0)
 											} else {
-												*(*int32)(unsafe.Add(mBase, _consts[267])) = v51
+												*(*int32)(unsafe.Add(mBase, _c_F_setConfigOOMScoreAdjValuesOption[1])) = v51
 												v77 = int32(1)
 											}
 											v78 = base.I32_wrap_i64(v44)
-											v80 = *(*int32)(unsafe.Add(mBase, _consts[268]))
+											v80 = *(*int32)(unsafe.Add(mBase, _c_F_setConfigOOMScoreAdjValuesOption[2]))
 											if v80 == v69 {
 												v85 = v77
 											} else {
-												*(*int32)(unsafe.Add(mBase, _consts[268])) = v69
+												*(*int32)(unsafe.Add(mBase, _c_F_setConfigOOMScoreAdjValuesOption[2])) = v69
 												v85 = int32(1)
 											}
-											v87 = *(*int32)(unsafe.Add(mBase, _consts[269]))
+											v87 = *(*int32)(unsafe.Add(mBase, _c_F_setConfigOOMScoreAdjValuesOption[3]))
 											if v87 == v78 {
 												if v85 != 0 {
 													v94 = int32(1)
@@ -3719,7 +3719,7 @@ func F_setConfigOOMScoreAdjValuesOption(m *base.Module, l0 int32, l1 int32, l2 i
 												}
 												v107 = v94
 											} else {
-												*(*int32)(unsafe.Add(mBase, _consts[269])) = v78
+												*(*int32)(unsafe.Add(mBase, _c_F_setConfigOOMScoreAdjValuesOption[3])) = v78
 												v107 = int32(1)
 											}
 											m.G0 = v11 + int32(16)
@@ -3729,22 +3729,22 @@ func F_setConfigOOMScoreAdjValuesOption(m *base.Module, l0 int32, l1 int32, l2 i
 								} else {
 									if v32 <= v44 {
 										v69 = base.I32_wrap_i64(v32)
-										v72 = *(*int32)(unsafe.Add(mBase, _consts[267]))
+										v72 = *(*int32)(unsafe.Add(mBase, _c_F_setConfigOOMScoreAdjValuesOption[1]))
 										if v72 == v51 {
 											v77 = int32(0)
 										} else {
-											*(*int32)(unsafe.Add(mBase, _consts[267])) = v51
+											*(*int32)(unsafe.Add(mBase, _c_F_setConfigOOMScoreAdjValuesOption[1])) = v51
 											v77 = int32(1)
 										}
 										v78 = base.I32_wrap_i64(v44)
-										v80 = *(*int32)(unsafe.Add(mBase, _consts[268]))
+										v80 = *(*int32)(unsafe.Add(mBase, _c_F_setConfigOOMScoreAdjValuesOption[2]))
 										if v80 == v69 {
 											v85 = v77
 										} else {
-											*(*int32)(unsafe.Add(mBase, _consts[268])) = v69
+											*(*int32)(unsafe.Add(mBase, _c_F_setConfigOOMScoreAdjValuesOption[2])) = v69
 											v85 = int32(1)
 										}
-										v87 = *(*int32)(unsafe.Add(mBase, _consts[269]))
+										v87 = *(*int32)(unsafe.Add(mBase, _c_F_setConfigOOMScoreAdjValuesOption[3]))
 										if v87 == v78 {
 											if v85 != 0 {
 												v94 = int32(1)
@@ -3753,37 +3753,37 @@ func F_setConfigOOMScoreAdjValuesOption(m *base.Module, l0 int32, l1 int32, l2 i
 											}
 											v107 = v94
 										} else {
-											*(*int32)(unsafe.Add(mBase, _consts[269])) = v78
+											*(*int32)(unsafe.Add(mBase, _c_F_setConfigOOMScoreAdjValuesOption[3])) = v78
 											v107 = int32(1)
 										}
 										m.G0 = v11 + int32(16)
 										return v107
 									} else {
-										v55 = *(*int32)(unsafe.Add(mBase, _consts[28]))
+										v55 = *(*int32)(unsafe.Add(mBase, _c_F_setConfigOOMScoreAdjValuesOption[0]))
 										if v55 <= int32(3) {
-											F__serverLog(m, int32(3), int32(_a539), int32(0))
+											F__serverLog(m, int32(3), int32(_a_F_setConfigOOMScoreAdjValuesOption_2), int32(0))
 											mBase = m.M
 											v68 = m.ExcPending
 											if v68 != 0 {
 												return int32(0)
 											} else {
 												v69 = base.I32_wrap_i64(v32)
-												v72 = *(*int32)(unsafe.Add(mBase, _consts[267]))
+												v72 = *(*int32)(unsafe.Add(mBase, _c_F_setConfigOOMScoreAdjValuesOption[1]))
 												if v72 == v51 {
 													v77 = int32(0)
 												} else {
-													*(*int32)(unsafe.Add(mBase, _consts[267])) = v51
+													*(*int32)(unsafe.Add(mBase, _c_F_setConfigOOMScoreAdjValuesOption[1])) = v51
 													v77 = int32(1)
 												}
 												v78 = base.I32_wrap_i64(v44)
-												v80 = *(*int32)(unsafe.Add(mBase, _consts[268]))
+												v80 = *(*int32)(unsafe.Add(mBase, _c_F_setConfigOOMScoreAdjValuesOption[2]))
 												if v80 == v69 {
 													v85 = v77
 												} else {
-													*(*int32)(unsafe.Add(mBase, _consts[268])) = v69
+													*(*int32)(unsafe.Add(mBase, _c_F_setConfigOOMScoreAdjValuesOption[2])) = v69
 													v85 = int32(1)
 												}
-												v87 = *(*int32)(unsafe.Add(mBase, _consts[269]))
+												v87 = *(*int32)(unsafe.Add(mBase, _c_F_setConfigOOMScoreAdjValuesOption[3]))
 												if v87 == v78 {
 													if v85 != 0 {
 														v94 = int32(1)
@@ -3792,7 +3792,7 @@ func F_setConfigOOMScoreAdjValuesOption(m *base.Module, l0 int32, l1 int32, l2 i
 													}
 													v107 = v94
 												} else {
-													*(*int32)(unsafe.Add(mBase, _consts[269])) = v78
+													*(*int32)(unsafe.Add(mBase, _c_F_setConfigOOMScoreAdjValuesOption[3])) = v78
 													v107 = int32(1)
 												}
 												m.G0 = v11 + int32(16)
@@ -3800,22 +3800,22 @@ func F_setConfigOOMScoreAdjValuesOption(m *base.Module, l0 int32, l1 int32, l2 i
 											}
 										} else {
 											v69 = base.I32_wrap_i64(v32)
-											v72 = *(*int32)(unsafe.Add(mBase, _consts[267]))
+											v72 = *(*int32)(unsafe.Add(mBase, _c_F_setConfigOOMScoreAdjValuesOption[1]))
 											if v72 == v51 {
 												v77 = int32(0)
 											} else {
-												*(*int32)(unsafe.Add(mBase, _consts[267])) = v51
+												*(*int32)(unsafe.Add(mBase, _c_F_setConfigOOMScoreAdjValuesOption[1])) = v51
 												v77 = int32(1)
 											}
 											v78 = base.I32_wrap_i64(v44)
-											v80 = *(*int32)(unsafe.Add(mBase, _consts[268]))
+											v80 = *(*int32)(unsafe.Add(mBase, _c_F_setConfigOOMScoreAdjValuesOption[2]))
 											if v80 == v69 {
 												v85 = v77
 											} else {
-												*(*int32)(unsafe.Add(mBase, _consts[268])) = v69
+												*(*int32)(unsafe.Add(mBase, _c_F_setConfigOOMScoreAdjValuesOption[2])) = v69
 												v85 = int32(1)
 											}
-											v87 = *(*int32)(unsafe.Add(mBase, _consts[269]))
+											v87 = *(*int32)(unsafe.Add(mBase, _c_F_setConfigOOMScoreAdjValuesOption[3]))
 											if v87 == v78 {
 												if v85 != 0 {
 													v94 = int32(1)
@@ -3824,7 +3824,7 @@ func F_setConfigOOMScoreAdjValuesOption(m *base.Module, l0 int32, l1 int32, l2 i
 												}
 												v107 = v94
 											} else {
-												*(*int32)(unsafe.Add(mBase, _consts[269])) = v78
+												*(*int32)(unsafe.Add(mBase, _c_F_setConfigOOMScoreAdjValuesOption[3])) = v78
 												v107 = int32(1)
 											}
 											m.G0 = v11 + int32(16)
@@ -3979,13 +3979,13 @@ L1:
 	return v204
 L2:
 	;
-	*(*int32)(unsafe.Add(mBase, uint32(l3))) = int32(_a528)
+	*(*int32)(unsafe.Add(mBase, uint32(l3))) = int32(_a_F_setConfigSaveOption_0)
 	v204 = int32(0)
 	goto L1
 L3:
 	;
 	v122 = int32(0)
-	v123 = int32(*(*uint8)(unsafe.Add(mBase, _consts[244])))
+	v123 = int32(*(*uint8)(unsafe.Add(mBase, _c_F_setConfigSaveOption[0])))
 	if v123 == v122 {
 		goto L36
 	} else {
@@ -4001,7 +4001,7 @@ L4:
 L5:
 	;
 	v17 = *(*int32)(unsafe.Add(mBase, uint32(l1)))
-	v18 = int32(_a320)
+	v18 = int32(_a_F_setConfigSaveOption_1)
 	v21 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v17))))
 	if v21 != 0 {
 		goto L8
@@ -4098,7 +4098,7 @@ L17:
 	goto L12
 L18:
 	;
-	v58 = *(*int32)(unsafe.Add(mBase, _consts[243]))
+	v58 = *(*int32)(unsafe.Add(mBase, _c_F_setConfigSaveOption[1]))
 	F_valkey_free(m, v58)
 	mBase = m.M
 	v62 = m.ExcPending
@@ -4112,7 +4112,7 @@ L19:
 	return int32(0)
 L20:
 	;
-	*(*int64)(unsafe.Add(mBase, _consts[243])) = int64(0)
+	*(*int64)(unsafe.Add(mBase, _c_F_setConfigSaveOption[1])) = int64(0)
 	v66 = int32(0)
 	v114 = v66
 	v117 = v66
@@ -4162,7 +4162,7 @@ L26:
 	}
 L27:
 	;
-	*(*int32)(unsafe.Add(mBase, uint32(l3))) = int32(_a528)
+	*(*int32)(unsafe.Add(mBase, uint32(l3))) = int32(_a_F_setConfigSaveOption_0)
 	v204 = int32(0)
 	goto L1
 L28:
@@ -4214,7 +4214,7 @@ L35:
 	}
 L36:
 	;
-	v132 = *(*int32)(unsafe.Add(mBase, _consts[243]))
+	v132 = *(*int32)(unsafe.Add(mBase, _c_F_setConfigSaveOption[1]))
 	F_valkey_free(m, v132)
 	mBase = m.M
 	v134 = m.ExcPending
@@ -4225,7 +4225,7 @@ L36:
 	}
 L37:
 	;
-	v127 = int32(*(*uint8)(unsafe.Add(mBase, _consts[257])))
+	v127 = int32(*(*uint8)(unsafe.Add(mBase, _c_F_setConfigSaveOption[2])))
 	if v127 != 0 {
 		goto L35
 	} else {
@@ -4234,11 +4234,11 @@ L37:
 L38:
 	;
 	v129 = int32(1)
-	*(*uint8)(unsafe.Add(mBase, _consts[257])) = uint8(v129)
+	*(*uint8)(unsafe.Add(mBase, _c_F_setConfigSaveOption[2])) = uint8(v129)
 	goto L36
 L39:
 	;
-	*(*int64)(unsafe.Add(mBase, _consts[243])) = int64(0)
+	*(*int64)(unsafe.Add(mBase, _c_F_setConfigSaveOption[1])) = int64(0)
 	goto L35
 L40:
 	;
@@ -4259,9 +4259,9 @@ L43:
 	goto L44
 L44:
 	;
-	v167 = int32(_a20)
-	v169 = *(*int32)(unsafe.Add(mBase, _consts[243]))
-	v171 = *(*int32)(unsafe.Add(mBase, _consts[59]))
+	v167 = int32(_a_F_setConfigSaveOption_2)
+	v169 = *(*int32)(unsafe.Add(mBase, _c_F_setConfigSaveOption[1]))
+	v171 = *(*int32)(unsafe.Add(mBase, _c_F_setConfigSaveOption[3]))
 	v176 = F_valkey_realloc(m, v169, v171<<(uint(int32(4))%32)+int32(16))
 	mBase = m.M
 	v177 = m.ExcPending
@@ -4272,14 +4272,14 @@ L44:
 	}
 L45:
 	;
-	*(*int32)(unsafe.Add(mBase, _consts[243])) = v176
-	v179 = int32(_a20)
-	v180 = *(*int32)(unsafe.Add(mBase, _consts[59]))
+	*(*int32)(unsafe.Add(mBase, _c_F_setConfigSaveOption[1])) = v176
+	v179 = int32(_a_F_setConfigSaveOption_2)
+	v180 = *(*int32)(unsafe.Add(mBase, _c_F_setConfigSaveOption[3]))
 	v183 = v176 + v180<<(uint(int32(4))%32)
 	*(*uint32)(unsafe.Add(mBase, uint32(v183)+8)) = uint32(v166)
 	*(*int64)(unsafe.Add(mBase, uint32(v183))) = v159
 	v186 = int32(1)
-	*(*int32)(unsafe.Add(mBase, _consts[59])) = v180 + v186
+	*(*int32)(unsafe.Add(mBase, _c_F_setConfigSaveOption[3])) = v180 + v186
 	v192 = v147 + int32(2)
 	if v192 < v114 {
 		v147 = v192

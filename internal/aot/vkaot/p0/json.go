@@ -276,11 +276,11 @@ func F_json_append_number(m *base.Module, l0 int32, l1 int32, l2 int32, l3 int32
 						v92 = *(*int32)(unsafe.Add(mBase, uint32(v88+v81<<(uint(int32(2))%32))))
 						v93 = v92
 					} else {
-						v93 = v83 + int32(_a2282)
+						v93 = v83 + int32(_a_F_json_append_number_0)
 					}
-					*(*int32)(unsafe.Add(mBase, uint32(v11)+4)) = v24 + int32(_a2335)
+					*(*int32)(unsafe.Add(mBase, uint32(v11)+4)) = v24 + int32(_a_F_json_append_number_1)
 					*(*int32)(unsafe.Add(mBase, uint32(v11))) = v93
-					v100 = F_luaL_error(m, l0, v24+int32(_a2336), v11)
+					v100 = F_luaL_error(m, l0, v24+int32(_a_F_json_append_number_2), v11)
 					mBase = m.M
 					v101 = m.ExcPending
 					if v101 != 0 {
@@ -425,11 +425,11 @@ func F_json_append_number(m *base.Module, l0 int32, l1 int32, l2 int32, l3 int32
 							v92 = *(*int32)(unsafe.Add(mBase, uint32(v88+v81<<(uint(int32(2))%32))))
 							v93 = v92
 						} else {
-							v93 = v83 + int32(_a2282)
+							v93 = v83 + int32(_a_F_json_append_number_0)
 						}
-						*(*int32)(unsafe.Add(mBase, uint32(v11)+4)) = v24 + int32(_a2335)
+						*(*int32)(unsafe.Add(mBase, uint32(v11)+4)) = v24 + int32(_a_F_json_append_number_1)
 						*(*int32)(unsafe.Add(mBase, uint32(v11))) = v93
-						v100 = F_luaL_error(m, l0, v24+int32(_a2336), v11)
+						v100 = F_luaL_error(m, l0, v24+int32(_a_F_json_append_number_2), v11)
 						mBase = m.M
 						v101 = m.ExcPending
 						if v101 != 0 {
@@ -531,9 +531,9 @@ func F_json_append_number(m *base.Module, l0 int32, l1 int32, l2 int32, l3 int32
 					v115 = *(*int32)(unsafe.Add(mBase, uint32(l2)))
 					v116 = v115 + v114
 					v117 = m.G3
-					v120 = int32(*(*uint16)(unsafe.Add(mBase, uint32(v117)+uint32(_consts[1109]))))
+					v120 = int32(*(*uint16)(unsafe.Add(mBase, uint32(v117)+uint32(_c_F_json_append_number[0]))))
 					*(*uint16)(unsafe.Add(mBase, uint32(v116))) = uint16(v120)
-					v126 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v117)+uint32(_consts[1108]))))
+					v126 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v117)+uint32(_c_F_json_append_number[1]))))
 					*(*uint8)(unsafe.Add(mBase, uint32(v116+int32(2)))) = uint8(v126)
 					v128 = *(*int32)(unsafe.Add(mBase, uint32(l2)+8))
 					*(*int32)(unsafe.Add(mBase, uint32(l2)+8)) = v128 + int32(3)
@@ -551,9 +551,9 @@ func F_json_append_number(m *base.Module, l0 int32, l1 int32, l2 int32, l3 int32
 						v115 = *(*int32)(unsafe.Add(mBase, uint32(l2)))
 						v116 = v115 + v114
 						v117 = m.G3
-						v120 = int32(*(*uint16)(unsafe.Add(mBase, uint32(v117)+uint32(_consts[1109]))))
+						v120 = int32(*(*uint16)(unsafe.Add(mBase, uint32(v117)+uint32(_c_F_json_append_number[0]))))
 						*(*uint16)(unsafe.Add(mBase, uint32(v116))) = uint16(v120)
-						v126 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v117)+uint32(_consts[1108]))))
+						v126 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v117)+uint32(_c_F_json_append_number[1]))))
 						*(*uint8)(unsafe.Add(mBase, uint32(v116+int32(2)))) = uint8(v126)
 						v128 = *(*int32)(unsafe.Add(mBase, uint32(l2)+8))
 						*(*int32)(unsafe.Add(mBase, uint32(l2)+8)) = v128 + int32(3)
@@ -765,7 +765,7 @@ L2:
 L3:
 	;
 	v17 = m.G3
-	v20 = F_luaL_argerror(m, l0, int32(1), v17+int32(_a2333))
+	v20 = F_luaL_argerror(m, l0, int32(1), v17+int32(_a_F_json_decode_5))
 	mBase = m.M
 	v23 = m.ExcPending
 	if v23 != 0 {
@@ -884,7 +884,7 @@ L25:
 L26:
 	;
 	v90 = m.G3
-	v94 = F_luaL_error(m, l0, v90+int32(_a2332), int32(0))
+	v94 = F_luaL_error(m, l0, v90+int32(_a_F_json_decode_4), int32(0))
 	mBase = m.M
 	v95 = m.ExcPending
 	if v95 != 0 {
@@ -928,7 +928,7 @@ L30:
 L31:
 	;
 	v113 = m.G3
-	v117 = F_luaL_error(m, l0, v113+int32(_a2331), int32(0))
+	v117 = F_luaL_error(m, l0, v113+int32(_a_F_json_decode_3), int32(0))
 	mBase = m.M
 	v118 = m.ExcPending
 	if v118 != 0 {
@@ -1028,16 +1028,16 @@ L42:
 	goto L44
 L43:
 	;
-	v158 = v150 + int32(_a2328) + v142<<(uint(int32(2))%32)
+	v158 = v150 + int32(_a_F_json_decode_0) + v142<<(uint(int32(2))%32)
 	goto L44
 L44:
 	;
 	v159 = *(*int32)(unsafe.Add(mBase, uint32(v158)))
-	*(*int32)(unsafe.Add(mBase, uint32(v7))) = v150 + int32(_a2329)
+	*(*int32)(unsafe.Add(mBase, uint32(v7))) = v150 + int32(_a_F_json_decode_1)
 	*(*int32)(unsafe.Add(mBase, uint32(v7)+4)) = v159
 	v164 = *(*int32)(unsafe.Add(mBase, uint32(v7)+20))
 	*(*int32)(unsafe.Add(mBase, uint32(v7)+8)) = v164 + int32(1)
-	v170 = F_luaL_error(m, l0, v150+int32(_a2330), v7)
+	v170 = F_luaL_error(m, l0, v150+int32(_a_F_json_decode_2), v7)
 	mBase = m.M
 	v171 = m.ExcPending
 	if v171 != 0 {
@@ -1122,7 +1122,7 @@ func F_json_enum_option(m *base.Module, l0 int32, l1 int32, l2 int32) {
 	if l2 != 0 {
 		v8 = l2
 	} else {
-		v8 = v5 + int32(_a2334)
+		v8 = v5 + int32(_a_F_json_enum_option_0)
 	}
 	v12 = *(*int32)(unsafe.Add(mBase, uint32(l0)+12))
 	v17 = v12 + int32(0)

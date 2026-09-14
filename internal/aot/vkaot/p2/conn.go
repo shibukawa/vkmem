@@ -113,7 +113,7 @@ func F_connSocketConnect(m *base.Module, l0 int32, l1 int32, l2 int32, l3 int32,
 			*(*int32)(unsafe.Add(mBase, uint32(l0)+28)) = l5
 			*(*int32)(unsafe.Add(mBase, uint32(l0)+4)) = int32(1)
 			*(*int32)(unsafe.Add(mBase, uint32(l0)+12)) = v8
-			v26 = *(*int32)(unsafe.Add(mBase, _consts[279]))
+			v26 = *(*int32)(unsafe.Add(mBase, _c_F_connSocketConnect[0]))
 			v28 = *(*int32)(unsafe.Add(mBase, uint32(l0)))
 			v29 = *(*int32)(unsafe.Add(mBase, uint32(v28)+16))
 			v30 = F_aeCreateFileEvent(m, v26, v8, int32(2), v29, l0)
@@ -126,7 +126,7 @@ func F_connSocketConnect(m *base.Module, l0 int32, l1 int32, l2 int32, l3 int32,
 			}
 		} else {
 			*(*int32)(unsafe.Add(mBase, uint32(l0)+4)) = int32(5)
-			v17 = *(*int32)(unsafe.Add(mBase, _consts[5]))
+			v17 = *(*int32)(unsafe.Add(mBase, _c_F_connSocketConnect[1]))
 			*(*int32)(unsafe.Add(mBase, uint32(l0)+8)) = v17
 			return int32(-1)
 		}
@@ -160,7 +160,7 @@ func F_connSocketSetReadHandler(m *base.Module, l0 int32, l1 int32) int32 {
 	} else {
 		*(*int32)(unsafe.Add(mBase, uint32(l0)+36)) = l1
 		v10 = *(*int32)(unsafe.Add(mBase, uint32(l0)+12))
-		v12 = *(*int32)(unsafe.Add(mBase, _consts[279]))
+		v12 = *(*int32)(unsafe.Add(mBase, _c_F_connSocketSetReadHandler[0]))
 		if l1 != 0 {
 			v20 = *(*int32)(unsafe.Add(mBase, uint32(l0)))
 			v21 = *(*int32)(unsafe.Add(mBase, uint32(v20)+16))
@@ -225,7 +225,7 @@ func F_connSocketSetWriteHandler(m *base.Module, l0 int32, l1 int32, l2 int32) i
 		v15 = v8&int32(65533) | base.B2i32(l2 != int32(0))<<(uint(int32(1))%32)
 		*(*uint16)(unsafe.Add(mBase, uint32(l0)+16)) = uint16(v15)
 		v17 = *(*int32)(unsafe.Add(mBase, uint32(l0)+12))
-		v19 = *(*int32)(unsafe.Add(mBase, _consts[279]))
+		v19 = *(*int32)(unsafe.Add(mBase, _c_F_connSocketSetWriteHandler[0]))
 		if l1 != 0 {
 			v27 = *(*int32)(unsafe.Add(mBase, uint32(l0)))
 			v28 = *(*int32)(unsafe.Add(mBase, uint32(v27)+16))
@@ -400,7 +400,7 @@ L16:
 	goto L17
 L17:
 	;
-	v60 = *(*int32)(unsafe.Add(mBase, _consts[5]))
+	v60 = *(*int32)(unsafe.Add(mBase, _c_F_connSocketSyncWrite[0]))
 	*(*int32)(unsafe.Add(mBase, uint32(l0)+8)) = v60
 	goto L1
 }
@@ -440,7 +440,7 @@ func F_connTypeCleanupAll(m *base.Module) {
 	var v40 int32
 	_ = v40
 	v1 = int32(0)
-	v3 = *(*int32)(unsafe.Add(mBase, _consts[319]))
+	v3 = *(*int32)(unsafe.Add(mBase, _c_F_connTypeCleanupAll[0]))
 	if v3 == v1 {
 		goto L1
 	} else {
@@ -449,7 +449,7 @@ func F_connTypeCleanupAll(m *base.Module) {
 L1:
 	;
 	v12 = int32(0)
-	v13 = *(*int32)(unsafe.Add(mBase, _consts[322]))
+	v13 = *(*int32)(unsafe.Add(mBase, _c_F_connTypeCleanupAll[1]))
 	if v13 == v12 {
 		goto L6
 	} else {
@@ -482,7 +482,7 @@ L5:
 L6:
 	;
 	v22 = int32(0)
-	v23 = *(*int32)(unsafe.Add(mBase, _consts[323]))
+	v23 = *(*int32)(unsafe.Add(mBase, _c_F_connTypeCleanupAll[2]))
 	if v23 == v22 {
 		goto L10
 	} else {
@@ -512,7 +512,7 @@ L9:
 L10:
 	;
 	v32 = int32(0)
-	v33 = *(*int32)(unsafe.Add(mBase, _consts[324]))
+	v33 = *(*int32)(unsafe.Add(mBase, _c_F_connTypeCleanupAll[3]))
 	if v33 == v32 {
 		goto L14
 	} else {
@@ -604,7 +604,7 @@ func F_connTypeRegister(m *base.Module, l0 int32) int32 {
 		return int32(0)
 	} else {
 		if base.Ui32(int32(3)) < base.Ui32(v10) {
-			F__serverAssert(m, int32(_a537), int32(_a538), int32(34))
+			F__serverAssert(m, int32(_a_F_connTypeRegister_0), int32(_a_F_connTypeRegister_1), int32(34))
 			mBase = m.M
 			v51 = m.ExcPending
 			if v51 != 0 {
@@ -618,9 +618,9 @@ func F_connTypeRegister(m *base.Module, l0 int32) int32 {
 			}
 		} else {
 			v17 = v10 << (uint(int32(2)) % 32)
-			v20 = *(*int32)(unsafe.Add(mBase, uint32(v17)+uint32(_consts[319])))
+			v20 = *(*int32)(unsafe.Add(mBase, uint32(v17)+uint32(_c_F_connTypeRegister[0])))
 			if v20 != 0 {
-				F__serverAssert(m, int32(_a537), int32(_a538), int32(34))
+				F__serverAssert(m, int32(_a_F_connTypeRegister_0), int32(_a_F_connTypeRegister_1), int32(34))
 				mBase = m.M
 				v51 = m.ExcPending
 				if v51 != 0 {
@@ -633,9 +633,9 @@ func F_connTypeRegister(m *base.Module, l0 int32) int32 {
 					}
 				}
 			} else {
-				v22 = *(*int32)(unsafe.Add(mBase, _consts[6]))
+				v22 = *(*int32)(unsafe.Add(mBase, _c_F_connTypeRegister[1]))
 				if int32(1) < v22 {
-					*(*int32)(unsafe.Add(mBase, uint32(v17)+uint32(_consts[319]))) = l0
+					*(*int32)(unsafe.Add(mBase, uint32(v17)+uint32(_c_F_connTypeRegister[0]))) = l0
 					v36 = *(*int32)(unsafe.Add(mBase, uint32(l0)+4))
 					if v36 == int32(0) {
 						m.G0 = v7 + int32(16)
@@ -652,15 +652,15 @@ func F_connTypeRegister(m *base.Module, l0 int32) int32 {
 						}
 					}
 				} else {
-					v29 = *(*int32)(unsafe.Add(mBase, uint32(v10<<(uint(int32(2))%32))+uint32(_consts[320])))
+					v29 = *(*int32)(unsafe.Add(mBase, uint32(v10<<(uint(int32(2))%32))+uint32(_c_F_connTypeRegister[2])))
 					*(*int32)(unsafe.Add(mBase, uint32(v7))) = v29
-					F__serverLog(m, int32(1), int32(_a539), v7)
+					F__serverLog(m, int32(1), int32(_a_F_connTypeRegister_2), v7)
 					mBase = m.M
 					v34 = m.ExcPending
 					if v34 != 0 {
 						return int32(0)
 					} else {
-						*(*int32)(unsafe.Add(mBase, uint32(v17)+uint32(_consts[319]))) = l0
+						*(*int32)(unsafe.Add(mBase, uint32(v17)+uint32(_c_F_connTypeRegister[0]))) = l0
 						v36 = *(*int32)(unsafe.Add(mBase, uint32(l0)+4))
 						if v36 == int32(0) {
 							m.G0 = v7 + int32(16)
@@ -734,7 +734,7 @@ func F_connUnixAcceptHandler(m *base.Module, l0 int32, l1 int32, l2 int32, l3 in
 	v11 = m.G0
 	v13 = v11 - int32(64)
 	m.G0 = v13
-	v16 = *(*int32)(unsafe.Add(mBase, _consts[954]))
+	v16 = *(*int32)(unsafe.Add(mBase, _c_F_connUnixAcceptHandler[0]))
 	v20 = v13 + int32(56)
 	v21 = int64(0)
 	*(*int64)(unsafe.Add(mBase, uint32(v20))) = v21
@@ -755,7 +755,7 @@ L2:
 	goto L3
 L3:
 	;
-	v42 = F_anetUnixAccept(m, int32(_a336), l1)
+	v42 = F_anetUnixAccept(m, int32(_a_F_connUnixAcceptHandler_0), l1)
 	mBase = m.M
 	v43 = m.ExcPending
 	if v43 != 0 {
@@ -777,7 +777,7 @@ L5:
 	}
 L6:
 	;
-	v66 = *(*int32)(unsafe.Add(mBase, _consts[6]))
+	v66 = *(*int32)(unsafe.Add(mBase, _c_F_connUnixAcceptHandler[1]))
 	if int32(1) < v66 {
 		goto L16
 	} else {
@@ -799,7 +799,7 @@ L9:
 	goto L10
 L10:
 	;
-	v47 = *(*int32)(unsafe.Add(mBase, _consts[5]))
+	v47 = *(*int32)(unsafe.Add(mBase, _c_F_connUnixAcceptHandler[2]))
 	goto L11
 L11:
 	;
@@ -810,7 +810,7 @@ L11:
 	}
 L12:
 	;
-	v50 = *(*int32)(unsafe.Add(mBase, _consts[5]))
+	v50 = *(*int32)(unsafe.Add(mBase, _c_F_connUnixAcceptHandler[2]))
 	if v50 == int32(6) {
 		goto L1
 	} else {
@@ -818,7 +818,7 @@ L12:
 	}
 L13:
 	;
-	v54 = *(*int32)(unsafe.Add(mBase, _consts[6]))
+	v54 = *(*int32)(unsafe.Add(mBase, _c_F_connUnixAcceptHandler[1]))
 	if int32(3) < v54 {
 		goto L1
 	} else {
@@ -826,8 +826,8 @@ L13:
 	}
 L14:
 	;
-	*(*int32)(unsafe.Add(mBase, uint32(v13))) = int32(_a336)
-	F__serverLog(m, int32(3), int32(_a1756), v13)
+	*(*int32)(unsafe.Add(mBase, uint32(v13))) = int32(_a_F_connUnixAcceptHandler_0)
+	F__serverLog(m, int32(3), int32(_a_F_connUnixAcceptHandler_1), v13)
 	mBase = m.M
 	v64 = m.ExcPending
 	if v64 != 0 {
@@ -850,9 +850,9 @@ L16:
 	}
 L17:
 	;
-	v70 = *(*int32)(unsafe.Add(mBase, _consts[868]))
+	v70 = *(*int32)(unsafe.Add(mBase, _c_F_connUnixAcceptHandler[3]))
 	*(*int32)(unsafe.Add(mBase, uint32(v13)+32)) = v70
-	F__serverLog(m, int32(1), int32(_a1757), v13+int32(32))
+	F__serverLog(m, int32(1), int32(_a_F_connUnixAcceptHandler_2), v13+int32(32))
 	mBase = m.M
 	v77 = m.ExcPending
 	if v77 != 0 {
@@ -867,7 +867,7 @@ L19:
 	;
 	v81 = int32(1024)
 	*(*uint16)(unsafe.Add(mBase, uint32(v79)+20)) = uint16(v81)
-	*(*int32)(unsafe.Add(mBase, uint32(v79))) = int32(_a1755)
+	*(*int32)(unsafe.Add(mBase, uint32(v79))) = int32(_a_F_connUnixAcceptHandler_3)
 	*(*int32)(unsafe.Add(mBase, uint32(v79)+12)) = v42
 	*(*int32)(unsafe.Add(mBase, uint32(v79)+4)) = int32(2)
 	v92 = *(*int64)(unsafe.Add(mBase, uint32(v20)))
@@ -1024,8 +1024,8 @@ L3:
 	v35 = *(*int32)(unsafe.Add(mBase, uint32(v31+v25<<(uint(int32(2))%32))))
 	v36 = F_unlink(m, v35)
 	mBase = m.M
-	v38 = *(*int32)(unsafe.Add(mBase, _consts[955]))
-	v39 = F_anetUnixServer(m, int32(_a336), v35, v18, v38, v17)
+	v38 = *(*int32)(unsafe.Add(mBase, _c_F_connUnixListen[0]))
+	v39 = F_anetUnixServer(m, int32(_a_F_connUnixListen_0), v35, v18, v38, v17)
 	mBase = m.M
 	v42 = m.ExcPending
 	if v42 != 0 {
@@ -1062,7 +1062,7 @@ L7:
 	}
 L8:
 	;
-	v46 = *(*int32)(unsafe.Add(mBase, _consts[6]))
+	v46 = *(*int32)(unsafe.Add(mBase, _c_F_connUnixListen[1]))
 	if int32(3) < v46 {
 		goto L9
 	} else {
@@ -1077,8 +1077,8 @@ L9:
 	}
 L10:
 	;
-	*(*int32)(unsafe.Add(mBase, uint32(v11))) = int32(_a336)
-	F__serverLog(m, int32(3), int32(_a1758), v11)
+	*(*int32)(unsafe.Add(mBase, uint32(v11))) = int32(_a_F_connUnixListen_0)
+	F__serverLog(m, int32(3), int32(_a_F_connUnixListen_1), v11)
 	mBase = m.M
 	v56 = m.ExcPending
 	if v56 != 0 {

@@ -291,7 +291,7 @@ L2:
 	goto L1
 L3:
 	;
-	F__serverAssert(m, int32(_a843), int32(_a844), int32(108))
+	F__serverAssert(m, int32(_a_F_intsetAdd_0), int32(_a_F_intsetAdd_1), int32(108))
 	mBase = m.M
 	v538 = m.ExcPending
 	if v538 != 0 {
@@ -301,7 +301,7 @@ L3:
 	}
 L4:
 	;
-	F__serverAssert(m, int32(_a843), int32(_a844), int32(108))
+	F__serverAssert(m, int32(_a_F_intsetAdd_0), int32(_a_F_intsetAdd_1), int32(108))
 	mBase = m.M
 	v532 = m.ExcPending
 	if v532 != 0 {

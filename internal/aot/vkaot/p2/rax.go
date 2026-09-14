@@ -385,7 +385,7 @@ L1:
 	}
 L2:
 	;
-	F__serverAssert(m, int32(_a1115), int32(_a1116), int32(243))
+	F__serverAssert(m, int32(_a_F_raxAddChild_0), int32(_a_F_raxAddChild_1), int32(243))
 	mBase = m.M
 	v635 = m.ExcPending
 	if v635 != 0 {
@@ -2072,7 +2072,7 @@ func F_raxFree(m *base.Module, l0 int32) {
 				return
 			}
 		} else {
-			F__serverAssert(m, int32(_a1117), int32(_a1116), int32(1236))
+			F__serverAssert(m, int32(_a_F_raxFree_0), int32(_a_F_raxFree_1), int32(1236))
 			mBase = m.M
 			v13 = m.ExcPending
 			if v13 != 0 {
@@ -2677,7 +2677,7 @@ L23:
 	goto L24
 L24:
 	;
-	*(*int32)(unsafe.Add(mBase, _consts[5])) = int32(48)
+	*(*int32)(unsafe.Add(mBase, _c_F_raxIteratorNextStep[0])) = int32(48)
 	return int32(0)
 L25:
 	;
@@ -2699,7 +2699,7 @@ L27:
 	goto L17
 L28:
 	;
-	*(*int32)(unsafe.Add(mBase, _consts[5])) = int32(48)
+	*(*int32)(unsafe.Add(mBase, _c_F_raxIteratorNextStep[0])) = int32(48)
 	return int32(0)
 L29:
 	;
@@ -3418,7 +3418,7 @@ L133:
 	goto L134
 L134:
 	;
-	*(*int32)(unsafe.Add(mBase, _consts[5])) = int32(48)
+	*(*int32)(unsafe.Add(mBase, _c_F_raxIteratorNextStep[0])) = int32(48)
 	return int32(0)
 L135:
 	;
@@ -3434,7 +3434,7 @@ L137:
 	goto L138
 L138:
 	;
-	*(*int32)(unsafe.Add(mBase, _consts[5])) = int32(48)
+	*(*int32)(unsafe.Add(mBase, _c_F_raxIteratorNextStep[0])) = int32(48)
 	goto L8
 L139:
 	;
@@ -3508,7 +3508,7 @@ L146:
 	goto L147
 L147:
 	;
-	*(*int32)(unsafe.Add(mBase, _consts[5])) = int32(48)
+	*(*int32)(unsafe.Add(mBase, _c_F_raxIteratorNextStep[0])) = int32(48)
 	return int32(0)
 L148:
 	;
@@ -3530,7 +3530,7 @@ L150:
 	goto L141
 L151:
 	;
-	*(*int32)(unsafe.Add(mBase, _consts[5])) = int32(48)
+	*(*int32)(unsafe.Add(mBase, _c_F_raxIteratorNextStep[0])) = int32(48)
 	return int32(0)
 L152:
 	;
@@ -4170,7 +4170,7 @@ L47:
 	goto L48
 L48:
 	;
-	*(*int32)(unsafe.Add(mBase, _consts[5])) = int32(48)
+	*(*int32)(unsafe.Add(mBase, _c_F_raxIteratorPrevStep[0])) = int32(48)
 	return int32(0)
 L49:
 	;
@@ -4192,7 +4192,7 @@ L51:
 	goto L42
 L52:
 	;
-	*(*int32)(unsafe.Add(mBase, _consts[5])) = int32(48)
+	*(*int32)(unsafe.Add(mBase, _c_F_raxIteratorPrevStep[0])) = int32(48)
 	return int32(0)
 L53:
 	;
@@ -4268,7 +4268,7 @@ L67:
 	goto L68
 L68:
 	;
-	*(*int32)(unsafe.Add(mBase, _consts[5])) = int32(48)
+	*(*int32)(unsafe.Add(mBase, _c_F_raxIteratorPrevStep[0])) = int32(48)
 	return int32(0)
 }
 func F_raxRandomWalk(m *base.Module, l0 int32, l1 int32) int32 {
@@ -4617,9 +4617,9 @@ L4:
 L5:
 	;
 	v40 = int32(0)
-	v42 = *(*int64)(unsafe.Add(mBase, _consts[408]))
+	v42 = *(*int64)(unsafe.Add(mBase, _c_F_raxRandomWalk[0]))
 	v46 = v42*int64(6364136223846793005) + int64(1)
-	*(*int64)(unsafe.Add(mBase, _consts[408])) = v46
+	*(*int64)(unsafe.Add(mBase, _c_F_raxRandomWalk[0])) = v46
 	goto L8
 L6:
 	;
@@ -4646,9 +4646,9 @@ L9:
 L10:
 	;
 	v79 = int32(0)
-	v81 = *(*int64)(unsafe.Add(mBase, _consts[408]))
+	v81 = *(*int64)(unsafe.Add(mBase, _c_F_raxRandomWalk[0]))
 	v85 = v81*int64(6364136223846793005) + int64(1)
-	*(*int64)(unsafe.Add(mBase, _consts[408])) = v85
+	*(*int64)(unsafe.Add(mBase, _c_F_raxRandomWalk[0])) = v85
 	goto L14
 L11:
 	;
@@ -5153,7 +5153,7 @@ L84:
 	goto L85
 L85:
 	;
-	*(*int32)(unsafe.Add(mBase, _consts[5])) = int32(48)
+	*(*int32)(unsafe.Add(mBase, _c_F_raxRandomWalk[1])) = int32(48)
 	return int32(0)
 L86:
 	;
@@ -5300,7 +5300,7 @@ L105:
 	goto L106
 L106:
 	;
-	*(*int32)(unsafe.Add(mBase, _consts[5])) = int32(48)
+	*(*int32)(unsafe.Add(mBase, _c_F_raxRandomWalk[1])) = int32(48)
 	return int32(0)
 L107:
 	;
@@ -5322,7 +5322,7 @@ L109:
 	goto L100
 L110:
 	;
-	*(*int32)(unsafe.Add(mBase, _consts[5])) = int32(48)
+	*(*int32)(unsafe.Add(mBase, _c_F_raxRandomWalk[1])) = int32(48)
 	return int32(0)
 L111:
 	;
@@ -5391,7 +5391,7 @@ L123:
 	goto L124
 L124:
 	;
-	*(*int32)(unsafe.Add(mBase, _consts[5])) = int32(48)
+	*(*int32)(unsafe.Add(mBase, _c_F_raxRandomWalk[1])) = int32(48)
 	return int32(0)
 }
 func F_raxSeek(m *base.Module, l0 int32, l1 int32, l2 int32, l3 int32) int32 {
@@ -5699,7 +5699,7 @@ L2:
 	}
 L3:
 	;
-	F__serverAssert(m, int32(_a1118), int32(_a1116), int32(1542))
+	F__serverAssert(m, int32(_a_F_raxSeek_0), int32(_a_F_raxSeek_1), int32(1542))
 	mBase = m.M
 	v347 = m.ExcPending
 	if v347 != 0 {
@@ -5795,7 +5795,7 @@ L14:
 	*(*int32)(unsafe.Add(mBase, uint32(l0)+152)) = v43
 	*(*int32)(unsafe.Add(mBase, uint32(l0)+16)) = v43
 	*(*int32)(unsafe.Add(mBase, uint32(l0))) = v30
-	v60 = int32(_a1119)
+	v60 = int32(_a_F_raxSeek_2)
 	v61 = v43
 	v62 = v43
 	v63 = v43
@@ -5807,7 +5807,7 @@ L15:
 	goto L11
 L16:
 	;
-	*(*int32)(unsafe.Add(mBase, _consts[5])) = int32(0)
+	*(*int32)(unsafe.Add(mBase, _c_F_raxSeek[0])) = int32(0)
 	v413 = int32(0)
 	goto L1
 L17:
@@ -6535,7 +6535,7 @@ func F_shrinkRaxBucketIfPossible(m *base.Module, l0 int32, l1 int32) {
 	v12 = *(*int32)(unsafe.Add(mBase, uint32(l0)))
 	switch v12 + int32(1) {
 	case 0:
-		F__serverAssert(m, int32(_a1867), int32(_a1861), int32(807))
+		F__serverAssert(m, int32(_a_F_shrinkRaxBucketIfPossible_0), int32(_a_F_shrinkRaxBucketIfPossible_1), int32(807))
 		mBase = m.M
 		v137 = m.ExcPending
 		if v137 != 0 {
@@ -6548,7 +6548,7 @@ func F_shrinkRaxBucketIfPossible(m *base.Module, l0 int32, l1 int32) {
 			}
 		}
 	case 1:
-		F__serverAssert(m, int32(_a1864), int32(_a1861), int32(781))
+		F__serverAssert(m, int32(_a_F_shrinkRaxBucketIfPossible_2), int32(_a_F_shrinkRaxBucketIfPossible_1), int32(781))
 		mBase = m.M
 		v19 = m.ExcPending
 		if v19 != 0 {
@@ -6562,7 +6562,7 @@ func F_shrinkRaxBucketIfPossible(m *base.Module, l0 int32, l1 int32) {
 		}
 	default:
 		if v12&int32(7) != int32(6) {
-			F__serverAssert(m, int32(_a1867), int32(_a1861), int32(807))
+			F__serverAssert(m, int32(_a_F_shrinkRaxBucketIfPossible_0), int32(_a_F_shrinkRaxBucketIfPossible_1), int32(807))
 			mBase = m.M
 			v137 = m.ExcPending
 			if v137 != 0 {
@@ -6591,14 +6591,14 @@ func F_shrinkRaxBucketIfPossible(m *base.Module, l0 int32, l1 int32) {
 				*(*int32)(unsafe.Add(mBase, uint32(v10)+8)) = v10 + int32(24)
 				*(*int32)(unsafe.Add(mBase, uint32(v10)+156)) = v10 + int32(168)
 				v48 = int32(0)
-				v50 = F_raxSeek(m, v10, int32(_a263), v48, v48)
+				v50 = F_raxSeek(m, v10, int32(_a_F_shrinkRaxBucketIfPossible_3), v48, v48)
 				mBase = m.M
 				v51 = m.ExcPending
 				if v51 != 0 {
 					return
 				} else {
 					if v50 == int32(0) {
-						F__serverAssert(m, int32(_a1868), int32(_a1861), int32(1433))
+						F__serverAssert(m, int32(_a_F_shrinkRaxBucketIfPossible_4), int32(_a_F_shrinkRaxBucketIfPossible_1), int32(1433))
 						mBase = m.M
 						v143 = m.ExcPending
 						if v143 != 0 {
@@ -6618,7 +6618,7 @@ func F_shrinkRaxBucketIfPossible(m *base.Module, l0 int32, l1 int32) {
 							return
 						} else {
 							if v54 == int32(0) {
-								F__serverAssert(m, int32(_a1869), int32(_a1861), int32(1434))
+								F__serverAssert(m, int32(_a_F_shrinkRaxBucketIfPossible_5), int32(_a_F_shrinkRaxBucketIfPossible_1), int32(1434))
 								mBase = m.M
 								v149 = m.ExcPending
 								if v149 != 0 {
@@ -6644,7 +6644,7 @@ func F_shrinkRaxBucketIfPossible(m *base.Module, l0 int32, l1 int32) {
 										return
 									}
 								case 1:
-									F__serverAssert(m, int32(_a1864), int32(_a1861), int32(781))
+									F__serverAssert(m, int32(_a_F_shrinkRaxBucketIfPossible_2), int32(_a_F_shrinkRaxBucketIfPossible_1), int32(781))
 									mBase = m.M
 									v67 = m.ExcPending
 									if v67 != 0 {
@@ -6670,9 +6670,9 @@ func F_shrinkRaxBucketIfPossible(m *base.Module, l0 int32, l1 int32) {
 											} else {
 												v82 = v58 & int32(-8)
 												if v82 == int32(0) {
-													v95 = *(*int32)(unsafe.Add(mBase, _consts[1000]))
+													v95 = *(*int32)(unsafe.Add(mBase, _c_F_shrinkRaxBucketIfPossible[0]))
 													if v95 != 0 {
-														F__serverAssert(m, int32(_a1870), int32(_a1861), int32(853))
+														F__serverAssert(m, int32(_a_F_shrinkRaxBucketIfPossible_6), int32(_a_F_shrinkRaxBucketIfPossible_1), int32(853))
 														mBase = m.M
 														v155 = m.ExcPending
 														if v155 != 0 {
@@ -6685,8 +6685,8 @@ func F_shrinkRaxBucketIfPossible(m *base.Module, l0 int32, l1 int32) {
 															}
 														}
 													} else {
-														*(*int32)(unsafe.Add(mBase, _consts[1000])) = l1
-														v116 = int32(_a1871)
+														*(*int32)(unsafe.Add(mBase, _c_F_shrinkRaxBucketIfPossible[0])) = l1
+														v116 = int32(_a_F_shrinkRaxBucketIfPossible_7)
 														*(*int32)(unsafe.Add(mBase, uint32(v116))) = int32(0)
 														*(*int32)(unsafe.Add(mBase, uint32(l0))) = v58
 														F_raxFree(m, v26)
@@ -6706,10 +6706,10 @@ func F_shrinkRaxBucketIfPossible(m *base.Module, l0 int32, l1 int32) {
 														return
 													} else {
 														v90 = int32(0)
-														v91 = *(*int32)(unsafe.Add(mBase, _consts[1000]))
+														v91 = *(*int32)(unsafe.Add(mBase, _c_F_shrinkRaxBucketIfPossible[0]))
 														if v91 == v90 {
-															*(*int32)(unsafe.Add(mBase, _consts[1000])) = l1
-															v101 = int32(_a1871)
+															*(*int32)(unsafe.Add(mBase, _c_F_shrinkRaxBucketIfPossible[0])) = l1
+															v101 = int32(_a_F_shrinkRaxBucketIfPossible_7)
 															v102 = *(*int64)(unsafe.Add(mBase, uint32(v82)))
 															if v102&int64(1073741822) == int64(0) {
 																v116 = v101
@@ -6746,7 +6746,7 @@ func F_shrinkRaxBucketIfPossible(m *base.Module, l0 int32, l1 int32) {
 																}
 															}
 														} else {
-															F__serverAssert(m, int32(_a1870), int32(_a1861), int32(853))
+															F__serverAssert(m, int32(_a_F_shrinkRaxBucketIfPossible_6), int32(_a_F_shrinkRaxBucketIfPossible_1), int32(853))
 															mBase = m.M
 															v155 = m.ExcPending
 															if v155 != 0 {

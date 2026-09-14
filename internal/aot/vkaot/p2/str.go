@@ -13,9 +13,9 @@ func F_strEncoding(m *base.Module, l0 int32) int32 {
 	var v11 int32
 	_ = v11
 	if base.Ui32(int32(11)) < base.Ui32(l0) {
-		v11 = int32(_a288)
+		v11 = int32(_a_F_strEncoding_0)
 	} else {
-		v10 = *(*int32)(unsafe.Add(mBase, uint32(l0<<(uint(int32(2))%32))+uint32(_consts[373])))
+		v10 = *(*int32)(unsafe.Add(mBase, uint32(l0<<(uint(int32(2))%32))+uint32(_c_F_strEncoding[0])))
 		v11 = v10
 	}
 	return v11
@@ -144,7 +144,7 @@ func F_str_byte(m *base.Module, l0 int32) int32 {
 					v58 = v56 + int32(1)
 					if v50 != int32(2147483647) {
 						v67 = m.G3
-						F_luaL_checkstack(m, l0, v58, v67+int32(_a2099))
+						F_luaL_checkstack(m, l0, v58, v67+int32(_a_F_str_byte_0))
 						mBase = m.M
 						v71 = m.ExcPending
 						if v71 != 0 {
@@ -173,14 +173,14 @@ func F_str_byte(m *base.Module, l0 int32) int32 {
 						}
 					} else {
 						v61 = m.G3
-						v65 = F_luaL_error(m, l0, v61+int32(_a2099), int32(0))
+						v65 = F_luaL_error(m, l0, v61+int32(_a_F_str_byte_0), int32(0))
 						mBase = m.M
 						v66 = m.ExcPending
 						if v66 != 0 {
 							return int32(0)
 						} else {
 							v67 = m.G3
-							F_luaL_checkstack(m, l0, v58, v67+int32(_a2099))
+							F_luaL_checkstack(m, l0, v58, v67+int32(_a_F_str_byte_0))
 							mBase = m.M
 							v71 = m.ExcPending
 							if v71 != 0 {
@@ -605,7 +605,7 @@ L20:
 L21:
 	;
 	v103 = m.G3
-	v106 = F_luaL_argerror(m, l0, int32(3), v103+int32(_a2100))
+	v106 = F_luaL_argerror(m, l0, int32(3), v103+int32(_a_F_str_gsub_0))
 	mBase = m.M
 	v107 = m.ExcPending
 	if v107 != 0 {
@@ -994,7 +994,7 @@ L94:
 	goto L95
 L95:
 	;
-	F_luaL_checkstack(m, v371, v374, v370+int32(_a2101))
+	F_luaL_checkstack(m, v371, v374, v370+int32(_a_F_str_gsub_1))
 	mBase = m.M
 	v378 = m.ExcPending
 	if v378 != 0 {
@@ -1102,7 +1102,7 @@ L109:
 	;
 	v448 = m.G3
 	v449 = *(*int32)(unsafe.Add(mBase, uint32(v18)+1056))
-	v453 = F_luaL_error(m, v449, v448+int32(_a2102), int32(0))
+	v453 = F_luaL_error(m, v449, v448+int32(_a_F_str_gsub_2), int32(0))
 	mBase = m.M
 	v454 = m.ExcPending
 	if v454 != 0 {
@@ -1282,7 +1282,7 @@ L177:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v18))) = v705
 	v707 = m.G3
-	v710 = F_luaL_error(m, v151, v707+int32(_a2103), v18)
+	v710 = F_luaL_error(m, v151, v707+int32(_a_F_str_gsub_3), v18)
 	mBase = m.M
 	v711 = m.ExcPending
 	if v711 != 0 {
@@ -1298,7 +1298,7 @@ L178:
 	goto L177
 L179:
 	;
-	v705 = v695 + int32(_a2018)
+	v705 = v695 + int32(_a_F_str_gsub_4)
 	goto L177
 L180:
 	;

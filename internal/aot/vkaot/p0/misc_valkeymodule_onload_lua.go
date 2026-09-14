@@ -3280,7 +3280,7 @@ func F_ValkeyModule_OnLoad_lua(m *base.Module, l0 int32, l1 int32, l2 int32) int
 	*(*int32)(unsafe.Add(mBase, uint32(v16))) = v15
 	v18 = m.G3
 	v21 = m.G22
-	v22 = m.T0[v15].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1742), v21)
+	v22 = m.T0[v15].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_0), v21)
 	mBase = m.M
 	v25 = m.ExcPending
 	if v25 != 0 {
@@ -3295,7 +3295,7 @@ L2:
 	;
 	v26 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v29 = m.G23
-	v30 = m.T0[v26].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1743), v29)
+	v30 = m.T0[v26].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_1), v29)
 	mBase = m.M
 	v31 = m.ExcPending
 	if v31 != 0 {
@@ -3307,7 +3307,7 @@ L3:
 	;
 	v32 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v35 = m.G9
-	v36 = m.T0[v32].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1744), v35)
+	v36 = m.T0[v32].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_2), v35)
 	mBase = m.M
 	v37 = m.ExcPending
 	if v37 != 0 {
@@ -3319,7 +3319,7 @@ L4:
 	;
 	v38 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v41 = m.G24
-	v42 = m.T0[v38].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1745), v41)
+	v42 = m.T0[v38].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_3), v41)
 	mBase = m.M
 	v43 = m.ExcPending
 	if v43 != 0 {
@@ -3331,7 +3331,7 @@ L5:
 	;
 	v44 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v47 = m.G11
-	v48 = m.T0[v44].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1746), v47)
+	v48 = m.T0[v44].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_4), v47)
 	mBase = m.M
 	v49 = m.ExcPending
 	if v49 != 0 {
@@ -3343,7 +3343,7 @@ L6:
 	;
 	v50 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v53 = m.G25
-	v54 = m.T0[v50].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1747), v53)
+	v54 = m.T0[v50].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_5), v53)
 	mBase = m.M
 	v55 = m.ExcPending
 	if v55 != 0 {
@@ -3355,7 +3355,7 @@ L7:
 	;
 	v56 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v59 = m.G26
-	v60 = m.T0[v56].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1748), v59)
+	v60 = m.T0[v56].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_6), v59)
 	mBase = m.M
 	v61 = m.ExcPending
 	if v61 != 0 {
@@ -3367,7 +3367,7 @@ L8:
 	;
 	v62 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v65 = m.G27
-	v66 = m.T0[v62].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1749), v65)
+	v66 = m.T0[v62].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_7), v65)
 	mBase = m.M
 	v67 = m.ExcPending
 	if v67 != 0 {
@@ -3379,7 +3379,7 @@ L9:
 	;
 	v68 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v71 = m.G28
-	v72 = m.T0[v68].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1750), v71)
+	v72 = m.T0[v68].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_8), v71)
 	mBase = m.M
 	v73 = m.ExcPending
 	if v73 != 0 {
@@ -3391,7 +3391,7 @@ L10:
 	;
 	v74 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v77 = m.G29
-	v78 = m.T0[v74].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1751), v77)
+	v78 = m.T0[v74].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_9), v77)
 	mBase = m.M
 	v79 = m.ExcPending
 	if v79 != 0 {
@@ -3403,7 +3403,7 @@ L11:
 	;
 	v80 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v83 = m.G30
-	v84 = m.T0[v80].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1752), v83)
+	v84 = m.T0[v80].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_10), v83)
 	mBase = m.M
 	v85 = m.ExcPending
 	if v85 != 0 {
@@ -3415,7 +3415,7 @@ L12:
 	;
 	v86 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v89 = m.G31
-	v90 = m.T0[v86].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1753), v89)
+	v90 = m.T0[v86].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_11), v89)
 	mBase = m.M
 	v91 = m.ExcPending
 	if v91 != 0 {
@@ -3427,7 +3427,7 @@ L13:
 	;
 	v92 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v95 = m.G32
-	v96 = m.T0[v92].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1754), v95)
+	v96 = m.T0[v92].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_12), v95)
 	mBase = m.M
 	v97 = m.ExcPending
 	if v97 != 0 {
@@ -3439,7 +3439,7 @@ L14:
 	;
 	v98 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v101 = m.G33
-	v102 = m.T0[v98].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1755), v101)
+	v102 = m.T0[v98].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_13), v101)
 	mBase = m.M
 	v103 = m.ExcPending
 	if v103 != 0 {
@@ -3451,7 +3451,7 @@ L15:
 	;
 	v104 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v107 = m.G34
-	v108 = m.T0[v104].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1756), v107)
+	v108 = m.T0[v104].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_14), v107)
 	mBase = m.M
 	v109 = m.ExcPending
 	if v109 != 0 {
@@ -3463,7 +3463,7 @@ L16:
 	;
 	v110 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v113 = m.G35
-	v114 = m.T0[v110].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1757), v113)
+	v114 = m.T0[v110].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_15), v113)
 	mBase = m.M
 	v115 = m.ExcPending
 	if v115 != 0 {
@@ -3475,7 +3475,7 @@ L17:
 	;
 	v116 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v119 = m.G36
-	v120 = m.T0[v116].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1758), v119)
+	v120 = m.T0[v116].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_16), v119)
 	mBase = m.M
 	v121 = m.ExcPending
 	if v121 != 0 {
@@ -3487,7 +3487,7 @@ L18:
 	;
 	v122 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v125 = m.G37
-	v126 = m.T0[v122].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1759), v125)
+	v126 = m.T0[v122].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_17), v125)
 	mBase = m.M
 	v127 = m.ExcPending
 	if v127 != 0 {
@@ -3499,7 +3499,7 @@ L19:
 	;
 	v128 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v131 = m.G38
-	v132 = m.T0[v128].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1760), v131)
+	v132 = m.T0[v128].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_18), v131)
 	mBase = m.M
 	v133 = m.ExcPending
 	if v133 != 0 {
@@ -3511,7 +3511,7 @@ L20:
 	;
 	v134 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v137 = m.G39
-	v138 = m.T0[v134].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1761), v137)
+	v138 = m.T0[v134].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_19), v137)
 	mBase = m.M
 	v139 = m.ExcPending
 	if v139 != 0 {
@@ -3523,7 +3523,7 @@ L21:
 	;
 	v140 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v143 = m.G40
-	v144 = m.T0[v140].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1762), v143)
+	v144 = m.T0[v140].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_20), v143)
 	mBase = m.M
 	v145 = m.ExcPending
 	if v145 != 0 {
@@ -3535,7 +3535,7 @@ L22:
 	;
 	v146 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v149 = m.G41
-	v150 = m.T0[v146].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1763), v149)
+	v150 = m.T0[v146].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_21), v149)
 	mBase = m.M
 	v151 = m.ExcPending
 	if v151 != 0 {
@@ -3547,7 +3547,7 @@ L23:
 	;
 	v152 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v155 = m.G42
-	v156 = m.T0[v152].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1764), v155)
+	v156 = m.T0[v152].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_22), v155)
 	mBase = m.M
 	v157 = m.ExcPending
 	if v157 != 0 {
@@ -3559,7 +3559,7 @@ L24:
 	;
 	v158 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v161 = m.G43
-	v162 = m.T0[v158].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1765), v161)
+	v162 = m.T0[v158].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_23), v161)
 	mBase = m.M
 	v163 = m.ExcPending
 	if v163 != 0 {
@@ -3571,7 +3571,7 @@ L25:
 	;
 	v164 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v167 = m.G44
-	v168 = m.T0[v164].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1766), v167)
+	v168 = m.T0[v164].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_24), v167)
 	mBase = m.M
 	v169 = m.ExcPending
 	if v169 != 0 {
@@ -3583,7 +3583,7 @@ L26:
 	;
 	v170 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v173 = m.G45
-	v174 = m.T0[v170].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1767), v173)
+	v174 = m.T0[v170].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_25), v173)
 	mBase = m.M
 	v175 = m.ExcPending
 	if v175 != 0 {
@@ -3595,7 +3595,7 @@ L27:
 	;
 	v176 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v179 = m.G46
-	v180 = m.T0[v176].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1768), v179)
+	v180 = m.T0[v176].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_26), v179)
 	mBase = m.M
 	v181 = m.ExcPending
 	if v181 != 0 {
@@ -3607,7 +3607,7 @@ L28:
 	;
 	v182 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v185 = m.G47
-	v186 = m.T0[v182].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1769), v185)
+	v186 = m.T0[v182].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_27), v185)
 	mBase = m.M
 	v187 = m.ExcPending
 	if v187 != 0 {
@@ -3619,7 +3619,7 @@ L29:
 	;
 	v188 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v191 = m.G48
-	v192 = m.T0[v188].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1770), v191)
+	v192 = m.T0[v188].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_28), v191)
 	mBase = m.M
 	v193 = m.ExcPending
 	if v193 != 0 {
@@ -3631,7 +3631,7 @@ L30:
 	;
 	v194 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v197 = m.G49
-	v198 = m.T0[v194].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1771), v197)
+	v198 = m.T0[v194].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_29), v197)
 	mBase = m.M
 	v199 = m.ExcPending
 	if v199 != 0 {
@@ -3643,7 +3643,7 @@ L31:
 	;
 	v200 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v203 = m.G50
-	v204 = m.T0[v200].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1772), v203)
+	v204 = m.T0[v200].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_30), v203)
 	mBase = m.M
 	v205 = m.ExcPending
 	if v205 != 0 {
@@ -3655,7 +3655,7 @@ L32:
 	;
 	v206 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v209 = m.G51
-	v210 = m.T0[v206].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1773), v209)
+	v210 = m.T0[v206].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_31), v209)
 	mBase = m.M
 	v211 = m.ExcPending
 	if v211 != 0 {
@@ -3667,7 +3667,7 @@ L33:
 	;
 	v212 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v215 = m.G52
-	v216 = m.T0[v212].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1774), v215)
+	v216 = m.T0[v212].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_32), v215)
 	mBase = m.M
 	v217 = m.ExcPending
 	if v217 != 0 {
@@ -3679,7 +3679,7 @@ L34:
 	;
 	v218 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v221 = m.G53
-	v222 = m.T0[v218].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1775), v221)
+	v222 = m.T0[v218].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_33), v221)
 	mBase = m.M
 	v223 = m.ExcPending
 	if v223 != 0 {
@@ -3691,7 +3691,7 @@ L35:
 	;
 	v224 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v227 = m.G54
-	v228 = m.T0[v224].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1776), v227)
+	v228 = m.T0[v224].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_34), v227)
 	mBase = m.M
 	v229 = m.ExcPending
 	if v229 != 0 {
@@ -3703,7 +3703,7 @@ L36:
 	;
 	v230 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v233 = m.G55
-	v234 = m.T0[v230].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1777), v233)
+	v234 = m.T0[v230].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_35), v233)
 	mBase = m.M
 	v235 = m.ExcPending
 	if v235 != 0 {
@@ -3715,7 +3715,7 @@ L37:
 	;
 	v236 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v239 = m.G56
-	v240 = m.T0[v236].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1778), v239)
+	v240 = m.T0[v236].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_36), v239)
 	mBase = m.M
 	v241 = m.ExcPending
 	if v241 != 0 {
@@ -3727,7 +3727,7 @@ L38:
 	;
 	v242 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v245 = m.G57
-	v246 = m.T0[v242].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1779), v245)
+	v246 = m.T0[v242].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_37), v245)
 	mBase = m.M
 	v247 = m.ExcPending
 	if v247 != 0 {
@@ -3739,7 +3739,7 @@ L39:
 	;
 	v248 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v251 = m.G58
-	v252 = m.T0[v248].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1780), v251)
+	v252 = m.T0[v248].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_38), v251)
 	mBase = m.M
 	v253 = m.ExcPending
 	if v253 != 0 {
@@ -3751,7 +3751,7 @@ L40:
 	;
 	v254 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v257 = m.G59
-	v258 = m.T0[v254].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1781), v257)
+	v258 = m.T0[v254].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_39), v257)
 	mBase = m.M
 	v259 = m.ExcPending
 	if v259 != 0 {
@@ -3763,7 +3763,7 @@ L41:
 	;
 	v260 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v263 = m.G60
-	v264 = m.T0[v260].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1782), v263)
+	v264 = m.T0[v260].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_40), v263)
 	mBase = m.M
 	v265 = m.ExcPending
 	if v265 != 0 {
@@ -3775,7 +3775,7 @@ L42:
 	;
 	v266 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v269 = m.G61
-	v270 = m.T0[v266].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1783), v269)
+	v270 = m.T0[v266].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_41), v269)
 	mBase = m.M
 	v271 = m.ExcPending
 	if v271 != 0 {
@@ -3787,7 +3787,7 @@ L43:
 	;
 	v272 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v275 = m.G62
-	v276 = m.T0[v272].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1784), v275)
+	v276 = m.T0[v272].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_42), v275)
 	mBase = m.M
 	v277 = m.ExcPending
 	if v277 != 0 {
@@ -3799,7 +3799,7 @@ L44:
 	;
 	v278 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v281 = m.G63
-	v282 = m.T0[v278].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1785), v281)
+	v282 = m.T0[v278].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_43), v281)
 	mBase = m.M
 	v283 = m.ExcPending
 	if v283 != 0 {
@@ -3811,7 +3811,7 @@ L45:
 	;
 	v284 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v287 = m.G64
-	v288 = m.T0[v284].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1786), v287)
+	v288 = m.T0[v284].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_44), v287)
 	mBase = m.M
 	v289 = m.ExcPending
 	if v289 != 0 {
@@ -3823,7 +3823,7 @@ L46:
 	;
 	v290 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v293 = m.G65
-	v294 = m.T0[v290].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1787), v293)
+	v294 = m.T0[v290].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_45), v293)
 	mBase = m.M
 	v295 = m.ExcPending
 	if v295 != 0 {
@@ -3835,7 +3835,7 @@ L47:
 	;
 	v296 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v299 = m.G66
-	v300 = m.T0[v296].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1788), v299)
+	v300 = m.T0[v296].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_46), v299)
 	mBase = m.M
 	v301 = m.ExcPending
 	if v301 != 0 {
@@ -3847,7 +3847,7 @@ L48:
 	;
 	v302 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v305 = m.G67
-	v306 = m.T0[v302].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1789), v305)
+	v306 = m.T0[v302].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_47), v305)
 	mBase = m.M
 	v307 = m.ExcPending
 	if v307 != 0 {
@@ -3859,7 +3859,7 @@ L49:
 	;
 	v308 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v311 = m.G68
-	v312 = m.T0[v308].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1790), v311)
+	v312 = m.T0[v308].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_48), v311)
 	mBase = m.M
 	v313 = m.ExcPending
 	if v313 != 0 {
@@ -3871,7 +3871,7 @@ L50:
 	;
 	v314 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v317 = m.G69
-	v318 = m.T0[v314].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1791), v317)
+	v318 = m.T0[v314].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_49), v317)
 	mBase = m.M
 	v319 = m.ExcPending
 	if v319 != 0 {
@@ -3883,7 +3883,7 @@ L51:
 	;
 	v320 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v323 = m.G70
-	v324 = m.T0[v320].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1792), v323)
+	v324 = m.T0[v320].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_50), v323)
 	mBase = m.M
 	v325 = m.ExcPending
 	if v325 != 0 {
@@ -3895,7 +3895,7 @@ L52:
 	;
 	v326 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v329 = m.G71
-	v330 = m.T0[v326].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1793), v329)
+	v330 = m.T0[v326].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_51), v329)
 	mBase = m.M
 	v331 = m.ExcPending
 	if v331 != 0 {
@@ -3907,7 +3907,7 @@ L53:
 	;
 	v332 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v335 = m.G72
-	v336 = m.T0[v332].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1794), v335)
+	v336 = m.T0[v332].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_52), v335)
 	mBase = m.M
 	v337 = m.ExcPending
 	if v337 != 0 {
@@ -3919,7 +3919,7 @@ L54:
 	;
 	v338 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v341 = m.G73
-	v342 = m.T0[v338].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1795), v341)
+	v342 = m.T0[v338].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_53), v341)
 	mBase = m.M
 	v343 = m.ExcPending
 	if v343 != 0 {
@@ -3931,7 +3931,7 @@ L55:
 	;
 	v344 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v347 = m.G74
-	v348 = m.T0[v344].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1796), v347)
+	v348 = m.T0[v344].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_54), v347)
 	mBase = m.M
 	v349 = m.ExcPending
 	if v349 != 0 {
@@ -3943,7 +3943,7 @@ L56:
 	;
 	v350 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v353 = m.G75
-	v354 = m.T0[v350].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1797), v353)
+	v354 = m.T0[v350].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_55), v353)
 	mBase = m.M
 	v355 = m.ExcPending
 	if v355 != 0 {
@@ -3955,7 +3955,7 @@ L57:
 	;
 	v356 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v359 = m.G76
-	v360 = m.T0[v356].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1798), v359)
+	v360 = m.T0[v356].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_56), v359)
 	mBase = m.M
 	v361 = m.ExcPending
 	if v361 != 0 {
@@ -3967,7 +3967,7 @@ L58:
 	;
 	v362 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v365 = m.G77
-	v366 = m.T0[v362].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1799), v365)
+	v366 = m.T0[v362].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_57), v365)
 	mBase = m.M
 	v367 = m.ExcPending
 	if v367 != 0 {
@@ -3979,7 +3979,7 @@ L59:
 	;
 	v368 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v371 = m.G78
-	v372 = m.T0[v368].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1800), v371)
+	v372 = m.T0[v368].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_58), v371)
 	mBase = m.M
 	v373 = m.ExcPending
 	if v373 != 0 {
@@ -3991,7 +3991,7 @@ L60:
 	;
 	v374 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v377 = m.G79
-	v378 = m.T0[v374].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1801), v377)
+	v378 = m.T0[v374].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_59), v377)
 	mBase = m.M
 	v379 = m.ExcPending
 	if v379 != 0 {
@@ -4003,7 +4003,7 @@ L61:
 	;
 	v380 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v383 = m.G18
-	v384 = m.T0[v380].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1802), v383)
+	v384 = m.T0[v380].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_60), v383)
 	mBase = m.M
 	v385 = m.ExcPending
 	if v385 != 0 {
@@ -4015,7 +4015,7 @@ L62:
 	;
 	v386 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v389 = m.G80
-	v390 = m.T0[v386].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1803), v389)
+	v390 = m.T0[v386].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_61), v389)
 	mBase = m.M
 	v391 = m.ExcPending
 	if v391 != 0 {
@@ -4027,7 +4027,7 @@ L63:
 	;
 	v392 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v395 = m.G81
-	v396 = m.T0[v392].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1804), v395)
+	v396 = m.T0[v392].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_62), v395)
 	mBase = m.M
 	v397 = m.ExcPending
 	if v397 != 0 {
@@ -4039,7 +4039,7 @@ L64:
 	;
 	v398 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v401 = m.G82
-	v402 = m.T0[v398].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1805), v401)
+	v402 = m.T0[v398].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_63), v401)
 	mBase = m.M
 	v403 = m.ExcPending
 	if v403 != 0 {
@@ -4051,7 +4051,7 @@ L65:
 	;
 	v404 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v407 = m.G83
-	v408 = m.T0[v404].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1806), v407)
+	v408 = m.T0[v404].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_64), v407)
 	mBase = m.M
 	v409 = m.ExcPending
 	if v409 != 0 {
@@ -4063,7 +4063,7 @@ L66:
 	;
 	v410 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v413 = m.G84
-	v414 = m.T0[v410].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1807), v413)
+	v414 = m.T0[v410].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_65), v413)
 	mBase = m.M
 	v415 = m.ExcPending
 	if v415 != 0 {
@@ -4075,7 +4075,7 @@ L67:
 	;
 	v416 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v419 = m.G85
-	v420 = m.T0[v416].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1808), v419)
+	v420 = m.T0[v416].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_66), v419)
 	mBase = m.M
 	v421 = m.ExcPending
 	if v421 != 0 {
@@ -4087,7 +4087,7 @@ L68:
 	;
 	v422 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v425 = m.G86
-	v426 = m.T0[v422].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1809), v425)
+	v426 = m.T0[v422].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_67), v425)
 	mBase = m.M
 	v427 = m.ExcPending
 	if v427 != 0 {
@@ -4099,7 +4099,7 @@ L69:
 	;
 	v428 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v431 = m.G87
-	v432 = m.T0[v428].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1810), v431)
+	v432 = m.T0[v428].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_68), v431)
 	mBase = m.M
 	v433 = m.ExcPending
 	if v433 != 0 {
@@ -4111,7 +4111,7 @@ L70:
 	;
 	v434 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v437 = m.G88
-	v438 = m.T0[v434].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1811), v437)
+	v438 = m.T0[v434].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_69), v437)
 	mBase = m.M
 	v439 = m.ExcPending
 	if v439 != 0 {
@@ -4123,7 +4123,7 @@ L71:
 	;
 	v440 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v443 = m.G89
-	v444 = m.T0[v440].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1812), v443)
+	v444 = m.T0[v440].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_70), v443)
 	mBase = m.M
 	v445 = m.ExcPending
 	if v445 != 0 {
@@ -4135,7 +4135,7 @@ L72:
 	;
 	v446 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v449 = m.G90
-	v450 = m.T0[v446].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1813), v449)
+	v450 = m.T0[v446].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_71), v449)
 	mBase = m.M
 	v451 = m.ExcPending
 	if v451 != 0 {
@@ -4147,7 +4147,7 @@ L73:
 	;
 	v452 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v455 = m.G91
-	v456 = m.T0[v452].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1814), v455)
+	v456 = m.T0[v452].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_72), v455)
 	mBase = m.M
 	v457 = m.ExcPending
 	if v457 != 0 {
@@ -4159,7 +4159,7 @@ L74:
 	;
 	v458 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v461 = m.G92
-	v462 = m.T0[v458].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1815), v461)
+	v462 = m.T0[v458].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_73), v461)
 	mBase = m.M
 	v463 = m.ExcPending
 	if v463 != 0 {
@@ -4171,7 +4171,7 @@ L75:
 	;
 	v464 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v467 = m.G93
-	v468 = m.T0[v464].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1816), v467)
+	v468 = m.T0[v464].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_74), v467)
 	mBase = m.M
 	v469 = m.ExcPending
 	if v469 != 0 {
@@ -4183,7 +4183,7 @@ L76:
 	;
 	v470 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v473 = m.G94
-	v474 = m.T0[v470].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1817), v473)
+	v474 = m.T0[v470].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_75), v473)
 	mBase = m.M
 	v475 = m.ExcPending
 	if v475 != 0 {
@@ -4195,7 +4195,7 @@ L77:
 	;
 	v476 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v479 = m.G95
-	v480 = m.T0[v476].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1818), v479)
+	v480 = m.T0[v476].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_76), v479)
 	mBase = m.M
 	v481 = m.ExcPending
 	if v481 != 0 {
@@ -4207,7 +4207,7 @@ L78:
 	;
 	v482 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v485 = m.G96
-	v486 = m.T0[v482].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1819), v485)
+	v486 = m.T0[v482].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_77), v485)
 	mBase = m.M
 	v487 = m.ExcPending
 	if v487 != 0 {
@@ -4219,7 +4219,7 @@ L79:
 	;
 	v488 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v491 = m.G97
-	v492 = m.T0[v488].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1820), v491)
+	v492 = m.T0[v488].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_78), v491)
 	mBase = m.M
 	v493 = m.ExcPending
 	if v493 != 0 {
@@ -4231,7 +4231,7 @@ L80:
 	;
 	v494 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v497 = m.G98
-	v498 = m.T0[v494].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1821), v497)
+	v498 = m.T0[v494].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_79), v497)
 	mBase = m.M
 	v499 = m.ExcPending
 	if v499 != 0 {
@@ -4243,7 +4243,7 @@ L81:
 	;
 	v500 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v503 = m.G99
-	v504 = m.T0[v500].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1822), v503)
+	v504 = m.T0[v500].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_80), v503)
 	mBase = m.M
 	v505 = m.ExcPending
 	if v505 != 0 {
@@ -4255,7 +4255,7 @@ L82:
 	;
 	v506 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v509 = m.G100
-	v510 = m.T0[v506].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1823), v509)
+	v510 = m.T0[v506].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_81), v509)
 	mBase = m.M
 	v511 = m.ExcPending
 	if v511 != 0 {
@@ -4267,7 +4267,7 @@ L83:
 	;
 	v512 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v515 = m.G101
-	v516 = m.T0[v512].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1824), v515)
+	v516 = m.T0[v512].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_82), v515)
 	mBase = m.M
 	v517 = m.ExcPending
 	if v517 != 0 {
@@ -4279,7 +4279,7 @@ L84:
 	;
 	v518 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v521 = m.G102
-	v522 = m.T0[v518].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1825), v521)
+	v522 = m.T0[v518].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_83), v521)
 	mBase = m.M
 	v523 = m.ExcPending
 	if v523 != 0 {
@@ -4291,7 +4291,7 @@ L85:
 	;
 	v524 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v527 = m.G13
-	v528 = m.T0[v524].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1826), v527)
+	v528 = m.T0[v524].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_84), v527)
 	mBase = m.M
 	v529 = m.ExcPending
 	if v529 != 0 {
@@ -4303,7 +4303,7 @@ L86:
 	;
 	v530 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v533 = m.G103
-	v534 = m.T0[v530].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1827), v533)
+	v534 = m.T0[v530].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_85), v533)
 	mBase = m.M
 	v535 = m.ExcPending
 	if v535 != 0 {
@@ -4315,7 +4315,7 @@ L87:
 	;
 	v536 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v539 = m.G104
-	v540 = m.T0[v536].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1828), v539)
+	v540 = m.T0[v536].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_86), v539)
 	mBase = m.M
 	v541 = m.ExcPending
 	if v541 != 0 {
@@ -4327,7 +4327,7 @@ L88:
 	;
 	v542 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v545 = m.G105
-	v546 = m.T0[v542].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1829), v545)
+	v546 = m.T0[v542].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_87), v545)
 	mBase = m.M
 	v547 = m.ExcPending
 	if v547 != 0 {
@@ -4339,7 +4339,7 @@ L89:
 	;
 	v548 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v551 = m.G106
-	v552 = m.T0[v548].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1830), v551)
+	v552 = m.T0[v548].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_88), v551)
 	mBase = m.M
 	v553 = m.ExcPending
 	if v553 != 0 {
@@ -4351,7 +4351,7 @@ L90:
 	;
 	v554 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v557 = m.G107
-	v558 = m.T0[v554].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1831), v557)
+	v558 = m.T0[v554].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_89), v557)
 	mBase = m.M
 	v559 = m.ExcPending
 	if v559 != 0 {
@@ -4363,7 +4363,7 @@ L91:
 	;
 	v560 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v563 = m.G108
-	v564 = m.T0[v560].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1832), v563)
+	v564 = m.T0[v560].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_90), v563)
 	mBase = m.M
 	v565 = m.ExcPending
 	if v565 != 0 {
@@ -4375,7 +4375,7 @@ L92:
 	;
 	v566 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v569 = m.G15
-	v570 = m.T0[v566].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1833), v569)
+	v570 = m.T0[v566].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_91), v569)
 	mBase = m.M
 	v571 = m.ExcPending
 	if v571 != 0 {
@@ -4387,7 +4387,7 @@ L93:
 	;
 	v572 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v575 = m.G17
-	v576 = m.T0[v572].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1834), v575)
+	v576 = m.T0[v572].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_92), v575)
 	mBase = m.M
 	v577 = m.ExcPending
 	if v577 != 0 {
@@ -4399,7 +4399,7 @@ L94:
 	;
 	v578 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v581 = m.G7
-	v582 = m.T0[v578].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1835), v581)
+	v582 = m.T0[v578].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_93), v581)
 	mBase = m.M
 	v583 = m.ExcPending
 	if v583 != 0 {
@@ -4411,7 +4411,7 @@ L95:
 	;
 	v584 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v587 = m.G109
-	v588 = m.T0[v584].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1836), v587)
+	v588 = m.T0[v584].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_94), v587)
 	mBase = m.M
 	v589 = m.ExcPending
 	if v589 != 0 {
@@ -4423,7 +4423,7 @@ L96:
 	;
 	v590 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v593 = m.G110
-	v594 = m.T0[v590].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1837), v593)
+	v594 = m.T0[v590].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_95), v593)
 	mBase = m.M
 	v595 = m.ExcPending
 	if v595 != 0 {
@@ -4435,7 +4435,7 @@ L97:
 	;
 	v596 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v599 = m.G111
-	v600 = m.T0[v596].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1838), v599)
+	v600 = m.T0[v596].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_96), v599)
 	mBase = m.M
 	v601 = m.ExcPending
 	if v601 != 0 {
@@ -4447,7 +4447,7 @@ L98:
 	;
 	v602 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v605 = m.G112
-	v606 = m.T0[v602].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1839), v605)
+	v606 = m.T0[v602].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_97), v605)
 	mBase = m.M
 	v607 = m.ExcPending
 	if v607 != 0 {
@@ -4459,7 +4459,7 @@ L99:
 	;
 	v608 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v611 = m.G113
-	v612 = m.T0[v608].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1840), v611)
+	v612 = m.T0[v608].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_98), v611)
 	mBase = m.M
 	v613 = m.ExcPending
 	if v613 != 0 {
@@ -4471,7 +4471,7 @@ L100:
 	;
 	v614 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v617 = m.G114
-	v618 = m.T0[v614].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1841), v617)
+	v618 = m.T0[v614].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_99), v617)
 	mBase = m.M
 	v619 = m.ExcPending
 	if v619 != 0 {
@@ -4483,7 +4483,7 @@ L101:
 	;
 	v620 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v623 = m.G115
-	v624 = m.T0[v620].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1842), v623)
+	v624 = m.T0[v620].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_100), v623)
 	mBase = m.M
 	v625 = m.ExcPending
 	if v625 != 0 {
@@ -4495,7 +4495,7 @@ L102:
 	;
 	v626 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v629 = m.G116
-	v630 = m.T0[v626].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1843), v629)
+	v630 = m.T0[v626].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_101), v629)
 	mBase = m.M
 	v631 = m.ExcPending
 	if v631 != 0 {
@@ -4507,7 +4507,7 @@ L103:
 	;
 	v632 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v635 = m.G117
-	v636 = m.T0[v632].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1844), v635)
+	v636 = m.T0[v632].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_102), v635)
 	mBase = m.M
 	v637 = m.ExcPending
 	if v637 != 0 {
@@ -4519,7 +4519,7 @@ L104:
 	;
 	v638 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v641 = m.G118
-	v642 = m.T0[v638].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1845), v641)
+	v642 = m.T0[v638].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_103), v641)
 	mBase = m.M
 	v643 = m.ExcPending
 	if v643 != 0 {
@@ -4531,7 +4531,7 @@ L105:
 	;
 	v644 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v647 = m.G119
-	v648 = m.T0[v644].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1846), v647)
+	v648 = m.T0[v644].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_104), v647)
 	mBase = m.M
 	v649 = m.ExcPending
 	if v649 != 0 {
@@ -4543,7 +4543,7 @@ L106:
 	;
 	v650 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v653 = m.G120
-	v654 = m.T0[v650].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1847), v653)
+	v654 = m.T0[v650].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_105), v653)
 	mBase = m.M
 	v655 = m.ExcPending
 	if v655 != 0 {
@@ -4555,7 +4555,7 @@ L107:
 	;
 	v656 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v659 = m.G121
-	v660 = m.T0[v656].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1848), v659)
+	v660 = m.T0[v656].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_106), v659)
 	mBase = m.M
 	v661 = m.ExcPending
 	if v661 != 0 {
@@ -4567,7 +4567,7 @@ L108:
 	;
 	v662 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v665 = m.G122
-	v666 = m.T0[v662].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1849), v665)
+	v666 = m.T0[v662].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_107), v665)
 	mBase = m.M
 	v667 = m.ExcPending
 	if v667 != 0 {
@@ -4579,7 +4579,7 @@ L109:
 	;
 	v668 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v671 = m.G123
-	v672 = m.T0[v668].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1850), v671)
+	v672 = m.T0[v668].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_108), v671)
 	mBase = m.M
 	v673 = m.ExcPending
 	if v673 != 0 {
@@ -4591,7 +4591,7 @@ L110:
 	;
 	v674 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v677 = m.G124
-	v678 = m.T0[v674].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1851), v677)
+	v678 = m.T0[v674].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_109), v677)
 	mBase = m.M
 	v679 = m.ExcPending
 	if v679 != 0 {
@@ -4603,7 +4603,7 @@ L111:
 	;
 	v680 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v683 = m.G125
-	v684 = m.T0[v680].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1852), v683)
+	v684 = m.T0[v680].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_110), v683)
 	mBase = m.M
 	v685 = m.ExcPending
 	if v685 != 0 {
@@ -4615,7 +4615,7 @@ L112:
 	;
 	v686 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v689 = m.G126
-	v690 = m.T0[v686].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1853), v689)
+	v690 = m.T0[v686].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_111), v689)
 	mBase = m.M
 	v691 = m.ExcPending
 	if v691 != 0 {
@@ -4627,7 +4627,7 @@ L113:
 	;
 	v692 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v695 = m.G127
-	v696 = m.T0[v692].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1854), v695)
+	v696 = m.T0[v692].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_112), v695)
 	mBase = m.M
 	v697 = m.ExcPending
 	if v697 != 0 {
@@ -4639,7 +4639,7 @@ L114:
 	;
 	v698 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v701 = m.G128
-	v702 = m.T0[v698].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1855), v701)
+	v702 = m.T0[v698].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_113), v701)
 	mBase = m.M
 	v703 = m.ExcPending
 	if v703 != 0 {
@@ -4651,7 +4651,7 @@ L115:
 	;
 	v704 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v707 = m.G129
-	v708 = m.T0[v704].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1856), v707)
+	v708 = m.T0[v704].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_114), v707)
 	mBase = m.M
 	v709 = m.ExcPending
 	if v709 != 0 {
@@ -4663,7 +4663,7 @@ L116:
 	;
 	v710 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v713 = m.G130
-	v714 = m.T0[v710].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1857), v713)
+	v714 = m.T0[v710].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_115), v713)
 	mBase = m.M
 	v715 = m.ExcPending
 	if v715 != 0 {
@@ -4675,7 +4675,7 @@ L117:
 	;
 	v716 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v719 = m.G131
-	v720 = m.T0[v716].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1858), v719)
+	v720 = m.T0[v716].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_116), v719)
 	mBase = m.M
 	v721 = m.ExcPending
 	if v721 != 0 {
@@ -4687,7 +4687,7 @@ L118:
 	;
 	v722 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v725 = m.G132
-	v726 = m.T0[v722].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1859), v725)
+	v726 = m.T0[v722].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_117), v725)
 	mBase = m.M
 	v727 = m.ExcPending
 	if v727 != 0 {
@@ -4699,7 +4699,7 @@ L119:
 	;
 	v728 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v731 = m.G133
-	v732 = m.T0[v728].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1860), v731)
+	v732 = m.T0[v728].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_118), v731)
 	mBase = m.M
 	v733 = m.ExcPending
 	if v733 != 0 {
@@ -4711,7 +4711,7 @@ L120:
 	;
 	v734 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v737 = m.G134
-	v738 = m.T0[v734].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1861), v737)
+	v738 = m.T0[v734].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_119), v737)
 	mBase = m.M
 	v739 = m.ExcPending
 	if v739 != 0 {
@@ -4723,7 +4723,7 @@ L121:
 	;
 	v740 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v743 = m.G135
-	v744 = m.T0[v740].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1862), v743)
+	v744 = m.T0[v740].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_120), v743)
 	mBase = m.M
 	v745 = m.ExcPending
 	if v745 != 0 {
@@ -4735,7 +4735,7 @@ L122:
 	;
 	v746 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v749 = m.G136
-	v750 = m.T0[v746].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1863), v749)
+	v750 = m.T0[v746].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_121), v749)
 	mBase = m.M
 	v751 = m.ExcPending
 	if v751 != 0 {
@@ -4747,7 +4747,7 @@ L123:
 	;
 	v752 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v755 = m.G137
-	v756 = m.T0[v752].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1864), v755)
+	v756 = m.T0[v752].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_122), v755)
 	mBase = m.M
 	v757 = m.ExcPending
 	if v757 != 0 {
@@ -4759,7 +4759,7 @@ L124:
 	;
 	v758 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v761 = m.G138
-	v762 = m.T0[v758].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1865), v761)
+	v762 = m.T0[v758].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_123), v761)
 	mBase = m.M
 	v763 = m.ExcPending
 	if v763 != 0 {
@@ -4771,7 +4771,7 @@ L125:
 	;
 	v764 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v767 = m.G139
-	v768 = m.T0[v764].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1866), v767)
+	v768 = m.T0[v764].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_124), v767)
 	mBase = m.M
 	v769 = m.ExcPending
 	if v769 != 0 {
@@ -4783,7 +4783,7 @@ L126:
 	;
 	v770 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v773 = m.G140
-	v774 = m.T0[v770].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1867), v773)
+	v774 = m.T0[v770].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_125), v773)
 	mBase = m.M
 	v775 = m.ExcPending
 	if v775 != 0 {
@@ -4795,7 +4795,7 @@ L127:
 	;
 	v776 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v779 = m.G141
-	v780 = m.T0[v776].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1868), v779)
+	v780 = m.T0[v776].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_126), v779)
 	mBase = m.M
 	v781 = m.ExcPending
 	if v781 != 0 {
@@ -4807,7 +4807,7 @@ L128:
 	;
 	v782 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v785 = m.G142
-	v786 = m.T0[v782].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1869), v785)
+	v786 = m.T0[v782].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_127), v785)
 	mBase = m.M
 	v787 = m.ExcPending
 	if v787 != 0 {
@@ -4819,7 +4819,7 @@ L129:
 	;
 	v788 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v791 = m.G143
-	v792 = m.T0[v788].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1870), v791)
+	v792 = m.T0[v788].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_128), v791)
 	mBase = m.M
 	v793 = m.ExcPending
 	if v793 != 0 {
@@ -4831,7 +4831,7 @@ L130:
 	;
 	v794 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v797 = m.G144
-	v798 = m.T0[v794].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1871), v797)
+	v798 = m.T0[v794].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_129), v797)
 	mBase = m.M
 	v799 = m.ExcPending
 	if v799 != 0 {
@@ -4843,7 +4843,7 @@ L131:
 	;
 	v800 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v803 = m.G145
-	v804 = m.T0[v800].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1872), v803)
+	v804 = m.T0[v800].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_130), v803)
 	mBase = m.M
 	v805 = m.ExcPending
 	if v805 != 0 {
@@ -4855,7 +4855,7 @@ L132:
 	;
 	v806 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v809 = m.G146
-	v810 = m.T0[v806].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1873), v809)
+	v810 = m.T0[v806].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_131), v809)
 	mBase = m.M
 	v811 = m.ExcPending
 	if v811 != 0 {
@@ -4867,7 +4867,7 @@ L133:
 	;
 	v812 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v815 = m.G147
-	v816 = m.T0[v812].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1874), v815)
+	v816 = m.T0[v812].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_132), v815)
 	mBase = m.M
 	v817 = m.ExcPending
 	if v817 != 0 {
@@ -4879,7 +4879,7 @@ L134:
 	;
 	v818 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v821 = m.G148
-	v822 = m.T0[v818].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1875), v821)
+	v822 = m.T0[v818].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_133), v821)
 	mBase = m.M
 	v823 = m.ExcPending
 	if v823 != 0 {
@@ -4891,7 +4891,7 @@ L135:
 	;
 	v824 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v827 = m.G149
-	v828 = m.T0[v824].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1876), v827)
+	v828 = m.T0[v824].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_134), v827)
 	mBase = m.M
 	v829 = m.ExcPending
 	if v829 != 0 {
@@ -4903,7 +4903,7 @@ L136:
 	;
 	v830 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v833 = m.G150
-	v834 = m.T0[v830].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1877), v833)
+	v834 = m.T0[v830].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_135), v833)
 	mBase = m.M
 	v835 = m.ExcPending
 	if v835 != 0 {
@@ -4915,7 +4915,7 @@ L137:
 	;
 	v836 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v839 = m.G151
-	v840 = m.T0[v836].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1878), v839)
+	v840 = m.T0[v836].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_136), v839)
 	mBase = m.M
 	v841 = m.ExcPending
 	if v841 != 0 {
@@ -4927,7 +4927,7 @@ L138:
 	;
 	v842 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v845 = m.G152
-	v846 = m.T0[v842].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1879), v845)
+	v846 = m.T0[v842].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_137), v845)
 	mBase = m.M
 	v847 = m.ExcPending
 	if v847 != 0 {
@@ -4939,7 +4939,7 @@ L139:
 	;
 	v848 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v851 = m.G153
-	v852 = m.T0[v848].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1880), v851)
+	v852 = m.T0[v848].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_138), v851)
 	mBase = m.M
 	v853 = m.ExcPending
 	if v853 != 0 {
@@ -4951,7 +4951,7 @@ L140:
 	;
 	v854 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v857 = m.G154
-	v858 = m.T0[v854].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1881), v857)
+	v858 = m.T0[v854].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_139), v857)
 	mBase = m.M
 	v859 = m.ExcPending
 	if v859 != 0 {
@@ -4963,7 +4963,7 @@ L141:
 	;
 	v860 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v863 = m.G155
-	v864 = m.T0[v860].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1882), v863)
+	v864 = m.T0[v860].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_140), v863)
 	mBase = m.M
 	v865 = m.ExcPending
 	if v865 != 0 {
@@ -4975,7 +4975,7 @@ L142:
 	;
 	v866 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v869 = m.G156
-	v870 = m.T0[v866].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1883), v869)
+	v870 = m.T0[v866].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_141), v869)
 	mBase = m.M
 	v871 = m.ExcPending
 	if v871 != 0 {
@@ -4987,7 +4987,7 @@ L143:
 	;
 	v872 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v875 = m.G157
-	v876 = m.T0[v872].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1884), v875)
+	v876 = m.T0[v872].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_142), v875)
 	mBase = m.M
 	v877 = m.ExcPending
 	if v877 != 0 {
@@ -4999,7 +4999,7 @@ L144:
 	;
 	v878 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v881 = m.G158
-	v882 = m.T0[v878].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1885), v881)
+	v882 = m.T0[v878].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_143), v881)
 	mBase = m.M
 	v883 = m.ExcPending
 	if v883 != 0 {
@@ -5011,7 +5011,7 @@ L145:
 	;
 	v884 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v887 = m.G159
-	v888 = m.T0[v884].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1886), v887)
+	v888 = m.T0[v884].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_144), v887)
 	mBase = m.M
 	v889 = m.ExcPending
 	if v889 != 0 {
@@ -5023,7 +5023,7 @@ L146:
 	;
 	v890 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v893 = m.G160
-	v894 = m.T0[v890].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1887), v893)
+	v894 = m.T0[v890].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_145), v893)
 	mBase = m.M
 	v895 = m.ExcPending
 	if v895 != 0 {
@@ -5035,7 +5035,7 @@ L147:
 	;
 	v896 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v899 = m.G161
-	v900 = m.T0[v896].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1888), v899)
+	v900 = m.T0[v896].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_146), v899)
 	mBase = m.M
 	v901 = m.ExcPending
 	if v901 != 0 {
@@ -5047,7 +5047,7 @@ L148:
 	;
 	v902 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v905 = m.G162
-	v906 = m.T0[v902].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1889), v905)
+	v906 = m.T0[v902].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_147), v905)
 	mBase = m.M
 	v907 = m.ExcPending
 	if v907 != 0 {
@@ -5059,7 +5059,7 @@ L149:
 	;
 	v908 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v911 = m.G163
-	v912 = m.T0[v908].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1890), v911)
+	v912 = m.T0[v908].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_148), v911)
 	mBase = m.M
 	v913 = m.ExcPending
 	if v913 != 0 {
@@ -5071,7 +5071,7 @@ L150:
 	;
 	v914 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v917 = m.G164
-	v918 = m.T0[v914].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1891), v917)
+	v918 = m.T0[v914].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_149), v917)
 	mBase = m.M
 	v919 = m.ExcPending
 	if v919 != 0 {
@@ -5083,7 +5083,7 @@ L151:
 	;
 	v920 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v923 = m.G165
-	v924 = m.T0[v920].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1892), v923)
+	v924 = m.T0[v920].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_150), v923)
 	mBase = m.M
 	v925 = m.ExcPending
 	if v925 != 0 {
@@ -5095,7 +5095,7 @@ L152:
 	;
 	v926 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v929 = m.G166
-	v930 = m.T0[v926].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1893), v929)
+	v930 = m.T0[v926].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_151), v929)
 	mBase = m.M
 	v931 = m.ExcPending
 	if v931 != 0 {
@@ -5107,7 +5107,7 @@ L153:
 	;
 	v932 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v935 = m.G167
-	v936 = m.T0[v932].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1894), v935)
+	v936 = m.T0[v932].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_152), v935)
 	mBase = m.M
 	v937 = m.ExcPending
 	if v937 != 0 {
@@ -5119,7 +5119,7 @@ L154:
 	;
 	v938 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v941 = m.G168
-	v942 = m.T0[v938].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1895), v941)
+	v942 = m.T0[v938].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_153), v941)
 	mBase = m.M
 	v943 = m.ExcPending
 	if v943 != 0 {
@@ -5131,7 +5131,7 @@ L155:
 	;
 	v944 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v947 = m.G169
-	v948 = m.T0[v944].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1896), v947)
+	v948 = m.T0[v944].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_154), v947)
 	mBase = m.M
 	v949 = m.ExcPending
 	if v949 != 0 {
@@ -5143,7 +5143,7 @@ L156:
 	;
 	v950 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v953 = m.G170
-	v954 = m.T0[v950].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1897), v953)
+	v954 = m.T0[v950].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_155), v953)
 	mBase = m.M
 	v955 = m.ExcPending
 	if v955 != 0 {
@@ -5155,7 +5155,7 @@ L157:
 	;
 	v956 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v959 = m.G171
-	v960 = m.T0[v956].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1898), v959)
+	v960 = m.T0[v956].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_156), v959)
 	mBase = m.M
 	v961 = m.ExcPending
 	if v961 != 0 {
@@ -5167,7 +5167,7 @@ L158:
 	;
 	v962 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v965 = m.G172
-	v966 = m.T0[v962].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1899), v965)
+	v966 = m.T0[v962].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_157), v965)
 	mBase = m.M
 	v967 = m.ExcPending
 	if v967 != 0 {
@@ -5179,7 +5179,7 @@ L159:
 	;
 	v968 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v971 = m.G173
-	v972 = m.T0[v968].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1900), v971)
+	v972 = m.T0[v968].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_158), v971)
 	mBase = m.M
 	v973 = m.ExcPending
 	if v973 != 0 {
@@ -5191,7 +5191,7 @@ L160:
 	;
 	v974 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v977 = m.G174
-	v978 = m.T0[v974].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1901), v977)
+	v978 = m.T0[v974].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_159), v977)
 	mBase = m.M
 	v979 = m.ExcPending
 	if v979 != 0 {
@@ -5203,7 +5203,7 @@ L161:
 	;
 	v980 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v983 = m.G175
-	v984 = m.T0[v980].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1902), v983)
+	v984 = m.T0[v980].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_160), v983)
 	mBase = m.M
 	v985 = m.ExcPending
 	if v985 != 0 {
@@ -5215,7 +5215,7 @@ L162:
 	;
 	v986 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v989 = m.G176
-	v990 = m.T0[v986].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1903), v989)
+	v990 = m.T0[v986].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_161), v989)
 	mBase = m.M
 	v991 = m.ExcPending
 	if v991 != 0 {
@@ -5227,7 +5227,7 @@ L163:
 	;
 	v992 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v995 = m.G177
-	v996 = m.T0[v992].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1904), v995)
+	v996 = m.T0[v992].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_162), v995)
 	mBase = m.M
 	v997 = m.ExcPending
 	if v997 != 0 {
@@ -5239,7 +5239,7 @@ L164:
 	;
 	v998 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1001 = m.G178
-	v1002 = m.T0[v998].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1905), v1001)
+	v1002 = m.T0[v998].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_163), v1001)
 	mBase = m.M
 	v1003 = m.ExcPending
 	if v1003 != 0 {
@@ -5251,7 +5251,7 @@ L165:
 	;
 	v1004 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1007 = m.G179
-	v1008 = m.T0[v1004].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1906), v1007)
+	v1008 = m.T0[v1004].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_164), v1007)
 	mBase = m.M
 	v1009 = m.ExcPending
 	if v1009 != 0 {
@@ -5263,7 +5263,7 @@ L166:
 	;
 	v1010 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1013 = m.G180
-	v1014 = m.T0[v1010].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1907), v1013)
+	v1014 = m.T0[v1010].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_165), v1013)
 	mBase = m.M
 	v1015 = m.ExcPending
 	if v1015 != 0 {
@@ -5275,7 +5275,7 @@ L167:
 	;
 	v1016 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1019 = m.G181
-	v1020 = m.T0[v1016].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1908), v1019)
+	v1020 = m.T0[v1016].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_166), v1019)
 	mBase = m.M
 	v1021 = m.ExcPending
 	if v1021 != 0 {
@@ -5287,7 +5287,7 @@ L168:
 	;
 	v1022 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1025 = m.G182
-	v1026 = m.T0[v1022].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1909), v1025)
+	v1026 = m.T0[v1022].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_167), v1025)
 	mBase = m.M
 	v1027 = m.ExcPending
 	if v1027 != 0 {
@@ -5299,7 +5299,7 @@ L169:
 	;
 	v1028 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1031 = m.G183
-	v1032 = m.T0[v1028].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1910), v1031)
+	v1032 = m.T0[v1028].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_168), v1031)
 	mBase = m.M
 	v1033 = m.ExcPending
 	if v1033 != 0 {
@@ -5311,7 +5311,7 @@ L170:
 	;
 	v1034 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1037 = m.G184
-	v1038 = m.T0[v1034].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1911), v1037)
+	v1038 = m.T0[v1034].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_169), v1037)
 	mBase = m.M
 	v1039 = m.ExcPending
 	if v1039 != 0 {
@@ -5323,7 +5323,7 @@ L171:
 	;
 	v1040 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1043 = m.G185
-	v1044 = m.T0[v1040].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1912), v1043)
+	v1044 = m.T0[v1040].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_170), v1043)
 	mBase = m.M
 	v1045 = m.ExcPending
 	if v1045 != 0 {
@@ -5335,7 +5335,7 @@ L172:
 	;
 	v1046 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1049 = m.G186
-	v1050 = m.T0[v1046].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1913), v1049)
+	v1050 = m.T0[v1046].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_171), v1049)
 	mBase = m.M
 	v1051 = m.ExcPending
 	if v1051 != 0 {
@@ -5347,7 +5347,7 @@ L173:
 	;
 	v1052 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1055 = m.G10
-	v1056 = m.T0[v1052].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1914), v1055)
+	v1056 = m.T0[v1052].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_172), v1055)
 	mBase = m.M
 	v1057 = m.ExcPending
 	if v1057 != 0 {
@@ -5359,7 +5359,7 @@ L174:
 	;
 	v1058 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1061 = m.G187
-	v1062 = m.T0[v1058].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1915), v1061)
+	v1062 = m.T0[v1058].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_173), v1061)
 	mBase = m.M
 	v1063 = m.ExcPending
 	if v1063 != 0 {
@@ -5371,7 +5371,7 @@ L175:
 	;
 	v1064 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1067 = m.G8
-	v1068 = m.T0[v1064].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1916), v1067)
+	v1068 = m.T0[v1064].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_174), v1067)
 	mBase = m.M
 	v1069 = m.ExcPending
 	if v1069 != 0 {
@@ -5383,7 +5383,7 @@ L176:
 	;
 	v1070 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1073 = m.G188
-	v1074 = m.T0[v1070].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1917), v1073)
+	v1074 = m.T0[v1070].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_175), v1073)
 	mBase = m.M
 	v1075 = m.ExcPending
 	if v1075 != 0 {
@@ -5395,7 +5395,7 @@ L177:
 	;
 	v1076 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1079 = m.G16
-	v1080 = m.T0[v1076].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1918), v1079)
+	v1080 = m.T0[v1076].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_176), v1079)
 	mBase = m.M
 	v1081 = m.ExcPending
 	if v1081 != 0 {
@@ -5407,7 +5407,7 @@ L178:
 	;
 	v1082 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1085 = m.G189
-	v1086 = m.T0[v1082].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1919), v1085)
+	v1086 = m.T0[v1082].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_177), v1085)
 	mBase = m.M
 	v1087 = m.ExcPending
 	if v1087 != 0 {
@@ -5419,7 +5419,7 @@ L179:
 	;
 	v1088 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1091 = m.G190
-	v1092 = m.T0[v1088].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1920), v1091)
+	v1092 = m.T0[v1088].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_178), v1091)
 	mBase = m.M
 	v1093 = m.ExcPending
 	if v1093 != 0 {
@@ -5431,7 +5431,7 @@ L180:
 	;
 	v1094 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1097 = m.G191
-	v1098 = m.T0[v1094].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1921), v1097)
+	v1098 = m.T0[v1094].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_179), v1097)
 	mBase = m.M
 	v1099 = m.ExcPending
 	if v1099 != 0 {
@@ -5443,7 +5443,7 @@ L181:
 	;
 	v1100 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1103 = m.G192
-	v1104 = m.T0[v1100].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1922), v1103)
+	v1104 = m.T0[v1100].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_180), v1103)
 	mBase = m.M
 	v1105 = m.ExcPending
 	if v1105 != 0 {
@@ -5455,7 +5455,7 @@ L182:
 	;
 	v1106 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1109 = m.G193
-	v1110 = m.T0[v1106].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1923), v1109)
+	v1110 = m.T0[v1106].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_181), v1109)
 	mBase = m.M
 	v1111 = m.ExcPending
 	if v1111 != 0 {
@@ -5467,7 +5467,7 @@ L183:
 	;
 	v1112 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1115 = m.G194
-	v1116 = m.T0[v1112].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1924), v1115)
+	v1116 = m.T0[v1112].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_182), v1115)
 	mBase = m.M
 	v1117 = m.ExcPending
 	if v1117 != 0 {
@@ -5479,7 +5479,7 @@ L184:
 	;
 	v1118 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1121 = m.G195
-	v1122 = m.T0[v1118].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1925), v1121)
+	v1122 = m.T0[v1118].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_183), v1121)
 	mBase = m.M
 	v1123 = m.ExcPending
 	if v1123 != 0 {
@@ -5491,7 +5491,7 @@ L185:
 	;
 	v1124 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1127 = m.G196
-	v1128 = m.T0[v1124].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1926), v1127)
+	v1128 = m.T0[v1124].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_184), v1127)
 	mBase = m.M
 	v1129 = m.ExcPending
 	if v1129 != 0 {
@@ -5503,7 +5503,7 @@ L186:
 	;
 	v1130 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1133 = m.G197
-	v1134 = m.T0[v1130].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1927), v1133)
+	v1134 = m.T0[v1130].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_185), v1133)
 	mBase = m.M
 	v1135 = m.ExcPending
 	if v1135 != 0 {
@@ -5515,7 +5515,7 @@ L187:
 	;
 	v1136 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1139 = m.G198
-	v1140 = m.T0[v1136].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1928), v1139)
+	v1140 = m.T0[v1136].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_186), v1139)
 	mBase = m.M
 	v1141 = m.ExcPending
 	if v1141 != 0 {
@@ -5527,7 +5527,7 @@ L188:
 	;
 	v1142 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1145 = m.G199
-	v1146 = m.T0[v1142].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1929), v1145)
+	v1146 = m.T0[v1142].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_187), v1145)
 	mBase = m.M
 	v1147 = m.ExcPending
 	if v1147 != 0 {
@@ -5539,7 +5539,7 @@ L189:
 	;
 	v1148 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1151 = m.G200
-	v1152 = m.T0[v1148].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1930), v1151)
+	v1152 = m.T0[v1148].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_188), v1151)
 	mBase = m.M
 	v1153 = m.ExcPending
 	if v1153 != 0 {
@@ -5551,7 +5551,7 @@ L190:
 	;
 	v1154 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1157 = m.G201
-	v1158 = m.T0[v1154].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1931), v1157)
+	v1158 = m.T0[v1154].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_189), v1157)
 	mBase = m.M
 	v1159 = m.ExcPending
 	if v1159 != 0 {
@@ -5563,7 +5563,7 @@ L191:
 	;
 	v1160 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1163 = m.G202
-	v1164 = m.T0[v1160].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1932), v1163)
+	v1164 = m.T0[v1160].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_190), v1163)
 	mBase = m.M
 	v1165 = m.ExcPending
 	if v1165 != 0 {
@@ -5575,7 +5575,7 @@ L192:
 	;
 	v1166 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1169 = m.G203
-	v1170 = m.T0[v1166].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1933), v1169)
+	v1170 = m.T0[v1166].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_191), v1169)
 	mBase = m.M
 	v1171 = m.ExcPending
 	if v1171 != 0 {
@@ -5587,7 +5587,7 @@ L193:
 	;
 	v1172 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1175 = m.G204
-	v1176 = m.T0[v1172].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1934), v1175)
+	v1176 = m.T0[v1172].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_192), v1175)
 	mBase = m.M
 	v1177 = m.ExcPending
 	if v1177 != 0 {
@@ -5599,7 +5599,7 @@ L194:
 	;
 	v1178 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1181 = m.G205
-	v1182 = m.T0[v1178].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1935), v1181)
+	v1182 = m.T0[v1178].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_193), v1181)
 	mBase = m.M
 	v1183 = m.ExcPending
 	if v1183 != 0 {
@@ -5611,7 +5611,7 @@ L195:
 	;
 	v1184 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1187 = m.G206
-	v1188 = m.T0[v1184].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1936), v1187)
+	v1188 = m.T0[v1184].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_194), v1187)
 	mBase = m.M
 	v1189 = m.ExcPending
 	if v1189 != 0 {
@@ -5623,7 +5623,7 @@ L196:
 	;
 	v1190 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1193 = m.G207
-	v1194 = m.T0[v1190].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1937), v1193)
+	v1194 = m.T0[v1190].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_195), v1193)
 	mBase = m.M
 	v1195 = m.ExcPending
 	if v1195 != 0 {
@@ -5635,7 +5635,7 @@ L197:
 	;
 	v1196 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1199 = m.G208
-	v1200 = m.T0[v1196].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1938), v1199)
+	v1200 = m.T0[v1196].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_196), v1199)
 	mBase = m.M
 	v1201 = m.ExcPending
 	if v1201 != 0 {
@@ -5647,7 +5647,7 @@ L198:
 	;
 	v1202 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1205 = m.G209
-	v1206 = m.T0[v1202].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1939), v1205)
+	v1206 = m.T0[v1202].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_197), v1205)
 	mBase = m.M
 	v1207 = m.ExcPending
 	if v1207 != 0 {
@@ -5659,7 +5659,7 @@ L199:
 	;
 	v1208 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1211 = m.G210
-	v1212 = m.T0[v1208].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1940), v1211)
+	v1212 = m.T0[v1208].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_198), v1211)
 	mBase = m.M
 	v1213 = m.ExcPending
 	if v1213 != 0 {
@@ -5671,7 +5671,7 @@ L200:
 	;
 	v1214 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1217 = m.G211
-	v1218 = m.T0[v1214].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1941), v1217)
+	v1218 = m.T0[v1214].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_199), v1217)
 	mBase = m.M
 	v1219 = m.ExcPending
 	if v1219 != 0 {
@@ -5683,7 +5683,7 @@ L201:
 	;
 	v1220 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1223 = m.G212
-	v1224 = m.T0[v1220].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1942), v1223)
+	v1224 = m.T0[v1220].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_200), v1223)
 	mBase = m.M
 	v1225 = m.ExcPending
 	if v1225 != 0 {
@@ -5695,7 +5695,7 @@ L202:
 	;
 	v1226 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1229 = m.G213
-	v1230 = m.T0[v1226].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1943), v1229)
+	v1230 = m.T0[v1226].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_201), v1229)
 	mBase = m.M
 	v1231 = m.ExcPending
 	if v1231 != 0 {
@@ -5707,7 +5707,7 @@ L203:
 	;
 	v1232 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1235 = m.G214
-	v1236 = m.T0[v1232].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1944), v1235)
+	v1236 = m.T0[v1232].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_202), v1235)
 	mBase = m.M
 	v1237 = m.ExcPending
 	if v1237 != 0 {
@@ -5719,7 +5719,7 @@ L204:
 	;
 	v1238 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1241 = m.G215
-	v1242 = m.T0[v1238].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1945), v1241)
+	v1242 = m.T0[v1238].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_203), v1241)
 	mBase = m.M
 	v1243 = m.ExcPending
 	if v1243 != 0 {
@@ -5731,7 +5731,7 @@ L205:
 	;
 	v1244 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1247 = m.G216
-	v1248 = m.T0[v1244].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1946), v1247)
+	v1248 = m.T0[v1244].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_204), v1247)
 	mBase = m.M
 	v1249 = m.ExcPending
 	if v1249 != 0 {
@@ -5743,7 +5743,7 @@ L206:
 	;
 	v1250 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1253 = m.G217
-	v1254 = m.T0[v1250].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1947), v1253)
+	v1254 = m.T0[v1250].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_205), v1253)
 	mBase = m.M
 	v1255 = m.ExcPending
 	if v1255 != 0 {
@@ -5755,7 +5755,7 @@ L207:
 	;
 	v1256 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1259 = m.G218
-	v1260 = m.T0[v1256].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1948), v1259)
+	v1260 = m.T0[v1256].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_206), v1259)
 	mBase = m.M
 	v1261 = m.ExcPending
 	if v1261 != 0 {
@@ -5767,7 +5767,7 @@ L208:
 	;
 	v1262 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1265 = m.G219
-	v1266 = m.T0[v1262].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1949), v1265)
+	v1266 = m.T0[v1262].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_207), v1265)
 	mBase = m.M
 	v1267 = m.ExcPending
 	if v1267 != 0 {
@@ -5779,7 +5779,7 @@ L209:
 	;
 	v1268 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1271 = m.G220
-	v1272 = m.T0[v1268].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1950), v1271)
+	v1272 = m.T0[v1268].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_208), v1271)
 	mBase = m.M
 	v1273 = m.ExcPending
 	if v1273 != 0 {
@@ -5791,7 +5791,7 @@ L210:
 	;
 	v1274 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1277 = m.G221
-	v1278 = m.T0[v1274].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1951), v1277)
+	v1278 = m.T0[v1274].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_209), v1277)
 	mBase = m.M
 	v1279 = m.ExcPending
 	if v1279 != 0 {
@@ -5803,7 +5803,7 @@ L211:
 	;
 	v1280 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1283 = m.G222
-	v1284 = m.T0[v1280].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1952), v1283)
+	v1284 = m.T0[v1280].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_210), v1283)
 	mBase = m.M
 	v1285 = m.ExcPending
 	if v1285 != 0 {
@@ -5815,7 +5815,7 @@ L212:
 	;
 	v1286 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1289 = m.G223
-	v1290 = m.T0[v1286].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1953), v1289)
+	v1290 = m.T0[v1286].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_211), v1289)
 	mBase = m.M
 	v1291 = m.ExcPending
 	if v1291 != 0 {
@@ -5827,7 +5827,7 @@ L213:
 	;
 	v1292 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1295 = m.G224
-	v1296 = m.T0[v1292].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1954), v1295)
+	v1296 = m.T0[v1292].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_212), v1295)
 	mBase = m.M
 	v1297 = m.ExcPending
 	if v1297 != 0 {
@@ -5839,7 +5839,7 @@ L214:
 	;
 	v1298 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1301 = m.G225
-	v1302 = m.T0[v1298].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1955), v1301)
+	v1302 = m.T0[v1298].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_213), v1301)
 	mBase = m.M
 	v1303 = m.ExcPending
 	if v1303 != 0 {
@@ -5851,7 +5851,7 @@ L215:
 	;
 	v1304 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1307 = m.G226
-	v1308 = m.T0[v1304].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1956), v1307)
+	v1308 = m.T0[v1304].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_214), v1307)
 	mBase = m.M
 	v1309 = m.ExcPending
 	if v1309 != 0 {
@@ -5863,7 +5863,7 @@ L216:
 	;
 	v1310 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1313 = m.G227
-	v1314 = m.T0[v1310].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1957), v1313)
+	v1314 = m.T0[v1310].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_215), v1313)
 	mBase = m.M
 	v1315 = m.ExcPending
 	if v1315 != 0 {
@@ -5875,7 +5875,7 @@ L217:
 	;
 	v1316 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1319 = m.G228
-	v1320 = m.T0[v1316].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1958), v1319)
+	v1320 = m.T0[v1316].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_216), v1319)
 	mBase = m.M
 	v1321 = m.ExcPending
 	if v1321 != 0 {
@@ -5887,7 +5887,7 @@ L218:
 	;
 	v1322 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1325 = m.G229
-	v1326 = m.T0[v1322].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1959), v1325)
+	v1326 = m.T0[v1322].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_217), v1325)
 	mBase = m.M
 	v1327 = m.ExcPending
 	if v1327 != 0 {
@@ -5899,7 +5899,7 @@ L219:
 	;
 	v1328 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1331 = m.G230
-	v1332 = m.T0[v1328].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1960), v1331)
+	v1332 = m.T0[v1328].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_218), v1331)
 	mBase = m.M
 	v1333 = m.ExcPending
 	if v1333 != 0 {
@@ -5911,7 +5911,7 @@ L220:
 	;
 	v1334 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1337 = m.G231
-	v1338 = m.T0[v1334].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1961), v1337)
+	v1338 = m.T0[v1334].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_219), v1337)
 	mBase = m.M
 	v1339 = m.ExcPending
 	if v1339 != 0 {
@@ -5923,7 +5923,7 @@ L221:
 	;
 	v1340 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1343 = m.G232
-	v1344 = m.T0[v1340].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1962), v1343)
+	v1344 = m.T0[v1340].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_220), v1343)
 	mBase = m.M
 	v1345 = m.ExcPending
 	if v1345 != 0 {
@@ -5935,7 +5935,7 @@ L222:
 	;
 	v1346 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1349 = m.G233
-	v1350 = m.T0[v1346].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1963), v1349)
+	v1350 = m.T0[v1346].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_221), v1349)
 	mBase = m.M
 	v1351 = m.ExcPending
 	if v1351 != 0 {
@@ -5947,7 +5947,7 @@ L223:
 	;
 	v1352 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1355 = m.G234
-	v1356 = m.T0[v1352].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1964), v1355)
+	v1356 = m.T0[v1352].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_222), v1355)
 	mBase = m.M
 	v1357 = m.ExcPending
 	if v1357 != 0 {
@@ -5959,7 +5959,7 @@ L224:
 	;
 	v1358 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1361 = m.G235
-	v1362 = m.T0[v1358].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1965), v1361)
+	v1362 = m.T0[v1358].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_223), v1361)
 	mBase = m.M
 	v1363 = m.ExcPending
 	if v1363 != 0 {
@@ -5971,7 +5971,7 @@ L225:
 	;
 	v1364 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1367 = m.G236
-	v1368 = m.T0[v1364].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1966), v1367)
+	v1368 = m.T0[v1364].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_224), v1367)
 	mBase = m.M
 	v1369 = m.ExcPending
 	if v1369 != 0 {
@@ -5983,7 +5983,7 @@ L226:
 	;
 	v1370 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1373 = m.G237
-	v1374 = m.T0[v1370].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1967), v1373)
+	v1374 = m.T0[v1370].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_225), v1373)
 	mBase = m.M
 	v1375 = m.ExcPending
 	if v1375 != 0 {
@@ -5995,7 +5995,7 @@ L227:
 	;
 	v1376 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1379 = m.G238
-	v1380 = m.T0[v1376].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1968), v1379)
+	v1380 = m.T0[v1376].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_226), v1379)
 	mBase = m.M
 	v1381 = m.ExcPending
 	if v1381 != 0 {
@@ -6007,7 +6007,7 @@ L228:
 	;
 	v1382 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1385 = m.G239
-	v1386 = m.T0[v1382].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1969), v1385)
+	v1386 = m.T0[v1382].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_227), v1385)
 	mBase = m.M
 	v1387 = m.ExcPending
 	if v1387 != 0 {
@@ -6019,7 +6019,7 @@ L229:
 	;
 	v1388 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1391 = m.G240
-	v1392 = m.T0[v1388].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1970), v1391)
+	v1392 = m.T0[v1388].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_228), v1391)
 	mBase = m.M
 	v1393 = m.ExcPending
 	if v1393 != 0 {
@@ -6031,7 +6031,7 @@ L230:
 	;
 	v1394 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1397 = m.G241
-	v1398 = m.T0[v1394].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1971), v1397)
+	v1398 = m.T0[v1394].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_229), v1397)
 	mBase = m.M
 	v1399 = m.ExcPending
 	if v1399 != 0 {
@@ -6043,7 +6043,7 @@ L231:
 	;
 	v1400 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1403 = m.G242
-	v1404 = m.T0[v1400].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1972), v1403)
+	v1404 = m.T0[v1400].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_230), v1403)
 	mBase = m.M
 	v1405 = m.ExcPending
 	if v1405 != 0 {
@@ -6055,7 +6055,7 @@ L232:
 	;
 	v1406 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1409 = m.G243
-	v1410 = m.T0[v1406].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1973), v1409)
+	v1410 = m.T0[v1406].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_231), v1409)
 	mBase = m.M
 	v1411 = m.ExcPending
 	if v1411 != 0 {
@@ -6067,7 +6067,7 @@ L233:
 	;
 	v1412 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1415 = m.G244
-	v1416 = m.T0[v1412].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1974), v1415)
+	v1416 = m.T0[v1412].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_232), v1415)
 	mBase = m.M
 	v1417 = m.ExcPending
 	if v1417 != 0 {
@@ -6079,7 +6079,7 @@ L234:
 	;
 	v1418 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1421 = m.G245
-	v1422 = m.T0[v1418].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1975), v1421)
+	v1422 = m.T0[v1418].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_233), v1421)
 	mBase = m.M
 	v1423 = m.ExcPending
 	if v1423 != 0 {
@@ -6091,7 +6091,7 @@ L235:
 	;
 	v1424 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1427 = m.G246
-	v1428 = m.T0[v1424].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1976), v1427)
+	v1428 = m.T0[v1424].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_234), v1427)
 	mBase = m.M
 	v1429 = m.ExcPending
 	if v1429 != 0 {
@@ -6103,7 +6103,7 @@ L236:
 	;
 	v1430 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1433 = m.G247
-	v1434 = m.T0[v1430].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1977), v1433)
+	v1434 = m.T0[v1430].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_235), v1433)
 	mBase = m.M
 	v1435 = m.ExcPending
 	if v1435 != 0 {
@@ -6115,7 +6115,7 @@ L237:
 	;
 	v1436 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1439 = m.G248
-	v1440 = m.T0[v1436].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1978), v1439)
+	v1440 = m.T0[v1436].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_236), v1439)
 	mBase = m.M
 	v1441 = m.ExcPending
 	if v1441 != 0 {
@@ -6127,7 +6127,7 @@ L238:
 	;
 	v1442 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1445 = m.G249
-	v1446 = m.T0[v1442].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1979), v1445)
+	v1446 = m.T0[v1442].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_237), v1445)
 	mBase = m.M
 	v1447 = m.ExcPending
 	if v1447 != 0 {
@@ -6139,7 +6139,7 @@ L239:
 	;
 	v1448 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1451 = m.G250
-	v1452 = m.T0[v1448].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1980), v1451)
+	v1452 = m.T0[v1448].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_238), v1451)
 	mBase = m.M
 	v1453 = m.ExcPending
 	if v1453 != 0 {
@@ -6151,7 +6151,7 @@ L240:
 	;
 	v1454 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1457 = m.G251
-	v1458 = m.T0[v1454].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1981), v1457)
+	v1458 = m.T0[v1454].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_239), v1457)
 	mBase = m.M
 	v1459 = m.ExcPending
 	if v1459 != 0 {
@@ -6163,7 +6163,7 @@ L241:
 	;
 	v1460 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1463 = m.G252
-	v1464 = m.T0[v1460].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1982), v1463)
+	v1464 = m.T0[v1460].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_240), v1463)
 	mBase = m.M
 	v1465 = m.ExcPending
 	if v1465 != 0 {
@@ -6175,7 +6175,7 @@ L242:
 	;
 	v1466 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1469 = m.G253
-	v1470 = m.T0[v1466].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1983), v1469)
+	v1470 = m.T0[v1466].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_241), v1469)
 	mBase = m.M
 	v1471 = m.ExcPending
 	if v1471 != 0 {
@@ -6187,7 +6187,7 @@ L243:
 	;
 	v1472 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1475 = m.G254
-	v1476 = m.T0[v1472].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1984), v1475)
+	v1476 = m.T0[v1472].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_242), v1475)
 	mBase = m.M
 	v1477 = m.ExcPending
 	if v1477 != 0 {
@@ -6199,7 +6199,7 @@ L244:
 	;
 	v1478 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1481 = m.G255
-	v1482 = m.T0[v1478].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1985), v1481)
+	v1482 = m.T0[v1478].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_243), v1481)
 	mBase = m.M
 	v1483 = m.ExcPending
 	if v1483 != 0 {
@@ -6211,7 +6211,7 @@ L245:
 	;
 	v1484 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1487 = m.G256
-	v1488 = m.T0[v1484].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1986), v1487)
+	v1488 = m.T0[v1484].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_244), v1487)
 	mBase = m.M
 	v1489 = m.ExcPending
 	if v1489 != 0 {
@@ -6223,7 +6223,7 @@ L246:
 	;
 	v1490 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1493 = m.G257
-	v1494 = m.T0[v1490].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1987), v1493)
+	v1494 = m.T0[v1490].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_245), v1493)
 	mBase = m.M
 	v1495 = m.ExcPending
 	if v1495 != 0 {
@@ -6235,7 +6235,7 @@ L247:
 	;
 	v1496 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1499 = m.G258
-	v1500 = m.T0[v1496].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1988), v1499)
+	v1500 = m.T0[v1496].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_246), v1499)
 	mBase = m.M
 	v1501 = m.ExcPending
 	if v1501 != 0 {
@@ -6247,7 +6247,7 @@ L248:
 	;
 	v1502 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1505 = m.G259
-	v1506 = m.T0[v1502].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1989), v1505)
+	v1506 = m.T0[v1502].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_247), v1505)
 	mBase = m.M
 	v1507 = m.ExcPending
 	if v1507 != 0 {
@@ -6259,7 +6259,7 @@ L249:
 	;
 	v1508 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1511 = m.G260
-	v1512 = m.T0[v1508].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1990), v1511)
+	v1512 = m.T0[v1508].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_248), v1511)
 	mBase = m.M
 	v1513 = m.ExcPending
 	if v1513 != 0 {
@@ -6271,7 +6271,7 @@ L250:
 	;
 	v1514 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1517 = m.G261
-	v1518 = m.T0[v1514].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1991), v1517)
+	v1518 = m.T0[v1514].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_249), v1517)
 	mBase = m.M
 	v1519 = m.ExcPending
 	if v1519 != 0 {
@@ -6283,7 +6283,7 @@ L251:
 	;
 	v1520 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1523 = m.G262
-	v1524 = m.T0[v1520].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1992), v1523)
+	v1524 = m.T0[v1520].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_250), v1523)
 	mBase = m.M
 	v1525 = m.ExcPending
 	if v1525 != 0 {
@@ -6295,7 +6295,7 @@ L252:
 	;
 	v1526 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1529 = m.G263
-	v1530 = m.T0[v1526].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1993), v1529)
+	v1530 = m.T0[v1526].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_251), v1529)
 	mBase = m.M
 	v1531 = m.ExcPending
 	if v1531 != 0 {
@@ -6307,7 +6307,7 @@ L253:
 	;
 	v1532 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1535 = m.G264
-	v1536 = m.T0[v1532].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1994), v1535)
+	v1536 = m.T0[v1532].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_252), v1535)
 	mBase = m.M
 	v1537 = m.ExcPending
 	if v1537 != 0 {
@@ -6319,7 +6319,7 @@ L254:
 	;
 	v1538 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1541 = m.G265
-	v1542 = m.T0[v1538].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1995), v1541)
+	v1542 = m.T0[v1538].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_253), v1541)
 	mBase = m.M
 	v1543 = m.ExcPending
 	if v1543 != 0 {
@@ -6331,7 +6331,7 @@ L255:
 	;
 	v1544 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1547 = m.G266
-	v1548 = m.T0[v1544].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1996), v1547)
+	v1548 = m.T0[v1544].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_254), v1547)
 	mBase = m.M
 	v1549 = m.ExcPending
 	if v1549 != 0 {
@@ -6343,7 +6343,7 @@ L256:
 	;
 	v1550 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1553 = m.G267
-	v1554 = m.T0[v1550].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1997), v1553)
+	v1554 = m.T0[v1550].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_255), v1553)
 	mBase = m.M
 	v1555 = m.ExcPending
 	if v1555 != 0 {
@@ -6355,7 +6355,7 @@ L257:
 	;
 	v1556 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1559 = m.G268
-	v1560 = m.T0[v1556].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1998), v1559)
+	v1560 = m.T0[v1556].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_256), v1559)
 	mBase = m.M
 	v1561 = m.ExcPending
 	if v1561 != 0 {
@@ -6367,7 +6367,7 @@ L258:
 	;
 	v1562 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1565 = m.G269
-	v1566 = m.T0[v1562].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a1999), v1565)
+	v1566 = m.T0[v1562].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_257), v1565)
 	mBase = m.M
 	v1567 = m.ExcPending
 	if v1567 != 0 {
@@ -6379,7 +6379,7 @@ L259:
 	;
 	v1568 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1571 = m.G270
-	v1572 = m.T0[v1568].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a2000), v1571)
+	v1572 = m.T0[v1568].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_258), v1571)
 	mBase = m.M
 	v1573 = m.ExcPending
 	if v1573 != 0 {
@@ -6391,7 +6391,7 @@ L260:
 	;
 	v1574 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1577 = m.G271
-	v1578 = m.T0[v1574].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a2001), v1577)
+	v1578 = m.T0[v1574].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_259), v1577)
 	mBase = m.M
 	v1579 = m.ExcPending
 	if v1579 != 0 {
@@ -6403,7 +6403,7 @@ L261:
 	;
 	v1580 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1583 = m.G272
-	v1584 = m.T0[v1580].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a2002), v1583)
+	v1584 = m.T0[v1580].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_260), v1583)
 	mBase = m.M
 	v1585 = m.ExcPending
 	if v1585 != 0 {
@@ -6415,7 +6415,7 @@ L262:
 	;
 	v1586 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1589 = m.G273
-	v1590 = m.T0[v1586].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a2003), v1589)
+	v1590 = m.T0[v1586].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_261), v1589)
 	mBase = m.M
 	v1591 = m.ExcPending
 	if v1591 != 0 {
@@ -6427,7 +6427,7 @@ L263:
 	;
 	v1592 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1595 = m.G274
-	v1596 = m.T0[v1592].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a2004), v1595)
+	v1596 = m.T0[v1592].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_262), v1595)
 	mBase = m.M
 	v1597 = m.ExcPending
 	if v1597 != 0 {
@@ -6439,7 +6439,7 @@ L264:
 	;
 	v1598 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1601 = m.G275
-	v1602 = m.T0[v1598].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a2005), v1601)
+	v1602 = m.T0[v1598].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_263), v1601)
 	mBase = m.M
 	v1603 = m.ExcPending
 	if v1603 != 0 {
@@ -6451,7 +6451,7 @@ L265:
 	;
 	v1604 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1607 = m.G276
-	v1608 = m.T0[v1604].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a2006), v1607)
+	v1608 = m.T0[v1604].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_264), v1607)
 	mBase = m.M
 	v1609 = m.ExcPending
 	if v1609 != 0 {
@@ -6463,7 +6463,7 @@ L266:
 	;
 	v1610 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1613 = m.G277
-	v1614 = m.T0[v1610].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a2007), v1613)
+	v1614 = m.T0[v1610].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_265), v1613)
 	mBase = m.M
 	v1615 = m.ExcPending
 	if v1615 != 0 {
@@ -6475,7 +6475,7 @@ L267:
 	;
 	v1616 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1619 = m.G278
-	v1620 = m.T0[v1616].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a2008), v1619)
+	v1620 = m.T0[v1616].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_266), v1619)
 	mBase = m.M
 	v1621 = m.ExcPending
 	if v1621 != 0 {
@@ -6487,7 +6487,7 @@ L268:
 	;
 	v1622 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1625 = m.G279
-	v1626 = m.T0[v1622].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a2009), v1625)
+	v1626 = m.T0[v1622].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_267), v1625)
 	mBase = m.M
 	v1627 = m.ExcPending
 	if v1627 != 0 {
@@ -6499,7 +6499,7 @@ L269:
 	;
 	v1628 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1631 = m.G280
-	v1632 = m.T0[v1628].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a2010), v1631)
+	v1632 = m.T0[v1628].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_268), v1631)
 	mBase = m.M
 	v1633 = m.ExcPending
 	if v1633 != 0 {
@@ -6511,7 +6511,7 @@ L270:
 	;
 	v1634 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1637 = m.G281
-	v1638 = m.T0[v1634].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a2011), v1637)
+	v1638 = m.T0[v1634].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_269), v1637)
 	mBase = m.M
 	v1639 = m.ExcPending
 	if v1639 != 0 {
@@ -6523,7 +6523,7 @@ L271:
 	;
 	v1640 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1643 = m.G282
-	v1644 = m.T0[v1640].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a2012), v1643)
+	v1644 = m.T0[v1640].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_270), v1643)
 	mBase = m.M
 	v1645 = m.ExcPending
 	if v1645 != 0 {
@@ -6535,7 +6535,7 @@ L272:
 	;
 	v1646 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1649 = m.G283
-	v1650 = m.T0[v1646].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a2013), v1649)
+	v1650 = m.T0[v1646].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_271), v1649)
 	mBase = m.M
 	v1651 = m.ExcPending
 	if v1651 != 0 {
@@ -6547,7 +6547,7 @@ L273:
 	;
 	v1652 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1655 = m.G284
-	v1656 = m.T0[v1652].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a2014), v1655)
+	v1656 = m.T0[v1652].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_272), v1655)
 	mBase = m.M
 	v1657 = m.ExcPending
 	if v1657 != 0 {
@@ -6559,7 +6559,7 @@ L274:
 	;
 	v1658 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1661 = m.G285
-	v1662 = m.T0[v1658].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a2015), v1661)
+	v1662 = m.T0[v1658].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_273), v1661)
 	mBase = m.M
 	v1663 = m.ExcPending
 	if v1663 != 0 {
@@ -6571,7 +6571,7 @@ L275:
 	;
 	v1664 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1667 = m.G286
-	v1668 = m.T0[v1664].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a2016), v1667)
+	v1668 = m.T0[v1664].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_274), v1667)
 	mBase = m.M
 	v1669 = m.ExcPending
 	if v1669 != 0 {
@@ -6583,7 +6583,7 @@ L276:
 	;
 	v1670 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1673 = m.G287
-	v1674 = m.T0[v1670].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a2017), v1673)
+	v1674 = m.T0[v1670].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_275), v1673)
 	mBase = m.M
 	v1675 = m.ExcPending
 	if v1675 != 0 {
@@ -6595,7 +6595,7 @@ L277:
 	;
 	v1676 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1679 = m.G288
-	v1680 = m.T0[v1676].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a2018), v1679)
+	v1680 = m.T0[v1676].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_276), v1679)
 	mBase = m.M
 	v1681 = m.ExcPending
 	if v1681 != 0 {
@@ -6607,7 +6607,7 @@ L278:
 	;
 	v1682 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1685 = m.G289
-	v1686 = m.T0[v1682].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a2019), v1685)
+	v1686 = m.T0[v1682].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_277), v1685)
 	mBase = m.M
 	v1687 = m.ExcPending
 	if v1687 != 0 {
@@ -6619,7 +6619,7 @@ L279:
 	;
 	v1688 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1691 = m.G290
-	v1692 = m.T0[v1688].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a2020), v1691)
+	v1692 = m.T0[v1688].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_278), v1691)
 	mBase = m.M
 	v1693 = m.ExcPending
 	if v1693 != 0 {
@@ -6631,7 +6631,7 @@ L280:
 	;
 	v1694 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1697 = m.G291
-	v1698 = m.T0[v1694].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a2021), v1697)
+	v1698 = m.T0[v1694].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_279), v1697)
 	mBase = m.M
 	v1699 = m.ExcPending
 	if v1699 != 0 {
@@ -6643,7 +6643,7 @@ L281:
 	;
 	v1700 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1703 = m.G292
-	v1704 = m.T0[v1700].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a2022), v1703)
+	v1704 = m.T0[v1700].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_280), v1703)
 	mBase = m.M
 	v1705 = m.ExcPending
 	if v1705 != 0 {
@@ -6655,7 +6655,7 @@ L282:
 	;
 	v1706 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1709 = m.G293
-	v1710 = m.T0[v1706].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a2023), v1709)
+	v1710 = m.T0[v1706].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_281), v1709)
 	mBase = m.M
 	v1711 = m.ExcPending
 	if v1711 != 0 {
@@ -6667,7 +6667,7 @@ L283:
 	;
 	v1712 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1715 = m.G294
-	v1716 = m.T0[v1712].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a2024), v1715)
+	v1716 = m.T0[v1712].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_282), v1715)
 	mBase = m.M
 	v1717 = m.ExcPending
 	if v1717 != 0 {
@@ -6679,7 +6679,7 @@ L284:
 	;
 	v1718 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1721 = m.G295
-	v1722 = m.T0[v1718].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a2025), v1721)
+	v1722 = m.T0[v1718].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_283), v1721)
 	mBase = m.M
 	v1723 = m.ExcPending
 	if v1723 != 0 {
@@ -6691,7 +6691,7 @@ L285:
 	;
 	v1724 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1727 = m.G296
-	v1728 = m.T0[v1724].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a2026), v1727)
+	v1728 = m.T0[v1724].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_284), v1727)
 	mBase = m.M
 	v1729 = m.ExcPending
 	if v1729 != 0 {
@@ -6703,7 +6703,7 @@ L286:
 	;
 	v1730 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1733 = m.G297
-	v1734 = m.T0[v1730].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a2027), v1733)
+	v1734 = m.T0[v1730].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_285), v1733)
 	mBase = m.M
 	v1735 = m.ExcPending
 	if v1735 != 0 {
@@ -6715,7 +6715,7 @@ L287:
 	;
 	v1736 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1739 = m.G298
-	v1740 = m.T0[v1736].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a2028), v1739)
+	v1740 = m.T0[v1736].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_286), v1739)
 	mBase = m.M
 	v1741 = m.ExcPending
 	if v1741 != 0 {
@@ -6727,7 +6727,7 @@ L288:
 	;
 	v1742 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1745 = m.G299
-	v1746 = m.T0[v1742].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a2029), v1745)
+	v1746 = m.T0[v1742].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_287), v1745)
 	mBase = m.M
 	v1747 = m.ExcPending
 	if v1747 != 0 {
@@ -6739,7 +6739,7 @@ L289:
 	;
 	v1748 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1751 = m.G300
-	v1752 = m.T0[v1748].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a2030), v1751)
+	v1752 = m.T0[v1748].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_288), v1751)
 	mBase = m.M
 	v1753 = m.ExcPending
 	if v1753 != 0 {
@@ -6751,7 +6751,7 @@ L290:
 	;
 	v1754 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1757 = m.G301
-	v1758 = m.T0[v1754].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a2031), v1757)
+	v1758 = m.T0[v1754].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_289), v1757)
 	mBase = m.M
 	v1759 = m.ExcPending
 	if v1759 != 0 {
@@ -6763,7 +6763,7 @@ L291:
 	;
 	v1760 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1763 = m.G302
-	v1764 = m.T0[v1760].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a2032), v1763)
+	v1764 = m.T0[v1760].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_290), v1763)
 	mBase = m.M
 	v1765 = m.ExcPending
 	if v1765 != 0 {
@@ -6775,7 +6775,7 @@ L292:
 	;
 	v1766 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1769 = m.G303
-	v1770 = m.T0[v1766].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a2033), v1769)
+	v1770 = m.T0[v1766].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_291), v1769)
 	mBase = m.M
 	v1771 = m.ExcPending
 	if v1771 != 0 {
@@ -6787,7 +6787,7 @@ L293:
 	;
 	v1772 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1775 = m.G304
-	v1776 = m.T0[v1772].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a2034), v1775)
+	v1776 = m.T0[v1772].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_292), v1775)
 	mBase = m.M
 	v1777 = m.ExcPending
 	if v1777 != 0 {
@@ -6799,7 +6799,7 @@ L294:
 	;
 	v1778 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1781 = m.G305
-	v1782 = m.T0[v1778].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a2035), v1781)
+	v1782 = m.T0[v1778].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_293), v1781)
 	mBase = m.M
 	v1783 = m.ExcPending
 	if v1783 != 0 {
@@ -6811,7 +6811,7 @@ L295:
 	;
 	v1784 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1787 = m.G306
-	v1788 = m.T0[v1784].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a2036), v1787)
+	v1788 = m.T0[v1784].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_294), v1787)
 	mBase = m.M
 	v1789 = m.ExcPending
 	if v1789 != 0 {
@@ -6823,7 +6823,7 @@ L296:
 	;
 	v1790 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1793 = m.G307
-	v1794 = m.T0[v1790].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a2037), v1793)
+	v1794 = m.T0[v1790].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_295), v1793)
 	mBase = m.M
 	v1795 = m.ExcPending
 	if v1795 != 0 {
@@ -6835,7 +6835,7 @@ L297:
 	;
 	v1796 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1799 = m.G308
-	v1800 = m.T0[v1796].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a2038), v1799)
+	v1800 = m.T0[v1796].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_296), v1799)
 	mBase = m.M
 	v1801 = m.ExcPending
 	if v1801 != 0 {
@@ -6847,7 +6847,7 @@ L298:
 	;
 	v1802 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1805 = m.G309
-	v1806 = m.T0[v1802].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a2039), v1805)
+	v1806 = m.T0[v1802].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_297), v1805)
 	mBase = m.M
 	v1807 = m.ExcPending
 	if v1807 != 0 {
@@ -6859,7 +6859,7 @@ L299:
 	;
 	v1808 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1811 = m.G310
-	v1812 = m.T0[v1808].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a2040), v1811)
+	v1812 = m.T0[v1808].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_298), v1811)
 	mBase = m.M
 	v1813 = m.ExcPending
 	if v1813 != 0 {
@@ -6871,7 +6871,7 @@ L300:
 	;
 	v1814 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1817 = m.G311
-	v1818 = m.T0[v1814].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a2041), v1817)
+	v1818 = m.T0[v1814].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_299), v1817)
 	mBase = m.M
 	v1819 = m.ExcPending
 	if v1819 != 0 {
@@ -6883,7 +6883,7 @@ L301:
 	;
 	v1820 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1823 = m.G312
-	v1824 = m.T0[v1820].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a2042), v1823)
+	v1824 = m.T0[v1820].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_300), v1823)
 	mBase = m.M
 	v1825 = m.ExcPending
 	if v1825 != 0 {
@@ -6895,7 +6895,7 @@ L302:
 	;
 	v1826 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1829 = m.G313
-	v1830 = m.T0[v1826].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a2043), v1829)
+	v1830 = m.T0[v1826].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_301), v1829)
 	mBase = m.M
 	v1831 = m.ExcPending
 	if v1831 != 0 {
@@ -6907,7 +6907,7 @@ L303:
 	;
 	v1832 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1835 = m.G314
-	v1836 = m.T0[v1832].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a2044), v1835)
+	v1836 = m.T0[v1832].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_302), v1835)
 	mBase = m.M
 	v1837 = m.ExcPending
 	if v1837 != 0 {
@@ -6919,7 +6919,7 @@ L304:
 	;
 	v1838 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1841 = m.G315
-	v1842 = m.T0[v1838].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a2045), v1841)
+	v1842 = m.T0[v1838].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_303), v1841)
 	mBase = m.M
 	v1843 = m.ExcPending
 	if v1843 != 0 {
@@ -6931,7 +6931,7 @@ L305:
 	;
 	v1844 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1847 = m.G316
-	v1848 = m.T0[v1844].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a2046), v1847)
+	v1848 = m.T0[v1844].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_304), v1847)
 	mBase = m.M
 	v1849 = m.ExcPending
 	if v1849 != 0 {
@@ -6943,7 +6943,7 @@ L306:
 	;
 	v1850 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1853 = m.G317
-	v1854 = m.T0[v1850].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a2047), v1853)
+	v1854 = m.T0[v1850].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_305), v1853)
 	mBase = m.M
 	v1855 = m.ExcPending
 	if v1855 != 0 {
@@ -6955,7 +6955,7 @@ L307:
 	;
 	v1856 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1859 = m.G318
-	v1860 = m.T0[v1856].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a2048), v1859)
+	v1860 = m.T0[v1856].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_306), v1859)
 	mBase = m.M
 	v1861 = m.ExcPending
 	if v1861 != 0 {
@@ -6967,7 +6967,7 @@ L308:
 	;
 	v1862 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1865 = m.G319
-	v1866 = m.T0[v1862].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a2049), v1865)
+	v1866 = m.T0[v1862].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_307), v1865)
 	mBase = m.M
 	v1867 = m.ExcPending
 	if v1867 != 0 {
@@ -6979,7 +6979,7 @@ L309:
 	;
 	v1868 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1871 = m.G320
-	v1872 = m.T0[v1868].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a2050), v1871)
+	v1872 = m.T0[v1868].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_308), v1871)
 	mBase = m.M
 	v1873 = m.ExcPending
 	if v1873 != 0 {
@@ -6991,7 +6991,7 @@ L310:
 	;
 	v1874 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1877 = m.G321
-	v1878 = m.T0[v1874].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a2051), v1877)
+	v1878 = m.T0[v1874].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_309), v1877)
 	mBase = m.M
 	v1879 = m.ExcPending
 	if v1879 != 0 {
@@ -7003,7 +7003,7 @@ L311:
 	;
 	v1880 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1883 = m.G322
-	v1884 = m.T0[v1880].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a2052), v1883)
+	v1884 = m.T0[v1880].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_310), v1883)
 	mBase = m.M
 	v1885 = m.ExcPending
 	if v1885 != 0 {
@@ -7015,7 +7015,7 @@ L312:
 	;
 	v1886 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1889 = m.G323
-	v1890 = m.T0[v1886].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a2053), v1889)
+	v1890 = m.T0[v1886].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_311), v1889)
 	mBase = m.M
 	v1891 = m.ExcPending
 	if v1891 != 0 {
@@ -7027,7 +7027,7 @@ L313:
 	;
 	v1892 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1895 = m.G324
-	v1896 = m.T0[v1892].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a2054), v1895)
+	v1896 = m.T0[v1892].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_312), v1895)
 	mBase = m.M
 	v1897 = m.ExcPending
 	if v1897 != 0 {
@@ -7039,7 +7039,7 @@ L314:
 	;
 	v1898 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1901 = m.G325
-	v1902 = m.T0[v1898].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a2055), v1901)
+	v1902 = m.T0[v1898].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_313), v1901)
 	mBase = m.M
 	v1903 = m.ExcPending
 	if v1903 != 0 {
@@ -7051,7 +7051,7 @@ L315:
 	;
 	v1904 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1907 = m.G326
-	v1908 = m.T0[v1904].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a2056), v1907)
+	v1908 = m.T0[v1904].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_314), v1907)
 	mBase = m.M
 	v1909 = m.ExcPending
 	if v1909 != 0 {
@@ -7063,7 +7063,7 @@ L316:
 	;
 	v1910 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1913 = m.G327
-	v1914 = m.T0[v1910].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a2057), v1913)
+	v1914 = m.T0[v1910].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_315), v1913)
 	mBase = m.M
 	v1915 = m.ExcPending
 	if v1915 != 0 {
@@ -7075,7 +7075,7 @@ L317:
 	;
 	v1916 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1919 = m.G328
-	v1920 = m.T0[v1916].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a2058), v1919)
+	v1920 = m.T0[v1916].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_316), v1919)
 	mBase = m.M
 	v1921 = m.ExcPending
 	if v1921 != 0 {
@@ -7087,7 +7087,7 @@ L318:
 	;
 	v1922 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1925 = m.G329
-	v1926 = m.T0[v1922].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a2059), v1925)
+	v1926 = m.T0[v1922].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_317), v1925)
 	mBase = m.M
 	v1927 = m.ExcPending
 	if v1927 != 0 {
@@ -7099,7 +7099,7 @@ L319:
 	;
 	v1928 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1931 = m.G330
-	v1932 = m.T0[v1928].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a2060), v1931)
+	v1932 = m.T0[v1928].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_318), v1931)
 	mBase = m.M
 	v1933 = m.ExcPending
 	if v1933 != 0 {
@@ -7111,7 +7111,7 @@ L320:
 	;
 	v1934 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1937 = m.G331
-	v1938 = m.T0[v1934].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a2061), v1937)
+	v1938 = m.T0[v1934].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_319), v1937)
 	mBase = m.M
 	v1939 = m.ExcPending
 	if v1939 != 0 {
@@ -7123,7 +7123,7 @@ L321:
 	;
 	v1940 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1943 = m.G332
-	v1944 = m.T0[v1940].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a2062), v1943)
+	v1944 = m.T0[v1940].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_320), v1943)
 	mBase = m.M
 	v1945 = m.ExcPending
 	if v1945 != 0 {
@@ -7135,7 +7135,7 @@ L322:
 	;
 	v1946 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1949 = m.G333
-	v1950 = m.T0[v1946].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a2063), v1949)
+	v1950 = m.T0[v1946].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_321), v1949)
 	mBase = m.M
 	v1951 = m.ExcPending
 	if v1951 != 0 {
@@ -7147,7 +7147,7 @@ L323:
 	;
 	v1952 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1955 = m.G334
-	v1956 = m.T0[v1952].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a2064), v1955)
+	v1956 = m.T0[v1952].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_322), v1955)
 	mBase = m.M
 	v1957 = m.ExcPending
 	if v1957 != 0 {
@@ -7159,7 +7159,7 @@ L324:
 	;
 	v1958 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1961 = m.G335
-	v1962 = m.T0[v1958].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a2065), v1961)
+	v1962 = m.T0[v1958].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_323), v1961)
 	mBase = m.M
 	v1963 = m.ExcPending
 	if v1963 != 0 {
@@ -7171,7 +7171,7 @@ L325:
 	;
 	v1964 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1967 = m.G336
-	v1968 = m.T0[v1964].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a2066), v1967)
+	v1968 = m.T0[v1964].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_324), v1967)
 	mBase = m.M
 	v1969 = m.ExcPending
 	if v1969 != 0 {
@@ -7183,7 +7183,7 @@ L326:
 	;
 	v1970 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1973 = m.G337
-	v1974 = m.T0[v1970].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a2067), v1973)
+	v1974 = m.T0[v1970].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_325), v1973)
 	mBase = m.M
 	v1975 = m.ExcPending
 	if v1975 != 0 {
@@ -7195,7 +7195,7 @@ L327:
 	;
 	v1976 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1979 = m.G338
-	v1980 = m.T0[v1976].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a2068), v1979)
+	v1980 = m.T0[v1976].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_326), v1979)
 	mBase = m.M
 	v1981 = m.ExcPending
 	if v1981 != 0 {
@@ -7207,7 +7207,7 @@ L328:
 	;
 	v1982 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1985 = m.G339
-	v1986 = m.T0[v1982].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a2069), v1985)
+	v1986 = m.T0[v1982].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_327), v1985)
 	mBase = m.M
 	v1987 = m.ExcPending
 	if v1987 != 0 {
@@ -7219,7 +7219,7 @@ L329:
 	;
 	v1988 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1991 = m.G340
-	v1992 = m.T0[v1988].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a2070), v1991)
+	v1992 = m.T0[v1988].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_328), v1991)
 	mBase = m.M
 	v1993 = m.ExcPending
 	if v1993 != 0 {
@@ -7231,7 +7231,7 @@ L330:
 	;
 	v1994 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v1997 = m.G341
-	v1998 = m.T0[v1994].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a2071), v1997)
+	v1998 = m.T0[v1994].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_329), v1997)
 	mBase = m.M
 	v1999 = m.ExcPending
 	if v1999 != 0 {
@@ -7243,7 +7243,7 @@ L331:
 	;
 	v2000 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v2003 = m.G342
-	v2004 = m.T0[v2000].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a2072), v2003)
+	v2004 = m.T0[v2000].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_330), v2003)
 	mBase = m.M
 	v2005 = m.ExcPending
 	if v2005 != 0 {
@@ -7255,7 +7255,7 @@ L332:
 	;
 	v2006 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v2009 = m.G343
-	v2010 = m.T0[v2006].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a2073), v2009)
+	v2010 = m.T0[v2006].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_331), v2009)
 	mBase = m.M
 	v2011 = m.ExcPending
 	if v2011 != 0 {
@@ -7267,7 +7267,7 @@ L333:
 	;
 	v2012 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v2015 = m.G344
-	v2016 = m.T0[v2012].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a2074), v2015)
+	v2016 = m.T0[v2012].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_332), v2015)
 	mBase = m.M
 	v2017 = m.ExcPending
 	if v2017 != 0 {
@@ -7279,7 +7279,7 @@ L334:
 	;
 	v2018 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v2021 = m.G345
-	v2022 = m.T0[v2018].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a2075), v2021)
+	v2022 = m.T0[v2018].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_333), v2021)
 	mBase = m.M
 	v2023 = m.ExcPending
 	if v2023 != 0 {
@@ -7291,7 +7291,7 @@ L335:
 	;
 	v2024 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v2027 = m.G346
-	v2028 = m.T0[v2024].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a2076), v2027)
+	v2028 = m.T0[v2024].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_334), v2027)
 	mBase = m.M
 	v2029 = m.ExcPending
 	if v2029 != 0 {
@@ -7303,7 +7303,7 @@ L336:
 	;
 	v2030 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v2033 = m.G347
-	v2034 = m.T0[v2030].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a2077), v2033)
+	v2034 = m.T0[v2030].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_335), v2033)
 	mBase = m.M
 	v2035 = m.ExcPending
 	if v2035 != 0 {
@@ -7315,7 +7315,7 @@ L337:
 	;
 	v2036 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v2039 = m.G348
-	v2040 = m.T0[v2036].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a2078), v2039)
+	v2040 = m.T0[v2036].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_336), v2039)
 	mBase = m.M
 	v2041 = m.ExcPending
 	if v2041 != 0 {
@@ -7327,7 +7327,7 @@ L338:
 	;
 	v2042 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v2045 = m.G349
-	v2046 = m.T0[v2042].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a2079), v2045)
+	v2046 = m.T0[v2042].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_337), v2045)
 	mBase = m.M
 	v2047 = m.ExcPending
 	if v2047 != 0 {
@@ -7339,7 +7339,7 @@ L339:
 	;
 	v2048 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v2051 = m.G350
-	v2052 = m.T0[v2048].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a2080), v2051)
+	v2052 = m.T0[v2048].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_338), v2051)
 	mBase = m.M
 	v2053 = m.ExcPending
 	if v2053 != 0 {
@@ -7351,7 +7351,7 @@ L340:
 	;
 	v2054 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v2057 = m.G351
-	v2058 = m.T0[v2054].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a2081), v2057)
+	v2058 = m.T0[v2054].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_339), v2057)
 	mBase = m.M
 	v2059 = m.ExcPending
 	if v2059 != 0 {
@@ -7363,7 +7363,7 @@ L341:
 	;
 	v2060 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v2063 = m.G352
-	v2064 = m.T0[v2060].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a2082), v2063)
+	v2064 = m.T0[v2060].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_340), v2063)
 	mBase = m.M
 	v2065 = m.ExcPending
 	if v2065 != 0 {
@@ -7375,7 +7375,7 @@ L342:
 	;
 	v2066 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v2069 = m.G353
-	v2070 = m.T0[v2066].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a2083), v2069)
+	v2070 = m.T0[v2066].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_341), v2069)
 	mBase = m.M
 	v2071 = m.ExcPending
 	if v2071 != 0 {
@@ -7387,7 +7387,7 @@ L343:
 	;
 	v2072 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v2075 = m.G354
-	v2076 = m.T0[v2072].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a2084), v2075)
+	v2076 = m.T0[v2072].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_342), v2075)
 	mBase = m.M
 	v2077 = m.ExcPending
 	if v2077 != 0 {
@@ -7399,7 +7399,7 @@ L344:
 	;
 	v2078 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v2081 = m.G355
-	v2082 = m.T0[v2078].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a2085), v2081)
+	v2082 = m.T0[v2078].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_343), v2081)
 	mBase = m.M
 	v2083 = m.ExcPending
 	if v2083 != 0 {
@@ -7411,7 +7411,7 @@ L345:
 	;
 	v2084 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v2087 = m.G356
-	v2088 = m.T0[v2084].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a2086), v2087)
+	v2088 = m.T0[v2084].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_344), v2087)
 	mBase = m.M
 	v2089 = m.ExcPending
 	if v2089 != 0 {
@@ -7423,7 +7423,7 @@ L346:
 	;
 	v2090 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v2093 = m.G357
-	v2094 = m.T0[v2090].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a2087), v2093)
+	v2094 = m.T0[v2090].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_345), v2093)
 	mBase = m.M
 	v2095 = m.ExcPending
 	if v2095 != 0 {
@@ -7435,7 +7435,7 @@ L347:
 	;
 	v2096 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v2099 = m.G358
-	v2100 = m.T0[v2096].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a2088), v2099)
+	v2100 = m.T0[v2096].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_346), v2099)
 	mBase = m.M
 	v2101 = m.ExcPending
 	if v2101 != 0 {
@@ -7447,7 +7447,7 @@ L348:
 	;
 	v2102 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v2105 = m.G359
-	v2106 = m.T0[v2102].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a2089), v2105)
+	v2106 = m.T0[v2102].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_347), v2105)
 	mBase = m.M
 	v2107 = m.ExcPending
 	if v2107 != 0 {
@@ -7459,7 +7459,7 @@ L349:
 	;
 	v2108 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v2111 = m.G360
-	v2112 = m.T0[v2108].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a2090), v2111)
+	v2112 = m.T0[v2108].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_348), v2111)
 	mBase = m.M
 	v2113 = m.ExcPending
 	if v2113 != 0 {
@@ -7471,7 +7471,7 @@ L350:
 	;
 	v2114 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v2117 = m.G361
-	v2118 = m.T0[v2114].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a2091), v2117)
+	v2118 = m.T0[v2114].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_349), v2117)
 	mBase = m.M
 	v2119 = m.ExcPending
 	if v2119 != 0 {
@@ -7483,7 +7483,7 @@ L351:
 	;
 	v2120 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v2123 = m.G362
-	v2124 = m.T0[v2120].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a2092), v2123)
+	v2124 = m.T0[v2120].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_350), v2123)
 	mBase = m.M
 	v2125 = m.ExcPending
 	if v2125 != 0 {
@@ -7495,7 +7495,7 @@ L352:
 	;
 	v2126 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v2129 = m.G363
-	v2130 = m.T0[v2126].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a2093), v2129)
+	v2130 = m.T0[v2126].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_351), v2129)
 	mBase = m.M
 	v2131 = m.ExcPending
 	if v2131 != 0 {
@@ -7507,7 +7507,7 @@ L353:
 	;
 	v2132 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v2135 = m.G364
-	v2136 = m.T0[v2132].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a2094), v2135)
+	v2136 = m.T0[v2132].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_352), v2135)
 	mBase = m.M
 	v2137 = m.ExcPending
 	if v2137 != 0 {
@@ -7519,7 +7519,7 @@ L354:
 	;
 	v2138 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v2141 = m.G365
-	v2142 = m.T0[v2138].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a2095), v2141)
+	v2142 = m.T0[v2138].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_353), v2141)
 	mBase = m.M
 	v2143 = m.ExcPending
 	if v2143 != 0 {
@@ -7531,7 +7531,7 @@ L355:
 	;
 	v2144 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v2147 = m.G366
-	v2148 = m.T0[v2144].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a2096), v2147)
+	v2148 = m.T0[v2144].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_354), v2147)
 	mBase = m.M
 	v2149 = m.ExcPending
 	if v2149 != 0 {
@@ -7543,7 +7543,7 @@ L356:
 	;
 	v2150 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v2153 = m.G367
-	v2154 = m.T0[v2150].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a2097), v2153)
+	v2154 = m.T0[v2150].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_355), v2153)
 	mBase = m.M
 	v2155 = m.ExcPending
 	if v2155 != 0 {
@@ -7555,7 +7555,7 @@ L357:
 	;
 	v2156 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v2159 = m.G368
-	v2160 = m.T0[v2156].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a2098), v2159)
+	v2160 = m.T0[v2156].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_356), v2159)
 	mBase = m.M
 	v2161 = m.ExcPending
 	if v2161 != 0 {
@@ -7567,7 +7567,7 @@ L358:
 	;
 	v2162 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v2165 = m.G369
-	v2166 = m.T0[v2162].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a2099), v2165)
+	v2166 = m.T0[v2162].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_357), v2165)
 	mBase = m.M
 	v2167 = m.ExcPending
 	if v2167 != 0 {
@@ -7579,7 +7579,7 @@ L359:
 	;
 	v2168 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v2171 = m.G370
-	v2172 = m.T0[v2168].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a2100), v2171)
+	v2172 = m.T0[v2168].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_358), v2171)
 	mBase = m.M
 	v2173 = m.ExcPending
 	if v2173 != 0 {
@@ -7591,7 +7591,7 @@ L360:
 	;
 	v2174 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v2177 = m.G371
-	v2178 = m.T0[v2174].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a2101), v2177)
+	v2178 = m.T0[v2174].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_359), v2177)
 	mBase = m.M
 	v2179 = m.ExcPending
 	if v2179 != 0 {
@@ -7603,7 +7603,7 @@ L361:
 	;
 	v2180 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v2183 = m.G372
-	v2184 = m.T0[v2180].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a2102), v2183)
+	v2184 = m.T0[v2180].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_360), v2183)
 	mBase = m.M
 	v2185 = m.ExcPending
 	if v2185 != 0 {
@@ -7615,7 +7615,7 @@ L362:
 	;
 	v2186 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v2189 = m.G373
-	v2190 = m.T0[v2186].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a2103), v2189)
+	v2190 = m.T0[v2186].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_361), v2189)
 	mBase = m.M
 	v2191 = m.ExcPending
 	if v2191 != 0 {
@@ -7627,7 +7627,7 @@ L363:
 	;
 	v2192 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v2195 = m.G374
-	v2196 = m.T0[v2192].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a2104), v2195)
+	v2196 = m.T0[v2192].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_362), v2195)
 	mBase = m.M
 	v2197 = m.ExcPending
 	if v2197 != 0 {
@@ -7639,7 +7639,7 @@ L364:
 	;
 	v2198 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v2201 = m.G375
-	v2202 = m.T0[v2198].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a2105), v2201)
+	v2202 = m.T0[v2198].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_363), v2201)
 	mBase = m.M
 	v2203 = m.ExcPending
 	if v2203 != 0 {
@@ -7651,7 +7651,7 @@ L365:
 	;
 	v2204 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v2207 = m.G376
-	v2208 = m.T0[v2204].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a2106), v2207)
+	v2208 = m.T0[v2204].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_364), v2207)
 	mBase = m.M
 	v2209 = m.ExcPending
 	if v2209 != 0 {
@@ -7663,7 +7663,7 @@ L366:
 	;
 	v2210 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v2213 = m.G377
-	v2214 = m.T0[v2210].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a2107), v2213)
+	v2214 = m.T0[v2210].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_365), v2213)
 	mBase = m.M
 	v2215 = m.ExcPending
 	if v2215 != 0 {
@@ -7675,7 +7675,7 @@ L367:
 	;
 	v2216 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v2219 = m.G378
-	v2220 = m.T0[v2216].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a2108), v2219)
+	v2220 = m.T0[v2216].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_366), v2219)
 	mBase = m.M
 	v2221 = m.ExcPending
 	if v2221 != 0 {
@@ -7687,7 +7687,7 @@ L368:
 	;
 	v2222 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v2225 = m.G379
-	v2226 = m.T0[v2222].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a2109), v2225)
+	v2226 = m.T0[v2222].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_367), v2225)
 	mBase = m.M
 	v2227 = m.ExcPending
 	if v2227 != 0 {
@@ -7699,7 +7699,7 @@ L369:
 	;
 	v2228 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v2231 = m.G380
-	v2232 = m.T0[v2228].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a2110), v2231)
+	v2232 = m.T0[v2228].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_368), v2231)
 	mBase = m.M
 	v2233 = m.ExcPending
 	if v2233 != 0 {
@@ -7711,7 +7711,7 @@ L370:
 	;
 	v2234 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v2237 = m.G381
-	v2238 = m.T0[v2234].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a2111), v2237)
+	v2238 = m.T0[v2234].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_369), v2237)
 	mBase = m.M
 	v2239 = m.ExcPending
 	if v2239 != 0 {
@@ -7723,7 +7723,7 @@ L371:
 	;
 	v2240 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v2243 = m.G12
-	v2244 = m.T0[v2240].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a2112), v2243)
+	v2244 = m.T0[v2240].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_370), v2243)
 	mBase = m.M
 	v2245 = m.ExcPending
 	if v2245 != 0 {
@@ -7735,7 +7735,7 @@ L372:
 	;
 	v2246 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v2249 = m.G19
-	v2250 = m.T0[v2246].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a2113), v2249)
+	v2250 = m.T0[v2246].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_371), v2249)
 	mBase = m.M
 	v2251 = m.ExcPending
 	if v2251 != 0 {
@@ -7747,7 +7747,7 @@ L373:
 	;
 	v2252 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v2255 = m.G382
-	v2256 = m.T0[v2252].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a2114), v2255)
+	v2256 = m.T0[v2252].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_372), v2255)
 	mBase = m.M
 	v2257 = m.ExcPending
 	if v2257 != 0 {
@@ -7759,7 +7759,7 @@ L374:
 	;
 	v2258 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v2261 = m.G14
-	v2262 = m.T0[v2258].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a2115), v2261)
+	v2262 = m.T0[v2258].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_373), v2261)
 	mBase = m.M
 	v2263 = m.ExcPending
 	if v2263 != 0 {
@@ -7771,7 +7771,7 @@ L375:
 	;
 	v2264 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v2267 = m.G20
-	v2268 = m.T0[v2264].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a2116), v2267)
+	v2268 = m.T0[v2264].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_374), v2267)
 	mBase = m.M
 	v2269 = m.ExcPending
 	if v2269 != 0 {
@@ -7783,7 +7783,7 @@ L376:
 	;
 	v2270 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	v2273 = m.G383
-	v2274 = m.T0[v2270].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a2117), v2273)
+	v2274 = m.T0[v2270].(func(*base.Module, int32, int32) int32)(m, v18+int32(_a_F_ValkeyModule_OnLoad_lua_375), v2273)
 	mBase = m.M
 	v2275 = m.ExcPending
 	if v2275 != 0 {
@@ -7804,7 +7804,7 @@ L378:
 	v2580 = m.G3
 	v2586 = m.G8
 	v2587 = *(*int32)(unsafe.Add(mBase, uint32(v2586)))
-	m.T0[v2587].(func(*base.Module, int32, int32, int32))(m, v2580+int32(_a2118), v2580+int32(_a2119), int32(157))
+	m.T0[v2587].(func(*base.Module, int32, int32, int32))(m, v2580+int32(_a_F_ValkeyModule_OnLoad_lua_376), v2580+int32(_a_F_ValkeyModule_OnLoad_lua_377), int32(157))
 	mBase = m.M
 	v2589 = m.ExcPending
 	if v2589 != 0 {
@@ -7822,7 +7822,7 @@ L380:
 	v2289 = int32(1)
 	v2291 = m.G34
 	v2292 = *(*int32)(unsafe.Add(mBase, uint32(v2291)))
-	m.T0[v2292].(func(*base.Module, int32, int32, int32, int32))(m, l0, v2286+int32(_a557), v2289, v2289)
+	m.T0[v2292].(func(*base.Module, int32, int32, int32, int32))(m, l0, v2286+int32(_a_F_ValkeyModule_OnLoad_lua_378), v2289, v2289)
 	mBase = m.M
 	v2294 = m.ExcPending
 	if v2294 != 0 {
@@ -7833,7 +7833,7 @@ L380:
 L381:
 	;
 	v2280 = m.G3
-	v2283 = m.T0[v2276].(func(*base.Module, int32) int32)(m, v2280+int32(_a557))
+	v2283 = m.T0[v2276].(func(*base.Module, int32) int32)(m, v2280+int32(_a_F_ValkeyModule_OnLoad_lua_378))
 	mBase = m.M
 	v2284 = m.ExcPending
 	if v2284 != 0 {
@@ -7880,7 +7880,7 @@ L385:
 L386:
 	;
 	v2308 = *(*int32)(unsafe.Add(mBase, uint32(v2302)))
-	v2309 = m.T0[v2308].(func(*base.Module, int32, int32) int32)(m, l0, v2286+int32(_a1390))
+	v2309 = m.T0[v2308].(func(*base.Module, int32, int32) int32)(m, l0, v2286+int32(_a_F_ValkeyModule_OnLoad_lua_379))
 	mBase = m.M
 	v2310 = m.ExcPending
 	if v2310 != 0 {
@@ -7900,7 +7900,7 @@ L388:
 	v2313 = m.G3
 	v2316 = m.G246
 	v2317 = *(*int32)(unsafe.Add(mBase, uint32(v2316)))
-	v2318 = m.T0[v2317].(func(*base.Module, int32, int32) int32)(m, v2309, v2313+int32(_a2120))
+	v2318 = m.T0[v2317].(func(*base.Module, int32, int32) int32)(m, v2309, v2313+int32(_a_F_ValkeyModule_OnLoad_lua_380))
 	mBase = m.M
 	v2319 = m.ExcPending
 	if v2319 != 0 {
@@ -7928,7 +7928,7 @@ L390:
 	*(*int32)(unsafe.Add(mBase, uint32(v13)+16)) = v13 + int32(40)
 	*(*int32)(unsafe.Add(mBase, uint32(v13)+20)) = v13 + int32(92)
 	*(*int32)(unsafe.Add(mBase, uint32(v13)+24)) = v13 + int32(88)
-	v2339 = v2313 + int32(_a2121)
+	v2339 = v2313 + int32(_a_F_ValkeyModule_OnLoad_lua_381)
 	v2342 = F_sscanf(m, v2320, v2339, v13+int32(16))
 	mBase = m.M
 	v2343 = m.ExcPending
@@ -7944,7 +7944,7 @@ L391:
 	v2355 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v13)+88)))
 	*(*int32)(unsafe.Add(mBase, uint32(v2304)+12)) = v2344<<(uint(int32(8))%32)&int32(65280) | v2349<<(uint(int32(16))%32)&int32(16711680) | v2355
 	v2360 = *(*int32)(unsafe.Add(mBase, uint32(v2316)))
-	v2361 = m.T0[v2360].(func(*base.Module, int32, int32) int32)(m, v2309, v2313+int32(_a2122))
+	v2361 = m.T0[v2360].(func(*base.Module, int32, int32) int32)(m, v2309, v2313+int32(_a_F_ValkeyModule_OnLoad_lua_382))
 	mBase = m.M
 	v2362 = m.ExcPending
 	if v2362 != 0 {
@@ -7966,7 +7966,7 @@ L393:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v2304)+16)) = v2363
 	v2368 = *(*int32)(unsafe.Add(mBase, uint32(v2316)))
-	v2369 = m.T0[v2368].(func(*base.Module, int32, int32) int32)(m, v2309, v2313+int32(_a2123))
+	v2369 = m.T0[v2368].(func(*base.Module, int32, int32) int32)(m, v2309, v2313+int32(_a_F_ValkeyModule_OnLoad_lua_383))
 	mBase = m.M
 	v2370 = m.ExcPending
 	if v2370 != 0 {
@@ -8051,7 +8051,7 @@ L399:
 	}
 L400:
 	;
-	*(*int32)(unsafe.Add(mBase, uint32(v2313)+uint32(_consts[1137]))) = v2304
+	*(*int32)(unsafe.Add(mBase, uint32(v2313)+uint32(_c_F_ValkeyModule_OnLoad_lua[0]))) = v2304
 	v2421 = m.G374
 	v2422 = *(*int32)(unsafe.Add(mBase, uint32(v2421)))
 	v2423 = m.T0[v2422].(func(*base.Module, int32) int32)(m, l0)
@@ -8065,22 +8065,22 @@ L400:
 L401:
 	;
 	v2469 = m.G3
-	v2474 = *(*int64)(unsafe.Add(mBase, uint32(v2469)+uint32(_consts[1138])))
+	v2474 = *(*int64)(unsafe.Add(mBase, uint32(v2469)+uint32(_c_F_ValkeyModule_OnLoad_lua[1])))
 	*(*int64)(unsafe.Add(mBase, uint32(v13+int32(80)))) = v2474
-	v2482 = *(*int64)(unsafe.Add(mBase, uint32(v2469)+uint32(_consts[1139])))
+	v2482 = *(*int64)(unsafe.Add(mBase, uint32(v2469)+uint32(_c_F_ValkeyModule_OnLoad_lua[2])))
 	*(*int64)(unsafe.Add(mBase, uint32(v13+int32(72)))) = v2482
-	v2490 = *(*int64)(unsafe.Add(mBase, uint32(v2469)+uint32(_consts[1140])))
+	v2490 = *(*int64)(unsafe.Add(mBase, uint32(v2469)+uint32(_c_F_ValkeyModule_OnLoad_lua[3])))
 	*(*int64)(unsafe.Add(mBase, uint32(v13+int32(64)))) = v2490
-	v2498 = *(*int64)(unsafe.Add(mBase, uint32(v2469)+uint32(_consts[1141])))
+	v2498 = *(*int64)(unsafe.Add(mBase, uint32(v2469)+uint32(_c_F_ValkeyModule_OnLoad_lua[4])))
 	*(*int64)(unsafe.Add(mBase, uint32(v13+int32(56)))) = v2498
-	v2506 = *(*int64)(unsafe.Add(mBase, uint32(v2469)+uint32(_consts[1142])))
+	v2506 = *(*int64)(unsafe.Add(mBase, uint32(v2469)+uint32(_c_F_ValkeyModule_OnLoad_lua[5])))
 	*(*int64)(unsafe.Add(mBase, uint32(v13+int32(48)))) = v2506
-	v2508 = *(*int64)(unsafe.Add(mBase, uint32(v2469)+uint32(_consts[1143])))
+	v2508 = *(*int64)(unsafe.Add(mBase, uint32(v2469)+uint32(_c_F_ValkeyModule_OnLoad_lua[6])))
 	*(*int64)(unsafe.Add(mBase, uint32(v13)+40)) = v2508
-	v2515 = *(*int32)(unsafe.Add(mBase, uint32(v2469)+uint32(_consts[1137])))
+	v2515 = *(*int32)(unsafe.Add(mBase, uint32(v2469)+uint32(_c_F_ValkeyModule_OnLoad_lua[0])))
 	v2518 = m.G379
 	v2519 = *(*int32)(unsafe.Add(mBase, uint32(v2518)))
-	v2520 = m.T0[v2519].(func(*base.Module, int32, int32, int32, int32) int32)(m, l0, v2469+int32(_a2124), v2515, v13+int32(40))
+	v2520 = m.T0[v2519].(func(*base.Module, int32, int32, int32, int32) int32)(m, l0, v2469+int32(_a_F_ValkeyModule_OnLoad_lua_384), v2515, v13+int32(40))
 	mBase = m.M
 	v2521 = m.ExcPending
 	if v2521 != 0 {
@@ -8100,7 +8100,7 @@ L403:
 	v2427 = m.G3
 	v2433 = m.G10
 	v2434 = *(*int32)(unsafe.Add(mBase, uint32(v2433)))
-	m.T0[v2434].(func(*base.Module, int32, int32, int32, int32))(m, l0, v2427+int32(_a716), v2427+int32(_a2125), int32(0))
+	m.T0[v2434].(func(*base.Module, int32, int32, int32, int32))(m, l0, v2427+int32(_a_F_ValkeyModule_OnLoad_lua_385), v2427+int32(_a_F_ValkeyModule_OnLoad_lua_386), int32(0))
 	mBase = m.M
 	v2436 = m.ExcPending
 	if v2436 != 0 {
@@ -8110,7 +8110,7 @@ L403:
 	}
 L404:
 	;
-	v2439 = *(*int32)(unsafe.Add(mBase, uint32(v2427)+uint32(_consts[1137])))
+	v2439 = *(*int32)(unsafe.Add(mBase, uint32(v2427)+uint32(_c_F_ValkeyModule_OnLoad_lua[0])))
 	v2440 = *(*int32)(unsafe.Add(mBase, uint32(v2439)))
 	F_lua_close(m, v2440)
 	mBase = m.M
@@ -8181,7 +8181,7 @@ L409:
 	}
 L410:
 	;
-	*(*int32)(unsafe.Add(mBase, uint32(v2427)+uint32(_consts[1137]))) = int32(0)
+	*(*int32)(unsafe.Add(mBase, uint32(v2427)+uint32(_c_F_ValkeyModule_OnLoad_lua[0]))) = int32(0)
 	v2571 = int32(1)
 	goto L379
 L411:
@@ -8207,7 +8207,7 @@ L413:
 	v2524 = m.G3
 	v2530 = m.G10
 	v2531 = *(*int32)(unsafe.Add(mBase, uint32(v2530)))
-	m.T0[v2531].(func(*base.Module, int32, int32, int32, int32))(m, l0, v2524+int32(_a716), v2524+int32(_a2126), int32(0))
+	m.T0[v2531].(func(*base.Module, int32, int32, int32, int32))(m, l0, v2524+int32(_a_F_ValkeyModule_OnLoad_lua_385), v2524+int32(_a_F_ValkeyModule_OnLoad_lua_387), int32(0))
 	mBase = m.M
 	v2533 = m.ExcPending
 	if v2533 != 0 {
@@ -8217,7 +8217,7 @@ L413:
 	}
 L414:
 	;
-	v2536 = *(*int32)(unsafe.Add(mBase, uint32(v2524)+uint32(_consts[1137])))
+	v2536 = *(*int32)(unsafe.Add(mBase, uint32(v2524)+uint32(_c_F_ValkeyModule_OnLoad_lua[0])))
 	v2537 = *(*int32)(unsafe.Add(mBase, uint32(v2536)))
 	F_lua_close(m, v2537)
 	mBase = m.M
@@ -8288,12 +8288,12 @@ L419:
 	}
 L420:
 	;
-	*(*int32)(unsafe.Add(mBase, uint32(v2524)+uint32(_consts[1137]))) = int32(0)
+	*(*int32)(unsafe.Add(mBase, uint32(v2524)+uint32(_c_F_ValkeyModule_OnLoad_lua[0]))) = int32(0)
 	v2571 = int32(1)
 	goto L379
 L421:
 	;
-	v2566 = *(*int32)(unsafe.Add(mBase, uint32(v2561)+uint32(_consts[1137])))
+	v2566 = *(*int32)(unsafe.Add(mBase, uint32(v2561)+uint32(_c_F_ValkeyModule_OnLoad_lua[0])))
 	*(*int32)(unsafe.Add(mBase, uint32(v2566)+28)) = v2562
 	v2571 = int32(0)
 	goto L379

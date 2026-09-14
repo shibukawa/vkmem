@@ -52,19 +52,19 @@ func F_TerminateModuleForkChild(m *base.Module, l0 int32, l1 int32) int32 {
 	v7 = v5 - int32(16)
 	m.G0 = v7
 	v9 = int32(-1)
-	v11 = *(*int32)(unsafe.Add(mBase, _consts[66]))
+	v11 = *(*int32)(unsafe.Add(mBase, _c_F_TerminateModuleForkChild[0]))
 	if v11 != int32(4) {
 		v69 = v9
 		m.G0 = v7 + int32(16)
 		return v69
 	} else {
-		v15 = *(*int32)(unsafe.Add(mBase, _consts[45]))
+		v15 = *(*int32)(unsafe.Add(mBase, _c_F_TerminateModuleForkChild[1]))
 		if v15 != l0 {
 			v69 = v9
 			m.G0 = v7 + int32(16)
 			return v69
 		} else {
-			v18 = *(*int32)(unsafe.Add(mBase, _consts[6]))
+			v18 = *(*int32)(unsafe.Add(mBase, _c_F_TerminateModuleForkChild[2]))
 			if int32(1) < v18 {
 				v30 = l0
 				v32 = F_kill(m, v30, int32(10))
@@ -77,7 +77,7 @@ func F_TerminateModuleForkChild(m *base.Module, l0 int32, l1 int32) int32 {
 					} else {
 						if v32 == int32(-1) {
 						} else {
-							v39 = *(*int32)(unsafe.Add(mBase, _consts[45]))
+							v39 = *(*int32)(unsafe.Add(mBase, _c_F_TerminateModuleForkChild[1]))
 							v40 = v39
 							for {
 								v46 = int32(0)
@@ -85,7 +85,7 @@ func F_TerminateModuleForkChild(m *base.Module, l0 int32, l1 int32) int32 {
 								mBase = m.M
 								v49 = F___syscall_ret(m, v48)
 								mBase = m.M
-								v51 = *(*int32)(unsafe.Add(mBase, _consts[45]))
+								v51 = *(*int32)(unsafe.Add(mBase, _c_F_TerminateModuleForkChild[1]))
 								if v49 != v51 {
 									v40 = v51
 									continue
@@ -103,8 +103,8 @@ func F_TerminateModuleForkChild(m *base.Module, l0 int32, l1 int32) int32 {
 						return int32(0)
 					} else {
 						v59 = int32(0)
-						*(*int32)(unsafe.Add(mBase, _consts[580])) = v59
-						*(*int32)(unsafe.Add(mBase, _consts[581])) = v59
+						*(*int32)(unsafe.Add(mBase, _c_F_TerminateModuleForkChild[3])) = v59
+						*(*int32)(unsafe.Add(mBase, _c_F_TerminateModuleForkChild[4])) = v59
 						v69 = v59
 						m.G0 = v7 + int32(16)
 						return v69
@@ -112,13 +112,13 @@ func F_TerminateModuleForkChild(m *base.Module, l0 int32, l1 int32) int32 {
 				}
 			} else {
 				*(*int32)(unsafe.Add(mBase, uint32(v7))) = l0
-				F__serverLog(m, int32(1), int32(_a952), v7)
+				F__serverLog(m, int32(1), int32(_a_F_TerminateModuleForkChild_0), v7)
 				mBase = m.M
 				v27 = m.ExcPending
 				if v27 != 0 {
 					return int32(0)
 				} else {
-					v29 = *(*int32)(unsafe.Add(mBase, _consts[45]))
+					v29 = *(*int32)(unsafe.Add(mBase, _c_F_TerminateModuleForkChild[1]))
 					v30 = v29
 					v32 = F_kill(m, v30, int32(10))
 					mBase = m.M
@@ -130,7 +130,7 @@ func F_TerminateModuleForkChild(m *base.Module, l0 int32, l1 int32) int32 {
 						} else {
 							if v32 == int32(-1) {
 							} else {
-								v39 = *(*int32)(unsafe.Add(mBase, _consts[45]))
+								v39 = *(*int32)(unsafe.Add(mBase, _c_F_TerminateModuleForkChild[1]))
 								v40 = v39
 								for {
 									v46 = int32(0)
@@ -138,7 +138,7 @@ func F_TerminateModuleForkChild(m *base.Module, l0 int32, l1 int32) int32 {
 									mBase = m.M
 									v49 = F___syscall_ret(m, v48)
 									mBase = m.M
-									v51 = *(*int32)(unsafe.Add(mBase, _consts[45]))
+									v51 = *(*int32)(unsafe.Add(mBase, _c_F_TerminateModuleForkChild[1]))
 									if v49 != v51 {
 										v40 = v51
 										continue
@@ -156,8 +156,8 @@ func F_TerminateModuleForkChild(m *base.Module, l0 int32, l1 int32) int32 {
 							return int32(0)
 						} else {
 							v59 = int32(0)
-							*(*int32)(unsafe.Add(mBase, _consts[580])) = v59
-							*(*int32)(unsafe.Add(mBase, _consts[581])) = v59
+							*(*int32)(unsafe.Add(mBase, _c_F_TerminateModuleForkChild[3])) = v59
+							*(*int32)(unsafe.Add(mBase, _c_F_TerminateModuleForkChild[4])) = v59
 							v69 = v59
 							m.G0 = v7 + int32(16)
 							return v69
@@ -436,7 +436,7 @@ func F___trunctfsf2(m *base.Module, l0 int64, l1 int64) float32 {
 					}
 					v181 = base.B2i32(base.Ui32(int32(8388607)) < base.Ui32(v177))
 					if base.Ui32(int32(8388607)) < base.Ui32(v177) {
-						v182 = v177 ^ int32(_a0)
+						v182 = v177 ^ int32(_a_F___trunctfsf2_0)
 					} else {
 						v182 = v177
 					}
@@ -524,7 +524,7 @@ func F___trunctfsf2(m *base.Module, l0 int64, l1 int64) float32 {
 						}
 						v181 = base.B2i32(base.Ui32(int32(8388607)) < base.Ui32(v177))
 						if base.Ui32(int32(8388607)) < base.Ui32(v177) {
-							v182 = v177 ^ int32(_a0)
+							v182 = v177 ^ int32(_a_F___trunctfsf2_0)
 						} else {
 							v182 = v177
 						}
@@ -670,7 +670,7 @@ L3:
 L4:
 	;
 	v117 = m.G3
-	v121 = F_luaL_error(m, l0, v117+int32(_a2098), int32(0))
+	v121 = F_luaL_error(m, l0, v117+int32(_a_F_tinsert_0), int32(0))
 	mBase = m.M
 	v122 = m.ExcPending
 	if v122 != 0 {
@@ -993,7 +993,7 @@ func F_trackBufReferences(m *base.Module, l0 int32, l1 int32, l2 int32) {
 	}
 L1:
 	;
-	F__serverAssert(m, int32(_a1007), int32(_a977), int32(2951))
+	F__serverAssert(m, int32(_a_F_trackBufReferences_0), int32(_a_F_trackBufReferences_1), int32(2951))
 	mBase = m.M
 	v185 = m.ExcPending
 	if v185 != 0 {
@@ -1003,7 +1003,7 @@ L1:
 	}
 L2:
 	;
-	F__serverAssert(m, int32(_a1010), int32(_a977), int32(2918))
+	F__serverAssert(m, int32(_a_F_trackBufReferences_2), int32(_a_F_trackBufReferences_1), int32(2918))
 	mBase = m.M
 	v179 = m.ExcPending
 	if v179 != 0 {
@@ -1370,25 +1370,25 @@ func F_trackInstantaneousMetric(m *base.Module, l0 int32, l1 int64, l2 int64, l3
 	var v33 int32
 	_ = v33
 	v8 = l0 * int32(152)
-	v11 = *(*int64)(unsafe.Add(mBase, uint32(v8)+uint32(_consts[799])))
+	v11 = *(*int64)(unsafe.Add(mBase, uint32(v8)+uint32(_c_F_trackInstantaneousMetric[0])))
 	if v11 < int64(1) {
 	} else {
 		v14 = l2 - v11
 		if int64(1) <= v14 {
-			v18 = *(*int64)(unsafe.Add(mBase, uint32(v8)+uint32(_consts[800])))
+			v18 = *(*int64)(unsafe.Add(mBase, uint32(v8)+uint32(_c_F_trackInstantaneousMetric[1])))
 			v21 = base.I64_div_s((l1-v18)*l3, v14)
 			v22 = v21
 		} else {
 			v22 = int64(0)
 		}
-		v23 = *(*int32)(unsafe.Add(mBase, uint32(v8)+uint32(_consts[801])))
+		v23 = *(*int32)(unsafe.Add(mBase, uint32(v8)+uint32(_c_F_trackInstantaneousMetric[2])))
 		v27 = int32(16)
-		*(*int64)(unsafe.Add(mBase, uint32(v8+int32(_a528)+v23<<(uint(int32(3))%32)+v27))) = v22
+		*(*int64)(unsafe.Add(mBase, uint32(v8+int32(_a_F_trackInstantaneousMetric_0)+v23<<(uint(int32(3))%32)+v27))) = v22
 		v33 = base.I32_rem_s(v23+int32(1), v27)
-		*(*int32)(unsafe.Add(mBase, uint32(v8)+uint32(_consts[801]))) = v33
+		*(*int32)(unsafe.Add(mBase, uint32(v8)+uint32(_c_F_trackInstantaneousMetric[2]))) = v33
 	}
-	*(*int64)(unsafe.Add(mBase, uint32(v8)+uint32(_consts[800]))) = l1
-	*(*int64)(unsafe.Add(mBase, uint32(v8)+uint32(_consts[799]))) = l2
+	*(*int64)(unsafe.Add(mBase, uint32(v8)+uint32(_c_F_trackInstantaneousMetric[1]))) = l1
+	*(*int64)(unsafe.Add(mBase, uint32(v8)+uint32(_c_F_trackInstantaneousMetric[0]))) = l2
 	return
 }
 func F_tremove(m *base.Module, l0 int32) int32 {
@@ -1684,7 +1684,7 @@ func F_tryOffloadFreeObjToIOThreads(m *base.Module, l0 int32) int32 {
 	var v53 int32
 	_ = v53
 	v3 = int32(-1)
-	v5 = *(*int32)(unsafe.Add(mBase, _consts[431]))
+	v5 = *(*int32)(unsafe.Add(mBase, _c_F_tryOffloadFreeObjToIOThreads[0]))
 	if v5 < int32(2) {
 		v53 = v3
 	} else {
@@ -1696,10 +1696,10 @@ func F_tryOffloadFreeObjToIOThreads(m *base.Module, l0 int32) int32 {
 			if v11 != 0 {
 				v53 = v3
 			} else {
-				v12 = int32(_a847)
-				v18 = *(*int32)(unsafe.Add(mBase, _consts[484]))
-				v19 = *(*int32)(unsafe.Add(mBase, _consts[485]))
-				v22 = *(*int32)(unsafe.Add(mBase, _consts[439]))
+				v12 = int32(_a_F_tryOffloadFreeObjToIOThreads_0)
+				v18 = *(*int32)(unsafe.Add(mBase, _c_F_tryOffloadFreeObjToIOThreads[1]))
+				v19 = *(*int32)(unsafe.Add(mBase, _c_F_tryOffloadFreeObjToIOThreads[2]))
+				v22 = *(*int32)(unsafe.Add(mBase, _c_F_tryOffloadFreeObjToIOThreads[3]))
 				v26 = v18 + (v19+int32(-1))&v22<<(uint(int32(6))%32)
 				v27 = *(*int32)(unsafe.Add(mBase, uint32(v26)))
 				if v27 != v22 {
@@ -1707,18 +1707,18 @@ func F_tryOffloadFreeObjToIOThreads(m *base.Module, l0 int32) int32 {
 					*(*int32)(unsafe.Add(mBase, uint32(v26)+4)) = l0 | int32(3)
 					v30 = int32(1)
 					*(*int32)(unsafe.Add(mBase, uint32(v26))) = v27 + v30
-					v33 = *(*int32)(unsafe.Add(mBase, _consts[439]))
-					*(*int32)(unsafe.Add(mBase, _consts[439])) = v33 + v30
+					v33 = *(*int32)(unsafe.Add(mBase, _c_F_tryOffloadFreeObjToIOThreads[3]))
+					*(*int32)(unsafe.Add(mBase, _c_F_tryOffloadFreeObjToIOThreads[3])) = v33 + v30
 				}
 				if base.B2i32(v27 == v22) == int32(0) {
 					v53 = v3
 				} else {
 					v40 = int32(0)
-					v43 = *(*int32)(unsafe.Add(mBase, _consts[434]))
-					*(*int32)(unsafe.Add(mBase, _consts[434])) = v43 + int32(1)
-					v47 = int32(_a44)
-					v49 = *(*int64)(unsafe.Add(mBase, _consts[309]))
-					*(*int64)(unsafe.Add(mBase, _consts[309])) = v49 + int64(1)
+					v43 = *(*int32)(unsafe.Add(mBase, _c_F_tryOffloadFreeObjToIOThreads[4]))
+					*(*int32)(unsafe.Add(mBase, _c_F_tryOffloadFreeObjToIOThreads[4])) = v43 + int32(1)
+					v47 = int32(_a_F_tryOffloadFreeObjToIOThreads_1)
+					v49 = *(*int64)(unsafe.Add(mBase, _c_F_tryOffloadFreeObjToIOThreads[5]))
+					*(*int64)(unsafe.Add(mBase, _c_F_tryOffloadFreeObjToIOThreads[5])) = v49 + int64(1)
 					v53 = v40
 				}
 			}

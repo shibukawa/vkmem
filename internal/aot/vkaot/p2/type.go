@@ -148,7 +148,7 @@ func F_setTypeDup(m *base.Module, l0 int32) int32 {
 	}
 L1:
 	;
-	F__serverAssert(m, int32(_a1685), int32(_a1683), int32(562))
+	F__serverAssert(m, int32(_a_F_setTypeDup_0), int32(_a_F_setTypeDup_1), int32(562))
 	mBase = m.M
 	v156 = m.ExcPending
 	if v156 != 0 {
@@ -182,7 +182,7 @@ L4:
 	goto L38
 L5:
 	;
-	F__serverPanic_1(m, int32(_a1683), int32(592), int32(_a1684), int32(0))
+	F__serverPanic_1(m, int32(_a_F_setTypeDup_1), int32(592), int32(_a_F_setTypeDup_2), int32(0))
 	mBase = m.M
 	v119 = m.ExcPending
 	if v119 != 0 {
@@ -650,7 +650,7 @@ func F_setTypeRandomElement(m *base.Module, l0 int32, l1 int32, l2 int32, l3 int
 			return int32(base.Ui32(v95)>>(uint(int32(4))%32)) & int32(15)
 		}
 	default:
-		F__serverPanic_1(m, int32(_a1683), int32(439), int32(_a1684), int32(0))
+		F__serverPanic_1(m, int32(_a_F_setTypeRandomElement_0), int32(439), int32(_a_F_setTypeRandomElement_1), int32(0))
 		mBase = m.M
 		v84 = m.ExcPending
 		if v84 != 0 {
@@ -681,9 +681,9 @@ func F_setTypeRandomElement(m *base.Module, l0 int32, l1 int32, l2 int32, l3 int
 		v54 = F_objectGetVal(m, l0)
 		mBase = m.M
 		v56 = int32(0)
-		v58 = *(*int64)(unsafe.Add(mBase, _consts[408]))
+		v58 = *(*int64)(unsafe.Add(mBase, _c_F_setTypeRandomElement[0]))
 		v62 = v58*int64(6364136223846793005) + int64(1)
-		*(*int64)(unsafe.Add(mBase, _consts[408])) = v62
+		*(*int64)(unsafe.Add(mBase, _c_F_setTypeRandomElement[0])) = v62
 		v67 = F_lpLength(m, v54)
 		mBase = m.M
 		v68 = m.ExcPending
@@ -1014,7 +1014,7 @@ L18:
 	goto L1
 L19:
 	;
-	F__serverPanic_1(m, int32(_a1683), int32(275), int32(_a1684), int32(0))
+	F__serverPanic_1(m, int32(_a_F_setTypeRemoveAux_0), int32(275), int32(_a_F_setTypeRemoveAux_1), int32(0))
 	mBase = m.M
 	v269 = m.ExcPending
 	if v269 != 0 {

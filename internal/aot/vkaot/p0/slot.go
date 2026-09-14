@@ -62,7 +62,7 @@ func F_createSlotExportJob(m *base.Module, l0 int32, l1 int32) int32 {
 	if v9 != 0 {
 		return int32(0)
 	} else {
-		v11 = *(*int64)(unsafe.Add(mBase, _consts[37]))
+		v11 = *(*int64)(unsafe.Add(mBase, _c_F_createSlotExportJob[0]))
 		*(*int64)(unsafe.Add(mBase, uint32(v6)+24)) = v11
 		*(*int64)(unsafe.Add(mBase, uint32(v6)+16)) = v11
 		*(*int64)(unsafe.Add(mBase, uint32(v6)+8)) = v11
@@ -96,7 +96,7 @@ func F_createSlotExportJob(m *base.Module, l0 int32, l1 int32) int32 {
 				*(*int64)(unsafe.Add(mBase, uint32(v6+v30))) = v50
 				v52 = *(*int64)(unsafe.Add(mBase, uint32(l0)+8))
 				*(*int64)(unsafe.Add(mBase, uint32(v6)+32)) = v52
-				v55 = *(*int32)(unsafe.Add(mBase, _consts[90]))
+				v55 = *(*int32)(unsafe.Add(mBase, _c_F_createSlotExportJob[1]))
 				v56 = *(*int32)(unsafe.Add(mBase, uint32(v55)))
 				v57 = *(*int64)(unsafe.Add(mBase, uint32(v56)+8))
 				*(*int64)(unsafe.Add(mBase, uint32(v6)+72)) = v57
@@ -199,19 +199,19 @@ func F_generateSlotMigrationJobDescription(m *base.Module, l0 int32, l1 int32) i
 				*(*int32)(unsafe.Add(mBase, uint32(v9+int32(16)))) = v79
 				*(*int32)(unsafe.Add(mBase, uint32(v9)+12)) = v72
 				if v74 != 0 {
-					v84 = int32(_a318)
+					v84 = int32(_a_F_generateSlotMigrationJobDescription_0)
 				} else {
-					v84 = int32(_a319)
+					v84 = int32(_a_F_generateSlotMigrationJobDescription_1)
 				}
 				*(*int32)(unsafe.Add(mBase, uint32(v9)+8)) = v84
 				if v74 != 0 {
-					v88 = int32(_a320)
+					v88 = int32(_a_F_generateSlotMigrationJobDescription_2)
 				} else {
-					v88 = int32(_a321)
+					v88 = int32(_a_F_generateSlotMigrationJobDescription_3)
 				}
 				*(*int32)(unsafe.Add(mBase, uint32(v9)+4)) = v88
 				*(*int32)(unsafe.Add(mBase, uint32(v9))) = l0 + int32(112)
-				v94 = F_sdscatprintf(m, v75, int32(_a322), v9)
+				v94 = F_sdscatprintf(m, v75, int32(_a_F_generateSlotMigrationJobDescription_4), v9)
 				mBase = m.M
 				v95 = m.ExcPending
 				if v95 != 0 {
@@ -240,19 +240,19 @@ func F_generateSlotMigrationJobDescription(m *base.Module, l0 int32, l1 int32) i
 						*(*int32)(unsafe.Add(mBase, uint32(v9+int32(16)))) = v79
 						*(*int32)(unsafe.Add(mBase, uint32(v9)+12)) = v72
 						if v74 != 0 {
-							v84 = int32(_a318)
+							v84 = int32(_a_F_generateSlotMigrationJobDescription_0)
 						} else {
-							v84 = int32(_a319)
+							v84 = int32(_a_F_generateSlotMigrationJobDescription_1)
 						}
 						*(*int32)(unsafe.Add(mBase, uint32(v9)+8)) = v84
 						if v74 != 0 {
-							v88 = int32(_a320)
+							v88 = int32(_a_F_generateSlotMigrationJobDescription_2)
 						} else {
-							v88 = int32(_a321)
+							v88 = int32(_a_F_generateSlotMigrationJobDescription_3)
 						}
 						*(*int32)(unsafe.Add(mBase, uint32(v9)+4)) = v88
 						*(*int32)(unsafe.Add(mBase, uint32(v9))) = l0 + int32(112)
-						v94 = F_sdscatprintf(m, v75, int32(_a322), v9)
+						v94 = F_sdscatprintf(m, v75, int32(_a_F_generateSlotMigrationJobDescription_4), v9)
 						mBase = m.M
 						v95 = m.ExcPending
 						if v95 != 0 {
@@ -275,21 +275,21 @@ func F_generateSlotMigrationJobDescription(m *base.Module, l0 int32, l1 int32) i
 						*(*int32)(unsafe.Add(mBase, uint32(v9+int32(56)))) = v46
 						*(*int32)(unsafe.Add(mBase, uint32(v9+int32(52)))) = v14
 						if v39 != 0 {
-							v55 = int32(_a318)
+							v55 = int32(_a_F_generateSlotMigrationJobDescription_0)
 						} else {
-							v55 = int32(_a319)
+							v55 = int32(_a_F_generateSlotMigrationJobDescription_1)
 						}
 						*(*int32)(unsafe.Add(mBase, uint32(v9+int32(48)))) = v55
 						*(*int32)(unsafe.Add(mBase, uint32(v9)+44)) = v13
 						*(*int32)(unsafe.Add(mBase, uint32(v9)+40)) = v55
 						if v39 != 0 {
-							v61 = int32(_a320)
+							v61 = int32(_a_F_generateSlotMigrationJobDescription_2)
 						} else {
-							v61 = int32(_a321)
+							v61 = int32(_a_F_generateSlotMigrationJobDescription_3)
 						}
 						*(*int32)(unsafe.Add(mBase, uint32(v9)+36)) = v61
 						*(*int32)(unsafe.Add(mBase, uint32(v9)+32)) = l0 + int32(112)
-						v69 = F_sdscatprintf(m, v40, int32(_a323), v9+int32(32))
+						v69 = F_sdscatprintf(m, v40, int32(_a_F_generateSlotMigrationJobDescription_5), v9+int32(32))
 						mBase = m.M
 						v70 = m.ExcPending
 						if v70 != 0 {
@@ -317,19 +317,19 @@ func F_generateSlotMigrationJobDescription(m *base.Module, l0 int32, l1 int32) i
 						*(*int32)(unsafe.Add(mBase, uint32(v9+int32(16)))) = v79
 						*(*int32)(unsafe.Add(mBase, uint32(v9)+12)) = v72
 						if v74 != 0 {
-							v84 = int32(_a318)
+							v84 = int32(_a_F_generateSlotMigrationJobDescription_0)
 						} else {
-							v84 = int32(_a319)
+							v84 = int32(_a_F_generateSlotMigrationJobDescription_1)
 						}
 						*(*int32)(unsafe.Add(mBase, uint32(v9)+8)) = v84
 						if v74 != 0 {
-							v88 = int32(_a320)
+							v88 = int32(_a_F_generateSlotMigrationJobDescription_2)
 						} else {
-							v88 = int32(_a321)
+							v88 = int32(_a_F_generateSlotMigrationJobDescription_3)
 						}
 						*(*int32)(unsafe.Add(mBase, uint32(v9)+4)) = v88
 						*(*int32)(unsafe.Add(mBase, uint32(v9))) = l0 + int32(112)
-						v94 = F_sdscatprintf(m, v75, int32(_a322), v9)
+						v94 = F_sdscatprintf(m, v75, int32(_a_F_generateSlotMigrationJobDescription_4), v9)
 						mBase = m.M
 						v95 = m.ExcPending
 						if v95 != 0 {
@@ -352,21 +352,21 @@ func F_generateSlotMigrationJobDescription(m *base.Module, l0 int32, l1 int32) i
 						*(*int32)(unsafe.Add(mBase, uint32(v9+int32(56)))) = v46
 						*(*int32)(unsafe.Add(mBase, uint32(v9+int32(52)))) = v14
 						if v39 != 0 {
-							v55 = int32(_a318)
+							v55 = int32(_a_F_generateSlotMigrationJobDescription_0)
 						} else {
-							v55 = int32(_a319)
+							v55 = int32(_a_F_generateSlotMigrationJobDescription_1)
 						}
 						*(*int32)(unsafe.Add(mBase, uint32(v9+int32(48)))) = v55
 						*(*int32)(unsafe.Add(mBase, uint32(v9)+44)) = v13
 						*(*int32)(unsafe.Add(mBase, uint32(v9)+40)) = v55
 						if v39 != 0 {
-							v61 = int32(_a320)
+							v61 = int32(_a_F_generateSlotMigrationJobDescription_2)
 						} else {
-							v61 = int32(_a321)
+							v61 = int32(_a_F_generateSlotMigrationJobDescription_3)
 						}
 						*(*int32)(unsafe.Add(mBase, uint32(v9)+36)) = v61
 						*(*int32)(unsafe.Add(mBase, uint32(v9)+32)) = l0 + int32(112)
-						v69 = F_sdscatprintf(m, v40, int32(_a323), v9+int32(32))
+						v69 = F_sdscatprintf(m, v40, int32(_a_F_generateSlotMigrationJobDescription_5), v9+int32(32))
 						mBase = m.M
 						v70 = m.ExcPending
 						if v70 != 0 {
@@ -394,19 +394,19 @@ func F_generateSlotMigrationJobDescription(m *base.Module, l0 int32, l1 int32) i
 						*(*int32)(unsafe.Add(mBase, uint32(v9+int32(16)))) = v79
 						*(*int32)(unsafe.Add(mBase, uint32(v9)+12)) = v72
 						if v74 != 0 {
-							v84 = int32(_a318)
+							v84 = int32(_a_F_generateSlotMigrationJobDescription_0)
 						} else {
-							v84 = int32(_a319)
+							v84 = int32(_a_F_generateSlotMigrationJobDescription_1)
 						}
 						*(*int32)(unsafe.Add(mBase, uint32(v9)+8)) = v84
 						if v74 != 0 {
-							v88 = int32(_a320)
+							v88 = int32(_a_F_generateSlotMigrationJobDescription_2)
 						} else {
-							v88 = int32(_a321)
+							v88 = int32(_a_F_generateSlotMigrationJobDescription_3)
 						}
 						*(*int32)(unsafe.Add(mBase, uint32(v9)+4)) = v88
 						*(*int32)(unsafe.Add(mBase, uint32(v9))) = l0 + int32(112)
-						v94 = F_sdscatprintf(m, v75, int32(_a322), v9)
+						v94 = F_sdscatprintf(m, v75, int32(_a_F_generateSlotMigrationJobDescription_4), v9)
 						mBase = m.M
 						v95 = m.ExcPending
 						if v95 != 0 {
@@ -429,21 +429,21 @@ func F_generateSlotMigrationJobDescription(m *base.Module, l0 int32, l1 int32) i
 						*(*int32)(unsafe.Add(mBase, uint32(v9+int32(56)))) = v46
 						*(*int32)(unsafe.Add(mBase, uint32(v9+int32(52)))) = v14
 						if v39 != 0 {
-							v55 = int32(_a318)
+							v55 = int32(_a_F_generateSlotMigrationJobDescription_0)
 						} else {
-							v55 = int32(_a319)
+							v55 = int32(_a_F_generateSlotMigrationJobDescription_1)
 						}
 						*(*int32)(unsafe.Add(mBase, uint32(v9+int32(48)))) = v55
 						*(*int32)(unsafe.Add(mBase, uint32(v9)+44)) = v13
 						*(*int32)(unsafe.Add(mBase, uint32(v9)+40)) = v55
 						if v39 != 0 {
-							v61 = int32(_a320)
+							v61 = int32(_a_F_generateSlotMigrationJobDescription_2)
 						} else {
-							v61 = int32(_a321)
+							v61 = int32(_a_F_generateSlotMigrationJobDescription_3)
 						}
 						*(*int32)(unsafe.Add(mBase, uint32(v9)+36)) = v61
 						*(*int32)(unsafe.Add(mBase, uint32(v9)+32)) = l0 + int32(112)
-						v69 = F_sdscatprintf(m, v40, int32(_a323), v9+int32(32))
+						v69 = F_sdscatprintf(m, v40, int32(_a_F_generateSlotMigrationJobDescription_5), v9+int32(32))
 						mBase = m.M
 						v70 = m.ExcPending
 						if v70 != 0 {
@@ -471,19 +471,19 @@ func F_generateSlotMigrationJobDescription(m *base.Module, l0 int32, l1 int32) i
 						*(*int32)(unsafe.Add(mBase, uint32(v9+int32(16)))) = v79
 						*(*int32)(unsafe.Add(mBase, uint32(v9)+12)) = v72
 						if v74 != 0 {
-							v84 = int32(_a318)
+							v84 = int32(_a_F_generateSlotMigrationJobDescription_0)
 						} else {
-							v84 = int32(_a319)
+							v84 = int32(_a_F_generateSlotMigrationJobDescription_1)
 						}
 						*(*int32)(unsafe.Add(mBase, uint32(v9)+8)) = v84
 						if v74 != 0 {
-							v88 = int32(_a320)
+							v88 = int32(_a_F_generateSlotMigrationJobDescription_2)
 						} else {
-							v88 = int32(_a321)
+							v88 = int32(_a_F_generateSlotMigrationJobDescription_3)
 						}
 						*(*int32)(unsafe.Add(mBase, uint32(v9)+4)) = v88
 						*(*int32)(unsafe.Add(mBase, uint32(v9))) = l0 + int32(112)
-						v94 = F_sdscatprintf(m, v75, int32(_a322), v9)
+						v94 = F_sdscatprintf(m, v75, int32(_a_F_generateSlotMigrationJobDescription_4), v9)
 						mBase = m.M
 						v95 = m.ExcPending
 						if v95 != 0 {
@@ -506,21 +506,21 @@ func F_generateSlotMigrationJobDescription(m *base.Module, l0 int32, l1 int32) i
 						*(*int32)(unsafe.Add(mBase, uint32(v9+int32(56)))) = v46
 						*(*int32)(unsafe.Add(mBase, uint32(v9+int32(52)))) = v14
 						if v39 != 0 {
-							v55 = int32(_a318)
+							v55 = int32(_a_F_generateSlotMigrationJobDescription_0)
 						} else {
-							v55 = int32(_a319)
+							v55 = int32(_a_F_generateSlotMigrationJobDescription_1)
 						}
 						*(*int32)(unsafe.Add(mBase, uint32(v9+int32(48)))) = v55
 						*(*int32)(unsafe.Add(mBase, uint32(v9)+44)) = v13
 						*(*int32)(unsafe.Add(mBase, uint32(v9)+40)) = v55
 						if v39 != 0 {
-							v61 = int32(_a320)
+							v61 = int32(_a_F_generateSlotMigrationJobDescription_2)
 						} else {
-							v61 = int32(_a321)
+							v61 = int32(_a_F_generateSlotMigrationJobDescription_3)
 						}
 						*(*int32)(unsafe.Add(mBase, uint32(v9)+36)) = v61
 						*(*int32)(unsafe.Add(mBase, uint32(v9)+32)) = l0 + int32(112)
-						v69 = F_sdscatprintf(m, v40, int32(_a323), v9+int32(32))
+						v69 = F_sdscatprintf(m, v40, int32(_a_F_generateSlotMigrationJobDescription_5), v9+int32(32))
 						mBase = m.M
 						v70 = m.ExcPending
 						if v70 != 0 {
@@ -548,19 +548,19 @@ func F_generateSlotMigrationJobDescription(m *base.Module, l0 int32, l1 int32) i
 						*(*int32)(unsafe.Add(mBase, uint32(v9+int32(16)))) = v79
 						*(*int32)(unsafe.Add(mBase, uint32(v9)+12)) = v72
 						if v74 != 0 {
-							v84 = int32(_a318)
+							v84 = int32(_a_F_generateSlotMigrationJobDescription_0)
 						} else {
-							v84 = int32(_a319)
+							v84 = int32(_a_F_generateSlotMigrationJobDescription_1)
 						}
 						*(*int32)(unsafe.Add(mBase, uint32(v9)+8)) = v84
 						if v74 != 0 {
-							v88 = int32(_a320)
+							v88 = int32(_a_F_generateSlotMigrationJobDescription_2)
 						} else {
-							v88 = int32(_a321)
+							v88 = int32(_a_F_generateSlotMigrationJobDescription_3)
 						}
 						*(*int32)(unsafe.Add(mBase, uint32(v9)+4)) = v88
 						*(*int32)(unsafe.Add(mBase, uint32(v9))) = l0 + int32(112)
-						v94 = F_sdscatprintf(m, v75, int32(_a322), v9)
+						v94 = F_sdscatprintf(m, v75, int32(_a_F_generateSlotMigrationJobDescription_4), v9)
 						mBase = m.M
 						v95 = m.ExcPending
 						if v95 != 0 {
@@ -583,21 +583,21 @@ func F_generateSlotMigrationJobDescription(m *base.Module, l0 int32, l1 int32) i
 						*(*int32)(unsafe.Add(mBase, uint32(v9+int32(56)))) = v46
 						*(*int32)(unsafe.Add(mBase, uint32(v9+int32(52)))) = v14
 						if v39 != 0 {
-							v55 = int32(_a318)
+							v55 = int32(_a_F_generateSlotMigrationJobDescription_0)
 						} else {
-							v55 = int32(_a319)
+							v55 = int32(_a_F_generateSlotMigrationJobDescription_1)
 						}
 						*(*int32)(unsafe.Add(mBase, uint32(v9+int32(48)))) = v55
 						*(*int32)(unsafe.Add(mBase, uint32(v9)+44)) = v13
 						*(*int32)(unsafe.Add(mBase, uint32(v9)+40)) = v55
 						if v39 != 0 {
-							v61 = int32(_a320)
+							v61 = int32(_a_F_generateSlotMigrationJobDescription_2)
 						} else {
-							v61 = int32(_a321)
+							v61 = int32(_a_F_generateSlotMigrationJobDescription_3)
 						}
 						*(*int32)(unsafe.Add(mBase, uint32(v9)+36)) = v61
 						*(*int32)(unsafe.Add(mBase, uint32(v9)+32)) = l0 + int32(112)
-						v69 = F_sdscatprintf(m, v40, int32(_a323), v9+int32(32))
+						v69 = F_sdscatprintf(m, v40, int32(_a_F_generateSlotMigrationJobDescription_5), v9+int32(32))
 						mBase = m.M
 						v70 = m.ExcPending
 						if v70 != 0 {
@@ -622,19 +622,19 @@ func F_generateSlotMigrationJobDescription(m *base.Module, l0 int32, l1 int32) i
 					*(*int32)(unsafe.Add(mBase, uint32(v9+int32(16)))) = v79
 					*(*int32)(unsafe.Add(mBase, uint32(v9)+12)) = v72
 					if v74 != 0 {
-						v84 = int32(_a318)
+						v84 = int32(_a_F_generateSlotMigrationJobDescription_0)
 					} else {
-						v84 = int32(_a319)
+						v84 = int32(_a_F_generateSlotMigrationJobDescription_1)
 					}
 					*(*int32)(unsafe.Add(mBase, uint32(v9)+8)) = v84
 					if v74 != 0 {
-						v88 = int32(_a320)
+						v88 = int32(_a_F_generateSlotMigrationJobDescription_2)
 					} else {
-						v88 = int32(_a321)
+						v88 = int32(_a_F_generateSlotMigrationJobDescription_3)
 					}
 					*(*int32)(unsafe.Add(mBase, uint32(v9)+4)) = v88
 					*(*int32)(unsafe.Add(mBase, uint32(v9))) = l0 + int32(112)
-					v94 = F_sdscatprintf(m, v75, int32(_a322), v9)
+					v94 = F_sdscatprintf(m, v75, int32(_a_F_generateSlotMigrationJobDescription_4), v9)
 					mBase = m.M
 					v95 = m.ExcPending
 					if v95 != 0 {
@@ -648,7 +648,7 @@ func F_generateSlotMigrationJobDescription(m *base.Module, l0 int32, l1 int32) i
 			}
 		}
 	} else {
-		v72 = int32(_a242)
+		v72 = int32(_a_F_generateSlotMigrationJobDescription_6)
 		v74 = *(*int32)(unsafe.Add(mBase, uint32(l0)))
 		v75 = F_sdsempty(m)
 		mBase = m.M
@@ -660,19 +660,19 @@ func F_generateSlotMigrationJobDescription(m *base.Module, l0 int32, l1 int32) i
 			*(*int32)(unsafe.Add(mBase, uint32(v9+int32(16)))) = v79
 			*(*int32)(unsafe.Add(mBase, uint32(v9)+12)) = v72
 			if v74 != 0 {
-				v84 = int32(_a318)
+				v84 = int32(_a_F_generateSlotMigrationJobDescription_0)
 			} else {
-				v84 = int32(_a319)
+				v84 = int32(_a_F_generateSlotMigrationJobDescription_1)
 			}
 			*(*int32)(unsafe.Add(mBase, uint32(v9)+8)) = v84
 			if v74 != 0 {
-				v88 = int32(_a320)
+				v88 = int32(_a_F_generateSlotMigrationJobDescription_2)
 			} else {
-				v88 = int32(_a321)
+				v88 = int32(_a_F_generateSlotMigrationJobDescription_3)
 			}
 			*(*int32)(unsafe.Add(mBase, uint32(v9)+4)) = v88
 			*(*int32)(unsafe.Add(mBase, uint32(v9))) = l0 + int32(112)
-			v94 = F_sdscatprintf(m, v75, int32(_a322), v9)
+			v94 = F_sdscatprintf(m, v75, int32(_a_F_generateSlotMigrationJobDescription_4), v9)
 			mBase = m.M
 			v95 = m.ExcPending
 			if v95 != 0 {
@@ -828,7 +828,7 @@ L3:
 	goto L2
 L4:
 	;
-	v23 = *(*int32)(unsafe.Add(mBase, _consts[10]))
+	v23 = *(*int32)(unsafe.Add(mBase, _c_F_rewriteSlotToAppendOnlyFileRio[0]))
 	if v23 <= l1 {
 		v38 = v19
 		goto L3
@@ -838,7 +838,7 @@ L4:
 L5:
 	;
 	v25 = int32(0)
-	v26 = *(*int32)(unsafe.Add(mBase, _consts[23]))
+	v26 = *(*int32)(unsafe.Add(mBase, _c_F_rewriteSlotToAppendOnlyFileRio[1]))
 	v30 = *(*int32)(unsafe.Add(mBase, uint32(v26+l1<<(uint(int32(2))%32))))
 	if v30 == v25 {
 		v38 = v19
@@ -855,7 +855,7 @@ L6:
 	goto L3
 L7:
 	;
-	v40 = *(*int32)(unsafe.Add(mBase, _consts[23]))
+	v40 = *(*int32)(unsafe.Add(mBase, _c_F_rewriteSlotToAppendOnlyFileRio[1]))
 	v41 = int32(2)
 	v44 = *(*int32)(unsafe.Add(mBase, uint32(v40+l1<<(uint(v41)%32))))
 	v45 = *(*int32)(unsafe.Add(mBase, uint32(v44)))
@@ -888,11 +888,11 @@ L11:
 	;
 	v56 = int32(16)
 	v59 = int32(0)
-	v60 = int32(*(*uint8)(unsafe.Add(mBase, _consts[24])))
+	v60 = int32(*(*uint8)(unsafe.Add(mBase, _c_F_rewriteSlotToAppendOnlyFileRio[2])))
 	*(*uint8)(unsafe.Add(mBase, uint32(v15+v56))) = uint8(v60)
-	v63 = *(*int64)(unsafe.Add(mBase, _consts[25]))
+	v63 = *(*int64)(unsafe.Add(mBase, _c_F_rewriteSlotToAppendOnlyFileRio[3]))
 	*(*int64)(unsafe.Add(mBase, uint32(v15)+8)) = v63
-	v66 = *(*int64)(unsafe.Add(mBase, _consts[26]))
+	v66 = *(*int64)(unsafe.Add(mBase, _c_F_rewriteSlotToAppendOnlyFileRio[4]))
 	*(*int64)(unsafe.Add(mBase, uint32(v15))) = v66
 	v68 = int32(*(*uint8)(unsafe.Add(mBase, uint32(l0)+32)))
 	if v68&int32(6) != 0 {
@@ -1107,7 +1107,7 @@ L41:
 L42:
 	;
 	v145 = *(*int32)(unsafe.Add(mBase, uint32(l3)))
-	F_sendChildInfo(m, int32(0), v145, int32(_a124))
+	F_sendChildInfo(m, int32(0), v145, int32(_a_F_rewriteSlotToAppendOnlyFileRio_0))
 	mBase = m.M
 	v148 = m.ExcPending
 	if v148 != 0 {
@@ -1252,7 +1252,7 @@ func F_slotMigrationPipeReadHandler(m *base.Module, l0 int32, l1 int32, l2 int32
 	v10 = m.G0
 	v12 = v10 - int32(32)
 	m.G0 = v12
-	v15 = *(*int32)(unsafe.Add(mBase, _consts[155]))
+	v15 = *(*int32)(unsafe.Add(mBase, _c_F_slotMigrationPipeReadHandler[0]))
 	if v15 != 0 {
 		goto L1
 	} else {
@@ -1260,7 +1260,7 @@ func F_slotMigrationPipeReadHandler(m *base.Module, l0 int32, l1 int32, l2 int32
 	}
 L1:
 	;
-	v22 = *(*int32)(unsafe.Add(mBase, _consts[154]))
+	v22 = *(*int32)(unsafe.Add(mBase, _c_F_slotMigrationPipeReadHandler[1]))
 	if v22 == int32(0) {
 		goto L5
 	} else {
@@ -1281,7 +1281,7 @@ L3:
 	return
 L4:
 	;
-	*(*int32)(unsafe.Add(mBase, _consts[155])) = v18
+	*(*int32)(unsafe.Add(mBase, _c_F_slotMigrationPipeReadHandler[0])) = v18
 	goto L1
 L5:
 	;
@@ -1292,11 +1292,11 @@ L6:
 	goto L7
 L7:
 	;
-	v34 = int32(_a69)
-	v36 = *(*int32)(unsafe.Add(mBase, _consts[155]))
+	v34 = int32(_a_F_slotMigrationPipeReadHandler_0)
+	v36 = *(*int32)(unsafe.Add(mBase, _c_F_slotMigrationPipeReadHandler[0]))
 	v38 = F_read(m, l1, v36, int32(16384))
 	mBase = m.M
-	*(*int32)(unsafe.Add(mBase, _consts[525])) = v38
+	*(*int32)(unsafe.Add(mBase, _c_F_slotMigrationPipeReadHandler[2])) = v38
 	if int32(-1) < v38 {
 		goto L9
 	} else {
@@ -1326,7 +1326,7 @@ L10:
 	goto L11
 L11:
 	;
-	v43 = *(*int32)(unsafe.Add(mBase, _consts[9]))
+	v43 = *(*int32)(unsafe.Add(mBase, _c_F_slotMigrationPipeReadHandler[3]))
 	if v43 == int32(6) {
 		goto L5
 	} else {
@@ -1334,7 +1334,7 @@ L11:
 	}
 L12:
 	;
-	v47 = *(*int32)(unsafe.Add(mBase, _consts[15]))
+	v47 = *(*int32)(unsafe.Add(mBase, _c_F_slotMigrationPipeReadHandler[4]))
 	if int32(3) < v47 {
 		goto L13
 	} else {
@@ -1342,7 +1342,7 @@ L12:
 	}
 L13:
 	;
-	v57 = *(*int32)(unsafe.Add(mBase, _consts[154]))
+	v57 = *(*int32)(unsafe.Add(mBase, _c_F_slotMigrationPipeReadHandler[1]))
 	v58 = *(*int32)(unsafe.Add(mBase, uint32(v57)+24))
 	v59 = F_freeClient(m, v58)
 	mBase = m.M
@@ -1360,7 +1360,7 @@ L14:
 L15:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v12))) = v50
-	F__serverLog(m, int32(3), int32(_a941), v12)
+	F__serverLog(m, int32(3), int32(_a_F_slotMigrationPipeReadHandler_1), v12)
 	mBase = m.M
 	v55 = m.ExcPending
 	if v55 != 0 {
@@ -1373,14 +1373,14 @@ L16:
 	goto L13
 L17:
 	;
-	*(*int32)(unsafe.Add(mBase, _consts[154])) = int32(0)
+	*(*int32)(unsafe.Add(mBase, _c_F_slotMigrationPipeReadHandler[1])) = int32(0)
 	goto L5
 L18:
 	;
-	v77 = int32(_a69)
-	v78 = *(*int32)(unsafe.Add(mBase, _consts[154]))
+	v77 = int32(_a_F_slotMigrationPipeReadHandler_0)
+	v78 = *(*int32)(unsafe.Add(mBase, _c_F_slotMigrationPipeReadHandler[1]))
 	v79 = *(*int32)(unsafe.Add(mBase, uint32(v78)+24))
-	v81 = *(*int32)(unsafe.Add(mBase, _consts[155]))
+	v81 = *(*int32)(unsafe.Add(mBase, _c_F_slotMigrationPipeReadHandler[0]))
 	v82 = *(*int32)(unsafe.Add(mBase, uint32(v78)))
 	v83 = *(*int32)(unsafe.Add(mBase, uint32(v82)+68))
 	v84 = m.T0[v83].(func(*base.Module, int32, int32, int32) int32)(m, v78, v81, v38)
@@ -1393,9 +1393,9 @@ L18:
 	}
 L19:
 	;
-	v64 = int32(_a69)
-	v65 = *(*int32)(unsafe.Add(mBase, _consts[156]))
-	v67 = *(*int32)(unsafe.Add(mBase, _consts[153]))
+	v64 = int32(_a_F_slotMigrationPipeReadHandler_0)
+	v65 = *(*int32)(unsafe.Add(mBase, _c_F_slotMigrationPipeReadHandler[5]))
+	v67 = *(*int32)(unsafe.Add(mBase, _c_F_slotMigrationPipeReadHandler[6]))
 	F_aeDeleteFileEvent(m, v65, v67, int32(1))
 	mBase = m.M
 	v70 = m.ExcPending
@@ -1406,15 +1406,15 @@ L19:
 	}
 L20:
 	;
-	v71 = int32(_a69)
-	v72 = *(*int32)(unsafe.Add(mBase, _consts[152]))
+	v71 = int32(_a_F_slotMigrationPipeReadHandler_0)
+	v72 = *(*int32)(unsafe.Add(mBase, _c_F_slotMigrationPipeReadHandler[7]))
 	v73 = F_close(m, v72)
 	mBase = m.M
-	*(*int32)(unsafe.Add(mBase, _consts[152])) = int32(-1)
+	*(*int32)(unsafe.Add(mBase, _c_F_slotMigrationPipeReadHandler[7])) = int32(-1)
 	goto L5
 L21:
 	;
-	v124 = *(*int32)(unsafe.Add(mBase, _consts[525]))
+	v124 = *(*int32)(unsafe.Add(mBase, _c_F_slotMigrationPipeReadHandler[2]))
 	if v84 == v124 {
 		goto L7
 	} else {
@@ -1425,9 +1425,9 @@ L22:
 	v114 = *(*int32)(unsafe.Add(mBase, uint32(v79)+104))
 	v115 = base.I64_extend_i32_s(v84)
 	*(*int64)(unsafe.Add(mBase, uint32(v114)+16)) = v115
-	v117 = int32(_a69)
-	v119 = *(*int64)(unsafe.Add(mBase, _consts[526]))
-	*(*int64)(unsafe.Add(mBase, _consts[526])) = v119 + v115
+	v117 = int32(_a_F_slotMigrationPipeReadHandler_0)
+	v119 = *(*int64)(unsafe.Add(mBase, _c_F_slotMigrationPipeReadHandler[8]))
+	*(*int64)(unsafe.Add(mBase, _c_F_slotMigrationPipeReadHandler[8])) = v119 + v115
 	goto L21
 L23:
 	;
@@ -1451,7 +1451,7 @@ L25:
 	goto L21
 L26:
 	;
-	v92 = *(*int32)(unsafe.Add(mBase, _consts[15]))
+	v92 = *(*int32)(unsafe.Add(mBase, _c_F_slotMigrationPipeReadHandler[4]))
 	if int32(3) < v92 {
 		goto L27
 	} else {
@@ -1482,7 +1482,7 @@ L28:
 L29:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v12)+16)) = v97
-	F__serverLog(m, int32(3), int32(_a942), v12+int32(16))
+	F__serverLog(m, int32(3), int32(_a_F_slotMigrationPipeReadHandler_2), v12+int32(16))
 	mBase = m.M
 	v105 = m.ExcPending
 	if v105 != 0 {
@@ -1495,16 +1495,16 @@ L30:
 	goto L27
 L31:
 	;
-	*(*int32)(unsafe.Add(mBase, _consts[154])) = int32(0)
+	*(*int32)(unsafe.Add(mBase, _c_F_slotMigrationPipeReadHandler[1])) = int32(0)
 	goto L5
 L32:
 	;
 	goto L8
 L33:
 	;
-	v132 = int32(_a69)
-	v133 = *(*int32)(unsafe.Add(mBase, _consts[156]))
-	v135 = *(*int32)(unsafe.Add(mBase, _consts[153]))
+	v132 = int32(_a_F_slotMigrationPipeReadHandler_0)
+	v133 = *(*int32)(unsafe.Add(mBase, _c_F_slotMigrationPipeReadHandler[5]))
+	v135 = *(*int32)(unsafe.Add(mBase, _c_F_slotMigrationPipeReadHandler[6]))
 	F_aeDeleteFileEvent(m, v133, v135, int32(1))
 	mBase = m.M
 	v138 = m.ExcPending
@@ -1607,9 +1607,9 @@ func F_slotMigrationPipeWriteHandler(m *base.Module, l0 int32) {
 	v8 = m.G0
 	v10 = v8 - int32(16)
 	m.G0 = v10
-	v13 = *(*int32)(unsafe.Add(mBase, _consts[525]))
+	v13 = *(*int32)(unsafe.Add(mBase, _c_F_slotMigrationPipeWriteHandler[0]))
 	if v13 <= int32(0) {
-		F__serverAssert(m, int32(_a938), int32(_a913), int32(1880))
+		F__serverAssert(m, int32(_a_F_slotMigrationPipeWriteHandler_0), int32(_a_F_slotMigrationPipeWriteHandler_1), int32(1880))
 		mBase = m.M
 		v94 = m.ExcPending
 		if v94 != 0 {
@@ -1622,7 +1622,7 @@ func F_slotMigrationPipeWriteHandler(m *base.Module, l0 int32) {
 			}
 		}
 	} else {
-		v17 = *(*int32)(unsafe.Add(mBase, _consts[155]))
+		v17 = *(*int32)(unsafe.Add(mBase, _c_F_slotMigrationPipeWriteHandler[1]))
 		v18 = *(*int32)(unsafe.Add(mBase, uint32(l0)+24))
 		v19 = *(*int32)(unsafe.Add(mBase, uint32(v18)+104))
 		v20 = *(*int32)(unsafe.Add(mBase, uint32(v19)+16))
@@ -1640,10 +1640,10 @@ func F_slotMigrationPipeWriteHandler(m *base.Module, l0 int32) {
 				v49 = base.I64_extend_i32_s(v25)
 				v50 = v48 + v49
 				*(*int64)(unsafe.Add(mBase, uint32(v47)+16)) = v50
-				v52 = int32(_a69)
-				v54 = *(*int64)(unsafe.Add(mBase, _consts[526]))
-				*(*int64)(unsafe.Add(mBase, _consts[526])) = v54 + v49
-				v58 = int64(*(*int32)(unsafe.Add(mBase, _consts[525])))
+				v52 = int32(_a_F_slotMigrationPipeWriteHandler_2)
+				v54 = *(*int64)(unsafe.Add(mBase, _c_F_slotMigrationPipeWriteHandler[2]))
+				*(*int64)(unsafe.Add(mBase, _c_F_slotMigrationPipeWriteHandler[2])) = v54 + v49
+				v58 = int64(*(*int32)(unsafe.Add(mBase, _c_F_slotMigrationPipeWriteHandler[0])))
 				if v58 <= v50 {
 					v64 = int32(0)
 					v66 = *(*int32)(unsafe.Add(mBase, uint32(l0)))
@@ -1656,9 +1656,9 @@ func F_slotMigrationPipeWriteHandler(m *base.Module, l0 int32) {
 					} else {
 						v70 = *(*int32)(unsafe.Add(mBase, uint32(v18)+104))
 						*(*int64)(unsafe.Add(mBase, uint32(v70)+88)) = int64(0)
-						v73 = int32(_a69)
-						v74 = *(*int32)(unsafe.Add(mBase, _consts[156]))
-						v76 = *(*int32)(unsafe.Add(mBase, _consts[153]))
+						v73 = int32(_a_F_slotMigrationPipeWriteHandler_2)
+						v74 = *(*int32)(unsafe.Add(mBase, _c_F_slotMigrationPipeWriteHandler[3]))
+						v76 = *(*int32)(unsafe.Add(mBase, _c_F_slotMigrationPipeWriteHandler[4]))
 						v80 = F_aeCreateFileEvent(m, v74, v76, int32(1), int32(108), int32(0))
 						mBase = m.M
 						v81 = m.ExcPending
@@ -1666,7 +1666,7 @@ func F_slotMigrationPipeWriteHandler(m *base.Module, l0 int32) {
 							return
 						} else {
 							if v80 == int32(-1) {
-								F__serverPanic_1(m, int32(_a913), int32(1902), int32(_a939), int32(0))
+								F__serverPanic_1(m, int32(_a_F_slotMigrationPipeWriteHandler_1), int32(1902), int32(_a_F_slotMigrationPipeWriteHandler_3), int32(0))
 								mBase = m.M
 								v101 = m.ExcPending
 								if v101 != 0 {
@@ -1686,7 +1686,7 @@ func F_slotMigrationPipeWriteHandler(m *base.Module, l0 int32) {
 					}
 				} else {
 					v60 = *(*int32)(unsafe.Add(mBase, uint32(v18)+104))
-					v62 = *(*int64)(unsafe.Add(mBase, _consts[37]))
+					v62 = *(*int64)(unsafe.Add(mBase, _c_F_slotMigrationPipeWriteHandler[5]))
 					*(*int64)(unsafe.Add(mBase, uint32(v60)+88)) = v62
 					m.G0 = v10 + int32(16)
 					return
@@ -1697,7 +1697,7 @@ func F_slotMigrationPipeWriteHandler(m *base.Module, l0 int32) {
 					m.G0 = v10 + int32(16)
 					return
 				} else {
-					v33 = *(*int32)(unsafe.Add(mBase, _consts[15]))
+					v33 = *(*int32)(unsafe.Add(mBase, _c_F_slotMigrationPipeWriteHandler[6]))
 					if int32(3) < v33 {
 						v45 = F_freeClient(m, v18)
 						mBase = m.M
@@ -1718,7 +1718,7 @@ func F_slotMigrationPipeWriteHandler(m *base.Module, l0 int32) {
 							return
 						} else {
 							*(*int32)(unsafe.Add(mBase, uint32(v10))) = v38
-							F__serverLog(m, int32(3), int32(_a940), v10)
+							F__serverLog(m, int32(3), int32(_a_F_slotMigrationPipeWriteHandler_4), v10)
 							mBase = m.M
 							v44 = m.ExcPending
 							if v44 != 0 {

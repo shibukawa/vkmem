@@ -5,4 +5,4 @@
 # cloned into toolchain/wasm2go-src.
 repo=https://github.com/shibukawa/wasm2go-fork.git
 branch=pgmem
-commit=4b4a461206f8f4e93181505d386e38910eefe359
+commit=fd02ee4700e71737852a1ef2c6a71e13bdab7e15

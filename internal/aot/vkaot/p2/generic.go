@@ -466,7 +466,7 @@ func F_genericGetKeys(m *base.Module, l0 int32, l1 int32, l2 int32, l3 int32, l4
 			} else {
 				v78 = *(*int32)(unsafe.Add(mBase, uint32(l6)))
 				if v78 != 0 {
-					F__serverAssert(m, int32(_a585), int32(_a550), int32(2292))
+					F__serverAssert(m, int32(_a_F_genericGetKeys_0), int32(_a_F_genericGetKeys_1), int32(2292))
 					mBase = m.M
 					v251 = m.ExcPending
 					if v251 != 0 {
@@ -992,7 +992,7 @@ L5:
 	goto L13
 L6:
 	;
-	F__serverAssertWithInfo(m, l0, v58, int32(_a1738), int32(_a1723), int32(3984))
+	F__serverAssertWithInfo(m, l0, v58, int32(_a_F_genericZpopCommand_0), int32(_a_F_genericZpopCommand_1), int32(3984))
 	mBase = m.M
 	v368 = m.ExcPending
 	if v368 != 0 {
@@ -1002,7 +1002,7 @@ L6:
 	}
 L7:
 	;
-	F__serverAssertWithInfo(m, l0, v58, int32(_a1739), int32(_a1723), int32(3977))
+	F__serverAssertWithInfo(m, l0, v58, int32(_a_F_genericZpopCommand_2), int32(_a_F_genericZpopCommand_1), int32(3977))
 	mBase = m.M
 	v362 = m.ExcPending
 	if v362 != 0 {
@@ -1012,7 +1012,7 @@ L7:
 	}
 L8:
 	;
-	F__serverAssertWithInfo(m, l0, v58, int32(_a169), int32(_a1723), int32(3965))
+	F__serverAssertWithInfo(m, l0, v58, int32(_a_F_genericZpopCommand_3), int32(_a_F_genericZpopCommand_1), int32(3965))
 	mBase = m.M
 	v356 = m.ExcPending
 	if v356 != 0 {
@@ -1022,7 +1022,7 @@ L8:
 	}
 L9:
 	;
-	F__serverAssertWithInfo(m, l0, v58, int32(_a170), int32(_a1723), int32(3956))
+	F__serverAssertWithInfo(m, l0, v58, int32(_a_F_genericZpopCommand_4), int32(_a_F_genericZpopCommand_1), int32(3956))
 	mBase = m.M
 	v350 = m.ExcPending
 	if v350 != 0 {
@@ -1108,7 +1108,7 @@ L20:
 	}
 L21:
 	;
-	v66 = *(*int32)(unsafe.Add(mBase, _consts[542]))
+	v66 = *(*int32)(unsafe.Add(mBase, _c_F_genericZpopCommand[0]))
 	F_addReply(m, l0, v66)
 	mBase = m.M
 	v68 = m.ExcPending
@@ -1122,7 +1122,7 @@ L22:
 	goto L10
 L23:
 	;
-	v74 = *(*int32)(unsafe.Add(mBase, _consts[542]))
+	v74 = *(*int32)(unsafe.Add(mBase, _c_F_genericZpopCommand[0]))
 	F_addReply(m, l0, v74)
 	mBase = m.M
 	v76 = m.ExcPending
@@ -1254,7 +1254,7 @@ L43:
 	goto L42
 L44:
 	;
-	F__serverPanic_1(m, int32(_a1723), int32(3981), int32(_a1054), int32(0))
+	F__serverPanic_1(m, int32(_a_F_genericZpopCommand_1), int32(3981), int32(_a_F_genericZpopCommand_5), int32(0))
 	mBase = m.M
 	v222 = m.ExcPending
 	if v222 != 0 {
@@ -1383,10 +1383,10 @@ L58:
 	v162 = F___errno_location(m)
 	mBase = m.M
 	*(*int32)(unsafe.Add(mBase, uint32(v162))) = v154
-	v168 = *(*int64)(unsafe.Add(mBase, _consts[378]))
+	v168 = *(*int64)(unsafe.Add(mBase, _c_F_genericZpopCommand[1]))
 	*(*int64)(unsafe.Add(mBase, uint32(v160+int32(8)))) = v168
 	*(*int64)(unsafe.Add(mBase, uint32(v160)+24)) = int64(0)
-	v173 = *(*int64)(unsafe.Add(mBase, _consts[379]))
+	v173 = *(*int64)(unsafe.Add(mBase, _c_F_genericZpopCommand[2]))
 	*(*int64)(unsafe.Add(mBase, uint32(v160))) = v173
 	F_ffc_from_chars_double_options(m, v160+int32(16), v149, v149+v153, v160+int32(24), v160)
 	mBase = m.M
@@ -1464,9 +1464,9 @@ L70:
 	}
 L71:
 	;
-	v234 = int32(_a44)
-	v236 = *(*int64)(unsafe.Add(mBase, _consts[83]))
-	*(*int64)(unsafe.Add(mBase, _consts[83])) = v236 + int64(1)
+	v234 = int32(_a_F_genericZpopCommand_6)
+	v236 = *(*int64)(unsafe.Add(mBase, _c_F_genericZpopCommand[3]))
+	*(*int64)(unsafe.Add(mBase, _c_F_genericZpopCommand[3])) = v236 + int64(1)
 	if v109 != 0 {
 		goto L72
 	} else {
@@ -1481,7 +1481,7 @@ L72:
 	}
 L73:
 	;
-	v241 = *(*int32)(unsafe.Add(mBase, uint32(l3<<(uint(int32(2))%32))+uint32(_consts[949])))
+	v241 = *(*int32)(unsafe.Add(mBase, uint32(l3<<(uint(int32(2))%32))+uint32(_c_F_genericZpopCommand[4])))
 	v242 = *(*int32)(unsafe.Add(mBase, uint32(l0)+96))
 	v243 = *(*int32)(unsafe.Add(mBase, uint32(v242)+28))
 	F_notifyKeyspaceEvent(m, int32(128), v241, v57, v243)
@@ -1647,7 +1647,7 @@ L94:
 	;
 	v295 = *(*int32)(unsafe.Add(mBase, uint32(l0)+96))
 	v296 = *(*int32)(unsafe.Add(mBase, uint32(v295)+28))
-	F_notifyKeyspaceEvent(m, int32(4), int32(_a213), v57, v296)
+	F_notifyKeyspaceEvent(m, int32(4), int32(_a_F_genericZpopCommand_7), v57, v296)
 	mBase = m.M
 	v298 = m.ExcPending
 	if v298 != 0 {
@@ -1696,7 +1696,7 @@ L100:
 	goto L101
 L101:
 	;
-	v318 = *(*int32)(unsafe.Add(mBase, uint32(v316)+uint32(_consts[84])))
+	v318 = *(*int32)(unsafe.Add(mBase, uint32(v316)+uint32(_c_F_genericZpopCommand[5])))
 	*(*int32)(unsafe.Add(mBase, uint32(v21))) = v318
 	F_rewriteClientCommandVector(m, l0, int32(3), v21)
 	mBase = m.M
@@ -2023,7 +2023,7 @@ func F_genericZrangebyrankCommand(m *base.Module, l0 int32, l1 int32, l2 int32, 
 	}
 L1:
 	;
-	F__serverPanic_1(m, int32(_a1723), int32(3186), int32(_a1054), int32(0))
+	F__serverPanic_1(m, int32(_a_F_genericZrangebyrankCommand_0), int32(3186), int32(_a_F_genericZrangebyrankCommand_1), int32(0))
 	mBase = m.M
 	v516 = m.ExcPending
 	if v516 != 0 {
@@ -2033,7 +2033,7 @@ L1:
 	}
 L2:
 	;
-	F__serverAssertWithInfo(m, v22, l1, int32(_a106), int32(_a1723), int32(3180))
+	F__serverAssertWithInfo(m, v22, l1, int32(_a_F_genericZrangebyrankCommand_2), int32(_a_F_genericZrangebyrankCommand_0), int32(3180))
 	mBase = m.M
 	v509 = m.ExcPending
 	if v509 != 0 {
@@ -2043,7 +2043,7 @@ L2:
 	}
 L3:
 	;
-	F__serverAssertWithInfo(m, v22, l1, int32(_a1735), int32(_a1723), int32(3146))
+	F__serverAssertWithInfo(m, v22, l1, int32(_a_F_genericZrangebyrankCommand_3), int32(_a_F_genericZrangebyrankCommand_0), int32(3146))
 	mBase = m.M
 	v503 = m.ExcPending
 	if v503 != 0 {
@@ -2053,7 +2053,7 @@ L3:
 	}
 L4:
 	;
-	F__serverAssertWithInfo(m, v22, l1, int32(_a170), int32(_a1723), int32(3142))
+	F__serverAssertWithInfo(m, v22, l1, int32(_a_F_genericZrangebyrankCommand_4), int32(_a_F_genericZrangebyrankCommand_0), int32(3142))
 	mBase = m.M
 	v496 = m.ExcPending
 	if v496 != 0 {
@@ -2320,10 +2320,10 @@ L40:
 	v129 = F___errno_location(m)
 	mBase = m.M
 	*(*int32)(unsafe.Add(mBase, uint32(v129))) = v121
-	v135 = *(*int64)(unsafe.Add(mBase, _consts[378]))
+	v135 = *(*int64)(unsafe.Add(mBase, _c_F_genericZrangebyrankCommand[0]))
 	*(*int64)(unsafe.Add(mBase, uint32(v127+int32(8)))) = v135
 	*(*int64)(unsafe.Add(mBase, uint32(v127)+24)) = int64(0)
-	v140 = *(*int64)(unsafe.Add(mBase, _consts[379]))
+	v140 = *(*int64)(unsafe.Add(mBase, _c_F_genericZrangebyrankCommand[1]))
 	*(*int64)(unsafe.Add(mBase, uint32(v127))) = v140
 	F_ffc_from_chars_double_options(m, v127+int32(16), v116, v116+v120, v127+int32(24), v127)
 	mBase = m.M
@@ -3411,7 +3411,7 @@ L2:
 	}
 L3:
 	;
-	F__serverPanic_1(m, int32(_a1723), int32(3316), int32(_a1054), int32(0))
+	F__serverPanic_1(m, int32(_a_F_genericZrangebyscoreCommand_0), int32(3316), int32(_a_F_genericZrangebyscoreCommand_1), int32(0))
 	mBase = m.M
 	v1200 = m.ExcPending
 	if v1200 != 0 {
@@ -3421,7 +3421,7 @@ L3:
 	}
 L4:
 	;
-	F__serverAssert(m, int32(_a169), int32(_a1723), int32(857))
+	F__serverAssert(m, int32(_a_F_genericZrangebyscoreCommand_2), int32(_a_F_genericZrangebyscoreCommand_0), int32(857))
 	mBase = m.M
 	v1193 = m.ExcPending
 	if v1193 != 0 {
@@ -3689,10 +3689,10 @@ L40:
 	v142 = F___errno_location(m)
 	mBase = m.M
 	*(*int32)(unsafe.Add(mBase, uint32(v142))) = v134
-	v148 = *(*int64)(unsafe.Add(mBase, _consts[378]))
+	v148 = *(*int64)(unsafe.Add(mBase, _c_F_genericZrangebyscoreCommand[0]))
 	*(*int64)(unsafe.Add(mBase, uint32(v140+int32(8)))) = v148
 	*(*int64)(unsafe.Add(mBase, uint32(v140)+24)) = int64(0)
-	v153 = *(*int64)(unsafe.Add(mBase, _consts[379]))
+	v153 = *(*int64)(unsafe.Add(mBase, _c_F_genericZrangebyscoreCommand[1]))
 	*(*int64)(unsafe.Add(mBase, uint32(v140))) = v153
 	F_ffc_from_chars_double_options(m, v140+int32(16), v129, v129+v133, v140+int32(24), v140)
 	mBase = m.M
@@ -5135,7 +5135,7 @@ func F_popGenericCommand(m *base.Module, l0 int32, l1 int32) {
 					m.G0 = v9 + int32(16)
 					return
 				} else {
-					v33 = int32(_a1677)
+					v33 = int32(_a_F_popGenericCommand_0)
 					v34 = *(*int32)(unsafe.Add(mBase, uint32(l0)+20))
 					v35 = *(*int32)(unsafe.Add(mBase, uint32(v34)+4))
 					v36 = int32(*(*uint8)(unsafe.Add(mBase, uint32(l0)+224)))
@@ -5242,7 +5242,7 @@ func F_popGenericCommand(m *base.Module, l0 int32, l1 int32) {
 													return
 												} else {
 													if v55 == int32(0) {
-														F__serverAssert(m, int32(_a1678), int32(_a1674), int32(784))
+														F__serverAssert(m, int32(_a_F_popGenericCommand_1), int32(_a_F_popGenericCommand_2), int32(784))
 														mBase = m.M
 														v108 = m.ExcPending
 														if v108 != 0 {
@@ -5357,7 +5357,7 @@ func F_popGenericCommand(m *base.Module, l0 int32, l1 int32) {
 														return
 													} else {
 														if v55 == int32(0) {
-															F__serverAssert(m, int32(_a1678), int32(_a1674), int32(784))
+															F__serverAssert(m, int32(_a_F_popGenericCommand_1), int32(_a_F_popGenericCommand_2), int32(784))
 															mBase = m.M
 															v108 = m.ExcPending
 															if v108 != 0 {
@@ -5391,7 +5391,7 @@ func F_popGenericCommand(m *base.Module, l0 int32, l1 int32) {
 												}
 											}
 										} else {
-											v52 = *(*int32)(unsafe.Add(mBase, _consts[542]))
+											v52 = *(*int32)(unsafe.Add(mBase, _c_F_popGenericCommand[0]))
 											F_addReply(m, l0, v52)
 											mBase = m.M
 											v54 = m.ExcPending
@@ -5410,7 +5410,7 @@ func F_popGenericCommand(m *base.Module, l0 int32, l1 int32) {
 				}
 			}
 		} else {
-			v33 = int32(_a1679)
+			v33 = int32(_a_F_popGenericCommand_3)
 			v34 = *(*int32)(unsafe.Add(mBase, uint32(l0)+20))
 			v35 = *(*int32)(unsafe.Add(mBase, uint32(v34)+4))
 			v36 = int32(*(*uint8)(unsafe.Add(mBase, uint32(l0)+224)))
@@ -5517,7 +5517,7 @@ func F_popGenericCommand(m *base.Module, l0 int32, l1 int32) {
 											return
 										} else {
 											if v55 == int32(0) {
-												F__serverAssert(m, int32(_a1678), int32(_a1674), int32(784))
+												F__serverAssert(m, int32(_a_F_popGenericCommand_1), int32(_a_F_popGenericCommand_2), int32(784))
 												mBase = m.M
 												v108 = m.ExcPending
 												if v108 != 0 {
@@ -5632,7 +5632,7 @@ func F_popGenericCommand(m *base.Module, l0 int32, l1 int32) {
 												return
 											} else {
 												if v55 == int32(0) {
-													F__serverAssert(m, int32(_a1678), int32(_a1674), int32(784))
+													F__serverAssert(m, int32(_a_F_popGenericCommand_1), int32(_a_F_popGenericCommand_2), int32(784))
 													mBase = m.M
 													v108 = m.ExcPending
 													if v108 != 0 {
@@ -5666,7 +5666,7 @@ func F_popGenericCommand(m *base.Module, l0 int32, l1 int32) {
 										}
 									}
 								} else {
-									v52 = *(*int32)(unsafe.Add(mBase, _consts[542]))
+									v52 = *(*int32)(unsafe.Add(mBase, _c_F_popGenericCommand[0]))
 									F_addReply(m, l0, v52)
 									mBase = m.M
 									v54 = m.ExcPending
@@ -6088,7 +6088,7 @@ L3:
 	goto L1
 L4:
 	;
-	F__serverPanic_1(m, int32(_a550), int32(1361), int32(_a569), int32(0))
+	F__serverPanic_1(m, int32(_a_F_scanGenericCommandWithOptions_0), int32(1361), int32(_a_F_scanGenericCommandWithOptions_1), int32(0))
 	mBase = m.M
 	v649 = m.ExcPending
 	if v649 != 0 {
@@ -6117,7 +6117,7 @@ L6:
 	}
 L7:
 	;
-	F__serverAssert(m, int32(_a570), int32(_a550), int32(1301))
+	F__serverAssert(m, int32(_a_F_scanGenericCommandWithOptions_2), int32(_a_F_scanGenericCommandWithOptions_0), int32(1301))
 	mBase = m.M
 	v186 = m.ExcPending
 	if v186 != 0 {
@@ -6161,7 +6161,7 @@ L12:
 	goto L11
 L13:
 	;
-	F__serverAssert(m, int32(_a571), int32(_a550), int32(1232))
+	F__serverAssert(m, int32(_a_F_scanGenericCommandWithOptions_3), int32(_a_F_scanGenericCommandWithOptions_0), int32(1232))
 	mBase = m.M
 	v115 = m.ExcPending
 	if v115 != 0 {
@@ -6330,7 +6330,7 @@ L32:
 	}
 L33:
 	;
-	v107 = *(*int32)(unsafe.Add(mBase, _consts[139]))
+	v107 = *(*int32)(unsafe.Add(mBase, _c_F_scanGenericCommandWithOptions[0]))
 	if v107 == int32(0) {
 		v122 = v25
 		v124 = v101
@@ -6358,7 +6358,7 @@ L36:
 	goto L10
 L37:
 	;
-	F__serverAssert(m, int32(_a572), int32(_a550), int32(1303))
+	F__serverAssert(m, int32(_a_F_scanGenericCommandWithOptions_4), int32(_a_F_scanGenericCommandWithOptions_0), int32(1303))
 	mBase = m.M
 	v132 = m.ExcPending
 	if v132 != 0 {
@@ -7056,8 +7056,8 @@ L132:
 	}
 L133:
 	;
-	*(*int32)(unsafe.Add(mBase, uint32(v18))) = v523<<(uint(int32(2))%32) + int32(_a573)
-	v548 = F_sdscatfmt(m, v538, int32(_a226), v18)
+	*(*int32)(unsafe.Add(mBase, uint32(v18))) = v523<<(uint(int32(2))%32) + int32(_a_F_scanGenericCommandWithOptions_5)
+	v548 = F_sdscatfmt(m, v538, int32(_a_F_scanGenericCommandWithOptions_6), v18)
 	mBase = m.M
 	v549 = m.ExcPending
 	if v549 != 0 {
@@ -7100,8 +7100,8 @@ L138:
 	v558 = *(*int32)(unsafe.Add(mBase, uint32(l4)+12))
 	*(*int32)(unsafe.Add(mBase, uint32(v18)+16)) = v558
 	*(*int64)(unsafe.Add(mBase, uint32(v18)+24)) = v513
-	*(*int32)(unsafe.Add(mBase, uint32(v18)+20)) = int32(_a225) + base.I32_wrap_i64(v513)&int32(16383)<<(uint(int32(2))%32)
-	v572 = F_sdscatfmt(m, v556, int32(_a574), v18+int32(16))
+	*(*int32)(unsafe.Add(mBase, uint32(v18)+20)) = int32(_a_F_scanGenericCommandWithOptions_7) + base.I32_wrap_i64(v513)&int32(16383)<<(uint(int32(2))%32)
+	v572 = F_sdscatfmt(m, v556, int32(_a_F_scanGenericCommandWithOptions_8), v18+int32(16))
 	mBase = m.M
 	v573 = m.ExcPending
 	if v573 != 0 {

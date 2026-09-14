@@ -31,7 +31,7 @@ func F_vsetIsEmpty(m *base.Module, l0 int32) int32 {
 	if v2 != 0 {
 		return base.B2i32(v2 == int32(-1))
 	} else {
-		F__serverAssert(m, int32(_a1878), int32(_a1861), int32(2363))
+		F__serverAssert(m, int32(_a_F_vsetIsEmpty_0), int32(_a_F_vsetIsEmpty_1), int32(2363))
 		mBase = m.M
 		v9 = m.ExcPending
 		if v9 != 0 {
@@ -173,7 +173,7 @@ L2:
 	}
 L3:
 	;
-	F__serverAssert(m, int32(_a1864), int32(_a1861), int32(781))
+	F__serverAssert(m, int32(_a_F_vsetMemUsage_0), int32(_a_F_vsetMemUsage_1), int32(781))
 	mBase = m.M
 	v18 = m.ExcPending
 	if v18 != 0 {
@@ -207,7 +207,7 @@ L6:
 	}
 L7:
 	;
-	F__serverAssert(m, int32(_a1874), int32(_a1861), int32(1696))
+	F__serverAssert(m, int32(_a_F_vsetMemUsage_2), int32(_a_F_vsetMemUsage_1), int32(1696))
 	mBase = m.M
 	v141 = m.ExcPending
 	if v141 != 0 {
@@ -217,7 +217,7 @@ L7:
 	}
 L8:
 	;
-	F__serverAssert(m, int32(_a1868), int32(_a1861), int32(1710))
+	F__serverAssert(m, int32(_a_F_vsetMemUsage_3), int32(_a_F_vsetMemUsage_1), int32(1710))
 	mBase = m.M
 	v135 = m.ExcPending
 	if v135 != 0 {
@@ -227,7 +227,7 @@ L8:
 	}
 L9:
 	;
-	F__serverAssert(m, int32(_a1874), int32(_a1861), int32(1696))
+	F__serverAssert(m, int32(_a_F_vsetMemUsage_2), int32(_a_F_vsetMemUsage_1), int32(1696))
 	mBase = m.M
 	v129 = m.ExcPending
 	if v129 != 0 {
@@ -237,7 +237,7 @@ L9:
 	}
 L10:
 	;
-	F__serverPanic_1(m, int32(_a1861), int32(2264), int32(_a1875), int32(0))
+	F__serverPanic_1(m, int32(_a_F_vsetMemUsage_1), int32(2264), int32(_a_F_vsetMemUsage_4), int32(0))
 	mBase = m.M
 	v123 = m.ExcPending
 	if v123 != 0 {
@@ -257,7 +257,7 @@ L12:
 	goto L17
 L13:
 	;
-	F__serverPanic_1(m, int32(_a1861), int32(2260), int32(_a1876), int32(0))
+	F__serverPanic_1(m, int32(_a_F_vsetMemUsage_1), int32(2260), int32(_a_F_vsetMemUsage_5), int32(0))
 	mBase = m.M
 	v37 = m.ExcPending
 	if v37 != 0 {
@@ -300,7 +300,7 @@ L17:
 L18:
 	;
 	v60 = int32(0)
-	v62 = F_raxSeek(m, v6, int32(_a263), v60, v60)
+	v62 = F_raxSeek(m, v6, int32(_a_F_vsetMemUsage_6), v60, v60)
 	mBase = m.M
 	v63 = m.ExcPending
 	if v63 != 0 {
@@ -383,7 +383,7 @@ L27:
 	}
 L28:
 	;
-	F__serverAssert(m, int32(_a1864), int32(_a1861), int32(781))
+	F__serverAssert(m, int32(_a_F_vsetMemUsage_0), int32(_a_F_vsetMemUsage_1), int32(781))
 	mBase = m.M
 	v80 = m.ExcPending
 	if v80 != 0 {
@@ -420,7 +420,7 @@ L31:
 	}
 L32:
 	;
-	F__serverPanic_1(m, int32(_a1861), int32(1726), int32(_a1877), int32(0))
+	F__serverPanic_1(m, int32(_a_F_vsetMemUsage_1), int32(1726), int32(_a_F_vsetMemUsage_7), int32(0))
 	mBase = m.M
 	v102 = m.ExcPending
 	if v102 != 0 {

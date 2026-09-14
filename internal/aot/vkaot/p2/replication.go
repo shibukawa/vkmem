@@ -40,10 +40,10 @@ func F_freeReplicationBacklog(m *base.Module) {
 	_ = v47
 	var v53 int32
 	_ = v53
-	v4 = *(*int32)(unsafe.Add(mBase, _consts[158]))
+	v4 = *(*int32)(unsafe.Add(mBase, _c_F_freeReplicationBacklog[0]))
 	v5 = *(*int32)(unsafe.Add(mBase, uint32(v4)+20))
 	if v5 != 0 {
-		F__serverAssert(m, int32(_a1189), int32(_a1190), int32(160))
+		F__serverAssert(m, int32(_a_F_freeReplicationBacklog_0), int32(_a_F_freeReplicationBacklog_1), int32(160))
 		mBase = m.M
 		v47 = m.ExcPending
 		if v47 != 0 {
@@ -56,13 +56,13 @@ func F_freeReplicationBacklog(m *base.Module) {
 			}
 		}
 	} else {
-		v7 = *(*int32)(unsafe.Add(mBase, _consts[370]))
+		v7 = *(*int32)(unsafe.Add(mBase, _c_F_freeReplicationBacklog[1]))
 		if v7 == int32(0) {
 			return
 		} else {
 			v10 = *(*int32)(unsafe.Add(mBase, uint32(v7)))
 			if v10 == int32(0) {
-				v21 = *(*int32)(unsafe.Add(mBase, _consts[217]))
+				v21 = *(*int32)(unsafe.Add(mBase, _c_F_freeReplicationBacklog[2]))
 				v22 = *(*int32)(unsafe.Add(mBase, uint32(v7)+8))
 				F_freeReplicationBacklogRefMemAsync(m, v21, v22)
 				mBase = m.M
@@ -70,24 +70,24 @@ func F_freeReplicationBacklog(m *base.Module) {
 				if v24 != 0 {
 					return
 				} else {
-					v25 = int32(_a44)
-					*(*int32)(unsafe.Add(mBase, _consts[288])) = int32(0)
+					v25 = int32(_a_F_freeReplicationBacklog_2)
+					*(*int32)(unsafe.Add(mBase, _c_F_freeReplicationBacklog[3])) = int32(0)
 					v29 = F_listCreate(m)
 					mBase = m.M
 					v30 = m.ExcPending
 					if v30 != 0 {
 						return
 					} else {
-						*(*int32)(unsafe.Add(mBase, _consts[217])) = v29
+						*(*int32)(unsafe.Add(mBase, _c_F_freeReplicationBacklog[2])) = v29
 						*(*int32)(unsafe.Add(mBase, uint32(v29)+12)) = int32(102)
-						v35 = *(*int32)(unsafe.Add(mBase, _consts[370]))
+						v35 = *(*int32)(unsafe.Add(mBase, _c_F_freeReplicationBacklog[1]))
 						F_valkey_free(m, v35)
 						mBase = m.M
 						v37 = m.ExcPending
 						if v37 != 0 {
 							return
 						} else {
-							*(*int32)(unsafe.Add(mBase, _consts[370])) = int32(0)
+							*(*int32)(unsafe.Add(mBase, _c_F_freeReplicationBacklog[1])) = int32(0)
 							return
 						}
 					}
@@ -96,7 +96,7 @@ func F_freeReplicationBacklog(m *base.Module) {
 				v13 = *(*int32)(unsafe.Add(mBase, uint32(v10)+8))
 				v14 = *(*int32)(unsafe.Add(mBase, uint32(v13)))
 				if v14 != int32(1) {
-					F__serverAssert(m, int32(_a1191), int32(_a1190), int32(166))
+					F__serverAssert(m, int32(_a_F_freeReplicationBacklog_3), int32(_a_F_freeReplicationBacklog_1), int32(166))
 					mBase = m.M
 					v53 = m.ExcPending
 					if v53 != 0 {
@@ -110,7 +110,7 @@ func F_freeReplicationBacklog(m *base.Module) {
 					}
 				} else {
 					*(*int32)(unsafe.Add(mBase, uint32(v13))) = int32(0)
-					v21 = *(*int32)(unsafe.Add(mBase, _consts[217]))
+					v21 = *(*int32)(unsafe.Add(mBase, _c_F_freeReplicationBacklog[2]))
 					v22 = *(*int32)(unsafe.Add(mBase, uint32(v7)+8))
 					F_freeReplicationBacklogRefMemAsync(m, v21, v22)
 					mBase = m.M
@@ -118,24 +118,24 @@ func F_freeReplicationBacklog(m *base.Module) {
 					if v24 != 0 {
 						return
 					} else {
-						v25 = int32(_a44)
-						*(*int32)(unsafe.Add(mBase, _consts[288])) = int32(0)
+						v25 = int32(_a_F_freeReplicationBacklog_2)
+						*(*int32)(unsafe.Add(mBase, _c_F_freeReplicationBacklog[3])) = int32(0)
 						v29 = F_listCreate(m)
 						mBase = m.M
 						v30 = m.ExcPending
 						if v30 != 0 {
 							return
 						} else {
-							*(*int32)(unsafe.Add(mBase, _consts[217])) = v29
+							*(*int32)(unsafe.Add(mBase, _c_F_freeReplicationBacklog[2])) = v29
 							*(*int32)(unsafe.Add(mBase, uint32(v29)+12)) = int32(102)
-							v35 = *(*int32)(unsafe.Add(mBase, _consts[370]))
+							v35 = *(*int32)(unsafe.Add(mBase, _c_F_freeReplicationBacklog[1]))
 							F_valkey_free(m, v35)
 							mBase = m.M
 							v37 = m.ExcPending
 							if v37 != 0 {
 								return
 							} else {
-								*(*int32)(unsafe.Add(mBase, _consts[370])) = int32(0)
+								*(*int32)(unsafe.Add(mBase, _c_F_freeReplicationBacklog[1])) = int32(0)
 								return
 							}
 						}
@@ -178,9 +178,9 @@ func F_replicationAbortDualChannelSyncTransfer(m *base.Module) {
 	_ = v54
 	var v64 int32
 	_ = v64
-	v3 = *(*int32)(unsafe.Add(mBase, _consts[697]))
+	v3 = *(*int32)(unsafe.Add(mBase, _c_F_replicationAbortDualChannelSyncTransfer[0]))
 	if v3 == int32(0) {
-		F__serverAssert(m, int32(_a1256), int32(_a1190), int32(2983))
+		F__serverAssert(m, int32(_a_F_replicationAbortDualChannelSyncTransfer_0), int32(_a_F_replicationAbortDualChannelSyncTransfer_1), int32(2983))
 		mBase = m.M
 		v64 = m.ExcPending
 		if v64 != 0 {
@@ -193,9 +193,9 @@ func F_replicationAbortDualChannelSyncTransfer(m *base.Module) {
 			}
 		}
 	} else {
-		v7 = *(*int32)(unsafe.Add(mBase, _consts[6]))
+		v7 = *(*int32)(unsafe.Add(mBase, _c_F_replicationAbortDualChannelSyncTransfer[1]))
 		if int32(2) < v7 {
-			v16 = *(*int32)(unsafe.Add(mBase, _consts[699]))
+			v16 = *(*int32)(unsafe.Add(mBase, _c_F_replicationAbortDualChannelSyncTransfer[2]))
 			if v16 == int32(0) {
 				F_cleanupTransferResources(m)
 				mBase = m.M
@@ -203,20 +203,20 @@ func F_replicationAbortDualChannelSyncTransfer(m *base.Module) {
 				if v27 != 0 {
 					return
 				} else {
-					v28 = int32(_a44)
+					v28 = int32(_a_F_replicationAbortDualChannelSyncTransfer_2)
 					v29 = int64(0)
-					*(*int64)(unsafe.Add(mBase, _consts[679])) = v29
+					*(*int64)(unsafe.Add(mBase, _c_F_replicationAbortDualChannelSyncTransfer[3])) = v29
 					v32 = int32(0)
-					*(*int32)(unsafe.Add(mBase, _consts[700])) = v32
-					*(*int32)(unsafe.Add(mBase, _consts[697])) = v32
-					*(*int32)(unsafe.Add(mBase, _consts[681])) = int32(-1)
-					*(*int64)(unsafe.Add(mBase, _consts[698])) = int64(-1)
-					*(*int64)(unsafe.Add(mBase, _consts[688])) = v29
-					v49 = *(*int32)(unsafe.Add(mBase, _consts[695]))
+					*(*int32)(unsafe.Add(mBase, _c_F_replicationAbortDualChannelSyncTransfer[4])) = v32
+					*(*int32)(unsafe.Add(mBase, _c_F_replicationAbortDualChannelSyncTransfer[0])) = v32
+					*(*int32)(unsafe.Add(mBase, _c_F_replicationAbortDualChannelSyncTransfer[5])) = int32(-1)
+					*(*int64)(unsafe.Add(mBase, _c_F_replicationAbortDualChannelSyncTransfer[6])) = int64(-1)
+					*(*int64)(unsafe.Add(mBase, _c_F_replicationAbortDualChannelSyncTransfer[7])) = v29
+					v49 = *(*int32)(unsafe.Add(mBase, _c_F_replicationAbortDualChannelSyncTransfer[8]))
 					if v49 == v32 {
-						v54 = int32(_a44)
-						*(*int32)(unsafe.Add(mBase, _consts[696])) = int32(0)
-						*(*int64)(unsafe.Add(mBase, _consts[695])) = int64(0)
+						v54 = int32(_a_F_replicationAbortDualChannelSyncTransfer_2)
+						*(*int32)(unsafe.Add(mBase, _c_F_replicationAbortDualChannelSyncTransfer[9])) = int32(0)
+						*(*int64)(unsafe.Add(mBase, _c_F_replicationAbortDualChannelSyncTransfer[8])) = int64(0)
 						return
 					} else {
 						F_freePendingReplDataBufAsync(m, v49)
@@ -225,9 +225,9 @@ func F_replicationAbortDualChannelSyncTransfer(m *base.Module) {
 						if v53 != 0 {
 							return
 						} else {
-							v54 = int32(_a44)
-							*(*int32)(unsafe.Add(mBase, _consts[696])) = int32(0)
-							*(*int64)(unsafe.Add(mBase, _consts[695])) = int64(0)
+							v54 = int32(_a_F_replicationAbortDualChannelSyncTransfer_2)
+							*(*int32)(unsafe.Add(mBase, _c_F_replicationAbortDualChannelSyncTransfer[9])) = int32(0)
+							*(*int64)(unsafe.Add(mBase, _c_F_replicationAbortDualChannelSyncTransfer[8])) = int64(0)
 							return
 						}
 					}
@@ -241,27 +241,27 @@ func F_replicationAbortDualChannelSyncTransfer(m *base.Module) {
 				if v22 != 0 {
 					return
 				} else {
-					*(*int32)(unsafe.Add(mBase, _consts[699])) = int32(0)
+					*(*int32)(unsafe.Add(mBase, _c_F_replicationAbortDualChannelSyncTransfer[2])) = int32(0)
 					F_cleanupTransferResources(m)
 					mBase = m.M
 					v27 = m.ExcPending
 					if v27 != 0 {
 						return
 					} else {
-						v28 = int32(_a44)
+						v28 = int32(_a_F_replicationAbortDualChannelSyncTransfer_2)
 						v29 = int64(0)
-						*(*int64)(unsafe.Add(mBase, _consts[679])) = v29
+						*(*int64)(unsafe.Add(mBase, _c_F_replicationAbortDualChannelSyncTransfer[3])) = v29
 						v32 = int32(0)
-						*(*int32)(unsafe.Add(mBase, _consts[700])) = v32
-						*(*int32)(unsafe.Add(mBase, _consts[697])) = v32
-						*(*int32)(unsafe.Add(mBase, _consts[681])) = int32(-1)
-						*(*int64)(unsafe.Add(mBase, _consts[698])) = int64(-1)
-						*(*int64)(unsafe.Add(mBase, _consts[688])) = v29
-						v49 = *(*int32)(unsafe.Add(mBase, _consts[695]))
+						*(*int32)(unsafe.Add(mBase, _c_F_replicationAbortDualChannelSyncTransfer[4])) = v32
+						*(*int32)(unsafe.Add(mBase, _c_F_replicationAbortDualChannelSyncTransfer[0])) = v32
+						*(*int32)(unsafe.Add(mBase, _c_F_replicationAbortDualChannelSyncTransfer[5])) = int32(-1)
+						*(*int64)(unsafe.Add(mBase, _c_F_replicationAbortDualChannelSyncTransfer[6])) = int64(-1)
+						*(*int64)(unsafe.Add(mBase, _c_F_replicationAbortDualChannelSyncTransfer[7])) = v29
+						v49 = *(*int32)(unsafe.Add(mBase, _c_F_replicationAbortDualChannelSyncTransfer[8]))
 						if v49 == v32 {
-							v54 = int32(_a44)
-							*(*int32)(unsafe.Add(mBase, _consts[696])) = int32(0)
-							*(*int64)(unsafe.Add(mBase, _consts[695])) = int64(0)
+							v54 = int32(_a_F_replicationAbortDualChannelSyncTransfer_2)
+							*(*int32)(unsafe.Add(mBase, _c_F_replicationAbortDualChannelSyncTransfer[9])) = int32(0)
+							*(*int64)(unsafe.Add(mBase, _c_F_replicationAbortDualChannelSyncTransfer[8])) = int64(0)
 							return
 						} else {
 							F_freePendingReplDataBufAsync(m, v49)
@@ -270,9 +270,9 @@ func F_replicationAbortDualChannelSyncTransfer(m *base.Module) {
 							if v53 != 0 {
 								return
 							} else {
-								v54 = int32(_a44)
-								*(*int32)(unsafe.Add(mBase, _consts[696])) = int32(0)
-								*(*int64)(unsafe.Add(mBase, _consts[695])) = int64(0)
+								v54 = int32(_a_F_replicationAbortDualChannelSyncTransfer_2)
+								*(*int32)(unsafe.Add(mBase, _c_F_replicationAbortDualChannelSyncTransfer[9])) = int32(0)
+								*(*int64)(unsafe.Add(mBase, _c_F_replicationAbortDualChannelSyncTransfer[8])) = int64(0)
 								return
 							}
 						}
@@ -280,13 +280,13 @@ func F_replicationAbortDualChannelSyncTransfer(m *base.Module) {
 				}
 			}
 		} else {
-			F__serverLog(m, int32(2), int32(_a1257), int32(0))
+			F__serverLog(m, int32(2), int32(_a_F_replicationAbortDualChannelSyncTransfer_3), int32(0))
 			mBase = m.M
 			v14 = m.ExcPending
 			if v14 != 0 {
 				return
 			} else {
-				v16 = *(*int32)(unsafe.Add(mBase, _consts[699]))
+				v16 = *(*int32)(unsafe.Add(mBase, _c_F_replicationAbortDualChannelSyncTransfer[2]))
 				if v16 == int32(0) {
 					F_cleanupTransferResources(m)
 					mBase = m.M
@@ -294,20 +294,20 @@ func F_replicationAbortDualChannelSyncTransfer(m *base.Module) {
 					if v27 != 0 {
 						return
 					} else {
-						v28 = int32(_a44)
+						v28 = int32(_a_F_replicationAbortDualChannelSyncTransfer_2)
 						v29 = int64(0)
-						*(*int64)(unsafe.Add(mBase, _consts[679])) = v29
+						*(*int64)(unsafe.Add(mBase, _c_F_replicationAbortDualChannelSyncTransfer[3])) = v29
 						v32 = int32(0)
-						*(*int32)(unsafe.Add(mBase, _consts[700])) = v32
-						*(*int32)(unsafe.Add(mBase, _consts[697])) = v32
-						*(*int32)(unsafe.Add(mBase, _consts[681])) = int32(-1)
-						*(*int64)(unsafe.Add(mBase, _consts[698])) = int64(-1)
-						*(*int64)(unsafe.Add(mBase, _consts[688])) = v29
-						v49 = *(*int32)(unsafe.Add(mBase, _consts[695]))
+						*(*int32)(unsafe.Add(mBase, _c_F_replicationAbortDualChannelSyncTransfer[4])) = v32
+						*(*int32)(unsafe.Add(mBase, _c_F_replicationAbortDualChannelSyncTransfer[0])) = v32
+						*(*int32)(unsafe.Add(mBase, _c_F_replicationAbortDualChannelSyncTransfer[5])) = int32(-1)
+						*(*int64)(unsafe.Add(mBase, _c_F_replicationAbortDualChannelSyncTransfer[6])) = int64(-1)
+						*(*int64)(unsafe.Add(mBase, _c_F_replicationAbortDualChannelSyncTransfer[7])) = v29
+						v49 = *(*int32)(unsafe.Add(mBase, _c_F_replicationAbortDualChannelSyncTransfer[8]))
 						if v49 == v32 {
-							v54 = int32(_a44)
-							*(*int32)(unsafe.Add(mBase, _consts[696])) = int32(0)
-							*(*int64)(unsafe.Add(mBase, _consts[695])) = int64(0)
+							v54 = int32(_a_F_replicationAbortDualChannelSyncTransfer_2)
+							*(*int32)(unsafe.Add(mBase, _c_F_replicationAbortDualChannelSyncTransfer[9])) = int32(0)
+							*(*int64)(unsafe.Add(mBase, _c_F_replicationAbortDualChannelSyncTransfer[8])) = int64(0)
 							return
 						} else {
 							F_freePendingReplDataBufAsync(m, v49)
@@ -316,9 +316,9 @@ func F_replicationAbortDualChannelSyncTransfer(m *base.Module) {
 							if v53 != 0 {
 								return
 							} else {
-								v54 = int32(_a44)
-								*(*int32)(unsafe.Add(mBase, _consts[696])) = int32(0)
-								*(*int64)(unsafe.Add(mBase, _consts[695])) = int64(0)
+								v54 = int32(_a_F_replicationAbortDualChannelSyncTransfer_2)
+								*(*int32)(unsafe.Add(mBase, _c_F_replicationAbortDualChannelSyncTransfer[9])) = int32(0)
+								*(*int64)(unsafe.Add(mBase, _c_F_replicationAbortDualChannelSyncTransfer[8])) = int64(0)
 								return
 							}
 						}
@@ -332,27 +332,27 @@ func F_replicationAbortDualChannelSyncTransfer(m *base.Module) {
 					if v22 != 0 {
 						return
 					} else {
-						*(*int32)(unsafe.Add(mBase, _consts[699])) = int32(0)
+						*(*int32)(unsafe.Add(mBase, _c_F_replicationAbortDualChannelSyncTransfer[2])) = int32(0)
 						F_cleanupTransferResources(m)
 						mBase = m.M
 						v27 = m.ExcPending
 						if v27 != 0 {
 							return
 						} else {
-							v28 = int32(_a44)
+							v28 = int32(_a_F_replicationAbortDualChannelSyncTransfer_2)
 							v29 = int64(0)
-							*(*int64)(unsafe.Add(mBase, _consts[679])) = v29
+							*(*int64)(unsafe.Add(mBase, _c_F_replicationAbortDualChannelSyncTransfer[3])) = v29
 							v32 = int32(0)
-							*(*int32)(unsafe.Add(mBase, _consts[700])) = v32
-							*(*int32)(unsafe.Add(mBase, _consts[697])) = v32
-							*(*int32)(unsafe.Add(mBase, _consts[681])) = int32(-1)
-							*(*int64)(unsafe.Add(mBase, _consts[698])) = int64(-1)
-							*(*int64)(unsafe.Add(mBase, _consts[688])) = v29
-							v49 = *(*int32)(unsafe.Add(mBase, _consts[695]))
+							*(*int32)(unsafe.Add(mBase, _c_F_replicationAbortDualChannelSyncTransfer[4])) = v32
+							*(*int32)(unsafe.Add(mBase, _c_F_replicationAbortDualChannelSyncTransfer[0])) = v32
+							*(*int32)(unsafe.Add(mBase, _c_F_replicationAbortDualChannelSyncTransfer[5])) = int32(-1)
+							*(*int64)(unsafe.Add(mBase, _c_F_replicationAbortDualChannelSyncTransfer[6])) = int64(-1)
+							*(*int64)(unsafe.Add(mBase, _c_F_replicationAbortDualChannelSyncTransfer[7])) = v29
+							v49 = *(*int32)(unsafe.Add(mBase, _c_F_replicationAbortDualChannelSyncTransfer[8]))
 							if v49 == v32 {
-								v54 = int32(_a44)
-								*(*int32)(unsafe.Add(mBase, _consts[696])) = int32(0)
-								*(*int64)(unsafe.Add(mBase, _consts[695])) = int64(0)
+								v54 = int32(_a_F_replicationAbortDualChannelSyncTransfer_2)
+								*(*int32)(unsafe.Add(mBase, _c_F_replicationAbortDualChannelSyncTransfer[9])) = int32(0)
+								*(*int64)(unsafe.Add(mBase, _c_F_replicationAbortDualChannelSyncTransfer[8])) = int64(0)
 								return
 							} else {
 								F_freePendingReplDataBufAsync(m, v49)
@@ -361,9 +361,9 @@ func F_replicationAbortDualChannelSyncTransfer(m *base.Module) {
 								if v53 != 0 {
 									return
 								} else {
-									v54 = int32(_a44)
-									*(*int32)(unsafe.Add(mBase, _consts[696])) = int32(0)
-									*(*int64)(unsafe.Add(mBase, _consts[695])) = int64(0)
+									v54 = int32(_a_F_replicationAbortDualChannelSyncTransfer_2)
+									*(*int32)(unsafe.Add(mBase, _c_F_replicationAbortDualChannelSyncTransfer[9])) = int32(0)
+									*(*int64)(unsafe.Add(mBase, _c_F_replicationAbortDualChannelSyncTransfer[8])) = int64(0)
 									return
 								}
 							}
@@ -424,7 +424,7 @@ func F_replicationCountAcksByOffset(m *base.Module, l0 int64) int32 {
 	v5 = m.G0
 	v7 = v5 - int32(16)
 	m.G0 = v7
-	v10 = *(*int32)(unsafe.Add(mBase, _consts[158]))
+	v10 = *(*int32)(unsafe.Add(mBase, _c_F_replicationCountAcksByOffset[0]))
 	v12 = v7 + int32(8)
 	v13 = *(*int32)(unsafe.Add(mBase, uint32(v10)))
 	*(*int32)(unsafe.Add(mBase, uint32(v12)+4)) = int32(0)
@@ -558,45 +558,45 @@ func F_replicationCreatePrimaryClientWithHandler(m *base.Module, l0 int32, l1 in
 	if v8 != 0 {
 		return
 	} else {
-		*(*int32)(unsafe.Add(mBase, _consts[188])) = v7
+		*(*int32)(unsafe.Add(mBase, _c_F_replicationCreatePrimaryClientWithHandler[0])) = v7
 		if l0 == int32(0) {
 			v19 = v7
 			v20 = *(*int32)(unsafe.Add(mBase, uint32(v19)+200))
 			*(*int32)(unsafe.Add(mBase, uint32(v19)+200)) = v20 | int32(1)
-			v25 = *(*int32)(unsafe.Add(mBase, _consts[188]))
+			v25 = *(*int32)(unsafe.Add(mBase, _c_F_replicationCreatePrimaryClientWithHandler[0]))
 			*(*int32)(unsafe.Add(mBase, uint32(v25)+328)) = int32(0)
 			v30 = *(*int32)(unsafe.Add(mBase, uint32(v25)+204))
-			*(*int32)(unsafe.Add(mBase, uint32(v25)+204)) = v30&int32(-25165825) | int32(_a0) | int32(16777216)
+			*(*int32)(unsafe.Add(mBase, uint32(v25)+204)) = v30&int32(-25165825) | int32(_a_F_replicationCreatePrimaryClientWithHandler_0) | int32(16777216)
 			v45 = F_sdsempty(m)
 			mBase = m.M
 			v46 = m.ExcPending
 			if v46 != 0 {
 				return
 			} else {
-				v48 = *(*int32)(unsafe.Add(mBase, _consts[188]))
+				v48 = *(*int32)(unsafe.Add(mBase, _c_F_replicationCreatePrimaryClientWithHandler[0]))
 				*(*int32)(unsafe.Add(mBase, uint32(v48)+12)) = v45
 				v50 = *(*int32)(unsafe.Add(mBase, uint32(v48)+104))
 				if v50 != 0 {
 					v58 = v48
 					v59 = v50
-					v60 = int32(_a44)
-					v61 = *(*int64)(unsafe.Add(mBase, _consts[672]))
+					v60 = int32(_a_F_replicationCreatePrimaryClientWithHandler_1)
+					v61 = *(*int64)(unsafe.Add(mBase, _c_F_replicationCreatePrimaryClientWithHandler[1]))
 					*(*int64)(unsafe.Add(mBase, uint32(v59)+40)) = v61
 					*(*int64)(unsafe.Add(mBase, uint32(v59)+48)) = v61
 					*(*int32)(unsafe.Add(mBase, uint32(v58)+328)) = int32(0)
-					v71 = int32(*(*uint8)(unsafe.Add(mBase, _consts[673])))
+					v71 = int32(*(*uint8)(unsafe.Add(mBase, _c_F_replicationCreatePrimaryClientWithHandler[2])))
 					*(*uint8)(unsafe.Add(mBase, uint32(v59+int32(144)))) = uint8(v71)
-					v78 = *(*int64)(unsafe.Add(mBase, _consts[674]))
+					v78 = *(*int64)(unsafe.Add(mBase, _c_F_replicationCreatePrimaryClientWithHandler[3]))
 					*(*int64)(unsafe.Add(mBase, uint32(v59+int32(136)))) = v78
-					v85 = *(*int64)(unsafe.Add(mBase, _consts[675]))
+					v85 = *(*int64)(unsafe.Add(mBase, _c_F_replicationCreatePrimaryClientWithHandler[4]))
 					*(*int64)(unsafe.Add(mBase, uint32(v59+int32(128)))) = v85
-					v92 = *(*int64)(unsafe.Add(mBase, _consts[676]))
+					v92 = *(*int64)(unsafe.Add(mBase, _c_F_replicationCreatePrimaryClientWithHandler[5]))
 					*(*int64)(unsafe.Add(mBase, uint32(v59+int32(120)))) = v92
-					v99 = *(*int64)(unsafe.Add(mBase, _consts[677]))
+					v99 = *(*int64)(unsafe.Add(mBase, _c_F_replicationCreatePrimaryClientWithHandler[6]))
 					*(*int64)(unsafe.Add(mBase, uint32(v59+int32(112)))) = v99
-					v102 = *(*int64)(unsafe.Add(mBase, _consts[678]))
+					v102 = *(*int64)(unsafe.Add(mBase, _c_F_replicationCreatePrimaryClientWithHandler[7]))
 					*(*int64)(unsafe.Add(mBase, uint32(v59)+104)) = v102
-					v105 = *(*int32)(unsafe.Add(mBase, _consts[188]))
+					v105 = *(*int32)(unsafe.Add(mBase, _c_F_replicationCreatePrimaryClientWithHandler[0]))
 					v106 = *(*int32)(unsafe.Add(mBase, uint32(v105)+104))
 					v107 = *(*int64)(unsafe.Add(mBase, uint32(v106)+48))
 					if v107 != int64(-1) {
@@ -607,7 +607,7 @@ func F_replicationCreatePrimaryClientWithHandler(m *base.Module, l0 int32, l1 in
 					if l1 == int32(-1) {
 						return
 					} else {
-						v117 = *(*int32)(unsafe.Add(mBase, _consts[188]))
+						v117 = *(*int32)(unsafe.Add(mBase, _c_F_replicationCreatePrimaryClientWithHandler[0]))
 						v118 = F_selectDb(m, v117, l1)
 						mBase = m.M
 						v119 = m.ExcPending
@@ -625,28 +625,28 @@ func F_replicationCreatePrimaryClientWithHandler(m *base.Module, l0 int32, l1 in
 						return
 					} else {
 						*(*int32)(unsafe.Add(mBase, uint32(v48)+104)) = v52
-						v56 = *(*int32)(unsafe.Add(mBase, _consts[188]))
+						v56 = *(*int32)(unsafe.Add(mBase, _c_F_replicationCreatePrimaryClientWithHandler[0]))
 						v57 = *(*int32)(unsafe.Add(mBase, uint32(v56)+104))
 						v58 = v56
 						v59 = v57
-						v60 = int32(_a44)
-						v61 = *(*int64)(unsafe.Add(mBase, _consts[672]))
+						v60 = int32(_a_F_replicationCreatePrimaryClientWithHandler_1)
+						v61 = *(*int64)(unsafe.Add(mBase, _c_F_replicationCreatePrimaryClientWithHandler[1]))
 						*(*int64)(unsafe.Add(mBase, uint32(v59)+40)) = v61
 						*(*int64)(unsafe.Add(mBase, uint32(v59)+48)) = v61
 						*(*int32)(unsafe.Add(mBase, uint32(v58)+328)) = int32(0)
-						v71 = int32(*(*uint8)(unsafe.Add(mBase, _consts[673])))
+						v71 = int32(*(*uint8)(unsafe.Add(mBase, _c_F_replicationCreatePrimaryClientWithHandler[2])))
 						*(*uint8)(unsafe.Add(mBase, uint32(v59+int32(144)))) = uint8(v71)
-						v78 = *(*int64)(unsafe.Add(mBase, _consts[674]))
+						v78 = *(*int64)(unsafe.Add(mBase, _c_F_replicationCreatePrimaryClientWithHandler[3]))
 						*(*int64)(unsafe.Add(mBase, uint32(v59+int32(136)))) = v78
-						v85 = *(*int64)(unsafe.Add(mBase, _consts[675]))
+						v85 = *(*int64)(unsafe.Add(mBase, _c_F_replicationCreatePrimaryClientWithHandler[4]))
 						*(*int64)(unsafe.Add(mBase, uint32(v59+int32(128)))) = v85
-						v92 = *(*int64)(unsafe.Add(mBase, _consts[676]))
+						v92 = *(*int64)(unsafe.Add(mBase, _c_F_replicationCreatePrimaryClientWithHandler[5]))
 						*(*int64)(unsafe.Add(mBase, uint32(v59+int32(120)))) = v92
-						v99 = *(*int64)(unsafe.Add(mBase, _consts[677]))
+						v99 = *(*int64)(unsafe.Add(mBase, _c_F_replicationCreatePrimaryClientWithHandler[6]))
 						*(*int64)(unsafe.Add(mBase, uint32(v59+int32(112)))) = v99
-						v102 = *(*int64)(unsafe.Add(mBase, _consts[678]))
+						v102 = *(*int64)(unsafe.Add(mBase, _c_F_replicationCreatePrimaryClientWithHandler[7]))
 						*(*int64)(unsafe.Add(mBase, uint32(v59)+104)) = v102
-						v105 = *(*int32)(unsafe.Add(mBase, _consts[188]))
+						v105 = *(*int32)(unsafe.Add(mBase, _c_F_replicationCreatePrimaryClientWithHandler[0]))
 						v106 = *(*int32)(unsafe.Add(mBase, uint32(v105)+104))
 						v107 = *(*int64)(unsafe.Add(mBase, uint32(v106)+48))
 						if v107 != int64(-1) {
@@ -657,7 +657,7 @@ func F_replicationCreatePrimaryClientWithHandler(m *base.Module, l0 int32, l1 in
 						if l1 == int32(-1) {
 							return
 						} else {
-							v117 = *(*int32)(unsafe.Add(mBase, _consts[188]))
+							v117 = *(*int32)(unsafe.Add(mBase, _c_F_replicationCreatePrimaryClientWithHandler[0]))
 							v118 = F_selectDb(m, v117, l1)
 							mBase = m.M
 							v119 = m.ExcPending
@@ -680,44 +680,44 @@ func F_replicationCreatePrimaryClientWithHandler(m *base.Module, l0 int32, l1 in
 			if v16 != 0 {
 				return
 			} else {
-				v18 = *(*int32)(unsafe.Add(mBase, _consts[188]))
+				v18 = *(*int32)(unsafe.Add(mBase, _c_F_replicationCreatePrimaryClientWithHandler[0]))
 				v19 = v18
 				v20 = *(*int32)(unsafe.Add(mBase, uint32(v19)+200))
 				*(*int32)(unsafe.Add(mBase, uint32(v19)+200)) = v20 | int32(1)
-				v25 = *(*int32)(unsafe.Add(mBase, _consts[188]))
+				v25 = *(*int32)(unsafe.Add(mBase, _c_F_replicationCreatePrimaryClientWithHandler[0]))
 				*(*int32)(unsafe.Add(mBase, uint32(v25)+328)) = int32(0)
 				v30 = *(*int32)(unsafe.Add(mBase, uint32(v25)+204))
-				*(*int32)(unsafe.Add(mBase, uint32(v25)+204)) = v30&int32(-25165825) | int32(_a0) | int32(16777216)
+				*(*int32)(unsafe.Add(mBase, uint32(v25)+204)) = v30&int32(-25165825) | int32(_a_F_replicationCreatePrimaryClientWithHandler_0) | int32(16777216)
 				v45 = F_sdsempty(m)
 				mBase = m.M
 				v46 = m.ExcPending
 				if v46 != 0 {
 					return
 				} else {
-					v48 = *(*int32)(unsafe.Add(mBase, _consts[188]))
+					v48 = *(*int32)(unsafe.Add(mBase, _c_F_replicationCreatePrimaryClientWithHandler[0]))
 					*(*int32)(unsafe.Add(mBase, uint32(v48)+12)) = v45
 					v50 = *(*int32)(unsafe.Add(mBase, uint32(v48)+104))
 					if v50 != 0 {
 						v58 = v48
 						v59 = v50
-						v60 = int32(_a44)
-						v61 = *(*int64)(unsafe.Add(mBase, _consts[672]))
+						v60 = int32(_a_F_replicationCreatePrimaryClientWithHandler_1)
+						v61 = *(*int64)(unsafe.Add(mBase, _c_F_replicationCreatePrimaryClientWithHandler[1]))
 						*(*int64)(unsafe.Add(mBase, uint32(v59)+40)) = v61
 						*(*int64)(unsafe.Add(mBase, uint32(v59)+48)) = v61
 						*(*int32)(unsafe.Add(mBase, uint32(v58)+328)) = int32(0)
-						v71 = int32(*(*uint8)(unsafe.Add(mBase, _consts[673])))
+						v71 = int32(*(*uint8)(unsafe.Add(mBase, _c_F_replicationCreatePrimaryClientWithHandler[2])))
 						*(*uint8)(unsafe.Add(mBase, uint32(v59+int32(144)))) = uint8(v71)
-						v78 = *(*int64)(unsafe.Add(mBase, _consts[674]))
+						v78 = *(*int64)(unsafe.Add(mBase, _c_F_replicationCreatePrimaryClientWithHandler[3]))
 						*(*int64)(unsafe.Add(mBase, uint32(v59+int32(136)))) = v78
-						v85 = *(*int64)(unsafe.Add(mBase, _consts[675]))
+						v85 = *(*int64)(unsafe.Add(mBase, _c_F_replicationCreatePrimaryClientWithHandler[4]))
 						*(*int64)(unsafe.Add(mBase, uint32(v59+int32(128)))) = v85
-						v92 = *(*int64)(unsafe.Add(mBase, _consts[676]))
+						v92 = *(*int64)(unsafe.Add(mBase, _c_F_replicationCreatePrimaryClientWithHandler[5]))
 						*(*int64)(unsafe.Add(mBase, uint32(v59+int32(120)))) = v92
-						v99 = *(*int64)(unsafe.Add(mBase, _consts[677]))
+						v99 = *(*int64)(unsafe.Add(mBase, _c_F_replicationCreatePrimaryClientWithHandler[6]))
 						*(*int64)(unsafe.Add(mBase, uint32(v59+int32(112)))) = v99
-						v102 = *(*int64)(unsafe.Add(mBase, _consts[678]))
+						v102 = *(*int64)(unsafe.Add(mBase, _c_F_replicationCreatePrimaryClientWithHandler[7]))
 						*(*int64)(unsafe.Add(mBase, uint32(v59)+104)) = v102
-						v105 = *(*int32)(unsafe.Add(mBase, _consts[188]))
+						v105 = *(*int32)(unsafe.Add(mBase, _c_F_replicationCreatePrimaryClientWithHandler[0]))
 						v106 = *(*int32)(unsafe.Add(mBase, uint32(v105)+104))
 						v107 = *(*int64)(unsafe.Add(mBase, uint32(v106)+48))
 						if v107 != int64(-1) {
@@ -728,7 +728,7 @@ func F_replicationCreatePrimaryClientWithHandler(m *base.Module, l0 int32, l1 in
 						if l1 == int32(-1) {
 							return
 						} else {
-							v117 = *(*int32)(unsafe.Add(mBase, _consts[188]))
+							v117 = *(*int32)(unsafe.Add(mBase, _c_F_replicationCreatePrimaryClientWithHandler[0]))
 							v118 = F_selectDb(m, v117, l1)
 							mBase = m.M
 							v119 = m.ExcPending
@@ -746,28 +746,28 @@ func F_replicationCreatePrimaryClientWithHandler(m *base.Module, l0 int32, l1 in
 							return
 						} else {
 							*(*int32)(unsafe.Add(mBase, uint32(v48)+104)) = v52
-							v56 = *(*int32)(unsafe.Add(mBase, _consts[188]))
+							v56 = *(*int32)(unsafe.Add(mBase, _c_F_replicationCreatePrimaryClientWithHandler[0]))
 							v57 = *(*int32)(unsafe.Add(mBase, uint32(v56)+104))
 							v58 = v56
 							v59 = v57
-							v60 = int32(_a44)
-							v61 = *(*int64)(unsafe.Add(mBase, _consts[672]))
+							v60 = int32(_a_F_replicationCreatePrimaryClientWithHandler_1)
+							v61 = *(*int64)(unsafe.Add(mBase, _c_F_replicationCreatePrimaryClientWithHandler[1]))
 							*(*int64)(unsafe.Add(mBase, uint32(v59)+40)) = v61
 							*(*int64)(unsafe.Add(mBase, uint32(v59)+48)) = v61
 							*(*int32)(unsafe.Add(mBase, uint32(v58)+328)) = int32(0)
-							v71 = int32(*(*uint8)(unsafe.Add(mBase, _consts[673])))
+							v71 = int32(*(*uint8)(unsafe.Add(mBase, _c_F_replicationCreatePrimaryClientWithHandler[2])))
 							*(*uint8)(unsafe.Add(mBase, uint32(v59+int32(144)))) = uint8(v71)
-							v78 = *(*int64)(unsafe.Add(mBase, _consts[674]))
+							v78 = *(*int64)(unsafe.Add(mBase, _c_F_replicationCreatePrimaryClientWithHandler[3]))
 							*(*int64)(unsafe.Add(mBase, uint32(v59+int32(136)))) = v78
-							v85 = *(*int64)(unsafe.Add(mBase, _consts[675]))
+							v85 = *(*int64)(unsafe.Add(mBase, _c_F_replicationCreatePrimaryClientWithHandler[4]))
 							*(*int64)(unsafe.Add(mBase, uint32(v59+int32(128)))) = v85
-							v92 = *(*int64)(unsafe.Add(mBase, _consts[676]))
+							v92 = *(*int64)(unsafe.Add(mBase, _c_F_replicationCreatePrimaryClientWithHandler[5]))
 							*(*int64)(unsafe.Add(mBase, uint32(v59+int32(120)))) = v92
-							v99 = *(*int64)(unsafe.Add(mBase, _consts[677]))
+							v99 = *(*int64)(unsafe.Add(mBase, _c_F_replicationCreatePrimaryClientWithHandler[6]))
 							*(*int64)(unsafe.Add(mBase, uint32(v59+int32(112)))) = v99
-							v102 = *(*int64)(unsafe.Add(mBase, _consts[678]))
+							v102 = *(*int64)(unsafe.Add(mBase, _c_F_replicationCreatePrimaryClientWithHandler[7]))
 							*(*int64)(unsafe.Add(mBase, uint32(v59)+104)) = v102
-							v105 = *(*int32)(unsafe.Add(mBase, _consts[188]))
+							v105 = *(*int32)(unsafe.Add(mBase, _c_F_replicationCreatePrimaryClientWithHandler[0]))
 							v106 = *(*int32)(unsafe.Add(mBase, uint32(v105)+104))
 							v107 = *(*int64)(unsafe.Add(mBase, uint32(v106)+48))
 							if v107 != int64(-1) {
@@ -778,7 +778,7 @@ func F_replicationCreatePrimaryClientWithHandler(m *base.Module, l0 int32, l1 in
 							if l1 == int32(-1) {
 								return
 							} else {
-								v117 = *(*int32)(unsafe.Add(mBase, _consts[188]))
+								v117 = *(*int32)(unsafe.Add(mBase, _c_F_replicationCreatePrimaryClientWithHandler[0]))
 								v118 = F_selectDb(m, v117, l1)
 								mBase = m.M
 								v119 = m.ExcPending
@@ -816,18 +816,18 @@ func F_replicationGetReplicaOffset(m *base.Module) int64 {
 	_ = v21
 	var v24 int64
 	_ = v24
-	v5 = *(*int32)(unsafe.Add(mBase, _consts[130]))
+	v5 = *(*int32)(unsafe.Add(mBase, _c_F_replicationGetReplicaOffset[0]))
 	if v5 == int32(0) {
 		v19 = int64(0)
 	} else {
-		v9 = *(*int32)(unsafe.Add(mBase, _consts[188]))
+		v9 = *(*int32)(unsafe.Add(mBase, _c_F_replicationGetReplicaOffset[1]))
 		if v9 != 0 {
 			v16 = v9
 			v17 = *(*int32)(unsafe.Add(mBase, uint32(v16)+104))
 			v18 = *(*int64)(unsafe.Add(mBase, uint32(v17)+48))
 			v19 = v18
 		} else {
-			v12 = *(*int32)(unsafe.Add(mBase, _consts[189]))
+			v12 = *(*int32)(unsafe.Add(mBase, _c_F_replicationGetReplicaOffset[2]))
 			if v12 == int32(0) {
 				v19 = int64(0)
 			} else {
@@ -903,15 +903,15 @@ func F_resetReplicationBuffer(m *base.Module) {
 	_ = v6
 	var v7 int32
 	_ = v7
-	v2 = int32(_a44)
-	*(*int32)(unsafe.Add(mBase, _consts[288])) = int32(0)
+	v2 = int32(_a_F_resetReplicationBuffer_0)
+	*(*int32)(unsafe.Add(mBase, _c_F_resetReplicationBuffer[0])) = int32(0)
 	v6 = F_listCreate(m)
 	mBase = m.M
 	v7 = m.ExcPending
 	if v7 != 0 {
 		return
 	} else {
-		*(*int32)(unsafe.Add(mBase, _consts[217])) = v6
+		*(*int32)(unsafe.Add(mBase, _c_F_resetReplicationBuffer[1])) = v6
 		*(*int32)(unsafe.Add(mBase, uint32(v6)+12)) = int32(102)
 		return
 	}

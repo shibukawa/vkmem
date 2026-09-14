@@ -40,7 +40,7 @@ func F_luaK_checkstack(m *base.Module, l0 int32, l1 int32) {
 		} else {
 			v11 = m.G3
 			v12 = *(*int32)(unsafe.Add(mBase, uint32(l0)+12))
-			F_luaX_syntaxerror(m, v12, v11+int32(_a2674))
+			F_luaX_syntaxerror(m, v12, v11+int32(_a_F_luaK_checkstack_0))
 			mBase = m.M
 			v16 = m.ExcPending
 			if v16 != 0 {
@@ -566,7 +566,7 @@ L21:
 	;
 	v95 = m.G3
 	v96 = *(*int32)(unsafe.Add(mBase, uint32(l0)+12))
-	F_luaX_syntaxerror(m, v96, v95+int32(_a2673))
+	F_luaX_syntaxerror(m, v96, v95+int32(_a_F_luaK_goiftrue_0))
 	mBase = m.M
 	v100 = m.ExcPending
 	if v100 != 0 {
@@ -645,7 +645,7 @@ L33:
 	;
 	v164 = m.G3
 	v165 = *(*int32)(unsafe.Add(mBase, uint32(l0)+12))
-	F_luaX_syntaxerror(m, v165, v164+int32(_a2673))
+	F_luaX_syntaxerror(m, v165, v164+int32(_a_F_luaK_goiftrue_0))
 	mBase = m.M
 	v169 = m.ExcPending
 	if v169 != 0 {
@@ -802,7 +802,7 @@ L13:
 	;
 	v59 = m.G3
 	v60 = *(*int32)(unsafe.Add(mBase, uint32(l0)+12))
-	F_luaX_syntaxerror(m, v60, v59+int32(_a2673))
+	F_luaX_syntaxerror(m, v60, v59+int32(_a_F_luaK_jump_0))
 	mBase = m.M
 	v64 = m.ExcPending
 	if v64 != 0 {
@@ -965,7 +965,7 @@ func F_luaK_self(m *base.Module, l0 int32, l1 int32, l2 int32) {
 					} else {
 						v46 = m.G3
 						v47 = *(*int32)(unsafe.Add(mBase, uint32(l0)+12))
-						F_luaX_syntaxerror(m, v47, v46+int32(_a2674))
+						F_luaX_syntaxerror(m, v47, v46+int32(_a_F_luaK_self_0))
 						mBase = m.M
 						v51 = m.ExcPending
 						if v51 != 0 {
@@ -1119,7 +1119,7 @@ func F_luaK_self(m *base.Module, l0 int32, l1 int32, l2 int32) {
 					} else {
 						v46 = m.G3
 						v47 = *(*int32)(unsafe.Add(mBase, uint32(l0)+12))
-						F_luaX_syntaxerror(m, v47, v46+int32(_a2674))
+						F_luaX_syntaxerror(m, v47, v46+int32(_a_F_luaK_self_0))
 						mBase = m.M
 						v51 = m.ExcPending
 						if v51 != 0 {
@@ -1278,7 +1278,7 @@ func F_luaK_self(m *base.Module, l0 int32, l1 int32, l2 int32) {
 							} else {
 								v46 = m.G3
 								v47 = *(*int32)(unsafe.Add(mBase, uint32(l0)+12))
-								F_luaX_syntaxerror(m, v47, v46+int32(_a2674))
+								F_luaX_syntaxerror(m, v47, v46+int32(_a_F_luaK_self_0))
 								mBase = m.M
 								v51 = m.ExcPending
 								if v51 != 0 {
@@ -1435,7 +1435,7 @@ func F_luaK_self(m *base.Module, l0 int32, l1 int32, l2 int32) {
 							} else {
 								v46 = m.G3
 								v47 = *(*int32)(unsafe.Add(mBase, uint32(l0)+12))
-								F_luaX_syntaxerror(m, v47, v46+int32(_a2674))
+								F_luaX_syntaxerror(m, v47, v46+int32(_a_F_luaK_self_0))
 								mBase = m.M
 								v51 = m.ExcPending
 								if v51 != 0 {

@@ -139,7 +139,7 @@ L3:
 	}
 L4:
 	;
-	v30 = *(*int32)(unsafe.Add(mBase, _consts[139]))
+	v30 = *(*int32)(unsafe.Add(mBase, _c_F_addKeysToIncrFindBatch[0]))
 	if v30 == int32(0) {
 		v130 = v8
 		goto L5
@@ -445,9 +445,9 @@ func F_countKeysInSlot(m *base.Module, l0 int32) int32 {
 	_ = v49
 	var v53 int32
 	_ = v53
-	v9 = *(*int32)(unsafe.Add(mBase, _consts[65]))
+	v9 = *(*int32)(unsafe.Add(mBase, _c_F_countKeysInSlot[0]))
 	if int32(1) <= v9 {
-		v14 = *(*int32)(unsafe.Add(mBase, _consts[137]))
+		v14 = *(*int32)(unsafe.Add(mBase, _c_F_countKeysInSlot[1]))
 		v15 = int32(0)
 		v18 = v9
 		v19 = v15
@@ -471,9 +471,9 @@ func F_countKeysInSlot(m *base.Module, l0 int32) int32 {
 				} else {
 					v39 = int32(0)
 				}
-				v40 = int32(_a44)
-				v41 = *(*int32)(unsafe.Add(mBase, _consts[65]))
-				v43 = *(*int32)(unsafe.Add(mBase, _consts[137]))
+				v40 = int32(_a_F_countKeysInSlot_0)
+				v41 = *(*int32)(unsafe.Add(mBase, _c_F_countKeysInSlot[0]))
+				v43 = *(*int32)(unsafe.Add(mBase, _c_F_countKeysInSlot[1]))
 				v44 = v41
 				v45 = v43
 				v46 = v39
@@ -791,7 +791,7 @@ L8:
 	;
 	v44 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v21))))
 	v49 = base.B2i32(v44 == int32(42)) & base.B2i32(v41 == int32(1))
-	v51 = *(*int32)(unsafe.Add(mBase, _consts[139]))
+	v51 = *(*int32)(unsafe.Add(mBase, _c_F_keysCommand[0]))
 	if v51 == int32(0) {
 		goto L11
 	} else {
@@ -986,8 +986,8 @@ L39:
 	v144 = m.G0
 	v146 = v144 - int32(16)
 	m.G0 = v146
-	v149 = *(*int32)(unsafe.Add(mBase, _consts[136]))
-	v150 = *(*int32)(unsafe.Add(mBase, uint32(v149)+uint32(_consts[212])))
+	v149 = *(*int32)(unsafe.Add(mBase, _c_F_keysCommand[1]))
+	v150 = *(*int32)(unsafe.Add(mBase, uint32(v149)+uint32(_c_F_keysCommand[2])))
 	F_listRewind(m, v150, v146)
 	mBase = m.M
 	v153 = F_listNext(m, v146)
@@ -1248,7 +1248,7 @@ L76:
 	}
 L77:
 	;
-	v316 = *(*int32)(unsafe.Add(mBase, _consts[131]))
+	v316 = *(*int32)(unsafe.Add(mBase, _c_F_keysCommand[3]))
 	if v316 != 0 {
 		goto L87
 	} else {
@@ -1380,7 +1380,7 @@ L94:
 	goto L92
 L95:
 	;
-	v341 = *(*int32)(unsafe.Add(mBase, _consts[130]))
+	v341 = *(*int32)(unsafe.Add(mBase, _c_F_keysCommand[4]))
 	if v341 != 0 {
 		v381 = v234
 		goto L76
@@ -1389,7 +1389,7 @@ L95:
 	}
 L96:
 	;
-	v343 = *(*int32)(unsafe.Add(mBase, _consts[132]))
+	v343 = *(*int32)(unsafe.Add(mBase, _c_F_keysCommand[5]))
 	if v343 == int32(0) {
 		v381 = v234
 		goto L76
@@ -1398,7 +1398,7 @@ L96:
 	}
 L97:
 	;
-	v347 = *(*int32)(unsafe.Add(mBase, _consts[67]))
+	v347 = *(*int32)(unsafe.Add(mBase, _c_F_keysCommand[6]))
 	if v347 == int32(0) {
 		v381 = v234
 		goto L76
@@ -1626,7 +1626,7 @@ func F_keysScanCallback(m *base.Module, l0 int32, l1 int32, l2 int32) {
 		}
 		v64 = *(*int32)(unsafe.Add(mBase, uint32(l0)+24))
 		if v64 == int32(0) {
-			v130 = *(*int32)(unsafe.Add(mBase, _consts[131]))
+			v130 = *(*int32)(unsafe.Add(mBase, _c_F_keysScanCallback[0]))
 			if v130 != 0 {
 				v178 = *(*int32)(unsafe.Add(mBase, uint32(l0)))
 				v182 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v63+int32(-1)))))
@@ -1707,7 +1707,7 @@ func F_keysScanCallback(m *base.Module, l0 int32, l1 int32, l2 int32) {
 						return
 					}
 				} else {
-					v155 = *(*int32)(unsafe.Add(mBase, _consts[130]))
+					v155 = *(*int32)(unsafe.Add(mBase, _c_F_keysScanCallback[1]))
 					if v155 != 0 {
 						*(*int32)(unsafe.Add(mBase, uint32(v14)+12)) = v63
 						*(*int64)(unsafe.Add(mBase, uint32(v14)+4)) = int64(-68719476736)
@@ -1756,7 +1756,7 @@ func F_keysScanCallback(m *base.Module, l0 int32, l1 int32, l2 int32) {
 							}
 						}
 					} else {
-						v157 = *(*int32)(unsafe.Add(mBase, _consts[132]))
+						v157 = *(*int32)(unsafe.Add(mBase, _c_F_keysScanCallback[2]))
 						if v157 == int32(0) {
 							*(*int32)(unsafe.Add(mBase, uint32(v14)+12)) = v63
 							*(*int64)(unsafe.Add(mBase, uint32(v14)+4)) = int64(-68719476736)
@@ -1805,7 +1805,7 @@ func F_keysScanCallback(m *base.Module, l0 int32, l1 int32, l2 int32) {
 								}
 							}
 						} else {
-							v161 = *(*int32)(unsafe.Add(mBase, _consts[67]))
+							v161 = *(*int32)(unsafe.Add(mBase, _c_F_keysScanCallback[3]))
 							if v161 == int32(0) {
 								*(*int32)(unsafe.Add(mBase, uint32(v14)+12)) = v63
 								*(*int64)(unsafe.Add(mBase, uint32(v14)+4)) = int64(-68719476736)
@@ -1993,7 +1993,7 @@ func F_keysScanCallback(m *base.Module, l0 int32, l1 int32, l2 int32) {
 				m.G0 = v14 + int32(16)
 				return
 			} else {
-				v130 = *(*int32)(unsafe.Add(mBase, _consts[131]))
+				v130 = *(*int32)(unsafe.Add(mBase, _c_F_keysScanCallback[0]))
 				if v130 != 0 {
 					v178 = *(*int32)(unsafe.Add(mBase, uint32(l0)))
 					v182 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v63+int32(-1)))))
@@ -2074,7 +2074,7 @@ func F_keysScanCallback(m *base.Module, l0 int32, l1 int32, l2 int32) {
 							return
 						}
 					} else {
-						v155 = *(*int32)(unsafe.Add(mBase, _consts[130]))
+						v155 = *(*int32)(unsafe.Add(mBase, _c_F_keysScanCallback[1]))
 						if v155 != 0 {
 							*(*int32)(unsafe.Add(mBase, uint32(v14)+12)) = v63
 							*(*int64)(unsafe.Add(mBase, uint32(v14)+4)) = int64(-68719476736)
@@ -2123,7 +2123,7 @@ func F_keysScanCallback(m *base.Module, l0 int32, l1 int32, l2 int32) {
 								}
 							}
 						} else {
-							v157 = *(*int32)(unsafe.Add(mBase, _consts[132]))
+							v157 = *(*int32)(unsafe.Add(mBase, _c_F_keysScanCallback[2]))
 							if v157 == int32(0) {
 								*(*int32)(unsafe.Add(mBase, uint32(v14)+12)) = v63
 								*(*int64)(unsafe.Add(mBase, uint32(v14)+4)) = int64(-68719476736)
@@ -2172,7 +2172,7 @@ func F_keysScanCallback(m *base.Module, l0 int32, l1 int32, l2 int32) {
 									}
 								}
 							} else {
-								v161 = *(*int32)(unsafe.Add(mBase, _consts[67]))
+								v161 = *(*int32)(unsafe.Add(mBase, _c_F_keysScanCallback[3]))
 								if v161 == int32(0) {
 									*(*int32)(unsafe.Add(mBase, uint32(v14)+12)) = v63
 									*(*int64)(unsafe.Add(mBase, uint32(v14)+4)) = int64(-68719476736)
@@ -2336,7 +2336,7 @@ func F_keysScanCallback(m *base.Module, l0 int32, l1 int32, l2 int32) {
 			}
 			v64 = *(*int32)(unsafe.Add(mBase, uint32(l0)+24))
 			if v64 == int32(0) {
-				v130 = *(*int32)(unsafe.Add(mBase, _consts[131]))
+				v130 = *(*int32)(unsafe.Add(mBase, _c_F_keysScanCallback[0]))
 				if v130 != 0 {
 					v178 = *(*int32)(unsafe.Add(mBase, uint32(l0)))
 					v182 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v63+int32(-1)))))
@@ -2417,7 +2417,7 @@ func F_keysScanCallback(m *base.Module, l0 int32, l1 int32, l2 int32) {
 							return
 						}
 					} else {
-						v155 = *(*int32)(unsafe.Add(mBase, _consts[130]))
+						v155 = *(*int32)(unsafe.Add(mBase, _c_F_keysScanCallback[1]))
 						if v155 != 0 {
 							*(*int32)(unsafe.Add(mBase, uint32(v14)+12)) = v63
 							*(*int64)(unsafe.Add(mBase, uint32(v14)+4)) = int64(-68719476736)
@@ -2466,7 +2466,7 @@ func F_keysScanCallback(m *base.Module, l0 int32, l1 int32, l2 int32) {
 								}
 							}
 						} else {
-							v157 = *(*int32)(unsafe.Add(mBase, _consts[132]))
+							v157 = *(*int32)(unsafe.Add(mBase, _c_F_keysScanCallback[2]))
 							if v157 == int32(0) {
 								*(*int32)(unsafe.Add(mBase, uint32(v14)+12)) = v63
 								*(*int64)(unsafe.Add(mBase, uint32(v14)+4)) = int64(-68719476736)
@@ -2515,7 +2515,7 @@ func F_keysScanCallback(m *base.Module, l0 int32, l1 int32, l2 int32) {
 									}
 								}
 							} else {
-								v161 = *(*int32)(unsafe.Add(mBase, _consts[67]))
+								v161 = *(*int32)(unsafe.Add(mBase, _c_F_keysScanCallback[3]))
 								if v161 == int32(0) {
 									*(*int32)(unsafe.Add(mBase, uint32(v14)+12)) = v63
 									*(*int64)(unsafe.Add(mBase, uint32(v14)+4)) = int64(-68719476736)
@@ -2703,7 +2703,7 @@ func F_keysScanCallback(m *base.Module, l0 int32, l1 int32, l2 int32) {
 					m.G0 = v14 + int32(16)
 					return
 				} else {
-					v130 = *(*int32)(unsafe.Add(mBase, _consts[131]))
+					v130 = *(*int32)(unsafe.Add(mBase, _c_F_keysScanCallback[0]))
 					if v130 != 0 {
 						v178 = *(*int32)(unsafe.Add(mBase, uint32(l0)))
 						v182 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v63+int32(-1)))))
@@ -2784,7 +2784,7 @@ func F_keysScanCallback(m *base.Module, l0 int32, l1 int32, l2 int32) {
 								return
 							}
 						} else {
-							v155 = *(*int32)(unsafe.Add(mBase, _consts[130]))
+							v155 = *(*int32)(unsafe.Add(mBase, _c_F_keysScanCallback[1]))
 							if v155 != 0 {
 								*(*int32)(unsafe.Add(mBase, uint32(v14)+12)) = v63
 								*(*int64)(unsafe.Add(mBase, uint32(v14)+4)) = int64(-68719476736)
@@ -2833,7 +2833,7 @@ func F_keysScanCallback(m *base.Module, l0 int32, l1 int32, l2 int32) {
 									}
 								}
 							} else {
-								v157 = *(*int32)(unsafe.Add(mBase, _consts[132]))
+								v157 = *(*int32)(unsafe.Add(mBase, _c_F_keysScanCallback[2]))
 								if v157 == int32(0) {
 									*(*int32)(unsafe.Add(mBase, uint32(v14)+12)) = v63
 									*(*int64)(unsafe.Add(mBase, uint32(v14)+4)) = int64(-68719476736)
@@ -2882,7 +2882,7 @@ func F_keysScanCallback(m *base.Module, l0 int32, l1 int32, l2 int32) {
 										}
 									}
 								} else {
-									v161 = *(*int32)(unsafe.Add(mBase, _consts[67]))
+									v161 = *(*int32)(unsafe.Add(mBase, _c_F_keysScanCallback[3]))
 									if v161 == int32(0) {
 										*(*int32)(unsafe.Add(mBase, uint32(v14)+12)) = v63
 										*(*int64)(unsafe.Add(mBase, uint32(v14)+4)) = int64(-68719476736)
@@ -3364,7 +3364,7 @@ func F_sortGetKeys(m *base.Module, l0 int32, l1 int32, l2 int32, l3 int32) int32
 	}
 L1:
 	;
-	F__serverAssert(m, int32(_a585), int32(_a550), int32(2292))
+	F__serverAssert(m, int32(_a_F_sortGetKeys_0), int32(_a_F_sortGetKeys_1), int32(2292))
 	mBase = m.M
 	v354 = m.ExcPending
 	if v354 != 0 {
@@ -3491,7 +3491,7 @@ L19:
 	v67 = *(*int32)(unsafe.Add(mBase, uint32(v66)))
 	v68 = F_objectGetVal(m, v67)
 	mBase = m.M
-	v69 = int32(_a586)
+	v69 = int32(_a_F_sortGetKeys_2)
 	v72 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v68))))
 	if v72 != 0 {
 		goto L26
@@ -3523,7 +3523,7 @@ L23:
 	v111 = *(*int32)(unsafe.Add(mBase, uint32(v66)))
 	v112 = F_objectGetVal(m, v111)
 	mBase = m.M
-	v113 = int32(_a587)
+	v113 = int32(_a_F_sortGetKeys_3)
 	v116 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v112))))
 	if v116 != 0 {
 		goto L42
@@ -3620,7 +3620,7 @@ L35:
 	goto L30
 L36:
 	;
-	v326 = int32(_a588)
+	v326 = int32(_a_F_sortGetKeys_4)
 	goto L22
 L37:
 	;
@@ -3638,7 +3638,7 @@ L39:
 	v153 = *(*int32)(unsafe.Add(mBase, uint32(v66)))
 	v154 = F_objectGetVal(m, v153)
 	mBase = m.M
-	v155 = int32(_a186)
+	v155 = int32(_a_F_sortGetKeys_5)
 	v158 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v154))))
 	if v158 != 0 {
 		goto L57
@@ -3748,7 +3748,7 @@ L54:
 	v195 = *(*int32)(unsafe.Add(mBase, uint32(v66)))
 	v196 = F_objectGetVal(m, v195)
 	mBase = m.M
-	v197 = int32(_a587)
+	v197 = int32(_a_F_sortGetKeys_3)
 	v200 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v196))))
 	if v200 != 0 {
 		goto L71
@@ -3845,14 +3845,14 @@ L66:
 	goto L61
 L67:
 	;
-	v326 = int32(_a589)
+	v326 = int32(_a_F_sortGetKeys_6)
 	goto L22
 L68:
 	;
 	v237 = *(*int32)(unsafe.Add(mBase, uint32(v66)))
 	v238 = F_objectGetVal(m, v237)
 	mBase = m.M
-	v239 = int32(_a590)
+	v239 = int32(_a_F_sortGetKeys_7)
 	v242 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v238))))
 	if v242 != 0 {
 		goto L86
@@ -3962,7 +3962,7 @@ L83:
 	v279 = *(*int32)(unsafe.Add(mBase, uint32(v66)))
 	v280 = F_objectGetVal(m, v279)
 	mBase = m.M
-	v281 = int32(_a587)
+	v281 = int32(_a_F_sortGetKeys_3)
 	v284 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v280))))
 	if v284 != 0 {
 		goto L99
@@ -4059,7 +4059,7 @@ L95:
 	goto L90
 L96:
 	;
-	v326 = int32(_a591)
+	v326 = int32(_a_F_sortGetKeys_8)
 	goto L22
 L97:
 	;

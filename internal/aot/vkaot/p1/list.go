@@ -59,7 +59,7 @@ func F_addListQuicklistRangeReply(m *base.Module, l0 int32, l1 int32, l2 int32, 
 	}
 L1:
 	;
-	F__serverAssert(m, int32(_a2385), int32(_a2378), int32(666))
+	F__serverAssert(m, int32(_a_F_addListQuicklistRangeReply_0), int32(_a_F_addListQuicklistRangeReply_1), int32(666))
 	mBase = m.M
 	v71 = m.ExcPending
 	if v71 != 0 {
@@ -1136,7 +1136,7 @@ func F_listTypeDelRange(m *base.Module, l0 int32, l1 int32, l2 int32) {
 			return
 		}
 	default:
-		F__serverPanic_1(m, int32(_a2378), int32(454), int32(_a2379), int32(0))
+		F__serverPanic_1(m, int32(_a_F_listTypeDelRange_0), int32(454), int32(_a_F_listTypeDelRange_1), int32(0))
 		mBase = m.M
 		v21 = m.ExcPending
 		if v21 != 0 {
@@ -1333,7 +1333,7 @@ func F_listTypeEqual(m *base.Module, l0 int32, l1 int32) int32 {
 				}
 			}
 		default:
-			F__serverPanic_1(m, int32(_a2378), int32(399), int32(_a2379), int32(0))
+			F__serverPanic_1(m, int32(_a_F_listTypeEqual_0), int32(399), int32(_a_F_listTypeEqual_1), int32(0))
 			mBase = m.M
 			v108 = m.ExcPending
 			if v108 != 0 {
@@ -1416,7 +1416,7 @@ func F_listTypeEqual(m *base.Module, l0 int32, l1 int32) int32 {
 			}
 		}
 	default:
-		F__serverAssertWithInfo(m, int32(0), l1, int32(_a2381), int32(_a2378), int32(393))
+		F__serverAssertWithInfo(m, int32(0), l1, int32(_a_F_listTypeEqual_2), int32(_a_F_listTypeEqual_0), int32(393))
 		mBase = m.M
 		v18 = m.ExcPending
 		if v18 != 0 {
@@ -1484,7 +1484,7 @@ func F_listTypeInitIterator(m *base.Module, l0 int32, l1 int32, l2 int32) int32 
 				return v7
 			}
 		default:
-			F__serverPanic_1(m, int32(_a2378), int32(237), int32(_a2379), int32(0))
+			F__serverPanic_1(m, int32(_a_F_listTypeInitIterator_0), int32(237), int32(_a_F_listTypeInitIterator_1), int32(0))
 			mBase = m.M
 			v31 = m.ExcPending
 			if v31 != 0 {
@@ -1552,7 +1552,7 @@ func F_listTypeNext(m *base.Module, l0 int32, l1 int32) int32 {
 	v6 = *(*int32)(unsafe.Add(mBase, uint32(v5)))
 	v11 = int32(*(*uint8)(unsafe.Add(mBase, uint32(l0)+4)))
 	if int32(base.Ui32(v6)>>(uint(int32(4))%32))&int32(15) != v11 {
-		F__serverAssert(m, int32(_a2380), int32(_a2378), int32(271))
+		F__serverAssert(m, int32(_a_F_listTypeNext_0), int32(_a_F_listTypeNext_1), int32(271))
 		mBase = m.M
 		v52 = m.ExcPending
 		if v52 != 0 {
@@ -1578,7 +1578,7 @@ func F_listTypeNext(m *base.Module, l0 int32, l1 int32) int32 {
 				return v45
 			}
 		default:
-			F__serverPanic_1(m, int32(_a2378), int32(284), int32(_a2379), int32(0))
+			F__serverPanic_1(m, int32(_a_F_listTypeNext_1), int32(284), int32(_a_F_listTypeNext_2), int32(0))
 			mBase = m.M
 			v40 = m.ExcPending
 			if v40 != 0 {
@@ -1798,7 +1798,7 @@ func F_listTypePush(m *base.Module, l0 int32, l1 int32, l2 int32) {
 	}
 L1:
 	;
-	F__serverPanic_1(m, int32(_a2378), int32(177), int32(_a2379), int32(0))
+	F__serverPanic_1(m, int32(_a_F_listTypePush_0), int32(177), int32(_a_F_listTypePush_1), int32(0))
 	mBase = m.M
 	v250 = m.ExcPending
 	if v250 != 0 {
@@ -2405,7 +2405,7 @@ func F_listTypeReplace(m *base.Module, l0 int32, l1 int32) {
 				}
 			}
 		default:
-			F__serverPanic_1(m, int32(_a2378), int32(358), int32(_a2379), int32(0))
+			F__serverPanic_1(m, int32(_a_F_listTypeReplace_0), int32(358), int32(_a_F_listTypeReplace_1), int32(0))
 			mBase = m.M
 			v51 = m.ExcPending
 			if v51 != 0 {
@@ -2630,7 +2630,7 @@ func F_listTypeTryConversionRaw(m *base.Module, l0 int32, l1 int32, l2 int32, l3
 			return
 		} else {
 			if v17&int32(240) != int32(144) {
-				F__serverAssert(m, int32(_a2377), int32(_a2378), int32(83))
+				F__serverAssert(m, int32(_a_F_listTypeTryConversionRaw_0), int32(_a_F_listTypeTryConversionRaw_1), int32(83))
 				mBase = m.M
 				v277 = m.ExcPending
 				if v277 != 0 {
@@ -2656,7 +2656,7 @@ func F_listTypeTryConversionRaw(m *base.Module, l0 int32, l1 int32, l2 int32, l3
 						m.G0 = v15 + int32(16)
 						return
 					} else {
-						v41 = *(*int32)(unsafe.Add(mBase, _consts[542]))
+						v41 = *(*int32)(unsafe.Add(mBase, _c_F_listTypeTryConversionRaw[0]))
 						v43 = v15 + int32(12)
 						v45 = v15 + int32(8)
 						v46 = int32(-1)
@@ -2669,7 +2669,7 @@ func F_listTypeTryConversionRaw(m *base.Module, l0 int32, l1 int32, l2 int32, l3
 							} else {
 								v60 = v57
 							}
-							v67 = *(*int32)(unsafe.Add(mBase, uint32((v60^int32(-1))<<(uint(int32(2))%32))+uint32(_consts[524])))
+							v67 = *(*int32)(unsafe.Add(mBase, uint32((v60^int32(-1))<<(uint(int32(2))%32))+uint32(_c_F_listTypeTryConversionRaw[1])))
 							*(*int32)(unsafe.Add(mBase, uint32(v43))) = v67
 						} else {
 							v52 = int32(1)
@@ -2765,7 +2765,7 @@ func F_listTypeTryConversionRaw(m *base.Module, l0 int32, l1 int32, l2 int32, l3
 			}
 		}
 	default:
-		F__serverPanic_1(m, int32(_a2378), int32(135), int32(_a2379), int32(0))
+		F__serverPanic_1(m, int32(_a_F_listTypeTryConversionRaw_1), int32(135), int32(_a_F_listTypeTryConversionRaw_2), int32(0))
 		mBase = m.M
 		v290 = m.ExcPending
 		if v290 != 0 {
@@ -2783,7 +2783,7 @@ func F_listTypeTryConversionRaw(m *base.Module, l0 int32, l1 int32, l2 int32, l3
 			return
 		} else {
 			if v17&int32(240) != int32(176) {
-				F__serverAssert(m, int32(_a2350), int32(_a2378), int32(43))
+				F__serverAssert(m, int32(_a_F_listTypeTryConversionRaw_3), int32(_a_F_listTypeTryConversionRaw_1), int32(43))
 				mBase = m.M
 				v283 = m.ExcPending
 				if v283 != 0 {
@@ -2851,7 +2851,7 @@ func F_listTypeTryConversionRaw(m *base.Module, l0 int32, l1 int32, l2 int32, l3
 					v185 = v112
 					v193 = v112
 				}
-				v197 = *(*int32)(unsafe.Add(mBase, _consts[542]))
+				v197 = *(*int32)(unsafe.Add(mBase, _c_F_listTypeTryConversionRaw[0]))
 				v198 = F_objectGetVal(m, l0)
 				mBase = m.M
 				v199 = *(*int32)(unsafe.Add(mBase, uint32(v198)))
@@ -2879,7 +2879,7 @@ func F_listTypeTryConversionRaw(m *base.Module, l0 int32, l1 int32, l2 int32, l3
 						} else {
 							v210 = v207
 						}
-						v217 = *(*int32)(unsafe.Add(mBase, uint32((v210^int32(-1))<<(uint(int32(2))%32))+uint32(_consts[524])))
+						v217 = *(*int32)(unsafe.Add(mBase, uint32((v210^int32(-1))<<(uint(int32(2))%32))+uint32(_c_F_listTypeTryConversionRaw[1])))
 						v227 = base.B2i32(base.Ui32(v217) < base.Ui32(v200))
 					}
 					if v227 == int32(0) {
@@ -2887,9 +2887,9 @@ func F_listTypeTryConversionRaw(m *base.Module, l0 int32, l1 int32, l2 int32, l3
 						return
 					} else {
 						if l5 == int32(0) {
-							v234 = int32(_a20)
-							v235 = *(*int32)(unsafe.Add(mBase, _consts[542]))
-							v237 = *(*int32)(unsafe.Add(mBase, _consts[543]))
+							v234 = int32(_a_F_listTypeTryConversionRaw_4)
+							v235 = *(*int32)(unsafe.Add(mBase, _c_F_listTypeTryConversionRaw[0]))
+							v237 = *(*int32)(unsafe.Add(mBase, _c_F_listTypeTryConversionRaw[2]))
 							v238 = F_quicklistNew(m, v235, v237)
 							mBase = m.M
 							v239 = m.ExcPending
@@ -2954,9 +2954,9 @@ func F_listTypeTryConversionRaw(m *base.Module, l0 int32, l1 int32, l2 int32, l3
 							if v233 != 0 {
 								return
 							} else {
-								v234 = int32(_a20)
-								v235 = *(*int32)(unsafe.Add(mBase, _consts[542]))
-								v237 = *(*int32)(unsafe.Add(mBase, _consts[543]))
+								v234 = int32(_a_F_listTypeTryConversionRaw_4)
+								v235 = *(*int32)(unsafe.Add(mBase, _c_F_listTypeTryConversionRaw[0]))
+								v237 = *(*int32)(unsafe.Add(mBase, _c_F_listTypeTryConversionRaw[2]))
 								v238 = F_quicklistNew(m, v235, v237)
 								mBase = m.M
 								v239 = m.ExcPending
@@ -3055,7 +3055,7 @@ func F_listUnlinkNode(m *base.Module, l0 int32, l1 int32) {
 	_ = v62
 	v6 = *(*int32)(unsafe.Add(mBase, uint32(l0)+20))
 	if v6 == int32(0) {
-		F__serverAssert(m, int32(_a105), int32(_a106), int32(192))
+		F__serverAssert(m, int32(_a_F_listUnlinkNode_0), int32(_a_F_listUnlinkNode_1), int32(192))
 		mBase = m.M
 		v38 = m.ExcPending
 		if v38 != 0 {
@@ -3072,7 +3072,7 @@ func F_listUnlinkNode(m *base.Module, l0 int32, l1 int32) {
 		if v9 == int32(0) {
 			v16 = *(*int32)(unsafe.Add(mBase, uint32(l0)))
 			if v16 != l1 {
-				F__serverAssert(m, int32(_a107), int32(_a106), int32(198))
+				F__serverAssert(m, int32(_a_F_listUnlinkNode_2), int32(_a_F_listUnlinkNode_1), int32(198))
 				mBase = m.M
 				v50 = m.ExcPending
 				if v50 != 0 {
@@ -3091,7 +3091,7 @@ func F_listUnlinkNode(m *base.Module, l0 int32, l1 int32) {
 				if v20 == int32(0) {
 					v26 = *(*int32)(unsafe.Add(mBase, uint32(l0)+4))
 					if v26 != l1 {
-						F__serverAssert(m, int32(_a108), int32(_a106), int32(206))
+						F__serverAssert(m, int32(_a_F_listUnlinkNode_3), int32(_a_F_listUnlinkNode_1), int32(206))
 						mBase = m.M
 						v62 = m.ExcPending
 						if v62 != 0 {
@@ -3112,7 +3112,7 @@ func F_listUnlinkNode(m *base.Module, l0 int32, l1 int32) {
 				} else {
 					v23 = *(*int32)(unsafe.Add(mBase, uint32(v20)))
 					if v23 != l1 {
-						F__serverAssert(m, int32(_a109), int32(_a106), int32(203))
+						F__serverAssert(m, int32(_a_F_listUnlinkNode_4), int32(_a_F_listUnlinkNode_1), int32(203))
 						mBase = m.M
 						v56 = m.ExcPending
 						if v56 != 0 {
@@ -3135,7 +3135,7 @@ func F_listUnlinkNode(m *base.Module, l0 int32, l1 int32) {
 		} else {
 			v12 = *(*int32)(unsafe.Add(mBase, uint32(v9)+4))
 			if v12 != l1 {
-				F__serverAssert(m, int32(_a110), int32(_a106), int32(195))
+				F__serverAssert(m, int32(_a_F_listUnlinkNode_5), int32(_a_F_listUnlinkNode_1), int32(195))
 				mBase = m.M
 				v44 = m.ExcPending
 				if v44 != 0 {
@@ -3154,7 +3154,7 @@ func F_listUnlinkNode(m *base.Module, l0 int32, l1 int32) {
 				if v20 == int32(0) {
 					v26 = *(*int32)(unsafe.Add(mBase, uint32(l0)+4))
 					if v26 != l1 {
-						F__serverAssert(m, int32(_a108), int32(_a106), int32(206))
+						F__serverAssert(m, int32(_a_F_listUnlinkNode_3), int32(_a_F_listUnlinkNode_1), int32(206))
 						mBase = m.M
 						v62 = m.ExcPending
 						if v62 != 0 {
@@ -3175,7 +3175,7 @@ func F_listUnlinkNode(m *base.Module, l0 int32, l1 int32) {
 				} else {
 					v23 = *(*int32)(unsafe.Add(mBase, uint32(v20)))
 					if v23 != l1 {
-						F__serverAssert(m, int32(_a109), int32(_a106), int32(203))
+						F__serverAssert(m, int32(_a_F_listUnlinkNode_4), int32(_a_F_listUnlinkNode_1), int32(203))
 						mBase = m.M
 						v56 = m.ExcPending
 						if v56 != 0 {
@@ -3411,7 +3411,7 @@ L16:
 	}
 L17:
 	;
-	v56 = F_rioWriteBulkString(m, l0, int32(_a160), int32(5))
+	v56 = F_rioWriteBulkString(m, l0, int32(_a_F_rewriteListObject_0), int32(5))
 	mBase = m.M
 	v57 = m.ExcPending
 	if v57 != 0 {

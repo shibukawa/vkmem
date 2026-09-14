@@ -617,7 +617,7 @@ L18:
 	v78 = m.G3
 	v82 = m.G16
 	v83 = *(*int32)(unsafe.Add(mBase, uint32(v82)))
-	v84 = m.T0[v83].(func(*base.Module, int32, int32, int32, int32) int32)(m, int32(0), l0, v78+int32(_a1722), int32(44))
+	v84 = m.T0[v83].(func(*base.Module, int32, int32, int32, int32) int32)(m, int32(0), l0, v78+int32(_a_F_ldbCatStackValueRec_0), int32(44))
 	mBase = m.M
 	v87 = m.ExcPending
 	if v87 != 0 {
@@ -637,7 +637,7 @@ L21:
 	v619 = m.G3
 	v623 = m.G16
 	v624 = *(*int32)(unsafe.Add(mBase, uint32(v623)))
-	v625 = m.T0[v624].(func(*base.Module, int32, int32, int32, int32) int32)(m, int32(0), l0, v619+int32(_a1723), int32(20))
+	v625 = m.T0[v624].(func(*base.Module, int32, int32, int32, int32) int32)(m, int32(0), l0, v619+int32(_a_F_ldbCatStackValueRec_1), int32(20))
 	mBase = m.M
 	v626 = m.ExcPending
 	if v626 != 0 {
@@ -657,7 +657,7 @@ L23:
 	;
 	v205 = int32(0)
 	v206 = m.G3
-	v208 = v206 + int32(_a188)
+	v208 = v206 + int32(_a_F_ldbCatStackValueRec_2)
 	v210 = m.G13
 	v211 = *(*int32)(unsafe.Add(mBase, uint32(v210)))
 	v212 = m.T0[v211].(func(*base.Module, int32, int32, int32) int32)(m, v205, v208, v205)
@@ -673,7 +673,7 @@ L24:
 	v197 = m.G3
 	v201 = m.G16
 	v202 = *(*int32)(unsafe.Add(mBase, uint32(v201)))
-	v203 = m.T0[v202].(func(*base.Module, int32, int32, int32, int32) int32)(m, int32(0), l0, v197+int32(_a1724), int32(3))
+	v203 = m.T0[v202].(func(*base.Module, int32, int32, int32, int32) int32)(m, int32(0), l0, v197+int32(_a_F_ldbCatStackValueRec_3), int32(3))
 	mBase = m.M
 	v204 = m.ExcPending
 	if v204 != 0 {
@@ -853,11 +853,11 @@ L48:
 	goto L30
 L49:
 	;
-	v166 = v99 + int32(_a1725)
+	v166 = v99 + int32(_a_F_ldbCatStackValueRec_4)
 	goto L51
 L50:
 	;
-	v166 = v99 + int32(_a1726)
+	v166 = v99 + int32(_a_F_ldbCatStackValueRec_5)
 	goto L51
 L51:
 	;
@@ -907,7 +907,7 @@ L57:
 	*(*int32)(unsafe.Add(mBase, uint32(v16))) = v178
 	v185 = m.G3
 	v186 = m.G17
-	v190 = m.T0[v180].(func(*base.Module, int32, int32, int32) int32)(m, int32(0), v185+int32(_a1727), v16)
+	v190 = m.T0[v180].(func(*base.Module, int32, int32, int32) int32)(m, int32(0), v185+int32(_a_F_ldbCatStackValueRec_6), v16)
 	mBase = m.M
 	v191 = m.ExcPending
 	if v191 != 0 {
@@ -968,7 +968,7 @@ L64:
 	v406 = m.G3
 	v410 = m.G16
 	v411 = *(*int32)(unsafe.Add(mBase, uint32(v410)))
-	v412 = m.T0[v411].(func(*base.Module, int32, int32, int32, int32) int32)(m, int32(0), l0, v406+int32(_a1120), int32(1))
+	v412 = m.T0[v411].(func(*base.Module, int32, int32, int32, int32) int32)(m, int32(0), l0, v406+int32(_a_F_ldbCatStackValueRec_7), int32(1))
 	mBase = m.M
 	v413 = m.ExcPending
 	if v413 != 0 {
@@ -1090,7 +1090,7 @@ L90:
 	goto L70
 L91:
 	;
-	v330 = v323 + int32(_a1728)
+	v330 = v323 + int32(_a_F_ldbCatStackValueRec_8)
 	v332 = *(*int32)(unsafe.Add(mBase, uint32(v324)))
 	v333 = m.T0[v332].(func(*base.Module, int32, int32, int32, int32) int32)(m, int32(0), v327, v330, int32(2))
 	mBase = m.M
@@ -1103,7 +1103,7 @@ L91:
 L92:
 	;
 	v339 = *(*int32)(unsafe.Add(mBase, uint32(v324)))
-	v340 = m.T0[v339].(func(*base.Module, int32, int32, int32, int32) int32)(m, int32(0), v240, v323+int32(_a746), int32(1))
+	v340 = m.T0[v339].(func(*base.Module, int32, int32, int32, int32) int32)(m, int32(0), v240, v323+int32(_a_F_ldbCatStackValueRec_9), int32(1))
 	mBase = m.M
 	v341 = m.ExcPending
 	if v341 != 0 {
@@ -1124,7 +1124,7 @@ L93:
 L94:
 	;
 	v349 = *(*int32)(unsafe.Add(mBase, uint32(v324)))
-	v350 = m.T0[v349].(func(*base.Module, int32, int32, int32, int32) int32)(m, int32(0), v344, v323+int32(_a1729), int32(2))
+	v350 = m.T0[v349].(func(*base.Module, int32, int32, int32, int32) int32)(m, int32(0), v344, v323+int32(_a_F_ldbCatStackValueRec_10), int32(2))
 	mBase = m.M
 	v351 = m.ExcPending
 	if v351 != 0 {
@@ -1256,7 +1256,7 @@ L116:
 L117:
 	;
 	v440 = *(*int32)(unsafe.Add(mBase, uint32(v410)))
-	v441 = m.T0[v440].(func(*base.Module, int32, int32, int32, int32) int32)(m, int32(0), l0, v406+int32(_a1121), int32(1))
+	v441 = m.T0[v440].(func(*base.Module, int32, int32, int32, int32) int32)(m, int32(0), l0, v406+int32(_a_F_ldbCatStackValueRec_11), int32(1))
 	mBase = m.M
 	v442 = m.ExcPending
 	if v442 != 0 {
@@ -1545,12 +1545,12 @@ L157:
 L158:
 	;
 	v587 = m.G3
-	v593 = *(*int32)(unsafe.Add(mBase, uint32(v587+int32(_a1730)+v582<<(uint(int32(2))%32))))
+	v593 = *(*int32)(unsafe.Add(mBase, uint32(v587+int32(_a_F_ldbCatStackValueRec_12)+v582<<(uint(int32(2))%32))))
 	v594 = v593
 	goto L157
 L159:
 	;
-	v594 = v452 + int32(_a242)
+	v594 = v452 + int32(_a_F_ldbCatStackValueRec_13)
 	goto L157
 L160:
 	;
@@ -1561,7 +1561,7 @@ L160:
 	v604 = m.G15
 	v605 = *(*int32)(unsafe.Add(mBase, uint32(v604)))
 	v606 = m.G17
-	v612 = m.T0[v605].(func(*base.Module, int32, int32, int32) int32)(m, int32(0), v603+int32(_a1731), v16+int32(16))
+	v612 = m.T0[v605].(func(*base.Module, int32, int32, int32) int32)(m, int32(0), v603+int32(_a_F_ldbCatStackValueRec_14), v16+int32(16))
 	mBase = m.M
 	v613 = m.ExcPending
 	if v613 != 0 {
@@ -1619,12 +1619,12 @@ func F_ldbGenerateDebuggerCommandsArray(m *base.Module, l0 int32, l1 int32) {
 	var v39 int32
 	_ = v39
 	v5 = m.G3
-	v8 = *(*int32)(unsafe.Add(mBase, uint32(v5)+uint32(_consts[1135])))
+	v8 = *(*int32)(unsafe.Add(mBase, uint32(v5)+uint32(_c_F_ldbGenerateDebuggerCommandsArray[0])))
 	if v8 != 0 {
 		v30 = v8
 		*(*int32)(unsafe.Add(mBase, uint32(l0))) = v30
 		v35 = m.G3
-		v38 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v35)+uint32(_consts[1136]))))
+		v38 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v35)+uint32(_c_F_ldbGenerateDebuggerCommandsArray[1]))))
 		if v38 != 0 {
 			v39 = int32(13)
 		} else {
@@ -1635,7 +1635,7 @@ func F_ldbGenerateDebuggerCommandsArray(m *base.Module, l0 int32, l1 int32) {
 	} else {
 		v9 = m.G3
 		v12 = int32(1)
-		*(*uint8)(unsafe.Add(mBase, uint32(v9)+uint32(_consts[1136]))) = uint8(v12)
+		*(*uint8)(unsafe.Add(mBase, uint32(v9)+uint32(_c_F_ldbGenerateDebuggerCommandsArray[1]))) = uint8(v12)
 		v18 = m.G9
 		v19 = *(*int32)(unsafe.Add(mBase, uint32(v18)))
 		v20 = m.T0[v19].(func(*base.Module, int32, int32) int32)(m, int32(13), int32(40))
@@ -1644,13 +1644,13 @@ func F_ldbGenerateDebuggerCommandsArray(m *base.Module, l0 int32, l1 int32) {
 		if v21 != 0 {
 			return
 		} else {
-			*(*int32)(unsafe.Add(mBase, uint32(v9)+uint32(_consts[1135]))) = v20
-			v28 = F__emscripten_memcpy_bulkmem(m, v20, v9+int32(_a1732), int32(520))
+			*(*int32)(unsafe.Add(mBase, uint32(v9)+uint32(_c_F_ldbGenerateDebuggerCommandsArray[0]))) = v20
+			v28 = F__emscripten_memcpy_bulkmem(m, v20, v9+int32(_a_F_ldbGenerateDebuggerCommandsArray_0), int32(520))
 			mBase = m.M
 			v30 = v20
 			*(*int32)(unsafe.Add(mBase, uint32(l0))) = v30
 			v35 = m.G3
-			v38 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v35)+uint32(_consts[1136]))))
+			v38 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v35)+uint32(_c_F_ldbGenerateDebuggerCommandsArray[1]))))
 			if v38 != 0 {
 				v39 = int32(13)
 			} else {
@@ -1778,7 +1778,7 @@ func F_ldbLogSourceLine(m *base.Module, l0 int32) {
 	v9 = v7 - int32(16)
 	m.G0 = v9
 	v11 = m.G3
-	v13 = v11 + int32(_a1716)
+	v13 = v11 + int32(_a_F_ldbLogSourceLine_0)
 	v14 = m.G6
 	if l0 < int32(1) {
 		v27 = v13
@@ -1830,13 +1830,13 @@ L5:
 	goto L8
 L6:
 	;
-	v66 = v28 + int32(_a1717)
-	v68 = v28 + int32(_a1718)
+	v66 = v28 + int32(_a_F_ldbLogSourceLine_1)
+	v68 = v28 + int32(_a_F_ldbLogSourceLine_2)
 	goto L4
 L7:
 	;
-	v66 = v44 + int32(_a1719)
-	v68 = v44 + int32(_a1720)
+	v66 = v44 + int32(_a_F_ldbLogSourceLine_3)
+	v68 = v44 + int32(_a_F_ldbLogSourceLine_4)
 	goto L4
 L8:
 	;
@@ -1850,8 +1850,8 @@ L8:
 	}
 L9:
 	;
-	v66 = v51 + int32(_a1717)
-	v68 = v51 + int32(_a1718)
+	v66 = v51 + int32(_a_F_ldbLogSourceLine_1)
+	v68 = v51 + int32(_a_F_ldbLogSourceLine_2)
 	goto L4
 L10:
 	;
@@ -1881,7 +1881,7 @@ L14:
 	v77 = m.G15
 	v78 = *(*int32)(unsafe.Add(mBase, uint32(v77)))
 	v79 = m.G12
-	v83 = m.T0[v78].(func(*base.Module, int32, int32, int32) int32)(m, int32(0), v76+int32(_a1721), v9)
+	v83 = m.T0[v78].(func(*base.Module, int32, int32, int32) int32)(m, int32(0), v76+int32(_a_F_ldbLogSourceLine_5), v9)
 	mBase = m.M
 	v84 = m.ExcPending
 	if v84 != 0 {

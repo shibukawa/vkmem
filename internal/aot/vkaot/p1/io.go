@@ -68,13 +68,13 @@ func F_IOThreadsBeforeSleep(m *base.Module, l0 int64) {
 	_ = v114
 	var v127 int32
 	_ = v127
-	v5 = *(*int32)(unsafe.Add(mBase, _consts[345]))
+	v5 = *(*int32)(unsafe.Add(mBase, _c_F_IOThreadsBeforeSleep[0]))
 	if v5 == int32(1) {
 		return
 	} else {
-		v9 = *(*int32)(unsafe.Add(mBase, _consts[346]))
+		v9 = *(*int32)(unsafe.Add(mBase, _c_F_IOThreadsBeforeSleep[1]))
 		if v9 != 0 {
-			F__serverAssert(m, int32(_a671), int32(_a672), int32(118))
+			F__serverAssert(m, int32(_a_F_IOThreadsBeforeSleep_0), int32(_a_F_IOThreadsBeforeSleep_1), int32(118))
 			mBase = m.M
 			v127 = m.ExcPending
 			if v127 != 0 {
@@ -87,49 +87,49 @@ func F_IOThreadsBeforeSleep(m *base.Module, l0 int64) {
 				}
 			}
 		} else {
-			v11 = *(*int32)(unsafe.Add(mBase, _consts[347]))
+			v11 = *(*int32)(unsafe.Add(mBase, _c_F_IOThreadsBeforeSleep[2]))
 			if v11 < int32(2) {
 				v68 = v11
 				if v68 != int32(1) {
 				} else {
-					v76 = *(*int64)(unsafe.Add(mBase, _consts[348]))
+					v76 = *(*int64)(unsafe.Add(mBase, _c_F_IOThreadsBeforeSleep[3]))
 					if l0-v76 < int64(50000) {
 					} else {
-						*(*int64)(unsafe.Add(mBase, _consts[348])) = l0
-						v84 = *(*int64)(unsafe.Add(mBase, _consts[349]))
-						v91 = int32(_a673)
-						v92 = *(*int64)(unsafe.Add(mBase, _consts[350]))
+						*(*int64)(unsafe.Add(mBase, _c_F_IOThreadsBeforeSleep[3])) = l0
+						v84 = *(*int64)(unsafe.Add(mBase, _c_F_IOThreadsBeforeSleep[4]))
+						v91 = int32(_a_F_IOThreadsBeforeSleep_2)
+						v92 = *(*int64)(unsafe.Add(mBase, _c_F_IOThreadsBeforeSleep[5]))
 						if v92 < int64(1) {
 						} else {
 							v95 = l0 - v92
 							if int64(1) <= v95 {
-								v99 = *(*int64)(unsafe.Add(mBase, _consts[351]))
+								v99 = *(*int64)(unsafe.Add(mBase, _c_F_IOThreadsBeforeSleep[6]))
 								v102 = base.I64_div_s((v84-v99)*int64(1000000), v95)
 								v103 = v102
 							} else {
 								v103 = int64(0)
 							}
-							v104 = *(*int32)(unsafe.Add(mBase, _consts[352]))
-							*(*int64)(unsafe.Add(mBase, uint32(v104<<(uint(int32(3))%32))+uint32(_consts[353]))) = v103
+							v104 = *(*int32)(unsafe.Add(mBase, _c_F_IOThreadsBeforeSleep[7]))
+							*(*int64)(unsafe.Add(mBase, uint32(v104<<(uint(int32(3))%32))+uint32(_c_F_IOThreadsBeforeSleep[8]))) = v103
 							v114 = base.I32_rem_s(v104+int32(1), int32(16))
-							*(*int32)(unsafe.Add(mBase, _consts[352])) = v114
+							*(*int32)(unsafe.Add(mBase, _c_F_IOThreadsBeforeSleep[7])) = v114
 						}
-						*(*int64)(unsafe.Add(mBase, _consts[351])) = v84
-						*(*int64)(unsafe.Add(mBase, _consts[350])) = l0
+						*(*int64)(unsafe.Add(mBase, _c_F_IOThreadsBeforeSleep[6])) = v84
+						*(*int64)(unsafe.Add(mBase, _c_F_IOThreadsBeforeSleep[5])) = l0
 					}
 				}
 			} else {
 				v17 = int32(1)
 				for {
 					v19 = v17 * int32(192)
-					v23 = *(*int32)(unsafe.Add(mBase, uint32(v19)+uint32(_consts[354])))
-					v24 = *(*int32)(unsafe.Add(mBase, uint32(v19)+uint32(_consts[355])))
+					v23 = *(*int32)(unsafe.Add(mBase, uint32(v19)+uint32(_c_F_IOThreadsBeforeSleep[9])))
+					v24 = *(*int32)(unsafe.Add(mBase, uint32(v19)+uint32(_c_F_IOThreadsBeforeSleep[10])))
 					if v23 == v24 {
 					} else {
-						*(*int32)(unsafe.Add(mBase, uint32(v19)+uint32(_consts[355]))) = v23
+						*(*int32)(unsafe.Add(mBase, uint32(v19)+uint32(_c_F_IOThreadsBeforeSleep[10]))) = v23
 					}
 					v28 = v17 + int32(1)
-					v30 = *(*int32)(unsafe.Add(mBase, _consts[347]))
+					v30 = *(*int32)(unsafe.Add(mBase, _c_F_IOThreadsBeforeSleep[2]))
 					if v28 < v30 {
 						v17 = v28
 						continue
@@ -138,35 +138,35 @@ func F_IOThreadsBeforeSleep(m *base.Module, l0 int64) {
 					}
 					break
 				}
-				v33 = *(*int32)(unsafe.Add(mBase, _consts[356]))
+				v33 = *(*int32)(unsafe.Add(mBase, _c_F_IOThreadsBeforeSleep[11]))
 				if v33 == int32(0) {
 					v68 = v30
 					if v68 != int32(1) {
 					} else {
-						v76 = *(*int64)(unsafe.Add(mBase, _consts[348]))
+						v76 = *(*int64)(unsafe.Add(mBase, _c_F_IOThreadsBeforeSleep[3]))
 						if l0-v76 < int64(50000) {
 						} else {
-							*(*int64)(unsafe.Add(mBase, _consts[348])) = l0
-							v84 = *(*int64)(unsafe.Add(mBase, _consts[349]))
-							v91 = int32(_a673)
-							v92 = *(*int64)(unsafe.Add(mBase, _consts[350]))
+							*(*int64)(unsafe.Add(mBase, _c_F_IOThreadsBeforeSleep[3])) = l0
+							v84 = *(*int64)(unsafe.Add(mBase, _c_F_IOThreadsBeforeSleep[4]))
+							v91 = int32(_a_F_IOThreadsBeforeSleep_2)
+							v92 = *(*int64)(unsafe.Add(mBase, _c_F_IOThreadsBeforeSleep[5]))
 							if v92 < int64(1) {
 							} else {
 								v95 = l0 - v92
 								if int64(1) <= v95 {
-									v99 = *(*int64)(unsafe.Add(mBase, _consts[351]))
+									v99 = *(*int64)(unsafe.Add(mBase, _c_F_IOThreadsBeforeSleep[6]))
 									v102 = base.I64_div_s((v84-v99)*int64(1000000), v95)
 									v103 = v102
 								} else {
 									v103 = int64(0)
 								}
-								v104 = *(*int32)(unsafe.Add(mBase, _consts[352]))
-								*(*int64)(unsafe.Add(mBase, uint32(v104<<(uint(int32(3))%32))+uint32(_consts[353]))) = v103
+								v104 = *(*int32)(unsafe.Add(mBase, _c_F_IOThreadsBeforeSleep[7]))
+								*(*int64)(unsafe.Add(mBase, uint32(v104<<(uint(int32(3))%32))+uint32(_c_F_IOThreadsBeforeSleep[8]))) = v103
 								v114 = base.I32_rem_s(v104+int32(1), int32(16))
-								*(*int32)(unsafe.Add(mBase, _consts[352])) = v114
+								*(*int32)(unsafe.Add(mBase, _c_F_IOThreadsBeforeSleep[7])) = v114
 							}
-							*(*int64)(unsafe.Add(mBase, _consts[351])) = v84
-							*(*int64)(unsafe.Add(mBase, _consts[350])) = l0
+							*(*int64)(unsafe.Add(mBase, _c_F_IOThreadsBeforeSleep[6])) = v84
+							*(*int64)(unsafe.Add(mBase, _c_F_IOThreadsBeforeSleep[5])) = l0
 						}
 					}
 				} else {
@@ -174,65 +174,65 @@ func F_IOThreadsBeforeSleep(m *base.Module, l0 int64) {
 						v68 = v30
 						if v68 != int32(1) {
 						} else {
-							v76 = *(*int64)(unsafe.Add(mBase, _consts[348]))
+							v76 = *(*int64)(unsafe.Add(mBase, _c_F_IOThreadsBeforeSleep[3]))
 							if l0-v76 < int64(50000) {
 							} else {
-								*(*int64)(unsafe.Add(mBase, _consts[348])) = l0
-								v84 = *(*int64)(unsafe.Add(mBase, _consts[349]))
-								v91 = int32(_a673)
-								v92 = *(*int64)(unsafe.Add(mBase, _consts[350]))
+								*(*int64)(unsafe.Add(mBase, _c_F_IOThreadsBeforeSleep[3])) = l0
+								v84 = *(*int64)(unsafe.Add(mBase, _c_F_IOThreadsBeforeSleep[4]))
+								v91 = int32(_a_F_IOThreadsBeforeSleep_2)
+								v92 = *(*int64)(unsafe.Add(mBase, _c_F_IOThreadsBeforeSleep[5]))
 								if v92 < int64(1) {
 								} else {
 									v95 = l0 - v92
 									if int64(1) <= v95 {
-										v99 = *(*int64)(unsafe.Add(mBase, _consts[351]))
+										v99 = *(*int64)(unsafe.Add(mBase, _c_F_IOThreadsBeforeSleep[6]))
 										v102 = base.I64_div_s((v84-v99)*int64(1000000), v95)
 										v103 = v102
 									} else {
 										v103 = int64(0)
 									}
-									v104 = *(*int32)(unsafe.Add(mBase, _consts[352]))
-									*(*int64)(unsafe.Add(mBase, uint32(v104<<(uint(int32(3))%32))+uint32(_consts[353]))) = v103
+									v104 = *(*int32)(unsafe.Add(mBase, _c_F_IOThreadsBeforeSleep[7]))
+									*(*int64)(unsafe.Add(mBase, uint32(v104<<(uint(int32(3))%32))+uint32(_c_F_IOThreadsBeforeSleep[8]))) = v103
 									v114 = base.I32_rem_s(v104+int32(1), int32(16))
-									*(*int32)(unsafe.Add(mBase, _consts[352])) = v114
+									*(*int32)(unsafe.Add(mBase, _c_F_IOThreadsBeforeSleep[7])) = v114
 								}
-								*(*int64)(unsafe.Add(mBase, _consts[351])) = v84
-								*(*int64)(unsafe.Add(mBase, _consts[350])) = l0
+								*(*int64)(unsafe.Add(mBase, _c_F_IOThreadsBeforeSleep[6])) = v84
+								*(*int64)(unsafe.Add(mBase, _c_F_IOThreadsBeforeSleep[5])) = l0
 							}
 						}
 					} else {
-						v39 = *(*int32)(unsafe.Add(mBase, _consts[347]))
+						v39 = *(*int32)(unsafe.Add(mBase, _c_F_IOThreadsBeforeSleep[2]))
 						v40 = int32(0)
-						v41 = *(*int32)(unsafe.Add(mBase, _consts[357]))
-						v43 = *(*int32)(unsafe.Add(mBase, _consts[358]))
+						v41 = *(*int32)(unsafe.Add(mBase, _c_F_IOThreadsBeforeSleep[12]))
+						v43 = *(*int32)(unsafe.Add(mBase, _c_F_IOThreadsBeforeSleep[13]))
 						if v41 != v43 {
 							v68 = v39
 							if v68 != int32(1) {
 							} else {
-								v76 = *(*int64)(unsafe.Add(mBase, _consts[348]))
+								v76 = *(*int64)(unsafe.Add(mBase, _c_F_IOThreadsBeforeSleep[3]))
 								if l0-v76 < int64(50000) {
 								} else {
-									*(*int64)(unsafe.Add(mBase, _consts[348])) = l0
-									v84 = *(*int64)(unsafe.Add(mBase, _consts[349]))
-									v91 = int32(_a673)
-									v92 = *(*int64)(unsafe.Add(mBase, _consts[350]))
+									*(*int64)(unsafe.Add(mBase, _c_F_IOThreadsBeforeSleep[3])) = l0
+									v84 = *(*int64)(unsafe.Add(mBase, _c_F_IOThreadsBeforeSleep[4]))
+									v91 = int32(_a_F_IOThreadsBeforeSleep_2)
+									v92 = *(*int64)(unsafe.Add(mBase, _c_F_IOThreadsBeforeSleep[5]))
 									if v92 < int64(1) {
 									} else {
 										v95 = l0 - v92
 										if int64(1) <= v95 {
-											v99 = *(*int64)(unsafe.Add(mBase, _consts[351]))
+											v99 = *(*int64)(unsafe.Add(mBase, _c_F_IOThreadsBeforeSleep[6]))
 											v102 = base.I64_div_s((v84-v99)*int64(1000000), v95)
 											v103 = v102
 										} else {
 											v103 = int64(0)
 										}
-										v104 = *(*int32)(unsafe.Add(mBase, _consts[352]))
-										*(*int64)(unsafe.Add(mBase, uint32(v104<<(uint(int32(3))%32))+uint32(_consts[353]))) = v103
+										v104 = *(*int32)(unsafe.Add(mBase, _c_F_IOThreadsBeforeSleep[7]))
+										*(*int64)(unsafe.Add(mBase, uint32(v104<<(uint(int32(3))%32))+uint32(_c_F_IOThreadsBeforeSleep[8]))) = v103
 										v114 = base.I32_rem_s(v104+int32(1), int32(16))
-										*(*int32)(unsafe.Add(mBase, _consts[352])) = v114
+										*(*int32)(unsafe.Add(mBase, _c_F_IOThreadsBeforeSleep[7])) = v114
 									}
-									*(*int64)(unsafe.Add(mBase, _consts[351])) = v84
-									*(*int64)(unsafe.Add(mBase, _consts[350])) = l0
+									*(*int64)(unsafe.Add(mBase, _c_F_IOThreadsBeforeSleep[6])) = v84
+									*(*int64)(unsafe.Add(mBase, _c_F_IOThreadsBeforeSleep[5])) = l0
 								}
 							}
 						} else {
@@ -242,7 +242,7 @@ func F_IOThreadsBeforeSleep(m *base.Module, l0 int64) {
 								v50 = v45
 								for {
 									v57 = v50 + int32(1)
-									v59 = *(*int32)(unsafe.Add(mBase, _consts[347]))
+									v59 = *(*int32)(unsafe.Add(mBase, _c_F_IOThreadsBeforeSleep[2]))
 									if v57 < v59 {
 										v50 = v57
 										continue
@@ -252,31 +252,31 @@ func F_IOThreadsBeforeSleep(m *base.Module, l0 int64) {
 									break
 								}
 							}
-							*(*int32)(unsafe.Add(mBase, _consts[347])) = int32(1)
-							v76 = *(*int64)(unsafe.Add(mBase, _consts[348]))
+							*(*int32)(unsafe.Add(mBase, _c_F_IOThreadsBeforeSleep[2])) = int32(1)
+							v76 = *(*int64)(unsafe.Add(mBase, _c_F_IOThreadsBeforeSleep[3]))
 							if l0-v76 < int64(50000) {
 							} else {
-								*(*int64)(unsafe.Add(mBase, _consts[348])) = l0
-								v84 = *(*int64)(unsafe.Add(mBase, _consts[349]))
-								v91 = int32(_a673)
-								v92 = *(*int64)(unsafe.Add(mBase, _consts[350]))
+								*(*int64)(unsafe.Add(mBase, _c_F_IOThreadsBeforeSleep[3])) = l0
+								v84 = *(*int64)(unsafe.Add(mBase, _c_F_IOThreadsBeforeSleep[4]))
+								v91 = int32(_a_F_IOThreadsBeforeSleep_2)
+								v92 = *(*int64)(unsafe.Add(mBase, _c_F_IOThreadsBeforeSleep[5]))
 								if v92 < int64(1) {
 								} else {
 									v95 = l0 - v92
 									if int64(1) <= v95 {
-										v99 = *(*int64)(unsafe.Add(mBase, _consts[351]))
+										v99 = *(*int64)(unsafe.Add(mBase, _c_F_IOThreadsBeforeSleep[6]))
 										v102 = base.I64_div_s((v84-v99)*int64(1000000), v95)
 										v103 = v102
 									} else {
 										v103 = int64(0)
 									}
-									v104 = *(*int32)(unsafe.Add(mBase, _consts[352]))
-									*(*int64)(unsafe.Add(mBase, uint32(v104<<(uint(int32(3))%32))+uint32(_consts[353]))) = v103
+									v104 = *(*int32)(unsafe.Add(mBase, _c_F_IOThreadsBeforeSleep[7]))
+									*(*int64)(unsafe.Add(mBase, uint32(v104<<(uint(int32(3))%32))+uint32(_c_F_IOThreadsBeforeSleep[8]))) = v103
 									v114 = base.I32_rem_s(v104+int32(1), int32(16))
-									*(*int32)(unsafe.Add(mBase, _consts[352])) = v114
+									*(*int32)(unsafe.Add(mBase, _c_F_IOThreadsBeforeSleep[7])) = v114
 								}
-								*(*int64)(unsafe.Add(mBase, _consts[351])) = v84
-								*(*int64)(unsafe.Add(mBase, _consts[350])) = l0
+								*(*int64)(unsafe.Add(mBase, _c_F_IOThreadsBeforeSleep[6])) = v84
+								*(*int64)(unsafe.Add(mBase, _c_F_IOThreadsBeforeSleep[5])) = l0
 							}
 						}
 					}
@@ -305,25 +305,25 @@ func F_getIOThreadPollResults(m *base.Module, l0 int32) int32 {
 	_ = v38
 	var v39 int32
 	_ = v39
-	v5 = *(*int32)(unsafe.Add(mBase, _consts[363]))
+	v5 = *(*int32)(unsafe.Add(mBase, _c_F_getIOThreadPollResults[0]))
 	switch v5 + int32(-1) {
 	case 0:
 		v39 = int32(0)
 		return v39
 	case 1:
-		v16 = int32(_a20)
+		v16 = int32(_a_F_getIOThreadPollResults_0)
 		v17 = int32(0)
-		*(*int32)(unsafe.Add(mBase, _consts[363])) = v17
-		v21 = *(*int64)(unsafe.Add(mBase, _consts[364]))
-		*(*int64)(unsafe.Add(mBase, _consts[364])) = v21 + int64(1)
+		*(*int32)(unsafe.Add(mBase, _c_F_getIOThreadPollResults[0])) = v17
+		v21 = *(*int64)(unsafe.Add(mBase, _c_F_getIOThreadPollResults[1]))
+		*(*int64)(unsafe.Add(mBase, _c_F_getIOThreadPollResults[1])) = v21 + int64(1)
 		*(*int32)(unsafe.Add(mBase, uint32(l0)+44)) = v17
 		v28 = *(*int32)(unsafe.Add(mBase, uint32(l0)+72))
 		*(*int32)(unsafe.Add(mBase, uint32(l0)+72)) = v28&int32(-33) | int32(0)
-		v38 = *(*int32)(unsafe.Add(mBase, _consts[365]))
+		v38 = *(*int32)(unsafe.Add(mBase, _c_F_getIOThreadPollResults[2]))
 		v39 = v38
 		return v39
 	default:
-		F__serverAssert(m, int32(_a678), int32(_a672), int32(732))
+		F__serverAssert(m, int32(_a_F_getIOThreadPollResults_1), int32(_a_F_getIOThreadPollResults_2), int32(732))
 		mBase = m.M
 		v14 = m.ExcPending
 		if v14 != 0 {
@@ -372,7 +372,7 @@ func F_ioThreadReadQueryFromClient(m *base.Module, l0 int32) {
 	_ = v39
 	v2 = int32(*(*uint8)(unsafe.Add(mBase, uint32(l0)+222)))
 	if v2 != int32(1) {
-		F__serverAssert(m, int32(_a1756), int32(_a1630), int32(6670))
+		F__serverAssert(m, int32(_a_F_ioThreadReadQueryFromClient_0), int32(_a_F_ioThreadReadQueryFromClient_1), int32(6670))
 		mBase = m.M
 		v39 = m.ExcPending
 		if v39 != 0 {
@@ -397,7 +397,7 @@ func F_ioThreadReadQueryFromClient(m *base.Module, l0 int32) {
 				if v22&int32(64) != 0 {
 					v27 = int32(2)
 					*(*uint8)(unsafe.Add(mBase, uint32(l0)+222)) = uint8(v27)
-					v30 = *(*int32)(unsafe.Add(mBase, _consts[346]))
+					v30 = *(*int32)(unsafe.Add(mBase, _c_F_ioThreadReadQueryFromClient[0]))
 					*(*uint8)(unsafe.Add(mBase, uint32(l0)+225)) = uint8(v30)
 					F_sendToMainThread(m, l0, int32(0))
 					mBase = m.M
@@ -416,7 +416,7 @@ func F_ioThreadReadQueryFromClient(m *base.Module, l0 int32) {
 					} else {
 						v27 = int32(2)
 						*(*uint8)(unsafe.Add(mBase, uint32(l0)+222)) = uint8(v27)
-						v30 = *(*int32)(unsafe.Add(mBase, _consts[346]))
+						v30 = *(*int32)(unsafe.Add(mBase, _c_F_ioThreadReadQueryFromClient[0]))
 						*(*uint8)(unsafe.Add(mBase, uint32(l0)+225)) = uint8(v30)
 						F_sendToMainThread(m, l0, int32(0))
 						mBase = m.M
@@ -435,7 +435,7 @@ func F_ioThreadReadQueryFromClient(m *base.Module, l0 int32) {
 					if v22&int32(64) != 0 {
 						v27 = int32(2)
 						*(*uint8)(unsafe.Add(mBase, uint32(l0)+222)) = uint8(v27)
-						v30 = *(*int32)(unsafe.Add(mBase, _consts[346]))
+						v30 = *(*int32)(unsafe.Add(mBase, _c_F_ioThreadReadQueryFromClient[0]))
 						*(*uint8)(unsafe.Add(mBase, uint32(l0)+225)) = uint8(v30)
 						F_sendToMainThread(m, l0, int32(0))
 						mBase = m.M
@@ -454,7 +454,7 @@ func F_ioThreadReadQueryFromClient(m *base.Module, l0 int32) {
 						} else {
 							v27 = int32(2)
 							*(*uint8)(unsafe.Add(mBase, uint32(l0)+222)) = uint8(v27)
-							v30 = *(*int32)(unsafe.Add(mBase, _consts[346]))
+							v30 = *(*int32)(unsafe.Add(mBase, _c_F_ioThreadReadQueryFromClient[0]))
 							*(*uint8)(unsafe.Add(mBase, uint32(l0)+225)) = uint8(v30)
 							F_sendToMainThread(m, l0, int32(0))
 							mBase = m.M
@@ -473,7 +473,7 @@ func F_ioThreadReadQueryFromClient(m *base.Module, l0 int32) {
 						if v22&int32(64) != 0 {
 							v27 = int32(2)
 							*(*uint8)(unsafe.Add(mBase, uint32(l0)+222)) = uint8(v27)
-							v30 = *(*int32)(unsafe.Add(mBase, _consts[346]))
+							v30 = *(*int32)(unsafe.Add(mBase, _c_F_ioThreadReadQueryFromClient[0]))
 							*(*uint8)(unsafe.Add(mBase, uint32(l0)+225)) = uint8(v30)
 							F_sendToMainThread(m, l0, int32(0))
 							mBase = m.M
@@ -492,7 +492,7 @@ func F_ioThreadReadQueryFromClient(m *base.Module, l0 int32) {
 							} else {
 								v27 = int32(2)
 								*(*uint8)(unsafe.Add(mBase, uint32(l0)+222)) = uint8(v27)
-								v30 = *(*int32)(unsafe.Add(mBase, _consts[346]))
+								v30 = *(*int32)(unsafe.Add(mBase, _c_F_ioThreadReadQueryFromClient[0]))
 								*(*uint8)(unsafe.Add(mBase, uint32(l0)+225)) = uint8(v30)
 								F_sendToMainThread(m, l0, int32(0))
 								mBase = m.M
@@ -527,7 +527,7 @@ func F_ioThreadReadQueryFromClient(m *base.Module, l0 int32) {
 									if v22&int32(64) != 0 {
 										v27 = int32(2)
 										*(*uint8)(unsafe.Add(mBase, uint32(l0)+222)) = uint8(v27)
-										v30 = *(*int32)(unsafe.Add(mBase, _consts[346]))
+										v30 = *(*int32)(unsafe.Add(mBase, _c_F_ioThreadReadQueryFromClient[0]))
 										*(*uint8)(unsafe.Add(mBase, uint32(l0)+225)) = uint8(v30)
 										F_sendToMainThread(m, l0, int32(0))
 										mBase = m.M
@@ -546,7 +546,7 @@ func F_ioThreadReadQueryFromClient(m *base.Module, l0 int32) {
 										} else {
 											v27 = int32(2)
 											*(*uint8)(unsafe.Add(mBase, uint32(l0)+222)) = uint8(v27)
-											v30 = *(*int32)(unsafe.Add(mBase, _consts[346]))
+											v30 = *(*int32)(unsafe.Add(mBase, _c_F_ioThreadReadQueryFromClient[0]))
 											*(*uint8)(unsafe.Add(mBase, uint32(l0)+225)) = uint8(v30)
 											F_sendToMainThread(m, l0, int32(0))
 											mBase = m.M
@@ -681,7 +681,7 @@ func F_updateIOThreads(m *base.Module, l0 int32) int32 {
 	v6 = m.G0
 	v8 = v6 - int32(16)
 	m.G0 = v8
-	v11 = *(*int32)(unsafe.Add(mBase, _consts[346]))
+	v11 = *(*int32)(unsafe.Add(mBase, _c_F_updateIOThreads[0]))
 	if v11 != 0 {
 		goto L3
 	} else {
@@ -689,7 +689,7 @@ func F_updateIOThreads(m *base.Module, l0 int32) int32 {
 	}
 L1:
 	;
-	v74 = *(*int32)(unsafe.Add(mBase, _consts[345]))
+	v74 = *(*int32)(unsafe.Add(mBase, _c_F_updateIOThreads[1]))
 	if v71 == v74 {
 		v217 = int32(1)
 		goto L16
@@ -702,7 +702,7 @@ L2:
 	goto L1
 L3:
 	;
-	F__serverAssert(m, int32(_a671), int32(_a672), int32(438))
+	F__serverAssert(m, int32(_a_F_updateIOThreads_0), int32(_a_F_updateIOThreads_1), int32(438))
 	mBase = m.M
 	v64 = m.ExcPending
 	if v64 != 0 {
@@ -716,7 +716,7 @@ L4:
 	goto L5
 L5:
 	;
-	v22 = *(*int32)(unsafe.Add(mBase, uint32(v15<<(uint(int32(2))%32))+uint32(_consts[359])))
+	v22 = *(*int32)(unsafe.Add(mBase, uint32(v15<<(uint(int32(2))%32))+uint32(_c_F_updateIOThreads[2])))
 	if v22 == int32(0) {
 		goto L7
 	} else {
@@ -725,7 +725,7 @@ L5:
 L7:
 	;
 	v26 = v15 + int32(-1)
-	v31 = *(*int32)(unsafe.Add(mBase, uint32(v26<<(uint(int32(2))%32))+uint32(_consts[359])))
+	v31 = *(*int32)(unsafe.Add(mBase, uint32(v26<<(uint(int32(2))%32))+uint32(_c_F_updateIOThreads[2])))
 	if v31 != 0 {
 		v66 = v26
 		goto L2
@@ -739,7 +739,7 @@ L8:
 L9:
 	;
 	v33 = v15 + int32(-2)
-	v38 = *(*int32)(unsafe.Add(mBase, uint32(v33<<(uint(int32(2))%32))+uint32(_consts[359])))
+	v38 = *(*int32)(unsafe.Add(mBase, uint32(v33<<(uint(int32(2))%32))+uint32(_c_F_updateIOThreads[2])))
 	if v38 != 0 {
 		v66 = v33
 		goto L2
@@ -749,7 +749,7 @@ L9:
 L10:
 	;
 	v40 = v15 + int32(-3)
-	v45 = *(*int32)(unsafe.Add(mBase, uint32(v40<<(uint(int32(2))%32))+uint32(_consts[359])))
+	v45 = *(*int32)(unsafe.Add(mBase, uint32(v40<<(uint(int32(2))%32))+uint32(_c_F_updateIOThreads[2])))
 	if v45 != 0 {
 		v66 = v40
 		goto L2
@@ -759,7 +759,7 @@ L10:
 L11:
 	;
 	v47 = v15 + int32(-4)
-	v52 = *(*int32)(unsafe.Add(mBase, uint32(v47<<(uint(int32(2))%32))+uint32(_consts[359])))
+	v52 = *(*int32)(unsafe.Add(mBase, uint32(v47<<(uint(int32(2))%32))+uint32(_c_F_updateIOThreads[2])))
 	if v52 != 0 {
 		v66 = v47
 		goto L2
@@ -796,10 +796,10 @@ L16:
 L17:
 	;
 	v76 = int32(0)
-	v78 = *(*int32)(unsafe.Add(mBase, _consts[360]))
-	v79 = int32(_a20)
-	v80 = *(*int64)(unsafe.Add(mBase, _consts[361]))
-	v82 = *(*int64)(unsafe.Add(mBase, _consts[362]))
+	v78 = *(*int32)(unsafe.Add(mBase, _c_F_updateIOThreads[3]))
+	v79 = int32(_a_F_updateIOThreads_2)
+	v80 = *(*int64)(unsafe.Add(mBase, _c_F_updateIOThreads[4]))
+	v82 = *(*int64)(unsafe.Add(mBase, _c_F_updateIOThreads[5]))
 	if base.Ui32(base.I32_wrap_i64(v80+v82)) <= base.Ui32(v78) {
 		goto L18
 	} else {
@@ -807,7 +807,7 @@ L17:
 	}
 L18:
 	;
-	v91 = *(*int32)(unsafe.Add(mBase, _consts[28]))
+	v91 = *(*int32)(unsafe.Add(mBase, _c_F_updateIOThreads[6]))
 	if int32(2) < v91 {
 		goto L23
 	} else {
@@ -823,7 +823,7 @@ L19:
 	}
 L20:
 	;
-	*(*int32)(unsafe.Add(mBase, uint32(l0))) = int32(_a676)
+	*(*int32)(unsafe.Add(mBase, uint32(l0))) = int32(_a_F_updateIOThreads_3)
 	v217 = v76
 	goto L16
 L21:
@@ -838,7 +838,7 @@ L21:
 	}
 L22:
 	;
-	F__serverAssert(m, int32(_a671), int32(_a672), int32(85))
+	F__serverAssert(m, int32(_a_F_updateIOThreads_0), int32(_a_F_updateIOThreads_1), int32(85))
 	mBase = m.M
 	v211 = m.ExcPending
 	if v211 != 0 {
@@ -848,7 +848,7 @@ L22:
 	}
 L23:
 	;
-	v103 = *(*int32)(unsafe.Add(mBase, _consts[347]))
+	v103 = *(*int32)(unsafe.Add(mBase, _c_F_updateIOThreads[7]))
 	if v103 < int32(2) {
 		goto L27
 	} else {
@@ -858,7 +858,7 @@ L24:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v8)+4)) = v74
 	*(*int32)(unsafe.Add(mBase, uint32(v8))) = v71
-	F__serverLog(m, int32(2), int32(_a677), v8)
+	F__serverLog(m, int32(2), int32(_a_F_updateIOThreads_4), v8)
 	mBase = m.M
 	v99 = m.ExcPending
 	if v99 != 0 {
@@ -868,7 +868,7 @@ L24:
 	}
 L25:
 	;
-	v101 = *(*int32)(unsafe.Add(mBase, _consts[346]))
+	v101 = *(*int32)(unsafe.Add(mBase, _c_F_updateIOThreads[0]))
 	if v101 != 0 {
 		goto L22
 	} else {
@@ -880,8 +880,8 @@ L26:
 L27:
 	;
 	v131 = int32(0)
-	v132 = *(*int32)(unsafe.Add(mBase, _consts[357]))
-	v134 = *(*int32)(unsafe.Add(mBase, _consts[358]))
+	v132 = *(*int32)(unsafe.Add(mBase, _c_F_updateIOThreads[8]))
+	v134 = *(*int32)(unsafe.Add(mBase, _c_F_updateIOThreads[9]))
 	if v132 == v134 {
 		goto L35
 	} else {
@@ -894,8 +894,8 @@ L28:
 L29:
 	;
 	v113 = v109 * int32(192)
-	v117 = *(*int32)(unsafe.Add(mBase, uint32(v113)+uint32(_consts[354])))
-	v118 = *(*int32)(unsafe.Add(mBase, uint32(v113)+uint32(_consts[355])))
+	v117 = *(*int32)(unsafe.Add(mBase, uint32(v113)+uint32(_c_F_updateIOThreads[10])))
+	v118 = *(*int32)(unsafe.Add(mBase, uint32(v113)+uint32(_c_F_updateIOThreads[11])))
 	if v117 == v118 {
 		goto L32
 	} else {
@@ -907,7 +907,7 @@ L30:
 L31:
 	;
 	v122 = v109 + int32(1)
-	v124 = *(*int32)(unsafe.Add(mBase, _consts[347]))
+	v124 = *(*int32)(unsafe.Add(mBase, _c_F_updateIOThreads[7]))
 	if v122 < v124 {
 		v109 = v122
 		goto L29
@@ -919,7 +919,7 @@ L32:
 	goto L31
 L33:
 	;
-	*(*int32)(unsafe.Add(mBase, uint32(v113)+uint32(_consts[355]))) = v117
+	*(*int32)(unsafe.Add(mBase, uint32(v113)+uint32(_c_F_updateIOThreads[11]))) = v117
 	goto L32
 L34:
 	;
@@ -927,7 +927,7 @@ L34:
 L35:
 	;
 	v151 = int32(1)
-	v153 = *(*int32)(unsafe.Add(mBase, _consts[347]))
+	v153 = *(*int32)(unsafe.Add(mBase, _c_F_updateIOThreads[7]))
 	if v153 <= v151 {
 		goto L40
 	} else {
@@ -939,8 +939,8 @@ L36:
 L37:
 	;
 	v141 = int32(0)
-	v142 = *(*int32)(unsafe.Add(mBase, _consts[357]))
-	v144 = *(*int32)(unsafe.Add(mBase, _consts[358]))
+	v142 = *(*int32)(unsafe.Add(mBase, _c_F_updateIOThreads[8]))
+	v144 = *(*int32)(unsafe.Add(mBase, _c_F_updateIOThreads[9]))
 	if v142 != v144 {
 		goto L37
 	} else {
@@ -955,9 +955,9 @@ L39:
 L40:
 	;
 	v176 = int32(1)
-	v177 = int32(_a20)
-	*(*int32)(unsafe.Add(mBase, _consts[347])) = v176
-	v181 = *(*int32)(unsafe.Add(mBase, _consts[345]))
+	v177 = int32(_a_F_updateIOThreads_2)
+	*(*int32)(unsafe.Add(mBase, _c_F_updateIOThreads[7])) = v176
+	v181 = *(*int32)(unsafe.Add(mBase, _c_F_updateIOThreads[1]))
 	if v71 < v181 {
 		goto L21
 	} else {
@@ -976,7 +976,7 @@ L43:
 L44:
 	;
 	v167 = v158 + int32(1)
-	v169 = *(*int32)(unsafe.Add(mBase, _consts[347]))
+	v169 = *(*int32)(unsafe.Add(mBase, _c_F_updateIOThreads[7]))
 	if v167 < v169 {
 		v158 = v167
 		goto L42
@@ -1014,8 +1014,8 @@ L50:
 	}
 L51:
 	;
-	*(*int32)(unsafe.Add(mBase, uint32(v190<<(uint(int32(2))%32))+uint32(_consts[359]))) = int32(0)
-	v205 = *(*int32)(unsafe.Add(mBase, _consts[345]))
+	*(*int32)(unsafe.Add(mBase, uint32(v190<<(uint(int32(2))%32))+uint32(_c_F_updateIOThreads[2]))) = int32(0)
+	v205 = *(*int32)(unsafe.Add(mBase, _c_F_updateIOThreads[1]))
 	if v205 < v190 {
 		v188 = v190
 		goto L48

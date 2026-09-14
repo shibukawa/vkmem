@@ -772,7 +772,7 @@ L63:
 	goto L64
 L64:
 	;
-	*(*int32)(unsafe.Add(mBase, _consts[5])) = int32(61)
+	*(*int32)(unsafe.Add(mBase, _c_F_rioConnRead[0])) = int32(61)
 	return int32(0)
 L65:
 	;
@@ -1151,7 +1151,7 @@ L117:
 	goto L118
 L118:
 	;
-	v464 = *(*int32)(unsafe.Add(mBase, _consts[5]))
+	v464 = *(*int32)(unsafe.Add(mBase, _c_F_rioConnRead[0]))
 	if v464 != int32(6) {
 		v487 = v432
 		goto L65
@@ -1160,7 +1160,7 @@ L118:
 	}
 L119:
 	;
-	*(*int32)(unsafe.Add(mBase, _consts[5])) = int32(73)
+	*(*int32)(unsafe.Add(mBase, _c_F_rioConnRead[0])) = int32(73)
 	return int32(0)
 L120:
 	;
@@ -1595,7 +1595,7 @@ L40:
 L41:
 	;
 	v136 = *(*int32)(unsafe.Add(mBase, uint32(l0)+52))
-	v138 = *(*int32)(unsafe.Add(mBase, _consts[5]))
+	v138 = *(*int32)(unsafe.Add(mBase, _c_F_rioConnsetWrite[0]))
 	*(*int32)(unsafe.Add(mBase, uint32(v136+v104))) = v138
 	v140 = *(*int32)(unsafe.Add(mBase, uint32(l0)+52))
 	v141 = v140 + v104
@@ -1608,7 +1608,7 @@ L41:
 	}
 L42:
 	;
-	v131 = *(*int32)(unsafe.Add(mBase, _consts[5]))
+	v131 = *(*int32)(unsafe.Add(mBase, _c_F_rioConnsetWrite[0]))
 	if v131 != int32(6) {
 		goto L41
 	} else {
@@ -1616,7 +1616,7 @@ L42:
 	}
 L43:
 	;
-	*(*int32)(unsafe.Add(mBase, _consts[5])) = int32(73)
+	*(*int32)(unsafe.Add(mBase, _c_F_rioConnsetWrite[0])) = int32(73)
 	goto L41
 L44:
 	;
@@ -2072,7 +2072,7 @@ L38:
 	goto L39
 L39:
 	;
-	v141 = *(*int32)(unsafe.Add(mBase, _consts[5]))
+	v141 = *(*int32)(unsafe.Add(mBase, _c_F_rioFdWrite[0]))
 	if v141 == int32(27) {
 		goto L35
 	} else {
@@ -2083,7 +2083,7 @@ L40:
 	goto L36
 L41:
 	;
-	*(*int32)(unsafe.Add(mBase, _consts[5])) = int32(73)
+	*(*int32)(unsafe.Add(mBase, _c_F_rioFdWrite[0])) = int32(73)
 	return int32(0)
 L42:
 	;
@@ -2149,7 +2149,7 @@ func F_rioInitWithFile(m *base.Module, l0 int32, l1 int32) {
 	_ = v9
 	var v18 int32
 	_ = v18
-	v7 = F__emscripten_memcpy_bulkmem(m, l0, int32(_a144), int32(80))
+	v7 = F__emscripten_memcpy_bulkmem(m, l0, int32(_a_F_rioInitWithFile_0), int32(80))
 	mBase = m.M
 	v9 = int64(0)
 	*(*int64)(unsafe.Add(mBase, uint32(v7)+56)) = v9
@@ -2597,7 +2597,7 @@ func F_rioWriteBulkObject(m *base.Module, l0 int32, l1 int32) int32 {
 			return v60
 		}
 	default:
-		F__serverPanic_1(m, int32(_a85), int32(1916), int32(_a166), int32(0))
+		F__serverPanic_1(m, int32(_a_F_rioWriteBulkObject_0), int32(1916), int32(_a_F_rioWriteBulkObject_1), int32(0))
 		mBase = m.M
 		v56 = m.ExcPending
 		if v56 != 0 {
@@ -2675,7 +2675,7 @@ func F_rioWriteHashIteratorCursor(m *base.Module, l0 int32, l1 int32, l2 int32) 
 			}
 		}
 	default:
-		F__serverPanic_1(m, int32(_a85), int32(2082), int32(_a176), int32(0))
+		F__serverPanic_1(m, int32(_a_F_rioWriteHashIteratorCursor_0), int32(2082), int32(_a_F_rioWriteHashIteratorCursor_1), int32(0))
 		mBase = m.M
 		v42 = m.ExcPending
 		if v42 != 0 {

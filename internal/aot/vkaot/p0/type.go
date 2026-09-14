@@ -209,7 +209,7 @@ L3:
 	}
 L4:
 	;
-	F__serverPanic_1(m, int32(_a1511), int32(548), int32(_a1512), int32(0))
+	F__serverPanic_1(m, int32(_a_F_setTypeConvertAndExpand_0), int32(548), int32(_a_F_setTypeConvertAndExpand_1), int32(0))
 	mBase = m.M
 	v219 = m.ExcPending
 	if v219 != 0 {
@@ -219,7 +219,7 @@ L4:
 	}
 L5:
 	;
-	F__serverAssertWithInfo(m, int32(0), l0, int32(_a1513), int32(_a1511), int32(498))
+	F__serverAssertWithInfo(m, int32(0), l0, int32(_a_F_setTypeConvertAndExpand_2), int32(_a_F_setTypeConvertAndExpand_0), int32(498))
 	mBase = m.M
 	v212 = m.ExcPending
 	if v212 != 0 {
@@ -255,7 +255,7 @@ L8:
 	}
 L9:
 	;
-	v25 = F_hashtableCreate(m, int32(_a846))
+	v25 = F_hashtableCreate(m, int32(_a_F_setTypeConvertAndExpand_3))
 	mBase = m.M
 	v28 = m.ExcPending
 	if v28 != 0 {
@@ -746,7 +746,7 @@ L83:
 	}
 L84:
 	;
-	F__serverAssert(m, int32(_a1514), int32(_a1511), int32(515))
+	F__serverAssert(m, int32(_a_F_setTypeConvertAndExpand_4), int32(_a_F_setTypeConvertAndExpand_0), int32(515))
 	mBase = m.M
 	v256 = m.ExcPending
 	if v256 != 0 {
@@ -1157,7 +1157,7 @@ func F_typeCommand(m *base.Module, l0 int32) {
 			v13 = *(*int32)(unsafe.Add(mBase, uint32(v8)))
 			v15 = v13 & int32(15)
 			if base.Ui32(int32(7)) <= base.Ui32(v15) {
-				F__serverAssert(m, int32(_a488), int32(_a474), int32(1140))
+				F__serverAssert(m, int32(_a_F_typeCommand_0), int32(_a_F_typeCommand_1), int32(1140))
 				mBase = m.M
 				v37 = m.ExcPending
 				if v37 != 0 {
@@ -1171,7 +1171,7 @@ func F_typeCommand(m *base.Module, l0 int32) {
 				}
 			} else {
 				if v15 != int32(5) {
-					v30 = *(*int32)(unsafe.Add(mBase, uint32(v15<<(uint(int32(2))%32))+uint32(_consts[225])))
+					v30 = *(*int32)(unsafe.Add(mBase, uint32(v15<<(uint(int32(2))%32))+uint32(_c_F_typeCommand[0])))
 					F_addReplyStatus(m, l0, v30)
 					mBase = m.M
 					v32 = m.ExcPending
@@ -1195,7 +1195,7 @@ func F_typeCommand(m *base.Module, l0 int32) {
 				}
 			}
 		} else {
-			F_addReplyStatus(m, l0, int32(_a489))
+			F_addReplyStatus(m, l0, int32(_a_F_typeCommand_2))
 			mBase = m.M
 			v12 = m.ExcPending
 			if v12 != 0 {

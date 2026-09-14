@@ -12,7 +12,7 @@ func F_expireCommand(m *base.Module, l0 int32) {
 	_ = v3
 	var v6 int32
 	_ = v6
-	v3 = *(*int64)(unsafe.Add(mBase, _consts[98]))
+	v3 = *(*int64)(unsafe.Add(mBase, _c_F_expireCommand[0]))
 	F_expireGenericCommand(m, l0, v3, int32(0))
 	mBase = m.M
 	v6 = m.ExcPending
@@ -128,7 +128,7 @@ func F_expireReplicaKeys(m *base.Module) {
 	var v167 int32
 	_ = v167
 	v1 = int32(0)
-	v15 = *(*int32)(unsafe.Add(mBase, _consts[422]))
+	v15 = *(*int32)(unsafe.Add(mBase, _c_F_expireReplicaKeys[0]))
 	if v15 == v1 {
 		goto L1
 	} else {
@@ -151,7 +151,7 @@ L3:
 	v23 = F_mstime(m)
 	mBase = m.M
 	v24 = int32(0)
-	v25 = *(*int32)(unsafe.Add(mBase, _consts[422]))
+	v25 = *(*int32)(unsafe.Add(mBase, _c_F_expireReplicaKeys[0]))
 	v28 = v25
 	v30 = v24
 	v31 = v24
@@ -189,7 +189,7 @@ L9:
 	}
 L10:
 	;
-	v137 = *(*int32)(unsafe.Add(mBase, _consts[422]))
+	v137 = *(*int32)(unsafe.Add(mBase, _c_F_expireReplicaKeys[0]))
 	v138 = F_dictDelete(m, v137, v43)
 	mBase = m.M
 	v139 = m.ExcPending
@@ -209,7 +209,7 @@ L11:
 L12:
 	;
 	v47 = int64(0)
-	v50 = *(*int32)(unsafe.Add(mBase, _consts[65]))
+	v50 = *(*int32)(unsafe.Add(mBase, _c_F_expireReplicaKeys[1]))
 	if v50 < int32(1) {
 		v125 = v30
 		goto L10
@@ -251,7 +251,7 @@ L16:
 	}
 L17:
 	;
-	v71 = *(*int32)(unsafe.Add(mBase, _consts[137]))
+	v71 = *(*int32)(unsafe.Add(mBase, _c_F_expireReplicaKeys[2]))
 	v76 = *(*int32)(unsafe.Add(mBase, uint32(v71+base.I32_wrap_i64(v60)<<(uint(int32(2))%32))))
 	v77 = int64(0)
 	v78 = int32(0)
@@ -274,7 +274,7 @@ L18:
 	}
 L19:
 	;
-	v102 = *(*int32)(unsafe.Add(mBase, _consts[65]))
+	v102 = *(*int32)(unsafe.Add(mBase, _c_F_expireReplicaKeys[1]))
 	v103 = v102
 	v104 = v55 + v97
 	v105 = v96 | v61
@@ -378,7 +378,7 @@ L33:
 L34:
 	;
 	v163 = int32(0)
-	v164 = *(*int32)(unsafe.Add(mBase, _consts[422]))
+	v164 = *(*int32)(unsafe.Add(mBase, _c_F_expireReplicaKeys[0]))
 	v165 = *(*int32)(unsafe.Add(mBase, uint32(v164)+12))
 	v167 = *(*int32)(unsafe.Add(mBase, uint32(v164)+16))
 	if v165 != v163-v167 {
@@ -606,7 +606,7 @@ func F_removeExpire(m *base.Module, l0 int32, l1 int32) int32 {
 	m.G0 = v9
 	v11 = F_objectGetVal(m, l1)
 	mBase = m.M
-	v15 = *(*int32)(unsafe.Add(mBase, _consts[139]))
+	v15 = *(*int32)(unsafe.Add(mBase, _c_F_removeExpire[0]))
 	if v15 == v3 {
 		v22 = v3
 		v23 = *(*int32)(unsafe.Add(mBase, uint32(l0)+4))
@@ -631,7 +631,7 @@ func F_removeExpire(m *base.Module, l0 int32, l1 int32) int32 {
 					return int32(0)
 				} else {
 					if v31 != v33 {
-						F__serverAssert(m, int32(_a552), int32(_a550), int32(1880))
+						F__serverAssert(m, int32(_a_F_removeExpire_0), int32(_a_F_removeExpire_1), int32(1880))
 						mBase = m.M
 						v90 = m.ExcPending
 						if v90 != 0 {
@@ -645,7 +645,7 @@ func F_removeExpire(m *base.Module, l0 int32, l1 int32) int32 {
 						}
 					} else {
 						v36 = int32(1)
-						v38 = *(*int32)(unsafe.Add(mBase, _consts[88]))
+						v38 = *(*int32)(unsafe.Add(mBase, _c_F_removeExpire[1]))
 						if v38 == int32(0) {
 							v80 = v36
 							m.G0 = v9 + int32(16)
@@ -654,7 +654,7 @@ func F_removeExpire(m *base.Module, l0 int32, l1 int32) int32 {
 							v41 = F_objectGetVal(m, l1)
 							mBase = m.M
 							v42 = int32(0)
-							v44 = *(*int32)(unsafe.Add(mBase, _consts[139]))
+							v44 = *(*int32)(unsafe.Add(mBase, _c_F_removeExpire[0]))
 							if v44 == v42 {
 								v49 = v42
 								v50 = F_objectGetVal(m, l1)
@@ -681,7 +681,7 @@ func F_removeExpire(m *base.Module, l0 int32, l1 int32) int32 {
 											v75 = v74
 										}
 										if v75 != int64(-1) {
-											F__serverAssert(m, int32(_a553), int32(_a550), int32(1881))
+											F__serverAssert(m, int32(_a_F_removeExpire_2), int32(_a_F_removeExpire_1), int32(1881))
 											mBase = m.M
 											v96 = m.ExcPending
 											if v96 != 0 {
@@ -732,7 +732,7 @@ func F_removeExpire(m *base.Module, l0 int32, l1 int32) int32 {
 												v75 = v74
 											}
 											if v75 != int64(-1) {
-												F__serverAssert(m, int32(_a553), int32(_a550), int32(1881))
+												F__serverAssert(m, int32(_a_F_removeExpire_2), int32(_a_F_removeExpire_1), int32(1881))
 												mBase = m.M
 												v96 = m.ExcPending
 												if v96 != 0 {
@@ -788,7 +788,7 @@ func F_removeExpire(m *base.Module, l0 int32, l1 int32) int32 {
 						return int32(0)
 					} else {
 						if v31 != v33 {
-							F__serverAssert(m, int32(_a552), int32(_a550), int32(1880))
+							F__serverAssert(m, int32(_a_F_removeExpire_0), int32(_a_F_removeExpire_1), int32(1880))
 							mBase = m.M
 							v90 = m.ExcPending
 							if v90 != 0 {
@@ -802,7 +802,7 @@ func F_removeExpire(m *base.Module, l0 int32, l1 int32) int32 {
 							}
 						} else {
 							v36 = int32(1)
-							v38 = *(*int32)(unsafe.Add(mBase, _consts[88]))
+							v38 = *(*int32)(unsafe.Add(mBase, _c_F_removeExpire[1]))
 							if v38 == int32(0) {
 								v80 = v36
 								m.G0 = v9 + int32(16)
@@ -811,7 +811,7 @@ func F_removeExpire(m *base.Module, l0 int32, l1 int32) int32 {
 								v41 = F_objectGetVal(m, l1)
 								mBase = m.M
 								v42 = int32(0)
-								v44 = *(*int32)(unsafe.Add(mBase, _consts[139]))
+								v44 = *(*int32)(unsafe.Add(mBase, _c_F_removeExpire[0]))
 								if v44 == v42 {
 									v49 = v42
 									v50 = F_objectGetVal(m, l1)
@@ -838,7 +838,7 @@ func F_removeExpire(m *base.Module, l0 int32, l1 int32) int32 {
 												v75 = v74
 											}
 											if v75 != int64(-1) {
-												F__serverAssert(m, int32(_a553), int32(_a550), int32(1881))
+												F__serverAssert(m, int32(_a_F_removeExpire_2), int32(_a_F_removeExpire_1), int32(1881))
 												mBase = m.M
 												v96 = m.ExcPending
 												if v96 != 0 {
@@ -889,7 +889,7 @@ func F_removeExpire(m *base.Module, l0 int32, l1 int32) int32 {
 													v75 = v74
 												}
 												if v75 != int64(-1) {
-													F__serverAssert(m, int32(_a553), int32(_a550), int32(1881))
+													F__serverAssert(m, int32(_a_F_removeExpire_2), int32(_a_F_removeExpire_1), int32(1881))
 													mBase = m.M
 													v96 = m.ExcPending
 													if v96 != 0 {

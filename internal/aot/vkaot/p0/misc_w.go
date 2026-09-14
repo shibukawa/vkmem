@@ -210,9 +210,9 @@ func F_whileBlockedCron(m *base.Module) {
 	_ = v92
 	var v107 int32
 	_ = v107
-	v7 = *(*int64)(unsafe.Add(mBase, _consts[488]))
+	v7 = *(*int64)(unsafe.Add(mBase, _c_F_whileBlockedCron[0]))
 	if v7 == int64(0) {
-		F__serverAssert(m, int32(_a1247), int32(_a1240), int32(1752))
+		F__serverAssert(m, int32(_a_F_whileBlockedCron_0), int32(_a_F_whileBlockedCron_1), int32(1752))
 		mBase = m.M
 		v107 = m.ExcPending
 		if v107 != 0 {
@@ -225,19 +225,19 @@ func F_whileBlockedCron(m *base.Module) {
 			}
 		}
 	} else {
-		v11 = *(*int64)(unsafe.Add(mBase, _consts[32]))
+		v11 = *(*int64)(unsafe.Add(mBase, _c_F_whileBlockedCron[1]))
 		if v11 <= v7 {
 			return
 		} else {
 			v13 = int32(0)
-			v15 = *(*int32)(unsafe.Add(mBase, _consts[148]))
-			v19 = *(*int32)(unsafe.Add(mBase, _consts[149]))
+			v15 = *(*int32)(unsafe.Add(mBase, _c_F_whileBlockedCron[2]))
+			v19 = *(*int32)(unsafe.Add(mBase, _c_F_whileBlockedCron[3]))
 			v20 = base.I32_div_s(int32(1000), v19)
 			v26 = base.I64_div_s(v11-v7+base.I64_extend_i32_s(v20+int32(-1)), base.I64_extend_i32_s(v20))
 			v27 = base.I32_wrap_i64(v26)
-			*(*int32)(unsafe.Add(mBase, _consts[148])) = v15 + v27
-			*(*int64)(unsafe.Add(mBase, _consts[488])) = v7 + base.I64_extend_i32_s(v20*v27)
-			v36 = *(*int64)(unsafe.Add(mBase, _consts[270]))
+			*(*int32)(unsafe.Add(mBase, _c_F_whileBlockedCron[2])) = v15 + v27
+			*(*int64)(unsafe.Add(mBase, _c_F_whileBlockedCron[0])) = v7 + base.I64_extend_i32_s(v20*v27)
+			v36 = *(*int64)(unsafe.Add(mBase, _c_F_whileBlockedCron[4]))
 			if base.B2i32(v36 == int64(0)) == v13 {
 				v42 = F_ustime(m)
 				mBase = m.M
@@ -246,17 +246,17 @@ func F_whileBlockedCron(m *base.Module) {
 				v43 = int64(0)
 			}
 			v44 = int32(0)
-			v45 = *(*int32)(unsafe.Add(mBase, _consts[116]))
+			v45 = *(*int32)(unsafe.Add(mBase, _c_F_whileBlockedCron[5]))
 			if v45 == v44 {
-				v51 = *(*int64)(unsafe.Add(mBase, _consts[270]))
+				v51 = *(*int64)(unsafe.Add(mBase, _c_F_whileBlockedCron[4]))
 				if v51 == int64(0) {
 					v69 = int32(0)
-					v70 = *(*int32)(unsafe.Add(mBase, _consts[686]))
+					v70 = *(*int32)(unsafe.Add(mBase, _c_F_whileBlockedCron[6]))
 					if v70 == v69 {
 						return
 					} else {
 						v73 = int32(0)
-						v74 = *(*int32)(unsafe.Add(mBase, _consts[116]))
+						v74 = *(*int32)(unsafe.Add(mBase, _c_F_whileBlockedCron[5]))
 						if v74 == v73 {
 							return
 						} else {
@@ -273,22 +273,22 @@ func F_whileBlockedCron(m *base.Module) {
 									for {
 									}
 								} else {
-									v84 = *(*int32)(unsafe.Add(mBase, _consts[15]))
+									v84 = *(*int32)(unsafe.Add(mBase, _c_F_whileBlockedCron[7]))
 									if int32(3) < v84 {
 										v92 = int32(0)
-										*(*int32)(unsafe.Add(mBase, _consts[687])) = v92
-										*(*int32)(unsafe.Add(mBase, _consts[686])) = v92
+										*(*int32)(unsafe.Add(mBase, _c_F_whileBlockedCron[8])) = v92
+										*(*int32)(unsafe.Add(mBase, _c_F_whileBlockedCron[6])) = v92
 										return
 									} else {
-										F__serverLog(m, int32(3), int32(_a1248), int32(0))
+										F__serverLog(m, int32(3), int32(_a_F_whileBlockedCron_2), int32(0))
 										mBase = m.M
 										v91 = m.ExcPending
 										if v91 != 0 {
 											return
 										} else {
 											v92 = int32(0)
-											*(*int32)(unsafe.Add(mBase, _consts[687])) = v92
-											*(*int32)(unsafe.Add(mBase, _consts[686])) = v92
+											*(*int32)(unsafe.Add(mBase, _c_F_whileBlockedCron[8])) = v92
+											*(*int32)(unsafe.Add(mBase, _c_F_whileBlockedCron[6])) = v92
 											return
 										}
 									}
@@ -299,15 +299,15 @@ func F_whileBlockedCron(m *base.Module) {
 				} else {
 					v54 = F_ustime(m)
 					mBase = m.M
-					v56 = *(*int64)(unsafe.Add(mBase, _consts[270]))
+					v56 = *(*int64)(unsafe.Add(mBase, _c_F_whileBlockedCron[4]))
 					if v56 == int64(0) {
 						v69 = int32(0)
-						v70 = *(*int32)(unsafe.Add(mBase, _consts[686]))
+						v70 = *(*int32)(unsafe.Add(mBase, _c_F_whileBlockedCron[6]))
 						if v70 == v69 {
 							return
 						} else {
 							v73 = int32(0)
-							v74 = *(*int32)(unsafe.Add(mBase, _consts[116]))
+							v74 = *(*int32)(unsafe.Add(mBase, _c_F_whileBlockedCron[5]))
 							if v74 == v73 {
 								return
 							} else {
@@ -324,22 +324,22 @@ func F_whileBlockedCron(m *base.Module) {
 										for {
 										}
 									} else {
-										v84 = *(*int32)(unsafe.Add(mBase, _consts[15]))
+										v84 = *(*int32)(unsafe.Add(mBase, _c_F_whileBlockedCron[7]))
 										if int32(3) < v84 {
 											v92 = int32(0)
-											*(*int32)(unsafe.Add(mBase, _consts[687])) = v92
-											*(*int32)(unsafe.Add(mBase, _consts[686])) = v92
+											*(*int32)(unsafe.Add(mBase, _c_F_whileBlockedCron[8])) = v92
+											*(*int32)(unsafe.Add(mBase, _c_F_whileBlockedCron[6])) = v92
 											return
 										} else {
-											F__serverLog(m, int32(3), int32(_a1248), int32(0))
+											F__serverLog(m, int32(3), int32(_a_F_whileBlockedCron_2), int32(0))
 											mBase = m.M
 											v91 = m.ExcPending
 											if v91 != 0 {
 												return
 											} else {
 												v92 = int32(0)
-												*(*int32)(unsafe.Add(mBase, _consts[687])) = v92
-												*(*int32)(unsafe.Add(mBase, _consts[686])) = v92
+												*(*int32)(unsafe.Add(mBase, _c_F_whileBlockedCron[8])) = v92
+												*(*int32)(unsafe.Add(mBase, _c_F_whileBlockedCron[6])) = v92
 												return
 											}
 										}
@@ -351,12 +351,12 @@ func F_whileBlockedCron(m *base.Module) {
 						v59 = v54 - v43
 						if v59 < v56*int64(1000) {
 							v69 = int32(0)
-							v70 = *(*int32)(unsafe.Add(mBase, _consts[686]))
+							v70 = *(*int32)(unsafe.Add(mBase, _c_F_whileBlockedCron[6]))
 							if v70 == v69 {
 								return
 							} else {
 								v73 = int32(0)
-								v74 = *(*int32)(unsafe.Add(mBase, _consts[116]))
+								v74 = *(*int32)(unsafe.Add(mBase, _c_F_whileBlockedCron[5]))
 								if v74 == v73 {
 									return
 								} else {
@@ -373,22 +373,22 @@ func F_whileBlockedCron(m *base.Module) {
 											for {
 											}
 										} else {
-											v84 = *(*int32)(unsafe.Add(mBase, _consts[15]))
+											v84 = *(*int32)(unsafe.Add(mBase, _c_F_whileBlockedCron[7]))
 											if int32(3) < v84 {
 												v92 = int32(0)
-												*(*int32)(unsafe.Add(mBase, _consts[687])) = v92
-												*(*int32)(unsafe.Add(mBase, _consts[686])) = v92
+												*(*int32)(unsafe.Add(mBase, _c_F_whileBlockedCron[8])) = v92
+												*(*int32)(unsafe.Add(mBase, _c_F_whileBlockedCron[6])) = v92
 												return
 											} else {
-												F__serverLog(m, int32(3), int32(_a1248), int32(0))
+												F__serverLog(m, int32(3), int32(_a_F_whileBlockedCron_2), int32(0))
 												mBase = m.M
 												v91 = m.ExcPending
 												if v91 != 0 {
 													return
 												} else {
 													v92 = int32(0)
-													*(*int32)(unsafe.Add(mBase, _consts[687])) = v92
-													*(*int32)(unsafe.Add(mBase, _consts[686])) = v92
+													*(*int32)(unsafe.Add(mBase, _c_F_whileBlockedCron[8])) = v92
+													*(*int32)(unsafe.Add(mBase, _c_F_whileBlockedCron[6])) = v92
 													return
 												}
 											}
@@ -397,19 +397,19 @@ func F_whileBlockedCron(m *base.Module) {
 								}
 							}
 						} else {
-							F_latencyAddSample(m, int32(_a1249), v59)
+							F_latencyAddSample(m, int32(_a_F_whileBlockedCron_3), v59)
 							mBase = m.M
 							v65 = m.ExcPending
 							if v65 != 0 {
 								return
 							} else {
 								v69 = int32(0)
-								v70 = *(*int32)(unsafe.Add(mBase, _consts[686]))
+								v70 = *(*int32)(unsafe.Add(mBase, _c_F_whileBlockedCron[6]))
 								if v70 == v69 {
 									return
 								} else {
 									v73 = int32(0)
-									v74 = *(*int32)(unsafe.Add(mBase, _consts[116]))
+									v74 = *(*int32)(unsafe.Add(mBase, _c_F_whileBlockedCron[5]))
 									if v74 == v73 {
 										return
 									} else {
@@ -426,22 +426,22 @@ func F_whileBlockedCron(m *base.Module) {
 												for {
 												}
 											} else {
-												v84 = *(*int32)(unsafe.Add(mBase, _consts[15]))
+												v84 = *(*int32)(unsafe.Add(mBase, _c_F_whileBlockedCron[7]))
 												if int32(3) < v84 {
 													v92 = int32(0)
-													*(*int32)(unsafe.Add(mBase, _consts[687])) = v92
-													*(*int32)(unsafe.Add(mBase, _consts[686])) = v92
+													*(*int32)(unsafe.Add(mBase, _c_F_whileBlockedCron[8])) = v92
+													*(*int32)(unsafe.Add(mBase, _c_F_whileBlockedCron[6])) = v92
 													return
 												} else {
-													F__serverLog(m, int32(3), int32(_a1248), int32(0))
+													F__serverLog(m, int32(3), int32(_a_F_whileBlockedCron_2), int32(0))
 													mBase = m.M
 													v91 = m.ExcPending
 													if v91 != 0 {
 														return
 													} else {
 														v92 = int32(0)
-														*(*int32)(unsafe.Add(mBase, _consts[687])) = v92
-														*(*int32)(unsafe.Add(mBase, _consts[686])) = v92
+														*(*int32)(unsafe.Add(mBase, _c_F_whileBlockedCron[8])) = v92
+														*(*int32)(unsafe.Add(mBase, _c_F_whileBlockedCron[6])) = v92
 														return
 													}
 												}
@@ -460,15 +460,15 @@ func F_whileBlockedCron(m *base.Module) {
 				if v49 != 0 {
 					return
 				} else {
-					v51 = *(*int64)(unsafe.Add(mBase, _consts[270]))
+					v51 = *(*int64)(unsafe.Add(mBase, _c_F_whileBlockedCron[4]))
 					if v51 == int64(0) {
 						v69 = int32(0)
-						v70 = *(*int32)(unsafe.Add(mBase, _consts[686]))
+						v70 = *(*int32)(unsafe.Add(mBase, _c_F_whileBlockedCron[6]))
 						if v70 == v69 {
 							return
 						} else {
 							v73 = int32(0)
-							v74 = *(*int32)(unsafe.Add(mBase, _consts[116]))
+							v74 = *(*int32)(unsafe.Add(mBase, _c_F_whileBlockedCron[5]))
 							if v74 == v73 {
 								return
 							} else {
@@ -485,22 +485,22 @@ func F_whileBlockedCron(m *base.Module) {
 										for {
 										}
 									} else {
-										v84 = *(*int32)(unsafe.Add(mBase, _consts[15]))
+										v84 = *(*int32)(unsafe.Add(mBase, _c_F_whileBlockedCron[7]))
 										if int32(3) < v84 {
 											v92 = int32(0)
-											*(*int32)(unsafe.Add(mBase, _consts[687])) = v92
-											*(*int32)(unsafe.Add(mBase, _consts[686])) = v92
+											*(*int32)(unsafe.Add(mBase, _c_F_whileBlockedCron[8])) = v92
+											*(*int32)(unsafe.Add(mBase, _c_F_whileBlockedCron[6])) = v92
 											return
 										} else {
-											F__serverLog(m, int32(3), int32(_a1248), int32(0))
+											F__serverLog(m, int32(3), int32(_a_F_whileBlockedCron_2), int32(0))
 											mBase = m.M
 											v91 = m.ExcPending
 											if v91 != 0 {
 												return
 											} else {
 												v92 = int32(0)
-												*(*int32)(unsafe.Add(mBase, _consts[687])) = v92
-												*(*int32)(unsafe.Add(mBase, _consts[686])) = v92
+												*(*int32)(unsafe.Add(mBase, _c_F_whileBlockedCron[8])) = v92
+												*(*int32)(unsafe.Add(mBase, _c_F_whileBlockedCron[6])) = v92
 												return
 											}
 										}
@@ -511,15 +511,15 @@ func F_whileBlockedCron(m *base.Module) {
 					} else {
 						v54 = F_ustime(m)
 						mBase = m.M
-						v56 = *(*int64)(unsafe.Add(mBase, _consts[270]))
+						v56 = *(*int64)(unsafe.Add(mBase, _c_F_whileBlockedCron[4]))
 						if v56 == int64(0) {
 							v69 = int32(0)
-							v70 = *(*int32)(unsafe.Add(mBase, _consts[686]))
+							v70 = *(*int32)(unsafe.Add(mBase, _c_F_whileBlockedCron[6]))
 							if v70 == v69 {
 								return
 							} else {
 								v73 = int32(0)
-								v74 = *(*int32)(unsafe.Add(mBase, _consts[116]))
+								v74 = *(*int32)(unsafe.Add(mBase, _c_F_whileBlockedCron[5]))
 								if v74 == v73 {
 									return
 								} else {
@@ -536,22 +536,22 @@ func F_whileBlockedCron(m *base.Module) {
 											for {
 											}
 										} else {
-											v84 = *(*int32)(unsafe.Add(mBase, _consts[15]))
+											v84 = *(*int32)(unsafe.Add(mBase, _c_F_whileBlockedCron[7]))
 											if int32(3) < v84 {
 												v92 = int32(0)
-												*(*int32)(unsafe.Add(mBase, _consts[687])) = v92
-												*(*int32)(unsafe.Add(mBase, _consts[686])) = v92
+												*(*int32)(unsafe.Add(mBase, _c_F_whileBlockedCron[8])) = v92
+												*(*int32)(unsafe.Add(mBase, _c_F_whileBlockedCron[6])) = v92
 												return
 											} else {
-												F__serverLog(m, int32(3), int32(_a1248), int32(0))
+												F__serverLog(m, int32(3), int32(_a_F_whileBlockedCron_2), int32(0))
 												mBase = m.M
 												v91 = m.ExcPending
 												if v91 != 0 {
 													return
 												} else {
 													v92 = int32(0)
-													*(*int32)(unsafe.Add(mBase, _consts[687])) = v92
-													*(*int32)(unsafe.Add(mBase, _consts[686])) = v92
+													*(*int32)(unsafe.Add(mBase, _c_F_whileBlockedCron[8])) = v92
+													*(*int32)(unsafe.Add(mBase, _c_F_whileBlockedCron[6])) = v92
 													return
 												}
 											}
@@ -563,12 +563,12 @@ func F_whileBlockedCron(m *base.Module) {
 							v59 = v54 - v43
 							if v59 < v56*int64(1000) {
 								v69 = int32(0)
-								v70 = *(*int32)(unsafe.Add(mBase, _consts[686]))
+								v70 = *(*int32)(unsafe.Add(mBase, _c_F_whileBlockedCron[6]))
 								if v70 == v69 {
 									return
 								} else {
 									v73 = int32(0)
-									v74 = *(*int32)(unsafe.Add(mBase, _consts[116]))
+									v74 = *(*int32)(unsafe.Add(mBase, _c_F_whileBlockedCron[5]))
 									if v74 == v73 {
 										return
 									} else {
@@ -585,22 +585,22 @@ func F_whileBlockedCron(m *base.Module) {
 												for {
 												}
 											} else {
-												v84 = *(*int32)(unsafe.Add(mBase, _consts[15]))
+												v84 = *(*int32)(unsafe.Add(mBase, _c_F_whileBlockedCron[7]))
 												if int32(3) < v84 {
 													v92 = int32(0)
-													*(*int32)(unsafe.Add(mBase, _consts[687])) = v92
-													*(*int32)(unsafe.Add(mBase, _consts[686])) = v92
+													*(*int32)(unsafe.Add(mBase, _c_F_whileBlockedCron[8])) = v92
+													*(*int32)(unsafe.Add(mBase, _c_F_whileBlockedCron[6])) = v92
 													return
 												} else {
-													F__serverLog(m, int32(3), int32(_a1248), int32(0))
+													F__serverLog(m, int32(3), int32(_a_F_whileBlockedCron_2), int32(0))
 													mBase = m.M
 													v91 = m.ExcPending
 													if v91 != 0 {
 														return
 													} else {
 														v92 = int32(0)
-														*(*int32)(unsafe.Add(mBase, _consts[687])) = v92
-														*(*int32)(unsafe.Add(mBase, _consts[686])) = v92
+														*(*int32)(unsafe.Add(mBase, _c_F_whileBlockedCron[8])) = v92
+														*(*int32)(unsafe.Add(mBase, _c_F_whileBlockedCron[6])) = v92
 														return
 													}
 												}
@@ -609,19 +609,19 @@ func F_whileBlockedCron(m *base.Module) {
 									}
 								}
 							} else {
-								F_latencyAddSample(m, int32(_a1249), v59)
+								F_latencyAddSample(m, int32(_a_F_whileBlockedCron_3), v59)
 								mBase = m.M
 								v65 = m.ExcPending
 								if v65 != 0 {
 									return
 								} else {
 									v69 = int32(0)
-									v70 = *(*int32)(unsafe.Add(mBase, _consts[686]))
+									v70 = *(*int32)(unsafe.Add(mBase, _c_F_whileBlockedCron[6]))
 									if v70 == v69 {
 										return
 									} else {
 										v73 = int32(0)
-										v74 = *(*int32)(unsafe.Add(mBase, _consts[116]))
+										v74 = *(*int32)(unsafe.Add(mBase, _c_F_whileBlockedCron[5]))
 										if v74 == v73 {
 											return
 										} else {
@@ -638,22 +638,22 @@ func F_whileBlockedCron(m *base.Module) {
 													for {
 													}
 												} else {
-													v84 = *(*int32)(unsafe.Add(mBase, _consts[15]))
+													v84 = *(*int32)(unsafe.Add(mBase, _c_F_whileBlockedCron[7]))
 													if int32(3) < v84 {
 														v92 = int32(0)
-														*(*int32)(unsafe.Add(mBase, _consts[687])) = v92
-														*(*int32)(unsafe.Add(mBase, _consts[686])) = v92
+														*(*int32)(unsafe.Add(mBase, _c_F_whileBlockedCron[8])) = v92
+														*(*int32)(unsafe.Add(mBase, _c_F_whileBlockedCron[6])) = v92
 														return
 													} else {
-														F__serverLog(m, int32(3), int32(_a1248), int32(0))
+														F__serverLog(m, int32(3), int32(_a_F_whileBlockedCron_2), int32(0))
 														mBase = m.M
 														v91 = m.ExcPending
 														if v91 != 0 {
 															return
 														} else {
 															v92 = int32(0)
-															*(*int32)(unsafe.Add(mBase, _consts[687])) = v92
-															*(*int32)(unsafe.Add(mBase, _consts[686])) = v92
+															*(*int32)(unsafe.Add(mBase, _c_F_whileBlockedCron[8])) = v92
+															*(*int32)(unsafe.Add(mBase, _c_F_whileBlockedCron[6])) = v92
 															return
 														}
 													}
@@ -831,13 +831,13 @@ L8:
 	goto L11
 L9:
 	;
-	v86 = v36 + int32(_a1718)
-	v87 = v36 + int32(_a1717)
+	v86 = v36 + int32(_a_F_wholeCommandHandler_0)
+	v87 = v36 + int32(_a_F_wholeCommandHandler_1)
 	goto L7
 L10:
 	;
-	v86 = v62 + int32(_a1720)
-	v87 = v62 + int32(_a1719)
+	v86 = v62 + int32(_a_F_wholeCommandHandler_2)
+	v87 = v62 + int32(_a_F_wholeCommandHandler_3)
 	goto L7
 L11:
 	;
@@ -851,8 +851,8 @@ L11:
 	}
 L12:
 	;
-	v86 = v69 + int32(_a1718)
-	v87 = v69 + int32(_a1717)
+	v86 = v69 + int32(_a_F_wholeCommandHandler_0)
+	v87 = v69 + int32(_a_F_wholeCommandHandler_1)
 	goto L7
 L13:
 	;
@@ -882,7 +882,7 @@ L17:
 	v98 = m.G15
 	v99 = *(*int32)(unsafe.Add(mBase, uint32(v98)))
 	v100 = m.G12
-	v104 = m.T0[v99].(func(*base.Module, int32, int32, int32) int32)(m, int32(0), v97+int32(_a1721), v12)
+	v104 = m.T0[v99].(func(*base.Module, int32, int32, int32) int32)(m, int32(0), v97+int32(_a_F_wholeCommandHandler_4), v12)
 	mBase = m.M
 	v107 = m.ExcPending
 	if v107 != 0 {

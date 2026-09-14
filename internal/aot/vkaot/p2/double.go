@@ -95,7 +95,7 @@ func F_createDoubleObject(m *base.Module, l0 int32, l1 float64, l2 int32, l3 int
 							} else {
 								if v48 != int32(2) {
 									v64 = m.G3
-									m.Env.X__assert_fail(m, v64+int32(_a1917), v64+int32(_a1910), int32(250), v64+int32(_a1918))
+									m.Env.X__assert_fail(m, v64+int32(_a_F_createDoubleObject_0), v64+int32(_a_F_createDoubleObject_1), int32(250), v64+int32(_a_F_createDoubleObject_2))
 									mBase = m.M
 									base.Wasm_trap_unreachable()
 									for {
@@ -163,7 +163,7 @@ func F_getDoubleFromObjectOrReply(m *base.Module, l0 int32, l1 int32, l2 int32, 
 			return v30
 		} else {
 			if l3 == int32(0) {
-				F_addReplyError(m, l0, int32(_a1060))
+				F_addReplyError(m, l0, int32(_a_F_getDoubleFromObjectOrReply_0))
 				mBase = m.M
 				v25 = m.ExcPending
 				if v25 != 0 {

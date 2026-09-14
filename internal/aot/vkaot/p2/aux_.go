@@ -333,7 +333,7 @@ func F_auxAnnounceClientTcpPortGetter(m *base.Module, l0 int32, l1 int32) int32 
 	m.G0 = v6
 	v8 = *(*int32)(unsafe.Add(mBase, uint32(l0)+2336))
 	*(*int32)(unsafe.Add(mBase, uint32(v6))) = v8
-	v11 = F_sdscatfmt(m, l1, int32(_a232), v6)
+	v11 = F_sdscatfmt(m, l1, int32(_a_F_auxAnnounceClientTcpPortGetter_0), v6)
 	mBase = m.M
 	v14 = m.ExcPending
 	if v14 != 0 {
@@ -369,7 +369,7 @@ func F_auxAnnounceClientTlsPortGetter(m *base.Module, l0 int32, l1 int32) int32 
 	m.G0 = v6
 	v8 = *(*int32)(unsafe.Add(mBase, uint32(l0)+2340))
 	*(*int32)(unsafe.Add(mBase, uint32(v6))) = v8
-	v11 = F_sdscatfmt(m, l1, int32(_a232), v6)
+	v11 = F_sdscatfmt(m, l1, int32(_a_F_auxAnnounceClientTlsPortGetter_0), v6)
 	mBase = m.M
 	v14 = m.ExcPending
 	if v14 != 0 {
@@ -971,7 +971,7 @@ L31:
 	goto L28
 L32:
 	;
-	v182 = *(*int32)(unsafe.Add(mBase, _consts[6]))
+	v182 = *(*int32)(unsafe.Add(mBase, _c_F_auxShardIdSetter[0]))
 	if int32(2) < v182 {
 		v200 = v111
 		goto L33
@@ -994,7 +994,7 @@ L34:
 	*(*int32)(unsafe.Add(mBase, uint32(v16)+8)) = l0 + int32(8)
 	*(*int32)(unsafe.Add(mBase, uint32(v16)+4)) = v113
 	*(*int32)(unsafe.Add(mBase, uint32(v16))) = v111 + int32(8)
-	F__serverLog(m, int32(2), int32(_a231), v16)
+	F__serverLog(m, int32(2), int32(_a_F_auxShardIdSetter_0), v16)
 	mBase = m.M
 	v196 = m.ExcPending
 	if v196 != 0 {
@@ -1067,7 +1067,7 @@ func F_auxTcpPortGetter(m *base.Module, l0 int32, l1 int32) int32 {
 	m.G0 = v6
 	v8 = *(*int32)(unsafe.Add(mBase, uint32(l0)+2324))
 	*(*int32)(unsafe.Add(mBase, uint32(v6))) = v8
-	v11 = F_sdscatfmt(m, l1, int32(_a232), v6)
+	v11 = F_sdscatfmt(m, l1, int32(_a_F_auxTcpPortGetter_0), v6)
 	mBase = m.M
 	v14 = m.ExcPending
 	if v14 != 0 {

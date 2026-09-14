@@ -381,7 +381,7 @@ func F_getNodeByQuery(m *base.Module, l0 int32, l1 int32) int32 {
 	v30 = m.G0
 	v32 = v30 - int32(2144)
 	m.G0 = v32
-	v35 = *(*int32)(unsafe.Add(mBase, _consts[111]))
+	v35 = *(*int32)(unsafe.Add(mBase, _c_F_getNodeByQuery[0]))
 	v36 = *(*int32)(unsafe.Add(mBase, uint32(v35)))
 	goto L1
 L1:
@@ -413,7 +413,7 @@ L4:
 	}
 L5:
 	;
-	F__serverAssert(m, int32(_a231), int32(_a203), int32(1058))
+	F__serverAssert(m, int32(_a_F_getNodeByQuery_0), int32(_a_F_getNodeByQuery_1), int32(1058))
 	mBase = m.M
 	v128 = m.ExcPending
 	if v128 != 0 {
@@ -423,7 +423,7 @@ L5:
 	}
 L6:
 	;
-	v46 = int32(*(*uint8)(unsafe.Add(mBase, _consts[114])))
+	v46 = int32(*(*uint8)(unsafe.Add(mBase, _c_F_getNodeByQuery[1])))
 	if v46&int32(4) == int32(0) {
 		goto L9
 	} else {
@@ -584,7 +584,7 @@ L30:
 	goto L2
 L31:
 	;
-	v173 = *(*int32)(unsafe.Add(mBase, _consts[111]))
+	v173 = *(*int32)(unsafe.Add(mBase, _c_F_getNodeByQuery[0]))
 	v179 = *(*int32)(unsafe.Add(mBase, uint32(v173+v147<<(uint(int32(2))%32)+int32(52))))
 	goto L34
 L32:
@@ -744,7 +744,7 @@ L51:
 	goto L48
 L52:
 	;
-	v624 = *(*int32)(unsafe.Add(mBase, _consts[111]))
+	v624 = *(*int32)(unsafe.Add(mBase, _c_F_getNodeByQuery[0]))
 	v625 = *(*int32)(unsafe.Add(mBase, uint32(v624)+16))
 	goto L124
 L53:
@@ -1067,7 +1067,7 @@ L91:
 	v435 = *(*int32)(unsafe.Add(mBase, uint32(v310+v408<<(uint(int32(2))%32))))
 	v436 = F_objectGetVal(m, v435)
 	mBase = m.M
-	v437 = int32(_a232)
+	v437 = int32(_a_F_getNodeByQuery_2)
 	v440 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v436))))
 	if v440 != 0 {
 		goto L96
@@ -1316,7 +1316,7 @@ L125:
 	}
 L126:
 	;
-	v638 = *(*int32)(unsafe.Add(mBase, _consts[115]))
+	v638 = *(*int32)(unsafe.Add(mBase, _c_F_getNodeByQuery[2]))
 	if v638 != 0 {
 		goto L130
 	} else {
@@ -1324,7 +1324,7 @@ L126:
 	}
 L127:
 	;
-	v631 = *(*int32)(unsafe.Add(mBase, _consts[116]))
+	v631 = *(*int32)(unsafe.Add(mBase, _c_F_getNodeByQuery[3]))
 	if v631 != 0 {
 		goto L123
 	} else {
@@ -1634,7 +1634,7 @@ func F_isNodeAvailable(m *base.Module, l0 int32) int32 {
 			v21 = v20
 		} else {
 			if v8&int32(2) == int32(0) {
-				v19 = *(*int64)(unsafe.Add(mBase, _consts[47]))
+				v19 = *(*int64)(unsafe.Add(mBase, _c_F_isNodeAvailable[0]))
 				v21 = v19
 			} else {
 				v17 = F_replicationGetReplicaOffset(m)
@@ -1681,7 +1681,7 @@ func F_markNodeAsFailing(m *base.Module, l0 int32) {
 	*(*int64)(unsafe.Add(mBase, uint32(l0)+2216)) = v8
 	v10 = *(*int32)(unsafe.Add(mBase, uint32(l0)+88))
 	*(*int32)(unsafe.Add(mBase, uint32(l0)+88)) = v10 & int32(-5)
-	v15 = *(*int32)(unsafe.Add(mBase, _consts[119]))
+	v15 = *(*int32)(unsafe.Add(mBase, _c_F_markNodeAsFailing[0]))
 	v16 = *(*int32)(unsafe.Add(mBase, uint32(v15)+88))
 	if v16&int32(2) == v2 {
 	} else {
@@ -1689,9 +1689,9 @@ func F_markNodeAsFailing(m *base.Module, l0 int32) {
 		if v21 != l0 {
 		} else {
 			*(*int32)(unsafe.Add(mBase, uint32(v15)+88)) = v16 | int32(8192)
-			v27 = *(*int32)(unsafe.Add(mBase, _consts[111]))
-			v28 = *(*int32)(unsafe.Add(mBase, uint32(v27)+uint32(_consts[122])))
-			*(*int32)(unsafe.Add(mBase, uint32(v27)+uint32(_consts[122]))) = v28 | int32(1)
+			v27 = *(*int32)(unsafe.Add(mBase, _c_F_markNodeAsFailing[1]))
+			v28 = *(*int32)(unsafe.Add(mBase, uint32(v27)+uint32(_c_F_markNodeAsFailing[2])))
+			*(*int32)(unsafe.Add(mBase, uint32(v27)+uint32(_c_F_markNodeAsFailing[2]))) = v28 | int32(1)
 		}
 	}
 	F_clearCachedClusterSlotsResponse(m)
@@ -1700,9 +1700,9 @@ func F_markNodeAsFailing(m *base.Module, l0 int32) {
 	if v34 != 0 {
 		return
 	} else {
-		v36 = *(*int32)(unsafe.Add(mBase, _consts[111]))
-		v37 = *(*int32)(unsafe.Add(mBase, uint32(v36)+uint32(_consts[122])))
-		*(*int32)(unsafe.Add(mBase, uint32(v36)+uint32(_consts[122]))) = v37 | int32(6)
+		v36 = *(*int32)(unsafe.Add(mBase, _c_F_markNodeAsFailing[1]))
+		v37 = *(*int32)(unsafe.Add(mBase, uint32(v36)+uint32(_c_F_markNodeAsFailing[2])))
+		*(*int32)(unsafe.Add(mBase, uint32(v36)+uint32(_c_F_markNodeAsFailing[2]))) = v37 | int32(6)
 		return
 	}
 }

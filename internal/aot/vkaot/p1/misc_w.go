@@ -188,12 +188,12 @@ func F_waitaofCommand(m *base.Module, l0 int32) {
 							m.G0 = v9 + int32(16)
 							return
 						} else {
-							v33 = *(*int32)(unsafe.Add(mBase, _consts[166]))
+							v33 = *(*int32)(unsafe.Add(mBase, _c_F_waitaofCommand[0]))
 							if v33 == int32(0) {
 								v39 = *(*int32)(unsafe.Add(mBase, uint32(v9)))
 								if v39 == int32(0) {
 									v47 = int32(0)
-									v48 = *(*int32)(unsafe.Add(mBase, _consts[333]))
+									v48 = *(*int32)(unsafe.Add(mBase, _c_F_waitaofCommand[1]))
 									if base.B2i32(v48 != v47) == int32(0) {
 										v55 = l0
 										v56 = *(*int64)(unsafe.Add(mBase, uint32(v55)+48))
@@ -201,7 +201,7 @@ func F_waitaofCommand(m *base.Module, l0 int32) {
 										v60 = m.G0
 										v62 = v60 - int32(16)
 										m.G0 = v62
-										v65 = *(*int32)(unsafe.Add(mBase, _consts[78]))
+										v65 = *(*int32)(unsafe.Add(mBase, _c_F_waitaofCommand[2]))
 										v67 = v62 + int32(8)
 										F_listRewind(m, v65, v67)
 										mBase = m.M
@@ -236,7 +236,7 @@ func F_waitaofCommand(m *base.Module, l0 int32) {
 											v93 = v87
 										}
 										m.G0 = v62 + int32(16)
-										v99 = *(*int64)(unsafe.Add(mBase, _consts[49]))
+										v99 = *(*int64)(unsafe.Add(mBase, _c_F_waitaofCommand[3]))
 										v100 = *(*int32)(unsafe.Add(mBase, uint32(v9)+4))
 										if v93 < v100 {
 											v105 = int32(*(*uint8)(unsafe.Add(mBase, uint32(l0)+205)))
@@ -249,7 +249,7 @@ func F_waitaofCommand(m *base.Module, l0 int32) {
 												if v123 != 0 {
 													return
 												} else {
-													*(*int32)(unsafe.Add(mBase, _consts[637])) = int32(1)
+													*(*int32)(unsafe.Add(mBase, _c_F_waitaofCommand[4])) = int32(1)
 													m.G0 = v9 + int32(16)
 													return
 												}
@@ -315,7 +315,7 @@ func F_waitaofCommand(m *base.Module, l0 int32) {
 													if v123 != 0 {
 														return
 													} else {
-														*(*int32)(unsafe.Add(mBase, _consts[637])) = int32(1)
+														*(*int32)(unsafe.Add(mBase, _c_F_waitaofCommand[4])) = int32(1)
 														m.G0 = v9 + int32(16)
 														return
 													}
@@ -359,7 +359,7 @@ func F_waitaofCommand(m *base.Module, l0 int32) {
 											v60 = m.G0
 											v62 = v60 - int32(16)
 											m.G0 = v62
-											v65 = *(*int32)(unsafe.Add(mBase, _consts[78]))
+											v65 = *(*int32)(unsafe.Add(mBase, _c_F_waitaofCommand[2]))
 											v67 = v62 + int32(8)
 											F_listRewind(m, v65, v67)
 											mBase = m.M
@@ -394,7 +394,7 @@ func F_waitaofCommand(m *base.Module, l0 int32) {
 												v93 = v87
 											}
 											m.G0 = v62 + int32(16)
-											v99 = *(*int64)(unsafe.Add(mBase, _consts[49]))
+											v99 = *(*int64)(unsafe.Add(mBase, _c_F_waitaofCommand[3]))
 											v100 = *(*int32)(unsafe.Add(mBase, uint32(v9)+4))
 											if v93 < v100 {
 												v105 = int32(*(*uint8)(unsafe.Add(mBase, uint32(l0)+205)))
@@ -407,7 +407,7 @@ func F_waitaofCommand(m *base.Module, l0 int32) {
 													if v123 != 0 {
 														return
 													} else {
-														*(*int32)(unsafe.Add(mBase, _consts[637])) = int32(1)
+														*(*int32)(unsafe.Add(mBase, _c_F_waitaofCommand[4])) = int32(1)
 														m.G0 = v9 + int32(16)
 														return
 													}
@@ -473,7 +473,7 @@ func F_waitaofCommand(m *base.Module, l0 int32) {
 														if v123 != 0 {
 															return
 														} else {
-															*(*int32)(unsafe.Add(mBase, _consts[637])) = int32(1)
+															*(*int32)(unsafe.Add(mBase, _c_F_waitaofCommand[4])) = int32(1)
 															m.G0 = v9 + int32(16)
 															return
 														}
@@ -507,10 +507,10 @@ func F_waitaofCommand(m *base.Module, l0 int32) {
 										}
 									}
 								} else {
-									v43 = *(*int32)(unsafe.Add(mBase, _consts[586]))
+									v43 = *(*int32)(unsafe.Add(mBase, _c_F_waitaofCommand[5]))
 									if v43 != 0 {
 										v47 = int32(0)
-										v48 = *(*int32)(unsafe.Add(mBase, _consts[333]))
+										v48 = *(*int32)(unsafe.Add(mBase, _c_F_waitaofCommand[1]))
 										if base.B2i32(v48 != v47) == int32(0) {
 											v55 = l0
 											v56 = *(*int64)(unsafe.Add(mBase, uint32(v55)+48))
@@ -518,7 +518,7 @@ func F_waitaofCommand(m *base.Module, l0 int32) {
 											v60 = m.G0
 											v62 = v60 - int32(16)
 											m.G0 = v62
-											v65 = *(*int32)(unsafe.Add(mBase, _consts[78]))
+											v65 = *(*int32)(unsafe.Add(mBase, _c_F_waitaofCommand[2]))
 											v67 = v62 + int32(8)
 											F_listRewind(m, v65, v67)
 											mBase = m.M
@@ -553,7 +553,7 @@ func F_waitaofCommand(m *base.Module, l0 int32) {
 												v93 = v87
 											}
 											m.G0 = v62 + int32(16)
-											v99 = *(*int64)(unsafe.Add(mBase, _consts[49]))
+											v99 = *(*int64)(unsafe.Add(mBase, _c_F_waitaofCommand[3]))
 											v100 = *(*int32)(unsafe.Add(mBase, uint32(v9)+4))
 											if v93 < v100 {
 												v105 = int32(*(*uint8)(unsafe.Add(mBase, uint32(l0)+205)))
@@ -566,7 +566,7 @@ func F_waitaofCommand(m *base.Module, l0 int32) {
 													if v123 != 0 {
 														return
 													} else {
-														*(*int32)(unsafe.Add(mBase, _consts[637])) = int32(1)
+														*(*int32)(unsafe.Add(mBase, _c_F_waitaofCommand[4])) = int32(1)
 														m.G0 = v9 + int32(16)
 														return
 													}
@@ -632,7 +632,7 @@ func F_waitaofCommand(m *base.Module, l0 int32) {
 														if v123 != 0 {
 															return
 														} else {
-															*(*int32)(unsafe.Add(mBase, _consts[637])) = int32(1)
+															*(*int32)(unsafe.Add(mBase, _c_F_waitaofCommand[4])) = int32(1)
 															m.G0 = v9 + int32(16)
 															return
 														}
@@ -676,7 +676,7 @@ func F_waitaofCommand(m *base.Module, l0 int32) {
 												v60 = m.G0
 												v62 = v60 - int32(16)
 												m.G0 = v62
-												v65 = *(*int32)(unsafe.Add(mBase, _consts[78]))
+												v65 = *(*int32)(unsafe.Add(mBase, _c_F_waitaofCommand[2]))
 												v67 = v62 + int32(8)
 												F_listRewind(m, v65, v67)
 												mBase = m.M
@@ -711,7 +711,7 @@ func F_waitaofCommand(m *base.Module, l0 int32) {
 													v93 = v87
 												}
 												m.G0 = v62 + int32(16)
-												v99 = *(*int64)(unsafe.Add(mBase, _consts[49]))
+												v99 = *(*int64)(unsafe.Add(mBase, _c_F_waitaofCommand[3]))
 												v100 = *(*int32)(unsafe.Add(mBase, uint32(v9)+4))
 												if v93 < v100 {
 													v105 = int32(*(*uint8)(unsafe.Add(mBase, uint32(l0)+205)))
@@ -724,7 +724,7 @@ func F_waitaofCommand(m *base.Module, l0 int32) {
 														if v123 != 0 {
 															return
 														} else {
-															*(*int32)(unsafe.Add(mBase, _consts[637])) = int32(1)
+															*(*int32)(unsafe.Add(mBase, _c_F_waitaofCommand[4])) = int32(1)
 															m.G0 = v9 + int32(16)
 															return
 														}
@@ -790,7 +790,7 @@ func F_waitaofCommand(m *base.Module, l0 int32) {
 															if v123 != 0 {
 																return
 															} else {
-																*(*int32)(unsafe.Add(mBase, _consts[637])) = int32(1)
+																*(*int32)(unsafe.Add(mBase, _c_F_waitaofCommand[4])) = int32(1)
 																m.G0 = v9 + int32(16)
 																return
 															}
@@ -824,7 +824,7 @@ func F_waitaofCommand(m *base.Module, l0 int32) {
 											}
 										}
 									} else {
-										F_addReplyError(m, l0, int32(_a2007))
+										F_addReplyError(m, l0, int32(_a_F_waitaofCommand_0))
 										mBase = m.M
 										v46 = m.ExcPending
 										if v46 != 0 {
@@ -836,7 +836,7 @@ func F_waitaofCommand(m *base.Module, l0 int32) {
 									}
 								}
 							} else {
-								F_addReplyError(m, l0, int32(_a2008))
+								F_addReplyError(m, l0, int32(_a_F_waitaofCommand_1))
 								mBase = m.M
 								v38 = m.ExcPending
 								if v38 != 0 {
@@ -1574,7 +1574,7 @@ L2:
 L3:
 	;
 	v21 = int32(0)
-	v24 = *(*int32)(unsafe.Add(mBase, _consts[119]))
+	v24 = *(*int32)(unsafe.Add(mBase, _c_F_writePingExtensions[0]))
 	v25 = *(*int32)(unsafe.Add(mBase, uint32(v24)+2312))
 	v28 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v25+int32(-1)))))
 	switch v28 & int32(7) {
@@ -2153,7 +2153,7 @@ L91:
 L92:
 	;
 	v330 = v117 + v69 + v170 + v223 + v249 + v278 + v328
-	v332 = *(*int32)(unsafe.Add(mBase, _consts[111]))
+	v332 = *(*int32)(unsafe.Add(mBase, _c_F_writePingExtensions[1]))
 	v333 = *(*int32)(unsafe.Add(mBase, uint32(v332)+40))
 	v334 = *(*int32)(unsafe.Add(mBase, uint32(v333)+12))
 	v336 = *(*int32)(unsafe.Add(mBase, uint32(v333)+16))
@@ -2510,7 +2510,7 @@ L146:
 	goto L144
 L147:
 	;
-	v467 = *(*int64)(unsafe.Add(mBase, _consts[109]))
+	v467 = *(*int64)(unsafe.Add(mBase, _c_F_writePingExtensions[2]))
 	if v465 < v467 {
 		goto L115
 	} else {
@@ -2518,7 +2518,7 @@ L147:
 	}
 L148:
 	;
-	v470 = *(*int64)(unsafe.Add(mBase, _consts[109]))
+	v470 = *(*int64)(unsafe.Add(mBase, _c_F_writePingExtensions[2]))
 	v472 = F___bswap_16_1(m, int32(2))
 	mBase = m.M
 	goto L149
@@ -2592,7 +2592,7 @@ L156:
 L157:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v555))) = v572
-	v575 = *(*int32)(unsafe.Add(mBase, _consts[119]))
+	v575 = *(*int32)(unsafe.Add(mBase, _c_F_writePingExtensions[0]))
 	v576 = *(*int64)(unsafe.Add(mBase, uint32(v575)+48))
 	*(*int64)(unsafe.Add(mBase, uint32(v555)+8)) = v576
 	v582 = *(*int64)(unsafe.Add(mBase, uint32(v575+int32(80))))

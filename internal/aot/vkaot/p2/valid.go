@@ -9,7 +9,7 @@ func F_isValidActiveDefrag(m *base.Module, l0 int32, l1 int32) int32 {
 	mBase := m.M
 	_ = mBase
 	if l0 != 0 {
-		*(*int32)(unsafe.Add(mBase, uint32(l1))) = int32(_a507)
+		*(*int32)(unsafe.Add(mBase, uint32(l1))) = int32(_a_F_isValidActiveDefrag_0)
 		return int32(0)
 	} else {
 		return int32(1)
@@ -145,7 +145,7 @@ L12:
 	goto L13
 L13:
 	;
-	v35 = int32(_a216)
+	v35 = int32(_a_F_isValidAuxString_0)
 	v37 = int32(15)
 	goto L14
 L14:
@@ -318,7 +318,7 @@ func F_isValidDbHashSeed(m *base.Module, l0 int32, l1 int32) int32 {
 		if base.Ui32(v21) < base.Ui32(int32(257)) {
 			v28 = v4
 		} else {
-			*(*int32)(unsafe.Add(mBase, uint32(l1))) = int32(_a510)
+			*(*int32)(unsafe.Add(mBase, uint32(l1))) = int32(_a_F_isValidDbHashSeed_0)
 			v28 = int32(0)
 		}
 	case 1:
@@ -327,7 +327,7 @@ func F_isValidDbHashSeed(m *base.Module, l0 int32, l1 int32) int32 {
 		if base.Ui32(v21) < base.Ui32(int32(257)) {
 			v28 = v4
 		} else {
-			*(*int32)(unsafe.Add(mBase, uint32(l1))) = int32(_a510)
+			*(*int32)(unsafe.Add(mBase, uint32(l1))) = int32(_a_F_isValidDbHashSeed_0)
 			v28 = int32(0)
 		}
 	case 2:
@@ -336,7 +336,7 @@ func F_isValidDbHashSeed(m *base.Module, l0 int32, l1 int32) int32 {
 		if base.Ui32(v21) < base.Ui32(int32(257)) {
 			v28 = v4
 		} else {
-			*(*int32)(unsafe.Add(mBase, uint32(l1))) = int32(_a510)
+			*(*int32)(unsafe.Add(mBase, uint32(l1))) = int32(_a_F_isValidDbHashSeed_0)
 			v28 = int32(0)
 		}
 	default:
@@ -372,7 +372,7 @@ func F_isValidIpV6(m *base.Module, l0 int32, l1 int32) int32 {
 		if v16 != 0 {
 			v20 = v9
 		} else {
-			*(*int32)(unsafe.Add(mBase, uint32(l1))) = int32(_a508)
+			*(*int32)(unsafe.Add(mBase, uint32(l1))) = int32(_a_F_isValidIpV6_0)
 			v20 = int32(0)
 		}
 	}

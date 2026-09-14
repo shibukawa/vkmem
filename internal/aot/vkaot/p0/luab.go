@@ -267,7 +267,7 @@ func F_luaB_coresume(m *base.Module, l0 int32) int32 {
 		}
 	} else {
 		v65 = m.G3
-		v68 = F_luaL_argerror(m, l0, int32(1), v65+int32(_a2309))
+		v68 = F_luaL_argerror(m, l0, int32(1), v65+int32(_a_F_luaB_coresume_0))
 		mBase = m.M
 		v71 = m.ExcPending
 		if v71 != 0 {
@@ -507,7 +507,7 @@ func F_luaB_costatus(m *base.Module, l0 int32) int32 {
 			v147 = int32(0)
 		}
 		v148 = m.G3
-		v154 = *(*int32)(unsafe.Add(mBase, uint32(v148+int32(_a2311)+v147<<(uint(int32(2))%32))))
+		v154 = *(*int32)(unsafe.Add(mBase, uint32(v148+int32(_a_F_luaB_costatus_0)+v147<<(uint(int32(2))%32))))
 		F_lua_pushstring(m, l0, v154)
 		mBase = m.M
 		v156 = m.ExcPending
@@ -519,7 +519,7 @@ func F_luaB_costatus(m *base.Module, l0 int32) int32 {
 		}
 	} else {
 		v71 = m.G3
-		v74 = F_luaL_argerror(m, l0, int32(1), v71+int32(_a2309))
+		v74 = F_luaL_argerror(m, l0, int32(1), v71+int32(_a_F_luaB_costatus_1))
 		mBase = m.M
 		v77 = m.ExcPending
 		if v77 != 0 {
@@ -559,7 +559,7 @@ func F_luaB_costatus(m *base.Module, l0 int32) int32 {
 				v147 = int32(0)
 			}
 			v148 = m.G3
-			v154 = *(*int32)(unsafe.Add(mBase, uint32(v148+int32(_a2311)+v147<<(uint(int32(2))%32))))
+			v154 = *(*int32)(unsafe.Add(mBase, uint32(v148+int32(_a_F_luaB_costatus_0)+v147<<(uint(int32(2))%32))))
 			F_lua_pushstring(m, l0, v154)
 			mBase = m.M
 			v156 = m.ExcPending
@@ -649,7 +649,7 @@ func F_luaB_getmetatable(m *base.Module, l0 int32) int32 {
 		}
 		if v79 != 0 {
 			v102 = m.G3
-			v105 = F_luaL_getmetafield(m, l0, int32(1), v102+int32(_a2300))
+			v105 = F_luaL_getmetafield(m, l0, int32(1), v102+int32(_a_F_luaB_getmetatable_0))
 			mBase = m.M
 			v106 = m.ExcPending
 			if v106 != 0 {
@@ -719,7 +719,7 @@ func F_luaB_load(m *base.Module, l0 int32) int32 {
 	var v142 int32
 	_ = v142
 	v6 = m.G3
-	v10 = F_luaL_optlstring(m, l0, int32(2), v6+int32(_a2301), int32(0))
+	v10 = F_luaL_optlstring(m, l0, int32(2), v6+int32(_a_F_luaB_load_0), int32(0))
 	mBase = m.M
 	v13 = m.ExcPending
 	if v13 != 0 {
@@ -1071,7 +1071,7 @@ func F_luaB_print(m *base.Module, l0 int32) int32 {
 	goto L1
 L1:
 	;
-	F_lua_getfield(m, l0, int32(-10002), v6+int32(_a2183))
+	F_lua_getfield(m, l0, int32(-10002), v6+int32(_a_F_luaB_print_0))
 	mBase = m.M
 	v18 = m.ExcPending
 	if v18 != 0 {
@@ -1094,7 +1094,7 @@ L3:
 L4:
 	;
 	v391 = m.G3
-	v395 = F_luaL_error(m, l0, v391+int32(_a2304), int32(0))
+	v395 = F_luaL_error(m, l0, v391+int32(_a_F_luaB_print_1), int32(0))
 	mBase = m.M
 	v396 = m.ExcPending
 	if v396 != 0 {
@@ -1897,7 +1897,7 @@ func F_luaB_setfenv(m *base.Module, l0 int32) int32 {
 					}
 					if v350 != 0 {
 						v459 = m.G3
-						v463 = F_luaL_error(m, l0, v459+int32(_a2305), int32(0))
+						v463 = F_luaL_error(m, l0, v459+int32(_a_F_luaB_setfenv_0), int32(0))
 						mBase = m.M
 						v464 = m.ExcPending
 						if v464 != 0 {
@@ -1988,7 +1988,7 @@ func F_luaB_setfenv(m *base.Module, l0 int32) int32 {
 							return v466
 						} else {
 							v459 = m.G3
-							v463 = F_luaL_error(m, l0, v459+int32(_a2305), int32(0))
+							v463 = F_luaL_error(m, l0, v459+int32(_a_F_luaB_setfenv_0), int32(0))
 							mBase = m.M
 							v464 = m.ExcPending
 							if v464 != 0 {
@@ -2019,7 +2019,7 @@ func F_luaB_setfenv(m *base.Module, l0 int32) int32 {
 							}
 							if v350 != 0 {
 								v459 = m.G3
-								v463 = F_luaL_error(m, l0, v459+int32(_a2305), int32(0))
+								v463 = F_luaL_error(m, l0, v459+int32(_a_F_luaB_setfenv_0), int32(0))
 								mBase = m.M
 								v464 = m.ExcPending
 								if v464 != 0 {
@@ -2110,7 +2110,7 @@ func F_luaB_setfenv(m *base.Module, l0 int32) int32 {
 									return v466
 								} else {
 									v459 = m.G3
-									v463 = F_luaL_error(m, l0, v459+int32(_a2305), int32(0))
+									v463 = F_luaL_error(m, l0, v459+int32(_a_F_luaB_setfenv_0), int32(0))
 									mBase = m.M
 									v464 = m.ExcPending
 									if v464 != 0 {
@@ -2332,7 +2332,7 @@ func F_luaB_tonumber(m *base.Module, l0 int32) int32 {
 					return int32(1)
 				} else {
 					v47 = m.G3
-					v50 = F_luaL_argerror(m, l0, int32(2), v47+int32(_a2306))
+					v50 = F_luaL_argerror(m, l0, int32(2), v47+int32(_a_F_luaB_tonumber_0))
 					mBase = m.M
 					v51 = m.ExcPending
 					if v51 != 0 {
@@ -2570,7 +2570,7 @@ func F_luaB_tostring(m *base.Module, l0 int32) int32 {
 		return int32(0)
 	} else {
 		v14 = m.G3
-		v17 = F_luaL_callmeta(m, l0, int32(1), v14+int32(_a2307))
+		v17 = F_luaL_callmeta(m, l0, int32(1), v14+int32(_a_F_luaB_tostring_0))
 		mBase = m.M
 		v18 = m.ExcPending
 		if v18 != 0 {
@@ -2597,7 +2597,7 @@ func F_luaB_tostring(m *base.Module, l0 int32) int32 {
 				switch v76 {
 				case 0:
 					v218 = m.G3
-					F_lua_pushlstring(m, l0, v218+int32(_a1724), int32(3))
+					F_lua_pushlstring(m, l0, v218+int32(_a_F_luaB_tostring_1), int32(3))
 					mBase = m.M
 					v223 = m.ExcPending
 					if v223 != 0 {
@@ -2630,9 +2630,9 @@ func F_luaB_tostring(m *base.Module, l0 int32) int32 {
 					}
 					v211 = m.G3
 					if v210 != 0 {
-						v214 = int32(_a1725)
+						v214 = int32(_a_F_luaB_tostring_2)
 					} else {
-						v214 = int32(_a1726)
+						v214 = int32(_a_F_luaB_tostring_3)
 					}
 					F_lua_pushstring(m, l0, v211+v214)
 					mBase = m.M
@@ -2664,7 +2664,7 @@ func F_luaB_tostring(m *base.Module, l0 int32) int32 {
 						v292 = *(*int32)(unsafe.Add(mBase, uint32(v288+v281<<(uint(int32(2))%32))))
 						v293 = v292
 					} else {
-						v293 = v283 + int32(_a2282)
+						v293 = v283 + int32(_a_F_luaB_tostring_4)
 					}
 					v299 = *(*int32)(unsafe.Add(mBase, uint32(l0)+8))
 					v300 = *(*int32)(unsafe.Add(mBase, uint32(l0)+12))
@@ -2711,7 +2711,7 @@ func F_luaB_tostring(m *base.Module, l0 int32) int32 {
 					*(*int32)(unsafe.Add(mBase, uint32(v6)+4)) = v422
 					*(*int32)(unsafe.Add(mBase, uint32(v6))) = v293
 					v425 = m.G3
-					v428 = F_lua_pushfstring(m, l0, v425+int32(_a2308), v6)
+					v428 = F_lua_pushfstring(m, l0, v425+int32(_a_F_luaB_tostring_5), v6)
 					mBase = m.M
 					v429 = m.ExcPending
 					if v429 != 0 {
@@ -2814,7 +2814,7 @@ func F_luaB_type(m *base.Module, l0 int32) int32 {
 			v75 = *(*int32)(unsafe.Add(mBase, uint32(v71+v64<<(uint(int32(2))%32))))
 			v76 = v75
 		} else {
-			v76 = v66 + int32(_a2282)
+			v76 = v66 + int32(_a_F_luaB_type_0)
 		}
 		F_lua_pushstring(m, l0, v76)
 		mBase = m.M

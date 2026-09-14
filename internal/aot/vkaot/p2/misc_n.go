@@ -43,14 +43,14 @@ func F___nl_langinfo_l(m *base.Module, l0 int32, l1 int32) int32 {
 		v15 = int32(65535)
 		v16 = l0 & v15
 		if v16 != v15 {
-			v30 = int32(_a139)
+			v30 = int32(_a_F___nl_langinfo_l_0)
 			switch v14 + int32(-1) {
 			case 0:
 				if base.Ui32(int32(1)) < base.Ui32(v16) {
 					v58 = v30
 					return v58
 				} else {
-					v42 = int32(_a2163)
+					v42 = int32(_a_F___nl_langinfo_l_1)
 					if v16 != 0 {
 						v44 = v42
 						v47 = v16
@@ -83,7 +83,7 @@ func F___nl_langinfo_l(m *base.Module, l0 int32, l1 int32) int32 {
 					v58 = v30
 					return v58
 				} else {
-					v42 = int32(_a2164)
+					v42 = int32(_a_F___nl_langinfo_l_2)
 					if v16 != 0 {
 						v44 = v42
 						v47 = v16
@@ -119,7 +119,7 @@ func F___nl_langinfo_l(m *base.Module, l0 int32, l1 int32) int32 {
 					v58 = v30
 					return v58
 				} else {
-					v42 = int32(_a2165)
+					v42 = int32(_a_F___nl_langinfo_l_3)
 					if v16 != 0 {
 						v44 = v42
 						v47 = v16
@@ -150,14 +150,14 @@ func F___nl_langinfo_l(m *base.Module, l0 int32, l1 int32) int32 {
 			}
 		} else {
 			if int32(5) < v14 {
-				v30 = int32(_a139)
+				v30 = int32(_a_F___nl_langinfo_l_0)
 				switch v14 + int32(-1) {
 				case 0:
 					if base.Ui32(int32(1)) < base.Ui32(v16) {
 						v58 = v30
 						return v58
 					} else {
-						v42 = int32(_a2163)
+						v42 = int32(_a_F___nl_langinfo_l_1)
 						if v16 != 0 {
 							v44 = v42
 							v47 = v16
@@ -190,7 +190,7 @@ func F___nl_langinfo_l(m *base.Module, l0 int32, l1 int32) int32 {
 						v58 = v30
 						return v58
 					} else {
-						v42 = int32(_a2164)
+						v42 = int32(_a_F___nl_langinfo_l_2)
 						if v16 != 0 {
 							v44 = v42
 							v47 = v16
@@ -226,7 +226,7 @@ func F___nl_langinfo_l(m *base.Module, l0 int32, l1 int32) int32 {
 						v58 = v30
 						return v58
 					} else {
-						v42 = int32(_a2165)
+						v42 = int32(_a_F___nl_langinfo_l_3)
 						if v16 != 0 {
 							v44 = v42
 							v47 = v16
@@ -260,7 +260,7 @@ func F___nl_langinfo_l(m *base.Module, l0 int32, l1 int32) int32 {
 				if v24 != 0 {
 					v28 = v24 + int32(8)
 				} else {
-					v28 = int32(_a2166)
+					v28 = int32(_a_F___nl_langinfo_l_4)
 				}
 				return v28
 			}
@@ -268,9 +268,9 @@ func F___nl_langinfo_l(m *base.Module, l0 int32, l1 int32) int32 {
 	} else {
 		v10 = *(*int32)(unsafe.Add(mBase, uint32(l1)))
 		if v10 != 0 {
-			v11 = int32(_a2167)
+			v11 = int32(_a_F___nl_langinfo_l_5)
 		} else {
-			v11 = int32(_a2168)
+			v11 = int32(_a_F___nl_langinfo_l_6)
 		}
 		return v11
 	}
@@ -604,7 +604,7 @@ L31:
 L32:
 	;
 	v188 = m.G3
-	m.Env.X__assert_fail(m, v188+int32(_a1887), v188+int32(_a1885), int32(822), v188+int32(_a1888))
+	m.Env.X__assert_fail(m, v188+int32(_a_F_nextArgument_0), v188+int32(_a_F_nextArgument_1), int32(822), v188+int32(_a_F_nextArgument_2))
 	mBase = m.M
 	base.Wasm_trap_unreachable()
 	for {

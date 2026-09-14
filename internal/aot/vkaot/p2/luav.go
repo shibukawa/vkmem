@@ -134,7 +134,7 @@ func F_luaV_gettable(m *base.Module, l0 int32, l1 int32, l2 int32, l3 int32) {
 L1:
 	;
 	v134 = m.G3
-	F_luaG_runerror(m, l0, v134+int32(_a2059), int32(0))
+	F_luaG_runerror(m, l0, v134+int32(_a_F_luaV_gettable_0), int32(0))
 	mBase = m.M
 	v139 = m.ExcPending
 	if v139 != 0 {
@@ -310,7 +310,7 @@ L21:
 L22:
 	;
 	v75 = m.G3
-	F_luaG_typeerror(m, l0, v11, v75+int32(_a1618))
+	F_luaG_typeerror(m, l0, v11, v75+int32(_a_F_luaV_gettable_1))
 	mBase = m.M
 	v79 = m.ExcPending
 	if v79 != 0 {
@@ -1021,7 +1021,7 @@ L12:
 L13:
 	;
 	v47 = m.G3
-	F_luaG_typeerror(m, l0, l1, v47+int32(_a1618))
+	F_luaG_typeerror(m, l0, l1, v47+int32(_a_F_luaV_settable_0))
 	mBase = m.M
 	v51 = m.ExcPending
 	if v51 != 0 {
@@ -1049,7 +1049,7 @@ L16:
 L17:
 	;
 	v56 = m.G3
-	F_luaG_runerror(m, l0, v56+int32(_a2019), int32(0))
+	F_luaG_runerror(m, l0, v56+int32(_a_F_luaV_settable_1), int32(0))
 	mBase = m.M
 	v61 = m.ExcPending
 	if v61 != 0 {
@@ -1175,7 +1175,7 @@ L29:
 L30:
 	;
 	v185 = m.G3
-	F_luaG_runerror(m, l0, v185+int32(_a2060), int32(0))
+	F_luaG_runerror(m, l0, v185+int32(_a_F_luaV_settable_2), int32(0))
 	mBase = m.M
 	v190 = m.ExcPending
 	if v190 != 0 {
@@ -1224,7 +1224,7 @@ L34:
 L35:
 	;
 	v110 = m.G3
-	F_luaG_runerror(m, l0, v110+int32(_a2019), int32(0))
+	F_luaG_runerror(m, l0, v110+int32(_a_F_luaV_settable_1), int32(0))
 	mBase = m.M
 	v115 = m.ExcPending
 	if v115 != 0 {
@@ -1349,7 +1349,7 @@ L51:
 L52:
 	;
 	v167 = m.G3
-	F_luaG_typeerror(m, l0, v12, v167+int32(_a1618))
+	F_luaG_typeerror(m, l0, v12, v167+int32(_a_F_luaV_settable_0))
 	mBase = m.M
 	v171 = m.ExcPending
 	if v171 != 0 {

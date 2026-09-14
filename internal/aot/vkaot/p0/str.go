@@ -116,7 +116,7 @@ L9:
 L10:
 	;
 	v43 = m.G3
-	v46 = F_luaL_argerror(m, l0, v34, v43+int32(_a2322))
+	v46 = F_luaL_argerror(m, l0, v34, v43+int32(_a_F_str_char_0))
 	mBase = m.M
 	v47 = m.ExcPending
 	if v47 != 0 {
@@ -608,7 +608,7 @@ L37:
 L38:
 	;
 	v113 = m.G3
-	v116 = F_strcspn(m, v25, v113+int32(_a2323))
+	v116 = F_strcspn(m, v25, v113+int32(_a_F_str_find_aux_0))
 	mBase = m.M
 	v117 = v25 + v116
 	v119 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v117))))
@@ -703,7 +703,7 @@ L52:
 	v178 = m.G3
 	v179 = *(*int32)(unsafe.Add(mBase, uint32(v13)+16))
 	v180 = *(*int32)(unsafe.Add(mBase, uint32(v13)+20))
-	F_luaL_checkstack(m, v179, v180, v178+int32(_a2324))
+	F_luaL_checkstack(m, v179, v180, v178+int32(_a_F_str_find_aux_1))
 	mBase = m.M
 	v184 = m.ExcPending
 	if v184 != 0 {
@@ -777,7 +777,7 @@ L64:
 	goto L65
 L65:
 	;
-	F_luaL_checkstack(m, v221, v224, v220+int32(_a2324))
+	F_luaL_checkstack(m, v221, v224, v220+int32(_a_F_str_find_aux_1))
 	mBase = m.M
 	v228 = m.ExcPending
 	if v228 != 0 {
@@ -1366,7 +1366,7 @@ func F_str_next(m *base.Module, l0 int32, l1 int32, l2 int32) int32 {
 								v118 = int32(-1)
 								v126 = v118
 							} else {
-								v50 = *(*int32)(unsafe.Add(mBase, uint32(v43<<(uint(int32(2))%32))+uint32(_consts[1236])))
+								v50 = *(*int32)(unsafe.Add(mBase, uint32(v43<<(uint(int32(2))%32))+uint32(_c_F_str_next[0])))
 								if base.Ui32(int32(3)) < base.Ui32(l1) {
 									v60 = int32(*(*uint8)(unsafe.Add(mBase, uint32(l0)+1)))
 									v62 = int32(base.Ui32(v60) >> (uint(int32(3)) % 32))
@@ -1629,7 +1629,7 @@ func F_str_sub(m *base.Module, l0 int32) int32 {
 				}
 				if v39 < v49 {
 					v59 = m.G3
-					F_lua_pushlstring(m, l0, v59+int32(_a188), int32(0))
+					F_lua_pushlstring(m, l0, v59+int32(_a_F_str_sub_0), int32(0))
 					mBase = m.M
 					v64 = m.ExcPending
 					if v64 != 0 {

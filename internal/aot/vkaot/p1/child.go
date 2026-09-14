@@ -108,7 +108,7 @@ func F_childSnapshotForSyncSlot(m *base.Module, l0 int32, l1 int32) int32 {
 	m.G0 = v10
 	v12 = *(*int32)(unsafe.Add(mBase, uint32(l1)+164))
 	*(*int32)(unsafe.Add(mBase, uint32(v10)+12)) = v3
-	v17 = *(*int32)(unsafe.Add(mBase, _consts[172]))
+	v17 = *(*int32)(unsafe.Add(mBase, _c_F_childSnapshotForSyncSlot[0]))
 	if v17 < int32(1) {
 		goto L2
 	} else {
@@ -152,7 +152,7 @@ L6:
 L7:
 	;
 	v109 = v24 + int32(1)
-	v111 = *(*int32)(unsafe.Add(mBase, _consts[172]))
+	v111 = *(*int32)(unsafe.Add(mBase, _c_F_childSnapshotForSyncSlot[0]))
 	if v109 < v111 {
 		v24 = v109
 		goto L4
@@ -266,7 +266,7 @@ L27:
 	goto L5
 L28:
 	;
-	v162 = F_rioWriteBulkString(m, l0, int32(_a413), int32(7))
+	v162 = F_rioWriteBulkString(m, l0, int32(_a_F_childSnapshotForSyncSlot_0), int32(7))
 	mBase = m.M
 	v163 = m.ExcPending
 	if v163 != 0 {
@@ -276,7 +276,7 @@ L28:
 	}
 L29:
 	;
-	v130 = int32(_a414)
+	v130 = int32(_a_F_childSnapshotForSyncSlot_1)
 	v131 = int32(4)
 	goto L30
 L30:
@@ -374,7 +374,7 @@ L44:
 	goto L31
 L45:
 	;
-	v166 = F_rioWriteBulkString(m, l0, int32(_a415), int32(9))
+	v166 = F_rioWriteBulkString(m, l0, int32(_a_F_childSnapshotForSyncSlot_2), int32(9))
 	mBase = m.M
 	v167 = m.ExcPending
 	if v167 != 0 {
@@ -384,7 +384,7 @@ L45:
 	}
 L46:
 	;
-	v170 = F_rioWriteBulkString(m, l0, int32(_a416), int32(12))
+	v170 = F_rioWriteBulkString(m, l0, int32(_a_F_childSnapshotForSyncSlot_3), int32(12))
 	mBase = m.M
 	v171 = m.ExcPending
 	if v171 != 0 {
@@ -412,28 +412,28 @@ func F_closeChildInfoPipe(m *base.Module) {
 	_ = v12
 	var v13 int32
 	_ = v13
-	v3 = *(*int32)(unsafe.Add(mBase, _consts[98]))
+	v3 = *(*int32)(unsafe.Add(mBase, _c_F_closeChildInfoPipe[0]))
 	if v3 != int32(-1) {
 		v10 = F_close(m, v3)
 		mBase = m.M
-		v11 = int32(_a20)
-		v12 = *(*int32)(unsafe.Add(mBase, _consts[99]))
+		v11 = int32(_a_F_closeChildInfoPipe_0)
+		v12 = *(*int32)(unsafe.Add(mBase, _c_F_closeChildInfoPipe[1]))
 		v13 = F_close(m, v12)
 		mBase = m.M
-		*(*int32)(unsafe.Add(mBase, _consts[100])) = int32(0)
-		*(*int64)(unsafe.Add(mBase, _consts[98])) = int64(-1)
+		*(*int32)(unsafe.Add(mBase, _c_F_closeChildInfoPipe[2])) = int32(0)
+		*(*int64)(unsafe.Add(mBase, _c_F_closeChildInfoPipe[0])) = int64(-1)
 	} else {
-		v7 = *(*int32)(unsafe.Add(mBase, _consts[99]))
+		v7 = *(*int32)(unsafe.Add(mBase, _c_F_closeChildInfoPipe[1]))
 		if v7 == int32(-1) {
 		} else {
 			v10 = F_close(m, v3)
 			mBase = m.M
-			v11 = int32(_a20)
-			v12 = *(*int32)(unsafe.Add(mBase, _consts[99]))
+			v11 = int32(_a_F_closeChildInfoPipe_0)
+			v12 = *(*int32)(unsafe.Add(mBase, _c_F_closeChildInfoPipe[1]))
 			v13 = F_close(m, v12)
 			mBase = m.M
-			*(*int32)(unsafe.Add(mBase, _consts[100])) = int32(0)
-			*(*int64)(unsafe.Add(mBase, _consts[98])) = int64(-1)
+			*(*int32)(unsafe.Add(mBase, _c_F_closeChildInfoPipe[2])) = int32(0)
+			*(*int64)(unsafe.Add(mBase, _c_F_closeChildInfoPipe[0])) = int64(-1)
 		}
 	}
 	return
@@ -475,7 +475,7 @@ func F_openChildInfoPipe(m *base.Module) {
 	_ = v87
 	var v88 int32
 	_ = v88
-	v4 = int32(_a198)
+	v4 = int32(_a_F_openChildInfoPipe_0)
 	v9 = m.G0
 	v11 = v9 - int32(64)
 	m.G0 = v11
@@ -484,15 +484,15 @@ func F_openChildInfoPipe(m *base.Module) {
 	if v14 != 0 {
 		v71 = int32(-1)
 	} else {
-		v43 = *(*int32)(unsafe.Add(mBase, _consts[98]))
+		v43 = *(*int32)(unsafe.Add(mBase, _c_F_openChildInfoPipe[0]))
 		*(*int32)(unsafe.Add(mBase, uint32(v11)+16)) = int32(2048)
 		v48 = F_fcntl(m, v43, int32(4), v11+int32(16))
 		mBase = m.M
 		if v48 != 0 {
-			v64 = *(*int32)(unsafe.Add(mBase, _consts[98]))
+			v64 = *(*int32)(unsafe.Add(mBase, _c_F_openChildInfoPipe[0]))
 			v65 = F_close(m, v64)
 			mBase = m.M
-			v66 = *(*int32)(unsafe.Add(mBase, _consts[99]))
+			v66 = *(*int32)(unsafe.Add(mBase, _c_F_openChildInfoPipe[1]))
 			v67 = F_close(m, v66)
 			mBase = m.M
 			v71 = int32(-1)
@@ -502,30 +502,30 @@ func F_openChildInfoPipe(m *base.Module) {
 	}
 	m.G0 = v11 + int32(64)
 	if v71 != int32(-1) {
-		*(*int32)(unsafe.Add(mBase, _consts[100])) = int32(0)
+		*(*int32)(unsafe.Add(mBase, _c_F_openChildInfoPipe[2])) = int32(0)
 	} else {
-		v78 = *(*int32)(unsafe.Add(mBase, _consts[98]))
+		v78 = *(*int32)(unsafe.Add(mBase, _c_F_openChildInfoPipe[0]))
 		if v78 != int32(-1) {
 			v85 = F_close(m, v78)
 			mBase = m.M
-			v86 = int32(_a20)
-			v87 = *(*int32)(unsafe.Add(mBase, _consts[99]))
+			v86 = int32(_a_F_openChildInfoPipe_1)
+			v87 = *(*int32)(unsafe.Add(mBase, _c_F_openChildInfoPipe[1]))
 			v88 = F_close(m, v87)
 			mBase = m.M
-			*(*int64)(unsafe.Add(mBase, _consts[98])) = int64(-1)
-			*(*int32)(unsafe.Add(mBase, _consts[100])) = int32(0)
+			*(*int64)(unsafe.Add(mBase, _c_F_openChildInfoPipe[0])) = int64(-1)
+			*(*int32)(unsafe.Add(mBase, _c_F_openChildInfoPipe[2])) = int32(0)
 		} else {
-			v82 = *(*int32)(unsafe.Add(mBase, _consts[99]))
+			v82 = *(*int32)(unsafe.Add(mBase, _c_F_openChildInfoPipe[1]))
 			if v82 == int32(-1) {
 			} else {
 				v85 = F_close(m, v78)
 				mBase = m.M
-				v86 = int32(_a20)
-				v87 = *(*int32)(unsafe.Add(mBase, _consts[99]))
+				v86 = int32(_a_F_openChildInfoPipe_1)
+				v87 = *(*int32)(unsafe.Add(mBase, _c_F_openChildInfoPipe[1]))
 				v88 = F_close(m, v87)
 				mBase = m.M
-				*(*int64)(unsafe.Add(mBase, _consts[98])) = int64(-1)
-				*(*int32)(unsafe.Add(mBase, _consts[100])) = int32(0)
+				*(*int64)(unsafe.Add(mBase, _c_F_openChildInfoPipe[0])) = int64(-1)
+				*(*int32)(unsafe.Add(mBase, _c_F_openChildInfoPipe[2])) = int32(0)
 			}
 		}
 	}
@@ -616,38 +616,38 @@ func F_sendChildInfoGeneric(m *base.Module, l0 int32, l1 int32, l2 int32, l3 flo
 	v13 = m.G0
 	v15 = v13 - int32(80)
 	m.G0 = v15
-	v18 = *(*int32)(unsafe.Add(mBase, _consts[99]))
+	v18 = *(*int32)(unsafe.Add(mBase, _c_F_sendChildInfoGeneric[0]))
 	if v18 == int32(-1) {
 		m.G0 = v15 + int32(80)
 		return
 	} else {
-		v22 = *(*int32)(unsafe.Add(mBase, _consts[34]))
+		v22 = *(*int32)(unsafe.Add(mBase, _c_F_sendChildInfoGeneric[1]))
 		v23 = m.T0[v22].(func(*base.Module) int64)(m)
 		mBase = m.M
 		if l0 != 0 {
 			v35 = int32(0)
-			*(*int32)(unsafe.Add(mBase, _consts[101])) = v35
+			*(*int32)(unsafe.Add(mBase, _c_F_sendChildInfoGeneric[2])) = v35
 			v39 = int32(0)
-			v41 = *(*int32)(unsafe.Add(mBase, _consts[34]))
+			v41 = *(*int32)(unsafe.Add(mBase, _c_F_sendChildInfoGeneric[1]))
 			v42 = m.T0[v41].(func(*base.Module) int64)(m)
 			mBase = m.M
-			*(*int64)(unsafe.Add(mBase, _consts[102])) = v42
-			*(*int64)(unsafe.Add(mBase, _consts[103])) = v42 - v23
-			v48 = *(*int32)(unsafe.Add(mBase, _consts[101]))
-			v50 = *(*int32)(unsafe.Add(mBase, _consts[104]))
+			*(*int64)(unsafe.Add(mBase, _c_F_sendChildInfoGeneric[3])) = v42
+			*(*int64)(unsafe.Add(mBase, _c_F_sendChildInfoGeneric[4])) = v42 - v23
+			v48 = *(*int32)(unsafe.Add(mBase, _c_F_sendChildInfoGeneric[2]))
+			v50 = *(*int32)(unsafe.Add(mBase, _c_F_sendChildInfoGeneric[5]))
 			if base.Ui32(v48) <= base.Ui32(v50) {
 				v54 = v50
 			} else {
-				*(*int32)(unsafe.Add(mBase, _consts[104])) = v48
+				*(*int32)(unsafe.Add(mBase, _c_F_sendChildInfoGeneric[5])) = v48
 				v54 = v48
 			}
 			v55 = int32(0)
-			v57 = *(*int64)(unsafe.Add(mBase, _consts[105]))
+			v57 = *(*int64)(unsafe.Add(mBase, _c_F_sendChildInfoGeneric[6]))
 			v59 = v57 + base.I64_extend_i32_u(v48)
-			*(*int64)(unsafe.Add(mBase, _consts[105])) = v59
-			v63 = *(*int32)(unsafe.Add(mBase, _consts[106]))
+			*(*int64)(unsafe.Add(mBase, _c_F_sendChildInfoGeneric[6])) = v59
+			v63 = *(*int32)(unsafe.Add(mBase, _c_F_sendChildInfoGeneric[7]))
 			v65 = v63 + int32(1)
-			*(*int32)(unsafe.Add(mBase, _consts[106])) = v65
+			*(*int32)(unsafe.Add(mBase, _c_F_sendChildInfoGeneric[7])) = v65
 			if v48|l0 == v55 {
 				v98 = v42
 				*(*int32)(unsafe.Add(mBase, uint32(v15)+72)) = l2
@@ -655,9 +655,9 @@ func F_sendChildInfoGeneric(m *base.Module, l0 int32, l1 int32, l2 int32, l3 flo
 				*(*int32)(unsafe.Add(mBase, uint32(v15)+76)) = l0
 				*(*float64)(unsafe.Add(mBase, uint32(v15)+64)) = l3
 				*(*int64)(unsafe.Add(mBase, uint32(v15)+56)) = v98
-				v109 = *(*int32)(unsafe.Add(mBase, _consts[101]))
+				v109 = *(*int32)(unsafe.Add(mBase, _c_F_sendChildInfoGeneric[2]))
 				*(*int32)(unsafe.Add(mBase, uint32(v15)+52)) = v109
-				v112 = *(*int32)(unsafe.Add(mBase, _consts[99]))
+				v112 = *(*int32)(unsafe.Add(mBase, _c_F_sendChildInfoGeneric[0]))
 				v115 = int32(32)
 				v116 = F_write(m, v112, v15+int32(48), v115)
 				mBase = m.M
@@ -665,7 +665,7 @@ func F_sendChildInfoGeneric(m *base.Module, l0 int32, l1 int32, l2 int32, l3 flo
 					m.G0 = v15 + int32(80)
 					return
 				} else {
-					v120 = *(*int32)(unsafe.Add(mBase, _consts[28]))
+					v120 = *(*int32)(unsafe.Add(mBase, _c_F_sendChildInfoGeneric[8]))
 					if int32(3) < v120 {
 						F__exit(m, int32(1))
 						mBase = m.M
@@ -673,11 +673,11 @@ func F_sendChildInfoGeneric(m *base.Module, l0 int32, l1 int32, l2 int32, l3 flo
 						for {
 						}
 					} else {
-						v124 = *(*int32)(unsafe.Add(mBase, _consts[18]))
+						v124 = *(*int32)(unsafe.Add(mBase, _c_F_sendChildInfoGeneric[9]))
 						v125 = F___strerror_l(m, v124, v124)
 						mBase = m.M
 						*(*int32)(unsafe.Add(mBase, uint32(v15))) = v125
-						F__serverLog(m, int32(3), int32(_a199), v15)
+						F__serverLog(m, int32(3), int32(_a_F_sendChildInfoGeneric_0), v15)
 						mBase = m.M
 						v130 = m.ExcPending
 						if v130 != 0 {
@@ -697,7 +697,7 @@ func F_sendChildInfoGeneric(m *base.Module, l0 int32, l1 int32, l2 int32, l3 flo
 				} else {
 					v72 = int32(1)
 				}
-				v74 = *(*int32)(unsafe.Add(mBase, _consts[28]))
+				v74 = *(*int32)(unsafe.Add(mBase, _c_F_sendChildInfoGeneric[8]))
 				if v72 < v74 {
 					v98 = v42
 					*(*int32)(unsafe.Add(mBase, uint32(v15)+72)) = l2
@@ -705,9 +705,9 @@ func F_sendChildInfoGeneric(m *base.Module, l0 int32, l1 int32, l2 int32, l3 flo
 					*(*int32)(unsafe.Add(mBase, uint32(v15)+76)) = l0
 					*(*float64)(unsafe.Add(mBase, uint32(v15)+64)) = l3
 					*(*int64)(unsafe.Add(mBase, uint32(v15)+56)) = v98
-					v109 = *(*int32)(unsafe.Add(mBase, _consts[101]))
+					v109 = *(*int32)(unsafe.Add(mBase, _c_F_sendChildInfoGeneric[2]))
 					*(*int32)(unsafe.Add(mBase, uint32(v15)+52)) = v109
-					v112 = *(*int32)(unsafe.Add(mBase, _consts[99]))
+					v112 = *(*int32)(unsafe.Add(mBase, _c_F_sendChildInfoGeneric[0]))
 					v115 = int32(32)
 					v116 = F_write(m, v112, v15+int32(48), v115)
 					mBase = m.M
@@ -715,7 +715,7 @@ func F_sendChildInfoGeneric(m *base.Module, l0 int32, l1 int32, l2 int32, l3 flo
 						m.G0 = v15 + int32(80)
 						return
 					} else {
-						v120 = *(*int32)(unsafe.Add(mBase, _consts[28]))
+						v120 = *(*int32)(unsafe.Add(mBase, _c_F_sendChildInfoGeneric[8]))
 						if int32(3) < v120 {
 							F__exit(m, int32(1))
 							mBase = m.M
@@ -723,11 +723,11 @@ func F_sendChildInfoGeneric(m *base.Module, l0 int32, l1 int32, l2 int32, l3 flo
 							for {
 							}
 						} else {
-							v124 = *(*int32)(unsafe.Add(mBase, _consts[18]))
+							v124 = *(*int32)(unsafe.Add(mBase, _c_F_sendChildInfoGeneric[9]))
 							v125 = F___strerror_l(m, v124, v124)
 							mBase = m.M
 							*(*int32)(unsafe.Add(mBase, uint32(v15))) = v125
-							F__serverLog(m, int32(3), int32(_a199), v15)
+							F__serverLog(m, int32(3), int32(_a_F_sendChildInfoGeneric_0), v15)
 							mBase = m.M
 							v130 = m.ExcPending
 							if v130 != 0 {
@@ -748,22 +748,22 @@ func F_sendChildInfoGeneric(m *base.Module, l0 int32, l1 int32, l2 int32, l3 flo
 					v84 = int32(20)
 					*(*int32)(unsafe.Add(mBase, uint32(v15)+24)) = int32(base.Ui32(v54) >> (uint(v84) % 32))
 					*(*int32)(unsafe.Add(mBase, uint32(v15)+20)) = int32(base.Ui32(v48) >> (uint(v84) % 32))
-					F__serverLog(m, v72, int32(_a200), v15+int32(16))
+					F__serverLog(m, v72, int32(_a_F_sendChildInfoGeneric_1), v15+int32(16))
 					mBase = m.M
 					v94 = m.ExcPending
 					if v94 != 0 {
 						return
 					} else {
-						v96 = *(*int64)(unsafe.Add(mBase, _consts[102]))
+						v96 = *(*int64)(unsafe.Add(mBase, _c_F_sendChildInfoGeneric[3]))
 						v98 = v96
 						*(*int32)(unsafe.Add(mBase, uint32(v15)+72)) = l2
 						*(*int32)(unsafe.Add(mBase, uint32(v15)+48)) = l1
 						*(*int32)(unsafe.Add(mBase, uint32(v15)+76)) = l0
 						*(*float64)(unsafe.Add(mBase, uint32(v15)+64)) = l3
 						*(*int64)(unsafe.Add(mBase, uint32(v15)+56)) = v98
-						v109 = *(*int32)(unsafe.Add(mBase, _consts[101]))
+						v109 = *(*int32)(unsafe.Add(mBase, _c_F_sendChildInfoGeneric[2]))
 						*(*int32)(unsafe.Add(mBase, uint32(v15)+52)) = v109
-						v112 = *(*int32)(unsafe.Add(mBase, _consts[99]))
+						v112 = *(*int32)(unsafe.Add(mBase, _c_F_sendChildInfoGeneric[0]))
 						v115 = int32(32)
 						v116 = F_write(m, v112, v15+int32(48), v115)
 						mBase = m.M
@@ -771,7 +771,7 @@ func F_sendChildInfoGeneric(m *base.Module, l0 int32, l1 int32, l2 int32, l3 flo
 							m.G0 = v15 + int32(80)
 							return
 						} else {
-							v120 = *(*int32)(unsafe.Add(mBase, _consts[28]))
+							v120 = *(*int32)(unsafe.Add(mBase, _c_F_sendChildInfoGeneric[8]))
 							if int32(3) < v120 {
 								F__exit(m, int32(1))
 								mBase = m.M
@@ -779,11 +779,11 @@ func F_sendChildInfoGeneric(m *base.Module, l0 int32, l1 int32, l2 int32, l3 flo
 								for {
 								}
 							} else {
-								v124 = *(*int32)(unsafe.Add(mBase, _consts[18]))
+								v124 = *(*int32)(unsafe.Add(mBase, _c_F_sendChildInfoGeneric[9]))
 								v125 = F___strerror_l(m, v124, v124)
 								mBase = m.M
 								*(*int32)(unsafe.Add(mBase, uint32(v15))) = v125
-								F__serverLog(m, int32(3), int32(_a199), v15)
+								F__serverLog(m, int32(3), int32(_a_F_sendChildInfoGeneric_0), v15)
 								mBase = m.M
 								v130 = m.ExcPending
 								if v130 != 0 {
@@ -801,31 +801,31 @@ func F_sendChildInfoGeneric(m *base.Module, l0 int32, l1 int32, l2 int32, l3 flo
 				}
 			}
 		} else {
-			v25 = *(*int64)(unsafe.Add(mBase, _consts[102]))
+			v25 = *(*int64)(unsafe.Add(mBase, _c_F_sendChildInfoGeneric[3]))
 			if v25 == int64(0) {
 				v35 = int32(0)
-				*(*int32)(unsafe.Add(mBase, _consts[101])) = v35
+				*(*int32)(unsafe.Add(mBase, _c_F_sendChildInfoGeneric[2])) = v35
 				v39 = int32(0)
-				v41 = *(*int32)(unsafe.Add(mBase, _consts[34]))
+				v41 = *(*int32)(unsafe.Add(mBase, _c_F_sendChildInfoGeneric[1]))
 				v42 = m.T0[v41].(func(*base.Module) int64)(m)
 				mBase = m.M
-				*(*int64)(unsafe.Add(mBase, _consts[102])) = v42
-				*(*int64)(unsafe.Add(mBase, _consts[103])) = v42 - v23
-				v48 = *(*int32)(unsafe.Add(mBase, _consts[101]))
-				v50 = *(*int32)(unsafe.Add(mBase, _consts[104]))
+				*(*int64)(unsafe.Add(mBase, _c_F_sendChildInfoGeneric[3])) = v42
+				*(*int64)(unsafe.Add(mBase, _c_F_sendChildInfoGeneric[4])) = v42 - v23
+				v48 = *(*int32)(unsafe.Add(mBase, _c_F_sendChildInfoGeneric[2]))
+				v50 = *(*int32)(unsafe.Add(mBase, _c_F_sendChildInfoGeneric[5]))
 				if base.Ui32(v48) <= base.Ui32(v50) {
 					v54 = v50
 				} else {
-					*(*int32)(unsafe.Add(mBase, _consts[104])) = v48
+					*(*int32)(unsafe.Add(mBase, _c_F_sendChildInfoGeneric[5])) = v48
 					v54 = v48
 				}
 				v55 = int32(0)
-				v57 = *(*int64)(unsafe.Add(mBase, _consts[105]))
+				v57 = *(*int64)(unsafe.Add(mBase, _c_F_sendChildInfoGeneric[6]))
 				v59 = v57 + base.I64_extend_i32_u(v48)
-				*(*int64)(unsafe.Add(mBase, _consts[105])) = v59
-				v63 = *(*int32)(unsafe.Add(mBase, _consts[106]))
+				*(*int64)(unsafe.Add(mBase, _c_F_sendChildInfoGeneric[6])) = v59
+				v63 = *(*int32)(unsafe.Add(mBase, _c_F_sendChildInfoGeneric[7]))
 				v65 = v63 + int32(1)
-				*(*int32)(unsafe.Add(mBase, _consts[106])) = v65
+				*(*int32)(unsafe.Add(mBase, _c_F_sendChildInfoGeneric[7])) = v65
 				if v48|l0 == v55 {
 					v98 = v42
 					*(*int32)(unsafe.Add(mBase, uint32(v15)+72)) = l2
@@ -833,9 +833,9 @@ func F_sendChildInfoGeneric(m *base.Module, l0 int32, l1 int32, l2 int32, l3 flo
 					*(*int32)(unsafe.Add(mBase, uint32(v15)+76)) = l0
 					*(*float64)(unsafe.Add(mBase, uint32(v15)+64)) = l3
 					*(*int64)(unsafe.Add(mBase, uint32(v15)+56)) = v98
-					v109 = *(*int32)(unsafe.Add(mBase, _consts[101]))
+					v109 = *(*int32)(unsafe.Add(mBase, _c_F_sendChildInfoGeneric[2]))
 					*(*int32)(unsafe.Add(mBase, uint32(v15)+52)) = v109
-					v112 = *(*int32)(unsafe.Add(mBase, _consts[99]))
+					v112 = *(*int32)(unsafe.Add(mBase, _c_F_sendChildInfoGeneric[0]))
 					v115 = int32(32)
 					v116 = F_write(m, v112, v15+int32(48), v115)
 					mBase = m.M
@@ -843,7 +843,7 @@ func F_sendChildInfoGeneric(m *base.Module, l0 int32, l1 int32, l2 int32, l3 flo
 						m.G0 = v15 + int32(80)
 						return
 					} else {
-						v120 = *(*int32)(unsafe.Add(mBase, _consts[28]))
+						v120 = *(*int32)(unsafe.Add(mBase, _c_F_sendChildInfoGeneric[8]))
 						if int32(3) < v120 {
 							F__exit(m, int32(1))
 							mBase = m.M
@@ -851,11 +851,11 @@ func F_sendChildInfoGeneric(m *base.Module, l0 int32, l1 int32, l2 int32, l3 flo
 							for {
 							}
 						} else {
-							v124 = *(*int32)(unsafe.Add(mBase, _consts[18]))
+							v124 = *(*int32)(unsafe.Add(mBase, _c_F_sendChildInfoGeneric[9]))
 							v125 = F___strerror_l(m, v124, v124)
 							mBase = m.M
 							*(*int32)(unsafe.Add(mBase, uint32(v15))) = v125
-							F__serverLog(m, int32(3), int32(_a199), v15)
+							F__serverLog(m, int32(3), int32(_a_F_sendChildInfoGeneric_0), v15)
 							mBase = m.M
 							v130 = m.ExcPending
 							if v130 != 0 {
@@ -875,7 +875,7 @@ func F_sendChildInfoGeneric(m *base.Module, l0 int32, l1 int32, l2 int32, l3 flo
 					} else {
 						v72 = int32(1)
 					}
-					v74 = *(*int32)(unsafe.Add(mBase, _consts[28]))
+					v74 = *(*int32)(unsafe.Add(mBase, _c_F_sendChildInfoGeneric[8]))
 					if v72 < v74 {
 						v98 = v42
 						*(*int32)(unsafe.Add(mBase, uint32(v15)+72)) = l2
@@ -883,9 +883,9 @@ func F_sendChildInfoGeneric(m *base.Module, l0 int32, l1 int32, l2 int32, l3 flo
 						*(*int32)(unsafe.Add(mBase, uint32(v15)+76)) = l0
 						*(*float64)(unsafe.Add(mBase, uint32(v15)+64)) = l3
 						*(*int64)(unsafe.Add(mBase, uint32(v15)+56)) = v98
-						v109 = *(*int32)(unsafe.Add(mBase, _consts[101]))
+						v109 = *(*int32)(unsafe.Add(mBase, _c_F_sendChildInfoGeneric[2]))
 						*(*int32)(unsafe.Add(mBase, uint32(v15)+52)) = v109
-						v112 = *(*int32)(unsafe.Add(mBase, _consts[99]))
+						v112 = *(*int32)(unsafe.Add(mBase, _c_F_sendChildInfoGeneric[0]))
 						v115 = int32(32)
 						v116 = F_write(m, v112, v15+int32(48), v115)
 						mBase = m.M
@@ -893,7 +893,7 @@ func F_sendChildInfoGeneric(m *base.Module, l0 int32, l1 int32, l2 int32, l3 flo
 							m.G0 = v15 + int32(80)
 							return
 						} else {
-							v120 = *(*int32)(unsafe.Add(mBase, _consts[28]))
+							v120 = *(*int32)(unsafe.Add(mBase, _c_F_sendChildInfoGeneric[8]))
 							if int32(3) < v120 {
 								F__exit(m, int32(1))
 								mBase = m.M
@@ -901,11 +901,11 @@ func F_sendChildInfoGeneric(m *base.Module, l0 int32, l1 int32, l2 int32, l3 flo
 								for {
 								}
 							} else {
-								v124 = *(*int32)(unsafe.Add(mBase, _consts[18]))
+								v124 = *(*int32)(unsafe.Add(mBase, _c_F_sendChildInfoGeneric[9]))
 								v125 = F___strerror_l(m, v124, v124)
 								mBase = m.M
 								*(*int32)(unsafe.Add(mBase, uint32(v15))) = v125
-								F__serverLog(m, int32(3), int32(_a199), v15)
+								F__serverLog(m, int32(3), int32(_a_F_sendChildInfoGeneric_0), v15)
 								mBase = m.M
 								v130 = m.ExcPending
 								if v130 != 0 {
@@ -926,22 +926,22 @@ func F_sendChildInfoGeneric(m *base.Module, l0 int32, l1 int32, l2 int32, l3 flo
 						v84 = int32(20)
 						*(*int32)(unsafe.Add(mBase, uint32(v15)+24)) = int32(base.Ui32(v54) >> (uint(v84) % 32))
 						*(*int32)(unsafe.Add(mBase, uint32(v15)+20)) = int32(base.Ui32(v48) >> (uint(v84) % 32))
-						F__serverLog(m, v72, int32(_a200), v15+int32(16))
+						F__serverLog(m, v72, int32(_a_F_sendChildInfoGeneric_1), v15+int32(16))
 						mBase = m.M
 						v94 = m.ExcPending
 						if v94 != 0 {
 							return
 						} else {
-							v96 = *(*int64)(unsafe.Add(mBase, _consts[102]))
+							v96 = *(*int64)(unsafe.Add(mBase, _c_F_sendChildInfoGeneric[3]))
 							v98 = v96
 							*(*int32)(unsafe.Add(mBase, uint32(v15)+72)) = l2
 							*(*int32)(unsafe.Add(mBase, uint32(v15)+48)) = l1
 							*(*int32)(unsafe.Add(mBase, uint32(v15)+76)) = l0
 							*(*float64)(unsafe.Add(mBase, uint32(v15)+64)) = l3
 							*(*int64)(unsafe.Add(mBase, uint32(v15)+56)) = v98
-							v109 = *(*int32)(unsafe.Add(mBase, _consts[101]))
+							v109 = *(*int32)(unsafe.Add(mBase, _c_F_sendChildInfoGeneric[2]))
 							*(*int32)(unsafe.Add(mBase, uint32(v15)+52)) = v109
-							v112 = *(*int32)(unsafe.Add(mBase, _consts[99]))
+							v112 = *(*int32)(unsafe.Add(mBase, _c_F_sendChildInfoGeneric[0]))
 							v115 = int32(32)
 							v116 = F_write(m, v112, v15+int32(48), v115)
 							mBase = m.M
@@ -949,7 +949,7 @@ func F_sendChildInfoGeneric(m *base.Module, l0 int32, l1 int32, l2 int32, l3 flo
 								m.G0 = v15 + int32(80)
 								return
 							} else {
-								v120 = *(*int32)(unsafe.Add(mBase, _consts[28]))
+								v120 = *(*int32)(unsafe.Add(mBase, _c_F_sendChildInfoGeneric[8]))
 								if int32(3) < v120 {
 									F__exit(m, int32(1))
 									mBase = m.M
@@ -957,11 +957,11 @@ func F_sendChildInfoGeneric(m *base.Module, l0 int32, l1 int32, l2 int32, l3 flo
 									for {
 									}
 								} else {
-									v124 = *(*int32)(unsafe.Add(mBase, _consts[18]))
+									v124 = *(*int32)(unsafe.Add(mBase, _c_F_sendChildInfoGeneric[9]))
 									v125 = F___strerror_l(m, v124, v124)
 									mBase = m.M
 									*(*int32)(unsafe.Add(mBase, uint32(v15))) = v125
-									F__serverLog(m, int32(3), int32(_a199), v15)
+									F__serverLog(m, int32(3), int32(_a_F_sendChildInfoGeneric_0), v15)
 									mBase = m.M
 									v130 = m.ExcPending
 									if v130 != 0 {
@@ -979,7 +979,7 @@ func F_sendChildInfoGeneric(m *base.Module, l0 int32, l1 int32, l2 int32, l3 flo
 					}
 				}
 			} else {
-				v30 = *(*int64)(unsafe.Add(mBase, _consts[103]))
+				v30 = *(*int64)(unsafe.Add(mBase, _c_F_sendChildInfoGeneric[4]))
 				if base.Ui64(v23-v25) <= base.Ui64(v30*int64(100)) {
 					v98 = v25
 					*(*int32)(unsafe.Add(mBase, uint32(v15)+72)) = l2
@@ -987,9 +987,9 @@ func F_sendChildInfoGeneric(m *base.Module, l0 int32, l1 int32, l2 int32, l3 flo
 					*(*int32)(unsafe.Add(mBase, uint32(v15)+76)) = l0
 					*(*float64)(unsafe.Add(mBase, uint32(v15)+64)) = l3
 					*(*int64)(unsafe.Add(mBase, uint32(v15)+56)) = v98
-					v109 = *(*int32)(unsafe.Add(mBase, _consts[101]))
+					v109 = *(*int32)(unsafe.Add(mBase, _c_F_sendChildInfoGeneric[2]))
 					*(*int32)(unsafe.Add(mBase, uint32(v15)+52)) = v109
-					v112 = *(*int32)(unsafe.Add(mBase, _consts[99]))
+					v112 = *(*int32)(unsafe.Add(mBase, _c_F_sendChildInfoGeneric[0]))
 					v115 = int32(32)
 					v116 = F_write(m, v112, v15+int32(48), v115)
 					mBase = m.M
@@ -997,7 +997,7 @@ func F_sendChildInfoGeneric(m *base.Module, l0 int32, l1 int32, l2 int32, l3 flo
 						m.G0 = v15 + int32(80)
 						return
 					} else {
-						v120 = *(*int32)(unsafe.Add(mBase, _consts[28]))
+						v120 = *(*int32)(unsafe.Add(mBase, _c_F_sendChildInfoGeneric[8]))
 						if int32(3) < v120 {
 							F__exit(m, int32(1))
 							mBase = m.M
@@ -1005,11 +1005,11 @@ func F_sendChildInfoGeneric(m *base.Module, l0 int32, l1 int32, l2 int32, l3 flo
 							for {
 							}
 						} else {
-							v124 = *(*int32)(unsafe.Add(mBase, _consts[18]))
+							v124 = *(*int32)(unsafe.Add(mBase, _c_F_sendChildInfoGeneric[9]))
 							v125 = F___strerror_l(m, v124, v124)
 							mBase = m.M
 							*(*int32)(unsafe.Add(mBase, uint32(v15))) = v125
-							F__serverLog(m, int32(3), int32(_a199), v15)
+							F__serverLog(m, int32(3), int32(_a_F_sendChildInfoGeneric_0), v15)
 							mBase = m.M
 							v130 = m.ExcPending
 							if v130 != 0 {
@@ -1025,28 +1025,28 @@ func F_sendChildInfoGeneric(m *base.Module, l0 int32, l1 int32, l2 int32, l3 flo
 					}
 				} else {
 					v35 = int32(0)
-					*(*int32)(unsafe.Add(mBase, _consts[101])) = v35
+					*(*int32)(unsafe.Add(mBase, _c_F_sendChildInfoGeneric[2])) = v35
 					v39 = int32(0)
-					v41 = *(*int32)(unsafe.Add(mBase, _consts[34]))
+					v41 = *(*int32)(unsafe.Add(mBase, _c_F_sendChildInfoGeneric[1]))
 					v42 = m.T0[v41].(func(*base.Module) int64)(m)
 					mBase = m.M
-					*(*int64)(unsafe.Add(mBase, _consts[102])) = v42
-					*(*int64)(unsafe.Add(mBase, _consts[103])) = v42 - v23
-					v48 = *(*int32)(unsafe.Add(mBase, _consts[101]))
-					v50 = *(*int32)(unsafe.Add(mBase, _consts[104]))
+					*(*int64)(unsafe.Add(mBase, _c_F_sendChildInfoGeneric[3])) = v42
+					*(*int64)(unsafe.Add(mBase, _c_F_sendChildInfoGeneric[4])) = v42 - v23
+					v48 = *(*int32)(unsafe.Add(mBase, _c_F_sendChildInfoGeneric[2]))
+					v50 = *(*int32)(unsafe.Add(mBase, _c_F_sendChildInfoGeneric[5]))
 					if base.Ui32(v48) <= base.Ui32(v50) {
 						v54 = v50
 					} else {
-						*(*int32)(unsafe.Add(mBase, _consts[104])) = v48
+						*(*int32)(unsafe.Add(mBase, _c_F_sendChildInfoGeneric[5])) = v48
 						v54 = v48
 					}
 					v55 = int32(0)
-					v57 = *(*int64)(unsafe.Add(mBase, _consts[105]))
+					v57 = *(*int64)(unsafe.Add(mBase, _c_F_sendChildInfoGeneric[6]))
 					v59 = v57 + base.I64_extend_i32_u(v48)
-					*(*int64)(unsafe.Add(mBase, _consts[105])) = v59
-					v63 = *(*int32)(unsafe.Add(mBase, _consts[106]))
+					*(*int64)(unsafe.Add(mBase, _c_F_sendChildInfoGeneric[6])) = v59
+					v63 = *(*int32)(unsafe.Add(mBase, _c_F_sendChildInfoGeneric[7]))
 					v65 = v63 + int32(1)
-					*(*int32)(unsafe.Add(mBase, _consts[106])) = v65
+					*(*int32)(unsafe.Add(mBase, _c_F_sendChildInfoGeneric[7])) = v65
 					if v48|l0 == v55 {
 						v98 = v42
 						*(*int32)(unsafe.Add(mBase, uint32(v15)+72)) = l2
@@ -1054,9 +1054,9 @@ func F_sendChildInfoGeneric(m *base.Module, l0 int32, l1 int32, l2 int32, l3 flo
 						*(*int32)(unsafe.Add(mBase, uint32(v15)+76)) = l0
 						*(*float64)(unsafe.Add(mBase, uint32(v15)+64)) = l3
 						*(*int64)(unsafe.Add(mBase, uint32(v15)+56)) = v98
-						v109 = *(*int32)(unsafe.Add(mBase, _consts[101]))
+						v109 = *(*int32)(unsafe.Add(mBase, _c_F_sendChildInfoGeneric[2]))
 						*(*int32)(unsafe.Add(mBase, uint32(v15)+52)) = v109
-						v112 = *(*int32)(unsafe.Add(mBase, _consts[99]))
+						v112 = *(*int32)(unsafe.Add(mBase, _c_F_sendChildInfoGeneric[0]))
 						v115 = int32(32)
 						v116 = F_write(m, v112, v15+int32(48), v115)
 						mBase = m.M
@@ -1064,7 +1064,7 @@ func F_sendChildInfoGeneric(m *base.Module, l0 int32, l1 int32, l2 int32, l3 flo
 							m.G0 = v15 + int32(80)
 							return
 						} else {
-							v120 = *(*int32)(unsafe.Add(mBase, _consts[28]))
+							v120 = *(*int32)(unsafe.Add(mBase, _c_F_sendChildInfoGeneric[8]))
 							if int32(3) < v120 {
 								F__exit(m, int32(1))
 								mBase = m.M
@@ -1072,11 +1072,11 @@ func F_sendChildInfoGeneric(m *base.Module, l0 int32, l1 int32, l2 int32, l3 flo
 								for {
 								}
 							} else {
-								v124 = *(*int32)(unsafe.Add(mBase, _consts[18]))
+								v124 = *(*int32)(unsafe.Add(mBase, _c_F_sendChildInfoGeneric[9]))
 								v125 = F___strerror_l(m, v124, v124)
 								mBase = m.M
 								*(*int32)(unsafe.Add(mBase, uint32(v15))) = v125
-								F__serverLog(m, int32(3), int32(_a199), v15)
+								F__serverLog(m, int32(3), int32(_a_F_sendChildInfoGeneric_0), v15)
 								mBase = m.M
 								v130 = m.ExcPending
 								if v130 != 0 {
@@ -1096,7 +1096,7 @@ func F_sendChildInfoGeneric(m *base.Module, l0 int32, l1 int32, l2 int32, l3 flo
 						} else {
 							v72 = int32(1)
 						}
-						v74 = *(*int32)(unsafe.Add(mBase, _consts[28]))
+						v74 = *(*int32)(unsafe.Add(mBase, _c_F_sendChildInfoGeneric[8]))
 						if v72 < v74 {
 							v98 = v42
 							*(*int32)(unsafe.Add(mBase, uint32(v15)+72)) = l2
@@ -1104,9 +1104,9 @@ func F_sendChildInfoGeneric(m *base.Module, l0 int32, l1 int32, l2 int32, l3 flo
 							*(*int32)(unsafe.Add(mBase, uint32(v15)+76)) = l0
 							*(*float64)(unsafe.Add(mBase, uint32(v15)+64)) = l3
 							*(*int64)(unsafe.Add(mBase, uint32(v15)+56)) = v98
-							v109 = *(*int32)(unsafe.Add(mBase, _consts[101]))
+							v109 = *(*int32)(unsafe.Add(mBase, _c_F_sendChildInfoGeneric[2]))
 							*(*int32)(unsafe.Add(mBase, uint32(v15)+52)) = v109
-							v112 = *(*int32)(unsafe.Add(mBase, _consts[99]))
+							v112 = *(*int32)(unsafe.Add(mBase, _c_F_sendChildInfoGeneric[0]))
 							v115 = int32(32)
 							v116 = F_write(m, v112, v15+int32(48), v115)
 							mBase = m.M
@@ -1114,7 +1114,7 @@ func F_sendChildInfoGeneric(m *base.Module, l0 int32, l1 int32, l2 int32, l3 flo
 								m.G0 = v15 + int32(80)
 								return
 							} else {
-								v120 = *(*int32)(unsafe.Add(mBase, _consts[28]))
+								v120 = *(*int32)(unsafe.Add(mBase, _c_F_sendChildInfoGeneric[8]))
 								if int32(3) < v120 {
 									F__exit(m, int32(1))
 									mBase = m.M
@@ -1122,11 +1122,11 @@ func F_sendChildInfoGeneric(m *base.Module, l0 int32, l1 int32, l2 int32, l3 flo
 									for {
 									}
 								} else {
-									v124 = *(*int32)(unsafe.Add(mBase, _consts[18]))
+									v124 = *(*int32)(unsafe.Add(mBase, _c_F_sendChildInfoGeneric[9]))
 									v125 = F___strerror_l(m, v124, v124)
 									mBase = m.M
 									*(*int32)(unsafe.Add(mBase, uint32(v15))) = v125
-									F__serverLog(m, int32(3), int32(_a199), v15)
+									F__serverLog(m, int32(3), int32(_a_F_sendChildInfoGeneric_0), v15)
 									mBase = m.M
 									v130 = m.ExcPending
 									if v130 != 0 {
@@ -1147,22 +1147,22 @@ func F_sendChildInfoGeneric(m *base.Module, l0 int32, l1 int32, l2 int32, l3 flo
 							v84 = int32(20)
 							*(*int32)(unsafe.Add(mBase, uint32(v15)+24)) = int32(base.Ui32(v54) >> (uint(v84) % 32))
 							*(*int32)(unsafe.Add(mBase, uint32(v15)+20)) = int32(base.Ui32(v48) >> (uint(v84) % 32))
-							F__serverLog(m, v72, int32(_a200), v15+int32(16))
+							F__serverLog(m, v72, int32(_a_F_sendChildInfoGeneric_1), v15+int32(16))
 							mBase = m.M
 							v94 = m.ExcPending
 							if v94 != 0 {
 								return
 							} else {
-								v96 = *(*int64)(unsafe.Add(mBase, _consts[102]))
+								v96 = *(*int64)(unsafe.Add(mBase, _c_F_sendChildInfoGeneric[3]))
 								v98 = v96
 								*(*int32)(unsafe.Add(mBase, uint32(v15)+72)) = l2
 								*(*int32)(unsafe.Add(mBase, uint32(v15)+48)) = l1
 								*(*int32)(unsafe.Add(mBase, uint32(v15)+76)) = l0
 								*(*float64)(unsafe.Add(mBase, uint32(v15)+64)) = l3
 								*(*int64)(unsafe.Add(mBase, uint32(v15)+56)) = v98
-								v109 = *(*int32)(unsafe.Add(mBase, _consts[101]))
+								v109 = *(*int32)(unsafe.Add(mBase, _c_F_sendChildInfoGeneric[2]))
 								*(*int32)(unsafe.Add(mBase, uint32(v15)+52)) = v109
-								v112 = *(*int32)(unsafe.Add(mBase, _consts[99]))
+								v112 = *(*int32)(unsafe.Add(mBase, _c_F_sendChildInfoGeneric[0]))
 								v115 = int32(32)
 								v116 = F_write(m, v112, v15+int32(48), v115)
 								mBase = m.M
@@ -1170,7 +1170,7 @@ func F_sendChildInfoGeneric(m *base.Module, l0 int32, l1 int32, l2 int32, l3 flo
 									m.G0 = v15 + int32(80)
 									return
 								} else {
-									v120 = *(*int32)(unsafe.Add(mBase, _consts[28]))
+									v120 = *(*int32)(unsafe.Add(mBase, _c_F_sendChildInfoGeneric[8]))
 									if int32(3) < v120 {
 										F__exit(m, int32(1))
 										mBase = m.M
@@ -1178,11 +1178,11 @@ func F_sendChildInfoGeneric(m *base.Module, l0 int32, l1 int32, l2 int32, l3 flo
 										for {
 										}
 									} else {
-										v124 = *(*int32)(unsafe.Add(mBase, _consts[18]))
+										v124 = *(*int32)(unsafe.Add(mBase, _c_F_sendChildInfoGeneric[9]))
 										v125 = F___strerror_l(m, v124, v124)
 										mBase = m.M
 										*(*int32)(unsafe.Add(mBase, uint32(v15))) = v125
-										F__serverLog(m, int32(3), int32(_a199), v15)
+										F__serverLog(m, int32(3), int32(_a_F_sendChildInfoGeneric_0), v15)
 										mBase = m.M
 										v130 = m.ExcPending
 										if v130 != 0 {
@@ -1335,11 +1335,11 @@ func F_shouldStartChildReplication(m *base.Module, l0 int32, l1 int32, l2 int32)
 	v16 = m.G0
 	v18 = v16 - int32(16)
 	m.G0 = v18
-	v22 = *(*int32)(unsafe.Add(mBase, _consts[61]))
+	v22 = *(*int32)(unsafe.Add(mBase, _c_F_shouldStartChildReplication[0]))
 	if v22 != int32(-1) {
 		v187 = v4
 	} else {
-		v26 = *(*int32)(unsafe.Add(mBase, _consts[78]))
+		v26 = *(*int32)(unsafe.Add(mBase, _c_F_shouldStartChildReplication[1]))
 		v28 = v18 + int32(8)
 		v29 = *(*int32)(unsafe.Add(mBase, uint32(v26)))
 		*(*int32)(unsafe.Add(mBase, uint32(v28)+4)) = int32(0)
@@ -1393,12 +1393,12 @@ func F_shouldStartChildReplication(m *base.Module, l0 int32, l1 int32, l2 int32)
 									if v95 < int32(459264) {
 										v119 = int32(11)
 									} else {
-										v102 = int32(_a2013)
+										v102 = int32(_a_F_shouldStartChildReplication_0)
 										v103 = *(*int32)(unsafe.Add(mBase, uint32(v102)))
 										v119 = v103
 									}
 								} else {
-									v102 = int32(_a2014)
+									v102 = int32(_a_F_shouldStartChildReplication_1)
 									v103 = *(*int32)(unsafe.Add(mBase, uint32(v102)))
 									v119 = v103
 								}
@@ -1413,7 +1413,7 @@ func F_shouldStartChildReplication(m *base.Module, l0 int32, l1 int32, l2 int32)
 								v138 = v65
 								v140 = v67
 							} else {
-								v122 = *(*int64)(unsafe.Add(mBase, _consts[109]))
+								v122 = *(*int64)(unsafe.Add(mBase, _c_F_shouldStartChildReplication[2]))
 								v123 = *(*int64)(unsafe.Add(mBase, uint32(v68)+88))
 								v124 = v122 - v123
 								if v60 < v124 {
@@ -1439,17 +1439,17 @@ func F_shouldStartChildReplication(m *base.Module, l0 int32, l1 int32, l2 int32)
 								if v80 < int32(459264) {
 									v106 = int32(11)
 								} else {
-									v88 = *(*int32)(unsafe.Add(mBase, _consts[643]))
+									v88 = *(*int32)(unsafe.Add(mBase, _c_F_shouldStartChildReplication[3]))
 									v106 = v88
 								}
 							} else {
-								v84 = *(*int32)(unsafe.Add(mBase, _consts[644]))
+								v84 = *(*int32)(unsafe.Add(mBase, _c_F_shouldStartChildReplication[4]))
 								v106 = v84
 							}
 						} else {
 							v106 = int32(80)
 						}
-						v108 = *(*int64)(unsafe.Add(mBase, _consts[109]))
+						v108 = *(*int64)(unsafe.Add(mBase, _c_F_shouldStartChildReplication[2]))
 						v109 = *(*int64)(unsafe.Add(mBase, uint32(v68)+88))
 						v110 = v108 - v109
 						if v60 < v110 {
@@ -1492,7 +1492,7 @@ func F_shouldStartChildReplication(m *base.Module, l0 int32, l1 int32, l2 int32)
 			if v135 == int32(0) {
 				v187 = v33
 			} else {
-				v158 = *(*int32)(unsafe.Add(mBase, _consts[645]))
+				v158 = *(*int32)(unsafe.Add(mBase, _c_F_shouldStartChildReplication[5]))
 				if v158 == int32(0) {
 					if l0 == int32(0) {
 					} else {
@@ -1511,7 +1511,7 @@ func F_shouldStartChildReplication(m *base.Module, l0 int32, l1 int32, l2 int32)
 					}
 				} else {
 					v161 = int32(0)
-					v163 = *(*int32)(unsafe.Add(mBase, _consts[646]))
+					v163 = *(*int32)(unsafe.Add(mBase, _c_F_shouldStartChildReplication[6]))
 					if base.B2i32(v161 < v163)&base.B2i32(v163 <= v135) != 0 {
 						if l0 == int32(0) {
 						} else {
@@ -1529,7 +1529,7 @@ func F_shouldStartChildReplication(m *base.Module, l0 int32, l1 int32, l2 int32)
 							v187 = v179
 						}
 					} else {
-						v169 = int64(*(*int32)(unsafe.Add(mBase, _consts[647])))
+						v169 = int64(*(*int32)(unsafe.Add(mBase, _c_F_shouldStartChildReplication[7])))
 						if v134 < v169 {
 							v187 = v161
 						} else {

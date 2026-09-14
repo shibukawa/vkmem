@@ -656,7 +656,7 @@ func F_luaH_resizearray(m *base.Module, l0 int32, l1 int32, l2 int32) {
 	_ = v17
 	v5 = m.G3
 	v6 = *(*int32)(unsafe.Add(mBase, uint32(l1)+24))
-	if v6 != v5+int32(_a2056) {
+	if v6 != v5+int32(_a_F_luaH_resizearray_0) {
 		v14 = int32(*(*uint8)(unsafe.Add(mBase, uint32(l1)+12)))
 		F_resize_2(m, l0, l1, l2, int32(1)<<(uint(v14)%32))
 		mBase = m.M

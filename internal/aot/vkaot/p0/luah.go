@@ -32,7 +32,7 @@ func F_luaH_free(m *base.Module, l0 int32, l1 int32) {
 	_ = v26
 	v5 = m.G3
 	v6 = *(*int32)(unsafe.Add(mBase, uint32(l1)+24))
-	if v6 == v5+int32(_a2240) {
+	if v6 == v5+int32(_a_F_luaH_free_0) {
 		v16 = *(*int32)(unsafe.Add(mBase, uint32(l1)+20))
 		v17 = *(*int32)(unsafe.Add(mBase, uint32(l1)+36))
 		v21 = F_luaM_realloc_(m, l0, v16, v17<<(uint(int32(4))%32), int32(0))
@@ -240,7 +240,7 @@ L2:
 	;
 	v49 = m.G3
 	v50 = *(*int32)(unsafe.Add(mBase, uint32(l0)+24))
-	if v50 != v49+int32(_a2240) {
+	if v50 != v49+int32(_a_F_luaH_getn_0) {
 		goto L15
 	} else {
 		goto L16
@@ -761,7 +761,7 @@ func F_luaH_new(m *base.Module, l0 int32, l1 int32, l2 int32) int32 {
 		*(*int64)(unsafe.Add(mBase, uint32(v13)+16)) = int64(0)
 		*(*uint8)(unsafe.Add(mBase, uint32(v13)+12)) = uint8(v27)
 		v35 = m.G3
-		*(*int32)(unsafe.Add(mBase, uint32(v13)+24)) = v35 + int32(_a2240)
+		*(*int32)(unsafe.Add(mBase, uint32(v13)+24)) = v35 + int32(_a_F_luaH_new_0)
 		*(*int32)(unsafe.Add(mBase, uint32(v13)+8)) = v27
 		if base.Ui32(int32(268435455)) < base.Ui32(l1+int32(1)) {
 			v51 = F_luaM_toobig(m, l0)
@@ -1212,7 +1212,7 @@ L18:
 	;
 	v148 = int32(0)
 	v149 = m.G3
-	F_luaG_runerror(m, l0, v149+int32(_a2271), v148)
+	F_luaG_runerror(m, l0, v149+int32(_a_F_luaH_next_0), v148)
 	mBase = m.M
 	v156 = m.ExcPending
 	if v156 != 0 {
@@ -1470,7 +1470,7 @@ func F_luaH_set(m *base.Module, l0 int32, l1 int32, l2 int32) int32 {
 		v13 = m.G3
 		switch v12 {
 		case 0:
-			v22 = v13 + int32(_a2272)
+			v22 = v13 + int32(_a_F_luaH_set_0)
 			F_luaG_runerror(m, l0, v22, int32(0))
 			mBase = m.M
 			v28 = m.ExcPending
@@ -1511,7 +1511,7 @@ func F_luaH_set(m *base.Module, l0 int32, l1 int32, l2 int32) int32 {
 					return v34
 				}
 			} else {
-				v22 = v16 + int32(_a2273)
+				v22 = v16 + int32(_a_F_luaH_set_1)
 				F_luaG_runerror(m, l0, v22, int32(0))
 				mBase = m.M
 				v28 = m.ExcPending

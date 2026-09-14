@@ -171,7 +171,7 @@ L10:
 	;
 	v52 = m.G3
 	v56 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v15+v46))))
-	v60 = *(*int32)(unsafe.Add(mBase, uint32(v52+int32(_a2752)+v56<<(uint(int32(2))%32))))
+	v60 = *(*int32)(unsafe.Add(mBase, uint32(v52+int32(_a_F_json_append_string_0)+v56<<(uint(int32(2))%32))))
 	if v60 == int32(0) {
 		goto L13
 	} else {
@@ -363,7 +363,7 @@ func F_json_cfg_encode_max_depth(m *base.Module, l0 int32) int32 {
 			} else {
 				*(*int64)(unsafe.Add(mBase, uint32(v7))) = int64(9223372032559808513)
 				v81 = m.G3
-				v84 = F_snprintf(m, v7+int32(16), int32(64), v81+int32(_a2740), v7)
+				v84 = F_snprintf(m, v7+int32(16), int32(64), v81+int32(_a_F_json_cfg_encode_max_depth_0), v7)
 				mBase = m.M
 				v85 = m.ExcPending
 				if v85 != 0 {
@@ -491,7 +491,7 @@ func F_json_cfg_encode_number_precision(m *base.Module, l0 int32) int32 {
 			} else {
 				*(*int64)(unsafe.Add(mBase, uint32(v7))) = int64(60129542145)
 				v81 = m.G3
-				v84 = F_snprintf(m, v7+int32(16), int32(64), v81+int32(_a2740), v7)
+				v84 = F_snprintf(m, v7+int32(16), int32(64), v81+int32(_a_F_json_cfg_encode_number_precision_0), v7)
 				mBase = m.M
 				v85 = m.ExcPending
 				if v85 != 0 {
@@ -660,7 +660,7 @@ func F_json_cfg_encode_sparse_array(m *base.Module, l0 int32) int32 {
 				} else {
 					*(*int64)(unsafe.Add(mBase, uint32(v7)+16)) = int64(9223372032559808512)
 					v86 = m.G3
-					v91 = F_snprintf(m, v7+int32(32), int32(64), v86+int32(_a2740), v7+int32(16))
+					v91 = F_snprintf(m, v7+int32(32), int32(64), v86+int32(_a_F_json_cfg_encode_sparse_array_0), v7+int32(16))
 					mBase = m.M
 					v92 = m.ExcPending
 					if v92 != 0 {
@@ -697,7 +697,7 @@ func F_json_cfg_encode_sparse_array(m *base.Module, l0 int32) int32 {
 								} else {
 									*(*int64)(unsafe.Add(mBase, uint32(v7))) = int64(9223372032559808512)
 									v179 = m.G3
-									v182 = F_snprintf(m, v7+int32(32), int32(64), v179+int32(_a2740), v7)
+									v182 = F_snprintf(m, v7+int32(32), int32(64), v179+int32(_a_F_json_cfg_encode_sparse_array_0), v7)
 									mBase = m.M
 									v183 = m.ExcPending
 									if v183 != 0 {
@@ -781,7 +781,7 @@ func F_json_cfg_encode_sparse_array(m *base.Module, l0 int32) int32 {
 									} else {
 										*(*int64)(unsafe.Add(mBase, uint32(v7))) = int64(9223372032559808512)
 										v179 = m.G3
-										v182 = F_snprintf(m, v7+int32(32), int32(64), v179+int32(_a2740), v7)
+										v182 = F_snprintf(m, v7+int32(32), int32(64), v179+int32(_a_F_json_cfg_encode_sparse_array_0), v7)
 										mBase = m.M
 										v183 = m.ExcPending
 										if v183 != 0 {
@@ -863,7 +863,7 @@ func F_json_cfg_encode_sparse_array(m *base.Module, l0 int32) int32 {
 					} else {
 						*(*int64)(unsafe.Add(mBase, uint32(v7))) = int64(9223372032559808512)
 						v179 = m.G3
-						v182 = F_snprintf(m, v7+int32(32), int32(64), v179+int32(_a2740), v7)
+						v182 = F_snprintf(m, v7+int32(32), int32(64), v179+int32(_a_F_json_cfg_encode_sparse_array_0), v7)
 						mBase = m.M
 						v183 = m.ExcPending
 						if v183 != 0 {
@@ -1071,7 +1071,7 @@ L5:
 L6:
 	;
 	v36 = m.G3
-	v38 = v36 + int32(_a2583)
+	v38 = v36 + int32(_a_F_json_is_invalid_number_0)
 	goto L8
 L7:
 	;
@@ -1185,7 +1185,7 @@ L21:
 L22:
 	;
 	v94 = m.G3
-	v96 = v94 + int32(_a2581)
+	v96 = v94 + int32(_a_F_json_is_invalid_number_1)
 	goto L24
 L23:
 	;
@@ -1865,7 +1865,7 @@ L10:
 	*(*int32)(unsafe.Add(mBase, uint32(l1)+4)) = v69
 	*(*int32)(unsafe.Add(mBase, uint32(l1))) = int32(12)
 	v76 = m.G3
-	*(*int32)(unsafe.Add(mBase, uint32(l1)+8)) = v76 + int32(_a2741)
+	*(*int32)(unsafe.Add(mBase, uint32(l1)+8)) = v76 + int32(_a_F_json_next_token_0)
 	goto L7
 L11:
 	;
@@ -1873,7 +1873,7 @@ L11:
 	v961 = *(*int32)(unsafe.Add(mBase, uint32(l0)))
 	*(*int32)(unsafe.Add(mBase, uint32(l1)+4)) = v100 - v961
 	v964 = m.G3
-	*(*int32)(unsafe.Add(mBase, uint32(l1)+8)) = v964 + int32(_a2742)
+	*(*int32)(unsafe.Add(mBase, uint32(l1)+8)) = v964 + int32(_a_F_json_next_token_1)
 	goto L7
 L12:
 	;
@@ -1897,7 +1897,7 @@ L14:
 L15:
 	;
 	v671 = m.G3
-	v673 = v671 + int32(_a2743)
+	v673 = v671 + int32(_a_F_json_next_token_2)
 	goto L122
 L16:
 	;
@@ -1925,7 +1925,7 @@ L18:
 L19:
 	;
 	v506 = m.G3
-	m.Env.X__assert_fail(m, v506+int32(_a2744), v506+int32(_a2745), int32(889), v506+int32(_a2746))
+	m.Env.X__assert_fail(m, v506+int32(_a_F_json_next_token_3), v506+int32(_a_F_json_next_token_4), int32(889), v506+int32(_a_F_json_next_token_5))
 	mBase = m.M
 	base.Wasm_trap_unreachable()
 	for {
@@ -2014,7 +2014,7 @@ L29:
 	v117 = *(*int32)(unsafe.Add(mBase, uint32(l0)))
 	*(*int32)(unsafe.Add(mBase, uint32(l1)+4)) = v100 - v117
 	v120 = m.G3
-	*(*int32)(unsafe.Add(mBase, uint32(l1)+8)) = v120 + int32(_a2747)
+	*(*int32)(unsafe.Add(mBase, uint32(l1)+8)) = v120 + int32(_a_F_json_next_token_6)
 	goto L7
 L30:
 	;
@@ -2043,7 +2043,7 @@ L33:
 	v131 = *(*int32)(unsafe.Add(mBase, uint32(l0)))
 	*(*int32)(unsafe.Add(mBase, uint32(l1)+4)) = v100 - v131
 	v134 = m.G3
-	*(*int32)(unsafe.Add(mBase, uint32(l1)+8)) = v134 + int32(_a2748)
+	*(*int32)(unsafe.Add(mBase, uint32(l1)+8)) = v134 + int32(_a_F_json_next_token_7)
 	goto L7
 L34:
 	;
@@ -2403,7 +2403,7 @@ L80:
 	*(*int32)(unsafe.Add(mBase, uint32(l1)+4)) = v69
 	*(*int32)(unsafe.Add(mBase, uint32(l1))) = int32(12)
 	v667 = m.G3
-	*(*int32)(unsafe.Add(mBase, uint32(l1)+8)) = v667 + int32(_a2749)
+	*(*int32)(unsafe.Add(mBase, uint32(l1)+8)) = v667 + int32(_a_F_json_next_token_8)
 	goto L7
 L81:
 	;
@@ -2446,7 +2446,7 @@ L86:
 L87:
 	;
 	v548 = m.G3
-	v550 = v548 + int32(_a2583)
+	v550 = v548 + int32(_a_F_json_next_token_9)
 	goto L89
 L88:
 	;
@@ -2559,7 +2559,7 @@ L102:
 L103:
 	;
 	v606 = m.G3
-	v608 = v606 + int32(_a2581)
+	v608 = v606 + int32(_a_F_json_next_token_10)
 	goto L105
 L104:
 	;
@@ -2675,7 +2675,7 @@ L119:
 L120:
 	;
 	v728 = m.G3
-	v730 = v728 + int32(_a2750)
+	v730 = v728 + int32(_a_F_json_next_token_11)
 	goto L137
 L121:
 	;
@@ -2774,7 +2774,7 @@ L134:
 L135:
 	;
 	v785 = m.G3
-	v787 = v785 + int32(_a2751)
+	v787 = v785 + int32(_a_F_json_next_token_12)
 	goto L152
 L136:
 	;
@@ -2975,7 +2975,7 @@ L165:
 	*(*int32)(unsafe.Add(mBase, uint32(l1)+4)) = v69
 	*(*int32)(unsafe.Add(mBase, uint32(l1))) = int32(12)
 	v903 = m.G3
-	*(*int32)(unsafe.Add(mBase, uint32(l1)+8)) = v903 + int32(_a2741)
+	*(*int32)(unsafe.Add(mBase, uint32(l1)+8)) = v903 + int32(_a_F_json_next_token_0)
 	goto L7
 L166:
 	;
@@ -3032,7 +3032,7 @@ L172:
 L173:
 	;
 	v875 = m.G3
-	v879 = F_strncasecmp(m, v852, v875+int32(_a2583), int32(3))
+	v879 = F_strncasecmp(m, v852, v875+int32(_a_F_json_next_token_9), int32(3))
 	mBase = m.M
 	if v879 == int32(0) {
 		v890 = int32(1)
@@ -3043,7 +3043,7 @@ L173:
 L174:
 	;
 	v882 = m.G3
-	v886 = F_strncasecmp(m, v852, v882+int32(_a2581), int32(3))
+	v886 = F_strncasecmp(m, v852, v882+int32(_a_F_json_next_token_10), int32(3))
 	mBase = m.M
 	v890 = base.B2i32(v886 == int32(0))
 	goto L168
@@ -3082,7 +3082,7 @@ L180:
 	*(*int32)(unsafe.Add(mBase, uint32(l1))) = int32(12)
 	v921 = m.G3
 	v922 = *(*int32)(unsafe.Add(mBase, uint32(l0)))
-	*(*int32)(unsafe.Add(mBase, uint32(l1)+8)) = v921 + int32(_a2749)
+	*(*int32)(unsafe.Add(mBase, uint32(l1)+8)) = v921 + int32(_a_F_json_next_token_8)
 	*(*int32)(unsafe.Add(mBase, uint32(l1)+4)) = v916 - v922
 	goto L7
 }

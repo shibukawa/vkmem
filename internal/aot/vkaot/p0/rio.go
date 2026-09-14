@@ -561,7 +561,7 @@ func F_rioInitWithConn(m *base.Module, l0 int32, l1 int32, l2 int32) {
 	_ = v35
 	var v45 int32
 	_ = v45
-	v8 = F__emscripten_memcpy_bulkmem(m, l0, int32(_a1070), int32(80))
+	v8 = F__emscripten_memcpy_bulkmem(m, l0, int32(_a_F_rioInitWithConn_0), int32(80))
 	mBase = m.M
 	v10 = int32(0)
 	*(*int32)(unsafe.Add(mBase, uint32(v8)+72)) = v10
@@ -607,7 +607,7 @@ func F_rioInitWithFd(m *base.Module, l0 int32, l1 int32) {
 	_ = v12
 	var v13 int32
 	_ = v13
-	v7 = F__emscripten_memcpy_bulkmem(m, l0, int32(_a1071), int32(80))
+	v7 = F__emscripten_memcpy_bulkmem(m, l0, int32(_a_F_rioInitWithFd_0), int32(80))
 	mBase = m.M
 	*(*int64)(unsafe.Add(mBase, uint32(v7)+56)) = int64(0)
 	*(*int32)(unsafe.Add(mBase, uint32(v7)+48)) = l1
@@ -683,7 +683,7 @@ func F_rioWriteBulkStreamID(m *base.Module, l0 int32, l1 int32) int32 {
 		v16 = *(*int64)(unsafe.Add(mBase, uint32(l1)+8))
 		*(*int64)(unsafe.Add(mBase, uint32(v9)+8)) = v16
 		*(*int64)(unsafe.Add(mBase, uint32(v9))) = v15
-		v21 = F_sdscatfmt(m, v11, int32(_a105), v9)
+		v21 = F_sdscatfmt(m, v11, int32(_a_F_rioWriteBulkStreamID_0), v9)
 		mBase = m.M
 		v22 = m.ExcPending
 		if v22 != 0 {
@@ -1151,7 +1151,7 @@ L47:
 	goto L34
 L48:
 	;
-	v162 = int32(_a727)
+	v162 = int32(_a_F_rioWriteBulkString_0)
 	v163 = int32(2)
 	goto L49
 L49:
@@ -1306,7 +1306,7 @@ func F_rioWriteStreamEmptyConsumer(m *base.Module, l0 int32, l1 int32, l2 int32,
 			v64 = v6
 			return v64
 		} else {
-			v18 = F_rioWriteBulkString(m, l0, int32(_a112), int32(6))
+			v18 = F_rioWriteBulkString(m, l0, int32(_a_F_rioWriteStreamEmptyConsumer_0), int32(6))
 			mBase = m.M
 			v19 = m.ExcPending
 			if v19 != 0 {
@@ -1316,7 +1316,7 @@ func F_rioWriteStreamEmptyConsumer(m *base.Module, l0 int32, l1 int32, l2 int32,
 					v64 = v6
 					return v64
 				} else {
-					v24 = F_rioWriteBulkString(m, l0, int32(_a113), int32(14))
+					v24 = F_rioWriteBulkString(m, l0, int32(_a_F_rioWriteStreamEmptyConsumer_1), int32(14))
 					mBase = m.M
 					v25 = m.ExcPending
 					if v25 != 0 {
@@ -1544,7 +1544,7 @@ func F_rioWriteStreamPendingEntry(m *base.Module, l0 int32, l1 int32, l2 int32, 
 			m.G0 = v11 + int32(32)
 			return v221
 		} else {
-			v102 = F_rioWriteBulkString(m, l0, int32(_a106), int32(6))
+			v102 = F_rioWriteBulkString(m, l0, int32(_a_F_rioWriteStreamPendingEntry_0), int32(6))
 			mBase = m.M
 			v103 = m.ExcPending
 			if v103 != 0 {
@@ -1609,7 +1609,7 @@ func F_rioWriteStreamPendingEntry(m *base.Module, l0 int32, l1 int32, l2 int32, 
 											m.G0 = v11 + int32(32)
 											return v221
 										} else {
-											v143 = F_rioWriteBulkString(m, l0, int32(_a107), int32(1))
+											v143 = F_rioWriteBulkString(m, l0, int32(_a_F_rioWriteStreamPendingEntry_1), int32(1))
 											mBase = m.M
 											v144 = m.ExcPending
 											if v144 != 0 {
@@ -1631,7 +1631,7 @@ func F_rioWriteStreamPendingEntry(m *base.Module, l0 int32, l1 int32, l2 int32, 
 														v151 = *(*int64)(unsafe.Add(mBase, uint32(v11)+24))
 														*(*int64)(unsafe.Add(mBase, uint32(v11)+8)) = v151
 														v153 = int32(0)
-														v156 = F_sdscatfmt(m, v147, int32(_a105), v11)
+														v156 = F_sdscatfmt(m, v147, int32(_a_F_rioWriteStreamPendingEntry_2), v11)
 														mBase = m.M
 														v157 = m.ExcPending
 														if v157 != 0 {
@@ -1673,7 +1673,7 @@ func F_rioWriteStreamPendingEntry(m *base.Module, l0 int32, l1 int32, l2 int32, 
 																		m.G0 = v11 + int32(32)
 																		return v221
 																	} else {
-																		v186 = F_rioWriteBulkString(m, l0, int32(_a108), int32(4))
+																		v186 = F_rioWriteBulkString(m, l0, int32(_a_F_rioWriteStreamPendingEntry_3), int32(4))
 																		mBase = m.M
 																		v187 = m.ExcPending
 																		if v187 != 0 {
@@ -1696,7 +1696,7 @@ func F_rioWriteStreamPendingEntry(m *base.Module, l0 int32, l1 int32, l2 int32, 
 																						m.G0 = v11 + int32(32)
 																						return v221
 																					} else {
-																						v197 = F_rioWriteBulkString(m, l0, int32(_a109), int32(10))
+																						v197 = F_rioWriteBulkString(m, l0, int32(_a_F_rioWriteStreamPendingEntry_4), int32(10))
 																						mBase = m.M
 																						v198 = m.ExcPending
 																						if v198 != 0 {
@@ -1719,7 +1719,7 @@ func F_rioWriteStreamPendingEntry(m *base.Module, l0 int32, l1 int32, l2 int32, 
 																										m.G0 = v11 + int32(32)
 																										return v221
 																									} else {
-																										v208 = F_rioWriteBulkString(m, l0, int32(_a110), int32(6))
+																										v208 = F_rioWriteBulkString(m, l0, int32(_a_F_rioWriteStreamPendingEntry_5), int32(6))
 																										mBase = m.M
 																										v209 = m.ExcPending
 																										if v209 != 0 {
@@ -1730,7 +1730,7 @@ func F_rioWriteStreamPendingEntry(m *base.Module, l0 int32, l1 int32, l2 int32, 
 																												m.G0 = v11 + int32(32)
 																												return v221
 																											} else {
-																												v214 = F_rioWriteBulkString(m, l0, int32(_a111), int32(5))
+																												v214 = F_rioWriteBulkString(m, l0, int32(_a_F_rioWriteStreamPendingEntry_6), int32(5))
 																												mBase = m.M
 																												v215 = m.ExcPending
 																												if v215 != 0 {

@@ -53,7 +53,7 @@ func F_zrangeResultEmitCBufferForStore(m *base.Module, l0 int32, l1 int32, l2 in
 					m.G0 = v8 + int32(16)
 					return
 				} else {
-					F__serverAssert(m, int32(_a1107), int32(_a1723), int32(3037))
+					F__serverAssert(m, int32(_a_F_zrangeResultEmitCBufferForStore_0), int32(_a_F_zrangeResultEmitCBufferForStore_1), int32(3037))
 					mBase = m.M
 					v28 = m.ExcPending
 					if v28 != 0 {

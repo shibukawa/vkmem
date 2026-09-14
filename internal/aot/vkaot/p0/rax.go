@@ -44,7 +44,7 @@ func F_raxFreeWithCallback(m *base.Module, l0 int32, l1 int32) {
 				return
 			}
 		} else {
-			F__serverAssert(m, int32(_a867), int32(_a868), int32(1236))
+			F__serverAssert(m, int32(_a_F_raxFreeWithCallback_0), int32(_a_F_raxFreeWithCallback_1), int32(1236))
 			mBase = m.M
 			v13 = m.ExcPending
 			if v13 != 0 {
@@ -580,7 +580,7 @@ L60:
 	goto L61
 L61:
 	;
-	*(*int32)(unsafe.Add(mBase, _consts[9])) = int32(48)
+	*(*int32)(unsafe.Add(mBase, _c_F_raxIteratorAddChars[0])) = int32(48)
 	return int32(0)
 }
 func F_raxLowWalk(m *base.Module, l0 int32, l1 int32, l2 int32, l3 int32, l4 int32, l5 int32, l6 int32) int32 {
@@ -980,7 +980,7 @@ L36:
 	goto L37
 L37:
 	;
-	*(*int32)(unsafe.Add(mBase, _consts[9])) = int32(48)
+	*(*int32)(unsafe.Add(mBase, _c_F_raxLowWalk[0])) = int32(48)
 	goto L26
 L38:
 	;
@@ -1002,7 +1002,7 @@ L40:
 	goto L30
 L41:
 	;
-	*(*int32)(unsafe.Add(mBase, _consts[9])) = int32(48)
+	*(*int32)(unsafe.Add(mBase, _c_F_raxLowWalk[0])) = int32(48)
 	goto L26
 L42:
 	;
@@ -2052,7 +2052,7 @@ L100:
 	goto L3
 L101:
 	;
-	*(*int32)(unsafe.Add(mBase, _consts[9])) = int32(48)
+	*(*int32)(unsafe.Add(mBase, _c_F_raxSeekGreatest[0])) = int32(48)
 	v352 = int32(0)
 	goto L1
 }

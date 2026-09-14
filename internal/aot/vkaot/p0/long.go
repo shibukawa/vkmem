@@ -170,7 +170,7 @@ func F_getLongDoubleFromObject(m *base.Module, l0 int32, l1 int32) int32 {
 	if l0 != 0 {
 		v16 = *(*int32)(unsafe.Add(mBase, uint32(l0)))
 		if v16&int32(15) != 0 {
-			F__serverAssertWithInfo(m, int32(0), l0, int32(_a479), int32(_a838), int32(1065))
+			F__serverAssertWithInfo(m, int32(0), l0, int32(_a_F_getLongDoubleFromObject_0), int32(_a_F_getLongDoubleFromObject_1), int32(1065))
 			mBase = m.M
 			v325 = m.ExcPending
 			if v325 != 0 {
@@ -223,7 +223,7 @@ func F_getLongDoubleFromObject(m *base.Module, l0 int32, l1 int32) int32 {
 						}
 						v65 = v39 + int32(1) + v60 + int32(1)
 					}
-					v79 = *(*int32)(unsafe.Add(mBase, _consts[249]))
+					v79 = *(*int32)(unsafe.Add(mBase, _c_F_getLongDoubleFromObject[0]))
 					v82 = *(*int32)(unsafe.Add(mBase, uint32(l0)+4))
 					v84 = v82
 					v86 = v65 + v79
@@ -264,7 +264,7 @@ func F_getLongDoubleFromObject(m *base.Module, l0 int32, l1 int32) int32 {
 						}
 						v128 = v103 + int32(1) + v124 + int32(1)
 					}
-					v143 = *(*int32)(unsafe.Add(mBase, _consts[249]))
+					v143 = *(*int32)(unsafe.Add(mBase, _c_F_getLongDoubleFromObject[0]))
 					v149 = v128 + v143
 				}
 				v151 = int32(-1)
@@ -345,7 +345,7 @@ func F_getLongDoubleFromObject(m *base.Module, l0 int32, l1 int32) int32 {
 						}
 						v226 = v201 + int32(1) + v222 + int32(1)
 					}
-					v241 = *(*int32)(unsafe.Add(mBase, _consts[249]))
+					v241 = *(*int32)(unsafe.Add(mBase, _c_F_getLongDoubleFromObject[0]))
 					v245 = v226 + v241
 				}
 				v253 = m.G0
@@ -379,7 +379,7 @@ func F_getLongDoubleFromObject(m *base.Module, l0 int32, l1 int32) int32 {
 				m.G0 = v12 + int32(32)
 				return v309
 			default:
-				F__serverPanic_1(m, int32(_a838), int32(1071), int32(_a848), int32(0))
+				F__serverPanic_1(m, int32(_a_F_getLongDoubleFromObject_1), int32(1071), int32(_a_F_getLongDoubleFromObject_2), int32(0))
 				mBase = m.M
 				v332 = m.ExcPending
 				if v332 != 0 {
@@ -583,7 +583,7 @@ func F_getLongLongFromObject(m *base.Module, l0 int32, l1 int32) int32 {
 	}
 L1:
 	;
-	F__serverAssertWithInfo(m, int32(0), l0, int32(_a479), int32(_a838), int32(1098))
+	F__serverAssertWithInfo(m, int32(0), l0, int32(_a_F_getLongLongFromObject_0), int32(_a_F_getLongLongFromObject_1), int32(1098))
 	mBase = m.M
 	v417 = m.ExcPending
 	if v417 != 0 {
@@ -637,7 +637,7 @@ L8:
 	goto L4
 L9:
 	;
-	F__serverPanic_1(m, int32(_a838), int32(1104), int32(_a848), int32(0))
+	F__serverPanic_1(m, int32(_a_F_getLongLongFromObject_1), int32(1104), int32(_a_F_getLongLongFromObject_2), int32(0))
 	mBase = m.M
 	v381 = m.ExcPending
 	if v381 != 0 {
@@ -760,7 +760,7 @@ L27:
 	goto L26
 L28:
 	;
-	v77 = *(*int32)(unsafe.Add(mBase, _consts[249]))
+	v77 = *(*int32)(unsafe.Add(mBase, _c_F_getLongLongFromObject[0]))
 	goto L27
 L29:
 	;
@@ -870,7 +870,7 @@ L44:
 	goto L43
 L45:
 	;
-	v141 = *(*int32)(unsafe.Add(mBase, _consts[249]))
+	v141 = *(*int32)(unsafe.Add(mBase, _c_F_getLongLongFromObject[0]))
 	goto L44
 L46:
 	;
@@ -1176,7 +1176,7 @@ L93:
 	goto L92
 L94:
 	;
-	v370 = *(*int32)(unsafe.Add(mBase, _consts[249]))
+	v370 = *(*int32)(unsafe.Add(mBase, _c_F_getLongLongFromObject[0]))
 	goto L93
 L95:
 	;

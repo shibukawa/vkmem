@@ -26,8 +26,8 @@ func F_zmalloc_default_oom(m *base.Module, l0 int32) {
 	v5 = v3 - int32(16)
 	m.G0 = v5
 	*(*int32)(unsafe.Add(mBase, uint32(v5))) = l0
-	v9 = *(*int32)(unsafe.Add(mBase, _consts[514]))
-	v11 = F_fiprintf(m, v9, int32(_a1880), v5)
+	v9 = *(*int32)(unsafe.Add(mBase, _c_F_zmalloc_default_oom[0]))
+	v11 = F_fiprintf(m, v9, int32(_a_F_zmalloc_default_oom_0), v5)
 	mBase = m.M
 	v12 = m.ExcPending
 	if v12 != 0 {
@@ -111,7 +111,7 @@ func F_zmalloc_usable(m *base.Module, l0 int32, l1 int32) int32 {
 	_ = v60
 	if base.Ui32(int32(2147483646)) < base.Ui32(l0) {
 		v49 = int32(0)
-		v51 = *(*int32)(unsafe.Add(mBase, _consts[1001]))
+		v51 = *(*int32)(unsafe.Add(mBase, _c_F_zmalloc_usable[0]))
 		m.T0[v51].(func(*base.Module, int32))(m, l0)
 		mBase = m.M
 		v55 = m.ExcPending
@@ -137,7 +137,7 @@ func F_zmalloc_usable(m *base.Module, l0 int32, l1 int32) int32 {
 		mBase = m.M
 		if v12 == int32(0) {
 			v49 = int32(0)
-			v51 = *(*int32)(unsafe.Add(mBase, _consts[1001]))
+			v51 = *(*int32)(unsafe.Add(mBase, _c_F_zmalloc_usable[0]))
 			m.T0[v51].(func(*base.Module, int32))(m, l0)
 			mBase = m.M
 			v55 = m.ExcPending
@@ -154,24 +154,24 @@ func F_zmalloc_usable(m *base.Module, l0 int32, l1 int32) int32 {
 			}
 		} else {
 			*(*int32)(unsafe.Add(mBase, uint32(v12))) = v9
-			v17 = *(*int32)(unsafe.Add(mBase, _consts[411]))
+			v17 = *(*int32)(unsafe.Add(mBase, _c_F_zmalloc_usable[1]))
 			if v17 != int32(-1) {
 				v28 = v17
 			} else {
 				v20 = int32(0)
-				v22 = *(*int32)(unsafe.Add(mBase, _consts[281]))
-				*(*int32)(unsafe.Add(mBase, _consts[411])) = v22
-				*(*int32)(unsafe.Add(mBase, _consts[281])) = v22 + int32(1)
+				v22 = *(*int32)(unsafe.Add(mBase, _c_F_zmalloc_usable[2]))
+				*(*int32)(unsafe.Add(mBase, _c_F_zmalloc_usable[1])) = v22
+				*(*int32)(unsafe.Add(mBase, _c_F_zmalloc_usable[2])) = v22 + int32(1)
 				v28 = v22
 			}
 			if v28 < int32(260) {
 				v37 = v28 << (uint(int32(2)) % 32)
-				v40 = *(*int32)(unsafe.Add(mBase, uint32(v37)+uint32(_consts[285])))
-				*(*int32)(unsafe.Add(mBase, uint32(v37)+uint32(_consts[285]))) = v40 + v11
+				v40 = *(*int32)(unsafe.Add(mBase, uint32(v37)+uint32(_c_F_zmalloc_usable[3])))
+				*(*int32)(unsafe.Add(mBase, uint32(v37)+uint32(_c_F_zmalloc_usable[3]))) = v40 + v11
 			} else {
 				v31 = int32(0)
-				v33 = *(*int32)(unsafe.Add(mBase, _consts[286]))
-				*(*int32)(unsafe.Add(mBase, _consts[286])) = v33 + v11
+				v33 = *(*int32)(unsafe.Add(mBase, _c_F_zmalloc_usable[4]))
+				*(*int32)(unsafe.Add(mBase, _c_F_zmalloc_usable[4])) = v33 + v11
 			}
 			v58 = v9
 			v60 = v12 + int32(8)

@@ -1213,7 +1213,7 @@ L1:
 L2:
 	;
 	v39 = int32(0)
-	v41 = *(*int32)(unsafe.Add(mBase, _consts[366]))
+	v41 = *(*int32)(unsafe.Add(mBase, _c_F_createLatencyReport[0]))
 	v42 = *(*int32)(unsafe.Add(mBase, uint32(v41)+12))
 	v44 = *(*int32)(unsafe.Add(mBase, uint32(v41)+16))
 	if v42 != v39-v44 {
@@ -1237,7 +1237,7 @@ L4:
 	}
 L5:
 	;
-	v48 = *(*int64)(unsafe.Add(mBase, _consts[45]))
+	v48 = *(*int64)(unsafe.Add(mBase, _c_F_createLatencyReport[1]))
 	if v48 != int64(0) {
 		goto L4
 	} else {
@@ -1245,7 +1245,7 @@ L5:
 	}
 L6:
 	;
-	v52 = F_sdscat(m, v35, int32(_a684))
+	v52 = F_sdscat(m, v35, int32(_a_F_createLatencyReport_0))
 	mBase = m.M
 	v53 = m.ExcPending
 	if v53 != 0 {
@@ -1592,7 +1592,7 @@ L44:
 	}
 L45:
 	;
-	v237 = F_sdscat(m, v203, int32(_a685))
+	v237 = F_sdscat(m, v203, int32(_a_F_createLatencyReport_1))
 	mBase = m.M
 	v238 = m.ExcPending
 	if v238 != 0 {
@@ -1619,7 +1619,7 @@ L47:
 	*(*int32)(unsafe.Add(mBase, uint32(v33)+56)) = v250
 	v259 = *(*int32)(unsafe.Add(mBase, uint32(v33)+100))
 	*(*int32)(unsafe.Add(mBase, uint32(v33)+60)) = v259
-	v264 = F_sdscatprintf(m, v239, int32(_a686), v33+int32(48))
+	v264 = F_sdscatprintf(m, v239, int32(_a_F_createLatencyReport_2), v33+int32(48))
 	mBase = m.M
 	v265 = m.ExcPending
 	if v265 != 0 {
@@ -1629,7 +1629,7 @@ L47:
 	}
 L48:
 	;
-	v266 = int32(_a687)
+	v266 = int32(_a_F_createLatencyReport_3)
 	v269 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v232))))
 	if v269 != 0 {
 		goto L52
@@ -1638,7 +1638,7 @@ L48:
 	}
 L49:
 	;
-	v343 = int32(_a622)
+	v343 = int32(_a_F_createLatencyReport_4)
 	v346 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v232))))
 	if v346 != 0 {
 		goto L75
@@ -1738,7 +1738,7 @@ L61:
 	goto L56
 L62:
 	;
-	v306 = *(*float64)(unsafe.Add(mBase, _consts[367]))
+	v306 = *(*float64)(unsafe.Add(mBase, _c_F_createLatencyReport[2]))
 	if base.F64_lt(v306, float64(10)) == int32(0) {
 		goto L64
 	} else {
@@ -1748,7 +1748,7 @@ L63:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v33)+40)) = v328
 	*(*float64)(unsafe.Add(mBase, uint32(v33)+32)) = v306
-	v336 = F_sdscatprintf(m, v264, int32(_a688), v33+int32(32))
+	v336 = F_sdscatprintf(m, v264, int32(_a_F_createLatencyReport_5), v33+int32(32))
 	mBase = m.M
 	v337 = m.ExcPending
 	if v337 != 0 {
@@ -1766,7 +1766,7 @@ L64:
 L65:
 	;
 	v311 = int32(1)
-	v328 = int32(_a689)
+	v328 = int32(_a_F_createLatencyReport_6)
 	v329 = v219 + v311
 	v330 = v311
 	goto L63
@@ -1780,17 +1780,17 @@ L66:
 L67:
 	;
 	v319 = int32(1)
-	v328 = int32(_a690)
+	v328 = int32(_a_F_createLatencyReport_7)
 	v329 = v219 + v319
 	v330 = v319
 	goto L63
 L68:
 	;
-	v327 = int32(_a691)
+	v327 = int32(_a_F_createLatencyReport_8)
 	goto L70
 L69:
 	;
-	v327 = int32(_a692)
+	v327 = int32(_a_F_createLatencyReport_9)
 	goto L70
 L70:
 	;
@@ -1806,7 +1806,7 @@ L71:
 	goto L49
 L72:
 	;
-	v414 = int32(_a693)
+	v414 = int32(_a_F_createLatencyReport_10)
 	v417 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v232))))
 	if v417 != 0 {
 		goto L95
@@ -1908,7 +1908,7 @@ L84:
 	goto L79
 L85:
 	;
-	v384 = *(*int64)(unsafe.Add(mBase, _consts[368]))
+	v384 = *(*int64)(unsafe.Add(mBase, _c_F_createLatencyReport[3]))
 	if v384 < int64(0) {
 		goto L87
 	} else {
@@ -1931,7 +1931,7 @@ L87:
 	goto L86
 L88:
 	;
-	v388 = *(*int32)(unsafe.Add(mBase, _consts[369]))
+	v388 = *(*int32)(unsafe.Add(mBase, _c_F_createLatencyReport[4]))
 	if v388 == int32(0) {
 		goto L87
 	} else {
@@ -1940,7 +1940,7 @@ L88:
 L89:
 	;
 	v393 = base.I64_div_u_s(v384, int64(1000))
-	v395 = *(*int64)(unsafe.Add(mBase, _consts[45]))
+	v395 = *(*int64)(unsafe.Add(mBase, _c_F_createLatencyReport[1]))
 	v396 = base.B2i32(v395 < v393)
 	if v395 < v393 {
 		goto L90
@@ -1964,7 +1964,7 @@ L92:
 L93:
 	;
 	v455 = v409 + base.B2i32(v452 == int32(0))
-	v456 = int32(_a694)
+	v456 = int32(_a_F_createLatencyReport_11)
 	v459 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v232))))
 	if v459 != 0 {
 		goto L108
@@ -2055,7 +2055,7 @@ L104:
 	goto L99
 L105:
 	;
-	v506 = int32(_a695)
+	v506 = int32(_a_F_createLatencyReport_12)
 	v509 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v232))))
 	if v509 != 0 {
 		goto L122
@@ -2166,7 +2166,7 @@ L118:
 	goto L105
 L119:
 	;
-	v554 = int32(_a696)
+	v554 = int32(_a_F_createLatencyReport_13)
 	v557 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v232))))
 	if v557 != 0 {
 		goto L136
@@ -2275,7 +2275,7 @@ L132:
 	goto L119
 L133:
 	;
-	v602 = int32(_a697)
+	v602 = int32(_a_F_createLatencyReport_14)
 	v605 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v232))))
 	if v605 != 0 {
 		goto L149
@@ -2385,7 +2385,7 @@ L146:
 L147:
 	;
 	v643 = v598 + base.B2i32(v640 == int32(0))
-	v644 = int32(_a150)
+	v644 = int32(_a_F_createLatencyReport_15)
 	v647 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v232))))
 	if v647 != 0 {
 		goto L163
@@ -2476,7 +2476,7 @@ L158:
 	goto L153
 L159:
 	;
-	v731 = int32(_a698)
+	v731 = int32(_a_F_createLatencyReport_16)
 	v734 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v232))))
 	if v734 != 0 {
 		goto L191
@@ -2580,7 +2580,7 @@ L172:
 	goto L167
 L173:
 	;
-	v685 = int32(_a699)
+	v685 = int32(_a_F_createLatencyReport_17)
 	v688 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v232))))
 	if v688 != 0 {
 		goto L176
@@ -2787,7 +2787,7 @@ L200:
 	goto L195
 L201:
 	;
-	v772 = int32(_a173)
+	v772 = int32(_a_F_createLatencyReport_18)
 	v775 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v232))))
 	if v775 != 0 {
 		goto L204
@@ -2915,7 +2915,7 @@ L219:
 	goto L220
 L220:
 	;
-	v827 = int32(_a614)
+	v827 = int32(_a_F_createLatencyReport_19)
 	v830 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v232))))
 	if v830 != 0 {
 		goto L223
@@ -3021,7 +3021,7 @@ L234:
 	goto L235
 L235:
 	;
-	v872 = int32(_a700)
+	v872 = int32(_a_F_createLatencyReport_20)
 	v875 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v232))))
 	if v875 != 0 {
 		goto L238
@@ -3142,7 +3142,7 @@ L252:
 	goto L253
 L253:
 	;
-	v918 = int32(_a701)
+	v918 = int32(_a_F_createLatencyReport_21)
 	v921 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v232))))
 	if v921 != 0 {
 		goto L256
@@ -3263,7 +3263,7 @@ L270:
 	goto L271
 L271:
 	;
-	v966 = F_sdscatlen(m, v338, int32(_a26), int32(1))
+	v966 = F_sdscatlen(m, v338, int32(_a_F_createLatencyReport_22), int32(1))
 	mBase = m.M
 	v967 = m.ExcPending
 	if v967 != 0 {
@@ -3533,7 +3533,7 @@ L306:
 	}
 L307:
 	;
-	v1170 = F_sdscat(m, v1129, int32(_a702))
+	v1170 = F_sdscat(m, v1129, int32(_a_F_createLatencyReport_23))
 	mBase = m.M
 	v1171 = m.ExcPending
 	if v1171 != 0 {
@@ -3547,7 +3547,7 @@ L308:
 	goto L3
 L309:
 	;
-	v1179 = F_sdscat(m, v1129, int32(_a703))
+	v1179 = F_sdscat(m, v1129, int32(_a_F_createLatencyReport_24))
 	mBase = m.M
 	v1180 = m.ExcPending
 	if v1180 != 0 {
@@ -3564,7 +3564,7 @@ L310:
 	}
 L311:
 	;
-	v1176 = F_sdscat(m, v1129, int32(_a704))
+	v1176 = F_sdscat(m, v1129, int32(_a_F_createLatencyReport_25))
 	mBase = m.M
 	v1177 = m.ExcPending
 	if v1177 != 0 {
@@ -3594,7 +3594,7 @@ L314:
 	}
 L315:
 	;
-	v1182 = F_sdscat(m, v1179, int32(_a705))
+	v1182 = F_sdscat(m, v1179, int32(_a_F_createLatencyReport_26))
 	mBase = m.M
 	v1183 = m.ExcPending
 	if v1183 != 0 {
@@ -3616,9 +3616,9 @@ L317:
 	}
 L318:
 	;
-	v1186 = *(*int64)(unsafe.Add(mBase, _consts[45]))
+	v1186 = *(*int64)(unsafe.Add(mBase, _c_F_createLatencyReport[1]))
 	*(*int64)(unsafe.Add(mBase, uint32(v33)+16)) = v1186 * int64(1000)
-	v1193 = F_sdscatprintf(m, v1184, int32(_a706), v33+int32(16))
+	v1193 = F_sdscatprintf(m, v1184, int32(_a_F_createLatencyReport_27), v33+int32(16))
 	mBase = m.M
 	v1194 = m.ExcPending
 	if v1194 != 0 {
@@ -3640,9 +3640,9 @@ L320:
 	}
 L321:
 	;
-	v1197 = *(*int64)(unsafe.Add(mBase, _consts[45]))
+	v1197 = *(*int64)(unsafe.Add(mBase, _c_F_createLatencyReport[1]))
 	*(*int64)(unsafe.Add(mBase, uint32(v33))) = v1197 * int64(1000)
-	v1202 = F_sdscatprintf(m, v1195, int32(_a707), v33)
+	v1202 = F_sdscatprintf(m, v1195, int32(_a_F_createLatencyReport_28), v33)
 	mBase = m.M
 	v1203 = m.ExcPending
 	if v1203 != 0 {
@@ -3664,7 +3664,7 @@ L323:
 	}
 L324:
 	;
-	v1206 = F_sdscat(m, v1204, int32(_a708))
+	v1206 = F_sdscat(m, v1204, int32(_a_F_createLatencyReport_29))
 	mBase = m.M
 	v1207 = m.ExcPending
 	if v1207 != 0 {
@@ -3686,7 +3686,7 @@ L326:
 	}
 L327:
 	;
-	v1210 = F_sdscat(m, v1208, int32(_a709))
+	v1210 = F_sdscat(m, v1208, int32(_a_F_createLatencyReport_30))
 	mBase = m.M
 	v1211 = m.ExcPending
 	if v1211 != 0 {
@@ -3708,7 +3708,7 @@ L329:
 	}
 L330:
 	;
-	v1214 = F_sdscat(m, v1212, int32(_a710))
+	v1214 = F_sdscat(m, v1212, int32(_a_F_createLatencyReport_31))
 	mBase = m.M
 	v1215 = m.ExcPending
 	if v1215 != 0 {
@@ -3730,7 +3730,7 @@ L332:
 	}
 L333:
 	;
-	v1218 = F_sdscat(m, v1216, int32(_a711))
+	v1218 = F_sdscat(m, v1216, int32(_a_F_createLatencyReport_32))
 	mBase = m.M
 	v1219 = m.ExcPending
 	if v1219 != 0 {
@@ -3752,7 +3752,7 @@ L335:
 	}
 L336:
 	;
-	v1222 = F_sdscat(m, v1220, int32(_a712))
+	v1222 = F_sdscat(m, v1220, int32(_a_F_createLatencyReport_33))
 	mBase = m.M
 	v1223 = m.ExcPending
 	if v1223 != 0 {
@@ -3774,7 +3774,7 @@ L338:
 	}
 L339:
 	;
-	v1226 = F_sdscat(m, v1224, int32(_a713))
+	v1226 = F_sdscat(m, v1224, int32(_a_F_createLatencyReport_34))
 	mBase = m.M
 	v1227 = m.ExcPending
 	if v1227 != 0 {
@@ -3788,7 +3788,7 @@ L340:
 	goto L338
 L341:
 	;
-	v1234 = *(*int32)(unsafe.Add(mBase, _consts[254]))
+	v1234 = *(*int32)(unsafe.Add(mBase, _c_F_createLatencyReport[5]))
 	v1235 = int32(1)
 	if v1144&base.B2i32(v1234 == v1235) != v1235 {
 		v1243 = v1232
@@ -3798,7 +3798,7 @@ L341:
 	}
 L342:
 	;
-	v1230 = F_sdscat(m, v1228, int32(_a714))
+	v1230 = F_sdscat(m, v1228, int32(_a_F_createLatencyReport_35))
 	mBase = m.M
 	v1231 = m.ExcPending
 	if v1231 != 0 {
@@ -3820,7 +3820,7 @@ L344:
 	}
 L345:
 	;
-	v1241 = F_sdscat(m, v1232, int32(_a715))
+	v1241 = F_sdscat(m, v1232, int32(_a_F_createLatencyReport_36))
 	mBase = m.M
 	v1242 = m.ExcPending
 	if v1242 != 0 {
@@ -3834,7 +3834,7 @@ L346:
 	goto L344
 L347:
 	;
-	v1249 = *(*int32)(unsafe.Add(mBase, _consts[251]))
+	v1249 = *(*int32)(unsafe.Add(mBase, _c_F_createLatencyReport[6]))
 	if v1130&base.B2i32(v1249 < int32(100)) != int32(1) {
 		v1258 = v1247
 		goto L350
@@ -3843,7 +3843,7 @@ L347:
 	}
 L348:
 	;
-	v1245 = F_sdscat(m, v1243, int32(_a716))
+	v1245 = F_sdscat(m, v1243, int32(_a_F_createLatencyReport_37))
 	mBase = m.M
 	v1246 = m.ExcPending
 	if v1246 != 0 {
@@ -3865,7 +3865,7 @@ L350:
 	}
 L351:
 	;
-	v1256 = F_sdscat(m, v1247, int32(_a717))
+	v1256 = F_sdscat(m, v1247, int32(_a_F_createLatencyReport_38))
 	mBase = m.M
 	v1257 = m.ExcPending
 	if v1257 != 0 {
@@ -3887,7 +3887,7 @@ L353:
 	}
 L354:
 	;
-	v1260 = F_sdscat(m, v1258, int32(_a718))
+	v1260 = F_sdscat(m, v1258, int32(_a_F_createLatencyReport_39))
 	mBase = m.M
 	v1261 = m.ExcPending
 	if v1261 != 0 {
@@ -3905,7 +3905,7 @@ L356:
 	goto L3
 L357:
 	;
-	v1264 = F_sdscat(m, v1262, int32(_a719))
+	v1264 = F_sdscat(m, v1262, int32(_a_F_createLatencyReport_40))
 	mBase = m.M
 	v1265 = m.ExcPending
 	if v1265 != 0 {
@@ -3976,7 +3976,7 @@ func F_latencyAddSample(m *base.Module, l0 int32, l1 int64) {
 	var v69 int32
 	_ = v69
 	v9 = base.I64_div_s(l1, int64(1000))
-	v11 = *(*int32)(unsafe.Add(mBase, _consts[366]))
+	v11 = *(*int32)(unsafe.Add(mBase, _c_F_latencyAddSample[0]))
 	v12 = F_dictFetchValue(m, v11, l0)
 	mBase = m.M
 	v13 = m.ExcPending
@@ -4032,7 +4032,7 @@ func F_latencyAddSample(m *base.Module, l0 int32, l1 int64) {
 			} else {
 				v22 = F__emscripten_memset_bulkmem(m, v17, base.I32_extend8_s(int32(0)), int32(1296))
 				mBase = m.M
-				v24 = *(*int32)(unsafe.Add(mBase, _consts[366]))
+				v24 = *(*int32)(unsafe.Add(mBase, _c_F_latencyAddSample[0]))
 				v25 = F_zstrdup(m, l0)
 				mBase = m.M
 				v26 = m.ExcPending
@@ -4248,7 +4248,7 @@ L5:
 	*(*int32)(unsafe.Add(mBase, uint32(v16)+8)) = v122
 	*(*int32)(unsafe.Add(mBase, uint32(v16)+4)) = v121
 	*(*int32)(unsafe.Add(mBase, uint32(v16))) = l0
-	v137 = F_sdscatprintf(m, v24, int32(_a722), v16)
+	v137 = F_sdscatprintf(m, v24, int32(_a_F_latencyCommandGenSparkeline_0), v16)
 	mBase = m.M
 	v138 = m.ExcPending
 	if v138 != 0 {
@@ -4327,7 +4327,7 @@ L15:
 L16:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v16)+16)) = v62
-	v72 = F_snprintf(m, v16+int32(80), int32(64), int32(_a723), v16+int32(16))
+	v72 = F_snprintf(m, v16+int32(80), int32(64), int32(_a_F_latencyCommandGenSparkeline_1), v16+int32(16))
 	mBase = m.M
 	v73 = m.ExcPending
 	if v73 != 0 {
@@ -4349,7 +4349,7 @@ L19:
 	;
 	v79 = base.I32_div_u_s(v62&int32(65535), int32(60))
 	*(*int32)(unsafe.Add(mBase, uint32(v16)+32)) = v79
-	v87 = F_snprintf(m, v16+int32(80), int32(64), int32(_a724), v16+int32(32))
+	v87 = F_snprintf(m, v16+int32(80), int32(64), int32(_a_F_latencyCommandGenSparkeline_2), v16+int32(32))
 	mBase = m.M
 	v88 = m.ExcPending
 	if v88 != 0 {
@@ -4365,7 +4365,7 @@ L21:
 	v103 = base.I32_div_u_s(v62, int32(86400))
 	*(*int32)(unsafe.Add(mBase, uint32(v16)+64)) = v103
 	v107 = int32(64)
-	v111 = F_snprintf(m, v16+int32(80), v107, int32(_a725), v16+v107)
+	v111 = F_snprintf(m, v16+int32(80), v107, int32(_a_F_latencyCommandGenSparkeline_3), v16+v107)
 	mBase = m.M
 	v112 = m.ExcPending
 	if v112 != 0 {
@@ -4377,7 +4377,7 @@ L22:
 	;
 	v92 = base.I32_div_u_s(v62, int32(3600))
 	*(*int32)(unsafe.Add(mBase, uint32(v16)+48)) = v92
-	v100 = F_snprintf(m, v16+int32(80), int32(64), int32(_a726), v16+int32(48))
+	v100 = F_snprintf(m, v16+int32(80), int32(64), int32(_a_F_latencyCommandGenSparkeline_4), v16+int32(48))
 	mBase = m.M
 	v101 = m.ExcPending
 	if v101 != 0 {
@@ -4440,7 +4440,7 @@ L33:
 	goto L34
 L34:
 	;
-	v154 = F_sdscatlen(m, v149, int32(_a727), int32(1))
+	v154 = F_sdscatlen(m, v149, int32(_a_F_latencyCommandGenSparkeline_5), int32(1))
 	mBase = m.M
 	v155 = m.ExcPending
 	if v155 != 0 {
@@ -4450,7 +4450,7 @@ L34:
 	}
 L35:
 	;
-	v162 = F_sdscatlen(m, v154, int32(_a26), int32(1))
+	v162 = F_sdscatlen(m, v154, int32(_a_F_latencyCommandGenSparkeline_6), int32(1))
 	mBase = m.M
 	v163 = m.ExcPending
 	if v163 != 0 {

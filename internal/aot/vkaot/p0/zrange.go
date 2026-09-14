@@ -36,7 +36,7 @@ func F_zrangeResultBeginStore(m *base.Module, l0 int32, l1 int32) {
 	} else {
 		v7 = v3
 	}
-	v9 = *(*int32)(unsafe.Add(mBase, _consts[1103]))
+	v9 = *(*int32)(unsafe.Add(mBase, _c_F_zrangeResultBeginStore[0]))
 	if base.Ui32(v9) < base.Ui32(v7) {
 		v14 = F_createZsetObject(m)
 		mBase = m.M
@@ -117,7 +117,7 @@ func F_zrangeResultEmitLongLongForStore(m *base.Module, l0 int32, l1 int64, l2 f
 					m.G0 = v8 + int32(16)
 					return
 				} else {
-					F__serverAssert(m, int32(_a1627), int32(_a1609), int32(3046))
+					F__serverAssert(m, int32(_a_F_zrangeResultEmitLongLongForStore_0), int32(_a_F_zrangeResultEmitLongLongForStore_1), int32(3046))
 					mBase = m.M
 					v28 = m.ExcPending
 					if v28 != 0 {
@@ -211,7 +211,7 @@ func F_zrangeResultFinalizeStore(m *base.Module, l0 int32, l1 int32) {
 		} else {
 			if v34 == int32(0) {
 				v58 = *(*int32)(unsafe.Add(mBase, uint32(l0)+4))
-				v60 = *(*int32)(unsafe.Add(mBase, _consts[233]))
+				v60 = *(*int32)(unsafe.Add(mBase, _c_F_zrangeResultFinalizeStore[0]))
 				F_addReply(m, v58, v60)
 				mBase = m.M
 				v62 = m.ExcPending
@@ -242,17 +242,17 @@ func F_zrangeResultFinalizeStore(m *base.Module, l0 int32, l1 int32) {
 					v46 = *(*int32)(unsafe.Add(mBase, uint32(l0)+4))
 					v47 = *(*int32)(unsafe.Add(mBase, uint32(v46)+96))
 					v48 = *(*int32)(unsafe.Add(mBase, uint32(v47)+28))
-					F_notifyKeyspaceEvent(m, int32(4), int32(_a132), v45, v48)
+					F_notifyKeyspaceEvent(m, int32(4), int32(_a_F_zrangeResultFinalizeStore_0), v45, v48)
 					mBase = m.M
 					v50 = m.ExcPending
 					if v50 != 0 {
 						return
 					} else {
-						v51 = int32(_a69)
-						v53 = *(*int64)(unsafe.Add(mBase, _consts[60]))
-						*(*int64)(unsafe.Add(mBase, _consts[60])) = v53 + int64(1)
+						v51 = int32(_a_F_zrangeResultFinalizeStore_1)
+						v53 = *(*int64)(unsafe.Add(mBase, _c_F_zrangeResultFinalizeStore[1]))
+						*(*int64)(unsafe.Add(mBase, _c_F_zrangeResultFinalizeStore[1])) = v53 + int64(1)
 						v58 = *(*int32)(unsafe.Add(mBase, uint32(l0)+4))
-						v60 = *(*int32)(unsafe.Add(mBase, _consts[233]))
+						v60 = *(*int32)(unsafe.Add(mBase, _c_F_zrangeResultFinalizeStore[0]))
 						F_addReply(m, v58, v60)
 						mBase = m.M
 						v62 = m.ExcPending
@@ -284,15 +284,15 @@ func F_zrangeResultFinalizeStore(m *base.Module, l0 int32, l1 int32) {
 			v19 = *(*int32)(unsafe.Add(mBase, uint32(l0)+4))
 			v20 = *(*int32)(unsafe.Add(mBase, uint32(v19)+96))
 			v21 = *(*int32)(unsafe.Add(mBase, uint32(v20)+28))
-			F_notifyKeyspaceEvent(m, int32(128), int32(_a1628), v18, v21)
+			F_notifyKeyspaceEvent(m, int32(128), int32(_a_F_zrangeResultFinalizeStore_2), v18, v21)
 			mBase = m.M
 			v23 = m.ExcPending
 			if v23 != 0 {
 				return
 			} else {
-				v24 = int32(_a69)
-				v26 = *(*int64)(unsafe.Add(mBase, _consts[60]))
-				*(*int64)(unsafe.Add(mBase, _consts[60])) = v26 + int64(1)
+				v24 = int32(_a_F_zrangeResultFinalizeStore_1)
+				v26 = *(*int64)(unsafe.Add(mBase, _c_F_zrangeResultFinalizeStore[1]))
+				*(*int64)(unsafe.Add(mBase, _c_F_zrangeResultFinalizeStore[1])) = v26 + int64(1)
 				v30 = *(*int32)(unsafe.Add(mBase, uint32(l0)+4))
 				F_addReplyLongLong(m, v30, base.I64_extend_i32_u(l1))
 				mBase = m.M

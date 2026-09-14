@@ -91,7 +91,7 @@ func F_openlog(m *base.Module, l0 int32, l1 int32, l2 int32) {
 	m.G0 = v8
 	if l0 == int32(0) {
 		v32 = int32(0)
-		*(*uint8)(unsafe.Add(mBase, _consts[1057])) = uint8(v32)
+		*(*uint8)(unsafe.Add(mBase, _c_F_openlog[0])) = uint8(v32)
 	} else {
 		v18 = int32(31)
 		v21 = F_memchr(m, l0, int32(0), v18)
@@ -107,23 +107,23 @@ func F_openlog(m *base.Module, l0 int32, l1 int32, l2 int32) {
 			mBase = m.M
 		}
 		v30 = int32(0)
-		*(*uint8)(unsafe.Add(mBase, uint32(v23)+uint32(_consts[1057]))) = uint8(v30)
+		*(*uint8)(unsafe.Add(mBase, uint32(v23)+uint32(_c_F_openlog[0]))) = uint8(v30)
 	}
 	v36 = int32(0)
-	*(*int32)(unsafe.Add(mBase, _consts[1058])) = l2
-	*(*int32)(unsafe.Add(mBase, _consts[1059])) = l1
+	*(*int32)(unsafe.Add(mBase, _c_F_openlog[1])) = l2
+	*(*int32)(unsafe.Add(mBase, _c_F_openlog[2])) = l1
 	if l1&int32(8) == v36 {
 	} else {
-		v45 = *(*int32)(unsafe.Add(mBase, _consts[1060]))
+		v45 = *(*int32)(unsafe.Add(mBase, _c_F_openlog[3]))
 		if int32(-1) < v45 {
 		} else {
 			v48 = int32(0)
 			v53 = F_socket(m, int32(1), int32(524290), v48)
 			mBase = m.M
-			*(*int32)(unsafe.Add(mBase, _consts[1060])) = v53
+			*(*int32)(unsafe.Add(mBase, _c_F_openlog[3])) = v53
 			if v53 < v48 {
 			} else {
-				v59 = F_connect(m, v53, int32(_a2772), int32(12))
+				v59 = F_connect(m, v53, int32(_a_F_openlog_0), int32(12))
 				mBase = m.M
 			}
 		}
@@ -336,7 +336,7 @@ func F_overMaxmemoryAfterAlloc(m *base.Module, l0 int32) int32 {
 	var v276 int32
 	_ = v276
 	v2 = int32(0)
-	v8 = *(*int64)(unsafe.Add(mBase, _consts[321]))
+	v8 = *(*int64)(unsafe.Add(mBase, _c_F_overMaxmemoryAfterAlloc[0]))
 	if v8 == int64(0) {
 		v276 = v2
 		goto L1
@@ -349,7 +349,7 @@ L1:
 L2:
 	;
 	v11 = int32(0)
-	v20 = *(*int32)(unsafe.Add(mBase, _consts[315]))
+	v20 = *(*int32)(unsafe.Add(mBase, _c_F_overMaxmemoryAfterAlloc[1]))
 	if v20 < int32(261) {
 		goto L6
 	} else {
@@ -357,7 +357,7 @@ L2:
 	}
 L3:
 	;
-	v105 = *(*int64)(unsafe.Add(mBase, _consts[321]))
+	v105 = *(*int64)(unsafe.Add(mBase, _c_F_overMaxmemoryAfterAlloc[0]))
 	if base.Ui64(base.I64_extend_i32_u(v97+l0)) <= base.Ui64(v105) {
 		v276 = v2
 		goto L1
@@ -385,7 +385,7 @@ L6:
 	}
 L7:
 	;
-	v24 = *(*int32)(unsafe.Add(mBase, _consts[316]))
+	v24 = *(*int32)(unsafe.Add(mBase, _c_F_overMaxmemoryAfterAlloc[2]))
 	v28 = v24
 	v29 = int32(260)
 	goto L5
@@ -417,10 +417,10 @@ L11:
 L12:
 	;
 	v48 = v41 << (uint(int32(2)) % 32)
-	v51 = *(*int32)(unsafe.Add(mBase, uint32(v48)+uint32(_consts[317])))
-	v54 = *(*int32)(unsafe.Add(mBase, uint32(v48)+uint32(_consts[318])))
-	v57 = *(*int32)(unsafe.Add(mBase, uint32(v48)+uint32(_consts[319])))
-	v60 = *(*int32)(unsafe.Add(mBase, uint32(v48)+uint32(_consts[320])))
+	v51 = *(*int32)(unsafe.Add(mBase, uint32(v48)+uint32(_c_F_overMaxmemoryAfterAlloc[3])))
+	v54 = *(*int32)(unsafe.Add(mBase, uint32(v48)+uint32(_c_F_overMaxmemoryAfterAlloc[4])))
+	v57 = *(*int32)(unsafe.Add(mBase, uint32(v48)+uint32(_c_F_overMaxmemoryAfterAlloc[5])))
+	v60 = *(*int32)(unsafe.Add(mBase, uint32(v48)+uint32(_c_F_overMaxmemoryAfterAlloc[6])))
 	v64 = v51 + (v54 + (v57 + (v60 + v40)))
 	v65 = int32(4)
 	v66 = v41 + v65
@@ -449,7 +449,7 @@ L15:
 	goto L16
 L16:
 	;
-	v90 = *(*int32)(unsafe.Add(mBase, uint32(v80<<(uint(int32(2))%32))+uint32(_consts[320])))
+	v90 = *(*int32)(unsafe.Add(mBase, uint32(v80<<(uint(int32(2))%32))+uint32(_c_F_overMaxmemoryAfterAlloc[6])))
 	v91 = v90 + v79
 	v92 = int32(1)
 	v95 = v82 + v92
@@ -470,9 +470,9 @@ L18:
 	goto L17
 L19:
 	;
-	v110 = int32(_a20)
-	v111 = *(*int64)(unsafe.Add(mBase, _consts[322]))
-	v113 = *(*int32)(unsafe.Add(mBase, _consts[323]))
+	v110 = int32(_a_F_overMaxmemoryAfterAlloc_0)
+	v111 = *(*int64)(unsafe.Add(mBase, _c_F_overMaxmemoryAfterAlloc[7]))
+	v113 = *(*int32)(unsafe.Add(mBase, _c_F_overMaxmemoryAfterAlloc[8]))
 	if base.I64_extend_i32_u(v113) <= v111 {
 		v128 = int32(0)
 		goto L20
@@ -481,7 +481,7 @@ L19:
 	}
 L20:
 	;
-	v130 = *(*int32)(unsafe.Add(mBase, _consts[38]))
+	v130 = *(*int32)(unsafe.Add(mBase, _c_F_overMaxmemoryAfterAlloc[9]))
 	if v130 == int32(0) {
 		v176 = v128
 		goto L25
@@ -515,7 +515,7 @@ L25:
 	v180 = m.G0
 	v182 = v180 - int32(16)
 	m.G0 = v182
-	v186 = *(*int32)(unsafe.Add(mBase, _consts[110]))
+	v186 = *(*int32)(unsafe.Add(mBase, _c_F_overMaxmemoryAfterAlloc[10]))
 	if v186 == v177 {
 		v218 = v177
 		goto L42
@@ -524,7 +524,7 @@ L25:
 	}
 L26:
 	;
-	v134 = *(*int32)(unsafe.Add(mBase, _consts[66]))
+	v134 = *(*int32)(unsafe.Add(mBase, _c_F_overMaxmemoryAfterAlloc[11]))
 	v141 = v134 + int32(-1)
 	v142 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v141))))
 	v144 = v142 & int32(7)
@@ -616,7 +616,7 @@ L39:
 	goto L27
 L40:
 	;
-	v268 = *(*int64)(unsafe.Add(mBase, _consts[321]))
+	v268 = *(*int64)(unsafe.Add(mBase, _c_F_overMaxmemoryAfterAlloc[0]))
 	v270 = v97 - v266
 	if base.Ui32(v97) < base.Ui32(v270) {
 		goto L62
@@ -637,7 +637,7 @@ L42:
 	goto L41
 L43:
 	;
-	v190 = *(*int32)(unsafe.Add(mBase, _consts[111]))
+	v190 = *(*int32)(unsafe.Add(mBase, _c_F_overMaxmemoryAfterAlloc[12]))
 	if v190 == int32(0) {
 		v218 = v177
 		goto L42
@@ -646,7 +646,7 @@ L43:
 	}
 L44:
 	;
-	v193 = *(*int32)(unsafe.Add(mBase, uint32(v190)+uint32(_consts[171])))
+	v193 = *(*int32)(unsafe.Add(mBase, uint32(v190)+uint32(_c_F_overMaxmemoryAfterAlloc[13])))
 	v195 = v182 + int32(8)
 	F_listRewind(m, v193, v195)
 	mBase = m.M
@@ -707,8 +707,8 @@ L52:
 	v228 = m.G0
 	v230 = v228 - int32(16)
 	m.G0 = v230
-	v233 = *(*int32)(unsafe.Add(mBase, _consts[111]))
-	v234 = *(*int32)(unsafe.Add(mBase, uint32(v233)+uint32(_consts[171])))
+	v233 = *(*int32)(unsafe.Add(mBase, _c_F_overMaxmemoryAfterAlloc[12]))
+	v234 = *(*int32)(unsafe.Add(mBase, uint32(v233)+uint32(_c_F_overMaxmemoryAfterAlloc[13])))
 	v236 = v230 + int32(8)
 	F_listRewind(m, v234, v236)
 	mBase = m.M

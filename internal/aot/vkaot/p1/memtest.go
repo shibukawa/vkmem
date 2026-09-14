@@ -35,12 +35,12 @@ func F_memtest(m *base.Module, l0 int32, l1 int32) {
 	v4 = m.G0
 	v6 = v4 - int32(16)
 	m.G0 = v6
-	*(*int32)(unsafe.Add(mBase, uint32(v6))) = int32(_a749)
+	*(*int32)(unsafe.Add(mBase, uint32(v6))) = int32(_a_F_memtest_0)
 	v12 = F_ioctl(m, int32(1), int32(21523), v6)
 	mBase = m.M
 	if v12 != int32(-1) {
 	} else {
-		*(*int32)(unsafe.Add(mBase, _consts[381])) = int32(5242900)
+		*(*int32)(unsafe.Add(mBase, _c_F_memtest[0])) = int32(5242900)
 	}
 	F_memtest_alloc_and_test(m, l0, l1)
 	mBase = m.M
@@ -48,25 +48,25 @@ func F_memtest(m *base.Module, l0 int32, l1 int32) {
 	if v19 != 0 {
 		return
 	} else {
-		v21 = F_puts(m, int32(_a750))
+		v21 = F_puts(m, int32(_a_F_memtest_1))
 		mBase = m.M
 		v22 = m.ExcPending
 		if v22 != 0 {
 			return
 		} else {
-			v24 = F_puts(m, int32(_a751))
+			v24 = F_puts(m, int32(_a_F_memtest_2))
 			mBase = m.M
 			v25 = m.ExcPending
 			if v25 != 0 {
 				return
 			} else {
-				v27 = F_puts(m, int32(_a752))
+				v27 = F_puts(m, int32(_a_F_memtest_3))
 				mBase = m.M
 				v28 = m.ExcPending
 				if v28 != 0 {
 					return
 				} else {
-					v30 = F_puts(m, int32(_a753))
+					v30 = F_puts(m, int32(_a_F_memtest_4))
 					mBase = m.M
 					v31 = m.ExcPending
 					if v31 != 0 {
@@ -412,7 +412,7 @@ L6:
 	}
 L7:
 	;
-	F_memtest_progress_start(m, int32(_a741), v48)
+	F_memtest_progress_start(m, int32(_a_F_memtest_test_0), v48)
 	mBase = m.M
 	v55 = m.ExcPending
 	if v55 != 0 {
@@ -435,7 +435,7 @@ L9:
 	}
 L10:
 	;
-	v60 = F_iprintf(m, int32(_a742), int32(0))
+	v60 = F_iprintf(m, int32(_a_F_memtest_test_1), int32(0))
 	mBase = m.M
 	v61 = m.ExcPending
 	if v61 != 0 {
@@ -445,7 +445,7 @@ L10:
 	}
 L11:
 	;
-	F_memtest_progress_start(m, int32(_a743), v48)
+	F_memtest_progress_start(m, int32(_a_F_memtest_test_2), v48)
 	mBase = m.M
 	v64 = m.ExcPending
 	if v64 != 0 {
@@ -465,7 +465,7 @@ L12:
 	}
 L13:
 	;
-	v69 = F_iprintf(m, int32(_a742), int32(0))
+	v69 = F_iprintf(m, int32(_a_F_memtest_test_1), int32(0))
 	mBase = m.M
 	v70 = m.ExcPending
 	if v70 != 0 {
@@ -510,7 +510,7 @@ L18:
 	}
 L19:
 	;
-	F__serverAssert(m, int32(_a744), int32(_a745), int32(199))
+	F__serverAssert(m, int32(_a_F_memtest_test_3), int32(_a_F_memtest_test_4), int32(199))
 	mBase = m.M
 	v184 = m.ExcPending
 	if v184 != 0 {
@@ -524,7 +524,7 @@ L20:
 	goto L23
 L21:
 	;
-	F_memtest_progress_start(m, int32(_a746), v48)
+	F_memtest_progress_start(m, int32(_a_F_memtest_test_5), v48)
 	mBase = m.M
 	v170 = m.ExcPending
 	if v170 != 0 {
@@ -534,7 +534,7 @@ L21:
 	}
 L22:
 	;
-	F_memtest_progress_start(m, int32(_a747), v48)
+	F_memtest_progress_start(m, int32(_a_F_memtest_test_6), v48)
 	mBase = m.M
 	v156 = m.ExcPending
 	if v156 != 0 {
@@ -641,7 +641,7 @@ L37:
 	}
 L38:
 	;
-	v161 = F_iprintf(m, int32(_a742), int32(0))
+	v161 = F_iprintf(m, int32(_a_F_memtest_test_1), int32(0))
 	mBase = m.M
 	v162 = m.ExcPending
 	if v162 != 0 {
@@ -675,7 +675,7 @@ L41:
 	}
 L42:
 	;
-	v178 = F_iprintf(m, int32(_a742), int32(0))
+	v178 = F_iprintf(m, int32(_a_F_memtest_test_1), int32(0))
 	mBase = m.M
 	v179 = m.ExcPending
 	if v179 != 0 {
@@ -744,7 +744,7 @@ L51:
 	}
 L52:
 	;
-	F_memtest_progress_start(m, int32(_a747), v48)
+	F_memtest_progress_start(m, int32(_a_F_memtest_test_6), v48)
 	mBase = m.M
 	v438 = m.ExcPending
 	if v438 != 0 {
@@ -761,7 +761,7 @@ L53:
 	}
 L54:
 	;
-	F__serverAssert(m, int32(_a744), int32(_a745), int32(199))
+	F__serverAssert(m, int32(_a_F_memtest_test_3), int32(_a_F_memtest_test_4), int32(199))
 	mBase = m.M
 	v434 = m.ExcPending
 	if v434 != 0 {
@@ -1008,7 +1008,7 @@ L89:
 	}
 L90:
 	;
-	v443 = F_iprintf(m, int32(_a742), int32(0))
+	v443 = F_iprintf(m, int32(_a_F_memtest_test_1), int32(0))
 	mBase = m.M
 	v444 = m.ExcPending
 	if v444 != 0 {
@@ -1029,7 +1029,7 @@ L91:
 	}
 L92:
 	;
-	F_memtest_progress_start(m, int32(_a748), v48)
+	F_memtest_progress_start(m, int32(_a_F_memtest_test_7), v48)
 	mBase = m.M
 	v452 = m.ExcPending
 	if v452 != 0 {
@@ -1049,7 +1049,7 @@ L93:
 	}
 L94:
 	;
-	v460 = F_iprintf(m, int32(_a742), int32(0))
+	v460 = F_iprintf(m, int32(_a_F_memtest_test_1), int32(0))
 	mBase = m.M
 	v461 = m.ExcPending
 	if v461 != 0 {
@@ -1059,7 +1059,7 @@ L94:
 	}
 L95:
 	;
-	F_memtest_progress_start(m, int32(_a747), v48)
+	F_memtest_progress_start(m, int32(_a_F_memtest_test_6), v48)
 	mBase = m.M
 	v464 = m.ExcPending
 	if v464 != 0 {
@@ -1079,7 +1079,7 @@ L96:
 	}
 L97:
 	;
-	v469 = F_iprintf(m, int32(_a742), int32(0))
+	v469 = F_iprintf(m, int32(_a_F_memtest_test_1), int32(0))
 	mBase = m.M
 	v470 = m.ExcPending
 	if v470 != 0 {
@@ -1089,7 +1089,7 @@ L97:
 	}
 L98:
 	;
-	F_memtest_progress_start(m, int32(_a747), v48)
+	F_memtest_progress_start(m, int32(_a_F_memtest_test_6), v48)
 	mBase = m.M
 	v473 = m.ExcPending
 	if v473 != 0 {
@@ -1109,7 +1109,7 @@ L99:
 	}
 L100:
 	;
-	v478 = F_iprintf(m, int32(_a742), int32(0))
+	v478 = F_iprintf(m, int32(_a_F_memtest_test_1), int32(0))
 	mBase = m.M
 	v479 = m.ExcPending
 	if v479 != 0 {
@@ -1119,7 +1119,7 @@ L100:
 	}
 L101:
 	;
-	F_memtest_progress_start(m, int32(_a747), v48)
+	F_memtest_progress_start(m, int32(_a_F_memtest_test_6), v48)
 	mBase = m.M
 	v482 = m.ExcPending
 	if v482 != 0 {
@@ -1139,7 +1139,7 @@ L102:
 	}
 L103:
 	;
-	v487 = F_iprintf(m, int32(_a742), int32(0))
+	v487 = F_iprintf(m, int32(_a_F_memtest_test_1), int32(0))
 	mBase = m.M
 	v488 = m.ExcPending
 	if v488 != 0 {
@@ -1149,7 +1149,7 @@ L103:
 	}
 L104:
 	;
-	F_memtest_progress_start(m, int32(_a747), v48)
+	F_memtest_progress_start(m, int32(_a_F_memtest_test_6), v48)
 	mBase = m.M
 	v491 = m.ExcPending
 	if v491 != 0 {
@@ -1169,7 +1169,7 @@ L105:
 	}
 L106:
 	;
-	v496 = F_iprintf(m, int32(_a742), int32(0))
+	v496 = F_iprintf(m, int32(_a_F_memtest_test_1), int32(0))
 	mBase = m.M
 	v497 = m.ExcPending
 	if v497 != 0 {

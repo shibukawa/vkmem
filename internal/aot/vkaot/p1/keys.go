@@ -688,7 +688,7 @@ L2:
 	goto L8
 L3:
 	;
-	F__serverAssert(m, int32(_a562), int32(_a560), int32(2333))
+	F__serverAssert(m, int32(_a_F_getKeysUsingKeySpecs_0), int32(_a_F_getKeysUsingKeySpecs_1), int32(2333))
 	mBase = m.M
 	v35 = m.ExcPending
 	if v35 != 0 {
@@ -745,7 +745,7 @@ L10:
 	}
 L11:
 	;
-	F__serverAssert(m, int32(_a563), int32(_a560), int32(2292))
+	F__serverAssert(m, int32(_a_F_getKeysUsingKeySpecs_2), int32(_a_F_getKeysUsingKeySpecs_1), int32(2292))
 	mBase = m.M
 	v552 = m.ExcPending
 	if v552 != 0 {
@@ -755,7 +755,7 @@ L11:
 	}
 L12:
 	;
-	F__serverAssert(m, int32(_a564), int32(_a560), int32(2374))
+	F__serverAssert(m, int32(_a_F_getKeysUsingKeySpecs_3), int32(_a_F_getKeysUsingKeySpecs_1), int32(2374))
 	mBase = m.M
 	v546 = m.ExcPending
 	if v546 != 0 {
@@ -765,7 +765,7 @@ L12:
 	}
 L13:
 	;
-	F__serverAssert(m, int32(_a565), int32(_a560), int32(2337))
+	F__serverAssert(m, int32(_a_F_getKeysUsingKeySpecs_4), int32(_a_F_getKeysUsingKeySpecs_1), int32(2337))
 	mBase = m.M
 	v540 = m.ExcPending
 	if v540 != 0 {
@@ -1511,7 +1511,7 @@ L119:
 	}
 L120:
 	;
-	v467 = *(*int32)(unsafe.Add(mBase, _consts[296]))
+	v467 = *(*int32)(unsafe.Add(mBase, _c_F_getKeysUsingKeySpecs[0]))
 	if v467 != 0 {
 		goto L121
 	} else {
@@ -1519,16 +1519,16 @@ L120:
 	}
 L121:
 	;
-	v468 = int32(_a566)
+	v468 = int32(_a_F_getKeysUsingKeySpecs_5)
 	goto L123
 L122:
 	;
-	v468 = int32(_a256)
+	v468 = int32(_a_F_getKeysUsingKeySpecs_6)
 	goto L123
 L123:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v22))) = v468
-	F__serverPanic_1(m, int32(_a560), int32(2419), int32(_a567), v22)
+	F__serverPanic_1(m, int32(_a_F_getKeysUsingKeySpecs_1), int32(2419), int32(_a_F_getKeysUsingKeySpecs_7), v22)
 	mBase = m.M
 	v474 = m.ExcPending
 	if v474 != 0 {
@@ -1647,7 +1647,7 @@ func F_setGetKeys(m *base.Module, l0 int32, l1 int32, l2 int32, l3 int32) int32 
 	}
 L1:
 	;
-	F__serverAssert(m, int32(_a563), int32(_a560), int32(2292))
+	F__serverAssert(m, int32(_a_F_setGetKeys_0), int32(_a_F_setGetKeys_1), int32(2292))
 	mBase = m.M
 	v103 = m.ExcPending
 	if v103 != 0 {

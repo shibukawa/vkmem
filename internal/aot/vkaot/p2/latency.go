@@ -955,7 +955,7 @@ func F_latencyCommand(m *base.Module, l0 int32) {
 	v12 = *(*int32)(unsafe.Add(mBase, uint32(v11)+4))
 	v13 = F_objectGetVal(m, v12)
 	mBase = m.M
-	v14 = int32(_a878)
+	v14 = int32(_a_F_latencyCommand_0)
 	v17 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v13))))
 	if v17 != 0 {
 		goto L5
@@ -972,7 +972,7 @@ L2:
 	v69 = *(*int32)(unsafe.Add(mBase, uint32(v68)+4))
 	v70 = F_objectGetVal(m, v69)
 	mBase = m.M
-	v71 = int32(_a879)
+	v71 = int32(_a_F_latencyCommand_1)
 	v74 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v70))))
 	if v74 != 0 {
 		goto L27
@@ -1077,7 +1077,7 @@ L15:
 	}
 L16:
 	;
-	v57 = *(*int32)(unsafe.Add(mBase, _consts[494]))
+	v57 = *(*int32)(unsafe.Add(mBase, _c_F_latencyCommand[0]))
 	v58 = *(*int32)(unsafe.Add(mBase, uint32(l0)+20))
 	v59 = *(*int32)(unsafe.Add(mBase, uint32(v58)+8))
 	v60 = F_objectGetVal(m, v59)
@@ -1133,7 +1133,7 @@ L23:
 	v741 = F_objectGetVal(m, v740)
 	mBase = m.M
 	*(*int32)(unsafe.Add(mBase, uint32(v9))) = v741
-	F_addReplyErrorFormat(m, l0, int32(_a880), v9)
+	F_addReplyErrorFormat(m, l0, int32(_a_F_latencyCommand_2), v9)
 	mBase = m.M
 	v745 = m.ExcPending
 	if v745 != 0 {
@@ -1147,7 +1147,7 @@ L24:
 	v153 = *(*int32)(unsafe.Add(mBase, uint32(v152)+4))
 	v154 = F_objectGetVal(m, v153)
 	mBase = m.M
-	v155 = int32(_a881)
+	v155 = int32(_a_F_latencyCommand_3)
 	v158 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v154))))
 	if v158 != 0 {
 		goto L55
@@ -1252,7 +1252,7 @@ L37:
 	}
 L38:
 	;
-	v114 = *(*int32)(unsafe.Add(mBase, _consts[494]))
+	v114 = *(*int32)(unsafe.Add(mBase, _c_F_latencyCommand[0]))
 	v115 = *(*int32)(unsafe.Add(mBase, uint32(l0)+20))
 	v116 = *(*int32)(unsafe.Add(mBase, uint32(v115)+8))
 	v117 = F_objectGetVal(m, v116)
@@ -1282,7 +1282,7 @@ L41:
 	goto L48
 L42:
 	;
-	F_addReplyVerbatim(m, l0, v125, v146, int32(_a701))
+	F_addReplyVerbatim(m, l0, v125, v146, int32(_a_F_latencyCommand_4))
 	mBase = m.M
 	v149 = m.ExcPending
 	if v149 != 0 {
@@ -1361,7 +1361,7 @@ L52:
 	v200 = *(*int32)(unsafe.Add(mBase, uint32(v199)+4))
 	v201 = F_objectGetVal(m, v200)
 	mBase = m.M
-	v202 = int32(_a882)
+	v202 = int32(_a_F_latencyCommand_5)
 	v205 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v201))))
 	if v205 != 0 {
 		goto L71
@@ -1483,7 +1483,7 @@ L68:
 	v273 = *(*int32)(unsafe.Add(mBase, uint32(v272)+4))
 	v274 = F_objectGetVal(m, v273)
 	mBase = m.M
-	v275 = int32(_a50)
+	v275 = int32(_a_F_latencyCommand_6)
 	v278 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v274))))
 	if v278 != 0 {
 		goto L95
@@ -1598,7 +1598,7 @@ L82:
 	}
 L83:
 	;
-	F_addReplyVerbatim(m, l0, v245, v266, int32(_a701))
+	F_addReplyVerbatim(m, l0, v245, v266, int32(_a_F_latencyCommand_4))
 	mBase = m.M
 	v269 = m.ExcPending
 	if v269 != 0 {
@@ -1667,7 +1667,7 @@ L92:
 	v590 = *(*int32)(unsafe.Add(mBase, uint32(v589)+4))
 	v591 = F_objectGetVal(m, v590)
 	mBase = m.M
-	v592 = int32(_a883)
+	v592 = int32(_a_F_latencyCommand_7)
 	v595 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v591))))
 	if v595 != 0 {
 		goto L180
@@ -1780,7 +1780,7 @@ L106:
 	}
 L107:
 	;
-	v344 = *(*int32)(unsafe.Add(mBase, _consts[494]))
+	v344 = *(*int32)(unsafe.Add(mBase, _c_F_latencyCommand[0]))
 	v345 = F_dictGetSafeIterator(m, v344)
 	mBase = m.M
 	v346 = m.ExcPending
@@ -2060,7 +2060,7 @@ L145:
 	goto L114
 L146:
 	;
-	v464 = *(*int32)(unsafe.Add(mBase, _consts[494]))
+	v464 = *(*int32)(unsafe.Add(mBase, _c_F_latencyCommand[0]))
 	v465 = F_dictDelete(m, v464, v462)
 	mBase = m.M
 	v466 = m.ExcPending
@@ -2289,7 +2289,7 @@ L177:
 	v653 = *(*int32)(unsafe.Add(mBase, uint32(v652)+4))
 	v654 = F_objectGetVal(m, v653)
 	mBase = m.M
-	v655 = int32(_a621)
+	v655 = int32(_a_F_latencyCommand_8)
 	v658 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v654))))
 	if v658 != 0 {
 		goto L201
@@ -2422,7 +2422,7 @@ L193:
 	}
 L194:
 	;
-	v641 = *(*int32)(unsafe.Add(mBase, _consts[318]))
+	v641 = *(*int32)(unsafe.Add(mBase, _c_F_latencyCommand[1]))
 	F_latencyAllCommandsFillCDF(m, l0, v641, v9+int32(16))
 	mBase = m.M
 	v645 = m.ExcPending
@@ -2557,21 +2557,21 @@ L211:
 L212:
 	;
 	v699 = int32(0)
-	v700 = *(*int32)(unsafe.Add(mBase, _consts[495]))
+	v700 = *(*int32)(unsafe.Add(mBase, _c_F_latencyCommand[2]))
 	*(*int32)(unsafe.Add(mBase, uint32(v9+int32(72)))) = v700
-	v705 = *(*int64)(unsafe.Add(mBase, _consts[496]))
+	v705 = *(*int64)(unsafe.Add(mBase, _c_F_latencyCommand[3]))
 	*(*int64)(unsafe.Add(mBase, uint32(v9+int32(64)))) = v705
-	v710 = *(*int64)(unsafe.Add(mBase, _consts[497]))
+	v710 = *(*int64)(unsafe.Add(mBase, _c_F_latencyCommand[4]))
 	*(*int64)(unsafe.Add(mBase, uint32(v9+int32(56)))) = v710
-	v715 = *(*int64)(unsafe.Add(mBase, _consts[498]))
+	v715 = *(*int64)(unsafe.Add(mBase, _c_F_latencyCommand[5]))
 	*(*int64)(unsafe.Add(mBase, uint32(v9+int32(48)))) = v715
-	v720 = *(*int64)(unsafe.Add(mBase, _consts[499]))
+	v720 = *(*int64)(unsafe.Add(mBase, _c_F_latencyCommand[6]))
 	*(*int64)(unsafe.Add(mBase, uint32(v9+int32(40)))) = v720
-	v725 = *(*int64)(unsafe.Add(mBase, _consts[500]))
+	v725 = *(*int64)(unsafe.Add(mBase, _c_F_latencyCommand[7]))
 	*(*int64)(unsafe.Add(mBase, uint32(v9+int32(32)))) = v725
-	v728 = *(*int64)(unsafe.Add(mBase, _consts[501]))
+	v728 = *(*int64)(unsafe.Add(mBase, _c_F_latencyCommand[8]))
 	*(*int64)(unsafe.Add(mBase, uint32(v9)+24)) = v728
-	v731 = *(*int64)(unsafe.Add(mBase, _consts[502]))
+	v731 = *(*int64)(unsafe.Add(mBase, _c_F_latencyCommand[9]))
 	*(*int64)(unsafe.Add(mBase, uint32(v9)+16)) = v731
 	F_addReplyHelp(m, l0, v9+int32(16))
 	mBase = m.M
@@ -2598,13 +2598,13 @@ func F_latencyMonitorInit(m *base.Module) {
 	_ = v3
 	var v4 int32
 	_ = v4
-	v3 = F_dictCreate(m, int32(_a877))
+	v3 = F_dictCreate(m, int32(_a_F_latencyMonitorInit_0))
 	mBase = m.M
 	v4 = m.ExcPending
 	if v4 != 0 {
 		return
 	} else {
-		*(*int32)(unsafe.Add(mBase, _consts[494])) = v3
+		*(*int32)(unsafe.Add(mBase, _c_F_latencyMonitorInit[0])) = v3
 		return
 	}
 }

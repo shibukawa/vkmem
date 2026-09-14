@@ -207,7 +207,7 @@ L1:
 	return
 L2:
 	;
-	F_addReplyBulkCString(m, l0, int32(_a344))
+	F_addReplyBulkCString(m, l0, int32(_a_F_addNodeDetailsToShardReply_0))
 	mBase = m.M
 	v13 = m.ExcPending
 	if v13 != 0 {
@@ -244,7 +244,7 @@ L5:
 	}
 L6:
 	;
-	F_addReplyBulkCString(m, l0, int32(_a345))
+	F_addReplyBulkCString(m, l0, int32(_a_F_addNodeDetailsToShardReply_1))
 	mBase = m.M
 	v23 = m.ExcPending
 	if v23 != 0 {
@@ -296,7 +296,7 @@ L13:
 	goto L5
 L14:
 	;
-	F_addReplyBulkCString(m, l0, int32(_a346))
+	F_addReplyBulkCString(m, l0, int32(_a_F_addNodeDetailsToShardReply_2))
 	mBase = m.M
 	v56 = m.ExcPending
 	if v56 != 0 {
@@ -306,7 +306,7 @@ L14:
 	}
 L15:
 	;
-	F_addReplyBulkCString(m, l0, int32(_a356))
+	F_addReplyBulkCString(m, l0, int32(_a_F_addNodeDetailsToShardReply_14))
 	mBase = m.M
 	v40 = m.ExcPending
 	if v40 != 0 {
@@ -374,7 +374,7 @@ L23:
 	}
 L24:
 	;
-	F_addReplyBulkCString(m, l0, int32(_a347))
+	F_addReplyBulkCString(m, l0, int32(_a_F_addNodeDetailsToShardReply_3))
 	mBase = m.M
 	v63 = m.ExcPending
 	if v63 != 0 {
@@ -384,14 +384,14 @@ L24:
 	}
 L25:
 	;
-	v66 = *(*int32)(unsafe.Add(mBase, _consts[207]))
+	v66 = *(*int32)(unsafe.Add(mBase, _c_F_addNodeDetailsToShardReply[0]))
 	switch v66 {
 	case 0:
 		goto L29
 	case 1:
 		goto L28
 	case 2:
-		v75 = int32(_a139)
+		v75 = int32(_a_F_addNodeDetailsToShardReply_15)
 		goto L26
 	default:
 		goto L27
@@ -408,7 +408,7 @@ L26:
 	}
 L27:
 	;
-	v75 = int32(_a288)
+	v75 = int32(_a_F_addNodeDetailsToShardReply_16)
 	goto L26
 L28:
 	;
@@ -442,7 +442,7 @@ L31:
 	}
 L32:
 	;
-	v75 = int32(_a357)
+	v75 = int32(_a_F_addNodeDetailsToShardReply_17)
 	goto L26
 L33:
 	;
@@ -450,7 +450,7 @@ L33:
 	goto L35
 L34:
 	;
-	v73 = int32(_a357)
+	v73 = int32(_a_F_addNodeDetailsToShardReply_17)
 	goto L35
 L35:
 	;
@@ -518,7 +518,7 @@ L43:
 	goto L38
 L44:
 	;
-	F_addReplyBulkCString(m, l0, int32(_a355))
+	F_addReplyBulkCString(m, l0, int32(_a_F_addNodeDetailsToShardReply_13))
 	mBase = m.M
 	v105 = m.ExcPending
 	if v105 != 0 {
@@ -585,7 +585,7 @@ L52:
 	goto L37
 L53:
 	;
-	F_addReplyBulkCString(m, l0, int32(_a348))
+	F_addReplyBulkCString(m, l0, int32(_a_F_addNodeDetailsToShardReply_4))
 	mBase = m.M
 	v174 = m.ExcPending
 	if v174 != 0 {
@@ -607,12 +607,12 @@ L55:
 	}
 L56:
 	;
-	v169 = *(*int64)(unsafe.Add(mBase, _consts[40]))
+	v169 = *(*int64)(unsafe.Add(mBase, _c_F_addNodeDetailsToShardReply[1]))
 	v171 = v169
 	goto L53
 L57:
 	;
-	v148 = *(*int32)(unsafe.Add(mBase, _consts[130]))
+	v148 = *(*int32)(unsafe.Add(mBase, _c_F_addNodeDetailsToShardReply[2]))
 	if v148 == int32(0) {
 		v162 = int64(0)
 		goto L59
@@ -633,7 +633,7 @@ L59:
 	}
 L60:
 	;
-	v152 = *(*int32)(unsafe.Add(mBase, _consts[188]))
+	v152 = *(*int32)(unsafe.Add(mBase, _c_F_addNodeDetailsToShardReply[3]))
 	if v152 != 0 {
 		v159 = v152
 		goto L61
@@ -648,7 +648,7 @@ L61:
 	goto L59
 L62:
 	;
-	v155 = *(*int32)(unsafe.Add(mBase, _consts[189]))
+	v155 = *(*int32)(unsafe.Add(mBase, _c_F_addNodeDetailsToShardReply[4]))
 	if v155 == int32(0) {
 		v162 = int64(0)
 		goto L59
@@ -680,11 +680,11 @@ L67:
 	}
 L68:
 	;
-	v180 = int32(_a268)
+	v180 = int32(_a_F_addNodeDetailsToShardReply_5)
 	goto L70
 L69:
 	;
-	v180 = int32(_a349)
+	v180 = int32(_a_F_addNodeDetailsToShardReply_6)
 	goto L70
 L70:
 	;
@@ -698,7 +698,7 @@ L70:
 	}
 L71:
 	;
-	F_addReplyBulkCString(m, l0, int32(_a350))
+	F_addReplyBulkCString(m, l0, int32(_a_F_addNodeDetailsToShardReply_7))
 	mBase = m.M
 	v185 = m.ExcPending
 	if v185 != 0 {
@@ -718,7 +718,7 @@ L72:
 	}
 L73:
 	;
-	F_addReplyBulkCString(m, l0, int32(_a351))
+	F_addReplyBulkCString(m, l0, int32(_a_F_addNodeDetailsToShardReply_8))
 	mBase = m.M
 	v190 = m.ExcPending
 	if v190 != 0 {
@@ -730,7 +730,7 @@ L74:
 	;
 	v192 = *(*int32)(unsafe.Add(mBase, uint32(l1)+88))
 	if v192&int32(8) != 0 {
-		v206 = int32(_a192)
+		v206 = int32(_a_F_addNodeDetailsToShardReply_9)
 		goto L75
 	} else {
 		goto L76
@@ -754,11 +754,11 @@ L76:
 	}
 L77:
 	;
-	v199 = int32(_a352)
+	v199 = int32(_a_F_addNodeDetailsToShardReply_10)
 	goto L79
 L78:
 	;
-	v199 = int32(_a353)
+	v199 = int32(_a_F_addNodeDetailsToShardReply_11)
 	goto L79
 L79:
 	;
@@ -773,7 +773,7 @@ L80:
 	goto L82
 L81:
 	;
-	v205 = int32(_a353)
+	v205 = int32(_a_F_addNodeDetailsToShardReply_11)
 	goto L82
 L82:
 	;
@@ -843,7 +843,7 @@ L90:
 	goto L85
 L91:
 	;
-	F_addReplyBulkCString(m, l0, int32(_a354))
+	F_addReplyBulkCString(m, l0, int32(_a_F_addNodeDetailsToShardReply_12))
 	mBase = m.M
 	v236 = m.ExcPending
 	if v236 != 0 {
@@ -1000,7 +1000,7 @@ func F_clearNodeFailureIfNeeded(m *base.Module, l0 int32) {
 	mBase = m.M
 	v11 = *(*int32)(unsafe.Add(mBase, uint32(l0)+88))
 	if v11&int32(8) == int32(0) {
-		F__serverAssert(m, int32(_a266), int32(_a253), int32(2613))
+		F__serverAssert(m, int32(_a_F_clearNodeFailureIfNeeded_0), int32(_a_F_clearNodeFailureIfNeeded_1), int32(2613))
 		mBase = m.M
 		v136 = m.ExcPending
 		if v136 != 0 {
@@ -1014,12 +1014,12 @@ func F_clearNodeFailureIfNeeded(m *base.Module, l0 int32) {
 		}
 	} else {
 		if v11&int32(1) == int32(0) {
-			v22 = *(*int32)(unsafe.Add(mBase, _consts[6]))
+			v22 = *(*int32)(unsafe.Add(mBase, _c_F_clearNodeFailureIfNeeded[0]))
 			if int32(2) < v22 {
 				v45 = v11
 				*(*int32)(unsafe.Add(mBase, uint32(l0)+88)) = v45 & int32(-9)
 				v50 = int32(0)
-				v51 = *(*int32)(unsafe.Add(mBase, _consts[154]))
+				v51 = *(*int32)(unsafe.Add(mBase, _c_F_clearNodeFailureIfNeeded[1]))
 				v52 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v51)+88)))
 				if v52&int32(2) == v50 {
 				} else {
@@ -1035,9 +1035,9 @@ func F_clearNodeFailureIfNeeded(m *base.Module, l0 int32) {
 				if v63 != 0 {
 					return
 				} else {
-					v65 = *(*int32)(unsafe.Add(mBase, _consts[136]))
-					v66 = *(*int32)(unsafe.Add(mBase, uint32(v65)+uint32(_consts[150])))
-					*(*int32)(unsafe.Add(mBase, uint32(v65)+uint32(_consts[150]))) = v66 | int32(6)
+					v65 = *(*int32)(unsafe.Add(mBase, _c_F_clearNodeFailureIfNeeded[2]))
+					v66 = *(*int32)(unsafe.Add(mBase, uint32(v65)+uint32(_c_F_clearNodeFailureIfNeeded[3])))
+					*(*int32)(unsafe.Add(mBase, uint32(v65)+uint32(_c_F_clearNodeFailureIfNeeded[3]))) = v66 | int32(6)
 					v70 = *(*int32)(unsafe.Add(mBase, uint32(l0)+88))
 					if v70&int32(1) == int32(0) {
 						m.G0 = v8 + int32(32)
@@ -1050,17 +1050,17 @@ func F_clearNodeFailureIfNeeded(m *base.Module, l0 int32) {
 							return
 						} else {
 							v80 = *(*int64)(unsafe.Add(mBase, uint32(l0)+2216))
-							v83 = *(*int64)(unsafe.Add(mBase, _consts[164]))
+							v83 = *(*int64)(unsafe.Add(mBase, _c_F_clearNodeFailureIfNeeded[4]))
 							if v10-v80 <= v83<<(uint(int64(1))%64) {
 								m.G0 = v8 + int32(32)
 								return
 							} else {
-								v88 = *(*int32)(unsafe.Add(mBase, _consts[6]))
+								v88 = *(*int32)(unsafe.Add(mBase, _c_F_clearNodeFailureIfNeeded[0]))
 								if int32(2) < v88 {
 									v102 = v75
 									*(*int32)(unsafe.Add(mBase, uint32(l0)+88)) = v102 & int32(-9)
 									v106 = int32(0)
-									v107 = *(*int32)(unsafe.Add(mBase, _consts[154]))
+									v107 = *(*int32)(unsafe.Add(mBase, _c_F_clearNodeFailureIfNeeded[1]))
 									v108 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v107)+88)))
 									if v108&int32(2) == v106 {
 									} else {
@@ -1076,9 +1076,9 @@ func F_clearNodeFailureIfNeeded(m *base.Module, l0 int32) {
 									if v119 != 0 {
 										return
 									} else {
-										v121 = *(*int32)(unsafe.Add(mBase, _consts[136]))
-										v122 = *(*int32)(unsafe.Add(mBase, uint32(v121)+uint32(_consts[150])))
-										*(*int32)(unsafe.Add(mBase, uint32(v121)+uint32(_consts[150]))) = v122 | int32(6)
+										v121 = *(*int32)(unsafe.Add(mBase, _c_F_clearNodeFailureIfNeeded[2]))
+										v122 = *(*int32)(unsafe.Add(mBase, uint32(v121)+uint32(_c_F_clearNodeFailureIfNeeded[3])))
+										*(*int32)(unsafe.Add(mBase, uint32(v121)+uint32(_c_F_clearNodeFailureIfNeeded[3]))) = v122 | int32(6)
 										m.G0 = v8 + int32(32)
 										return
 									}
@@ -1091,7 +1091,7 @@ func F_clearNodeFailureIfNeeded(m *base.Module, l0 int32) {
 									} else {
 										*(*int32)(unsafe.Add(mBase, uint32(v8)+4)) = v91
 										*(*int32)(unsafe.Add(mBase, uint32(v8))) = l0 + int32(8)
-										F__serverLog(m, int32(2), int32(_a267), v8)
+										F__serverLog(m, int32(2), int32(_a_F_clearNodeFailureIfNeeded_2), v8)
 										mBase = m.M
 										v100 = m.ExcPending
 										if v100 != 0 {
@@ -1101,7 +1101,7 @@ func F_clearNodeFailureIfNeeded(m *base.Module, l0 int32) {
 											v102 = v101
 											*(*int32)(unsafe.Add(mBase, uint32(l0)+88)) = v102 & int32(-9)
 											v106 = int32(0)
-											v107 = *(*int32)(unsafe.Add(mBase, _consts[154]))
+											v107 = *(*int32)(unsafe.Add(mBase, _c_F_clearNodeFailureIfNeeded[1]))
 											v108 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v107)+88)))
 											if v108&int32(2) == v106 {
 											} else {
@@ -1117,9 +1117,9 @@ func F_clearNodeFailureIfNeeded(m *base.Module, l0 int32) {
 											if v119 != 0 {
 												return
 											} else {
-												v121 = *(*int32)(unsafe.Add(mBase, _consts[136]))
-												v122 = *(*int32)(unsafe.Add(mBase, uint32(v121)+uint32(_consts[150])))
-												*(*int32)(unsafe.Add(mBase, uint32(v121)+uint32(_consts[150]))) = v122 | int32(6)
+												v121 = *(*int32)(unsafe.Add(mBase, _c_F_clearNodeFailureIfNeeded[2]))
+												v122 = *(*int32)(unsafe.Add(mBase, uint32(v121)+uint32(_c_F_clearNodeFailureIfNeeded[3])))
+												*(*int32)(unsafe.Add(mBase, uint32(v121)+uint32(_c_F_clearNodeFailureIfNeeded[3]))) = v122 | int32(6)
 												m.G0 = v8 + int32(32)
 												return
 											}
@@ -1141,12 +1141,12 @@ func F_clearNodeFailureIfNeeded(m *base.Module, l0 int32) {
 					*(*int32)(unsafe.Add(mBase, uint32(v8)+20)) = v25
 					*(*int32)(unsafe.Add(mBase, uint32(v8)+16)) = l0 + int32(8)
 					if v27&int32(2) != 0 {
-						v36 = int32(_a268)
+						v36 = int32(_a_F_clearNodeFailureIfNeeded_3)
 					} else {
-						v36 = int32(_a269)
+						v36 = int32(_a_F_clearNodeFailureIfNeeded_4)
 					}
 					*(*int32)(unsafe.Add(mBase, uint32(v8)+24)) = v36
-					F__serverLog(m, int32(2), int32(_a270), v8+int32(16))
+					F__serverLog(m, int32(2), int32(_a_F_clearNodeFailureIfNeeded_5), v8+int32(16))
 					mBase = m.M
 					v43 = m.ExcPending
 					if v43 != 0 {
@@ -1156,7 +1156,7 @@ func F_clearNodeFailureIfNeeded(m *base.Module, l0 int32) {
 						v45 = v44
 						*(*int32)(unsafe.Add(mBase, uint32(l0)+88)) = v45 & int32(-9)
 						v50 = int32(0)
-						v51 = *(*int32)(unsafe.Add(mBase, _consts[154]))
+						v51 = *(*int32)(unsafe.Add(mBase, _c_F_clearNodeFailureIfNeeded[1]))
 						v52 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v51)+88)))
 						if v52&int32(2) == v50 {
 						} else {
@@ -1172,9 +1172,9 @@ func F_clearNodeFailureIfNeeded(m *base.Module, l0 int32) {
 						if v63 != 0 {
 							return
 						} else {
-							v65 = *(*int32)(unsafe.Add(mBase, _consts[136]))
-							v66 = *(*int32)(unsafe.Add(mBase, uint32(v65)+uint32(_consts[150])))
-							*(*int32)(unsafe.Add(mBase, uint32(v65)+uint32(_consts[150]))) = v66 | int32(6)
+							v65 = *(*int32)(unsafe.Add(mBase, _c_F_clearNodeFailureIfNeeded[2]))
+							v66 = *(*int32)(unsafe.Add(mBase, uint32(v65)+uint32(_c_F_clearNodeFailureIfNeeded[3])))
+							*(*int32)(unsafe.Add(mBase, uint32(v65)+uint32(_c_F_clearNodeFailureIfNeeded[3]))) = v66 | int32(6)
 							v70 = *(*int32)(unsafe.Add(mBase, uint32(l0)+88))
 							if v70&int32(1) == int32(0) {
 								m.G0 = v8 + int32(32)
@@ -1187,17 +1187,17 @@ func F_clearNodeFailureIfNeeded(m *base.Module, l0 int32) {
 									return
 								} else {
 									v80 = *(*int64)(unsafe.Add(mBase, uint32(l0)+2216))
-									v83 = *(*int64)(unsafe.Add(mBase, _consts[164]))
+									v83 = *(*int64)(unsafe.Add(mBase, _c_F_clearNodeFailureIfNeeded[4]))
 									if v10-v80 <= v83<<(uint(int64(1))%64) {
 										m.G0 = v8 + int32(32)
 										return
 									} else {
-										v88 = *(*int32)(unsafe.Add(mBase, _consts[6]))
+										v88 = *(*int32)(unsafe.Add(mBase, _c_F_clearNodeFailureIfNeeded[0]))
 										if int32(2) < v88 {
 											v102 = v75
 											*(*int32)(unsafe.Add(mBase, uint32(l0)+88)) = v102 & int32(-9)
 											v106 = int32(0)
-											v107 = *(*int32)(unsafe.Add(mBase, _consts[154]))
+											v107 = *(*int32)(unsafe.Add(mBase, _c_F_clearNodeFailureIfNeeded[1]))
 											v108 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v107)+88)))
 											if v108&int32(2) == v106 {
 											} else {
@@ -1213,9 +1213,9 @@ func F_clearNodeFailureIfNeeded(m *base.Module, l0 int32) {
 											if v119 != 0 {
 												return
 											} else {
-												v121 = *(*int32)(unsafe.Add(mBase, _consts[136]))
-												v122 = *(*int32)(unsafe.Add(mBase, uint32(v121)+uint32(_consts[150])))
-												*(*int32)(unsafe.Add(mBase, uint32(v121)+uint32(_consts[150]))) = v122 | int32(6)
+												v121 = *(*int32)(unsafe.Add(mBase, _c_F_clearNodeFailureIfNeeded[2]))
+												v122 = *(*int32)(unsafe.Add(mBase, uint32(v121)+uint32(_c_F_clearNodeFailureIfNeeded[3])))
+												*(*int32)(unsafe.Add(mBase, uint32(v121)+uint32(_c_F_clearNodeFailureIfNeeded[3]))) = v122 | int32(6)
 												m.G0 = v8 + int32(32)
 												return
 											}
@@ -1228,7 +1228,7 @@ func F_clearNodeFailureIfNeeded(m *base.Module, l0 int32) {
 											} else {
 												*(*int32)(unsafe.Add(mBase, uint32(v8)+4)) = v91
 												*(*int32)(unsafe.Add(mBase, uint32(v8))) = l0 + int32(8)
-												F__serverLog(m, int32(2), int32(_a267), v8)
+												F__serverLog(m, int32(2), int32(_a_F_clearNodeFailureIfNeeded_2), v8)
 												mBase = m.M
 												v100 = m.ExcPending
 												if v100 != 0 {
@@ -1238,7 +1238,7 @@ func F_clearNodeFailureIfNeeded(m *base.Module, l0 int32) {
 													v102 = v101
 													*(*int32)(unsafe.Add(mBase, uint32(l0)+88)) = v102 & int32(-9)
 													v106 = int32(0)
-													v107 = *(*int32)(unsafe.Add(mBase, _consts[154]))
+													v107 = *(*int32)(unsafe.Add(mBase, _c_F_clearNodeFailureIfNeeded[1]))
 													v108 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v107)+88)))
 													if v108&int32(2) == v106 {
 													} else {
@@ -1254,9 +1254,9 @@ func F_clearNodeFailureIfNeeded(m *base.Module, l0 int32) {
 													if v119 != 0 {
 														return
 													} else {
-														v121 = *(*int32)(unsafe.Add(mBase, _consts[136]))
-														v122 = *(*int32)(unsafe.Add(mBase, uint32(v121)+uint32(_consts[150])))
-														*(*int32)(unsafe.Add(mBase, uint32(v121)+uint32(_consts[150]))) = v122 | int32(6)
+														v121 = *(*int32)(unsafe.Add(mBase, _c_F_clearNodeFailureIfNeeded[2]))
+														v122 = *(*int32)(unsafe.Add(mBase, uint32(v121)+uint32(_c_F_clearNodeFailureIfNeeded[3])))
+														*(*int32)(unsafe.Add(mBase, uint32(v121)+uint32(_c_F_clearNodeFailureIfNeeded[3]))) = v122 | int32(6)
 														m.G0 = v8 + int32(32)
 														return
 													}
@@ -1280,17 +1280,17 @@ func F_clearNodeFailureIfNeeded(m *base.Module, l0 int32) {
 					return
 				} else {
 					v80 = *(*int64)(unsafe.Add(mBase, uint32(l0)+2216))
-					v83 = *(*int64)(unsafe.Add(mBase, _consts[164]))
+					v83 = *(*int64)(unsafe.Add(mBase, _c_F_clearNodeFailureIfNeeded[4]))
 					if v10-v80 <= v83<<(uint(int64(1))%64) {
 						m.G0 = v8 + int32(32)
 						return
 					} else {
-						v88 = *(*int32)(unsafe.Add(mBase, _consts[6]))
+						v88 = *(*int32)(unsafe.Add(mBase, _c_F_clearNodeFailureIfNeeded[0]))
 						if int32(2) < v88 {
 							v102 = v75
 							*(*int32)(unsafe.Add(mBase, uint32(l0)+88)) = v102 & int32(-9)
 							v106 = int32(0)
-							v107 = *(*int32)(unsafe.Add(mBase, _consts[154]))
+							v107 = *(*int32)(unsafe.Add(mBase, _c_F_clearNodeFailureIfNeeded[1]))
 							v108 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v107)+88)))
 							if v108&int32(2) == v106 {
 							} else {
@@ -1306,9 +1306,9 @@ func F_clearNodeFailureIfNeeded(m *base.Module, l0 int32) {
 							if v119 != 0 {
 								return
 							} else {
-								v121 = *(*int32)(unsafe.Add(mBase, _consts[136]))
-								v122 = *(*int32)(unsafe.Add(mBase, uint32(v121)+uint32(_consts[150])))
-								*(*int32)(unsafe.Add(mBase, uint32(v121)+uint32(_consts[150]))) = v122 | int32(6)
+								v121 = *(*int32)(unsafe.Add(mBase, _c_F_clearNodeFailureIfNeeded[2]))
+								v122 = *(*int32)(unsafe.Add(mBase, uint32(v121)+uint32(_c_F_clearNodeFailureIfNeeded[3])))
+								*(*int32)(unsafe.Add(mBase, uint32(v121)+uint32(_c_F_clearNodeFailureIfNeeded[3]))) = v122 | int32(6)
 								m.G0 = v8 + int32(32)
 								return
 							}
@@ -1321,7 +1321,7 @@ func F_clearNodeFailureIfNeeded(m *base.Module, l0 int32) {
 							} else {
 								*(*int32)(unsafe.Add(mBase, uint32(v8)+4)) = v91
 								*(*int32)(unsafe.Add(mBase, uint32(v8))) = l0 + int32(8)
-								F__serverLog(m, int32(2), int32(_a267), v8)
+								F__serverLog(m, int32(2), int32(_a_F_clearNodeFailureIfNeeded_2), v8)
 								mBase = m.M
 								v100 = m.ExcPending
 								if v100 != 0 {
@@ -1331,7 +1331,7 @@ func F_clearNodeFailureIfNeeded(m *base.Module, l0 int32) {
 									v102 = v101
 									*(*int32)(unsafe.Add(mBase, uint32(l0)+88)) = v102 & int32(-9)
 									v106 = int32(0)
-									v107 = *(*int32)(unsafe.Add(mBase, _consts[154]))
+									v107 = *(*int32)(unsafe.Add(mBase, _c_F_clearNodeFailureIfNeeded[1]))
 									v108 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v107)+88)))
 									if v108&int32(2) == v106 {
 									} else {
@@ -1347,9 +1347,9 @@ func F_clearNodeFailureIfNeeded(m *base.Module, l0 int32) {
 									if v119 != 0 {
 										return
 									} else {
-										v121 = *(*int32)(unsafe.Add(mBase, _consts[136]))
-										v122 = *(*int32)(unsafe.Add(mBase, uint32(v121)+uint32(_consts[150])))
-										*(*int32)(unsafe.Add(mBase, uint32(v121)+uint32(_consts[150]))) = v122 | int32(6)
+										v121 = *(*int32)(unsafe.Add(mBase, _c_F_clearNodeFailureIfNeeded[2]))
+										v122 = *(*int32)(unsafe.Add(mBase, uint32(v121)+uint32(_c_F_clearNodeFailureIfNeeded[3])))
+										*(*int32)(unsafe.Add(mBase, uint32(v121)+uint32(_c_F_clearNodeFailureIfNeeded[3]))) = v122 | int32(6)
 										m.G0 = v8 + int32(32)
 										return
 									}
@@ -1359,12 +1359,12 @@ func F_clearNodeFailureIfNeeded(m *base.Module, l0 int32) {
 					}
 				}
 			} else {
-				v22 = *(*int32)(unsafe.Add(mBase, _consts[6]))
+				v22 = *(*int32)(unsafe.Add(mBase, _c_F_clearNodeFailureIfNeeded[0]))
 				if int32(2) < v22 {
 					v45 = v11
 					*(*int32)(unsafe.Add(mBase, uint32(l0)+88)) = v45 & int32(-9)
 					v50 = int32(0)
-					v51 = *(*int32)(unsafe.Add(mBase, _consts[154]))
+					v51 = *(*int32)(unsafe.Add(mBase, _c_F_clearNodeFailureIfNeeded[1]))
 					v52 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v51)+88)))
 					if v52&int32(2) == v50 {
 					} else {
@@ -1380,9 +1380,9 @@ func F_clearNodeFailureIfNeeded(m *base.Module, l0 int32) {
 					if v63 != 0 {
 						return
 					} else {
-						v65 = *(*int32)(unsafe.Add(mBase, _consts[136]))
-						v66 = *(*int32)(unsafe.Add(mBase, uint32(v65)+uint32(_consts[150])))
-						*(*int32)(unsafe.Add(mBase, uint32(v65)+uint32(_consts[150]))) = v66 | int32(6)
+						v65 = *(*int32)(unsafe.Add(mBase, _c_F_clearNodeFailureIfNeeded[2]))
+						v66 = *(*int32)(unsafe.Add(mBase, uint32(v65)+uint32(_c_F_clearNodeFailureIfNeeded[3])))
+						*(*int32)(unsafe.Add(mBase, uint32(v65)+uint32(_c_F_clearNodeFailureIfNeeded[3]))) = v66 | int32(6)
 						v70 = *(*int32)(unsafe.Add(mBase, uint32(l0)+88))
 						if v70&int32(1) == int32(0) {
 							m.G0 = v8 + int32(32)
@@ -1395,17 +1395,17 @@ func F_clearNodeFailureIfNeeded(m *base.Module, l0 int32) {
 								return
 							} else {
 								v80 = *(*int64)(unsafe.Add(mBase, uint32(l0)+2216))
-								v83 = *(*int64)(unsafe.Add(mBase, _consts[164]))
+								v83 = *(*int64)(unsafe.Add(mBase, _c_F_clearNodeFailureIfNeeded[4]))
 								if v10-v80 <= v83<<(uint(int64(1))%64) {
 									m.G0 = v8 + int32(32)
 									return
 								} else {
-									v88 = *(*int32)(unsafe.Add(mBase, _consts[6]))
+									v88 = *(*int32)(unsafe.Add(mBase, _c_F_clearNodeFailureIfNeeded[0]))
 									if int32(2) < v88 {
 										v102 = v75
 										*(*int32)(unsafe.Add(mBase, uint32(l0)+88)) = v102 & int32(-9)
 										v106 = int32(0)
-										v107 = *(*int32)(unsafe.Add(mBase, _consts[154]))
+										v107 = *(*int32)(unsafe.Add(mBase, _c_F_clearNodeFailureIfNeeded[1]))
 										v108 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v107)+88)))
 										if v108&int32(2) == v106 {
 										} else {
@@ -1421,9 +1421,9 @@ func F_clearNodeFailureIfNeeded(m *base.Module, l0 int32) {
 										if v119 != 0 {
 											return
 										} else {
-											v121 = *(*int32)(unsafe.Add(mBase, _consts[136]))
-											v122 = *(*int32)(unsafe.Add(mBase, uint32(v121)+uint32(_consts[150])))
-											*(*int32)(unsafe.Add(mBase, uint32(v121)+uint32(_consts[150]))) = v122 | int32(6)
+											v121 = *(*int32)(unsafe.Add(mBase, _c_F_clearNodeFailureIfNeeded[2]))
+											v122 = *(*int32)(unsafe.Add(mBase, uint32(v121)+uint32(_c_F_clearNodeFailureIfNeeded[3])))
+											*(*int32)(unsafe.Add(mBase, uint32(v121)+uint32(_c_F_clearNodeFailureIfNeeded[3]))) = v122 | int32(6)
 											m.G0 = v8 + int32(32)
 											return
 										}
@@ -1436,7 +1436,7 @@ func F_clearNodeFailureIfNeeded(m *base.Module, l0 int32) {
 										} else {
 											*(*int32)(unsafe.Add(mBase, uint32(v8)+4)) = v91
 											*(*int32)(unsafe.Add(mBase, uint32(v8))) = l0 + int32(8)
-											F__serverLog(m, int32(2), int32(_a267), v8)
+											F__serverLog(m, int32(2), int32(_a_F_clearNodeFailureIfNeeded_2), v8)
 											mBase = m.M
 											v100 = m.ExcPending
 											if v100 != 0 {
@@ -1446,7 +1446,7 @@ func F_clearNodeFailureIfNeeded(m *base.Module, l0 int32) {
 												v102 = v101
 												*(*int32)(unsafe.Add(mBase, uint32(l0)+88)) = v102 & int32(-9)
 												v106 = int32(0)
-												v107 = *(*int32)(unsafe.Add(mBase, _consts[154]))
+												v107 = *(*int32)(unsafe.Add(mBase, _c_F_clearNodeFailureIfNeeded[1]))
 												v108 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v107)+88)))
 												if v108&int32(2) == v106 {
 												} else {
@@ -1462,9 +1462,9 @@ func F_clearNodeFailureIfNeeded(m *base.Module, l0 int32) {
 												if v119 != 0 {
 													return
 												} else {
-													v121 = *(*int32)(unsafe.Add(mBase, _consts[136]))
-													v122 = *(*int32)(unsafe.Add(mBase, uint32(v121)+uint32(_consts[150])))
-													*(*int32)(unsafe.Add(mBase, uint32(v121)+uint32(_consts[150]))) = v122 | int32(6)
+													v121 = *(*int32)(unsafe.Add(mBase, _c_F_clearNodeFailureIfNeeded[2]))
+													v122 = *(*int32)(unsafe.Add(mBase, uint32(v121)+uint32(_c_F_clearNodeFailureIfNeeded[3])))
+													*(*int32)(unsafe.Add(mBase, uint32(v121)+uint32(_c_F_clearNodeFailureIfNeeded[3]))) = v122 | int32(6)
 													m.G0 = v8 + int32(32)
 													return
 												}
@@ -1486,12 +1486,12 @@ func F_clearNodeFailureIfNeeded(m *base.Module, l0 int32) {
 						*(*int32)(unsafe.Add(mBase, uint32(v8)+20)) = v25
 						*(*int32)(unsafe.Add(mBase, uint32(v8)+16)) = l0 + int32(8)
 						if v27&int32(2) != 0 {
-							v36 = int32(_a268)
+							v36 = int32(_a_F_clearNodeFailureIfNeeded_3)
 						} else {
-							v36 = int32(_a269)
+							v36 = int32(_a_F_clearNodeFailureIfNeeded_4)
 						}
 						*(*int32)(unsafe.Add(mBase, uint32(v8)+24)) = v36
-						F__serverLog(m, int32(2), int32(_a270), v8+int32(16))
+						F__serverLog(m, int32(2), int32(_a_F_clearNodeFailureIfNeeded_5), v8+int32(16))
 						mBase = m.M
 						v43 = m.ExcPending
 						if v43 != 0 {
@@ -1501,7 +1501,7 @@ func F_clearNodeFailureIfNeeded(m *base.Module, l0 int32) {
 							v45 = v44
 							*(*int32)(unsafe.Add(mBase, uint32(l0)+88)) = v45 & int32(-9)
 							v50 = int32(0)
-							v51 = *(*int32)(unsafe.Add(mBase, _consts[154]))
+							v51 = *(*int32)(unsafe.Add(mBase, _c_F_clearNodeFailureIfNeeded[1]))
 							v52 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v51)+88)))
 							if v52&int32(2) == v50 {
 							} else {
@@ -1517,9 +1517,9 @@ func F_clearNodeFailureIfNeeded(m *base.Module, l0 int32) {
 							if v63 != 0 {
 								return
 							} else {
-								v65 = *(*int32)(unsafe.Add(mBase, _consts[136]))
-								v66 = *(*int32)(unsafe.Add(mBase, uint32(v65)+uint32(_consts[150])))
-								*(*int32)(unsafe.Add(mBase, uint32(v65)+uint32(_consts[150]))) = v66 | int32(6)
+								v65 = *(*int32)(unsafe.Add(mBase, _c_F_clearNodeFailureIfNeeded[2]))
+								v66 = *(*int32)(unsafe.Add(mBase, uint32(v65)+uint32(_c_F_clearNodeFailureIfNeeded[3])))
+								*(*int32)(unsafe.Add(mBase, uint32(v65)+uint32(_c_F_clearNodeFailureIfNeeded[3]))) = v66 | int32(6)
 								v70 = *(*int32)(unsafe.Add(mBase, uint32(l0)+88))
 								if v70&int32(1) == int32(0) {
 									m.G0 = v8 + int32(32)
@@ -1532,17 +1532,17 @@ func F_clearNodeFailureIfNeeded(m *base.Module, l0 int32) {
 										return
 									} else {
 										v80 = *(*int64)(unsafe.Add(mBase, uint32(l0)+2216))
-										v83 = *(*int64)(unsafe.Add(mBase, _consts[164]))
+										v83 = *(*int64)(unsafe.Add(mBase, _c_F_clearNodeFailureIfNeeded[4]))
 										if v10-v80 <= v83<<(uint(int64(1))%64) {
 											m.G0 = v8 + int32(32)
 											return
 										} else {
-											v88 = *(*int32)(unsafe.Add(mBase, _consts[6]))
+											v88 = *(*int32)(unsafe.Add(mBase, _c_F_clearNodeFailureIfNeeded[0]))
 											if int32(2) < v88 {
 												v102 = v75
 												*(*int32)(unsafe.Add(mBase, uint32(l0)+88)) = v102 & int32(-9)
 												v106 = int32(0)
-												v107 = *(*int32)(unsafe.Add(mBase, _consts[154]))
+												v107 = *(*int32)(unsafe.Add(mBase, _c_F_clearNodeFailureIfNeeded[1]))
 												v108 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v107)+88)))
 												if v108&int32(2) == v106 {
 												} else {
@@ -1558,9 +1558,9 @@ func F_clearNodeFailureIfNeeded(m *base.Module, l0 int32) {
 												if v119 != 0 {
 													return
 												} else {
-													v121 = *(*int32)(unsafe.Add(mBase, _consts[136]))
-													v122 = *(*int32)(unsafe.Add(mBase, uint32(v121)+uint32(_consts[150])))
-													*(*int32)(unsafe.Add(mBase, uint32(v121)+uint32(_consts[150]))) = v122 | int32(6)
+													v121 = *(*int32)(unsafe.Add(mBase, _c_F_clearNodeFailureIfNeeded[2]))
+													v122 = *(*int32)(unsafe.Add(mBase, uint32(v121)+uint32(_c_F_clearNodeFailureIfNeeded[3])))
+													*(*int32)(unsafe.Add(mBase, uint32(v121)+uint32(_c_F_clearNodeFailureIfNeeded[3]))) = v122 | int32(6)
 													m.G0 = v8 + int32(32)
 													return
 												}
@@ -1573,7 +1573,7 @@ func F_clearNodeFailureIfNeeded(m *base.Module, l0 int32) {
 												} else {
 													*(*int32)(unsafe.Add(mBase, uint32(v8)+4)) = v91
 													*(*int32)(unsafe.Add(mBase, uint32(v8))) = l0 + int32(8)
-													F__serverLog(m, int32(2), int32(_a267), v8)
+													F__serverLog(m, int32(2), int32(_a_F_clearNodeFailureIfNeeded_2), v8)
 													mBase = m.M
 													v100 = m.ExcPending
 													if v100 != 0 {
@@ -1583,7 +1583,7 @@ func F_clearNodeFailureIfNeeded(m *base.Module, l0 int32) {
 														v102 = v101
 														*(*int32)(unsafe.Add(mBase, uint32(l0)+88)) = v102 & int32(-9)
 														v106 = int32(0)
-														v107 = *(*int32)(unsafe.Add(mBase, _consts[154]))
+														v107 = *(*int32)(unsafe.Add(mBase, _c_F_clearNodeFailureIfNeeded[1]))
 														v108 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v107)+88)))
 														if v108&int32(2) == v106 {
 														} else {
@@ -1599,9 +1599,9 @@ func F_clearNodeFailureIfNeeded(m *base.Module, l0 int32) {
 														if v119 != 0 {
 															return
 														} else {
-															v121 = *(*int32)(unsafe.Add(mBase, _consts[136]))
-															v122 = *(*int32)(unsafe.Add(mBase, uint32(v121)+uint32(_consts[150])))
-															*(*int32)(unsafe.Add(mBase, uint32(v121)+uint32(_consts[150]))) = v122 | int32(6)
+															v121 = *(*int32)(unsafe.Add(mBase, _c_F_clearNodeFailureIfNeeded[2]))
+															v122 = *(*int32)(unsafe.Add(mBase, uint32(v121)+uint32(_c_F_clearNodeFailureIfNeeded[3])))
+															*(*int32)(unsafe.Add(mBase, uint32(v121)+uint32(_c_F_clearNodeFailureIfNeeded[3]))) = v122 | int32(6)
 															m.G0 = v8 + int32(32)
 															return
 														}
@@ -1626,7 +1626,7 @@ func F_getNodeBySlot(m *base.Module, l0 int32) int32 {
 	_ = v3
 	var v9 int32
 	_ = v9
-	v3 = *(*int32)(unsafe.Add(mBase, _consts[136]))
+	v3 = *(*int32)(unsafe.Add(mBase, _c_F_getNodeBySlot[0]))
 	v9 = *(*int32)(unsafe.Add(mBase, uint32(v3+l0<<(uint(int32(2))%32)+int32(52))))
 	return v9
 }
@@ -1639,7 +1639,7 @@ func F_getNodeDefaultReplicationPort(m *base.Module, l0 int32) int32 {
 	_ = v6
 	var v8 int32
 	_ = v8
-	v5 = *(*int32)(unsafe.Add(mBase, _consts[149]))
+	v5 = *(*int32)(unsafe.Add(mBase, _c_F_getNodeDefaultReplicationPort[0]))
 	if v5 != 0 {
 		v6 = int32(2328)
 	} else {
@@ -1746,7 +1746,7 @@ func F_markNodeAsFailingIfNeeded(m *base.Module, l0 int32) {
 	v6 = m.G0
 	v8 = v6 - int32(16)
 	m.G0 = v8
-	v11 = *(*int32)(unsafe.Add(mBase, _consts[136]))
+	v11 = *(*int32)(unsafe.Add(mBase, _c_F_markNodeAsFailingIfNeeded[0]))
 	v12 = *(*int32)(unsafe.Add(mBase, uint32(v11)+28))
 	v14 = base.I32_div_s(v12, int32(2))
 	v15 = *(*int32)(unsafe.Add(mBase, uint32(l0)+88))
@@ -1764,7 +1764,7 @@ func F_markNodeAsFailingIfNeeded(m *base.Module, l0 int32) {
 			v23 = *(*int64)(unsafe.Add(mBase, uint32(v22)+8))
 			v24 = base.I32_wrap_i64(v23)
 			v25 = int32(0)
-			v26 = *(*int32)(unsafe.Add(mBase, _consts[154]))
+			v26 = *(*int32)(unsafe.Add(mBase, _c_F_markNodeAsFailingIfNeeded[1]))
 			v27 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v26)+88)))
 			if v27&int32(1) == v25 {
 				v37 = v24
@@ -1780,7 +1780,7 @@ func F_markNodeAsFailingIfNeeded(m *base.Module, l0 int32) {
 				m.G0 = v8 + int32(16)
 				return
 			} else {
-				v40 = *(*int32)(unsafe.Add(mBase, _consts[6]))
+				v40 = *(*int32)(unsafe.Add(mBase, _c_F_markNodeAsFailingIfNeeded[2]))
 				if int32(2) < v40 {
 					v53 = *(*int32)(unsafe.Add(mBase, uint32(l0)+88))
 					*(*int32)(unsafe.Add(mBase, uint32(l0)+88)) = v53 | int32(8)
@@ -1790,7 +1790,7 @@ func F_markNodeAsFailingIfNeeded(m *base.Module, l0 int32) {
 					v59 = *(*int32)(unsafe.Add(mBase, uint32(l0)+88))
 					*(*int32)(unsafe.Add(mBase, uint32(l0)+88)) = v59 & int32(-5)
 					v63 = int32(0)
-					v64 = *(*int32)(unsafe.Add(mBase, _consts[154]))
+					v64 = *(*int32)(unsafe.Add(mBase, _c_F_markNodeAsFailingIfNeeded[1]))
 					v65 = *(*int32)(unsafe.Add(mBase, uint32(v64)+88))
 					if v65&int32(2) == v63 {
 					} else {
@@ -1798,9 +1798,9 @@ func F_markNodeAsFailingIfNeeded(m *base.Module, l0 int32) {
 						if v70 != l0 {
 						} else {
 							*(*int32)(unsafe.Add(mBase, uint32(v64)+88)) = v65 | int32(8192)
-							v76 = *(*int32)(unsafe.Add(mBase, _consts[136]))
-							v77 = *(*int32)(unsafe.Add(mBase, uint32(v76)+uint32(_consts[150])))
-							*(*int32)(unsafe.Add(mBase, uint32(v76)+uint32(_consts[150]))) = v77 | int32(1)
+							v76 = *(*int32)(unsafe.Add(mBase, _c_F_markNodeAsFailingIfNeeded[0]))
+							v77 = *(*int32)(unsafe.Add(mBase, uint32(v76)+uint32(_c_F_markNodeAsFailingIfNeeded[3])))
+							*(*int32)(unsafe.Add(mBase, uint32(v76)+uint32(_c_F_markNodeAsFailingIfNeeded[3]))) = v77 | int32(1)
 						}
 					}
 					F_clearCachedClusterSlotsResponse(m)
@@ -1809,9 +1809,9 @@ func F_markNodeAsFailingIfNeeded(m *base.Module, l0 int32) {
 					if v83 != 0 {
 						return
 					} else {
-						v85 = *(*int32)(unsafe.Add(mBase, _consts[136]))
-						v86 = *(*int32)(unsafe.Add(mBase, uint32(v85)+uint32(_consts[150])))
-						*(*int32)(unsafe.Add(mBase, uint32(v85)+uint32(_consts[150]))) = v86 | int32(6)
+						v85 = *(*int32)(unsafe.Add(mBase, _c_F_markNodeAsFailingIfNeeded[0]))
+						v86 = *(*int32)(unsafe.Add(mBase, uint32(v85)+uint32(_c_F_markNodeAsFailingIfNeeded[3])))
+						*(*int32)(unsafe.Add(mBase, uint32(v85)+uint32(_c_F_markNodeAsFailingIfNeeded[3]))) = v86 | int32(6)
 						v92 = F_createClusterMsgSendBlock(m, int32(3), int32(2296))
 						mBase = m.M
 						v93 = m.ExcPending
@@ -1838,7 +1838,7 @@ func F_markNodeAsFailingIfNeeded(m *base.Module, l0 int32) {
 								v124 = v122 + int32(-1)
 								*(*int32)(unsafe.Add(mBase, uint32(v92)+4)) = v124
 								if v122 <= int32(0) {
-									F__serverAssert(m, int32(_a264), int32(_a253), int32(1756))
+									F__serverAssert(m, int32(_a_F_markNodeAsFailingIfNeeded_0), int32(_a_F_markNodeAsFailingIfNeeded_1), int32(1756))
 									mBase = m.M
 									v147 = m.ExcPending
 									if v147 != 0 {
@@ -1855,10 +1855,10 @@ func F_markNodeAsFailingIfNeeded(m *base.Module, l0 int32) {
 										m.G0 = v8 + int32(16)
 										return
 									} else {
-										v128 = int32(_a44)
-										v130 = *(*int32)(unsafe.Add(mBase, _consts[163]))
+										v128 = int32(_a_F_markNodeAsFailingIfNeeded_2)
+										v130 = *(*int32)(unsafe.Add(mBase, _c_F_markNodeAsFailingIfNeeded[4]))
 										v131 = *(*int32)(unsafe.Add(mBase, uint32(v92)))
-										*(*int32)(unsafe.Add(mBase, _consts[163])) = v130 - v131
+										*(*int32)(unsafe.Add(mBase, _c_F_markNodeAsFailingIfNeeded[4])) = v130 - v131
 										F_valkey_free(m, v92)
 										mBase = m.M
 										v135 = m.ExcPending
@@ -1882,7 +1882,7 @@ func F_markNodeAsFailingIfNeeded(m *base.Module, l0 int32) {
 					} else {
 						*(*int32)(unsafe.Add(mBase, uint32(v8)+4)) = v43
 						*(*int32)(unsafe.Add(mBase, uint32(v8))) = l0 + int32(8)
-						F__serverLog(m, int32(2), int32(_a265), v8)
+						F__serverLog(m, int32(2), int32(_a_F_markNodeAsFailingIfNeeded_3), v8)
 						mBase = m.M
 						v52 = m.ExcPending
 						if v52 != 0 {
@@ -1896,7 +1896,7 @@ func F_markNodeAsFailingIfNeeded(m *base.Module, l0 int32) {
 							v59 = *(*int32)(unsafe.Add(mBase, uint32(l0)+88))
 							*(*int32)(unsafe.Add(mBase, uint32(l0)+88)) = v59 & int32(-5)
 							v63 = int32(0)
-							v64 = *(*int32)(unsafe.Add(mBase, _consts[154]))
+							v64 = *(*int32)(unsafe.Add(mBase, _c_F_markNodeAsFailingIfNeeded[1]))
 							v65 = *(*int32)(unsafe.Add(mBase, uint32(v64)+88))
 							if v65&int32(2) == v63 {
 							} else {
@@ -1904,9 +1904,9 @@ func F_markNodeAsFailingIfNeeded(m *base.Module, l0 int32) {
 								if v70 != l0 {
 								} else {
 									*(*int32)(unsafe.Add(mBase, uint32(v64)+88)) = v65 | int32(8192)
-									v76 = *(*int32)(unsafe.Add(mBase, _consts[136]))
-									v77 = *(*int32)(unsafe.Add(mBase, uint32(v76)+uint32(_consts[150])))
-									*(*int32)(unsafe.Add(mBase, uint32(v76)+uint32(_consts[150]))) = v77 | int32(1)
+									v76 = *(*int32)(unsafe.Add(mBase, _c_F_markNodeAsFailingIfNeeded[0]))
+									v77 = *(*int32)(unsafe.Add(mBase, uint32(v76)+uint32(_c_F_markNodeAsFailingIfNeeded[3])))
+									*(*int32)(unsafe.Add(mBase, uint32(v76)+uint32(_c_F_markNodeAsFailingIfNeeded[3]))) = v77 | int32(1)
 								}
 							}
 							F_clearCachedClusterSlotsResponse(m)
@@ -1915,9 +1915,9 @@ func F_markNodeAsFailingIfNeeded(m *base.Module, l0 int32) {
 							if v83 != 0 {
 								return
 							} else {
-								v85 = *(*int32)(unsafe.Add(mBase, _consts[136]))
-								v86 = *(*int32)(unsafe.Add(mBase, uint32(v85)+uint32(_consts[150])))
-								*(*int32)(unsafe.Add(mBase, uint32(v85)+uint32(_consts[150]))) = v86 | int32(6)
+								v85 = *(*int32)(unsafe.Add(mBase, _c_F_markNodeAsFailingIfNeeded[0]))
+								v86 = *(*int32)(unsafe.Add(mBase, uint32(v85)+uint32(_c_F_markNodeAsFailingIfNeeded[3])))
+								*(*int32)(unsafe.Add(mBase, uint32(v85)+uint32(_c_F_markNodeAsFailingIfNeeded[3]))) = v86 | int32(6)
 								v92 = F_createClusterMsgSendBlock(m, int32(3), int32(2296))
 								mBase = m.M
 								v93 = m.ExcPending
@@ -1944,7 +1944,7 @@ func F_markNodeAsFailingIfNeeded(m *base.Module, l0 int32) {
 										v124 = v122 + int32(-1)
 										*(*int32)(unsafe.Add(mBase, uint32(v92)+4)) = v124
 										if v122 <= int32(0) {
-											F__serverAssert(m, int32(_a264), int32(_a253), int32(1756))
+											F__serverAssert(m, int32(_a_F_markNodeAsFailingIfNeeded_0), int32(_a_F_markNodeAsFailingIfNeeded_1), int32(1756))
 											mBase = m.M
 											v147 = m.ExcPending
 											if v147 != 0 {
@@ -1961,10 +1961,10 @@ func F_markNodeAsFailingIfNeeded(m *base.Module, l0 int32) {
 												m.G0 = v8 + int32(16)
 												return
 											} else {
-												v128 = int32(_a44)
-												v130 = *(*int32)(unsafe.Add(mBase, _consts[163]))
+												v128 = int32(_a_F_markNodeAsFailingIfNeeded_2)
+												v130 = *(*int32)(unsafe.Add(mBase, _c_F_markNodeAsFailingIfNeeded[4]))
 												v131 = *(*int32)(unsafe.Add(mBase, uint32(v92)))
-												*(*int32)(unsafe.Add(mBase, _consts[163])) = v130 - v131
+												*(*int32)(unsafe.Add(mBase, _c_F_markNodeAsFailingIfNeeded[4])) = v130 - v131
 												F_valkey_free(m, v92)
 												mBase = m.M
 												v135 = m.ExcPending
@@ -2159,7 +2159,7 @@ func F_nodeUpdateAddressIfNeeded(m *base.Module, l0 int32, l1 int32, l2 int32) i
 	goto L1
 L1:
 	;
-	v39 = *(*int32)(unsafe.Add(mBase, _consts[165]))
+	v39 = *(*int32)(unsafe.Add(mBase, _c_F_nodeUpdateAddressIfNeeded[0]))
 	if v39 != 0 {
 		goto L2
 	} else {
@@ -2257,7 +2257,7 @@ L14:
 	goto L12
 L15:
 	;
-	v118 = *(*int32)(unsafe.Add(mBase, _consts[6]))
+	v118 = *(*int32)(unsafe.Add(mBase, _c_F_nodeUpdateAddressIfNeeded[1]))
 	if int32(2) < v118 {
 		v273 = v50
 		goto L10
@@ -2307,7 +2307,7 @@ L21:
 L22:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v12))) = v127
-	F__serverLog(m, int32(2), int32(_a282), v12)
+	F__serverLog(m, int32(2), int32(_a_F_nodeUpdateAddressIfNeeded_0), v12)
 	mBase = m.M
 	v132 = m.ExcPending
 	if v132 != 0 {
@@ -2329,7 +2329,7 @@ L23:
 	}
 L24:
 	;
-	v127 = int32(_a283)
+	v127 = int32(_a_F_nodeUpdateAddressIfNeeded_1)
 	goto L22
 L25:
 	;
@@ -2453,7 +2453,7 @@ L40:
 	v217 = l0 + int32(2256)
 	v218 = *(*int32)(unsafe.Add(mBase, uint32(l0)+88))
 	*(*int32)(unsafe.Add(mBase, uint32(l0)+88)) = v218 & int32(-65)
-	v223 = *(*int32)(unsafe.Add(mBase, _consts[6]))
+	v223 = *(*int32)(unsafe.Add(mBase, _c_F_nodeUpdateAddressIfNeeded[1]))
 	if int32(2) < v223 {
 		goto L43
 	} else {
@@ -2476,7 +2476,7 @@ L43:
 	;
 	v249 = int32(1)
 	v250 = int32(0)
-	v251 = *(*int32)(unsafe.Add(mBase, _consts[154]))
+	v251 = *(*int32)(unsafe.Add(mBase, _c_F_nodeUpdateAddressIfNeeded[2]))
 	v252 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v251)+88)))
 	if v252&int32(2) == v250 {
 		v273 = v249
@@ -2496,7 +2496,7 @@ L44:
 	}
 L45:
 	;
-	v231 = *(*int32)(unsafe.Add(mBase, _consts[165]))
+	v231 = *(*int32)(unsafe.Add(mBase, _c_F_nodeUpdateAddressIfNeeded[0]))
 	if v231 != 0 {
 		goto L46
 	} else {
@@ -2517,7 +2517,7 @@ L48:
 	*(*int32)(unsafe.Add(mBase, uint32(v12)+20)) = v226
 	*(*int32)(unsafe.Add(mBase, uint32(v12)+24)) = v217
 	*(*int32)(unsafe.Add(mBase, uint32(v12)+28)) = v234
-	F__serverLog(m, int32(2), int32(_a284), v12+int32(16))
+	F__serverLog(m, int32(2), int32(_a_F_nodeUpdateAddressIfNeeded_2), v12+int32(16))
 	mBase = m.M
 	v246 = m.ExcPending
 	if v246 != 0 {
@@ -2539,7 +2539,7 @@ L50:
 	}
 L51:
 	;
-	v262 = *(*int32)(unsafe.Add(mBase, _consts[149]))
+	v262 = *(*int32)(unsafe.Add(mBase, _c_F_nodeUpdateAddressIfNeeded[3]))
 	if v262 != 0 {
 		goto L52
 	} else {

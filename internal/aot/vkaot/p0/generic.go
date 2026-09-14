@@ -67,7 +67,7 @@ func F_generic_reader(m *base.Module, l0 int32, l1 int32, l2 int32) int32 {
 	var v219 int32
 	_ = v219
 	v5 = m.G3
-	F_luaL_checkstack(m, l0, int32(2), v5+int32(_a2302))
+	F_luaL_checkstack(m, l0, int32(2), v5+int32(_a_F_generic_reader_0))
 	mBase = m.M
 	v11 = m.ExcPending
 	if v11 != 0 {
@@ -116,7 +116,7 @@ func F_generic_reader(m *base.Module, l0 int32, l1 int32, l2 int32) int32 {
 				}
 				if v204 == int32(0) {
 					v214 = m.G3
-					v218 = F_luaL_error(m, l0, v214+int32(_a2303), int32(0))
+					v218 = F_luaL_error(m, l0, v214+int32(_a_F_generic_reader_1), int32(0))
 					mBase = m.M
 					v219 = m.ExcPending
 					if v219 != 0 {
@@ -328,7 +328,7 @@ L8:
 	}
 L9:
 	;
-	v22 = *(*int32)(unsafe.Add(mBase, _consts[233]))
+	v22 = *(*int32)(unsafe.Add(mBase, _c_F_pushGenericCommand[0]))
 	F_addReply(m, l0, v22)
 	mBase = m.M
 	v24 = m.ExcPending
@@ -402,9 +402,9 @@ L17:
 	goto L14
 L18:
 	;
-	v64 = int32(_a69)
-	v66 = *(*int64)(unsafe.Add(mBase, _consts[60]))
-	*(*int64)(unsafe.Add(mBase, _consts[60])) = v66 + int64(1)
+	v64 = int32(_a_F_pushGenericCommand_0)
+	v66 = *(*int64)(unsafe.Add(mBase, _c_F_pushGenericCommand[1]))
+	*(*int64)(unsafe.Add(mBase, _c_F_pushGenericCommand[1])) = v66 + int64(1)
 	v71 = v53 + int32(1)
 	v72 = *(*int32)(unsafe.Add(mBase, uint32(l0)+24))
 	if v71 < v72 {
@@ -425,11 +425,11 @@ L20:
 	}
 L21:
 	;
-	v87 = int32(_a1499)
+	v87 = int32(_a_F_pushGenericCommand_1)
 	goto L23
 L22:
 	;
-	v87 = int32(_a1500)
+	v87 = int32(_a_F_pushGenericCommand_2)
 	goto L23
 L23:
 	;

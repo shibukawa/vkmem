@@ -41,7 +41,7 @@ func F_getLongLongFromObjectOrReply(m *base.Module, l0 int32, l1 int32, l2 int32
 			return v30
 		} else {
 			if l3 == int32(0) {
-				F_addReplyError(m, l0, int32(_a1762))
+				F_addReplyError(m, l0, int32(_a_F_getLongLongFromObjectOrReply_0))
 				mBase = m.M
 				v25 = m.ExcPending
 				if v25 != 0 {

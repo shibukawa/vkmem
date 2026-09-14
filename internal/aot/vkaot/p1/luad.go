@@ -166,7 +166,7 @@ func F_luaD_call(m *base.Module, l0 int32, l1 int32, l2 int32) {
 			}
 		} else {
 			v16 = m.G3
-			F_luaG_runerror(m, l0, v16+int32(_a2660), int32(0))
+			F_luaG_runerror(m, l0, v16+int32(_a_F_luaD_call_0), int32(0))
 			mBase = m.M
 			v21 = m.ExcPending
 			if v21 != 0 {
@@ -929,7 +929,7 @@ L11:
 L12:
 	;
 	v57 = m.G3
-	F_luaG_typeerror(m, l0, l1, v57+int32(_a2658))
+	F_luaG_typeerror(m, l0, l1, v57+int32(_a_F_luaD_precall_0))
 	mBase = m.M
 	v63 = m.ExcPending
 	if v63 != 0 {
@@ -1318,7 +1318,7 @@ L62:
 L63:
 	;
 	v392 = m.G3
-	v396 = F_luaS_newlstr(m, l0, v392+int32(_a2659), int32(1))
+	v396 = F_luaS_newlstr(m, l0, v392+int32(_a_F_luaD_precall_1), int32(1))
 	mBase = m.M
 	v397 = m.ExcPending
 	if v397 != 0 {

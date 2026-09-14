@@ -67,7 +67,7 @@ func F_ValkeyModule_OnUnload_lua(m *base.Module, l0 int32) int32 {
 	v4 = m.G3
 	v7 = m.G380
 	v8 = *(*int32)(unsafe.Add(mBase, uint32(v7)))
-	v9 = m.T0[v8].(func(*base.Module, int32, int32) int32)(m, l0, v4+int32(_a22))
+	v9 = m.T0[v8].(func(*base.Module, int32, int32) int32)(m, l0, v4+int32(_a_F_ValkeyModule_OnUnload_lua_0))
 	mBase = m.M
 	v12 = m.ExcPending
 	if v12 != 0 {
@@ -75,7 +75,7 @@ func F_ValkeyModule_OnUnload_lua(m *base.Module, l0 int32) int32 {
 	} else {
 		if v9 == int32(0) {
 			v27 = m.G3
-			v30 = *(*int32)(unsafe.Add(mBase, uint32(v27)+uint32(_consts[984])))
+			v30 = *(*int32)(unsafe.Add(mBase, uint32(v27)+uint32(_c_F_ValkeyModule_OnUnload_lua[0])))
 			v31 = *(*int32)(unsafe.Add(mBase, uint32(v30)))
 			F_lua_close(m, v31)
 			mBase = m.M
@@ -123,7 +123,7 @@ func F_ValkeyModule_OnUnload_lua(m *base.Module, l0 int32) int32 {
 									return int32(0)
 								} else {
 									v53 = int32(0)
-									*(*int32)(unsafe.Add(mBase, uint32(v27)+uint32(_consts[984]))) = v53
+									*(*int32)(unsafe.Add(mBase, uint32(v27)+uint32(_c_F_ValkeyModule_OnUnload_lua[0]))) = v53
 									return v53
 								}
 							}
@@ -135,7 +135,7 @@ func F_ValkeyModule_OnUnload_lua(m *base.Module, l0 int32) int32 {
 			v15 = m.G3
 			v21 = m.G10
 			v22 = *(*int32)(unsafe.Add(mBase, uint32(v21)))
-			m.T0[v22].(func(*base.Module, int32, int32, int32, int32))(m, l0, v15+int32(_a2620), v15+int32(_a2621), int32(0))
+			m.T0[v22].(func(*base.Module, int32, int32, int32, int32))(m, l0, v15+int32(_a_F_ValkeyModule_OnUnload_lua_1), v15+int32(_a_F_ValkeyModule_OnUnload_lua_2), int32(0))
 			mBase = m.M
 			v24 = m.ExcPending
 			if v24 != 0 {
@@ -263,29 +263,29 @@ func F__vsyslog(m *base.Module, l0 int32, l1 int32, l2 int32) {
 	v11 = v9 - int32(1168)
 	m.G0 = v11
 	v14 = int32(9116376)
-	v15 = *(*int32)(unsafe.Add(mBase, _consts[18]))
-	v17 = *(*int32)(unsafe.Add(mBase, _consts[1060]))
+	v15 = *(*int32)(unsafe.Add(mBase, _c_F__vsyslog[0]))
+	v17 = *(*int32)(unsafe.Add(mBase, _c_F__vsyslog[1]))
 	if int32(-1) < v17 {
 	} else {
 		v20 = int32(0)
 		v25 = F_socket(m, int32(1), int32(524290), v20)
 		mBase = m.M
-		*(*int32)(unsafe.Add(mBase, _consts[1060])) = v25
+		*(*int32)(unsafe.Add(mBase, _c_F__vsyslog[1])) = v25
 		if v25 < v20 {
 		} else {
-			v31 = F_connect(m, v25, int32(_a2772), int32(12))
+			v31 = F_connect(m, v25, int32(_a_F__vsyslog_0), int32(12))
 			mBase = m.M
 		}
 	}
 	v32 = int32(0)
-	v33 = *(*int32)(unsafe.Add(mBase, _consts[1058]))
+	v33 = *(*int32)(unsafe.Add(mBase, _c_F__vsyslog[2]))
 	v35 = F___time(m, v32)
 	mBase = m.M
 	*(*int64)(unsafe.Add(mBase, uint32(v11)+1144)) = v35
 	v40 = v11 + int32(1100)
 	v41 = F___gmtime_r(m, v11+int32(1144), v40)
 	mBase = m.M
-	v49 = F___strftime_l(m, v11+int32(1152), int32(16), int32(_a2773), v40, int32(_a2774))
+	v49 = F___strftime_l(m, v11+int32(1152), int32(16), int32(_a_F__vsyslog_1), v40, int32(_a_F__vsyslog_2))
 	mBase = m.M
 	v50 = m.ExcPending
 	if v50 != 0 {
@@ -297,7 +297,7 @@ func F__vsyslog(m *base.Module, l0 int32, l1 int32, l2 int32) {
 			v54 = v33
 		}
 		v56 = int32(0)
-		v57 = int32(*(*uint8)(unsafe.Add(mBase, _consts[1059])))
+		v57 = int32(*(*uint8)(unsafe.Add(mBase, _c_F__vsyslog[3])))
 		if v57&int32(1) == v56 {
 			v63 = int32(0)
 		} else {
@@ -307,19 +307,19 @@ func F__vsyslog(m *base.Module, l0 int32, l1 int32, l2 int32) {
 		}
 		*(*int32)(unsafe.Add(mBase, uint32(v11+int32(52)))) = v63
 		v70 = base.B2i32(v63 == int32(0))
-		*(*int32)(unsafe.Add(mBase, uint32(v11+int32(56)))) = v70 + int32(_a2775)
-		*(*int32)(unsafe.Add(mBase, uint32(v11+int32(48)))) = v70 + int32(_a2776)
+		*(*int32)(unsafe.Add(mBase, uint32(v11+int32(56)))) = v70 + int32(_a_F__vsyslog_3)
+		*(*int32)(unsafe.Add(mBase, uint32(v11+int32(48)))) = v70 + int32(_a_F__vsyslog_4)
 		*(*int32)(unsafe.Add(mBase, uint32(v11)+44)) = int32(9128384)
 		*(*int32)(unsafe.Add(mBase, uint32(v11)+32)) = v54 | l0
 		*(*int32)(unsafe.Add(mBase, uint32(v11)+40)) = v11 + int32(60)
 		*(*int32)(unsafe.Add(mBase, uint32(v11)+36)) = v11 + int32(1152)
-		v96 = F_snprintf(m, v11+int32(64), int32(1024), int32(_a2777), v11+int32(32))
+		v96 = F_snprintf(m, v11+int32(64), int32(1024), int32(_a_F__vsyslog_5), v11+int32(32))
 		mBase = m.M
 		v97 = m.ExcPending
 		if v97 != 0 {
 			return
 		} else {
-			*(*int32)(unsafe.Add(mBase, _consts[18])) = v15
+			*(*int32)(unsafe.Add(mBase, _c_F__vsyslog[0])) = v15
 			v103 = int32(1024) - v96
 			v104 = F_vsnprintf(m, v96+(v11+int32(64)), v103, l1, l2)
 			mBase = m.M
@@ -345,12 +345,12 @@ func F__vsyslog(m *base.Module, l0 int32, l1 int32, l2 int32) {
 						v127 = v111 + int32(1)
 					}
 					v128 = int32(0)
-					v129 = *(*int32)(unsafe.Add(mBase, _consts[1060]))
+					v129 = *(*int32)(unsafe.Add(mBase, _c_F__vsyslog[1]))
 					v135 = F_sendto(m, v129, v11+int32(64), v127, v128, v128, v128)
 					mBase = m.M
 					if int32(-1) < v135 {
 						v196 = int32(0)
-						v197 = int32(*(*uint8)(unsafe.Add(mBase, _consts[1059])))
+						v197 = int32(*(*uint8)(unsafe.Add(mBase, _c_F__vsyslog[3])))
 						if v197&int32(32) == v196 {
 							m.G0 = v11 + int32(1168)
 							return
@@ -358,7 +358,7 @@ func F__vsyslog(m *base.Module, l0 int32, l1 int32, l2 int32) {
 							v202 = *(*int32)(unsafe.Add(mBase, uint32(v11)+60))
 							*(*int32)(unsafe.Add(mBase, uint32(v11))) = v127 - v202
 							*(*int32)(unsafe.Add(mBase, uint32(v11)+4)) = v202 + (v11 + int32(64))
-							v211 = F_dprintf(m, int32(2), int32(_a2778), v11)
+							v211 = F_dprintf(m, int32(2), int32(_a_F__vsyslog_6), v11)
 							mBase = m.M
 							v212 = m.ExcPending
 							if v212 != 0 {
@@ -369,7 +369,7 @@ func F__vsyslog(m *base.Module, l0 int32, l1 int32, l2 int32) {
 							}
 						}
 					} else {
-						v138 = *(*int32)(unsafe.Add(mBase, _consts[18]))
+						v138 = *(*int32)(unsafe.Add(mBase, _c_F__vsyslog[0]))
 						v140 = int32(1)
 						if base.Ui32(v138+int32(-14)) < base.Ui32(int32(2)) {
 							v149 = v140
@@ -382,10 +382,10 @@ func F__vsyslog(m *base.Module, l0 int32, l1 int32, l2 int32) {
 						}
 						if v149 == int32(0) {
 							v169 = int32(0)
-							v170 = int32(*(*uint8)(unsafe.Add(mBase, _consts[1059])))
+							v170 = int32(*(*uint8)(unsafe.Add(mBase, _c_F__vsyslog[3])))
 							if v170&int32(2) == v169 {
 								v196 = int32(0)
-								v197 = int32(*(*uint8)(unsafe.Add(mBase, _consts[1059])))
+								v197 = int32(*(*uint8)(unsafe.Add(mBase, _c_F__vsyslog[3])))
 								if v197&int32(32) == v196 {
 									m.G0 = v11 + int32(1168)
 									return
@@ -393,7 +393,7 @@ func F__vsyslog(m *base.Module, l0 int32, l1 int32, l2 int32) {
 									v202 = *(*int32)(unsafe.Add(mBase, uint32(v11)+60))
 									*(*int32)(unsafe.Add(mBase, uint32(v11))) = v127 - v202
 									*(*int32)(unsafe.Add(mBase, uint32(v11)+4)) = v202 + (v11 + int32(64))
-									v211 = F_dprintf(m, int32(2), int32(_a2778), v11)
+									v211 = F_dprintf(m, int32(2), int32(_a_F__vsyslog_6), v11)
 									mBase = m.M
 									v212 = m.ExcPending
 									if v212 != 0 {
@@ -405,11 +405,11 @@ func F__vsyslog(m *base.Module, l0 int32, l1 int32, l2 int32) {
 								}
 							} else {
 								v177 = int32(0)
-								v178 = F_open(m, int32(_a2779), int32(524545), v177)
+								v178 = F_open(m, int32(_a_F__vsyslog_7), int32(524545), v177)
 								mBase = m.M
 								if v178 < v177 {
 									v196 = int32(0)
-									v197 = int32(*(*uint8)(unsafe.Add(mBase, _consts[1059])))
+									v197 = int32(*(*uint8)(unsafe.Add(mBase, _c_F__vsyslog[3])))
 									if v197&int32(32) == v196 {
 										m.G0 = v11 + int32(1168)
 										return
@@ -417,7 +417,7 @@ func F__vsyslog(m *base.Module, l0 int32, l1 int32, l2 int32) {
 										v202 = *(*int32)(unsafe.Add(mBase, uint32(v11)+60))
 										*(*int32)(unsafe.Add(mBase, uint32(v11))) = v127 - v202
 										*(*int32)(unsafe.Add(mBase, uint32(v11)+4)) = v202 + (v11 + int32(64))
-										v211 = F_dprintf(m, int32(2), int32(_a2778), v11)
+										v211 = F_dprintf(m, int32(2), int32(_a_F__vsyslog_6), v11)
 										mBase = m.M
 										v212 = m.ExcPending
 										if v212 != 0 {
@@ -431,7 +431,7 @@ func F__vsyslog(m *base.Module, l0 int32, l1 int32, l2 int32) {
 									v181 = *(*int32)(unsafe.Add(mBase, uint32(v11)+60))
 									*(*int32)(unsafe.Add(mBase, uint32(v11)+16)) = v127 - v181
 									*(*int32)(unsafe.Add(mBase, uint32(v11)+20)) = v181 + (v11 + int32(64))
-									v191 = F_dprintf(m, v178, int32(_a2778), v11+int32(16))
+									v191 = F_dprintf(m, v178, int32(_a_F__vsyslog_6), v11+int32(16))
 									mBase = m.M
 									v192 = m.ExcPending
 									if v192 != 0 {
@@ -440,7 +440,7 @@ func F__vsyslog(m *base.Module, l0 int32, l1 int32, l2 int32) {
 										v193 = F_close(m, v178)
 										mBase = m.M
 										v196 = int32(0)
-										v197 = int32(*(*uint8)(unsafe.Add(mBase, _consts[1059])))
+										v197 = int32(*(*uint8)(unsafe.Add(mBase, _c_F__vsyslog[3])))
 										if v197&int32(32) == v196 {
 											m.G0 = v11 + int32(1168)
 											return
@@ -448,7 +448,7 @@ func F__vsyslog(m *base.Module, l0 int32, l1 int32, l2 int32) {
 											v202 = *(*int32)(unsafe.Add(mBase, uint32(v11)+60))
 											*(*int32)(unsafe.Add(mBase, uint32(v11))) = v127 - v202
 											*(*int32)(unsafe.Add(mBase, uint32(v11)+4)) = v202 + (v11 + int32(64))
-											v211 = F_dprintf(m, int32(2), int32(_a2778), v11)
+											v211 = F_dprintf(m, int32(2), int32(_a_F__vsyslog_6), v11)
 											mBase = m.M
 											v212 = m.ExcPending
 											if v212 != 0 {
@@ -463,15 +463,15 @@ func F__vsyslog(m *base.Module, l0 int32, l1 int32, l2 int32) {
 							}
 						} else {
 							v152 = int32(0)
-							v153 = *(*int32)(unsafe.Add(mBase, _consts[1060]))
-							v156 = F_connect(m, v153, int32(_a2772), int32(12))
+							v153 = *(*int32)(unsafe.Add(mBase, _c_F__vsyslog[1]))
+							v156 = F_connect(m, v153, int32(_a_F__vsyslog_0), int32(12))
 							mBase = m.M
 							if v156 < v152 {
 								v169 = int32(0)
-								v170 = int32(*(*uint8)(unsafe.Add(mBase, _consts[1059])))
+								v170 = int32(*(*uint8)(unsafe.Add(mBase, _c_F__vsyslog[3])))
 								if v170&int32(2) == v169 {
 									v196 = int32(0)
-									v197 = int32(*(*uint8)(unsafe.Add(mBase, _consts[1059])))
+									v197 = int32(*(*uint8)(unsafe.Add(mBase, _c_F__vsyslog[3])))
 									if v197&int32(32) == v196 {
 										m.G0 = v11 + int32(1168)
 										return
@@ -479,7 +479,7 @@ func F__vsyslog(m *base.Module, l0 int32, l1 int32, l2 int32) {
 										v202 = *(*int32)(unsafe.Add(mBase, uint32(v11)+60))
 										*(*int32)(unsafe.Add(mBase, uint32(v11))) = v127 - v202
 										*(*int32)(unsafe.Add(mBase, uint32(v11)+4)) = v202 + (v11 + int32(64))
-										v211 = F_dprintf(m, int32(2), int32(_a2778), v11)
+										v211 = F_dprintf(m, int32(2), int32(_a_F__vsyslog_6), v11)
 										mBase = m.M
 										v212 = m.ExcPending
 										if v212 != 0 {
@@ -491,11 +491,11 @@ func F__vsyslog(m *base.Module, l0 int32, l1 int32, l2 int32) {
 									}
 								} else {
 									v177 = int32(0)
-									v178 = F_open(m, int32(_a2779), int32(524545), v177)
+									v178 = F_open(m, int32(_a_F__vsyslog_7), int32(524545), v177)
 									mBase = m.M
 									if v178 < v177 {
 										v196 = int32(0)
-										v197 = int32(*(*uint8)(unsafe.Add(mBase, _consts[1059])))
+										v197 = int32(*(*uint8)(unsafe.Add(mBase, _c_F__vsyslog[3])))
 										if v197&int32(32) == v196 {
 											m.G0 = v11 + int32(1168)
 											return
@@ -503,7 +503,7 @@ func F__vsyslog(m *base.Module, l0 int32, l1 int32, l2 int32) {
 											v202 = *(*int32)(unsafe.Add(mBase, uint32(v11)+60))
 											*(*int32)(unsafe.Add(mBase, uint32(v11))) = v127 - v202
 											*(*int32)(unsafe.Add(mBase, uint32(v11)+4)) = v202 + (v11 + int32(64))
-											v211 = F_dprintf(m, int32(2), int32(_a2778), v11)
+											v211 = F_dprintf(m, int32(2), int32(_a_F__vsyslog_6), v11)
 											mBase = m.M
 											v212 = m.ExcPending
 											if v212 != 0 {
@@ -517,7 +517,7 @@ func F__vsyslog(m *base.Module, l0 int32, l1 int32, l2 int32) {
 										v181 = *(*int32)(unsafe.Add(mBase, uint32(v11)+60))
 										*(*int32)(unsafe.Add(mBase, uint32(v11)+16)) = v127 - v181
 										*(*int32)(unsafe.Add(mBase, uint32(v11)+20)) = v181 + (v11 + int32(64))
-										v191 = F_dprintf(m, v178, int32(_a2778), v11+int32(16))
+										v191 = F_dprintf(m, v178, int32(_a_F__vsyslog_6), v11+int32(16))
 										mBase = m.M
 										v192 = m.ExcPending
 										if v192 != 0 {
@@ -526,7 +526,7 @@ func F__vsyslog(m *base.Module, l0 int32, l1 int32, l2 int32) {
 											v193 = F_close(m, v178)
 											mBase = m.M
 											v196 = int32(0)
-											v197 = int32(*(*uint8)(unsafe.Add(mBase, _consts[1059])))
+											v197 = int32(*(*uint8)(unsafe.Add(mBase, _c_F__vsyslog[3])))
 											if v197&int32(32) == v196 {
 												m.G0 = v11 + int32(1168)
 												return
@@ -534,7 +534,7 @@ func F__vsyslog(m *base.Module, l0 int32, l1 int32, l2 int32) {
 												v202 = *(*int32)(unsafe.Add(mBase, uint32(v11)+60))
 												*(*int32)(unsafe.Add(mBase, uint32(v11))) = v127 - v202
 												*(*int32)(unsafe.Add(mBase, uint32(v11)+4)) = v202 + (v11 + int32(64))
-												v211 = F_dprintf(m, int32(2), int32(_a2778), v11)
+												v211 = F_dprintf(m, int32(2), int32(_a_F__vsyslog_6), v11)
 												mBase = m.M
 												v212 = m.ExcPending
 												if v212 != 0 {
@@ -549,12 +549,12 @@ func F__vsyslog(m *base.Module, l0 int32, l1 int32, l2 int32) {
 								}
 							} else {
 								v159 = int32(0)
-								v160 = *(*int32)(unsafe.Add(mBase, _consts[1060]))
+								v160 = *(*int32)(unsafe.Add(mBase, _c_F__vsyslog[1]))
 								v166 = F_sendto(m, v160, v11+int32(64), v127, v159, v159, v159)
 								mBase = m.M
 								if int32(-1) < v166 {
 									v196 = int32(0)
-									v197 = int32(*(*uint8)(unsafe.Add(mBase, _consts[1059])))
+									v197 = int32(*(*uint8)(unsafe.Add(mBase, _c_F__vsyslog[3])))
 									if v197&int32(32) == v196 {
 										m.G0 = v11 + int32(1168)
 										return
@@ -562,7 +562,7 @@ func F__vsyslog(m *base.Module, l0 int32, l1 int32, l2 int32) {
 										v202 = *(*int32)(unsafe.Add(mBase, uint32(v11)+60))
 										*(*int32)(unsafe.Add(mBase, uint32(v11))) = v127 - v202
 										*(*int32)(unsafe.Add(mBase, uint32(v11)+4)) = v202 + (v11 + int32(64))
-										v211 = F_dprintf(m, int32(2), int32(_a2778), v11)
+										v211 = F_dprintf(m, int32(2), int32(_a_F__vsyslog_6), v11)
 										mBase = m.M
 										v212 = m.ExcPending
 										if v212 != 0 {
@@ -574,10 +574,10 @@ func F__vsyslog(m *base.Module, l0 int32, l1 int32, l2 int32) {
 									}
 								} else {
 									v169 = int32(0)
-									v170 = int32(*(*uint8)(unsafe.Add(mBase, _consts[1059])))
+									v170 = int32(*(*uint8)(unsafe.Add(mBase, _c_F__vsyslog[3])))
 									if v170&int32(2) == v169 {
 										v196 = int32(0)
-										v197 = int32(*(*uint8)(unsafe.Add(mBase, _consts[1059])))
+										v197 = int32(*(*uint8)(unsafe.Add(mBase, _c_F__vsyslog[3])))
 										if v197&int32(32) == v196 {
 											m.G0 = v11 + int32(1168)
 											return
@@ -585,7 +585,7 @@ func F__vsyslog(m *base.Module, l0 int32, l1 int32, l2 int32) {
 											v202 = *(*int32)(unsafe.Add(mBase, uint32(v11)+60))
 											*(*int32)(unsafe.Add(mBase, uint32(v11))) = v127 - v202
 											*(*int32)(unsafe.Add(mBase, uint32(v11)+4)) = v202 + (v11 + int32(64))
-											v211 = F_dprintf(m, int32(2), int32(_a2778), v11)
+											v211 = F_dprintf(m, int32(2), int32(_a_F__vsyslog_6), v11)
 											mBase = m.M
 											v212 = m.ExcPending
 											if v212 != 0 {
@@ -597,11 +597,11 @@ func F__vsyslog(m *base.Module, l0 int32, l1 int32, l2 int32) {
 										}
 									} else {
 										v177 = int32(0)
-										v178 = F_open(m, int32(_a2779), int32(524545), v177)
+										v178 = F_open(m, int32(_a_F__vsyslog_7), int32(524545), v177)
 										mBase = m.M
 										if v178 < v177 {
 											v196 = int32(0)
-											v197 = int32(*(*uint8)(unsafe.Add(mBase, _consts[1059])))
+											v197 = int32(*(*uint8)(unsafe.Add(mBase, _c_F__vsyslog[3])))
 											if v197&int32(32) == v196 {
 												m.G0 = v11 + int32(1168)
 												return
@@ -609,7 +609,7 @@ func F__vsyslog(m *base.Module, l0 int32, l1 int32, l2 int32) {
 												v202 = *(*int32)(unsafe.Add(mBase, uint32(v11)+60))
 												*(*int32)(unsafe.Add(mBase, uint32(v11))) = v127 - v202
 												*(*int32)(unsafe.Add(mBase, uint32(v11)+4)) = v202 + (v11 + int32(64))
-												v211 = F_dprintf(m, int32(2), int32(_a2778), v11)
+												v211 = F_dprintf(m, int32(2), int32(_a_F__vsyslog_6), v11)
 												mBase = m.M
 												v212 = m.ExcPending
 												if v212 != 0 {
@@ -623,7 +623,7 @@ func F__vsyslog(m *base.Module, l0 int32, l1 int32, l2 int32) {
 											v181 = *(*int32)(unsafe.Add(mBase, uint32(v11)+60))
 											*(*int32)(unsafe.Add(mBase, uint32(v11)+16)) = v127 - v181
 											*(*int32)(unsafe.Add(mBase, uint32(v11)+20)) = v181 + (v11 + int32(64))
-											v191 = F_dprintf(m, v178, int32(_a2778), v11+int32(16))
+											v191 = F_dprintf(m, v178, int32(_a_F__vsyslog_6), v11+int32(16))
 											mBase = m.M
 											v192 = m.ExcPending
 											if v192 != 0 {
@@ -632,7 +632,7 @@ func F__vsyslog(m *base.Module, l0 int32, l1 int32, l2 int32) {
 												v193 = F_close(m, v178)
 												mBase = m.M
 												v196 = int32(0)
-												v197 = int32(*(*uint8)(unsafe.Add(mBase, _consts[1059])))
+												v197 = int32(*(*uint8)(unsafe.Add(mBase, _c_F__vsyslog[3])))
 												if v197&int32(32) == v196 {
 													m.G0 = v11 + int32(1168)
 													return
@@ -640,7 +640,7 @@ func F__vsyslog(m *base.Module, l0 int32, l1 int32, l2 int32) {
 													v202 = *(*int32)(unsafe.Add(mBase, uint32(v11)+60))
 													*(*int32)(unsafe.Add(mBase, uint32(v11))) = v127 - v202
 													*(*int32)(unsafe.Add(mBase, uint32(v11)+4)) = v202 + (v11 + int32(64))
-													v211 = F_dprintf(m, int32(2), int32(_a2778), v11)
+													v211 = F_dprintf(m, int32(2), int32(_a_F__vsyslog_6), v11)
 													mBase = m.M
 													v212 = m.ExcPending
 													if v212 != 0 {
@@ -757,10 +757,10 @@ func F_vkmem_dlopen(m *base.Module, l0 int32, l1 int32) int32 {
 	_ = v5
 	if l0 != 0 {
 		v5 = int32(0)
-		*(*int32)(unsafe.Add(mBase, _consts[0])) = int32(_a0)
+		*(*int32)(unsafe.Add(mBase, _c_F_vkmem_dlopen[0])) = int32(_a_F_vkmem_dlopen_0)
 		return v5
 	} else {
-		return int32(_a1)
+		return int32(_a_F_vkmem_dlopen_1)
 	}
 }
 func F_vkmem_main(m *base.Module, l0 int32, l1 int32) int32 {
@@ -1133,7 +1133,7 @@ func F_vsniprintf(m *base.Module, l0 int32, l1 int32, l2 int32, l3 int32) int32 
 	v7 = m.G0
 	v9 = v7 - int32(160)
 	m.G0 = v9
-	v17 = F__emscripten_memcpy_bulkmem(m, v9+int32(8), int32(_a2789), int32(144))
+	v17 = F__emscripten_memcpy_bulkmem(m, v9+int32(8), int32(_a_F_vsniprintf_0), int32(144))
 	mBase = m.M
 	if int32(0) < l1 {
 		v24 = l0
@@ -1170,7 +1170,7 @@ func F_vsniprintf(m *base.Module, l0 int32, l1 int32, l2 int32, l3 int32) int32 
 		}
 	} else {
 		if l1 != 0 {
-			*(*int32)(unsafe.Add(mBase, _consts[18])) = int32(61)
+			*(*int32)(unsafe.Add(mBase, _c_F_vsniprintf[0])) = int32(61)
 			v55 = int32(-1)
 			m.G0 = v9 + int32(160)
 			return v55

@@ -343,7 +343,7 @@ L4:
 L5:
 	;
 	v383 = m.G3
-	F_lua_pushstring(m, v13, v383+int32(_a2007))
+	F_lua_pushstring(m, v13, v383+int32(_a_F_errorCallback_0))
 	mBase = m.M
 	v387 = m.ExcPending
 	if v387 != 0 {
@@ -355,7 +355,7 @@ L6:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v11))) = l1
 	v368 = m.G3
-	v371 = F_lm_asprintf(m, v368+int32(_a2008), v11)
+	v371 = F_lm_asprintf(m, v368+int32(_a_F_errorCallback_1), v11)
 	mBase = m.M
 	v372 = m.ExcPending
 	if v372 != 0 {
@@ -365,7 +365,7 @@ L6:
 	}
 L7:
 	;
-	v20 = *(*int32)(unsafe.Add(mBase, _consts[5]))
+	v20 = *(*int32)(unsafe.Add(mBase, _c_F_errorCallback[0]))
 	if v20 == int32(0) {
 		goto L6
 	} else {
@@ -379,7 +379,7 @@ L8:
 	v26 = m.G3
 	v33 = m.G10
 	v34 = *(*int32)(unsafe.Add(mBase, uint32(v33)))
-	m.T0[v34].(func(*base.Module, int32, int32, int32, int32))(m, v23, v26+int32(_a774), v26+int32(_a2009), v11+int32(32))
+	m.T0[v34].(func(*base.Module, int32, int32, int32, int32))(m, v23, v26+int32(_a_F_errorCallback_2), v26+int32(_a_F_errorCallback_3), v11+int32(32))
 	mBase = m.M
 	v36 = m.ExcPending
 	if v36 != 0 {
@@ -389,7 +389,7 @@ L8:
 	}
 L9:
 	;
-	v37 = *(*int32)(unsafe.Add(mBase, _consts[5]))
+	v37 = *(*int32)(unsafe.Add(mBase, _c_F_errorCallback[0]))
 	switch v37 + int32(-28) {
 	case 0:
 		goto L13
@@ -404,7 +404,7 @@ L10:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v11)+16)) = l1
 	v354 = m.G3
-	v359 = F_lm_asprintf(m, v354+int32(_a2008), v11+int32(16))
+	v359 = F_lm_asprintf(m, v354+int32(_a_F_errorCallback_1), v11+int32(16))
 	mBase = m.M
 	v360 = m.ExcPending
 	if v360 != 0 {
@@ -415,17 +415,17 @@ L10:
 L11:
 	;
 	v206 = m.G3
-	v208 = v206 + int32(_a2010)
+	v208 = v206 + int32(_a_F_errorCallback_4)
 	goto L63
 L12:
 	;
 	v152 = m.G3
-	v154 = v152 + int32(_a2011)
+	v154 = v152 + int32(_a_F_errorCallback_5)
 	goto L48
 L13:
 	;
 	v98 = m.G3
-	v100 = v98 + int32(_a2012)
+	v100 = v98 + int32(_a_F_errorCallback_6)
 	goto L33
 L14:
 	;
@@ -444,7 +444,7 @@ L15:
 L16:
 	;
 	v44 = m.G3
-	v46 = v44 + int32(_a2013)
+	v46 = v44 + int32(_a_F_errorCallback_7)
 	goto L18
 L17:
 	;
@@ -536,7 +536,7 @@ L29:
 L30:
 	;
 	v93 = m.G3
-	F_luaPushErrorBuff(m, v13, v93+int32(_a2014))
+	F_luaPushErrorBuff(m, v13, v93+int32(_a_F_errorCallback_8))
 	mBase = m.M
 	v97 = m.ExcPending
 	if v97 != 0 {
@@ -637,7 +637,7 @@ L44:
 L45:
 	;
 	v147 = m.G3
-	F_luaPushErrorBuff(m, v13, v147+int32(_a2015))
+	F_luaPushErrorBuff(m, v13, v147+int32(_a_F_errorCallback_9))
 	mBase = m.M
 	v151 = m.ExcPending
 	if v151 != 0 {
@@ -738,7 +738,7 @@ L59:
 L60:
 	;
 	v201 = m.G3
-	F_luaPushErrorBuff(m, v13, v201+int32(_a2016))
+	F_luaPushErrorBuff(m, v13, v201+int32(_a_F_errorCallback_10))
 	mBase = m.M
 	v205 = m.ExcPending
 	if v205 != 0 {
@@ -961,11 +961,11 @@ L95:
 L96:
 	;
 	v329 = m.G3
-	v334 = *(*int64)(unsafe.Add(mBase, uint32(v329)+uint32(_consts[1010])))
+	v334 = *(*int64)(unsafe.Add(mBase, uint32(v329)+uint32(_c_F_errorCallback[1])))
 	*(*int64)(unsafe.Add(mBase, uint32(v316+int32(16)))) = v334
-	v340 = *(*int64)(unsafe.Add(mBase, uint32(v329)+uint32(_consts[1011])))
+	v340 = *(*int64)(unsafe.Add(mBase, uint32(v329)+uint32(_c_F_errorCallback[2])))
 	*(*int64)(unsafe.Add(mBase, uint32(v316+int32(8)))) = v340
-	v342 = *(*int64)(unsafe.Add(mBase, uint32(v329)+uint32(_consts[1012])))
+	v342 = *(*int64)(unsafe.Add(mBase, uint32(v329)+uint32(_c_F_errorCallback[3])))
 	*(*int64)(unsafe.Add(mBase, uint32(v316))) = v342
 	v344 = F_strlen(m, v316)
 	mBase = m.M

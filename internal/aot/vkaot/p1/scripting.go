@@ -62,7 +62,7 @@ func F_collectScriptingEngineInfo(m *base.Module, l0 int32, l1 int32) {
 			v23 = *(*int32)(unsafe.Add(mBase, uint32(v13)+4))
 			v24 = v23
 		} else {
-			v24 = int32(_a2280)
+			v24 = int32(_a_F_collectScriptingEngineInfo_0)
 		}
 		v27 = *(*int64)(unsafe.Add(mBase, uint32(v10)+40))
 		*(*int64)(unsafe.Add(mBase, uint32(v10+int32(16)))) = v27
@@ -70,7 +70,7 @@ func F_collectScriptingEngineInfo(m *base.Module, l0 int32, l1 int32) {
 		*(*int32)(unsafe.Add(mBase, uint32(v10)+4)) = v12
 		*(*int32)(unsafe.Add(mBase, uint32(v10)+8)) = v24
 		*(*uint32)(unsafe.Add(mBase, uint32(v10)+12)) = uint32(v14)
-		v34 = F_sdscatprintf(m, v21, int32(_a2281), v10)
+		v34 = F_sdscatprintf(m, v21, int32(_a_F_collectScriptingEngineInfo_1), v10)
 		mBase = m.M
 		v35 = m.ExcPending
 		if v35 != 0 {
@@ -130,7 +130,7 @@ func F_scriptingEngineCallCompileCode(m *base.Module, l0 int32, l1 int32, l2 int
 	var v52 int32
 	_ = v52
 	if base.Ui32(int32(2)) <= base.Ui32(l1) {
-		F__serverAssert(m, int32(_a2022), int32(_a2023), int32(287))
+		F__serverAssert(m, int32(_a_F_scriptingEngineCallCompileCode_0), int32(_a_F_scriptingEngineCallCompileCode_1), int32(287))
 		mBase = m.M
 		v46 = m.ExcPending
 		if v46 != 0 {
@@ -144,7 +144,7 @@ func F_scriptingEngineCallCompileCode(m *base.Module, l0 int32, l1 int32, l2 int
 		}
 	} else {
 		if l0 == int32(0) {
-			F__serverAssert(m, int32(_a2024), int32(_a2023), int32(261))
+			F__serverAssert(m, int32(_a_F_scriptingEngineCallCompileCode_2), int32(_a_F_scriptingEngineCallCompileCode_1), int32(261))
 			mBase = m.M
 			v52 = m.ExcPending
 			if v52 != 0 {
@@ -436,7 +436,7 @@ func F_scriptingEngineCallDebuggerEnable(m *base.Module, l0 int32, l1 int32, l2 
 		}
 	} else {
 		v17 = int32(0)
-		v19 = *(*int32)(unsafe.Add(mBase, _consts[28]))
+		v19 = *(*int32)(unsafe.Add(mBase, _c_F_scriptingEngineCallDebuggerEnable[0]))
 		if int32(3) < v19 {
 			v64 = v17
 			m.G0 = v12 + int32(16)
@@ -445,7 +445,7 @@ func F_scriptingEngineCallDebuggerEnable(m *base.Module, l0 int32, l1 int32, l2 
 			v22 = *(*int32)(unsafe.Add(mBase, uint32(l0)))
 			*(*uint32)(unsafe.Add(mBase, uint32(v12)+4)) = uint32(v14)
 			*(*int32)(unsafe.Add(mBase, uint32(v12))) = v22
-			F__serverLog(m, int32(3), int32(_a2025), v12)
+			F__serverLog(m, int32(3), int32(_a_F_scriptingEngineCallDebuggerEnable_0), v12)
 			mBase = m.M
 			v30 = m.ExcPending
 			if v30 != 0 {
@@ -472,12 +472,12 @@ func F_scriptingEngineDebuggerDisable(m *base.Module, l0 int32) {
 	var v16 int32
 	_ = v16
 	v2 = int32(0)
-	v4 = *(*int32)(unsafe.Add(mBase, _consts[650]))
+	v4 = *(*int32)(unsafe.Add(mBase, _c_F_scriptingEngineDebuggerDisable[0]))
 	if v4 == v2 {
 		return
 	} else {
 		v7 = int32(0)
-		*(*int64)(unsafe.Add(mBase, _consts[651])) = int64(0)
+		*(*int64)(unsafe.Add(mBase, _c_F_scriptingEngineDebuggerDisable[1])) = int64(0)
 		v10 = *(*int32)(unsafe.Add(mBase, uint32(l0)+200))
 		*(*int32)(unsafe.Add(mBase, uint32(l0)+200)) = v10 & int32(-805306369)
 		F_scriptingEngineCallDebuggerDisable(m, v4, v7)
@@ -559,9 +559,9 @@ func F_scriptingEngineDebuggerEndSession(m *base.Module, l0 int32) {
 	v4 = m.G0
 	v6 = v4 - int32(16)
 	m.G0 = v6
-	v9 = *(*int32)(unsafe.Add(mBase, _consts[654]))
+	v9 = *(*int32)(unsafe.Add(mBase, _c_F_scriptingEngineDebuggerEndSession[0]))
 	if v9 == v2 {
-		F__serverAssert(m, int32(_a2028), int32(_a2023), int32(695))
+		F__serverAssert(m, int32(_a_F_scriptingEngineDebuggerEndSession_0), int32(_a_F_scriptingEngineDebuggerEndSession_1), int32(695))
 		mBase = m.M
 		v76 = m.ExcPending
 		if v76 != 0 {
@@ -574,7 +574,7 @@ func F_scriptingEngineDebuggerEndSession(m *base.Module, l0 int32) {
 			}
 		}
 	} else {
-		v14 = F_sdsnew(m, int32(_a2029))
+		v14 = F_sdsnew(m, int32(_a_F_scriptingEngineDebuggerEndSession_2))
 		mBase = m.M
 		v15 = m.ExcPending
 		if v15 != 0 {
@@ -586,7 +586,7 @@ func F_scriptingEngineDebuggerEndSession(m *base.Module, l0 int32) {
 			if v17 != 0 {
 				return
 			} else {
-				v19 = *(*int32)(unsafe.Add(mBase, _consts[652]))
+				v19 = *(*int32)(unsafe.Add(mBase, _c_F_scriptingEngineDebuggerEndSession[1]))
 				v20 = F_listAddNodeTail(m, v19, v16)
 				mBase = m.M
 				v21 = m.ExcPending
@@ -600,18 +600,18 @@ func F_scriptingEngineDebuggerEndSession(m *base.Module, l0 int32) {
 						return
 					} else {
 						v24 = int32(0)
-						v25 = *(*int32)(unsafe.Add(mBase, _consts[655]))
+						v25 = *(*int32)(unsafe.Add(mBase, _c_F_scriptingEngineDebuggerEndSession[2]))
 						if v25 == v24 {
-							v42 = *(*int32)(unsafe.Add(mBase, _consts[28]))
+							v42 = *(*int32)(unsafe.Add(mBase, _c_F_scriptingEngineDebuggerEndSession[3]))
 							if int32(2) < v42 {
-								v52 = *(*int32)(unsafe.Add(mBase, _consts[653]))
+								v52 = *(*int32)(unsafe.Add(mBase, _c_F_scriptingEngineDebuggerEndSession[4]))
 								v53 = F_connNonBlock(m, v52)
 								mBase = m.M
 								v54 = m.ExcPending
 								if v54 != 0 {
 									return
 								} else {
-									v56 = *(*int32)(unsafe.Add(mBase, _consts[653]))
+									v56 = *(*int32)(unsafe.Add(mBase, _c_F_scriptingEngineDebuggerEndSession[4]))
 									v58 = F_connSendTimeout(m, v56, int64(0))
 									mBase = m.M
 									v59 = m.ExcPending
@@ -621,7 +621,7 @@ func F_scriptingEngineDebuggerEndSession(m *base.Module, l0 int32) {
 										v60 = *(*int32)(unsafe.Add(mBase, uint32(l0)+200))
 										*(*int32)(unsafe.Add(mBase, uint32(l0)+200)) = v60 | int32(64)
 										v64 = int32(0)
-										v65 = *(*int32)(unsafe.Add(mBase, _consts[650]))
+										v65 = *(*int32)(unsafe.Add(mBase, _c_F_scriptingEngineDebuggerEndSession[5]))
 										F_scriptingEngineCallDebuggerEnd(m, v65, v64)
 										mBase = m.M
 										v68 = m.ExcPending
@@ -634,21 +634,21 @@ func F_scriptingEngineDebuggerEndSession(m *base.Module, l0 int32) {
 									}
 								}
 							} else {
-								*(*int32)(unsafe.Add(mBase, uint32(v6))) = int32(_a256)
-								F__serverLog(m, int32(2), int32(_a2030), v6)
+								*(*int32)(unsafe.Add(mBase, uint32(v6))) = int32(_a_F_scriptingEngineDebuggerEndSession_3)
+								F__serverLog(m, int32(2), int32(_a_F_scriptingEngineDebuggerEndSession_4), v6)
 								mBase = m.M
 								v50 = m.ExcPending
 								if v50 != 0 {
 									return
 								} else {
-									v52 = *(*int32)(unsafe.Add(mBase, _consts[653]))
+									v52 = *(*int32)(unsafe.Add(mBase, _c_F_scriptingEngineDebuggerEndSession[4]))
 									v53 = F_connNonBlock(m, v52)
 									mBase = m.M
 									v54 = m.ExcPending
 									if v54 != 0 {
 										return
 									} else {
-										v56 = *(*int32)(unsafe.Add(mBase, _consts[653]))
+										v56 = *(*int32)(unsafe.Add(mBase, _c_F_scriptingEngineDebuggerEndSession[4]))
 										v58 = F_connSendTimeout(m, v56, int64(0))
 										mBase = m.M
 										v59 = m.ExcPending
@@ -658,7 +658,7 @@ func F_scriptingEngineDebuggerEndSession(m *base.Module, l0 int32) {
 											v60 = *(*int32)(unsafe.Add(mBase, uint32(l0)+200))
 											*(*int32)(unsafe.Add(mBase, uint32(l0)+200)) = v60 | int32(64)
 											v64 = int32(0)
-											v65 = *(*int32)(unsafe.Add(mBase, _consts[650]))
+											v65 = *(*int32)(unsafe.Add(mBase, _c_F_scriptingEngineDebuggerEndSession[5]))
 											F_scriptingEngineCallDebuggerEnd(m, v65, v64)
 											mBase = m.M
 											v68 = m.ExcPending
@@ -679,7 +679,7 @@ func F_scriptingEngineDebuggerEndSession(m *base.Module, l0 int32) {
 							if v29 != 0 {
 								return
 							} else {
-								v31 = *(*int32)(unsafe.Add(mBase, _consts[28]))
+								v31 = *(*int32)(unsafe.Add(mBase, _c_F_scriptingEngineDebuggerEndSession[3]))
 								if int32(2) < v31 {
 									F__exit(m, int32(0))
 									mBase = m.M
@@ -687,7 +687,7 @@ func F_scriptingEngineDebuggerEndSession(m *base.Module, l0 int32) {
 									for {
 									}
 								} else {
-									F__serverLog(m, int32(2), int32(_a2031), int32(0))
+									F__serverLog(m, int32(2), int32(_a_F_scriptingEngineDebuggerEndSession_5), int32(0))
 									mBase = m.M
 									v38 = m.ExcPending
 									if v38 != 0 {
@@ -835,10 +835,10 @@ L1:
 	return
 L2:
 	;
-	v14 = *(*int32)(unsafe.Add(mBase, _consts[652]))
+	v14 = *(*int32)(unsafe.Add(mBase, _c_F_scriptingEngineDebuggerFlushLogs[0]))
 	v15 = *(*int32)(unsafe.Add(mBase, uint32(v14)+20))
 	*(*int32)(unsafe.Add(mBase, uint32(v8))) = v15
-	v18 = F_sdscatfmt(m, v11, int32(_a2026), v8)
+	v18 = F_sdscatfmt(m, v11, int32(_a_F_scriptingEngineDebuggerFlushLogs_0), v8)
 	mBase = m.M
 	v19 = m.ExcPending
 	if v19 != 0 {
@@ -849,7 +849,7 @@ L2:
 L3:
 	;
 	v20 = int32(0)
-	v21 = *(*int32)(unsafe.Add(mBase, _consts[652]))
+	v21 = *(*int32)(unsafe.Add(mBase, _c_F_scriptingEngineDebuggerFlushLogs[0]))
 	v22 = *(*int32)(unsafe.Add(mBase, uint32(v21)+20))
 	if v22 == v20 {
 		v140 = v18
@@ -859,7 +859,7 @@ L3:
 	}
 L4:
 	;
-	v143 = *(*int32)(unsafe.Add(mBase, _consts[653]))
+	v143 = *(*int32)(unsafe.Add(mBase, _c_F_scriptingEngineDebuggerFlushLogs[1]))
 	v146 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v140+int32(-1)))))
 	switch v146 & int32(7) {
 	case 0:
@@ -885,7 +885,7 @@ L6:
 	;
 	v30 = *(*int32)(unsafe.Add(mBase, uint32(v27)))
 	v31 = *(*int32)(unsafe.Add(mBase, uint32(v30)+8))
-	v34 = F_sdscatlen(m, v28, int32(_a2027), int32(1))
+	v34 = F_sdscatlen(m, v28, int32(_a_F_scriptingEngineDebuggerFlushLogs_1), int32(1))
 	mBase = m.M
 	v35 = m.ExcPending
 	if v35 != 0 {
@@ -989,7 +989,7 @@ L21:
 	goto L22
 L22:
 	;
-	v94 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v88)+uint32(_consts[486]))))
+	v94 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v88)+uint32(_c_F_scriptingEngineDebuggerFlushLogs[2]))))
 	if v81&int32(255) != v94 {
 		goto L24
 	} else {
@@ -1009,7 +1009,7 @@ L24:
 	}
 L25:
 	;
-	v97 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v88)+uint32(_consts[487]))))
+	v97 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v88)+uint32(_c_F_scriptingEngineDebuggerFlushLogs[3]))))
 	*(*uint8)(unsafe.Add(mBase, uint32(v80))) = uint8(v97)
 	goto L20
 L26:
@@ -1020,7 +1020,7 @@ L27:
 	goto L19
 L28:
 	;
-	v128 = F_sdscatlen(m, v124, int32(_a823), int32(2))
+	v128 = F_sdscatlen(m, v124, int32(_a_F_scriptingEngineDebuggerFlushLogs_2), int32(2))
 	mBase = m.M
 	v129 = m.ExcPending
 	if v129 != 0 {
@@ -1030,7 +1030,7 @@ L28:
 	}
 L29:
 	;
-	v131 = *(*int32)(unsafe.Add(mBase, _consts[652]))
+	v131 = *(*int32)(unsafe.Add(mBase, _c_F_scriptingEngineDebuggerFlushLogs[0]))
 	F_listDelNode(m, v131, v30)
 	mBase = m.M
 	v133 = m.ExcPending
@@ -1041,7 +1041,7 @@ L29:
 	}
 L30:
 	;
-	v135 = *(*int32)(unsafe.Add(mBase, _consts[652]))
+	v135 = *(*int32)(unsafe.Add(mBase, _c_F_scriptingEngineDebuggerFlushLogs[0]))
 	v136 = *(*int32)(unsafe.Add(mBase, uint32(v135)+20))
 	if v136 != 0 {
 		v27 = v135
@@ -1113,7 +1113,7 @@ func F_scriptingEngineDebuggerLog(m *base.Module, l0 int32) {
 	_ = v4
 	var v5 int32
 	_ = v5
-	v3 = *(*int32)(unsafe.Add(mBase, _consts[652]))
+	v3 = *(*int32)(unsafe.Add(mBase, _c_F_scriptingEngineDebuggerLog[0]))
 	v4 = F_listAddNodeTail(m, v3, l0)
 	mBase = m.M
 	v5 = m.ExcPending
@@ -1141,7 +1141,7 @@ func F_scriptingEngineDebuggerRemoveChild(m *base.Module, l0 int32) int32 {
 	var v17 int32
 	_ = v17
 	v2 = int32(0)
-	v5 = *(*int32)(unsafe.Add(mBase, _consts[656]))
+	v5 = *(*int32)(unsafe.Add(mBase, _c_F_scriptingEngineDebuggerRemoveChild[0]))
 	v6 = F_listSearchKey(m, v5, l0)
 	mBase = m.M
 	v9 = m.ExcPending
@@ -1152,7 +1152,7 @@ func F_scriptingEngineDebuggerRemoveChild(m *base.Module, l0 int32) int32 {
 			v17 = v2
 			return v17
 		} else {
-			v13 = *(*int32)(unsafe.Add(mBase, _consts[656]))
+			v13 = *(*int32)(unsafe.Add(mBase, _c_F_scriptingEngineDebuggerRemoveChild[0]))
 			F_listDelNode(m, v13, v6)
 			mBase = m.M
 			v15 = m.ExcPending
@@ -1197,7 +1197,7 @@ func F_scriptingEngineManagerFind(m *base.Module, l0 int32) int32 {
 	var v13 int32
 	_ = v13
 	v2 = int32(0)
-	v5 = *(*int32)(unsafe.Add(mBase, _consts[335]))
+	v5 = *(*int32)(unsafe.Add(mBase, _c_F_scriptingEngineManagerFind[0]))
 	v6 = F_dictFind(m, v5, l0)
 	mBase = m.M
 	v9 = m.ExcPending
@@ -1314,7 +1314,7 @@ func F_scriptingEngineManagerForEachEngine(m *base.Module, l0 int32, l1 int32) {
 	_ = v124
 	var v126 int32
 	_ = v126
-	v6 = *(*int32)(unsafe.Add(mBase, _consts[335]))
+	v6 = *(*int32)(unsafe.Add(mBase, _c_F_scriptingEngineManagerForEachEngine[0]))
 	v7 = F_dictGetIterator(m, v6)
 	mBase = m.M
 	v8 = m.ExcPending
@@ -1575,7 +1575,7 @@ func F_scriptingEngineManagerGetMemoryUsage(m *base.Module) int32 {
 	var v22 int32
 	_ = v22
 	v1 = int32(0)
-	v2 = *(*int32)(unsafe.Add(mBase, _consts[335]))
+	v2 = *(*int32)(unsafe.Add(mBase, _c_F_scriptingEngineManagerGetMemoryUsage[0]))
 	v6 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v2)+27)))
 	if v6 == int32(255) {
 		v10 = v1

@@ -367,7 +367,7 @@ func F_aeCreateFileEvent(m *base.Module, l0 int32, l1 int32, l2 int32, l3 int32,
 			v74 = v70
 		}
 	} else {
-		*(*int32)(unsafe.Add(mBase, _consts[18])) = int32(68)
+		*(*int32)(unsafe.Add(mBase, _c_F_aeCreateFileEvent[0])) = int32(68)
 		v74 = int32(-1)
 	}
 	v80 = int32(*(*uint8)(unsafe.Add(mBase, uint32(l0)+72)))
@@ -1044,7 +1044,7 @@ L57:
 	v214 = *(*int64)(unsafe.Add(mBase, uint32(l0)+8))
 	v215 = *(*int32)(unsafe.Add(mBase, uint32(l0)+24))
 	v216 = int32(0)
-	v218 = *(*int32)(unsafe.Add(mBase, _consts[34]))
+	v218 = *(*int32)(unsafe.Add(mBase, _c_F_aeProcessEvents[0]))
 	v219 = m.T0[v218].(func(*base.Module) int64)(m)
 	mBase = m.M
 	if v215 == v216 {
@@ -1171,7 +1171,7 @@ L73:
 	}
 L74:
 	;
-	v262 = *(*int32)(unsafe.Add(mBase, _consts[34]))
+	v262 = *(*int32)(unsafe.Add(mBase, _c_F_aeProcessEvents[0]))
 	v263 = m.T0[v262].(func(*base.Module) int64)(m)
 	mBase = m.M
 	v264 = v263
@@ -1218,7 +1218,7 @@ L79:
 	v278 = *(*int32)(unsafe.Add(mBase, uint32(v223)+36))
 	*(*int32)(unsafe.Add(mBase, uint32(v223)+36)) = v278 + int32(-1)
 	v283 = v235 + int32(1)
-	v285 = *(*int32)(unsafe.Add(mBase, _consts[34]))
+	v285 = *(*int32)(unsafe.Add(mBase, _c_F_aeProcessEvents[0]))
 	v286 = m.T0[v285].(func(*base.Module) int64)(m)
 	mBase = m.M
 	if v276 == int64(-1) {

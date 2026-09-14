@@ -1001,7 +1001,7 @@ L14:
 	goto L15
 L15:
 	;
-	v59 = *(*int32)(unsafe.Add(mBase, uint32((v52^int32(-1))<<(uint(int32(2))%32))+uint32(_consts[524])))
+	v59 = *(*int32)(unsafe.Add(mBase, uint32((v52^int32(-1))<<(uint(int32(2))%32))+uint32(_c_F__quicklistMergeNodes[0])))
 	if base.Ui32(v46) <= base.Ui32(v59) {
 		goto L10
 	} else {
@@ -1120,7 +1120,7 @@ L33:
 	goto L34
 L34:
 	;
-	v111 = *(*int32)(unsafe.Add(mBase, uint32((v104^int32(-1))<<(uint(int32(2))%32))+uint32(_consts[524])))
+	v111 = *(*int32)(unsafe.Add(mBase, uint32((v104^int32(-1))<<(uint(int32(2))%32))+uint32(_c_F__quicklistMergeNodes[0])))
 	if base.Ui32(v98) <= base.Ui32(v111) {
 		goto L29
 	} else {
@@ -1230,7 +1230,7 @@ L50:
 	goto L51
 L51:
 	;
-	v160 = *(*int32)(unsafe.Add(mBase, uint32((v153^int32(-1))<<(uint(int32(2))%32))+uint32(_consts[524])))
+	v160 = *(*int32)(unsafe.Add(mBase, uint32((v153^int32(-1))<<(uint(int32(2))%32))+uint32(_c_F__quicklistMergeNodes[0])))
 	if base.Ui32(v147) <= base.Ui32(v160) {
 		goto L46
 	} else {
@@ -1348,7 +1348,7 @@ L68:
 	goto L69
 L69:
 	;
-	v212 = *(*int32)(unsafe.Add(mBase, uint32((v205^int32(-1))<<(uint(int32(2))%32))+uint32(_consts[524])))
+	v212 = *(*int32)(unsafe.Add(mBase, uint32((v205^int32(-1))<<(uint(int32(2))%32))+uint32(_c_F__quicklistMergeNodes[0])))
 	if base.Ui32(v199) <= base.Ui32(v212) {
 		goto L64
 	} else {
@@ -1625,7 +1625,7 @@ func F_quicklistNodeLimit(m *base.Module, l0 int32, l1 int32, l2 int32) {
 		} else {
 			v18 = v15
 		}
-		v25 = *(*int32)(unsafe.Add(mBase, uint32((v18^int32(-1))<<(uint(int32(2))%32))+uint32(_consts[524])))
+		v25 = *(*int32)(unsafe.Add(mBase, uint32((v18^int32(-1))<<(uint(int32(2))%32))+uint32(_c_F_quicklistNodeLimit[0])))
 		*(*int32)(unsafe.Add(mBase, uint32(l1))) = v25
 		return
 	} else {
@@ -1691,7 +1691,7 @@ func F_quicklistPush(m *base.Module, l0 int32, l1 int32, l2 int32, l3 int32) {
 		} else {
 			v17 = *(*int32)(unsafe.Add(mBase, uint32(v14)+16))
 			if v17&int32(196608) == int32(131072) {
-				F__serverAssert(m, int32(_a1789), int32(_a1790), int32(1570))
+				F__serverAssert(m, int32(_a_F_quicklistPush_0), int32(_a_F_quicklistPush_1), int32(1570))
 				mBase = m.M
 				v38 = m.ExcPending
 				if v38 != 0 {
@@ -1731,7 +1731,7 @@ func F_quicklistPush(m *base.Module, l0 int32, l1 int32, l2 int32, l3 int32) {
 	} else {
 		v9 = *(*int32)(unsafe.Add(mBase, uint32(v6)+16))
 		if v9&int32(196608) == int32(131072) {
-			F__serverAssert(m, int32(_a1791), int32(_a1790), int32(1569))
+			F__serverAssert(m, int32(_a_F_quicklistPush_2), int32(_a_F_quicklistPush_1), int32(1569))
 			mBase = m.M
 			v32 = m.ExcPending
 			if v32 != 0 {
@@ -1771,7 +1771,7 @@ func F_quicklistPush(m *base.Module, l0 int32, l1 int32, l2 int32, l3 int32) {
 			} else {
 				v17 = *(*int32)(unsafe.Add(mBase, uint32(v14)+16))
 				if v17&int32(196608) == int32(131072) {
-					F__serverAssert(m, int32(_a1789), int32(_a1790), int32(1570))
+					F__serverAssert(m, int32(_a_F_quicklistPush_0), int32(_a_F_quicklistPush_1), int32(1570))
 					mBase = m.M
 					v38 = m.ExcPending
 					if v38 != 0 {
@@ -1937,7 +1937,7 @@ func F_quicklistRepr(m *base.Module, l0 int32, l1 int32) {
 	m.G0 = v10
 	v12 = *(*int32)(unsafe.Add(mBase, uint32(l0)+8))
 	*(*int32)(unsafe.Add(mBase, uint32(v10)+128)) = v12
-	v17 = F_iprintf(m, int32(_a1792), v10+int32(128))
+	v17 = F_iprintf(m, int32(_a_F_quicklistRepr_0), v10+int32(128))
 	mBase = m.M
 	v18 = m.ExcPending
 	if v18 != 0 {
@@ -1952,7 +1952,7 @@ L2:
 	;
 	v19 = *(*int32)(unsafe.Add(mBase, uint32(l0)+12))
 	*(*int32)(unsafe.Add(mBase, uint32(v10)+112)) = v19
-	v24 = F_iprintf(m, int32(_a1793), v10+int32(112))
+	v24 = F_iprintf(m, int32(_a_F_quicklistRepr_1), v10+int32(112))
 	mBase = m.M
 	v25 = m.ExcPending
 	if v25 != 0 {
@@ -1965,7 +1965,7 @@ L3:
 	v26 = *(*int32)(unsafe.Add(mBase, uint32(l0)+16))
 	v27 = int32(18)
 	*(*int32)(unsafe.Add(mBase, uint32(v10)+96)) = v26 << (uint(v27) % 32) >> (uint(v27) % 32)
-	v35 = F_iprintf(m, int32(_a1794), v10+int32(96))
+	v35 = F_iprintf(m, int32(_a_F_quicklistRepr_2), v10+int32(96))
 	mBase = m.M
 	v36 = m.ExcPending
 	if v36 != 0 {
@@ -1977,7 +1977,7 @@ L4:
 	;
 	v37 = *(*int32)(unsafe.Add(mBase, uint32(l0)+16))
 	*(*int32)(unsafe.Add(mBase, uint32(v10)+80)) = int32(base.Ui32(v37)>>(uint(int32(14))%32)) & int32(16383)
-	v46 = F_iprintf(m, int32(_a1795), v10+int32(80))
+	v46 = F_iprintf(m, int32(_a_F_quicklistRepr_3), v10+int32(80))
 	mBase = m.M
 	v47 = m.ExcPending
 	if v47 != 0 {
@@ -1989,7 +1989,7 @@ L5:
 	;
 	v48 = *(*int32)(unsafe.Add(mBase, uint32(l0)+16))
 	*(*int32)(unsafe.Add(mBase, uint32(v10)+64)) = int32(base.Ui32(v48) >> (uint(int32(28)) % 32))
-	v55 = F_iprintf(m, int32(_a1796), v10+int32(64))
+	v55 = F_iprintf(m, int32(_a_F_quicklistRepr_4), v10+int32(64))
 	mBase = m.M
 	v56 = m.ExcPending
 	if v56 != 0 {
@@ -2017,7 +2017,7 @@ L8:
 L9:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v10)+48)) = v66
-	v74 = F_iprintf(m, int32(_a1797), v10+int32(48))
+	v74 = F_iprintf(m, int32(_a_F_quicklistRepr_5), v10+int32(48))
 	mBase = m.M
 	v75 = m.ExcPending
 	if v75 != 0 {
@@ -2044,11 +2044,11 @@ L11:
 	}
 L12:
 	;
-	v102 = int32(_a1798)
+	v102 = int32(_a_F_quicklistRepr_6)
 	goto L14
 L13:
 	;
-	v102 = int32(_a1799)
+	v102 = int32(_a_F_quicklistRepr_7)
 	goto L14
 L14:
 	;
@@ -2060,16 +2060,16 @@ L14:
 	}
 L15:
 	;
-	v110 = int32(_a1800)
+	v110 = int32(_a_F_quicklistRepr_8)
 	goto L17
 L16:
 	;
-	v110 = int32(_a1801)
+	v110 = int32(_a_F_quicklistRepr_9)
 	goto L17
 L17:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v10)+16)) = v110
-	v115 = F_iprintf(m, int32(_a1802), v10+int32(16))
+	v115 = F_iprintf(m, int32(_a_F_quicklistRepr_10), v10+int32(16))
 	mBase = m.M
 	v116 = m.ExcPending
 	if v116 != 0 {
@@ -2172,7 +2172,7 @@ L27:
 	goto L21
 L28:
 	;
-	v171 = F_puts(m, int32(_a1803))
+	v171 = F_puts(m, int32(_a_F_quicklistRepr_11))
 	mBase = m.M
 	v172 = m.ExcPending
 	if v172 != 0 {
@@ -2184,7 +2184,7 @@ L29:
 	;
 	v165 = *(*int32)(unsafe.Add(mBase, uint32(v63)+8))
 	*(*int32)(unsafe.Add(mBase, uint32(v10))) = v165
-	v168 = F_iprintf(m, int32(_a1804), v10)
+	v168 = F_iprintf(m, int32(_a_F_quicklistRepr_12), v10)
 	mBase = m.M
 	v169 = m.ExcPending
 	if v169 != 0 {
@@ -2194,7 +2194,7 @@ L29:
 	}
 L30:
 	;
-	v157 = F_puts(m, int32(_a1805))
+	v157 = F_puts(m, int32(_a_F_quicklistRepr_13))
 	mBase = m.M
 	v158 = m.ExcPending
 	if v158 != 0 {
@@ -2215,7 +2215,7 @@ L31:
 	}
 L32:
 	;
-	v163 = F_puts(m, int32(_a1803))
+	v163 = F_puts(m, int32(_a_F_quicklistRepr_11))
 	mBase = m.M
 	v164 = m.ExcPending
 	if v164 != 0 {

@@ -244,9 +244,9 @@ func F_evalGenericCommand(m *base.Module, l0 int32, l1 int32) {
 								v160 = int32(1)
 								v162 = v72 + v154<<(uint(v160)%32)
 								v166 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v78+v154))))
-								v171 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v166&int32(15))+uint32(_consts[310]))))
+								v171 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v166&int32(15))+uint32(_c_F_evalGenericCommand[0]))))
 								*(*uint8)(unsafe.Add(mBase, uint32(v162+v160))) = uint8(v171)
-								v177 = int32(*(*uint8)(unsafe.Add(mBase, uint32(int32(base.Ui32(v166)>>(uint(int32(4))%32)))+uint32(_consts[310]))))
+								v177 = int32(*(*uint8)(unsafe.Add(mBase, uint32(int32(base.Ui32(v166)>>(uint(int32(4))%32)))+uint32(_c_F_evalGenericCommand[0]))))
 								*(*uint8)(unsafe.Add(mBase, uint32(v162))) = uint8(v177)
 								v180 = v154 + v160
 								if v180 != int32(20) {
@@ -305,7 +305,7 @@ func F_evalGenericCommand(m *base.Module, l0 int32, l1 int32) {
 						v66 = int32(0)
 						*(*uint8)(unsafe.Add(mBase, uint32(v9)+88)) = uint8(v66)
 					}
-					v196 = *(*int32)(unsafe.Add(mBase, _consts[311]))
+					v196 = *(*int32)(unsafe.Add(mBase, _c_F_evalGenericCommand[1]))
 					v199 = F_dictFind(m, v196, v9+int32(48))
 					mBase = m.M
 					v200 = m.ExcPending
@@ -355,14 +355,14 @@ func F_evalGenericCommand(m *base.Module, l0 int32, l1 int32) {
 													m.G0 = v9 + int32(96)
 													return
 												} else {
-													v264 = *(*int32)(unsafe.Add(mBase, _consts[313]))
+													v264 = *(*int32)(unsafe.Add(mBase, _c_F_evalGenericCommand[2]))
 													F_listUnlinkNode(m, v264, v260)
 													mBase = m.M
 													v266 = m.ExcPending
 													if v266 != 0 {
 														return
 													} else {
-														v268 = *(*int32)(unsafe.Add(mBase, _consts[313]))
+														v268 = *(*int32)(unsafe.Add(mBase, _c_F_evalGenericCommand[2]))
 														v269 = *(*int32)(unsafe.Add(mBase, uint32(v224)+24))
 														v272 = *(*int32)(unsafe.Add(mBase, uint32(v268)+20))
 														if v272 != 0 {
@@ -402,7 +402,7 @@ func F_evalGenericCommand(m *base.Module, l0 int32, l1 int32) {
 										m.G0 = v9 + int32(96)
 										return
 									} else {
-										v215 = *(*int32)(unsafe.Add(mBase, _consts[311]))
+										v215 = *(*int32)(unsafe.Add(mBase, _c_F_evalGenericCommand[1]))
 										v218 = F_dictFind(m, v215, v9+int32(48))
 										mBase = m.M
 										v219 = m.ExcPending
@@ -410,7 +410,7 @@ func F_evalGenericCommand(m *base.Module, l0 int32, l1 int32) {
 											return
 										} else {
 											if v218 == int32(0) {
-												F__serverAssert(m, int32(_a608), int32(_a609), int32(509))
+												F__serverAssert(m, int32(_a_F_evalGenericCommand_0), int32(_a_F_evalGenericCommand_1), int32(509))
 												mBase = m.M
 												v300 = m.ExcPending
 												if v300 != 0 {
@@ -464,14 +464,14 @@ func F_evalGenericCommand(m *base.Module, l0 int32, l1 int32) {
 																	m.G0 = v9 + int32(96)
 																	return
 																} else {
-																	v264 = *(*int32)(unsafe.Add(mBase, _consts[313]))
+																	v264 = *(*int32)(unsafe.Add(mBase, _c_F_evalGenericCommand[2]))
 																	F_listUnlinkNode(m, v264, v260)
 																	mBase = m.M
 																	v266 = m.ExcPending
 																	if v266 != 0 {
 																		return
 																	} else {
-																		v268 = *(*int32)(unsafe.Add(mBase, _consts[313]))
+																		v268 = *(*int32)(unsafe.Add(mBase, _c_F_evalGenericCommand[2]))
 																		v269 = *(*int32)(unsafe.Add(mBase, uint32(v224)+24))
 																		v272 = *(*int32)(unsafe.Add(mBase, uint32(v268)+20))
 																		if v272 != 0 {
@@ -546,14 +546,14 @@ func F_evalGenericCommand(m *base.Module, l0 int32, l1 int32) {
 														m.G0 = v9 + int32(96)
 														return
 													} else {
-														v264 = *(*int32)(unsafe.Add(mBase, _consts[313]))
+														v264 = *(*int32)(unsafe.Add(mBase, _c_F_evalGenericCommand[2]))
 														F_listUnlinkNode(m, v264, v260)
 														mBase = m.M
 														v266 = m.ExcPending
 														if v266 != 0 {
 															return
 														} else {
-															v268 = *(*int32)(unsafe.Add(mBase, _consts[313]))
+															v268 = *(*int32)(unsafe.Add(mBase, _c_F_evalGenericCommand[2]))
 															v269 = *(*int32)(unsafe.Add(mBase, uint32(v224)+24))
 															v272 = *(*int32)(unsafe.Add(mBase, uint32(v268)+20))
 															if v272 != 0 {
@@ -593,7 +593,7 @@ func F_evalGenericCommand(m *base.Module, l0 int32, l1 int32) {
 											m.G0 = v9 + int32(96)
 											return
 										} else {
-											v215 = *(*int32)(unsafe.Add(mBase, _consts[311]))
+											v215 = *(*int32)(unsafe.Add(mBase, _c_F_evalGenericCommand[1]))
 											v218 = F_dictFind(m, v215, v9+int32(48))
 											mBase = m.M
 											v219 = m.ExcPending
@@ -601,7 +601,7 @@ func F_evalGenericCommand(m *base.Module, l0 int32, l1 int32) {
 												return
 											} else {
 												if v218 == int32(0) {
-													F__serverAssert(m, int32(_a608), int32(_a609), int32(509))
+													F__serverAssert(m, int32(_a_F_evalGenericCommand_0), int32(_a_F_evalGenericCommand_1), int32(509))
 													mBase = m.M
 													v300 = m.ExcPending
 													if v300 != 0 {
@@ -655,14 +655,14 @@ func F_evalGenericCommand(m *base.Module, l0 int32, l1 int32) {
 																		m.G0 = v9 + int32(96)
 																		return
 																	} else {
-																		v264 = *(*int32)(unsafe.Add(mBase, _consts[313]))
+																		v264 = *(*int32)(unsafe.Add(mBase, _c_F_evalGenericCommand[2]))
 																		F_listUnlinkNode(m, v264, v260)
 																		mBase = m.M
 																		v266 = m.ExcPending
 																		if v266 != 0 {
 																			return
 																		} else {
-																			v268 = *(*int32)(unsafe.Add(mBase, _consts[313]))
+																			v268 = *(*int32)(unsafe.Add(mBase, _c_F_evalGenericCommand[2]))
 																			v269 = *(*int32)(unsafe.Add(mBase, uint32(v224)+24))
 																			v272 = *(*int32)(unsafe.Add(mBase, uint32(v268)+20))
 																			if v272 != 0 {
@@ -694,7 +694,7 @@ func F_evalGenericCommand(m *base.Module, l0 int32, l1 int32) {
 									}
 								}
 							} else {
-								v204 = *(*int32)(unsafe.Add(mBase, _consts[314]))
+								v204 = *(*int32)(unsafe.Add(mBase, _c_F_evalGenericCommand[3]))
 								F_addReplyErrorObject(m, l0, v204)
 								mBase = m.M
 								v206 = m.ExcPending
@@ -708,7 +708,7 @@ func F_evalGenericCommand(m *base.Module, l0 int32, l1 int32) {
 						}
 					}
 				} else {
-					F_addReplyError(m, l0, int32(_a610))
+					F_addReplyError(m, l0, int32(_a_F_evalGenericCommand_2))
 					mBase = m.M
 					v31 = m.ExcPending
 					if v31 != 0 {
@@ -719,7 +719,7 @@ func F_evalGenericCommand(m *base.Module, l0 int32, l1 int32) {
 					}
 				}
 			} else {
-				F_addReplyError(m, l0, int32(_a611))
+				F_addReplyError(m, l0, int32(_a_F_evalGenericCommand_3))
 				mBase = m.M
 				v26 = m.ExcPending
 				if v26 != 0 {
@@ -833,11 +833,11 @@ L1:
 L2:
 	;
 	v21 = int32(*(*uint8)(unsafe.Add(mBase, uint32(l0)+224)))
-	v27 = v21<<(uint(int32(2))%32) + int32(_a2368)
+	v27 = v21<<(uint(int32(2))%32) + int32(_a_F_genericHgetallCommand_0)
 	goto L1
 L3:
 	;
-	v27 = int32(_a2369)
+	v27 = int32(_a_F_genericHgetallCommand_1)
 	goto L1
 L4:
 	;
@@ -1407,7 +1407,7 @@ L2:
 	}
 L3:
 	;
-	F__serverPanic_1(m, int32(_a2436), int32(3585), int32(_a576), int32(0))
+	F__serverPanic_1(m, int32(_a_F_genericZrangebylexCommand_0), int32(3585), int32(_a_F_genericZrangebylexCommand_1), int32(0))
 	mBase = m.M
 	v531 = m.ExcPending
 	if v531 != 0 {
@@ -1417,7 +1417,7 @@ L3:
 	}
 L4:
 	;
-	F__serverAssert(m, int32(_a575), int32(_a2436), int32(857))
+	F__serverAssert(m, int32(_a_F_genericZrangebylexCommand_2), int32(_a_F_genericZrangebylexCommand_0), int32(857))
 	mBase = m.M
 	v524 = m.ExcPending
 	if v524 != 0 {
@@ -1650,10 +1650,10 @@ L36:
 	v134 = F___errno_location(m)
 	mBase = m.M
 	*(*int32)(unsafe.Add(mBase, uint32(v134))) = v126
-	v140 = *(*int64)(unsafe.Add(mBase, _consts[648]))
+	v140 = *(*int64)(unsafe.Add(mBase, _c_F_genericZrangebylexCommand[0]))
 	*(*int64)(unsafe.Add(mBase, uint32(v132+int32(8)))) = v140
 	*(*int64)(unsafe.Add(mBase, uint32(v132)+24)) = int64(0)
-	v145 = *(*int64)(unsafe.Add(mBase, _consts[649]))
+	v145 = *(*int64)(unsafe.Add(mBase, _c_F_genericZrangebylexCommand[1]))
 	*(*int64)(unsafe.Add(mBase, uint32(v132))) = v145
 	F_ffc_from_chars_double_options(m, v132+int32(16), v121, v121+v125, v132+int32(24), v132)
 	mBase = m.M
@@ -1971,7 +1971,7 @@ L80:
 	}
 L81:
 	;
-	v262 = *(*int32)(unsafe.Add(mBase, _consts[419]))
+	v262 = *(*int32)(unsafe.Add(mBase, _c_F_genericZrangebylexCommand[2]))
 	if v253 == v262 {
 		v508 = v238
 		goto L5
@@ -1980,7 +1980,7 @@ L81:
 	}
 L82:
 	;
-	v265 = *(*int32)(unsafe.Add(mBase, _consts[420]))
+	v265 = *(*int32)(unsafe.Add(mBase, _c_F_genericZrangebylexCommand[3]))
 	if v256 == v265 {
 		v508 = v238
 		goto L5
@@ -2007,7 +2007,7 @@ L85:
 	goto L78
 L86:
 	;
-	v272 = *(*int32)(unsafe.Add(mBase, _consts[419]))
+	v272 = *(*int32)(unsafe.Add(mBase, _c_F_genericZrangebylexCommand[2]))
 	if v253 == v272 {
 		v508 = v238
 		goto L5
@@ -2016,7 +2016,7 @@ L86:
 	}
 L87:
 	;
-	v275 = *(*int32)(unsafe.Add(mBase, _consts[420]))
+	v275 = *(*int32)(unsafe.Add(mBase, _c_F_genericZrangebylexCommand[3]))
 	if v256 == v275 {
 		v508 = v238
 		goto L5
@@ -2179,7 +2179,7 @@ L113:
 	}
 L114:
 	;
-	v340 = *(*int32)(unsafe.Add(mBase, _consts[419]))
+	v340 = *(*int32)(unsafe.Add(mBase, _c_F_genericZrangebylexCommand[2]))
 	if v253 == v340 {
 		goto L75
 	} else {
@@ -2187,7 +2187,7 @@ L114:
 	}
 L115:
 	;
-	v343 = *(*int32)(unsafe.Add(mBase, _consts[420]))
+	v343 = *(*int32)(unsafe.Add(mBase, _c_F_genericZrangebylexCommand[3]))
 	if v334 == v343 {
 		goto L75
 	} else {
@@ -2336,7 +2336,7 @@ L137:
 	goto L119
 L138:
 	;
-	v402 = *(*int32)(unsafe.Add(mBase, _consts[419]))
+	v402 = *(*int32)(unsafe.Add(mBase, _c_F_genericZrangebylexCommand[2]))
 	if v253 == v402 {
 		goto L75
 	} else {
@@ -2344,7 +2344,7 @@ L138:
 	}
 L139:
 	;
-	v405 = *(*int32)(unsafe.Add(mBase, _consts[420]))
+	v405 = *(*int32)(unsafe.Add(mBase, _c_F_genericZrangebylexCommand[3]))
 	if v334 == v405 {
 		goto L75
 	} else {
@@ -2914,7 +2914,7 @@ func F_setGenericCommand(m *base.Module, l0 int32, l1 int32, l2 int32, l3 int32,
 	}
 L1:
 	;
-	F__serverAssert(m, int32(_a2430), int32(_a2431), int32(172))
+	F__serverAssert(m, int32(_a_F_setGenericCommand_0), int32(_a_F_setGenericCommand_1), int32(172))
 	mBase = m.M
 	v438 = m.ExcPending
 	if v438 != 0 {
@@ -3009,7 +3009,7 @@ L14:
 	goto L13
 L15:
 	;
-	v40 = *(*int64)(unsafe.Add(mBase, _consts[12]))
+	v40 = *(*int64)(unsafe.Add(mBase, _c_F_setGenericCommand[0]))
 	goto L16
 L16:
 	;
@@ -3063,7 +3063,7 @@ L22:
 	v56 = *(*int32)(unsafe.Add(mBase, uint32(l0)+20))
 	v57 = *(*int32)(unsafe.Add(mBase, uint32(v56)+4))
 	v59 = int32(*(*uint8)(unsafe.Add(mBase, uint32(l0)+224)))
-	v63 = *(*int32)(unsafe.Add(mBase, uint32(v59<<(uint(int32(2))%32))+uint32(_consts[339])))
+	v63 = *(*int32)(unsafe.Add(mBase, uint32(v59<<(uint(int32(2))%32))+uint32(_c_F_setGenericCommand[1])))
 	v64 = F_lookupKeyReadOrReply(m, l0, v57, v63)
 	mBase = m.M
 	v65 = m.ExcPending
@@ -3210,7 +3210,7 @@ L39:
 L40:
 	;
 	v91 = int32(*(*uint8)(unsafe.Add(mBase, uint32(l0)+224)))
-	v95 = *(*int32)(unsafe.Add(mBase, uint32(v91<<(uint(int32(2))%32))+uint32(_consts[339])))
+	v95 = *(*int32)(unsafe.Add(mBase, uint32(v91<<(uint(int32(2))%32))+uint32(_c_F_setGenericCommand[1])))
 	v96 = v95
 	goto L39
 L41:
@@ -3251,7 +3251,7 @@ L45:
 L46:
 	;
 	v102 = int32(*(*uint8)(unsafe.Add(mBase, uint32(l0)+224)))
-	v106 = *(*int32)(unsafe.Add(mBase, uint32(v102<<(uint(int32(2))%32))+uint32(_consts[339])))
+	v106 = *(*int32)(unsafe.Add(mBase, uint32(v102<<(uint(int32(2))%32))+uint32(_c_F_setGenericCommand[1])))
 	v107 = v106
 	goto L45
 L47:
@@ -3329,7 +3329,7 @@ L58:
 L59:
 	;
 	v121 = int32(*(*uint8)(unsafe.Add(mBase, uint32(l0)+224)))
-	v125 = *(*int32)(unsafe.Add(mBase, uint32(v121<<(uint(int32(2))%32))+uint32(_consts[339])))
+	v125 = *(*int32)(unsafe.Add(mBase, uint32(v121<<(uint(int32(2))%32))+uint32(_c_F_setGenericCommand[1])))
 	v126 = v125
 	goto L58
 L60:
@@ -3345,7 +3345,7 @@ L61:
 L62:
 	;
 	v131 = *(*int64)(unsafe.Add(mBase, uint32(v15)+32))
-	v135 = *(*int32)(unsafe.Add(mBase, _consts[14]))
+	v135 = *(*int32)(unsafe.Add(mBase, _c_F_setGenericCommand[2]))
 	if v135 == int32(0) {
 		goto L65
 	} else {
@@ -3386,9 +3386,9 @@ L67:
 	goto L65
 L68:
 	;
-	v144 = int32(_a20)
-	v145 = *(*int32)(unsafe.Add(mBase, _consts[166]))
-	v147 = *(*int32)(unsafe.Add(mBase, _consts[384]))
+	v144 = int32(_a_F_setGenericCommand_2)
+	v145 = *(*int32)(unsafe.Add(mBase, _c_F_setGenericCommand[3]))
+	v147 = *(*int32)(unsafe.Add(mBase, _c_F_setGenericCommand[4]))
 	if v147 != 0 {
 		v153 = v141
 		goto L64
@@ -3405,7 +3405,7 @@ L69:
 	}
 L70:
 	;
-	v149 = *(*int32)(unsafe.Add(mBase, _consts[505]))
+	v149 = *(*int32)(unsafe.Add(mBase, _c_F_setGenericCommand[5]))
 	v153 = base.B2i32(v149 == int32(0))
 	goto L64
 L71:
@@ -3437,7 +3437,7 @@ L74:
 	goto L72
 L75:
 	;
-	v161 = *(*int32)(unsafe.Add(mBase, _consts[27]))
+	v161 = *(*int32)(unsafe.Add(mBase, _c_F_setGenericCommand[6]))
 	F_addReply(m, l0, v161)
 	mBase = m.M
 	v163 = m.ExcPending
@@ -3524,12 +3524,12 @@ L86:
 	goto L84
 L87:
 	;
-	v218 = int32(_a20)
-	v220 = *(*int64)(unsafe.Add(mBase, _consts[180]))
-	*(*int64)(unsafe.Add(mBase, _consts[180])) = v220 + int64(1)
+	v218 = int32(_a_F_setGenericCommand_2)
+	v220 = *(*int64)(unsafe.Add(mBase, _c_F_setGenericCommand[7]))
+	*(*int64)(unsafe.Add(mBase, _c_F_setGenericCommand[7])) = v220 + int64(1)
 	v226 = *(*int32)(unsafe.Add(mBase, uint32(l0)+96))
 	v227 = *(*int32)(unsafe.Add(mBase, uint32(v226)+28))
-	F_notifyKeyspaceEvent(m, int32(8), int32(_a2432), l2, v227)
+	F_notifyKeyspaceEvent(m, int32(8), int32(_a_F_setGenericCommand_3), l2, v227)
 	mBase = m.M
 	v229 = m.ExcPending
 	if v229 != 0 {
@@ -3617,7 +3617,7 @@ L99:
 	}
 L100:
 	;
-	v284 = *(*int32)(unsafe.Add(mBase, _consts[27]))
+	v284 = *(*int32)(unsafe.Add(mBase, _c_F_setGenericCommand[6]))
 	if l6 != 0 {
 		goto L118
 	} else {
@@ -3641,7 +3641,7 @@ L103:
 	;
 	v276 = *(*int32)(unsafe.Add(mBase, uint32(l0)+96))
 	v277 = *(*int32)(unsafe.Add(mBase, uint32(v276)+28))
-	F_notifyKeyspaceEvent(m, int32(4), int32(_a2433), l2, v277)
+	F_notifyKeyspaceEvent(m, int32(4), int32(_a_F_setGenericCommand_4), l2, v277)
 	mBase = m.M
 	v279 = m.ExcPending
 	if v279 != 0 {
@@ -3685,10 +3685,10 @@ L107:
 	*(*int32)(unsafe.Add(mBase, uint32(v15)+4)) = l2
 	v260 = *(*int32)(unsafe.Add(mBase, uint32(v15)+44))
 	*(*int32)(unsafe.Add(mBase, uint32(v15)+8)) = v260
-	v262 = int32(_a388)
-	v263 = *(*int32)(unsafe.Add(mBase, _consts[874]))
+	v262 = int32(_a_F_setGenericCommand_5)
+	v263 = *(*int32)(unsafe.Add(mBase, _c_F_setGenericCommand[8]))
 	*(*int32)(unsafe.Add(mBase, uint32(v15))) = v263
-	v266 = *(*int32)(unsafe.Add(mBase, _consts[859]))
+	v266 = *(*int32)(unsafe.Add(mBase, _c_F_setGenericCommand[9]))
 	*(*int32)(unsafe.Add(mBase, uint32(v15)+12)) = v266
 	F_rewriteClientCommandVector(m, l0, int32(5), v15)
 	mBase = m.M
@@ -3715,7 +3715,7 @@ L109:
 	}
 L110:
 	;
-	v250 = *(*int32)(unsafe.Add(mBase, _consts[859]))
+	v250 = *(*int32)(unsafe.Add(mBase, _c_F_setGenericCommand[9]))
 	F_rewriteClientCommandArgument(m, l0, int32(3), v250)
 	mBase = m.M
 	v252 = m.ExcPending

@@ -304,7 +304,7 @@ L3:
 	}
 L4:
 	;
-	v23 = F_sdsnew(m, int32(_a630))
+	v23 = F_sdsnew(m, int32(_a_F_functionExtractLibMetaData_0))
 	mBase = m.M
 	v26 = m.ExcPending
 	if v26 != 0 {
@@ -361,7 +361,7 @@ L13:
 	goto L10
 L14:
 	;
-	v37 = F_sdsnew(m, int32(_a631))
+	v37 = F_sdsnew(m, int32(_a_F_functionExtractLibMetaData_1))
 	mBase = m.M
 	v38 = m.ExcPending
 	if v38 != 0 {
@@ -386,7 +386,7 @@ L16:
 	}
 L17:
 	;
-	v49 = F_sdsnew(m, int32(_a631))
+	v49 = F_sdsnew(m, int32(_a_F_functionExtractLibMetaData_1))
 	mBase = m.M
 	v50 = m.ExcPending
 	if v50 != 0 {
@@ -681,7 +681,7 @@ L61:
 	}
 L62:
 	;
-	v363 = F_sdsnew(m, int32(_a632))
+	v363 = F_sdsnew(m, int32(_a_F_functionExtractLibMetaData_2))
 	mBase = m.M
 	v364 = m.ExcPending
 	if v364 != 0 {
@@ -697,7 +697,7 @@ L63:
 L64:
 	;
 	v179 = *(*int32)(unsafe.Add(mBase, uint32(v43+v174<<(uint(int32(2))%32))))
-	v180 = int32(_a633)
+	v180 = int32(_a_F_functionExtractLibMetaData_3)
 	goto L67
 L65:
 	;
@@ -843,7 +843,7 @@ L83:
 	}
 L84:
 	;
-	v240 = F_sdscatfmt(m, v236, int32(_a634), int32(0))
+	v240 = F_sdscatfmt(m, v236, int32(_a_F_functionExtractLibMetaData_4), int32(0))
 	mBase = m.M
 	v241 = m.ExcPending
 	if v241 != 0 {
@@ -1146,7 +1146,7 @@ L131:
 L132:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v14))) = v179
-	v400 = F_sdscatfmt(m, v396, int32(_a635), v14)
+	v400 = F_sdscatfmt(m, v396, int32(_a_F_functionExtractLibMetaData_5), v14)
 	mBase = m.M
 	v401 = m.ExcPending
 	if v401 != 0 {
@@ -1373,7 +1373,7 @@ L4:
 	return
 L5:
 	;
-	F_addReplyError(m, l0, int32(_a626))
+	F_addReplyError(m, l0, int32(_a_F_functionFlushCommand_0))
 	mBase = m.M
 	v145 = m.ExcPending
 	if v145 != 0 {
@@ -1404,7 +1404,7 @@ L8:
 	v11 = *(*int32)(unsafe.Add(mBase, uint32(v10)+8))
 	v12 = F_objectGetVal(m, v11)
 	mBase = m.M
-	v13 = int32(_a627)
+	v13 = int32(_a_F_functionFlushCommand_1)
 	v16 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v12))))
 	if v16 != 0 {
 		goto L12
@@ -1518,7 +1518,7 @@ L23:
 	v57 = *(*int32)(unsafe.Add(mBase, uint32(v56)+8))
 	v58 = F_objectGetVal(m, v57)
 	mBase = m.M
-	v59 = int32(_a628)
+	v59 = int32(_a_F_functionFlushCommand_2)
 	v62 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v58))))
 	if v62 != 0 {
 		goto L27
@@ -1624,7 +1624,7 @@ L37:
 	goto L6
 L38:
 	;
-	v104 = *(*int32)(unsafe.Add(mBase, _consts[337]))
+	v104 = *(*int32)(unsafe.Add(mBase, _c_F_functionFlushCommand[0]))
 	v107 = base.B2i32(v104 != int32(0))
 	goto L6
 L39:
@@ -1639,7 +1639,7 @@ L39:
 	}
 L40:
 	;
-	v115 = F_dictCreate(m, int32(_a617))
+	v115 = F_dictCreate(m, int32(_a_F_functionFlushCommand_3))
 	mBase = m.M
 	v116 = m.ExcPending
 	if v116 != 0 {
@@ -1650,7 +1650,7 @@ L40:
 L41:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v112))) = v115
-	v119 = F_dictCreate(m, int32(_a618))
+	v119 = F_dictCreate(m, int32(_a_F_functionFlushCommand_4))
 	mBase = m.M
 	v120 = m.ExcPending
 	if v120 != 0 {
@@ -1661,7 +1661,7 @@ L41:
 L42:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v112)+4)) = v119
-	v123 = F_dictCreate(m, int32(_a619))
+	v123 = F_dictCreate(m, int32(_a_F_functionFlushCommand_5))
 	mBase = m.M
 	v124 = m.ExcPending
 	if v124 != 0 {
@@ -1684,11 +1684,11 @@ L44:
 	;
 	v129 = int32(0)
 	*(*int32)(unsafe.Add(mBase, uint32(v112)+8)) = v129
-	*(*int32)(unsafe.Add(mBase, _consts[332])) = v112
-	v133 = int32(_a20)
-	v135 = *(*int64)(unsafe.Add(mBase, _consts[180]))
-	*(*int64)(unsafe.Add(mBase, _consts[180])) = v135 + int64(1)
-	v140 = *(*int32)(unsafe.Add(mBase, _consts[27]))
+	*(*int32)(unsafe.Add(mBase, _c_F_functionFlushCommand[1])) = v112
+	v133 = int32(_a_F_functionFlushCommand_6)
+	v135 = *(*int64)(unsafe.Add(mBase, _c_F_functionFlushCommand[2]))
+	*(*int64)(unsafe.Add(mBase, _c_F_functionFlushCommand[2])) = v135 + int64(1)
+	v140 = *(*int32)(unsafe.Add(mBase, _c_F_functionFlushCommand[3]))
 	F_addReply(m, l0, v140)
 	mBase = m.M
 	v142 = m.ExcPending
@@ -1729,7 +1729,7 @@ func F_functionHelpCommand(m *base.Module, l0 int32) {
 	v3 = m.G0
 	v5 = v3 - int32(160)
 	m.G0 = v5
-	v11 = F__emscripten_memcpy_bulkmem(m, v5, int32(_a629), int32(148))
+	v11 = F__emscripten_memcpy_bulkmem(m, v5, int32(_a_F_functionHelpCommand_0), int32(148))
 	F_addReplyHelp(m, l0, v11)
 	v14 = m.ExcPending
 	if v14 != 0 {
@@ -1841,7 +1841,7 @@ func F_functionStatsCommand(m *base.Module, l0 int32) {
 	var v134 int32
 	_ = v134
 	v2 = int32(0)
-	v9 = *(*int32)(unsafe.Add(mBase, _consts[333]))
+	v9 = *(*int32)(unsafe.Add(mBase, _c_F_functionStatsCommand[0]))
 	goto L2
 L1:
 	;
@@ -1882,7 +1882,7 @@ L5:
 	}
 L6:
 	;
-	v19 = *(*int32)(unsafe.Add(mBase, _consts[334]))
+	v19 = *(*int32)(unsafe.Add(mBase, _c_F_functionStatsCommand[1]))
 	F_addReplyErrorObject(m, l0, v19)
 	mBase = m.M
 	v21 = m.ExcPending
@@ -1896,7 +1896,7 @@ L7:
 	return
 L8:
 	;
-	F_addReplyBulkCString(m, l0, int32(_a620))
+	F_addReplyBulkCString(m, l0, int32(_a_F_functionStatsCommand_0))
 	mBase = m.M
 	v27 = m.ExcPending
 	if v27 != 0 {
@@ -1907,11 +1907,11 @@ L8:
 L9:
 	;
 	v28 = int32(0)
-	v29 = *(*int32)(unsafe.Add(mBase, _consts[333]))
+	v29 = *(*int32)(unsafe.Add(mBase, _c_F_functionStatsCommand[0]))
 	goto L12
 L10:
 	;
-	F_addReplyBulkCString(m, l0, int32(_a621))
+	F_addReplyBulkCString(m, l0, int32(_a_F_functionStatsCommand_1))
 	mBase = m.M
 	v123 = m.ExcPending
 	if v123 != 0 {
@@ -1951,7 +1951,7 @@ L14:
 	goto L10
 L15:
 	;
-	F_addReplyBulkCString(m, l0, int32(_a373))
+	F_addReplyBulkCString(m, l0, int32(_a_F_functionStatsCommand_2))
 	mBase = m.M
 	v39 = m.ExcPending
 	if v39 != 0 {
@@ -1981,7 +1981,7 @@ L17:
 	}
 L18:
 	;
-	F_addReplyBulkCString(m, l0, int32(_a622))
+	F_addReplyBulkCString(m, l0, int32(_a_F_functionStatsCommand_3))
 	mBase = m.M
 	v46 = m.ExcPending
 	if v46 != 0 {
@@ -2020,7 +2020,7 @@ L21:
 	}
 L22:
 	;
-	F_addReplyBulkCString(m, l0, int32(_a623))
+	F_addReplyBulkCString(m, l0, int32(_a_F_functionStatsCommand_4))
 	mBase = m.M
 	v109 = m.ExcPending
 	if v109 != 0 {
@@ -2134,7 +2134,7 @@ L36:
 	goto L10
 L37:
 	;
-	v126 = *(*int32)(unsafe.Add(mBase, _consts[335]))
+	v126 = *(*int32)(unsafe.Add(mBase, _c_F_functionStatsCommand[2]))
 	v127 = *(*int32)(unsafe.Add(mBase, uint32(v126)+16))
 	v128 = *(*int32)(unsafe.Add(mBase, uint32(v126)+12))
 	goto L38

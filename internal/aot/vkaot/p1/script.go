@@ -96,9 +96,9 @@ func F_evalCalcScriptHash(m *base.Module, l0 int32, l1 int32, l2 int32) {
 			v91 = int32(1)
 			v93 = l2 + v85<<(uint(v91)%32)
 			v97 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v9+v85))))
-			v102 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v97&int32(15))+uint32(_consts[310]))))
+			v102 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v97&int32(15))+uint32(_c_F_evalCalcScriptHash[0]))))
 			*(*uint8)(unsafe.Add(mBase, uint32(v93+v91))) = uint8(v102)
-			v108 = int32(*(*uint8)(unsafe.Add(mBase, uint32(int32(base.Ui32(v97)>>(uint(int32(4))%32)))+uint32(_consts[310]))))
+			v108 = int32(*(*uint8)(unsafe.Add(mBase, uint32(int32(base.Ui32(v97)>>(uint(int32(4))%32)))+uint32(_c_F_evalCalcScriptHash[0]))))
 			*(*uint8)(unsafe.Add(mBase, uint32(v93))) = uint8(v108)
 			v111 = v85 + v91
 			if v111 != int32(20) {
@@ -166,12 +166,12 @@ func F_scriptGetSlot(m *base.Module) int32 {
 	_ = v10
 	var v12 int32
 	_ = v12
-	v3 = *(*int32)(unsafe.Add(mBase, _consts[333]))
+	v3 = *(*int32)(unsafe.Add(mBase, _c_F_scriptGetSlot[0]))
 	if v3 != 0 {
 		v12 = *(*int32)(unsafe.Add(mBase, uint32(v3)+32))
 		return v12
 	} else {
-		F__serverAssert(m, int32(_a2020), int32(_a2021), int32(346))
+		F__serverAssert(m, int32(_a_F_scriptGetSlot_0), int32(_a_F_scriptGetSlot_1), int32(346))
 		mBase = m.M
 		v10 = m.ExcPending
 		if v10 != 0 {
@@ -193,7 +193,7 @@ func F_scriptIsRunning(m *base.Module) int32 {
 	var v2 int32
 	_ = v2
 	v1 = int32(0)
-	v2 = *(*int32)(unsafe.Add(mBase, _consts[333]))
+	v2 = *(*int32)(unsafe.Add(mBase, _c_F_scriptIsRunning[0]))
 	return base.B2i32(v2 != v1)
 }
 func F_scriptIsTimedout(m *base.Module) int32 {
@@ -208,7 +208,7 @@ func F_scriptIsTimedout(m *base.Module) int32 {
 	var v13 int32
 	_ = v13
 	v1 = int32(0)
-	v5 = *(*int32)(unsafe.Add(mBase, _consts[333]))
+	v5 = *(*int32)(unsafe.Add(mBase, _c_F_scriptIsTimedout[0]))
 	if v5 == v1 {
 		v13 = v1
 	} else {
@@ -224,12 +224,12 @@ func F_scriptSetSlot(m *base.Module, l0 int32) {
 	_ = v4
 	var v9 int32
 	_ = v9
-	v4 = *(*int32)(unsafe.Add(mBase, _consts[333]))
+	v4 = *(*int32)(unsafe.Add(mBase, _c_F_scriptSetSlot[0]))
 	if v4 != 0 {
 		*(*int32)(unsafe.Add(mBase, uint32(v4)+32)) = l0
 		return
 	} else {
-		F__serverAssert(m, int32(_a2020), int32(_a2021), int32(351))
+		F__serverAssert(m, int32(_a_F_scriptSetSlot_0), int32(_a_F_scriptSetSlot_1), int32(351))
 		mBase = m.M
 		v9 = m.ExcPending
 		if v9 != 0 {

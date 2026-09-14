@@ -202,7 +202,7 @@ func F_lpBatchDelete(m *base.Module, l0 int32, l1 int32, l2 int32) int32 {
 	}
 L1:
 	;
-	F__serverAssert(m, int32(_a732), int32(_a729), int32(1022))
+	F__serverAssert(m, int32(_a_F_lpBatchDelete_0), int32(_a_F_lpBatchDelete_1), int32(1022))
 	mBase = m.M
 	v330 = m.ExcPending
 	if v330 != 0 {
@@ -212,7 +212,7 @@ L1:
 	}
 L2:
 	;
-	F__serverAssert(m, int32(_a733), int32(_a729), int32(1014))
+	F__serverAssert(m, int32(_a_F_lpBatchDelete_2), int32(_a_F_lpBatchDelete_1), int32(1014))
 	mBase = m.M
 	v324 = m.ExcPending
 	if v324 != 0 {
@@ -222,7 +222,7 @@ L2:
 	}
 L3:
 	;
-	F__serverAssert(m, int32(_a734), int32(_a729), int32(1003))
+	F__serverAssert(m, int32(_a_F_lpBatchDelete_3), int32(_a_F_lpBatchDelete_1), int32(1003))
 	mBase = m.M
 	v318 = m.ExcPending
 	if v318 != 0 {
@@ -232,7 +232,7 @@ L3:
 	}
 L4:
 	;
-	F__serverAssert(m, int32(_a735), int32(_a729), int32(988))
+	F__serverAssert(m, int32(_a_F_lpBatchDelete_4), int32(_a_F_lpBatchDelete_1), int32(988))
 	mBase = m.M
 	v312 = m.ExcPending
 	if v312 != 0 {
@@ -347,7 +347,7 @@ L19:
 	goto L13
 L20:
 	;
-	v105 = *(*int32)(unsafe.Add(mBase, uint32(v65<<(uint(int32(2))%32))+uint32(_consts[375])))
+	v105 = *(*int32)(unsafe.Add(mBase, uint32(v65<<(uint(int32(2))%32))+uint32(_c_F_lpBatchDelete[0])))
 	v106 = v42
 	v107 = v105
 	goto L13
@@ -1462,7 +1462,7 @@ func F_lpDeleteRangeWithEntry(m *base.Module, l0 int32, l1 int32, l2 int32) int3
 	}
 L1:
 	;
-	F__serverAssert(m, int32(_a731), int32(_a729), int32(929))
+	F__serverAssert(m, int32(_a_F_lpDeleteRangeWithEntry_0), int32(_a_F_lpDeleteRangeWithEntry_1), int32(929))
 	mBase = m.M
 	v308 = m.ExcPending
 	if v308 != 0 {
@@ -1576,7 +1576,7 @@ L16:
 	goto L10
 L17:
 	;
-	v99 = *(*int32)(unsafe.Add(mBase, uint32(v59<<(uint(int32(2))%32))+uint32(_consts[375])))
+	v99 = *(*int32)(unsafe.Add(mBase, uint32(v59<<(uint(int32(2))%32))+uint32(_c_F_lpDeleteRangeWithEntry[0])))
 	v100 = v29
 	v101 = v99
 	goto L10
@@ -2358,7 +2358,7 @@ func F_lpGetEdgeStreamID(m *base.Module, l0 int32, l1 int32, l2 int32, l3 int32)
 	}
 L1:
 	;
-	F__serverAssert(m, int32(_a2401), int32(_a2402), int32(282))
+	F__serverAssert(m, int32(_a_F_lpGetEdgeStreamID_0), int32(_a_F_lpGetEdgeStreamID_1), int32(282))
 	mBase = m.M
 	v841 = m.ExcPending
 	if v841 != 0 {
@@ -2368,7 +2368,7 @@ L1:
 	}
 L2:
 	;
-	F__serverAssert(m, int32(_a2401), int32(_a2402), int32(282))
+	F__serverAssert(m, int32(_a_F_lpGetEdgeStreamID_0), int32(_a_F_lpGetEdgeStreamID_1), int32(282))
 	mBase = m.M
 	v835 = m.ExcPending
 	if v835 != 0 {
@@ -2378,7 +2378,7 @@ L2:
 	}
 L3:
 	;
-	F__serverAssert(m, int32(_a2401), int32(_a2402), int32(282))
+	F__serverAssert(m, int32(_a_F_lpGetEdgeStreamID_0), int32(_a_F_lpGetEdgeStreamID_1), int32(282))
 	mBase = m.M
 	v829 = m.ExcPending
 	if v829 != 0 {
@@ -2388,7 +2388,7 @@ L3:
 	}
 L4:
 	;
-	F__serverAssert(m, int32(_a2401), int32(_a2402), int32(282))
+	F__serverAssert(m, int32(_a_F_lpGetEdgeStreamID_0), int32(_a_F_lpGetEdgeStreamID_1), int32(282))
 	mBase = m.M
 	v823 = m.ExcPending
 	if v823 != 0 {
@@ -3727,7 +3727,7 @@ func F_lpLength(m *base.Module, l0 int32) int32 {
 				v122 = v118
 				return v122
 			} else {
-				F__serverAssert(m, int32(_a730), int32(_a729), int32(426))
+				F__serverAssert(m, int32(_a_F_lpLength_0), int32(_a_F_lpLength_1), int32(426))
 				mBase = m.M
 				v109 = m.ExcPending
 				if v109 != 0 {
@@ -3753,7 +3753,7 @@ func F_lpLength(m *base.Module, l0 int32) int32 {
 						if v22&int32(224) != int32(192) {
 							v44 = (v23 + int32(15)) & int32(255)
 							if base.Ui32(v44) < base.Ui32(int32(4)) {
-								v84 = *(*int32)(unsafe.Add(mBase, uint32(v44<<(uint(int32(2))%32))+uint32(_consts[375])))
+								v84 = *(*int32)(unsafe.Add(mBase, uint32(v44<<(uint(int32(2))%32))+uint32(_c_F_lpLength[0])))
 								v85 = v16
 								v86 = v84
 							} else {
@@ -3844,7 +3844,7 @@ func F_lpLength(m *base.Module, l0 int32) int32 {
 			}
 			v94 = *(*int32)(unsafe.Add(mBase, uint32(l0)))
 			if v88+int32(1) != l0+v94 {
-				F__serverAssert(m, int32(_a730), int32(_a729), int32(400))
+				F__serverAssert(m, int32(_a_F_lpLength_0), int32(_a_F_lpLength_1), int32(400))
 				mBase = m.M
 				v115 = m.ExcPending
 				if v115 != 0 {
@@ -4039,7 +4039,7 @@ func F_lpMerge(m *base.Module, l0 int32, l1 int32) int32 {
 	}
 L1:
 	;
-	F__serverAssert(m, int32(_a736), int32(_a729), int32(1081))
+	F__serverAssert(m, int32(_a_F_lpMerge_0), int32(_a_F_lpMerge_1), int32(1081))
 	mBase = m.M
 	v253 = m.ExcPending
 	if v253 != 0 {
@@ -4569,7 +4569,7 @@ func F_lpNext(m *base.Module, l0 int32, l1 int32) int32 {
 	var v101 int32
 	_ = v101
 	if l1 == int32(0) {
-		F__serverAssert(m, int32(_a728), int32(_a729), int32(395))
+		F__serverAssert(m, int32(_a_F_lpNext_0), int32(_a_F_lpNext_1), int32(395))
 		mBase = m.M
 		v95 = m.ExcPending
 		if v95 != 0 {
@@ -4590,7 +4590,7 @@ func F_lpNext(m *base.Module, l0 int32, l1 int32) int32 {
 				if v10&int32(224) != int32(192) {
 					v32 = (v11 + int32(15)) & int32(255)
 					if base.Ui32(v32) < base.Ui32(int32(4)) {
-						v72 = *(*int32)(unsafe.Add(mBase, uint32(v32<<(uint(int32(2))%32))+uint32(_consts[375])))
+						v72 = *(*int32)(unsafe.Add(mBase, uint32(v32<<(uint(int32(2))%32))+uint32(_c_F_lpNext[0])))
 						v73 = v9
 						v74 = v72
 					} else {
@@ -4676,7 +4676,7 @@ func F_lpNext(m *base.Module, l0 int32, l1 int32) int32 {
 		} else {
 			v83 = *(*int32)(unsafe.Add(mBase, uint32(l0)))
 			if v76+int32(1) != l0+v83 {
-				F__serverAssert(m, int32(_a730), int32(_a729), int32(400))
+				F__serverAssert(m, int32(_a_F_lpNext_2), int32(_a_F_lpNext_1), int32(400))
 				mBase = m.M
 				v101 = m.ExcPending
 				if v101 != 0 {
@@ -4772,7 +4772,7 @@ func F_lpRandomPair(m *base.Module, l0 int32, l1 int32, l2 int32, l3 int32) {
 	v10 = v8 - int32(16)
 	m.G0 = v10
 	if l1 == int32(0) {
-		F__serverAssert(m, int32(_a737), int32(_a729), int32(1322))
+		F__serverAssert(m, int32(_a_F_lpRandomPair_0), int32(_a_F_lpRandomPair_1), int32(1322))
 		mBase = m.M
 		v153 = m.ExcPending
 		if v153 != 0 {
@@ -4786,9 +4786,9 @@ func F_lpRandomPair(m *base.Module, l0 int32, l1 int32, l2 int32, l3 int32) {
 		}
 	} else {
 		v15 = int32(0)
-		v17 = *(*int64)(unsafe.Add(mBase, _consts[343]))
+		v17 = *(*int64)(unsafe.Add(mBase, _c_F_lpRandomPair[0]))
 		v21 = v17*int64(6364136223846793005) + int64(1)
-		*(*int64)(unsafe.Add(mBase, _consts[343])) = v21
+		*(*int64)(unsafe.Add(mBase, _c_F_lpRandomPair[0])) = v21
 		v26 = base.I32_rem_u_s(base.I32_wrap_i64(int64(base.Ui64(v21)>>(uint(int64(33))%64))), l1)
 		v29 = F_lpSeek(m, l0, v26<<(uint(int32(1))%32))
 		mBase = m.M
@@ -4797,7 +4797,7 @@ func F_lpRandomPair(m *base.Module, l0 int32, l1 int32, l2 int32, l3 int32) {
 			return
 		} else {
 			if v29 == int32(0) {
-				F__serverAssert(m, int32(_a738), int32(_a729), int32(1326))
+				F__serverAssert(m, int32(_a_F_lpRandomPair_2), int32(_a_F_lpRandomPair_1), int32(1326))
 				mBase = m.M
 				v159 = m.ExcPending
 				if v159 != 0 {
@@ -4836,7 +4836,7 @@ func F_lpRandomPair(m *base.Module, l0 int32, l1 int32, l2 int32, l3 int32) {
 								if v51&int32(224) != int32(192) {
 									v73 = (v52 + int32(15)) & int32(255)
 									if base.Ui32(v73) < base.Ui32(int32(4)) {
-										v113 = *(*int32)(unsafe.Add(mBase, uint32(v73<<(uint(int32(2))%32))+uint32(_consts[375])))
+										v113 = *(*int32)(unsafe.Add(mBase, uint32(v73<<(uint(int32(2))%32))+uint32(_c_F_lpRandomPair[1])))
 										v114 = v50
 										v115 = v113
 									} else {
@@ -4937,7 +4937,7 @@ func F_lpRandomPair(m *base.Module, l0 int32, l1 int32, l2 int32, l3 int32) {
 						} else {
 							v123 = *(*int32)(unsafe.Add(mBase, uint32(l0)))
 							if v117+int32(1) != l0+v123 {
-								F__serverAssert(m, int32(_a730), int32(_a729), int32(400))
+								F__serverAssert(m, int32(_a_F_lpRandomPair_3), int32(_a_F_lpRandomPair_1), int32(400))
 								mBase = m.M
 								v165 = m.ExcPending
 								if v165 != 0 {
@@ -4950,7 +4950,7 @@ func F_lpRandomPair(m *base.Module, l0 int32, l1 int32, l2 int32, l3 int32) {
 									}
 								}
 							} else {
-								F__serverAssert(m, int32(_a739), int32(_a729), int32(1330))
+								F__serverAssert(m, int32(_a_F_lpRandomPair_4), int32(_a_F_lpRandomPair_1), int32(1330))
 								mBase = m.M
 								v130 = m.ExcPending
 								if v130 != 0 {
@@ -5168,7 +5168,7 @@ L2:
 	}
 L3:
 	;
-	F__serverAssert(m, int32(_a740), int32(_a729), int32(1389))
+	F__serverAssert(m, int32(_a_F_lpRandomPairs_0), int32(_a_F_lpRandomPairs_1), int32(1389))
 	mBase = m.M
 	v415 = m.ExcPending
 	if v415 != 0 {
@@ -5207,9 +5207,9 @@ L7:
 L8:
 	;
 	v56 = int32(0)
-	v58 = *(*int64)(unsafe.Add(mBase, _consts[343]))
+	v58 = *(*int64)(unsafe.Add(mBase, _c_F_lpRandomPairs[0]))
 	v62 = v58*int64(6364136223846793005) + int64(1)
-	*(*int64)(unsafe.Add(mBase, _consts[343])) = v62
+	*(*int64)(unsafe.Add(mBase, _c_F_lpRandomPairs[0])) = v62
 	goto L10
 L9:
 	;
@@ -5251,7 +5251,7 @@ L13:
 	}
 L14:
 	;
-	F__serverAssert(m, int32(_a730), int32(_a729), int32(400))
+	F__serverAssert(m, int32(_a_F_lpRandomPairs_2), int32(_a_F_lpRandomPairs_1), int32(400))
 	mBase = m.M
 	v409 = m.ExcPending
 	if v409 != 0 {
@@ -5372,7 +5372,7 @@ L29:
 	goto L23
 L30:
 	;
-	v203 = *(*int32)(unsafe.Add(mBase, uint32(v163<<(uint(int32(2))%32))+uint32(_consts[375])))
+	v203 = *(*int32)(unsafe.Add(mBase, uint32(v163<<(uint(int32(2))%32))+uint32(_c_F_lpRandomPairs[1])))
 	v204 = v140
 	v205 = v203
 	goto L23
@@ -5473,7 +5473,7 @@ L45:
 	}
 L46:
 	;
-	F__serverAssert(m, int32(_a739), int32(_a729), int32(1406))
+	F__serverAssert(m, int32(_a_F_lpRandomPairs_3), int32(_a_F_lpRandomPairs_1), int32(1406))
 	mBase = m.M
 	v220 = m.ExcPending
 	if v220 != 0 {
@@ -5687,7 +5687,7 @@ L77:
 	goto L71
 L78:
 	;
-	v360 = *(*int32)(unsafe.Add(mBase, uint32(v320<<(uint(int32(2))%32))+uint32(_consts[375])))
+	v360 = *(*int32)(unsafe.Add(mBase, uint32(v320<<(uint(int32(2))%32))+uint32(_c_F_lpRandomPairs[1])))
 	v361 = v297
 	v362 = v360
 	goto L71
@@ -5788,7 +5788,7 @@ L93:
 	}
 L94:
 	;
-	F__serverAssert(m, int32(_a730), int32(_a729), int32(400))
+	F__serverAssert(m, int32(_a_F_lpRandomPairs_2), int32(_a_F_lpRandomPairs_1), int32(400))
 	mBase = m.M
 	v377 = m.ExcPending
 	if v377 != 0 {
@@ -6052,7 +6052,7 @@ L11:
 	}
 L12:
 	;
-	F__serverAssert(m, int32(_a730), int32(_a729), int32(426))
+	F__serverAssert(m, int32(_a_F_lpSeek_0), int32(_a_F_lpSeek_1), int32(426))
 	mBase = m.M
 	v39 = m.ExcPending
 	if v39 != 0 {
@@ -6149,7 +6149,7 @@ L27:
 	goto L21
 L28:
 	;
-	v118 = *(*int32)(unsafe.Add(mBase, uint32(v78<<(uint(int32(2))%32))+uint32(_consts[375])))
+	v118 = *(*int32)(unsafe.Add(mBase, uint32(v78<<(uint(int32(2))%32))+uint32(_c_F_lpSeek[0])))
 	v119 = v55
 	v120 = v118
 	goto L21
@@ -6250,7 +6250,7 @@ L43:
 	}
 L44:
 	;
-	F__serverAssert(m, int32(_a730), int32(_a729), int32(400))
+	F__serverAssert(m, int32(_a_F_lpSeek_0), int32(_a_F_lpSeek_1), int32(400))
 	mBase = m.M
 	v137 = m.ExcPending
 	if v137 != 0 {
@@ -6956,7 +6956,7 @@ L34:
 	goto L28
 L35:
 	;
-	v160 = *(*int32)(unsafe.Add(mBase, uint32(v121<<(uint(int32(2))%32))+uint32(_consts[375])))
+	v160 = *(*int32)(unsafe.Add(mBase, uint32(v121<<(uint(int32(2))%32))+uint32(_c_F_lpValidateIntegrity[0])))
 	v161 = v160
 	v163 = v104
 	goto L28
@@ -7293,7 +7293,7 @@ func F_lpValidateNext(m *base.Module, l0 int32, l1 int32, l2 int32) int32 {
 										if v37 != int32(192) {
 											v79 = (v32 + int32(15)) & int32(255)
 											if base.Ui32(v79) < base.Ui32(int32(4)) {
-												v118 = *(*int32)(unsafe.Add(mBase, uint32(v79<<(uint(int32(2))%32))+uint32(_consts[375])))
+												v118 = *(*int32)(unsafe.Add(mBase, uint32(v79<<(uint(int32(2))%32))+uint32(_c_F_lpValidateNext[0])))
 												v119 = v118
 												v121 = v62
 											} else {
@@ -7434,7 +7434,7 @@ func F_lpValidateNext(m *base.Module, l0 int32, l1 int32, l2 int32) int32 {
 											if v37 != int32(192) {
 												v79 = (v32 + int32(15)) & int32(255)
 												if base.Ui32(v79) < base.Ui32(int32(4)) {
-													v118 = *(*int32)(unsafe.Add(mBase, uint32(v79<<(uint(int32(2))%32))+uint32(_consts[375])))
+													v118 = *(*int32)(unsafe.Add(mBase, uint32(v79<<(uint(int32(2))%32))+uint32(_c_F_lpValidateNext[0])))
 													v119 = v118
 													v121 = v62
 												} else {
@@ -7575,7 +7575,7 @@ func F_lpValidateNext(m *base.Module, l0 int32, l1 int32, l2 int32) int32 {
 												if v37 != int32(192) {
 													v79 = (v32 + int32(15)) & int32(255)
 													if base.Ui32(v79) < base.Ui32(int32(4)) {
-														v118 = *(*int32)(unsafe.Add(mBase, uint32(v79<<(uint(int32(2))%32))+uint32(_consts[375])))
+														v118 = *(*int32)(unsafe.Add(mBase, uint32(v79<<(uint(int32(2))%32))+uint32(_c_F_lpValidateNext[0])))
 														v119 = v118
 														v121 = v62
 													} else {
@@ -7716,7 +7716,7 @@ func F_lpValidateNext(m *base.Module, l0 int32, l1 int32, l2 int32) int32 {
 													if v37 != int32(192) {
 														v79 = (v32 + int32(15)) & int32(255)
 														if base.Ui32(v79) < base.Ui32(int32(4)) {
-															v118 = *(*int32)(unsafe.Add(mBase, uint32(v79<<(uint(int32(2))%32))+uint32(_consts[375])))
+															v118 = *(*int32)(unsafe.Add(mBase, uint32(v79<<(uint(int32(2))%32))+uint32(_c_F_lpValidateNext[0])))
 															v119 = v118
 															v121 = v62
 														} else {
@@ -7860,7 +7860,7 @@ func F_lpValidateNext(m *base.Module, l0 int32, l1 int32, l2 int32) int32 {
 															if v37 != int32(192) {
 																v79 = (v32 + int32(15)) & int32(255)
 																if base.Ui32(v79) < base.Ui32(int32(4)) {
-																	v118 = *(*int32)(unsafe.Add(mBase, uint32(v79<<(uint(int32(2))%32))+uint32(_consts[375])))
+																	v118 = *(*int32)(unsafe.Add(mBase, uint32(v79<<(uint(int32(2))%32))+uint32(_c_F_lpValidateNext[0])))
 																	v119 = v118
 																	v121 = v62
 																} else {
@@ -8001,7 +8001,7 @@ func F_lpValidateNext(m *base.Module, l0 int32, l1 int32, l2 int32) int32 {
 														if v37 != int32(192) {
 															v79 = (v32 + int32(15)) & int32(255)
 															if base.Ui32(v79) < base.Ui32(int32(4)) {
-																v118 = *(*int32)(unsafe.Add(mBase, uint32(v79<<(uint(int32(2))%32))+uint32(_consts[375])))
+																v118 = *(*int32)(unsafe.Add(mBase, uint32(v79<<(uint(int32(2))%32))+uint32(_c_F_lpValidateNext[0])))
 																v119 = v118
 																v121 = v62
 															} else {

@@ -94,7 +94,7 @@ func F_yesnotoi(m *base.Module, l0 int32) int32 {
 	_ = v82
 	var v84 int32
 	_ = v84
-	v2 = int32(_a483)
+	v2 = int32(_a_F_yesnotoi_0)
 	v5 = int32(*(*uint8)(unsafe.Add(mBase, uint32(l0))))
 	if v5 != 0 {
 		goto L4
@@ -103,7 +103,7 @@ func F_yesnotoi(m *base.Module, l0 int32) int32 {
 	}
 L1:
 	;
-	v45 = int32(_a484)
+	v45 = int32(_a_F_yesnotoi_1)
 	v48 = int32(*(*uint8)(unsafe.Add(mBase, uint32(l0))))
 	if v48 != 0 {
 		goto L17

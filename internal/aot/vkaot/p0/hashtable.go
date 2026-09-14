@@ -404,10 +404,10 @@ func F_hashtableFindRef(m *base.Module, l0 int32, l1 int32) int32 {
 		if v18 == int32(0) {
 			v26 = v8 + int32(12)
 			v27 = int32(4)
-			v28 = int32(_a624)
-			v36 = *(*int64)(unsafe.Add(mBase, _consts[292]))
+			v28 = int32(_a_F_hashtableFindRef_0)
+			v36 = *(*int64)(unsafe.Add(mBase, _c_F_hashtableFindRef[0]))
 			v38 = v36 ^ int64(8317987319222330741)
-			v39 = *(*int64)(unsafe.Add(mBase, _consts[293]))
+			v39 = *(*int64)(unsafe.Add(mBase, _c_F_hashtableFindRef[1]))
 			v41 = v39 ^ int64(7237128888997146477)
 			v43 = v36 ^ int64(7816392313619706465)
 			v45 = v39 ^ int64(8387220255154660723)
@@ -754,10 +754,10 @@ func F_hashtableGenHashFunction(m *base.Module, l0 int32, l1 int32) int64 {
 	_ = v161
 	var v165 int64
 	_ = v165
-	v3 = int32(_a624)
-	v11 = *(*int64)(unsafe.Add(mBase, _consts[292]))
+	v3 = int32(_a_F_hashtableGenHashFunction_0)
+	v11 = *(*int64)(unsafe.Add(mBase, _c_F_hashtableGenHashFunction[0]))
 	v13 = v11 ^ int64(8317987319222330741)
-	v14 = *(*int64)(unsafe.Add(mBase, _consts[293]))
+	v14 = *(*int64)(unsafe.Add(mBase, _c_F_hashtableGenHashFunction[1]))
 	v16 = v14 ^ int64(7237128888997146477)
 	v18 = v11 ^ int64(7816392313619706465)
 	v20 = v14 ^ int64(8387220255154660723)
@@ -927,7 +927,7 @@ func F_hashtableIncrementalFindGetResult(m *base.Module, l0 int32, l1 int32) int
 		if v4 == int32(4) {
 			return base.B2i32(v4 == int32(3))
 		} else {
-			F__serverAssert(m, int32(_a639), int32(_a626), int32(1987))
+			F__serverAssert(m, int32(_a_F_hashtableIncrementalFindGetResult_0), int32(_a_F_hashtableIncrementalFindGetResult_1), int32(1987))
 			mBase = m.M
 			v26 = m.ExcPending
 			if v26 != 0 {
@@ -1139,10 +1139,10 @@ func F_hashtableIncrementalFindInit(m *base.Module, l0 int32, l1 int32, l2 int32
 		if v25 == v17 {
 			v31 = v8 + int32(12)
 			v32 = int32(4)
-			v33 = int32(_a624)
-			v41 = *(*int64)(unsafe.Add(mBase, _consts[292]))
+			v33 = int32(_a_F_hashtableIncrementalFindInit_0)
+			v41 = *(*int64)(unsafe.Add(mBase, _c_F_hashtableIncrementalFindInit[0]))
 			v43 = v41 ^ int64(8317987319222330741)
-			v44 = *(*int64)(unsafe.Add(mBase, _consts[293]))
+			v44 = *(*int64)(unsafe.Add(mBase, _c_F_hashtableIncrementalFindInit[1]))
 			v46 = v44 ^ int64(7237128888997146477)
 			v48 = v41 ^ int64(7816392313619706465)
 			v50 = v44 ^ int64(8387220255154660723)
@@ -1463,7 +1463,7 @@ L2:
 	goto L1
 L3:
 	;
-	F__serverAssert(m, int32(_a107), int32(_a626), int32(1974))
+	F__serverAssert(m, int32(_a_F_hashtableIncrementalFindStep_0), int32(_a_F_hashtableIncrementalFindStep_1), int32(1974))
 	mBase = m.M
 	v206 = m.ExcPending
 	if v206 != 0 {
@@ -1818,7 +1818,7 @@ func F_hashtableInsertAtPosition(m *base.Module, l0 int32, l1 int32, l2 int32) {
 		*(*int32)(unsafe.Add(mBase, uint32(v39)+16)) = v40 + v27
 		return
 	} else {
-		F__serverAssert(m, int32(_a632), int32(_a626), int32(1717))
+		F__serverAssert(m, int32(_a_F_hashtableInsertAtPosition_0), int32(_a_F_hashtableInsertAtPosition_1), int32(1717))
 		mBase = m.M
 		v24 = m.ExcPending
 		if v24 != 0 {
@@ -2095,10 +2095,10 @@ func F_hashtablePop(m *base.Module, l0 int32, l1 int32, l2 int32) int32 {
 		if v21 == int32(0) {
 			v29 = v11 + int32(12)
 			v30 = int32(4)
-			v31 = int32(_a624)
-			v39 = *(*int64)(unsafe.Add(mBase, _consts[292]))
+			v31 = int32(_a_F_hashtablePop_0)
+			v39 = *(*int64)(unsafe.Add(mBase, _c_F_hashtablePop[0]))
 			v41 = v39 ^ int64(8317987319222330741)
-			v42 = *(*int64)(unsafe.Add(mBase, _consts[293]))
+			v42 = *(*int64)(unsafe.Add(mBase, _c_F_hashtablePop[1]))
 			v44 = v42 ^ int64(7237128888997146477)
 			v46 = v39 ^ int64(7816392313619706465)
 			v48 = v42 ^ int64(8387220255154660723)
@@ -2297,7 +2297,7 @@ func F_hashtablePop(m *base.Module, l0 int32, l1 int32, l2 int32) int32 {
 								} else {
 									v266 = int32(12) << (uint(v262) % 32)
 								}
-								v270 = *(*int32)(unsafe.Add(mBase, _consts[295]))
+								v270 = *(*int32)(unsafe.Add(mBase, _c_F_hashtablePop[2]))
 								if v270 != 0 {
 									v271 = int32(3)
 								} else {
@@ -2343,7 +2343,7 @@ func F_hashtablePop(m *base.Module, l0 int32, l1 int32, l2 int32) int32 {
 									} else {
 										v266 = int32(12) << (uint(v262) % 32)
 									}
-									v270 = *(*int32)(unsafe.Add(mBase, _consts[295]))
+									v270 = *(*int32)(unsafe.Add(mBase, _c_F_hashtablePop[2]))
 									if v270 != 0 {
 										v271 = int32(3)
 									} else {
@@ -2393,7 +2393,7 @@ func F_hashtablePop(m *base.Module, l0 int32, l1 int32, l2 int32) int32 {
 										} else {
 											v266 = int32(12) << (uint(v262) % 32)
 										}
-										v270 = *(*int32)(unsafe.Add(mBase, _consts[295]))
+										v270 = *(*int32)(unsafe.Add(mBase, _c_F_hashtablePop[2]))
 										if v270 != 0 {
 											v271 = int32(3)
 										} else {
@@ -2479,7 +2479,7 @@ func F_hashtablePop(m *base.Module, l0 int32, l1 int32, l2 int32) int32 {
 									} else {
 										v266 = int32(12) << (uint(v262) % 32)
 									}
-									v270 = *(*int32)(unsafe.Add(mBase, _consts[295]))
+									v270 = *(*int32)(unsafe.Add(mBase, _c_F_hashtablePop[2]))
 									if v270 != 0 {
 										v271 = int32(3)
 									} else {
@@ -2525,7 +2525,7 @@ func F_hashtablePop(m *base.Module, l0 int32, l1 int32, l2 int32) int32 {
 										} else {
 											v266 = int32(12) << (uint(v262) % 32)
 										}
-										v270 = *(*int32)(unsafe.Add(mBase, _consts[295]))
+										v270 = *(*int32)(unsafe.Add(mBase, _c_F_hashtablePop[2]))
 										if v270 != 0 {
 											v271 = int32(3)
 										} else {
@@ -2575,7 +2575,7 @@ func F_hashtablePop(m *base.Module, l0 int32, l1 int32, l2 int32) int32 {
 											} else {
 												v266 = int32(12) << (uint(v262) % 32)
 											}
-											v270 = *(*int32)(unsafe.Add(mBase, _consts[295]))
+											v270 = *(*int32)(unsafe.Add(mBase, _c_F_hashtablePop[2]))
 											if v270 != 0 {
 												v271 = int32(3)
 											} else {
@@ -2675,19 +2675,19 @@ func F_hashtableResizeAllowed(m *base.Module, l0 int32, l1 float64) int32 {
 	var v62 int32
 	_ = v62
 	v3 = int32(0)
-	v9 = *(*int64)(unsafe.Add(mBase, _consts[265]))
+	v9 = *(*int64)(unsafe.Add(mBase, _c_F_hashtableResizeAllowed[0]))
 	if v9 == int64(0) {
 		v62 = v3
 	} else {
 		v12 = F_zmalloc_used_memory(m)
 		mBase = m.M
-		v14 = *(*int64)(unsafe.Add(mBase, _consts[265]))
+		v14 = *(*int64)(unsafe.Add(mBase, _c_F_hashtableResizeAllowed[0]))
 		if base.Ui64(base.I64_extend_i32_u(v12+l0)) <= base.Ui64(v14) {
 			v62 = v3
 		} else {
-			v19 = int32(_a69)
-			v20 = *(*int64)(unsafe.Add(mBase, _consts[266]))
-			v22 = *(*int32)(unsafe.Add(mBase, _consts[267]))
+			v19 = int32(_a_F_hashtableResizeAllowed_0)
+			v20 = *(*int64)(unsafe.Add(mBase, _c_F_hashtableResizeAllowed[1]))
+			v22 = *(*int32)(unsafe.Add(mBase, _c_F_hashtableResizeAllowed[2]))
 			if base.I64_extend_i32_u(v22) <= v20 {
 				v37 = int32(0)
 			} else {
@@ -2700,11 +2700,11 @@ func F_hashtableResizeAllowed(m *base.Module, l0 int32, l1 float64) int32 {
 				}
 				v37 = v36
 			}
-			v39 = *(*int32)(unsafe.Add(mBase, _consts[27]))
+			v39 = *(*int32)(unsafe.Add(mBase, _c_F_hashtableResizeAllowed[3]))
 			if v39 == int32(0) {
 				v46 = v37
 			} else {
-				v43 = *(*int32)(unsafe.Add(mBase, _consts[268]))
+				v43 = *(*int32)(unsafe.Add(mBase, _c_F_hashtableResizeAllowed[4]))
 				v44 = F_sdsAllocSize(m, v43)
 				mBase = m.M
 				v46 = v44 + v37
@@ -2718,7 +2718,7 @@ func F_hashtableResizeAllowed(m *base.Module, l0 int32, l1 float64) int32 {
 				mBase = m.M
 				v52 = v50 + v46
 			}
-			v54 = *(*int64)(unsafe.Add(mBase, _consts[265]))
+			v54 = *(*int64)(unsafe.Add(mBase, _c_F_hashtableResizeAllowed[0]))
 			v56 = v12 - v52
 			if base.Ui32(v12) < base.Ui32(v56) {
 				v58 = int32(0)
@@ -2875,8 +2875,8 @@ L3:
 	v22 = int32(0)
 	F___lock(m, int32(9116960))
 	mBase = m.M
-	v29 = *(*int32)(unsafe.Add(mBase, _consts[245]))
-	v31 = *(*int32)(unsafe.Add(mBase, _consts[246]))
+	v29 = *(*int32)(unsafe.Add(mBase, _c_F_hashtableSampleEntries[0]))
+	v31 = *(*int32)(unsafe.Add(mBase, _c_F_hashtableSampleEntries[1]))
 	if v31 != 0 {
 		goto L6
 	} else {
@@ -2898,11 +2898,11 @@ L5:
 L6:
 	;
 	v35 = int32(0)
-	v36 = *(*int32)(unsafe.Add(mBase, _consts[247]))
+	v36 = *(*int32)(unsafe.Add(mBase, _c_F_hashtableSampleEntries[2]))
 	v37 = int32(2)
 	v39 = v29 + v36<<(uint(v37)%32)
 	v40 = *(*int32)(unsafe.Add(mBase, uint32(v39)))
-	v42 = *(*int32)(unsafe.Add(mBase, _consts[248]))
+	v42 = *(*int32)(unsafe.Add(mBase, _c_F_hashtableSampleEntries[3]))
 	v46 = *(*int32)(unsafe.Add(mBase, uint32(v29+v42<<(uint(v37)%32))))
 	v47 = v40 + v46
 	*(*int32)(unsafe.Add(mBase, uint32(v39))) = v47
@@ -2930,7 +2930,7 @@ L9:
 	goto L10
 L10:
 	;
-	*(*int32)(unsafe.Add(mBase, _consts[248])) = v54
+	*(*int32)(unsafe.Add(mBase, _c_F_hashtableSampleEntries[3])) = v54
 	v56 = int32(0)
 	v59 = v36 + int32(1)
 	if v59 == v31 {
@@ -2948,7 +2948,7 @@ L12:
 	goto L13
 L13:
 	;
-	*(*int32)(unsafe.Add(mBase, _consts[247])) = v61
+	*(*int32)(unsafe.Add(mBase, _c_F_hashtableSampleEntries[2])) = v61
 	v66 = int32(base.Ui32(v47) >> (uint(int32(1)) % 32))
 	goto L5
 L14:
@@ -3013,7 +3013,7 @@ L22:
 	}
 L23:
 	;
-	v103 = *(*int32)(unsafe.Add(mBase, _consts[295]))
+	v103 = *(*int32)(unsafe.Add(mBase, _c_F_hashtableSampleEntries[4]))
 	if v103 != 0 {
 		v107 = v97
 		goto L21
@@ -3283,12 +3283,12 @@ func F_hashtableScanCallback(m *base.Module, l0 int32, l1 int32) {
 	v10 = m.G0
 	v12 = v10 - int32(5152)
 	m.G0 = v12
-	*(*int64)(unsafe.Add(mBase, uint32(v12)+uint32(_consts[223]))) = int64(0)
+	*(*int64)(unsafe.Add(mBase, uint32(v12)+uint32(_c_F_hashtableScanCallback[0]))) = int64(0)
 	v16 = *(*int32)(unsafe.Add(mBase, uint32(l0)+28))
 	*(*int32)(unsafe.Add(mBase, uint32(l0)+28)) = v16 + int32(1)
 	v20 = *(*int32)(unsafe.Add(mBase, uint32(l0)+4))
 	if v20 == int32(0) {
-		F__serverAssert(m, int32(_a485), int32(_a474), int32(1060))
+		F__serverAssert(m, int32(_a_F_hashtableScanCallback_0), int32(_a_F_hashtableScanCallback_1), int32(1060))
 		mBase = m.M
 		v415 = m.ExcPending
 		if v415 != 0 {
@@ -3338,12 +3338,12 @@ func F_hashtableScanCallback(m *base.Module, l0 int32, l1 int32) {
 					} else {
 						*(*int32)(unsafe.Add(mBase, uint32(v387)+4)) = v386
 						*(*int32)(unsafe.Add(mBase, uint32(v387))) = v363
-						v391 = *(*int32)(unsafe.Add(mBase, uint32(v12)+uint32(_consts[223])))
+						v391 = *(*int32)(unsafe.Add(mBase, uint32(v12)+uint32(_c_F_hashtableScanCallback[0])))
 						if v391 == int32(0) {
 							m.G0 = v12 + int32(5152)
 							return
 						} else {
-							v394 = *(*int32)(unsafe.Add(mBase, uint32(v12)+uint32(_consts[224])))
+							v394 = *(*int32)(unsafe.Add(mBase, uint32(v12)+uint32(_c_F_hashtableScanCallback[1])))
 							v395 = *(*int32)(unsafe.Add(mBase, uint32(l0)))
 							v396 = F_vectorPush(m, v395)
 							mBase = m.M
@@ -3400,12 +3400,12 @@ func F_hashtableScanCallback(m *base.Module, l0 int32, l1 int32) {
 							} else {
 								*(*int32)(unsafe.Add(mBase, uint32(v387)+4)) = v386
 								*(*int32)(unsafe.Add(mBase, uint32(v387))) = v363
-								v391 = *(*int32)(unsafe.Add(mBase, uint32(v12)+uint32(_consts[223])))
+								v391 = *(*int32)(unsafe.Add(mBase, uint32(v12)+uint32(_c_F_hashtableScanCallback[0])))
 								if v391 == int32(0) {
 									m.G0 = v12 + int32(5152)
 									return
 								} else {
-									v394 = *(*int32)(unsafe.Add(mBase, uint32(v12)+uint32(_consts[224])))
+									v394 = *(*int32)(unsafe.Add(mBase, uint32(v12)+uint32(_c_F_hashtableScanCallback[1])))
 									v395 = *(*int32)(unsafe.Add(mBase, uint32(l0)))
 									v396 = F_vectorPush(m, v395)
 									mBase = m.M
@@ -3478,7 +3478,7 @@ func F_hashtableScanCallback(m *base.Module, l0 int32, l1 int32) {
 								if v338 != 0 {
 									return
 								} else {
-									*(*int32)(unsafe.Add(mBase, uint32(v12)+uint32(_consts[223]))) = v337
+									*(*int32)(unsafe.Add(mBase, uint32(v12)+uint32(_c_F_hashtableScanCallback[0]))) = v337
 									v342 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v337+int32(-1)))))
 									switch v342 & int32(7) {
 									case 0:
@@ -3498,7 +3498,7 @@ func F_hashtableScanCallback(m *base.Module, l0 int32, l1 int32) {
 									default:
 										v359 = v324
 									}
-									*(*int32)(unsafe.Add(mBase, uint32(v12)+uint32(_consts[224]))) = v359
+									*(*int32)(unsafe.Add(mBase, uint32(v12)+uint32(_c_F_hashtableScanCallback[1]))) = v359
 									v363 = v242
 									v365 = *(*int32)(unsafe.Add(mBase, uint32(l0)))
 									v369 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v363+int32(-1)))))
@@ -3528,12 +3528,12 @@ func F_hashtableScanCallback(m *base.Module, l0 int32, l1 int32) {
 									} else {
 										*(*int32)(unsafe.Add(mBase, uint32(v387)+4)) = v386
 										*(*int32)(unsafe.Add(mBase, uint32(v387))) = v363
-										v391 = *(*int32)(unsafe.Add(mBase, uint32(v12)+uint32(_consts[223])))
+										v391 = *(*int32)(unsafe.Add(mBase, uint32(v12)+uint32(_c_F_hashtableScanCallback[0])))
 										if v391 == int32(0) {
 											m.G0 = v12 + int32(5152)
 											return
 										} else {
-											v394 = *(*int32)(unsafe.Add(mBase, uint32(v12)+uint32(_consts[224])))
+											v394 = *(*int32)(unsafe.Add(mBase, uint32(v12)+uint32(_c_F_hashtableScanCallback[1])))
 											v395 = *(*int32)(unsafe.Add(mBase, uint32(l0)))
 											v396 = F_vectorPush(m, v395)
 											mBase = m.M
@@ -3637,12 +3637,12 @@ func F_hashtableScanCallback(m *base.Module, l0 int32, l1 int32) {
 						} else {
 							*(*int32)(unsafe.Add(mBase, uint32(v387)+4)) = v386
 							*(*int32)(unsafe.Add(mBase, uint32(v387))) = v363
-							v391 = *(*int32)(unsafe.Add(mBase, uint32(v12)+uint32(_consts[223])))
+							v391 = *(*int32)(unsafe.Add(mBase, uint32(v12)+uint32(_c_F_hashtableScanCallback[0])))
 							if v391 == int32(0) {
 								m.G0 = v12 + int32(5152)
 								return
 							} else {
-								v394 = *(*int32)(unsafe.Add(mBase, uint32(v12)+uint32(_consts[224])))
+								v394 = *(*int32)(unsafe.Add(mBase, uint32(v12)+uint32(_c_F_hashtableScanCallback[1])))
 								v395 = *(*int32)(unsafe.Add(mBase, uint32(l0)))
 								v396 = F_vectorPush(m, v395)
 								mBase = m.M
@@ -3699,12 +3699,12 @@ func F_hashtableScanCallback(m *base.Module, l0 int32, l1 int32) {
 								} else {
 									*(*int32)(unsafe.Add(mBase, uint32(v387)+4)) = v386
 									*(*int32)(unsafe.Add(mBase, uint32(v387))) = v363
-									v391 = *(*int32)(unsafe.Add(mBase, uint32(v12)+uint32(_consts[223])))
+									v391 = *(*int32)(unsafe.Add(mBase, uint32(v12)+uint32(_c_F_hashtableScanCallback[0])))
 									if v391 == int32(0) {
 										m.G0 = v12 + int32(5152)
 										return
 									} else {
-										v394 = *(*int32)(unsafe.Add(mBase, uint32(v12)+uint32(_consts[224])))
+										v394 = *(*int32)(unsafe.Add(mBase, uint32(v12)+uint32(_c_F_hashtableScanCallback[1])))
 										v395 = *(*int32)(unsafe.Add(mBase, uint32(l0)))
 										v396 = F_vectorPush(m, v395)
 										mBase = m.M
@@ -3777,7 +3777,7 @@ func F_hashtableScanCallback(m *base.Module, l0 int32, l1 int32) {
 									if v338 != 0 {
 										return
 									} else {
-										*(*int32)(unsafe.Add(mBase, uint32(v12)+uint32(_consts[223]))) = v337
+										*(*int32)(unsafe.Add(mBase, uint32(v12)+uint32(_c_F_hashtableScanCallback[0]))) = v337
 										v342 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v337+int32(-1)))))
 										switch v342 & int32(7) {
 										case 0:
@@ -3797,7 +3797,7 @@ func F_hashtableScanCallback(m *base.Module, l0 int32, l1 int32) {
 										default:
 											v359 = v324
 										}
-										*(*int32)(unsafe.Add(mBase, uint32(v12)+uint32(_consts[224]))) = v359
+										*(*int32)(unsafe.Add(mBase, uint32(v12)+uint32(_c_F_hashtableScanCallback[1]))) = v359
 										v363 = v242
 										v365 = *(*int32)(unsafe.Add(mBase, uint32(l0)))
 										v369 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v363+int32(-1)))))
@@ -3827,12 +3827,12 @@ func F_hashtableScanCallback(m *base.Module, l0 int32, l1 int32) {
 										} else {
 											*(*int32)(unsafe.Add(mBase, uint32(v387)+4)) = v386
 											*(*int32)(unsafe.Add(mBase, uint32(v387))) = v363
-											v391 = *(*int32)(unsafe.Add(mBase, uint32(v12)+uint32(_consts[223])))
+											v391 = *(*int32)(unsafe.Add(mBase, uint32(v12)+uint32(_c_F_hashtableScanCallback[0])))
 											if v391 == int32(0) {
 												m.G0 = v12 + int32(5152)
 												return
 											} else {
-												v394 = *(*int32)(unsafe.Add(mBase, uint32(v12)+uint32(_consts[224])))
+												v394 = *(*int32)(unsafe.Add(mBase, uint32(v12)+uint32(_c_F_hashtableScanCallback[1])))
 												v395 = *(*int32)(unsafe.Add(mBase, uint32(l0)))
 												v396 = F_vectorPush(m, v395)
 												mBase = m.M
@@ -3893,12 +3893,12 @@ func F_hashtableScanCallback(m *base.Module, l0 int32, l1 int32) {
 					} else {
 						*(*int32)(unsafe.Add(mBase, uint32(v387)+4)) = v386
 						*(*int32)(unsafe.Add(mBase, uint32(v387))) = v363
-						v391 = *(*int32)(unsafe.Add(mBase, uint32(v12)+uint32(_consts[223])))
+						v391 = *(*int32)(unsafe.Add(mBase, uint32(v12)+uint32(_c_F_hashtableScanCallback[0])))
 						if v391 == int32(0) {
 							m.G0 = v12 + int32(5152)
 							return
 						} else {
-							v394 = *(*int32)(unsafe.Add(mBase, uint32(v12)+uint32(_consts[224])))
+							v394 = *(*int32)(unsafe.Add(mBase, uint32(v12)+uint32(_c_F_hashtableScanCallback[1])))
 							v395 = *(*int32)(unsafe.Add(mBase, uint32(l0)))
 							v396 = F_vectorPush(m, v395)
 							mBase = m.M
@@ -3955,12 +3955,12 @@ func F_hashtableScanCallback(m *base.Module, l0 int32, l1 int32) {
 							} else {
 								*(*int32)(unsafe.Add(mBase, uint32(v387)+4)) = v386
 								*(*int32)(unsafe.Add(mBase, uint32(v387))) = v363
-								v391 = *(*int32)(unsafe.Add(mBase, uint32(v12)+uint32(_consts[223])))
+								v391 = *(*int32)(unsafe.Add(mBase, uint32(v12)+uint32(_c_F_hashtableScanCallback[0])))
 								if v391 == int32(0) {
 									m.G0 = v12 + int32(5152)
 									return
 								} else {
-									v394 = *(*int32)(unsafe.Add(mBase, uint32(v12)+uint32(_consts[224])))
+									v394 = *(*int32)(unsafe.Add(mBase, uint32(v12)+uint32(_c_F_hashtableScanCallback[1])))
 									v395 = *(*int32)(unsafe.Add(mBase, uint32(l0)))
 									v396 = F_vectorPush(m, v395)
 									mBase = m.M
@@ -4033,7 +4033,7 @@ func F_hashtableScanCallback(m *base.Module, l0 int32, l1 int32) {
 								if v338 != 0 {
 									return
 								} else {
-									*(*int32)(unsafe.Add(mBase, uint32(v12)+uint32(_consts[223]))) = v337
+									*(*int32)(unsafe.Add(mBase, uint32(v12)+uint32(_c_F_hashtableScanCallback[0]))) = v337
 									v342 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v337+int32(-1)))))
 									switch v342 & int32(7) {
 									case 0:
@@ -4053,7 +4053,7 @@ func F_hashtableScanCallback(m *base.Module, l0 int32, l1 int32) {
 									default:
 										v359 = v324
 									}
-									*(*int32)(unsafe.Add(mBase, uint32(v12)+uint32(_consts[224]))) = v359
+									*(*int32)(unsafe.Add(mBase, uint32(v12)+uint32(_c_F_hashtableScanCallback[1]))) = v359
 									v363 = v242
 									v365 = *(*int32)(unsafe.Add(mBase, uint32(l0)))
 									v369 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v363+int32(-1)))))
@@ -4083,12 +4083,12 @@ func F_hashtableScanCallback(m *base.Module, l0 int32, l1 int32) {
 									} else {
 										*(*int32)(unsafe.Add(mBase, uint32(v387)+4)) = v386
 										*(*int32)(unsafe.Add(mBase, uint32(v387))) = v363
-										v391 = *(*int32)(unsafe.Add(mBase, uint32(v12)+uint32(_consts[223])))
+										v391 = *(*int32)(unsafe.Add(mBase, uint32(v12)+uint32(_c_F_hashtableScanCallback[0])))
 										if v391 == int32(0) {
 											m.G0 = v12 + int32(5152)
 											return
 										} else {
-											v394 = *(*int32)(unsafe.Add(mBase, uint32(v12)+uint32(_consts[224])))
+											v394 = *(*int32)(unsafe.Add(mBase, uint32(v12)+uint32(_c_F_hashtableScanCallback[1])))
 											v395 = *(*int32)(unsafe.Add(mBase, uint32(l0)))
 											v396 = F_vectorPush(m, v395)
 											mBase = m.M
@@ -4192,12 +4192,12 @@ func F_hashtableScanCallback(m *base.Module, l0 int32, l1 int32) {
 						} else {
 							*(*int32)(unsafe.Add(mBase, uint32(v387)+4)) = v386
 							*(*int32)(unsafe.Add(mBase, uint32(v387))) = v363
-							v391 = *(*int32)(unsafe.Add(mBase, uint32(v12)+uint32(_consts[223])))
+							v391 = *(*int32)(unsafe.Add(mBase, uint32(v12)+uint32(_c_F_hashtableScanCallback[0])))
 							if v391 == int32(0) {
 								m.G0 = v12 + int32(5152)
 								return
 							} else {
-								v394 = *(*int32)(unsafe.Add(mBase, uint32(v12)+uint32(_consts[224])))
+								v394 = *(*int32)(unsafe.Add(mBase, uint32(v12)+uint32(_c_F_hashtableScanCallback[1])))
 								v395 = *(*int32)(unsafe.Add(mBase, uint32(l0)))
 								v396 = F_vectorPush(m, v395)
 								mBase = m.M
@@ -4254,12 +4254,12 @@ func F_hashtableScanCallback(m *base.Module, l0 int32, l1 int32) {
 								} else {
 									*(*int32)(unsafe.Add(mBase, uint32(v387)+4)) = v386
 									*(*int32)(unsafe.Add(mBase, uint32(v387))) = v363
-									v391 = *(*int32)(unsafe.Add(mBase, uint32(v12)+uint32(_consts[223])))
+									v391 = *(*int32)(unsafe.Add(mBase, uint32(v12)+uint32(_c_F_hashtableScanCallback[0])))
 									if v391 == int32(0) {
 										m.G0 = v12 + int32(5152)
 										return
 									} else {
-										v394 = *(*int32)(unsafe.Add(mBase, uint32(v12)+uint32(_consts[224])))
+										v394 = *(*int32)(unsafe.Add(mBase, uint32(v12)+uint32(_c_F_hashtableScanCallback[1])))
 										v395 = *(*int32)(unsafe.Add(mBase, uint32(l0)))
 										v396 = F_vectorPush(m, v395)
 										mBase = m.M
@@ -4332,7 +4332,7 @@ func F_hashtableScanCallback(m *base.Module, l0 int32, l1 int32) {
 									if v338 != 0 {
 										return
 									} else {
-										*(*int32)(unsafe.Add(mBase, uint32(v12)+uint32(_consts[223]))) = v337
+										*(*int32)(unsafe.Add(mBase, uint32(v12)+uint32(_c_F_hashtableScanCallback[0]))) = v337
 										v342 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v337+int32(-1)))))
 										switch v342 & int32(7) {
 										case 0:
@@ -4352,7 +4352,7 @@ func F_hashtableScanCallback(m *base.Module, l0 int32, l1 int32) {
 										default:
 											v359 = v324
 										}
-										*(*int32)(unsafe.Add(mBase, uint32(v12)+uint32(_consts[224]))) = v359
+										*(*int32)(unsafe.Add(mBase, uint32(v12)+uint32(_c_F_hashtableScanCallback[1]))) = v359
 										v363 = v242
 										v365 = *(*int32)(unsafe.Add(mBase, uint32(l0)))
 										v369 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v363+int32(-1)))))
@@ -4382,12 +4382,12 @@ func F_hashtableScanCallback(m *base.Module, l0 int32, l1 int32) {
 										} else {
 											*(*int32)(unsafe.Add(mBase, uint32(v387)+4)) = v386
 											*(*int32)(unsafe.Add(mBase, uint32(v387))) = v363
-											v391 = *(*int32)(unsafe.Add(mBase, uint32(v12)+uint32(_consts[223])))
+											v391 = *(*int32)(unsafe.Add(mBase, uint32(v12)+uint32(_c_F_hashtableScanCallback[0])))
 											if v391 == int32(0) {
 												m.G0 = v12 + int32(5152)
 												return
 											} else {
-												v394 = *(*int32)(unsafe.Add(mBase, uint32(v12)+uint32(_consts[224])))
+												v394 = *(*int32)(unsafe.Add(mBase, uint32(v12)+uint32(_c_F_hashtableScanCallback[1])))
 												v395 = *(*int32)(unsafe.Add(mBase, uint32(l0)))
 												v396 = F_vectorPush(m, v395)
 												mBase = m.M
@@ -4580,7 +4580,7 @@ func F_hashtableScanCallback(m *base.Module, l0 int32, l1 int32) {
 						}
 					}
 				}
-				*(*int32)(unsafe.Add(mBase, uint32(v12)+uint32(_consts[223]))) = v142
+				*(*int32)(unsafe.Add(mBase, uint32(v12)+uint32(_c_F_hashtableScanCallback[0]))) = v142
 				v161 = l1
 			}
 			v162 = *(*int32)(unsafe.Add(mBase, uint32(l0)+24))
@@ -4616,12 +4616,12 @@ func F_hashtableScanCallback(m *base.Module, l0 int32, l1 int32) {
 					} else {
 						*(*int32)(unsafe.Add(mBase, uint32(v387)+4)) = v386
 						*(*int32)(unsafe.Add(mBase, uint32(v387))) = v363
-						v391 = *(*int32)(unsafe.Add(mBase, uint32(v12)+uint32(_consts[223])))
+						v391 = *(*int32)(unsafe.Add(mBase, uint32(v12)+uint32(_c_F_hashtableScanCallback[0])))
 						if v391 == int32(0) {
 							m.G0 = v12 + int32(5152)
 							return
 						} else {
-							v394 = *(*int32)(unsafe.Add(mBase, uint32(v12)+uint32(_consts[224])))
+							v394 = *(*int32)(unsafe.Add(mBase, uint32(v12)+uint32(_c_F_hashtableScanCallback[1])))
 							v395 = *(*int32)(unsafe.Add(mBase, uint32(l0)))
 							v396 = F_vectorPush(m, v395)
 							mBase = m.M
@@ -4678,12 +4678,12 @@ func F_hashtableScanCallback(m *base.Module, l0 int32, l1 int32) {
 							} else {
 								*(*int32)(unsafe.Add(mBase, uint32(v387)+4)) = v386
 								*(*int32)(unsafe.Add(mBase, uint32(v387))) = v363
-								v391 = *(*int32)(unsafe.Add(mBase, uint32(v12)+uint32(_consts[223])))
+								v391 = *(*int32)(unsafe.Add(mBase, uint32(v12)+uint32(_c_F_hashtableScanCallback[0])))
 								if v391 == int32(0) {
 									m.G0 = v12 + int32(5152)
 									return
 								} else {
-									v394 = *(*int32)(unsafe.Add(mBase, uint32(v12)+uint32(_consts[224])))
+									v394 = *(*int32)(unsafe.Add(mBase, uint32(v12)+uint32(_c_F_hashtableScanCallback[1])))
 									v395 = *(*int32)(unsafe.Add(mBase, uint32(l0)))
 									v396 = F_vectorPush(m, v395)
 									mBase = m.M
@@ -4756,7 +4756,7 @@ func F_hashtableScanCallback(m *base.Module, l0 int32, l1 int32) {
 								if v338 != 0 {
 									return
 								} else {
-									*(*int32)(unsafe.Add(mBase, uint32(v12)+uint32(_consts[223]))) = v337
+									*(*int32)(unsafe.Add(mBase, uint32(v12)+uint32(_c_F_hashtableScanCallback[0]))) = v337
 									v342 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v337+int32(-1)))))
 									switch v342 & int32(7) {
 									case 0:
@@ -4776,7 +4776,7 @@ func F_hashtableScanCallback(m *base.Module, l0 int32, l1 int32) {
 									default:
 										v359 = v324
 									}
-									*(*int32)(unsafe.Add(mBase, uint32(v12)+uint32(_consts[224]))) = v359
+									*(*int32)(unsafe.Add(mBase, uint32(v12)+uint32(_c_F_hashtableScanCallback[1]))) = v359
 									v363 = v242
 									v365 = *(*int32)(unsafe.Add(mBase, uint32(l0)))
 									v369 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v363+int32(-1)))))
@@ -4806,12 +4806,12 @@ func F_hashtableScanCallback(m *base.Module, l0 int32, l1 int32) {
 									} else {
 										*(*int32)(unsafe.Add(mBase, uint32(v387)+4)) = v386
 										*(*int32)(unsafe.Add(mBase, uint32(v387))) = v363
-										v391 = *(*int32)(unsafe.Add(mBase, uint32(v12)+uint32(_consts[223])))
+										v391 = *(*int32)(unsafe.Add(mBase, uint32(v12)+uint32(_c_F_hashtableScanCallback[0])))
 										if v391 == int32(0) {
 											m.G0 = v12 + int32(5152)
 											return
 										} else {
-											v394 = *(*int32)(unsafe.Add(mBase, uint32(v12)+uint32(_consts[224])))
+											v394 = *(*int32)(unsafe.Add(mBase, uint32(v12)+uint32(_c_F_hashtableScanCallback[1])))
 											v395 = *(*int32)(unsafe.Add(mBase, uint32(l0)))
 											v396 = F_vectorPush(m, v395)
 											mBase = m.M
@@ -4915,12 +4915,12 @@ func F_hashtableScanCallback(m *base.Module, l0 int32, l1 int32) {
 						} else {
 							*(*int32)(unsafe.Add(mBase, uint32(v387)+4)) = v386
 							*(*int32)(unsafe.Add(mBase, uint32(v387))) = v363
-							v391 = *(*int32)(unsafe.Add(mBase, uint32(v12)+uint32(_consts[223])))
+							v391 = *(*int32)(unsafe.Add(mBase, uint32(v12)+uint32(_c_F_hashtableScanCallback[0])))
 							if v391 == int32(0) {
 								m.G0 = v12 + int32(5152)
 								return
 							} else {
-								v394 = *(*int32)(unsafe.Add(mBase, uint32(v12)+uint32(_consts[224])))
+								v394 = *(*int32)(unsafe.Add(mBase, uint32(v12)+uint32(_c_F_hashtableScanCallback[1])))
 								v395 = *(*int32)(unsafe.Add(mBase, uint32(l0)))
 								v396 = F_vectorPush(m, v395)
 								mBase = m.M
@@ -4977,12 +4977,12 @@ func F_hashtableScanCallback(m *base.Module, l0 int32, l1 int32) {
 								} else {
 									*(*int32)(unsafe.Add(mBase, uint32(v387)+4)) = v386
 									*(*int32)(unsafe.Add(mBase, uint32(v387))) = v363
-									v391 = *(*int32)(unsafe.Add(mBase, uint32(v12)+uint32(_consts[223])))
+									v391 = *(*int32)(unsafe.Add(mBase, uint32(v12)+uint32(_c_F_hashtableScanCallback[0])))
 									if v391 == int32(0) {
 										m.G0 = v12 + int32(5152)
 										return
 									} else {
-										v394 = *(*int32)(unsafe.Add(mBase, uint32(v12)+uint32(_consts[224])))
+										v394 = *(*int32)(unsafe.Add(mBase, uint32(v12)+uint32(_c_F_hashtableScanCallback[1])))
 										v395 = *(*int32)(unsafe.Add(mBase, uint32(l0)))
 										v396 = F_vectorPush(m, v395)
 										mBase = m.M
@@ -5055,7 +5055,7 @@ func F_hashtableScanCallback(m *base.Module, l0 int32, l1 int32) {
 									if v338 != 0 {
 										return
 									} else {
-										*(*int32)(unsafe.Add(mBase, uint32(v12)+uint32(_consts[223]))) = v337
+										*(*int32)(unsafe.Add(mBase, uint32(v12)+uint32(_c_F_hashtableScanCallback[0]))) = v337
 										v342 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v337+int32(-1)))))
 										switch v342 & int32(7) {
 										case 0:
@@ -5075,7 +5075,7 @@ func F_hashtableScanCallback(m *base.Module, l0 int32, l1 int32) {
 										default:
 											v359 = v324
 										}
-										*(*int32)(unsafe.Add(mBase, uint32(v12)+uint32(_consts[224]))) = v359
+										*(*int32)(unsafe.Add(mBase, uint32(v12)+uint32(_c_F_hashtableScanCallback[1]))) = v359
 										v363 = v242
 										v365 = *(*int32)(unsafe.Add(mBase, uint32(l0)))
 										v369 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v363+int32(-1)))))
@@ -5105,12 +5105,12 @@ func F_hashtableScanCallback(m *base.Module, l0 int32, l1 int32) {
 										} else {
 											*(*int32)(unsafe.Add(mBase, uint32(v387)+4)) = v386
 											*(*int32)(unsafe.Add(mBase, uint32(v387))) = v363
-											v391 = *(*int32)(unsafe.Add(mBase, uint32(v12)+uint32(_consts[223])))
+											v391 = *(*int32)(unsafe.Add(mBase, uint32(v12)+uint32(_c_F_hashtableScanCallback[0])))
 											if v391 == int32(0) {
 												m.G0 = v12 + int32(5152)
 												return
 											} else {
-												v394 = *(*int32)(unsafe.Add(mBase, uint32(v12)+uint32(_consts[224])))
+												v394 = *(*int32)(unsafe.Add(mBase, uint32(v12)+uint32(_c_F_hashtableScanCallback[1])))
 												v395 = *(*int32)(unsafe.Add(mBase, uint32(l0)))
 												v396 = F_vectorPush(m, v395)
 												mBase = m.M
@@ -5133,7 +5133,7 @@ func F_hashtableScanCallback(m *base.Module, l0 int32, l1 int32) {
 				}
 			}
 		default:
-			F__serverPanic_1(m, int32(_a474), int32(1075), int32(_a486), int32(0))
+			F__serverPanic_1(m, int32(_a_F_hashtableScanCallback_1), int32(1075), int32(_a_F_hashtableScanCallback_2), int32(0))
 			mBase = m.M
 			v149 = m.ExcPending
 			if v149 != 0 {
@@ -5154,7 +5154,7 @@ func F_hashtableSetCanAbortShrink(m *base.Module, l0 int32) {
 	var v1 int32
 	_ = v1
 	v1 = l0
-	*(*uint8)(unsafe.Add(mBase, _consts[294])) = uint8(v1)
+	*(*uint8)(unsafe.Add(mBase, _c_F_hashtableSetCanAbortShrink[0])) = uint8(v1)
 	return
 }
 func F_hashtableSetType(m *base.Module, l0 int32, l1 int32) int32 {
@@ -5448,7 +5448,7 @@ func F_hashtableTwoPhasePopDelete(m *base.Module, l0 int32, l1 int32) {
 	v13 = int32(*(*uint16)(unsafe.Add(mBase, uint32(l1)+4)))
 	v14 = v10 << (uint(v13) % 32)
 	if int32(base.Ui32(v9)>>(uint(v10)%32))&v14&int32(4095) == int32(0) {
-		F__serverAssert(m, int32(_a637), int32(_a626), int32(1860))
+		F__serverAssert(m, int32(_a_F_hashtableTwoPhasePopDelete_0), int32(_a_F_hashtableTwoPhasePopDelete_1), int32(1860))
 		mBase = m.M
 		v123 = m.ExcPending
 		if v123 != 0 {
@@ -5476,7 +5476,7 @@ func F_hashtableTwoPhasePopDelete(m *base.Module, l0 int32, l1 int32) {
 		v45 = v43 + v21
 		*(*uint16)(unsafe.Add(mBase, uint32(l0)+26)) = uint16(v45)
 		if base.I32_extend16_s(v45) <= v21 {
-			F__serverAssert(m, int32(_a638), int32(_a626), int32(1416))
+			F__serverAssert(m, int32(_a_F_hashtableTwoPhasePopDelete_2), int32(_a_F_hashtableTwoPhasePopDelete_1), int32(1416))
 			mBase = m.M
 			v129 = m.ExcPending
 			if v129 != 0 {
@@ -5510,7 +5510,7 @@ func F_hashtableTwoPhasePopDelete(m *base.Module, l0 int32, l1 int32) {
 							} else {
 								v106 = int32(12) << (uint(v102) % 32)
 							}
-							v110 = *(*int32)(unsafe.Add(mBase, _consts[295]))
+							v110 = *(*int32)(unsafe.Add(mBase, _c_F_hashtableTwoPhasePopDelete[0]))
 							if v110 != 0 {
 								v111 = int32(3)
 							} else {
@@ -5550,7 +5550,7 @@ func F_hashtableTwoPhasePopDelete(m *base.Module, l0 int32, l1 int32) {
 								} else {
 									v106 = int32(12) << (uint(v102) % 32)
 								}
-								v110 = *(*int32)(unsafe.Add(mBase, _consts[295]))
+								v110 = *(*int32)(unsafe.Add(mBase, _c_F_hashtableTwoPhasePopDelete[0]))
 								if v110 != 0 {
 									v111 = int32(3)
 								} else {
@@ -5594,7 +5594,7 @@ func F_hashtableTwoPhasePopDelete(m *base.Module, l0 int32, l1 int32) {
 									} else {
 										v106 = int32(12) << (uint(v102) % 32)
 									}
-									v110 = *(*int32)(unsafe.Add(mBase, _consts[295]))
+									v110 = *(*int32)(unsafe.Add(mBase, _c_F_hashtableTwoPhasePopDelete[0]))
 									if v110 != 0 {
 										v111 = int32(3)
 									} else {
@@ -5639,7 +5639,7 @@ func F_hashtableTwoPhasePopDelete(m *base.Module, l0 int32, l1 int32) {
 								} else {
 									v106 = int32(12) << (uint(v102) % 32)
 								}
-								v110 = *(*int32)(unsafe.Add(mBase, _consts[295]))
+								v110 = *(*int32)(unsafe.Add(mBase, _c_F_hashtableTwoPhasePopDelete[0]))
 								if v110 != 0 {
 									v111 = int32(3)
 								} else {
@@ -5679,7 +5679,7 @@ func F_hashtableTwoPhasePopDelete(m *base.Module, l0 int32, l1 int32) {
 									} else {
 										v106 = int32(12) << (uint(v102) % 32)
 									}
-									v110 = *(*int32)(unsafe.Add(mBase, _consts[295]))
+									v110 = *(*int32)(unsafe.Add(mBase, _c_F_hashtableTwoPhasePopDelete[0]))
 									if v110 != 0 {
 										v111 = int32(3)
 									} else {
@@ -5723,7 +5723,7 @@ func F_hashtableTwoPhasePopDelete(m *base.Module, l0 int32, l1 int32) {
 										} else {
 											v106 = int32(12) << (uint(v102) % 32)
 										}
-										v110 = *(*int32)(unsafe.Add(mBase, _consts[295]))
+										v110 = *(*int32)(unsafe.Add(mBase, _c_F_hashtableTwoPhasePopDelete[0]))
 										if v110 != 0 {
 											v111 = int32(3)
 										} else {
@@ -5754,7 +5754,7 @@ func F_hashtableTwoPhasePopDelete(m *base.Module, l0 int32, l1 int32) {
 					} else {
 						v65 = int32(12) << (uint(v61) % 32)
 					}
-					v69 = *(*int32)(unsafe.Add(mBase, _consts[295]))
+					v69 = *(*int32)(unsafe.Add(mBase, _c_F_hashtableTwoPhasePopDelete[0]))
 					if v69 != 0 {
 						v70 = int32(3)
 					} else {
@@ -5780,7 +5780,7 @@ func F_hashtableTwoPhasePopDelete(m *base.Module, l0 int32, l1 int32) {
 									} else {
 										v106 = int32(12) << (uint(v102) % 32)
 									}
-									v110 = *(*int32)(unsafe.Add(mBase, _consts[295]))
+									v110 = *(*int32)(unsafe.Add(mBase, _c_F_hashtableTwoPhasePopDelete[0]))
 									if v110 != 0 {
 										v111 = int32(3)
 									} else {
@@ -5820,7 +5820,7 @@ func F_hashtableTwoPhasePopDelete(m *base.Module, l0 int32, l1 int32) {
 										} else {
 											v106 = int32(12) << (uint(v102) % 32)
 										}
-										v110 = *(*int32)(unsafe.Add(mBase, _consts[295]))
+										v110 = *(*int32)(unsafe.Add(mBase, _c_F_hashtableTwoPhasePopDelete[0]))
 										if v110 != 0 {
 											v111 = int32(3)
 										} else {
@@ -5864,7 +5864,7 @@ func F_hashtableTwoPhasePopDelete(m *base.Module, l0 int32, l1 int32) {
 											} else {
 												v106 = int32(12) << (uint(v102) % 32)
 											}
-											v110 = *(*int32)(unsafe.Add(mBase, _consts[295]))
+											v110 = *(*int32)(unsafe.Add(mBase, _c_F_hashtableTwoPhasePopDelete[0]))
 											if v110 != 0 {
 												v111 = int32(3)
 											} else {
@@ -5913,7 +5913,7 @@ func F_hashtableTwoPhasePopDelete(m *base.Module, l0 int32, l1 int32) {
 										} else {
 											v106 = int32(12) << (uint(v102) % 32)
 										}
-										v110 = *(*int32)(unsafe.Add(mBase, _consts[295]))
+										v110 = *(*int32)(unsafe.Add(mBase, _c_F_hashtableTwoPhasePopDelete[0]))
 										if v110 != 0 {
 											v111 = int32(3)
 										} else {
@@ -5953,7 +5953,7 @@ func F_hashtableTwoPhasePopDelete(m *base.Module, l0 int32, l1 int32) {
 											} else {
 												v106 = int32(12) << (uint(v102) % 32)
 											}
-											v110 = *(*int32)(unsafe.Add(mBase, _consts[295]))
+											v110 = *(*int32)(unsafe.Add(mBase, _c_F_hashtableTwoPhasePopDelete[0]))
 											if v110 != 0 {
 												v111 = int32(3)
 											} else {
@@ -5997,7 +5997,7 @@ func F_hashtableTwoPhasePopDelete(m *base.Module, l0 int32, l1 int32) {
 												} else {
 													v106 = int32(12) << (uint(v102) % 32)
 												}
-												v110 = *(*int32)(unsafe.Add(mBase, _consts[295]))
+												v110 = *(*int32)(unsafe.Add(mBase, _c_F_hashtableTwoPhasePopDelete[0]))
 												if v110 != 0 {
 													v111 = int32(3)
 												} else {

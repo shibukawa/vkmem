@@ -50,8 +50,8 @@ func F_freeFunctionsAsync(m *base.Module, l0 int32, l1 int32) {
 		v15 = *(*int32)(unsafe.Add(mBase, uint32(l0)+4))
 		v16 = *(*int32)(unsafe.Add(mBase, uint32(v15)+16))
 		v17 = *(*int32)(unsafe.Add(mBase, uint32(v15)+12))
-		v20 = *(*int32)(unsafe.Add(mBase, _consts[323]))
-		*(*int32)(unsafe.Add(mBase, _consts[323])) = v16 + v17 + v20
+		v20 = *(*int32)(unsafe.Add(mBase, _c_F_freeFunctionsAsync[0]))
+		*(*int32)(unsafe.Add(mBase, _c_F_freeFunctionsAsync[0])) = v16 + v17 + v20
 		*(*int32)(unsafe.Add(mBase, uint32(v6))) = l0
 		*(*int32)(unsafe.Add(mBase, uint32(v6)+4)) = l1
 		F_bioCreateLazyFreeJob(m, int32(556), int32(2), v6)
@@ -742,21 +742,21 @@ func F_functionsLibCtxCreate(m *base.Module) int32 {
 	if v6 != 0 {
 		return int32(0)
 	} else {
-		v8 = F_dictCreate(m, int32(_a577))
+		v8 = F_dictCreate(m, int32(_a_F_functionsLibCtxCreate_0))
 		mBase = m.M
 		v9 = m.ExcPending
 		if v9 != 0 {
 			return int32(0)
 		} else {
 			*(*int32)(unsafe.Add(mBase, uint32(v3))) = v8
-			v12 = F_dictCreate(m, int32(_a578))
+			v12 = F_dictCreate(m, int32(_a_F_functionsLibCtxCreate_1))
 			mBase = m.M
 			v13 = m.ExcPending
 			if v13 != 0 {
 				return int32(0)
 			} else {
 				*(*int32)(unsafe.Add(mBase, uint32(v3)+4)) = v12
-				v16 = F_dictCreate(m, int32(_a579))
+				v16 = F_dictCreate(m, int32(_a_F_functionsLibCtxCreate_2))
 				mBase = m.M
 				v17 = m.ExcPending
 				if v17 != 0 {
@@ -796,7 +796,7 @@ func F_functionsLibCtxGetCurrent(m *base.Module) int32 {
 	_ = mBase
 	var v2 int32
 	_ = v2
-	v2 = *(*int32)(unsafe.Add(mBase, _consts[18]))
+	v2 = *(*int32)(unsafe.Add(mBase, _c_F_functionsLibCtxGetCurrent[0]))
 	return v2
 }
 func F_functionsLibNum(m *base.Module) int32 {
@@ -810,7 +810,7 @@ func F_functionsLibNum(m *base.Module) int32 {
 	_ = v5
 	var v6 int32
 	_ = v6
-	v3 = *(*int32)(unsafe.Add(mBase, _consts[18]))
+	v3 = *(*int32)(unsafe.Add(mBase, _c_F_functionsLibNum[0]))
 	v4 = *(*int32)(unsafe.Add(mBase, uint32(v3)))
 	v5 = *(*int32)(unsafe.Add(mBase, uint32(v4)+16))
 	v6 = *(*int32)(unsafe.Add(mBase, uint32(v4)+12))
@@ -827,7 +827,7 @@ func F_functionsNum(m *base.Module) int32 {
 	_ = v5
 	var v6 int32
 	_ = v6
-	v3 = *(*int32)(unsafe.Add(mBase, _consts[18]))
+	v3 = *(*int32)(unsafe.Add(mBase, _c_F_functionsNum[0]))
 	v4 = *(*int32)(unsafe.Add(mBase, uint32(v3)+4))
 	v5 = *(*int32)(unsafe.Add(mBase, uint32(v4)+16))
 	v6 = *(*int32)(unsafe.Add(mBase, uint32(v4)+12))

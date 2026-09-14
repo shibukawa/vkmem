@@ -22,7 +22,7 @@ func F_connCreateAcceptedSocket(m *base.Module, l0 int32, l1 int32) int32 {
 	} else {
 		v9 = int32(1024)
 		*(*uint16)(unsafe.Add(mBase, uint32(v5)+20)) = uint16(v9)
-		*(*int32)(unsafe.Add(mBase, uint32(v5))) = int32(_a1477)
+		*(*int32)(unsafe.Add(mBase, uint32(v5))) = int32(_a_F_connCreateAcceptedSocket_0)
 		*(*int32)(unsafe.Add(mBase, uint32(v5)+12)) = l0
 		*(*int32)(unsafe.Add(mBase, uint32(v5)+4)) = int32(2)
 		return v5
@@ -45,7 +45,7 @@ func F_connCreateAcceptedUnix(m *base.Module, l0 int32, l1 int32) int32 {
 	} else {
 		v9 = int32(1024)
 		*(*uint16)(unsafe.Add(mBase, uint32(v5)+20)) = uint16(v9)
-		*(*int32)(unsafe.Add(mBase, uint32(v5))) = int32(_a1637)
+		*(*int32)(unsafe.Add(mBase, uint32(v5))) = int32(_a_F_connCreateAcceptedUnix_0)
 		*(*int32)(unsafe.Add(mBase, uint32(v5)+12)) = l0
 		*(*int32)(unsafe.Add(mBase, uint32(v5)+4)) = int32(2)
 		return v5
@@ -89,7 +89,7 @@ func F_connSocketAddr(m *base.Module, l0 int32, l1 int32, l2 int32, l3 int32, l4
 		return int32(0)
 	} else {
 		if v7 != 0 {
-			v14 = *(*int32)(unsafe.Add(mBase, _consts[9]))
+			v14 = *(*int32)(unsafe.Add(mBase, _c_F_connSocketAddr[0]))
 			*(*int32)(unsafe.Add(mBase, uint32(l0)+8)) = v14
 			return int32(-1)
 		} else {
@@ -170,7 +170,7 @@ func F_connSocketBlockingConnect(m *base.Module, l0 int32, l1 int32, l2 int32, l
 			}
 		} else {
 			*(*int32)(unsafe.Add(mBase, uint32(l0)+4)) = int32(5)
-			v15 = *(*int32)(unsafe.Add(mBase, _consts[9]))
+			v15 = *(*int32)(unsafe.Add(mBase, _c_F_connSocketBlockingConnect[0]))
 			*(*int32)(unsafe.Add(mBase, uint32(l0)+8)) = v15
 			return int32(-1)
 		}
@@ -243,7 +243,7 @@ L5:
 	}
 L6:
 	;
-	v22 = *(*int32)(unsafe.Add(mBase, _consts[156]))
+	v22 = *(*int32)(unsafe.Add(mBase, _c_F_connSocketCloseListener[0]))
 	F_aeDeleteFileEvent(m, v22, v18, int32(1))
 	mBase = m.M
 	v25 = m.ExcPending
@@ -551,7 +551,7 @@ L17:
 	}
 L18:
 	;
-	v53 = *(*int32)(unsafe.Add(mBase, _consts[156]))
+	v53 = *(*int32)(unsafe.Add(mBase, _c_F_connSocketEventHandler[0]))
 	v54 = *(*int32)(unsafe.Add(mBase, uint32(l2)+12))
 	F_aeDeleteFileEvent(m, v53, v54, int32(2))
 	mBase = m.M
@@ -853,7 +853,7 @@ func F_connSocketIsLocal(m *base.Module, l0 int32) int32 {
 			v41 = *(*int32)(unsafe.Add(mBase, uint32(v5)))
 			v47 = base.B2i32(v41 == int32(775369265)) | base.B2i32(v41 == int32(3226170))
 		} else {
-			v38 = *(*int32)(unsafe.Add(mBase, _consts[9]))
+			v38 = *(*int32)(unsafe.Add(mBase, _c_F_connSocketIsLocal[0]))
 			*(*int32)(unsafe.Add(mBase, uint32(l0)+8)) = v38
 			v47 = int32(-1)
 		}
@@ -903,7 +903,7 @@ func F_connSocketRead(m *base.Module, l0 int32, l1 int32, l2 int32) int32 {
 	_ = v39
 	var v53 int32
 	_ = v53
-	v6 = *(*int32)(unsafe.Add(mBase, _consts[122]))
+	v6 = *(*int32)(unsafe.Add(mBase, _c_F_connSocketRead[0]))
 	if v6 == int32(0) {
 		v24 = *(*int32)(unsafe.Add(mBase, uint32(l0)+12))
 		v25 = F_read(m, v24, l1, l2)
@@ -912,11 +912,11 @@ func F_connSocketRead(m *base.Module, l0 int32, l1 int32, l2 int32) int32 {
 			if int32(-1) < v25 {
 			} else {
 				v31 = int32(9116376)
-				v32 = *(*int32)(unsafe.Add(mBase, _consts[9]))
+				v32 = *(*int32)(unsafe.Add(mBase, _c_F_connSocketRead[1]))
 				if v32 == int32(6) {
 				} else {
 					*(*int32)(unsafe.Add(mBase, uint32(l0)+8)) = v32
-					v36 = *(*int32)(unsafe.Add(mBase, _consts[9]))
+					v36 = *(*int32)(unsafe.Add(mBase, _c_F_connSocketRead[1]))
 					if v36 == int32(27) {
 					} else {
 						v39 = *(*int32)(unsafe.Add(mBase, uint32(l0)+4))
@@ -942,11 +942,11 @@ func F_connSocketRead(m *base.Module, l0 int32, l1 int32, l2 int32) int32 {
 				if int32(-1) < v25 {
 				} else {
 					v31 = int32(9116376)
-					v32 = *(*int32)(unsafe.Add(mBase, _consts[9]))
+					v32 = *(*int32)(unsafe.Add(mBase, _c_F_connSocketRead[1]))
 					if v32 == int32(6) {
 					} else {
 						*(*int32)(unsafe.Add(mBase, uint32(l0)+8)) = v32
-						v36 = *(*int32)(unsafe.Add(mBase, _consts[9]))
+						v36 = *(*int32)(unsafe.Add(mBase, _c_F_connSocketRead[1]))
 						if v36 == int32(27) {
 						} else {
 							v39 = *(*int32)(unsafe.Add(mBase, uint32(l0)+4))
@@ -964,7 +964,7 @@ func F_connSocketRead(m *base.Module, l0 int32, l1 int32, l2 int32) int32 {
 			}
 		} else {
 			v14 = int32(0)
-			v15 = *(*int32)(unsafe.Add(mBase, _consts[299]))
+			v15 = *(*int32)(unsafe.Add(mBase, _c_F_connSocketRead[2]))
 			if base.B2i32(v15 == v14) == int32(0) {
 				v24 = *(*int32)(unsafe.Add(mBase, uint32(l0)+12))
 				v25 = F_read(m, v24, l1, l2)
@@ -973,11 +973,11 @@ func F_connSocketRead(m *base.Module, l0 int32, l1 int32, l2 int32) int32 {
 					if int32(-1) < v25 {
 					} else {
 						v31 = int32(9116376)
-						v32 = *(*int32)(unsafe.Add(mBase, _consts[9]))
+						v32 = *(*int32)(unsafe.Add(mBase, _c_F_connSocketRead[1]))
 						if v32 == int32(6) {
 						} else {
 							*(*int32)(unsafe.Add(mBase, uint32(l0)+8)) = v32
-							v36 = *(*int32)(unsafe.Add(mBase, _consts[9]))
+							v36 = *(*int32)(unsafe.Add(mBase, _c_F_connSocketRead[1]))
 							if v36 == int32(27) {
 							} else {
 								v39 = *(*int32)(unsafe.Add(mBase, uint32(l0)+4))
@@ -997,7 +997,7 @@ func F_connSocketRead(m *base.Module, l0 int32, l1 int32, l2 int32) int32 {
 				v20 = *(*int32)(unsafe.Add(mBase, uint32(l0)+24))
 				v21 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v20)+222)))
 				if v21 == int32(1) {
-					F__serverAssert(m, int32(_a1480), int32(_a1479), int32(193))
+					F__serverAssert(m, int32(_a_F_connSocketRead_0), int32(_a_F_connSocketRead_1), int32(193))
 					mBase = m.M
 					v53 = m.ExcPending
 					if v53 != 0 {
@@ -1017,11 +1017,11 @@ func F_connSocketRead(m *base.Module, l0 int32, l1 int32, l2 int32) int32 {
 						if int32(-1) < v25 {
 						} else {
 							v31 = int32(9116376)
-							v32 = *(*int32)(unsafe.Add(mBase, _consts[9]))
+							v32 = *(*int32)(unsafe.Add(mBase, _c_F_connSocketRead[1]))
 							if v32 == int32(6) {
 							} else {
 								*(*int32)(unsafe.Add(mBase, uint32(l0)+8)) = v32
-								v36 = *(*int32)(unsafe.Add(mBase, _consts[9]))
+								v36 = *(*int32)(unsafe.Add(mBase, _c_F_connSocketRead[1]))
 								if v36 == int32(27) {
 								} else {
 									v39 = *(*int32)(unsafe.Add(mBase, uint32(l0)+4))
@@ -1213,7 +1213,7 @@ L15:
 	goto L16
 L16:
 	;
-	v71 = *(*int32)(unsafe.Add(mBase, _consts[9]))
+	v71 = *(*int32)(unsafe.Add(mBase, _c_F_connSocketSyncReadLine[0]))
 	*(*int32)(unsafe.Add(mBase, uint32(l0)+8)) = v71
 	goto L1
 }
@@ -1246,7 +1246,7 @@ func F_connSocketWrite(m *base.Module, l0 int32, l1 int32, l2 int32) int32 {
 	_ = v36
 	var v50 int32
 	_ = v50
-	v6 = *(*int32)(unsafe.Add(mBase, _consts[122]))
+	v6 = *(*int32)(unsafe.Add(mBase, _c_F_connSocketWrite[0]))
 	if v6 == int32(0) {
 		v24 = *(*int32)(unsafe.Add(mBase, uint32(l0)+12))
 		v25 = F_write(m, v24, l1, l2)
@@ -1254,11 +1254,11 @@ func F_connSocketWrite(m *base.Module, l0 int32, l1 int32, l2 int32) int32 {
 		if int32(-1) < v25 {
 		} else {
 			v28 = int32(9116376)
-			v29 = *(*int32)(unsafe.Add(mBase, _consts[9]))
+			v29 = *(*int32)(unsafe.Add(mBase, _c_F_connSocketWrite[1]))
 			if v29 == int32(6) {
 			} else {
 				*(*int32)(unsafe.Add(mBase, uint32(l0)+8)) = v29
-				v33 = *(*int32)(unsafe.Add(mBase, _consts[9]))
+				v33 = *(*int32)(unsafe.Add(mBase, _c_F_connSocketWrite[1]))
 				if v33 == int32(27) {
 				} else {
 					v36 = *(*int32)(unsafe.Add(mBase, uint32(l0)+4))
@@ -1279,11 +1279,11 @@ func F_connSocketWrite(m *base.Module, l0 int32, l1 int32, l2 int32) int32 {
 			if int32(-1) < v25 {
 			} else {
 				v28 = int32(9116376)
-				v29 = *(*int32)(unsafe.Add(mBase, _consts[9]))
+				v29 = *(*int32)(unsafe.Add(mBase, _c_F_connSocketWrite[1]))
 				if v29 == int32(6) {
 				} else {
 					*(*int32)(unsafe.Add(mBase, uint32(l0)+8)) = v29
-					v33 = *(*int32)(unsafe.Add(mBase, _consts[9]))
+					v33 = *(*int32)(unsafe.Add(mBase, _c_F_connSocketWrite[1]))
 					if v33 == int32(27) {
 					} else {
 						v36 = *(*int32)(unsafe.Add(mBase, uint32(l0)+4))
@@ -1297,7 +1297,7 @@ func F_connSocketWrite(m *base.Module, l0 int32, l1 int32, l2 int32) int32 {
 			return v25
 		} else {
 			v14 = int32(0)
-			v15 = *(*int32)(unsafe.Add(mBase, _consts[299]))
+			v15 = *(*int32)(unsafe.Add(mBase, _c_F_connSocketWrite[2]))
 			if base.B2i32(v15 == v14) == int32(0) {
 				v24 = *(*int32)(unsafe.Add(mBase, uint32(l0)+12))
 				v25 = F_write(m, v24, l1, l2)
@@ -1305,11 +1305,11 @@ func F_connSocketWrite(m *base.Module, l0 int32, l1 int32, l2 int32) int32 {
 				if int32(-1) < v25 {
 				} else {
 					v28 = int32(9116376)
-					v29 = *(*int32)(unsafe.Add(mBase, _consts[9]))
+					v29 = *(*int32)(unsafe.Add(mBase, _c_F_connSocketWrite[1]))
 					if v29 == int32(6) {
 					} else {
 						*(*int32)(unsafe.Add(mBase, uint32(l0)+8)) = v29
-						v33 = *(*int32)(unsafe.Add(mBase, _consts[9]))
+						v33 = *(*int32)(unsafe.Add(mBase, _c_F_connSocketWrite[1]))
 						if v33 == int32(27) {
 						} else {
 							v36 = *(*int32)(unsafe.Add(mBase, uint32(l0)+4))
@@ -1325,7 +1325,7 @@ func F_connSocketWrite(m *base.Module, l0 int32, l1 int32, l2 int32) int32 {
 				v20 = *(*int32)(unsafe.Add(mBase, uint32(l0)+24))
 				v21 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v20)+223)))
 				if v21 == int32(1) {
-					F__serverAssert(m, int32(_a1478), int32(_a1479), int32(161))
+					F__serverAssert(m, int32(_a_F_connSocketWrite_0), int32(_a_F_connSocketWrite_1), int32(161))
 					mBase = m.M
 					v50 = m.ExcPending
 					if v50 != 0 {
@@ -1344,11 +1344,11 @@ func F_connSocketWrite(m *base.Module, l0 int32, l1 int32, l2 int32) int32 {
 					if int32(-1) < v25 {
 					} else {
 						v28 = int32(9116376)
-						v29 = *(*int32)(unsafe.Add(mBase, _consts[9]))
+						v29 = *(*int32)(unsafe.Add(mBase, _c_F_connSocketWrite[1]))
 						if v29 == int32(6) {
 						} else {
 							*(*int32)(unsafe.Add(mBase, uint32(l0)+8)) = v29
-							v33 = *(*int32)(unsafe.Add(mBase, _consts[9]))
+							v33 = *(*int32)(unsafe.Add(mBase, _c_F_connSocketWrite[1]))
 							if v33 == int32(27) {
 							} else {
 								v36 = *(*int32)(unsafe.Add(mBase, uint32(l0)+4))
@@ -1411,7 +1411,7 @@ func F_connTypeHasPendingData(m *base.Module) int32 {
 	var v45 int32
 	_ = v45
 	v1 = int32(0)
-	v3 = *(*int32)(unsafe.Add(mBase, _consts[207]))
+	v3 = *(*int32)(unsafe.Add(mBase, _c_F_connTypeHasPendingData[0]))
 	if v3 == v1 {
 		goto L2
 	} else {
@@ -1423,7 +1423,7 @@ L1:
 L2:
 	;
 	v14 = int32(0)
-	v15 = *(*int32)(unsafe.Add(mBase, _consts[208]))
+	v15 = *(*int32)(unsafe.Add(mBase, _c_F_connTypeHasPendingData[1]))
 	if v15 == v14 {
 		goto L8
 	} else {
@@ -1464,7 +1464,7 @@ L7:
 L8:
 	;
 	v24 = int32(0)
-	v25 = *(*int32)(unsafe.Add(mBase, _consts[209]))
+	v25 = *(*int32)(unsafe.Add(mBase, _c_F_connTypeHasPendingData[2]))
 	if v25 == v24 {
 		goto L13
 	} else {
@@ -1502,7 +1502,7 @@ L12:
 L13:
 	;
 	v34 = int32(0)
-	v35 = *(*int32)(unsafe.Add(mBase, _consts[210]))
+	v35 = *(*int32)(unsafe.Add(mBase, _c_F_connTypeHasPendingData[3]))
 	if v35 == v34 {
 		goto L18
 	} else {
@@ -1598,7 +1598,7 @@ func F_connTypeInitialize(m *base.Module) int32 {
 		return int32(0)
 	} else {
 		if v1 != 0 {
-			F__serverAssert(m, int32(_a470), int32(_a471), int32(48))
+			F__serverAssert(m, int32(_a_F_connTypeInitialize_0), int32(_a_F_connTypeInitialize_1), int32(48))
 			v17 = m.ExcPending
 			if v17 != 0 {
 				return int32(0)
@@ -1615,7 +1615,7 @@ func F_connTypeInitialize(m *base.Module) int32 {
 				return int32(0)
 			} else {
 				if v5 != 0 {
-					F__serverAssert(m, int32(_a472), int32(_a471), int32(51))
+					F__serverAssert(m, int32(_a_F_connTypeInitialize_2), int32(_a_F_connTypeInitialize_1), int32(51))
 					v23 = m.ExcPending
 					if v23 != 0 {
 						return int32(0)
@@ -1657,7 +1657,7 @@ func F_connTypeOfReplication(m *base.Module) int32 {
 	_ = v10
 	var v11 int32
 	_ = v11
-	v2 = *(*int32)(unsafe.Add(mBase, _consts[119]))
+	v2 = *(*int32)(unsafe.Add(mBase, _c_F_connTypeOfReplication[0]))
 	if v2 == int32(0) {
 		v10 = F_connectionTypeTcp(m)
 		mBase = m.M
@@ -1732,7 +1732,7 @@ func F_connTypeProcessPendingData(m *base.Module) int32 {
 	var v52 int32
 	_ = v52
 	v1 = int32(0)
-	v5 = *(*int32)(unsafe.Add(mBase, _consts[207]))
+	v5 = *(*int32)(unsafe.Add(mBase, _c_F_connTypeProcessPendingData[0]))
 	if v5 == v1 {
 		v16 = v1
 		goto L1
@@ -1742,7 +1742,7 @@ func F_connTypeProcessPendingData(m *base.Module) int32 {
 L1:
 	;
 	v18 = int32(0)
-	v19 = *(*int32)(unsafe.Add(mBase, _consts[208]))
+	v19 = *(*int32)(unsafe.Add(mBase, _c_F_connTypeProcessPendingData[1]))
 	if v19 == v18 {
 		v28 = v16
 		goto L6
@@ -1779,7 +1779,7 @@ L5:
 L6:
 	;
 	v30 = int32(0)
-	v31 = *(*int32)(unsafe.Add(mBase, _consts[209]))
+	v31 = *(*int32)(unsafe.Add(mBase, _c_F_connTypeProcessPendingData[2]))
 	if v31 == v30 {
 		v40 = v28
 		goto L10
@@ -1812,7 +1812,7 @@ L9:
 L10:
 	;
 	v42 = int32(0)
-	v43 = *(*int32)(unsafe.Add(mBase, _consts[210]))
+	v43 = *(*int32)(unsafe.Add(mBase, _c_F_connTypeProcessPendingData[3]))
 	if v43 == v42 {
 		v52 = v40
 		goto L14
@@ -1915,9 +1915,9 @@ func F_connUnixAddr(m *base.Module, l0 int32, l1 int32, l2 int32, l3 int32, l4 i
 	v7 = m.G0
 	v9 = v7 - int32(16)
 	m.G0 = v9
-	v12 = *(*int32)(unsafe.Add(mBase, _consts[507]))
+	v12 = *(*int32)(unsafe.Add(mBase, _c_F_connUnixAddr[0]))
 	*(*int32)(unsafe.Add(mBase, uint32(v9))) = v12
-	v15 = F_snprintf(m, l1, l2, int32(_a1636), v9)
+	v15 = F_snprintf(m, l1, l2, int32(_a_F_connUnixAddr_0), v9)
 	mBase = m.M
 	v18 = m.ExcPending
 	if v18 != 0 {

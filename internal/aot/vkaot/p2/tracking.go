@@ -86,9 +86,9 @@ L1:
 	}
 L2:
 	;
-	v13 = int32(_a44)
-	v15 = *(*int32)(unsafe.Add(mBase, _consts[850]))
-	*(*int32)(unsafe.Add(mBase, _consts[850])) = v15 + int32(1)
+	v13 = int32(_a_F_enableTracking_0)
+	v15 = *(*int32)(unsafe.Add(mBase, _c_F_enableTracking[0]))
+	*(*int32)(unsafe.Add(mBase, _c_F_enableTracking[0])) = v15 + int32(1)
 	v19 = *(*int32)(unsafe.Add(mBase, uint32(l0)+204))
 	v20 = v19
 	goto L1
@@ -99,7 +99,7 @@ L4:
 	;
 	v28 = *(*int32)(unsafe.Add(mBase, uint32(l0)+100))
 	*(*int64)(unsafe.Add(mBase, uint32(v28)+16)) = l1
-	v31 = *(*int32)(unsafe.Add(mBase, _consts[951]))
+	v31 = *(*int32)(unsafe.Add(mBase, _c_F_enableTracking[1]))
 	if v31 != 0 {
 		goto L5
 	} else {
@@ -125,7 +125,7 @@ L6:
 	}
 L7:
 	;
-	*(*int32)(unsafe.Add(mBase, _consts[951])) = v33
+	*(*int32)(unsafe.Add(mBase, _c_F_enableTracking[1])) = v33
 	v37 = F_raxNew(m)
 	mBase = m.M
 	v38 = m.ExcPending
@@ -136,8 +136,8 @@ L7:
 	}
 L8:
 	;
-	*(*int32)(unsafe.Add(mBase, _consts[950])) = v37
-	v43 = F_createStringObject_1(m, int32(_a1751), int32(20))
+	*(*int32)(unsafe.Add(mBase, _c_F_enableTracking[2])) = v37
+	v43 = F_createStringObject_1(m, int32(_a_F_enableTracking_1), int32(20))
 	mBase = m.M
 	v44 = m.ExcPending
 	if v44 != 0 {
@@ -147,7 +147,7 @@ L8:
 	}
 L9:
 	;
-	*(*int32)(unsafe.Add(mBase, _consts[952])) = v43
+	*(*int32)(unsafe.Add(mBase, _c_F_enableTracking[3])) = v43
 	goto L5
 L10:
 	;
@@ -165,7 +165,7 @@ L11:
 	}
 L12:
 	;
-	F_enableBcastTrackingForPrefix(m, l0, int32(_a139), int32(0))
+	F_enableBcastTrackingForPrefix(m, l0, int32(_a_F_enableTracking_2), int32(0))
 	mBase = m.M
 	v101 = m.ExcPending
 	if v101 != 0 {
@@ -294,9 +294,9 @@ func F_freeTrackingRadixTreeAsync(m *base.Module, l0 int32) {
 		}
 	} else {
 		v10 = int32(0)
-		v12 = *(*int32)(unsafe.Add(mBase, _consts[503]))
+		v12 = *(*int32)(unsafe.Add(mBase, _c_F_freeTrackingRadixTreeAsync[0]))
 		v13 = *(*int32)(unsafe.Add(mBase, uint32(l0)+8))
-		*(*int32)(unsafe.Add(mBase, _consts[503])) = v12 + v13
+		*(*int32)(unsafe.Add(mBase, _c_F_freeTrackingRadixTreeAsync[0])) = v12 + v13
 		*(*int32)(unsafe.Add(mBase, uint32(v5))) = l0
 		F_bioCreateLazyFreeJob(m, int32(553), int32(1), v5)
 		mBase = m.M
@@ -491,7 +491,7 @@ L5:
 L6:
 	;
 	v30 = int32(0)
-	v36 = F_raxSeek(m, v8+int32(32), int32(_a263), v30, v30)
+	v36 = F_raxSeek(m, v8+int32(32), int32(_a_F_trackingBuildBroadcastReply_0), v30, v30)
 	mBase = m.M
 	v39 = m.ExcPending
 	if v39 != 0 {
@@ -641,7 +641,7 @@ L28:
 	}
 L29:
 	;
-	v127 = F_sdscatlen(m, v123, int32(_a1754), int32(1))
+	v127 = F_sdscatlen(m, v123, int32(_a_F_trackingBuildBroadcastReply_1), int32(1))
 	mBase = m.M
 	v128 = m.ExcPending
 	if v128 != 0 {
@@ -661,7 +661,7 @@ L30:
 	}
 L31:
 	;
-	v133 = F_sdscatlen(m, v129, int32(_a132), int32(2))
+	v133 = F_sdscatlen(m, v129, int32(_a_F_trackingBuildBroadcastReply_2), int32(2))
 	mBase = m.M
 	v134 = m.ExcPending
 	if v134 != 0 {
@@ -685,7 +685,7 @@ L32:
 L33:
 	;
 	v157 = int32(0)
-	v159 = F_raxSeek(m, v8+int32(32), int32(_a263), v157, v157)
+	v159 = F_raxSeek(m, v8+int32(32), int32(_a_F_trackingBuildBroadcastReply_0), v157, v157)
 	mBase = m.M
 	v160 = m.ExcPending
 	if v160 != 0 {
@@ -752,7 +752,7 @@ L42:
 	goto L40
 L43:
 	;
-	v221 = F_sdscatlen(m, v165, int32(_a1695), int32(1))
+	v221 = F_sdscatlen(m, v165, int32(_a_F_trackingBuildBroadcastReply_3), int32(1))
 	mBase = m.M
 	v222 = m.ExcPending
 	if v222 != 0 {
@@ -809,7 +809,7 @@ L52:
 	}
 L53:
 	;
-	v227 = F_sdscatlen(m, v223, int32(_a132), int32(2))
+	v227 = F_sdscatlen(m, v223, int32(_a_F_trackingBuildBroadcastReply_2), int32(2))
 	mBase = m.M
 	v228 = m.ExcPending
 	if v228 != 0 {
@@ -831,7 +831,7 @@ L54:
 	}
 L55:
 	;
-	v235 = F_sdscatlen(m, v231, int32(_a132), int32(2))
+	v235 = F_sdscatlen(m, v231, int32(_a_F_trackingBuildBroadcastReply_2), int32(2))
 	mBase = m.M
 	v236 = m.ExcPending
 	if v236 != 0 {
@@ -853,7 +853,7 @@ func F_trackingGetTotalItems(m *base.Module) int64 {
 	_ = mBase
 	var v2 int64
 	_ = v2
-	v2 = *(*int64)(unsafe.Add(mBase, _consts[953]))
+	v2 = *(*int64)(unsafe.Add(mBase, _c_F_trackingGetTotalItems[0]))
 	return v2
 }
 func F_trackingGetTotalKeys(m *base.Module) int64 {
@@ -863,7 +863,7 @@ func F_trackingGetTotalKeys(m *base.Module) int64 {
 	_ = v3
 	var v6 int64
 	_ = v6
-	v3 = *(*int32)(unsafe.Add(mBase, _consts[951]))
+	v3 = *(*int32)(unsafe.Add(mBase, _c_F_trackingGetTotalKeys[0]))
 	if v3 != 0 {
 		v6 = *(*int64)(unsafe.Add(mBase, uint32(v3)+8))
 		return v6
@@ -1108,7 +1108,7 @@ func F_trackingInvalidateKey(m *base.Module, l0 int32, l1 int32, l2 int32) {
 	v12 = m.G0
 	v14 = v12 - int32(320)
 	m.G0 = v14
-	v18 = *(*int32)(unsafe.Add(mBase, _consts[951]))
+	v18 = *(*int32)(unsafe.Add(mBase, _c_F_trackingInvalidateKey[0]))
 	if v18 == v4 {
 		goto L1
 	} else {
@@ -1174,7 +1174,7 @@ L8:
 L9:
 	;
 	v52 = int32(0)
-	v53 = *(*int32)(unsafe.Add(mBase, _consts[951]))
+	v53 = *(*int32)(unsafe.Add(mBase, _c_F_trackingInvalidateKey[0]))
 	v55 = v14 + int32(316)
 	v64 = *(*int32)(unsafe.Add(mBase, uint32(v53)))
 	v65 = *(*int32)(unsafe.Add(mBase, uint32(v64)))
@@ -1185,7 +1185,7 @@ L9:
 	}
 L10:
 	;
-	v46 = *(*int32)(unsafe.Add(mBase, _consts[950]))
+	v46 = *(*int32)(unsafe.Add(mBase, _c_F_trackingInvalidateKey[1]))
 	v47 = *(*int64)(unsafe.Add(mBase, uint32(v46)+8))
 	goto L11
 L11:
@@ -1500,7 +1500,7 @@ L53:
 L54:
 	;
 	v276 = int32(0)
-	v278 = F_raxSeek(m, v14+int32(12), int32(_a263), v276, v276)
+	v278 = F_raxSeek(m, v14+int32(12), int32(_a_F_trackingInvalidateKey_0), v276, v276)
 	mBase = m.M
 	v279 = m.ExcPending
 	if v279 != 0 {
@@ -1555,7 +1555,7 @@ L59:
 	v318 = int64(8)
 	*(*int64)(unsafe.Add(mBase, uint32(v303)+8)) = v298<<(uint(v305)%64) | v298&v307<<(uint(v309)%64) | (v298&v312<<(uint(v314)%64) | v298&v316<<(uint(v318)%64)) | (int64(base.Ui64(v298)>>(uint(v318)%64))&v316 | int64(base.Ui64(v298)>>(uint(v314)%64))&v312 | (int64(base.Ui64(v298)>>(uint(v309)%64))&v307 | int64(base.Ui64(v298)>>(uint(v305)%64))))
 	*(*int32)(unsafe.Add(mBase, uint32(v303)+4)) = int32(0)
-	v344 = *(*int32)(unsafe.Add(mBase, _consts[404]))
+	v344 = *(*int32)(unsafe.Add(mBase, _c_F_trackingInvalidateKey[2]))
 	v345 = int32(8)
 	v350 = F_raxFind(m, v344, v303+v345, v345, v303+int32(4))
 	mBase = m.M
@@ -1592,7 +1592,7 @@ L63:
 	}
 L64:
 	;
-	v363 = *(*int32)(unsafe.Add(mBase, _consts[67]))
+	v363 = *(*int32)(unsafe.Add(mBase, _c_F_trackingInvalidateKey[3]))
 	if v357&int32(256) == int32(0) {
 		goto L65
 	} else {
@@ -1657,7 +1657,7 @@ L70:
 	}
 L71:
 	;
-	v378 = *(*int32)(unsafe.Add(mBase, _consts[878]))
+	v378 = *(*int32)(unsafe.Add(mBase, _c_F_trackingInvalidateKey[4]))
 	v379 = F_listAddNodeTail(m, v378, l1)
 	mBase = m.M
 	v380 = m.ExcPending
@@ -1723,8 +1723,8 @@ L82:
 L83:
 	;
 	v431 = int32(0)
-	v433 = *(*int64)(unsafe.Add(mBase, _consts[953]))
-	*(*int64)(unsafe.Add(mBase, _consts[953])) = v433 - v430
+	v433 = *(*int64)(unsafe.Add(mBase, _c_F_trackingInvalidateKey[5]))
+	*(*int64)(unsafe.Add(mBase, _c_F_trackingInvalidateKey[5])) = v433 - v430
 	F_raxFree(m, v255)
 	mBase = m.M
 	v437 = m.ExcPending
@@ -1736,7 +1736,7 @@ L83:
 L84:
 	;
 	v438 = int32(0)
-	v439 = *(*int32)(unsafe.Add(mBase, _consts[951]))
+	v439 = *(*int32)(unsafe.Add(mBase, _c_F_trackingInvalidateKey[0]))
 	v441 = F_raxRemove(m, v439, v21, v42, v438)
 	mBase = m.M
 	v442 = m.ExcPending
@@ -2047,7 +2047,7 @@ L11:
 L12:
 	;
 	v88 = int32(0)
-	v89 = *(*int32)(unsafe.Add(mBase, _consts[951]))
+	v89 = *(*int32)(unsafe.Add(mBase, _c_F_trackingRememberKeys[0]))
 	v98 = *(*int32)(unsafe.Add(mBase, uint32(v89)))
 	v99 = *(*int32)(unsafe.Add(mBase, uint32(v98)))
 	if v87 == v88 {
@@ -2380,7 +2380,7 @@ L58:
 L59:
 	;
 	v287 = int32(0)
-	v289 = *(*int32)(unsafe.Add(mBase, _consts[951]))
+	v289 = *(*int32)(unsafe.Add(mBase, _c_F_trackingRememberKeys[0]))
 	v290 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v69))))
 	switch v290 & int32(7) {
 	case 0:
@@ -2441,7 +2441,7 @@ L66:
 	}
 L67:
 	;
-	F__serverAssert(m, int32(_a1752), int32(_a1753), int32(254))
+	F__serverAssert(m, int32(_a_F_trackingRememberKeys_0), int32(_a_F_trackingRememberKeys_1), int32(254))
 	mBase = m.M
 	v317 = m.ExcPending
 	if v317 != 0 {
@@ -2475,8 +2475,8 @@ L70:
 L71:
 	;
 	v331 = int32(0)
-	v333 = *(*int64)(unsafe.Add(mBase, _consts[953]))
-	*(*int64)(unsafe.Add(mBase, _consts[953])) = v333 + int64(1)
+	v333 = *(*int64)(unsafe.Add(mBase, _c_F_trackingRememberKeys[1]))
+	*(*int64)(unsafe.Add(mBase, _c_F_trackingRememberKeys[1])) = v333 + int64(1)
 	goto L69
 L72:
 	;

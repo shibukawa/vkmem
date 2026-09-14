@@ -484,7 +484,7 @@ func F___vsyslog(m *base.Module, l0 int32, l1 int32, l2 int32) {
 		return
 	} else {
 		v11 = int32(0)
-		v12 = *(*int32)(unsafe.Add(mBase, _consts[1264]))
+		v12 = *(*int32)(unsafe.Add(mBase, _c_F___vsyslog[0]))
 		if v12&(int32(1)<<(uint(l0&int32(7))%32)) == v11 {
 			m.G0 = v7 + int32(16)
 			return
@@ -518,7 +518,7 @@ func F_vectorGet(m *base.Module, l0 int32, l1 int32) int32 {
 		v14 = *(*int32)(unsafe.Add(mBase, uint32(l0)+12))
 		return v13 + v14*l1
 	} else {
-		F__serverAssert(m, int32(_a1668), int32(_a1667), int32(39))
+		F__serverAssert(m, int32(_a_F_vectorGet_0), int32(_a_F_vectorGet_1), int32(39))
 		mBase = m.M
 		v11 = m.ExcPending
 		if v11 != 0 {
@@ -546,7 +546,7 @@ func F_vectorInit(m *base.Module, l0 int32, l1 int32, l2 int32) {
 	var v23 int32
 	_ = v23
 	if l2 == int32(0) {
-		F__serverAssert(m, int32(_a1666), int32(_a1667), int32(21))
+		F__serverAssert(m, int32(_a_F_vectorInit_0), int32(_a_F_vectorInit_1), int32(21))
 		mBase = m.M
 		v23 = m.ExcPending
 		if v23 != 0 {
@@ -681,7 +681,7 @@ func F_verbatimStringCallback(m *base.Module, l0 int32, l1 int32, l2 int32, l3 i
 				return
 			} else {
 				v46 = m.G3
-				F_lua_pushstring(m, v33, v46+int32(_a2235))
+				F_lua_pushstring(m, v33, v46+int32(_a_F_verbatimStringCallback_0))
 				mBase = m.M
 				v50 = m.ExcPending
 				if v50 != 0 {
@@ -694,7 +694,7 @@ func F_verbatimStringCallback(m *base.Module, l0 int32, l1 int32, l2 int32, l3 i
 					if v54 != 0 {
 						return
 					} else {
-						F_lua_pushstring(m, v33, v46+int32(_a2173))
+						F_lua_pushstring(m, v33, v46+int32(_a_F_verbatimStringCallback_1))
 						mBase = m.M
 						v58 = m.ExcPending
 						if v58 != 0 {
@@ -712,7 +712,7 @@ func F_verbatimStringCallback(m *base.Module, l0 int32, l1 int32, l2 int32, l3 i
 								if v63 != 0 {
 									return
 								} else {
-									F_lua_pushstring(m, v33, v46+int32(_a2236))
+									F_lua_pushstring(m, v33, v46+int32(_a_F_verbatimStringCallback_2))
 									mBase = m.M
 									v67 = m.ExcPending
 									if v67 != 0 {
@@ -937,7 +937,7 @@ func F_vkmem_dlsym(m *base.Module, l0 int32, l1 int32) int32 {
 	_ = v73
 	var v75 int32
 	_ = v75
-	if l0 != int32(_a0) {
+	if l0 != int32(_a_F_vkmem_dlsym_0) {
 		goto L1
 	} else {
 		goto L2
@@ -945,13 +945,13 @@ func F_vkmem_dlsym(m *base.Module, l0 int32, l1 int32) int32 {
 L1:
 	;
 	v75 = int32(0)
-	*(*int32)(unsafe.Add(mBase, _consts[0])) = int32(_a1)
+	*(*int32)(unsafe.Add(mBase, _c_F_vkmem_dlsym[0])) = int32(_a_F_vkmem_dlsym_1)
 	return v75
 L2:
 	;
-	v5 = int32(_a2)
+	v5 = int32(_a_F_vkmem_dlsym_2)
 	v8 = int32(*(*uint8)(unsafe.Add(mBase, uint32(l1))))
-	v9 = int32(*(*uint8)(unsafe.Add(mBase, _consts[1])))
+	v9 = int32(*(*uint8)(unsafe.Add(mBase, _c_F_vkmem_dlsym[1])))
 	if v9 == int32(0) {
 		v32 = v8
 		v33 = v9
@@ -961,9 +961,9 @@ L2:
 	}
 L3:
 	;
-	v40 = int32(_a3)
+	v40 = int32(_a_F_vkmem_dlsym_3)
 	v43 = int32(*(*uint8)(unsafe.Add(mBase, uint32(l1))))
-	v44 = int32(*(*uint8)(unsafe.Add(mBase, _consts[2])))
+	v44 = int32(*(*uint8)(unsafe.Add(mBase, _c_F_vkmem_dlsym[2])))
 	if v44 == int32(0) {
 		v67 = v43
 		v68 = v44
@@ -1026,7 +1026,7 @@ L11:
 	goto L9
 L12:
 	;
-	v38 = *(*int32)(unsafe.Add(mBase, _consts[3]))
+	v38 = *(*int32)(unsafe.Add(mBase, _c_F_vkmem_dlsym[3]))
 	return v38
 L13:
 	;
@@ -1083,7 +1083,7 @@ L20:
 	goto L18
 L21:
 	;
-	v73 = *(*int32)(unsafe.Add(mBase, _consts[4]))
+	v73 = *(*int32)(unsafe.Add(mBase, _c_F_vkmem_dlsym[4]))
 	return v73
 }
 func F_vsnprintf(m *base.Module, l0 int32, l1 int32, l2 int32, l3 int32) int32 {
@@ -1527,7 +1527,7 @@ L26:
 	goto L28
 L27:
 	;
-	v103 = int32(_a711)
+	v103 = int32(_a_F_vsnprintf_async_signal_safe_0)
 	goto L28
 L28:
 	;
@@ -1646,7 +1646,7 @@ L44:
 	;
 	v224 = v213 + int32(-1)
 	v225 = base.I64_div_u_s(v220, v203)
-	v231 = int32(*(*uint8)(unsafe.Add(mBase, uint32(base.I32_wrap_i64(v220-v225*v203))+uint32(_consts[1114]))))
+	v231 = int32(*(*uint8)(unsafe.Add(mBase, uint32(base.I32_wrap_i64(v220-v225*v203))+uint32(_c_F_vsnprintf_async_signal_safe[0]))))
 	*(*uint8)(unsafe.Add(mBase, uint32(v224))) = uint8(v231)
 	if base.B2i32(base.Ui64(v220) < base.Ui64(v203)) == int32(0) {
 		v213 = v224
@@ -1701,7 +1701,7 @@ L52:
 L53:
 	;
 	v281 = base.I64_div_s(v278, v261)
-	v287 = int32(*(*uint8)(unsafe.Add(mBase, uint32(base.I32_wrap_i64(v278-v281*v261))+uint32(_consts[1114]))))
+	v287 = int32(*(*uint8)(unsafe.Add(mBase, uint32(base.I32_wrap_i64(v278-v281*v261))+uint32(_c_F_vsnprintf_async_signal_safe[0]))))
 	*(*uint8)(unsafe.Add(mBase, uint32(v271))) = uint8(v287)
 	v290 = v271 + int32(-1)
 	if v281 != int64(0) {

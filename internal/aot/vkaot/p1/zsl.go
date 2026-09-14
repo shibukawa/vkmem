@@ -1090,11 +1090,11 @@ func F_zslLexValueLteMax(m *base.Module, l0 int32, l1 int32) int32 {
 		if l0 == v6 {
 			v143 = v79
 		} else {
-			v82 = *(*int32)(unsafe.Add(mBase, _consts[419]))
+			v82 = *(*int32)(unsafe.Add(mBase, _c_F_zslLexValueLteMax[0]))
 			if l0 == v82 {
 				v143 = v79
 			} else {
-				v85 = *(*int32)(unsafe.Add(mBase, _consts[420]))
+				v85 = *(*int32)(unsafe.Add(mBase, _c_F_zslLexValueLteMax[1]))
 				if v6 == v85 {
 					v143 = v79
 				} else {
@@ -1167,12 +1167,12 @@ func F_zslLexValueLteMax(m *base.Module, l0 int32, l1 int32) int32 {
 	} else {
 		if l0 != v6 {
 			v13 = int32(1)
-			v15 = *(*int32)(unsafe.Add(mBase, _consts[419]))
+			v15 = *(*int32)(unsafe.Add(mBase, _c_F_zslLexValueLteMax[0]))
 			if l0 == v15 {
 				v143 = v13
 				return v143
 			} else {
-				v18 = *(*int32)(unsafe.Add(mBase, _consts[420]))
+				v18 = *(*int32)(unsafe.Add(mBase, _c_F_zslLexValueLteMax[1]))
 				if v6 == v18 {
 					v143 = v13
 					return v143
@@ -1350,7 +1350,7 @@ func F_zslParseLexRangeItem(m *base.Module, l0 int32, l1 int32, l2 int32) int32 
 			v89 = v6
 		} else {
 			*(*int32)(unsafe.Add(mBase, uint32(l2))) = int32(1)
-			v15 = *(*int32)(unsafe.Add(mBase, _consts[420]))
+			v15 = *(*int32)(unsafe.Add(mBase, _c_F_zslParseLexRangeItem[0]))
 			v84 = v15
 			*(*int32)(unsafe.Add(mBase, uint32(l1))) = v84
 			v89 = int32(0)
@@ -1362,7 +1362,7 @@ func F_zslParseLexRangeItem(m *base.Module, l0 int32, l1 int32, l2 int32) int32 
 			v89 = v6
 		} else {
 			*(*int32)(unsafe.Add(mBase, uint32(l2))) = int32(1)
-			v20 = *(*int32)(unsafe.Add(mBase, _consts[419]))
+			v20 = *(*int32)(unsafe.Add(mBase, _c_F_zslParseLexRangeItem[1]))
 			v84 = v20
 			*(*int32)(unsafe.Add(mBase, uint32(l1))) = v84
 			v89 = int32(0)
@@ -1609,10 +1609,10 @@ func F_zslParseRange(m *base.Module, l0 int32, l1 int32, l2 int32) int32 {
 			v115 = F___errno_location(m)
 			mBase = m.M
 			*(*int32)(unsafe.Add(mBase, uint32(v115))) = v108
-			v121 = *(*int64)(unsafe.Add(mBase, _consts[648]))
+			v121 = *(*int64)(unsafe.Add(mBase, _c_F_zslParseRange[0]))
 			*(*int64)(unsafe.Add(mBase, uint32(v113+int32(8)))) = v121
 			*(*int64)(unsafe.Add(mBase, uint32(v113)+24)) = int64(0)
-			v126 = *(*int64)(unsafe.Add(mBase, _consts[649]))
+			v126 = *(*int64)(unsafe.Add(mBase, _c_F_zslParseRange[1]))
 			*(*int64)(unsafe.Add(mBase, uint32(v113))) = v126
 			F_ffc_from_chars_double_options(m, v113+int32(16), v15, v15+v42, v113+int32(24), v113)
 			mBase = m.M
@@ -1676,10 +1676,10 @@ func F_zslParseRange(m *base.Module, l0 int32, l1 int32, l2 int32) int32 {
 							v264 = F___errno_location(m)
 							mBase = m.M
 							*(*int32)(unsafe.Add(mBase, uint32(v264))) = v257
-							v270 = *(*int64)(unsafe.Add(mBase, _consts[648]))
+							v270 = *(*int64)(unsafe.Add(mBase, _c_F_zslParseRange[0]))
 							*(*int64)(unsafe.Add(mBase, uint32(v262+int32(8)))) = v270
 							*(*int64)(unsafe.Add(mBase, uint32(v262)+24)) = int64(0)
-							v275 = *(*int64)(unsafe.Add(mBase, _consts[649]))
+							v275 = *(*int64)(unsafe.Add(mBase, _c_F_zslParseRange[1]))
 							*(*int64)(unsafe.Add(mBase, uint32(v262))) = v275
 							F_ffc_from_chars_double_options(m, v262+int32(16), v164, v164+v191, v262+int32(24), v262)
 							mBase = m.M
@@ -1724,10 +1724,10 @@ func F_zslParseRange(m *base.Module, l0 int32, l1 int32, l2 int32) int32 {
 							v209 = F___errno_location(m)
 							mBase = m.M
 							*(*int32)(unsafe.Add(mBase, uint32(v209))) = v202
-							v215 = *(*int64)(unsafe.Add(mBase, _consts[648]))
+							v215 = *(*int64)(unsafe.Add(mBase, _c_F_zslParseRange[0]))
 							*(*int64)(unsafe.Add(mBase, uint32(v207+int32(8)))) = v215
 							*(*int64)(unsafe.Add(mBase, uint32(v207)+24)) = int64(0)
-							v220 = *(*int64)(unsafe.Add(mBase, _consts[649]))
+							v220 = *(*int64)(unsafe.Add(mBase, _c_F_zslParseRange[1]))
 							*(*int64)(unsafe.Add(mBase, uint32(v207))) = v220
 							F_ffc_from_chars_double_options(m, v207+int32(16), v197, v197+(v191+v195), v207+int32(24), v207)
 							mBase = m.M
@@ -1779,10 +1779,10 @@ func F_zslParseRange(m *base.Module, l0 int32, l1 int32, l2 int32) int32 {
 			v60 = F___errno_location(m)
 			mBase = m.M
 			*(*int32)(unsafe.Add(mBase, uint32(v60))) = v53
-			v66 = *(*int64)(unsafe.Add(mBase, _consts[648]))
+			v66 = *(*int64)(unsafe.Add(mBase, _c_F_zslParseRange[0]))
 			*(*int64)(unsafe.Add(mBase, uint32(v58+int32(8)))) = v66
 			*(*int64)(unsafe.Add(mBase, uint32(v58)+24)) = int64(0)
-			v71 = *(*int64)(unsafe.Add(mBase, _consts[649]))
+			v71 = *(*int64)(unsafe.Add(mBase, _c_F_zslParseRange[1]))
 			*(*int64)(unsafe.Add(mBase, uint32(v58))) = v71
 			F_ffc_from_chars_double_options(m, v58+int32(16), v48, v48+(v42+v46), v58+int32(24), v58)
 			mBase = m.M
@@ -1846,10 +1846,10 @@ func F_zslParseRange(m *base.Module, l0 int32, l1 int32, l2 int32) int32 {
 							v264 = F___errno_location(m)
 							mBase = m.M
 							*(*int32)(unsafe.Add(mBase, uint32(v264))) = v257
-							v270 = *(*int64)(unsafe.Add(mBase, _consts[648]))
+							v270 = *(*int64)(unsafe.Add(mBase, _c_F_zslParseRange[0]))
 							*(*int64)(unsafe.Add(mBase, uint32(v262+int32(8)))) = v270
 							*(*int64)(unsafe.Add(mBase, uint32(v262)+24)) = int64(0)
-							v275 = *(*int64)(unsafe.Add(mBase, _consts[649]))
+							v275 = *(*int64)(unsafe.Add(mBase, _c_F_zslParseRange[1]))
 							*(*int64)(unsafe.Add(mBase, uint32(v262))) = v275
 							F_ffc_from_chars_double_options(m, v262+int32(16), v164, v164+v191, v262+int32(24), v262)
 							mBase = m.M
@@ -1894,10 +1894,10 @@ func F_zslParseRange(m *base.Module, l0 int32, l1 int32, l2 int32) int32 {
 							v209 = F___errno_location(m)
 							mBase = m.M
 							*(*int32)(unsafe.Add(mBase, uint32(v209))) = v202
-							v215 = *(*int64)(unsafe.Add(mBase, _consts[648]))
+							v215 = *(*int64)(unsafe.Add(mBase, _c_F_zslParseRange[0]))
 							*(*int64)(unsafe.Add(mBase, uint32(v207+int32(8)))) = v215
 							*(*int64)(unsafe.Add(mBase, uint32(v207)+24)) = int64(0)
-							v220 = *(*int64)(unsafe.Add(mBase, _consts[649]))
+							v220 = *(*int64)(unsafe.Add(mBase, _c_F_zslParseRange[1]))
 							*(*int64)(unsafe.Add(mBase, uint32(v207))) = v220
 							F_ffc_from_chars_double_options(m, v207+int32(16), v197, v197+(v191+v195), v207+int32(24), v207)
 							mBase = m.M
@@ -1974,10 +1974,10 @@ func F_zslParseRange(m *base.Module, l0 int32, l1 int32, l2 int32) int32 {
 				v264 = F___errno_location(m)
 				mBase = m.M
 				*(*int32)(unsafe.Add(mBase, uint32(v264))) = v257
-				v270 = *(*int64)(unsafe.Add(mBase, _consts[648]))
+				v270 = *(*int64)(unsafe.Add(mBase, _c_F_zslParseRange[0]))
 				*(*int64)(unsafe.Add(mBase, uint32(v262+int32(8)))) = v270
 				*(*int64)(unsafe.Add(mBase, uint32(v262)+24)) = int64(0)
-				v275 = *(*int64)(unsafe.Add(mBase, _consts[649]))
+				v275 = *(*int64)(unsafe.Add(mBase, _c_F_zslParseRange[1]))
 				*(*int64)(unsafe.Add(mBase, uint32(v262))) = v275
 				F_ffc_from_chars_double_options(m, v262+int32(16), v164, v164+v191, v262+int32(24), v262)
 				mBase = m.M
@@ -2022,10 +2022,10 @@ func F_zslParseRange(m *base.Module, l0 int32, l1 int32, l2 int32) int32 {
 				v209 = F___errno_location(m)
 				mBase = m.M
 				*(*int32)(unsafe.Add(mBase, uint32(v209))) = v202
-				v215 = *(*int64)(unsafe.Add(mBase, _consts[648]))
+				v215 = *(*int64)(unsafe.Add(mBase, _c_F_zslParseRange[0]))
 				*(*int64)(unsafe.Add(mBase, uint32(v207+int32(8)))) = v215
 				*(*int64)(unsafe.Add(mBase, uint32(v207)+24)) = int64(0)
-				v220 = *(*int64)(unsafe.Add(mBase, _consts[649]))
+				v220 = *(*int64)(unsafe.Add(mBase, _c_F_zslParseRange[1]))
 				*(*int64)(unsafe.Add(mBase, uint32(v207))) = v220
 				F_ffc_from_chars_double_options(m, v207+int32(16), v197, v197+(v191+v195), v207+int32(24), v207)
 				mBase = m.M
@@ -2262,7 +2262,7 @@ func F_zslUpdateScore(m *base.Module, l0 int32, l1 int32, l2 float64) int32 {
 	}
 L1:
 	;
-	F__serverAssert(m, int32(_a2443), int32(_a2436), int32(384))
+	F__serverAssert(m, int32(_a_F_zslUpdateScore_0), int32(_a_F_zslUpdateScore_1), int32(384))
 	mBase = m.M
 	v347 = m.ExcPending
 	if v347 != 0 {

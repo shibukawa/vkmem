@@ -82,7 +82,7 @@ func F_bit_arshift(m *base.Module, l0 int32) int32 {
 							return int32(1)
 						} else {
 							v33 = m.G3
-							v36 = F_luaL_typerror(m, l0, int32(2), v33+int32(_a2350))
+							v36 = F_luaL_typerror(m, l0, int32(2), v33+int32(_a_F_bit_arshift_0))
 							mBase = m.M
 							v37 = m.ExcPending
 							if v37 != 0 {
@@ -137,7 +137,7 @@ func F_bit_arshift(m *base.Module, l0 int32) int32 {
 									return int32(1)
 								} else {
 									v33 = m.G3
-									v36 = F_luaL_typerror(m, l0, int32(2), v33+int32(_a2350))
+									v36 = F_luaL_typerror(m, l0, int32(2), v33+int32(_a_F_bit_arshift_0))
 									mBase = m.M
 									v37 = m.ExcPending
 									if v37 != 0 {
@@ -156,7 +156,7 @@ func F_bit_arshift(m *base.Module, l0 int32) int32 {
 					}
 				} else {
 					v17 = m.G3
-					v20 = F_luaL_typerror(m, l0, int32(1), v17+int32(_a2350))
+					v20 = F_luaL_typerror(m, l0, int32(1), v17+int32(_a_F_bit_arshift_0))
 					mBase = m.M
 					v21 = m.ExcPending
 					if v21 != 0 {
@@ -192,7 +192,7 @@ func F_bit_arshift(m *base.Module, l0 int32) int32 {
 										return int32(1)
 									} else {
 										v33 = m.G3
-										v36 = F_luaL_typerror(m, l0, int32(2), v33+int32(_a2350))
+										v36 = F_luaL_typerror(m, l0, int32(2), v33+int32(_a_F_bit_arshift_0))
 										mBase = m.M
 										v37 = m.ExcPending
 										if v37 != 0 {
@@ -268,7 +268,7 @@ func F_bit_bnot(m *base.Module, l0 int32) int32 {
 					return int32(1)
 				} else {
 					v16 = m.G3
-					v19 = F_luaL_typerror(m, l0, int32(1), v16+int32(_a2350))
+					v19 = F_luaL_typerror(m, l0, int32(1), v16+int32(_a_F_bit_bnot_0))
 					mBase = m.M
 					v20 = m.ExcPending
 					if v20 != 0 {
@@ -351,7 +351,7 @@ func F_bit_bswap(m *base.Module, l0 int32) int32 {
 					return int32(1)
 				} else {
 					v16 = m.G3
-					v19 = F_luaL_typerror(m, l0, int32(1), v16+int32(_a2350))
+					v19 = F_luaL_typerror(m, l0, int32(1), v16+int32(_a_F_bit_bswap_0))
 					mBase = m.M
 					v20 = m.ExcPending
 					if v20 != 0 {
@@ -449,7 +449,7 @@ func F_bit_rshift(m *base.Module, l0 int32) int32 {
 							return int32(1)
 						} else {
 							v33 = m.G3
-							v36 = F_luaL_typerror(m, l0, int32(2), v33+int32(_a2350))
+							v36 = F_luaL_typerror(m, l0, int32(2), v33+int32(_a_F_bit_rshift_0))
 							mBase = m.M
 							v37 = m.ExcPending
 							if v37 != 0 {
@@ -504,7 +504,7 @@ func F_bit_rshift(m *base.Module, l0 int32) int32 {
 									return int32(1)
 								} else {
 									v33 = m.G3
-									v36 = F_luaL_typerror(m, l0, int32(2), v33+int32(_a2350))
+									v36 = F_luaL_typerror(m, l0, int32(2), v33+int32(_a_F_bit_rshift_0))
 									mBase = m.M
 									v37 = m.ExcPending
 									if v37 != 0 {
@@ -523,7 +523,7 @@ func F_bit_rshift(m *base.Module, l0 int32) int32 {
 					}
 				} else {
 					v17 = m.G3
-					v20 = F_luaL_typerror(m, l0, int32(1), v17+int32(_a2350))
+					v20 = F_luaL_typerror(m, l0, int32(1), v17+int32(_a_F_bit_rshift_0))
 					mBase = m.M
 					v21 = m.ExcPending
 					if v21 != 0 {
@@ -559,7 +559,7 @@ func F_bit_rshift(m *base.Module, l0 int32) int32 {
 										return int32(1)
 									} else {
 										v33 = m.G3
-										v36 = F_luaL_typerror(m, l0, int32(2), v33+int32(_a2350))
+										v36 = F_luaL_typerror(m, l0, int32(2), v33+int32(_a_F_bit_rshift_0))
 										mBase = m.M
 										v37 = m.ExcPending
 										if v37 != 0 {

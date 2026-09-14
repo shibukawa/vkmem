@@ -43,14 +43,14 @@ func F_luaB_collectgarbage(m *base.Module, l0 int32) int32 {
 	var v67 int32
 	_ = v67
 	v4 = m.G3
-	v12 = F_luaL_checkoption(m, l0, int32(1), v4+int32(_a2696), v4+int32(_a2697))
+	v12 = F_luaL_checkoption(m, l0, int32(1), v4+int32(_a_F_luaB_collectgarbage_0), v4+int32(_a_F_luaB_collectgarbage_1))
 	mBase = m.M
 	v15 = m.ExcPending
 	if v15 != 0 {
 		return int32(0)
 	} else {
 		v16 = int32(2)
-		v19 = *(*int32)(unsafe.Add(mBase, uint32(v4+int32(_a2698)+v12<<(uint(v16)%32))))
+		v19 = *(*int32)(unsafe.Add(mBase, uint32(v4+int32(_a_F_luaB_collectgarbage_2)+v12<<(uint(v16)%32))))
 		v22 = F_luaL_optinteger(m, l0, v16, int32(0))
 		mBase = m.M
 		v23 = m.ExcPending

@@ -137,7 +137,7 @@ func F_loadSentinelConfigFromQueue(m *base.Module) {
 	v6 = m.G0
 	v8 = v6 - int32(64)
 	m.G0 = v8
-	v11 = *(*int32)(unsafe.Add(mBase, _consts[641]))
+	v11 = *(*int32)(unsafe.Add(mBase, _c_F_loadSentinelConfigFromQueue[0]))
 	if v11 == int32(0) {
 		goto L1
 	} else {
@@ -162,7 +162,7 @@ L3:
 	goto L7
 L4:
 	;
-	v154 = *(*int32)(unsafe.Add(mBase, _consts[641]))
+	v154 = *(*int32)(unsafe.Add(mBase, _c_F_loadSentinelConfigFromQueue[0]))
 	v155 = *(*int32)(unsafe.Add(mBase, uint32(v154)))
 	F_listRelease(m, v155)
 	mBase = m.M
@@ -176,9 +176,9 @@ L5:
 	;
 	v124 = *(*int32)(unsafe.Add(mBase, uint32(v120)+12))
 	v125 = *(*int32)(unsafe.Add(mBase, uint32(v120)+8))
-	*(*int32)(unsafe.Add(mBase, uint32(v8)+48)) = int32(_a535)
-	v129 = *(*int32)(unsafe.Add(mBase, _consts[642]))
-	v133 = F_fiprintf(m, v129, int32(_a1139), v8+int32(48))
+	*(*int32)(unsafe.Add(mBase, uint32(v8)+48)) = int32(_a_F_loadSentinelConfigFromQueue_0)
+	v129 = *(*int32)(unsafe.Add(mBase, _c_F_loadSentinelConfigFromQueue[1]))
+	v133 = F_fiprintf(m, v129, int32(_a_F_loadSentinelConfigFromQueue_1), v8+int32(48))
 	mBase = m.M
 	v134 = m.ExcPending
 	if v134 != 0 {
@@ -365,7 +365,7 @@ L34:
 L35:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v8)+32)) = v125
-	v139 = F_fiprintf(m, v129, int32(_a1140), v8+int32(32))
+	v139 = F_fiprintf(m, v129, int32(_a_F_loadSentinelConfigFromQueue_2), v8+int32(32))
 	mBase = m.M
 	v140 = m.ExcPending
 	if v140 != 0 {
@@ -376,7 +376,7 @@ L35:
 L36:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v8)+16)) = v124
-	v145 = F_fiprintf(m, v129, int32(_a1141), v8+int32(16))
+	v145 = F_fiprintf(m, v129, int32(_a_F_loadSentinelConfigFromQueue_3), v8+int32(16))
 	mBase = m.M
 	v146 = m.ExcPending
 	if v146 != 0 {
@@ -387,7 +387,7 @@ L36:
 L37:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v8))) = v123
-	v149 = F_fiprintf(m, v129, int32(_a1142), v8)
+	v149 = F_fiprintf(m, v129, int32(_a_F_loadSentinelConfigFromQueue_4), v8)
 	mBase = m.M
 	v150 = m.ExcPending
 	if v150 != 0 {
@@ -404,7 +404,7 @@ L38:
 	}
 L39:
 	;
-	v159 = *(*int32)(unsafe.Add(mBase, _consts[641]))
+	v159 = *(*int32)(unsafe.Add(mBase, _c_F_loadSentinelConfigFromQueue[0]))
 	v160 = *(*int32)(unsafe.Add(mBase, uint32(v159)+4))
 	F_listRelease(m, v160)
 	mBase = m.M
@@ -416,7 +416,7 @@ L39:
 	}
 L40:
 	;
-	v164 = *(*int32)(unsafe.Add(mBase, _consts[641]))
+	v164 = *(*int32)(unsafe.Add(mBase, _c_F_loadSentinelConfigFromQueue[0]))
 	v165 = *(*int32)(unsafe.Add(mBase, uint32(v164)+8))
 	F_listRelease(m, v165)
 	mBase = m.M
@@ -428,7 +428,7 @@ L40:
 	}
 L41:
 	;
-	v169 = *(*int32)(unsafe.Add(mBase, _consts[641]))
+	v169 = *(*int32)(unsafe.Add(mBase, _c_F_loadSentinelConfigFromQueue[0]))
 	F_valkey_free(m, v169)
 	mBase = m.M
 	v171 = m.ExcPending
@@ -439,7 +439,7 @@ L41:
 	}
 L42:
 	;
-	*(*int32)(unsafe.Add(mBase, _consts[641])) = int32(0)
+	*(*int32)(unsafe.Add(mBase, _c_F_loadSentinelConfigFromQueue[0])) = int32(0)
 	goto L1
 }
 func F_sentinelCheckSubjectivelyDown(m *base.Module, l0 int32) {
@@ -633,7 +633,7 @@ L7:
 	mBase = m.M
 	v28 = *(*int32)(unsafe.Add(mBase, uint32(l0)+28))
 	v29 = *(*int64)(unsafe.Add(mBase, uint32(v28)+24))
-	v32 = *(*int64)(unsafe.Add(mBase, _consts[661]))
+	v32 = *(*int64)(unsafe.Add(mBase, _c_F_sentinelCheckSubjectivelyDown[1]))
 	if v27-v29 <= v32 {
 		v69 = v28
 		goto L6
@@ -733,7 +733,7 @@ L18:
 	mBase = m.M
 	v75 = *(*int32)(unsafe.Add(mBase, uint32(l0)+28))
 	v76 = *(*int64)(unsafe.Add(mBase, uint32(v75)+32))
-	v79 = *(*int64)(unsafe.Add(mBase, _consts[661]))
+	v79 = *(*int64)(unsafe.Add(mBase, _c_F_sentinelCheckSubjectivelyDown[1]))
 	if v74-v76 <= v79 {
 		goto L17
 	} else {
@@ -745,7 +745,7 @@ L19:
 	mBase = m.M
 	v82 = *(*int32)(unsafe.Add(mBase, uint32(l0)+28))
 	v83 = *(*int64)(unsafe.Add(mBase, uint32(v82)+40))
-	v86 = *(*int64)(unsafe.Add(mBase, _consts[662]))
+	v86 = *(*int64)(unsafe.Add(mBase, _c_F_sentinelCheckSubjectivelyDown[2]))
 	if v81-v83 <= v86*int64(3) {
 		goto L17
 	} else {
@@ -834,7 +834,7 @@ L31:
 	v117 = F_mstime(m)
 	mBase = m.M
 	v118 = *(*int64)(unsafe.Add(mBase, uint32(l0)+112))
-	v121 = *(*int64)(unsafe.Add(mBase, _consts[653]))
+	v121 = *(*int64)(unsafe.Add(mBase, _c_F_sentinelCheckSubjectivelyDown[0]))
 	v124 = *(*int64)(unsafe.Add(mBase, uint32(l0)+72))
 	if v121<<(uint(int64(1))%64)+v124 < v117-v118 {
 		goto L27
@@ -871,7 +871,7 @@ L35:
 	goto L33
 L36:
 	;
-	F_sentinelEvent(m, int32(3), int32(_a1232), l0, int32(_a1138), int32(0))
+	F_sentinelEvent(m, int32(3), int32(_a_F_sentinelCheckSubjectivelyDown_2), l0, int32(_a_F_sentinelCheckSubjectivelyDown_1), int32(0))
 	mBase = m.M
 	v149 = m.ExcPending
 	if v149 != 0 {
@@ -886,7 +886,7 @@ L37:
 	goto L26
 L38:
 	;
-	F_sentinelEvent(m, int32(3), int32(_a1231), l0, int32(_a1138), int32(0))
+	F_sentinelEvent(m, int32(3), int32(_a_F_sentinelCheckSubjectivelyDown_0), l0, int32(_a_F_sentinelCheckSubjectivelyDown_1), int32(0))
 	mBase = m.M
 	v162 = m.ExcPending
 	if v162 != 0 {
@@ -3385,7 +3385,7 @@ L2:
 	v72 = *(*int32)(unsafe.Add(mBase, uint32(v71)+4))
 	v73 = F_objectGetVal(m, v72)
 	mBase = m.M
-	v74 = int32(_a1171)
+	v74 = int32(_a_F_sentinelCommand_0)
 	v77 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v73))))
 	if v77 != 0 {
 		goto L29
@@ -3398,7 +3398,7 @@ L3:
 	v18 = *(*int32)(unsafe.Add(mBase, uint32(v17)+4))
 	v19 = F_objectGetVal(m, v18)
 	mBase = m.M
-	v20 = int32(_a757)
+	v20 = int32(_a_F_sentinelCommand_1)
 	v23 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v19))))
 	if v23 != 0 {
 		goto L6
@@ -3511,7 +3511,7 @@ L18:
 	goto L17
 L19:
 	;
-	v65 = F__emscripten_memcpy_bulkmem(m, v12+int32(64), int32(_a1172), int32(188))
+	v65 = F__emscripten_memcpy_bulkmem(m, v12+int32(64), int32(_a_F_sentinelCommand_2), int32(188))
 	mBase = m.M
 	goto L18
 L20:
@@ -3534,7 +3534,7 @@ L22:
 L23:
 	;
 	v2528 = v2521
-	v2529 = int32(_a619)
+	v2529 = int32(_a_F_sentinelCommand_3)
 	v2531 = v2524
 	goto L22
 L24:
@@ -3553,7 +3553,7 @@ L25:
 	v165 = *(*int32)(unsafe.Add(mBase, uint32(v164)+4))
 	v166 = F_objectGetVal(m, v165)
 	mBase = m.M
-	v167 = int32(_a202)
+	v167 = int32(_a_F_sentinelCommand_4)
 	v170 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v166))))
 	if v170 != 0 {
 		goto L59
@@ -3662,7 +3662,7 @@ L39:
 	v116 = *(*int32)(unsafe.Add(mBase, uint32(v115)+4))
 	v117 = F_objectGetVal(m, v116)
 	mBase = m.M
-	v118 = int32(_a1173)
+	v118 = int32(_a_F_sentinelCommand_5)
 	v121 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v117))))
 	if v121 != 0 {
 		goto L42
@@ -3762,7 +3762,7 @@ L52:
 	goto L26
 L53:
 	;
-	v161 = *(*int32)(unsafe.Add(mBase, _consts[640]))
+	v161 = *(*int32)(unsafe.Add(mBase, _c_F_sentinelCommand[0]))
 	F_addReplyDictOfValkeyInstances(m, l0, v161)
 	mBase = m.M
 	v163 = m.ExcPending
@@ -3780,7 +3780,7 @@ L55:
 	v266 = *(*int32)(unsafe.Add(mBase, uint32(v265)+4))
 	v267 = F_objectGetVal(m, v266)
 	mBase = m.M
-	v268 = int32(_a1174)
+	v268 = int32(_a_F_sentinelCommand_6)
 	v271 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v267))))
 	if v271 != 0 {
 		goto L93
@@ -3889,7 +3889,7 @@ L69:
 	v209 = *(*int32)(unsafe.Add(mBase, uint32(v208)+4))
 	v210 = F_objectGetVal(m, v209)
 	mBase = m.M
-	v211 = int32(_a200)
+	v211 = int32(_a_F_sentinelCommand_7)
 	v214 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v210))))
 	if v214 != 0 {
 		goto L72
@@ -3989,7 +3989,7 @@ L82:
 	goto L56
 L83:
 	;
-	v254 = *(*int32)(unsafe.Add(mBase, _consts[640]))
+	v254 = *(*int32)(unsafe.Add(mBase, _c_F_sentinelCommand[0]))
 	v255 = *(*int32)(unsafe.Add(mBase, uint32(l0)+20))
 	v256 = *(*int32)(unsafe.Add(mBase, uint32(v255)+8))
 	v257 = F_objectGetVal(m, v256)
@@ -4021,7 +4021,7 @@ L85:
 	}
 L86:
 	;
-	F_addReplyError(m, l0, int32(_a1170))
+	F_addReplyError(m, l0, int32(_a_F_sentinelCommand_8))
 	mBase = m.M
 	v262 = m.ExcPending
 	if v262 != 0 {
@@ -4041,7 +4041,7 @@ L89:
 	v368 = *(*int32)(unsafe.Add(mBase, uint32(v367)+4))
 	v369 = F_objectGetVal(m, v368)
 	mBase = m.M
-	v370 = int32(_a1175)
+	v370 = int32(_a_F_sentinelCommand_9)
 	v373 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v369))))
 	if v373 != 0 {
 		goto L126
@@ -4150,7 +4150,7 @@ L103:
 	v310 = *(*int32)(unsafe.Add(mBase, uint32(v309)+4))
 	v311 = F_objectGetVal(m, v310)
 	mBase = m.M
-	v312 = int32(_a1176)
+	v312 = int32(_a_F_sentinelCommand_10)
 	v315 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v311))))
 	if v315 != 0 {
 		goto L106
@@ -4250,7 +4250,7 @@ L116:
 	goto L90
 L117:
 	;
-	v355 = *(*int32)(unsafe.Add(mBase, _consts[640]))
+	v355 = *(*int32)(unsafe.Add(mBase, _c_F_sentinelCommand[0]))
 	v356 = *(*int32)(unsafe.Add(mBase, uint32(l0)+20))
 	v357 = *(*int32)(unsafe.Add(mBase, uint32(v356)+8))
 	v358 = F_objectGetVal(m, v357)
@@ -4283,7 +4283,7 @@ L119:
 	}
 L120:
 	;
-	F_addReplyError(m, l0, int32(_a1170))
+	F_addReplyError(m, l0, int32(_a_F_sentinelCommand_8))
 	mBase = m.M
 	v363 = m.ExcPending
 	if v363 != 0 {
@@ -4303,7 +4303,7 @@ L123:
 	v422 = *(*int32)(unsafe.Add(mBase, uint32(v421)+4))
 	v423 = F_objectGetVal(m, v422)
 	mBase = m.M
-	v424 = int32(_a1177)
+	v424 = int32(_a_F_sentinelCommand_11)
 	v427 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v423))))
 	if v427 != 0 {
 		goto L144
@@ -4445,7 +4445,7 @@ L141:
 	v471 = *(*int32)(unsafe.Add(mBase, uint32(v470)+4))
 	v472 = F_objectGetVal(m, v471)
 	mBase = m.M
-	v473 = int32(_a1178)
+	v473 = int32(_a_F_sentinelCommand_12)
 	v476 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v472))))
 	if v476 != 0 {
 		goto L161
@@ -4550,7 +4550,7 @@ L154:
 	}
 L155:
 	;
-	F_addReplyBulkCBuffer(m, l0, int32(_a1143), int32(40))
+	F_addReplyBulkCBuffer(m, l0, int32(_a_F_sentinelCommand_13), int32(40))
 	mBase = m.M
 	v469 = m.ExcPending
 	if v469 != 0 {
@@ -4567,7 +4567,7 @@ L157:
 	v674 = *(*int32)(unsafe.Add(mBase, uint32(v673)+4))
 	v675 = F_objectGetVal(m, v674)
 	mBase = m.M
-	v676 = int32(_a32)
+	v676 = int32(_a_F_sentinelCommand_14)
 	v679 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v675))))
 	if v679 != 0 {
 		goto L221
@@ -4677,7 +4677,7 @@ L171:
 	v515 = *(*int32)(unsafe.Add(mBase, uint32(v514)+4))
 	v516 = F_objectGetVal(m, v515)
 	mBase = m.M
-	v517 = int32(_a1179)
+	v517 = int32(_a_F_sentinelCommand_15)
 	v520 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v516))))
 	if v520 != 0 {
 		goto L174
@@ -4816,7 +4816,7 @@ L188:
 L189:
 	;
 	v575 = int32(0)
-	v576 = *(*int32)(unsafe.Add(mBase, _consts[640]))
+	v576 = *(*int32)(unsafe.Add(mBase, _c_F_sentinelCommand[0]))
 	v577 = *(*int32)(unsafe.Add(mBase, uint32(l0)+20))
 	v578 = *(*int32)(unsafe.Add(mBase, uint32(v577)+8))
 	v579 = F_objectGetVal(m, v578)
@@ -4832,7 +4832,7 @@ L189:
 	}
 L190:
 	;
-	v585 = *(*int32)(unsafe.Add(mBase, _consts[645]))
+	v585 = *(*int32)(unsafe.Add(mBase, _c_F_sentinelCommand[1]))
 	if v585 != 0 {
 		goto L192
 	} else {
@@ -4903,7 +4903,7 @@ L199:
 	v607 = *(*int32)(unsafe.Add(mBase, uint32(v606)+20))
 	v608 = F_objectGetVal(m, v607)
 	mBase = m.M
-	v609 = int32(_a1180)
+	v609 = int32(_a_F_sentinelCommand_16)
 	v612 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v608))))
 	if v612 != 0 {
 		goto L202
@@ -5036,7 +5036,7 @@ L214:
 L215:
 	;
 	v2528 = v656
-	v2529 = int32(_a1181)
+	v2529 = int32(_a_F_sentinelCommand_17)
 	v2531 = v658
 	goto L22
 L216:
@@ -5053,7 +5053,7 @@ L216:
 L217:
 	;
 	v2528 = v669
-	v2529 = int32(_a1181)
+	v2529 = int32(_a_F_sentinelCommand_17)
 	v2531 = v668
 	goto L22
 L218:
@@ -5062,7 +5062,7 @@ L218:
 	v728 = *(*int32)(unsafe.Add(mBase, uint32(v727)+4))
 	v729 = F_objectGetVal(m, v728)
 	mBase = m.M
-	v730 = int32(_a1182)
+	v730 = int32(_a_F_sentinelCommand_18)
 	v733 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v729))))
 	if v733 != 0 {
 		goto L239
@@ -5198,7 +5198,7 @@ L235:
 	v854 = *(*int32)(unsafe.Add(mBase, uint32(v853)+4))
 	v855 = F_objectGetVal(m, v854)
 	mBase = m.M
-	v856 = int32(_a496)
+	v856 = int32(_a_F_sentinelCommand_19)
 	v859 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v855))))
 	if v859 != 0 {
 		goto L279
@@ -5307,7 +5307,7 @@ L249:
 	v772 = *(*int32)(unsafe.Add(mBase, uint32(v771)+4))
 	v773 = F_objectGetVal(m, v772)
 	mBase = m.M
-	v774 = int32(_a1183)
+	v774 = int32(_a_F_sentinelCommand_20)
 	v777 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v773))))
 	if v777 != 0 {
 		goto L252
@@ -5485,7 +5485,7 @@ L272:
 L273:
 	;
 	v840 = int32(0)
-	v841 = *(*int32)(unsafe.Add(mBase, _consts[639]))
+	v841 = *(*int32)(unsafe.Add(mBase, _c_F_sentinelCommand[2]))
 	v847 = *(*int32)(unsafe.Add(mBase, uint32(v836+base.B2i32(v841 == v840)<<(uint(int32(2))%32))))
 	F_addReplyBulkCString(m, l0, v847)
 	mBase = m.M
@@ -5515,7 +5515,7 @@ L276:
 	v1006 = *(*int32)(unsafe.Add(mBase, uint32(v1005)+4))
 	v1007 = F_objectGetVal(m, v1006)
 	mBase = m.M
-	v1008 = int32(_a1184)
+	v1008 = int32(_a_F_sentinelCommand_21)
 	v1011 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v1007))))
 	if v1011 != 0 {
 		goto L331
@@ -5659,7 +5659,7 @@ L294:
 	v910 = *(*int32)(unsafe.Add(mBase, uint32(v909)+12))
 	v911 = F_objectGetVal(m, v910)
 	mBase = m.M
-	v912 = int32(_a1185)
+	v912 = int32(_a_F_sentinelCommand_22)
 	v915 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v911))))
 	if v915 != 0 {
 		goto L298
@@ -5668,7 +5668,7 @@ L294:
 	}
 L295:
 	;
-	F_addReplyError(m, l0, int32(_a1186))
+	F_addReplyError(m, l0, int32(_a_F_sentinelCommand_23))
 	mBase = m.M
 	v957 = m.ExcPending
 	if v957 != 0 {
@@ -5774,7 +5774,7 @@ L308:
 	}
 L309:
 	;
-	F_addReplyError(m, l0, int32(_a1187))
+	F_addReplyError(m, l0, int32(_a_F_sentinelCommand_24))
 	mBase = m.M
 	v954 = m.ExcPending
 	if v954 != 0 {
@@ -5800,7 +5800,7 @@ L312:
 	}
 L313:
 	;
-	F_addReplyError(m, l0, int32(_a1188))
+	F_addReplyError(m, l0, int32(_a_F_sentinelCommand_25))
 	mBase = m.M
 	v965 = m.ExcPending
 	if v965 != 0 {
@@ -5813,7 +5813,7 @@ L314:
 	goto L1
 L315:
 	;
-	v972 = *(*int32)(unsafe.Add(mBase, _consts[15]))
+	v972 = *(*int32)(unsafe.Add(mBase, _c_F_sentinelCommand[3]))
 	if int32(2) < v972 {
 		goto L319
 	} else {
@@ -5828,7 +5828,7 @@ L316:
 	}
 L317:
 	;
-	F_addReplyError(m, l0, int32(_a1189))
+	F_addReplyError(m, l0, int32(_a_F_sentinelCommand_26))
 	mBase = m.M
 	v970 = m.ExcPending
 	if v970 != 0 {
@@ -5858,7 +5858,7 @@ L320:
 	;
 	v975 = *(*int32)(unsafe.Add(mBase, uint32(v902)+4))
 	*(*int32)(unsafe.Add(mBase, uint32(v12))) = v975
-	F__serverLog(m, int32(2), int32(_a1190), v12)
+	F__serverLog(m, int32(2), int32(_a_F_sentinelCommand_27), v12)
 	mBase = m.M
 	v980 = m.ExcPending
 	if v980 != 0 {
@@ -5879,7 +5879,7 @@ L322:
 	}
 L323:
 	;
-	v1002 = *(*int32)(unsafe.Add(mBase, _consts[77]))
+	v1002 = *(*int32)(unsafe.Add(mBase, _c_F_sentinelCommand[4]))
 	F_addReply(m, l0, v1002)
 	mBase = m.M
 	v1004 = m.ExcPending
@@ -5915,7 +5915,7 @@ L328:
 	v1053 = *(*int32)(unsafe.Add(mBase, uint32(v1052)+4))
 	v1054 = F_objectGetVal(m, v1053)
 	mBase = m.M
-	v1055 = int32(_a1191)
+	v1055 = int32(_a_F_sentinelCommand_28)
 	v1058 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v1054))))
 	if v1058 != 0 {
 		goto L347
@@ -6037,7 +6037,7 @@ L344:
 	v1182 = *(*int32)(unsafe.Add(mBase, uint32(v1181)+4))
 	v1183 = F_objectGetVal(m, v1182)
 	mBase = m.M
-	v1184 = int32(_a1192)
+	v1184 = int32(_a_F_sentinelCommand_29)
 	v1187 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v1183))))
 	if v1187 != 0 {
 		goto L389
@@ -6142,7 +6142,7 @@ L357:
 	}
 L358:
 	;
-	v1099 = F_sentinelValidateArgs(m, l0, int32(2), int32(_a1193))
+	v1099 = F_sentinelValidateArgs(m, l0, int32(2), int32(_a_F_sentinelCommand_30))
 	mBase = m.M
 	v1100 = m.ExcPending
 	if v1100 != 0 {
@@ -6161,7 +6161,7 @@ L360:
 	;
 	v1103 = *(*int32)(unsafe.Add(mBase, uint32(l0)+20))
 	v1104 = *(*int32)(unsafe.Add(mBase, uint32(v1103)+20))
-	v1108 = F_getLongFromObjectOrReply(m, l0, v1104, v12+int32(56), int32(_a1194))
+	v1108 = F_getLongFromObjectOrReply(m, l0, v1104, v12+int32(56), int32(_a_F_sentinelCommand_31))
 	mBase = m.M
 	v1109 = m.ExcPending
 	if v1109 != 0 {
@@ -6180,7 +6180,7 @@ L362:
 	;
 	v1110 = *(*int32)(unsafe.Add(mBase, uint32(l0)+20))
 	v1111 = *(*int32)(unsafe.Add(mBase, uint32(v1110)+16))
-	v1115 = F_getLongFromObjectOrReply(m, l0, v1111, v12+int32(52), int32(_a1195))
+	v1115 = F_getLongFromObjectOrReply(m, l0, v1111, v12+int32(52), int32(_a_F_sentinelCommand_32))
 	mBase = m.M
 	v1116 = m.ExcPending
 	if v1116 != 0 {
@@ -6210,7 +6210,7 @@ L365:
 	v1125 = *(*int32)(unsafe.Add(mBase, uint32(v1124)+12))
 	v1126 = F_objectGetVal(m, v1125)
 	mBase = m.M
-	v1131 = *(*int32)(unsafe.Add(mBase, _consts[644]))
+	v1131 = *(*int32)(unsafe.Add(mBase, _c_F_sentinelCommand[5]))
 	v1134 = F_anetResolve(m, v1123, v1126, v12+int32(64), int32(46), base.B2i32(v1131 == v1123))
 	mBase = m.M
 	v1135 = m.ExcPending
@@ -6221,7 +6221,7 @@ L365:
 	}
 L366:
 	;
-	F_addReplyError(m, l0, int32(_a1196))
+	F_addReplyError(m, l0, int32(_a_F_sentinelCommand_33))
 	mBase = m.M
 	v1122 = m.ExcPending
 	if v1122 != 0 {
@@ -6261,7 +6261,7 @@ L369:
 	}
 L370:
 	;
-	F_addReplyError(m, l0, int32(_a1197))
+	F_addReplyError(m, l0, int32(_a_F_sentinelCommand_34))
 	mBase = m.M
 	v1140 = m.ExcPending
 	if v1140 != 0 {
@@ -6304,11 +6304,11 @@ L375:
 	}
 L376:
 	;
-	v1167 = int32(_a1198)
+	v1167 = int32(_a_F_sentinelCommand_35)
 	goto L375
 L377:
 	;
-	F_addReplyError(m, l0, int32(_a1199))
+	F_addReplyError(m, l0, int32(_a_F_sentinelCommand_36))
 	mBase = m.M
 	v1165 = m.ExcPending
 	if v1165 != 0 {
@@ -6325,21 +6325,21 @@ L378:
 	}
 L379:
 	;
-	v1155 = *(*int32)(unsafe.Add(mBase, _consts[9]))
+	v1155 = *(*int32)(unsafe.Add(mBase, _c_F_sentinelCommand[6]))
 	switch v1155 + int32(-28) {
 	case 0:
 		goto L377
 	case 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15:
 		goto L376
 	case 16:
-		v1167 = int32(_a1200)
+		v1167 = int32(_a_F_sentinelCommand_37)
 		goto L375
 	default:
 		goto L378
 	}
 L380:
 	;
-	F_addReplyError(m, l0, int32(_a1201))
+	F_addReplyError(m, l0, int32(_a_F_sentinelCommand_38))
 	mBase = m.M
 	v1162 = m.ExcPending
 	if v1162 != 0 {
@@ -6360,7 +6360,7 @@ L384:
 	;
 	v1172 = *(*int32)(unsafe.Add(mBase, uint32(v1151)+152))
 	*(*int32)(unsafe.Add(mBase, uint32(v12)+16)) = v1172
-	F_sentinelEvent(m, int32(3), int32(_a1202), v1151, int32(_a1203), v12+int32(16))
+	F_sentinelEvent(m, int32(3), int32(_a_F_sentinelCommand_39), v1151, int32(_a_F_sentinelCommand_40), v12+int32(16))
 	mBase = m.M
 	v1180 = m.ExcPending
 	if v1180 != 0 {
@@ -6377,7 +6377,7 @@ L386:
 	v1229 = *(*int32)(unsafe.Add(mBase, uint32(v1228)+4))
 	v1230 = F_objectGetVal(m, v1229)
 	mBase = m.M
-	v1231 = int32(_a1204)
+	v1231 = int32(_a_F_sentinelCommand_41)
 	v1234 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v1230))))
 	if v1234 != 0 {
 		goto L405
@@ -6499,7 +6499,7 @@ L402:
 	v1295 = *(*int32)(unsafe.Add(mBase, uint32(v1294)+4))
 	v1296 = F_objectGetVal(m, v1295)
 	mBase = m.M
-	v1297 = int32(_a1205)
+	v1297 = int32(_a_F_sentinelCommand_42)
 	v1300 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v1296))))
 	if v1300 != 0 {
 		goto L425
@@ -6623,7 +6623,7 @@ L417:
 	}
 L418:
 	;
-	F_sentinelEvent(m, int32(3), int32(_a1206), v1275, int32(_a1138), int32(0))
+	F_sentinelEvent(m, int32(3), int32(_a_F_sentinelCommand_43), v1275, int32(_a_F_sentinelCommand_44), int32(0))
 	mBase = m.M
 	v1284 = m.ExcPending
 	if v1284 != 0 {
@@ -6633,7 +6633,7 @@ L418:
 	}
 L419:
 	;
-	v1286 = *(*int32)(unsafe.Add(mBase, _consts[640]))
+	v1286 = *(*int32)(unsafe.Add(mBase, _c_F_sentinelCommand[0]))
 	v1287 = *(*int32)(unsafe.Add(mBase, uint32(l0)+20))
 	v1288 = *(*int32)(unsafe.Add(mBase, uint32(v1287)+8))
 	v1289 = F_objectGetVal(m, v1288)
@@ -6665,7 +6665,7 @@ L422:
 	v1386 = *(*int32)(unsafe.Add(mBase, uint32(v1385)+4))
 	v1387 = F_objectGetVal(m, v1386)
 	mBase = m.M
-	v1388 = int32(_a131)
+	v1388 = int32(_a_F_sentinelCommand_45)
 	v1391 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v1387))))
 	if v1391 != 0 {
 		goto L459
@@ -6818,7 +6818,7 @@ L440:
 L441:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v12)+48)) = v1351
-	v1364 = F_sdscatfmt(m, v1349, int32(_a1207), v12+int32(48))
+	v1364 = F_sdscatfmt(m, v1349, int32(_a_F_sentinelCommand_46), v12+int32(48))
 	mBase = m.M
 	v1365 = m.ExcPending
 	if v1365 != 0 {
@@ -6829,7 +6829,7 @@ L441:
 L442:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v12)+32)) = v1351
-	v1356 = F_sdscatfmt(m, v1349, int32(_a1208), v12+int32(32))
+	v1356 = F_sdscatfmt(m, v1349, int32(_a_F_sentinelCommand_47), v12+int32(32))
 	mBase = m.M
 	v1357 = m.ExcPending
 	if v1357 != 0 {
@@ -6869,7 +6869,7 @@ L446:
 	}
 L447:
 	;
-	v1380 = F_sdscat(m, v1378, int32(_a1209))
+	v1380 = F_sdscat(m, v1378, int32(_a_F_sentinelCommand_48))
 	mBase = m.M
 	v1381 = m.ExcPending
 	if v1381 != 0 {
@@ -6879,7 +6879,7 @@ L447:
 	}
 L448:
 	;
-	v1371 = F_sdscat(m, v1364, int32(_a1210))
+	v1371 = F_sdscat(m, v1364, int32(_a_F_sentinelCommand_49))
 	mBase = m.M
 	v1372 = m.ExcPending
 	if v1372 != 0 {
@@ -6909,7 +6909,7 @@ L451:
 	}
 L452:
 	;
-	v1376 = F_sdscat(m, v1371, int32(_a1211))
+	v1376 = F_sdscat(m, v1371, int32(_a_F_sentinelCommand_50))
 	mBase = m.M
 	v1377 = m.ExcPending
 	if v1377 != 0 {
@@ -6934,7 +6934,7 @@ L456:
 	v1430 = *(*int32)(unsafe.Add(mBase, uint32(v1429)+4))
 	v1431 = F_objectGetVal(m, v1430)
 	mBase = m.M
-	v1432 = int32(_a1212)
+	v1432 = int32(_a_F_sentinelCommand_51)
 	v1435 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v1431))))
 	if v1435 != 0 {
 		goto L474
@@ -7048,7 +7048,7 @@ L471:
 	v1572 = *(*int32)(unsafe.Add(mBase, uint32(v1571)+4))
 	v1573 = F_objectGetVal(m, v1572)
 	mBase = m.M
-	v1574 = int32(_a1213)
+	v1574 = int32(_a_F_sentinelCommand_52)
 	v1577 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v1573))))
 	if v1577 != 0 {
 		goto L522
@@ -7157,7 +7157,7 @@ L485:
 	v1475 = *(*int32)(unsafe.Add(mBase, uint32(v1474)+8))
 	v1476 = F_objectGetVal(m, v1475)
 	mBase = m.M
-	v1477 = int32(_a131)
+	v1477 = int32(_a_F_sentinelCommand_45)
 	v1480 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v1476))))
 	if v1480 != 0 {
 		goto L489
@@ -7170,7 +7170,7 @@ L486:
 	v1522 = *(*int32)(unsafe.Add(mBase, uint32(v1521)+8))
 	v1523 = F_objectGetVal(m, v1522)
 	mBase = m.M
-	v1524 = int32(_a515)
+	v1524 = int32(_a_F_sentinelCommand_53)
 	v1527 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v1523))))
 	if v1527 != 0 {
 		goto L505
@@ -7288,7 +7288,7 @@ L501:
 	goto L1
 L502:
 	;
-	F_addReplyError(m, l0, int32(_a1214))
+	F_addReplyError(m, l0, int32(_a_F_sentinelCommand_54))
 	mBase = m.M
 	v1570 = m.ExcPending
 	if v1570 != 0 {
@@ -7414,7 +7414,7 @@ L519:
 	v2221 = *(*int32)(unsafe.Add(mBase, uint32(v2220)+4))
 	v2222 = F_objectGetVal(m, v2221)
 	mBase = m.M
-	v2223 = int32(_a1215)
+	v2223 = int32(_a_F_sentinelCommand_55)
 	v2226 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v2222))))
 	if v2226 != 0 {
 		goto L696
@@ -7523,16 +7523,16 @@ L533:
 	mBase = m.M
 	v1618 = v12 + int32(80)
 	v1619 = int32(0)
-	v1620 = *(*int64)(unsafe.Add(mBase, _consts[646]))
+	v1620 = *(*int64)(unsafe.Add(mBase, _c_F_sentinelCommand[7]))
 	*(*int64)(unsafe.Add(mBase, uint32(v1618))) = v1620
-	v1625 = *(*int32)(unsafe.Add(mBase, _consts[647]))
+	v1625 = *(*int32)(unsafe.Add(mBase, _c_F_sentinelCommand[8]))
 	*(*int32)(unsafe.Add(mBase, uint32(v12+int32(96)))) = v1625
-	v1630 = *(*int64)(unsafe.Add(mBase, _consts[648]))
+	v1630 = *(*int64)(unsafe.Add(mBase, _c_F_sentinelCommand[9]))
 	*(*int64)(unsafe.Add(mBase, uint32(v12+int32(88)))) = v1630
-	v1635 = *(*int64)(unsafe.Add(mBase, _consts[649]))
+	v1635 = *(*int64)(unsafe.Add(mBase, _c_F_sentinelCommand[10]))
 	*(*int64)(unsafe.Add(mBase, uint32(v12+int32(72)))) = v1635
 	*(*int32)(unsafe.Add(mBase, uint32(v1618))) = v1619
-	v1640 = *(*int64)(unsafe.Add(mBase, _consts[650]))
+	v1640 = *(*int64)(unsafe.Add(mBase, _c_F_sentinelCommand[11]))
 	*(*int64)(unsafe.Add(mBase, uint32(v12)+64)) = v1640
 	v1642 = *(*int32)(unsafe.Add(mBase, uint32(l0)+24))
 	if int32(3) <= v1642 {
@@ -7564,7 +7564,7 @@ L535:
 	}
 L536:
 	;
-	v1646 = *(*int32)(unsafe.Add(mBase, _consts[640]))
+	v1646 = *(*int32)(unsafe.Add(mBase, _c_F_sentinelCommand[0]))
 	v1688 = v1646
 	goto L534
 L537:
@@ -8627,7 +8627,7 @@ L689:
 	goto L577
 L690:
 	;
-	v2216 = *(*int32)(unsafe.Add(mBase, _consts[640]))
+	v2216 = *(*int32)(unsafe.Add(mBase, _c_F_sentinelCommand[0]))
 	if v1688 == v2216 {
 		goto L1
 	} else {
@@ -8652,7 +8652,7 @@ L693:
 	v2469 = *(*int32)(unsafe.Add(mBase, uint32(v2468)+4))
 	v2470 = F_objectGetVal(m, v2469)
 	mBase = m.M
-	v2471 = int32(_a713)
+	v2471 = int32(_a_F_sentinelCommand_56)
 	v2474 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v2470))))
 	if v2474 != 0 {
 		goto L767
@@ -8750,7 +8750,7 @@ L705:
 L706:
 	;
 	v2262 = int32(0)
-	*(*int32)(unsafe.Add(mBase, _consts[651])) = v2262
+	*(*int32)(unsafe.Add(mBase, _c_F_sentinelCommand[12])) = v2262
 	v2265 = *(*int32)(unsafe.Add(mBase, uint32(l0)+24))
 	if v2265 < int32(3) {
 		goto L708
@@ -8763,7 +8763,7 @@ L707:
 	v2415 = *(*int32)(unsafe.Add(mBase, uint32(v2411+v2271<<(uint(int32(2))%32))))
 	v2416 = F_objectGetVal(m, v2415)
 	mBase = m.M
-	v2417 = int32(_a757)
+	v2417 = int32(_a_F_sentinelCommand_1)
 	v2420 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v2416))))
 	if v2420 != 0 {
 		goto L749
@@ -8772,7 +8772,7 @@ L707:
 	}
 L708:
 	;
-	v2408 = *(*int32)(unsafe.Add(mBase, _consts[77]))
+	v2408 = *(*int32)(unsafe.Add(mBase, _c_F_sentinelCommand[4]))
 	F_addReply(m, l0, v2408)
 	mBase = m.M
 	v2410 = m.ExcPending
@@ -8792,7 +8792,7 @@ L710:
 	v2282 = *(*int32)(unsafe.Add(mBase, uint32(v2278+v2280)))
 	v2283 = F_objectGetVal(m, v2282)
 	mBase = m.M
-	v2284 = int32(_a1216)
+	v2284 = int32(_a_F_sentinelCommand_57)
 	v2287 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v2283))))
 	if v2287 != 0 {
 		goto L717
@@ -8828,7 +8828,7 @@ L714:
 	v2336 = *(*int32)(unsafe.Add(mBase, uint32(v2334+v2280)))
 	v2337 = F_objectGetVal(m, v2336)
 	mBase = m.M
-	v2338 = int32(_a1217)
+	v2338 = int32(_a_F_sentinelCommand_58)
 	v2341 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v2337))))
 	if v2341 != 0 {
 		goto L731
@@ -8926,9 +8926,9 @@ L726:
 L727:
 	;
 	v2323 = int32(0)
-	v2325 = *(*int32)(unsafe.Add(mBase, _consts[651]))
-	*(*int32)(unsafe.Add(mBase, _consts[651])) = v2325 | int32(1)
-	v2330 = *(*int32)(unsafe.Add(mBase, _consts[15]))
+	v2325 = *(*int32)(unsafe.Add(mBase, _c_F_sentinelCommand[12]))
+	*(*int32)(unsafe.Add(mBase, _c_F_sentinelCommand[12])) = v2325 | int32(1)
+	v2330 = *(*int32)(unsafe.Add(mBase, _c_F_sentinelCommand[3]))
 	if int32(3) < v2330 {
 		goto L712
 	} else {
@@ -8936,7 +8936,7 @@ L727:
 	}
 L728:
 	;
-	v2388 = int32(_a1218)
+	v2388 = int32(_a_F_sentinelCommand_59)
 	goto L713
 L729:
 	;
@@ -9029,9 +9029,9 @@ L740:
 L741:
 	;
 	v2377 = int32(0)
-	v2379 = *(*int32)(unsafe.Add(mBase, _consts[651]))
-	*(*int32)(unsafe.Add(mBase, _consts[651])) = v2379 | int32(2)
-	v2384 = *(*int32)(unsafe.Add(mBase, _consts[15]))
+	v2379 = *(*int32)(unsafe.Add(mBase, _c_F_sentinelCommand[12]))
+	*(*int32)(unsafe.Add(mBase, _c_F_sentinelCommand[12])) = v2379 | int32(2)
+	v2384 = *(*int32)(unsafe.Add(mBase, _c_F_sentinelCommand[3]))
 	if int32(3) < v2384 {
 		goto L712
 	} else {
@@ -9039,7 +9039,7 @@ L741:
 	}
 L742:
 	;
-	v2388 = int32(_a1219)
+	v2388 = int32(_a_F_sentinelCommand_60)
 	goto L713
 L743:
 	;
@@ -9052,7 +9052,7 @@ L745:
 	goto L1
 L746:
 	;
-	F_addReplyError(m, l0, int32(_a1220))
+	F_addReplyError(m, l0, int32(_a_F_sentinelCommand_61))
 	mBase = m.M
 	v2467 = m.ExcPending
 	if v2467 != 0 {
@@ -9160,7 +9160,7 @@ L759:
 	}
 L760:
 	;
-	F_addReplyBulkCString(m, l0, int32(_a1216))
+	F_addReplyBulkCString(m, l0, int32(_a_F_sentinelCommand_57))
 	mBase = m.M
 	v2461 = m.ExcPending
 	if v2461 != 0 {
@@ -9170,7 +9170,7 @@ L760:
 	}
 L761:
 	;
-	F_addReplyBulkCString(m, l0, int32(_a1217))
+	F_addReplyBulkCString(m, l0, int32(_a_F_sentinelCommand_58))
 	mBase = m.M
 	v2464 = m.ExcPending
 	if v2464 != 0 {
@@ -9335,7 +9335,7 @@ L785:
 	goto L787
 L786:
 	;
-	v2536 = int32(_a1180)
+	v2536 = int32(_a_F_sentinelCommand_16)
 	goto L787
 L787:
 	;
@@ -9634,7 +9634,7 @@ L6:
 	;
 	v91 = *(*int32)(unsafe.Add(mBase, uint32(l2)+24))
 	v92 = int32(0)
-	v93 = *(*int32)(unsafe.Add(mBase, _consts[639]))
+	v93 = *(*int32)(unsafe.Add(mBase, _c_F_sentinelEvent[0]))
 	v99 = *(*int32)(unsafe.Add(mBase, uint32(v91+base.B2i32(v93 == v92)<<(uint(int32(2))%32))))
 	v100 = *(*int32)(unsafe.Add(mBase, uint32(v91)+8))
 	v101 = *(*int32)(unsafe.Add(mBase, uint32(l2)+4))
@@ -9642,7 +9642,7 @@ L6:
 	*(*int32)(unsafe.Add(mBase, uint32(v17)+36)) = v101
 	*(*int32)(unsafe.Add(mBase, uint32(v17)+40)) = v99
 	*(*int32)(unsafe.Add(mBase, uint32(v17)+44)) = v100
-	v112 = F_snprintf(m, v17+int32(80), int32(1024), int32(_a1131), v17+int32(32))
+	v112 = F_snprintf(m, v17+int32(80), int32(1024), int32(_a_F_sentinelEvent_0), v17+int32(32))
 	mBase = m.M
 	v113 = m.ExcPending
 	if v113 != 0 {
@@ -9661,7 +9661,7 @@ L7:
 	}
 L8:
 	;
-	v88 = int32(_a200)
+	v88 = int32(_a_F_sentinelEvent_1)
 	goto L6
 L9:
 	;
@@ -9674,7 +9674,7 @@ L10:
 	;
 	v36 = *(*int32)(unsafe.Add(mBase, uint32(l2)+24))
 	v37 = int32(0)
-	v38 = *(*int32)(unsafe.Add(mBase, _consts[639]))
+	v38 = *(*int32)(unsafe.Add(mBase, _c_F_sentinelEvent[0]))
 	v42 = base.B2i32(v38 == v37) << (uint(int32(2)) % 32)
 	v44 = *(*int32)(unsafe.Add(mBase, uint32(v36+v42)))
 	v45 = *(*int32)(unsafe.Add(mBase, uint32(v33)+24))
@@ -9693,11 +9693,11 @@ L10:
 	}
 L11:
 	;
-	v66 = int32(_a1132)
+	v66 = int32(_a_F_sentinelEvent_2)
 	goto L13
 L12:
 	;
-	v66 = int32(_a242)
+	v66 = int32(_a_F_sentinelEvent_3)
 	goto L13
 L13:
 	;
@@ -9708,7 +9708,7 @@ L13:
 	}
 L14:
 	;
-	v67 = int32(_a201)
+	v67 = int32(_a_F_sentinelEvent_4)
 	goto L16
 L15:
 	;
@@ -9720,7 +9720,7 @@ L16:
 	*(*int32)(unsafe.Add(mBase, uint32(v17)+52)) = v49
 	*(*int32)(unsafe.Add(mBase, uint32(v17)+56)) = v44
 	*(*int32)(unsafe.Add(mBase, uint32(v17)+60)) = v48
-	v78 = F_snprintf(m, v17+int32(80), int32(1024), int32(_a1133), v17+int32(48))
+	v78 = F_snprintf(m, v17+int32(80), int32(1024), int32(_a_F_sentinelEvent_5), v17+int32(48))
 	mBase = m.M
 	v79 = m.ExcPending
 	if v79 != 0 {
@@ -9743,15 +9743,15 @@ L19:
 	}
 L20:
 	;
-	v88 = int32(_a201)
+	v88 = int32(_a_F_sentinelEvent_4)
 	goto L6
 L21:
 	;
-	v87 = int32(_a1132)
+	v87 = int32(_a_F_sentinelEvent_2)
 	goto L23
 L22:
 	;
-	v87 = int32(_a242)
+	v87 = int32(_a_F_sentinelEvent_3)
 	goto L23
 L23:
 	;
@@ -9762,7 +9762,7 @@ L24:
 	goto L5
 L25:
 	;
-	v207 = *(*int32)(unsafe.Add(mBase, _consts[15]))
+	v207 = *(*int32)(unsafe.Add(mBase, _c_F_sentinelEvent[1]))
 	if l0 < v207 {
 		goto L44
 	} else {
@@ -9889,7 +9889,7 @@ L46:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v17)+16)) = l1
 	*(*int32)(unsafe.Add(mBase, uint32(v17)+20)) = v17 + int32(80)
-	F__serverLog(m, l0, int32(_a423), v17+int32(16))
+	F__serverLog(m, l0, int32(_a_F_sentinelEvent_6), v17+int32(16))
 	mBase = m.M
 	v220 = m.ExcPending
 	if v220 != 0 {
@@ -10232,7 +10232,7 @@ func F_sentinelFailoverSendReplicaOfNoOne(m *base.Module, l0 int32) {
 				return
 			} else {
 				v26 = *(*int32)(unsafe.Add(mBase, uint32(l0)+280))
-				F_sentinelEvent(m, int32(2), int32(_a1235), v26, int32(_a1138), int32(0))
+				F_sentinelEvent(m, int32(2), int32(_a_F_sentinelFailoverSendReplicaOfNoOne_0), v26, int32(_a_F_sentinelFailoverSendReplicaOfNoOne_1), int32(0))
 				mBase = m.M
 				v30 = m.ExcPending
 				if v30 != 0 {
@@ -10254,7 +10254,7 @@ func F_sentinelFailoverSendReplicaOfNoOne(m *base.Module, l0 int32) {
 		if v8-v9 <= v11 {
 			return
 		} else {
-			F_sentinelEvent(m, int32(3), int32(_a1236), l0, int32(_a1138), int32(0))
+			F_sentinelEvent(m, int32(3), int32(_a_F_sentinelFailoverSendReplicaOfNoOne_2), l0, int32(_a_F_sentinelFailoverSendReplicaOfNoOne_1), int32(0))
 			mBase = m.M
 			v18 = m.ExcPending
 			if v18 != 0 {
@@ -10303,7 +10303,7 @@ func F_sentinelFailoverStateMachine(m *base.Module, l0 int32) {
 	_ = v44
 	v3 = *(*int32)(unsafe.Add(mBase, uint32(l0)))
 	if v3&int32(1) == int32(0) {
-		F__serverAssert(m, int32(_a1134), int32(_a1135), int32(5335))
+		F__serverAssert(m, int32(_a_F_sentinelFailoverStateMachine_0), int32(_a_F_sentinelFailoverStateMachine_1), int32(5335))
 		mBase = m.M
 		v44 = m.ExcPending
 		if v44 != 0 {
@@ -10367,7 +10367,7 @@ func F_sentinelFailoverStateMachine(m *base.Module, l0 int32) {
 				if v25-v26 <= v28 {
 					return
 				} else {
-					F_sentinelEvent(m, int32(3), int32(_a1236), l0, int32(_a1138), int32(0))
+					F_sentinelEvent(m, int32(3), int32(_a_F_sentinelFailoverStateMachine_2), l0, int32(_a_F_sentinelFailoverStateMachine_3), int32(0))
 					mBase = m.M
 					v35 = m.ExcPending
 					if v35 != 0 {
@@ -10545,7 +10545,7 @@ func F_sentinelFailoverTo(m *base.Module, l0 int32, l1 int32, l2 int64) int32 {
 	v8 = m.G0
 	v10 = v8 - int32(112)
 	m.G0 = v10
-	v13 = *(*int32)(unsafe.Add(mBase, _consts[639]))
+	v13 = *(*int32)(unsafe.Add(mBase, _c_F_sentinelFailoverTo[0]))
 	v19 = *(*int32)(unsafe.Add(mBase, uint32(l1+base.B2i32(v13 == v4)<<(uint(int32(2))%32))))
 	v21 = v10 + int32(80)
 	v23 = int64(*(*int32)(unsafe.Add(mBase, uint32(l1)+8)))
@@ -10567,7 +10567,7 @@ func F_sentinelFailoverTo(m *base.Module, l0 int32, l1 int32, l2 int64) int32 {
 	}
 	v65 = *(*int32)(unsafe.Add(mBase, uint32(l0)+28))
 	v66 = *(*int32)(unsafe.Add(mBase, uint32(v65)+12))
-	v68 = F_sdsnew(m, int32(_a1155))
+	v68 = F_sdsnew(m, int32(_a_F_sentinelFailoverTo_0))
 	mBase = m.M
 	v71 = m.ExcPending
 	if v71 != 0 {
@@ -10595,10 +10595,10 @@ func F_sentinelFailoverTo(m *base.Module, l0 int32, l1 int32, l2 int64) int32 {
 				if v75 != 0 {
 					v80 = v75
 				} else {
-					v80 = int32(_a1155)
+					v80 = int32(_a_F_sentinelFailoverTo_0)
 				}
 				*(*int32)(unsafe.Add(mBase, uint32(v10)+64)) = v80
-				v87 = F_valkeyAsyncCommand(m, v66, int32(1004), l0, int32(_a57), v10+int32(64))
+				v87 = F_valkeyAsyncCommand(m, v66, int32(1004), l0, int32(_a_F_sentinelFailoverTo_1), v10+int32(64))
 				mBase = m.M
 				v88 = m.ExcPending
 				if v88 != 0 {
@@ -10613,7 +10613,7 @@ func F_sentinelFailoverTo(m *base.Module, l0 int32, l1 int32, l2 int64) int32 {
 						v92 = *(*int32)(unsafe.Add(mBase, uint32(v91)+8))
 						*(*int32)(unsafe.Add(mBase, uint32(v91)+8)) = v92 + int32(1)
 						v96 = *(*int32)(unsafe.Add(mBase, uint32(v91)+12))
-						v98 = F_sdsnew(m, int32(_a1145))
+						v98 = F_sdsnew(m, int32(_a_F_sentinelFailoverTo_2))
 						mBase = m.M
 						v99 = m.ExcPending
 						if v99 != 0 {
@@ -10642,10 +10642,10 @@ func F_sentinelFailoverTo(m *base.Module, l0 int32, l1 int32, l2 int64) int32 {
 									if v103 != 0 {
 										v109 = v103
 									} else {
-										v109 = int32(_a1145)
+										v109 = int32(_a_F_sentinelFailoverTo_2)
 									}
 									*(*int32)(unsafe.Add(mBase, uint32(v10)+48)) = v109
-									v116 = F_valkeyAsyncCommand(m, v96, int32(1004), l0, int32(_a1233), v10+int32(48))
+									v116 = F_valkeyAsyncCommand(m, v96, int32(1004), l0, int32(_a_F_sentinelFailoverTo_3), v10+int32(48))
 									mBase = m.M
 									v117 = m.ExcPending
 									if v117 != 0 {
@@ -10660,7 +10660,7 @@ func F_sentinelFailoverTo(m *base.Module, l0 int32, l1 int32, l2 int64) int32 {
 											v121 = *(*int32)(unsafe.Add(mBase, uint32(v120)+8))
 											*(*int32)(unsafe.Add(mBase, uint32(v120)+8)) = v121 + int32(1)
 											v125 = *(*int32)(unsafe.Add(mBase, uint32(v120)+12))
-											v127 = F_sdsnew(m, int32(_a1004))
+											v127 = F_sdsnew(m, int32(_a_F_sentinelFailoverTo_4))
 											mBase = m.M
 											v128 = m.ExcPending
 											if v128 != 0 {
@@ -10690,11 +10690,11 @@ func F_sentinelFailoverTo(m *base.Module, l0 int32, l1 int32, l2 int64) int32 {
 														if v132 != 0 {
 															v141 = v132
 														} else {
-															v141 = int32(_a1004)
+															v141 = int32(_a_F_sentinelFailoverTo_4)
 														}
 														*(*int32)(unsafe.Add(mBase, uint32(v10)+16)) = v141
 														*(*int32)(unsafe.Add(mBase, uint32(v10)+24)) = v10 + int32(80)
-														v151 = F_valkeyAsyncCommand(m, v125, int32(1004), l0, int32(_a1234), v10+int32(16))
+														v151 = F_valkeyAsyncCommand(m, v125, int32(1004), l0, int32(_a_F_sentinelFailoverTo_5), v10+int32(16))
 														mBase = m.M
 														v152 = m.ExcPending
 														if v152 != 0 {
@@ -10709,7 +10709,7 @@ func F_sentinelFailoverTo(m *base.Module, l0 int32, l1 int32, l2 int64) int32 {
 																v156 = *(*int32)(unsafe.Add(mBase, uint32(v155)+8))
 																*(*int32)(unsafe.Add(mBase, uint32(v155)+8)) = v156 + int32(1)
 																v160 = *(*int32)(unsafe.Add(mBase, uint32(v155)+12))
-																v162 = F_sdsnew(m, int32(_a1161))
+																v162 = F_sdsnew(m, int32(_a_F_sentinelFailoverTo_6))
 																mBase = m.M
 																v163 = m.ExcPending
 																if v163 != 0 {
@@ -10737,10 +10737,10 @@ func F_sentinelFailoverTo(m *base.Module, l0 int32, l1 int32, l2 int64) int32 {
 																			if v167 != 0 {
 																				v172 = v167
 																			} else {
-																				v172 = int32(_a1161)
+																				v172 = int32(_a_F_sentinelFailoverTo_6)
 																			}
 																			*(*int32)(unsafe.Add(mBase, uint32(v10))) = v172
-																			v177 = F_valkeyAsyncCommand(m, v160, int32(1004), l0, int32(_a57), v10)
+																			v177 = F_valkeyAsyncCommand(m, v160, int32(1004), l0, int32(_a_F_sentinelFailoverTo_1), v10)
 																			mBase = m.M
 																			v178 = m.ExcPending
 																			if v178 != 0 {
@@ -10814,22 +10814,22 @@ func F_sentinelFlushConfigAndReply(m *base.Module, l0 int32) {
 	v5 = m.G0
 	v7 = v5 - int32(16)
 	m.G0 = v7
-	v9 = int32(_a69)
-	v10 = *(*int32)(unsafe.Add(mBase, _consts[149]))
-	*(*int32)(unsafe.Add(mBase, _consts[149])) = int32(10)
-	v15 = *(*int32)(unsafe.Add(mBase, _consts[178]))
+	v9 = int32(_a_F_sentinelFlushConfigAndReply_0)
+	v10 = *(*int32)(unsafe.Add(mBase, _c_F_sentinelFlushConfigAndReply[0]))
+	*(*int32)(unsafe.Add(mBase, _c_F_sentinelFlushConfigAndReply[0])) = int32(10)
+	v15 = *(*int32)(unsafe.Add(mBase, _c_F_sentinelFlushConfigAndReply[1]))
 	v17 = F_rewriteConfig(m, v15, int32(0))
 	mBase = m.M
 	v18 = m.ExcPending
 	if v18 != 0 {
 		return
 	} else {
-		v19 = int32(_a69)
-		*(*int32)(unsafe.Add(mBase, _consts[149])) = v10
-		v22 = *(*int32)(unsafe.Add(mBase, _consts[15]))
+		v19 = int32(_a_F_sentinelFlushConfigAndReply_0)
+		*(*int32)(unsafe.Add(mBase, _c_F_sentinelFlushConfigAndReply[0])) = v10
+		v22 = *(*int32)(unsafe.Add(mBase, _c_F_sentinelFlushConfigAndReply[2]))
 		if v17 != int32(-1) {
 			if int32(2) < v22 {
-				v46 = *(*int32)(unsafe.Add(mBase, _consts[77]))
+				v46 = *(*int32)(unsafe.Add(mBase, _c_F_sentinelFlushConfigAndReply[3]))
 				F_addReply(m, l0, v46)
 				mBase = m.M
 				v48 = m.ExcPending
@@ -10840,13 +10840,13 @@ func F_sentinelFlushConfigAndReply(m *base.Module, l0 int32) {
 					return
 				}
 			} else {
-				F__serverLog(m, int32(2), int32(_a1167), int32(0))
+				F__serverLog(m, int32(2), int32(_a_F_sentinelFlushConfigAndReply_1), int32(0))
 				mBase = m.M
 				v44 = m.ExcPending
 				if v44 != 0 {
 					return
 				} else {
-					v46 = *(*int32)(unsafe.Add(mBase, _consts[77]))
+					v46 = *(*int32)(unsafe.Add(mBase, _c_F_sentinelFlushConfigAndReply[3]))
 					F_addReply(m, l0, v46)
 					mBase = m.M
 					v48 = m.ExcPending
@@ -10860,7 +10860,7 @@ func F_sentinelFlushConfigAndReply(m *base.Module, l0 int32) {
 			}
 		} else {
 			if int32(3) < v22 {
-				F_addReplyError(m, l0, int32(_a1168))
+				F_addReplyError(m, l0, int32(_a_F_sentinelFlushConfigAndReply_2))
 				mBase = m.M
 				v37 = m.ExcPending
 				if v37 != 0 {
@@ -10870,17 +10870,17 @@ func F_sentinelFlushConfigAndReply(m *base.Module, l0 int32) {
 					return
 				}
 			} else {
-				v28 = *(*int32)(unsafe.Add(mBase, _consts[9]))
+				v28 = *(*int32)(unsafe.Add(mBase, _c_F_sentinelFlushConfigAndReply[4]))
 				v29 = F___strerror_l(m, v28, v28)
 				mBase = m.M
 				*(*int32)(unsafe.Add(mBase, uint32(v7))) = v29
-				F__serverLog(m, int32(3), int32(_a1169), v7)
+				F__serverLog(m, int32(3), int32(_a_F_sentinelFlushConfigAndReply_3), v7)
 				mBase = m.M
 				v34 = m.ExcPending
 				if v34 != 0 {
 					return
 				} else {
-					F_addReplyError(m, l0, int32(_a1168))
+					F_addReplyError(m, l0, int32(_a_F_sentinelFlushConfigAndReply_2))
 					mBase = m.M
 					v37 = m.ExcPending
 					if v37 != 0 {
@@ -10907,7 +10907,7 @@ func F_sentinelGetPrimaryByNameOrReplyError(m *base.Module, l0 int32, l1 int32) 
 	_ = v9
 	var v12 int32
 	_ = v12
-	v4 = *(*int32)(unsafe.Add(mBase, _consts[640]))
+	v4 = *(*int32)(unsafe.Add(mBase, _c_F_sentinelGetPrimaryByNameOrReplyError[0]))
 	v5 = F_objectGetVal(m, l1)
 	mBase = m.M
 	v6 = F_dictFetchValue(m, v4, v5)
@@ -10919,7 +10919,7 @@ func F_sentinelGetPrimaryByNameOrReplyError(m *base.Module, l0 int32, l1 int32) 
 		if v6 != 0 {
 			return v6
 		} else {
-			F_addReplyError(m, l0, int32(_a1170))
+			F_addReplyError(m, l0, int32(_a_F_sentinelGetPrimaryByNameOrReplyError_0))
 			mBase = m.M
 			v12 = m.ExcPending
 			if v12 != 0 {
@@ -11505,11 +11505,11 @@ func F_sentinelInfoCommand(m *base.Module, l0 int32) {
 	v18 = m.G0
 	v20 = v18 - int32(112)
 	m.G0 = v20
-	v25 = *(*int64)(unsafe.Add(mBase, _consts[654]))
+	v25 = *(*int64)(unsafe.Add(mBase, _c_F_sentinelInfoCommand[0]))
 	*(*int64)(unsafe.Add(mBase, uint32(v20+int32(96)))) = v25
-	v28 = *(*int64)(unsafe.Add(mBase, _consts[655]))
+	v28 = *(*int64)(unsafe.Add(mBase, _c_F_sentinelInfoCommand[1]))
 	*(*int64)(unsafe.Add(mBase, uint32(v20)+88)) = v28
-	v31 = *(*int64)(unsafe.Add(mBase, _consts[656]))
+	v31 = *(*int64)(unsafe.Add(mBase, _c_F_sentinelInfoCommand[2]))
 	*(*int64)(unsafe.Add(mBase, uint32(v20)+80)) = v31
 	*(*int32)(unsafe.Add(mBase, uint32(v20)+76)) = v2
 	*(*int32)(unsafe.Add(mBase, uint32(v20)+72)) = v2
@@ -12123,7 +12123,7 @@ L84:
 	}
 L85:
 	;
-	v419 = *(*int32)(unsafe.Add(mBase, _consts[657]))
+	v419 = *(*int32)(unsafe.Add(mBase, _c_F_sentinelInfoCommand[3]))
 	if v419 != 0 {
 		v431 = v419
 		goto L83
@@ -12132,7 +12132,7 @@ L85:
 	}
 L86:
 	;
-	v422 = F_dictCreate(m, int32(_a1226))
+	v422 = F_dictCreate(m, int32(_a_F_sentinelInfoCommand_0))
 	mBase = m.M
 	v423 = m.ExcPending
 	if v423 != 0 {
@@ -12142,7 +12142,7 @@ L86:
 	}
 L87:
 	;
-	*(*int32)(unsafe.Add(mBase, _consts[657])) = v422
+	*(*int32)(unsafe.Add(mBase, _c_F_sentinelInfoCommand[3])) = v422
 	F_addInfoSectionsToDict(m, v422, v20+int32(80))
 	mBase = m.M
 	v428 = m.ExcPending
@@ -12153,7 +12153,7 @@ L87:
 	}
 L88:
 	;
-	v430 = *(*int32)(unsafe.Add(mBase, _consts[657]))
+	v430 = *(*int32)(unsafe.Add(mBase, _c_F_sentinelInfoCommand[3]))
 	v431 = v430
 	goto L83
 L89:
@@ -12166,7 +12166,7 @@ L89:
 	}
 L90:
 	;
-	v838 = *(*int32)(unsafe.Add(mBase, _consts[657]))
+	v838 = *(*int32)(unsafe.Add(mBase, _c_F_sentinelInfoCommand[3]))
 	if v431 == v838 {
 		goto L175
 	} else {
@@ -12192,7 +12192,7 @@ L91:
 	}
 L92:
 	;
-	v439 = F_dictFind(m, v431, int32(_a1132))
+	v439 = F_dictFind(m, v431, int32(_a_F_sentinelInfoCommand_1))
 	mBase = m.M
 	v440 = m.ExcPending
 	if v440 != 0 {
@@ -12214,10 +12214,10 @@ L94:
 L95:
 	;
 	v470 = int32(0)
-	v472 = *(*int32)(unsafe.Add(mBase, _consts[640]))
+	v472 = *(*int32)(unsafe.Add(mBase, _c_F_sentinelInfoCommand[4]))
 	v473 = *(*int32)(unsafe.Add(mBase, uint32(v472)+16))
 	v474 = *(*int32)(unsafe.Add(mBase, uint32(v472)+12))
-	v477 = *(*int32)(unsafe.Add(mBase, _consts[645]))
+	v477 = *(*int32)(unsafe.Add(mBase, _c_F_sentinelInfoCommand[5]))
 	if v477 != 0 {
 		goto L105
 	} else {
@@ -12257,7 +12257,7 @@ L101:
 	goto L96
 L102:
 	;
-	v466 = F_sdscat(m, v435, int32(_a727))
+	v466 = F_sdscat(m, v435, int32(_a_F_sentinelInfoCommand_2))
 	mBase = m.M
 	v467 = m.ExcPending
 	if v467 != 0 {
@@ -12272,17 +12272,17 @@ L103:
 L104:
 	;
 	v486 = int32(0)
-	v487 = *(*int32)(unsafe.Add(mBase, _consts[658]))
+	v487 = *(*int32)(unsafe.Add(mBase, _c_F_sentinelInfoCommand[6]))
 	v488 = *(*int32)(unsafe.Add(mBase, uint32(v487)+20))
-	v494 = *(*int64)(unsafe.Add(mBase, _consts[659]))
+	v494 = *(*int64)(unsafe.Add(mBase, _c_F_sentinelInfoCommand[7]))
 	*(*int64)(unsafe.Add(mBase, uint32(v20+int32(48)))) = v494
 	*(*int32)(unsafe.Add(mBase, uint32(v20+int32(56)))) = v488
-	v504 = *(*int32)(unsafe.Add(mBase, _consts[651]))
+	v504 = *(*int32)(unsafe.Add(mBase, _c_F_sentinelInfoCommand[8]))
 	*(*int32)(unsafe.Add(mBase, uint32(v20+int32(60)))) = v504
 	*(*int32)(unsafe.Add(mBase, uint32(v20)+32)) = v473 + v474
 	*(*int32)(unsafe.Add(mBase, uint32(v20)+36)) = v477
 	*(*int64)(unsafe.Add(mBase, uint32(v20)+40)) = v485
-	v512 = F_sdscatprintf(m, v468, int32(_a1227), v20+int32(32))
+	v512 = F_sdscatprintf(m, v468, int32(_a_F_sentinelInfoCommand_3), v20+int32(32))
 	mBase = m.M
 	v513 = m.ExcPending
 	if v513 != 0 {
@@ -12294,7 +12294,7 @@ L105:
 	;
 	v479 = F_mstime(m)
 	mBase = m.M
-	v481 = *(*int64)(unsafe.Add(mBase, _consts[660]))
+	v481 = *(*int64)(unsafe.Add(mBase, _c_F_sentinelInfoCommand[9]))
 	v484 = base.I64_div_s(v479-v481, int64(1000))
 	v485 = v484
 	goto L104
@@ -12304,7 +12304,7 @@ L106:
 	goto L104
 L107:
 	;
-	v515 = *(*int32)(unsafe.Add(mBase, _consts[640]))
+	v515 = *(*int32)(unsafe.Add(mBase, _c_F_sentinelInfoCommand[4]))
 	v516 = F_dictGetIterator(m, v515)
 	mBase = m.M
 	v517 = m.ExcPending
@@ -12537,7 +12537,7 @@ L139:
 	;
 	v649 = *(*int32)(unsafe.Add(mBase, uint32(v648)+24))
 	v650 = int32(0)
-	v651 = *(*int32)(unsafe.Add(mBase, _consts[639]))
+	v651 = *(*int32)(unsafe.Add(mBase, _c_F_sentinelInfoCommand[10]))
 	v657 = *(*int32)(unsafe.Add(mBase, uint32(v649+base.B2i32(v651 == v650)<<(uint(int32(2))%32))))
 	v658 = *(*int32)(unsafe.Add(mBase, uint32(v648)))
 	v659 = *(*int32)(unsafe.Add(mBase, uint32(v648)+4))
@@ -12559,11 +12559,11 @@ L139:
 	}
 L140:
 	;
-	v682 = int32(_a1228)
+	v682 = int32(_a_F_sentinelInfoCommand_4)
 	goto L142
 L141:
 	;
-	v682 = int32(_a294)
+	v682 = int32(_a_F_sentinelInfoCommand_5)
 	goto L142
 L142:
 	;
@@ -12574,7 +12574,7 @@ L142:
 	}
 L143:
 	;
-	v685 = int32(_a1229)
+	v685 = int32(_a_F_sentinelInfoCommand_6)
 	goto L145
 L144:
 	;
@@ -12585,7 +12585,7 @@ L145:
 	*(*int32)(unsafe.Add(mBase, uint32(v20)+8)) = v685
 	*(*int32)(unsafe.Add(mBase, uint32(v20)+12)) = v657
 	*(*int32)(unsafe.Add(mBase, uint32(v20))) = v636
-	v692 = F_sdscatprintf(m, v634, int32(_a1230), v20)
+	v692 = F_sdscatprintf(m, v634, int32(_a_F_sentinelInfoCommand_7), v20)
 	mBase = m.M
 	v693 = m.ExcPending
 	if v693 != 0 {
@@ -13735,7 +13735,7 @@ func F_sentinelKillClients(m *base.Module, l0 int32) int32 {
 	v10 = *(*int32)(unsafe.Add(mBase, uint32(l0)+28))
 	v11 = *(*int32)(unsafe.Add(mBase, uint32(v10)+12))
 	if v11 != 0 {
-		v14 = F_sdsnew(m, int32(_a1155))
+		v14 = F_sdsnew(m, int32(_a_F_sentinelKillClients_0))
 		mBase = m.M
 		v17 = m.ExcPending
 		if v17 != 0 {
@@ -13763,10 +13763,10 @@ func F_sentinelKillClients(m *base.Module, l0 int32) int32 {
 					if v21 != 0 {
 						v26 = v21
 					} else {
-						v26 = int32(_a1155)
+						v26 = int32(_a_F_sentinelKillClients_0)
 					}
 					*(*int32)(unsafe.Add(mBase, uint32(v8)+80)) = v26
-					v33 = F_valkeyAsyncCommand(m, v11, int32(1004), l0, int32(_a57), v8+int32(80))
+					v33 = F_valkeyAsyncCommand(m, v11, int32(1004), l0, int32(_a_F_sentinelKillClients_1), v8+int32(80))
 					mBase = m.M
 					v34 = m.ExcPending
 					if v34 != 0 {
@@ -13781,7 +13781,7 @@ func F_sentinelKillClients(m *base.Module, l0 int32) int32 {
 							v38 = *(*int32)(unsafe.Add(mBase, uint32(v37)+8))
 							*(*int32)(unsafe.Add(mBase, uint32(v37)+8)) = v38 + int32(1)
 							v42 = *(*int32)(unsafe.Add(mBase, uint32(v37)+12))
-							v44 = F_sdsnew(m, int32(_a1156))
+							v44 = F_sdsnew(m, int32(_a_F_sentinelKillClients_2))
 							mBase = m.M
 							v45 = m.ExcPending
 							if v45 != 0 {
@@ -13809,10 +13809,10 @@ func F_sentinelKillClients(m *base.Module, l0 int32) int32 {
 										if v49 != 0 {
 											v54 = v49
 										} else {
-											v54 = int32(_a1156)
+											v54 = int32(_a_F_sentinelKillClients_2)
 										}
 										*(*int32)(unsafe.Add(mBase, uint32(v8)+64)) = v54
-										v61 = F_valkeyAsyncCommand(m, v42, int32(1004), l0, int32(_a1157), v8+int32(64))
+										v61 = F_valkeyAsyncCommand(m, v42, int32(1004), l0, int32(_a_F_sentinelKillClients_3), v8+int32(64))
 										mBase = m.M
 										v62 = m.ExcPending
 										if v62 != 0 {
@@ -13827,7 +13827,7 @@ func F_sentinelKillClients(m *base.Module, l0 int32) int32 {
 												v66 = *(*int32)(unsafe.Add(mBase, uint32(v65)+8))
 												*(*int32)(unsafe.Add(mBase, uint32(v65)+8)) = v66 + int32(1)
 												v70 = *(*int32)(unsafe.Add(mBase, uint32(v65)+12))
-												v72 = F_sdsnew(m, int32(_a1145))
+												v72 = F_sdsnew(m, int32(_a_F_sentinelKillClients_4))
 												mBase = m.M
 												v73 = m.ExcPending
 												if v73 != 0 {
@@ -13852,14 +13852,14 @@ func F_sentinelKillClients(m *base.Module, l0 int32) int32 {
 														if v80 != 0 {
 															return int32(0)
 														} else {
-															*(*int32)(unsafe.Add(mBase, uint32(v8)+52)) = int32(_a1158)
+															*(*int32)(unsafe.Add(mBase, uint32(v8)+52)) = int32(_a_F_sentinelKillClients_5)
 															if v77 != 0 {
 																v84 = v77
 															} else {
-																v84 = int32(_a1145)
+																v84 = int32(_a_F_sentinelKillClients_4)
 															}
 															*(*int32)(unsafe.Add(mBase, uint32(v8)+48)) = v84
-															v91 = F_valkeyAsyncCommand(m, v70, int32(1004), l0, int32(_a1159), v8+int32(48))
+															v91 = F_valkeyAsyncCommand(m, v70, int32(1004), l0, int32(_a_F_sentinelKillClients_6), v8+int32(48))
 															mBase = m.M
 															v92 = m.ExcPending
 															if v92 != 0 {
@@ -13874,7 +13874,7 @@ func F_sentinelKillClients(m *base.Module, l0 int32) int32 {
 																	v96 = *(*int32)(unsafe.Add(mBase, uint32(v95)+8))
 																	*(*int32)(unsafe.Add(mBase, uint32(v95)+8)) = v96 + int32(1)
 																	v100 = *(*int32)(unsafe.Add(mBase, uint32(v95)+12))
-																	v102 = F_sdsnew(m, int32(_a1145))
+																	v102 = F_sdsnew(m, int32(_a_F_sentinelKillClients_4))
 																	mBase = m.M
 																	v103 = m.ExcPending
 																	if v103 != 0 {
@@ -13899,14 +13899,14 @@ func F_sentinelKillClients(m *base.Module, l0 int32) int32 {
 																			if v110 != 0 {
 																				return int32(0)
 																			} else {
-																				*(*int32)(unsafe.Add(mBase, uint32(v8)+36)) = int32(_a1152)
+																				*(*int32)(unsafe.Add(mBase, uint32(v8)+36)) = int32(_a_F_sentinelKillClients_7)
 																				if v107 != 0 {
 																					v114 = v107
 																				} else {
-																					v114 = int32(_a1145)
+																					v114 = int32(_a_F_sentinelKillClients_4)
 																				}
 																				*(*int32)(unsafe.Add(mBase, uint32(v8)+32)) = v114
-																				v121 = F_valkeyAsyncCommand(m, v100, int32(1004), l0, int32(_a1159), v8+int32(32))
+																				v121 = F_valkeyAsyncCommand(m, v100, int32(1004), l0, int32(_a_F_sentinelKillClients_6), v8+int32(32))
 																				mBase = m.M
 																				v122 = m.ExcPending
 																				if v122 != 0 {
@@ -13921,7 +13921,7 @@ func F_sentinelKillClients(m *base.Module, l0 int32) int32 {
 																						v126 = *(*int32)(unsafe.Add(mBase, uint32(v125)+8))
 																						*(*int32)(unsafe.Add(mBase, uint32(v125)+8)) = v126 + int32(1)
 																						v130 = *(*int32)(unsafe.Add(mBase, uint32(v125)+12))
-																						v132 = F_sdsnew(m, int32(_a1145))
+																						v132 = F_sdsnew(m, int32(_a_F_sentinelKillClients_4))
 																						mBase = m.M
 																						v133 = m.ExcPending
 																						if v133 != 0 {
@@ -13949,10 +13949,10 @@ func F_sentinelKillClients(m *base.Module, l0 int32) int32 {
 																									if v137 != 0 {
 																										v142 = v137
 																									} else {
-																										v142 = int32(_a1145)
+																										v142 = int32(_a_F_sentinelKillClients_4)
 																									}
 																									*(*int32)(unsafe.Add(mBase, uint32(v8)+16)) = v142
-																									v149 = F_valkeyAsyncCommand(m, v130, int32(1004), l0, int32(_a1160), v8+int32(16))
+																									v149 = F_valkeyAsyncCommand(m, v130, int32(1004), l0, int32(_a_F_sentinelKillClients_8), v8+int32(16))
 																									mBase = m.M
 																									v150 = m.ExcPending
 																									if v150 != 0 {
@@ -13967,7 +13967,7 @@ func F_sentinelKillClients(m *base.Module, l0 int32) int32 {
 																											v154 = *(*int32)(unsafe.Add(mBase, uint32(v153)+8))
 																											*(*int32)(unsafe.Add(mBase, uint32(v153)+8)) = v154 + int32(1)
 																											v158 = *(*int32)(unsafe.Add(mBase, uint32(v153)+12))
-																											v160 = F_sdsnew(m, int32(_a1161))
+																											v160 = F_sdsnew(m, int32(_a_F_sentinelKillClients_9))
 																											mBase = m.M
 																											v161 = m.ExcPending
 																											if v161 != 0 {
@@ -13995,10 +13995,10 @@ func F_sentinelKillClients(m *base.Module, l0 int32) int32 {
 																														if v165 != 0 {
 																															v170 = v165
 																														} else {
-																															v170 = int32(_a1161)
+																															v170 = int32(_a_F_sentinelKillClients_9)
 																														}
 																														*(*int32)(unsafe.Add(mBase, uint32(v8))) = v170
-																														v175 = F_valkeyAsyncCommand(m, v158, int32(1004), l0, int32(_a57), v8)
+																														v175 = F_valkeyAsyncCommand(m, v158, int32(1004), l0, int32(_a_F_sentinelKillClients_1), v8)
 																														mBase = m.M
 																														v176 = m.ExcPending
 																														if v176 != 0 {
@@ -14311,7 +14311,7 @@ L3:
 	mBase = m.M
 	v20 = *(*int32)(unsafe.Add(mBase, uint32(l0)+28))
 	v21 = *(*int64)(unsafe.Add(mBase, uint32(v20)+80))
-	v24 = *(*int64)(unsafe.Add(mBase, _consts[643]))
+	v24 = *(*int64)(unsafe.Add(mBase, _c_F_sentinelReconnectInstance[0]))
 	if v19-v21 < v24 {
 		goto L1
 	} else {
@@ -14338,7 +14338,7 @@ L6:
 	;
 	v28 = *(*int32)(unsafe.Add(mBase, uint32(l0)+24))
 	v29 = int32(0)
-	v30 = *(*int32)(unsafe.Add(mBase, _consts[644]))
+	v30 = *(*int32)(unsafe.Add(mBase, _c_F_sentinelReconnectInstance[1]))
 	if v30 == v29 {
 		v48 = v28
 		goto L7
@@ -14349,7 +14349,7 @@ L7:
 	;
 	v50 = *(*int32)(unsafe.Add(mBase, uint32(v48)+4))
 	v51 = *(*int32)(unsafe.Add(mBase, uint32(v48)+8))
-	v53 = *(*int32)(unsafe.Add(mBase, _consts[146]))
+	v53 = *(*int32)(unsafe.Add(mBase, _c_F_sentinelReconnectInstance[2]))
 	v54 = F_valkeyAsyncConnectBind(m, v50, v51, v53)
 	mBase = m.M
 	v55 = m.ExcPending
@@ -14441,7 +14441,7 @@ L17:
 L18:
 	;
 	v112 = int32(0)
-	F_sentinelEvent(m, v112, int32(_a1147), l0, int32(_a1148), v112)
+	F_sentinelEvent(m, v112, int32(_a_F_sentinelReconnectInstance_0), l0, int32(_a_F_sentinelReconnectInstance_1), v112)
 	mBase = m.M
 	v117 = m.ExcPending
 	if v117 != 0 {
@@ -14553,7 +14553,7 @@ L36:
 	*(*int64)(unsafe.Add(mBase, uint32(v11)+24)) = v148
 	v150 = *(*int32)(unsafe.Add(mBase, uint32(v11)+12))
 	*(*int32)(unsafe.Add(mBase, uint32(v150)+212)) = v11
-	v153 = *(*int32)(unsafe.Add(mBase, _consts[156]))
+	v153 = *(*int32)(unsafe.Add(mBase, _c_F_sentinelReconnectInstance[3]))
 	F_valkeyAeAttach(m, v153, v150)
 	mBase = m.M
 	v155 = m.ExcPending
@@ -14566,7 +14566,7 @@ L37:
 	;
 	v122 = *(*int32)(unsafe.Add(mBase, uint32(v118)+208))
 	*(*int32)(unsafe.Add(mBase, uint32(v9)+32)) = v122
-	F_sentinelEvent(m, int32(0), int32(_a1147), l0, int32(_a1149), v9+int32(32))
+	F_sentinelEvent(m, int32(0), int32(_a_F_sentinelReconnectInstance_0), l0, int32(_a_F_sentinelReconnectInstance_2), v9+int32(32))
 	mBase = m.M
 	v130 = m.ExcPending
 	if v130 != 0 {
@@ -14651,7 +14651,7 @@ L47:
 L48:
 	;
 	v171 = *(*int32)(unsafe.Add(mBase, uint32(v11)+12))
-	F_sentinelSetClientName(m, l0, v171, int32(_a1150))
+	F_sentinelSetClientName(m, l0, v171, int32(_a_F_sentinelReconnectInstance_3))
 	mBase = m.M
 	v174 = m.ExcPending
 	if v174 != 0 {
@@ -14693,7 +14693,7 @@ L53:
 	v185 = *(*int32)(unsafe.Add(mBase, uint32(l0)+24))
 	v186 = *(*int32)(unsafe.Add(mBase, uint32(v185)+4))
 	v187 = *(*int32)(unsafe.Add(mBase, uint32(v185)+8))
-	v189 = *(*int32)(unsafe.Add(mBase, _consts[146]))
+	v189 = *(*int32)(unsafe.Add(mBase, _c_F_sentinelReconnectInstance[2]))
 	v190 = F_valkeyAsyncConnectBind(m, v186, v187, v189)
 	mBase = m.M
 	v191 = m.ExcPending
@@ -14721,7 +14721,7 @@ L55:
 L56:
 	;
 	v248 = int32(0)
-	F_sentinelEvent(m, v248, int32(_a1151), l0, int32(_a1148), v248)
+	F_sentinelEvent(m, v248, int32(_a_F_sentinelReconnectInstance_4), l0, int32(_a_F_sentinelReconnectInstance_1), v248)
 	mBase = m.M
 	v253 = m.ExcPending
 	if v253 != 0 {
@@ -14832,7 +14832,7 @@ L74:
 	*(*int64)(unsafe.Add(mBase, uint32(v11)+32)) = v270
 	v272 = *(*int32)(unsafe.Add(mBase, uint32(v11)+16))
 	*(*int32)(unsafe.Add(mBase, uint32(v272)+212)) = v11
-	v275 = *(*int32)(unsafe.Add(mBase, _consts[156]))
+	v275 = *(*int32)(unsafe.Add(mBase, _c_F_sentinelReconnectInstance[3]))
 	F_valkeyAeAttach(m, v275, v272)
 	mBase = m.M
 	v277 = m.ExcPending
@@ -14845,7 +14845,7 @@ L75:
 	;
 	v258 = *(*int32)(unsafe.Add(mBase, uint32(v254)+208))
 	*(*int32)(unsafe.Add(mBase, uint32(v9)+16)) = v258
-	F_sentinelEvent(m, int32(0), int32(_a1151), l0, int32(_a1149), v9+int32(16))
+	F_sentinelEvent(m, int32(0), int32(_a_F_sentinelReconnectInstance_4), l0, int32(_a_F_sentinelReconnectInstance_2), v9+int32(16))
 	mBase = m.M
 	v266 = m.ExcPending
 	if v266 != 0 {
@@ -14908,7 +14908,7 @@ L82:
 L83:
 	;
 	v293 = *(*int32)(unsafe.Add(mBase, uint32(v11)+16))
-	F_sentinelSetClientName(m, l0, v293, int32(_a1152))
+	F_sentinelSetClientName(m, l0, v293, int32(_a_F_sentinelReconnectInstance_5))
 	mBase = m.M
 	v296 = m.ExcPending
 	if v296 != 0 {
@@ -14919,7 +14919,7 @@ L83:
 L84:
 	;
 	v297 = *(*int32)(unsafe.Add(mBase, uint32(v11)+16))
-	v299 = F_sentinelInstanceMapCommand(m, l0, int32(_a1153))
+	v299 = F_sentinelInstanceMapCommand(m, l0, int32(_a_F_sentinelReconnectInstance_6))
 	mBase = m.M
 	v300 = m.ExcPending
 	if v300 != 0 {
@@ -14929,9 +14929,9 @@ L84:
 	}
 L85:
 	;
-	*(*int32)(unsafe.Add(mBase, uint32(v9)+4)) = int32(_a1154)
+	*(*int32)(unsafe.Add(mBase, uint32(v9)+4)) = int32(_a_F_sentinelReconnectInstance_7)
 	*(*int32)(unsafe.Add(mBase, uint32(v9))) = v299
-	v306 = F_valkeyAsyncCommand(m, v297, int32(1008), l0, int32(_a423), v9)
+	v306 = F_valkeyAsyncCommand(m, v297, int32(1008), l0, int32(_a_F_sentinelReconnectInstance_8), v9)
 	mBase = m.M
 	v307 = m.ExcPending
 	if v307 != 0 {
@@ -15198,7 +15198,7 @@ func F_sentinelResetPrimariesByPattern(m *base.Module, l0 int32, l1 int32) int32
 	var v273 int32
 	_ = v273
 	v3 = int32(0)
-	v9 = *(*int32)(unsafe.Add(mBase, _consts[640]))
+	v9 = *(*int32)(unsafe.Add(mBase, _c_F_sentinelResetPrimariesByPattern[0]))
 	v10 = F_dictGetIterator(m, v9)
 	mBase = m.M
 	v13 = m.ExcPending
@@ -15761,7 +15761,7 @@ func F_sentinelResetPrimary(m *base.Module, l0 int32, l1 int32) {
 	_ = v120
 	v6 = int32(*(*uint8)(unsafe.Add(mBase, uint32(l0))))
 	if v6&int32(1) == int32(0) {
-		F__serverAssert(m, int32(_a1134), int32(_a1135), int32(1529))
+		F__serverAssert(m, int32(_a_F_sentinelResetPrimary_0), int32(_a_F_sentinelResetPrimary_1), int32(1529))
 		mBase = m.M
 		v120 = m.ExcPending
 		if v120 != 0 {
@@ -15781,7 +15781,7 @@ func F_sentinelResetPrimary(m *base.Module, l0 int32, l1 int32) {
 		if v13 != 0 {
 			return
 		} else {
-			v15 = F_dictCreate(m, int32(_a1136))
+			v15 = F_dictCreate(m, int32(_a_F_sentinelResetPrimary_2))
 			mBase = m.M
 			v16 = m.ExcPending
 			if v16 != 0 {
@@ -15842,7 +15842,7 @@ func F_sentinelResetPrimary(m *base.Module, l0 int32, l1 int32) {
 										if l1&int32(65536) == v87 {
 											return
 										} else {
-											F_sentinelEvent(m, int32(3), int32(_a1137), l0, int32(_a1138), int32(0))
+											F_sentinelEvent(m, int32(3), int32(_a_F_sentinelResetPrimary_3), l0, int32(_a_F_sentinelResetPrimary_4), int32(0))
 											mBase = m.M
 											v115 = m.ExcPending
 											if v115 != 0 {
@@ -15904,7 +15904,7 @@ func F_sentinelResetPrimary(m *base.Module, l0 int32, l1 int32) {
 											if l1&int32(65536) == v87 {
 												return
 											} else {
-												F_sentinelEvent(m, int32(3), int32(_a1137), l0, int32(_a1138), int32(0))
+												F_sentinelEvent(m, int32(3), int32(_a_F_sentinelResetPrimary_3), l0, int32(_a_F_sentinelResetPrimary_4), int32(0))
 												mBase = m.M
 												v115 = m.ExcPending
 												if v115 != 0 {
@@ -15980,7 +15980,7 @@ func F_sentinelResetPrimary(m *base.Module, l0 int32, l1 int32) {
 											if l1&int32(65536) == v87 {
 												return
 											} else {
-												F_sentinelEvent(m, int32(3), int32(_a1137), l0, int32(_a1138), int32(0))
+												F_sentinelEvent(m, int32(3), int32(_a_F_sentinelResetPrimary_3), l0, int32(_a_F_sentinelResetPrimary_4), int32(0))
 												mBase = m.M
 												v115 = m.ExcPending
 												if v115 != 0 {
@@ -16042,7 +16042,7 @@ func F_sentinelResetPrimary(m *base.Module, l0 int32, l1 int32) {
 												if l1&int32(65536) == v87 {
 													return
 												} else {
-													F_sentinelEvent(m, int32(3), int32(_a1137), l0, int32(_a1138), int32(0))
+													F_sentinelEvent(m, int32(3), int32(_a_F_sentinelResetPrimary_3), l0, int32(_a_F_sentinelResetPrimary_4), int32(0))
 													mBase = m.M
 													v115 = m.ExcPending
 													if v115 != 0 {
@@ -16123,7 +16123,7 @@ func F_sentinelResetPrimary(m *base.Module, l0 int32, l1 int32) {
 											if l1&int32(65536) == v87 {
 												return
 											} else {
-												F_sentinelEvent(m, int32(3), int32(_a1137), l0, int32(_a1138), int32(0))
+												F_sentinelEvent(m, int32(3), int32(_a_F_sentinelResetPrimary_3), l0, int32(_a_F_sentinelResetPrimary_4), int32(0))
 												mBase = m.M
 												v115 = m.ExcPending
 												if v115 != 0 {
@@ -16185,7 +16185,7 @@ func F_sentinelResetPrimary(m *base.Module, l0 int32, l1 int32) {
 												if l1&int32(65536) == v87 {
 													return
 												} else {
-													F_sentinelEvent(m, int32(3), int32(_a1137), l0, int32(_a1138), int32(0))
+													F_sentinelEvent(m, int32(3), int32(_a_F_sentinelResetPrimary_3), l0, int32(_a_F_sentinelResetPrimary_4), int32(0))
 													mBase = m.M
 													v115 = m.ExcPending
 													if v115 != 0 {
@@ -16261,7 +16261,7 @@ func F_sentinelResetPrimary(m *base.Module, l0 int32, l1 int32) {
 												if l1&int32(65536) == v87 {
 													return
 												} else {
-													F_sentinelEvent(m, int32(3), int32(_a1137), l0, int32(_a1138), int32(0))
+													F_sentinelEvent(m, int32(3), int32(_a_F_sentinelResetPrimary_3), l0, int32(_a_F_sentinelResetPrimary_4), int32(0))
 													mBase = m.M
 													v115 = m.ExcPending
 													if v115 != 0 {
@@ -16323,7 +16323,7 @@ func F_sentinelResetPrimary(m *base.Module, l0 int32, l1 int32) {
 													if l1&int32(65536) == v87 {
 														return
 													} else {
-														F_sentinelEvent(m, int32(3), int32(_a1137), l0, int32(_a1138), int32(0))
+														F_sentinelEvent(m, int32(3), int32(_a_F_sentinelResetPrimary_3), l0, int32(_a_F_sentinelResetPrimary_4), int32(0))
 														mBase = m.M
 														v115 = m.ExcPending
 														if v115 != 0 {
@@ -16348,7 +16348,7 @@ func F_sentinelResetPrimary(m *base.Module, l0 int32, l1 int32) {
 					if v22 != 0 {
 						return
 					} else {
-						v24 = F_dictCreate(m, int32(_a1136))
+						v24 = F_dictCreate(m, int32(_a_F_sentinelResetPrimary_2))
 						mBase = m.M
 						v25 = m.ExcPending
 						if v25 != 0 {
@@ -16408,7 +16408,7 @@ func F_sentinelResetPrimary(m *base.Module, l0 int32, l1 int32) {
 												if l1&int32(65536) == v87 {
 													return
 												} else {
-													F_sentinelEvent(m, int32(3), int32(_a1137), l0, int32(_a1138), int32(0))
+													F_sentinelEvent(m, int32(3), int32(_a_F_sentinelResetPrimary_3), l0, int32(_a_F_sentinelResetPrimary_4), int32(0))
 													mBase = m.M
 													v115 = m.ExcPending
 													if v115 != 0 {
@@ -16470,7 +16470,7 @@ func F_sentinelResetPrimary(m *base.Module, l0 int32, l1 int32) {
 													if l1&int32(65536) == v87 {
 														return
 													} else {
-														F_sentinelEvent(m, int32(3), int32(_a1137), l0, int32(_a1138), int32(0))
+														F_sentinelEvent(m, int32(3), int32(_a_F_sentinelResetPrimary_3), l0, int32(_a_F_sentinelResetPrimary_4), int32(0))
 														mBase = m.M
 														v115 = m.ExcPending
 														if v115 != 0 {
@@ -16546,7 +16546,7 @@ func F_sentinelResetPrimary(m *base.Module, l0 int32, l1 int32) {
 													if l1&int32(65536) == v87 {
 														return
 													} else {
-														F_sentinelEvent(m, int32(3), int32(_a1137), l0, int32(_a1138), int32(0))
+														F_sentinelEvent(m, int32(3), int32(_a_F_sentinelResetPrimary_3), l0, int32(_a_F_sentinelResetPrimary_4), int32(0))
 														mBase = m.M
 														v115 = m.ExcPending
 														if v115 != 0 {
@@ -16608,7 +16608,7 @@ func F_sentinelResetPrimary(m *base.Module, l0 int32, l1 int32) {
 														if l1&int32(65536) == v87 {
 															return
 														} else {
-															F_sentinelEvent(m, int32(3), int32(_a1137), l0, int32(_a1138), int32(0))
+															F_sentinelEvent(m, int32(3), int32(_a_F_sentinelResetPrimary_3), l0, int32(_a_F_sentinelResetPrimary_4), int32(0))
 															mBase = m.M
 															v115 = m.ExcPending
 															if v115 != 0 {
@@ -16689,7 +16689,7 @@ func F_sentinelResetPrimary(m *base.Module, l0 int32, l1 int32) {
 													if l1&int32(65536) == v87 {
 														return
 													} else {
-														F_sentinelEvent(m, int32(3), int32(_a1137), l0, int32(_a1138), int32(0))
+														F_sentinelEvent(m, int32(3), int32(_a_F_sentinelResetPrimary_3), l0, int32(_a_F_sentinelResetPrimary_4), int32(0))
 														mBase = m.M
 														v115 = m.ExcPending
 														if v115 != 0 {
@@ -16751,7 +16751,7 @@ func F_sentinelResetPrimary(m *base.Module, l0 int32, l1 int32) {
 														if l1&int32(65536) == v87 {
 															return
 														} else {
-															F_sentinelEvent(m, int32(3), int32(_a1137), l0, int32(_a1138), int32(0))
+															F_sentinelEvent(m, int32(3), int32(_a_F_sentinelResetPrimary_3), l0, int32(_a_F_sentinelResetPrimary_4), int32(0))
 															mBase = m.M
 															v115 = m.ExcPending
 															if v115 != 0 {
@@ -16827,7 +16827,7 @@ func F_sentinelResetPrimary(m *base.Module, l0 int32, l1 int32) {
 														if l1&int32(65536) == v87 {
 															return
 														} else {
-															F_sentinelEvent(m, int32(3), int32(_a1137), l0, int32(_a1138), int32(0))
+															F_sentinelEvent(m, int32(3), int32(_a_F_sentinelResetPrimary_3), l0, int32(_a_F_sentinelResetPrimary_4), int32(0))
 															mBase = m.M
 															v115 = m.ExcPending
 															if v115 != 0 {
@@ -16889,7 +16889,7 @@ func F_sentinelResetPrimary(m *base.Module, l0 int32, l1 int32) {
 															if l1&int32(65536) == v87 {
 																return
 															} else {
-																F_sentinelEvent(m, int32(3), int32(_a1137), l0, int32(_a1138), int32(0))
+																F_sentinelEvent(m, int32(3), int32(_a_F_sentinelResetPrimary_3), l0, int32(_a_F_sentinelResetPrimary_4), int32(0))
 																mBase = m.M
 																v115 = m.ExcPending
 																if v115 != 0 {
@@ -17466,7 +17466,7 @@ L39:
 	mBase = m.M
 	v163 = *(*int32)(unsafe.Add(mBase, uint32(v156)+28))
 	v164 = *(*int64)(unsafe.Add(mBase, uint32(v163)+48))
-	v167 = *(*int64)(unsafe.Add(mBase, _consts[643]))
+	v167 = *(*int64)(unsafe.Add(mBase, _c_F_sentinelSelectReplica[0]))
 	v169 = v167 * int64(5)
 	if v169 < v162-v164 {
 		v196 = v154
@@ -17486,7 +17486,7 @@ L40:
 L41:
 	;
 	v174 = *(*int32)(unsafe.Add(mBase, uint32(l0)))
-	v176 = *(*int64)(unsafe.Add(mBase, _consts[653]))
+	v176 = *(*int64)(unsafe.Add(mBase, _c_F_sentinelSelectReplica[1]))
 	v177 = F_mstime(m)
 	mBase = m.M
 	v178 = *(*int64)(unsafe.Add(mBase, uint32(v156)+96))
@@ -18012,7 +18012,7 @@ func F_sentinelSendReplicaOf(m *base.Module, l0 int32, l1 int32) int32 {
 	m.G0 = v9
 	if l1 != 0 {
 		v14 = int32(0)
-		v15 = *(*int32)(unsafe.Add(mBase, _consts[639]))
+		v15 = *(*int32)(unsafe.Add(mBase, _c_F_sentinelSendReplicaOf[0]))
 		v21 = *(*int32)(unsafe.Add(mBase, uint32(l1+base.B2i32(v15 == v14)<<(uint(int32(2))%32))))
 		v23 = v9 + int32(112)
 		v25 = int64(*(*int32)(unsafe.Add(mBase, uint32(l1)+8)))
@@ -18035,11 +18035,11 @@ func F_sentinelSendReplicaOf(m *base.Module, l0 int32, l1 int32) int32 {
 		v67 = v21
 	} else {
 		*(*int32)(unsafe.Add(mBase, uint32(v9)+112)) = int32(4542031)
-		v67 = int32(_a1162)
+		v67 = int32(_a_F_sentinelSendReplicaOf_0)
 	}
 	v68 = *(*int32)(unsafe.Add(mBase, uint32(l0)+28))
 	v69 = *(*int32)(unsafe.Add(mBase, uint32(v68)+12))
-	v71 = F_sdsnew(m, int32(_a1155))
+	v71 = F_sdsnew(m, int32(_a_F_sentinelSendReplicaOf_1))
 	mBase = m.M
 	v74 = m.ExcPending
 	if v74 != 0 {
@@ -18067,10 +18067,10 @@ func F_sentinelSendReplicaOf(m *base.Module, l0 int32, l1 int32) int32 {
 				if v78 != 0 {
 					v83 = v78
 				} else {
-					v83 = int32(_a1155)
+					v83 = int32(_a_F_sentinelSendReplicaOf_1)
 				}
 				*(*int32)(unsafe.Add(mBase, uint32(v9)+96)) = v83
-				v90 = F_valkeyAsyncCommand(m, v69, int32(1004), l0, int32(_a57), v9+int32(96))
+				v90 = F_valkeyAsyncCommand(m, v69, int32(1004), l0, int32(_a_F_sentinelSendReplicaOf_2), v9+int32(96))
 				mBase = m.M
 				v91 = m.ExcPending
 				if v91 != 0 {
@@ -18088,7 +18088,7 @@ func F_sentinelSendReplicaOf(m *base.Module, l0 int32, l1 int32) int32 {
 						if v99 != int32(2) {
 							v130 = v94
 							v133 = *(*int32)(unsafe.Add(mBase, uint32(v130)+12))
-							v135 = F_sdsnew(m, int32(_a1163))
+							v135 = F_sdsnew(m, int32(_a_F_sentinelSendReplicaOf_3))
 							mBase = m.M
 							v136 = m.ExcPending
 							if v136 != 0 {
@@ -18117,11 +18117,11 @@ func F_sentinelSendReplicaOf(m *base.Module, l0 int32, l1 int32) int32 {
 										if v140 != 0 {
 											v146 = v140
 										} else {
-											v146 = int32(_a1163)
+											v146 = int32(_a_F_sentinelSendReplicaOf_3)
 										}
 										*(*int32)(unsafe.Add(mBase, uint32(v9)+64)) = v146
 										*(*int32)(unsafe.Add(mBase, uint32(v9)+72)) = v9 + int32(112)
-										v156 = F_valkeyAsyncCommand(m, v133, int32(1004), l0, int32(_a1164), v9+int32(64))
+										v156 = F_valkeyAsyncCommand(m, v133, int32(1004), l0, int32(_a_F_sentinelSendReplicaOf_4), v9+int32(64))
 										mBase = m.M
 										v157 = m.ExcPending
 										if v157 != 0 {
@@ -18136,7 +18136,7 @@ func F_sentinelSendReplicaOf(m *base.Module, l0 int32, l1 int32) int32 {
 												v161 = *(*int32)(unsafe.Add(mBase, uint32(v160)+8))
 												*(*int32)(unsafe.Add(mBase, uint32(v160)+8)) = v161 + int32(1)
 												v165 = *(*int32)(unsafe.Add(mBase, uint32(v160)+12))
-												v167 = F_sdsnew(m, int32(_a1156))
+												v167 = F_sdsnew(m, int32(_a_F_sentinelSendReplicaOf_5))
 												mBase = m.M
 												v168 = m.ExcPending
 												if v168 != 0 {
@@ -18164,10 +18164,10 @@ func F_sentinelSendReplicaOf(m *base.Module, l0 int32, l1 int32) int32 {
 															if v172 != 0 {
 																v177 = v172
 															} else {
-																v177 = int32(_a1156)
+																v177 = int32(_a_F_sentinelSendReplicaOf_5)
 															}
 															*(*int32)(unsafe.Add(mBase, uint32(v9)+48)) = v177
-															v184 = F_valkeyAsyncCommand(m, v165, int32(1004), l0, int32(_a1157), v9+int32(48))
+															v184 = F_valkeyAsyncCommand(m, v165, int32(1004), l0, int32(_a_F_sentinelSendReplicaOf_6), v9+int32(48))
 															mBase = m.M
 															v185 = m.ExcPending
 															if v185 != 0 {
@@ -18182,7 +18182,7 @@ func F_sentinelSendReplicaOf(m *base.Module, l0 int32, l1 int32) int32 {
 																	v189 = *(*int32)(unsafe.Add(mBase, uint32(v188)+8))
 																	*(*int32)(unsafe.Add(mBase, uint32(v188)+8)) = v189 + int32(1)
 																	v193 = *(*int32)(unsafe.Add(mBase, uint32(v188)+12))
-																	v195 = F_sdsnew(m, int32(_a1145))
+																	v195 = F_sdsnew(m, int32(_a_F_sentinelSendReplicaOf_7))
 																	mBase = m.M
 																	v196 = m.ExcPending
 																	if v196 != 0 {
@@ -18207,14 +18207,14 @@ func F_sentinelSendReplicaOf(m *base.Module, l0 int32, l1 int32) int32 {
 																			if v203 != 0 {
 																				return int32(0)
 																			} else {
-																				*(*int32)(unsafe.Add(mBase, uint32(v9)+36)) = int32(_a1158)
+																				*(*int32)(unsafe.Add(mBase, uint32(v9)+36)) = int32(_a_F_sentinelSendReplicaOf_8)
 																				if v200 != 0 {
 																					v207 = v200
 																				} else {
-																					v207 = int32(_a1145)
+																					v207 = int32(_a_F_sentinelSendReplicaOf_7)
 																				}
 																				*(*int32)(unsafe.Add(mBase, uint32(v9)+32)) = v207
-																				v214 = F_valkeyAsyncCommand(m, v193, int32(1004), l0, int32(_a1159), v9+int32(32))
+																				v214 = F_valkeyAsyncCommand(m, v193, int32(1004), l0, int32(_a_F_sentinelSendReplicaOf_9), v9+int32(32))
 																				mBase = m.M
 																				v215 = m.ExcPending
 																				if v215 != 0 {
@@ -18229,7 +18229,7 @@ func F_sentinelSendReplicaOf(m *base.Module, l0 int32, l1 int32) int32 {
 																						v219 = *(*int32)(unsafe.Add(mBase, uint32(v218)+8))
 																						*(*int32)(unsafe.Add(mBase, uint32(v218)+8)) = v219 + int32(1)
 																						v223 = *(*int32)(unsafe.Add(mBase, uint32(v218)+12))
-																						v225 = F_sdsnew(m, int32(_a1145))
+																						v225 = F_sdsnew(m, int32(_a_F_sentinelSendReplicaOf_7))
 																						mBase = m.M
 																						v226 = m.ExcPending
 																						if v226 != 0 {
@@ -18254,14 +18254,14 @@ func F_sentinelSendReplicaOf(m *base.Module, l0 int32, l1 int32) int32 {
 																								if v233 != 0 {
 																									return int32(0)
 																								} else {
-																									*(*int32)(unsafe.Add(mBase, uint32(v9)+20)) = int32(_a1152)
+																									*(*int32)(unsafe.Add(mBase, uint32(v9)+20)) = int32(_a_F_sentinelSendReplicaOf_10)
 																									if v230 != 0 {
 																										v237 = v230
 																									} else {
-																										v237 = int32(_a1145)
+																										v237 = int32(_a_F_sentinelSendReplicaOf_7)
 																									}
 																									*(*int32)(unsafe.Add(mBase, uint32(v9)+16)) = v237
-																									v244 = F_valkeyAsyncCommand(m, v223, int32(1004), l0, int32(_a1159), v9+int32(16))
+																									v244 = F_valkeyAsyncCommand(m, v223, int32(1004), l0, int32(_a_F_sentinelSendReplicaOf_9), v9+int32(16))
 																									mBase = m.M
 																									v245 = m.ExcPending
 																									if v245 != 0 {
@@ -18276,7 +18276,7 @@ func F_sentinelSendReplicaOf(m *base.Module, l0 int32, l1 int32) int32 {
 																											v249 = *(*int32)(unsafe.Add(mBase, uint32(v248)+8))
 																											*(*int32)(unsafe.Add(mBase, uint32(v248)+8)) = v249 + int32(1)
 																											v253 = *(*int32)(unsafe.Add(mBase, uint32(v248)+12))
-																											v255 = F_sdsnew(m, int32(_a1161))
+																											v255 = F_sdsnew(m, int32(_a_F_sentinelSendReplicaOf_11))
 																											mBase = m.M
 																											v256 = m.ExcPending
 																											if v256 != 0 {
@@ -18304,10 +18304,10 @@ func F_sentinelSendReplicaOf(m *base.Module, l0 int32, l1 int32) int32 {
 																														if v260 != 0 {
 																															v265 = v260
 																														} else {
-																															v265 = int32(_a1161)
+																															v265 = int32(_a_F_sentinelSendReplicaOf_11)
 																														}
 																														*(*int32)(unsafe.Add(mBase, uint32(v9))) = v265
-																														v270 = F_valkeyAsyncCommand(m, v253, int32(1004), l0, int32(_a57), v9)
+																														v270 = F_valkeyAsyncCommand(m, v253, int32(1004), l0, int32(_a_F_sentinelSendReplicaOf_2), v9)
 																														mBase = m.M
 																														v271 = m.ExcPending
 																														if v271 != 0 {
@@ -18349,7 +18349,7 @@ func F_sentinelSendReplicaOf(m *base.Module, l0 int32, l1 int32) int32 {
 							}
 						} else {
 							v102 = *(*int32)(unsafe.Add(mBase, uint32(v94)+12))
-							v104 = F_sdsnew(m, int32(_a1004))
+							v104 = F_sdsnew(m, int32(_a_F_sentinelSendReplicaOf_12))
 							mBase = m.M
 							v105 = m.ExcPending
 							if v105 != 0 {
@@ -18377,10 +18377,10 @@ func F_sentinelSendReplicaOf(m *base.Module, l0 int32, l1 int32) int32 {
 										if v109 != 0 {
 											v114 = v109
 										} else {
-											v114 = int32(_a1004)
+											v114 = int32(_a_F_sentinelSendReplicaOf_12)
 										}
 										*(*int32)(unsafe.Add(mBase, uint32(v9)+80)) = v114
-										v121 = F_valkeyAsyncCommand(m, v102, int32(1004), l0, int32(_a1165), v9+int32(80))
+										v121 = F_valkeyAsyncCommand(m, v102, int32(1004), l0, int32(_a_F_sentinelSendReplicaOf_13), v9+int32(80))
 										mBase = m.M
 										v122 = m.ExcPending
 										if v122 != 0 {
@@ -18396,7 +18396,7 @@ func F_sentinelSendReplicaOf(m *base.Module, l0 int32, l1 int32) int32 {
 												*(*int32)(unsafe.Add(mBase, uint32(v125)+8)) = v126 + int32(1)
 												v130 = v125
 												v133 = *(*int32)(unsafe.Add(mBase, uint32(v130)+12))
-												v135 = F_sdsnew(m, int32(_a1163))
+												v135 = F_sdsnew(m, int32(_a_F_sentinelSendReplicaOf_3))
 												mBase = m.M
 												v136 = m.ExcPending
 												if v136 != 0 {
@@ -18425,11 +18425,11 @@ func F_sentinelSendReplicaOf(m *base.Module, l0 int32, l1 int32) int32 {
 															if v140 != 0 {
 																v146 = v140
 															} else {
-																v146 = int32(_a1163)
+																v146 = int32(_a_F_sentinelSendReplicaOf_3)
 															}
 															*(*int32)(unsafe.Add(mBase, uint32(v9)+64)) = v146
 															*(*int32)(unsafe.Add(mBase, uint32(v9)+72)) = v9 + int32(112)
-															v156 = F_valkeyAsyncCommand(m, v133, int32(1004), l0, int32(_a1164), v9+int32(64))
+															v156 = F_valkeyAsyncCommand(m, v133, int32(1004), l0, int32(_a_F_sentinelSendReplicaOf_4), v9+int32(64))
 															mBase = m.M
 															v157 = m.ExcPending
 															if v157 != 0 {
@@ -18444,7 +18444,7 @@ func F_sentinelSendReplicaOf(m *base.Module, l0 int32, l1 int32) int32 {
 																	v161 = *(*int32)(unsafe.Add(mBase, uint32(v160)+8))
 																	*(*int32)(unsafe.Add(mBase, uint32(v160)+8)) = v161 + int32(1)
 																	v165 = *(*int32)(unsafe.Add(mBase, uint32(v160)+12))
-																	v167 = F_sdsnew(m, int32(_a1156))
+																	v167 = F_sdsnew(m, int32(_a_F_sentinelSendReplicaOf_5))
 																	mBase = m.M
 																	v168 = m.ExcPending
 																	if v168 != 0 {
@@ -18472,10 +18472,10 @@ func F_sentinelSendReplicaOf(m *base.Module, l0 int32, l1 int32) int32 {
 																				if v172 != 0 {
 																					v177 = v172
 																				} else {
-																					v177 = int32(_a1156)
+																					v177 = int32(_a_F_sentinelSendReplicaOf_5)
 																				}
 																				*(*int32)(unsafe.Add(mBase, uint32(v9)+48)) = v177
-																				v184 = F_valkeyAsyncCommand(m, v165, int32(1004), l0, int32(_a1157), v9+int32(48))
+																				v184 = F_valkeyAsyncCommand(m, v165, int32(1004), l0, int32(_a_F_sentinelSendReplicaOf_6), v9+int32(48))
 																				mBase = m.M
 																				v185 = m.ExcPending
 																				if v185 != 0 {
@@ -18490,7 +18490,7 @@ func F_sentinelSendReplicaOf(m *base.Module, l0 int32, l1 int32) int32 {
 																						v189 = *(*int32)(unsafe.Add(mBase, uint32(v188)+8))
 																						*(*int32)(unsafe.Add(mBase, uint32(v188)+8)) = v189 + int32(1)
 																						v193 = *(*int32)(unsafe.Add(mBase, uint32(v188)+12))
-																						v195 = F_sdsnew(m, int32(_a1145))
+																						v195 = F_sdsnew(m, int32(_a_F_sentinelSendReplicaOf_7))
 																						mBase = m.M
 																						v196 = m.ExcPending
 																						if v196 != 0 {
@@ -18515,14 +18515,14 @@ func F_sentinelSendReplicaOf(m *base.Module, l0 int32, l1 int32) int32 {
 																								if v203 != 0 {
 																									return int32(0)
 																								} else {
-																									*(*int32)(unsafe.Add(mBase, uint32(v9)+36)) = int32(_a1158)
+																									*(*int32)(unsafe.Add(mBase, uint32(v9)+36)) = int32(_a_F_sentinelSendReplicaOf_8)
 																									if v200 != 0 {
 																										v207 = v200
 																									} else {
-																										v207 = int32(_a1145)
+																										v207 = int32(_a_F_sentinelSendReplicaOf_7)
 																									}
 																									*(*int32)(unsafe.Add(mBase, uint32(v9)+32)) = v207
-																									v214 = F_valkeyAsyncCommand(m, v193, int32(1004), l0, int32(_a1159), v9+int32(32))
+																									v214 = F_valkeyAsyncCommand(m, v193, int32(1004), l0, int32(_a_F_sentinelSendReplicaOf_9), v9+int32(32))
 																									mBase = m.M
 																									v215 = m.ExcPending
 																									if v215 != 0 {
@@ -18537,7 +18537,7 @@ func F_sentinelSendReplicaOf(m *base.Module, l0 int32, l1 int32) int32 {
 																											v219 = *(*int32)(unsafe.Add(mBase, uint32(v218)+8))
 																											*(*int32)(unsafe.Add(mBase, uint32(v218)+8)) = v219 + int32(1)
 																											v223 = *(*int32)(unsafe.Add(mBase, uint32(v218)+12))
-																											v225 = F_sdsnew(m, int32(_a1145))
+																											v225 = F_sdsnew(m, int32(_a_F_sentinelSendReplicaOf_7))
 																											mBase = m.M
 																											v226 = m.ExcPending
 																											if v226 != 0 {
@@ -18562,14 +18562,14 @@ func F_sentinelSendReplicaOf(m *base.Module, l0 int32, l1 int32) int32 {
 																													if v233 != 0 {
 																														return int32(0)
 																													} else {
-																														*(*int32)(unsafe.Add(mBase, uint32(v9)+20)) = int32(_a1152)
+																														*(*int32)(unsafe.Add(mBase, uint32(v9)+20)) = int32(_a_F_sentinelSendReplicaOf_10)
 																														if v230 != 0 {
 																															v237 = v230
 																														} else {
-																															v237 = int32(_a1145)
+																															v237 = int32(_a_F_sentinelSendReplicaOf_7)
 																														}
 																														*(*int32)(unsafe.Add(mBase, uint32(v9)+16)) = v237
-																														v244 = F_valkeyAsyncCommand(m, v223, int32(1004), l0, int32(_a1159), v9+int32(16))
+																														v244 = F_valkeyAsyncCommand(m, v223, int32(1004), l0, int32(_a_F_sentinelSendReplicaOf_9), v9+int32(16))
 																														mBase = m.M
 																														v245 = m.ExcPending
 																														if v245 != 0 {
@@ -18584,7 +18584,7 @@ func F_sentinelSendReplicaOf(m *base.Module, l0 int32, l1 int32) int32 {
 																																v249 = *(*int32)(unsafe.Add(mBase, uint32(v248)+8))
 																																*(*int32)(unsafe.Add(mBase, uint32(v248)+8)) = v249 + int32(1)
 																																v253 = *(*int32)(unsafe.Add(mBase, uint32(v248)+12))
-																																v255 = F_sdsnew(m, int32(_a1161))
+																																v255 = F_sdsnew(m, int32(_a_F_sentinelSendReplicaOf_11))
 																																mBase = m.M
 																																v256 = m.ExcPending
 																																if v256 != 0 {
@@ -18612,10 +18612,10 @@ func F_sentinelSendReplicaOf(m *base.Module, l0 int32, l1 int32) int32 {
 																																			if v260 != 0 {
 																																				v265 = v260
 																																			} else {
-																																				v265 = int32(_a1161)
+																																				v265 = int32(_a_F_sentinelSendReplicaOf_11)
 																																			}
 																																			*(*int32)(unsafe.Add(mBase, uint32(v9))) = v265
-																																			v270 = F_valkeyAsyncCommand(m, v253, int32(1004), l0, int32(_a57), v9)
+																																			v270 = F_valkeyAsyncCommand(m, v253, int32(1004), l0, int32(_a_F_sentinelSendReplicaOf_2), v9)
 																																			mBase = m.M
 																																			v271 = m.ExcPending
 																																			if v271 != 0 {
@@ -18707,15 +18707,15 @@ func F_sentinelSetClientName(m *base.Module, l0 int32, l1 int32, l2 int32) {
 	v6 = m.G0
 	v8 = v6 - int32(96)
 	m.G0 = v8
-	*(*int32)(unsafe.Add(mBase, uint32(v8)+16)) = int32(_a1143)
+	*(*int32)(unsafe.Add(mBase, uint32(v8)+16)) = int32(_a_F_sentinelSetClientName_0)
 	*(*int32)(unsafe.Add(mBase, uint32(v8)+20)) = l2
-	v19 = F_snprintf(m, v8+int32(32), int32(64), int32(_a1144), v8+int32(16))
+	v19 = F_snprintf(m, v8+int32(32), int32(64), int32(_a_F_sentinelSetClientName_1), v8+int32(16))
 	mBase = m.M
 	v20 = m.ExcPending
 	if v20 != 0 {
 		return
 	} else {
-		v22 = F_sdsnew(m, int32(_a1145))
+		v22 = F_sdsnew(m, int32(_a_F_sentinelSetClientName_2))
 		mBase = m.M
 		v23 = m.ExcPending
 		if v23 != 0 {
@@ -18743,11 +18743,11 @@ func F_sentinelSetClientName(m *base.Module, l0 int32, l1 int32, l2 int32) {
 					if v27 != 0 {
 						v32 = v27
 					} else {
-						v32 = int32(_a1145)
+						v32 = int32(_a_F_sentinelSetClientName_2)
 					}
 					*(*int32)(unsafe.Add(mBase, uint32(v8))) = v32
 					*(*int32)(unsafe.Add(mBase, uint32(v8)+4)) = v8 + int32(32)
-					v39 = F_valkeyAsyncCommand(m, l1, int32(1004), l0, int32(_a1146), v8)
+					v39 = F_valkeyAsyncCommand(m, l1, int32(1004), l0, int32(_a_F_sentinelSetClientName_3), v8)
 					mBase = m.M
 					v40 = m.ExcPending
 					if v40 != 0 {
@@ -18774,7 +18774,7 @@ func F_sentinelSimFailureCrash(m *base.Module) {
 	_ = v2
 	var v9 int32
 	_ = v9
-	v2 = *(*int32)(unsafe.Add(mBase, _consts[15]))
+	v2 = *(*int32)(unsafe.Add(mBase, _c_F_sentinelSimFailureCrash[0]))
 	if int32(3) < v2 {
 		m.Env.Exit(m, int32(99))
 		mBase = m.M
@@ -18782,7 +18782,7 @@ func F_sentinelSimFailureCrash(m *base.Module) {
 		for {
 		}
 	} else {
-		F__serverLog(m, int32(3), int32(_a1166), int32(0))
+		F__serverLog(m, int32(3), int32(_a_F_sentinelSimFailureCrash_0), int32(0))
 		mBase = m.M
 		v9 = m.ExcPending
 		if v9 != 0 {
@@ -18837,18 +18837,18 @@ func F_sentinelStartFailover(m *base.Module, l0 int32) {
 		*(*int32)(unsafe.Add(mBase, uint32(l0)+240)) = int32(1)
 		*(*int32)(unsafe.Add(mBase, uint32(l0))) = v9 | int32(64)
 		v23 = int32(0)
-		v25 = *(*int64)(unsafe.Add(mBase, _consts[652]))
+		v25 = *(*int64)(unsafe.Add(mBase, _c_F_sentinelStartFailover[0]))
 		v27 = v25 + int64(1)
-		*(*int64)(unsafe.Add(mBase, _consts[652])) = v27
+		*(*int64)(unsafe.Add(mBase, _c_F_sentinelStartFailover[0])) = v27
 		*(*int64)(unsafe.Add(mBase, uint32(l0)+232)) = v27
 		*(*int64)(unsafe.Add(mBase, uint32(v7))) = v27
-		F_sentinelEvent(m, int32(3), int32(_a1221), l0, int32(_a408), v7)
+		F_sentinelEvent(m, int32(3), int32(_a_F_sentinelStartFailover_0), l0, int32(_a_F_sentinelStartFailover_1), v7)
 		mBase = m.M
 		v35 = m.ExcPending
 		if v35 != 0 {
 			return
 		} else {
-			F_sentinelEvent(m, int32(3), int32(_a1224), l0, int32(_a1138), int32(0))
+			F_sentinelEvent(m, int32(3), int32(_a_F_sentinelStartFailover_2), l0, int32(_a_F_sentinelStartFailover_3), int32(0))
 			mBase = m.M
 			v41 = m.ExcPending
 			if v41 != 0 {
@@ -18857,9 +18857,9 @@ func F_sentinelStartFailover(m *base.Module, l0 int32) {
 				v42 = F_mstime(m)
 				mBase = m.M
 				v44 = int32(0)
-				v46 = *(*int64)(unsafe.Add(mBase, _consts[298]))
+				v46 = *(*int64)(unsafe.Add(mBase, _c_F_sentinelStartFailover[1]))
 				v50 = v46*int64(6364136223846793005) + int64(1)
-				*(*int64)(unsafe.Add(mBase, _consts[298])) = v50
+				*(*int64)(unsafe.Add(mBase, _c_F_sentinelStartFailover[1])) = v50
 				v56 = base.I32_rem_s(base.I32_wrap_i64(int64(base.Ui64(v50)>>(uint(int64(33))%64))), int32(1000))
 				*(*int64)(unsafe.Add(mBase, uint32(l0)+256)) = v42 + base.I64_extend_i32_s(v56)
 				v60 = F_mstime(m)
@@ -18870,7 +18870,7 @@ func F_sentinelStartFailover(m *base.Module, l0 int32) {
 			}
 		}
 	} else {
-		F__serverAssert(m, int32(_a1225), int32(_a1135), int32(4939))
+		F__serverAssert(m, int32(_a_F_sentinelStartFailover_4), int32(_a_F_sentinelStartFailover_5), int32(4939))
 		mBase = m.M
 		v16 = m.ExcPending
 		if v16 != 0 {
@@ -18931,18 +18931,18 @@ func F_sentinelTimer(m *base.Module) {
 	_ = v57
 	v2 = F_mstime(m)
 	mBase = m.M
-	v4 = *(*int64)(unsafe.Add(mBase, _consts[663]))
+	v4 = *(*int64)(unsafe.Add(mBase, _c_F_sentinelTimer[0]))
 	v5 = v2 - v4
 	if v5 < int64(0) {
 		v11 = int32(0)
 		v12 = int32(1)
-		*(*int32)(unsafe.Add(mBase, _consts[645])) = v12
+		*(*int32)(unsafe.Add(mBase, _c_F_sentinelTimer[1])) = v12
 		v15 = F_mstime(m)
 		mBase = m.M
-		*(*int64)(unsafe.Add(mBase, _consts[660])) = v15
-		v19 = *(*int32)(unsafe.Add(mBase, _consts[659]))
-		*(*int32)(unsafe.Add(mBase, _consts[659])) = v19 + v12
-		F_sentinelEvent(m, int32(3), int32(_a1237), v11, int32(_a1238), v11)
+		*(*int64)(unsafe.Add(mBase, _c_F_sentinelTimer[2])) = v15
+		v19 = *(*int32)(unsafe.Add(mBase, _c_F_sentinelTimer[3]))
+		*(*int32)(unsafe.Add(mBase, _c_F_sentinelTimer[3])) = v19 + v12
+		F_sentinelEvent(m, int32(3), int32(_a_F_sentinelTimer_0), v11, int32(_a_F_sentinelTimer_1), v11)
 		mBase = m.M
 		v29 = m.ExcPending
 		if v29 != 0 {
@@ -18951,8 +18951,8 @@ func F_sentinelTimer(m *base.Module) {
 			v30 = int32(0)
 			v31 = F_mstime(m)
 			mBase = m.M
-			*(*int64)(unsafe.Add(mBase, _consts[663])) = v31
-			v34 = *(*int32)(unsafe.Add(mBase, _consts[640]))
+			*(*int64)(unsafe.Add(mBase, _c_F_sentinelTimer[0])) = v31
+			v34 = *(*int32)(unsafe.Add(mBase, _c_F_sentinelTimer[4]))
 			F_sentinelHandleDictOfValkeyInstances(m, v34)
 			mBase = m.M
 			v36 = m.ExcPending
@@ -18978,12 +18978,12 @@ func F_sentinelTimer(m *base.Module) {
 							return
 						} else {
 							v45 = int32(0)
-							v47 = *(*int64)(unsafe.Add(mBase, _consts[298]))
+							v47 = *(*int64)(unsafe.Add(mBase, _c_F_sentinelTimer[5]))
 							v51 = v47*int64(6364136223846793005) + int64(1)
-							*(*int64)(unsafe.Add(mBase, _consts[298])) = v51
+							*(*int64)(unsafe.Add(mBase, _c_F_sentinelTimer[5])) = v51
 							v56 = int32(10)
 							v57 = base.I32_rem_s(base.I32_wrap_i64(int64(base.Ui64(v51)>>(uint(int64(33))%64))), v56)
-							*(*int32)(unsafe.Add(mBase, _consts[149])) = v57 + v56
+							*(*int32)(unsafe.Add(mBase, _c_F_sentinelTimer[6])) = v57 + v56
 							return
 						}
 					}
@@ -18991,13 +18991,13 @@ func F_sentinelTimer(m *base.Module) {
 			}
 		}
 	} else {
-		v9 = *(*int64)(unsafe.Add(mBase, _consts[664]))
+		v9 = *(*int64)(unsafe.Add(mBase, _c_F_sentinelTimer[7]))
 		if v5 <= v9 {
 			v30 = int32(0)
 			v31 = F_mstime(m)
 			mBase = m.M
-			*(*int64)(unsafe.Add(mBase, _consts[663])) = v31
-			v34 = *(*int32)(unsafe.Add(mBase, _consts[640]))
+			*(*int64)(unsafe.Add(mBase, _c_F_sentinelTimer[0])) = v31
+			v34 = *(*int32)(unsafe.Add(mBase, _c_F_sentinelTimer[4]))
 			F_sentinelHandleDictOfValkeyInstances(m, v34)
 			mBase = m.M
 			v36 = m.ExcPending
@@ -19023,12 +19023,12 @@ func F_sentinelTimer(m *base.Module) {
 							return
 						} else {
 							v45 = int32(0)
-							v47 = *(*int64)(unsafe.Add(mBase, _consts[298]))
+							v47 = *(*int64)(unsafe.Add(mBase, _c_F_sentinelTimer[5]))
 							v51 = v47*int64(6364136223846793005) + int64(1)
-							*(*int64)(unsafe.Add(mBase, _consts[298])) = v51
+							*(*int64)(unsafe.Add(mBase, _c_F_sentinelTimer[5])) = v51
 							v56 = int32(10)
 							v57 = base.I32_rem_s(base.I32_wrap_i64(int64(base.Ui64(v51)>>(uint(int64(33))%64))), v56)
-							*(*int32)(unsafe.Add(mBase, _consts[149])) = v57 + v56
+							*(*int32)(unsafe.Add(mBase, _c_F_sentinelTimer[6])) = v57 + v56
 							return
 						}
 					}
@@ -19037,13 +19037,13 @@ func F_sentinelTimer(m *base.Module) {
 		} else {
 			v11 = int32(0)
 			v12 = int32(1)
-			*(*int32)(unsafe.Add(mBase, _consts[645])) = v12
+			*(*int32)(unsafe.Add(mBase, _c_F_sentinelTimer[1])) = v12
 			v15 = F_mstime(m)
 			mBase = m.M
-			*(*int64)(unsafe.Add(mBase, _consts[660])) = v15
-			v19 = *(*int32)(unsafe.Add(mBase, _consts[659]))
-			*(*int32)(unsafe.Add(mBase, _consts[659])) = v19 + v12
-			F_sentinelEvent(m, int32(3), int32(_a1237), v11, int32(_a1238), v11)
+			*(*int64)(unsafe.Add(mBase, _c_F_sentinelTimer[2])) = v15
+			v19 = *(*int32)(unsafe.Add(mBase, _c_F_sentinelTimer[3]))
+			*(*int32)(unsafe.Add(mBase, _c_F_sentinelTimer[3])) = v19 + v12
+			F_sentinelEvent(m, int32(3), int32(_a_F_sentinelTimer_0), v11, int32(_a_F_sentinelTimer_1), v11)
 			mBase = m.M
 			v29 = m.ExcPending
 			if v29 != 0 {
@@ -19052,8 +19052,8 @@ func F_sentinelTimer(m *base.Module) {
 				v30 = int32(0)
 				v31 = F_mstime(m)
 				mBase = m.M
-				*(*int64)(unsafe.Add(mBase, _consts[663])) = v31
-				v34 = *(*int32)(unsafe.Add(mBase, _consts[640]))
+				*(*int64)(unsafe.Add(mBase, _c_F_sentinelTimer[0])) = v31
+				v34 = *(*int32)(unsafe.Add(mBase, _c_F_sentinelTimer[4]))
 				F_sentinelHandleDictOfValkeyInstances(m, v34)
 				mBase = m.M
 				v36 = m.ExcPending
@@ -19079,12 +19079,12 @@ func F_sentinelTimer(m *base.Module) {
 								return
 							} else {
 								v45 = int32(0)
-								v47 = *(*int64)(unsafe.Add(mBase, _consts[298]))
+								v47 = *(*int64)(unsafe.Add(mBase, _c_F_sentinelTimer[5]))
 								v51 = v47*int64(6364136223846793005) + int64(1)
-								*(*int64)(unsafe.Add(mBase, _consts[298])) = v51
+								*(*int64)(unsafe.Add(mBase, _c_F_sentinelTimer[5])) = v51
 								v56 = int32(10)
 								v57 = base.I32_rem_s(base.I32_wrap_i64(int64(base.Ui64(v51)>>(uint(int64(33))%64))), v56)
-								*(*int32)(unsafe.Add(mBase, _consts[149])) = v57 + v56
+								*(*int32)(unsafe.Add(mBase, _c_F_sentinelTimer[6])) = v57 + v56
 								return
 							}
 						}
@@ -19244,7 +19244,7 @@ func F_sentinelVoteLeader(m *base.Module, l0 int32, l1 int64, l2 int32, l3 int32
 	v9 = m.G0
 	v11 = v9 - int32(64)
 	m.G0 = v11
-	v14 = *(*int64)(unsafe.Add(mBase, _consts[652]))
+	v14 = *(*int64)(unsafe.Add(mBase, _c_F_sentinelVoteLeader[0]))
 	if base.Ui64(l1) <= base.Ui64(v14) {
 		v67 = v14
 		goto L1
@@ -19262,11 +19262,11 @@ L1:
 L2:
 	;
 	v16 = int32(0)
-	*(*int64)(unsafe.Add(mBase, _consts[652])) = l1
-	v18 = int32(_a69)
-	v19 = *(*int32)(unsafe.Add(mBase, _consts[149]))
-	*(*int32)(unsafe.Add(mBase, _consts[149])) = int32(10)
-	v24 = *(*int32)(unsafe.Add(mBase, _consts[178]))
+	*(*int64)(unsafe.Add(mBase, _c_F_sentinelVoteLeader[0])) = l1
+	v18 = int32(_a_F_sentinelVoteLeader_0)
+	v19 = *(*int32)(unsafe.Add(mBase, _c_F_sentinelVoteLeader[1]))
+	*(*int32)(unsafe.Add(mBase, _c_F_sentinelVoteLeader[1])) = int32(10)
+	v24 = *(*int32)(unsafe.Add(mBase, _c_F_sentinelVoteLeader[2]))
 	v26 = F_rewriteConfig(m, v24, v16)
 	mBase = m.M
 	v29 = m.ExcPending
@@ -19280,9 +19280,9 @@ L3:
 	return int32(0)
 L4:
 	;
-	v30 = int32(_a69)
-	*(*int32)(unsafe.Add(mBase, _consts[149])) = v19
-	v33 = *(*int32)(unsafe.Add(mBase, _consts[15]))
+	v30 = int32(_a_F_sentinelVoteLeader_0)
+	*(*int32)(unsafe.Add(mBase, _c_F_sentinelVoteLeader[1])) = v19
+	v33 = *(*int32)(unsafe.Add(mBase, _c_F_sentinelVoteLeader[3]))
 	if v26 != int32(-1) {
 		goto L6
 	} else {
@@ -19290,9 +19290,9 @@ L4:
 	}
 L5:
 	;
-	v56 = *(*int64)(unsafe.Add(mBase, _consts[652]))
+	v56 = *(*int64)(unsafe.Add(mBase, _c_F_sentinelVoteLeader[0]))
 	*(*int64)(unsafe.Add(mBase, uint32(v11)+32)) = v56
-	F_sentinelEvent(m, int32(3), int32(_a1221), l0, int32(_a408), v11+int32(32))
+	F_sentinelEvent(m, int32(3), int32(_a_F_sentinelVoteLeader_1), l0, int32(_a_F_sentinelVoteLeader_2), v11+int32(32))
 	mBase = m.M
 	v64 = m.ExcPending
 	if v64 != 0 {
@@ -19319,14 +19319,14 @@ L8:
 	goto L9
 L9:
 	;
-	v39 = *(*int32)(unsafe.Add(mBase, _consts[9]))
+	v39 = *(*int32)(unsafe.Add(mBase, _c_F_sentinelVoteLeader[4]))
 	v40 = F___strerror_l(m, v39, v39)
 	mBase = m.M
 	goto L10
 L10:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v11)+48)) = v40
-	F__serverLog(m, int32(3), int32(_a1169), v11+int32(48))
+	F__serverLog(m, int32(3), int32(_a_F_sentinelVoteLeader_3), v11+int32(48))
 	mBase = m.M
 	v47 = m.ExcPending
 	if v47 != 0 {
@@ -19339,7 +19339,7 @@ L11:
 	goto L5
 L12:
 	;
-	F__serverLog(m, int32(2), int32(_a1167), int32(0))
+	F__serverLog(m, int32(2), int32(_a_F_sentinelVoteLeader_4), int32(0))
 	mBase = m.M
 	v54 = m.ExcPending
 	if v54 != 0 {
@@ -19352,7 +19352,7 @@ L13:
 	goto L5
 L14:
 	;
-	v66 = *(*int64)(unsafe.Add(mBase, _consts[652]))
+	v66 = *(*int64)(unsafe.Add(mBase, _c_F_sentinelVoteLeader[0]))
 	v67 = v66
 	goto L1
 L15:
@@ -19397,12 +19397,12 @@ L19:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(l0)+216)) = v76
 	v79 = int32(0)
-	v80 = *(*int64)(unsafe.Add(mBase, _consts[652]))
+	v80 = *(*int64)(unsafe.Add(mBase, _c_F_sentinelVoteLeader[0]))
 	*(*int64)(unsafe.Add(mBase, uint32(l0)+224)) = v80
-	v82 = int32(_a69)
-	v83 = *(*int32)(unsafe.Add(mBase, _consts[149]))
-	*(*int32)(unsafe.Add(mBase, _consts[149])) = int32(10)
-	v88 = *(*int32)(unsafe.Add(mBase, _consts[178]))
+	v82 = int32(_a_F_sentinelVoteLeader_0)
+	v83 = *(*int32)(unsafe.Add(mBase, _c_F_sentinelVoteLeader[1]))
+	*(*int32)(unsafe.Add(mBase, _c_F_sentinelVoteLeader[1])) = int32(10)
+	v88 = *(*int32)(unsafe.Add(mBase, _c_F_sentinelVoteLeader[2]))
 	v90 = F_rewriteConfig(m, v88, v79)
 	mBase = m.M
 	v91 = m.ExcPending
@@ -19413,9 +19413,9 @@ L19:
 	}
 L20:
 	;
-	v92 = int32(_a69)
-	*(*int32)(unsafe.Add(mBase, _consts[149])) = v83
-	v95 = *(*int32)(unsafe.Add(mBase, _consts[15]))
+	v92 = int32(_a_F_sentinelVoteLeader_0)
+	*(*int32)(unsafe.Add(mBase, _c_F_sentinelVoteLeader[1])) = v83
+	v95 = *(*int32)(unsafe.Add(mBase, _c_F_sentinelVoteLeader[3]))
 	if v90 != int32(-1) {
 		goto L22
 	} else {
@@ -19427,7 +19427,7 @@ L21:
 	v118 = *(*int64)(unsafe.Add(mBase, uint32(l0)+224))
 	*(*int64)(unsafe.Add(mBase, uint32(v11)+8)) = v118
 	*(*int32)(unsafe.Add(mBase, uint32(v11))) = v117
-	F_sentinelEvent(m, int32(3), int32(_a1222), l0, int32(_a1223), v11)
+	F_sentinelEvent(m, int32(3), int32(_a_F_sentinelVoteLeader_5), l0, int32(_a_F_sentinelVoteLeader_6), v11)
 	mBase = m.M
 	v125 = m.ExcPending
 	if v125 != 0 {
@@ -19454,14 +19454,14 @@ L24:
 	goto L25
 L25:
 	;
-	v101 = *(*int32)(unsafe.Add(mBase, _consts[9]))
+	v101 = *(*int32)(unsafe.Add(mBase, _c_F_sentinelVoteLeader[4]))
 	v102 = F___strerror_l(m, v101, v101)
 	mBase = m.M
 	goto L26
 L26:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v11)+16)) = v102
-	F__serverLog(m, int32(3), int32(_a1169), v11+int32(16))
+	F__serverLog(m, int32(3), int32(_a_F_sentinelVoteLeader_3), v11+int32(16))
 	mBase = m.M
 	v109 = m.ExcPending
 	if v109 != 0 {
@@ -19474,7 +19474,7 @@ L27:
 	goto L21
 L28:
 	;
-	F__serverLog(m, int32(2), int32(_a1167), int32(0))
+	F__serverLog(m, int32(2), int32(_a_F_sentinelVoteLeader_4), int32(0))
 	mBase = m.M
 	v116 = m.ExcPending
 	if v116 != 0 {
@@ -19488,7 +19488,7 @@ L29:
 L30:
 	;
 	v126 = *(*int32)(unsafe.Add(mBase, uint32(l0)+216))
-	v127 = int32(_a1143)
+	v127 = int32(_a_F_sentinelVoteLeader_7)
 	v130 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v126))))
 	if v130 != 0 {
 		goto L33
@@ -19588,9 +19588,9 @@ L43:
 	v168 = F_mstime(m)
 	mBase = m.M
 	v170 = int32(0)
-	v172 = *(*int64)(unsafe.Add(mBase, _consts[298]))
+	v172 = *(*int64)(unsafe.Add(mBase, _c_F_sentinelVoteLeader[5]))
 	v176 = v172*int64(6364136223846793005) + int64(1)
-	*(*int64)(unsafe.Add(mBase, _consts[298])) = v176
+	*(*int64)(unsafe.Add(mBase, _c_F_sentinelVoteLeader[5])) = v176
 	goto L44
 L44:
 	;

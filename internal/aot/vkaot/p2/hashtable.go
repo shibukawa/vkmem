@@ -254,10 +254,10 @@ func F_hashtableAddOrFind(m *base.Module, l0 int32, l1 int32, l2 int32) int32 {
 		if v25 == int32(0) {
 			v31 = v11 + int32(12)
 			v32 = int32(4)
-			v33 = int32(_a228)
-			v41 = *(*int64)(unsafe.Add(mBase, _consts[142]))
+			v33 = int32(_a_F_hashtableAddOrFind_0)
+			v41 = *(*int64)(unsafe.Add(mBase, _c_F_hashtableAddOrFind[0]))
 			v43 = v41 ^ int64(8317987319222330741)
-			v44 = *(*int64)(unsafe.Add(mBase, _consts[141]))
+			v44 = *(*int64)(unsafe.Add(mBase, _c_F_hashtableAddOrFind[1]))
 			v46 = v44 ^ int64(7237128888997146477)
 			v48 = v41 ^ int64(7816392313619706465)
 			v50 = v44 ^ int64(8387220255154660723)
@@ -474,7 +474,7 @@ func F_hashtableAddOrFind(m *base.Module, l0 int32, l1 int32, l2 int32) int32 {
 									return base.B2i32(v206 == int32(0))
 								}
 							} else {
-								v227 = *(*int32)(unsafe.Add(mBase, _consts[427]))
+								v227 = *(*int32)(unsafe.Add(mBase, _c_F_hashtableAddOrFind[2]))
 								if v227 != int32(1) {
 									v236 = F_findBucketForInsert(m, l0, v200, v11+int32(12), v11+int32(8))
 									mBase = m.M
@@ -620,7 +620,7 @@ func F_hashtableAddOrFind(m *base.Module, l0 int32, l1 int32, l2 int32) int32 {
 										return base.B2i32(v206 == int32(0))
 									}
 								} else {
-									v227 = *(*int32)(unsafe.Add(mBase, _consts[427]))
+									v227 = *(*int32)(unsafe.Add(mBase, _c_F_hashtableAddOrFind[2]))
 									if v227 != int32(1) {
 										v236 = F_findBucketForInsert(m, l0, v200, v11+int32(12), v11+int32(8))
 										mBase = m.M
@@ -708,10 +708,10 @@ func F_hashtableAddOrFind(m *base.Module, l0 int32, l1 int32, l2 int32) int32 {
 			if v25 == int32(0) {
 				v31 = v11 + int32(12)
 				v32 = int32(4)
-				v33 = int32(_a228)
-				v41 = *(*int64)(unsafe.Add(mBase, _consts[142]))
+				v33 = int32(_a_F_hashtableAddOrFind_0)
+				v41 = *(*int64)(unsafe.Add(mBase, _c_F_hashtableAddOrFind[0]))
 				v43 = v41 ^ int64(8317987319222330741)
-				v44 = *(*int64)(unsafe.Add(mBase, _consts[141]))
+				v44 = *(*int64)(unsafe.Add(mBase, _c_F_hashtableAddOrFind[1]))
 				v46 = v44 ^ int64(7237128888997146477)
 				v48 = v41 ^ int64(7816392313619706465)
 				v50 = v44 ^ int64(8387220255154660723)
@@ -928,7 +928,7 @@ func F_hashtableAddOrFind(m *base.Module, l0 int32, l1 int32, l2 int32) int32 {
 										return base.B2i32(v206 == int32(0))
 									}
 								} else {
-									v227 = *(*int32)(unsafe.Add(mBase, _consts[427]))
+									v227 = *(*int32)(unsafe.Add(mBase, _c_F_hashtableAddOrFind[2]))
 									if v227 != int32(1) {
 										v236 = F_findBucketForInsert(m, l0, v200, v11+int32(12), v11+int32(8))
 										mBase = m.M
@@ -1074,7 +1074,7 @@ func F_hashtableAddOrFind(m *base.Module, l0 int32, l1 int32, l2 int32) int32 {
 											return base.B2i32(v206 == int32(0))
 										}
 									} else {
-										v227 = *(*int32)(unsafe.Add(mBase, _consts[427]))
+										v227 = *(*int32)(unsafe.Add(mBase, _c_F_hashtableAddOrFind[2]))
 										if v227 != int32(1) {
 											v236 = F_findBucketForInsert(m, l0, v200, v11+int32(12), v11+int32(8))
 											mBase = m.M
@@ -1316,7 +1316,7 @@ func F_hashtableCleanupIterator(m *base.Module, l0 int32) {
 	}
 L1:
 	;
-	F__serverAssert(m, int32(_a826), int32(_a827), int32(1240))
+	F__serverAssert(m, int32(_a_F_hashtableCleanupIterator_0), int32(_a_F_hashtableCleanupIterator_1), int32(1240))
 	mBase = m.M
 	v244 = m.ExcPending
 	if v244 != 0 {
@@ -1326,7 +1326,7 @@ L1:
 	}
 L2:
 	;
-	F__serverAssert(m, int32(_a837), int32(_a827), int32(2244))
+	F__serverAssert(m, int32(_a_F_hashtableCleanupIterator_2), int32(_a_F_hashtableCleanupIterator_1), int32(2244))
 	mBase = m.M
 	v238 = m.ExcPending
 	if v238 != 0 {
@@ -1336,7 +1336,7 @@ L2:
 	}
 L3:
 	;
-	F__serverAssert(m, int32(_a836), int32(_a827), int32(1416))
+	F__serverAssert(m, int32(_a_F_hashtableCleanupIterator_3), int32(_a_F_hashtableCleanupIterator_1), int32(1416))
 	mBase = m.M
 	v232 = m.ExcPending
 	if v232 != 0 {
@@ -1444,7 +1444,7 @@ L16:
 	goto L17
 L17:
 	;
-	v48 = *(*int32)(unsafe.Add(mBase, _consts[427]))
+	v48 = *(*int32)(unsafe.Add(mBase, _c_F_hashtableCleanupIterator[0]))
 	if v48 != 0 {
 		goto L18
 	} else {
@@ -1577,7 +1577,7 @@ L37:
 	}
 L38:
 	;
-	F__serverAssert(m, int32(_a826), int32(_a827), int32(1243))
+	F__serverAssert(m, int32(_a_F_hashtableCleanupIterator_0), int32(_a_F_hashtableCleanupIterator_1), int32(1243))
 	mBase = m.M
 	v212 = m.ExcPending
 	if v212 != 0 {
@@ -2295,7 +2295,7 @@ func F_hashtableExpandIfNeeded(m *base.Module, l0 int32) int32 {
 		} else {
 			v63 = int32(12) << (uint(v59) % 32)
 		}
-		v67 = *(*int32)(unsafe.Add(mBase, _consts[427]))
+		v67 = *(*int32)(unsafe.Add(mBase, _c_F_hashtableExpandIfNeeded[0]))
 		if v67 != 0 {
 			v68 = int32(500)
 		} else {
@@ -2323,7 +2323,7 @@ func F_hashtableExpandIfNeeded(m *base.Module, l0 int32) int32 {
 			return v76
 		} else {
 			v14 = int32(0)
-			v16 = int32(*(*uint8)(unsafe.Add(mBase, _consts[401])))
+			v16 = int32(*(*uint8)(unsafe.Add(mBase, _c_F_hashtableExpandIfNeeded[1])))
 			if v16 != int32(1) {
 				v76 = v14
 				return v76
@@ -2563,10 +2563,10 @@ func F_hashtableFind(m *base.Module, l0 int32, l1 int32, l2 int32) int32 {
 		if v19 == int32(0) {
 			v27 = v9 + int32(12)
 			v28 = int32(4)
-			v29 = int32(_a228)
-			v37 = *(*int64)(unsafe.Add(mBase, _consts[142]))
+			v29 = int32(_a_F_hashtableFind_0)
+			v37 = *(*int64)(unsafe.Add(mBase, _c_F_hashtableFind[0]))
 			v39 = v37 ^ int64(8317987319222330741)
-			v40 = *(*int64)(unsafe.Add(mBase, _consts[141]))
+			v40 = *(*int64)(unsafe.Add(mBase, _c_F_hashtableFind[1]))
 			v42 = v40 ^ int64(7237128888997146477)
 			v44 = v37 ^ int64(7816392313619706465)
 			v46 = v40 ^ int64(8387220255154660723)
@@ -2982,10 +2982,10 @@ func F_hashtableFindPositionForInsert(m *base.Module, l0 int32, l1 int32, l2 int
 	if v14 == int32(0) {
 		v22 = v10 + int32(12)
 		v23 = int32(4)
-		v24 = int32(_a228)
-		v32 = *(*int64)(unsafe.Add(mBase, _consts[142]))
+		v24 = int32(_a_F_hashtableFindPositionForInsert_0)
+		v32 = *(*int64)(unsafe.Add(mBase, _c_F_hashtableFindPositionForInsert[0]))
 		v34 = v32 ^ int64(8317987319222330741)
-		v35 = *(*int64)(unsafe.Add(mBase, _consts[141]))
+		v35 = *(*int64)(unsafe.Add(mBase, _c_F_hashtableFindPositionForInsert[1]))
 		v37 = v35 ^ int64(7237128888997146477)
 		v39 = v32 ^ int64(7816392313619706465)
 		v41 = v35 ^ int64(8387220255154660723)
@@ -3160,7 +3160,7 @@ func F_hashtableFindPositionForInsert(m *base.Module, l0 int32, l1 int32, l2 int
 							v228 = int32(1)
 							v232 = *(*int32)(unsafe.Add(mBase, uint32(v10)+8))
 							if int32(base.Ui32(int32(base.Ui32(v227)>>(uint(v228)%32))&int32(4095))>>(uint(v232)%32))&v228 != 0 {
-								F__serverAssert(m, int32(_a830), int32(_a827), int32(1693))
+								F__serverAssert(m, int32(_a_F_hashtableFindPositionForInsert_1), int32(_a_F_hashtableFindPositionForInsert_2), int32(1693))
 								mBase = m.M
 								v260 = m.ExcPending
 								if v260 != 0 {
@@ -3176,7 +3176,7 @@ func F_hashtableFindPositionForInsert(m *base.Module, l0 int32, l1 int32, l2 int
 								v240 = int64(base.Ui64(v191) >> (uint(int64(56)) % 64))
 								*(*uint8)(unsafe.Add(mBase, uint32(v225+v232+int32(2)))) = uint8(v240)
 								if l2 == int32(0) {
-									F__serverAssert(m, int32(_a831), int32(_a827), int32(1700))
+									F__serverAssert(m, int32(_a_F_hashtableFindPositionForInsert_3), int32(_a_F_hashtableFindPositionForInsert_2), int32(1700))
 									mBase = m.M
 									v266 = m.ExcPending
 									if v266 != 0 {
@@ -3211,7 +3211,7 @@ func F_hashtableFindPositionForInsert(m *base.Module, l0 int32, l1 int32, l2 int
 								v228 = int32(1)
 								v232 = *(*int32)(unsafe.Add(mBase, uint32(v10)+8))
 								if int32(base.Ui32(int32(base.Ui32(v227)>>(uint(v228)%32))&int32(4095))>>(uint(v232)%32))&v228 != 0 {
-									F__serverAssert(m, int32(_a830), int32(_a827), int32(1693))
+									F__serverAssert(m, int32(_a_F_hashtableFindPositionForInsert_1), int32(_a_F_hashtableFindPositionForInsert_2), int32(1693))
 									mBase = m.M
 									v260 = m.ExcPending
 									if v260 != 0 {
@@ -3227,7 +3227,7 @@ func F_hashtableFindPositionForInsert(m *base.Module, l0 int32, l1 int32, l2 int
 									v240 = int64(base.Ui64(v191) >> (uint(int64(56)) % 64))
 									*(*uint8)(unsafe.Add(mBase, uint32(v225+v232+int32(2)))) = uint8(v240)
 									if l2 == int32(0) {
-										F__serverAssert(m, int32(_a831), int32(_a827), int32(1700))
+										F__serverAssert(m, int32(_a_F_hashtableFindPositionForInsert_3), int32(_a_F_hashtableFindPositionForInsert_2), int32(1700))
 										mBase = m.M
 										v266 = m.ExcPending
 										if v266 != 0 {
@@ -3250,7 +3250,7 @@ func F_hashtableFindPositionForInsert(m *base.Module, l0 int32, l1 int32, l2 int
 								}
 							}
 						} else {
-							v216 = *(*int32)(unsafe.Add(mBase, _consts[427]))
+							v216 = *(*int32)(unsafe.Add(mBase, _c_F_hashtableFindPositionForInsert[2]))
 							if v216 != int32(1) {
 								v225 = F_findBucketForInsert(m, l0, v191, v10+int32(8), v10+int32(4))
 								mBase = m.M
@@ -3262,7 +3262,7 @@ func F_hashtableFindPositionForInsert(m *base.Module, l0 int32, l1 int32, l2 int
 									v228 = int32(1)
 									v232 = *(*int32)(unsafe.Add(mBase, uint32(v10)+8))
 									if int32(base.Ui32(int32(base.Ui32(v227)>>(uint(v228)%32))&int32(4095))>>(uint(v232)%32))&v228 != 0 {
-										F__serverAssert(m, int32(_a830), int32(_a827), int32(1693))
+										F__serverAssert(m, int32(_a_F_hashtableFindPositionForInsert_1), int32(_a_F_hashtableFindPositionForInsert_2), int32(1693))
 										mBase = m.M
 										v260 = m.ExcPending
 										if v260 != 0 {
@@ -3278,7 +3278,7 @@ func F_hashtableFindPositionForInsert(m *base.Module, l0 int32, l1 int32, l2 int
 										v240 = int64(base.Ui64(v191) >> (uint(int64(56)) % 64))
 										*(*uint8)(unsafe.Add(mBase, uint32(v225+v232+int32(2)))) = uint8(v240)
 										if l2 == int32(0) {
-											F__serverAssert(m, int32(_a831), int32(_a827), int32(1700))
+											F__serverAssert(m, int32(_a_F_hashtableFindPositionForInsert_3), int32(_a_F_hashtableFindPositionForInsert_2), int32(1700))
 											mBase = m.M
 											v266 = m.ExcPending
 											if v266 != 0 {
@@ -3317,7 +3317,7 @@ func F_hashtableFindPositionForInsert(m *base.Module, l0 int32, l1 int32, l2 int
 										v228 = int32(1)
 										v232 = *(*int32)(unsafe.Add(mBase, uint32(v10)+8))
 										if int32(base.Ui32(int32(base.Ui32(v227)>>(uint(v228)%32))&int32(4095))>>(uint(v232)%32))&v228 != 0 {
-											F__serverAssert(m, int32(_a830), int32(_a827), int32(1693))
+											F__serverAssert(m, int32(_a_F_hashtableFindPositionForInsert_1), int32(_a_F_hashtableFindPositionForInsert_2), int32(1693))
 											mBase = m.M
 											v260 = m.ExcPending
 											if v260 != 0 {
@@ -3333,7 +3333,7 @@ func F_hashtableFindPositionForInsert(m *base.Module, l0 int32, l1 int32, l2 int
 											v240 = int64(base.Ui64(v191) >> (uint(int64(56)) % 64))
 											*(*uint8)(unsafe.Add(mBase, uint32(v225+v232+int32(2)))) = uint8(v240)
 											if l2 == int32(0) {
-												F__serverAssert(m, int32(_a831), int32(_a827), int32(1700))
+												F__serverAssert(m, int32(_a_F_hashtableFindPositionForInsert_3), int32(_a_F_hashtableFindPositionForInsert_2), int32(1700))
 												mBase = m.M
 												v266 = m.ExcPending
 												if v266 != 0 {
@@ -3404,7 +3404,7 @@ func F_hashtableFindPositionForInsert(m *base.Module, l0 int32, l1 int32, l2 int
 								v228 = int32(1)
 								v232 = *(*int32)(unsafe.Add(mBase, uint32(v10)+8))
 								if int32(base.Ui32(int32(base.Ui32(v227)>>(uint(v228)%32))&int32(4095))>>(uint(v232)%32))&v228 != 0 {
-									F__serverAssert(m, int32(_a830), int32(_a827), int32(1693))
+									F__serverAssert(m, int32(_a_F_hashtableFindPositionForInsert_1), int32(_a_F_hashtableFindPositionForInsert_2), int32(1693))
 									mBase = m.M
 									v260 = m.ExcPending
 									if v260 != 0 {
@@ -3420,7 +3420,7 @@ func F_hashtableFindPositionForInsert(m *base.Module, l0 int32, l1 int32, l2 int
 									v240 = int64(base.Ui64(v191) >> (uint(int64(56)) % 64))
 									*(*uint8)(unsafe.Add(mBase, uint32(v225+v232+int32(2)))) = uint8(v240)
 									if l2 == int32(0) {
-										F__serverAssert(m, int32(_a831), int32(_a827), int32(1700))
+										F__serverAssert(m, int32(_a_F_hashtableFindPositionForInsert_3), int32(_a_F_hashtableFindPositionForInsert_2), int32(1700))
 										mBase = m.M
 										v266 = m.ExcPending
 										if v266 != 0 {
@@ -3455,7 +3455,7 @@ func F_hashtableFindPositionForInsert(m *base.Module, l0 int32, l1 int32, l2 int
 									v228 = int32(1)
 									v232 = *(*int32)(unsafe.Add(mBase, uint32(v10)+8))
 									if int32(base.Ui32(int32(base.Ui32(v227)>>(uint(v228)%32))&int32(4095))>>(uint(v232)%32))&v228 != 0 {
-										F__serverAssert(m, int32(_a830), int32(_a827), int32(1693))
+										F__serverAssert(m, int32(_a_F_hashtableFindPositionForInsert_1), int32(_a_F_hashtableFindPositionForInsert_2), int32(1693))
 										mBase = m.M
 										v260 = m.ExcPending
 										if v260 != 0 {
@@ -3471,7 +3471,7 @@ func F_hashtableFindPositionForInsert(m *base.Module, l0 int32, l1 int32, l2 int
 										v240 = int64(base.Ui64(v191) >> (uint(int64(56)) % 64))
 										*(*uint8)(unsafe.Add(mBase, uint32(v225+v232+int32(2)))) = uint8(v240)
 										if l2 == int32(0) {
-											F__serverAssert(m, int32(_a831), int32(_a827), int32(1700))
+											F__serverAssert(m, int32(_a_F_hashtableFindPositionForInsert_3), int32(_a_F_hashtableFindPositionForInsert_2), int32(1700))
 											mBase = m.M
 											v266 = m.ExcPending
 											if v266 != 0 {
@@ -3494,7 +3494,7 @@ func F_hashtableFindPositionForInsert(m *base.Module, l0 int32, l1 int32, l2 int
 									}
 								}
 							} else {
-								v216 = *(*int32)(unsafe.Add(mBase, _consts[427]))
+								v216 = *(*int32)(unsafe.Add(mBase, _c_F_hashtableFindPositionForInsert[2]))
 								if v216 != int32(1) {
 									v225 = F_findBucketForInsert(m, l0, v191, v10+int32(8), v10+int32(4))
 									mBase = m.M
@@ -3506,7 +3506,7 @@ func F_hashtableFindPositionForInsert(m *base.Module, l0 int32, l1 int32, l2 int
 										v228 = int32(1)
 										v232 = *(*int32)(unsafe.Add(mBase, uint32(v10)+8))
 										if int32(base.Ui32(int32(base.Ui32(v227)>>(uint(v228)%32))&int32(4095))>>(uint(v232)%32))&v228 != 0 {
-											F__serverAssert(m, int32(_a830), int32(_a827), int32(1693))
+											F__serverAssert(m, int32(_a_F_hashtableFindPositionForInsert_1), int32(_a_F_hashtableFindPositionForInsert_2), int32(1693))
 											mBase = m.M
 											v260 = m.ExcPending
 											if v260 != 0 {
@@ -3522,7 +3522,7 @@ func F_hashtableFindPositionForInsert(m *base.Module, l0 int32, l1 int32, l2 int
 											v240 = int64(base.Ui64(v191) >> (uint(int64(56)) % 64))
 											*(*uint8)(unsafe.Add(mBase, uint32(v225+v232+int32(2)))) = uint8(v240)
 											if l2 == int32(0) {
-												F__serverAssert(m, int32(_a831), int32(_a827), int32(1700))
+												F__serverAssert(m, int32(_a_F_hashtableFindPositionForInsert_3), int32(_a_F_hashtableFindPositionForInsert_2), int32(1700))
 												mBase = m.M
 												v266 = m.ExcPending
 												if v266 != 0 {
@@ -3561,7 +3561,7 @@ func F_hashtableFindPositionForInsert(m *base.Module, l0 int32, l1 int32, l2 int
 											v228 = int32(1)
 											v232 = *(*int32)(unsafe.Add(mBase, uint32(v10)+8))
 											if int32(base.Ui32(int32(base.Ui32(v227)>>(uint(v228)%32))&int32(4095))>>(uint(v232)%32))&v228 != 0 {
-												F__serverAssert(m, int32(_a830), int32(_a827), int32(1693))
+												F__serverAssert(m, int32(_a_F_hashtableFindPositionForInsert_1), int32(_a_F_hashtableFindPositionForInsert_2), int32(1693))
 												mBase = m.M
 												v260 = m.ExcPending
 												if v260 != 0 {
@@ -3577,7 +3577,7 @@ func F_hashtableFindPositionForInsert(m *base.Module, l0 int32, l1 int32, l2 int
 												v240 = int64(base.Ui64(v191) >> (uint(int64(56)) % 64))
 												*(*uint8)(unsafe.Add(mBase, uint32(v225+v232+int32(2)))) = uint8(v240)
 												if l2 == int32(0) {
-													F__serverAssert(m, int32(_a831), int32(_a827), int32(1700))
+													F__serverAssert(m, int32(_a_F_hashtableFindPositionForInsert_3), int32(_a_F_hashtableFindPositionForInsert_2), int32(1700))
 													mBase = m.M
 													v266 = m.ExcPending
 													if v266 != 0 {
@@ -3619,7 +3619,7 @@ func F_hashtableFindPositionForInsert(m *base.Module, l0 int32, l1 int32, l2 int
 	}
 }
 func F_hashtableGetHashFunctionSeed(m *base.Module) int32 {
-	return int32(_a228)
+	return int32(_a_F_hashtableGetHashFunctionSeed_0)
 }
 func F_hashtableGetStats(m *base.Module, l0 int32, l1 int32, l2 int32, l3 int32) {
 	mBase := m.M
@@ -4248,7 +4248,7 @@ L2:
 	return int32(0)
 L3:
 	;
-	F__serverAssert(m, int32(_a838), int32(_a827), int32(1209))
+	F__serverAssert(m, int32(_a_F_hashtableNext_0), int32(_a_F_hashtableNext_1), int32(1209))
 	mBase = m.M
 	v617 = m.ExcPending
 	if v617 != 0 {
@@ -5247,8 +5247,8 @@ L6:
 	v31 = int32(0)
 	F___lock(m, int32(9116960))
 	mBase = m.M
-	v38 = *(*int32)(unsafe.Add(mBase, _consts[183]))
-	v40 = *(*int32)(unsafe.Add(mBase, _consts[184]))
+	v38 = *(*int32)(unsafe.Add(mBase, _c_F_hashtableRandomEntry[0]))
+	v40 = *(*int32)(unsafe.Add(mBase, _c_F_hashtableRandomEntry[1]))
 	if v40 != 0 {
 		goto L10
 	} else {
@@ -5277,11 +5277,11 @@ L9:
 L10:
 	;
 	v44 = int32(0)
-	v45 = *(*int32)(unsafe.Add(mBase, _consts[185]))
+	v45 = *(*int32)(unsafe.Add(mBase, _c_F_hashtableRandomEntry[2]))
 	v46 = int32(2)
 	v48 = v38 + v45<<(uint(v46)%32)
 	v49 = *(*int32)(unsafe.Add(mBase, uint32(v48)))
-	v51 = *(*int32)(unsafe.Add(mBase, _consts[186]))
+	v51 = *(*int32)(unsafe.Add(mBase, _c_F_hashtableRandomEntry[3]))
 	v55 = *(*int32)(unsafe.Add(mBase, uint32(v38+v51<<(uint(v46)%32))))
 	v56 = v49 + v55
 	*(*int32)(unsafe.Add(mBase, uint32(v48))) = v56
@@ -5309,7 +5309,7 @@ L13:
 	goto L14
 L14:
 	;
-	*(*int32)(unsafe.Add(mBase, _consts[186])) = v63
+	*(*int32)(unsafe.Add(mBase, _c_F_hashtableRandomEntry[3])) = v63
 	v65 = int32(0)
 	v68 = v45 + int32(1)
 	if v68 == v40 {
@@ -5327,7 +5327,7 @@ L16:
 	goto L17
 L17:
 	;
-	*(*int32)(unsafe.Add(mBase, _consts[185])) = v70
+	*(*int32)(unsafe.Add(mBase, _c_F_hashtableRandomEntry[2])) = v70
 	v75 = int32(base.Ui32(v56) >> (uint(int32(1)) % 32))
 	goto L9
 L18:
@@ -5362,7 +5362,7 @@ L22:
 	}
 L23:
 	;
-	v102 = *(*int32)(unsafe.Add(mBase, _consts[427]))
+	v102 = *(*int32)(unsafe.Add(mBase, _c_F_hashtableRandomEntry[4]))
 	if v102 != 0 {
 		v106 = v96
 		goto L21
@@ -5408,8 +5408,8 @@ L30:
 	v111 = int32(0)
 	F___lock(m, int32(9116960))
 	mBase = m.M
-	v118 = *(*int32)(unsafe.Add(mBase, _consts[183]))
-	v120 = *(*int32)(unsafe.Add(mBase, _consts[184]))
+	v118 = *(*int32)(unsafe.Add(mBase, _c_F_hashtableRandomEntry[0]))
+	v120 = *(*int32)(unsafe.Add(mBase, _c_F_hashtableRandomEntry[1]))
 	if v120 != 0 {
 		goto L33
 	} else {
@@ -5429,11 +5429,11 @@ L32:
 L33:
 	;
 	v124 = int32(0)
-	v125 = *(*int32)(unsafe.Add(mBase, _consts[185]))
+	v125 = *(*int32)(unsafe.Add(mBase, _c_F_hashtableRandomEntry[2]))
 	v126 = int32(2)
 	v128 = v118 + v125<<(uint(v126)%32)
 	v129 = *(*int32)(unsafe.Add(mBase, uint32(v128)))
-	v131 = *(*int32)(unsafe.Add(mBase, _consts[186]))
+	v131 = *(*int32)(unsafe.Add(mBase, _c_F_hashtableRandomEntry[3]))
 	v135 = *(*int32)(unsafe.Add(mBase, uint32(v118+v131<<(uint(v126)%32))))
 	v136 = v129 + v135
 	*(*int32)(unsafe.Add(mBase, uint32(v128))) = v136
@@ -5461,7 +5461,7 @@ L36:
 	goto L37
 L37:
 	;
-	*(*int32)(unsafe.Add(mBase, _consts[186])) = v143
+	*(*int32)(unsafe.Add(mBase, _c_F_hashtableRandomEntry[3])) = v143
 	v145 = int32(0)
 	v148 = v125 + int32(1)
 	if v148 == v120 {
@@ -5479,7 +5479,7 @@ L39:
 	goto L40
 L40:
 	;
-	*(*int32)(unsafe.Add(mBase, _consts[185])) = v150
+	*(*int32)(unsafe.Add(mBase, _c_F_hashtableRandomEntry[2])) = v150
 	v155 = int32(base.Ui32(v136) >> (uint(int32(1)) % 32))
 	goto L32
 }
@@ -5527,7 +5527,7 @@ L1:
 	return v40
 L2:
 	;
-	v10 = *(*int32)(unsafe.Add(mBase, _consts[427]))
+	v10 = *(*int32)(unsafe.Add(mBase, _c_F_hashtableRehashMicroseconds[0]))
 	if v10 != 0 {
 		v40 = v3
 		goto L1
@@ -5537,7 +5537,7 @@ L2:
 L3:
 	;
 	v11 = int32(0)
-	v13 = *(*int32)(unsafe.Add(mBase, _consts[23]))
+	v13 = *(*int32)(unsafe.Add(mBase, _c_F_hashtableRehashMicroseconds[1]))
 	v14 = m.T0[v13].(func(*base.Module) int64)(m)
 	mBase = m.M
 	v15 = *(*int32)(unsafe.Add(mBase, uint32(l0)+4))
@@ -5587,7 +5587,7 @@ L9:
 	}
 L10:
 	;
-	v31 = *(*int32)(unsafe.Add(mBase, _consts[23]))
+	v31 = *(*int32)(unsafe.Add(mBase, _c_F_hashtableRehashMicroseconds[1]))
 	v32 = m.T0[v31].(func(*base.Module) int64)(m)
 	mBase = m.M
 	if base.Ui64(l1) <= base.Ui64(v32-v14) {
@@ -5636,7 +5636,7 @@ func F_hashtableRehashingInfo(m *base.Module, l0 int32, l1 int32, l2 int32) {
 		*(*int32)(unsafe.Add(mBase, uint32(l2))) = v28
 		return
 	} else {
-		F__serverAssert(m, int32(_a828), int32(_a827), int32(1440))
+		F__serverAssert(m, int32(_a_F_hashtableRehashingInfo_0), int32(_a_F_hashtableRehashingInfo_1), int32(1440))
 		mBase = m.M
 		v12 = m.ExcPending
 		if v12 != 0 {
@@ -5709,7 +5709,7 @@ func F_hashtableRelease(m *base.Module, l0 int32) {
 	}
 L1:
 	;
-	F__serverAssert(m, int32(_a826), int32(_a827), int32(1240))
+	F__serverAssert(m, int32(_a_F_hashtableRelease_0), int32(_a_F_hashtableRelease_1), int32(1240))
 	mBase = m.M
 	v73 = m.ExcPending
 	if v73 != 0 {
@@ -5786,7 +5786,7 @@ L11:
 	}
 L12:
 	;
-	F__serverAssert(m, int32(_a826), int32(_a827), int32(1243))
+	F__serverAssert(m, int32(_a_F_hashtableRelease_0), int32(_a_F_hashtableRelease_1), int32(1243))
 	mBase = m.M
 	v29 = m.ExcPending
 	if v29 != 0 {
@@ -5949,7 +5949,7 @@ func F_hashtableRightsizeIfNeeded(m *base.Module, l0 int32) int32 {
 			} else {
 				v17 = int32(12) << (uint(v13) % 32)
 			}
-			v21 = *(*int32)(unsafe.Add(mBase, _consts[427]))
+			v21 = *(*int32)(unsafe.Add(mBase, _c_F_hashtableRightsizeIfNeeded[0]))
 			if v21 != 0 {
 				v22 = int32(3)
 			} else {
@@ -6337,7 +6337,7 @@ func F_hashtableScanDefrag(m *base.Module, l0 int32, l1 int32, l2 int32, l3 int3
 	}
 L1:
 	;
-	F__serverAssert(m, int32(_a836), int32(_a827), int32(1416))
+	F__serverAssert(m, int32(_a_F_hashtableScanDefrag_0), int32(_a_F_hashtableScanDefrag_1), int32(1416))
 	mBase = m.M
 	v795 = m.ExcPending
 	if v795 != 0 {
@@ -7157,7 +7157,7 @@ L116:
 	goto L117
 L117:
 	;
-	v762 = *(*int32)(unsafe.Add(mBase, _consts[427]))
+	v762 = *(*int32)(unsafe.Add(mBase, _c_F_hashtableScanDefrag[0]))
 	if v762 != 0 {
 		goto L118
 	} else {
@@ -7250,33 +7250,33 @@ func F_hashtableSdsHash(m *base.Module, l0 int32) int64 {
 	v7 = int32(*(*uint8)(unsafe.Add(mBase, uint32(l0+int32(-1)))))
 	switch v7 & int32(7) {
 	case 0:
-		v13 = F_siphash(m, l0, int32(base.Ui32(v7)>>(uint(int32(3))%32)), int32(_a228))
+		v13 = F_siphash(m, l0, int32(base.Ui32(v7)>>(uint(int32(3))%32)), int32(_a_F_hashtableSdsHash_0))
 		mBase = m.M
 		return v13
 	case 1:
 		v17 = int32(*(*uint8)(unsafe.Add(mBase, uint32(l0+int32(-3)))))
-		v19 = F_siphash(m, l0, v17, int32(_a228))
+		v19 = F_siphash(m, l0, v17, int32(_a_F_hashtableSdsHash_0))
 		mBase = m.M
 		return v19
 	case 2:
 		v23 = int32(*(*uint16)(unsafe.Add(mBase, uint32(l0+int32(-5)))))
-		v25 = F_siphash(m, l0, v23, int32(_a228))
+		v25 = F_siphash(m, l0, v23, int32(_a_F_hashtableSdsHash_0))
 		mBase = m.M
 		return v25
 	case 3:
 		v29 = *(*int32)(unsafe.Add(mBase, uint32(l0+int32(-9))))
-		v31 = F_siphash(m, l0, v29, int32(_a228))
+		v31 = F_siphash(m, l0, v29, int32(_a_F_hashtableSdsHash_0))
 		mBase = m.M
 		return v31
 	case 4:
 		v35 = *(*int32)(unsafe.Add(mBase, uint32(l0+int32(-17))))
 		v36 = v35
-		v38 = F_siphash(m, l0, v36, int32(_a228))
+		v38 = F_siphash(m, l0, v36, int32(_a_F_hashtableSdsHash_0))
 		mBase = m.M
 		return v38
 	default:
 		v36 = int32(0)
-		v38 = F_siphash(m, l0, v36, int32(_a228))
+		v38 = F_siphash(m, l0, v36, int32(_a_F_hashtableSdsHash_0))
 		mBase = m.M
 		return v38
 	}
@@ -7292,9 +7292,9 @@ func F_hashtableSetHashFunctionSeed(m *base.Module, l0 int32) {
 	_ = v8
 	v2 = int32(0)
 	v3 = *(*int64)(unsafe.Add(mBase, uint32(l0)))
-	*(*int64)(unsafe.Add(mBase, _consts[142])) = v3
+	*(*int64)(unsafe.Add(mBase, _c_F_hashtableSetHashFunctionSeed[0])) = v3
 	v8 = *(*int64)(unsafe.Add(mBase, uint32(l0+int32(8))))
-	*(*int64)(unsafe.Add(mBase, _consts[141])) = v8
+	*(*int64)(unsafe.Add(mBase, _c_F_hashtableSetHashFunctionSeed[1])) = v8
 	return
 }
 func F_hashtableSize(m *base.Module, l0 int32) int32 {

@@ -2613,7 +2613,7 @@ func F_clusterCommandSpecial(m *base.Module, l0 int32) int32 {
 	v18 = *(*int32)(unsafe.Add(mBase, uint32(v17)+4))
 	v19 = F_objectGetVal(m, v18)
 	mBase = m.M
-	v20 = int32(_a370)
+	v20 = int32(_a_F_clusterCommandSpecial_0)
 	v23 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v19))))
 	if v23 != 0 {
 		goto L7
@@ -2643,7 +2643,7 @@ L4:
 	v178 = *(*int32)(unsafe.Add(mBase, uint32(v177)+4))
 	v179 = F_objectGetVal(m, v178)
 	mBase = m.M
-	v180 = int32(_a371)
+	v180 = int32(_a_F_clusterCommandSpecial_1)
 	v183 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v179))))
 	if v183 != 0 {
 		goto L53
@@ -2784,7 +2784,7 @@ L22:
 	v76 = F_objectGetVal(m, v75)
 	mBase = m.M
 	*(*int32)(unsafe.Add(mBase, uint32(v15)+64)) = v76
-	F_addReplyErrorFormat(m, l0, int32(_a372), v15+int32(64))
+	F_addReplyErrorFormat(m, l0, int32(_a_F_clusterCommandSpecial_2), v15+int32(64))
 	mBase = m.M
 	v82 = m.ExcPending
 	if v82 != 0 {
@@ -2805,7 +2805,7 @@ L24:
 	}
 L25:
 	;
-	F_addReplyErrorFormat(m, l0, int32(_a373), int32(0))
+	F_addReplyErrorFormat(m, l0, int32(_a_F_clusterCommandSpecial_3), int32(0))
 	mBase = m.M
 	v91 = m.ExcPending
 	if v91 != 0 {
@@ -2849,7 +2849,7 @@ L30:
 	v104 = F_objectGetVal(m, v103)
 	mBase = m.M
 	*(*int32)(unsafe.Add(mBase, uint32(v15)+48)) = v104
-	F_addReplyErrorFormat(m, l0, int32(_a374), v15+int32(48))
+	F_addReplyErrorFormat(m, l0, int32(_a_F_clusterCommandSpecial_4), v15+int32(48))
 	mBase = m.M
 	v110 = m.ExcPending
 	if v110 != 0 {
@@ -2890,7 +2890,7 @@ L34:
 	}
 L35:
 	;
-	F_addReplyErrorFormat(m, l0, int32(_a375), int32(0))
+	F_addReplyErrorFormat(m, l0, int32(_a_F_clusterCommandSpecial_5), int32(0))
 	mBase = m.M
 	v122 = m.ExcPending
 	if v122 != 0 {
@@ -2923,7 +2923,7 @@ L39:
 	goto L40
 L40:
 	;
-	v131 = *(*int32)(unsafe.Add(mBase, _consts[5]))
+	v131 = *(*int32)(unsafe.Add(mBase, _c_F_clusterCommandSpecial[0]))
 	if v131 != int32(28) {
 		goto L37
 	} else {
@@ -2941,7 +2941,7 @@ L41:
 	mBase = m.M
 	*(*int32)(unsafe.Add(mBase, uint32(v15)+4)) = v139
 	*(*int32)(unsafe.Add(mBase, uint32(v15))) = v136
-	F_addReplyErrorFormat(m, l0, int32(_a376), v15)
+	F_addReplyErrorFormat(m, l0, int32(_a_F_clusterCommandSpecial_6), v15)
 	mBase = m.M
 	v144 = m.ExcPending
 	if v144 != 0 {
@@ -2954,7 +2954,7 @@ L42:
 	goto L3
 L43:
 	;
-	v148 = *(*int32)(unsafe.Add(mBase, _consts[209]))
+	v148 = *(*int32)(unsafe.Add(mBase, _c_F_clusterCommandSpecial[1]))
 	v149 = F_catClientInfoShortString(m, v145, l0, v148)
 	mBase = m.M
 	v150 = m.ExcPending
@@ -2965,7 +2965,7 @@ L43:
 	}
 L44:
 	;
-	v152 = *(*int32)(unsafe.Add(mBase, _consts[6]))
+	v152 = *(*int32)(unsafe.Add(mBase, _c_F_clusterCommandSpecial[2]))
 	if int32(2) < v152 {
 		goto L45
 	} else {
@@ -2991,7 +2991,7 @@ L46:
 	*(*int32)(unsafe.Add(mBase, uint32(v15)+16)) = v157
 	v162 = *(*int64)(unsafe.Add(mBase, uint32(v15)+352))
 	*(*int64)(unsafe.Add(mBase, uint32(v15)+24)) = v162
-	F__serverLog(m, int32(2), int32(_a377), v15+int32(16))
+	F__serverLog(m, int32(2), int32(_a_F_clusterCommandSpecial_7), v15+int32(16))
 	mBase = m.M
 	v169 = m.ExcPending
 	if v169 != 0 {
@@ -3004,7 +3004,7 @@ L47:
 	goto L45
 L48:
 	;
-	v174 = *(*int32)(unsafe.Add(mBase, _consts[84]))
+	v174 = *(*int32)(unsafe.Add(mBase, _c_F_clusterCommandSpecial[3]))
 	F_addReply(m, l0, v174)
 	mBase = m.M
 	v176 = m.ExcPending
@@ -3022,7 +3022,7 @@ L50:
 	v364 = *(*int32)(unsafe.Add(mBase, uint32(v363)+4))
 	v365 = F_objectGetVal(m, v364)
 	mBase = m.M
-	v366 = int32(_a378)
+	v366 = int32(_a_F_clusterCommandSpecial_8)
 	v369 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v365))))
 	if v369 != 0 {
 		goto L96
@@ -3128,7 +3128,7 @@ L63:
 L64:
 	;
 	v226 = int32(1)
-	v228 = *(*int32)(unsafe.Add(mBase, _consts[65]))
+	v228 = *(*int32)(unsafe.Add(mBase, _c_F_clusterCommandSpecial[4]))
 	if v228 < v226 {
 		v259 = v226
 		goto L67
@@ -3138,7 +3138,7 @@ L64:
 L65:
 	;
 	v271 = int32(1)
-	v273 = *(*int32)(unsafe.Add(mBase, _consts[154]))
+	v273 = *(*int32)(unsafe.Add(mBase, _c_F_clusterCommandSpecial[5]))
 	v274 = *(*int32)(unsafe.Add(mBase, uint32(v273)+2160))
 	if v274 < v271 {
 		goto L78
@@ -3159,7 +3159,7 @@ L67:
 L68:
 	;
 	v231 = int32(0)
-	v232 = *(*int32)(unsafe.Add(mBase, _consts[137]))
+	v232 = *(*int32)(unsafe.Add(mBase, _c_F_clusterCommandSpecial[6]))
 	v235 = v228
 	v236 = v232
 	v237 = v231
@@ -3203,8 +3203,8 @@ L72:
 L73:
 	;
 	v249 = int32(0)
-	v250 = *(*int32)(unsafe.Add(mBase, _consts[65]))
-	v252 = *(*int32)(unsafe.Add(mBase, _consts[137]))
+	v250 = *(*int32)(unsafe.Add(mBase, _c_F_clusterCommandSpecial[4]))
+	v252 = *(*int32)(unsafe.Add(mBase, _c_F_clusterCommandSpecial[6]))
 	v253 = v250
 	v254 = v252
 	goto L71
@@ -3217,7 +3217,7 @@ L75:
 	goto L70
 L76:
 	;
-	F_addReplyError(m, l0, int32(_a379))
+	F_addReplyError(m, l0, int32(_a_F_clusterCommandSpecial_9))
 	mBase = m.M
 	v270 = m.ExcPending
 	if v270 != 0 {
@@ -3310,10 +3310,10 @@ L89:
 	goto L81
 L90:
 	;
-	v354 = *(*int32)(unsafe.Add(mBase, _consts[136]))
-	v355 = *(*int32)(unsafe.Add(mBase, uint32(v354)+uint32(_consts[150])))
-	*(*int32)(unsafe.Add(mBase, uint32(v354)+uint32(_consts[150]))) = v355 | int32(6)
-	v360 = *(*int32)(unsafe.Add(mBase, _consts[84]))
+	v354 = *(*int32)(unsafe.Add(mBase, _c_F_clusterCommandSpecial[7]))
+	v355 = *(*int32)(unsafe.Add(mBase, uint32(v354)+uint32(_c_F_clusterCommandSpecial[8])))
+	*(*int32)(unsafe.Add(mBase, uint32(v354)+uint32(_c_F_clusterCommandSpecial[8]))) = v355 | int32(6)
+	v360 = *(*int32)(unsafe.Add(mBase, _c_F_clusterCommandSpecial[3]))
 	F_addReply(m, l0, v360)
 	mBase = m.M
 	v362 = m.ExcPending
@@ -3332,7 +3332,7 @@ L92:
 	v637 = *(*int32)(unsafe.Add(mBase, uint32(v636)+4))
 	v638 = F_objectGetVal(m, v637)
 	mBase = m.M
-	v639 = int32(_a380)
+	v639 = int32(_a_F_clusterCommandSpecial_10)
 	v642 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v638))))
 	if v642 != 0 {
 		goto L180
@@ -3441,7 +3441,7 @@ L106:
 	v408 = *(*int32)(unsafe.Add(mBase, uint32(v407)+4))
 	v409 = F_objectGetVal(m, v408)
 	mBase = m.M
-	v410 = int32(_a381)
+	v410 = int32(_a_F_clusterCommandSpecial_11)
 	v413 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v409))))
 	if v413 != 0 {
 		goto L109
@@ -3555,7 +3555,7 @@ L121:
 	v456 = *(*int32)(unsafe.Add(mBase, uint32(v455)+4))
 	v457 = F_objectGetVal(m, v456)
 	mBase = m.M
-	v458 = int32(_a381)
+	v458 = int32(_a_F_clusterCommandSpecial_11)
 	v461 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v457))))
 	if v461 != 0 {
 		goto L124
@@ -3704,7 +3704,7 @@ L139:
 	}
 L140:
 	;
-	F_addReplyError(m, l0, int32(_a343))
+	F_addReplyError(m, l0, int32(_a_F_clusterCommandSpecial_12))
 	mBase = m.M
 	v531 = m.ExcPending
 	if v531 != 0 {
@@ -3767,7 +3767,7 @@ L149:
 	goto L135
 L150:
 	;
-	v574 = *(*int32)(unsafe.Add(mBase, _consts[136]))
+	v574 = *(*int32)(unsafe.Add(mBase, _c_F_clusterCommandSpecial[7]))
 	v580 = *(*int32)(unsafe.Add(mBase, uint32(v574+v572<<(uint(int32(2))%32)+int32(52))))
 	if v496 != 0 {
 		goto L160
@@ -3780,7 +3780,7 @@ L151:
 	goto L150
 L152:
 	;
-	F_addReplyError(m, l0, int32(_a343))
+	F_addReplyError(m, l0, int32(_a_F_clusterCommandSpecial_12))
 	mBase = m.M
 	v568 = m.ExcPending
 	if v568 != 0 {
@@ -3859,15 +3859,15 @@ L161:
 	}
 L162:
 	;
-	v593 = int32(_a382)
+	v593 = int32(_a_F_clusterCommandSpecial_13)
 	goto L158
 L163:
 	;
-	v593 = int32(_a383)
+	v593 = int32(_a_F_clusterCommandSpecial_14)
 	goto L158
 L164:
 	;
-	v593 = int32(_a384)
+	v593 = int32(_a_F_clusterCommandSpecial_15)
 	goto L158
 L165:
 	;
@@ -3907,10 +3907,10 @@ L169:
 	}
 L170:
 	;
-	v627 = *(*int32)(unsafe.Add(mBase, _consts[136]))
-	v628 = *(*int32)(unsafe.Add(mBase, uint32(v627)+uint32(_consts[150])))
-	*(*int32)(unsafe.Add(mBase, uint32(v627)+uint32(_consts[150]))) = v628 | int32(6)
-	v633 = *(*int32)(unsafe.Add(mBase, _consts[84]))
+	v627 = *(*int32)(unsafe.Add(mBase, _c_F_clusterCommandSpecial[7]))
+	v628 = *(*int32)(unsafe.Add(mBase, uint32(v627)+uint32(_c_F_clusterCommandSpecial[8])))
+	*(*int32)(unsafe.Add(mBase, uint32(v627)+uint32(_c_F_clusterCommandSpecial[8]))) = v628 | int32(6)
+	v633 = *(*int32)(unsafe.Add(mBase, _c_F_clusterCommandSpecial[3]))
 	F_addReply(m, l0, v633)
 	mBase = m.M
 	v635 = m.ExcPending
@@ -3925,7 +3925,7 @@ L171:
 L172:
 	;
 	v2678 = int32(0)
-	v2679 = *(*int32)(unsafe.Add(mBase, _consts[154]))
+	v2679 = *(*int32)(unsafe.Add(mBase, _c_F_clusterCommandSpecial[5]))
 	v2680 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v2679)+88)))
 	if v2680&int32(1) == v2678 {
 		goto L792
@@ -3934,7 +3934,7 @@ L172:
 	}
 L173:
 	;
-	v2674 = *(*int32)(unsafe.Add(mBase, _consts[86]))
+	v2674 = *(*int32)(unsafe.Add(mBase, _c_F_clusterCommandSpecial[9]))
 	F_addReplyErrorObject(m, l0, v2674)
 	mBase = m.M
 	v2676 = m.ExcPending
@@ -3945,7 +3945,7 @@ L173:
 	}
 L174:
 	;
-	F_addReplyError(m, l0, int32(_a385))
+	F_addReplyError(m, l0, int32(_a_F_clusterCommandSpecial_16))
 	mBase = m.M
 	v2671 = m.ExcPending
 	if v2671 != 0 {
@@ -3957,7 +3957,7 @@ L175:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v15)+100)) = v834
 	*(*int32)(unsafe.Add(mBase, uint32(v15)+96)) = v833
-	F_addReplyErrorFormat(m, l0, int32(_a386), v15+int32(96))
+	F_addReplyErrorFormat(m, l0, int32(_a_F_clusterCommandSpecial_17), v15+int32(96))
 	mBase = m.M
 	v2666 = m.ExcPending
 	if v2666 != 0 {
@@ -3971,7 +3971,7 @@ L176:
 	v917 = *(*int32)(unsafe.Add(mBase, uint32(v916)+4))
 	v918 = F_objectGetVal(m, v917)
 	mBase = m.M
-	v919 = int32(_a387)
+	v919 = int32(_a_F_clusterCommandSpecial_18)
 	v922 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v918))))
 	if v922 != 0 {
 		goto L262
@@ -4080,7 +4080,7 @@ L190:
 	v681 = *(*int32)(unsafe.Add(mBase, uint32(v680)+4))
 	v682 = F_objectGetVal(m, v681)
 	mBase = m.M
-	v683 = int32(_a388)
+	v683 = int32(_a_F_clusterCommandSpecial_19)
 	v686 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v682))))
 	if v686 != 0 {
 		goto L193
@@ -4216,7 +4216,7 @@ L208:
 	v736 = *(*int32)(unsafe.Add(mBase, uint32(v735)+4))
 	v737 = F_objectGetVal(m, v736)
 	mBase = m.M
-	v738 = int32(_a388)
+	v738 = int32(_a_F_clusterCommandSpecial_19)
 	v741 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v737))))
 	if v741 != 0 {
 		goto L211
@@ -4362,7 +4362,7 @@ L226:
 	}
 L227:
 	;
-	F_addReplyError(m, l0, int32(_a343))
+	F_addReplyError(m, l0, int32(_a_F_clusterCommandSpecial_12))
 	mBase = m.M
 	v812 = m.ExcPending
 	if v812 != 0 {
@@ -4412,7 +4412,7 @@ L233:
 	}
 L234:
 	;
-	F_addReplyError(m, l0, int32(_a343))
+	F_addReplyError(m, l0, int32(_a_F_clusterCommandSpecial_12))
 	mBase = m.M
 	v830 = m.ExcPending
 	if v830 != 0 {
@@ -4453,7 +4453,7 @@ L239:
 	goto L3
 L240:
 	;
-	v837 = *(*int32)(unsafe.Add(mBase, _consts[136]))
+	v837 = *(*int32)(unsafe.Add(mBase, _c_F_clusterCommandSpecial[7]))
 	v843 = v833
 	goto L241
 L241:
@@ -4521,15 +4521,15 @@ L247:
 	}
 L248:
 	;
-	v868 = int32(_a382)
+	v868 = int32(_a_F_clusterCommandSpecial_13)
 	goto L244
 L249:
 	;
-	v868 = int32(_a383)
+	v868 = int32(_a_F_clusterCommandSpecial_14)
 	goto L244
 L250:
 	;
-	v868 = int32(_a384)
+	v868 = int32(_a_F_clusterCommandSpecial_15)
 	goto L244
 L251:
 	;
@@ -4572,10 +4572,10 @@ L256:
 	}
 L257:
 	;
-	v906 = *(*int32)(unsafe.Add(mBase, _consts[136]))
-	v907 = *(*int32)(unsafe.Add(mBase, uint32(v906)+uint32(_consts[150])))
-	*(*int32)(unsafe.Add(mBase, uint32(v906)+uint32(_consts[150]))) = v907 | int32(6)
-	v912 = *(*int32)(unsafe.Add(mBase, _consts[84]))
+	v906 = *(*int32)(unsafe.Add(mBase, _c_F_clusterCommandSpecial[7]))
+	v907 = *(*int32)(unsafe.Add(mBase, uint32(v906)+uint32(_c_F_clusterCommandSpecial[8])))
+	*(*int32)(unsafe.Add(mBase, uint32(v906)+uint32(_c_F_clusterCommandSpecial[8]))) = v907 | int32(6)
+	v912 = *(*int32)(unsafe.Add(mBase, _c_F_clusterCommandSpecial[3]))
 	F_addReply(m, l0, v912)
 	mBase = m.M
 	v914 = m.ExcPending
@@ -4594,7 +4594,7 @@ L259:
 	v964 = *(*int32)(unsafe.Add(mBase, uint32(v963)+4))
 	v965 = F_objectGetVal(m, v964)
 	mBase = m.M
-	v966 = int32(_a389)
+	v966 = int32(_a_F_clusterCommandSpecial_20)
 	v969 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v965))))
 	if v969 != 0 {
 		goto L278
@@ -4716,7 +4716,7 @@ L275:
 	v1028 = *(*int32)(unsafe.Add(mBase, uint32(v1027)+4))
 	v1029 = F_objectGetVal(m, v1028)
 	mBase = m.M
-	v1030 = int32(_a390)
+	v1030 = int32(_a_F_clusterCommandSpecial_21)
 	v1033 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v1029))))
 	if v1033 != 0 {
 		goto L300
@@ -4841,7 +4841,7 @@ L290:
 	}
 L291:
 	;
-	v1013 = *(*int32)(unsafe.Add(mBase, _consts[154]))
+	v1013 = *(*int32)(unsafe.Add(mBase, _c_F_clusterCommandSpecial[5]))
 	v1014 = *(*int64)(unsafe.Add(mBase, uint32(v1013)+96))
 	if v1008 != 0 {
 		goto L292
@@ -4850,17 +4850,17 @@ L291:
 	}
 L292:
 	;
-	v1017 = int32(_a391)
+	v1017 = int32(_a_F_clusterCommandSpecial_22)
 	goto L294
 L293:
 	;
-	v1017 = int32(_a392)
+	v1017 = int32(_a_F_clusterCommandSpecial_23)
 	goto L294
 L294:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v15)+128)) = v1017
 	*(*int64)(unsafe.Add(mBase, uint32(v15)+136)) = v1014
-	v1023 = F_sdscatfmt(m, v1010, int32(_a393), v15+int32(128))
+	v1023 = F_sdscatfmt(m, v1010, int32(_a_F_clusterCommandSpecial_24), v15+int32(128))
 	mBase = m.M
 	v1024 = m.ExcPending
 	if v1024 != 0 {
@@ -4887,7 +4887,7 @@ L297:
 	v1090 = *(*int32)(unsafe.Add(mBase, uint32(v1089)+4))
 	v1091 = F_objectGetVal(m, v1090)
 	mBase = m.M
-	v1092 = int32(_a394)
+	v1092 = int32(_a_F_clusterCommandSpecial_25)
 	v1095 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v1091))))
 	if v1095 != 0 {
 		goto L322
@@ -5013,7 +5013,7 @@ L313:
 	}
 L314:
 	;
-	v1077 = *(*int32)(unsafe.Add(mBase, _consts[84]))
+	v1077 = *(*int32)(unsafe.Add(mBase, _c_F_clusterCommandSpecial[3]))
 	F_addReply(m, l0, v1077)
 	mBase = m.M
 	v1079 = m.ExcPending
@@ -5028,14 +5028,14 @@ L315:
 	goto L1
 L316:
 	;
-	v1081 = *(*int32)(unsafe.Add(mBase, _consts[5]))
+	v1081 = *(*int32)(unsafe.Add(mBase, _c_F_clusterCommandSpecial[0]))
 	v1082 = F___strerror_l(m, v1081, v1081)
 	mBase = m.M
 	goto L317
 L317:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v15)+144)) = v1082
-	F_addReplyErrorFormat(m, l0, int32(_a395), v15+int32(144))
+	F_addReplyErrorFormat(m, l0, int32(_a_F_clusterCommandSpecial_26), v15+int32(144))
 	mBase = m.M
 	v1088 = m.ExcPending
 	if v1088 != 0 {
@@ -5053,7 +5053,7 @@ L319:
 	v1313 = *(*int32)(unsafe.Add(mBase, uint32(v1312)+4))
 	v1314 = F_objectGetVal(m, v1313)
 	mBase = m.M
-	v1315 = int32(_a396)
+	v1315 = int32(_a_F_clusterCommandSpecial_27)
 	v1318 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v1314))))
 	if v1318 != 0 {
 		goto L389
@@ -5216,7 +5216,7 @@ L339:
 	goto L334
 L340:
 	;
-	v1257 = *(*int32)(unsafe.Add(mBase, _consts[154]))
+	v1257 = *(*int32)(unsafe.Add(mBase, _c_F_clusterCommandSpecial[5]))
 	if v1205 != v1257 {
 		goto L369
 	} else {
@@ -5303,7 +5303,7 @@ L350:
 	}
 L351:
 	;
-	v1197 = *(*int32)(unsafe.Add(mBase, _consts[136]))
+	v1197 = *(*int32)(unsafe.Add(mBase, _c_F_clusterCommandSpecial[7]))
 	v1198 = *(*int32)(unsafe.Add(mBase, uint32(v1197)+32))
 	v1199 = F_dictFind(m, v1198, v1194)
 	mBase = m.M
@@ -5351,7 +5351,7 @@ L357:
 	v1249 = F_objectGetVal(m, v1248)
 	mBase = m.M
 	*(*int32)(unsafe.Add(mBase, uint32(v15)+160)) = v1249
-	F_addReplyErrorFormat(m, l0, int32(_a397), v15+int32(160))
+	F_addReplyErrorFormat(m, l0, int32(_a_F_clusterCommandSpecial_28), v15+int32(160))
 	mBase = m.M
 	v1255 = m.ExcPending
 	if v1255 != 0 {
@@ -5406,7 +5406,7 @@ L365:
 	}
 L366:
 	;
-	v1244 = *(*int32)(unsafe.Add(mBase, _consts[84]))
+	v1244 = *(*int32)(unsafe.Add(mBase, _c_F_clusterCommandSpecial[3]))
 	F_addReply(m, l0, v1244)
 	mBase = m.M
 	v1246 = m.ExcPending
@@ -5431,7 +5431,7 @@ L369:
 	}
 L370:
 	;
-	F_addReplyError(m, l0, int32(_a398))
+	F_addReplyError(m, l0, int32(_a_F_clusterCommandSpecial_29))
 	mBase = m.M
 	v1261 = m.ExcPending
 	if v1261 != 0 {
@@ -5462,7 +5462,7 @@ L373:
 	}
 L374:
 	;
-	F_addReplyError(m, l0, int32(_a399))
+	F_addReplyError(m, l0, int32(_a_F_clusterCommandSpecial_30))
 	mBase = m.M
 	v1271 = m.ExcPending
 	if v1271 != 0 {
@@ -5475,7 +5475,7 @@ L375:
 	goto L3
 L376:
 	;
-	v1275 = *(*int32)(unsafe.Add(mBase, _consts[209]))
+	v1275 = *(*int32)(unsafe.Add(mBase, _c_F_clusterCommandSpecial[1]))
 	v1276 = F_catClientInfoShortString(m, v1272, l0, v1275)
 	mBase = m.M
 	v1277 = m.ExcPending
@@ -5486,7 +5486,7 @@ L376:
 	}
 L377:
 	;
-	v1279 = *(*int32)(unsafe.Add(mBase, _consts[6]))
+	v1279 = *(*int32)(unsafe.Add(mBase, _c_F_clusterCommandSpecial[2]))
 	if int32(2) < v1279 {
 		goto L378
 	} else {
@@ -5510,7 +5510,7 @@ L379:
 	mBase = m.M
 	*(*int32)(unsafe.Add(mBase, uint32(v15)+180)) = v1276
 	*(*int32)(unsafe.Add(mBase, uint32(v15)+176)) = v1284
-	F__serverLog(m, int32(2), int32(_a400), v15+int32(176))
+	F__serverLog(m, int32(2), int32(_a_F_clusterCommandSpecial_31), v15+int32(176))
 	mBase = m.M
 	v1292 = m.ExcPending
 	if v1292 != 0 {
@@ -5553,10 +5553,10 @@ L383:
 	}
 L384:
 	;
-	v1303 = *(*int32)(unsafe.Add(mBase, _consts[136]))
-	v1304 = *(*int32)(unsafe.Add(mBase, uint32(v1303)+uint32(_consts[150])))
-	*(*int32)(unsafe.Add(mBase, uint32(v1303)+uint32(_consts[150]))) = v1304 | int32(6)
-	v1309 = *(*int32)(unsafe.Add(mBase, _consts[84]))
+	v1303 = *(*int32)(unsafe.Add(mBase, _c_F_clusterCommandSpecial[7]))
+	v1304 = *(*int32)(unsafe.Add(mBase, uint32(v1303)+uint32(_c_F_clusterCommandSpecial[8])))
+	*(*int32)(unsafe.Add(mBase, uint32(v1303)+uint32(_c_F_clusterCommandSpecial[8]))) = v1304 | int32(6)
+	v1309 = *(*int32)(unsafe.Add(mBase, _c_F_clusterCommandSpecial[3]))
 	F_addReply(m, l0, v1309)
 	mBase = m.M
 	v1311 = m.ExcPending
@@ -5574,7 +5574,7 @@ L386:
 	v1669 = *(*int32)(unsafe.Add(mBase, uint32(v1668)+4))
 	v1670 = F_objectGetVal(m, v1669)
 	mBase = m.M
-	v1671 = int32(_a401)
+	v1671 = int32(_a_F_clusterCommandSpecial_32)
 	v1674 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v1670))))
 	if v1674 != 0 {
 		goto L493
@@ -5712,7 +5712,7 @@ L401:
 	}
 L402:
 	;
-	v1364 = int32(_a402)
+	v1364 = int32(_a_F_clusterCommandSpecial_33)
 	v1367 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v1361))))
 	if v1367 != 0 {
 		goto L407
@@ -5723,7 +5723,7 @@ L403:
 	;
 	v1449 = int32(1)
 	v1450 = int32(0)
-	v1451 = *(*int32)(unsafe.Add(mBase, _consts[154]))
+	v1451 = *(*int32)(unsafe.Add(mBase, _c_F_clusterCommandSpecial[5]))
 	v1452 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v1451)+88)))
 	if v1452&v1449 == v1450 {
 		goto L432
@@ -5834,7 +5834,7 @@ L417:
 	v1404 = *(*int32)(unsafe.Add(mBase, uint32(v1403)+12))
 	v1405 = F_objectGetVal(m, v1404)
 	mBase = m.M
-	v1406 = int32(_a403)
+	v1406 = int32(_a_F_clusterCommandSpecial_34)
 	v1409 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v1405))))
 	if v1409 != 0 {
 		goto L420
@@ -5947,7 +5947,7 @@ L432:
 	}
 L433:
 	;
-	v1458 = *(*int32)(unsafe.Add(mBase, _consts[84]))
+	v1458 = *(*int32)(unsafe.Add(mBase, _c_F_clusterCommandSpecial[3]))
 	F_addReply(m, l0, v1458)
 	mBase = m.M
 	v1460 = m.ExcPending
@@ -5962,7 +5962,7 @@ L434:
 	goto L1
 L435:
 	;
-	v1464 = *(*int32)(unsafe.Add(mBase, _consts[209]))
+	v1464 = *(*int32)(unsafe.Add(mBase, _c_F_clusterCommandSpecial[1]))
 	v1465 = F_catClientInfoShortString(m, v1461, l0, v1464)
 	mBase = m.M
 	v1466 = m.ExcPending
@@ -5973,7 +5973,7 @@ L435:
 	}
 L436:
 	;
-	v1468 = *(*int32)(unsafe.Add(mBase, _consts[6]))
+	v1468 = *(*int32)(unsafe.Add(mBase, _c_F_clusterCommandSpecial[2]))
 	if int32(2) < v1468 {
 		goto L437
 	} else {
@@ -5992,7 +5992,7 @@ L437:
 L438:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v15)+208)) = v1465
-	F__serverLog(m, int32(2), int32(_a404), v15+int32(208))
+	F__serverLog(m, int32(2), int32(_a_F_clusterCommandSpecial_35), v15+int32(208))
 	mBase = m.M
 	v1477 = m.ExcPending
 	if v1477 != 0 {
@@ -6005,7 +6005,7 @@ L439:
 	goto L437
 L440:
 	;
-	v1481 = *(*int32)(unsafe.Add(mBase, _consts[154]))
+	v1481 = *(*int32)(unsafe.Add(mBase, _c_F_clusterCommandSpecial[5]))
 	F_clusterSetNodeAsPrimary(m, v1481)
 	mBase = m.M
 	v1483 = m.ExcPending
@@ -6016,7 +6016,7 @@ L440:
 	}
 L441:
 	;
-	v1485 = *(*int32)(unsafe.Add(mBase, _consts[210]))
+	v1485 = *(*int32)(unsafe.Add(mBase, _c_F_clusterCommandSpecial[10]))
 	F_flushAllDataAndResetRDB(m, base.B2i32(v1485 != int32(0)))
 	mBase = m.M
 	v1489 = m.ExcPending
@@ -6067,7 +6067,7 @@ L445:
 	}
 L446:
 	;
-	v1502 = *(*int32)(unsafe.Add(mBase, _consts[154]))
+	v1502 = *(*int32)(unsafe.Add(mBase, _c_F_clusterCommandSpecial[5]))
 	F_updateShardId(m, v1502, v15+int32(352))
 	mBase = m.M
 	v1506 = m.ExcPending
@@ -6078,7 +6078,7 @@ L446:
 	}
 L447:
 	;
-	v1508 = *(*int32)(unsafe.Add(mBase, _consts[6]))
+	v1508 = *(*int32)(unsafe.Add(mBase, _c_F_clusterCommandSpecial[2]))
 	if int32(2) < v1508 {
 		goto L448
 	} else {
@@ -6096,9 +6096,9 @@ L448:
 	}
 L449:
 	;
-	v1512 = *(*int32)(unsafe.Add(mBase, _consts[154]))
+	v1512 = *(*int32)(unsafe.Add(mBase, _c_F_clusterCommandSpecial[5]))
 	*(*int32)(unsafe.Add(mBase, uint32(v15)+192)) = v1512 + int32(48)
-	F__serverLog(m, int32(2), int32(_a261), v15+int32(192))
+	F__serverLog(m, int32(2), int32(_a_F_clusterCommandSpecial_36), v15+int32(192))
 	mBase = m.M
 	v1521 = m.ExcPending
 	if v1521 != 0 {
@@ -6111,10 +6111,10 @@ L450:
 	goto L448
 L451:
 	;
-	v1525 = *(*int32)(unsafe.Add(mBase, _consts[136]))
-	v1526 = *(*int32)(unsafe.Add(mBase, uint32(v1525)+uint32(_consts[150])))
-	*(*int32)(unsafe.Add(mBase, uint32(v1525)+uint32(_consts[150]))) = v1526 | int32(38)
-	v1531 = *(*int32)(unsafe.Add(mBase, _consts[84]))
+	v1525 = *(*int32)(unsafe.Add(mBase, _c_F_clusterCommandSpecial[7]))
+	v1526 = *(*int32)(unsafe.Add(mBase, uint32(v1525)+uint32(_c_F_clusterCommandSpecial[8])))
+	*(*int32)(unsafe.Add(mBase, uint32(v1525)+uint32(_c_F_clusterCommandSpecial[8]))) = v1526 | int32(38)
+	v1531 = *(*int32)(unsafe.Add(mBase, _c_F_clusterCommandSpecial[3]))
 	F_addReply(m, l0, v1531)
 	mBase = m.M
 	v1533 = m.ExcPending
@@ -6129,7 +6129,7 @@ L452:
 	goto L1
 L453:
 	;
-	v1574 = *(*int32)(unsafe.Add(mBase, _consts[154]))
+	v1574 = *(*int32)(unsafe.Add(mBase, _c_F_clusterCommandSpecial[5]))
 	if v1562 != v1574 {
 		goto L464
 	} else {
@@ -6187,7 +6187,7 @@ L462:
 	v1566 = F_objectGetVal(m, v1565)
 	mBase = m.M
 	*(*int32)(unsafe.Add(mBase, uint32(v15)+224)) = v1566
-	F_addReplyErrorFormat(m, l0, int32(_a397), v15+int32(224))
+	F_addReplyErrorFormat(m, l0, int32(_a_F_clusterCommandSpecial_28), v15+int32(224))
 	mBase = m.M
 	v1572 = m.ExcPending
 	if v1572 != 0 {
@@ -6208,7 +6208,7 @@ L464:
 	}
 L465:
 	;
-	F_addReplyError(m, l0, int32(_a405))
+	F_addReplyError(m, l0, int32(_a_F_clusterCommandSpecial_37))
 	mBase = m.M
 	v1578 = m.ExcPending
 	if v1578 != 0 {
@@ -6230,7 +6230,7 @@ L467:
 	}
 L468:
 	;
-	F_addReplyError(m, l0, int32(_a406))
+	F_addReplyError(m, l0, int32(_a_F_clusterCommandSpecial_38))
 	mBase = m.M
 	v1586 = m.ExcPending
 	if v1586 != 0 {
@@ -6260,7 +6260,7 @@ L471:
 L472:
 	;
 	v1597 = int32(1)
-	v1599 = *(*int32)(unsafe.Add(mBase, _consts[65]))
+	v1599 = *(*int32)(unsafe.Add(mBase, _c_F_clusterCommandSpecial[4]))
 	if v1599 < v1597 {
 		v1630 = v1597
 		goto L474
@@ -6281,7 +6281,7 @@ L474:
 L475:
 	;
 	v1602 = int32(0)
-	v1603 = *(*int32)(unsafe.Add(mBase, _consts[137]))
+	v1603 = *(*int32)(unsafe.Add(mBase, _c_F_clusterCommandSpecial[6]))
 	v1606 = v1599
 	v1607 = v1603
 	v1608 = v1602
@@ -6325,8 +6325,8 @@ L479:
 L480:
 	;
 	v1620 = int32(0)
-	v1621 = *(*int32)(unsafe.Add(mBase, _consts[65]))
-	v1623 = *(*int32)(unsafe.Add(mBase, _consts[137]))
+	v1621 = *(*int32)(unsafe.Add(mBase, _c_F_clusterCommandSpecial[4]))
+	v1623 = *(*int32)(unsafe.Add(mBase, _c_F_clusterCommandSpecial[6]))
 	v1624 = v1621
 	v1625 = v1623
 	goto L478
@@ -6339,7 +6339,7 @@ L482:
 	goto L477
 L483:
 	;
-	v1642 = *(*int32)(unsafe.Add(mBase, _consts[154]))
+	v1642 = *(*int32)(unsafe.Add(mBase, _c_F_clusterCommandSpecial[5]))
 	v1643 = v1642
 	goto L470
 L484:
@@ -6355,7 +6355,7 @@ L484:
 	}
 L485:
 	;
-	v1647 = *(*int32)(unsafe.Add(mBase, _consts[84]))
+	v1647 = *(*int32)(unsafe.Add(mBase, _c_F_clusterCommandSpecial[3]))
 	F_addReply(m, l0, v1647)
 	mBase = m.M
 	v1649 = m.ExcPending
@@ -6379,10 +6379,10 @@ L487:
 	}
 L488:
 	;
-	v1658 = *(*int32)(unsafe.Add(mBase, _consts[136]))
-	v1659 = *(*int32)(unsafe.Add(mBase, uint32(v1658)+uint32(_consts[150])))
-	*(*int32)(unsafe.Add(mBase, uint32(v1658)+uint32(_consts[150]))) = v1659 | int32(38)
-	v1664 = *(*int32)(unsafe.Add(mBase, _consts[84]))
+	v1658 = *(*int32)(unsafe.Add(mBase, _c_F_clusterCommandSpecial[7]))
+	v1659 = *(*int32)(unsafe.Add(mBase, uint32(v1658)+uint32(_c_F_clusterCommandSpecial[8])))
+	*(*int32)(unsafe.Add(mBase, uint32(v1658)+uint32(_c_F_clusterCommandSpecial[8]))) = v1659 | int32(38)
+	v1664 = *(*int32)(unsafe.Add(mBase, _c_F_clusterCommandSpecial[3]))
 	F_addReply(m, l0, v1664)
 	mBase = m.M
 	v1666 = m.ExcPending
@@ -6401,7 +6401,7 @@ L490:
 	v1804 = *(*int32)(unsafe.Add(mBase, uint32(v1803)+4))
 	v1805 = F_objectGetVal(m, v1804)
 	mBase = m.M
-	v1806 = int32(_a407)
+	v1806 = int32(_a_F_clusterCommandSpecial_39)
 	v1809 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v1805))))
 	if v1809 != 0 {
 		goto L535
@@ -6579,7 +6579,7 @@ L512:
 	v1789 = F_objectGetVal(m, v1788)
 	mBase = m.M
 	*(*int32)(unsafe.Add(mBase, uint32(v15)+240)) = v1789
-	F_addReplyErrorFormat(m, l0, int32(_a397), v15+int32(240))
+	F_addReplyErrorFormat(m, l0, int32(_a_F_clusterCommandSpecial_28), v15+int32(240))
 	mBase = m.M
 	v1795 = m.ExcPending
 	if v1795 != 0 {
@@ -6642,7 +6642,7 @@ L521:
 	}
 L522:
 	;
-	v1776 = *(*int32)(unsafe.Add(mBase, _consts[136]))
+	v1776 = *(*int32)(unsafe.Add(mBase, _c_F_clusterCommandSpecial[7]))
 	v1777 = *(*int32)(unsafe.Add(mBase, uint32(v1776)+32))
 	v1778 = F_dictFind(m, v1777, v1773)
 	mBase = m.M
@@ -6710,7 +6710,7 @@ L532:
 	v2119 = *(*int32)(unsafe.Add(mBase, uint32(v2118)+4))
 	v2120 = F_objectGetVal(m, v2119)
 	mBase = m.M
-	v2121 = int32(_a408)
+	v2121 = int32(_a_F_clusterCommandSpecial_40)
 	v2124 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v2120))))
 	if v2124 != 0 {
 		goto L619
@@ -6828,13 +6828,13 @@ L547:
 	;
 	v2040 = F_objectGetVal(m, v2017)
 	mBase = m.M
-	v2042 = *(*int32)(unsafe.Add(mBase, _consts[154]))
+	v2042 = *(*int32)(unsafe.Add(mBase, _c_F_clusterCommandSpecial[5]))
 	v2044 = v2042 + int32(8)
 	v2045 = int32(40)
 	goto L602
 L548:
 	;
-	v2039 = *(*int32)(unsafe.Add(mBase, _consts[154]))
+	v2039 = *(*int32)(unsafe.Add(mBase, _c_F_clusterCommandSpecial[5]))
 	v2775 = v2039
 	v2776 = v2030
 	v2780 = v2034
@@ -6856,7 +6856,7 @@ L550:
 	v1874 = *(*int32)(unsafe.Add(mBase, uint32(v1870+v1872)))
 	v1875 = F_objectGetVal(m, v1874)
 	mBase = m.M
-	v1876 = int32(_a409)
+	v1876 = int32(_a_F_clusterCommandSpecial_41)
 	v1879 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v1875))))
 	if v1879 != 0 {
 		goto L556
@@ -6892,7 +6892,7 @@ L553:
 	v1918 = *(*int32)(unsafe.Add(mBase, uint32(v1916+v1872)))
 	v1919 = F_objectGetVal(m, v1918)
 	mBase = m.M
-	v1920 = int32(_a410)
+	v1920 = int32(_a_F_clusterCommandSpecial_42)
 	v1923 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v1919))))
 	if v1923 != 0 {
 		goto L570
@@ -6996,7 +6996,7 @@ L566:
 	goto L552
 L567:
 	;
-	v1962 = *(*int32)(unsafe.Add(mBase, _consts[188]))
+	v1962 = *(*int32)(unsafe.Add(mBase, _c_F_clusterCommandSpecial[11]))
 	if l0 != v1962 {
 		goto L173
 	} else {
@@ -7104,7 +7104,7 @@ L581:
 	v1966 = *(*int32)(unsafe.Add(mBase, uint32(v1964+v1872)))
 	v1967 = F_objectGetVal(m, v1966)
 	mBase = m.M
-	v1968 = int32(_a411)
+	v1968 = int32(_a_F_clusterCommandSpecial_43)
 	v1971 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v1967))))
 	if v1971 != 0 {
 		goto L584
@@ -7335,7 +7335,7 @@ L613:
 	goto L610
 L614:
 	;
-	v2113 = *(*int32)(unsafe.Add(mBase, _consts[84]))
+	v2113 = *(*int32)(unsafe.Add(mBase, _c_F_clusterCommandSpecial[3]))
 	F_addReply(m, l0, v2113)
 	mBase = m.M
 	v2115 = m.ExcPending
@@ -7353,7 +7353,7 @@ L616:
 	v2231 = *(*int32)(unsafe.Add(mBase, uint32(v2230)+4))
 	v2232 = F_objectGetVal(m, v2231)
 	mBase = m.M
-	v2233 = int32(_a50)
+	v2233 = int32(_a_F_clusterCommandSpecial_44)
 	v2236 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v2232))))
 	if v2236 != 0 {
 		goto L652
@@ -7485,7 +7485,7 @@ L632:
 	}
 L633:
 	;
-	v2180 = *(*int32)(unsafe.Add(mBase, _consts[136]))
+	v2180 = *(*int32)(unsafe.Add(mBase, _c_F_clusterCommandSpecial[7]))
 	v2181 = *(*int32)(unsafe.Add(mBase, uint32(v2180)+32))
 	v2182 = *(*int32)(unsafe.Add(mBase, uint32(v2181)+16))
 	v2183 = *(*int32)(unsafe.Add(mBase, uint32(v2181)+12))
@@ -7497,7 +7497,7 @@ L633:
 L634:
 	;
 	*(*int64)(unsafe.Add(mBase, uint32(v15)+304)) = v2170
-	F_addReplyErrorFormat(m, l0, int32(_a412), v15+int32(304))
+	F_addReplyErrorFormat(m, l0, int32(_a_F_clusterCommandSpecial_45), v15+int32(304))
 	mBase = m.M
 	v2178 = m.ExcPending
 	if v2178 != 0 {
@@ -7510,7 +7510,7 @@ L635:
 	goto L3
 L636:
 	;
-	v2191 = *(*int32)(unsafe.Add(mBase, _consts[154]))
+	v2191 = *(*int32)(unsafe.Add(mBase, _c_F_clusterCommandSpecial[5]))
 	v2192 = *(*int64)(unsafe.Add(mBase, uint32(v2191)+96))
 	if v2192 == int64(0) {
 		goto L639
@@ -7519,7 +7519,7 @@ L636:
 	}
 L637:
 	;
-	F_addReplyError(m, l0, int32(_a413))
+	F_addReplyError(m, l0, int32(_a_F_clusterCommandSpecial_46))
 	mBase = m.M
 	v2189 = m.ExcPending
 	if v2189 != 0 {
@@ -7533,7 +7533,7 @@ L638:
 L639:
 	;
 	*(*int64)(unsafe.Add(mBase, uint32(v2191)+96)) = v2170
-	v2200 = *(*int32)(unsafe.Add(mBase, _consts[6]))
+	v2200 = *(*int32)(unsafe.Add(mBase, _c_F_clusterCommandSpecial[2]))
 	if int32(2) < v2200 {
 		v2213 = v2170
 		v2214 = v2180
@@ -7543,7 +7543,7 @@ L639:
 	}
 L640:
 	;
-	F_addReplyError(m, l0, int32(_a414))
+	F_addReplyError(m, l0, int32(_a_F_clusterCommandSpecial_47))
 	mBase = m.M
 	v2197 = m.ExcPending
 	if v2197 != 0 {
@@ -7565,7 +7565,7 @@ L642:
 L643:
 	;
 	*(*int64)(unsafe.Add(mBase, uint32(v15)+320)) = v2170
-	F__serverLog(m, int32(2), int32(_a415), v15+int32(320))
+	F__serverLog(m, int32(2), int32(_a_F_clusterCommandSpecial_48), v15+int32(320))
 	mBase = m.M
 	v2209 = m.ExcPending
 	if v2209 != 0 {
@@ -7575,7 +7575,7 @@ L643:
 	}
 L644:
 	;
-	v2211 = *(*int32)(unsafe.Add(mBase, _consts[136]))
+	v2211 = *(*int32)(unsafe.Add(mBase, _c_F_clusterCommandSpecial[7]))
 	v2212 = *(*int64)(unsafe.Add(mBase, uint32(v15)+352))
 	v2213 = v2212
 	v2214 = v2211
@@ -7596,10 +7596,10 @@ L646:
 	goto L645
 L647:
 	;
-	v2221 = *(*int32)(unsafe.Add(mBase, _consts[136]))
-	v2222 = *(*int32)(unsafe.Add(mBase, uint32(v2221)+uint32(_consts[150])))
-	*(*int32)(unsafe.Add(mBase, uint32(v2221)+uint32(_consts[150]))) = v2222 | int32(6)
-	v2227 = *(*int32)(unsafe.Add(mBase, _consts[84]))
+	v2221 = *(*int32)(unsafe.Add(mBase, _c_F_clusterCommandSpecial[7]))
+	v2222 = *(*int32)(unsafe.Add(mBase, uint32(v2221)+uint32(_c_F_clusterCommandSpecial[8])))
+	*(*int32)(unsafe.Add(mBase, uint32(v2221)+uint32(_c_F_clusterCommandSpecial[8]))) = v2222 | int32(6)
+	v2227 = *(*int32)(unsafe.Add(mBase, _c_F_clusterCommandSpecial[3]))
 	F_addReply(m, l0, v2227)
 	mBase = m.M
 	v2229 = m.ExcPending
@@ -7617,7 +7617,7 @@ L649:
 	v2374 = *(*int32)(unsafe.Add(mBase, uint32(v2373)+4))
 	v2375 = F_objectGetVal(m, v2374)
 	mBase = m.M
-	v2376 = int32(_a416)
+	v2376 = int32(_a_F_clusterCommandSpecial_49)
 	v2379 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v2375))))
 	if v2379 != 0 {
 		goto L696
@@ -7734,7 +7734,7 @@ L664:
 	v2281 = *(*int32)(unsafe.Add(mBase, uint32(v2280)+8))
 	v2282 = F_objectGetVal(m, v2281)
 	mBase = m.M
-	v2283 = int32(_a417)
+	v2283 = int32(_a_F_clusterCommandSpecial_50)
 	v2286 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v2282))))
 	if v2286 != 0 {
 		goto L668
@@ -7747,7 +7747,7 @@ L665:
 	v2325 = *(*int32)(unsafe.Add(mBase, uint32(v2324)+8))
 	v2326 = F_objectGetVal(m, v2325)
 	mBase = m.M
-	v2327 = int32(_a418)
+	v2327 = int32(_a_F_clusterCommandSpecial_51)
 	v2330 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v2326))))
 	if v2330 != 0 {
 		goto L681
@@ -7937,7 +7937,7 @@ L690:
 	goto L685
 L691:
 	;
-	v2369 = *(*int32)(unsafe.Add(mBase, _consts[86]))
+	v2369 = *(*int32)(unsafe.Add(mBase, _c_F_clusterCommandSpecial[9]))
 	F_addReplyErrorObject(m, l0, v2369)
 	mBase = m.M
 	v2371 = m.ExcPending
@@ -7955,7 +7955,7 @@ L693:
 	v2421 = *(*int32)(unsafe.Add(mBase, uint32(v2420)+4))
 	v2422 = F_objectGetVal(m, v2421)
 	mBase = m.M
-	v2423 = int32(_a419)
+	v2423 = int32(_a_F_clusterCommandSpecial_52)
 	v2426 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v2422))))
 	if v2426 != 0 {
 		goto L712
@@ -8077,7 +8077,7 @@ L709:
 	v2472 = *(*int32)(unsafe.Add(mBase, uint32(v2471)+4))
 	v2473 = F_objectGetVal(m, v2472)
 	mBase = m.M
-	v2474 = int32(_a420)
+	v2474 = int32(_a_F_clusterCommandSpecial_53)
 	v2477 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v2473))))
 	if v2477 != 0 {
 		goto L728
@@ -8201,7 +8201,7 @@ L725:
 	v2519 = *(*int32)(unsafe.Add(mBase, uint32(v2518)+4))
 	v2520 = F_objectGetVal(m, v2519)
 	mBase = m.M
-	v2521 = int32(_a421)
+	v2521 = int32(_a_F_clusterCommandSpecial_54)
 	v2524 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v2520))))
 	if v2524 != 0 {
 		goto L744
@@ -8323,7 +8323,7 @@ L741:
 	v2566 = *(*int32)(unsafe.Add(mBase, uint32(v2565)+4))
 	v2567 = F_objectGetVal(m, v2566)
 	mBase = m.M
-	v2568 = int32(_a422)
+	v2568 = int32(_a_F_clusterCommandSpecial_55)
 	v2571 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v2567))))
 	if v2571 != 0 {
 		goto L760
@@ -8446,7 +8446,7 @@ L757:
 	v2614 = *(*int32)(unsafe.Add(mBase, uint32(v2613)+4))
 	v2615 = F_objectGetVal(m, v2614)
 	mBase = m.M
-	v2616 = int32(_a423)
+	v2616 = int32(_a_F_clusterCommandSpecial_56)
 	v2619 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v2615))))
 	if v2619 != 0 {
 		goto L775
@@ -8705,7 +8705,7 @@ L792:
 L793:
 	;
 	v2689 = int32(1)
-	v2691 = *(*int32)(unsafe.Add(mBase, _consts[65]))
+	v2691 = *(*int32)(unsafe.Add(mBase, _c_F_clusterCommandSpecial[4]))
 	if v2691 < v2689 {
 		v2722 = v2689
 		goto L795
@@ -8726,7 +8726,7 @@ L795:
 L796:
 	;
 	v2694 = int32(0)
-	v2695 = *(*int32)(unsafe.Add(mBase, _consts[137]))
+	v2695 = *(*int32)(unsafe.Add(mBase, _c_F_clusterCommandSpecial[6]))
 	v2698 = v2691
 	v2699 = v2695
 	v2700 = v2694
@@ -8770,8 +8770,8 @@ L800:
 L801:
 	;
 	v2712 = int32(0)
-	v2713 = *(*int32)(unsafe.Add(mBase, _consts[65]))
-	v2715 = *(*int32)(unsafe.Add(mBase, _consts[137]))
+	v2713 = *(*int32)(unsafe.Add(mBase, _c_F_clusterCommandSpecial[4]))
+	v2715 = *(*int32)(unsafe.Add(mBase, _c_F_clusterCommandSpecial[6]))
 	v2716 = v2713
 	v2717 = v2715
 	goto L799
@@ -8784,7 +8784,7 @@ L803:
 	goto L798
 L804:
 	;
-	F_addReplyError(m, l0, int32(_a424))
+	F_addReplyError(m, l0, int32(_a_F_clusterCommandSpecial_57))
 	mBase = m.M
 	v2733 = m.ExcPending
 	if v2733 != 0 {
@@ -8797,7 +8797,7 @@ L805:
 	goto L3
 L806:
 	;
-	v2737 = *(*int32)(unsafe.Add(mBase, _consts[209]))
+	v2737 = *(*int32)(unsafe.Add(mBase, _c_F_clusterCommandSpecial[1]))
 	v2738 = F_catClientInfoShortString(m, v2734, l0, v2737)
 	mBase = m.M
 	v2739 = m.ExcPending
@@ -8808,7 +8808,7 @@ L806:
 	}
 L807:
 	;
-	v2741 = *(*int32)(unsafe.Add(mBase, _consts[6]))
+	v2741 = *(*int32)(unsafe.Add(mBase, _c_F_clusterCommandSpecial[2]))
 	if int32(2) < v2741 {
 		goto L808
 	} else {
@@ -8827,7 +8827,7 @@ L808:
 L809:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v15)+336)) = v2738
-	F__serverLog(m, int32(2), int32(_a425), v15+int32(336))
+	F__serverLog(m, int32(2), int32(_a_F_clusterCommandSpecial_58), v15+int32(336))
 	mBase = m.M
 	v2750 = m.ExcPending
 	if v2750 != 0 {
@@ -8850,7 +8850,7 @@ L811:
 	}
 L812:
 	;
-	v2756 = *(*int32)(unsafe.Add(mBase, _consts[84]))
+	v2756 = *(*int32)(unsafe.Add(mBase, _c_F_clusterCommandSpecial[3]))
 	F_addReply(m, l0, v2756)
 	mBase = m.M
 	v2758 = m.ExcPending
@@ -8872,7 +8872,7 @@ L814:
 	}
 L815:
 	;
-	F_addReplyError(m, l0, int32(_a426))
+	F_addReplyError(m, l0, int32(_a_F_clusterCommandSpecial_59))
 	mBase = m.M
 	v2792 = m.ExcPending
 	if v2792 != 0 {
@@ -8893,7 +8893,7 @@ L817:
 	}
 L818:
 	;
-	F_addReplyError(m, l0, int32(_a427))
+	F_addReplyError(m, l0, int32(_a_F_clusterCommandSpecial_60))
 	mBase = m.M
 	v2796 = m.ExcPending
 	if v2796 != 0 {
@@ -8925,7 +8925,7 @@ L821:
 	}
 L822:
 	;
-	F_addReplyError(m, l0, int32(_a428))
+	F_addReplyError(m, l0, int32(_a_F_clusterCommandSpecial_61))
 	mBase = m.M
 	v2805 = m.ExcPending
 	if v2805 != 0 {
@@ -8952,10 +8952,10 @@ L826:
 	;
 	v2808 = F_mstime(m)
 	mBase = m.M
-	v2809 = int32(_a44)
-	v2810 = *(*int32)(unsafe.Add(mBase, _consts[136]))
-	v2812 = *(*int64)(unsafe.Add(mBase, _consts[211]))
-	*(*int64)(unsafe.Add(mBase, uint32(v2810)+uint32(_consts[161]))) = v2808 + v2812
+	v2809 = int32(_a_F_clusterCommandSpecial_62)
+	v2810 = *(*int32)(unsafe.Add(mBase, _c_F_clusterCommandSpecial[7]))
+	v2812 = *(*int64)(unsafe.Add(mBase, _c_F_clusterCommandSpecial[12]))
+	*(*int64)(unsafe.Add(mBase, uint32(v2810)+uint32(_c_F_clusterCommandSpecial[13]))) = v2808 + v2812
 	v2815 = F_sdsempty(m)
 	mBase = m.M
 	v2816 = m.ExcPending
@@ -8966,7 +8966,7 @@ L826:
 	}
 L827:
 	;
-	v2818 = *(*int32)(unsafe.Add(mBase, _consts[209]))
+	v2818 = *(*int32)(unsafe.Add(mBase, _c_F_clusterCommandSpecial[1]))
 	v2819 = F_catClientInfoShortString(m, v2815, l0, v2818)
 	mBase = m.M
 	v2820 = m.ExcPending
@@ -8977,7 +8977,7 @@ L827:
 	}
 L828:
 	;
-	v2822 = *(*int32)(unsafe.Add(mBase, _consts[6]))
+	v2822 = *(*int32)(unsafe.Add(mBase, _c_F_clusterCommandSpecial[2]))
 	if v2780 != 0 {
 		goto L830
 	} else {
@@ -9020,7 +9020,7 @@ L832:
 L833:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v15)+288)) = v2819
-	F__serverLog(m, int32(2), int32(_a429), v15+int32(288))
+	F__serverLog(m, int32(2), int32(_a_F_clusterCommandSpecial_63), v15+int32(288))
 	mBase = m.M
 	v2831 = m.ExcPending
 	if v2831 != 0 {
@@ -9071,7 +9071,7 @@ L839:
 L840:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v15)+272)) = v2819
-	v2843 = *(*int32)(unsafe.Add(mBase, _consts[188]))
+	v2843 = *(*int32)(unsafe.Add(mBase, _c_F_clusterCommandSpecial[11]))
 	if l0 == v2843 {
 		goto L841
 	} else {
@@ -9079,11 +9079,11 @@ L840:
 	}
 L841:
 	;
-	v2845 = int32(_a430)
+	v2845 = int32(_a_F_clusterCommandSpecial_64)
 	goto L843
 L842:
 	;
-	v2845 = int32(_a431)
+	v2845 = int32(_a_F_clusterCommandSpecial_65)
 	goto L843
 L843:
 	;
@@ -9100,13 +9100,13 @@ L844:
 	goto L839
 L845:
 	;
-	v2853 = *(*int32)(unsafe.Add(mBase, _consts[136]))
-	v2854 = *(*int32)(unsafe.Add(mBase, uint32(v2853)+uint32(_consts[150])))
-	*(*int32)(unsafe.Add(mBase, uint32(v2853)+uint32(_consts[150]))) = v2854 | int32(16)
+	v2853 = *(*int32)(unsafe.Add(mBase, _c_F_clusterCommandSpecial[7]))
+	v2854 = *(*int32)(unsafe.Add(mBase, uint32(v2853)+uint32(_c_F_clusterCommandSpecial[8])))
+	*(*int32)(unsafe.Add(mBase, uint32(v2853)+uint32(_c_F_clusterCommandSpecial[8]))) = v2854 | int32(16)
 	goto L829
 L846:
 	;
-	v2868 = *(*int32)(unsafe.Add(mBase, _consts[154]))
+	v2868 = *(*int32)(unsafe.Add(mBase, _c_F_clusterCommandSpecial[5]))
 	v2869 = *(*int32)(unsafe.Add(mBase, uint32(v2868)+2172))
 	F_clusterSendMFStart(m, v2869)
 	mBase = m.M
@@ -9119,7 +9119,7 @@ L846:
 L847:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v15)+256)) = v2819
-	F__serverLog(m, int32(2), int32(_a432), v15+int32(256))
+	F__serverLog(m, int32(2), int32(_a_F_clusterCommandSpecial_66), v15+int32(256))
 	mBase = m.M
 	v2866 = m.ExcPending
 	if v2866 != 0 {
@@ -9135,7 +9135,7 @@ L849:
 	goto L829
 L850:
 	;
-	v2876 = *(*int32)(unsafe.Add(mBase, _consts[84]))
+	v2876 = *(*int32)(unsafe.Add(mBase, _c_F_clusterCommandSpecial[3]))
 	F_addReply(m, l0, v2876)
 	mBase = m.M
 	v2878 = m.ExcPending

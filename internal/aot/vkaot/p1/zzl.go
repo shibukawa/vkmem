@@ -321,7 +321,7 @@ func F_zzlInsert(m *base.Module, l0 int32, l1 int32, l2 float64) int32 {
 	}
 L1:
 	;
-	F__serverAssert(m, int32(_a575), int32(_a2436), int32(1190))
+	F__serverAssert(m, int32(_a_F_zzlInsert_0), int32(_a_F_zzlInsert_1), int32(1190))
 	mBase = m.M
 	v280 = m.ExcPending
 	if v280 != 0 {
@@ -415,10 +415,10 @@ L13:
 	v72 = F___errno_location(m)
 	mBase = m.M
 	*(*int32)(unsafe.Add(mBase, uint32(v72))) = v64
-	v78 = *(*int64)(unsafe.Add(mBase, _consts[648]))
+	v78 = *(*int64)(unsafe.Add(mBase, _c_F_zzlInsert[0]))
 	*(*int64)(unsafe.Add(mBase, uint32(v70+int32(8)))) = v78
 	*(*int64)(unsafe.Add(mBase, uint32(v70)+24)) = int64(0)
-	v83 = *(*int64)(unsafe.Add(mBase, _consts[649]))
+	v83 = *(*int64)(unsafe.Add(mBase, _c_F_zzlInsert[1]))
 	*(*int64)(unsafe.Add(mBase, uint32(v70))) = v83
 	F_ffc_from_chars_double_options(m, v70+int32(16), v59, v59+v63, v70+int32(24), v70)
 	mBase = m.M
@@ -1210,7 +1210,7 @@ func F_zzlIsInLexRange(m *base.Module, l0 int32, l1 int32) int32 {
 									return int32(0)
 								} else {
 									if v98 == int32(0) {
-										F__serverAssert(m, int32(_a658), int32(_a2436), int32(1076))
+										F__serverAssert(m, int32(_a_F_zzlIsInLexRange_0), int32(_a_F_zzlIsInLexRange_1), int32(1076))
 										mBase = m.M
 										v113 = m.ExcPending
 										if v113 != 0 {
@@ -1241,7 +1241,7 @@ func F_zzlIsInLexRange(m *base.Module, l0 int32, l1 int32) int32 {
 			}
 		}
 	} else {
-		v12 = *(*int32)(unsafe.Add(mBase, _consts[419]))
+		v12 = *(*int32)(unsafe.Add(mBase, _c_F_zzlIsInLexRange[0]))
 		if v8 == v12 {
 			v85 = int32(0)
 			v87 = F_lpSeek(m, l0, int32(-2))
@@ -1271,7 +1271,7 @@ func F_zzlIsInLexRange(m *base.Module, l0 int32, l1 int32) int32 {
 								return int32(0)
 							} else {
 								if v98 == int32(0) {
-									F__serverAssert(m, int32(_a658), int32(_a2436), int32(1076))
+									F__serverAssert(m, int32(_a_F_zzlIsInLexRange_0), int32(_a_F_zzlIsInLexRange_1), int32(1076))
 									mBase = m.M
 									v113 = m.ExcPending
 									if v113 != 0 {
@@ -1300,7 +1300,7 @@ func F_zzlIsInLexRange(m *base.Module, l0 int32, l1 int32) int32 {
 				}
 			}
 		} else {
-			v15 = *(*int32)(unsafe.Add(mBase, _consts[420]))
+			v15 = *(*int32)(unsafe.Add(mBase, _c_F_zzlIsInLexRange[1]))
 			if v9 == v15 {
 				v85 = int32(0)
 				v87 = F_lpSeek(m, l0, int32(-2))
@@ -1330,7 +1330,7 @@ func F_zzlIsInLexRange(m *base.Module, l0 int32, l1 int32) int32 {
 									return int32(0)
 								} else {
 									if v98 == int32(0) {
-										F__serverAssert(m, int32(_a658), int32(_a2436), int32(1076))
+										F__serverAssert(m, int32(_a_F_zzlIsInLexRange_0), int32(_a_F_zzlIsInLexRange_1), int32(1076))
 										mBase = m.M
 										v113 = m.ExcPending
 										if v113 != 0 {
@@ -1453,7 +1453,7 @@ func F_zzlIsInLexRange(m *base.Module, l0 int32, l1 int32) int32 {
 													return int32(0)
 												} else {
 													if v98 == int32(0) {
-														F__serverAssert(m, int32(_a658), int32(_a2436), int32(1076))
+														F__serverAssert(m, int32(_a_F_zzlIsInLexRange_0), int32(_a_F_zzlIsInLexRange_1), int32(1076))
 														mBase = m.M
 														v113 = m.ExcPending
 														if v113 != 0 {
@@ -1521,7 +1521,7 @@ func F_zzlIsInLexRange(m *base.Module, l0 int32, l1 int32) int32 {
 															return int32(0)
 														} else {
 															if v98 == int32(0) {
-																F__serverAssert(m, int32(_a658), int32(_a2436), int32(1076))
+																F__serverAssert(m, int32(_a_F_zzlIsInLexRange_0), int32(_a_F_zzlIsInLexRange_1), int32(1076))
 																mBase = m.M
 																v113 = m.ExcPending
 																if v113 != 0 {
@@ -1697,10 +1697,10 @@ func F_zzlIsInRange(m *base.Module, l0 int32, l1 int32) int32 {
 							v41 = F___errno_location(m)
 							mBase = m.M
 							*(*int32)(unsafe.Add(mBase, uint32(v41))) = v33
-							v47 = *(*int64)(unsafe.Add(mBase, _consts[648]))
+							v47 = *(*int64)(unsafe.Add(mBase, _c_F_zzlIsInRange[0]))
 							*(*int64)(unsafe.Add(mBase, uint32(v39+int32(8)))) = v47
 							*(*int64)(unsafe.Add(mBase, uint32(v39)+24)) = int64(0)
-							v52 = *(*int64)(unsafe.Add(mBase, _consts[649]))
+							v52 = *(*int64)(unsafe.Add(mBase, _c_F_zzlIsInRange[1]))
 							*(*int64)(unsafe.Add(mBase, uint32(v39))) = v52
 							F_ffc_from_chars_double_options(m, v39+int32(16), v28, v28+v32, v39+int32(24), v39)
 							mBase = m.M
@@ -1737,7 +1737,7 @@ func F_zzlIsInRange(m *base.Module, l0 int32, l1 int32) int32 {
 								return int32(0)
 							} else {
 								if v88 == int32(0) {
-									F__serverAssert(m, int32(_a658), int32(_a2436), int32(982))
+									F__serverAssert(m, int32(_a_F_zzlIsInRange_0), int32(_a_F_zzlIsInRange_1), int32(982))
 									mBase = m.M
 									v163 = m.ExcPending
 									if v163 != 0 {
@@ -1768,10 +1768,10 @@ func F_zzlIsInRange(m *base.Module, l0 int32, l1 int32) int32 {
 											v107 = F___errno_location(m)
 											mBase = m.M
 											*(*int32)(unsafe.Add(mBase, uint32(v107))) = v99
-											v113 = *(*int64)(unsafe.Add(mBase, _consts[648]))
+											v113 = *(*int64)(unsafe.Add(mBase, _c_F_zzlIsInRange[0]))
 											*(*int64)(unsafe.Add(mBase, uint32(v105+int32(8)))) = v113
 											*(*int64)(unsafe.Add(mBase, uint32(v105)+24)) = int64(0)
-											v118 = *(*int64)(unsafe.Add(mBase, _consts[649]))
+											v118 = *(*int64)(unsafe.Add(mBase, _c_F_zzlIsInRange[1]))
 											*(*int64)(unsafe.Add(mBase, uint32(v105))) = v118
 											F_ffc_from_chars_double_options(m, v105+int32(16), v94, v94+v98, v105+int32(24), v105)
 											mBase = m.M
@@ -1848,10 +1848,10 @@ func F_zzlIsInRange(m *base.Module, l0 int32, l1 int32) int32 {
 									v41 = F___errno_location(m)
 									mBase = m.M
 									*(*int32)(unsafe.Add(mBase, uint32(v41))) = v33
-									v47 = *(*int64)(unsafe.Add(mBase, _consts[648]))
+									v47 = *(*int64)(unsafe.Add(mBase, _c_F_zzlIsInRange[0]))
 									*(*int64)(unsafe.Add(mBase, uint32(v39+int32(8)))) = v47
 									*(*int64)(unsafe.Add(mBase, uint32(v39)+24)) = int64(0)
-									v52 = *(*int64)(unsafe.Add(mBase, _consts[649]))
+									v52 = *(*int64)(unsafe.Add(mBase, _c_F_zzlIsInRange[1]))
 									*(*int64)(unsafe.Add(mBase, uint32(v39))) = v52
 									F_ffc_from_chars_double_options(m, v39+int32(16), v28, v28+v32, v39+int32(24), v39)
 									mBase = m.M
@@ -1888,7 +1888,7 @@ func F_zzlIsInRange(m *base.Module, l0 int32, l1 int32) int32 {
 										return int32(0)
 									} else {
 										if v88 == int32(0) {
-											F__serverAssert(m, int32(_a658), int32(_a2436), int32(982))
+											F__serverAssert(m, int32(_a_F_zzlIsInRange_0), int32(_a_F_zzlIsInRange_1), int32(982))
 											mBase = m.M
 											v163 = m.ExcPending
 											if v163 != 0 {
@@ -1919,10 +1919,10 @@ func F_zzlIsInRange(m *base.Module, l0 int32, l1 int32) int32 {
 													v107 = F___errno_location(m)
 													mBase = m.M
 													*(*int32)(unsafe.Add(mBase, uint32(v107))) = v99
-													v113 = *(*int64)(unsafe.Add(mBase, _consts[648]))
+													v113 = *(*int64)(unsafe.Add(mBase, _c_F_zzlIsInRange[0]))
 													*(*int64)(unsafe.Add(mBase, uint32(v105+int32(8)))) = v113
 													*(*int64)(unsafe.Add(mBase, uint32(v105)+24)) = int64(0)
-													v118 = *(*int64)(unsafe.Add(mBase, _consts[649]))
+													v118 = *(*int64)(unsafe.Add(mBase, _c_F_zzlIsInRange[1]))
 													*(*int64)(unsafe.Add(mBase, uint32(v105))) = v118
 													F_ffc_from_chars_double_options(m, v105+int32(16), v94, v94+v98, v105+int32(24), v105)
 													mBase = m.M
@@ -2051,7 +2051,7 @@ L7:
 	}
 L8:
 	;
-	F__serverAssert(m, int32(_a2439), int32(_a2436), int32(1125))
+	F__serverAssert(m, int32(_a_F_zzlLastInLexRange_0), int32(_a_F_zzlLastInLexRange_1), int32(1125))
 	v39 = m.ExcPending
 	if v39 != 0 {
 		goto L1
@@ -2258,7 +2258,7 @@ func F_zzlLexValueLteMax(m *base.Module, l0 int32, l1 int32) int32 {
 	v9 = v7 - int32(16)
 	m.G0 = v9
 	if l0 == int32(0) {
-		F__serverAssert(m, int32(_a575), int32(_a2436), int32(894))
+		F__serverAssert(m, int32(_a_F_zzlLexValueLteMax_0), int32(_a_F_zzlLexValueLteMax_1), int32(894))
 		mBase = m.M
 		v175 = m.ExcPending
 		if v175 != 0 {
@@ -2293,11 +2293,11 @@ func F_zzlLexValueLteMax(m *base.Module, l0 int32, l1 int32) int32 {
 						if v27 == v28 {
 							v162 = v98
 						} else {
-							v101 = *(*int32)(unsafe.Add(mBase, _consts[419]))
+							v101 = *(*int32)(unsafe.Add(mBase, _c_F_zzlLexValueLteMax[0]))
 							if v27 == v101 {
 								v162 = v98
 							} else {
-								v104 = *(*int32)(unsafe.Add(mBase, _consts[420]))
+								v104 = *(*int32)(unsafe.Add(mBase, _c_F_zzlLexValueLteMax[1]))
 								if v28 == v104 {
 									v162 = v98
 								} else {
@@ -2369,11 +2369,11 @@ func F_zzlLexValueLteMax(m *base.Module, l0 int32, l1 int32) int32 {
 					} else {
 						if v27 != v28 {
 							v34 = int32(1)
-							v36 = *(*int32)(unsafe.Add(mBase, _consts[419]))
+							v36 = *(*int32)(unsafe.Add(mBase, _c_F_zzlLexValueLteMax[0]))
 							if v27 == v36 {
 								v162 = v34
 							} else {
-								v39 = *(*int32)(unsafe.Add(mBase, _consts[420]))
+								v39 = *(*int32)(unsafe.Add(mBase, _c_F_zzlLexValueLteMax[1]))
 								if v28 == v39 {
 									v162 = v34
 								} else {
@@ -2470,11 +2470,11 @@ func F_zzlLexValueLteMax(m *base.Module, l0 int32, l1 int32) int32 {
 						if v27 == v28 {
 							v162 = v98
 						} else {
-							v101 = *(*int32)(unsafe.Add(mBase, _consts[419]))
+							v101 = *(*int32)(unsafe.Add(mBase, _c_F_zzlLexValueLteMax[0]))
 							if v27 == v101 {
 								v162 = v98
 							} else {
-								v104 = *(*int32)(unsafe.Add(mBase, _consts[420]))
+								v104 = *(*int32)(unsafe.Add(mBase, _c_F_zzlLexValueLteMax[1]))
 								if v28 == v104 {
 									v162 = v98
 								} else {
@@ -2546,11 +2546,11 @@ func F_zzlLexValueLteMax(m *base.Module, l0 int32, l1 int32) int32 {
 					} else {
 						if v27 != v28 {
 							v34 = int32(1)
-							v36 = *(*int32)(unsafe.Add(mBase, _consts[419]))
+							v36 = *(*int32)(unsafe.Add(mBase, _c_F_zzlLexValueLteMax[0]))
 							if v27 == v36 {
 								v162 = v34
 							} else {
-								v39 = *(*int32)(unsafe.Add(mBase, _consts[420]))
+								v39 = *(*int32)(unsafe.Add(mBase, _c_F_zzlLexValueLteMax[1]))
 								if v28 == v39 {
 									v162 = v34
 								} else {
@@ -2658,7 +2658,7 @@ func F_zzlNext(m *base.Module, l0 int32, l1 int32, l2 int32) {
 	_ = v32
 	v5 = *(*int32)(unsafe.Add(mBase, uint32(l1)))
 	if v5 == int32(0) {
-		F__serverAssert(m, int32(_a2435), int32(_a2436), int32(933))
+		F__serverAssert(m, int32(_a_F_zzlNext_0), int32(_a_F_zzlNext_1), int32(933))
 		mBase = m.M
 		v26 = m.ExcPending
 		if v26 != 0 {
@@ -2673,7 +2673,7 @@ func F_zzlNext(m *base.Module, l0 int32, l1 int32, l2 int32) {
 	} else {
 		v8 = *(*int32)(unsafe.Add(mBase, uint32(l2)))
 		if v8 == int32(0) {
-			F__serverAssert(m, int32(_a2435), int32(_a2436), int32(933))
+			F__serverAssert(m, int32(_a_F_zzlNext_0), int32(_a_F_zzlNext_1), int32(933))
 			mBase = m.M
 			v26 = m.ExcPending
 			if v26 != 0 {
@@ -2700,7 +2700,7 @@ func F_zzlNext(m *base.Module, l0 int32, l1 int32, l2 int32) {
 						return
 					} else {
 						if v14 == int32(0) {
-							F__serverAssert(m, int32(_a2437), int32(_a2436), int32(938))
+							F__serverAssert(m, int32(_a_F_zzlNext_2), int32(_a_F_zzlNext_1), int32(938))
 							mBase = m.M
 							v32 = m.ExcPending
 							if v32 != 0 {
@@ -2752,7 +2752,7 @@ func F_zzlPrev(m *base.Module, l0 int32, l1 int32, l2 int32) {
 	_ = v31
 	v5 = *(*int32)(unsafe.Add(mBase, uint32(l1)))
 	if v5 == int32(0) {
-		F__serverAssert(m, int32(_a2435), int32(_a2436), int32(952))
+		F__serverAssert(m, int32(_a_F_zzlPrev_0), int32(_a_F_zzlPrev_1), int32(952))
 		mBase = m.M
 		v25 = m.ExcPending
 		if v25 != 0 {
@@ -2767,7 +2767,7 @@ func F_zzlPrev(m *base.Module, l0 int32, l1 int32, l2 int32) {
 	} else {
 		v8 = *(*int32)(unsafe.Add(mBase, uint32(l2)))
 		if v8 == int32(0) {
-			F__serverAssert(m, int32(_a2435), int32(_a2436), int32(952))
+			F__serverAssert(m, int32(_a_F_zzlPrev_0), int32(_a_F_zzlPrev_1), int32(952))
 			mBase = m.M
 			v25 = m.ExcPending
 			if v25 != 0 {
@@ -2794,7 +2794,7 @@ func F_zzlPrev(m *base.Module, l0 int32, l1 int32, l2 int32) {
 						return
 					} else {
 						if v14 == int32(0) {
-							F__serverAssert(m, int32(_a2438), int32(_a2436), int32(957))
+							F__serverAssert(m, int32(_a_F_zzlPrev_2), int32(_a_F_zzlPrev_1), int32(957))
 							mBase = m.M
 							v31 = m.ExcPending
 							if v31 != 0 {

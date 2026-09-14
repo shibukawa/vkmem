@@ -330,7 +330,7 @@ func F___quicklistCompressNode(m *base.Module, l0 int32) int32 {
 	}
 L1:
 	;
-	F__serverAssert(m, int32(_a1111), int32(_a1112), int32(218))
+	F__serverAssert(m, int32(_a_F___quicklistCompressNode_0), int32(_a_F___quicklistCompressNode_1), int32(218))
 	mBase = m.M
 	v583 = m.ExcPending
 	if v583 != 0 {
@@ -1738,7 +1738,7 @@ L2:
 L3:
 	;
 	v27 = int32(0)
-	v28 = *(*int32)(unsafe.Add(mBase, _consts[381]))
+	v28 = *(*int32)(unsafe.Add(mBase, _c_F__quicklistInsert[0]))
 	if v28 == v27 {
 		goto L5
 	} else {
@@ -1800,7 +1800,7 @@ L12:
 	goto L13
 L13:
 	;
-	v46 = *(*int32)(unsafe.Add(mBase, uint32((v39^int32(-1))<<(uint(int32(2))%32))+uint32(_consts[628])))
+	v46 = *(*int32)(unsafe.Add(mBase, uint32((v39^int32(-1))<<(uint(int32(2))%32))+uint32(_c_F__quicklistInsert[1])))
 	if base.Ui32(l3) <= base.Ui32(v46) {
 		goto L1
 	} else {
@@ -1826,7 +1826,7 @@ L17:
 L18:
 	;
 	v57 = int32(0)
-	v58 = *(*int32)(unsafe.Add(mBase, _consts[381]))
+	v58 = *(*int32)(unsafe.Add(mBase, _c_F__quicklistInsert[0]))
 	if v58 == v57 {
 		goto L22
 	} else {
@@ -1896,7 +1896,7 @@ L27:
 	goto L28
 L28:
 	;
-	v78 = *(*int32)(unsafe.Add(mBase, uint32((v71^int32(-1))<<(uint(int32(2))%32))+uint32(_consts[628])))
+	v78 = *(*int32)(unsafe.Add(mBase, uint32((v71^int32(-1))<<(uint(int32(2))%32))+uint32(_c_F__quicklistInsert[1])))
 	v117 = base.B2i32(base.Ui32(v78) < base.Ui32(v65))
 	goto L19
 L29:
@@ -1934,7 +1934,7 @@ L35:
 	goto L36
 L36:
 	;
-	v110 = *(*int32)(unsafe.Add(mBase, uint32((v103^int32(-1))<<(uint(int32(2))%32))+uint32(_consts[628])))
+	v110 = *(*int32)(unsafe.Add(mBase, uint32((v103^int32(-1))<<(uint(int32(2))%32))+uint32(_c_F__quicklistInsert[1])))
 	if base.Ui32(v110) < base.Ui32(l3) {
 		v121 = v80
 		goto L17
@@ -1949,7 +1949,7 @@ L37:
 L38:
 	;
 	v338 = int32(0)
-	v339 = *(*int32)(unsafe.Add(mBase, _consts[381]))
+	v339 = *(*int32)(unsafe.Add(mBase, _c_F__quicklistInsert[0]))
 	if v339 == v338 {
 		goto L103
 	} else {
@@ -2033,7 +2033,7 @@ L49:
 L50:
 	;
 	v142 = int32(0)
-	v143 = *(*int32)(unsafe.Add(mBase, _consts[381]))
+	v143 = *(*int32)(unsafe.Add(mBase, _c_F__quicklistInsert[0]))
 	if v143 == v142 {
 		goto L55
 	} else {
@@ -2110,7 +2110,7 @@ L60:
 	goto L61
 L61:
 	;
-	v163 = *(*int32)(unsafe.Add(mBase, uint32((v156^int32(-1))<<(uint(int32(2))%32))+uint32(_consts[628])))
+	v163 = *(*int32)(unsafe.Add(mBase, uint32((v156^int32(-1))<<(uint(int32(2))%32))+uint32(_c_F__quicklistInsert[1])))
 	v202 = v163
 	v203 = v150
 	goto L52
@@ -2155,7 +2155,7 @@ L69:
 	goto L70
 L70:
 	;
-	v196 = *(*int32)(unsafe.Add(mBase, uint32((v189^int32(-1))<<(uint(int32(2))%32))+uint32(_consts[628])))
+	v196 = *(*int32)(unsafe.Add(mBase, uint32((v189^int32(-1))<<(uint(int32(2))%32))+uint32(_c_F__quicklistInsert[1])))
 	if base.Ui32(v196) < base.Ui32(l3) {
 		goto L41
 	} else {
@@ -2211,7 +2211,7 @@ L77:
 L78:
 	;
 	v230 = int32(0)
-	v231 = *(*int32)(unsafe.Add(mBase, _consts[381]))
+	v231 = *(*int32)(unsafe.Add(mBase, _c_F__quicklistInsert[0]))
 	if v231 == v230 {
 		goto L83
 	} else {
@@ -2289,7 +2289,7 @@ L88:
 	goto L89
 L89:
 	;
-	v251 = *(*int32)(unsafe.Add(mBase, uint32((v244^int32(-1))<<(uint(int32(2))%32))+uint32(_consts[628])))
+	v251 = *(*int32)(unsafe.Add(mBase, uint32((v244^int32(-1))<<(uint(int32(2))%32))+uint32(_c_F__quicklistInsert[1])))
 	v291 = v238
 	v292 = v251
 	goto L80
@@ -2335,7 +2335,7 @@ L97:
 	goto L98
 L98:
 	;
-	v285 = *(*int32)(unsafe.Add(mBase, uint32((v278^int32(-1))<<(uint(int32(2))%32))+uint32(_consts[628])))
+	v285 = *(*int32)(unsafe.Add(mBase, uint32((v278^int32(-1))<<(uint(int32(2))%32))+uint32(_c_F__quicklistInsert[1])))
 	if base.Ui32(v285) < base.Ui32(l3) {
 		goto L76
 	} else {
@@ -2413,7 +2413,7 @@ L110:
 	goto L111
 L111:
 	;
-	v357 = *(*int32)(unsafe.Add(mBase, uint32((v350^int32(-1))<<(uint(int32(2))%32))+uint32(_consts[628])))
+	v357 = *(*int32)(unsafe.Add(mBase, uint32((v350^int32(-1))<<(uint(int32(2))%32))+uint32(_c_F__quicklistInsert[1])))
 	if base.Ui32(l3) <= base.Ui32(v357) {
 		goto L101
 	} else {
@@ -5311,7 +5311,7 @@ L30:
 	}
 L31:
 	;
-	F__serverAssert(m, int32(_a1113), int32(_a1112), int32(1420))
+	F__serverAssert(m, int32(_a_F_quicklistGetIteratorEntryAtIdx_0), int32(_a_F_quicklistGetIteratorEntryAtIdx_1), int32(1420))
 	mBase = m.M
 	v109 = m.ExcPending
 	if v109 != 0 {
@@ -5859,7 +5859,7 @@ func F_quicklistNodeExceedsLimit(m *base.Module, l0 int32, l1 int32, l2 int32) i
 		} else {
 			v9 = v6
 		}
-		v16 = *(*int32)(unsafe.Add(mBase, uint32((v9^int32(-1))<<(uint(int32(2))%32))+uint32(_consts[628])))
+		v16 = *(*int32)(unsafe.Add(mBase, uint32((v9^int32(-1))<<(uint(int32(2))%32))+uint32(_c_F_quicklistNodeExceedsLimit[0])))
 		return base.B2i32(base.Ui32(v16) < base.Ui32(l1))
 	}
 }
@@ -5977,7 +5977,7 @@ func F_quicklistPopCustom(m *base.Module, l0 int32, l1 int32, l2 int32, l3 int32
 					v36 = v33
 					v37 = *(*int32)(unsafe.Add(mBase, uint32(v36)+16))
 					if v37&int32(196608) == int32(131072) {
-						F__serverAssert(m, int32(_a1114), int32(_a1112), int32(1518))
+						F__serverAssert(m, int32(_a_F_quicklistPopCustom_0), int32(_a_F_quicklistPopCustom_1), int32(1518))
 						mBase = m.M
 						v140 = m.ExcPending
 						if v140 != 0 {
@@ -6244,7 +6244,7 @@ func F_quicklistPopCustom(m *base.Module, l0 int32, l1 int32, l2 int32, l3 int32
 				v36 = v30
 				v37 = *(*int32)(unsafe.Add(mBase, uint32(v36)+16))
 				if v37&int32(196608) == int32(131072) {
-					F__serverAssert(m, int32(_a1114), int32(_a1112), int32(1518))
+					F__serverAssert(m, int32(_a_F_quicklistPopCustom_0), int32(_a_F_quicklistPopCustom_1), int32(1518))
 					mBase = m.M
 					v140 = m.ExcPending
 					if v140 != 0 {
@@ -6615,7 +6615,7 @@ func F_quicklistPushTail(m *base.Module, l0 int32, l1 int32, l2 int32) int32 {
 	v9 = int32(18)
 	v12 = v8 << (uint(v9) % 32) >> (uint(v9) % 32)
 	v13 = *(*int32)(unsafe.Add(mBase, uint32(l0)+4))
-	v15 = *(*int32)(unsafe.Add(mBase, _consts[381]))
+	v15 = *(*int32)(unsafe.Add(mBase, _c_F_quicklistPushTail[0]))
 	if v15 == v4 {
 		goto L3
 	} else {
@@ -6683,7 +6683,7 @@ L10:
 	goto L11
 L11:
 	;
-	v33 = *(*int32)(unsafe.Add(mBase, uint32((v26^int32(-1))<<(uint(int32(2))%32))+uint32(_consts[628])))
+	v33 = *(*int32)(unsafe.Add(mBase, uint32((v26^int32(-1))<<(uint(int32(2))%32))+uint32(_c_F_quicklistPushTail[1])))
 	if base.Ui32(l2) <= base.Ui32(v33) {
 		goto L1
 	} else {
@@ -6809,7 +6809,7 @@ L28:
 	goto L29
 L29:
 	;
-	v68 = *(*int32)(unsafe.Add(mBase, uint32((v61^int32(-1))<<(uint(int32(2))%32))+uint32(_consts[628])))
+	v68 = *(*int32)(unsafe.Add(mBase, uint32((v61^int32(-1))<<(uint(int32(2))%32))+uint32(_c_F_quicklistPushTail[1])))
 	v103 = v68
 	v104 = v55
 	goto L20
@@ -6860,7 +6860,7 @@ L38:
 	goto L39
 L39:
 	;
-	v97 = *(*int32)(unsafe.Add(mBase, uint32((v90^int32(-1))<<(uint(int32(2))%32))+uint32(_consts[628])))
+	v97 = *(*int32)(unsafe.Add(mBase, uint32((v90^int32(-1))<<(uint(int32(2))%32))+uint32(_c_F_quicklistPushTail[1])))
 	if base.Ui32(v97) < base.Ui32(l2) {
 		goto L16
 	} else {

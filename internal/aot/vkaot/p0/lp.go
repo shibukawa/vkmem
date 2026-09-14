@@ -326,7 +326,7 @@ func F_lpFind(m *base.Module, l0 int32, l1 int32, l2 int32, l3 int32, l4 int32) 
 	}
 L1:
 	;
-	F__serverAssert(m, int32(_a669), int32(_a668), int32(657))
+	F__serverAssert(m, int32(_a_F_lpFind_0), int32(_a_F_lpFind_1), int32(657))
 	mBase = m.M
 	v402 = m.ExcPending
 	if v402 != 0 {
@@ -336,7 +336,7 @@ L1:
 	}
 L2:
 	;
-	F__serverAssert(m, int32(_a670), int32(_a668), int32(654))
+	F__serverAssert(m, int32(_a_F_lpFind_2), int32(_a_F_lpFind_1), int32(654))
 	mBase = m.M
 	v396 = m.ExcPending
 	if v396 != 0 {
@@ -346,7 +346,7 @@ L2:
 	}
 L3:
 	;
-	F__serverAssert(m, int32(_a671), int32(_a668), int32(616))
+	F__serverAssert(m, int32(_a_F_lpFind_3), int32(_a_F_lpFind_1), int32(616))
 	mBase = m.M
 	v390 = m.ExcPending
 	if v390 != 0 {
@@ -356,7 +356,7 @@ L3:
 	}
 L4:
 	;
-	F__serverAssert(m, int32(_a667), int32(_a668), int32(610))
+	F__serverAssert(m, int32(_a_F_lpFind_4), int32(_a_F_lpFind_1), int32(610))
 	mBase = m.M
 	v384 = m.ExcPending
 	if v384 != 0 {
@@ -872,7 +872,7 @@ L77:
 	goto L71
 L78:
 	;
-	v354 = *(*int32)(unsafe.Add(mBase, uint32(v314<<(uint(int32(2))%32))+uint32(_consts[325])))
+	v354 = *(*int32)(unsafe.Add(mBase, uint32(v314<<(uint(int32(2))%32))+uint32(_c_F_lpFind[0])))
 	v355 = v291
 	v356 = v354
 	goto L71
@@ -1104,7 +1104,7 @@ func F_lpGetIntegerIfValid(m *base.Module, l0 int32, l1 int32) int64 {
 	}
 L1:
 	;
-	F__serverAssert(m, int32(_a1529), int32(_a1525), int32(282))
+	F__serverAssert(m, int32(_a_F_lpGetIntegerIfValid_0), int32(_a_F_lpGetIntegerIfValid_1), int32(282))
 	mBase = m.M
 	v179 = m.ExcPending
 	if v179 != 0 {
@@ -1392,7 +1392,7 @@ func F_lpGetObject(m *base.Module, l0 int32) int32 {
 	v5 = v3 - int32(16)
 	m.G0 = v5
 	if l0 == int32(0) {
-		F__serverAssert(m, int32(_a1608), int32(_a1609), int32(894))
+		F__serverAssert(m, int32(_a_F_lpGetObject_0), int32(_a_F_lpGetObject_1), int32(894))
 		mBase = m.M
 		v32 = m.ExcPending
 		if v32 != 0 {
@@ -1968,7 +1968,7 @@ L4:
 	}
 L5:
 	;
-	F__serverAssert(m, int32(_a672), int32(_a668), int32(754))
+	F__serverAssert(m, int32(_a_F_lpInsert_0), int32(_a_F_lpInsert_1), int32(754))
 	mBase = m.M
 	v1023 = m.ExcPending
 	if v1023 != 0 {
@@ -1978,7 +1978,7 @@ L5:
 	}
 L6:
 	;
-	F__serverAssert(m, int32(_a673), int32(_a668), int32(718))
+	F__serverAssert(m, int32(_a_F_lpInsert_2), int32(_a_F_lpInsert_1), int32(718))
 	mBase = m.M
 	v1016 = m.ExcPending
 	if v1016 != 0 {
@@ -2073,7 +2073,7 @@ L19:
 	goto L13
 L20:
 	;
-	v99 = *(*int32)(unsafe.Add(mBase, uint32(v59<<(uint(int32(2))%32))+uint32(_consts[325])))
+	v99 = *(*int32)(unsafe.Add(mBase, uint32(v59<<(uint(int32(2))%32))+uint32(_c_F_lpInsert[0])))
 	v100 = v36
 	v101 = v99
 	goto L13
@@ -2738,7 +2738,7 @@ L105:
 	goto L99
 L106:
 	;
-	v555 = *(*int32)(unsafe.Add(mBase, uint32(v515<<(uint(int32(2))%32))+uint32(_consts[325])))
+	v555 = *(*int32)(unsafe.Add(mBase, uint32(v515<<(uint(int32(2))%32))+uint32(_c_F_lpInsert[0])))
 	v556 = v492
 	v557 = v555
 	goto L99
@@ -3935,9 +3935,9 @@ L9:
 L10:
 	;
 	v123 = int32(0)
-	v125 = *(*int64)(unsafe.Add(mBase, _consts[298]))
+	v125 = *(*int64)(unsafe.Add(mBase, _c_F_lpNextRandom[0]))
 	v129 = v125*int64(6364136223846793005) + int64(1)
-	*(*int64)(unsafe.Add(mBase, _consts[298])) = v129
+	*(*int64)(unsafe.Add(mBase, _c_F_lpNextRandom[0])) = v129
 	goto L40
 L11:
 	;
@@ -4009,7 +4009,7 @@ L20:
 	goto L14
 L21:
 	;
-	v103 = *(*int32)(unsafe.Add(mBase, uint32(v63<<(uint(int32(2))%32))+uint32(_consts[325])))
+	v103 = *(*int32)(unsafe.Add(mBase, uint32(v63<<(uint(int32(2))%32))+uint32(_c_F_lpNextRandom[1])))
 	v104 = v40
 	v105 = v103
 	goto L14
@@ -4110,7 +4110,7 @@ L36:
 	}
 L37:
 	;
-	F__serverAssert(m, int32(_a674), int32(_a668), int32(400))
+	F__serverAssert(m, int32(_a_F_lpNextRandom_0), int32(_a_F_lpNextRandom_1), int32(400))
 	mBase = m.M
 	v120 = m.ExcPending
 	if v120 != 0 {
@@ -4199,7 +4199,7 @@ L49:
 	goto L43
 L50:
 	;
-	v212 = *(*int32)(unsafe.Add(mBase, uint32(v172<<(uint(int32(2))%32))+uint32(_consts[325])))
+	v212 = *(*int32)(unsafe.Add(mBase, uint32(v172<<(uint(int32(2))%32))+uint32(_c_F_lpNextRandom[1])))
 	v213 = v149
 	v214 = v212
 	goto L43
@@ -4300,7 +4300,7 @@ L65:
 	}
 L66:
 	;
-	F__serverAssert(m, int32(_a674), int32(_a668), int32(400))
+	F__serverAssert(m, int32(_a_F_lpNextRandom_0), int32(_a_F_lpNextRandom_1), int32(400))
 	mBase = m.M
 	v229 = m.ExcPending
 	if v229 != 0 {
@@ -4340,7 +4340,7 @@ func F_lpPrependInteger(m *base.Module, l0 int32, l1 int64) int32 {
 	if v4 == int32(255) {
 		v9 = *(*int32)(unsafe.Add(mBase, uint32(l0)))
 		if v9 != int32(7) {
-			F__serverAssert(m, int32(_a674), int32(_a668), int32(426))
+			F__serverAssert(m, int32(_a_F_lpPrependInteger_0), int32(_a_F_lpPrependInteger_1), int32(426))
 			mBase = m.M
 			v26 = m.ExcPending
 			if v26 != 0 {
@@ -4415,7 +4415,7 @@ func F_lpPrev(m *base.Module, l0 int32, l1 int32) int32 {
 	var v98 int32
 	_ = v98
 	if l1 == int32(0) {
-		F__serverAssert(m, int32(_a667), int32(_a668), int32(410))
+		F__serverAssert(m, int32(_a_F_lpPrev_0), int32(_a_F_lpPrev_1), int32(410))
 		mBase = m.M
 		v88 = m.ExcPending
 		if v88 != 0 {
@@ -4706,7 +4706,7 @@ L2:
 	}
 L3:
 	;
-	F__serverAssert(m, int32(_a675), int32(_a668), int32(1343))
+	F__serverAssert(m, int32(_a_F_lpRandomEntries_0), int32(_a_F_lpRandomEntries_1), int32(1343))
 	mBase = m.M
 	v281 = m.ExcPending
 	if v281 != 0 {
@@ -4745,9 +4745,9 @@ L7:
 L8:
 	;
 	v42 = int32(0)
-	v44 = *(*int64)(unsafe.Add(mBase, _consts[298]))
+	v44 = *(*int64)(unsafe.Add(mBase, _c_F_lpRandomEntries[0]))
 	v48 = v44*int64(6364136223846793005) + int64(1)
-	*(*int64)(unsafe.Add(mBase, _consts[298])) = v48
+	*(*int64)(unsafe.Add(mBase, _c_F_lpRandomEntries[0])) = v48
 	goto L10
 L9:
 	;
@@ -4778,7 +4778,7 @@ L12:
 	}
 L13:
 	;
-	F__serverAssert(m, int32(_a674), int32(_a668), int32(400))
+	F__serverAssert(m, int32(_a_F_lpRandomEntries_2), int32(_a_F_lpRandomEntries_1), int32(400))
 	mBase = m.M
 	v275 = m.ExcPending
 	if v275 != 0 {
@@ -4788,7 +4788,7 @@ L13:
 	}
 L14:
 	;
-	F__serverAssert(m, int32(_a667), int32(_a668), int32(395))
+	F__serverAssert(m, int32(_a_F_lpRandomEntries_3), int32(_a_F_lpRandomEntries_1), int32(395))
 	mBase = m.M
 	v269 = m.ExcPending
 	if v269 != 0 {
@@ -4798,7 +4798,7 @@ L14:
 	}
 L15:
 	;
-	F__serverAssert(m, int32(_a674), int32(_a668), int32(426))
+	F__serverAssert(m, int32(_a_F_lpRandomEntries_2), int32(_a_F_lpRandomEntries_1), int32(426))
 	mBase = m.M
 	v263 = m.ExcPending
 	if v263 != 0 {
@@ -4962,7 +4962,7 @@ L37:
 	goto L31
 L38:
 	;
-	v189 = *(*int32)(unsafe.Add(mBase, uint32(v149<<(uint(int32(2))%32))+uint32(_consts[325])))
+	v189 = *(*int32)(unsafe.Add(mBase, uint32(v149<<(uint(int32(2))%32))+uint32(_c_F_lpRandomEntries[1])))
 	v190 = v126
 	v191 = v189
 	goto L31

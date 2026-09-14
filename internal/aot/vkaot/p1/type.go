@@ -28,7 +28,7 @@ func F_checkType(m *base.Module, l0 int32, l1 int32, l2 int32) int32 {
 			v19 = v4
 			return v19
 		} else {
-			v13 = *(*int32)(unsafe.Add(mBase, _consts[507]))
+			v13 = *(*int32)(unsafe.Add(mBase, _c_F_checkType[0]))
 			F_addReplyErrorObject(m, l0, v13)
 			mBase = m.M
 			v17 = m.ExcPending
@@ -614,7 +614,7 @@ L20:
 	goto L1
 L21:
 	;
-	F__serverPanic_1(m, int32(_a2391), int32(222), int32(_a2392), int32(0))
+	F__serverPanic_1(m, int32(_a_F_setTypeAddAux_0), int32(222), int32(_a_F_setTypeAddAux_1), int32(0))
 	mBase = m.M
 	v792 = m.ExcPending
 	if v792 != 0 {
@@ -795,7 +795,7 @@ L43:
 	}
 L44:
 	;
-	v130 = *(*int32)(unsafe.Add(mBase, _consts[545]))
+	v130 = *(*int32)(unsafe.Add(mBase, _c_F_setTypeAddAux[0]))
 	if base.Ui32(v130) <= base.Ui32(v127) {
 		goto L43
 	} else {
@@ -803,7 +803,7 @@ L44:
 	}
 L45:
 	;
-	v133 = *(*int32)(unsafe.Add(mBase, _consts[546]))
+	v133 = *(*int32)(unsafe.Add(mBase, _c_F_setTypeAddAux[1]))
 	if base.Ui32(v133) < base.Ui32(v85) {
 		goto L43
 	} else {
@@ -931,7 +931,7 @@ L61:
 	}
 L62:
 	;
-	F__serverAssert(m, int32(_a2394), int32(_a2391), int32(177))
+	F__serverAssert(m, int32(_a_F_setTypeAddAux_2), int32(_a_F_setTypeAddAux_0), int32(177))
 	mBase = m.M
 	v172 = m.ExcPending
 	if v172 != 0 {
@@ -2227,7 +2227,7 @@ L281:
 	goto L296
 L282:
 	;
-	v736 = *(*int32)(unsafe.Add(mBase, _consts[545]))
+	v736 = *(*int32)(unsafe.Add(mBase, _c_F_setTypeAddAux[0]))
 	if base.Ui32(v736) <= base.Ui32(v734) {
 		goto L281
 	} else {
@@ -2235,7 +2235,7 @@ L282:
 	}
 L283:
 	;
-	v739 = *(*int32)(unsafe.Add(mBase, _consts[546]))
+	v739 = *(*int32)(unsafe.Add(mBase, _c_F_setTypeAddAux[1]))
 	if base.Ui32(v739) < base.Ui32(v85) {
 		goto L281
 	} else {
@@ -2358,7 +2358,7 @@ L299:
 	}
 L300:
 	;
-	F__serverAssert(m, int32(_a2394), int32(_a2391), int32(217))
+	F__serverAssert(m, int32(_a_F_setTypeAddAux_2), int32(_a_F_setTypeAddAux_0), int32(217))
 	mBase = m.M
 	v785 = m.ExcPending
 	if v785 != 0 {
@@ -2452,7 +2452,7 @@ func F_setTypeCreate(m *base.Module, l0 int32, l1 int32) int32 {
 		v30 = int32(-1)
 	}
 	if v30 != 0 {
-		v40 = *(*int32)(unsafe.Add(mBase, _consts[545]))
+		v40 = *(*int32)(unsafe.Add(mBase, _c_F_setTypeCreate[0]))
 		if base.Ui32(v40) < base.Ui32(l1) {
 			v45 = F_createSetObject(m)
 			mBase = m.M
@@ -2482,9 +2482,9 @@ func F_setTypeCreate(m *base.Module, l0 int32, l1 int32) int32 {
 			}
 		}
 	} else {
-		v32 = *(*int32)(unsafe.Add(mBase, _consts[544]))
+		v32 = *(*int32)(unsafe.Add(mBase, _c_F_setTypeCreate[1]))
 		if base.Ui32(v32) < base.Ui32(l1) {
-			v40 = *(*int32)(unsafe.Add(mBase, _consts[545]))
+			v40 = *(*int32)(unsafe.Add(mBase, _c_F_setTypeCreate[0]))
 			if base.Ui32(v40) < base.Ui32(l1) {
 				v45 = F_createSetObject(m)
 				mBase = m.M
@@ -2568,7 +2568,7 @@ func F_setTypeInitIterator(m *base.Module, l0 int32) int32 {
 				return v5
 			}
 		default:
-			F__serverPanic_1(m, int32(_a2391), int32(331), int32(_a2392), int32(0))
+			F__serverPanic_1(m, int32(_a_F_setTypeInitIterator_0), int32(331), int32(_a_F_setTypeInitIterator_1), int32(0))
 			mBase = m.M
 			v29 = m.ExcPending
 			if v29 != 0 {
@@ -3200,7 +3200,7 @@ L72:
 	goto L1
 L73:
 	;
-	F__serverPanic_1(m, int32(_a2391), int32(316), int32(_a2392), int32(0))
+	F__serverPanic_1(m, int32(_a_F_setTypeIsMemberAux_0), int32(316), int32(_a_F_setTypeIsMemberAux_1), int32(0))
 	mBase = m.M
 	v296 = m.ExcPending
 	if v296 != 0 {
@@ -3381,7 +3381,7 @@ func F_setTypeNext(m *base.Module, l0 int32, l1 int32, l2 int32, l3 int32) int32
 			return v116
 		}
 	default:
-		F__serverPanic_1(m, int32(_a2391), int32(386), int32(_a2393), int32(0))
+		F__serverPanic_1(m, int32(_a_F_setTypeNext_0), int32(386), int32(_a_F_setTypeNext_1), int32(0))
 		mBase = m.M
 		v107 = m.ExcPending
 		if v107 != 0 {
@@ -3528,7 +3528,7 @@ func F_setTypeSize(m *base.Module, l0 int32) int32 {
 		v27 = *(*int32)(unsafe.Add(mBase, uint32(v25)+16))
 		return v26 + v27
 	default:
-		F__serverPanic_1(m, int32(_a2391), int32(481), int32(_a2392), int32(0))
+		F__serverPanic_1(m, int32(_a_F_setTypeSize_0), int32(481), int32(_a_F_setTypeSize_1), int32(0))
 		mBase = m.M
 		v23 = m.ExcPending
 		if v23 != 0 {

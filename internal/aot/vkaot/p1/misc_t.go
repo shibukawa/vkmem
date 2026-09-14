@@ -279,7 +279,7 @@ func F_tconcat(m *base.Module, l0 int32) int32 {
 	v9 = v7 - int32(1072)
 	m.G0 = v9
 	v12 = m.G3
-	v17 = F_luaL_optlstring(m, l0, int32(2), v12+int32(_a320), v9+int32(32))
+	v17 = F_luaL_optlstring(m, l0, int32(2), v12+int32(_a_F_tconcat_0), v9+int32(32))
 	mBase = m.M
 	v20 = m.ExcPending
 	if v20 != 0 {
@@ -541,7 +541,7 @@ L80:
 	*(*int32)(unsafe.Add(mBase, uint32(v9)+20)) = v108
 	*(*int32)(unsafe.Add(mBase, uint32(v9)+16)) = v309
 	v312 = m.G3
-	v317 = F_luaL_error(m, l0, v312+int32(_a2715), v9+int32(16))
+	v317 = F_luaL_error(m, l0, v312+int32(_a_F_tconcat_1), v9+int32(16))
 	mBase = m.M
 	v318 = m.ExcPending
 	if v318 != 0 {
@@ -557,7 +557,7 @@ L81:
 	goto L80
 L82:
 	;
-	v309 = v299 + int32(_a2694)
+	v309 = v299 + int32(_a_F_tconcat_2)
 	goto L80
 L83:
 	;
@@ -709,7 +709,7 @@ L136:
 	*(*int32)(unsafe.Add(mBase, uint32(v9)+4)) = v95
 	*(*int32)(unsafe.Add(mBase, uint32(v9))) = v537
 	v540 = m.G3
-	v543 = F_luaL_error(m, l0, v540+int32(_a2715), v9)
+	v543 = F_luaL_error(m, l0, v540+int32(_a_F_tconcat_1), v9)
 	mBase = m.M
 	v544 = m.ExcPending
 	if v544 != 0 {
@@ -725,7 +725,7 @@ L137:
 	goto L136
 L138:
 	;
-	v537 = v527 + int32(_a2694)
+	v537 = v527 + int32(_a_F_tconcat_2)
 	goto L136
 L139:
 	;
@@ -744,7 +744,7 @@ func F_timestampIsExpired(m *base.Module, l0 int64) int32 {
 	var v7 int64
 	_ = v7
 	if int64(0) <= l0 {
-		v7 = *(*int64)(unsafe.Add(mBase, _consts[12]))
+		v7 = *(*int64)(unsafe.Add(mBase, _c_F_timestampIsExpired[0]))
 		return base.B2i32(l0 < v7)
 	} else {
 		return int32(0)
@@ -777,29 +777,29 @@ func F_tlsResetCertInfo(m *base.Module) {
 	_ = v36
 	var v40 int32
 	_ = v40
-	v3 = *(*int32)(unsafe.Add(mBase, _consts[139]))
+	v3 = *(*int32)(unsafe.Add(mBase, _c_F_tlsResetCertInfo[0]))
 	if v3 != 0 {
 		return
 	} else {
-		v5 = *(*int32)(unsafe.Add(mBase, _consts[170]))
+		v5 = *(*int32)(unsafe.Add(mBase, _c_F_tlsResetCertInfo[1]))
 		if v5 != 0 {
 			return
 		} else {
-			v7 = *(*int32)(unsafe.Add(mBase, _consts[107]))
+			v7 = *(*int32)(unsafe.Add(mBase, _c_F_tlsResetCertInfo[2]))
 			if v7 != 0 {
 				return
 			} else {
-				v8 = int32(_a20)
-				*(*int64)(unsafe.Add(mBase, _consts[879])) = int64(0)
-				v12 = *(*int32)(unsafe.Add(mBase, _consts[880]))
+				v8 = int32(_a_F_tlsResetCertInfo_0)
+				*(*int64)(unsafe.Add(mBase, _c_F_tlsResetCertInfo[3])) = int64(0)
+				v12 = *(*int32)(unsafe.Add(mBase, _c_F_tlsResetCertInfo[4]))
 				if v12 == int32(0) {
-					v20 = int32(_a20)
-					*(*int64)(unsafe.Add(mBase, _consts[881])) = int64(0)
-					v24 = *(*int32)(unsafe.Add(mBase, _consts[882]))
+					v20 = int32(_a_F_tlsResetCertInfo_0)
+					*(*int64)(unsafe.Add(mBase, _c_F_tlsResetCertInfo[5])) = int64(0)
+					v24 = *(*int32)(unsafe.Add(mBase, _c_F_tlsResetCertInfo[6]))
 					if v24 == int32(0) {
-						v32 = int32(_a20)
-						*(*int64)(unsafe.Add(mBase, _consts[883])) = int64(0)
-						v36 = *(*int32)(unsafe.Add(mBase, _consts[884]))
+						v32 = int32(_a_F_tlsResetCertInfo_0)
+						*(*int64)(unsafe.Add(mBase, _c_F_tlsResetCertInfo[7])) = int64(0)
+						v36 = *(*int32)(unsafe.Add(mBase, _c_F_tlsResetCertInfo[8]))
 						if v36 == int32(0) {
 							return
 						} else {
@@ -809,7 +809,7 @@ func F_tlsResetCertInfo(m *base.Module) {
 							if v40 != 0 {
 								return
 							} else {
-								*(*int32)(unsafe.Add(mBase, _consts[884])) = int32(0)
+								*(*int32)(unsafe.Add(mBase, _c_F_tlsResetCertInfo[8])) = int32(0)
 								return
 							}
 						}
@@ -820,10 +820,10 @@ func F_tlsResetCertInfo(m *base.Module) {
 						if v28 != 0 {
 							return
 						} else {
-							*(*int32)(unsafe.Add(mBase, _consts[882])) = int32(0)
-							v32 = int32(_a20)
-							*(*int64)(unsafe.Add(mBase, _consts[883])) = int64(0)
-							v36 = *(*int32)(unsafe.Add(mBase, _consts[884]))
+							*(*int32)(unsafe.Add(mBase, _c_F_tlsResetCertInfo[6])) = int32(0)
+							v32 = int32(_a_F_tlsResetCertInfo_0)
+							*(*int64)(unsafe.Add(mBase, _c_F_tlsResetCertInfo[7])) = int64(0)
+							v36 = *(*int32)(unsafe.Add(mBase, _c_F_tlsResetCertInfo[8]))
 							if v36 == int32(0) {
 								return
 							} else {
@@ -833,7 +833,7 @@ func F_tlsResetCertInfo(m *base.Module) {
 								if v40 != 0 {
 									return
 								} else {
-									*(*int32)(unsafe.Add(mBase, _consts[884])) = int32(0)
+									*(*int32)(unsafe.Add(mBase, _c_F_tlsResetCertInfo[8])) = int32(0)
 									return
 								}
 							}
@@ -846,14 +846,14 @@ func F_tlsResetCertInfo(m *base.Module) {
 					if v16 != 0 {
 						return
 					} else {
-						*(*int32)(unsafe.Add(mBase, _consts[880])) = int32(0)
-						v20 = int32(_a20)
-						*(*int64)(unsafe.Add(mBase, _consts[881])) = int64(0)
-						v24 = *(*int32)(unsafe.Add(mBase, _consts[882]))
+						*(*int32)(unsafe.Add(mBase, _c_F_tlsResetCertInfo[4])) = int32(0)
+						v20 = int32(_a_F_tlsResetCertInfo_0)
+						*(*int64)(unsafe.Add(mBase, _c_F_tlsResetCertInfo[5])) = int64(0)
+						v24 = *(*int32)(unsafe.Add(mBase, _c_F_tlsResetCertInfo[6]))
 						if v24 == int32(0) {
-							v32 = int32(_a20)
-							*(*int64)(unsafe.Add(mBase, _consts[883])) = int64(0)
-							v36 = *(*int32)(unsafe.Add(mBase, _consts[884]))
+							v32 = int32(_a_F_tlsResetCertInfo_0)
+							*(*int64)(unsafe.Add(mBase, _c_F_tlsResetCertInfo[7])) = int64(0)
+							v36 = *(*int32)(unsafe.Add(mBase, _c_F_tlsResetCertInfo[8]))
 							if v36 == int32(0) {
 								return
 							} else {
@@ -863,7 +863,7 @@ func F_tlsResetCertInfo(m *base.Module) {
 								if v40 != 0 {
 									return
 								} else {
-									*(*int32)(unsafe.Add(mBase, _consts[884])) = int32(0)
+									*(*int32)(unsafe.Add(mBase, _c_F_tlsResetCertInfo[8])) = int32(0)
 									return
 								}
 							}
@@ -874,10 +874,10 @@ func F_tlsResetCertInfo(m *base.Module) {
 							if v28 != 0 {
 								return
 							} else {
-								*(*int32)(unsafe.Add(mBase, _consts[882])) = int32(0)
-								v32 = int32(_a20)
-								*(*int64)(unsafe.Add(mBase, _consts[883])) = int64(0)
-								v36 = *(*int32)(unsafe.Add(mBase, _consts[884]))
+								*(*int32)(unsafe.Add(mBase, _c_F_tlsResetCertInfo[6])) = int32(0)
+								v32 = int32(_a_F_tlsResetCertInfo_0)
+								*(*int64)(unsafe.Add(mBase, _c_F_tlsResetCertInfo[7])) = int64(0)
+								v36 = *(*int32)(unsafe.Add(mBase, _c_F_tlsResetCertInfo[8]))
 								if v36 == int32(0) {
 									return
 								} else {
@@ -887,7 +887,7 @@ func F_tlsResetCertInfo(m *base.Module) {
 									if v40 != 0 {
 										return
 									} else {
-										*(*int32)(unsafe.Add(mBase, _consts[884])) = int32(0)
+										*(*int32)(unsafe.Add(mBase, _c_F_tlsResetCertInfo[8])) = int32(0)
 										return
 									}
 								}
@@ -1243,14 +1243,14 @@ L3:
 	v14 = int32(3)
 	v15 = base.I32_div_u_s(v13, v14)
 	v21 = int32(2)
-	v25 = *(*int32)(unsafe.Add(mBase, uint32((l0-v15*v14)&v12<<(uint(v21)%32))+uint32(_consts[1061])))
+	v25 = *(*int32)(unsafe.Add(mBase, uint32((l0-v15*v14)&v12<<(uint(v21)%32))+uint32(_c_F_towupper[0])))
 	v26 = int32(8)
 	v27 = int32(base.Ui32(l0) >> (uint(v26) % 32))
-	v30 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v27)+uint32(_consts[1062]))))
-	v36 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v30*int32(86)+v15)+uint32(_consts[1062]))))
+	v30 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v27)+uint32(_c_F_towupper[1]))))
+	v36 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v30*int32(86)+v15)+uint32(_c_F_towupper[1]))))
 	v41 = base.I32_rem_u_s(int32(base.Ui32(v25*v36)>>(uint(int32(11))%32)), int32(6))
-	v44 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v27)+uint32(_consts[1063]))))
-	v50 = *(*int32)(unsafe.Add(mBase, uint32((v41+v44)<<(uint(v21)%32))+uint32(_consts[1064])))
+	v44 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v27)+uint32(_c_F_towupper[2]))))
+	v50 = *(*int32)(unsafe.Add(mBase, uint32((v41+v44)<<(uint(v21)%32))+uint32(_c_F_towupper[3])))
 	v52 = v50 >> (uint(v26) % 32)
 	v54 = v50 & v12
 	if base.Ui32(int32(1)) < base.Ui32(v54) {
@@ -1281,7 +1281,7 @@ L7:
 	v78 = int32(base.Ui32(v71) >> (uint(v77) % 32))
 	v79 = v78 + v72
 	v81 = v79 << (uint(v77) % 32)
-	v84 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v81)+uint32(_consts[1065]))))
+	v84 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v81)+uint32(_c_F_towupper[4]))))
 	if v13 != v84 {
 		goto L9
 	} else {
@@ -1300,8 +1300,8 @@ L9:
 	}
 L10:
 	;
-	v86 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v81)+uint32(_consts[1066]))))
-	v91 = *(*int32)(unsafe.Add(mBase, uint32(v86<<(uint(int32(2))%32))+uint32(_consts[1064])))
+	v86 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v81)+uint32(_c_F_towupper[5]))))
+	v91 = *(*int32)(unsafe.Add(mBase, uint32(v86<<(uint(int32(2))%32))+uint32(_c_F_towupper[3])))
 	v93 = v91 & int32(255)
 	if base.Ui32(int32(1)) < base.Ui32(v93) {
 		goto L11
@@ -1620,7 +1620,7 @@ L1:
 	v404 = m.G3
 	v410 = m.G8
 	v411 = *(*int32)(unsafe.Add(mBase, uint32(v410)))
-	m.T0[v411].(func(*base.Module, int32, int32, int32))(m, v404+int32(_a2587), v404+int32(_a2588), int32(606))
+	m.T0[v411].(func(*base.Module, int32, int32, int32))(m, v404+int32(_a_F_traceCommandHandler_0), v404+int32(_a_F_traceCommandHandler_1), int32(606))
 	mBase = m.M
 	v413 = m.ExcPending
 	if v413 != 0 {
@@ -1651,7 +1651,7 @@ L4:
 	v371 = m.G13
 	v372 = *(*int32)(unsafe.Add(mBase, uint32(v371)))
 	v373 = m.G12
-	v378 = m.T0[v372].(func(*base.Module, int32, int32, int32) int32)(m, int32(0), v370+int32(_a2596), int32(33))
+	v378 = m.T0[v372].(func(*base.Module, int32, int32, int32) int32)(m, int32(0), v370+int32(_a_F_traceCommandHandler_2), int32(33))
 	mBase = m.M
 	v379 = m.ExcPending
 	if v379 != 0 {
@@ -1698,7 +1698,7 @@ L18:
 L19:
 	;
 	v89 = m.G3
-	v94 = F_lua_getinfo(m, v18, v89+int32(_a2597), v14+int32(28))
+	v94 = F_lua_getinfo(m, v18, v89+int32(_a_F_traceCommandHandler_3), v14+int32(28))
 	mBase = m.M
 	v97 = m.ExcPending
 	if v97 != 0 {
@@ -1711,8 +1711,8 @@ L21:
 	return int32(0)
 L22:
 	;
-	v99 = v89 + int32(_a2598)
-	v102 = int32(*(*int8)(unsafe.Add(mBase, uint32(v89)+uint32(_consts[979]))))
+	v99 = v89 + int32(_a_F_traceCommandHandler_4)
+	v102 = int32(*(*int8)(unsafe.Add(mBase, uint32(v89)+uint32(_c_F_traceCommandHandler[0]))))
 	if v102 != 0 {
 		goto L25
 	} else {
@@ -1758,7 +1758,7 @@ L27:
 	goto L24
 L28:
 	;
-	v107 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v89)+uint32(_consts[980]))))
+	v107 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v89)+uint32(_c_F_traceCommandHandler[1]))))
 	if v107 != 0 {
 		goto L29
 	} else {
@@ -1779,7 +1779,7 @@ L30:
 	goto L24
 L31:
 	;
-	v111 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v89)+uint32(_consts[981]))))
+	v111 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v89)+uint32(_c_F_traceCommandHandler[2]))))
 	if v111 != 0 {
 		goto L32
 	} else {
@@ -1802,7 +1802,7 @@ L33:
 	goto L24
 L34:
 	;
-	v116 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v89)+uint32(_consts[982]))))
+	v116 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v89)+uint32(_c_F_traceCommandHandler[3]))))
 	if v116 != 0 {
 		goto L35
 	} else {
@@ -1825,7 +1825,7 @@ L36:
 	goto L24
 L37:
 	;
-	v121 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v89)+uint32(_consts[983]))))
+	v121 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v89)+uint32(_c_F_traceCommandHandler[4]))))
 	if v121 != 0 {
 		goto L38
 	} else {
@@ -1853,11 +1853,11 @@ L40:
 	}
 L41:
 	;
-	v133 = int32(_a2599)
+	v133 = int32(_a_F_traceCommandHandler_5)
 	goto L43
 L42:
 	;
-	v133 = int32(_a2600)
+	v133 = int32(_a_F_traceCommandHandler_6)
 	goto L43
 L43:
 	;
@@ -1874,13 +1874,13 @@ L44:
 	goto L46
 L45:
 	;
-	v139 = v130 + int32(_a2601)
+	v139 = v130 + int32(_a_F_traceCommandHandler_7)
 	goto L46
 L46:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v14)+20)) = v139
 	v141 = m.G13
-	v146 = F_lm_asprintf(m, v130+int32(_a2602), v14+int32(16))
+	v146 = F_lm_asprintf(m, v130+int32(_a_F_traceCommandHandler_8), v14+int32(16))
 	mBase = m.M
 	v147 = m.ExcPending
 	if v147 != 0 {
@@ -2013,7 +2013,7 @@ L65:
 	}
 L66:
 	;
-	v217 = v130 + int32(_a2603)
+	v217 = v130 + int32(_a_F_traceCommandHandler_9)
 	v218 = *(*int32)(unsafe.Add(mBase, uint32(v14)+48))
 	v219 = m.G6
 	if v218 < int32(1) {
@@ -2066,13 +2066,13 @@ L71:
 	goto L74
 L72:
 	;
-	v275 = v233 + int32(_a2604)
-	v281 = v233 + int32(_a2605)
+	v275 = v233 + int32(_a_F_traceCommandHandler_10)
+	v281 = v233 + int32(_a_F_traceCommandHandler_11)
 	goto L70
 L73:
 	;
-	v275 = v254 + int32(_a2606)
-	v281 = v254 + int32(_a2607)
+	v275 = v254 + int32(_a_F_traceCommandHandler_12)
+	v281 = v254 + int32(_a_F_traceCommandHandler_13)
 	goto L70
 L74:
 	;
@@ -2086,8 +2086,8 @@ L74:
 	}
 L75:
 	;
-	v275 = v261 + int32(_a2604)
-	v281 = v261 + int32(_a2605)
+	v275 = v261 + int32(_a_F_traceCommandHandler_10)
+	v281 = v261 + int32(_a_F_traceCommandHandler_11)
 	goto L70
 L76:
 	;
@@ -2117,7 +2117,7 @@ L80:
 	v292 = m.G15
 	v293 = *(*int32)(unsafe.Add(mBase, uint32(v292)))
 	v294 = m.G12
-	v298 = m.T0[v293].(func(*base.Module, int32, int32, int32) int32)(m, int32(0), v291+int32(_a2608), v14)
+	v298 = m.T0[v293].(func(*base.Module, int32, int32, int32) int32)(m, int32(0), v291+int32(_a_F_traceCommandHandler_14), v14)
 	mBase = m.M
 	v299 = m.ExcPending
 	if v299 != 0 {
@@ -2431,7 +2431,7 @@ func F_tryReadBulkPayloadMetadata(m *base.Module, l0 int32, l1 int32, l2 int32, 
 	v13 = v11 - int32(48)
 	m.G0 = v13
 	v15 = int32(-1)
-	v18 = *(*int32)(unsafe.Add(mBase, _consts[599]))
+	v18 = *(*int32)(unsafe.Add(mBase, _c_F_tryReadBulkPayloadMetadata[0]))
 	v22 = *(*int32)(unsafe.Add(mBase, uint32(l0)))
 	v23 = *(*int32)(unsafe.Add(mBase, uint32(v22)+100))
 	v24 = m.T0[v23].(func(*base.Module, int32, int32, int32, int64) int32)(m, l0, l1, int32(1024), base.I64_extend_i32_s(v18*int32(1000)))
@@ -2450,7 +2450,7 @@ L2:
 	;
 	v45 = base.I64_extend_i32_s(v24 + int32(1))
 	v46 = int32(0)
-	v47 = *(*int32)(unsafe.Add(mBase, _consts[600]))
+	v47 = *(*int32)(unsafe.Add(mBase, _c_F_tryReadBulkPayloadMetadata[1]))
 	goto L11
 L3:
 	;
@@ -2464,7 +2464,7 @@ L4:
 	}
 L5:
 	;
-	v31 = *(*int32)(unsafe.Add(mBase, _consts[28]))
+	v31 = *(*int32)(unsafe.Add(mBase, _c_F_tryReadBulkPayloadMetadata[2]))
 	if int32(3) < v31 {
 		v268 = v15
 		goto L1
@@ -2486,7 +2486,7 @@ L6:
 L7:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v13))) = v36
-	F__serverLog(m, int32(3), int32(_a1951), v13)
+	F__serverLog(m, int32(3), int32(_a_F_tryReadBulkPayloadMetadata_0), v13)
 	mBase = m.M
 	v42 = m.ExcPending
 	if v42 != 0 {
@@ -2513,9 +2513,9 @@ L9:
 	}
 L10:
 	;
-	v57 = int32(_a20)
-	v59 = *(*int64)(unsafe.Add(mBase, _consts[601]))
-	*(*int64)(unsafe.Add(mBase, _consts[601])) = v59 + v45
+	v57 = int32(_a_F_tryReadBulkPayloadMetadata_1)
+	v59 = *(*int64)(unsafe.Add(mBase, _c_F_tryReadBulkPayloadMetadata[3]))
+	*(*int64)(unsafe.Add(mBase, _c_F_tryReadBulkPayloadMetadata[3])) = v59 + v45
 	goto L9
 L11:
 	;
@@ -2526,26 +2526,26 @@ L11:
 	}
 L12:
 	;
-	v52 = int32(_a20)
-	v54 = *(*int64)(unsafe.Add(mBase, _consts[602]))
-	*(*int64)(unsafe.Add(mBase, _consts[602])) = v54 + v45
+	v52 = int32(_a_F_tryReadBulkPayloadMetadata_1)
+	v54 = *(*int64)(unsafe.Add(mBase, _c_F_tryReadBulkPayloadMetadata[4]))
+	*(*int64)(unsafe.Add(mBase, _c_F_tryReadBulkPayloadMetadata[4])) = v54 + v45
 	goto L9
 L13:
 	;
-	v261 = int32(_a20)
-	v263 = *(*int64)(unsafe.Add(mBase, _consts[109]))
-	*(*int64)(unsafe.Add(mBase, _consts[603])) = v263
+	v261 = int32(_a_F_tryReadBulkPayloadMetadata_1)
+	v263 = *(*int64)(unsafe.Add(mBase, _c_F_tryReadBulkPayloadMetadata[5]))
+	*(*int64)(unsafe.Add(mBase, _c_F_tryReadBulkPayloadMetadata[6])) = v263
 	v268 = int32(-2)
 	goto L1
 L14:
 	;
 	v94 = l1 + int32(1)
-	v95 = int32(_a1952)
+	v95 = int32(_a_F_tryReadBulkPayloadMetadata_2)
 	goto L26
 L15:
 	;
 	v81 = int32(-1)
-	v83 = *(*int32)(unsafe.Add(mBase, _consts[28]))
+	v83 = *(*int32)(unsafe.Add(mBase, _c_F_tryReadBulkPayloadMetadata[2]))
 	if int32(3) < v83 {
 		v268 = v81
 		goto L1
@@ -2562,7 +2562,7 @@ L16:
 L17:
 	;
 	v65 = int32(-1)
-	v67 = *(*int32)(unsafe.Add(mBase, _consts[28]))
+	v67 = *(*int32)(unsafe.Add(mBase, _c_F_tryReadBulkPayloadMetadata[2]))
 	if int32(3) < v67 {
 		v268 = v65
 		goto L1
@@ -2572,7 +2572,7 @@ L17:
 L18:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v13)+32)) = l1 + int32(1)
-	F__serverLog(m, int32(3), int32(_a1953), v13+int32(32))
+	F__serverLog(m, int32(3), int32(_a_F_tryReadBulkPayloadMetadata_3), v13+int32(32))
 	mBase = m.M
 	v78 = m.ExcPending
 	if v78 != 0 {
@@ -2590,7 +2590,7 @@ L20:
 L21:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v13)+16)) = l1
-	F__serverLog(m, int32(3), int32(_a1954), v13+int32(16))
+	F__serverLog(m, int32(3), int32(_a_F_tryReadBulkPayloadMetadata_4), v13+int32(16))
 	mBase = m.M
 	v92 = m.ExcPending
 	if v92 != 0 {

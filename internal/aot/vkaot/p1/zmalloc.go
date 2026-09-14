@@ -70,7 +70,7 @@ func F_zmalloc_get_rss(m *base.Module) int32 {
 	var v87 int32
 	_ = v87
 	v1 = int32(0)
-	v10 = *(*int32)(unsafe.Add(mBase, _consts[315]))
+	v10 = *(*int32)(unsafe.Add(mBase, _c_F_zmalloc_get_rss[0]))
 	if v10 < int32(261) {
 		if v10 < int32(1) {
 			v87 = v1
@@ -85,10 +85,10 @@ func F_zmalloc_get_rss(m *base.Module) int32 {
 				v35 = v28
 				for {
 					v38 = v31 << (uint(int32(2)) % 32)
-					v41 = *(*int32)(unsafe.Add(mBase, uint32(v38)+uint32(_consts[317])))
-					v44 = *(*int32)(unsafe.Add(mBase, uint32(v38)+uint32(_consts[318])))
-					v47 = *(*int32)(unsafe.Add(mBase, uint32(v38)+uint32(_consts[319])))
-					v50 = *(*int32)(unsafe.Add(mBase, uint32(v38)+uint32(_consts[320])))
+					v41 = *(*int32)(unsafe.Add(mBase, uint32(v38)+uint32(_c_F_zmalloc_get_rss[1])))
+					v44 = *(*int32)(unsafe.Add(mBase, uint32(v38)+uint32(_c_F_zmalloc_get_rss[2])))
+					v47 = *(*int32)(unsafe.Add(mBase, uint32(v38)+uint32(_c_F_zmalloc_get_rss[3])))
+					v50 = *(*int32)(unsafe.Add(mBase, uint32(v38)+uint32(_c_F_zmalloc_get_rss[4])))
 					v54 = v41 + (v44 + (v47 + (v50 + v30)))
 					v55 = int32(4)
 					v56 = v31 + v55
@@ -116,7 +116,7 @@ func F_zmalloc_get_rss(m *base.Module) int32 {
 				v70 = v61
 				v72 = int32(0)
 				for {
-					v80 = *(*int32)(unsafe.Add(mBase, uint32(v70<<(uint(int32(2))%32))+uint32(_consts[320])))
+					v80 = *(*int32)(unsafe.Add(mBase, uint32(v70<<(uint(int32(2))%32))+uint32(_c_F_zmalloc_get_rss[4])))
 					v81 = v80 + v69
 					v82 = int32(1)
 					v85 = v72 + v82
@@ -134,7 +134,7 @@ func F_zmalloc_get_rss(m *base.Module) int32 {
 			}
 		}
 	} else {
-		v14 = *(*int32)(unsafe.Add(mBase, _consts[316]))
+		v14 = *(*int32)(unsafe.Add(mBase, _c_F_zmalloc_get_rss[5]))
 		v18 = v14
 		v19 = int32(260)
 		v21 = v19 & int32(3)
@@ -145,10 +145,10 @@ func F_zmalloc_get_rss(m *base.Module) int32 {
 			v35 = v28
 			for {
 				v38 = v31 << (uint(int32(2)) % 32)
-				v41 = *(*int32)(unsafe.Add(mBase, uint32(v38)+uint32(_consts[317])))
-				v44 = *(*int32)(unsafe.Add(mBase, uint32(v38)+uint32(_consts[318])))
-				v47 = *(*int32)(unsafe.Add(mBase, uint32(v38)+uint32(_consts[319])))
-				v50 = *(*int32)(unsafe.Add(mBase, uint32(v38)+uint32(_consts[320])))
+				v41 = *(*int32)(unsafe.Add(mBase, uint32(v38)+uint32(_c_F_zmalloc_get_rss[1])))
+				v44 = *(*int32)(unsafe.Add(mBase, uint32(v38)+uint32(_c_F_zmalloc_get_rss[2])))
+				v47 = *(*int32)(unsafe.Add(mBase, uint32(v38)+uint32(_c_F_zmalloc_get_rss[3])))
+				v50 = *(*int32)(unsafe.Add(mBase, uint32(v38)+uint32(_c_F_zmalloc_get_rss[4])))
 				v54 = v41 + (v44 + (v47 + (v50 + v30)))
 				v55 = int32(4)
 				v56 = v31 + v55
@@ -176,7 +176,7 @@ func F_zmalloc_get_rss(m *base.Module) int32 {
 			v70 = v61
 			v72 = int32(0)
 			for {
-				v80 = *(*int32)(unsafe.Add(mBase, uint32(v70<<(uint(int32(2))%32))+uint32(_consts[320])))
+				v80 = *(*int32)(unsafe.Add(mBase, uint32(v70<<(uint(int32(2))%32))+uint32(_c_F_zmalloc_get_rss[4])))
 				v81 = v80 + v69
 				v82 = int32(1)
 				v85 = v72 + v82
@@ -265,7 +265,7 @@ func F_zmalloc_used_memory(m *base.Module) int32 {
 	var v87 int32
 	_ = v87
 	v1 = int32(0)
-	v10 = *(*int32)(unsafe.Add(mBase, _consts[315]))
+	v10 = *(*int32)(unsafe.Add(mBase, _c_F_zmalloc_used_memory[0]))
 	if v10 < int32(261) {
 		if v10 < int32(1) {
 			v87 = v1
@@ -280,10 +280,10 @@ func F_zmalloc_used_memory(m *base.Module) int32 {
 				v35 = v28
 				for {
 					v38 = v31 << (uint(int32(2)) % 32)
-					v41 = *(*int32)(unsafe.Add(mBase, uint32(v38)+uint32(_consts[317])))
-					v44 = *(*int32)(unsafe.Add(mBase, uint32(v38)+uint32(_consts[318])))
-					v47 = *(*int32)(unsafe.Add(mBase, uint32(v38)+uint32(_consts[319])))
-					v50 = *(*int32)(unsafe.Add(mBase, uint32(v38)+uint32(_consts[320])))
+					v41 = *(*int32)(unsafe.Add(mBase, uint32(v38)+uint32(_c_F_zmalloc_used_memory[1])))
+					v44 = *(*int32)(unsafe.Add(mBase, uint32(v38)+uint32(_c_F_zmalloc_used_memory[2])))
+					v47 = *(*int32)(unsafe.Add(mBase, uint32(v38)+uint32(_c_F_zmalloc_used_memory[3])))
+					v50 = *(*int32)(unsafe.Add(mBase, uint32(v38)+uint32(_c_F_zmalloc_used_memory[4])))
 					v54 = v41 + (v44 + (v47 + (v50 + v30)))
 					v55 = int32(4)
 					v56 = v31 + v55
@@ -311,7 +311,7 @@ func F_zmalloc_used_memory(m *base.Module) int32 {
 				v70 = v61
 				v72 = int32(0)
 				for {
-					v80 = *(*int32)(unsafe.Add(mBase, uint32(v70<<(uint(int32(2))%32))+uint32(_consts[320])))
+					v80 = *(*int32)(unsafe.Add(mBase, uint32(v70<<(uint(int32(2))%32))+uint32(_c_F_zmalloc_used_memory[4])))
 					v81 = v80 + v69
 					v82 = int32(1)
 					v85 = v72 + v82
@@ -329,7 +329,7 @@ func F_zmalloc_used_memory(m *base.Module) int32 {
 			}
 		}
 	} else {
-		v14 = *(*int32)(unsafe.Add(mBase, _consts[316]))
+		v14 = *(*int32)(unsafe.Add(mBase, _c_F_zmalloc_used_memory[5]))
 		v18 = v14
 		v19 = int32(260)
 		v21 = v19 & int32(3)
@@ -340,10 +340,10 @@ func F_zmalloc_used_memory(m *base.Module) int32 {
 			v35 = v28
 			for {
 				v38 = v31 << (uint(int32(2)) % 32)
-				v41 = *(*int32)(unsafe.Add(mBase, uint32(v38)+uint32(_consts[317])))
-				v44 = *(*int32)(unsafe.Add(mBase, uint32(v38)+uint32(_consts[318])))
-				v47 = *(*int32)(unsafe.Add(mBase, uint32(v38)+uint32(_consts[319])))
-				v50 = *(*int32)(unsafe.Add(mBase, uint32(v38)+uint32(_consts[320])))
+				v41 = *(*int32)(unsafe.Add(mBase, uint32(v38)+uint32(_c_F_zmalloc_used_memory[1])))
+				v44 = *(*int32)(unsafe.Add(mBase, uint32(v38)+uint32(_c_F_zmalloc_used_memory[2])))
+				v47 = *(*int32)(unsafe.Add(mBase, uint32(v38)+uint32(_c_F_zmalloc_used_memory[3])))
+				v50 = *(*int32)(unsafe.Add(mBase, uint32(v38)+uint32(_c_F_zmalloc_used_memory[4])))
 				v54 = v41 + (v44 + (v47 + (v50 + v30)))
 				v55 = int32(4)
 				v56 = v31 + v55
@@ -371,7 +371,7 @@ func F_zmalloc_used_memory(m *base.Module) int32 {
 			v70 = v61
 			v72 = int32(0)
 			for {
-				v80 = *(*int32)(unsafe.Add(mBase, uint32(v70<<(uint(int32(2))%32))+uint32(_consts[320])))
+				v80 = *(*int32)(unsafe.Add(mBase, uint32(v70<<(uint(int32(2))%32))+uint32(_c_F_zmalloc_used_memory[4])))
 				v81 = v80 + v69
 				v82 = int32(1)
 				v85 = v72 + v82

@@ -227,7 +227,7 @@ L1:
 	v149 = m.G0
 	v151 = v149 - int32(32)
 	m.G0 = v151
-	v153 = int32(*(*int8)(unsafe.Add(mBase, uint32(v143)+uint32(_consts[1205]))))
+	v153 = int32(*(*int8)(unsafe.Add(mBase, uint32(v143)+uint32(_c_F_luaO_chunkid[0]))))
 	if v153 == int32(0) {
 		goto L43
 	} else {
@@ -446,9 +446,9 @@ L39:
 	return
 L40:
 	;
-	v224 = int32(*(*uint16)(unsafe.Add(mBase, uint32(v143)+uint32(_consts[1201]))))
+	v224 = int32(*(*uint16)(unsafe.Add(mBase, uint32(v143)+uint32(_c_F_luaO_chunkid[1]))))
 	*(*uint16)(unsafe.Add(mBase, uint32(l0+int32(8)))) = uint16(v224)
-	v226 = *(*int64)(unsafe.Add(mBase, uint32(v143)+uint32(_consts[1202])))
+	v226 = *(*int64)(unsafe.Add(mBase, uint32(v143)+uint32(_c_F_luaO_chunkid[2])))
 	*(*int64)(unsafe.Add(mBase, uint32(l0))) = v226
 	v229 = l2 + int32(-17)
 	if base.Ui32(v217) < base.Ui32(v229) {
@@ -466,7 +466,7 @@ L42:
 	v158 = int32(0)
 	v160 = F___memset(m, v151, v158, int32(32))
 	mBase = m.M
-	v161 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v143)+uint32(_consts[1205]))))
+	v161 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v143)+uint32(_c_F_luaO_chunkid[0]))))
 	if v161 == v158 {
 		goto L46
 	} else {
@@ -480,7 +480,7 @@ L43:
 	goto L41
 L44:
 	;
-	v156 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v143)+uint32(_consts[1206]))))
+	v156 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v143)+uint32(_c_F_luaO_chunkid[3]))))
 	if v156 != 0 {
 		goto L42
 	} else {
@@ -500,7 +500,7 @@ L46:
 	}
 L47:
 	;
-	v165 = v143 + int32(_a2249)
+	v165 = v143 + int32(_a_F_luaO_chunkid_0)
 	v167 = v161
 	goto L48
 L48:
@@ -739,9 +739,9 @@ L87:
 	;
 	v381 = l0 + v380
 	v382 = m.G3
-	v385 = int32(*(*uint16)(unsafe.Add(mBase, uint32(v382)+uint32(_consts[1203]))))
+	v385 = int32(*(*uint16)(unsafe.Add(mBase, uint32(v382)+uint32(_c_F_luaO_chunkid[4]))))
 	*(*uint16)(unsafe.Add(mBase, uint32(v381))) = uint16(v385)
-	v391 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v382)+uint32(_consts[1204]))))
+	v391 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v382)+uint32(_c_F_luaO_chunkid[5]))))
 	*(*uint8)(unsafe.Add(mBase, uint32(v381+int32(2)))) = uint8(v391)
 	return
 L88:

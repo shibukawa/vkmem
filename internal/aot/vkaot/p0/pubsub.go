@@ -176,7 +176,7 @@ L3:
 L4:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(l0)+100)) = v12
-	v18 = F_hashtableCreate(m, int32(_a862))
+	v18 = F_hashtableCreate(m, int32(_a_F_pubsubUnsubscribeAllPatterns_0))
 	mBase = m.M
 	v19 = m.ExcPending
 	if v19 != 0 {
@@ -188,7 +188,7 @@ L5:
 	;
 	v20 = *(*int32)(unsafe.Add(mBase, uint32(l0)+100))
 	*(*int32)(unsafe.Add(mBase, uint32(v20))) = v18
-	v23 = F_hashtableCreate(m, int32(_a862))
+	v23 = F_hashtableCreate(m, int32(_a_F_pubsubUnsubscribeAllPatterns_0))
 	mBase = m.M
 	v24 = m.ExcPending
 	if v24 != 0 {
@@ -200,7 +200,7 @@ L6:
 	;
 	v25 = *(*int32)(unsafe.Add(mBase, uint32(l0)+100))
 	*(*int32)(unsafe.Add(mBase, uint32(v25)+4)) = v23
-	v28 = F_hashtableCreate(m, int32(_a862))
+	v28 = F_hashtableCreate(m, int32(_a_F_pubsubUnsubscribeAllPatterns_0))
 	mBase = m.M
 	v29 = m.ExcPending
 	if v29 != 0 {

@@ -90,7 +90,7 @@ func F_raxCompressNode(m *base.Module, l0 int32, l1 int32, l2 int32, l3 int32) i
 	_ = v152
 	v11 = *(*int32)(unsafe.Add(mBase, uint32(l0)))
 	if base.Ui32(int32(4)) <= base.Ui32(v11) {
-		F__serverAssert(m, int32(_a1806), int32(_a1807), int32(382))
+		F__serverAssert(m, int32(_a_F_raxCompressNode_0), int32(_a_F_raxCompressNode_1), int32(382))
 		mBase = m.M
 		v152 = m.ExcPending
 		if v152 != 0 {
@@ -1042,7 +1042,7 @@ L26:
 	goto L1
 L27:
 	;
-	F__serverAssert(m, int32(_a1808), int32(_a1807), int32(887))
+	F__serverAssert(m, int32(_a_F_raxGenericInsert_0), int32(_a_F_raxGenericInsert_1), int32(887))
 	mBase = m.M
 	v1450 = m.ExcPending
 	if v1450 != 0 {
@@ -1339,7 +1339,7 @@ L76:
 	goto L71
 L77:
 	;
-	*(*int32)(unsafe.Add(mBase, _consts[18])) = int32(0)
+	*(*int32)(unsafe.Add(mBase, _c_F_raxGenericInsert[0])) = int32(0)
 	v1435 = int32(0)
 	goto L28
 L78:
@@ -1574,7 +1574,7 @@ L111:
 	goto L112
 L112:
 	;
-	*(*int32)(unsafe.Add(mBase, _consts[18])) = int32(48)
+	*(*int32)(unsafe.Add(mBase, _c_F_raxGenericInsert[0])) = int32(48)
 	goto L29
 L113:
 	;
@@ -1889,7 +1889,7 @@ L157:
 	goto L158
 L158:
 	;
-	*(*int32)(unsafe.Add(mBase, _consts[18])) = int32(48)
+	*(*int32)(unsafe.Add(mBase, _c_F_raxGenericInsert[0])) = int32(48)
 	v1435 = int32(0)
 	goto L28
 L159:
@@ -2093,7 +2093,7 @@ L190:
 	goto L36
 L191:
 	;
-	*(*int32)(unsafe.Add(mBase, _consts[18])) = int32(48)
+	*(*int32)(unsafe.Add(mBase, _c_F_raxGenericInsert[0])) = int32(48)
 	v1435 = v229
 	goto L28
 L192:
@@ -2525,7 +2525,7 @@ L253:
 	goto L250
 L254:
 	;
-	*(*int32)(unsafe.Add(mBase, _consts[18])) = int32(48)
+	*(*int32)(unsafe.Add(mBase, _c_F_raxGenericInsert[0])) = int32(48)
 	goto L29
 L255:
 	;
@@ -2597,12 +2597,12 @@ func F_raxNext(m *base.Module, l0 int32) int32 {
 				v23 = int32(1)
 			} else {
 				v17 = v11
-				*(*int32)(unsafe.Add(mBase, _consts[18])) = v17
+				*(*int32)(unsafe.Add(mBase, _c_F_raxNext[0])) = v17
 				v23 = int32(0)
 			}
 		} else {
 			v17 = int32(48)
-			*(*int32)(unsafe.Add(mBase, _consts[18])) = v17
+			*(*int32)(unsafe.Add(mBase, _c_F_raxNext[0])) = v17
 			v23 = int32(0)
 		}
 		return v23
@@ -2636,12 +2636,12 @@ func F_raxPrev(m *base.Module, l0 int32) int32 {
 				v23 = int32(1)
 			} else {
 				v17 = v11
-				*(*int32)(unsafe.Add(mBase, _consts[18])) = v17
+				*(*int32)(unsafe.Add(mBase, _c_F_raxPrev[0])) = v17
 				v23 = int32(0)
 			}
 		} else {
 			v17 = int32(48)
-			*(*int32)(unsafe.Add(mBase, _consts[18])) = v17
+			*(*int32)(unsafe.Add(mBase, _c_F_raxPrev[0])) = v17
 			v23 = int32(0)
 		}
 		return v23

@@ -1335,7 +1335,7 @@ L28:
 L29:
 	;
 	v1939 = m.G3
-	F_luaG_runerror(m, l0, v1939+int32(_a2275), int32(0))
+	F_luaG_runerror(m, l0, v1939+int32(_a_F_luaV_execute_0), int32(0))
 	mBase = m.M
 	v1944 = m.ExcPending
 	if v1944 != 0 {
@@ -1435,14 +1435,14 @@ L36:
 	}
 L37:
 	;
-	if base.Ui32(v76) < base.Ui32(int32(_a14)) {
+	if base.Ui32(v76) < base.Ui32(int32(_a_F_luaV_execute_1)) {
 		goto L359
 	} else {
 		goto L360
 	}
 L38:
 	;
-	if base.Ui32(v76) < base.Ui32(int32(_a14)) {
+	if base.Ui32(v76) < base.Ui32(int32(_a_F_luaV_execute_1)) {
 		goto L345
 	} else {
 		goto L346
@@ -1450,7 +1450,7 @@ L38:
 L39:
 	;
 	v1359 = int32(base.Ui32(v76)>>(uint(int32(14))%32)) & int32(511)
-	if base.Ui32(v76) < base.Ui32(int32(_a14)) {
+	if base.Ui32(v76) < base.Ui32(int32(_a_F_luaV_execute_1)) {
 		goto L337
 	} else {
 		goto L338
@@ -2471,7 +2471,7 @@ L180:
 	;
 	v712 = m.G3
 	v713 = *(*int32)(unsafe.Add(mBase, uint32(v664)+24))
-	if v713 != v712+int32(_a2240) {
+	if v713 != v712+int32(_a_F_luaV_execute_2) {
 		goto L193
 	} else {
 		goto L194
@@ -2923,7 +2923,7 @@ L254:
 L255:
 	;
 	v987 = m.G3
-	F_luaG_typeerror(m, l0, v660, v987+int32(_a2276))
+	F_luaG_typeerror(m, l0, v660, v987+int32(_a_F_luaV_execute_3))
 	mBase = m.M
 	v991 = m.ExcPending
 	if v991 != 0 {
@@ -3706,7 +3706,7 @@ L371:
 L372:
 	;
 	v1608 = m.G3
-	F_luaG_runerror(m, l0, v1608+int32(_a2277), int32(0))
+	F_luaG_runerror(m, l0, v1608+int32(_a_F_luaV_execute_4), int32(0))
 	mBase = m.M
 	v1613 = m.ExcPending
 	if v1613 != 0 {
@@ -3802,7 +3802,7 @@ L383:
 L384:
 	;
 	v1602 = m.G3
-	F_luaG_runerror(m, l0, v1602+int32(_a2278), int32(0))
+	F_luaG_runerror(m, l0, v1602+int32(_a_F_luaV_execute_5), int32(0))
 	mBase = m.M
 	v1607 = m.ExcPending
 	if v1607 != 0 {

@@ -273,7 +273,7 @@ func F_compareStringObjectsWithFlags(m *base.Module, l0 int32, l1 int32, l2 int3
 	}
 L1:
 	;
-	F__serverAssertWithInfo(m, int32(0), l0, int32(_a1761), int32(_a1758), int32(958))
+	F__serverAssertWithInfo(m, int32(0), l0, int32(_a_F_compareStringObjectsWithFlags_0), int32(_a_F_compareStringObjectsWithFlags_1), int32(958))
 	mBase = m.M
 	v515 = m.ExcPending
 	if v515 != 0 {
@@ -445,7 +445,7 @@ L25:
 	goto L24
 L26:
 	;
-	v81 = *(*int32)(unsafe.Add(mBase, _consts[308]))
+	v81 = *(*int32)(unsafe.Add(mBase, _c_F_compareStringObjectsWithFlags[0]))
 	goto L25
 L27:
 	;
@@ -575,7 +575,7 @@ L47:
 	goto L46
 L48:
 	;
-	v165 = *(*int32)(unsafe.Add(mBase, _consts[308]))
+	v165 = *(*int32)(unsafe.Add(mBase, _c_F_compareStringObjectsWithFlags[0]))
 	goto L47
 L49:
 	;
@@ -749,7 +749,7 @@ L76:
 	goto L75
 L77:
 	;
-	v285 = *(*int32)(unsafe.Add(mBase, _consts[308]))
+	v285 = *(*int32)(unsafe.Add(mBase, _c_F_compareStringObjectsWithFlags[0]))
 	goto L76
 L78:
 	;
@@ -877,7 +877,7 @@ L98:
 	goto L97
 L99:
 	;
-	v369 = *(*int32)(unsafe.Add(mBase, _consts[308]))
+	v369 = *(*int32)(unsafe.Add(mBase, _c_F_compareStringObjectsWithFlags[0]))
 	goto L98
 L100:
 	;
@@ -1200,7 +1200,7 @@ func F_createStringObjectFromLongLongWithOptions(m *base.Module, l0 int64, l1 in
 					}
 				}
 			} else {
-				v94 = *(*int32)(unsafe.Add(mBase, _consts[308]))
+				v94 = *(*int32)(unsafe.Add(mBase, _c_F_createStringObjectFromLongLongWithOptions[0]))
 				if base.Ui32(int32(128)) < base.Ui32(v80+v94+int32(9)) {
 					v105 = F_sdsnewlen(m, v7, v80)
 					mBase = m.M
@@ -1280,7 +1280,7 @@ func F_createStringObjectFromLongLongWithOptions(m *base.Module, l0 int64, l1 in
 						}
 					}
 				} else {
-					v94 = *(*int32)(unsafe.Add(mBase, _consts[308]))
+					v94 = *(*int32)(unsafe.Add(mBase, _c_F_createStringObjectFromLongLongWithOptions[0]))
 					if base.Ui32(int32(128)) < base.Ui32(v80+v94+int32(9)) {
 						v105 = F_sdsnewlen(m, v7, v80)
 						mBase = m.M
@@ -1379,7 +1379,7 @@ func F_createStringObjectFromLongLongWithOptions(m *base.Module, l0 int64, l1 in
 						}
 					}
 				} else {
-					v94 = *(*int32)(unsafe.Add(mBase, _consts[308]))
+					v94 = *(*int32)(unsafe.Add(mBase, _c_F_createStringObjectFromLongLongWithOptions[0]))
 					if base.Ui32(int32(128)) < base.Ui32(v80+v94+int32(9)) {
 						v105 = F_sdsnewlen(m, v7, v80)
 						mBase = m.M
@@ -1459,7 +1459,7 @@ func F_createStringObjectFromLongLongWithOptions(m *base.Module, l0 int64, l1 in
 							}
 						}
 					} else {
-						v94 = *(*int32)(unsafe.Add(mBase, _consts[308]))
+						v94 = *(*int32)(unsafe.Add(mBase, _c_F_createStringObjectFromLongLongWithOptions[0]))
 						if base.Ui32(int32(128)) < base.Ui32(v80+v94+int32(9)) {
 							v105 = F_sdsnewlen(m, v7, v80)
 							mBase = m.M
@@ -1513,7 +1513,7 @@ func F_createStringObjectFromLongLongWithOptions(m *base.Module, l0 int64, l1 in
 				}
 			}
 		} else {
-			v16 = *(*int32)(unsafe.Add(mBase, uint32(base.I32_wrap_i64(v1)<<(uint(int32(2))%32))+uint32(_consts[506])))
+			v16 = *(*int32)(unsafe.Add(mBase, uint32(base.I32_wrap_i64(v1)<<(uint(int32(2))%32))+uint32(_c_F_createStringObjectFromLongLongWithOptions[1])))
 			v117 = v16
 			m.G0 = v7 + int32(32)
 			return v117
@@ -1570,7 +1570,7 @@ func F_getStringObjectLen(m *base.Module, l0 int32) int32 {
 	_ = v72
 	v4 = *(*int32)(unsafe.Add(mBase, uint32(l0)))
 	if v4&int32(15) != 0 {
-		F__serverAssertWithInfo(m, int32(0), l0, int32(_a1629), int32(_a1630), int32(183))
+		F__serverAssertWithInfo(m, int32(0), l0, int32(_a_F_getStringObjectLen_0), int32(_a_F_getStringObjectLen_1), int32(183))
 		mBase = m.M
 		v72 = m.ExcPending
 		if v72 != 0 {
@@ -2015,7 +2015,7 @@ func F_stringObjectLen(m *base.Module, l0 int32) int32 {
 	}
 L1:
 	;
-	F__serverAssertWithInfo(m, int32(0), l0, int32(_a1629), int32(_a1758), int32(1018))
+	F__serverAssertWithInfo(m, int32(0), l0, int32(_a_F_stringObjectLen_0), int32(_a_F_stringObjectLen_1), int32(1018))
 	mBase = m.M
 	v308 = m.ExcPending
 	if v308 != 0 {
@@ -2157,7 +2157,7 @@ L21:
 	goto L20
 L22:
 	;
-	v68 = *(*int32)(unsafe.Add(mBase, _consts[308]))
+	v68 = *(*int32)(unsafe.Add(mBase, _c_F_stringObjectLen[0]))
 	goto L21
 L23:
 	;
@@ -2275,7 +2275,7 @@ L43:
 	goto L42
 L44:
 	;
-	v157 = *(*int32)(unsafe.Add(mBase, _consts[308]))
+	v157 = *(*int32)(unsafe.Add(mBase, _c_F_stringObjectLen[0]))
 	goto L43
 L45:
 	;

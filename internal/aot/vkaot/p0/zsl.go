@@ -88,7 +88,7 @@ func F_zslCreateNode(m *base.Module, l0 int32, l1 float64, l2 int32) int32 {
 	if base.Ui32(int32(4)) < base.Ui32(v47) {
 		v55 = int32(0)
 	} else {
-		v54 = *(*int32)(unsafe.Add(mBase, uint32(v47<<(uint(int32(2))%32))+uint32(_consts[251])))
+		v54 = *(*int32)(unsafe.Add(mBase, uint32(v47<<(uint(int32(2))%32))+uint32(_c_F_zslCreateNode[0])))
 		v55 = v54
 	}
 	v58 = v29 + v55 + int32(1)
@@ -105,7 +105,7 @@ func F_zslCreateNode(m *base.Module, l0 int32, l1 float64, l2 int32) int32 {
 		if base.Ui32(int32(4)) < base.Ui32(v72) {
 			v80 = int32(0)
 		} else {
-			v79 = *(*int32)(unsafe.Add(mBase, uint32(v72<<(uint(int32(2))%32))+uint32(_consts[251])))
+			v79 = *(*int32)(unsafe.Add(mBase, uint32(v72<<(uint(int32(2))%32))+uint32(_c_F_zslCreateNode[0])))
 			v80 = v79
 		}
 		*(*uint8)(unsafe.Add(mBase, uint32(v68)+16)) = uint8(v80)
@@ -233,11 +233,11 @@ func F_zslInsert(m *base.Module, l0 int32, l1 float64, l2 int32) int32 {
 	_ = v258
 	var v259 int32
 	_ = v259
-	v14 = *(*int32)(unsafe.Add(mBase, _consts[1094]))
+	v14 = *(*int32)(unsafe.Add(mBase, _c_F_zslInsert[0]))
 	if int32(311) < v14 {
 		if v14 == int32(313) {
 			v28 = int64(5489)
-			*(*int64)(unsafe.Add(mBase, _consts[1095])) = v28
+			*(*int64)(unsafe.Add(mBase, _c_F_zslInsert[1])) = v28
 			v36 = int64(1)
 			v38 = v28
 			for {
@@ -245,20 +245,20 @@ func F_zslInsert(m *base.Module, l0 int32, l1 float64, l2 int32) int32 {
 				v46 = int64(62)
 				v49 = int64(6364136223846793005)
 				v51 = (int64(base.Ui64(v38)>>(uint(v46)%64))^v38)*v49 + v36
-				*(*int64)(unsafe.Add(mBase, uint32(base.I32_wrap_i64(v36)<<(uint(v42)%32))+uint32(_consts[1095]))) = v51
+				*(*int64)(unsafe.Add(mBase, uint32(base.I32_wrap_i64(v36)<<(uint(v42)%32))+uint32(_c_F_zslInsert[1]))) = v51
 				v54 = v36 + int64(1)
 				v65 = (int64(base.Ui64(v51)>>(uint(v46)%64))^v51)*v49 + v54
-				*(*int64)(unsafe.Add(mBase, uint32(base.I32_wrap_i64(v54)<<(uint(v42)%32))+uint32(_consts[1095]))) = v65
+				*(*int64)(unsafe.Add(mBase, uint32(base.I32_wrap_i64(v54)<<(uint(v42)%32))+uint32(_c_F_zslInsert[1]))) = v65
 				v68 = v36 + int64(2)
 				v79 = (int64(base.Ui64(v65)>>(uint(v46)%64))^v65)*v49 + v68
-				*(*int64)(unsafe.Add(mBase, uint32(base.I32_wrap_i64(v68)<<(uint(v42)%32))+uint32(_consts[1095]))) = v79
+				*(*int64)(unsafe.Add(mBase, uint32(base.I32_wrap_i64(v68)<<(uint(v42)%32))+uint32(_c_F_zslInsert[1]))) = v79
 				v82 = v36 + int64(3)
 				if v82 == int64(312) {
 					v102 = v28
 					break
 				} else {
 					v95 = (int64(base.Ui64(v79)>>(uint(int64(62))%64))^v79)*int64(6364136223846793005) + v82
-					*(*int64)(unsafe.Add(mBase, uint32(base.I32_wrap_i64(v82)<<(uint(int32(3))%32))+uint32(_consts[1095]))) = v95
+					*(*int64)(unsafe.Add(mBase, uint32(base.I32_wrap_i64(v82)<<(uint(int32(3))%32))+uint32(_c_F_zslInsert[1]))) = v95
 					v36 = v36 + int64(4)
 					v38 = v95
 					continue
@@ -266,7 +266,7 @@ func F_zslInsert(m *base.Module, l0 int32, l1 float64, l2 int32) int32 {
 				break
 			}
 		} else {
-			v27 = *(*int64)(unsafe.Add(mBase, _consts[1095]))
+			v27 = *(*int64)(unsafe.Add(mBase, _c_F_zslInsert[1]))
 			v102 = v27
 		}
 		v107 = int32(0)
@@ -276,10 +276,10 @@ func F_zslInsert(m *base.Module, l0 int32, l1 float64, l2 int32) int32 {
 			v117 = v107 << (uint(v116) % 32)
 			v120 = int32(1)
 			v121 = v107 + v120
-			v126 = *(*int64)(unsafe.Add(mBase, uint32(v121<<(uint(v116)%32))+uint32(_consts[1095])))
-			v134 = *(*int64)(unsafe.Add(mBase, uint32(base.I32_wrap_i64(v126)&v120<<(uint(v116)%32))+uint32(_consts[1096])))
-			v137 = *(*int64)(unsafe.Add(mBase, uint32(v117)+uint32(_consts[1097])))
-			*(*int64)(unsafe.Add(mBase, uint32(v117)+uint32(_consts[1095]))) = v134 ^ v137 ^ int64(base.Ui64(v110&int64(-2147483648)|v126&int64(2147483646))>>(uint(int64(1))%64))
+			v126 = *(*int64)(unsafe.Add(mBase, uint32(v121<<(uint(v116)%32))+uint32(_c_F_zslInsert[1])))
+			v134 = *(*int64)(unsafe.Add(mBase, uint32(base.I32_wrap_i64(v126)&v120<<(uint(v116)%32))+uint32(_c_F_zslInsert[2])))
+			v137 = *(*int64)(unsafe.Add(mBase, uint32(v117)+uint32(_c_F_zslInsert[3])))
+			*(*int64)(unsafe.Add(mBase, uint32(v117)+uint32(_c_F_zslInsert[1]))) = v134 ^ v137 ^ int64(base.Ui64(v110&int64(-2147483648)|v126&int64(2147483646))>>(uint(int64(1))%64))
 			if v121 != int32(156) {
 				v107 = v121
 				v110 = v126
@@ -289,7 +289,7 @@ func F_zslInsert(m *base.Module, l0 int32, l1 float64, l2 int32) int32 {
 			}
 			break
 		}
-		v149 = *(*int64)(unsafe.Add(mBase, _consts[1097]))
+		v149 = *(*int64)(unsafe.Add(mBase, _c_F_zslInsert[3]))
 		v151 = int32(156)
 		v153 = v149
 		for {
@@ -297,10 +297,10 @@ func F_zslInsert(m *base.Module, l0 int32, l1 float64, l2 int32) int32 {
 			v161 = v151 << (uint(v160) % 32)
 			v164 = int32(1)
 			v165 = v151 + v164
-			v170 = *(*int64)(unsafe.Add(mBase, uint32(v165<<(uint(v160)%32))+uint32(_consts[1095])))
-			v178 = *(*int64)(unsafe.Add(mBase, uint32(base.I32_wrap_i64(v170)&v164<<(uint(v160)%32))+uint32(_consts[1096])))
-			v181 = *(*int64)(unsafe.Add(mBase, uint32(v161)+uint32(_consts[1098])))
-			*(*int64)(unsafe.Add(mBase, uint32(v161)+uint32(_consts[1095]))) = v178 ^ v181 ^ int64(base.Ui64(v153&int64(-2147483648)|v170&int64(2147483646))>>(uint(int64(1))%64))
+			v170 = *(*int64)(unsafe.Add(mBase, uint32(v165<<(uint(v160)%32))+uint32(_c_F_zslInsert[1])))
+			v178 = *(*int64)(unsafe.Add(mBase, uint32(base.I32_wrap_i64(v170)&v164<<(uint(v160)%32))+uint32(_c_F_zslInsert[2])))
+			v181 = *(*int64)(unsafe.Add(mBase, uint32(v161)+uint32(_c_F_zslInsert[4])))
+			*(*int64)(unsafe.Add(mBase, uint32(v161)+uint32(_c_F_zslInsert[1]))) = v178 ^ v181 ^ int64(base.Ui64(v153&int64(-2147483648)|v170&int64(2147483646))>>(uint(int64(1))%64))
 			if v165 != int32(311) {
 				v151 = v165
 				v153 = v170
@@ -312,19 +312,19 @@ func F_zslInsert(m *base.Module, l0 int32, l1 float64, l2 int32) int32 {
 		}
 		v192 = int32(1)
 		v193 = int32(0)
-		v195 = *(*int64)(unsafe.Add(mBase, _consts[1095]))
-		v203 = *(*int64)(unsafe.Add(mBase, uint32(base.I32_wrap_i64(v195)&v192<<(uint(int32(3))%32))+uint32(_consts[1096])))
-		v205 = *(*int64)(unsafe.Add(mBase, _consts[1099]))
-		v210 = *(*int64)(unsafe.Add(mBase, _consts[1100]))
-		*(*int64)(unsafe.Add(mBase, _consts[1100])) = v203 ^ v205 ^ int64(base.Ui64(v195&int64(2147483646)|v210&int64(-2147483648))>>(uint(int64(1))%64))
+		v195 = *(*int64)(unsafe.Add(mBase, _c_F_zslInsert[1]))
+		v203 = *(*int64)(unsafe.Add(mBase, uint32(base.I32_wrap_i64(v195)&v192<<(uint(int32(3))%32))+uint32(_c_F_zslInsert[2])))
+		v205 = *(*int64)(unsafe.Add(mBase, _c_F_zslInsert[5]))
+		v210 = *(*int64)(unsafe.Add(mBase, _c_F_zslInsert[6]))
+		*(*int64)(unsafe.Add(mBase, _c_F_zslInsert[6])) = v203 ^ v205 ^ int64(base.Ui64(v195&int64(2147483646)|v210&int64(-2147483648))>>(uint(int64(1))%64))
 		v219 = v192
 		v220 = v195
 	} else {
-		v23 = *(*int64)(unsafe.Add(mBase, uint32(v14<<(uint(int32(3))%32))+uint32(_consts[1095])))
+		v23 = *(*int64)(unsafe.Add(mBase, uint32(v14<<(uint(int32(3))%32))+uint32(_c_F_zslInsert[1])))
 		v219 = v14 + int32(1)
 		v220 = v23
 	}
-	*(*int32)(unsafe.Add(mBase, _consts[1094])) = v219
+	*(*int32)(unsafe.Add(mBase, _c_F_zslInsert[0])) = v219
 	v231 = int64(base.Ui64(v220)>>(uint(int64(29))%64))&int64(22906492245) ^ v220
 	v236 = v231<<(uint(int64(17))%64)&int64(8202884508482404352) ^ v231
 	v241 = v236<<(uint(int64(37))%64)&int64(-2270628950310912) ^ v236
@@ -415,12 +415,12 @@ func F_zslLexValueGteMin(m *base.Module, l0 int32, l1 int32) int32 {
 	if v7 == int32(0) {
 		if l0 != v6 {
 			v25 = int32(0)
-			v27 = *(*int32)(unsafe.Add(mBase, _consts[376]))
+			v27 = *(*int32)(unsafe.Add(mBase, _c_F_zslLexValueGteMin[0]))
 			if l0 == v27 {
 				v93 = v25
 				return v93
 			} else {
-				v30 = *(*int32)(unsafe.Add(mBase, _consts[377]))
+				v30 = *(*int32)(unsafe.Add(mBase, _c_F_zslLexValueGteMin[1]))
 				if v6 == v30 {
 					v93 = v25
 					return v93
@@ -498,11 +498,11 @@ func F_zslLexValueGteMin(m *base.Module, l0 int32, l1 int32) int32 {
 		if l0 == v6 {
 			v93 = v10
 		} else {
-			v13 = *(*int32)(unsafe.Add(mBase, _consts[376]))
+			v13 = *(*int32)(unsafe.Add(mBase, _c_F_zslLexValueGteMin[0]))
 			if l0 == v13 {
 				v93 = v10
 			} else {
-				v16 = *(*int32)(unsafe.Add(mBase, _consts[377]))
+				v16 = *(*int32)(unsafe.Add(mBase, _c_F_zslLexValueGteMin[1]))
 				if v6 == v16 {
 					v93 = v10
 				} else {

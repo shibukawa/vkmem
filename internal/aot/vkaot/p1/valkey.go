@@ -90,8 +90,8 @@ func F_ValkeyModuleCommandDispatcher(m *base.Module, l0 int32) {
 	*(*int32)(unsafe.Add(mBase, uint32(v9)+12)) = v13
 	*(*int32)(unsafe.Add(mBase, uint32(v9)+8)) = int32(561)
 	*(*int32)(unsafe.Add(mBase, uint32(v9)+36)) = int32(512)
-	v50 = *(*int32)(unsafe.Add(mBase, _consts[384]))
-	v52 = *(*int32)(unsafe.Add(mBase, _consts[34]))
+	v50 = *(*int32)(unsafe.Add(mBase, _c_F_ValkeyModuleCommandDispatcher[0]))
+	v52 = *(*int32)(unsafe.Add(mBase, _c_F_ValkeyModuleCommandDispatcher[1]))
 	v53 = m.T0[v52].(func(*base.Module) int64)(m)
 	mBase = m.M
 	if v50 == v2 {
@@ -116,12 +116,12 @@ L1:
 	}
 L2:
 	;
-	v63 = *(*int64)(unsafe.Add(mBase, _consts[387]))
+	v63 = *(*int64)(unsafe.Add(mBase, _c_F_ValkeyModuleCommandDispatcher[2]))
 	v67 = v63*int64(1000) + v53
 	goto L1
 L3:
 	;
-	v58 = *(*int32)(unsafe.Add(mBase, _consts[251]))
+	v58 = *(*int32)(unsafe.Add(mBase, _c_F_ValkeyModuleCommandDispatcher[3]))
 	v59 = base.I32_div_s(int32(1000000), v58)
 	v67 = v53 + base.I64_extend_i32_s(v59)
 	goto L1
@@ -532,7 +532,7 @@ L30:
 	goto L31
 L31:
 	;
-	v139 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v135)+uint32(_consts[789]))))
+	v139 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v135)+uint32(_c_F_genValkeyInfoStringCommandStats[0]))))
 	if v127&int32(255) == v139 {
 		v170 = v126
 		goto L24
@@ -628,7 +628,7 @@ L47:
 	goto L48
 L48:
 	;
-	v221 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v217)+uint32(_consts[789]))))
+	v221 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v217)+uint32(_c_F_genValkeyInfoStringCommandStats[0]))))
 	if v208&int32(255) != v221 {
 		goto L50
 	} else {
@@ -648,7 +648,7 @@ L50:
 	}
 L51:
 	;
-	v224 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v217)+uint32(_consts[790]))))
+	v224 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v217)+uint32(_c_F_genValkeyInfoStringCommandStats[1]))))
 	*(*uint8)(unsafe.Add(mBase, uint32(v207))) = uint8(v224)
 	goto L46
 L52:
@@ -667,7 +667,7 @@ L54:
 	*(*int64)(unsafe.Add(mBase, uint32(v18+int32(16)))) = v252
 	*(*int64)(unsafe.Add(mBase, uint32(v18)+8)) = v253
 	*(*int32)(unsafe.Add(mBase, uint32(v18))) = v251
-	v273 = F_sdscatprintf(m, v58, int32(_a2279), v18)
+	v273 = F_sdscatprintf(m, v58, int32(_a_F_genValkeyInfoStringCommandStats_0), v18)
 	mBase = m.M
 	v274 = m.ExcPending
 	if v274 != 0 {
@@ -1767,7 +1767,7 @@ L12:
 	}
 L13:
 	;
-	v56 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v40)+uint32(_consts[924]))))
+	v56 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v40)+uint32(_c_F_valkeyAsyncAppendCmdLen[0]))))
 	if v56 != 0 {
 		goto L16
 	} else {
@@ -1783,7 +1783,7 @@ L15:
 	goto L12
 L16:
 	;
-	v58 = v40 + int32(_a2536)
+	v58 = v40 + int32(_a_F_valkeyAsyncAppendCmdLen_0)
 	v59 = v32
 	v60 = int32(2)
 	v61 = v56
@@ -1880,7 +1880,7 @@ L28:
 	}
 L29:
 	;
-	v114 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v107)+uint32(_consts[925]))))
+	v114 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v107)+uint32(_c_F_valkeyAsyncAppendCmdLen[1]))))
 	if v114 != 0 {
 		goto L32
 	} else {
@@ -1896,7 +1896,7 @@ L31:
 	goto L28
 L32:
 	;
-	v116 = v107 + int32(_a2537)
+	v116 = v107 + int32(_a_F_valkeyAsyncAppendCmdLen_1)
 	v117 = v32
 	v118 = int32(2)
 	v119 = v114
@@ -1989,7 +1989,7 @@ L44:
 	goto L11
 L45:
 	;
-	v172 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v165)+uint32(_consts[926]))))
+	v172 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v165)+uint32(_c_F_valkeyAsyncAppendCmdLen[2]))))
 	if v172 != 0 {
 		goto L48
 	} else {
@@ -2005,7 +2005,7 @@ L47:
 	goto L44
 L48:
 	;
-	v174 = v165 + int32(_a2538)
+	v174 = v165 + int32(_a_F_valkeyAsyncAppendCmdLen_2)
 	v175 = v32
 	v176 = int32(3)
 	v177 = v172
@@ -2091,7 +2091,7 @@ L58:
 L59:
 	;
 	v1274 = m.G3
-	F_valkeySetError(m, l0, int32(5), v1274+int32(_a2551))
+	F_valkeySetError(m, l0, int32(5), v1274+int32(_a_F_valkeyAsyncAppendCmdLen_3))
 	mBase = m.M
 	*(*int32)(unsafe.Add(mBase, uint32(l0)+208)) = l0 + int32(8)
 	v1281 = *(*int32)(unsafe.Add(mBase, uint32(l0)+4))
@@ -2131,18 +2131,18 @@ L63:
 L64:
 	;
 	v1120 = m.G3
-	F_valkeySetError(m, l0, int32(5), v1120+int32(_a2551))
+	F_valkeySetError(m, l0, int32(5), v1120+int32(_a_F_valkeyAsyncAppendCmdLen_3))
 	mBase = m.M
 	goto L63
 L65:
 	;
 	v470 = m.G3
-	v472 = v470 + int32(_a2552)
+	v472 = v470 + int32(_a_F_valkeyAsyncAppendCmdLen_4)
 	goto L134
 L66:
 	;
 	v234 = m.G3
-	v236 = v234 + int32(_a2553)
+	v236 = v234 + int32(_a_F_valkeyAsyncAppendCmdLen_5)
 	goto L68
 L67:
 	;
@@ -2624,7 +2624,7 @@ L132:
 	;
 	v976 = m.G3
 	v977 = *(*int32)(unsafe.Add(mBase, uint32(l0)+140))
-	v979 = v976 + int32(_a2554)
+	v979 = v976 + int32(_a_F_valkeyAsyncAppendCmdLen_6)
 	goto L264
 L133:
 	;
@@ -2784,7 +2784,7 @@ L155:
 L156:
 	;
 	v972 = m.G3
-	F_valkeySetError(m, l0, int32(5), v972+int32(_a2551))
+	F_valkeySetError(m, l0, int32(5), v972+int32(_a_F_valkeyAsyncAppendCmdLen_3))
 	mBase = m.M
 	if l0 != 0 {
 		goto L63
@@ -6925,9 +6925,9 @@ L3:
 	v218 = int32(0)
 	*(*uint8)(unsafe.Add(mBase, uint32(l0)+21)) = uint8(v218)
 	v220 = m.G3
-	v223 = *(*int64)(unsafe.Add(mBase, uint32(v220)+uint32(_consts[928])))
+	v223 = *(*int64)(unsafe.Add(mBase, uint32(v220)+uint32(_c_F_valkeyBufferWrite[0])))
 	*(*int64)(unsafe.Add(mBase, uint32(l0)+8)) = v223
-	v229 = *(*int64)(unsafe.Add(mBase, uint32(v220)+uint32(_consts[929])))
+	v229 = *(*int64)(unsafe.Add(mBase, uint32(v220)+uint32(_c_F_valkeyBufferWrite[1])))
 	*(*int64)(unsafe.Add(mBase, uint32(l0+int32(13)))) = v229
 	goto L1
 L4:
@@ -7546,7 +7546,7 @@ L3:
 	goto L4
 L4:
 	;
-	v25 = *(*int32)(unsafe.Add(mBase, _consts[18]))
+	v25 = *(*int32)(unsafe.Add(mBase, _c_F_valkeyContextConnectUnix[0]))
 	v29 = F__emscripten_memset_bulkmem(m, v12, base.I32_extend8_s(int32(0)), int32(128))
 	mBase = m.M
 	goto L5
@@ -7609,7 +7609,7 @@ L13:
 L14:
 	;
 	v196 = m.G3
-	F_valkeySetError(m, l0, int32(5), v196+int32(_a2551))
+	F_valkeySetError(m, l0, int32(5), v196+int32(_a_F_valkeyContextConnectUnix_0))
 	mBase = m.M
 	v200 = v17
 	goto L1
@@ -7747,7 +7747,7 @@ L30:
 L31:
 	;
 	v122 = m.G3
-	F_valkeySetError(m, l0, int32(1), v122+int32(_a2568))
+	F_valkeySetError(m, l0, int32(1), v122+int32(_a_F_valkeyContextConnectUnix_1))
 	mBase = m.M
 	v200 = v17
 	goto L1
@@ -7868,7 +7868,7 @@ L47:
 	}
 L48:
 	;
-	v168 = *(*int32)(unsafe.Add(mBase, _consts[18]))
+	v168 = *(*int32)(unsafe.Add(mBase, _c_F_valkeyContextConnectUnix[0]))
 	if v168 != int32(26) {
 		goto L47
 	} else {
@@ -7923,7 +7923,7 @@ func F_valkeyContextRegisterTcpFuncs(m *base.Module) {
 	var v5 int32
 	_ = v5
 	v1 = m.G3
-	v5 = F_valkeyContextRegisterFuncs(m, v1+int32(_a2555), int32(0))
+	v5 = F_valkeyContextRegisterFuncs(m, v1+int32(_a_F_valkeyContextRegisterTcpFuncs_0), int32(0))
 	return
 }
 func F_valkeyContextSetFuncs(m *base.Module, l0 int32) {
@@ -7964,26 +7964,26 @@ func F_valkeyContextSetFuncs(m *base.Module, l0 int32) {
 	var v59 int32
 	_ = v59
 	v3 = m.G3
-	v6 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v3)+uint32(_consts[927]))))
+	v6 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v3)+uint32(_c_F_valkeyContextSetFuncs[0]))))
 	if v6 != 0 {
 	} else {
 		v7 = m.G3
 		v10 = int32(1)
-		*(*uint8)(unsafe.Add(mBase, uint32(v7)+uint32(_consts[927]))) = uint8(v10)
+		*(*uint8)(unsafe.Add(mBase, uint32(v7)+uint32(_c_F_valkeyContextSetFuncs[0]))) = uint8(v10)
 		v12 = m.G3
-		v16 = F_valkeyContextRegisterFuncs(m, v12+int32(_a2555), int32(0))
+		v16 = F_valkeyContextRegisterFuncs(m, v12+int32(_a_F_valkeyContextSetFuncs_0), int32(0))
 		mBase = m.M
 		v17 = m.G3
-		v21 = F_valkeyContextRegisterFuncs(m, v17+int32(_a2556), int32(1))
+		v21 = F_valkeyContextRegisterFuncs(m, v17+int32(_a_F_valkeyContextSetFuncs_1), int32(1))
 		mBase = m.M
 		v22 = m.G3
-		v26 = F_valkeyContextRegisterFuncs(m, v22+int32(_a2557), int32(2))
+		v26 = F_valkeyContextRegisterFuncs(m, v22+int32(_a_F_valkeyContextSetFuncs_2), int32(2))
 		mBase = m.M
 	}
 	v27 = *(*int32)(unsafe.Add(mBase, uint32(l0)+152))
 	if base.Ui32(int32(4)) <= base.Ui32(v27) {
 		v41 = m.G3
-		m.Env.X__assert_fail(m, v41+int32(_a2558), v41+int32(_a2559), int32(104), v41+int32(_a2560))
+		m.Env.X__assert_fail(m, v41+int32(_a_F_valkeyContextSetFuncs_3), v41+int32(_a_F_valkeyContextSetFuncs_4), int32(104), v41+int32(_a_F_valkeyContextSetFuncs_5))
 		mBase = m.M
 		base.Wasm_trap_unreachable()
 		for {
@@ -7992,18 +7992,18 @@ func F_valkeyContextSetFuncs(m *base.Module, l0 int32) {
 		v30 = *(*int32)(unsafe.Add(mBase, uint32(l0)))
 		if v30 != 0 {
 			v50 = m.G3
-			m.Env.X__assert_fail(m, v50+int32(_a2561), v50+int32(_a2559), int32(105), v50+int32(_a2560))
+			m.Env.X__assert_fail(m, v50+int32(_a_F_valkeyContextSetFuncs_6), v50+int32(_a_F_valkeyContextSetFuncs_4), int32(105), v50+int32(_a_F_valkeyContextSetFuncs_5))
 			mBase = m.M
 			base.Wasm_trap_unreachable()
 			for {
 			}
 		} else {
 			v31 = m.G3
-			v37 = *(*int32)(unsafe.Add(mBase, uint32(v31+int32(_a2562)+v27<<(uint(int32(2))%32))))
+			v37 = *(*int32)(unsafe.Add(mBase, uint32(v31+int32(_a_F_valkeyContextSetFuncs_7)+v27<<(uint(int32(2))%32))))
 			*(*int32)(unsafe.Add(mBase, uint32(l0))) = v37
 			if v37 == int32(0) {
 				v59 = m.G3
-				m.Env.X__assert_fail(m, v59+int32(_a2563), v59+int32(_a2559), int32(107), v59+int32(_a2560))
+				m.Env.X__assert_fail(m, v59+int32(_a_F_valkeyContextSetFuncs_8), v59+int32(_a_F_valkeyContextSetFuncs_4), int32(107), v59+int32(_a_F_valkeyContextSetFuncs_5))
 				mBase = m.M
 				base.Wasm_trap_unreachable()
 				for {
@@ -9609,7 +9609,7 @@ func F_valkeyNetWrite(m *base.Module, l0 int32) int32 {
 		v51 = v32
 	} else {
 		v35 = int32(0)
-		v37 = *(*int32)(unsafe.Add(mBase, _consts[18]))
+		v37 = *(*int32)(unsafe.Add(mBase, _c_F_valkeyNetWrite[0]))
 		if v37 == int32(27) {
 			v51 = v35
 		} else {
@@ -10546,7 +10546,7 @@ L36:
 	;
 	v295 = v109 + v294
 	v296 = m.G3
-	v298 = v296 + int32(_a2535)
+	v298 = v296 + int32(_a_F_valkeyProcessCallbacks_0)
 	v299 = v105 - v294
 	if v299 != 0 {
 		goto L90
@@ -10586,7 +10586,7 @@ L42:
 	}
 L43:
 	;
-	v127 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v120)+uint32(_consts[924]))))
+	v127 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v120)+uint32(_c_F_valkeyProcessCallbacks[0]))))
 	if v127 != 0 {
 		goto L46
 	} else {
@@ -10602,7 +10602,7 @@ L45:
 	goto L42
 L46:
 	;
-	v129 = v120 + int32(_a2536)
+	v129 = v120 + int32(_a_F_valkeyProcessCallbacks_1)
 	v130 = v109
 	v131 = int32(2)
 	v132 = v127
@@ -10699,7 +10699,7 @@ L58:
 	}
 L59:
 	;
-	v185 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v178)+uint32(_consts[925]))))
+	v185 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v178)+uint32(_c_F_valkeyProcessCallbacks[1]))))
 	if v185 != 0 {
 		goto L62
 	} else {
@@ -10715,7 +10715,7 @@ L61:
 	goto L58
 L62:
 	;
-	v187 = v178 + int32(_a2537)
+	v187 = v178 + int32(_a_F_valkeyProcessCallbacks_2)
 	v188 = v109
 	v189 = int32(2)
 	v190 = v185
@@ -10808,7 +10808,7 @@ L74:
 	goto L36
 L75:
 	;
-	v243 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v236)+uint32(_consts[926]))))
+	v243 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v236)+uint32(_c_F_valkeyProcessCallbacks[2]))))
 	if v243 != 0 {
 		goto L78
 	} else {
@@ -10824,7 +10824,7 @@ L77:
 	goto L74
 L78:
 	;
-	v245 = v236 + int32(_a2538)
+	v245 = v236 + int32(_a_F_valkeyProcessCallbacks_3)
 	v246 = v109
 	v247 = int32(3)
 	v248 = v243
@@ -11023,7 +11023,7 @@ L103:
 L104:
 	;
 	v354 = m.G3
-	v356 = v354 + int32(_a433)
+	v356 = v354 + int32(_a_F_valkeyProcessCallbacks_4)
 	if v299 != 0 {
 		goto L106
 	} else {
@@ -11145,7 +11145,7 @@ L119:
 L120:
 	;
 	v411 = m.G3
-	v413 = v411 + int32(_a2539)
+	v413 = v411 + int32(_a_F_valkeyProcessCallbacks_5)
 	if v299 != 0 {
 		goto L122
 	} else {
@@ -11356,7 +11356,7 @@ L146:
 L147:
 	;
 	v721 = m.G3
-	m.Env.X__assert_fail(m, v721+int32(_a2540), v721+int32(_a2541), int32(617), v721+int32(_a2542))
+	m.Env.X__assert_fail(m, v721+int32(_a_F_valkeyProcessCallbacks_6), v721+int32(_a_F_valkeyProcessCallbacks_7), int32(617), v721+int32(_a_F_valkeyProcessCallbacks_8))
 	mBase = m.M
 	base.Wasm_trap_unreachable()
 	for {
@@ -11395,7 +11395,7 @@ L152:
 	*(*int32)(unsafe.Add(mBase, uint32(v13))) = v534
 	v665 = l0 + int32(8)
 	v667 = m.G3
-	v670 = F_snprintf(m, v665, int32(128), v667+int32(_a16), v13)
+	v670 = F_snprintf(m, v665, int32(128), v667+int32(_a_F_valkeyProcessCallbacks_9), v13)
 	mBase = m.M
 	v671 = m.ExcPending
 	if v671 != 0 {
@@ -11406,7 +11406,7 @@ L152:
 L153:
 	;
 	v537 = m.G3
-	v539 = v537 + int32(_a237)
+	v539 = v537 + int32(_a_F_valkeyProcessCallbacks_10)
 	goto L156
 L154:
 	;
@@ -11506,7 +11506,7 @@ L167:
 L168:
 	;
 	v588 = m.G3
-	v590 = v588 + int32(_a2543)
+	v590 = v588 + int32(_a_F_valkeyProcessCallbacks_11)
 	goto L170
 L169:
 	;
@@ -11707,7 +11707,7 @@ L194:
 L195:
 	;
 	v694 = m.G3
-	m.Env.X__assert_fail(m, v694+int32(_a2544), v694+int32(_a2541), int32(423), v694+int32(_a2545))
+	m.Env.X__assert_fail(m, v694+int32(_a_F_valkeyProcessCallbacks_12), v694+int32(_a_F_valkeyProcessCallbacks_7), int32(423), v694+int32(_a_F_valkeyProcessCallbacks_13))
 	mBase = m.M
 	base.Wasm_trap_unreachable()
 	for {
@@ -11939,7 +11939,7 @@ L224:
 L225:
 	;
 	v853 = m.G3
-	m.Env.X__assert_fail(m, v853+int32(_a2544), v853+int32(_a2541), int32(423), v853+int32(_a2545))
+	m.Env.X__assert_fail(m, v853+int32(_a_F_valkeyProcessCallbacks_12), v853+int32(_a_F_valkeyProcessCallbacks_7), int32(423), v853+int32(_a_F_valkeyProcessCallbacks_13))
 	mBase = m.M
 	base.Wasm_trap_unreachable()
 	for {
@@ -13934,7 +13934,7 @@ L7:
 L8:
 	;
 	v3474 = m.G3
-	m.Env.X__assert_fail(m, v3474+int32(_a2569), v3474+int32(_a2570), int32(280), v3474+int32(_a2571))
+	m.Env.X__assert_fail(m, v3474+int32(_a_F_valkeyReaderGetReply_0), v3474+int32(_a_F_valkeyReaderGetReply_1), int32(280), v3474+int32(_a_F_valkeyReaderGetReply_2))
 	mBase = m.M
 	base.Wasm_trap_unreachable()
 	for {
@@ -13942,7 +13942,7 @@ L8:
 L9:
 	;
 	v3465 = m.G3
-	m.Env.X__assert_fail(m, v3465+int32(_a2572), v3465+int32(_a2570), int32(275), v3465+int32(_a2571))
+	m.Env.X__assert_fail(m, v3465+int32(_a_F_valkeyReaderGetReply_3), v3465+int32(_a_F_valkeyReaderGetReply_1), int32(275), v3465+int32(_a_F_valkeyReaderGetReply_2))
 	mBase = m.M
 	base.Wasm_trap_unreachable()
 	for {
@@ -14084,7 +14084,7 @@ L27:
 L28:
 	;
 	v2341 = m.G3
-	m.Env.X__assert_fail(m, v2341+int32(_a2569), v2341+int32(_a2570), int32(280), v2341+int32(_a2571))
+	m.Env.X__assert_fail(m, v2341+int32(_a_F_valkeyReaderGetReply_0), v2341+int32(_a_F_valkeyReaderGetReply_1), int32(280), v2341+int32(_a_F_valkeyReaderGetReply_2))
 	mBase = m.M
 	base.Wasm_trap_unreachable()
 	for {
@@ -14092,7 +14092,7 @@ L28:
 L29:
 	;
 	v2332 = m.G3
-	m.Env.X__assert_fail(m, v2332+int32(_a2572), v2332+int32(_a2570), int32(275), v2332+int32(_a2571))
+	m.Env.X__assert_fail(m, v2332+int32(_a_F_valkeyReaderGetReply_3), v2332+int32(_a_F_valkeyReaderGetReply_1), int32(275), v2332+int32(_a_F_valkeyReaderGetReply_2))
 	mBase = m.M
 	base.Wasm_trap_unreachable()
 	for {
@@ -14356,7 +14356,7 @@ L62:
 	;
 	v224 = m.G3
 	*(*int32)(unsafe.Add(mBase, uint32(v23))) = v23 + int32(392)
-	v233 = F_snprintf(m, v23+int32(64), int32(128), v224+int32(_a2573), v23)
+	v233 = F_snprintf(m, v23+int32(64), int32(128), v224+int32(_a_F_valkeyReaderGetReply_4), v23)
 	mBase = m.M
 	v234 = m.ExcPending
 	if v234 != 0 {
@@ -14374,48 +14374,48 @@ L63:
 L64:
 	;
 	v188 = m.G3
-	v193 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v188)+uint32(_consts[930]))))
+	v193 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v188)+uint32(_c_F_valkeyReaderGetReply[0]))))
 	*(*uint8)(unsafe.Add(mBase, uint32(v23+int32(396)))) = uint8(v193)
-	v195 = *(*int32)(unsafe.Add(mBase, uint32(v188)+uint32(_consts[931])))
+	v195 = *(*int32)(unsafe.Add(mBase, uint32(v188)+uint32(_c_F_valkeyReaderGetReply[1])))
 	*(*int32)(unsafe.Add(mBase, uint32(v23)+392)) = v195
 	goto L62
 L65:
 	;
 	v175 = m.G3
-	v180 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v175)+uint32(_consts[932]))))
+	v180 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v175)+uint32(_c_F_valkeyReaderGetReply[2]))))
 	*(*uint8)(unsafe.Add(mBase, uint32(v23+int32(396)))) = uint8(v180)
-	v182 = *(*int32)(unsafe.Add(mBase, uint32(v175)+uint32(_consts[933])))
+	v182 = *(*int32)(unsafe.Add(mBase, uint32(v175)+uint32(_c_F_valkeyReaderGetReply[3])))
 	*(*int32)(unsafe.Add(mBase, uint32(v23)+392)) = v182
 	goto L62
 L66:
 	;
 	v162 = m.G3
-	v167 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v162)+uint32(_consts[934]))))
+	v167 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v162)+uint32(_c_F_valkeyReaderGetReply[4]))))
 	*(*uint8)(unsafe.Add(mBase, uint32(v23+int32(396)))) = uint8(v167)
-	v169 = *(*int32)(unsafe.Add(mBase, uint32(v162)+uint32(_consts[935])))
+	v169 = *(*int32)(unsafe.Add(mBase, uint32(v162)+uint32(_c_F_valkeyReaderGetReply[5])))
 	*(*int32)(unsafe.Add(mBase, uint32(v23)+392)) = v169
 	goto L62
 L67:
 	;
 	v149 = m.G3
-	v154 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v149)+uint32(_consts[936]))))
+	v154 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v149)+uint32(_c_F_valkeyReaderGetReply[6]))))
 	*(*uint8)(unsafe.Add(mBase, uint32(v23+int32(396)))) = uint8(v154)
-	v156 = *(*int32)(unsafe.Add(mBase, uint32(v149)+uint32(_consts[937])))
+	v156 = *(*int32)(unsafe.Add(mBase, uint32(v149)+uint32(_c_F_valkeyReaderGetReply[7])))
 	*(*int32)(unsafe.Add(mBase, uint32(v23)+392)) = v156
 	goto L62
 L68:
 	;
 	v136 = m.G3
-	v141 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v136)+uint32(_consts[938]))))
+	v141 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v136)+uint32(_c_F_valkeyReaderGetReply[8]))))
 	*(*uint8)(unsafe.Add(mBase, uint32(v23+int32(396)))) = uint8(v141)
-	v143 = *(*int32)(unsafe.Add(mBase, uint32(v136)+uint32(_consts[939])))
+	v143 = *(*int32)(unsafe.Add(mBase, uint32(v136)+uint32(_c_F_valkeyReaderGetReply[9])))
 	*(*int32)(unsafe.Add(mBase, uint32(v23)+392)) = v143
 	goto L62
 L69:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v23)+48)) = v102
 	v123 = m.G3
-	v128 = F_snprintf(m, v23+int32(392), int32(8), v123+int32(_a2574), v23+int32(48))
+	v128 = F_snprintf(m, v23+int32(392), int32(8), v123+int32(_a_F_valkeyReaderGetReply_5), v23+int32(48))
 	mBase = m.M
 	v131 = m.ExcPending
 	if v131 != 0 {
@@ -14443,7 +14443,7 @@ L74:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v23)+32)) = v104
 	v216 = m.G3
-	v221 = F_snprintf(m, v23+int32(392), int32(8), v216+int32(_a2575), v23+int32(32))
+	v221 = F_snprintf(m, v23+int32(392), int32(8), v216+int32(_a_F_valkeyReaderGetReply_6), v23+int32(32))
 	mBase = m.M
 	v222 = m.ExcPending
 	if v222 != 0 {
@@ -14455,7 +14455,7 @@ L75:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v23)+16)) = v102
 	v205 = m.G3
-	v210 = F_snprintf(m, v23+int32(392), int32(8), v205+int32(_a2576), v23+int32(16))
+	v210 = F_snprintf(m, v23+int32(392), int32(8), v205+int32(_a_F_valkeyReaderGetReply_7), v23+int32(16))
 	mBase = m.M
 	v211 = m.ExcPending
 	if v211 != 0 {
@@ -14656,7 +14656,7 @@ L106:
 L107:
 	;
 	v345 = m.G3
-	m.Env.X__assert_fail(m, v345+int32(_a1646), v345+int32(_a2570), int32(677), v345+int32(_a2577))
+	m.Env.X__assert_fail(m, v345+int32(_a_F_valkeyReaderGetReply_8), v345+int32(_a_F_valkeyReaderGetReply_1), int32(677), v345+int32(_a_F_valkeyReaderGetReply_9))
 	mBase = m.M
 	base.Wasm_trap_unreachable()
 	for {
@@ -15321,11 +15321,11 @@ L197:
 	*(*int32)(unsafe.Add(mBase, uint32(l0))) = int32(4)
 	*(*uint8)(unsafe.Add(mBase, uint32(l0)+27)) = uint8(v736)
 	v747 = m.G3
-	v750 = *(*int64)(unsafe.Add(mBase, uint32(v747)+uint32(_consts[940])))
+	v750 = *(*int64)(unsafe.Add(mBase, uint32(v747)+uint32(_c_F_valkeyReaderGetReply[10])))
 	*(*int64)(unsafe.Add(mBase, uint32(l0)+4)) = v750
-	v756 = *(*int64)(unsafe.Add(mBase, uint32(v747)+uint32(_consts[941])))
+	v756 = *(*int64)(unsafe.Add(mBase, uint32(v747)+uint32(_c_F_valkeyReaderGetReply[11])))
 	*(*int64)(unsafe.Add(mBase, uint32(l0+int32(12)))) = v756
-	v762 = *(*int64)(unsafe.Add(mBase, uint32(v747)+uint32(_consts[942])))
+	v762 = *(*int64)(unsafe.Add(mBase, uint32(v747)+uint32(_c_F_valkeyReaderGetReply[12])))
 	*(*int64)(unsafe.Add(mBase, uint32(l0+int32(19)))) = v762
 	v3545 = v23
 	v3546 = v740
@@ -16450,9 +16450,9 @@ L351:
 	*(*int32)(unsafe.Add(mBase, uint32(l0))) = int32(5)
 	*(*uint8)(unsafe.Add(mBase, uint32(l0)+17)) = uint8(v1505)
 	v1516 = m.G3
-	v1519 = *(*int64)(unsafe.Add(mBase, uint32(v1516)+uint32(_consts[928])))
+	v1519 = *(*int64)(unsafe.Add(mBase, uint32(v1516)+uint32(_c_F_valkeyReaderGetReply[13])))
 	*(*int64)(unsafe.Add(mBase, uint32(l0)+4)) = v1519
-	v1525 = *(*int64)(unsafe.Add(mBase, uint32(v1516)+uint32(_consts[929])))
+	v1525 = *(*int64)(unsafe.Add(mBase, uint32(v1516)+uint32(_c_F_valkeyReaderGetReply[14])))
 	*(*int64)(unsafe.Add(mBase, uint32(l0+int32(9)))) = v1525
 	v3545 = v23
 	v3546 = v1509
@@ -16709,11 +16709,11 @@ L387:
 	*(*int32)(unsafe.Add(mBase, uint32(l0))) = int32(4)
 	*(*uint8)(unsafe.Add(mBase, uint32(l0)+25)) = uint8(v1690)
 	v1701 = m.G3
-	v1704 = *(*int64)(unsafe.Add(mBase, uint32(v1701)+uint32(_consts[943])))
+	v1704 = *(*int64)(unsafe.Add(mBase, uint32(v1701)+uint32(_c_F_valkeyReaderGetReply[15])))
 	*(*int64)(unsafe.Add(mBase, uint32(l0)+4)) = v1704
-	v1710 = *(*int64)(unsafe.Add(mBase, uint32(v1701)+uint32(_consts[944])))
+	v1710 = *(*int64)(unsafe.Add(mBase, uint32(v1701)+uint32(_c_F_valkeyReaderGetReply[16])))
 	*(*int64)(unsafe.Add(mBase, uint32(l0+int32(12)))) = v1710
-	v1716 = *(*int64)(unsafe.Add(mBase, uint32(v1701)+uint32(_consts[945])))
+	v1716 = *(*int64)(unsafe.Add(mBase, uint32(v1701)+uint32(_c_F_valkeyReaderGetReply[17])))
 	*(*int64)(unsafe.Add(mBase, uint32(l0+int32(17)))) = v1716
 	v3545 = v23
 	v3546 = v1694
@@ -16807,13 +16807,13 @@ L398:
 	*(*int32)(unsafe.Add(mBase, uint32(l0))) = int32(4)
 	*(*uint8)(unsafe.Add(mBase, uint32(l0)+34)) = uint8(v1767)
 	v1778 = m.G3
-	v1781 = *(*int64)(unsafe.Add(mBase, uint32(v1778)+uint32(_consts[946])))
+	v1781 = *(*int64)(unsafe.Add(mBase, uint32(v1778)+uint32(_c_F_valkeyReaderGetReply[18])))
 	*(*int64)(unsafe.Add(mBase, uint32(l0)+4)) = v1781
-	v1787 = *(*int64)(unsafe.Add(mBase, uint32(v1778)+uint32(_consts[947])))
+	v1787 = *(*int64)(unsafe.Add(mBase, uint32(v1778)+uint32(_c_F_valkeyReaderGetReply[19])))
 	*(*int64)(unsafe.Add(mBase, uint32(l0+int32(12)))) = v1787
-	v1793 = *(*int64)(unsafe.Add(mBase, uint32(v1778)+uint32(_consts[948])))
+	v1793 = *(*int64)(unsafe.Add(mBase, uint32(v1778)+uint32(_c_F_valkeyReaderGetReply[20])))
 	*(*int64)(unsafe.Add(mBase, uint32(l0+int32(20)))) = v1793
-	v1799 = *(*int64)(unsafe.Add(mBase, uint32(v1778)+uint32(_consts[949])))
+	v1799 = *(*int64)(unsafe.Add(mBase, uint32(v1778)+uint32(_c_F_valkeyReaderGetReply[21])))
 	*(*int64)(unsafe.Add(mBase, uint32(l0+int32(26)))) = v1799
 	v3545 = v23
 	v3546 = v1771
@@ -17068,11 +17068,11 @@ L430:
 	*(*int32)(unsafe.Add(mBase, uint32(l0))) = int32(4)
 	*(*uint8)(unsafe.Add(mBase, uint32(l0)+26)) = uint8(v1971)
 	v1982 = m.G3
-	v1985 = *(*int64)(unsafe.Add(mBase, uint32(v1982)+uint32(_consts[950])))
+	v1985 = *(*int64)(unsafe.Add(mBase, uint32(v1982)+uint32(_c_F_valkeyReaderGetReply[22])))
 	*(*int64)(unsafe.Add(mBase, uint32(l0)+4)) = v1985
-	v1991 = *(*int64)(unsafe.Add(mBase, uint32(v1982)+uint32(_consts[951])))
+	v1991 = *(*int64)(unsafe.Add(mBase, uint32(v1982)+uint32(_c_F_valkeyReaderGetReply[23])))
 	*(*int64)(unsafe.Add(mBase, uint32(l0+int32(12)))) = v1991
-	v1997 = *(*int64)(unsafe.Add(mBase, uint32(v1982)+uint32(_consts[952])))
+	v1997 = *(*int64)(unsafe.Add(mBase, uint32(v1982)+uint32(_c_F_valkeyReaderGetReply[24])))
 	*(*int64)(unsafe.Add(mBase, uint32(l0+int32(18)))) = v1997
 	v3545 = v23
 	v3546 = v1975
@@ -17148,13 +17148,13 @@ L438:
 	*(*int32)(unsafe.Add(mBase, uint32(l0))) = int32(4)
 	*(*uint8)(unsafe.Add(mBase, uint32(l0)+35)) = uint8(v2041)
 	v2052 = m.G3
-	v2055 = *(*int64)(unsafe.Add(mBase, uint32(v2052)+uint32(_consts[953])))
+	v2055 = *(*int64)(unsafe.Add(mBase, uint32(v2052)+uint32(_c_F_valkeyReaderGetReply[25])))
 	*(*int64)(unsafe.Add(mBase, uint32(l0)+4)) = v2055
-	v2061 = *(*int64)(unsafe.Add(mBase, uint32(v2052)+uint32(_consts[954])))
+	v2061 = *(*int64)(unsafe.Add(mBase, uint32(v2052)+uint32(_c_F_valkeyReaderGetReply[26])))
 	*(*int64)(unsafe.Add(mBase, uint32(l0+int32(12)))) = v2061
-	v2067 = *(*int64)(unsafe.Add(mBase, uint32(v2052)+uint32(_consts[955])))
+	v2067 = *(*int64)(unsafe.Add(mBase, uint32(v2052)+uint32(_c_F_valkeyReaderGetReply[27])))
 	*(*int64)(unsafe.Add(mBase, uint32(l0+int32(20)))) = v2067
-	v2073 = *(*int64)(unsafe.Add(mBase, uint32(v2052)+uint32(_consts[956])))
+	v2073 = *(*int64)(unsafe.Add(mBase, uint32(v2052)+uint32(_c_F_valkeyReaderGetReply[28])))
 	*(*int64)(unsafe.Add(mBase, uint32(l0+int32(27)))) = v2073
 	v3545 = v23
 	v3546 = v2045
@@ -17321,7 +17321,7 @@ L458:
 	goto L457
 L459:
 	;
-	v2156 = F__emscripten_memcpy_bulkmem(m, l0+v2146, v2150+int32(_a2578), int32(75))
+	v2156 = F__emscripten_memcpy_bulkmem(m, l0+v2146, v2150+int32(_a_F_valkeyReaderGetReply_10), int32(75))
 	mBase = m.M
 	goto L458
 L460:
@@ -17413,9 +17413,9 @@ L470:
 	*(*int32)(unsafe.Add(mBase, uint32(l0))) = int32(5)
 	*(*uint8)(unsafe.Add(mBase, uint32(l0)+17)) = uint8(v2234)
 	v2245 = m.G3
-	v2248 = *(*int64)(unsafe.Add(mBase, uint32(v2245)+uint32(_consts[928])))
+	v2248 = *(*int64)(unsafe.Add(mBase, uint32(v2245)+uint32(_c_F_valkeyReaderGetReply[13])))
 	*(*int64)(unsafe.Add(mBase, uint32(l0)+4)) = v2248
-	v2254 = *(*int64)(unsafe.Add(mBase, uint32(v2245)+uint32(_consts[929])))
+	v2254 = *(*int64)(unsafe.Add(mBase, uint32(v2245)+uint32(_c_F_valkeyReaderGetReply[14])))
 	*(*int64)(unsafe.Add(mBase, uint32(l0+int32(9)))) = v2254
 	v3545 = v23
 	v3546 = v2238
@@ -17501,7 +17501,7 @@ L481:
 L482:
 	;
 	v2352 = m.G3
-	v2354 = v2352 + int32(_a2579)
+	v2354 = v2352 + int32(_a_F_valkeyReaderGetReply_11)
 	v2355 = int32(*(*int8)(unsafe.Add(mBase, uint32(v368))))
 	v2356 = int32(5)
 	if v2354&int32(3) == int32(0) {
@@ -17737,9 +17737,9 @@ L514:
 	*(*int32)(unsafe.Add(mBase, uint32(l0))) = int32(4)
 	*(*uint8)(unsafe.Add(mBase, uint32(l0)+18)) = uint8(v2479)
 	v2490 = m.G3
-	v2493 = *(*int64)(unsafe.Add(mBase, uint32(v2490)+uint32(_consts[957])))
+	v2493 = *(*int64)(unsafe.Add(mBase, uint32(v2490)+uint32(_c_F_valkeyReaderGetReply[29])))
 	*(*int64)(unsafe.Add(mBase, uint32(l0)+4)) = v2493
-	v2499 = *(*int64)(unsafe.Add(mBase, uint32(v2490)+uint32(_consts[958])))
+	v2499 = *(*int64)(unsafe.Add(mBase, uint32(v2490)+uint32(_c_F_valkeyReaderGetReply[30])))
 	*(*int64)(unsafe.Add(mBase, uint32(l0+int32(10)))) = v2499
 	v3545 = v23
 	v3546 = v2483
@@ -17842,9 +17842,9 @@ L525:
 	*(*int32)(unsafe.Add(mBase, uint32(l0))) = int32(4)
 	*(*uint8)(unsafe.Add(mBase, uint32(l0)+17)) = uint8(v2533)
 	v2544 = m.G3
-	v2547 = *(*int64)(unsafe.Add(mBase, uint32(v2544)+uint32(_consts[959])))
+	v2547 = *(*int64)(unsafe.Add(mBase, uint32(v2544)+uint32(_c_F_valkeyReaderGetReply[31])))
 	*(*int64)(unsafe.Add(mBase, uint32(l0)+4)) = v2547
-	v2553 = *(*int64)(unsafe.Add(mBase, uint32(v2544)+uint32(_consts[960])))
+	v2553 = *(*int64)(unsafe.Add(mBase, uint32(v2544)+uint32(_c_F_valkeyReaderGetReply[32])))
 	*(*int64)(unsafe.Add(mBase, uint32(l0+int32(9)))) = v2553
 	v3545 = v23
 	v3546 = v2537
@@ -17957,13 +17957,13 @@ L538:
 	*(*int32)(unsafe.Add(mBase, uint32(l0)+168)) = int32(-1)
 	*(*int32)(unsafe.Add(mBase, uint32(l0))) = int32(4)
 	v2592 = m.G3
-	v2595 = *(*int64)(unsafe.Add(mBase, uint32(v2592)+uint32(_consts[961])))
+	v2595 = *(*int64)(unsafe.Add(mBase, uint32(v2592)+uint32(_c_F_valkeyReaderGetReply[33])))
 	*(*int64)(unsafe.Add(mBase, uint32(l0)+4)) = v2595
-	v2601 = *(*int64)(unsafe.Add(mBase, uint32(v2592)+uint32(_consts[962])))
+	v2601 = *(*int64)(unsafe.Add(mBase, uint32(v2592)+uint32(_c_F_valkeyReaderGetReply[34])))
 	*(*int64)(unsafe.Add(mBase, uint32(l0+int32(12)))) = v2601
-	v2607 = *(*int64)(unsafe.Add(mBase, uint32(v2592)+uint32(_consts[963])))
+	v2607 = *(*int64)(unsafe.Add(mBase, uint32(v2592)+uint32(_c_F_valkeyReaderGetReply[35])))
 	*(*int64)(unsafe.Add(mBase, uint32(l0+int32(20)))) = v2607
-	v2613 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v2592)+uint32(_consts[964]))))
+	v2613 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v2592)+uint32(_c_F_valkeyReaderGetReply[36]))))
 	*(*uint8)(unsafe.Add(mBase, uint32(l0+int32(28)))) = uint8(v2613)
 	v2859 = int32(29)
 	goto L530
@@ -18002,7 +18002,7 @@ L543:
 	;
 	v2762 = v23 + int32(64)
 	v2763 = m.G3
-	v2765 = v2763 + int32(_a2580)
+	v2765 = v2763 + int32(_a_F_valkeyReaderGetReply_12)
 	v2768 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v2762))))
 	if v2768 != 0 {
 		goto L588
@@ -18013,7 +18013,7 @@ L544:
 	;
 	v2718 = v23 + int32(64)
 	v2719 = m.G3
-	v2721 = v2719 + int32(_a2581)
+	v2721 = v2719 + int32(_a_F_valkeyReaderGetReply_13)
 	v2724 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v2718))))
 	if v2724 != 0 {
 		goto L575
@@ -18024,7 +18024,7 @@ L545:
 	;
 	v2674 = v23 + int32(64)
 	v2675 = m.G3
-	v2677 = v2675 + int32(_a2582)
+	v2677 = v2675 + int32(_a_F_valkeyReaderGetReply_14)
 	v2680 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v2674))))
 	if v2680 != 0 {
 		goto L562
@@ -18035,7 +18035,7 @@ L546:
 	;
 	v2630 = v23 + int32(64)
 	v2631 = m.G3
-	v2633 = v2631 + int32(_a2583)
+	v2633 = v2631 + int32(_a_F_valkeyReaderGetReply_15)
 	v2636 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v2630))))
 	if v2636 != 0 {
 		goto L549
@@ -18493,9 +18493,9 @@ L609:
 	*(*int32)(unsafe.Add(mBase, uint32(l0)+168)) = int32(-1)
 	*(*int32)(unsafe.Add(mBase, uint32(l0))) = int32(4)
 	v2846 = m.G3
-	v2849 = *(*int64)(unsafe.Add(mBase, uint32(v2846)+uint32(_consts[965])))
+	v2849 = *(*int64)(unsafe.Add(mBase, uint32(v2846)+uint32(_c_F_valkeyReaderGetReply[37])))
 	*(*int64)(unsafe.Add(mBase, uint32(l0)+4)) = v2849
-	v2855 = *(*int64)(unsafe.Add(mBase, uint32(v2846)+uint32(_consts[966])))
+	v2855 = *(*int64)(unsafe.Add(mBase, uint32(v2846)+uint32(_c_F_valkeyReaderGetReply[38])))
 	*(*int64)(unsafe.Add(mBase, uint32(l0+int32(12)))) = v2855
 	v2859 = int32(20)
 	goto L530
@@ -18754,11 +18754,11 @@ L644:
 	*(*int32)(unsafe.Add(mBase, uint32(l0))) = int32(4)
 	*(*uint8)(unsafe.Add(mBase, uint32(l0)+21)) = uint8(v3030)
 	v3041 = m.G3
-	v3044 = *(*int64)(unsafe.Add(mBase, uint32(v3041)+uint32(_consts[967])))
+	v3044 = *(*int64)(unsafe.Add(mBase, uint32(v3041)+uint32(_c_F_valkeyReaderGetReply[39])))
 	*(*int64)(unsafe.Add(mBase, uint32(l0)+4)) = v3044
-	v3050 = *(*int64)(unsafe.Add(mBase, uint32(v3041)+uint32(_consts[968])))
+	v3050 = *(*int64)(unsafe.Add(mBase, uint32(v3041)+uint32(_c_F_valkeyReaderGetReply[40])))
 	*(*int64)(unsafe.Add(mBase, uint32(l0+int32(12)))) = v3050
-	v3056 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v3041)+uint32(_consts[969]))))
+	v3056 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v3041)+uint32(_c_F_valkeyReaderGetReply[41]))))
 	*(*uint8)(unsafe.Add(mBase, uint32(l0+int32(20)))) = uint8(v3056)
 	v3545 = v23
 	v3546 = v3034
@@ -18848,9 +18848,9 @@ L655:
 	*(*int32)(unsafe.Add(mBase, uint32(l0))) = int32(5)
 	*(*uint8)(unsafe.Add(mBase, uint32(l0)+17)) = uint8(v3148)
 	v3159 = m.G3
-	v3162 = *(*int64)(unsafe.Add(mBase, uint32(v3159)+uint32(_consts[928])))
+	v3162 = *(*int64)(unsafe.Add(mBase, uint32(v3159)+uint32(_c_F_valkeyReaderGetReply[13])))
 	*(*int64)(unsafe.Add(mBase, uint32(l0)+4)) = v3162
-	v3168 = *(*int64)(unsafe.Add(mBase, uint32(v3159)+uint32(_consts[929])))
+	v3168 = *(*int64)(unsafe.Add(mBase, uint32(v3159)+uint32(_c_F_valkeyReaderGetReply[14])))
 	*(*int64)(unsafe.Add(mBase, uint32(l0+int32(9)))) = v3168
 	v3545 = v23
 	v3546 = v3152
@@ -19338,9 +19338,9 @@ L728:
 	*(*int32)(unsafe.Add(mBase, uint32(l0))) = int32(4)
 	*(*uint8)(unsafe.Add(mBase, uint32(l0)+20)) = uint8(v3521)
 	v3532 = m.G3
-	v3535 = *(*int64)(unsafe.Add(mBase, uint32(v3532)+uint32(_consts[970])))
+	v3535 = *(*int64)(unsafe.Add(mBase, uint32(v3532)+uint32(_c_F_valkeyReaderGetReply[42])))
 	*(*int64)(unsafe.Add(mBase, uint32(l0)+4)) = v3535
-	v3541 = *(*int64)(unsafe.Add(mBase, uint32(v3532)+uint32(_consts[971])))
+	v3541 = *(*int64)(unsafe.Add(mBase, uint32(v3532)+uint32(_c_F_valkeyReaderGetReply[43])))
 	*(*int64)(unsafe.Add(mBase, uint32(l0+int32(12)))) = v3541
 	v3545 = v23
 	v3546 = v3525
@@ -19385,9 +19385,9 @@ func F_valkeyReaderSetErrorOOM(m *base.Module, l0 int32) {
 			*(*int32)(unsafe.Add(mBase, uint32(l0))) = int32(5)
 			*(*uint8)(unsafe.Add(mBase, uint32(l0)+17)) = uint8(v21)
 			v31 = m.G3
-			v34 = *(*int64)(unsafe.Add(mBase, uint32(v31)+uint32(_consts[928])))
+			v34 = *(*int64)(unsafe.Add(mBase, uint32(v31)+uint32(_c_F_valkeyReaderSetErrorOOM[0])))
 			*(*int64)(unsafe.Add(mBase, uint32(l0)+4)) = v34
-			v40 = *(*int64)(unsafe.Add(mBase, uint32(v31)+uint32(_consts[929])))
+			v40 = *(*int64)(unsafe.Add(mBase, uint32(v31)+uint32(_c_F_valkeyReaderSetErrorOOM[1])))
 			*(*int64)(unsafe.Add(mBase, uint32(l0+int32(9)))) = v40
 			return
 		}
@@ -19408,9 +19408,9 @@ func F_valkeyReaderSetErrorOOM(m *base.Module, l0 int32) {
 				*(*int32)(unsafe.Add(mBase, uint32(l0))) = int32(5)
 				*(*uint8)(unsafe.Add(mBase, uint32(l0)+17)) = uint8(v21)
 				v31 = m.G3
-				v34 = *(*int64)(unsafe.Add(mBase, uint32(v31)+uint32(_consts[928])))
+				v34 = *(*int64)(unsafe.Add(mBase, uint32(v31)+uint32(_c_F_valkeyReaderSetErrorOOM[0])))
 				*(*int64)(unsafe.Add(mBase, uint32(l0)+4)) = v34
-				v40 = *(*int64)(unsafe.Add(mBase, uint32(v31)+uint32(_consts[929])))
+				v40 = *(*int64)(unsafe.Add(mBase, uint32(v31)+uint32(_c_F_valkeyReaderSetErrorOOM[1])))
 				*(*int64)(unsafe.Add(mBase, uint32(l0+int32(9)))) = v40
 				return
 			}
@@ -19431,9 +19431,9 @@ func F_valkeyReaderSetErrorOOM(m *base.Module, l0 int32) {
 					*(*int32)(unsafe.Add(mBase, uint32(l0))) = int32(5)
 					*(*uint8)(unsafe.Add(mBase, uint32(l0)+17)) = uint8(v21)
 					v31 = m.G3
-					v34 = *(*int64)(unsafe.Add(mBase, uint32(v31)+uint32(_consts[928])))
+					v34 = *(*int64)(unsafe.Add(mBase, uint32(v31)+uint32(_c_F_valkeyReaderSetErrorOOM[0])))
 					*(*int64)(unsafe.Add(mBase, uint32(l0)+4)) = v34
-					v40 = *(*int64)(unsafe.Add(mBase, uint32(v31)+uint32(_consts[929])))
+					v40 = *(*int64)(unsafe.Add(mBase, uint32(v31)+uint32(_c_F_valkeyReaderSetErrorOOM[1])))
 					*(*int64)(unsafe.Add(mBase, uint32(l0+int32(9)))) = v40
 					return
 				}
@@ -19459,9 +19459,9 @@ func F_valkeyReaderSetErrorOOM(m *base.Module, l0 int32) {
 						*(*int32)(unsafe.Add(mBase, uint32(l0))) = int32(5)
 						*(*uint8)(unsafe.Add(mBase, uint32(l0)+17)) = uint8(v21)
 						v31 = m.G3
-						v34 = *(*int64)(unsafe.Add(mBase, uint32(v31)+uint32(_consts[928])))
+						v34 = *(*int64)(unsafe.Add(mBase, uint32(v31)+uint32(_c_F_valkeyReaderSetErrorOOM[0])))
 						*(*int64)(unsafe.Add(mBase, uint32(l0)+4)) = v34
-						v40 = *(*int64)(unsafe.Add(mBase, uint32(v31)+uint32(_consts[929])))
+						v40 = *(*int64)(unsafe.Add(mBase, uint32(v31)+uint32(_c_F_valkeyReaderSetErrorOOM[1])))
 						*(*int64)(unsafe.Add(mBase, uint32(l0+int32(9)))) = v40
 						return
 					}
@@ -19577,13 +19577,13 @@ func F_valkeySetBlocking(m *base.Module, l0 int32, l1 int32) int32 {
 			m.G0 = v8 + int32(176)
 			return v152
 		} else {
-			v89 = *(*int32)(unsafe.Add(mBase, _consts[18]))
+			v89 = *(*int32)(unsafe.Add(mBase, _c_F_valkeySetBlocking[0]))
 			v95 = F__emscripten_memset_bulkmem(m, v8+int32(48), base.I32_extend8_s(int32(0)), int32(128))
 			mBase = m.M
 			v96 = m.G3
-			*(*int32)(unsafe.Add(mBase, uint32(v8)+16)) = v96 + int32(_a2566)
+			*(*int32)(unsafe.Add(mBase, uint32(v8)+16)) = v96 + int32(_a_F_valkeySetBlocking_0)
 			v101 = v8 + int32(48)
-			v109 = F_snprintf(m, v101, int32(128), v96+int32(_a2565), v8+int32(16))
+			v109 = F_snprintf(m, v101, int32(128), v96+int32(_a_F_valkeySetBlocking_1), v8+int32(16))
 			mBase = m.M
 			v110 = m.ExcPending
 			if v110 != 0 {
@@ -19627,13 +19627,13 @@ func F_valkeySetBlocking(m *base.Module, l0 int32, l1 int32) int32 {
 			}
 		}
 	} else {
-		v18 = *(*int32)(unsafe.Add(mBase, _consts[18]))
+		v18 = *(*int32)(unsafe.Add(mBase, _c_F_valkeySetBlocking[0]))
 		v24 = F__emscripten_memset_bulkmem(m, v8+int32(48), base.I32_extend8_s(int32(0)), int32(128))
 		mBase = m.M
 		v25 = m.G3
-		*(*int32)(unsafe.Add(mBase, uint32(v8))) = v25 + int32(_a2567)
+		*(*int32)(unsafe.Add(mBase, uint32(v8))) = v25 + int32(_a_F_valkeySetBlocking_2)
 		v30 = v8 + int32(48)
-		v36 = F_snprintf(m, v30, int32(128), v25+int32(_a2565), v8)
+		v36 = F_snprintf(m, v30, int32(128), v25+int32(_a_F_valkeySetBlocking_1), v8)
 		mBase = m.M
 		v39 = m.ExcPending
 		if v39 != 0 {
@@ -19755,13 +19755,13 @@ func F_valkeySetTcpNoDelay(m *base.Module, l0 int32) int32 {
 		m.G0 = v7 + int32(144)
 		return v143
 	} else {
-		v84 = *(*int32)(unsafe.Add(mBase, _consts[18]))
+		v84 = *(*int32)(unsafe.Add(mBase, _c_F_valkeySetTcpNoDelay[0]))
 		v90 = F__emscripten_memset_bulkmem(m, v7+int32(16), base.I32_extend8_s(int32(0)), int32(128))
 		mBase = m.M
 		v91 = m.G3
-		*(*int32)(unsafe.Add(mBase, uint32(v7))) = v91 + int32(_a2564)
+		*(*int32)(unsafe.Add(mBase, uint32(v7))) = v91 + int32(_a_F_valkeySetTcpNoDelay_0)
 		v96 = v7 + int32(16)
-		v102 = F_snprintf(m, v96, int32(128), v91+int32(_a2565), v7)
+		v102 = F_snprintf(m, v96, int32(128), v91+int32(_a_F_valkeySetTcpNoDelay_1), v7)
 		mBase = m.M
 		v105 = m.ExcPending
 		if v105 != 0 {
@@ -20038,7 +20038,7 @@ func F_valkeySsubscribeCallback(m *base.Module, l0 int32, l1 int32, l2 int32) {
 L1:
 	;
 	v317 = m.G3
-	m.Env.X__assert_fail(m, v317+int32(_a2546), v317+int32(_a2541), int32(905), v317+int32(_a2547))
+	m.Env.X__assert_fail(m, v317+int32(_a_F_valkeySsubscribeCallback_0), v317+int32(_a_F_valkeySsubscribeCallback_1), int32(905), v317+int32(_a_F_valkeySsubscribeCallback_2))
 	mBase = m.M
 	base.Wasm_trap_unreachable()
 	for {
@@ -20046,7 +20046,7 @@ L1:
 L2:
 	;
 	v308 = m.G3
-	m.Env.X__assert_fail(m, v308+int32(_a2548), v308+int32(_a2541), int32(904), v308+int32(_a2547))
+	m.Env.X__assert_fail(m, v308+int32(_a_F_valkeySsubscribeCallback_3), v308+int32(_a_F_valkeySsubscribeCallback_1), int32(904), v308+int32(_a_F_valkeySsubscribeCallback_2))
 	mBase = m.M
 	base.Wasm_trap_unreachable()
 	for {
@@ -20054,7 +20054,7 @@ L2:
 L3:
 	;
 	v299 = m.G3
-	m.Env.X__assert_fail(m, v299+int32(_a2549), v299+int32(_a2541), int32(903), v299+int32(_a2547))
+	m.Env.X__assert_fail(m, v299+int32(_a_F_valkeySsubscribeCallback_4), v299+int32(_a_F_valkeySsubscribeCallback_1), int32(903), v299+int32(_a_F_valkeySsubscribeCallback_2))
 	mBase = m.M
 	base.Wasm_trap_unreachable()
 	for {
@@ -20119,7 +20119,7 @@ L10:
 	v107 = *(*int32)(unsafe.Add(mBase, uint32(l1)+40))
 	v108 = *(*int32)(unsafe.Add(mBase, uint32(v107)))
 	v109 = *(*int32)(unsafe.Add(mBase, uint32(v108)+28))
-	v111 = v106 + int32(_a2550)
+	v111 = v106 + int32(_a_F_valkeySsubscribeCallback_5)
 	goto L33
 L11:
 	;

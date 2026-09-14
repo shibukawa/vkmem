@@ -68,12 +68,12 @@ func F__emscripten_timeout(m *base.Module, l0 int32, l1 float64) {
 	_ = v70
 	v5 = float64(0)
 	v11 = l0 << (uint(int32(3)) % 32)
-	v17 = *(*float64)(unsafe.Add(mBase, uint32(v11)+uint32(_consts[1247])))
+	v17 = *(*float64)(unsafe.Add(mBase, uint32(v11)+uint32(_c_F__emscripten_timeout[0])))
 	if base.F64_eq(v17, v5) != 0 {
-		*(*int64)(unsafe.Add(mBase, uint32(v11)+uint32(_consts[1246]))) = int64(0)
+		*(*int64)(unsafe.Add(mBase, uint32(v11)+uint32(_c_F__emscripten_timeout[1]))) = int64(0)
 		v54 = v5
 	} else {
-		v20 = *(*float64)(unsafe.Add(mBase, uint32(v11)+uint32(_consts[1246])))
+		v20 = *(*float64)(unsafe.Add(mBase, uint32(v11)+uint32(_c_F__emscripten_timeout[1])))
 		v21 = base.F64_max(l1, v20)
 		v22 = base.F64_sub(v21, v20)
 		if base.F64_lt(v22, float64(1.8446744073709552e+19))&base.F64_ge(v22, float64(0)) == int32(0) {
@@ -90,7 +90,7 @@ func F__emscripten_timeout(m *base.Module, l0 int32, l1 float64) {
 		}
 		v43 = base.I64_div_u_s(v32, v42)
 		v48 = base.F64_add(base.F64_mul(base.F64_convert_i64_u(v43+int64(1)), v17), v20)
-		*(*float64)(unsafe.Add(mBase, uint32(v11)+uint32(_consts[1246]))) = v48
+		*(*float64)(unsafe.Add(mBase, uint32(v11)+uint32(_c_F__emscripten_timeout[1]))) = v48
 		v54 = base.F64_sub(v48, v21)
 	}
 	v59 = m.Env.X_setitimer_js(m, l0, v54)
@@ -438,7 +438,7 @@ L4:
 	goto L5
 L5:
 	;
-	*(*int32)(unsafe.Add(mBase, _consts[9])) = int32(48)
+	*(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_realloc[0])) = int32(48)
 	return int32(0)
 L6:
 	;
@@ -565,7 +565,7 @@ L27:
 	;
 	v74 = *(*int32)(unsafe.Add(mBase, uint32(v61)))
 	v75 = v61 - v74
-	v77 = *(*int32)(unsafe.Add(mBase, _consts[1207]))
+	v77 = *(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_realloc[1]))
 	if base.Ui32(v75) < base.Ui32(v77) {
 		goto L23
 	} else {
@@ -574,7 +574,7 @@ L27:
 L28:
 	;
 	v79 = v74 + v66
-	v81 = *(*int32)(unsafe.Add(mBase, _consts[1208]))
+	v81 = *(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_realloc[2]))
 	if v75 == v81 {
 		goto L32
 	} else {
@@ -638,8 +638,8 @@ L35:
 L36:
 	;
 	v88 = int32(0)
-	v90 = *(*int32)(unsafe.Add(mBase, _consts[1209]))
-	*(*int32)(unsafe.Add(mBase, _consts[1209])) = v90 & base.I32_rotl(int32(-2), int32(base.Ui32(v74)>>(uint(int32(3))%32)))
+	v90 = *(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_realloc[3]))
+	*(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_realloc[3])) = v90 & base.I32_rotl(int32(-2), int32(base.Ui32(v74)>>(uint(int32(3))%32)))
 	v191 = v79
 	v192 = v75
 	goto L25
@@ -717,7 +717,7 @@ L46:
 	goto L44
 L47:
 	;
-	*(*int32)(unsafe.Add(mBase, _consts[1210])) = v79
+	*(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_realloc[4])) = v79
 	*(*int32)(unsafe.Add(mBase, uint32(v67)+4)) = v131 & int32(-2)
 	*(*int32)(unsafe.Add(mBase, uint32(v75)+4)) = v79 | int32(1)
 	*(*int32)(unsafe.Add(mBase, uint32(v67))) = v79
@@ -726,7 +726,7 @@ L48:
 	;
 	v159 = *(*int32)(unsafe.Add(mBase, uint32(v75)+28))
 	v161 = v159 << (uint(int32(2)) % 32)
-	v164 = *(*int32)(unsafe.Add(mBase, uint32(v161)+uint32(_consts[1211])))
+	v164 = *(*int32)(unsafe.Add(mBase, uint32(v161)+uint32(_c_F_emscripten_builtin_realloc[5])))
 	if v75 != v164 {
 		goto L50
 	} else {
@@ -751,7 +751,7 @@ L50:
 	}
 L51:
 	;
-	*(*int32)(unsafe.Add(mBase, uint32(v161)+uint32(_consts[1211]))) = v150
+	*(*int32)(unsafe.Add(mBase, uint32(v161)+uint32(_c_F_emscripten_builtin_realloc[5]))) = v150
 	if v150 != 0 {
 		goto L49
 	} else {
@@ -760,8 +760,8 @@ L51:
 L52:
 	;
 	v167 = int32(0)
-	v169 = *(*int32)(unsafe.Add(mBase, _consts[1212]))
-	*(*int32)(unsafe.Add(mBase, _consts[1212])) = v169 & base.I32_rotl(int32(-2), v159)
+	v169 = *(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_realloc[6]))
+	*(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_realloc[6])) = v169 & base.I32_rotl(int32(-2), v159)
 	v191 = v79
 	v192 = v75
 	goto L25
@@ -859,7 +859,7 @@ L66:
 	goto L62
 L67:
 	;
-	v209 = *(*int32)(unsafe.Add(mBase, _consts[1213]))
+	v209 = *(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_realloc[7]))
 	if v67 != v209 {
 		goto L68
 	} else {
@@ -867,7 +867,7 @@ L67:
 	}
 L68:
 	;
-	v231 = *(*int32)(unsafe.Add(mBase, _consts[1208]))
+	v231 = *(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_realloc[2]))
 	if v67 != v231 {
 		goto L71
 	} else {
@@ -876,12 +876,12 @@ L68:
 L69:
 	;
 	v211 = int32(0)
-	*(*int32)(unsafe.Add(mBase, _consts[1213])) = v192
-	v215 = *(*int32)(unsafe.Add(mBase, _consts[1214]))
+	*(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_realloc[7])) = v192
+	v215 = *(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_realloc[8]))
 	v216 = v215 + v191
-	*(*int32)(unsafe.Add(mBase, _consts[1214])) = v216
+	*(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_realloc[8])) = v216
 	*(*int32)(unsafe.Add(mBase, uint32(v192)+4)) = v216 | int32(1)
-	v222 = *(*int32)(unsafe.Add(mBase, _consts[1208]))
+	v222 = *(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_realloc[2]))
 	if v192 != v222 {
 		goto L23
 	} else {
@@ -890,8 +890,8 @@ L69:
 L70:
 	;
 	v224 = int32(0)
-	*(*int32)(unsafe.Add(mBase, _consts[1210])) = v224
-	*(*int32)(unsafe.Add(mBase, _consts[1208])) = v224
+	*(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_realloc[4])) = v224
+	*(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_realloc[2])) = v224
 	goto L22
 L71:
 	;
@@ -905,10 +905,10 @@ L71:
 L72:
 	;
 	v233 = int32(0)
-	*(*int32)(unsafe.Add(mBase, _consts[1208])) = v192
-	v237 = *(*int32)(unsafe.Add(mBase, _consts[1210]))
+	*(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_realloc[2])) = v192
+	v237 = *(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_realloc[4]))
 	v238 = v237 + v191
-	*(*int32)(unsafe.Add(mBase, _consts[1210])) = v238
+	*(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_realloc[4])) = v238
 	*(*int32)(unsafe.Add(mBase, uint32(v192)+4)) = v238 | int32(1)
 	*(*int32)(unsafe.Add(mBase, uint32(v192+v238))) = v238
 	goto L22
@@ -936,8 +936,8 @@ L75:
 L76:
 	;
 	v253 = int32(0)
-	v255 = *(*int32)(unsafe.Add(mBase, _consts[1209]))
-	*(*int32)(unsafe.Add(mBase, _consts[1209])) = v255 & base.I32_rotl(int32(-2), int32(base.Ui32(v201)>>(uint(int32(3))%32)))
+	v255 = *(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_realloc[3]))
+	*(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_realloc[3])) = v255 & base.I32_rotl(int32(-2), int32(base.Ui32(v201)>>(uint(int32(3))%32)))
 	goto L63
 L77:
 	;
@@ -1015,7 +1015,7 @@ L87:
 	;
 	v318 = *(*int32)(unsafe.Add(mBase, uint32(v67)+28))
 	v320 = v318 << (uint(int32(2)) % 32)
-	v323 = *(*int32)(unsafe.Add(mBase, uint32(v320)+uint32(_consts[1211])))
+	v323 = *(*int32)(unsafe.Add(mBase, uint32(v320)+uint32(_c_F_emscripten_builtin_realloc[5])))
 	if v67 != v323 {
 		goto L89
 	} else {
@@ -1040,7 +1040,7 @@ L89:
 	}
 L90:
 	;
-	*(*int32)(unsafe.Add(mBase, uint32(v320)+uint32(_consts[1211]))) = v309
+	*(*int32)(unsafe.Add(mBase, uint32(v320)+uint32(_c_F_emscripten_builtin_realloc[5]))) = v309
 	if v309 != 0 {
 		goto L88
 	} else {
@@ -1049,8 +1049,8 @@ L90:
 L91:
 	;
 	v326 = int32(0)
-	v328 = *(*int32)(unsafe.Add(mBase, _consts[1212]))
-	*(*int32)(unsafe.Add(mBase, _consts[1212])) = v328 & base.I32_rotl(int32(-2), v318)
+	v328 = *(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_realloc[6]))
+	*(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_realloc[6])) = v328 & base.I32_rotl(int32(-2), v318)
 	goto L63
 L92:
 	;
@@ -1090,7 +1090,7 @@ L98:
 	goto L63
 L99:
 	;
-	*(*int32)(unsafe.Add(mBase, _consts[1210])) = v247
+	*(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_realloc[4])) = v247
 	goto L22
 L100:
 	;
@@ -1104,7 +1104,7 @@ L101:
 	;
 	v379 = v367 & int32(-8)
 	v381 = v379 + int32(9128464)
-	v383 = *(*int32)(unsafe.Add(mBase, _consts[1209]))
+	v383 = *(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_realloc[3]))
 	v387 = int32(1) << (uint(int32(base.Ui32(v367)>>(uint(int32(3))%32))) % 32)
 	if v383&v387 != 0 {
 		goto L103
@@ -1113,19 +1113,19 @@ L101:
 	}
 L102:
 	;
-	*(*int32)(unsafe.Add(mBase, uint32(v379)+uint32(_consts[1215]))) = v192
+	*(*int32)(unsafe.Add(mBase, uint32(v379)+uint32(_c_F_emscripten_builtin_realloc[9]))) = v192
 	*(*int32)(unsafe.Add(mBase, uint32(v393)+12)) = v192
 	*(*int32)(unsafe.Add(mBase, uint32(v192)+12)) = v381
 	*(*int32)(unsafe.Add(mBase, uint32(v192)+8)) = v393
 	goto L22
 L103:
 	;
-	v392 = *(*int32)(unsafe.Add(mBase, uint32(v379)+uint32(_consts[1215])))
+	v392 = *(*int32)(unsafe.Add(mBase, uint32(v379)+uint32(_c_F_emscripten_builtin_realloc[9])))
 	v393 = v392
 	goto L102
 L104:
 	;
-	*(*int32)(unsafe.Add(mBase, _consts[1209])) = v383 | v387
+	*(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_realloc[3])) = v383 | v387
 	v393 = v381
 	goto L102
 L105:
@@ -1133,7 +1133,7 @@ L105:
 	*(*int32)(unsafe.Add(mBase, uint32(v192)+28)) = v414
 	*(*int64)(unsafe.Add(mBase, uint32(v192)+16)) = int64(0)
 	v419 = v414 << (uint(int32(2)) % 32)
-	v423 = *(*int32)(unsafe.Add(mBase, _consts[1212]))
+	v423 = *(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_realloc[6]))
 	v425 = int32(1) << (uint(v414) % 32)
 	if v423&v425 != 0 {
 		goto L110
@@ -1152,7 +1152,7 @@ L107:
 	*(*int32)(unsafe.Add(mBase, uint32(v192)+12)) = v488
 	*(*int32)(unsafe.Add(mBase, uint32(v192+v484))) = v487
 	v498 = int32(0)
-	v500 = *(*int32)(unsafe.Add(mBase, _consts[1216]))
+	v500 = *(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_realloc[10]))
 	v501 = int32(-1)
 	v502 = v500 + v501
 	if v502 != 0 {
@@ -1188,8 +1188,8 @@ L110:
 	}
 L111:
 	;
-	*(*int32)(unsafe.Add(mBase, _consts[1212])) = v423 | v425
-	*(*int32)(unsafe.Add(mBase, uint32(v419)+uint32(_consts[1211]))) = v192
+	*(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_realloc[6])) = v423 | v425
+	*(*int32)(unsafe.Add(mBase, uint32(v419)+uint32(_c_F_emscripten_builtin_realloc[5]))) = v192
 	v469 = int32(8)
 	v471 = int32(24)
 	v474 = v419 + int32(9128728)
@@ -1204,7 +1204,7 @@ L113:
 	goto L114
 L114:
 	;
-	v442 = *(*int32)(unsafe.Add(mBase, uint32(v419)+uint32(_consts[1211])))
+	v442 = *(*int32)(unsafe.Add(mBase, uint32(v419)+uint32(_c_F_emscripten_builtin_realloc[5])))
 	v445 = v367 << (uint(v440) % 32)
 	v448 = v442
 	goto L115
@@ -1247,7 +1247,7 @@ L120:
 	goto L121
 L121:
 	;
-	*(*int32)(unsafe.Add(mBase, _consts[1216])) = v504
+	*(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_realloc[10])) = v504
 	goto L23
 }
 func F_emscripten_stack_get_base(m *base.Module) int32 {

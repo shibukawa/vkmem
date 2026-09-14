@@ -33,7 +33,7 @@ func F_aeCreateTimeEvent(m *base.Module, l0 int32, l1 int64, l2 int32, l3 int32,
 		if v14 != 0 {
 			*(*int64)(unsafe.Add(mBase, uint32(v14))) = v9
 			v21 = int32(0)
-			v22 = *(*int32)(unsafe.Add(mBase, _consts[23]))
+			v22 = *(*int32)(unsafe.Add(mBase, _c_F_aeCreateTimeEvent[0]))
 			v23 = m.T0[v22].(func(*base.Module) int64)(m)
 			mBase = m.M
 			*(*int32)(unsafe.Add(mBase, uint32(v14)+28)) = v21
@@ -372,7 +372,7 @@ L26:
 	goto L23
 }
 func F_aeGetApiName(m *base.Module) int32 {
-	return int32(_a71)
+	return int32(_a_F_aeGetApiName_0)
 }
 func F_aeGetFileEvents(m *base.Module, l0 int32, l1 int32) int32 {
 	mBase := m.M

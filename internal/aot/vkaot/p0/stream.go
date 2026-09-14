@@ -455,7 +455,7 @@ L12:
 	}
 L13:
 	;
-	v56 = F_rioWriteBulkString(m, l0, int32(_a114), int32(4))
+	v56 = F_rioWriteBulkString(m, l0, int32(_a_F_rewriteStreamObject_0), int32(4))
 	mBase = m.M
 	v57 = m.ExcPending
 	if v57 != 0 {
@@ -503,7 +503,7 @@ L18:
 	*(*int64)(unsafe.Add(mBase, uint32(v11)+16)) = v66
 	v68 = *(*int64)(unsafe.Add(mBase, uint32(v11)+968))
 	*(*int64)(unsafe.Add(mBase, uint32(v11)+24)) = v68
-	v74 = F_sdscatfmt(m, v64, int32(_a105), v11+int32(16))
+	v74 = F_sdscatfmt(m, v64, int32(_a_F_rewriteStreamObject_1), v11+int32(16))
 	mBase = m.M
 	v75 = m.ExcPending
 	if v75 != 0 {
@@ -701,7 +701,7 @@ L44:
 	}
 L45:
 	;
-	v183 = F_rioWriteBulkString(m, l0, int32(_a114), int32(4))
+	v183 = F_rioWriteBulkString(m, l0, int32(_a_F_rewriteStreamObject_0), int32(4))
 	mBase = m.M
 	v184 = m.ExcPending
 	if v184 != 0 {
@@ -735,7 +735,7 @@ L48:
 	}
 L49:
 	;
-	v193 = F_rioWriteBulkString(m, l0, int32(_a115), int32(6))
+	v193 = F_rioWriteBulkString(m, l0, int32(_a_F_rewriteStreamObject_2), int32(6))
 	mBase = m.M
 	v194 = m.ExcPending
 	if v194 != 0 {
@@ -752,7 +752,7 @@ L50:
 	}
 L51:
 	;
-	v199 = F_rioWriteBulkString(m, l0, int32(_a107), int32(1))
+	v199 = F_rioWriteBulkString(m, l0, int32(_a_F_rewriteStreamObject_3), int32(1))
 	mBase = m.M
 	v200 = m.ExcPending
 	if v200 != 0 {
@@ -783,7 +783,7 @@ L54:
 	*(*int64)(unsafe.Add(mBase, uint32(v11))) = v205
 	v207 = *(*int64)(unsafe.Add(mBase, uint32(v11)+968))
 	*(*int64)(unsafe.Add(mBase, uint32(v11)+8)) = v207
-	v211 = F_sdscatfmt(m, v203, int32(_a105), v11)
+	v211 = F_sdscatfmt(m, v203, int32(_a_F_rewriteStreamObject_1), v11)
 	mBase = m.M
 	v212 = m.ExcPending
 	if v212 != 0 {
@@ -862,7 +862,7 @@ L63:
 	}
 L64:
 	;
-	v241 = F_rioWriteBulkString(m, l0, int32(_a116), int32(1))
+	v241 = F_rioWriteBulkString(m, l0, int32(_a_F_rewriteStreamObject_4), int32(1))
 	mBase = m.M
 	v242 = m.ExcPending
 	if v242 != 0 {
@@ -879,7 +879,7 @@ L65:
 	}
 L66:
 	;
-	v247 = F_rioWriteBulkString(m, l0, int32(_a117), int32(1))
+	v247 = F_rioWriteBulkString(m, l0, int32(_a_F_rewriteStreamObject_5), int32(1))
 	mBase = m.M
 	v248 = m.ExcPending
 	if v248 != 0 {
@@ -928,7 +928,7 @@ L72:
 	}
 L73:
 	;
-	v273 = F_rioWriteBulkString(m, l0, int32(_a118), int32(6))
+	v273 = F_rioWriteBulkString(m, l0, int32(_a_F_rewriteStreamObject_6), int32(6))
 	mBase = m.M
 	v274 = m.ExcPending
 	if v274 != 0 {
@@ -979,7 +979,7 @@ L78:
 	}
 L79:
 	;
-	v289 = F_rioWriteBulkString(m, l0, int32(_a119), int32(12))
+	v289 = F_rioWriteBulkString(m, l0, int32(_a_F_rewriteStreamObject_7), int32(12))
 	mBase = m.M
 	v290 = m.ExcPending
 	if v290 != 0 {
@@ -1014,7 +1014,7 @@ L82:
 	}
 L83:
 	;
-	v300 = F_rioWriteBulkString(m, l0, int32(_a120), int32(12))
+	v300 = F_rioWriteBulkString(m, l0, int32(_a_F_rewriteStreamObject_8), int32(12))
 	mBase = m.M
 	v301 = m.ExcPending
 	if v301 != 0 {
@@ -1079,7 +1079,7 @@ L90:
 L91:
 	;
 	v338 = int32(0)
-	v340 = F_raxSeek(m, v11+int32(640), int32(_a4), v338, v338)
+	v340 = F_raxSeek(m, v11+int32(640), int32(_a_F_rewriteStreamObject_9), v338, v338)
 	mBase = m.M
 	v341 = m.ExcPending
 	if v341 != 0 {
@@ -1164,7 +1164,7 @@ L100:
 	}
 L101:
 	;
-	v365 = F_rioWriteBulkString(m, l0, int32(_a112), int32(6))
+	v365 = F_rioWriteBulkString(m, l0, int32(_a_F_rewriteStreamObject_10), int32(6))
 	mBase = m.M
 	v366 = m.ExcPending
 	if v366 != 0 {
@@ -1181,7 +1181,7 @@ L102:
 	}
 L103:
 	;
-	v371 = F_rioWriteBulkString(m, l0, int32(_a121), int32(6))
+	v371 = F_rioWriteBulkString(m, l0, int32(_a_F_rewriteStreamObject_11), int32(6))
 	mBase = m.M
 	v372 = m.ExcPending
 	if v372 != 0 {
@@ -1251,7 +1251,7 @@ L110:
 	}
 L111:
 	;
-	v391 = F_rioWriteBulkString(m, l0, int32(_a122), int32(11))
+	v391 = F_rioWriteBulkString(m, l0, int32(_a_F_rewriteStreamObject_12), int32(11))
 	mBase = m.M
 	v392 = m.ExcPending
 	if v392 != 0 {
@@ -1304,7 +1304,7 @@ L117:
 L118:
 	;
 	v430 = int32(0)
-	v432 = F_raxSeek(m, v11+int32(336), int32(_a4), v430, v430)
+	v432 = F_raxSeek(m, v11+int32(336), int32(_a_F_rewriteStreamObject_9), v430, v430)
 	mBase = m.M
 	v433 = m.ExcPending
 	if v433 != 0 {
@@ -1438,7 +1438,7 @@ L133:
 L134:
 	;
 	v493 = int32(0)
-	v495 = F_raxSeek(m, v11+int32(32), int32(_a4), v493, v493)
+	v495 = F_raxSeek(m, v11+int32(32), int32(_a_F_rewriteStreamObject_9), v493, v493)
 	mBase = m.M
 	v496 = m.ExcPending
 	if v496 != 0 {
@@ -1681,18 +1681,18 @@ func F_streamCreateConsumer(m *base.Module, l0 int32, l1 int32, l2 int32, l3 int
 						} else {
 							*(*int64)(unsafe.Add(mBase, uint32(v12)+8)) = int64(-1)
 							*(*int32)(unsafe.Add(mBase, uint32(v12)+20)) = v50
-							v56 = *(*int64)(unsafe.Add(mBase, _consts[78]))
+							v56 = *(*int64)(unsafe.Add(mBase, _c_F_streamCreateConsumer[0]))
 							*(*int64)(unsafe.Add(mBase, uint32(v12))) = v56
 							if l4&int32(2) != 0 {
 							} else {
-								v60 = int32(_a69)
-								v62 = *(*int64)(unsafe.Add(mBase, _consts[60]))
-								*(*int64)(unsafe.Add(mBase, _consts[60])) = v62 + int64(1)
+								v60 = int32(_a_F_streamCreateConsumer_0)
+								v62 = *(*int64)(unsafe.Add(mBase, _c_F_streamCreateConsumer[1]))
+								*(*int64)(unsafe.Add(mBase, _c_F_streamCreateConsumer[1])) = v62 + int64(1)
 							}
 							if l4&int32(1) != 0 {
 								return v12
 							} else {
-								F_notifyKeyspaceEvent(m, int32(1024), int32(_a1547), l2, l3)
+								F_notifyKeyspaceEvent(m, int32(1024), int32(_a_F_streamCreateConsumer_1), l2, l3)
 								mBase = m.M
 								v69 = m.ExcPending
 								if v69 != 0 {
@@ -2158,7 +2158,7 @@ func F_streamDup(m *base.Module, l0 int32) int32 {
 	}
 L1:
 	;
-	F__serverAssert(m, int32(_a1524), int32(_a1525), int32(247))
+	F__serverAssert(m, int32(_a_F_streamDup_0), int32(_a_F_streamDup_1), int32(247))
 	mBase = m.M
 	v704 = m.ExcPending
 	if v704 != 0 {
@@ -2168,7 +2168,7 @@ L1:
 	}
 L2:
 	;
-	F__serverAssert(m, int32(_a1526), int32(_a1525), int32(209))
+	F__serverAssert(m, int32(_a_F_streamDup_2), int32(_a_F_streamDup_1), int32(209))
 	mBase = m.M
 	v698 = m.ExcPending
 	if v698 != 0 {
@@ -2178,7 +2178,7 @@ L2:
 	}
 L3:
 	;
-	F__serverPanic_1(m, int32(_a1525), int32(168), int32(_a1527), int32(0))
+	F__serverPanic_1(m, int32(_a_F_streamDup_1), int32(168), int32(_a_F_streamDup_3), int32(0))
 	mBase = m.M
 	v692 = m.ExcPending
 	if v692 != 0 {
@@ -2188,7 +2188,7 @@ L3:
 	}
 L4:
 	;
-	F__serverAssert(m, int32(_a1528), int32(_a1525), int32(164))
+	F__serverAssert(m, int32(_a_F_streamDup_4), int32(_a_F_streamDup_1), int32(164))
 	mBase = m.M
 	v685 = m.ExcPending
 	if v685 != 0 {
@@ -2237,7 +2237,7 @@ L8:
 L9:
 	;
 	v53 = int32(0)
-	v55 = F_raxSeek(m, v13+int32(1248), int32(_a4), v53, v53)
+	v55 = F_raxSeek(m, v13+int32(1248), int32(_a_F_streamDup_5), v53, v53)
 	mBase = m.M
 	v56 = m.ExcPending
 	if v56 != 0 {
@@ -2393,7 +2393,7 @@ L26:
 L27:
 	;
 	v166 = int32(0)
-	v168 = F_raxSeek(m, v13+int32(928), int32(_a4), v166, v166)
+	v168 = F_raxSeek(m, v13+int32(928), int32(_a_F_streamDup_5), v166, v166)
 	mBase = m.M
 	v169 = m.ExcPending
 	if v169 != 0 {
@@ -2472,7 +2472,7 @@ L35:
 L36:
 	;
 	v217 = int32(0)
-	v219 = F_raxSeek(m, v13+int32(624), int32(_a4), v217, v217)
+	v219 = F_raxSeek(m, v13+int32(624), int32(_a_F_streamDup_5), v217, v217)
 	mBase = m.M
 	v220 = m.ExcPending
 	if v220 != 0 {
@@ -2526,7 +2526,7 @@ L42:
 	goto L38
 L43:
 	;
-	v242 = *(*int64)(unsafe.Add(mBase, _consts[78]))
+	v242 = *(*int64)(unsafe.Add(mBase, _c_F_streamDup[0]))
 	goto L44
 L44:
 	;
@@ -2585,7 +2585,7 @@ L48:
 L49:
 	;
 	v299 = int32(0)
-	v301 = F_raxSeek(m, v13+int32(320), int32(_a4), v299, v299)
+	v301 = F_raxSeek(m, v13+int32(320), int32(_a_F_streamDup_5), v299, v299)
 	mBase = m.M
 	v302 = m.ExcPending
 	if v302 != 0 {
@@ -2735,7 +2735,7 @@ L65:
 L66:
 	;
 	v383 = int32(0)
-	v385 = F_raxSeek(m, v13+int32(16), int32(_a4), v383, v383)
+	v385 = F_raxSeek(m, v13+int32(16), int32(_a_F_streamDup_5), v383, v383)
 	mBase = m.M
 	v386 = m.ExcPending
 	if v386 != 0 {
@@ -3680,7 +3680,7 @@ func F_streamIteratorRemoveEntry(m *base.Module, l0 int32, l1 int32) {
 	}
 L1:
 	;
-	F__serverAssert(m, int32(_a1529), int32(_a1525), int32(282))
+	F__serverAssert(m, int32(_a_F_streamIteratorRemoveEntry_0), int32(_a_F_streamIteratorRemoveEntry_1), int32(282))
 	mBase = m.M
 	v593 = m.ExcPending
 	if v593 != 0 {
@@ -3690,7 +3690,7 @@ L1:
 	}
 L2:
 	;
-	F__serverAssert(m, int32(_a1529), int32(_a1525), int32(282))
+	F__serverAssert(m, int32(_a_F_streamIteratorRemoveEntry_0), int32(_a_F_streamIteratorRemoveEntry_1), int32(282))
 	mBase = m.M
 	v587 = m.ExcPending
 	if v587 != 0 {
@@ -3700,7 +3700,7 @@ L2:
 	}
 L3:
 	;
-	F__serverAssert(m, int32(_a1529), int32(_a1525), int32(282))
+	F__serverAssert(m, int32(_a_F_streamIteratorRemoveEntry_0), int32(_a_F_streamIteratorRemoveEntry_1), int32(282))
 	mBase = m.M
 	v581 = m.ExcPending
 	if v581 != 0 {
@@ -4960,7 +4960,7 @@ L5:
 	goto L2
 L6:
 	;
-	v58 = int32(_a1537)
+	v58 = int32(_a_F_streamParseAddOrTrimArgsOrReply_0)
 	v61 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v49))))
 	if v61 != 0 {
 		goto L12
@@ -5098,7 +5098,7 @@ L23:
 	goto L22
 L24:
 	;
-	v158 = int32(_a1538)
+	v158 = int32(_a_F_streamParseAddOrTrimArgsOrReply_1)
 	v161 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v49))))
 	if v161 != 0 {
 		goto L47
@@ -5137,7 +5137,7 @@ L27:
 	}
 L28:
 	;
-	F_addReplyError(m, l0, int32(_a1539))
+	F_addReplyError(m, l0, int32(_a_F_streamParseAddOrTrimArgsOrReply_2))
 	mBase = m.M
 	v109 = m.ExcPending
 	if v109 != 0 {
@@ -5234,7 +5234,7 @@ L42:
 	return int32(-1)
 L43:
 	;
-	F_addReplyError(m, l0, int32(_a1540))
+	F_addReplyError(m, l0, int32(_a_F_streamParseAddOrTrimArgsOrReply_3))
 	mBase = m.M
 	v155 = m.ExcPending
 	if v155 != 0 {
@@ -5335,7 +5335,7 @@ L56:
 	goto L51
 L57:
 	;
-	v250 = int32(_a1541)
+	v250 = int32(_a_F_streamParseAddOrTrimArgsOrReply_4)
 	v253 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v49))))
 	if v253 != 0 {
 		goto L77
@@ -5374,7 +5374,7 @@ L60:
 	}
 L61:
 	;
-	F_addReplyError(m, l0, int32(_a1539))
+	F_addReplyError(m, l0, int32(_a_F_streamParseAddOrTrimArgsOrReply_2))
 	mBase = m.M
 	v204 = m.ExcPending
 	if v204 != 0 {
@@ -5603,7 +5603,7 @@ L92:
 	return int32(-1)
 L93:
 	;
-	F_addReplyError(m, l0, int32(_a1542))
+	F_addReplyError(m, l0, int32(_a_F_streamParseAddOrTrimArgsOrReply_5))
 	mBase = m.M
 	v311 = m.ExcPending
 	if v311 != 0 {
@@ -5616,7 +5616,7 @@ L94:
 	return int32(-1)
 L95:
 	;
-	v375 = *(*int32)(unsafe.Add(mBase, _consts[59]))
+	v375 = *(*int32)(unsafe.Add(mBase, _c_F_streamParseAddOrTrimArgsOrReply[0]))
 	F_addReplyErrorObject(m, l0, v375)
 	mBase = m.M
 	v377 = m.ExcPending
@@ -5627,7 +5627,7 @@ L95:
 	}
 L96:
 	;
-	v316 = int32(_a1543)
+	v316 = int32(_a_F_streamParseAddOrTrimArgsOrReply_6)
 	v319 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v49))))
 	if v319 != 0 {
 		goto L100
@@ -5779,7 +5779,7 @@ L117:
 	}
 L118:
 	;
-	F_addReplyError(m, l0, int32(_a1544))
+	F_addReplyError(m, l0, int32(_a_F_streamParseAddOrTrimArgsOrReply_7))
 	mBase = m.M
 	v411 = m.ExcPending
 	if v411 != 0 {
@@ -5808,7 +5808,7 @@ L121:
 	}
 L122:
 	;
-	F_addReplyError(m, l0, int32(_a1545))
+	F_addReplyError(m, l0, int32(_a_F_streamParseAddOrTrimArgsOrReply_8))
 	mBase = m.M
 	v417 = m.ExcPending
 	if v417 != 0 {
@@ -5893,7 +5893,7 @@ L135:
 	}
 L136:
 	;
-	F_addReplyError(m, l0, int32(_a1546))
+	F_addReplyError(m, l0, int32(_a_F_streamParseAddOrTrimArgsOrReply_9))
 	mBase = m.M
 	v447 = m.ExcPending
 	if v447 != 0 {
@@ -5910,7 +5910,7 @@ L138:
 	goto L133
 L139:
 	;
-	v454 = *(*int64)(unsafe.Add(mBase, _consts[1080]))
+	v454 = *(*int64)(unsafe.Add(mBase, _c_F_streamParseAddOrTrimArgsOrReply[1]))
 	v456 = v454 * int64(100)
 	v457 = int64(1000000)
 	if v456 < v457 {
@@ -7241,7 +7241,7 @@ L5:
 L6:
 	;
 	v58 = int32(0)
-	v60 = F_raxSeek(m, v22+int32(40), int32(_a4), v58, v58)
+	v60 = F_raxSeek(m, v22+int32(40), int32(_a_F_streamTrim_0), v58, v58)
 	mBase = m.M
 	v63 = m.ExcPending
 	if v63 != 0 {
@@ -7287,7 +7287,7 @@ L11:
 	goto L13
 L12:
 	;
-	F__serverAssert(m, int32(_a1529), int32(_a1525), int32(282))
+	F__serverAssert(m, int32(_a_F_streamTrim_1), int32(_a_F_streamTrim_2), int32(282))
 	mBase = m.M
 	v1605 = m.ExcPending
 	if v1605 != 0 {
@@ -7304,7 +7304,7 @@ L13:
 	}
 L14:
 	;
-	F__serverAssert(m, int32(_a1529), int32(_a1525), int32(282))
+	F__serverAssert(m, int32(_a_F_streamTrim_1), int32(_a_F_streamTrim_2), int32(282))
 	mBase = m.M
 	v1599 = m.ExcPending
 	if v1599 != 0 {
@@ -7988,7 +7988,7 @@ L107:
 	}
 L108:
 	;
-	F__serverAssert(m, int32(_a1529), int32(_a1525), int32(282))
+	F__serverAssert(m, int32(_a_F_streamTrim_1), int32(_a_F_streamTrim_2), int32(282))
 	mBase = m.M
 	v1571 = m.ExcPending
 	if v1571 != 0 {
@@ -7998,7 +7998,7 @@ L108:
 	}
 L109:
 	;
-	F__serverAssert(m, int32(_a1529), int32(_a1525), int32(282))
+	F__serverAssert(m, int32(_a_F_streamTrim_1), int32(_a_F_streamTrim_2), int32(282))
 	mBase = m.M
 	v1565 = m.ExcPending
 	if v1565 != 0 {
@@ -8052,7 +8052,7 @@ L115:
 	}
 L116:
 	;
-	F__serverAssert(m, int32(_a1529), int32(_a1525), int32(282))
+	F__serverAssert(m, int32(_a_F_streamTrim_1), int32(_a_F_streamTrim_2), int32(282))
 	mBase = m.M
 	v1112 = m.ExcPending
 	if v1112 != 0 {
@@ -8062,7 +8062,7 @@ L116:
 	}
 L117:
 	;
-	F__serverAssert(m, int32(_a1529), int32(_a1525), int32(282))
+	F__serverAssert(m, int32(_a_F_streamTrim_1), int32(_a_F_streamTrim_2), int32(282))
 	mBase = m.M
 	v1106 = m.ExcPending
 	if v1106 != 0 {
@@ -8072,7 +8072,7 @@ L117:
 	}
 L118:
 	;
-	F__serverAssert(m, int32(_a1529), int32(_a1525), int32(282))
+	F__serverAssert(m, int32(_a_F_streamTrim_1), int32(_a_F_streamTrim_2), int32(282))
 	mBase = m.M
 	v1100 = m.ExcPending
 	if v1100 != 0 {
@@ -9538,7 +9538,7 @@ L324:
 	;
 	v1584 = *(*int32)(unsafe.Add(mBase, uint32(v22)+48))
 	v1585 = *(*int32)(unsafe.Add(mBase, uint32(v22)+56))
-	v1586 = F_raxSeek(m, v22+int32(40), int32(_a235), v1584, v1585)
+	v1586 = F_raxSeek(m, v22+int32(40), int32(_a_F_streamTrim_3), v1584, v1585)
 	mBase = m.M
 	v1587 = m.ExcPending
 	if v1587 != 0 {
@@ -9629,7 +9629,7 @@ L333:
 L334:
 	;
 	v1674 = int32(0)
-	v1676 = F_raxSeek(m, v1654, int32(_a4), v1674, v1674)
+	v1676 = F_raxSeek(m, v1654, int32(_a_F_streamTrim_0), v1674, v1674)
 	mBase = m.M
 	v1677 = m.ExcPending
 	if v1677 != 0 {

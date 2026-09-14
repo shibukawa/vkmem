@@ -22,10 +22,10 @@ func F_init_pthread_self(m *base.Module) {
 	var v5 int32
 	_ = v5
 	v1 = int32(0)
-	*(*int32)(unsafe.Add(mBase, _consts[1041])) = int32(9116516)
+	*(*int32)(unsafe.Add(mBase, _c_F_init_pthread_self[0])) = int32(9116516)
 	v5 = F___syscall_getpid(m)
 	mBase = m.M
-	*(*int32)(unsafe.Add(mBase, _consts[1009])) = v5
+	*(*int32)(unsafe.Add(mBase, _c_F_init_pthread_self[1])) = v5
 	return
 }
 func F_pthread_attr_destroy(m *base.Module, l0 int32) int32 {

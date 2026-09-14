@@ -135,7 +135,7 @@ func F_luaL_checkany(m *base.Module, l0 int32, l1 int32) {
 		return
 	} else {
 		v62 = m.G3
-		v65 = F_luaL_argerror(m, l0, l1, v62+int32(_a2693))
+		v65 = F_luaL_argerror(m, l0, l1, v62+int32(_a_F_luaL_checkany_0))
 		mBase = m.M
 		v66 = m.ExcPending
 		if v66 != 0 {
@@ -330,12 +330,12 @@ func F_luaL_checknumber(m *base.Module, l0 int32, l1 int32) float64 {
 						v98 = *(*int32)(unsafe.Add(mBase, uint32(v94+v87<<(uint(int32(2))%32))))
 						v99 = v98
 					} else {
-						v99 = v89 + int32(_a2694)
+						v99 = v89 + int32(_a_F_luaL_checknumber_0)
 					}
 					*(*int32)(unsafe.Add(mBase, uint32(v8)+4)) = v99
 					*(*int32)(unsafe.Add(mBase, uint32(v8))) = v29
 					v102 = m.G3
-					v105 = F_lua_pushfstring(m, l0, v102+int32(_a2695), v8)
+					v105 = F_lua_pushfstring(m, l0, v102+int32(_a_F_luaL_checknumber_1), v8)
 					mBase = m.M
 					v106 = m.ExcPending
 					if v106 != 0 {
@@ -596,7 +596,7 @@ L23:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v10))) = v78
 	v137 = m.G3
-	v140 = F_lua_pushfstring(m, l0, v137+int32(_a2692), v10)
+	v140 = F_lua_pushfstring(m, l0, v137+int32(_a_F_luaL_checkoption_0), v10)
 	mBase = m.M
 	v141 = m.ExcPending
 	if v141 != 0 {
@@ -793,7 +793,7 @@ L1:
 L2:
 	;
 	v88 = m.G3
-	F_lua_pushlstring(m, l0, v88+int32(_a320), int32(0))
+	F_lua_pushlstring(m, l0, v88+int32(_a_F_luaL_error_0), int32(0))
 	mBase = m.M
 	v93 = m.ExcPending
 	if v93 != 0 {
@@ -888,7 +888,7 @@ L15:
 L16:
 	;
 	v66 = m.G3
-	v71 = F_lua_getinfo(m, l0, v66+int32(_a2690), v7+int32(12))
+	v71 = F_lua_getinfo(m, l0, v66+int32(_a_F_luaL_error_1), v7+int32(12))
 	mBase = m.M
 	v74 = m.ExcPending
 	if v74 != 0 {
@@ -912,7 +912,7 @@ L19:
 	*(*int32)(unsafe.Add(mBase, uint32(v7)+4)) = v75
 	*(*int32)(unsafe.Add(mBase, uint32(v7))) = v7 + int32(48)
 	v82 = m.G3
-	v85 = F_lua_pushfstring(m, l0, v82+int32(_a2691), v7)
+	v85 = F_lua_pushfstring(m, l0, v82+int32(_a_F_luaL_error_2), v7)
 	mBase = m.M
 	v86 = m.ExcPending
 	if v86 != 0 {

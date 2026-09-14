@@ -973,12 +973,12 @@ func F_luaL_checkinteger(m *base.Module, l0 int32, l1 int32) int32 {
 						v96 = *(*int32)(unsafe.Add(mBase, uint32(v92+v85<<(uint(int32(2))%32))))
 						v97 = v96
 					} else {
-						v97 = v87 + int32(_a2282)
+						v97 = v87 + int32(_a_F_luaL_checkinteger_0)
 					}
 					*(*int32)(unsafe.Add(mBase, uint32(v8)+4)) = v97
 					*(*int32)(unsafe.Add(mBase, uint32(v8))) = v27
 					v100 = m.G3
-					v103 = F_lua_pushfstring(m, l0, v100+int32(_a2283), v8)
+					v103 = F_lua_pushfstring(m, l0, v100+int32(_a_F_luaL_checkinteger_1), v8)
 					mBase = m.M
 					v104 = m.ExcPending
 					if v104 != 0 {
@@ -1031,7 +1031,7 @@ func F_luaL_checkstack(m *base.Module, l0 int32, l1 int32, l2 int32) {
 		} else {
 			*(*int32)(unsafe.Add(mBase, uint32(v7))) = l2
 			v12 = m.G3
-			v15 = F_luaL_error(m, l0, v12+int32(_a2281), v7)
+			v15 = F_luaL_error(m, l0, v12+int32(_a_F_luaL_checkstack_0), v7)
 			mBase = m.M
 			v16 = m.ExcPending
 			if v16 != 0 {
@@ -1240,7 +1240,7 @@ func F_luaL_checktype(m *base.Module, l0 int32, l1 int32, l2 int32) {
 			v77 = *(*int32)(unsafe.Add(mBase, uint32(v73+l2<<(uint(int32(2))%32))))
 			v78 = v77
 		} else {
-			v78 = v68 + int32(_a2282)
+			v78 = v68 + int32(_a_F_luaL_checktype_0)
 		}
 		if l1 < int32(1) {
 			if l1 < int32(-9999) {
@@ -1331,12 +1331,12 @@ func F_luaL_checktype(m *base.Module, l0 int32, l1 int32, l2 int32) {
 			v146 = *(*int32)(unsafe.Add(mBase, uint32(v142+v135<<(uint(int32(2))%32))))
 			v147 = v146
 		} else {
-			v147 = v137 + int32(_a2282)
+			v147 = v137 + int32(_a_F_luaL_checktype_0)
 		}
 		*(*int32)(unsafe.Add(mBase, uint32(v7)+4)) = v147
 		*(*int32)(unsafe.Add(mBase, uint32(v7))) = v78
 		v150 = m.G3
-		v153 = F_lua_pushfstring(m, l0, v150+int32(_a2283), v7)
+		v153 = F_lua_pushfstring(m, l0, v150+int32(_a_F_luaL_checktype_1), v7)
 		mBase = m.M
 		v154 = m.ExcPending
 		if v154 != 0 {
@@ -1702,7 +1702,7 @@ L6:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v10)+48)) = l1
 	v33 = m.G3
-	v38 = F_lua_pushfstring(m, l0, v33+int32(_a2284), v10+int32(48))
+	v38 = F_lua_pushfstring(m, l0, v33+int32(_a_F_luaL_loadfile_0), v10+int32(48))
 	mBase = m.M
 	v39 = m.ExcPending
 	if v39 != 0 {
@@ -1713,7 +1713,7 @@ L6:
 L7:
 	;
 	v21 = m.G3
-	F_lua_pushlstring(m, l0, v21+int32(_a2285), int32(6))
+	F_lua_pushlstring(m, l0, v21+int32(_a_F_luaL_loadfile_1), int32(6))
 	mBase = m.M
 	v28 = m.ExcPending
 	if v28 != 0 {
@@ -1733,7 +1733,7 @@ L9:
 	goto L5
 L10:
 	;
-	v42 = F_fopen(m, l1, v33+int32(_a178))
+	v42 = F_fopen(m, l1, v33+int32(_a_F_luaL_loadfile_2))
 	mBase = m.M
 	*(*int32)(unsafe.Add(mBase, uint32(v10)+60)) = v42
 	if v42 != 0 {
@@ -1747,7 +1747,7 @@ L11:
 	goto L12
 L12:
 	;
-	v45 = *(*int32)(unsafe.Add(mBase, _consts[9]))
+	v45 = *(*int32)(unsafe.Add(mBase, _c_F_luaL_loadfile[0]))
 	v46 = F___strerror_l(m, v45, v45)
 	mBase = m.M
 	goto L13
@@ -1765,9 +1765,9 @@ L14:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v10)+40)) = v46
 	v51 = m.G3
-	*(*int32)(unsafe.Add(mBase, uint32(v10)+32)) = v51 + int32(_a2286)
+	*(*int32)(unsafe.Add(mBase, uint32(v10)+32)) = v51 + int32(_a_F_luaL_loadfile_3)
 	*(*int32)(unsafe.Add(mBase, uint32(v10)+36)) = v48 + int32(1)
-	v62 = F_lua_pushfstring(m, l0, v51+int32(_a2287), v10+int32(32))
+	v62 = F_lua_pushfstring(m, l0, v51+int32(_a_F_luaL_loadfile_4), v10+int32(32))
 	mBase = m.M
 	v63 = m.ExcPending
 	if v63 != 0 {
@@ -1865,7 +1865,7 @@ L26:
 L27:
 	;
 	v100 = m.G3
-	v103 = F_freopen(m, l1, v100+int32(_a2288), v64)
+	v103 = F_freopen(m, l1, v100+int32(_a_F_luaL_loadfile_5), v64)
 	mBase = m.M
 	v104 = m.ExcPending
 	if v104 != 0 {
@@ -1926,7 +1926,7 @@ L36:
 	goto L33
 L37:
 	;
-	v125 = *(*int32)(unsafe.Add(mBase, _consts[9]))
+	v125 = *(*int32)(unsafe.Add(mBase, _c_F_luaL_loadfile[0]))
 	v126 = F___strerror_l(m, v125, v125)
 	mBase = m.M
 	goto L38
@@ -1944,9 +1944,9 @@ L39:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v10)+8)) = v126
 	v131 = m.G3
-	*(*int32)(unsafe.Add(mBase, uint32(v10))) = v131 + int32(_a2289)
+	*(*int32)(unsafe.Add(mBase, uint32(v10))) = v131 + int32(_a_F_luaL_loadfile_6)
 	*(*int32)(unsafe.Add(mBase, uint32(v10)+4)) = v128 + int32(1)
-	v140 = F_lua_pushfstring(m, l0, v131+int32(_a2287), v10)
+	v140 = F_lua_pushfstring(m, l0, v131+int32(_a_F_luaL_loadfile_4), v10)
 	mBase = m.M
 	v141 = m.ExcPending
 	if v141 != 0 {
@@ -2089,7 +2089,7 @@ L60:
 	goto L54
 L61:
 	;
-	v214 = *(*int32)(unsafe.Add(mBase, _consts[9]))
+	v214 = *(*int32)(unsafe.Add(mBase, _c_F_luaL_loadfile[0]))
 	v215 = F___strerror_l(m, v214, v214)
 	mBase = m.M
 	goto L62
@@ -2107,9 +2107,9 @@ L63:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v10)+24)) = v215
 	v220 = m.G3
-	*(*int32)(unsafe.Add(mBase, uint32(v10)+16)) = v220 + int32(_a2290)
+	*(*int32)(unsafe.Add(mBase, uint32(v10)+16)) = v220 + int32(_a_F_luaL_loadfile_7)
 	*(*int32)(unsafe.Add(mBase, uint32(v10)+20)) = v217 + int32(1)
-	v231 = F_lua_pushfstring(m, l0, v220+int32(_a2287), v10+int32(16))
+	v231 = F_lua_pushfstring(m, l0, v220+int32(_a_F_luaL_loadfile_4), v10+int32(16))
 	mBase = m.M
 	v232 = m.ExcPending
 	if v232 != 0 {
@@ -2950,7 +2950,7 @@ L1:
 L2:
 	;
 	v83 = m.G3
-	F_lua_pushlstring(m, l0, v83+int32(_a188), int32(0))
+	F_lua_pushlstring(m, l0, v83+int32(_a_F_luaL_where_0), int32(0))
 	mBase = m.M
 	v88 = m.ExcPending
 	if v88 != 0 {
@@ -3047,7 +3047,7 @@ L15:
 L16:
 	;
 	v63 = m.G3
-	v68 = F_lua_getinfo(m, l0, v63+int32(_a2279), v6+int32(12))
+	v68 = F_lua_getinfo(m, l0, v63+int32(_a_F_luaL_where_1), v6+int32(12))
 	mBase = m.M
 	v69 = m.ExcPending
 	if v69 != 0 {
@@ -3071,7 +3071,7 @@ L19:
 	*(*int32)(unsafe.Add(mBase, uint32(v6)+4)) = v70
 	*(*int32)(unsafe.Add(mBase, uint32(v6))) = v6 + int32(48)
 	v77 = m.G3
-	v80 = F_lua_pushfstring(m, l0, v77+int32(_a2280), v6)
+	v80 = F_lua_pushfstring(m, l0, v77+int32(_a_F_luaL_where_2), v6)
 	mBase = m.M
 	v81 = m.ExcPending
 	if v81 != 0 {

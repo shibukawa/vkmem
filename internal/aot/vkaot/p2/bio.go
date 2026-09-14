@@ -28,8 +28,8 @@ func F_bioCreateSaveRDBToDiskJob(m *base.Module, l0 int32, l1 int32) {
 		*(*int32)(unsafe.Add(mBase, uint32(v5)+4)) = l0
 		*(*int32)(unsafe.Add(mBase, uint32(v5))) = int32(4)
 		v11 = int32(0)
-		v13 = *(*int32)(unsafe.Add(mBase, _consts[79]))
-		*(*int32)(unsafe.Add(mBase, _consts[79])) = v13 + int32(1)
+		v13 = *(*int32)(unsafe.Add(mBase, _c_F_bioCreateSaveRDBToDiskJob[0]))
+		*(*int32)(unsafe.Add(mBase, _c_F_bioCreateSaveRDBToDiskJob[0])) = v13 + int32(1)
 		F_bioExecuteJob(m, v5)
 		mBase = m.M
 		v18 = m.ExcPending
@@ -54,7 +54,7 @@ func F_bioDrainWorker(m *base.Module, l0 int32) {
 	var v13 int32
 	_ = v13
 	v3 = l0 << (uint(int32(2)) % 32)
-	v6 = *(*int32)(unsafe.Add(mBase, uint32(v3)+uint32(_consts[77])))
+	v6 = *(*int32)(unsafe.Add(mBase, uint32(v3)+uint32(_c_F_bioDrainWorker[0])))
 	if v6 == int32(0) {
 		goto L1
 	} else {
@@ -84,7 +84,7 @@ L5:
 	return
 L6:
 	;
-	v13 = *(*int32)(unsafe.Add(mBase, uint32(v3)+uint32(_consts[77])))
+	v13 = *(*int32)(unsafe.Add(mBase, uint32(v3)+uint32(_c_F_bioDrainWorker[0])))
 	if v13 != 0 {
 		goto L3
 	} else {
@@ -184,10 +184,10 @@ func F_bioExecuteJob(m *base.Module, l0 int32) {
 			v67 = F_fsync(m, v66)
 			mBase = m.M
 			if v67 != int32(-1) {
-				v98 = int32(_a44)
-				*(*int32)(unsafe.Add(mBase, _consts[76])) = int32(0)
+				v98 = int32(_a_F_bioExecuteJob_0)
+				*(*int32)(unsafe.Add(mBase, _c_F_bioExecuteJob[0])) = int32(0)
 				v102 = *(*int64)(unsafe.Add(mBase, uint32(l0)+8))
-				*(*int64)(unsafe.Add(mBase, _consts[32])) = v102
+				*(*int64)(unsafe.Add(mBase, _c_F_bioExecuteJob[1])) = v102
 				v106 = int32(*(*uint8)(unsafe.Add(mBase, uint32(l0)+16)))
 				if v106&int32(2) == int32(0) {
 				} else {
@@ -205,19 +205,19 @@ func F_bioExecuteJob(m *base.Module, l0 int32) {
 					return
 				} else {
 					v163 = v10 << (uint(int32(2)) % 32)
-					v166 = *(*int32)(unsafe.Add(mBase, uint32(v163)+uint32(_consts[77])))
-					*(*int32)(unsafe.Add(mBase, uint32(v163)+uint32(_consts[77]))) = v166 + int32(-1)
+					v166 = *(*int32)(unsafe.Add(mBase, uint32(v163)+uint32(_c_F_bioExecuteJob[2])))
+					*(*int32)(unsafe.Add(mBase, uint32(v163)+uint32(_c_F_bioExecuteJob[2]))) = v166 + int32(-1)
 					m.G0 = v8 + int32(64)
 					return
 				}
 			} else {
 				v70 = int32(9116376)
-				v71 = *(*int32)(unsafe.Add(mBase, _consts[5]))
+				v71 = *(*int32)(unsafe.Add(mBase, _c_F_bioExecuteJob[3]))
 				if v71 == int32(8) {
-					v98 = int32(_a44)
-					*(*int32)(unsafe.Add(mBase, _consts[76])) = int32(0)
+					v98 = int32(_a_F_bioExecuteJob_0)
+					*(*int32)(unsafe.Add(mBase, _c_F_bioExecuteJob[0])) = int32(0)
 					v102 = *(*int64)(unsafe.Add(mBase, uint32(l0)+8))
-					*(*int64)(unsafe.Add(mBase, _consts[32])) = v102
+					*(*int64)(unsafe.Add(mBase, _c_F_bioExecuteJob[1])) = v102
 					v106 = int32(*(*uint8)(unsafe.Add(mBase, uint32(l0)+16)))
 					if v106&int32(2) == int32(0) {
 					} else {
@@ -235,17 +235,17 @@ func F_bioExecuteJob(m *base.Module, l0 int32) {
 						return
 					} else {
 						v163 = v10 << (uint(int32(2)) % 32)
-						v166 = *(*int32)(unsafe.Add(mBase, uint32(v163)+uint32(_consts[77])))
-						*(*int32)(unsafe.Add(mBase, uint32(v163)+uint32(_consts[77]))) = v166 + int32(-1)
+						v166 = *(*int32)(unsafe.Add(mBase, uint32(v163)+uint32(_c_F_bioExecuteJob[2])))
+						*(*int32)(unsafe.Add(mBase, uint32(v163)+uint32(_c_F_bioExecuteJob[2]))) = v166 + int32(-1)
 						m.G0 = v8 + int32(64)
 						return
 					}
 				} else {
 					if v71 == int32(28) {
-						v98 = int32(_a44)
-						*(*int32)(unsafe.Add(mBase, _consts[76])) = int32(0)
+						v98 = int32(_a_F_bioExecuteJob_0)
+						*(*int32)(unsafe.Add(mBase, _c_F_bioExecuteJob[0])) = int32(0)
 						v102 = *(*int64)(unsafe.Add(mBase, uint32(l0)+8))
-						*(*int64)(unsafe.Add(mBase, _consts[32])) = v102
+						*(*int64)(unsafe.Add(mBase, _c_F_bioExecuteJob[1])) = v102
 						v106 = int32(*(*uint8)(unsafe.Add(mBase, uint32(l0)+16)))
 						if v106&int32(2) == int32(0) {
 						} else {
@@ -263,16 +263,16 @@ func F_bioExecuteJob(m *base.Module, l0 int32) {
 							return
 						} else {
 							v163 = v10 << (uint(int32(2)) % 32)
-							v166 = *(*int32)(unsafe.Add(mBase, uint32(v163)+uint32(_consts[77])))
-							*(*int32)(unsafe.Add(mBase, uint32(v163)+uint32(_consts[77]))) = v166 + int32(-1)
+							v166 = *(*int32)(unsafe.Add(mBase, uint32(v163)+uint32(_c_F_bioExecuteJob[2])))
+							*(*int32)(unsafe.Add(mBase, uint32(v163)+uint32(_c_F_bioExecuteJob[2]))) = v166 + int32(-1)
 							m.G0 = v8 + int32(64)
 							return
 						}
 					} else {
-						v76 = int32(_a44)
-						*(*int32)(unsafe.Add(mBase, _consts[78])) = v71
-						v79 = *(*int32)(unsafe.Add(mBase, _consts[76]))
-						*(*int32)(unsafe.Add(mBase, _consts[76])) = int32(-1)
+						v76 = int32(_a_F_bioExecuteJob_0)
+						*(*int32)(unsafe.Add(mBase, _c_F_bioExecuteJob[4])) = v71
+						v79 = *(*int32)(unsafe.Add(mBase, _c_F_bioExecuteJob[0]))
+						*(*int32)(unsafe.Add(mBase, _c_F_bioExecuteJob[0])) = int32(-1)
 						if v79 != 0 {
 							v106 = int32(*(*uint8)(unsafe.Add(mBase, uint32(l0)+16)))
 							if v106&int32(2) == int32(0) {
@@ -291,13 +291,13 @@ func F_bioExecuteJob(m *base.Module, l0 int32) {
 								return
 							} else {
 								v163 = v10 << (uint(int32(2)) % 32)
-								v166 = *(*int32)(unsafe.Add(mBase, uint32(v163)+uint32(_consts[77])))
-								*(*int32)(unsafe.Add(mBase, uint32(v163)+uint32(_consts[77]))) = v166 + int32(-1)
+								v166 = *(*int32)(unsafe.Add(mBase, uint32(v163)+uint32(_c_F_bioExecuteJob[2])))
+								*(*int32)(unsafe.Add(mBase, uint32(v163)+uint32(_c_F_bioExecuteJob[2]))) = v166 + int32(-1)
 								m.G0 = v8 + int32(64)
 								return
 							}
 						} else {
-							v84 = *(*int32)(unsafe.Add(mBase, _consts[6]))
+							v84 = *(*int32)(unsafe.Add(mBase, _c_F_bioExecuteJob[5]))
 							if int32(3) < v84 {
 								v106 = int32(*(*uint8)(unsafe.Add(mBase, uint32(l0)+16)))
 								if v106&int32(2) == int32(0) {
@@ -316,17 +316,17 @@ func F_bioExecuteJob(m *base.Module, l0 int32) {
 									return
 								} else {
 									v163 = v10 << (uint(int32(2)) % 32)
-									v166 = *(*int32)(unsafe.Add(mBase, uint32(v163)+uint32(_consts[77])))
-									*(*int32)(unsafe.Add(mBase, uint32(v163)+uint32(_consts[77]))) = v166 + int32(-1)
+									v166 = *(*int32)(unsafe.Add(mBase, uint32(v163)+uint32(_c_F_bioExecuteJob[2])))
+									*(*int32)(unsafe.Add(mBase, uint32(v163)+uint32(_c_F_bioExecuteJob[2]))) = v166 + int32(-1)
 									m.G0 = v8 + int32(64)
 									return
 								}
 							} else {
-								v87 = *(*int32)(unsafe.Add(mBase, _consts[5]))
+								v87 = *(*int32)(unsafe.Add(mBase, _c_F_bioExecuteJob[3]))
 								v88 = F___strerror_l(m, v87, v87)
 								mBase = m.M
 								*(*int32)(unsafe.Add(mBase, uint32(v8)+48)) = v88
-								F__serverLog(m, int32(3), int32(_a113), v8+int32(48))
+								F__serverLog(m, int32(3), int32(_a_F_bioExecuteJob_1), v8+int32(48))
 								mBase = m.M
 								v95 = m.ExcPending
 								if v95 != 0 {
@@ -349,8 +349,8 @@ func F_bioExecuteJob(m *base.Module, l0 int32) {
 										return
 									} else {
 										v163 = v10 << (uint(int32(2)) % 32)
-										v166 = *(*int32)(unsafe.Add(mBase, uint32(v163)+uint32(_consts[77])))
-										*(*int32)(unsafe.Add(mBase, uint32(v163)+uint32(_consts[77]))) = v166 + int32(-1)
+										v166 = *(*int32)(unsafe.Add(mBase, uint32(v163)+uint32(_c_F_bioExecuteJob[2])))
+										*(*int32)(unsafe.Add(mBase, uint32(v163)+uint32(_c_F_bioExecuteJob[2]))) = v166 + int32(-1)
 										m.G0 = v8 + int32(64)
 										return
 									}
@@ -375,8 +375,8 @@ func F_bioExecuteJob(m *base.Module, l0 int32) {
 					return
 				} else {
 					v163 = v10 << (uint(int32(2)) % 32)
-					v166 = *(*int32)(unsafe.Add(mBase, uint32(v163)+uint32(_consts[77])))
-					*(*int32)(unsafe.Add(mBase, uint32(v163)+uint32(_consts[77]))) = v166 + int32(-1)
+					v166 = *(*int32)(unsafe.Add(mBase, uint32(v163)+uint32(_c_F_bioExecuteJob[2])))
+					*(*int32)(unsafe.Add(mBase, uint32(v163)+uint32(_c_F_bioExecuteJob[2]))) = v166 + int32(-1)
 					m.G0 = v8 + int32(64)
 					return
 				}
@@ -397,14 +397,14 @@ func F_bioExecuteJob(m *base.Module, l0 int32) {
 					return
 				} else {
 					v163 = v10 << (uint(int32(2)) % 32)
-					v166 = *(*int32)(unsafe.Add(mBase, uint32(v163)+uint32(_consts[77])))
-					*(*int32)(unsafe.Add(mBase, uint32(v163)+uint32(_consts[77]))) = v166 + int32(-1)
+					v166 = *(*int32)(unsafe.Add(mBase, uint32(v163)+uint32(_c_F_bioExecuteJob[2])))
+					*(*int32)(unsafe.Add(mBase, uint32(v163)+uint32(_c_F_bioExecuteJob[2]))) = v166 + int32(-1)
 					m.G0 = v8 + int32(64)
 					return
 				}
 			}
 		case 4:
-			F__serverPanic_1(m, int32(_a177), int32(323), int32(_a178), int32(0))
+			F__serverPanic_1(m, int32(_a_F_bioExecuteJob_2), int32(323), int32(_a_F_bioExecuteJob_3), int32(0))
 			mBase = m.M
 			v144 = m.ExcPending
 			if v144 != 0 {
@@ -417,7 +417,7 @@ func F_bioExecuteJob(m *base.Module, l0 int32) {
 				}
 			}
 		default:
-			F__serverPanic_1(m, int32(_a177), int32(326), int32(_a179), int32(0))
+			F__serverPanic_1(m, int32(_a_F_bioExecuteJob_2), int32(326), int32(_a_F_bioExecuteJob_4), int32(0))
 			mBase = m.M
 			v151 = m.ExcPending
 			if v151 != 0 {
@@ -447,8 +447,8 @@ func F_bioExecuteJob(m *base.Module, l0 int32) {
 				return
 			} else {
 				v163 = v10 << (uint(int32(2)) % 32)
-				v166 = *(*int32)(unsafe.Add(mBase, uint32(v163)+uint32(_consts[77])))
-				*(*int32)(unsafe.Add(mBase, uint32(v163)+uint32(_consts[77]))) = v166 + int32(-1)
+				v166 = *(*int32)(unsafe.Add(mBase, uint32(v163)+uint32(_c_F_bioExecuteJob[2])))
+				*(*int32)(unsafe.Add(mBase, uint32(v163)+uint32(_c_F_bioExecuteJob[2]))) = v166 + int32(-1)
 				m.G0 = v8 + int32(64)
 				return
 			}
@@ -471,13 +471,13 @@ func F_bioExecuteJob(m *base.Module, l0 int32) {
 					return
 				} else {
 					v163 = v10 << (uint(int32(2)) % 32)
-					v166 = *(*int32)(unsafe.Add(mBase, uint32(v163)+uint32(_consts[77])))
-					*(*int32)(unsafe.Add(mBase, uint32(v163)+uint32(_consts[77]))) = v166 + int32(-1)
+					v166 = *(*int32)(unsafe.Add(mBase, uint32(v163)+uint32(_c_F_bioExecuteJob[2])))
+					*(*int32)(unsafe.Add(mBase, uint32(v163)+uint32(_c_F_bioExecuteJob[2]))) = v166 + int32(-1)
 					m.G0 = v8 + int32(64)
 					return
 				}
 			} else {
-				v21 = *(*int32)(unsafe.Add(mBase, _consts[5]))
+				v21 = *(*int32)(unsafe.Add(mBase, _c_F_bioExecuteJob[3]))
 				if v21 == int32(8) {
 					v39 = int32(*(*uint8)(unsafe.Add(mBase, uint32(l0)+16)))
 					if v39&int32(2) == int32(0) {
@@ -493,8 +493,8 @@ func F_bioExecuteJob(m *base.Module, l0 int32) {
 						return
 					} else {
 						v163 = v10 << (uint(int32(2)) % 32)
-						v166 = *(*int32)(unsafe.Add(mBase, uint32(v163)+uint32(_consts[77])))
-						*(*int32)(unsafe.Add(mBase, uint32(v163)+uint32(_consts[77]))) = v166 + int32(-1)
+						v166 = *(*int32)(unsafe.Add(mBase, uint32(v163)+uint32(_c_F_bioExecuteJob[2])))
+						*(*int32)(unsafe.Add(mBase, uint32(v163)+uint32(_c_F_bioExecuteJob[2]))) = v166 + int32(-1)
 						m.G0 = v8 + int32(64)
 						return
 					}
@@ -514,13 +514,13 @@ func F_bioExecuteJob(m *base.Module, l0 int32) {
 							return
 						} else {
 							v163 = v10 << (uint(int32(2)) % 32)
-							v166 = *(*int32)(unsafe.Add(mBase, uint32(v163)+uint32(_consts[77])))
-							*(*int32)(unsafe.Add(mBase, uint32(v163)+uint32(_consts[77]))) = v166 + int32(-1)
+							v166 = *(*int32)(unsafe.Add(mBase, uint32(v163)+uint32(_c_F_bioExecuteJob[2])))
+							*(*int32)(unsafe.Add(mBase, uint32(v163)+uint32(_c_F_bioExecuteJob[2]))) = v166 + int32(-1)
 							m.G0 = v8 + int32(64)
 							return
 						}
 					} else {
-						v27 = *(*int32)(unsafe.Add(mBase, _consts[6]))
+						v27 = *(*int32)(unsafe.Add(mBase, _c_F_bioExecuteJob[5]))
 						if int32(3) < v27 {
 							v39 = int32(*(*uint8)(unsafe.Add(mBase, uint32(l0)+16)))
 							if v39&int32(2) == int32(0) {
@@ -536,8 +536,8 @@ func F_bioExecuteJob(m *base.Module, l0 int32) {
 								return
 							} else {
 								v163 = v10 << (uint(int32(2)) % 32)
-								v166 = *(*int32)(unsafe.Add(mBase, uint32(v163)+uint32(_consts[77])))
-								*(*int32)(unsafe.Add(mBase, uint32(v163)+uint32(_consts[77]))) = v166 + int32(-1)
+								v166 = *(*int32)(unsafe.Add(mBase, uint32(v163)+uint32(_c_F_bioExecuteJob[2])))
+								*(*int32)(unsafe.Add(mBase, uint32(v163)+uint32(_c_F_bioExecuteJob[2]))) = v166 + int32(-1)
 								m.G0 = v8 + int32(64)
 								return
 							}
@@ -545,7 +545,7 @@ func F_bioExecuteJob(m *base.Module, l0 int32) {
 							v30 = F___strerror_l(m, v21, v21)
 							mBase = m.M
 							*(*int32)(unsafe.Add(mBase, uint32(v8)+16)) = v30
-							F__serverLog(m, int32(3), int32(_a113), v8+int32(16))
+							F__serverLog(m, int32(3), int32(_a_F_bioExecuteJob_1), v8+int32(16))
 							mBase = m.M
 							v37 = m.ExcPending
 							if v37 != 0 {
@@ -565,8 +565,8 @@ func F_bioExecuteJob(m *base.Module, l0 int32) {
 									return
 								} else {
 									v163 = v10 << (uint(int32(2)) % 32)
-									v166 = *(*int32)(unsafe.Add(mBase, uint32(v163)+uint32(_consts[77])))
-									*(*int32)(unsafe.Add(mBase, uint32(v163)+uint32(_consts[77]))) = v166 + int32(-1)
+									v166 = *(*int32)(unsafe.Add(mBase, uint32(v163)+uint32(_c_F_bioExecuteJob[2])))
+									*(*int32)(unsafe.Add(mBase, uint32(v163)+uint32(_c_F_bioExecuteJob[2]))) = v166 + int32(-1)
 									m.G0 = v8 + int32(64)
 									return
 								}

@@ -45,7 +45,7 @@ func F___emscripten_environ_constructor(m *base.Module) {
 		v14 = *(*int32)(unsafe.Add(mBase, uint32(v6)+12))
 		v19 = F_emscripten_builtin_malloc(m, v14<<(uint(int32(2))%32)+int32(4))
 		mBase = m.M
-		*(*int32)(unsafe.Add(mBase, _consts[1021])) = v19
+		*(*int32)(unsafe.Add(mBase, _c_F___emscripten_environ_constructor[0])) = v19
 		if v19 == v13 {
 		} else {
 			v23 = *(*int32)(unsafe.Add(mBase, uint32(v6)+8))
@@ -53,10 +53,10 @@ func F___emscripten_environ_constructor(m *base.Module) {
 			mBase = m.M
 			if v24 == int32(0) {
 				v39 = int32(0)
-				*(*int32)(unsafe.Add(mBase, _consts[1021])) = v39
+				*(*int32)(unsafe.Add(mBase, _c_F___emscripten_environ_constructor[0])) = v39
 			} else {
 				v27 = int32(0)
-				v28 = *(*int32)(unsafe.Add(mBase, _consts[1021]))
+				v28 = *(*int32)(unsafe.Add(mBase, _c_F___emscripten_environ_constructor[0]))
 				v29 = *(*int32)(unsafe.Add(mBase, uint32(v6)+12))
 				*(*int32)(unsafe.Add(mBase, uint32(v28+v29<<(uint(int32(2))%32)))) = v27
 				v35 = m.Wasi_snapshot_preview1.Environ_get(m, v28, v24)
@@ -64,7 +64,7 @@ func F___emscripten_environ_constructor(m *base.Module) {
 				if v35 == v27 {
 				} else {
 					v39 = int32(0)
-					*(*int32)(unsafe.Add(mBase, _consts[1021])) = v39
+					*(*int32)(unsafe.Add(mBase, _c_F___emscripten_environ_constructor[0])) = v39
 				}
 			}
 		}
@@ -925,7 +925,7 @@ L4:
 	v1167 = v852 + (v1155-v852)&v1157
 	v1168 = v1159 + v424
 	v1169 = v1167 - v1168
-	v1171 = *(*int32)(unsafe.Add(mBase, _consts[521]))
+	v1171 = *(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_malloc[0]))
 	if v1167 != v1171 {
 		goto L219
 	} else {
@@ -936,7 +936,7 @@ L5:
 	goto L216
 L6:
 	;
-	v1110 = *(*int32)(unsafe.Add(mBase, _consts[522]))
+	v1110 = *(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_malloc[1]))
 	if base.Ui32(v1110) <= base.Ui32(v424) {
 		goto L5
 	} else {
@@ -944,7 +944,7 @@ L6:
 	}
 L7:
 	;
-	v834 = *(*int32)(unsafe.Add(mBase, _consts[515]))
+	v834 = *(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_malloc[2]))
 	if base.Ui32(v834) <= base.Ui32(v693) {
 		goto L174
 	} else {
@@ -960,7 +960,7 @@ L9:
 	goto L2
 L10:
 	;
-	v434 = *(*int32)(unsafe.Add(mBase, _consts[518]))
+	v434 = *(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_malloc[3]))
 	if base.Ui32(v434) < base.Ui32(v424) {
 		goto L106
 	} else {
@@ -976,7 +976,7 @@ L11:
 	}
 L12:
 	;
-	v20 = *(*int32)(unsafe.Add(mBase, _consts[517]))
+	v20 = *(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_malloc[4]))
 	v22 = int32(11)
 	if base.Ui32(l0) < base.Ui32(v22) {
 		goto L14
@@ -985,7 +985,7 @@ L12:
 	}
 L13:
 	;
-	v70 = *(*int32)(unsafe.Add(mBase, _consts[518]))
+	v70 = *(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_malloc[3]))
 	if base.Ui32(v28) <= base.Ui32(v70) {
 		v424 = v28
 		goto L10
@@ -1015,7 +1015,7 @@ L17:
 	v40 = (v31^int32(-1))&int32(1) + v30
 	v42 = v40 << (uint(int32(3)) % 32)
 	v44 = v42 + int32(9128464)
-	v47 = *(*int32)(unsafe.Add(mBase, uint32(v42)+uint32(_consts[523])))
+	v47 = *(*int32)(unsafe.Add(mBase, uint32(v42)+uint32(_c_F_emscripten_builtin_malloc[5])))
 	v48 = *(*int32)(unsafe.Add(mBase, uint32(v47)+8))
 	if v44 != v48 {
 		goto L19
@@ -1035,11 +1035,11 @@ L18:
 L19:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v48)+12)) = v44
-	*(*int32)(unsafe.Add(mBase, uint32(v42)+uint32(_consts[523]))) = v48
+	*(*int32)(unsafe.Add(mBase, uint32(v42)+uint32(_c_F_emscripten_builtin_malloc[5]))) = v48
 	goto L18
 L20:
 	;
-	*(*int32)(unsafe.Add(mBase, _consts[517])) = v20 & base.I32_rotl(int32(-2), v40)
+	*(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_malloc[4])) = v20 & base.I32_rotl(int32(-2), v40)
 	goto L18
 L21:
 	;
@@ -1051,7 +1051,7 @@ L21:
 L22:
 	;
 	v142 = int32(0)
-	v143 = *(*int32)(unsafe.Add(mBase, _consts[520]))
+	v143 = *(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_malloc[6]))
 	if v143 == v142 {
 		v424 = v28
 		goto L10
@@ -1064,7 +1064,7 @@ L23:
 	v81 = base.I32_ctz(v31 << (uint(v30) % 32) & (v76 | (int32(0) - v76)))
 	v83 = v81 << (uint(int32(3)) % 32)
 	v85 = v83 + int32(9128464)
-	v88 = *(*int32)(unsafe.Add(mBase, uint32(v83)+uint32(_consts[523])))
+	v88 = *(*int32)(unsafe.Add(mBase, uint32(v83)+uint32(_c_F_emscripten_builtin_malloc[5])))
 	v89 = *(*int32)(unsafe.Add(mBase, uint32(v88)+8))
 	if v85 != v89 {
 		goto L25
@@ -1088,27 +1088,27 @@ L24:
 L25:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v89)+12)) = v85
-	*(*int32)(unsafe.Add(mBase, uint32(v83)+uint32(_consts[523]))) = v89
+	*(*int32)(unsafe.Add(mBase, uint32(v83)+uint32(_c_F_emscripten_builtin_malloc[5]))) = v89
 	v98 = v20
 	goto L24
 L26:
 	;
 	v94 = v20 & base.I32_rotl(int32(-2), v81)
-	*(*int32)(unsafe.Add(mBase, _consts[517])) = v94
+	*(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_malloc[4])) = v94
 	v98 = v94
 	goto L24
 L27:
 	;
 	v138 = int32(0)
-	*(*int32)(unsafe.Add(mBase, _consts[516])) = v102
-	*(*int32)(unsafe.Add(mBase, _consts[518])) = v105
+	*(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_malloc[7])) = v102
+	*(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_malloc[3])) = v105
 	v1750 = v88 + int32(8)
 	goto L1
 L28:
 	;
 	v114 = v70 & int32(-8)
 	v116 = v114 + int32(9128464)
-	v118 = *(*int32)(unsafe.Add(mBase, _consts[516]))
+	v118 = *(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_malloc[7]))
 	v122 = int32(1) << (uint(int32(base.Ui32(v70)>>(uint(int32(3))%32))) % 32)
 	if v98&v122 != 0 {
 		goto L30
@@ -1117,24 +1117,24 @@ L28:
 	}
 L29:
 	;
-	*(*int32)(unsafe.Add(mBase, uint32(v114)+uint32(_consts[523]))) = v118
+	*(*int32)(unsafe.Add(mBase, uint32(v114)+uint32(_c_F_emscripten_builtin_malloc[5]))) = v118
 	*(*int32)(unsafe.Add(mBase, uint32(v128)+12)) = v118
 	*(*int32)(unsafe.Add(mBase, uint32(v118)+12)) = v116
 	*(*int32)(unsafe.Add(mBase, uint32(v118)+8)) = v128
 	goto L27
 L30:
 	;
-	v127 = *(*int32)(unsafe.Add(mBase, uint32(v114)+uint32(_consts[523])))
+	v127 = *(*int32)(unsafe.Add(mBase, uint32(v114)+uint32(_c_F_emscripten_builtin_malloc[5])))
 	v128 = v127
 	goto L29
 L31:
 	;
-	*(*int32)(unsafe.Add(mBase, _consts[517])) = v98 | v122
+	*(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_malloc[4])) = v98 | v122
 	v128 = v116
 	goto L29
 L32:
 	;
-	v151 = *(*int32)(unsafe.Add(mBase, uint32(base.I32_ctz(v143)<<(uint(int32(2))%32))+uint32(_consts[519])))
+	v151 = *(*int32)(unsafe.Add(mBase, uint32(base.I32_ctz(v143)<<(uint(int32(2))%32))+uint32(_c_F_emscripten_builtin_malloc[8])))
 	v152 = *(*int32)(unsafe.Add(mBase, uint32(v151)+4))
 	v160 = v152&int32(-8) - v28
 	v161 = v151
@@ -1286,7 +1286,7 @@ L55:
 	v222 = l0 + int32(11)
 	v224 = v222 & int32(-8)
 	v225 = int32(0)
-	v226 = *(*int32)(unsafe.Add(mBase, _consts[520]))
+	v226 = *(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_malloc[6]))
 	if v226 == v225 {
 		v424 = v224
 		goto L10
@@ -1304,7 +1304,7 @@ L56:
 L57:
 	;
 	v248 = int32(0) - v224
-	v253 = *(*int32)(unsafe.Add(mBase, uint32(v246<<(uint(int32(2))%32))+uint32(_consts[519])))
+	v253 = *(*int32)(unsafe.Add(mBase, uint32(v246<<(uint(int32(2))%32))+uint32(_c_F_emscripten_builtin_malloc[8])))
 	if v253 != 0 {
 		goto L62
 	} else {
@@ -1471,7 +1471,7 @@ L80:
 	}
 L81:
 	;
-	v326 = *(*int32)(unsafe.Add(mBase, uint32(base.I32_ctz(v318)<<(uint(int32(2))%32))+uint32(_consts[519])))
+	v326 = *(*int32)(unsafe.Add(mBase, uint32(base.I32_ctz(v318)<<(uint(int32(2))%32))+uint32(_c_F_emscripten_builtin_malloc[8])))
 	v327 = v326
 	v328 = v312
 	goto L79
@@ -1548,7 +1548,7 @@ L93:
 	goto L84
 L94:
 	;
-	v380 = *(*int32)(unsafe.Add(mBase, _consts[518]))
+	v380 = *(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_malloc[3]))
 	if base.Ui32(v380-v224) <= base.Ui32(v369) {
 		v424 = v224
 		goto L10
@@ -1638,7 +1638,7 @@ L105:
 	goto L103
 L106:
 	;
-	v470 = *(*int32)(unsafe.Add(mBase, _consts[522]))
+	v470 = *(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_malloc[1]))
 	if base.Ui32(v470) <= base.Ui32(v424) {
 		goto L111
 	} else {
@@ -1646,7 +1646,7 @@ L106:
 	}
 L107:
 	;
-	v437 = *(*int32)(unsafe.Add(mBase, _consts[516]))
+	v437 = *(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_malloc[7]))
 	v438 = v434 - v424
 	if base.Ui32(v438) < base.Ui32(int32(16)) {
 		goto L109
@@ -1656,8 +1656,8 @@ L107:
 L108:
 	;
 	v463 = int32(0)
-	*(*int32)(unsafe.Add(mBase, _consts[518])) = v461
-	*(*int32)(unsafe.Add(mBase, _consts[516])) = v462
+	*(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_malloc[3])) = v461
+	*(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_malloc[7])) = v462
 	v1750 = v437 + int32(8)
 	goto L1
 L109:
@@ -1682,7 +1682,7 @@ L110:
 L111:
 	;
 	v488 = int32(0)
-	v489 = *(*int32)(unsafe.Add(mBase, _consts[1089]))
+	v489 = *(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_malloc[9]))
 	if v489 == v488 {
 		goto L114
 	} else {
@@ -1692,10 +1692,10 @@ L112:
 	;
 	v472 = int32(0)
 	v473 = v470 - v424
-	*(*int32)(unsafe.Add(mBase, _consts[522])) = v473
-	v477 = *(*int32)(unsafe.Add(mBase, _consts[521]))
+	*(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_malloc[1])) = v473
+	v477 = *(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_malloc[0]))
 	v478 = v477 + v424
-	*(*int32)(unsafe.Add(mBase, _consts[521])) = v478
+	*(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_malloc[0])) = v478
 	*(*int32)(unsafe.Add(mBase, uint32(v478)+4)) = v473 | int32(1)
 	*(*int32)(unsafe.Add(mBase, uint32(v477)+4)) = v424 | int32(3)
 	v1750 = v477 + int32(8)
@@ -1716,22 +1716,22 @@ L113:
 L114:
 	;
 	v494 = int32(0)
-	*(*int64)(unsafe.Add(mBase, _consts[1090])) = int64(-1)
-	*(*int64)(unsafe.Add(mBase, _consts[1091])) = int64(17592186048512)
-	*(*int32)(unsafe.Add(mBase, _consts[1089])) = (v15+int32(12))&int32(-16) ^ int32(1431655768)
-	*(*int32)(unsafe.Add(mBase, _consts[1092])) = v494
-	*(*int32)(unsafe.Add(mBase, _consts[1093])) = v494
+	*(*int64)(unsafe.Add(mBase, _c_F_emscripten_builtin_malloc[10])) = int64(-1)
+	*(*int64)(unsafe.Add(mBase, _c_F_emscripten_builtin_malloc[11])) = int64(17592186048512)
+	*(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_malloc[9])) = (v15+int32(12))&int32(-16) ^ int32(1431655768)
+	*(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_malloc[12])) = v494
+	*(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_malloc[13])) = v494
 	v515 = int32(4096)
 	goto L113
 L115:
 	;
-	v493 = *(*int32)(unsafe.Add(mBase, _consts[1094]))
+	v493 = *(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_malloc[14]))
 	v515 = v493
 	goto L113
 L116:
 	;
 	v524 = int32(0)
-	v526 = *(*int32)(unsafe.Add(mBase, _consts[1095]))
+	v526 = *(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_malloc[15]))
 	if v526 == v524 {
 		goto L117
 	} else {
@@ -1739,7 +1739,7 @@ L116:
 	}
 L117:
 	;
-	v537 = int32(*(*uint8)(unsafe.Add(mBase, _consts[1093])))
+	v537 = int32(*(*uint8)(unsafe.Add(mBase, _c_F_emscripten_builtin_malloc[13])))
 	if v537&int32(4) != 0 {
 		goto L122
 	} else {
@@ -1747,7 +1747,7 @@ L117:
 	}
 L118:
 	;
-	v530 = *(*int32)(unsafe.Add(mBase, _consts[1096]))
+	v530 = *(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_malloc[16]))
 	v531 = v530 + v522
 	if base.Ui32(v531) <= base.Ui32(v530) {
 		v1750 = v524
@@ -1769,10 +1769,10 @@ L120:
 L121:
 	;
 	v698 = int32(0)
-	v700 = *(*int32)(unsafe.Add(mBase, _consts[1096]))
+	v700 = *(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_malloc[16]))
 	v701 = v700 + v688
-	*(*int32)(unsafe.Add(mBase, _consts[1096])) = v701
-	v704 = *(*int32)(unsafe.Add(mBase, _consts[1097]))
+	*(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_malloc[16])) = v701
+	v704 = *(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_malloc[17]))
 	if base.Ui32(v701) <= base.Ui32(v704) {
 		goto L155
 	} else {
@@ -1792,7 +1792,7 @@ L122:
 L123:
 	;
 	v540 = int32(0)
-	v541 = *(*int32)(unsafe.Add(mBase, _consts[521]))
+	v541 = *(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_malloc[0]))
 	if v541 == v540 {
 		goto L128
 	} else {
@@ -1801,8 +1801,8 @@ L123:
 L124:
 	;
 	v656 = int32(0)
-	v658 = *(*int32)(unsafe.Add(mBase, _consts[1093]))
-	*(*int32)(unsafe.Add(mBase, _consts[1093])) = v658 | int32(4)
+	v658 = *(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_malloc[13]))
+	*(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_malloc[13])) = v658 | int32(4)
 	goto L122
 L125:
 	;
@@ -1882,7 +1882,7 @@ L135:
 L136:
 	;
 	v579 = int32(0)
-	v580 = *(*int32)(unsafe.Add(mBase, _consts[1091]))
+	v580 = *(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_malloc[11]))
 	v582 = v580 + int32(-1)
 	if v582&v576 == v579 {
 		v592 = v522
@@ -1904,7 +1904,7 @@ L138:
 L139:
 	;
 	v594 = int32(0)
-	v595 = *(*int32)(unsafe.Add(mBase, _consts[1095]))
+	v595 = *(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_malloc[15]))
 	if v595 == v594 {
 		goto L140
 	} else {
@@ -1923,7 +1923,7 @@ L140:
 	}
 L141:
 	;
-	v599 = *(*int32)(unsafe.Add(mBase, _consts[1096]))
+	v599 = *(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_malloc[16]))
 	v600 = v599 + v592
 	if base.Ui32(v600) <= base.Ui32(v599) {
 		goto L124
@@ -1960,7 +1960,7 @@ L146:
 L147:
 	;
 	v632 = int32(0)
-	v633 = *(*int32)(unsafe.Add(mBase, _consts[1094]))
+	v633 = *(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_malloc[14]))
 	v637 = (v518 - v616 + v633) & (v632 - v633)
 	v638 = F_sbrk(m, v637)
 	mBase = m.M
@@ -2012,7 +2012,7 @@ L154:
 L155:
 	;
 	v708 = int32(0)
-	v709 = *(*int32)(unsafe.Add(mBase, _consts[521]))
+	v709 = *(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_malloc[0]))
 	if v709 == v708 {
 		goto L158
 	} else {
@@ -2020,7 +2020,7 @@ L155:
 	}
 L156:
 	;
-	*(*int32)(unsafe.Add(mBase, _consts[1097])) = v701
+	*(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_malloc[17])) = v701
 	goto L155
 L157:
 	;
@@ -2032,7 +2032,7 @@ L157:
 L158:
 	;
 	v730 = int32(0)
-	v731 = *(*int32)(unsafe.Add(mBase, _consts[515]))
+	v731 = *(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_malloc[2]))
 	if v731 == v730 {
 		goto L165
 	} else {
@@ -2066,17 +2066,17 @@ L163:
 L164:
 	;
 	v737 = int32(0)
-	*(*int32)(unsafe.Add(mBase, _consts[1098])) = v688
-	*(*int32)(unsafe.Add(mBase, _consts[1099])) = v693
-	*(*int32)(unsafe.Add(mBase, _consts[524])) = int32(-1)
-	v747 = *(*int32)(unsafe.Add(mBase, _consts[1089]))
-	*(*int32)(unsafe.Add(mBase, _consts[1100])) = v747
-	*(*int32)(unsafe.Add(mBase, _consts[1101])) = v737
+	*(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_malloc[18])) = v688
+	*(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_malloc[19])) = v693
+	*(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_malloc[20])) = int32(-1)
+	v747 = *(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_malloc[9]))
+	*(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_malloc[21])) = v747
+	*(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_malloc[22])) = v737
 	v752 = v737
 	goto L168
 L165:
 	;
-	*(*int32)(unsafe.Add(mBase, _consts[515])) = v693
+	*(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_malloc[2])) = v693
 	goto L164
 L166:
 	;
@@ -2092,8 +2092,8 @@ L168:
 	;
 	v765 = v752 << (uint(int32(3)) % 32)
 	v769 = v765 + int32(9128464)
-	*(*int32)(unsafe.Add(mBase, uint32(v765)+uint32(_consts[523]))) = v769
-	*(*int32)(unsafe.Add(mBase, uint32(v765)+uint32(_consts[1102]))) = v769
+	*(*int32)(unsafe.Add(mBase, uint32(v765)+uint32(_c_F_emscripten_builtin_malloc[5]))) = v769
+	*(*int32)(unsafe.Add(mBase, uint32(v765)+uint32(_c_F_emscripten_builtin_malloc[23]))) = v769
 	v775 = v752 + int32(1)
 	if v775 != int32(32) {
 		v752 = v775
@@ -2107,13 +2107,13 @@ L169:
 	v780 = v688 + int32(-40)
 	v784 = (int32(-8) - v693) & int32(7)
 	v785 = v780 - v784
-	*(*int32)(unsafe.Add(mBase, _consts[522])) = v785
+	*(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_malloc[1])) = v785
 	v788 = v693 + v784
-	*(*int32)(unsafe.Add(mBase, _consts[521])) = v788
+	*(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_malloc[0])) = v788
 	*(*int32)(unsafe.Add(mBase, uint32(v788)+4)) = v785 | int32(1)
 	*(*int32)(unsafe.Add(mBase, uint32(v693+v780)+4)) = int32(40)
-	v798 = *(*int32)(unsafe.Add(mBase, _consts[1103]))
-	*(*int32)(unsafe.Add(mBase, _consts[1104])) = v798
+	v798 = *(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_malloc[24]))
+	*(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_malloc[25])) = v798
 	goto L6
 L170:
 	;
@@ -2139,15 +2139,15 @@ L173:
 	v807 = int32(0)
 	v811 = (int32(-8) - v709) & int32(7)
 	v812 = v709 + v811
-	*(*int32)(unsafe.Add(mBase, _consts[521])) = v812
-	v816 = *(*int32)(unsafe.Add(mBase, _consts[522]))
+	*(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_malloc[0])) = v812
+	v816 = *(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_malloc[1]))
 	v817 = v816 + v688
 	v818 = v817 - v811
-	*(*int32)(unsafe.Add(mBase, _consts[522])) = v818
+	*(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_malloc[1])) = v818
 	*(*int32)(unsafe.Add(mBase, uint32(v812)+4)) = v818 | int32(1)
 	*(*int32)(unsafe.Add(mBase, uint32(v709+v817)+4)) = int32(40)
-	v828 = *(*int32)(unsafe.Add(mBase, _consts[1103]))
-	*(*int32)(unsafe.Add(mBase, _consts[1104])) = v828
+	v828 = *(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_malloc[24]))
+	*(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_malloc[25])) = v828
 	goto L6
 L174:
 	;
@@ -2155,7 +2155,7 @@ L174:
 	goto L178
 L175:
 	;
-	*(*int32)(unsafe.Add(mBase, _consts[515])) = v693
+	*(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_malloc[2])) = v693
 	goto L174
 L176:
 	;
@@ -2199,13 +2199,13 @@ L183:
 	v886 = int32(7)
 	v887 = (int32(-8) - v693) & v886
 	v888 = v883 - v887
-	*(*int32)(unsafe.Add(mBase, _consts[522])) = v888
+	*(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_malloc[1])) = v888
 	v891 = v693 + v887
-	*(*int32)(unsafe.Add(mBase, _consts[521])) = v891
+	*(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_malloc[0])) = v891
 	*(*int32)(unsafe.Add(mBase, uint32(v891)+4)) = v888 | int32(1)
 	*(*int32)(unsafe.Add(mBase, uint32(v693+v883)+4)) = int32(40)
-	v901 = *(*int32)(unsafe.Add(mBase, _consts[1103]))
-	*(*int32)(unsafe.Add(mBase, _consts[1104])) = v901
+	v901 = *(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_malloc[24]))
+	*(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_malloc[25])) = v901
 	v909 = v877 + (int32(39)-v877)&v886 + int32(-47)
 	if base.Ui32(v909) < base.Ui32(v709+int32(16)) {
 		goto L189
@@ -2249,14 +2249,14 @@ L191:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v913)+4)) = int32(27)
 	v918 = int32(0)
-	v919 = *(*int64)(unsafe.Add(mBase, _consts[1105]))
+	v919 = *(*int64)(unsafe.Add(mBase, _c_F_emscripten_builtin_malloc[26]))
 	*(*int64)(unsafe.Add(mBase, uint32(v913+int32(16)))) = v919
-	v922 = *(*int64)(unsafe.Add(mBase, _consts[1099]))
+	v922 = *(*int64)(unsafe.Add(mBase, _c_F_emscripten_builtin_malloc[19]))
 	*(*int64)(unsafe.Add(mBase, uint32(v913)+8)) = v922
-	*(*int32)(unsafe.Add(mBase, _consts[1105])) = v913 + int32(8)
-	*(*int32)(unsafe.Add(mBase, _consts[1098])) = v688
-	*(*int32)(unsafe.Add(mBase, _consts[1099])) = v693
-	*(*int32)(unsafe.Add(mBase, _consts[1101])) = v918
+	*(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_malloc[26])) = v913 + int32(8)
+	*(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_malloc[18])) = v688
+	*(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_malloc[19])) = v693
+	*(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_malloc[22])) = v918
 	v937 = v913 + int32(24)
 	goto L192
 L192:
@@ -2307,7 +2307,7 @@ L198:
 	;
 	v969 = v961 & int32(-8)
 	v971 = v969 + int32(9128464)
-	v973 = *(*int32)(unsafe.Add(mBase, _consts[517]))
+	v973 = *(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_malloc[4]))
 	v977 = int32(1) << (uint(int32(base.Ui32(v961)>>(uint(int32(3))%32))) % 32)
 	if v973&v977 != 0 {
 		goto L200
@@ -2316,7 +2316,7 @@ L198:
 	}
 L199:
 	;
-	*(*int32)(unsafe.Add(mBase, uint32(v969)+uint32(_consts[523]))) = v709
+	*(*int32)(unsafe.Add(mBase, uint32(v969)+uint32(_c_F_emscripten_builtin_malloc[5]))) = v709
 	*(*int32)(unsafe.Add(mBase, uint32(v983)+12)) = v709
 	v1081 = v971
 	v1086 = v983
@@ -2325,12 +2325,12 @@ L199:
 	goto L196
 L200:
 	;
-	v982 = *(*int32)(unsafe.Add(mBase, uint32(v969)+uint32(_consts[523])))
+	v982 = *(*int32)(unsafe.Add(mBase, uint32(v969)+uint32(_c_F_emscripten_builtin_malloc[5])))
 	v983 = v982
 	goto L199
 L201:
 	;
-	*(*int32)(unsafe.Add(mBase, _consts[517])) = v973 | v977
+	*(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_malloc[4])) = v973 | v977
 	v983 = v971
 	goto L199
 L202:
@@ -2338,7 +2338,7 @@ L202:
 	*(*int32)(unsafe.Add(mBase, uint32(v709)+28)) = v1004
 	*(*int64)(unsafe.Add(mBase, uint32(v709)+16)) = int64(0)
 	v1009 = v1004 << (uint(int32(2)) % 32)
-	v1013 = *(*int32)(unsafe.Add(mBase, _consts[520]))
+	v1013 = *(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_malloc[6]))
 	v1015 = int32(1) << (uint(v1004) % 32)
 	if v1013&v1015 != 0 {
 		goto L206
@@ -2378,8 +2378,8 @@ L206:
 	}
 L207:
 	;
-	*(*int32)(unsafe.Add(mBase, _consts[520])) = v1013 | v1015
-	*(*int32)(unsafe.Add(mBase, uint32(v1009)+uint32(_consts[519]))) = v709
+	*(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_malloc[6])) = v1013 | v1015
+	*(*int32)(unsafe.Add(mBase, uint32(v1009)+uint32(_c_F_emscripten_builtin_malloc[8]))) = v709
 	*(*int32)(unsafe.Add(mBase, uint32(v709)+24)) = v1009 + int32(9128728)
 	goto L205
 L208:
@@ -2392,7 +2392,7 @@ L209:
 	goto L210
 L210:
 	;
-	v1031 = *(*int32)(unsafe.Add(mBase, uint32(v1009)+uint32(_consts[519])))
+	v1031 = *(*int32)(unsafe.Add(mBase, uint32(v1009)+uint32(_c_F_emscripten_builtin_malloc[8])))
 	v1032 = v961 << (uint(v1029) % 32)
 	v1040 = v1031
 	goto L211
@@ -2427,17 +2427,17 @@ L215:
 	;
 	v1112 = int32(0)
 	v1113 = v1110 - v424
-	*(*int32)(unsafe.Add(mBase, _consts[522])) = v1113
-	v1117 = *(*int32)(unsafe.Add(mBase, _consts[521]))
+	*(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_malloc[1])) = v1113
+	v1117 = *(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_malloc[0]))
 	v1118 = v1117 + v424
-	*(*int32)(unsafe.Add(mBase, _consts[521])) = v1118
+	*(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_malloc[0])) = v1118
 	*(*int32)(unsafe.Add(mBase, uint32(v1118)+4)) = v1113 | int32(1)
 	*(*int32)(unsafe.Add(mBase, uint32(v1117)+4)) = v424 | int32(3)
 	v1750 = v1117 + int32(8)
 	goto L1
 L216:
 	;
-	*(*int32)(unsafe.Add(mBase, _consts[5])) = int32(48)
+	*(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_malloc[27])) = int32(48)
 	v1750 = int32(0)
 	goto L1
 L217:
@@ -2449,7 +2449,7 @@ L218:
 	goto L217
 L219:
 	;
-	v1184 = *(*int32)(unsafe.Add(mBase, _consts[516]))
+	v1184 = *(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_malloc[7]))
 	if v1167 != v1184 {
 		goto L221
 	} else {
@@ -2458,10 +2458,10 @@ L219:
 L220:
 	;
 	v1173 = int32(0)
-	*(*int32)(unsafe.Add(mBase, _consts[521])) = v1168
-	v1177 = *(*int32)(unsafe.Add(mBase, _consts[522]))
+	*(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_malloc[0])) = v1168
+	v1177 = *(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_malloc[1]))
 	v1178 = v1177 + v1169
-	*(*int32)(unsafe.Add(mBase, _consts[522])) = v1178
+	*(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_malloc[1])) = v1178
 	*(*int32)(unsafe.Add(mBase, uint32(v1168)+4)) = v1178 | int32(1)
 	goto L218
 L221:
@@ -2478,10 +2478,10 @@ L221:
 L222:
 	;
 	v1186 = int32(0)
-	*(*int32)(unsafe.Add(mBase, _consts[516])) = v1168
-	v1190 = *(*int32)(unsafe.Add(mBase, _consts[518]))
+	*(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_malloc[7])) = v1168
+	v1190 = *(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_malloc[3]))
 	v1191 = v1190 + v1169
-	*(*int32)(unsafe.Add(mBase, _consts[518])) = v1191
+	*(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_malloc[3])) = v1191
 	*(*int32)(unsafe.Add(mBase, uint32(v1168)+4)) = v1191 | int32(1)
 	*(*int32)(unsafe.Add(mBase, uint32(v1168+v1191))) = v1191
 	goto L218
@@ -2536,8 +2536,8 @@ L228:
 L229:
 	;
 	v1210 = int32(0)
-	v1212 = *(*int32)(unsafe.Add(mBase, _consts[517]))
-	*(*int32)(unsafe.Add(mBase, _consts[517])) = v1212 & base.I32_rotl(int32(-2), int32(base.Ui32(v1198)>>(uint(int32(3))%32)))
+	v1212 = *(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_malloc[4]))
+	*(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_malloc[4])) = v1212 & base.I32_rotl(int32(-2), int32(base.Ui32(v1198)>>(uint(int32(3))%32)))
 	goto L225
 L230:
 	;
@@ -2626,7 +2626,7 @@ L242:
 	;
 	v1269 = *(*int32)(unsafe.Add(mBase, uint32(v1167)+28))
 	v1271 = v1269 << (uint(int32(2)) % 32)
-	v1274 = *(*int32)(unsafe.Add(mBase, uint32(v1271)+uint32(_consts[519])))
+	v1274 = *(*int32)(unsafe.Add(mBase, uint32(v1271)+uint32(_c_F_emscripten_builtin_malloc[8])))
 	if v1167 != v1274 {
 		goto L244
 	} else {
@@ -2651,7 +2651,7 @@ L244:
 	}
 L245:
 	;
-	*(*int32)(unsafe.Add(mBase, uint32(v1271)+uint32(_consts[519]))) = v1259
+	*(*int32)(unsafe.Add(mBase, uint32(v1271)+uint32(_c_F_emscripten_builtin_malloc[8]))) = v1259
 	if v1259 != 0 {
 		goto L243
 	} else {
@@ -2660,8 +2660,8 @@ L245:
 L246:
 	;
 	v1277 = int32(0)
-	v1279 = *(*int32)(unsafe.Add(mBase, _consts[520]))
-	*(*int32)(unsafe.Add(mBase, _consts[520])) = v1279 & base.I32_rotl(int32(-2), v1269)
+	v1279 = *(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_malloc[6]))
+	*(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_malloc[6])) = v1279 & base.I32_rotl(int32(-2), v1269)
 	goto L225
 L247:
 	;
@@ -2711,7 +2711,7 @@ L255:
 	;
 	v1335 = v1314 & int32(-8)
 	v1337 = v1335 + int32(9128464)
-	v1339 = *(*int32)(unsafe.Add(mBase, _consts[517]))
+	v1339 = *(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_malloc[4]))
 	v1343 = int32(1) << (uint(int32(base.Ui32(v1314)>>(uint(int32(3))%32))) % 32)
 	if v1339&v1343 != 0 {
 		goto L257
@@ -2720,19 +2720,19 @@ L255:
 	}
 L256:
 	;
-	*(*int32)(unsafe.Add(mBase, uint32(v1335)+uint32(_consts[523]))) = v1168
+	*(*int32)(unsafe.Add(mBase, uint32(v1335)+uint32(_c_F_emscripten_builtin_malloc[5]))) = v1168
 	*(*int32)(unsafe.Add(mBase, uint32(v1349)+12)) = v1168
 	*(*int32)(unsafe.Add(mBase, uint32(v1168)+12)) = v1337
 	*(*int32)(unsafe.Add(mBase, uint32(v1168)+8)) = v1349
 	goto L218
 L257:
 	;
-	v1348 = *(*int32)(unsafe.Add(mBase, uint32(v1335)+uint32(_consts[523])))
+	v1348 = *(*int32)(unsafe.Add(mBase, uint32(v1335)+uint32(_c_F_emscripten_builtin_malloc[5])))
 	v1349 = v1348
 	goto L256
 L258:
 	;
-	*(*int32)(unsafe.Add(mBase, _consts[517])) = v1339 | v1343
+	*(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_malloc[4])) = v1339 | v1343
 	v1349 = v1337
 	goto L256
 L259:
@@ -2740,7 +2740,7 @@ L259:
 	*(*int32)(unsafe.Add(mBase, uint32(v1168)+28)) = v1370
 	*(*int64)(unsafe.Add(mBase, uint32(v1168)+16)) = int64(0)
 	v1375 = v1370 << (uint(int32(2)) % 32)
-	v1379 = *(*int32)(unsafe.Add(mBase, _consts[520]))
+	v1379 = *(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_malloc[6]))
 	v1381 = int32(1) << (uint(v1370) % 32)
 	if v1379&v1381 != 0 {
 		goto L263
@@ -2776,8 +2776,8 @@ L263:
 	}
 L264:
 	;
-	*(*int32)(unsafe.Add(mBase, _consts[520])) = v1379 | v1381
-	*(*int32)(unsafe.Add(mBase, uint32(v1375)+uint32(_consts[519]))) = v1168
+	*(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_malloc[6])) = v1379 | v1381
+	*(*int32)(unsafe.Add(mBase, uint32(v1375)+uint32(_c_F_emscripten_builtin_malloc[8]))) = v1168
 	*(*int32)(unsafe.Add(mBase, uint32(v1168)+24)) = v1375 + int32(9128728)
 	goto L262
 L265:
@@ -2790,7 +2790,7 @@ L266:
 	goto L267
 L267:
 	;
-	v1397 = *(*int32)(unsafe.Add(mBase, uint32(v1375)+uint32(_consts[519])))
+	v1397 = *(*int32)(unsafe.Add(mBase, uint32(v1375)+uint32(_c_F_emscripten_builtin_malloc[8])))
 	v1400 = v1314 << (uint(v1395) % 32)
 	v1405 = v1397
 	goto L268
@@ -2832,7 +2832,7 @@ L273:
 	;
 	v1469 = *(*int32)(unsafe.Add(mBase, uint32(v373)+28))
 	v1471 = v1469 << (uint(int32(2)) % 32)
-	v1474 = *(*int32)(unsafe.Add(mBase, uint32(v1471)+uint32(_consts[519])))
+	v1474 = *(*int32)(unsafe.Add(mBase, uint32(v1471)+uint32(_c_F_emscripten_builtin_malloc[8])))
 	if v373 != v1474 {
 		goto L275
 	} else {
@@ -2857,7 +2857,7 @@ L275:
 	}
 L276:
 	;
-	*(*int32)(unsafe.Add(mBase, uint32(v1471)+uint32(_consts[519]))) = v1455
+	*(*int32)(unsafe.Add(mBase, uint32(v1471)+uint32(_c_F_emscripten_builtin_malloc[8]))) = v1455
 	if v1455 != 0 {
 		goto L274
 	} else {
@@ -2866,7 +2866,7 @@ L276:
 L277:
 	;
 	v1480 = v226 & base.I32_rotl(int32(-2), v1469)
-	*(*int32)(unsafe.Add(mBase, _consts[520])) = v1480
+	*(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_malloc[6])) = v1480
 	v1501 = v1480
 	goto L272
 L278:
@@ -2943,7 +2943,7 @@ L289:
 	;
 	v1525 = v369 & int32(-8)
 	v1527 = v1525 + int32(9128464)
-	v1529 = *(*int32)(unsafe.Add(mBase, _consts[517]))
+	v1529 = *(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_malloc[4]))
 	v1533 = int32(1) << (uint(int32(base.Ui32(v369)>>(uint(int32(3))%32))) % 32)
 	if v1529&v1533 != 0 {
 		goto L291
@@ -2952,19 +2952,19 @@ L289:
 	}
 L290:
 	;
-	*(*int32)(unsafe.Add(mBase, uint32(v1525)+uint32(_consts[523]))) = v1516
+	*(*int32)(unsafe.Add(mBase, uint32(v1525)+uint32(_c_F_emscripten_builtin_malloc[5]))) = v1516
 	*(*int32)(unsafe.Add(mBase, uint32(v1539)+12)) = v1516
 	*(*int32)(unsafe.Add(mBase, uint32(v1516)+12)) = v1527
 	*(*int32)(unsafe.Add(mBase, uint32(v1516)+8)) = v1539
 	goto L285
 L291:
 	;
-	v1538 = *(*int32)(unsafe.Add(mBase, uint32(v1525)+uint32(_consts[523])))
+	v1538 = *(*int32)(unsafe.Add(mBase, uint32(v1525)+uint32(_c_F_emscripten_builtin_malloc[5])))
 	v1539 = v1538
 	goto L290
 L292:
 	;
-	*(*int32)(unsafe.Add(mBase, _consts[517])) = v1529 | v1533
+	*(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_malloc[4])) = v1529 | v1533
 	v1539 = v1527
 	goto L290
 L293:
@@ -3007,8 +3007,8 @@ L297:
 	}
 L298:
 	;
-	*(*int32)(unsafe.Add(mBase, _consts[520])) = v1501 | v1569
-	*(*int32)(unsafe.Add(mBase, uint32(v1565)+uint32(_consts[519]))) = v1516
+	*(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_malloc[6])) = v1501 | v1569
+	*(*int32)(unsafe.Add(mBase, uint32(v1565)+uint32(_c_F_emscripten_builtin_malloc[8]))) = v1516
 	*(*int32)(unsafe.Add(mBase, uint32(v1516)+24)) = v1565 + int32(9128728)
 	goto L296
 L299:
@@ -3021,7 +3021,7 @@ L300:
 	goto L301
 L301:
 	;
-	v1585 = *(*int32)(unsafe.Add(mBase, uint32(v1565)+uint32(_consts[519])))
+	v1585 = *(*int32)(unsafe.Add(mBase, uint32(v1565)+uint32(_c_F_emscripten_builtin_malloc[8])))
 	v1586 = v369 << (uint(v1583) % 32)
 	v1591 = v1585
 	goto L302
@@ -3063,7 +3063,7 @@ L307:
 	;
 	v1663 = *(*int32)(unsafe.Add(mBase, uint32(v163)+28))
 	v1665 = v1663 << (uint(int32(2)) % 32)
-	v1668 = *(*int32)(unsafe.Add(mBase, uint32(v1665)+uint32(_consts[519])))
+	v1668 = *(*int32)(unsafe.Add(mBase, uint32(v1665)+uint32(_c_F_emscripten_builtin_malloc[8])))
 	if v163 != v1668 {
 		goto L309
 	} else {
@@ -3088,7 +3088,7 @@ L309:
 	}
 L310:
 	;
-	*(*int32)(unsafe.Add(mBase, uint32(v1665)+uint32(_consts[519]))) = v1649
+	*(*int32)(unsafe.Add(mBase, uint32(v1665)+uint32(_c_F_emscripten_builtin_malloc[8]))) = v1649
 	if v1649 != 0 {
 		goto L308
 	} else {
@@ -3096,7 +3096,7 @@ L310:
 	}
 L311:
 	;
-	*(*int32)(unsafe.Add(mBase, _consts[520])) = v143 & base.I32_rotl(int32(-2), v1663)
+	*(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_malloc[6])) = v143 & base.I32_rotl(int32(-2), v1663)
 	goto L306
 L312:
 	;
@@ -3160,14 +3160,14 @@ L321:
 L322:
 	;
 	v1740 = int32(0)
-	*(*int32)(unsafe.Add(mBase, _consts[516])) = v1709
-	*(*int32)(unsafe.Add(mBase, _consts[518])) = v160
+	*(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_malloc[7])) = v1709
+	*(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_malloc[3])) = v160
 	goto L319
 L323:
 	;
 	v1718 = v70 & int32(-8)
 	v1720 = v1718 + int32(9128464)
-	v1722 = *(*int32)(unsafe.Add(mBase, _consts[516]))
+	v1722 = *(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_malloc[7]))
 	v1726 = int32(1) << (uint(int32(base.Ui32(v70)>>(uint(int32(3))%32))) % 32)
 	if v1726&v20 != 0 {
 		goto L325
@@ -3176,19 +3176,19 @@ L323:
 	}
 L324:
 	;
-	*(*int32)(unsafe.Add(mBase, uint32(v1718)+uint32(_consts[523]))) = v1722
+	*(*int32)(unsafe.Add(mBase, uint32(v1718)+uint32(_c_F_emscripten_builtin_malloc[5]))) = v1722
 	*(*int32)(unsafe.Add(mBase, uint32(v1732)+12)) = v1722
 	*(*int32)(unsafe.Add(mBase, uint32(v1722)+12)) = v1720
 	*(*int32)(unsafe.Add(mBase, uint32(v1722)+8)) = v1732
 	goto L322
 L325:
 	;
-	v1731 = *(*int32)(unsafe.Add(mBase, uint32(v1718)+uint32(_consts[523])))
+	v1731 = *(*int32)(unsafe.Add(mBase, uint32(v1718)+uint32(_c_F_emscripten_builtin_malloc[5])))
 	v1732 = v1731
 	goto L324
 L326:
 	;
-	*(*int32)(unsafe.Add(mBase, _consts[517])) = v1726 | v20
+	*(*int32)(unsafe.Add(mBase, _c_F_emscripten_builtin_malloc[4])) = v1726 | v20
 	v1732 = v1720
 	goto L324
 }
@@ -3214,7 +3214,7 @@ func F_emscripten_stack_get_free(m *base.Module) int32 {
 	return v1 - v2
 }
 func F_emscripten_stack_init(m *base.Module) {
-	m.G2 = int32(_a0)
+	m.G2 = int32(_a_F_emscripten_stack_init_0)
 	m.G1 = int32(0)
 	return
 }

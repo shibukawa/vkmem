@@ -91,7 +91,7 @@ func F_str_dump(m *base.Module, l0 int32) int32 {
 				}
 			} else {
 				v58 = m.G3
-				v62 = F_luaL_error(m, l0, v58+int32(_a2720), int32(0))
+				v62 = F_luaL_error(m, l0, v58+int32(_a_F_str_dump_0), int32(0))
 				mBase = m.M
 				v63 = m.ExcPending
 				if v63 != 0 {
@@ -740,7 +740,7 @@ L21:
 L22:
 	;
 	v106 = m.G3
-	v109 = F_luaL_argerror(m, l0, v104, v106+int32(_a2694))
+	v109 = F_luaL_argerror(m, l0, v104, v106+int32(_a_F_str_format_0))
 	mBase = m.M
 	v110 = m.ExcPending
 	if v110 != 0 {
@@ -833,7 +833,7 @@ L34:
 L35:
 	;
 	v163 = m.G3
-	v167 = F_luaL_error(m, l0, v163+int32(_a2721), int32(0))
+	v167 = F_luaL_error(m, l0, v163+int32(_a_F_str_format_1), int32(0))
 	mBase = m.M
 	v168 = m.ExcPending
 	if v168 != 0 {
@@ -904,7 +904,7 @@ L45:
 L46:
 	;
 	v222 = m.G3
-	v226 = F_luaL_error(m, l0, v222+int32(_a2722), int32(0))
+	v226 = F_luaL_error(m, l0, v222+int32(_a_F_str_format_2), int32(0))
 	mBase = m.M
 	v227 = m.ExcPending
 	if v227 != 0 {
@@ -967,7 +967,7 @@ L52:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v16))) = base.I32_extend8_s(v239)
 	v598 = m.G3
-	v601 = F_luaL_error(m, l0, v598+int32(_a2723), v16)
+	v601 = F_luaL_error(m, l0, v598+int32(_a_F_str_format_3), v16)
 	mBase = m.M
 	v602 = m.ExcPending
 	if v602 != 0 {
@@ -1397,7 +1397,7 @@ L114:
 L115:
 	;
 	v516 = m.G3
-	F_luaL_addlstring(m, v16+int32(636), v516+int32(_a2724), int32(4))
+	F_luaL_addlstring(m, v16+int32(636), v516+int32(_a_F_str_format_4), int32(4))
 	mBase = m.M
 	v521 = m.ExcPending
 	if v521 != 0 {
@@ -1408,7 +1408,7 @@ L115:
 L116:
 	;
 	v508 = m.G3
-	F_luaL_addlstring(m, v16+int32(636), v508+int32(_a2725), int32(2))
+	F_luaL_addlstring(m, v16+int32(636), v508+int32(_a_F_str_format_5), int32(2))
 	mBase = m.M
 	v513 = m.ExcPending
 	if v513 != 0 {

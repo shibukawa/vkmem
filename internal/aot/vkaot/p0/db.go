@@ -218,7 +218,7 @@ L3:
 	v31 = *(*int32)(unsafe.Add(mBase, uint32(v30)))
 	v32 = F_objectGetVal(m, v31)
 	mBase = m.M
-	v33 = int32(_a138)
+	v33 = int32(_a_F_copyDbIdArgs_0)
 	v36 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v32))))
 	if v36 != 0 {
 		goto L8
@@ -338,7 +338,7 @@ L18:
 	v75 = *(*int32)(unsafe.Add(mBase, uint32(v30)))
 	v76 = F_objectGetVal(m, v75)
 	mBase = m.M
-	v77 = int32(_a506)
+	v77 = int32(_a_F_copyDbIdArgs_1)
 	v80 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v76))))
 	if v80 != 0 {
 		goto L21
@@ -476,7 +476,7 @@ L35:
 	}
 L36:
 	;
-	v135 = int64(*(*int32)(unsafe.Add(mBase, _consts[10])))
+	v135 = int64(*(*int32)(unsafe.Add(mBase, _c_F_copyDbIdArgs[0])))
 	if v135 <= v131 {
 		v227 = v74
 		goto L1
@@ -515,7 +515,7 @@ L42:
 	v167 = *(*int32)(unsafe.Add(mBase, uint32(l0+v160<<(uint(int32(2))%32))))
 	v168 = F_objectGetVal(m, v167)
 	mBase = m.M
-	v169 = int32(_a506)
+	v169 = int32(_a_F_copyDbIdArgs_1)
 	v172 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v168))))
 	if v172 != 0 {
 		goto L47
@@ -712,7 +712,7 @@ func F_dbAddRDBLoad(m *base.Module, l0 int32, l1 int32, l2 int32) int32 {
 	v7 = m.G0
 	v9 = v7 - int32(16)
 	m.G0 = v9
-	v14 = *(*int32)(unsafe.Add(mBase, _consts[63]))
+	v14 = *(*int32)(unsafe.Add(mBase, _c_F_dbAddRDBLoad[0]))
 	if v14 == v4 {
 		v21 = v4
 		v22 = *(*int32)(unsafe.Add(mBase, uint32(l0)))
@@ -777,7 +777,7 @@ func F_dbAddRDBLoad(m *base.Module, l0 int32, l1 int32, l2 int32) int32 {
 										v73 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v72))))
 										v78 = v72 + v73 + int32(1)
 									}
-									v80 = *(*int32)(unsafe.Add(mBase, _consts[63]))
+									v80 = *(*int32)(unsafe.Add(mBase, _c_F_dbAddRDBLoad[0]))
 									if v80 != 0 {
 										v82 = F_getKeySlot(m, v78)
 										mBase = m.M
@@ -891,7 +891,7 @@ func F_dbAddRDBLoad(m *base.Module, l0 int32, l1 int32, l2 int32) int32 {
 											v73 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v72))))
 											v78 = v72 + v73 + int32(1)
 										}
-										v80 = *(*int32)(unsafe.Add(mBase, _consts[63]))
+										v80 = *(*int32)(unsafe.Add(mBase, _c_F_dbAddRDBLoad[0]))
 										if v80 != 0 {
 											v82 = F_getKeySlot(m, v78)
 											mBase = m.M
@@ -972,7 +972,7 @@ func F_dbExpandExpires(m *base.Module, l0 int32, l1 int64, l2 int32) int32 {
 	var v37 int32
 	_ = v37
 	v5 = *(*int32)(unsafe.Add(mBase, uint32(l0)+4))
-	v7 = *(*int32)(unsafe.Add(mBase, _consts[63]))
+	v7 = *(*int32)(unsafe.Add(mBase, _c_F_dbExpandExpires[0]))
 	if v7 == int32(0) {
 		v35 = F_kvstoreExpand(m, v5, l1, l2, int32(0))
 		mBase = m.M
@@ -984,7 +984,7 @@ func F_dbExpandExpires(m *base.Module, l0 int32, l1 int64, l2 int32) int32 {
 			return v37 + int32(-1)
 		}
 	} else {
-		v12 = *(*int32)(unsafe.Add(mBase, _consts[90]))
+		v12 = *(*int32)(unsafe.Add(mBase, _c_F_dbExpandExpires[1]))
 		v13 = *(*int32)(unsafe.Add(mBase, uint32(v12)))
 		v14 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v13)+88)))
 		if v14&int32(2) == int32(0) {
@@ -1032,7 +1032,7 @@ func F_dbExpandSkipSlot(m *base.Module, l0 int32) int32 {
 	_ = v10
 	var v14 int32
 	_ = v14
-	v3 = *(*int32)(unsafe.Add(mBase, _consts[90]))
+	v3 = *(*int32)(unsafe.Add(mBase, _c_F_dbExpandSkipSlot[0]))
 	v4 = *(*int32)(unsafe.Add(mBase, uint32(v3)))
 	v5 = F_clusterNodeGetPrimary(m, v4)
 	mBase = m.M
@@ -1289,7 +1289,7 @@ func F_dbSetValue(m *base.Module, l0 int32, l1 int32, l2 int32, l3 int32, l4 int
 	}
 L1:
 	;
-	F__serverAssert(m, int32(_a477), int32(_a474), int32(370))
+	F__serverAssert(m, int32(_a_F_dbSetValue_2), int32(_a_F_dbSetValue_3), int32(370))
 	mBase = m.M
 	v315 = m.ExcPending
 	if v315 != 0 {
@@ -1299,7 +1299,7 @@ L1:
 	}
 L2:
 	;
-	F__serverAssertWithInfo(m, int32(0), l1, int32(_a478), int32(_a474), int32(325))
+	F__serverAssertWithInfo(m, int32(0), l1, int32(_a_F_dbSetValue_4), int32(_a_F_dbSetValue_3), int32(325))
 	mBase = m.M
 	v309 = m.ExcPending
 	if v309 != 0 {
@@ -1320,7 +1320,7 @@ L4:
 	;
 	v12 = F_objectGetVal(m, l1)
 	mBase = m.M
-	v14 = *(*int32)(unsafe.Add(mBase, _consts[63]))
+	v14 = *(*int32)(unsafe.Add(mBase, _c_F_dbSetValue[4]))
 	if v14 != 0 {
 		goto L6
 	} else {
@@ -1544,7 +1544,7 @@ L31:
 	;
 	v125 = F_objectGetVal(m, l1)
 	mBase = m.M
-	v127 = *(*int32)(unsafe.Add(mBase, _consts[63]))
+	v127 = *(*int32)(unsafe.Add(mBase, _c_F_dbSetValue[4]))
 	if v127 != 0 {
 		goto L33
 	} else {
@@ -1645,7 +1645,7 @@ L44:
 	}
 L45:
 	;
-	v184 = *(*int32)(unsafe.Add(mBase, _consts[63]))
+	v184 = *(*int32)(unsafe.Add(mBase, _c_F_dbSetValue[4]))
 	if v184 != 0 {
 		goto L49
 	} else {
@@ -1714,7 +1714,7 @@ L55:
 L56:
 	;
 	v262 = int32(-1)
-	v264 = *(*int32)(unsafe.Add(mBase, _consts[219]))
+	v264 = *(*int32)(unsafe.Add(mBase, _c_F_dbSetValue[0]))
 	if v264 < int32(2) {
 		v290 = v262
 		goto L70
@@ -1750,7 +1750,7 @@ L59:
 	}
 L60:
 	;
-	v252 = *(*int32)(unsafe.Add(mBase, _consts[63]))
+	v252 = *(*int32)(unsafe.Add(mBase, _c_F_dbSetValue[4]))
 	if v252 != 0 {
 		goto L64
 	} else {
@@ -1831,7 +1831,7 @@ L72:
 	}
 L73:
 	;
-	v274 = F_spmcEnqueue(m, int32(_a476), v142|int32(3))
+	v274 = F_spmcEnqueue(m, int32(_a_F_dbSetValue_0), v142|int32(3))
 	mBase = m.M
 	if v274 == int32(0) {
 		v290 = v262
@@ -1842,16 +1842,16 @@ L73:
 L74:
 	;
 	v277 = int32(0)
-	v280 = *(*int32)(unsafe.Add(mBase, _consts[220]))
-	*(*int32)(unsafe.Add(mBase, _consts[220])) = v280 + int32(1)
-	v284 = int32(_a69)
-	v286 = *(*int64)(unsafe.Add(mBase, _consts[221]))
-	*(*int64)(unsafe.Add(mBase, _consts[221])) = v286 + int64(1)
+	v280 = *(*int32)(unsafe.Add(mBase, _c_F_dbSetValue[1]))
+	*(*int32)(unsafe.Add(mBase, _c_F_dbSetValue[1])) = v280 + int32(1)
+	v284 = int32(_a_F_dbSetValue_1)
+	v286 = *(*int64)(unsafe.Add(mBase, _c_F_dbSetValue[2]))
+	*(*int64)(unsafe.Add(mBase, _c_F_dbSetValue[2])) = v286 + int64(1)
 	v290 = v277
 	goto L70
 L75:
 	;
-	v294 = *(*int32)(unsafe.Add(mBase, _consts[142]))
+	v294 = *(*int32)(unsafe.Add(mBase, _c_F_dbSetValue[3]))
 	if v294 == int32(0) {
 		goto L76
 	} else {
@@ -2031,7 +2031,7 @@ func F_dbSwapDatabases(m *base.Module, l0 int32, l1 int32) int32 {
 		m.G0 = v12 + int32(64)
 		return v137
 	} else {
-		v18 = *(*int32)(unsafe.Add(mBase, _consts[10]))
+		v18 = *(*int32)(unsafe.Add(mBase, _c_F_dbSwapDatabases[0]))
 		if v18 <= l1 {
 			v137 = v14
 			m.G0 = v12 + int32(64)
@@ -2186,7 +2186,7 @@ func F_dbSyncDelete(m *base.Module, l0 int32, l1 int32) int32 {
 	v3 = int32(0)
 	v5 = F_objectGetVal(m, l1)
 	mBase = m.M
-	v8 = *(*int32)(unsafe.Add(mBase, _consts[63]))
+	v8 = *(*int32)(unsafe.Add(mBase, _c_F_dbSyncDelete[0]))
 	if v8 == v3 {
 		v15 = v3
 		v18 = F_dbGenericDeleteWithDictIndex(m, l0, l1, int32(0), int32(1), v15)
@@ -2268,7 +2268,7 @@ func F_dbUnshareStringValue(m *base.Module, l0 int32, l1 int32, l2 int32) int32 
 	m.G0 = v11
 	v13 = *(*int32)(unsafe.Add(mBase, uint32(l2)))
 	if v13&int32(15) != 0 {
-		F__serverAssert(m, int32(_a479), int32(_a474), int32(584))
+		F__serverAssert(m, int32(_a_F_dbUnshareStringValue_0), int32(_a_F_dbUnshareStringValue_1), int32(584))
 		mBase = m.M
 		v75 = m.ExcPending
 		if v75 != 0 {
@@ -2453,7 +2453,7 @@ func F_dbUntrackKeyWithVolatileItems(m *base.Module, l0 int32, l1 int32) {
 		v22 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v21))))
 		v27 = v21 + v22 + int32(1)
 	}
-	v29 = *(*int32)(unsafe.Add(mBase, _consts[63]))
+	v29 = *(*int32)(unsafe.Add(mBase, _c_F_dbUntrackKeyWithVolatileItems[0]))
 	if v29 != 0 {
 		v31 = F_getKeySlot(m, v27)
 		mBase = m.M
@@ -3513,7 +3513,7 @@ L52:
 L53:
 	;
 	v194 = m.G3
-	v197 = F_luaL_argerror(m, l0, v136, v194+int32(_a2314))
+	v197 = F_luaL_argerror(m, l0, v136, v194+int32(_a_F_db_setlocal_0))
 	mBase = m.M
 	v198 = m.ExcPending
 	if v198 != 0 {
@@ -3746,7 +3746,7 @@ L89:
 L90:
 	;
 	v391 = v380
-	v392 = v381 + int32(_a2242)
+	v392 = v381 + int32(_a_F_db_setlocal_1)
 	goto L77
 L91:
 	;
@@ -3792,7 +3792,7 @@ func F_selectDb(m *base.Module, l0 int32, l1 int32) int32 {
 		v16 = v4
 		return v16
 	} else {
-		v8 = *(*int32)(unsafe.Add(mBase, _consts[10]))
+		v8 = *(*int32)(unsafe.Add(mBase, _c_F_selectDb[0]))
 		if v8 <= l1 {
 			v16 = v4
 			return v16

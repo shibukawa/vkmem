@@ -42,7 +42,7 @@ func F_dictCStrCaseHash(m *base.Module, l0 int32) int64 {
 	}
 L1:
 	;
-	v58 = F_siphash_nocase(m, l0, v56, int32(_a765))
+	v58 = F_siphash_nocase(m, l0, v56, int32(_a_F_dictCStrCaseHash_0))
 	mBase = m.M
 	goto L17
 L2:
@@ -1136,7 +1136,7 @@ func F_dictResizeWithOptionalCheck(m *base.Module, l0 int32, l1 int32, l2 int32)
 	}
 	v11 = *(*int32)(unsafe.Add(mBase, uint32(l0)+20))
 	if v11 != int32(-1) {
-		F__serverAssert(m, int32(_a763), int32(_a764), int32(198))
+		F__serverAssert(m, int32(_a_F_dictResizeWithOptionalCheck_0), int32(_a_F_dictResizeWithOptionalCheck_1), int32(198))
 		mBase = m.M
 		v141 = m.ExcPending
 		if v141 != 0 {
@@ -1503,24 +1503,24 @@ func F_dictResizeWithOptionalCheck(m *base.Module, l0 int32, l1 int32, l2 int32)
 								v85 = v39
 							} else {
 								*(*int32)(unsafe.Add(mBase, uint32(v50))) = v47
-								v55 = *(*int32)(unsafe.Add(mBase, _consts[411]))
+								v55 = *(*int32)(unsafe.Add(mBase, _c_F_dictResizeWithOptionalCheck[0]))
 								if v55 != int32(-1) {
 									v66 = v55
 								} else {
 									v58 = int32(0)
-									v60 = *(*int32)(unsafe.Add(mBase, _consts[281]))
-									*(*int32)(unsafe.Add(mBase, _consts[411])) = v60
-									*(*int32)(unsafe.Add(mBase, _consts[281])) = v60 + int32(1)
+									v60 = *(*int32)(unsafe.Add(mBase, _c_F_dictResizeWithOptionalCheck[1]))
+									*(*int32)(unsafe.Add(mBase, _c_F_dictResizeWithOptionalCheck[0])) = v60
+									*(*int32)(unsafe.Add(mBase, _c_F_dictResizeWithOptionalCheck[1])) = v60 + int32(1)
 									v66 = v60
 								}
 								if v66 < int32(260) {
 									v75 = v66 << (uint(int32(2)) % 32)
-									v78 = *(*int32)(unsafe.Add(mBase, uint32(v75)+uint32(_consts[285])))
-									*(*int32)(unsafe.Add(mBase, uint32(v75)+uint32(_consts[285]))) = v78 + v49
+									v78 = *(*int32)(unsafe.Add(mBase, uint32(v75)+uint32(_c_F_dictResizeWithOptionalCheck[2])))
+									*(*int32)(unsafe.Add(mBase, uint32(v75)+uint32(_c_F_dictResizeWithOptionalCheck[2]))) = v78 + v49
 								} else {
 									v69 = int32(0)
-									v71 = *(*int32)(unsafe.Add(mBase, _consts[286]))
-									*(*int32)(unsafe.Add(mBase, _consts[286])) = v71 + v49
+									v71 = *(*int32)(unsafe.Add(mBase, _c_F_dictResizeWithOptionalCheck[3]))
+									*(*int32)(unsafe.Add(mBase, _c_F_dictResizeWithOptionalCheck[3])) = v71 + v49
 								}
 								v85 = v50 + int32(8)
 							}
@@ -1882,33 +1882,33 @@ func F_dictSdsHash(m *base.Module, l0 int32) int64 {
 	v7 = int32(*(*uint8)(unsafe.Add(mBase, uint32(l0+int32(-1)))))
 	switch v7 & int32(7) {
 	case 0:
-		v13 = F_siphash(m, l0, int32(base.Ui32(v7)>>(uint(int32(3))%32)), int32(_a765))
+		v13 = F_siphash(m, l0, int32(base.Ui32(v7)>>(uint(int32(3))%32)), int32(_a_F_dictSdsHash_0))
 		mBase = m.M
 		return v13
 	case 1:
 		v17 = int32(*(*uint8)(unsafe.Add(mBase, uint32(l0+int32(-3)))))
-		v19 = F_siphash(m, l0, v17, int32(_a765))
+		v19 = F_siphash(m, l0, v17, int32(_a_F_dictSdsHash_0))
 		mBase = m.M
 		return v19
 	case 2:
 		v23 = int32(*(*uint16)(unsafe.Add(mBase, uint32(l0+int32(-5)))))
-		v25 = F_siphash(m, l0, v23, int32(_a765))
+		v25 = F_siphash(m, l0, v23, int32(_a_F_dictSdsHash_0))
 		mBase = m.M
 		return v25
 	case 3:
 		v29 = *(*int32)(unsafe.Add(mBase, uint32(l0+int32(-9))))
-		v31 = F_siphash(m, l0, v29, int32(_a765))
+		v31 = F_siphash(m, l0, v29, int32(_a_F_dictSdsHash_0))
 		mBase = m.M
 		return v31
 	case 4:
 		v35 = *(*int32)(unsafe.Add(mBase, uint32(l0+int32(-17))))
 		v36 = v35
-		v38 = F_siphash(m, l0, v36, int32(_a765))
+		v38 = F_siphash(m, l0, v36, int32(_a_F_dictSdsHash_0))
 		mBase = m.M
 		return v38
 	default:
 		v36 = int32(0)
-		v38 = F_siphash(m, l0, v36, int32(_a765))
+		v38 = F_siphash(m, l0, v36, int32(_a_F_dictSdsHash_0))
 		mBase = m.M
 		return v38
 	}
@@ -1924,9 +1924,9 @@ func F_dictSetHashFunctionSeed(m *base.Module, l0 int32) {
 	_ = v8
 	v2 = int32(0)
 	v3 = *(*int64)(unsafe.Add(mBase, uint32(l0)))
-	*(*int64)(unsafe.Add(mBase, _consts[409])) = v3
+	*(*int64)(unsafe.Add(mBase, _c_F_dictSetHashFunctionSeed[0])) = v3
 	v8 = *(*int64)(unsafe.Add(mBase, uint32(l0+int32(8))))
-	*(*int64)(unsafe.Add(mBase, _consts[410])) = v8
+	*(*int64)(unsafe.Add(mBase, _c_F_dictSetHashFunctionSeed[1])) = v8
 	return
 }
 func F_dictSetKey(m *base.Module, l0 int32, l1 int32, l2 int32) {
@@ -1998,7 +1998,7 @@ func F_dictStrCaseHash_1(m *base.Module, l0 int32) int64 {
 	}
 L1:
 	;
-	v58 = F_siphash_nocase(m, l0, v56, int32(_a765))
+	v58 = F_siphash_nocase(m, l0, v56, int32(_a_F_dictStrCaseHash_1_0))
 	mBase = m.M
 	goto L17
 L2:
@@ -2121,7 +2121,7 @@ func F_dictStrCaseHash_2(m *base.Module, l0 int32) int64 {
 	}
 L1:
 	;
-	v58 = F_siphash_nocase(m, l0, v56, int32(_a765))
+	v58 = F_siphash_nocase(m, l0, v56, int32(_a_F_dictStrCaseHash_2_0))
 	mBase = m.M
 	goto L17
 L2:
@@ -2226,20 +2226,20 @@ func F_updateDictResizePolicy(m *base.Module) {
 	_ = v13
 	v1 = int32(0)
 	v2 = int32(2)
-	v4 = *(*int32)(unsafe.Add(mBase, _consts[45]))
-	v9 = *(*int32)(unsafe.Add(mBase, _consts[399]))
+	v4 = *(*int32)(unsafe.Add(mBase, _c_F_updateDictResizePolicy[0]))
+	v9 = *(*int32)(unsafe.Add(mBase, _c_F_updateDictResizePolicy[1]))
 	if v9 != 0 {
 		v10 = base.B2i32(v4 != int32(-1))
 	} else {
 		v10 = v2
 	}
-	v12 = *(*int32)(unsafe.Add(mBase, _consts[400]))
+	v12 = *(*int32)(unsafe.Add(mBase, _c_F_updateDictResizePolicy[2]))
 	if v12 != 0 {
 		v13 = v2
 	} else {
 		v13 = v10
 	}
-	*(*int32)(unsafe.Add(mBase, _consts[798])) = v13
-	*(*int32)(unsafe.Add(mBase, _consts[427])) = v13
+	*(*int32)(unsafe.Add(mBase, _c_F_updateDictResizePolicy[3])) = v13
+	*(*int32)(unsafe.Add(mBase, _c_F_updateDictResizePolicy[4])) = v13
 	return
 }

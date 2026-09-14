@@ -271,9 +271,9 @@ L18:
 	v56 = int32(8)
 	v58 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v48))))
 	v60 = int32(1)
-	v64 = int32(*(*uint16)(unsafe.Add(mBase, uint32((int32(base.Ui32(v49&v54)>>(uint(v56)%32))^v58)<<(uint(v60)%32))+uint32(_consts[126]))))
+	v64 = int32(*(*uint16)(unsafe.Add(mBase, uint32((int32(base.Ui32(v49&v54)>>(uint(v56)%32))^v58)<<(uint(v60)%32))+uint32(_c_F_keyHashSlot[0]))))
 	v72 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v48)+1)))
-	v78 = int32(*(*uint16)(unsafe.Add(mBase, uint32((int32(base.Ui32((v64^v49<<(uint(v56)%32))&v54)>>(uint(v56)%32))^v72)<<(uint(v60)%32))+uint32(_consts[126]))))
+	v78 = int32(*(*uint16)(unsafe.Add(mBase, uint32((int32(base.Ui32((v64^v49<<(uint(v56)%32))&v54)>>(uint(v56)%32))^v72)<<(uint(v60)%32))+uint32(_c_F_keyHashSlot[0]))))
 	v81 = v78 ^ v64<<(uint(v56)%32)
 	v82 = int32(2)
 	v83 = v48 + v82
@@ -298,7 +298,7 @@ L21:
 	;
 	v97 = int32(8)
 	v99 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v87))))
-	v105 = int32(*(*uint16)(unsafe.Add(mBase, uint32((int32(base.Ui32(v88&int32(65280))>>(uint(v97)%32))^v99)<<(uint(int32(1))%32))+uint32(_consts[126]))))
+	v105 = int32(*(*uint16)(unsafe.Add(mBase, uint32((int32(base.Ui32(v88&int32(65280))>>(uint(v97)%32))^v99)<<(uint(int32(1))%32))+uint32(_c_F_keyHashSlot[0]))))
 	v110 = v105 ^ v88<<(uint(v97)%32)
 	goto L12
 L22:
@@ -404,9 +404,9 @@ L39:
 	v163 = int32(8)
 	v165 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v155))))
 	v167 = int32(1)
-	v171 = int32(*(*uint16)(unsafe.Add(mBase, uint32((int32(base.Ui32(v156&v161)>>(uint(v163)%32))^v165)<<(uint(v167)%32))+uint32(_consts[126]))))
+	v171 = int32(*(*uint16)(unsafe.Add(mBase, uint32((int32(base.Ui32(v156&v161)>>(uint(v163)%32))^v165)<<(uint(v167)%32))+uint32(_c_F_keyHashSlot[0]))))
 	v179 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v155)+1)))
-	v185 = int32(*(*uint16)(unsafe.Add(mBase, uint32((int32(base.Ui32((v171^v156<<(uint(v163)%32))&v161)>>(uint(v163)%32))^v179)<<(uint(v167)%32))+uint32(_consts[126]))))
+	v185 = int32(*(*uint16)(unsafe.Add(mBase, uint32((int32(base.Ui32((v171^v156<<(uint(v163)%32))&v161)>>(uint(v163)%32))^v179)<<(uint(v167)%32))+uint32(_c_F_keyHashSlot[0]))))
 	v188 = v185 ^ v171<<(uint(v163)%32)
 	v189 = int32(2)
 	v190 = v155 + v189
@@ -431,7 +431,7 @@ L42:
 	;
 	v204 = int32(8)
 	v206 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v194))))
-	v212 = int32(*(*uint16)(unsafe.Add(mBase, uint32((int32(base.Ui32(v195&int32(65280))>>(uint(v204)%32))^v206)<<(uint(int32(1))%32))+uint32(_consts[126]))))
+	v212 = int32(*(*uint16)(unsafe.Add(mBase, uint32((int32(base.Ui32(v195&int32(65280))>>(uint(v204)%32))^v206)<<(uint(int32(1))%32))+uint32(_c_F_keyHashSlot[0]))))
 	v217 = v212 ^ v195<<(uint(v204)%32)
 	goto L33
 L43:
@@ -479,9 +479,9 @@ L50:
 	v254 = int32(8)
 	v256 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v246))))
 	v258 = int32(1)
-	v262 = int32(*(*uint16)(unsafe.Add(mBase, uint32((int32(base.Ui32(v247&v252)>>(uint(v254)%32))^v256)<<(uint(v258)%32))+uint32(_consts[126]))))
+	v262 = int32(*(*uint16)(unsafe.Add(mBase, uint32((int32(base.Ui32(v247&v252)>>(uint(v254)%32))^v256)<<(uint(v258)%32))+uint32(_c_F_keyHashSlot[0]))))
 	v270 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v246)+1)))
-	v276 = int32(*(*uint16)(unsafe.Add(mBase, uint32((int32(base.Ui32((v262^v247<<(uint(v254)%32))&v252)>>(uint(v254)%32))^v270)<<(uint(v258)%32))+uint32(_consts[126]))))
+	v276 = int32(*(*uint16)(unsafe.Add(mBase, uint32((int32(base.Ui32((v262^v247<<(uint(v254)%32))&v252)>>(uint(v254)%32))^v270)<<(uint(v258)%32))+uint32(_c_F_keyHashSlot[0]))))
 	v279 = v276 ^ v262<<(uint(v254)%32)
 	v280 = int32(2)
 	v281 = v246 + v280
@@ -506,7 +506,7 @@ L53:
 	;
 	v295 = int32(8)
 	v297 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v285))))
-	v303 = int32(*(*uint16)(unsafe.Add(mBase, uint32((int32(base.Ui32(v286&int32(65280))>>(uint(v295)%32))^v297)<<(uint(int32(1))%32))+uint32(_consts[126]))))
+	v303 = int32(*(*uint16)(unsafe.Add(mBase, uint32((int32(base.Ui32(v286&int32(65280))>>(uint(v295)%32))^v297)<<(uint(int32(1))%32))+uint32(_c_F_keyHashSlot[0]))))
 	v308 = v303 ^ v286<<(uint(v295)%32)
 	goto L44
 }
@@ -571,10 +571,10 @@ func F_keyIsExpired(m *base.Module, l0 int32, l1 int32) int32 {
 	m.G0 = v10
 	v12 = F_objectGetVal(m, l1)
 	mBase = m.M
-	v16 = *(*int32)(unsafe.Add(mBase, _consts[139]))
+	v16 = *(*int32)(unsafe.Add(mBase, _c_F_keyIsExpired[0]))
 	if v16 == v3 {
 		v23 = v3
-		v25 = *(*int32)(unsafe.Add(mBase, _consts[131]))
+		v25 = *(*int32)(unsafe.Add(mBase, _c_F_keyIsExpired[1]))
 		if v25 != 0 {
 			v77 = v3
 			m.G0 = v10 + int32(16)
@@ -614,15 +614,15 @@ func F_keyIsExpired(m *base.Module, l0 int32, l1 int32) int32 {
 				if v58 == int32(0) {
 					v77 = v27
 				} else {
-					v62 = *(*int32)(unsafe.Add(mBase, _consts[130]))
+					v62 = *(*int32)(unsafe.Add(mBase, _c_F_keyIsExpired[2]))
 					if v62 != 0 {
 						v77 = int32(1)
 					} else {
-						v64 = *(*int32)(unsafe.Add(mBase, _consts[132]))
+						v64 = *(*int32)(unsafe.Add(mBase, _c_F_keyIsExpired[3]))
 						if v64 == int32(0) {
 							v77 = int32(1)
 						} else {
-							v68 = *(*int32)(unsafe.Add(mBase, _consts[67]))
+							v68 = *(*int32)(unsafe.Add(mBase, _c_F_keyIsExpired[4]))
 							if v68 == int32(0) {
 								v77 = int32(1)
 							} else {
@@ -648,7 +648,7 @@ func F_keyIsExpired(m *base.Module, l0 int32, l1 int32) int32 {
 			return int32(0)
 		} else {
 			v23 = v19
-			v25 = *(*int32)(unsafe.Add(mBase, _consts[131]))
+			v25 = *(*int32)(unsafe.Add(mBase, _c_F_keyIsExpired[1]))
 			if v25 != 0 {
 				v77 = v3
 				m.G0 = v10 + int32(16)
@@ -688,15 +688,15 @@ func F_keyIsExpired(m *base.Module, l0 int32, l1 int32) int32 {
 					if v58 == int32(0) {
 						v77 = v27
 					} else {
-						v62 = *(*int32)(unsafe.Add(mBase, _consts[130]))
+						v62 = *(*int32)(unsafe.Add(mBase, _c_F_keyIsExpired[2]))
 						if v62 != 0 {
 							v77 = int32(1)
 						} else {
-							v64 = *(*int32)(unsafe.Add(mBase, _consts[132]))
+							v64 = *(*int32)(unsafe.Add(mBase, _c_F_keyIsExpired[3]))
 							if v64 == int32(0) {
 								v77 = int32(1)
 							} else {
-								v68 = *(*int32)(unsafe.Add(mBase, _consts[67]))
+								v68 = *(*int32)(unsafe.Add(mBase, _c_F_keyIsExpired[4]))
 								if v68 == int32(0) {
 									v77 = int32(1)
 								} else {
@@ -840,7 +840,7 @@ func F_lookupKey(m *base.Module, l0 int32, l1 int32, l2 int32) int32 {
 	m.G0 = v9
 	v11 = F_objectGetVal(m, l1)
 	mBase = m.M
-	v14 = *(*int32)(unsafe.Add(mBase, _consts[139]))
+	v14 = *(*int32)(unsafe.Add(mBase, _c_F_lookupKey[0]))
 	if v14 == v4 {
 		v21 = v4
 		v22 = F_objectGetVal(m, l1)
@@ -860,16 +860,16 @@ func F_lookupKey(m *base.Module, l0 int32, l1 int32, l2 int32) int32 {
 					if l2&int32(12) != 0 {
 						v182 = v171
 					} else {
-						v174 = int32(_a44)
-						v176 = *(*int64)(unsafe.Add(mBase, _consts[329]))
-						*(*int64)(unsafe.Add(mBase, _consts[329])) = v176 + int64(1)
+						v174 = int32(_a_F_lookupKey_0)
+						v176 = *(*int64)(unsafe.Add(mBase, _c_F_lookupKey[1]))
+						*(*int64)(unsafe.Add(mBase, _c_F_lookupKey[1])) = v176 + int64(1)
 						v182 = v171
 					}
 					m.G0 = v9 + int32(16)
 					return v182
 				} else {
 					v168 = *(*int32)(unsafe.Add(mBase, uint32(l0)+28))
-					F_notifyKeyspaceEvent(m, int32(2048), int32(_a548), l1, v168)
+					F_notifyKeyspaceEvent(m, int32(2048), int32(_a_F_lookupKey_1), l1, v168)
 					mBase = m.M
 					v170 = m.ExcPending
 					if v170 != 0 {
@@ -879,9 +879,9 @@ func F_lookupKey(m *base.Module, l0 int32, l1 int32, l2 int32) int32 {
 						if l2&int32(12) != 0 {
 							v182 = v171
 						} else {
-							v174 = int32(_a44)
-							v176 = *(*int64)(unsafe.Add(mBase, _consts[329]))
-							*(*int64)(unsafe.Add(mBase, _consts[329])) = v176 + int64(1)
+							v174 = int32(_a_F_lookupKey_0)
+							v176 = *(*int64)(unsafe.Add(mBase, _c_F_lookupKey[1]))
+							*(*int64)(unsafe.Add(mBase, _c_F_lookupKey[1])) = v176 + int64(1)
 							v182 = v171
 						}
 						m.G0 = v9 + int32(16)
@@ -889,10 +889,10 @@ func F_lookupKey(m *base.Module, l0 int32, l1 int32, l2 int32) int32 {
 					}
 				}
 			} else {
-				v35 = int32(_a44)
-				v36 = *(*int32)(unsafe.Add(mBase, _consts[130]))
+				v35 = int32(_a_F_lookupKey_0)
+				v36 = *(*int32)(unsafe.Add(mBase, _c_F_lookupKey[2]))
 				v37 = int32(0)
-				v40 = *(*int32)(unsafe.Add(mBase, _consts[330]))
+				v40 = *(*int32)(unsafe.Add(mBase, _c_F_lookupKey[3]))
 				v47 = F_expireIfNeededWithDictIndex(m, l0, l1, v30, int32(base.Ui32(l2)>>(uint(int32(3))%32))&(base.B2i32(v36 == v37)|base.B2i32(v40 == v37)|int32(2)), v21)
 				mBase = m.M
 				v48 = m.ExcPending
@@ -905,16 +905,16 @@ func F_lookupKey(m *base.Module, l0 int32, l1 int32, l2 int32) int32 {
 							if l2&int32(12) != 0 {
 								v182 = v171
 							} else {
-								v174 = int32(_a44)
-								v176 = *(*int64)(unsafe.Add(mBase, _consts[329]))
-								*(*int64)(unsafe.Add(mBase, _consts[329])) = v176 + int64(1)
+								v174 = int32(_a_F_lookupKey_0)
+								v176 = *(*int64)(unsafe.Add(mBase, _c_F_lookupKey[1]))
+								*(*int64)(unsafe.Add(mBase, _c_F_lookupKey[1])) = v176 + int64(1)
 								v182 = v171
 							}
 							m.G0 = v9 + int32(16)
 							return v182
 						} else {
 							v168 = *(*int32)(unsafe.Add(mBase, uint32(l0)+28))
-							F_notifyKeyspaceEvent(m, int32(2048), int32(_a548), l1, v168)
+							F_notifyKeyspaceEvent(m, int32(2048), int32(_a_F_lookupKey_1), l1, v168)
 							mBase = m.M
 							v170 = m.ExcPending
 							if v170 != 0 {
@@ -924,9 +924,9 @@ func F_lookupKey(m *base.Module, l0 int32, l1 int32, l2 int32) int32 {
 								if l2&int32(12) != 0 {
 									v182 = v171
 								} else {
-									v174 = int32(_a44)
-									v176 = *(*int64)(unsafe.Add(mBase, _consts[329]))
-									*(*int64)(unsafe.Add(mBase, _consts[329])) = v176 + int64(1)
+									v174 = int32(_a_F_lookupKey_0)
+									v176 = *(*int64)(unsafe.Add(mBase, _c_F_lookupKey[1]))
+									*(*int64)(unsafe.Add(mBase, _c_F_lookupKey[1])) = v176 + int64(1)
 									v182 = v171
 								}
 								m.G0 = v9 + int32(16)
@@ -937,7 +937,7 @@ func F_lookupKey(m *base.Module, l0 int32, l1 int32, l2 int32) int32 {
 						if l2&int32(1) != 0 {
 							v70 = l2
 						} else {
-							v52 = *(*int32)(unsafe.Add(mBase, _consts[67]))
+							v52 = *(*int32)(unsafe.Add(mBase, _c_F_lookupKey[4]))
 							if v52 == int32(0) {
 								v70 = l2
 							} else {
@@ -945,7 +945,7 @@ func F_lookupKey(m *base.Module, l0 int32, l1 int32, l2 int32) int32 {
 								if v55&int32(1) == int32(0) {
 									v70 = l2
 								} else {
-									v61 = *(*int32)(unsafe.Add(mBase, _consts[68]))
+									v61 = *(*int32)(unsafe.Add(mBase, _c_F_lookupKey[5]))
 									if v61 == int32(0) {
 										v70 = l2
 									} else {
@@ -956,14 +956,14 @@ func F_lookupKey(m *base.Module, l0 int32, l1 int32, l2 int32) int32 {
 								}
 							}
 						}
-						v72 = *(*int32)(unsafe.Add(mBase, _consts[45]))
+						v72 = *(*int32)(unsafe.Add(mBase, _c_F_lookupKey[6]))
 						if base.B2i32(v72 != int32(-1))|v70&int32(1) != 0 {
 							if v70&int32(12) != 0 {
 								v182 = v30
 							} else {
-								v158 = int32(_a44)
-								v160 = *(*int64)(unsafe.Add(mBase, _consts[331]))
-								*(*int64)(unsafe.Add(mBase, _consts[331])) = v160 + int64(1)
+								v158 = int32(_a_F_lookupKey_0)
+								v160 = *(*int64)(unsafe.Add(mBase, _c_F_lookupKey[7]))
+								*(*int64)(unsafe.Add(mBase, _c_F_lookupKey[7])) = v160 + int64(1)
 								v182 = v30
 							}
 							m.G0 = v9 + int32(16)
@@ -971,7 +971,7 @@ func F_lookupKey(m *base.Module, l0 int32, l1 int32, l2 int32) int32 {
 						} else {
 							v78 = *(*int32)(unsafe.Add(mBase, uint32(v30)+4))
 							if base.Ui32(int32(-8)) <= base.Ui32(v78) {
-								F__serverAssert(m, int32(_a549), int32(_a550), int32(113))
+								F__serverAssert(m, int32(_a_F_lookupKey_2), int32(_a_F_lookupKey_3), int32(113))
 								mBase = m.M
 								v191 = m.ExcPending
 								if v191 != 0 {
@@ -987,14 +987,14 @@ func F_lookupKey(m *base.Module, l0 int32, l1 int32, l2 int32) int32 {
 								v81 = *(*int32)(unsafe.Add(mBase, uint32(v30)))
 								v83 = int32(base.Ui32(v81) >> (uint(int32(8)) % 32))
 								v84 = int32(0)
-								v89 = int32(*(*uint8)(unsafe.Add(mBase, _consts[332])))
+								v89 = int32(*(*uint8)(unsafe.Add(mBase, _c_F_lookupKey[8])))
 								if v89 != int32(1) {
-									v142 = *(*int32)(unsafe.Add(mBase, _consts[333]))
+									v142 = *(*int32)(unsafe.Add(mBase, _c_F_lookupKey[9]))
 									v149 = v142 & int32(16777215)
 								} else {
 									v92 = int32(0)
-									v93 = int32(*(*uint16)(unsafe.Add(mBase, _consts[334])))
-									v95 = *(*int32)(unsafe.Add(mBase, _consts[335]))
+									v93 = int32(*(*uint16)(unsafe.Add(mBase, _c_F_lookupKey[10])))
+									v95 = *(*int32)(unsafe.Add(mBase, _c_F_lookupKey[11]))
 									if v95 == v92 {
 										v106 = v84
 									} else {
@@ -1020,7 +1020,7 @@ func F_lookupKey(m *base.Module, l0 int32, l1 int32, l2 int32) int32 {
 										} else {
 											v127 = base.F64_convert_i32_s(v113 + int32(-5))
 										}
-										v129 = *(*int32)(unsafe.Add(mBase, _consts[336]))
+										v129 = *(*int32)(unsafe.Add(mBase, _c_F_lookupKey[12]))
 										v137 = v113 + base.F64_lt(base.F64_div(base.F64_convert_i32_s(v116), float64(2.147483647e+09)), base.F64_div(float64(1), base.F64_add(base.F64_mul(v127, base.F64_convert_i32_s(v129)), float64(1))))
 									}
 									v149 = v137 + v93<<(uint(int32(8))%32)
@@ -1030,9 +1030,9 @@ func F_lookupKey(m *base.Module, l0 int32, l1 int32, l2 int32) int32 {
 								if v70&int32(12) != 0 {
 									v182 = v30
 								} else {
-									v158 = int32(_a44)
-									v160 = *(*int64)(unsafe.Add(mBase, _consts[331]))
-									*(*int64)(unsafe.Add(mBase, _consts[331])) = v160 + int64(1)
+									v158 = int32(_a_F_lookupKey_0)
+									v160 = *(*int64)(unsafe.Add(mBase, _c_F_lookupKey[7]))
+									*(*int64)(unsafe.Add(mBase, _c_F_lookupKey[7])) = v160 + int64(1)
 									v182 = v30
 								}
 								m.G0 = v9 + int32(16)
@@ -1068,16 +1068,16 @@ func F_lookupKey(m *base.Module, l0 int32, l1 int32, l2 int32) int32 {
 						if l2&int32(12) != 0 {
 							v182 = v171
 						} else {
-							v174 = int32(_a44)
-							v176 = *(*int64)(unsafe.Add(mBase, _consts[329]))
-							*(*int64)(unsafe.Add(mBase, _consts[329])) = v176 + int64(1)
+							v174 = int32(_a_F_lookupKey_0)
+							v176 = *(*int64)(unsafe.Add(mBase, _c_F_lookupKey[1]))
+							*(*int64)(unsafe.Add(mBase, _c_F_lookupKey[1])) = v176 + int64(1)
 							v182 = v171
 						}
 						m.G0 = v9 + int32(16)
 						return v182
 					} else {
 						v168 = *(*int32)(unsafe.Add(mBase, uint32(l0)+28))
-						F_notifyKeyspaceEvent(m, int32(2048), int32(_a548), l1, v168)
+						F_notifyKeyspaceEvent(m, int32(2048), int32(_a_F_lookupKey_1), l1, v168)
 						mBase = m.M
 						v170 = m.ExcPending
 						if v170 != 0 {
@@ -1087,9 +1087,9 @@ func F_lookupKey(m *base.Module, l0 int32, l1 int32, l2 int32) int32 {
 							if l2&int32(12) != 0 {
 								v182 = v171
 							} else {
-								v174 = int32(_a44)
-								v176 = *(*int64)(unsafe.Add(mBase, _consts[329]))
-								*(*int64)(unsafe.Add(mBase, _consts[329])) = v176 + int64(1)
+								v174 = int32(_a_F_lookupKey_0)
+								v176 = *(*int64)(unsafe.Add(mBase, _c_F_lookupKey[1]))
+								*(*int64)(unsafe.Add(mBase, _c_F_lookupKey[1])) = v176 + int64(1)
 								v182 = v171
 							}
 							m.G0 = v9 + int32(16)
@@ -1097,10 +1097,10 @@ func F_lookupKey(m *base.Module, l0 int32, l1 int32, l2 int32) int32 {
 						}
 					}
 				} else {
-					v35 = int32(_a44)
-					v36 = *(*int32)(unsafe.Add(mBase, _consts[130]))
+					v35 = int32(_a_F_lookupKey_0)
+					v36 = *(*int32)(unsafe.Add(mBase, _c_F_lookupKey[2]))
 					v37 = int32(0)
-					v40 = *(*int32)(unsafe.Add(mBase, _consts[330]))
+					v40 = *(*int32)(unsafe.Add(mBase, _c_F_lookupKey[3]))
 					v47 = F_expireIfNeededWithDictIndex(m, l0, l1, v30, int32(base.Ui32(l2)>>(uint(int32(3))%32))&(base.B2i32(v36 == v37)|base.B2i32(v40 == v37)|int32(2)), v21)
 					mBase = m.M
 					v48 = m.ExcPending
@@ -1113,16 +1113,16 @@ func F_lookupKey(m *base.Module, l0 int32, l1 int32, l2 int32) int32 {
 								if l2&int32(12) != 0 {
 									v182 = v171
 								} else {
-									v174 = int32(_a44)
-									v176 = *(*int64)(unsafe.Add(mBase, _consts[329]))
-									*(*int64)(unsafe.Add(mBase, _consts[329])) = v176 + int64(1)
+									v174 = int32(_a_F_lookupKey_0)
+									v176 = *(*int64)(unsafe.Add(mBase, _c_F_lookupKey[1]))
+									*(*int64)(unsafe.Add(mBase, _c_F_lookupKey[1])) = v176 + int64(1)
 									v182 = v171
 								}
 								m.G0 = v9 + int32(16)
 								return v182
 							} else {
 								v168 = *(*int32)(unsafe.Add(mBase, uint32(l0)+28))
-								F_notifyKeyspaceEvent(m, int32(2048), int32(_a548), l1, v168)
+								F_notifyKeyspaceEvent(m, int32(2048), int32(_a_F_lookupKey_1), l1, v168)
 								mBase = m.M
 								v170 = m.ExcPending
 								if v170 != 0 {
@@ -1132,9 +1132,9 @@ func F_lookupKey(m *base.Module, l0 int32, l1 int32, l2 int32) int32 {
 									if l2&int32(12) != 0 {
 										v182 = v171
 									} else {
-										v174 = int32(_a44)
-										v176 = *(*int64)(unsafe.Add(mBase, _consts[329]))
-										*(*int64)(unsafe.Add(mBase, _consts[329])) = v176 + int64(1)
+										v174 = int32(_a_F_lookupKey_0)
+										v176 = *(*int64)(unsafe.Add(mBase, _c_F_lookupKey[1]))
+										*(*int64)(unsafe.Add(mBase, _c_F_lookupKey[1])) = v176 + int64(1)
 										v182 = v171
 									}
 									m.G0 = v9 + int32(16)
@@ -1145,7 +1145,7 @@ func F_lookupKey(m *base.Module, l0 int32, l1 int32, l2 int32) int32 {
 							if l2&int32(1) != 0 {
 								v70 = l2
 							} else {
-								v52 = *(*int32)(unsafe.Add(mBase, _consts[67]))
+								v52 = *(*int32)(unsafe.Add(mBase, _c_F_lookupKey[4]))
 								if v52 == int32(0) {
 									v70 = l2
 								} else {
@@ -1153,7 +1153,7 @@ func F_lookupKey(m *base.Module, l0 int32, l1 int32, l2 int32) int32 {
 									if v55&int32(1) == int32(0) {
 										v70 = l2
 									} else {
-										v61 = *(*int32)(unsafe.Add(mBase, _consts[68]))
+										v61 = *(*int32)(unsafe.Add(mBase, _c_F_lookupKey[5]))
 										if v61 == int32(0) {
 											v70 = l2
 										} else {
@@ -1164,14 +1164,14 @@ func F_lookupKey(m *base.Module, l0 int32, l1 int32, l2 int32) int32 {
 									}
 								}
 							}
-							v72 = *(*int32)(unsafe.Add(mBase, _consts[45]))
+							v72 = *(*int32)(unsafe.Add(mBase, _c_F_lookupKey[6]))
 							if base.B2i32(v72 != int32(-1))|v70&int32(1) != 0 {
 								if v70&int32(12) != 0 {
 									v182 = v30
 								} else {
-									v158 = int32(_a44)
-									v160 = *(*int64)(unsafe.Add(mBase, _consts[331]))
-									*(*int64)(unsafe.Add(mBase, _consts[331])) = v160 + int64(1)
+									v158 = int32(_a_F_lookupKey_0)
+									v160 = *(*int64)(unsafe.Add(mBase, _c_F_lookupKey[7]))
+									*(*int64)(unsafe.Add(mBase, _c_F_lookupKey[7])) = v160 + int64(1)
 									v182 = v30
 								}
 								m.G0 = v9 + int32(16)
@@ -1179,7 +1179,7 @@ func F_lookupKey(m *base.Module, l0 int32, l1 int32, l2 int32) int32 {
 							} else {
 								v78 = *(*int32)(unsafe.Add(mBase, uint32(v30)+4))
 								if base.Ui32(int32(-8)) <= base.Ui32(v78) {
-									F__serverAssert(m, int32(_a549), int32(_a550), int32(113))
+									F__serverAssert(m, int32(_a_F_lookupKey_2), int32(_a_F_lookupKey_3), int32(113))
 									mBase = m.M
 									v191 = m.ExcPending
 									if v191 != 0 {
@@ -1195,14 +1195,14 @@ func F_lookupKey(m *base.Module, l0 int32, l1 int32, l2 int32) int32 {
 									v81 = *(*int32)(unsafe.Add(mBase, uint32(v30)))
 									v83 = int32(base.Ui32(v81) >> (uint(int32(8)) % 32))
 									v84 = int32(0)
-									v89 = int32(*(*uint8)(unsafe.Add(mBase, _consts[332])))
+									v89 = int32(*(*uint8)(unsafe.Add(mBase, _c_F_lookupKey[8])))
 									if v89 != int32(1) {
-										v142 = *(*int32)(unsafe.Add(mBase, _consts[333]))
+										v142 = *(*int32)(unsafe.Add(mBase, _c_F_lookupKey[9]))
 										v149 = v142 & int32(16777215)
 									} else {
 										v92 = int32(0)
-										v93 = int32(*(*uint16)(unsafe.Add(mBase, _consts[334])))
-										v95 = *(*int32)(unsafe.Add(mBase, _consts[335]))
+										v93 = int32(*(*uint16)(unsafe.Add(mBase, _c_F_lookupKey[10])))
+										v95 = *(*int32)(unsafe.Add(mBase, _c_F_lookupKey[11]))
 										if v95 == v92 {
 											v106 = v84
 										} else {
@@ -1228,7 +1228,7 @@ func F_lookupKey(m *base.Module, l0 int32, l1 int32, l2 int32) int32 {
 											} else {
 												v127 = base.F64_convert_i32_s(v113 + int32(-5))
 											}
-											v129 = *(*int32)(unsafe.Add(mBase, _consts[336]))
+											v129 = *(*int32)(unsafe.Add(mBase, _c_F_lookupKey[12]))
 											v137 = v113 + base.F64_lt(base.F64_div(base.F64_convert_i32_s(v116), float64(2.147483647e+09)), base.F64_div(float64(1), base.F64_add(base.F64_mul(v127, base.F64_convert_i32_s(v129)), float64(1))))
 										}
 										v149 = v137 + v93<<(uint(int32(8))%32)
@@ -1238,9 +1238,9 @@ func F_lookupKey(m *base.Module, l0 int32, l1 int32, l2 int32) int32 {
 									if v70&int32(12) != 0 {
 										v182 = v30
 									} else {
-										v158 = int32(_a44)
-										v160 = *(*int64)(unsafe.Add(mBase, _consts[331]))
-										*(*int64)(unsafe.Add(mBase, _consts[331])) = v160 + int64(1)
+										v158 = int32(_a_F_lookupKey_0)
+										v160 = *(*int64)(unsafe.Add(mBase, _c_F_lookupKey[7]))
+										*(*int64)(unsafe.Add(mBase, _c_F_lookupKey[7])) = v160 + int64(1)
 										v182 = v30
 									}
 									m.G0 = v9 + int32(16)
@@ -1270,7 +1270,7 @@ func F_lookupKeyReadWithFlags(m *base.Module, l0 int32, l1 int32, l2 int32) int3
 			return v16
 		}
 	} else {
-		F__serverAssert(m, int32(_a551), int32(_a550), int32(138))
+		F__serverAssert(m, int32(_a_F_lookupKeyReadWithFlags_0), int32(_a_F_lookupKeyReadWithFlags_1), int32(138))
 		v14 = m.ExcPending
 		if v14 != 0 {
 			return int32(0)

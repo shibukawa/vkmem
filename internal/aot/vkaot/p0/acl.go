@@ -213,7 +213,7 @@ L1:
 	;
 	v34 = int32(0)
 	*(*int32)(unsafe.Add(mBase, uint32(v9)+12)) = v34
-	v37 = *(*int32)(unsafe.Add(mBase, _consts[6]))
+	v37 = *(*int32)(unsafe.Add(mBase, _c_F_ACLCheckUserCredentials[0]))
 	v39 = v9 + int32(12)
 	v48 = *(*int32)(unsafe.Add(mBase, uint32(v37)))
 	v49 = *(*int32)(unsafe.Add(mBase, uint32(v48)))
@@ -533,7 +533,7 @@ L48:
 	goto L49
 L49:
 	;
-	*(*int32)(unsafe.Add(mBase, _consts[9])) = int32(44)
+	*(*int32)(unsafe.Add(mBase, _c_F_ACLCheckUserCredentials[1])) = int32(44)
 	goto L46
 L50:
 	;
@@ -548,7 +548,7 @@ L51:
 	goto L52
 L52:
 	;
-	*(*int32)(unsafe.Add(mBase, _consts[9])) = int32(28)
+	*(*int32)(unsafe.Add(mBase, _c_F_ACLCheckUserCredentials[1])) = int32(28)
 	goto L46
 L53:
 	;
@@ -710,7 +710,7 @@ L75:
 	goto L76
 L76:
 	;
-	*(*int32)(unsafe.Add(mBase, _consts[9])) = int32(28)
+	*(*int32)(unsafe.Add(mBase, _c_F_ACLCheckUserCredentials[1])) = int32(28)
 	goto L46
 }
 func F_ACLCopyUser(m *base.Module, l0 int32, l1 int32) {
@@ -960,7 +960,7 @@ func F_ACLCreateUser(m *base.Module, l0 int32, l1 int32) int32 {
 	var v283 int32
 	_ = v283
 	v3 = int32(0)
-	v11 = *(*int32)(unsafe.Add(mBase, _consts[6]))
+	v11 = *(*int32)(unsafe.Add(mBase, _c_F_ACLCreateUser[0]))
 	v21 = *(*int32)(unsafe.Add(mBase, uint32(v11)))
 	v22 = *(*int32)(unsafe.Add(mBase, uint32(v21)))
 	if l1 == v3 {
@@ -1261,7 +1261,7 @@ L45:
 	}
 L46:
 	;
-	v240 = *(*int32)(unsafe.Add(mBase, _consts[7]))
+	v240 = *(*int32)(unsafe.Add(mBase, _c_F_ACLCreateUser[1]))
 	*(*int32)(unsafe.Add(mBase, uint32(v237))) = v240 | int32(17)
 	v244 = F_listCreate(m)
 	mBase = m.M
@@ -1331,7 +1331,7 @@ L51:
 L52:
 	;
 	v278 = int32(0)
-	v279 = *(*int32)(unsafe.Add(mBase, _consts[6]))
+	v279 = *(*int32)(unsafe.Add(mBase, _c_F_ACLCreateUser[0]))
 	v281 = F_raxInsert(m, v279, l0, l1, v209, v278)
 	mBase = m.M
 	v282 = m.ExcPending
@@ -1904,7 +1904,7 @@ func F_ACLGetCommandCategoryFlagByName(m *base.Module, l0 int32) int64 {
 	var v116 int64
 	_ = v116
 	v2 = int32(0)
-	v8 = *(*int32)(unsafe.Add(mBase, _consts[5]))
+	v8 = *(*int32)(unsafe.Add(mBase, _c_F_ACLGetCommandCategoryFlagByName[0]))
 	v9 = *(*int64)(unsafe.Add(mBase, uint32(v8)+8))
 	if base.B2i32(v9 == int64(0)) == v2 {
 		goto L1
@@ -2244,7 +2244,7 @@ func F_ACLGetUserByName(m *base.Module, l0 int32, l1 int32) int32 {
 	v6 = v4 - int32(16)
 	m.G0 = v6
 	*(*int32)(unsafe.Add(mBase, uint32(v6)+12)) = v3
-	v11 = *(*int32)(unsafe.Add(mBase, _consts[6]))
+	v11 = *(*int32)(unsafe.Add(mBase, _c_F_ACLGetUserByName[0]))
 	v13 = v6 + int32(12)
 	v22 = *(*int32)(unsafe.Add(mBase, uint32(v11)))
 	v23 = *(*int32)(unsafe.Add(mBase, uint32(v22)))
@@ -2910,7 +2910,7 @@ func F_ACLModuleHasCommandRules(m *base.Module, l0 int32, l1 int32) int32 {
 	v13 = v11 - int32(320)
 	m.G0 = v13
 	v17 = v13 + int32(16)
-	v19 = *(*int32)(unsafe.Add(mBase, _consts[6]))
+	v19 = *(*int32)(unsafe.Add(mBase, _c_F_ACLModuleHasCommandRules[0]))
 	*(*int32)(unsafe.Add(mBase, uint32(v17)+4)) = v19
 	*(*int32)(unsafe.Add(mBase, uint32(v17))) = int32(2)
 	*(*int32)(unsafe.Add(mBase, uint32(v17)+20)) = int32(128)
@@ -2924,7 +2924,7 @@ func F_ACLModuleHasCommandRules(m *base.Module, l0 int32, l1 int32) int32 {
 L1:
 	;
 	v40 = int32(0)
-	v42 = F_raxSeek(m, v13+int32(16), int32(_a4), v40, v40)
+	v42 = F_raxSeek(m, v13+int32(16), int32(_a_F_ACLModuleHasCommandRules_0), v40, v40)
 	mBase = m.M
 	v45 = m.ExcPending
 	if v45 != 0 {
@@ -3168,7 +3168,7 @@ L34:
 	}
 L35:
 	;
-	v157 = *(*int32)(unsafe.Add(mBase, _consts[8]))
+	v157 = *(*int32)(unsafe.Add(mBase, _c_F_ACLModuleHasCommandRules[1]))
 	v158 = F_lookupCommandBySdsLogic(m, v157, v154)
 	mBase = m.M
 	v159 = m.ExcPending
@@ -3254,7 +3254,7 @@ L45:
 	}
 L46:
 	;
-	v178 = *(*int32)(unsafe.Add(mBase, _consts[8]))
+	v178 = *(*int32)(unsafe.Add(mBase, _c_F_ACLModuleHasCommandRules[1]))
 	v179 = F_lookupCommandBySdsLogic(m, v178, v175)
 	mBase = m.M
 	v180 = m.ExcPending
@@ -3515,7 +3515,7 @@ func F_ACLRecomputeCommandBitsFromCommandRulesAllUsers(m *base.Module) {
 	v10 = v8 - int32(320)
 	m.G0 = v10
 	v13 = v10 + int32(16)
-	v15 = *(*int32)(unsafe.Add(mBase, _consts[6]))
+	v15 = *(*int32)(unsafe.Add(mBase, _c_F_ACLRecomputeCommandBitsFromCommandRulesAllUsers[0]))
 	*(*int32)(unsafe.Add(mBase, uint32(v13)+4)) = v15
 	*(*int32)(unsafe.Add(mBase, uint32(v13))) = int32(2)
 	*(*int32)(unsafe.Add(mBase, uint32(v13)+20)) = int32(128)
@@ -3529,7 +3529,7 @@ func F_ACLRecomputeCommandBitsFromCommandRulesAllUsers(m *base.Module) {
 L1:
 	;
 	v36 = int32(0)
-	v38 = F_raxSeek(m, v10+int32(16), int32(_a4), v36, v36)
+	v38 = F_raxSeek(m, v10+int32(16), int32(_a_F_ACLRecomputeCommandBitsFromCommandRulesAllUsers_0), v36, v36)
 	mBase = m.M
 	v39 = m.ExcPending
 	if v39 != 0 {
@@ -3552,7 +3552,7 @@ L3:
 	}
 L4:
 	;
-	F__serverAssert(m, int32(_a5), int32(_a6), int32(697))
+	F__serverAssert(m, int32(_a_F_ACLRecomputeCommandBitsFromCommandRulesAllUsers_1), int32(_a_F_ACLRecomputeCommandBitsFromCommandRulesAllUsers_2), int32(697))
 	mBase = m.M
 	v221 = m.ExcPending
 	if v221 != 0 {
@@ -3562,7 +3562,7 @@ L4:
 	}
 L5:
 	;
-	F__serverAssert(m, int32(_a7), int32(_a6), int32(704))
+	F__serverAssert(m, int32(_a_F_ACLRecomputeCommandBitsFromCommandRulesAllUsers_3), int32(_a_F_ACLRecomputeCommandBitsFromCommandRulesAllUsers_2), int32(704))
 	mBase = m.M
 	v215 = m.ExcPending
 	if v215 != 0 {
@@ -3684,7 +3684,7 @@ L21:
 	}
 L22:
 	;
-	v111 = F_ACLSetSelector(m, v84, int32(_a8), int32(-1))
+	v111 = F_ACLSetSelector(m, v84, int32(_a_F_ACLRecomputeCommandBitsFromCommandRulesAllUsers_4), int32(-1))
 	mBase = m.M
 	v112 = m.ExcPending
 	if v112 != 0 {
@@ -3694,7 +3694,7 @@ L22:
 	}
 L23:
 	;
-	v99 = F_ACLSetSelector(m, v84, int32(_a9), int32(-1))
+	v99 = F_ACLSetSelector(m, v84, int32(_a_F_ACLRecomputeCommandBitsFromCommandRulesAllUsers_5), int32(-1))
 	mBase = m.M
 	v100 = m.ExcPending
 	if v100 != 0 {
@@ -3711,7 +3711,7 @@ L24:
 	}
 L25:
 	;
-	F__serverAssert(m, int32(_a7), int32(_a6), int32(701))
+	F__serverAssert(m, int32(_a_F_ACLRecomputeCommandBitsFromCommandRulesAllUsers_3), int32(_a_F_ACLRecomputeCommandBitsFromCommandRulesAllUsers_2), int32(701))
 	mBase = m.M
 	v107 = m.ExcPending
 	if v107 != 0 {
@@ -3826,7 +3826,7 @@ L40:
 	}
 L41:
 	;
-	F__serverAssert(m, int32(_a7), int32(_a6), int32(710))
+	F__serverAssert(m, int32(_a_F_ACLRecomputeCommandBitsFromCommandRulesAllUsers_3), int32(_a_F_ACLRecomputeCommandBitsFromCommandRulesAllUsers_2), int32(710))
 	mBase = m.M
 	v157 = m.ExcPending
 	if v157 != 0 {
@@ -4542,7 +4542,7 @@ L2:
 	}
 L3:
 	;
-	F__serverAssert(m, int32(_a49), int32(_a6), int32(1863))
+	F__serverAssert(m, int32(_a_F_ACLSelectorCheckCmd_0), int32(_a_F_ACLSelectorCheckCmd_1), int32(1863))
 	mBase = m.M
 	v554 = m.ExcPending
 	if v554 != 0 {
@@ -4679,7 +4679,7 @@ L19:
 	}
 L20:
 	;
-	v70 = int64(*(*int32)(unsafe.Add(mBase, _consts[10])))
+	v70 = int64(*(*int32)(unsafe.Add(mBase, _c_F_ACLSelectorCheckCmd[0])))
 	if v70 <= v66 {
 		goto L19
 	} else {
@@ -4901,7 +4901,7 @@ L55:
 	goto L4
 L56:
 	;
-	v271 = *(*int32)(unsafe.Add(mBase, _consts[10]))
+	v271 = *(*int32)(unsafe.Add(mBase, _c_F_ACLSelectorCheckCmd[0]))
 	if v271 <= l6 {
 		goto L55
 	} else {
@@ -4997,7 +4997,7 @@ L71:
 	}
 L72:
 	;
-	v311 = *(*int32)(unsafe.Add(mBase, _consts[10]))
+	v311 = *(*int32)(unsafe.Add(mBase, _c_F_ACLSelectorCheckCmd[0]))
 	if v311 < int32(1) {
 		goto L2
 	} else {
@@ -5093,7 +5093,7 @@ L87:
 	goto L80
 L88:
 	;
-	v361 = *(*int32)(unsafe.Add(mBase, _consts[10]))
+	v361 = *(*int32)(unsafe.Add(mBase, _c_F_ACLSelectorCheckCmd[0]))
 	v362 = v361
 	goto L76
 L89:
@@ -5252,7 +5252,7 @@ L111:
 	goto L4
 L112:
 	;
-	v501 = *(*int32)(unsafe.Add(mBase, _consts[10]))
+	v501 = *(*int32)(unsafe.Add(mBase, _c_F_ACLSelectorCheckCmd[0]))
 	if v501 <= l6 {
 		goto L111
 	} else {
@@ -5961,7 +5961,7 @@ L214:
 L215:
 	;
 	v1027 = int32(0)
-	v1029 = *(*int32)(unsafe.Add(mBase, _consts[11]))
+	v1029 = *(*int32)(unsafe.Add(mBase, _c_F_ACLSelectorCheckCmd[1]))
 	if v1029 == v1027 {
 		v1050 = v1027
 		goto L214
@@ -5971,7 +5971,7 @@ L215:
 L216:
 	;
 	v1032 = *(*int32)(unsafe.Add(mBase, uint32(l1)+48))
-	v1034 = int32(_a50)
+	v1034 = int32(_a_F_ACLSelectorCheckCmd_2)
 	v1037 = v1029
 	goto L217
 L217:
@@ -6730,7 +6730,7 @@ func F_ACLSetSelectorCategory(m *base.Module, l0 int32, l1 int32, l2 int32) int3
 	_ = v138
 	v4 = int32(0)
 	v11 = int32(-1)
-	v13 = *(*int32)(unsafe.Add(mBase, _consts[5]))
+	v13 = *(*int32)(unsafe.Add(mBase, _c_F_ACLSetSelectorCategory[0]))
 	v14 = *(*int64)(unsafe.Add(mBase, uint32(v13)+8))
 	if v14 == int64(0) {
 		v138 = v11
@@ -6975,7 +6975,7 @@ L33:
 	return int32(0)
 L34:
 	;
-	v130 = *(*int32)(unsafe.Add(mBase, _consts[8]))
+	v130 = *(*int32)(unsafe.Add(mBase, _c_F_ACLSetSelectorCategory[1]))
 	F_ACLSetSelectorCommandBitsForCategory(m, v130, l0, v122, l2)
 	mBase = m.M
 	v132 = m.ExcPending
@@ -7702,7 +7702,7 @@ L22:
 	goto L21
 L23:
 	;
-	F__serverAssert(m, int32(_a17), int32(_a6), int32(1484))
+	F__serverAssert(m, int32(_a_F_ACLSetUser_0), int32(_a_F_ACLSetUser_1), int32(1484))
 	mBase = m.M
 	v747 = m.ExcPending
 	if v747 != 0 {
@@ -7712,7 +7712,7 @@ L23:
 	}
 L24:
 	;
-	F__serverAssert(m, int32(_a18), int32(_a6), int32(1483))
+	F__serverAssert(m, int32(_a_F_ACLSetUser_2), int32(_a_F_ACLSetUser_1), int32(1483))
 	mBase = m.M
 	v741 = m.ExcPending
 	if v741 != 0 {
@@ -7722,7 +7722,7 @@ L24:
 	}
 L25:
 	;
-	F__serverAssert(m, int32(_a19), int32(_a6), int32(1482))
+	F__serverAssert(m, int32(_a_F_ACLSetUser_3), int32(_a_F_ACLSetUser_1), int32(1482))
 	mBase = m.M
 	v735 = m.ExcPending
 	if v735 != 0 {
@@ -7732,7 +7732,7 @@ L25:
 	}
 L26:
 	;
-	F__serverAssert(m, int32(_a20), int32(_a6), int32(1480))
+	F__serverAssert(m, int32(_a_F_ACLSetUser_4), int32(_a_F_ACLSetUser_1), int32(1480))
 	mBase = m.M
 	v729 = m.ExcPending
 	if v729 != 0 {
@@ -7742,7 +7742,7 @@ L26:
 	}
 L27:
 	;
-	F__serverAssert(m, int32(_a21), int32(_a6), int32(1478))
+	F__serverAssert(m, int32(_a_F_ACLSetUser_5), int32(_a_F_ACLSetUser_1), int32(1478))
 	mBase = m.M
 	v723 = m.ExcPending
 	if v723 != 0 {
@@ -7752,7 +7752,7 @@ L27:
 	}
 L28:
 	;
-	F__serverAssert(m, int32(_a22), int32(_a6), int32(1477))
+	F__serverAssert(m, int32(_a_F_ACLSetUser_6), int32(_a_F_ACLSetUser_1), int32(1477))
 	mBase = m.M
 	v717 = m.ExcPending
 	if v717 != 0 {
@@ -7762,7 +7762,7 @@ L28:
 	}
 L29:
 	;
-	F__serverAssert(m, int32(_a23), int32(_a6), int32(1476))
+	F__serverAssert(m, int32(_a_F_ACLSetUser_7), int32(_a_F_ACLSetUser_1), int32(1476))
 	mBase = m.M
 	v711 = m.ExcPending
 	if v711 != 0 {
@@ -7772,7 +7772,7 @@ L29:
 	}
 L30:
 	;
-	F__serverAssert(m, int32(_a24), int32(_a6), int32(1470))
+	F__serverAssert(m, int32(_a_F_ACLSetUser_8), int32(_a_F_ACLSetUser_1), int32(1470))
 	mBase = m.M
 	v705 = m.ExcPending
 	if v705 != 0 {
@@ -7786,7 +7786,7 @@ L31:
 	return v696
 L32:
 	;
-	v80 = int32(_a25)
+	v80 = int32(_a_F_ACLSetUser_9)
 	v83 = int32(*(*uint8)(unsafe.Add(mBase, uint32(l1))))
 	if v83 != 0 {
 		goto L37
@@ -7799,7 +7799,7 @@ L33:
 	goto L31
 L34:
 	;
-	v125 = int32(_a26)
+	v125 = int32(_a_F_ACLSetUser_10)
 	v128 = int32(*(*uint8)(unsafe.Add(mBase, uint32(l1))))
 	if v128 != 0 {
 		goto L51
@@ -7901,7 +7901,7 @@ L47:
 	goto L33
 L48:
 	;
-	v170 = int32(_a27)
+	v170 = int32(_a_F_ACLSetUser_11)
 	v173 = int32(*(*uint8)(unsafe.Add(mBase, uint32(l1))))
 	if v173 != 0 {
 		goto L64
@@ -8091,7 +8091,7 @@ L73:
 	goto L68
 L74:
 	;
-	v211 = int32(_a28)
+	v211 = int32(_a_F_ACLSetUser_12)
 	v214 = int32(*(*uint8)(unsafe.Add(mBase, uint32(l1))))
 	if v214 != 0 {
 		goto L77
@@ -8188,7 +8188,7 @@ L86:
 	goto L81
 L87:
 	;
-	v252 = int32(_a29)
+	v252 = int32(_a_F_ACLSetUser_13)
 	v255 = int32(*(*uint8)(unsafe.Add(mBase, uint32(l1))))
 	if v255 != 0 {
 		goto L91
@@ -8197,7 +8197,7 @@ L87:
 	}
 L88:
 	;
-	v298 = int32(_a30)
+	v298 = int32(_a_F_ACLSetUser_14)
 	v301 = int32(*(*uint8)(unsafe.Add(mBase, uint32(l1))))
 	if v301 != 0 {
 		goto L106
@@ -8431,7 +8431,7 @@ L117:
 	goto L33
 L118:
 	;
-	v494 = int32(_a31)
+	v494 = int32(_a_F_ACLSetUser_15)
 	v497 = int32(*(*uint8)(unsafe.Add(mBase, uint32(l1))))
 	if v497 != 0 {
 		goto L168
@@ -8602,7 +8602,7 @@ L141:
 	goto L136
 L142:
 	;
-	*(*int32)(unsafe.Add(mBase, _consts[9])) = int32(9)
+	*(*int32)(unsafe.Add(mBase, _c_F_ACLSetUser[0])) = int32(9)
 	v696 = int32(-1)
 	goto L31
 L143:
@@ -8664,7 +8664,7 @@ L152:
 	goto L145
 L153:
 	;
-	*(*int32)(unsafe.Add(mBase, _consts[9])) = int32(9)
+	*(*int32)(unsafe.Add(mBase, _c_F_ACLSetUser[0])) = int32(9)
 	v696 = int32(-1)
 	goto L31
 L154:
@@ -8704,7 +8704,7 @@ L158:
 	goto L159
 L159:
 	;
-	*(*int32)(unsafe.Add(mBase, _consts[9])) = int32(43)
+	*(*int32)(unsafe.Add(mBase, _c_F_ACLSetUser[0])) = int32(43)
 	v696 = int32(-1)
 	goto L31
 L160:
@@ -8744,7 +8744,7 @@ L164:
 	goto L33
 L165:
 	;
-	v594 = int32(_a32)
+	v594 = int32(_a_F_ACLSetUser_16)
 	v597 = int32(*(*uint8)(unsafe.Add(mBase, uint32(l1))))
 	if v597 != 0 {
 		goto L198
@@ -9041,7 +9041,7 @@ L207:
 	goto L202
 L208:
 	;
-	v635 = F_ACLSetUser(m, l0, int32(_a30), int32(-1))
+	v635 = F_ACLSetUser(m, l0, int32(_a_F_ACLSetUser_14), int32(-1))
 	mBase = m.M
 	v636 = m.ExcPending
 	if v636 != 0 {
@@ -9058,7 +9058,7 @@ L209:
 	}
 L210:
 	;
-	v639 = F_ACLSetUser(m, l0, int32(_a33), int32(-1))
+	v639 = F_ACLSetUser(m, l0, int32(_a_F_ACLSetUser_17), int32(-1))
 	mBase = m.M
 	v640 = m.ExcPending
 	if v640 != 0 {
@@ -9075,7 +9075,7 @@ L211:
 	}
 L212:
 	;
-	v643 = F_ACLSetUser(m, l0, int32(_a34), int32(-1))
+	v643 = F_ACLSetUser(m, l0, int32(_a_F_ACLSetUser_18), int32(-1))
 	mBase = m.M
 	v644 = m.ExcPending
 	if v644 != 0 {
@@ -9092,7 +9092,7 @@ L213:
 	}
 L214:
 	;
-	v646 = int32(*(*uint8)(unsafe.Add(mBase, _consts[7])))
+	v646 = int32(*(*uint8)(unsafe.Add(mBase, _c_F_ACLSetUser[1])))
 	if v646&int32(8) == int32(0) {
 		goto L215
 	} else {
@@ -9100,7 +9100,7 @@ L214:
 	}
 L215:
 	;
-	v657 = F_ACLSetUser(m, l0, int32(_a35), int32(-1))
+	v657 = F_ACLSetUser(m, l0, int32(_a_F_ACLSetUser_19), int32(-1))
 	mBase = m.M
 	v658 = m.ExcPending
 	if v658 != 0 {
@@ -9110,7 +9110,7 @@ L215:
 	}
 L216:
 	;
-	v653 = F_ACLSetUser(m, l0, int32(_a36), int32(-1))
+	v653 = F_ACLSetUser(m, l0, int32(_a_F_ACLSetUser_20), int32(-1))
 	mBase = m.M
 	v654 = m.ExcPending
 	if v654 != 0 {
@@ -9137,7 +9137,7 @@ L219:
 	}
 L220:
 	;
-	v661 = F_ACLSetUser(m, l0, int32(_a26), int32(-1))
+	v661 = F_ACLSetUser(m, l0, int32(_a_F_ACLSetUser_10), int32(-1))
 	mBase = m.M
 	v662 = m.ExcPending
 	if v662 != 0 {
@@ -9154,7 +9154,7 @@ L221:
 	}
 L222:
 	;
-	v665 = F_ACLSetUser(m, l0, int32(_a31), int32(-1))
+	v665 = F_ACLSetUser(m, l0, int32(_a_F_ACLSetUser_15), int32(-1))
 	mBase = m.M
 	v666 = m.ExcPending
 	if v666 != 0 {
@@ -9171,7 +9171,7 @@ L223:
 	}
 L224:
 	;
-	v669 = F_ACLSetUser(m, l0, int32(_a8), int32(-1))
+	v669 = F_ACLSetUser(m, l0, int32(_a_F_ACLSetUser_21), int32(-1))
 	mBase = m.M
 	v670 = m.ExcPending
 	if v670 != 0 {
@@ -9188,7 +9188,7 @@ L225:
 	}
 L226:
 	;
-	F__serverAssert(m, int32(_a37), int32(_a6), int32(1485))
+	F__serverAssert(m, int32(_a_F_ACLSetUser_22), int32(_a_F_ACLSetUser_1), int32(1485))
 	mBase = m.M
 	v677 = m.ExcPending
 	if v677 != 0 {
@@ -9288,30 +9288,30 @@ func F_ACLSetUserStringError(m *base.Module) int32 {
 	_ = v4
 	var v24 int32
 	_ = v24
-	v4 = *(*int32)(unsafe.Add(mBase, _consts[9]))
+	v4 = *(*int32)(unsafe.Add(mBase, _c_F_ACLSetUserStringError[0]))
 	switch v4 + int32(-7) {
 	case 0:
-		return int32(_a38)
+		return int32(_a_F_ACLSetUserStringError_0)
 	default:
-		v24 = int32(_a39)
+		v24 = int32(_a_F_ACLSetUserStringError_1)
 		return v24
 	case 2:
-		return int32(_a40)
+		return int32(_a_F_ACLSetUserStringError_2)
 	case 5:
-		return int32(_a41)
+		return int32(_a_F_ACLSetUserStringError_3)
 	case 13:
-		return int32(_a42)
+		return int32(_a_F_ACLSetUserStringError_4)
 	case 21:
-		return int32(_a43)
+		return int32(_a_F_ACLSetUserStringError_5)
 	case 24:
-		return int32(_a44)
+		return int32(_a_F_ACLSetUserStringError_6)
 	case 36:
-		return int32(_a45)
+		return int32(_a_F_ACLSetUserStringError_7)
 	case 37:
-		v24 = int32(_a46)
+		v24 = int32(_a_F_ACLSetUserStringError_8)
 		return v24
 	case 61:
-		return int32(_a47)
+		return int32(_a_F_ACLSetUserStringError_9)
 	}
 }
 func F_ACLUpdateCommandRules(m *base.Module, l0 int32, l1 int32, l2 int32) {
@@ -10539,7 +10539,7 @@ L145:
 	goto L140
 L146:
 	;
-	v506 = F_sdscat(m, v482, int32(_a10))
+	v506 = F_sdscat(m, v482, int32(_a_F_ACLUpdateCommandRules_0))
 	mBase = m.M
 	v507 = m.ExcPending
 	if v507 != 0 {
@@ -10554,11 +10554,11 @@ L147:
 	goto L139
 L148:
 	;
-	v514 = int32(_a11)
+	v514 = int32(_a_F_ACLUpdateCommandRules_1)
 	goto L150
 L149:
 	;
-	v514 = int32(_a12)
+	v514 = int32(_a_F_ACLUpdateCommandRules_2)
 	goto L150
 L150:
 	;

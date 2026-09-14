@@ -311,8 +311,8 @@ L15:
 	v54 = int32(0)
 	F___lock(m, int32(9116960))
 	mBase = m.M
-	v61 = *(*int32)(unsafe.Add(mBase, _consts[303]))
-	v63 = *(*int32)(unsafe.Add(mBase, _consts[304]))
+	v61 = *(*int32)(unsafe.Add(mBase, _c_F_hashtableFairRandomEntry[0]))
+	v63 = *(*int32)(unsafe.Add(mBase, _c_F_hashtableFairRandomEntry[1]))
 	if v63 != 0 {
 		goto L19
 	} else {
@@ -341,11 +341,11 @@ L18:
 L19:
 	;
 	v67 = int32(0)
-	v68 = *(*int32)(unsafe.Add(mBase, _consts[305]))
+	v68 = *(*int32)(unsafe.Add(mBase, _c_F_hashtableFairRandomEntry[2]))
 	v69 = int32(2)
 	v71 = v61 + v68<<(uint(v69)%32)
 	v72 = *(*int32)(unsafe.Add(mBase, uint32(v71)))
-	v74 = *(*int32)(unsafe.Add(mBase, _consts[306]))
+	v74 = *(*int32)(unsafe.Add(mBase, _c_F_hashtableFairRandomEntry[3]))
 	v78 = *(*int32)(unsafe.Add(mBase, uint32(v61+v74<<(uint(v69)%32))))
 	v79 = v72 + v78
 	*(*int32)(unsafe.Add(mBase, uint32(v71))) = v79
@@ -373,7 +373,7 @@ L22:
 	goto L23
 L23:
 	;
-	*(*int32)(unsafe.Add(mBase, _consts[306])) = v86
+	*(*int32)(unsafe.Add(mBase, _c_F_hashtableFairRandomEntry[3])) = v86
 	v88 = int32(0)
 	v91 = v68 + int32(1)
 	if v91 == v63 {
@@ -391,7 +391,7 @@ L25:
 	goto L26
 L26:
 	;
-	*(*int32)(unsafe.Add(mBase, _consts[305])) = v93
+	*(*int32)(unsafe.Add(mBase, _c_F_hashtableFairRandomEntry[2])) = v93
 	v98 = int32(base.Ui32(v79) >> (uint(int32(1)) % 32))
 	goto L18
 L27:
@@ -426,7 +426,7 @@ L31:
 	}
 L32:
 	;
-	v126 = *(*int32)(unsafe.Add(mBase, _consts[340]))
+	v126 = *(*int32)(unsafe.Add(mBase, _c_F_hashtableFairRandomEntry[4]))
 	if v126 != 0 {
 		v130 = v117
 		goto L30
@@ -472,8 +472,8 @@ L39:
 	v135 = int32(0)
 	F___lock(m, int32(9116960))
 	mBase = m.M
-	v142 = *(*int32)(unsafe.Add(mBase, _consts[303]))
-	v144 = *(*int32)(unsafe.Add(mBase, _consts[304]))
+	v142 = *(*int32)(unsafe.Add(mBase, _c_F_hashtableFairRandomEntry[0]))
+	v144 = *(*int32)(unsafe.Add(mBase, _c_F_hashtableFairRandomEntry[1]))
 	if v144 != 0 {
 		goto L42
 	} else {
@@ -493,11 +493,11 @@ L41:
 L42:
 	;
 	v148 = int32(0)
-	v149 = *(*int32)(unsafe.Add(mBase, _consts[305]))
+	v149 = *(*int32)(unsafe.Add(mBase, _c_F_hashtableFairRandomEntry[2]))
 	v150 = int32(2)
 	v152 = v142 + v149<<(uint(v150)%32)
 	v153 = *(*int32)(unsafe.Add(mBase, uint32(v152)))
-	v155 = *(*int32)(unsafe.Add(mBase, _consts[306]))
+	v155 = *(*int32)(unsafe.Add(mBase, _c_F_hashtableFairRandomEntry[3]))
 	v159 = *(*int32)(unsafe.Add(mBase, uint32(v142+v155<<(uint(v150)%32))))
 	v160 = v153 + v159
 	*(*int32)(unsafe.Add(mBase, uint32(v152))) = v160
@@ -525,7 +525,7 @@ L45:
 	goto L46
 L46:
 	;
-	*(*int32)(unsafe.Add(mBase, _consts[306])) = v167
+	*(*int32)(unsafe.Add(mBase, _c_F_hashtableFairRandomEntry[3])) = v167
 	v169 = int32(0)
 	v172 = v149 + int32(1)
 	if v172 == v144 {
@@ -543,7 +543,7 @@ L48:
 	goto L49
 L49:
 	;
-	*(*int32)(unsafe.Add(mBase, _consts[305])) = v174
+	*(*int32)(unsafe.Add(mBase, _c_F_hashtableFairRandomEntry[2])) = v174
 	v179 = int32(base.Ui32(v160) >> (uint(int32(1)) % 32))
 	goto L41
 }
@@ -668,16 +668,16 @@ func F_hashtableGetStatsMsg(m *base.Module, l0 int32, l1 int32, l2 int32, l3 int
 	}
 L1:
 	;
-	v19 = int32(_a660)
+	v19 = int32(_a_F_hashtableGetStatsMsg_0)
 	goto L3
 L2:
 	;
-	v19 = int32(_a661)
+	v19 = int32(_a_F_hashtableGetStatsMsg_1)
 	goto L3
 L3:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v11)+68)) = v19
-	v24 = F_snprintf(m, l0, l1, int32(_a662), v11+int32(64))
+	v24 = F_snprintf(m, l0, l1, int32(_a_F_hashtableGetStatsMsg_2), v11+int32(64))
 	mBase = m.M
 	v27 = m.ExcPending
 	if v27 != 0 {
@@ -708,7 +708,7 @@ L7:
 	;
 	v29 = *(*int32)(unsafe.Add(mBase, uint32(l2)+4))
 	*(*int32)(unsafe.Add(mBase, uint32(v11)+48)) = v29
-	v36 = F_snprintf(m, l0+v24, l1-v24, int32(_a663), v11+int32(48))
+	v36 = F_snprintf(m, l0+v24, l1-v24, int32(_a_F_hashtableGetStatsMsg_3), v11+int32(48))
 	mBase = m.M
 	v37 = m.ExcPending
 	if v37 != 0 {
@@ -739,7 +739,7 @@ L10:
 	*(*int32)(unsafe.Add(mBase, uint32(v11)+24)) = v42
 	*(*int32)(unsafe.Add(mBase, uint32(v11)+20)) = v45
 	*(*int32)(unsafe.Add(mBase, uint32(v11)+16)) = v47
-	v60 = F_snprintf(m, l0+v39, l1-v39, int32(_a664), v11+int32(16))
+	v60 = F_snprintf(m, l0+v39, l1-v39, int32(_a_F_hashtableGetStatsMsg_4), v11+int32(16))
 	mBase = m.M
 	v61 = m.ExcPending
 	if v61 != 0 {
@@ -788,7 +788,7 @@ L16:
 	*(*int32)(unsafe.Add(mBase, uint32(v11))) = v69
 	*(*int32)(unsafe.Add(mBase, uint32(v11)+4)) = v76
 	*(*float64)(unsafe.Add(mBase, uint32(v11)+8)) = base.F64_promote_f32(base.F32_mul(base.F32_div(base.F32_convert_i32_u(v76), base.F32_convert_i32_u(v80)), float32(100)))
-	v93 = F_snprintf(m, l0+v67, l1-v67, int32(_a665), v11)
+	v93 = F_snprintf(m, l0+v67, l1-v67, int32(_a_F_hashtableGetStatsMsg_5), v11)
 	mBase = m.M
 	v94 = m.ExcPending
 	if v94 != 0 {
@@ -1294,10 +1294,10 @@ L6:
 	;
 	v38 = v18 + int32(12)
 	v39 = int32(4)
-	v40 = int32(_a657)
-	v48 = *(*int64)(unsafe.Add(mBase, _consts[341]))
+	v40 = int32(_a_F_hashtableReplaceReallocatedEntry_0)
+	v48 = *(*int64)(unsafe.Add(mBase, _c_F_hashtableReplaceReallocatedEntry[0]))
 	v50 = v48 ^ int64(8317987319222330741)
-	v51 = *(*int64)(unsafe.Add(mBase, _consts[342]))
+	v51 = *(*int64)(unsafe.Add(mBase, _c_F_hashtableReplaceReallocatedEntry[1]))
 	v53 = v51 ^ int64(7237128888997146477)
 	v55 = v48 ^ int64(7816392313619706465)
 	v57 = v51 ^ int64(8387220255154660723)
@@ -1729,7 +1729,7 @@ func F_hashtableResumeAutoShrink(m *base.Module, l0 int32) {
 			} else {
 				v22 = int32(12) << (uint(v18) % 32)
 			}
-			v26 = *(*int32)(unsafe.Add(mBase, _consts[340]))
+			v26 = *(*int32)(unsafe.Add(mBase, _c_F_hashtableResumeAutoShrink[0]))
 			if v26 != 0 {
 				v27 = int32(3)
 			} else {
@@ -1916,7 +1916,7 @@ func F_hashtableSdsKeyCompare(m *base.Module, l0 int32, l1 int32) int32 {
 func F_hashtableSetResizePolicy(m *base.Module, l0 int32) {
 	mBase := m.M
 	_ = mBase
-	*(*int32)(unsafe.Add(mBase, _consts[340])) = l0
+	*(*int32)(unsafe.Add(mBase, _c_F_hashtableSetResizePolicy[0])) = l0
 	return
 }
 func F_hashtableTwoPhasePopFindRef(m *base.Module, l0 int32, l1 int32, l2 int32) int32 {
@@ -2131,10 +2131,10 @@ func F_hashtableTwoPhasePopFindRef(m *base.Module, l0 int32, l1 int32, l2 int32)
 		if v19 == int32(0) {
 			v27 = v9 + int32(12)
 			v28 = int32(4)
-			v29 = int32(_a657)
-			v37 = *(*int64)(unsafe.Add(mBase, _consts[341]))
+			v29 = int32(_a_F_hashtableTwoPhasePopFindRef_0)
+			v37 = *(*int64)(unsafe.Add(mBase, _c_F_hashtableTwoPhasePopFindRef[0]))
 			v39 = v37 ^ int64(8317987319222330741)
-			v40 = *(*int64)(unsafe.Add(mBase, _consts[342]))
+			v40 = *(*int64)(unsafe.Add(mBase, _c_F_hashtableTwoPhasePopFindRef[1]))
 			v42 = v40 ^ int64(7237128888997146477)
 			v44 = v37 ^ int64(7816392313619706465)
 			v46 = v40 ^ int64(8387220255154660723)
@@ -2306,7 +2306,7 @@ func F_hashtableTwoPhasePopFindRef(m *base.Module, l0 int32, l1 int32, l2 int32)
 					v216 = v214 + v211
 					*(*uint16)(unsafe.Add(mBase, uint32(l0)+28)) = uint16(v216)
 					if l2 == int32(0) {
-						F__serverAssert(m, int32(_a658), int32(_a659), int32(1839))
+						F__serverAssert(m, int32(_a_F_hashtableTwoPhasePopFindRef_1), int32(_a_F_hashtableTwoPhasePopFindRef_2), int32(1839))
 						mBase = m.M
 						v242 = m.ExcPending
 						if v242 != 0 {
@@ -2360,7 +2360,7 @@ func F_hashtableTwoPhasePopFindRef(m *base.Module, l0 int32, l1 int32, l2 int32)
 						v216 = v214 + v211
 						*(*uint16)(unsafe.Add(mBase, uint32(l0)+28)) = uint16(v216)
 						if l2 == int32(0) {
-							F__serverAssert(m, int32(_a658), int32(_a659), int32(1839))
+							F__serverAssert(m, int32(_a_F_hashtableTwoPhasePopFindRef_1), int32(_a_F_hashtableTwoPhasePopFindRef_2), int32(1839))
 							mBase = m.M
 							v242 = m.ExcPending
 							if v242 != 0 {

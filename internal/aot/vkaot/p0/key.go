@@ -144,7 +144,7 @@ func F_getKeySlot(m *base.Module, l0 int32) int32 {
 	_ = v258
 	var v266 int32
 	_ = v266
-	v5 = *(*int32)(unsafe.Add(mBase, _consts[63]))
+	v5 = *(*int32)(unsafe.Add(mBase, _c_F_getKeySlot[0]))
 	if v5 == int32(0) {
 		goto L1
 	} else {
@@ -152,7 +152,7 @@ func F_getKeySlot(m *base.Module, l0 int32) int32 {
 	}
 L1:
 	;
-	F__serverAssert(m, int32(_a473), int32(_a474), int32(241))
+	F__serverAssert(m, int32(_a_F_getKeySlot_0), int32(_a_F_getKeySlot_1), int32(241))
 	mBase = m.M
 	v266 = m.ExcPending
 	if v266 != 0 {
@@ -162,7 +162,7 @@ L1:
 	}
 L2:
 	;
-	v9 = *(*int32)(unsafe.Add(mBase, _consts[88]))
+	v9 = *(*int32)(unsafe.Add(mBase, _c_F_getKeySlot[1]))
 	if v9 == int32(0) {
 		goto L4
 	} else {
@@ -258,7 +258,7 @@ L14:
 	goto L8
 L15:
 	;
-	v38 = *(*int32)(unsafe.Add(mBase, _consts[122]))
+	v38 = *(*int32)(unsafe.Add(mBase, _c_F_getKeySlot[2]))
 	if v38 != 0 {
 		goto L16
 	} else {
@@ -284,7 +284,7 @@ L16:
 	}
 L17:
 	;
-	v40 = *(*int32)(unsafe.Add(mBase, _consts[88]))
+	v40 = *(*int32)(unsafe.Add(mBase, _c_F_getKeySlot[1]))
 	v41 = *(*int32)(unsafe.Add(mBase, uint32(v40)+292))
 	return v41
 L18:
@@ -322,7 +322,7 @@ L23:
 	goto L18
 L24:
 	;
-	v132 = *(*int32)(unsafe.Add(mBase, _consts[88]))
+	v132 = *(*int32)(unsafe.Add(mBase, _c_F_getKeySlot[1]))
 	v133 = *(*int32)(unsafe.Add(mBase, uint32(v132)+292))
 	if v130 == v133 {
 		v258 = v130
@@ -438,7 +438,7 @@ L44:
 	goto L36
 L45:
 	;
-	F__serverAssertWithInfo(m, v132, int32(0), int32(_a475), int32(_a474), int32(255))
+	F__serverAssertWithInfo(m, v132, int32(0), int32(_a_F_getKeySlot_2), int32(_a_F_getKeySlot_1), int32(255))
 	mBase = m.M
 	v142 = m.ExcPending
 	if v142 != 0 {
@@ -491,7 +491,7 @@ L53:
 	goto L48
 L54:
 	;
-	v233 = *(*int32)(unsafe.Add(mBase, _consts[88]))
+	v233 = *(*int32)(unsafe.Add(mBase, _c_F_getKeySlot[1]))
 	if v233 == int32(0) {
 		v258 = v231
 		goto L3
@@ -658,7 +658,7 @@ L82:
 	goto L76
 L83:
 	;
-	v256 = *(*int32)(unsafe.Add(mBase, _consts[88]))
+	v256 = *(*int32)(unsafe.Add(mBase, _c_F_getKeySlot[1]))
 	*(*int32)(unsafe.Add(mBase, uint32(v256)+292)) = v231
 	v258 = v231
 	goto L3
@@ -862,8 +862,8 @@ func F_lookupKeyByPattern(m *base.Module, l0 int32, l1 int32, l2 int32) int32 {
 			}
 			if v32 != 0 {
 				v39 = v32 + int32(1)
-				v40 = int32(_a1481)
-				v43 = int32(*(*int8)(unsafe.Add(mBase, _consts[1071])))
+				v40 = int32(_a_F_lookupKeyByPattern_0)
+				v43 = int32(*(*int8)(unsafe.Add(mBase, _c_F_lookupKeyByPattern[0])))
 				if v43 != 0 {
 					v44 = int32(0)
 					v45 = F_strchr(m, v39, v43)
@@ -872,28 +872,28 @@ func F_lookupKeyByPattern(m *base.Module, l0 int32, l1 int32, l2 int32) int32 {
 						v65 = v44
 						v68 = v65
 					} else {
-						v48 = int32(*(*uint8)(unsafe.Add(mBase, _consts[1072])))
+						v48 = int32(*(*uint8)(unsafe.Add(mBase, _c_F_lookupKeyByPattern[1])))
 						if v48 != 0 {
 							v49 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v45)+1)))
 							if v49 == int32(0) {
 								v65 = v44
 								v68 = v65
 							} else {
-								v52 = int32(*(*uint8)(unsafe.Add(mBase, _consts[1073])))
+								v52 = int32(*(*uint8)(unsafe.Add(mBase, _c_F_lookupKeyByPattern[2])))
 								if v52 != 0 {
 									v54 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v45)+2)))
 									if v54 == int32(0) {
 										v65 = v44
 										v68 = v65
 									} else {
-										v57 = int32(*(*uint8)(unsafe.Add(mBase, _consts[1074])))
+										v57 = int32(*(*uint8)(unsafe.Add(mBase, _c_F_lookupKeyByPattern[3])))
 										if v57 != 0 {
 											v59 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v45)+3)))
 											if v59 == int32(0) {
 												v65 = v44
 												v68 = v65
 											} else {
-												v62 = int32(*(*uint8)(unsafe.Add(mBase, _consts[1075])))
+												v62 = int32(*(*uint8)(unsafe.Add(mBase, _c_F_lookupKeyByPattern[4])))
 												if v62 != 0 {
 													v64 = F_twoway_strstr(m, v45, v40)
 													mBase = m.M
@@ -1635,8 +1635,8 @@ func F_lookupKeyByPattern(m *base.Module, l0 int32, l1 int32, l2 int32) int32 {
 				}
 				if v32 != 0 {
 					v39 = v32 + int32(1)
-					v40 = int32(_a1481)
-					v43 = int32(*(*int8)(unsafe.Add(mBase, _consts[1071])))
+					v40 = int32(_a_F_lookupKeyByPattern_0)
+					v43 = int32(*(*int8)(unsafe.Add(mBase, _c_F_lookupKeyByPattern[0])))
 					if v43 != 0 {
 						v44 = int32(0)
 						v45 = F_strchr(m, v39, v43)
@@ -1645,28 +1645,28 @@ func F_lookupKeyByPattern(m *base.Module, l0 int32, l1 int32, l2 int32) int32 {
 							v65 = v44
 							v68 = v65
 						} else {
-							v48 = int32(*(*uint8)(unsafe.Add(mBase, _consts[1072])))
+							v48 = int32(*(*uint8)(unsafe.Add(mBase, _c_F_lookupKeyByPattern[1])))
 							if v48 != 0 {
 								v49 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v45)+1)))
 								if v49 == int32(0) {
 									v65 = v44
 									v68 = v65
 								} else {
-									v52 = int32(*(*uint8)(unsafe.Add(mBase, _consts[1073])))
+									v52 = int32(*(*uint8)(unsafe.Add(mBase, _c_F_lookupKeyByPattern[2])))
 									if v52 != 0 {
 										v54 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v45)+2)))
 										if v54 == int32(0) {
 											v65 = v44
 											v68 = v65
 										} else {
-											v57 = int32(*(*uint8)(unsafe.Add(mBase, _consts[1074])))
+											v57 = int32(*(*uint8)(unsafe.Add(mBase, _c_F_lookupKeyByPattern[3])))
 											if v57 != 0 {
 												v59 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v45)+3)))
 												if v59 == int32(0) {
 													v65 = v44
 													v68 = v65
 												} else {
-													v62 = int32(*(*uint8)(unsafe.Add(mBase, _consts[1075])))
+													v62 = int32(*(*uint8)(unsafe.Add(mBase, _c_F_lookupKeyByPattern[4])))
 													if v62 != 0 {
 														v64 = F_twoway_strstr(m, v45, v40)
 														mBase = m.M
@@ -2484,9 +2484,9 @@ func F_signalKeyAsReadyLogic(m *base.Module, l0 int32, l1 int32, l2 int32, l3 in
 			return
 		} else {
 			v23 = int32(2)
-			v27 = *(*int32)(unsafe.Add(mBase, uint32(v11<<(uint(v23)%32))+uint32(_consts[65])))
-			v31 = *(*int32)(unsafe.Add(mBase, uint32(v27<<(uint(v23)%32))+uint32(_consts[66])))
-			v33 = *(*int32)(unsafe.Add(mBase, _consts[67]))
+			v27 = *(*int32)(unsafe.Add(mBase, uint32(v11<<(uint(v23)%32))+uint32(_c_F_signalKeyAsReadyLogic[0])))
+			v31 = *(*int32)(unsafe.Add(mBase, uint32(v27<<(uint(v23)%32))+uint32(_c_F_signalKeyAsReadyLogic[1])))
+			v33 = *(*int32)(unsafe.Add(mBase, _c_F_signalKeyAsReadyLogic[2]))
 			if v31|v33 == int32(0) {
 				m.G0 = v8 + int32(16)
 				return
@@ -2534,7 +2534,7 @@ func F_signalKeyAsReadyLogic(m *base.Module, l0 int32, l1 int32, l2 int32, l3 in
 											if v62 != 0 {
 												return
 											} else {
-												v64 = *(*int32)(unsafe.Add(mBase, _consts[68]))
+												v64 = *(*int32)(unsafe.Add(mBase, _c_F_signalKeyAsReadyLogic[3]))
 												v65 = F_listAddNodeTail(m, v64, v57)
 												mBase = m.M
 												v66 = m.ExcPending
@@ -2591,7 +2591,7 @@ func F_signalKeyAsReadyLogic(m *base.Module, l0 int32, l1 int32, l2 int32, l3 in
 											if v62 != 0 {
 												return
 											} else {
-												v64 = *(*int32)(unsafe.Add(mBase, _consts[68]))
+												v64 = *(*int32)(unsafe.Add(mBase, _c_F_signalKeyAsReadyLogic[3]))
 												v65 = F_listAddNodeTail(m, v64, v57)
 												mBase = m.M
 												v66 = m.ExcPending

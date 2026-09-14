@@ -100,7 +100,7 @@ func F_dbAddInternal(m *base.Module, l0 int32, l1 int32, l2 int32, l3 int32) {
 	_ = v112
 	v7 = F_objectGetVal(m, l1)
 	mBase = m.M
-	v9 = *(*int32)(unsafe.Add(mBase, _consts[110]))
+	v9 = *(*int32)(unsafe.Add(mBase, _c_F_dbAddInternal[0]))
 	if v9 != 0 {
 		goto L2
 	} else {
@@ -136,7 +136,7 @@ L5:
 	goto L1
 L6:
 	;
-	F__serverAssertWithInfo(m, int32(0), l1, int32(_a559), int32(_a560), int32(212))
+	F__serverAssertWithInfo(m, int32(0), l1, int32(_a_F_dbAddInternal_1), int32(_a_F_dbAddInternal_2), int32(212))
 	mBase = m.M
 	v112 = m.ExcPending
 	if v112 != 0 {
@@ -159,7 +159,7 @@ L7:
 	}
 L8:
 	;
-	v26 = *(*int32)(unsafe.Add(mBase, _consts[113]))
+	v26 = *(*int32)(unsafe.Add(mBase, _c_F_dbAddInternal[1]))
 	if v26 == int32(0) {
 		goto L7
 	} else {
@@ -266,7 +266,7 @@ L20:
 	}
 L21:
 	;
-	v73 = *(*int32)(unsafe.Add(mBase, _consts[110]))
+	v73 = *(*int32)(unsafe.Add(mBase, _c_F_dbAddInternal[0]))
 	if v73 != 0 {
 		goto L25
 	} else {
@@ -348,7 +348,7 @@ L32:
 L33:
 	;
 	v103 = *(*int32)(unsafe.Add(mBase, uint32(l0)+28))
-	F_notifyKeyspaceEvent(m, int32(16384), int32(_a558), l1, v103)
+	F_notifyKeyspaceEvent(m, int32(16384), int32(_a_F_dbAddInternal_0), l1, v103)
 	mBase = m.M
 	v105 = m.ExcPending
 	if v105 != 0 {
@@ -389,11 +389,11 @@ func F_dbDelete(m *base.Module, l0 int32, l1 int32) int32 {
 	_ = v17
 	var v18 int32
 	_ = v18
-	v5 = int32(_a20)
-	v6 = *(*int32)(unsafe.Add(mBase, _consts[175]))
+	v5 = int32(_a_F_dbDelete_0)
+	v6 = *(*int32)(unsafe.Add(mBase, _c_F_dbDelete[0]))
 	v7 = F_objectGetVal(m, l1)
 	mBase = m.M
-	v9 = *(*int32)(unsafe.Add(mBase, _consts[110]))
+	v9 = *(*int32)(unsafe.Add(mBase, _c_F_dbDelete[1]))
 	if v9 != 0 {
 		v11 = F_getKeySlot(m, v7)
 		mBase = m.M
@@ -452,7 +452,7 @@ func F_dbFind(m *base.Module, l0 int32, l1 int32) int32 {
 	v5 = m.G0
 	v7 = v5 - int32(16)
 	m.G0 = v7
-	v11 = *(*int32)(unsafe.Add(mBase, _consts[110]))
+	v11 = *(*int32)(unsafe.Add(mBase, _c_F_dbFind[0]))
 	if v11 == v3 {
 		v18 = v3
 		*(*int32)(unsafe.Add(mBase, uint32(v7)+12)) = int32(0)
@@ -523,12 +523,12 @@ func F_dbHasNoKeys(m *base.Module, l0 int32) int32 {
 	if l0 < int32(0) {
 		v32 = v3
 	} else {
-		v7 = *(*int32)(unsafe.Add(mBase, _consts[172]))
+		v7 = *(*int32)(unsafe.Add(mBase, _c_F_dbHasNoKeys[0]))
 		if v7 <= l0 {
 			v32 = v3
 		} else {
 			v9 = int32(0)
-			v10 = *(*int32)(unsafe.Add(mBase, _consts[173]))
+			v10 = *(*int32)(unsafe.Add(mBase, _c_F_dbHasNoKeys[1]))
 			v14 = *(*int32)(unsafe.Add(mBase, uint32(v10+l0<<(uint(int32(2))%32))))
 			if v14 == v9 {
 				v32 = v3
@@ -623,7 +623,7 @@ func F_dbTotalServerKeyCount(m *base.Module) int64 {
 	var v57 int64
 	_ = v57
 	v1 = int64(0)
-	v5 = *(*int32)(unsafe.Add(mBase, _consts[172]))
+	v5 = *(*int32)(unsafe.Add(mBase, _c_F_dbTotalServerKeyCount[0]))
 	if v5 < int32(1) {
 		v57 = v1
 	} else {
@@ -634,12 +634,12 @@ func F_dbTotalServerKeyCount(m *base.Module) int64 {
 			if v10 < int32(0) {
 				v31 = v12
 			} else {
-				v16 = *(*int32)(unsafe.Add(mBase, _consts[172]))
+				v16 = *(*int32)(unsafe.Add(mBase, _c_F_dbTotalServerKeyCount[0]))
 				if v16 <= v10 {
 					v31 = v12
 				} else {
 					v18 = int32(0)
-					v19 = *(*int32)(unsafe.Add(mBase, _consts[173]))
+					v19 = *(*int32)(unsafe.Add(mBase, _c_F_dbTotalServerKeyCount[1]))
 					v23 = *(*int32)(unsafe.Add(mBase, uint32(v19+v10<<(uint(int32(2))%32))))
 					if v23 == v18 {
 						v31 = v12
@@ -654,7 +654,7 @@ func F_dbTotalServerKeyCount(m *base.Module) int64 {
 			if v31 != 0 {
 				v51 = v9
 			} else {
-				v33 = *(*int32)(unsafe.Add(mBase, _consts[173]))
+				v33 = *(*int32)(unsafe.Add(mBase, _c_F_dbTotalServerKeyCount[1]))
 				v37 = *(*int32)(unsafe.Add(mBase, uint32(v33+v10<<(uint(int32(2))%32))))
 				v38 = *(*int32)(unsafe.Add(mBase, uint32(v37)))
 				v39 = *(*int32)(unsafe.Add(mBase, uint32(v38)+12))
@@ -675,7 +675,7 @@ func F_dbTotalServerKeyCount(m *base.Module) int64 {
 				v51 = v49 + v9
 			}
 			v53 = v10 + int32(1)
-			v55 = *(*int32)(unsafe.Add(mBase, _consts[172]))
+			v55 = *(*int32)(unsafe.Add(mBase, _c_F_dbTotalServerKeyCount[0]))
 			if v53 < v55 {
 				v9 = v51
 				v10 = v53
@@ -1211,7 +1211,7 @@ L50:
 L51:
 	;
 	v261 = m.G3
-	F_lua_pushlstring(m, l0, v261+int32(_a2704), int32(16))
+	F_lua_pushlstring(m, l0, v261+int32(_a_F_db_errorfb_0), int32(16))
 	mBase = m.M
 	v266 = m.ExcPending
 	if v266 != 0 {
@@ -1238,7 +1238,7 @@ L53:
 L54:
 	;
 	v184 = m.G3
-	F_lua_pushlstring(m, l0, v184+int32(_a320), int32(0))
+	F_lua_pushlstring(m, l0, v184+int32(_a_F_db_errorfb_1), int32(0))
 	mBase = m.M
 	v189 = m.ExcPending
 	if v189 != 0 {
@@ -1353,7 +1353,7 @@ L70:
 L71:
 	;
 	v255 = m.G3
-	F_lua_pushlstring(m, l0, v255+int32(_a26), int32(1))
+	F_lua_pushlstring(m, l0, v255+int32(_a_F_db_errorfb_2), int32(1))
 	mBase = m.M
 	v260 = m.ExcPending
 	if v260 != 0 {
@@ -1493,7 +1493,7 @@ L92:
 L93:
 	;
 	v540 = m.G3
-	F_lua_pushlstring(m, l0, v540+int32(_a2705), int32(2))
+	F_lua_pushlstring(m, l0, v540+int32(_a_F_db_errorfb_3), int32(2))
 	mBase = m.M
 	v545 = m.ExcPending
 	if v545 != 0 {
@@ -1612,7 +1612,7 @@ L108:
 L109:
 	;
 	v407 = m.G3
-	F_lua_pushlstring(m, l0, v407+int32(_a2706), int32(5))
+	F_lua_pushlstring(m, l0, v407+int32(_a_F_db_errorfb_4), int32(5))
 	mBase = m.M
 	v412 = m.ExcPending
 	if v412 != 0 {
@@ -1823,7 +1823,7 @@ L140:
 	goto L74
 L141:
 	;
-	v550 = F_lua_getinfo(m, v137, v540+int32(_a2597), v11+int32(60))
+	v550 = F_lua_getinfo(m, v137, v540+int32(_a_F_db_errorfb_5), v11+int32(60))
 	mBase = m.M
 	v551 = m.ExcPending
 	if v551 != 0 {
@@ -1834,7 +1834,7 @@ L141:
 L142:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v11)+48)) = v323
-	v557 = F_lua_pushfstring(m, l0, v540+int32(_a2707), v11+int32(48))
+	v557 = F_lua_pushfstring(m, l0, v540+int32(_a_F_db_errorfb_6), v11+int32(48))
 	mBase = m.M
 	v558 = m.ExcPending
 	if v558 != 0 {
@@ -1863,7 +1863,7 @@ L145:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v11)+32)) = v559
 	v563 = m.G3
-	v568 = F_lua_pushfstring(m, l0, v563+int32(_a2708), v11+int32(32))
+	v568 = F_lua_pushfstring(m, l0, v563+int32(_a_F_db_errorfb_7), v11+int32(32))
 	mBase = m.M
 	v569 = m.ExcPending
 	if v569 != 0 {
@@ -1898,7 +1898,7 @@ L149:
 	v574 = *(*int32)(unsafe.Add(mBase, uint32(v11)+64))
 	*(*int32)(unsafe.Add(mBase, uint32(v11)+16)) = v574
 	v576 = m.G3
-	v581 = F_lua_pushfstring(m, l0, v576+int32(_a2709), v11+int32(16))
+	v581 = F_lua_pushfstring(m, l0, v576+int32(_a_F_db_errorfb_8), v11+int32(16))
 	mBase = m.M
 	v582 = m.ExcPending
 	if v582 != 0 {
@@ -1912,7 +1912,7 @@ L150:
 L151:
 	;
 	v603 = m.G3
-	F_lua_pushlstring(m, l0, v603+int32(_a2710), int32(2))
+	F_lua_pushlstring(m, l0, v603+int32(_a_F_db_errorfb_9), int32(2))
 	mBase = m.M
 	v608 = m.ExcPending
 	if v608 != 0 {
@@ -1926,7 +1926,7 @@ L152:
 	v596 = *(*int32)(unsafe.Add(mBase, uint32(v11)+88))
 	*(*int32)(unsafe.Add(mBase, uint32(v11)+4)) = v596
 	v598 = m.G3
-	v601 = F_lua_pushfstring(m, l0, v598+int32(_a2711), v11)
+	v601 = F_lua_pushfstring(m, l0, v598+int32(_a_F_db_errorfb_10), v11)
 	mBase = m.M
 	v602 = m.ExcPending
 	if v602 != 0 {
@@ -1944,7 +1944,7 @@ L153:
 L154:
 	;
 	v587 = m.G3
-	v591 = F_lua_pushfstring(m, l0, v587+int32(_a2712), int32(0))
+	v591 = F_lua_pushfstring(m, l0, v587+int32(_a_F_db_errorfb_11), int32(0))
 	mBase = m.M
 	v592 = m.ExcPending
 	if v592 != 0 {
@@ -2536,7 +2536,7 @@ func F_db_gethook(m *base.Module, l0 int32) int32 {
 			}
 		} else {
 			v140 = m.G3
-			F_lua_pushlstring(m, l0, v140+int32(_a2699), int32(13))
+			F_lua_pushlstring(m, l0, v140+int32(_a_F_db_gethook_0), int32(13))
 			mBase = m.M
 			v147 = m.ExcPending
 			if v147 != 0 {
@@ -2980,7 +2980,7 @@ L52:
 L53:
 	;
 	v194 = m.G3
-	v197 = F_luaL_argerror(m, l0, v136, v194+int32(_a2702))
+	v197 = F_luaL_argerror(m, l0, v136, v194+int32(_a_F_db_getlocal_0))
 	mBase = m.M
 	v198 = m.ExcPending
 	if v198 != 0 {
@@ -3121,7 +3121,7 @@ L71:
 L72:
 	;
 	v264 = v253
-	v265 = v254 + int32(_a2590)
+	v265 = v254 + int32(_a_F_db_getlocal_1)
 	goto L59
 L73:
 	;
@@ -3355,7 +3355,7 @@ func F_db_setmetatable(m *base.Module, l0 int32) int32 {
 		}
 	default:
 		v61 = m.G3
-		v64 = F_luaL_argerror(m, l0, int32(2), v61+int32(_a2703))
+		v64 = F_luaL_argerror(m, l0, int32(2), v61+int32(_a_F_db_setmetatable_0))
 		mBase = m.M
 		v67 = m.ExcPending
 		if v67 != 0 {
@@ -3462,7 +3462,7 @@ func F_selectDbIdArgs(m *base.Module, l0 int32, l1 int32, l2 int32) int32 {
 					m.G0 = v9 + int32(16)
 					return v35
 				} else {
-					v26 = int64(*(*int32)(unsafe.Add(mBase, _consts[172])))
+					v26 = int64(*(*int32)(unsafe.Add(mBase, _c_F_selectDbIdArgs[0])))
 					if v26 <= v22 {
 						v35 = v14
 						m.G0 = v9 + int32(16)

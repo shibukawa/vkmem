@@ -201,7 +201,7 @@ L17:
 L18:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v11))) = v20
-	v41 = F_sdscatfmt(m, v21, int32(_a45), v11)
+	v41 = F_sdscatfmt(m, v21, int32(_a_F_configEnumGetName_0), v11)
 	mBase = m.M
 	v42 = m.ExcPending
 	if v42 != 0 {
@@ -234,7 +234,7 @@ L23:
 	goto L3
 L24:
 	;
-	v77 = int32(_a288)
+	v77 = int32(_a_F_configEnumGetName_1)
 	goto L2
 L25:
 	;
@@ -638,7 +638,7 @@ func F_configGetCommand(m *base.Module, l0 int32) {
 	_ = v519
 	var v531 int32
 	_ = v531
-	v11 = F_dictCreate(m, int32(_a492))
+	v11 = F_dictCreate(m, int32(_a_F_configGetCommand_0))
 	mBase = m.M
 	v12 = m.ExcPending
 	if v12 != 0 {
@@ -677,7 +677,7 @@ L5:
 	v30 = *(*int32)(unsafe.Add(mBase, uint32(v26+v19<<(uint(int32(2))%32))+8))
 	v31 = F_objectGetVal(m, v30)
 	mBase = m.M
-	v33 = F_strcspn(m, v31, int32(_a493))
+	v33 = F_strcspn(m, v31, int32(_a_F_configGetCommand_1))
 	mBase = m.M
 	v34 = v31 + v33
 	v36 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v34))))
@@ -701,7 +701,7 @@ L7:
 	}
 L8:
 	;
-	v52 = *(*int32)(unsafe.Add(mBase, _consts[230]))
+	v52 = *(*int32)(unsafe.Add(mBase, _c_F_configGetCommand[0]))
 	v53 = F_dictGetIterator(m, v52)
 	mBase = m.M
 	v54 = m.ExcPending
@@ -747,7 +747,7 @@ L14:
 	}
 L15:
 	;
-	v41 = *(*int32)(unsafe.Add(mBase, _consts[230]))
+	v41 = *(*int32)(unsafe.Add(mBase, _c_F_configGetCommand[0]))
 	v42 = F_dictFind(m, v41, v31)
 	mBase = m.M
 	v43 = m.ExcPending
@@ -1641,15 +1641,15 @@ func F_configHelpCommand(m *base.Module, l0 int32) {
 	v3 = m.G0
 	v5 = v3 - int32(48)
 	m.G0 = v5
-	v10 = *(*int32)(unsafe.Add(mBase, _consts[291]))
+	v10 = *(*int32)(unsafe.Add(mBase, _c_F_configHelpCommand[0]))
 	*(*int32)(unsafe.Add(mBase, uint32(v5+int32(32)))) = v10
-	v15 = *(*int64)(unsafe.Add(mBase, _consts[292]))
+	v15 = *(*int64)(unsafe.Add(mBase, _c_F_configHelpCommand[1]))
 	*(*int64)(unsafe.Add(mBase, uint32(v5+int32(24)))) = v15
-	v20 = *(*int64)(unsafe.Add(mBase, _consts[293]))
+	v20 = *(*int64)(unsafe.Add(mBase, _c_F_configHelpCommand[2]))
 	*(*int64)(unsafe.Add(mBase, uint32(v5+int32(16)))) = v20
-	v23 = *(*int64)(unsafe.Add(mBase, _consts[294]))
+	v23 = *(*int64)(unsafe.Add(mBase, _c_F_configHelpCommand[3]))
 	*(*int64)(unsafe.Add(mBase, uint32(v5)+8)) = v23
-	v26 = *(*int64)(unsafe.Add(mBase, _consts[295]))
+	v26 = *(*int64)(unsafe.Add(mBase, _c_F_configHelpCommand[4]))
 	*(*int64)(unsafe.Add(mBase, uint32(v5))) = v26
 	F_addReplyHelp(m, l0, v5)
 	mBase = m.M
@@ -1712,69 +1712,69 @@ func F_configResetStatCommand(m *base.Module, l0 int32) {
 	_ = v151
 	v2 = int32(0)
 	v3 = int64(0)
-	*(*int64)(unsafe.Add(mBase, _consts[296])) = v3
-	*(*int64)(unsafe.Add(mBase, _consts[297])) = v3
-	*(*int32)(unsafe.Add(mBase, _consts[43])) = v2
-	v14 = F___memset(m, int32(_a525), v2, int32(96))
+	*(*int64)(unsafe.Add(mBase, _c_F_configResetStatCommand[0])) = v3
+	*(*int64)(unsafe.Add(mBase, _c_F_configResetStatCommand[1])) = v3
+	*(*int32)(unsafe.Add(mBase, _c_F_configResetStatCommand[2])) = v2
+	v14 = F___memset(m, int32(_a_F_configResetStatCommand_0), v2, int32(96))
 	mBase = m.M
-	*(*int64)(unsafe.Add(mBase, _consts[298])) = v3
-	*(*int64)(unsafe.Add(mBase, _consts[299])) = v3
-	*(*uint8)(unsafe.Add(mBase, _consts[300])) = uint8(v2)
-	v27 = F___memset(m, int32(_a526), v2, int32(176))
+	*(*int64)(unsafe.Add(mBase, _c_F_configResetStatCommand[3])) = v3
+	*(*int64)(unsafe.Add(mBase, _c_F_configResetStatCommand[4])) = v3
+	*(*uint8)(unsafe.Add(mBase, _c_F_configResetStatCommand[5])) = uint8(v2)
+	v27 = F___memset(m, int32(_a_F_configResetStatCommand_1), v2, int32(176))
 	mBase = m.M
-	v31 = F___memset(m, int32(_a527), v2, int32(80))
+	v31 = F___memset(m, int32(_a_F_configResetStatCommand_2), v2, int32(80))
 	mBase = m.M
-	*(*int64)(unsafe.Add(mBase, _consts[301])) = v3
-	*(*int64)(unsafe.Add(mBase, _consts[302])) = v3
-	*(*int64)(unsafe.Add(mBase, _consts[124])) = v3
-	*(*int64)(unsafe.Add(mBase, _consts[303])) = v3
-	*(*int64)(unsafe.Add(mBase, _consts[304])) = v3
-	*(*int64)(unsafe.Add(mBase, _consts[305])) = v3
-	*(*int64)(unsafe.Add(mBase, _consts[306])) = v3
-	*(*int64)(unsafe.Add(mBase, _consts[94])) = v3
-	*(*int64)(unsafe.Add(mBase, _consts[307])) = v3
-	*(*int64)(unsafe.Add(mBase, _consts[308])) = v3
-	*(*int64)(unsafe.Add(mBase, _consts[309])) = v3
-	*(*int64)(unsafe.Add(mBase, _consts[310])) = v3
-	*(*int64)(unsafe.Add(mBase, _consts[311])) = v3
-	*(*int64)(unsafe.Add(mBase, _consts[312])) = v3
-	*(*int64)(unsafe.Add(mBase, _consts[313])) = v3
-	*(*int64)(unsafe.Add(mBase, _consts[314])) = v3
-	*(*int64)(unsafe.Add(mBase, _consts[315])) = v3
+	*(*int64)(unsafe.Add(mBase, _c_F_configResetStatCommand[6])) = v3
+	*(*int64)(unsafe.Add(mBase, _c_F_configResetStatCommand[7])) = v3
+	*(*int64)(unsafe.Add(mBase, _c_F_configResetStatCommand[8])) = v3
+	*(*int64)(unsafe.Add(mBase, _c_F_configResetStatCommand[9])) = v3
+	*(*int64)(unsafe.Add(mBase, _c_F_configResetStatCommand[10])) = v3
+	*(*int64)(unsafe.Add(mBase, _c_F_configResetStatCommand[11])) = v3
+	*(*int64)(unsafe.Add(mBase, _c_F_configResetStatCommand[12])) = v3
+	*(*int64)(unsafe.Add(mBase, _c_F_configResetStatCommand[13])) = v3
+	*(*int64)(unsafe.Add(mBase, _c_F_configResetStatCommand[14])) = v3
+	*(*int64)(unsafe.Add(mBase, _c_F_configResetStatCommand[15])) = v3
+	*(*int64)(unsafe.Add(mBase, _c_F_configResetStatCommand[16])) = v3
+	*(*int64)(unsafe.Add(mBase, _c_F_configResetStatCommand[17])) = v3
+	*(*int64)(unsafe.Add(mBase, _c_F_configResetStatCommand[18])) = v3
+	*(*int64)(unsafe.Add(mBase, _c_F_configResetStatCommand[19])) = v3
+	*(*int64)(unsafe.Add(mBase, _c_F_configResetStatCommand[20])) = v3
+	*(*int64)(unsafe.Add(mBase, _c_F_configResetStatCommand[21])) = v3
+	*(*int64)(unsafe.Add(mBase, _c_F_configResetStatCommand[22])) = v3
 	v85 = int32(148)
-	v86 = F___memset(m, int32(_a528), v2, v85)
+	v86 = F___memset(m, int32(_a_F_configResetStatCommand_3), v2, v85)
 	mBase = m.M
-	v90 = F___memset(m, int32(_a529), v2, v85)
+	v90 = F___memset(m, int32(_a_F_configResetStatCommand_4), v2, v85)
 	mBase = m.M
-	v94 = F___memset(m, int32(_a530), v2, v85)
+	v94 = F___memset(m, int32(_a_F_configResetStatCommand_5), v2, v85)
 	mBase = m.M
-	v98 = F___memset(m, int32(_a531), v2, v85)
+	v98 = F___memset(m, int32(_a_F_configResetStatCommand_6), v2, v85)
 	mBase = m.M
-	v102 = F___memset(m, int32(_a532), v2, v85)
+	v102 = F___memset(m, int32(_a_F_configResetStatCommand_7), v2, v85)
 	mBase = m.M
-	v106 = F___memset(m, int32(_a533), v2, v85)
+	v106 = F___memset(m, int32(_a_F_configResetStatCommand_8), v2, v85)
 	mBase = m.M
-	v110 = F___memset(m, int32(_a534), v2, v85)
+	v110 = F___memset(m, int32(_a_F_configResetStatCommand_9), v2, v85)
 	mBase = m.M
-	v114 = F___memset(m, int32(_a535), v2, v85)
+	v114 = F___memset(m, int32(_a_F_configResetStatCommand_10), v2, v85)
 	mBase = m.M
-	v118 = F___memset(m, int32(_a536), v2, v85)
+	v118 = F___memset(m, int32(_a_F_configResetStatCommand_11), v2, v85)
 	mBase = m.M
-	*(*int64)(unsafe.Add(mBase, _consts[316])) = v3
-	*(*int64)(unsafe.Add(mBase, _consts[317])) = v3
+	*(*int64)(unsafe.Add(mBase, _c_F_configResetStatCommand[23])) = v3
+	*(*int64)(unsafe.Add(mBase, _c_F_configResetStatCommand[24])) = v3
 	F_lazyfreeResetStats(m)
 	mBase = m.M
-	v128 = *(*int32)(unsafe.Add(mBase, _consts[139]))
+	v128 = *(*int32)(unsafe.Add(mBase, _c_F_configResetStatCommand[25]))
 	if v128 == int32(0) {
 	} else {
 		F_clusterSlotStatResetAll(m)
 		mBase = m.M
-		v133 = *(*int32)(unsafe.Add(mBase, _consts[136]))
-		*(*int64)(unsafe.Add(mBase, uint32(v133)+uint32(_consts[200]))) = int64(0)
+		v133 = *(*int32)(unsafe.Add(mBase, _c_F_configResetStatCommand[26]))
+		*(*int64)(unsafe.Add(mBase, uint32(v133)+uint32(_c_F_configResetStatCommand[27]))) = int64(0)
 		v140 = F___memset(m, v133+int32(65680), int32(0), int32(224))
 		mBase = m.M
 	}
-	v143 = *(*int32)(unsafe.Add(mBase, _consts[318]))
+	v143 = *(*int32)(unsafe.Add(mBase, _c_F_configResetStatCommand[28]))
 	F_resetCommandTableStats(m, v143)
 	mBase = m.M
 	v145 = m.ExcPending
@@ -1787,7 +1787,7 @@ func F_configResetStatCommand(m *base.Module, l0 int32) {
 		if v147 != 0 {
 			return
 		} else {
-			v149 = *(*int32)(unsafe.Add(mBase, _consts[84]))
+			v149 = *(*int32)(unsafe.Add(mBase, _c_F_configResetStatCommand[29]))
 			F_addReply(m, l0, v149)
 			mBase = m.M
 			v151 = m.ExcPending
@@ -2039,7 +2039,7 @@ L1:
 	return int32(0)
 L2:
 	;
-	v10 = F_dictCreate(m, int32(_a494))
+	v10 = F_dictCreate(m, int32(_a_F_getConfigDebugInfo_0))
 	mBase = m.M
 	v11 = m.ExcPending
 	if v11 != 0 {
@@ -2050,7 +2050,7 @@ L2:
 L3:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v5))) = v10
-	v14 = F_dictCreate(m, int32(_a495))
+	v14 = F_dictCreate(m, int32(_a_F_getConfigDebugInfo_1))
 	mBase = m.M
 	v15 = m.ExcPending
 	if v15 != 0 {
@@ -2063,7 +2063,7 @@ L4:
 	*(*int64)(unsafe.Add(mBase, uint32(v5)+8)) = int64(0)
 	*(*int32)(unsafe.Add(mBase, uint32(v5)+4)) = v14
 	*(*int64)(unsafe.Add(mBase, uint32(v5)+16)) = int64(4294967296)
-	v22 = *(*int32)(unsafe.Add(mBase, _consts[230]))
+	v22 = *(*int32)(unsafe.Add(mBase, _c_F_getConfigDebugInfo[0]))
 	v23 = F_dictGetIterator(m, v22)
 	mBase = m.M
 	v24 = m.ExcPending
@@ -2577,7 +2577,7 @@ func F_getConfigNotifyKeyspaceEventsOption(m *base.Module, l0 int32) int32 {
 	_ = v4
 	var v7 int32
 	_ = v7
-	v3 = *(*int32)(unsafe.Add(mBase, _consts[289]))
+	v3 = *(*int32)(unsafe.Add(mBase, _c_F_getConfigNotifyKeyspaceEventsOption[0]))
 	v4 = F_keyspaceEventsFlagsToString(m, v3)
 	mBase = m.M
 	v7 = m.ExcPending
@@ -2633,37 +2633,37 @@ func F_getConfigOOMScoreAdjValuesOption(m *base.Module, l0 int32) int32 {
 	if v11 != 0 {
 		return int32(0)
 	} else {
-		v13 = *(*int32)(unsafe.Add(mBase, _consts[255]))
+		v13 = *(*int32)(unsafe.Add(mBase, _c_F_getConfigOOMScoreAdjValuesOption[0]))
 		*(*int32)(unsafe.Add(mBase, uint32(v6)+32)) = v13
-		v18 = F_sdscatprintf(m, v8, int32(_a77), v6+int32(32))
+		v18 = F_sdscatprintf(m, v8, int32(_a_F_getConfigOOMScoreAdjValuesOption_0), v6+int32(32))
 		mBase = m.M
 		v19 = m.ExcPending
 		if v19 != 0 {
 			return int32(0)
 		} else {
-			v22 = F_sdscatlen(m, v18, int32(_a66), int32(1))
+			v22 = F_sdscatlen(m, v18, int32(_a_F_getConfigOOMScoreAdjValuesOption_1), int32(1))
 			mBase = m.M
 			v23 = m.ExcPending
 			if v23 != 0 {
 				return int32(0)
 			} else {
-				v25 = *(*int32)(unsafe.Add(mBase, _consts[257]))
+				v25 = *(*int32)(unsafe.Add(mBase, _c_F_getConfigOOMScoreAdjValuesOption[1]))
 				*(*int32)(unsafe.Add(mBase, uint32(v6)+16)) = v25
-				v30 = F_sdscatprintf(m, v22, int32(_a77), v6+int32(16))
+				v30 = F_sdscatprintf(m, v22, int32(_a_F_getConfigOOMScoreAdjValuesOption_0), v6+int32(16))
 				mBase = m.M
 				v31 = m.ExcPending
 				if v31 != 0 {
 					return int32(0)
 				} else {
-					v34 = F_sdscatlen(m, v30, int32(_a66), int32(1))
+					v34 = F_sdscatlen(m, v30, int32(_a_F_getConfigOOMScoreAdjValuesOption_1), int32(1))
 					mBase = m.M
 					v35 = m.ExcPending
 					if v35 != 0 {
 						return int32(0)
 					} else {
-						v37 = *(*int32)(unsafe.Add(mBase, _consts[259]))
+						v37 = *(*int32)(unsafe.Add(mBase, _c_F_getConfigOOMScoreAdjValuesOption[2]))
 						*(*int32)(unsafe.Add(mBase, uint32(v6))) = v37
-						v40 = F_sdscatprintf(m, v34, int32(_a77), v6)
+						v40 = F_sdscatprintf(m, v34, int32(_a_F_getConfigOOMScoreAdjValuesOption_0), v6)
 						mBase = m.M
 						v41 = m.ExcPending
 						if v41 != 0 {
@@ -2687,8 +2687,8 @@ func F_getConfigRdmaBindOption(m *base.Module, l0 int32) int32 {
 	_ = v8
 	var v11 int32
 	_ = v11
-	v6 = *(*int32)(unsafe.Add(mBase, _consts[276]))
-	v8 = F_sdsjoin(m, int32(_a512), v6, int32(_a66))
+	v6 = *(*int32)(unsafe.Add(mBase, _c_F_getConfigRdmaBindOption[0]))
+	v8 = F_sdsjoin(m, int32(_a_F_getConfigRdmaBindOption_0), v6, int32(_a_F_getConfigRdmaBindOption_1))
 	mBase = m.M
 	v11 = m.ExcPending
 	if v11 != 0 {
@@ -2898,8 +2898,8 @@ func F_rewriteConfigClientOutputBufferLimitOption(m *base.Module, l0 int32, l1 i
 	v13 = v11 - int32(224)
 	m.G0 = v13
 	v15 = int32(1)
-	v18 = *(*int64)(unsafe.Add(mBase, _consts[233]))
-	v20 = *(*int64)(unsafe.Add(mBase, _consts[234]))
+	v18 = *(*int64)(unsafe.Add(mBase, _c_F_rewriteConfigClientOutputBufferLimitOption[0]))
+	v20 = *(*int64)(unsafe.Add(mBase, _c_F_rewriteConfigClientOutputBufferLimitOption[1]))
 	if v18 != v20 {
 		v33 = v15
 		goto L1
@@ -2918,8 +2918,8 @@ L1:
 	}
 L2:
 	;
-	v24 = *(*int64)(unsafe.Add(mBase, _consts[235]))
-	v26 = *(*int64)(unsafe.Add(mBase, _consts[236]))
+	v24 = *(*int64)(unsafe.Add(mBase, _c_F_rewriteConfigClientOutputBufferLimitOption[2]))
+	v26 = *(*int64)(unsafe.Add(mBase, _c_F_rewriteConfigClientOutputBufferLimitOption[3]))
 	if v24 != v26 {
 		v33 = int32(1)
 		goto L1
@@ -2928,8 +2928,8 @@ L2:
 	}
 L3:
 	;
-	v29 = *(*int64)(unsafe.Add(mBase, _consts[237]))
-	v31 = *(*int64)(unsafe.Add(mBase, _consts[238]))
+	v29 = *(*int64)(unsafe.Add(mBase, _c_F_rewriteConfigClientOutputBufferLimitOption[4]))
+	v31 = *(*int64)(unsafe.Add(mBase, _c_F_rewriteConfigClientOutputBufferLimitOption[5]))
 	v33 = base.B2i32(v29 != v31)
 	goto L1
 L4:
@@ -2937,7 +2937,7 @@ L4:
 	return
 L5:
 	;
-	v43 = *(*int64)(unsafe.Add(mBase, _consts[235]))
+	v43 = *(*int64)(unsafe.Add(mBase, _c_F_rewriteConfigClientOutputBufferLimitOption[2]))
 	v44 = F_rewriteConfigFormatMemory(m, v13+int32(96), int32(64), v43)
 	mBase = m.M
 	v45 = m.ExcPending
@@ -2951,8 +2951,8 @@ L6:
 	goto L9
 L7:
 	;
-	v57 = int32(_a505)
-	v60 = int32(*(*uint8)(unsafe.Add(mBase, _consts[239])))
+	v57 = int32(_a_F_rewriteConfigClientOutputBufferLimitOption_0)
+	v60 = int32(*(*uint8)(unsafe.Add(mBase, _c_F_rewriteConfigClientOutputBufferLimitOption[6])))
 	v61 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v55))))
 	if v61 == int32(0) {
 		v84 = v60
@@ -2966,7 +2966,7 @@ L8:
 	goto L7
 L9:
 	;
-	v55 = *(*int32)(unsafe.Add(mBase, _consts[240]))
+	v55 = *(*int32)(unsafe.Add(mBase, _c_F_rewriteConfigClientOutputBufferLimitOption[7]))
 	goto L8
 L10:
 	;
@@ -3026,7 +3026,7 @@ L17:
 	goto L15
 L18:
 	;
-	v96 = *(*int64)(unsafe.Add(mBase, _consts[237]))
+	v96 = *(*int64)(unsafe.Add(mBase, _c_F_rewriteConfigClientOutputBufferLimitOption[4]))
 	*(*uint32)(unsafe.Add(mBase, uint32(v13+int32(80)))) = uint32(v96)
 	*(*int32)(unsafe.Add(mBase, uint32(v13)+64)) = l1
 	if v85-v84&int32(255) != 0 {
@@ -3040,14 +3040,14 @@ L19:
 	goto L21
 L20:
 	;
-	v100 = int32(_a268)
+	v100 = int32(_a_F_rewriteConfigClientOutputBufferLimitOption_1)
 	goto L21
 L21:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v13)+68)) = v100
 	*(*int32)(unsafe.Add(mBase, uint32(v13)+72)) = v13 + int32(160)
 	*(*int32)(unsafe.Add(mBase, uint32(v13)+76)) = v13 + int32(96)
-	v111 = F_sdscatprintf(m, v89, int32(_a506), v13+int32(64))
+	v111 = F_sdscatprintf(m, v89, int32(_a_F_rewriteConfigClientOutputBufferLimitOption_2), v13+int32(64))
 	mBase = m.M
 	v112 = m.ExcPending
 	if v112 != 0 {
@@ -3067,8 +3067,8 @@ L22:
 	}
 L23:
 	;
-	v116 = *(*int64)(unsafe.Add(mBase, _consts[241]))
-	v118 = *(*int64)(unsafe.Add(mBase, _consts[242]))
+	v116 = *(*int64)(unsafe.Add(mBase, _c_F_rewriteConfigClientOutputBufferLimitOption[8]))
+	v118 = *(*int64)(unsafe.Add(mBase, _c_F_rewriteConfigClientOutputBufferLimitOption[9]))
 	if v116 != v118 {
 		v130 = v15
 		goto L24
@@ -3087,8 +3087,8 @@ L24:
 	}
 L25:
 	;
-	v121 = *(*int64)(unsafe.Add(mBase, _consts[243]))
-	v123 = *(*int64)(unsafe.Add(mBase, _consts[244]))
+	v121 = *(*int64)(unsafe.Add(mBase, _c_F_rewriteConfigClientOutputBufferLimitOption[10]))
+	v123 = *(*int64)(unsafe.Add(mBase, _c_F_rewriteConfigClientOutputBufferLimitOption[11]))
 	if v121 != v123 {
 		v130 = v15
 		goto L24
@@ -3097,13 +3097,13 @@ L25:
 	}
 L26:
 	;
-	v126 = *(*int64)(unsafe.Add(mBase, _consts[245]))
-	v128 = *(*int64)(unsafe.Add(mBase, _consts[246]))
+	v126 = *(*int64)(unsafe.Add(mBase, _c_F_rewriteConfigClientOutputBufferLimitOption[12]))
+	v128 = *(*int64)(unsafe.Add(mBase, _c_F_rewriteConfigClientOutputBufferLimitOption[13]))
 	v130 = base.B2i32(v126 != v128)
 	goto L24
 L27:
 	;
-	v140 = *(*int64)(unsafe.Add(mBase, _consts[243]))
+	v140 = *(*int64)(unsafe.Add(mBase, _c_F_rewriteConfigClientOutputBufferLimitOption[10]))
 	v141 = F_rewriteConfigFormatMemory(m, v13+int32(96), int32(64), v140)
 	mBase = m.M
 	v142 = m.ExcPending
@@ -3118,8 +3118,8 @@ L28:
 	goto L31
 L29:
 	;
-	v155 = int32(_a505)
-	v158 = int32(*(*uint8)(unsafe.Add(mBase, _consts[239])))
+	v155 = int32(_a_F_rewriteConfigClientOutputBufferLimitOption_0)
+	v158 = int32(*(*uint8)(unsafe.Add(mBase, _c_F_rewriteConfigClientOutputBufferLimitOption[6])))
 	v159 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v153))))
 	if v159 == int32(0) {
 		v182 = v158
@@ -3133,7 +3133,7 @@ L30:
 	goto L29
 L31:
 	;
-	v153 = *(*int32)(unsafe.Add(mBase, _consts[247]))
+	v153 = *(*int32)(unsafe.Add(mBase, _c_F_rewriteConfigClientOutputBufferLimitOption[14]))
 	goto L30
 L32:
 	;
@@ -3193,7 +3193,7 @@ L39:
 	goto L37
 L40:
 	;
-	v194 = *(*int64)(unsafe.Add(mBase, _consts[245]))
+	v194 = *(*int64)(unsafe.Add(mBase, _c_F_rewriteConfigClientOutputBufferLimitOption[12]))
 	*(*uint32)(unsafe.Add(mBase, uint32(v13+int32(48)))) = uint32(v194)
 	*(*int32)(unsafe.Add(mBase, uint32(v13)+32)) = l1
 	if v183-v182&int32(255) != 0 {
@@ -3207,14 +3207,14 @@ L41:
 	goto L43
 L42:
 	;
-	v198 = int32(_a268)
+	v198 = int32(_a_F_rewriteConfigClientOutputBufferLimitOption_1)
 	goto L43
 L43:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v13)+36)) = v198
 	*(*int32)(unsafe.Add(mBase, uint32(v13)+40)) = v13 + int32(160)
 	*(*int32)(unsafe.Add(mBase, uint32(v13)+44)) = v13 + int32(96)
-	v209 = F_sdscatprintf(m, v187, int32(_a506), v13+int32(32))
+	v209 = F_sdscatprintf(m, v187, int32(_a_F_rewriteConfigClientOutputBufferLimitOption_2), v13+int32(32))
 	mBase = m.M
 	v210 = m.ExcPending
 	if v210 != 0 {
@@ -3234,8 +3234,8 @@ L44:
 	}
 L45:
 	;
-	v214 = *(*int64)(unsafe.Add(mBase, _consts[248]))
-	v216 = *(*int64)(unsafe.Add(mBase, _consts[249]))
+	v214 = *(*int64)(unsafe.Add(mBase, _c_F_rewriteConfigClientOutputBufferLimitOption[15]))
+	v216 = *(*int64)(unsafe.Add(mBase, _c_F_rewriteConfigClientOutputBufferLimitOption[16]))
 	if v214 != v216 {
 		v228 = v143
 		goto L46
@@ -3254,8 +3254,8 @@ L46:
 	}
 L47:
 	;
-	v219 = *(*int64)(unsafe.Add(mBase, _consts[250]))
-	v221 = *(*int64)(unsafe.Add(mBase, _consts[251]))
+	v219 = *(*int64)(unsafe.Add(mBase, _c_F_rewriteConfigClientOutputBufferLimitOption[17]))
+	v221 = *(*int64)(unsafe.Add(mBase, _c_F_rewriteConfigClientOutputBufferLimitOption[18]))
 	if v219 != v221 {
 		v228 = v143
 		goto L46
@@ -3264,13 +3264,13 @@ L47:
 	}
 L48:
 	;
-	v224 = *(*int64)(unsafe.Add(mBase, _consts[252]))
-	v226 = *(*int64)(unsafe.Add(mBase, _consts[253]))
+	v224 = *(*int64)(unsafe.Add(mBase, _c_F_rewriteConfigClientOutputBufferLimitOption[19]))
+	v226 = *(*int64)(unsafe.Add(mBase, _c_F_rewriteConfigClientOutputBufferLimitOption[20]))
 	v228 = base.B2i32(v224 != v226)
 	goto L46
 L49:
 	;
-	v238 = *(*int64)(unsafe.Add(mBase, _consts[250]))
+	v238 = *(*int64)(unsafe.Add(mBase, _c_F_rewriteConfigClientOutputBufferLimitOption[17]))
 	v239 = F_rewriteConfigFormatMemory(m, v13+int32(96), int32(64), v238)
 	mBase = m.M
 	v240 = m.ExcPending
@@ -3284,8 +3284,8 @@ L50:
 	goto L53
 L51:
 	;
-	v252 = int32(_a505)
-	v255 = int32(*(*uint8)(unsafe.Add(mBase, _consts[239])))
+	v252 = int32(_a_F_rewriteConfigClientOutputBufferLimitOption_0)
+	v255 = int32(*(*uint8)(unsafe.Add(mBase, _c_F_rewriteConfigClientOutputBufferLimitOption[6])))
 	v256 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v250))))
 	if v256 == int32(0) {
 		v279 = v255
@@ -3299,7 +3299,7 @@ L52:
 	goto L51
 L53:
 	;
-	v250 = *(*int32)(unsafe.Add(mBase, _consts[254]))
+	v250 = *(*int32)(unsafe.Add(mBase, _c_F_rewriteConfigClientOutputBufferLimitOption[21]))
 	goto L52
 L54:
 	;
@@ -3359,7 +3359,7 @@ L61:
 	goto L59
 L62:
 	;
-	v289 = *(*int64)(unsafe.Add(mBase, _consts[252]))
+	v289 = *(*int64)(unsafe.Add(mBase, _c_F_rewriteConfigClientOutputBufferLimitOption[19]))
 	*(*uint32)(unsafe.Add(mBase, uint32(v13+int32(16)))) = uint32(v289)
 	*(*int32)(unsafe.Add(mBase, uint32(v13))) = l1
 	if v280-v279&int32(255) != 0 {
@@ -3373,14 +3373,14 @@ L63:
 	goto L65
 L64:
 	;
-	v293 = int32(_a268)
+	v293 = int32(_a_F_rewriteConfigClientOutputBufferLimitOption_1)
 	goto L65
 L65:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v13)+4)) = v293
 	*(*int32)(unsafe.Add(mBase, uint32(v13)+8)) = v13 + int32(160)
 	*(*int32)(unsafe.Add(mBase, uint32(v13)+12)) = v13 + int32(96)
-	v302 = F_sdscatprintf(m, v284, int32(_a506), v13)
+	v302 = F_sdscatprintf(m, v284, int32(_a_F_rewriteConfigClientOutputBufferLimitOption_2), v13)
 	mBase = m.M
 	v303 = m.ExcPending
 	if v303 != 0 {
@@ -3506,46 +3506,46 @@ func F_rewriteConfigOOMScoreAdjValuesOption(m *base.Module, l0 int32, l1 int32, 
 	if v17 != 0 {
 		return
 	} else {
-		v20 = F_sdscatlen(m, v16, int32(_a66), int32(1))
+		v20 = F_sdscatlen(m, v16, int32(_a_F_rewriteConfigOOMScoreAdjValuesOption_0), int32(1))
 		mBase = m.M
 		v21 = m.ExcPending
 		if v21 != 0 {
 			return
 		} else {
-			v23 = *(*int32)(unsafe.Add(mBase, _consts[255]))
+			v23 = *(*int32)(unsafe.Add(mBase, _c_F_rewriteConfigOOMScoreAdjValuesOption[0]))
 			*(*int32)(unsafe.Add(mBase, uint32(v14)+32)) = v23
-			v26 = *(*int32)(unsafe.Add(mBase, _consts[256]))
-			v30 = F_sdscatprintf(m, v20, int32(_a77), v14+int32(32))
+			v26 = *(*int32)(unsafe.Add(mBase, _c_F_rewriteConfigOOMScoreAdjValuesOption[1]))
+			v30 = F_sdscatprintf(m, v20, int32(_a_F_rewriteConfigOOMScoreAdjValuesOption_1), v14+int32(32))
 			mBase = m.M
 			v31 = m.ExcPending
 			if v31 != 0 {
 				return
 			} else {
-				v34 = F_sdscatlen(m, v30, int32(_a66), int32(1))
+				v34 = F_sdscatlen(m, v30, int32(_a_F_rewriteConfigOOMScoreAdjValuesOption_0), int32(1))
 				mBase = m.M
 				v35 = m.ExcPending
 				if v35 != 0 {
 					return
 				} else {
-					v37 = *(*int32)(unsafe.Add(mBase, _consts[257]))
+					v37 = *(*int32)(unsafe.Add(mBase, _c_F_rewriteConfigOOMScoreAdjValuesOption[2]))
 					*(*int32)(unsafe.Add(mBase, uint32(v14)+16)) = v37
-					v40 = *(*int32)(unsafe.Add(mBase, _consts[258]))
-					v44 = F_sdscatprintf(m, v34, int32(_a77), v14+int32(16))
+					v40 = *(*int32)(unsafe.Add(mBase, _c_F_rewriteConfigOOMScoreAdjValuesOption[3]))
+					v44 = F_sdscatprintf(m, v34, int32(_a_F_rewriteConfigOOMScoreAdjValuesOption_1), v14+int32(16))
 					mBase = m.M
 					v45 = m.ExcPending
 					if v45 != 0 {
 						return
 					} else {
-						v48 = F_sdscatlen(m, v44, int32(_a66), int32(1))
+						v48 = F_sdscatlen(m, v44, int32(_a_F_rewriteConfigOOMScoreAdjValuesOption_0), int32(1))
 						mBase = m.M
 						v49 = m.ExcPending
 						if v49 != 0 {
 							return
 						} else {
-							v51 = *(*int32)(unsafe.Add(mBase, _consts[259]))
+							v51 = *(*int32)(unsafe.Add(mBase, _c_F_rewriteConfigOOMScoreAdjValuesOption[4]))
 							*(*int32)(unsafe.Add(mBase, uint32(v14))) = v51
-							v54 = *(*int32)(unsafe.Add(mBase, _consts[260]))
-							v56 = F_sdscatprintf(m, v48, int32(_a77), v14)
+							v54 = *(*int32)(unsafe.Add(mBase, _c_F_rewriteConfigOOMScoreAdjValuesOption[5]))
+							v56 = F_sdscatprintf(m, v48, int32(_a_F_rewriteConfigOOMScoreAdjValuesOption_1), v14)
 							mBase = m.M
 							v57 = m.ExcPending
 							if v57 != 0 {
@@ -4214,7 +4214,7 @@ func F_rewriteConfigReadOldFile(m *base.Module, l0 int32) int32 {
 	v16 = m.G0
 	v18 = v16 - int32(112)
 	m.G0 = v18
-	v21 = F_fopen(m, l0, int32(_a86))
+	v21 = F_fopen(m, l0, int32(_a_F_rewriteConfigReadOldFile_0))
 	mBase = m.M
 	if v21 != 0 {
 		goto L3
@@ -4248,7 +4248,7 @@ L4:
 	goto L5
 L5:
 	;
-	v24 = *(*int32)(unsafe.Add(mBase, _consts[5]))
+	v24 = *(*int32)(unsafe.Add(mBase, _c_F_rewriteConfigReadOldFile[0]))
 	if v24 != int32(44) {
 		v764 = int32(0)
 		goto L1
@@ -4314,7 +4314,7 @@ L14:
 	}
 L15:
 	;
-	v55 = F___fstatat(m, v46, int32(_a139), v18+int32(16), int32(4096))
+	v55 = F___fstatat(m, v46, int32(_a_F_rewriteConfigReadOldFile_1), v18+int32(16), int32(4096))
 	mBase = m.M
 	v56 = v55
 	goto L14
@@ -4343,7 +4343,7 @@ L19:
 	goto L1
 L20:
 	;
-	v69 = F_dictCreate(m, int32(_a494))
+	v69 = F_dictCreate(m, int32(_a_F_rewriteConfigReadOldFile_2))
 	mBase = m.M
 	v70 = m.ExcPending
 	if v70 != 0 {
@@ -4354,7 +4354,7 @@ L20:
 L21:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v66))) = v69
-	v73 = F_dictCreate(m, int32(_a495))
+	v73 = F_dictCreate(m, int32(_a_F_rewriteConfigReadOldFile_3))
 	mBase = m.M
 	v74 = m.ExcPending
 	if v74 != 0 {
@@ -4384,7 +4384,7 @@ L23:
 L24:
 	;
 	v87 = int32(0)
-	v89 = *(*int32)(unsafe.Add(mBase, _consts[72]))
+	v89 = *(*int32)(unsafe.Add(mBase, _c_F_rewriteConfigReadOldFile[1]))
 	v90 = base.I32_wrap_i64(v82)
 	v91 = F_sdsnewlen(m, v89, v90)
 	mBase = m.M
@@ -4512,7 +4512,7 @@ L36:
 L37:
 	;
 	v132 = int32(1)
-	v137 = F_sdssplitlen(m, v91, v131, int32(_a247), v132, v18+int32(12))
+	v137 = F_sdssplitlen(m, v91, v131, int32(_a_F_rewriteConfigReadOldFile_4), v132, v18+int32(12))
 	mBase = m.M
 	v138 = m.ExcPending
 	if v138 != 0 {
@@ -4575,7 +4575,7 @@ L46:
 	;
 	v162 = v137 + v151<<(uint(int32(2))%32)
 	v163 = *(*int32)(unsafe.Add(mBase, uint32(v162)))
-	v164 = int32(_a496)
+	v164 = int32(_a_F_rewriteConfigReadOldFile_5)
 	v170 = v163 + int32(-1)
 	v171 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v170))))
 	switch v171 & int32(7) {
@@ -4818,8 +4818,8 @@ L80:
 	}
 L81:
 	;
-	v263 = int32(_a497)
-	v266 = int32(*(*uint8)(unsafe.Add(mBase, _consts[231])))
+	v263 = int32(_a_F_rewriteConfigReadOldFile_6)
+	v266 = int32(*(*uint8)(unsafe.Add(mBase, _c_F_rewriteConfigReadOldFile[2])))
 	v267 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v163))))
 	if v267 == int32(0) {
 		v290 = v266
@@ -4922,7 +4922,7 @@ L93:
 	}
 L94:
 	;
-	v539 = F_sdsnew(m, int32(_a498))
+	v539 = F_sdsnew(m, int32(_a_F_rewriteConfigReadOldFile_7))
 	mBase = m.M
 	v540 = m.ExcPending
 	if v540 != 0 {
@@ -4939,7 +4939,7 @@ L95:
 	}
 L96:
 	;
-	v321 = *(*int32)(unsafe.Add(mBase, _consts[230]))
+	v321 = *(*int32)(unsafe.Add(mBase, _c_F_rewriteConfigReadOldFile[3]))
 	v322 = *(*int32)(unsafe.Add(mBase, uint32(v316)))
 	v323 = F_dictFind(m, v321, v322)
 	mBase = m.M
@@ -4952,7 +4952,7 @@ L96:
 L97:
 	;
 	v331 = *(*int32)(unsafe.Add(mBase, uint32(v316)))
-	v332 = int32(_a499)
+	v332 = int32(_a_F_rewriteConfigReadOldFile_8)
 	v335 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v331))))
 	if v335 != 0 {
 		goto L104
@@ -5073,7 +5073,7 @@ L113:
 	goto L108
 L114:
 	;
-	v373 = int32(_a500)
+	v373 = int32(_a_F_rewriteConfigReadOldFile_9)
 	v376 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v331))))
 	if v376 != 0 {
 		goto L117
@@ -5171,7 +5171,7 @@ L126:
 	goto L121
 L127:
 	;
-	v414 = int32(_a501)
+	v414 = int32(_a_F_rewriteConfigReadOldFile_10)
 	v417 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v331))))
 	if v417 != 0 {
 		goto L130
@@ -5269,7 +5269,7 @@ L139:
 	goto L134
 L140:
 	;
-	v455 = int32(_a502)
+	v455 = int32(_a_F_rewriteConfigReadOldFile_11)
 	v458 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v331))))
 	if v458 != 0 {
 		goto L143
@@ -5367,7 +5367,7 @@ L152:
 	goto L147
 L153:
 	;
-	v496 = int32(_a503)
+	v496 = int32(_a_F_rewriteConfigReadOldFile_12)
 	v499 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v331))))
 	if v499 != 0 {
 		goto L156
@@ -5603,7 +5603,7 @@ L186:
 	v616 = v614 + int32(1)
 	*(*int32)(unsafe.Add(mBase, uint32(v66)+8)) = v616
 	*(*int32)(unsafe.Add(mBase, uint32(v611+v614<<(uint(int32(2))%32)))) = v163
-	v623 = *(*int32)(unsafe.Add(mBase, _consts[230]))
+	v623 = *(*int32)(unsafe.Add(mBase, _c_F_rewriteConfigReadOldFile[3]))
 	v624 = *(*int32)(unsafe.Add(mBase, uint32(v316)))
 	v625 = F_dictFind(m, v623, v624)
 	mBase = m.M
@@ -5616,7 +5616,7 @@ L186:
 L187:
 	;
 	v645 = *(*int32)(unsafe.Add(mBase, uint32(v316)))
-	v647 = *(*int32)(unsafe.Add(mBase, _consts[232]))
+	v647 = *(*int32)(unsafe.Add(mBase, _c_F_rewriteConfigReadOldFile[4]))
 	if v647 == int32(0) {
 		goto L196
 	} else {
@@ -5706,7 +5706,7 @@ L197:
 	}
 L198:
 	;
-	v653 = int32(_a503)
+	v653 = int32(_a_F_rewriteConfigReadOldFile_12)
 	v656 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v645))))
 	if v656 != 0 {
 		goto L201
@@ -5815,7 +5815,7 @@ L212:
 	;
 	v694 = *(*int64)(unsafe.Add(mBase, uint32(v316)))
 	*(*int64)(unsafe.Add(mBase, uint32(v18))) = v694
-	v697 = F_sdscatfmt(m, v692, int32(_a504), v18)
+	v697 = F_sdscatfmt(m, v692, int32(_a_F_rewriteConfigReadOldFile_13), v18)
 	mBase = m.M
 	v698 = m.ExcPending
 	if v698 != 0 {
@@ -6111,7 +6111,7 @@ func F_rewriteConfigRewriteLine(m *base.Module, l0 int32, l1 int32, l2 int32, l3
 							if v13 == int32(0) {
 								v56 = *(*int32)(unsafe.Add(mBase, uint32(l0)+16))
 								if v56 != 0 {
-									v60 = F_sdsnew(m, int32(_a497))
+									v60 = F_sdsnew(m, int32(_a_F_rewriteConfigRewriteLine_0))
 									mBase = m.M
 									v61 = m.ExcPending
 									if v61 != 0 {
@@ -6247,7 +6247,7 @@ func F_rewriteConfigRewriteLine(m *base.Module, l0 int32, l1 int32, l2 int32, l3
 								if v13 == int32(0) {
 									v56 = *(*int32)(unsafe.Add(mBase, uint32(l0)+16))
 									if v56 != 0 {
-										v60 = F_sdsnew(m, int32(_a497))
+										v60 = F_sdsnew(m, int32(_a_F_rewriteConfigRewriteLine_0))
 										mBase = m.M
 										v61 = m.ExcPending
 										if v61 != 0 {
@@ -6383,7 +6383,7 @@ func F_rewriteConfigRewriteLine(m *base.Module, l0 int32, l1 int32, l2 int32, l3
 								if v25 != 0 {
 									v56 = *(*int32)(unsafe.Add(mBase, uint32(l0)+16))
 									if v56 != 0 {
-										v60 = F_sdsnew(m, int32(_a497))
+										v60 = F_sdsnew(m, int32(_a_F_rewriteConfigRewriteLine_0))
 										mBase = m.M
 										v61 = m.ExcPending
 										if v61 != 0 {
@@ -6481,7 +6481,7 @@ func F_rewriteConfigRewriteLine(m *base.Module, l0 int32, l1 int32, l2 int32, l3
 								if v13 == int32(0) {
 									v56 = *(*int32)(unsafe.Add(mBase, uint32(l0)+16))
 									if v56 != 0 {
-										v60 = F_sdsnew(m, int32(_a497))
+										v60 = F_sdsnew(m, int32(_a_F_rewriteConfigRewriteLine_0))
 										mBase = m.M
 										v61 = m.ExcPending
 										if v61 != 0 {
@@ -6617,7 +6617,7 @@ func F_rewriteConfigRewriteLine(m *base.Module, l0 int32, l1 int32, l2 int32, l3
 									if v13 == int32(0) {
 										v56 = *(*int32)(unsafe.Add(mBase, uint32(l0)+16))
 										if v56 != 0 {
-											v60 = F_sdsnew(m, int32(_a497))
+											v60 = F_sdsnew(m, int32(_a_F_rewriteConfigRewriteLine_0))
 											mBase = m.M
 											v61 = m.ExcPending
 											if v61 != 0 {
@@ -6753,7 +6753,7 @@ func F_rewriteConfigRewriteLine(m *base.Module, l0 int32, l1 int32, l2 int32, l3
 									if v25 != 0 {
 										v56 = *(*int32)(unsafe.Add(mBase, uint32(l0)+16))
 										if v56 != 0 {
-											v60 = F_sdsnew(m, int32(_a497))
+											v60 = F_sdsnew(m, int32(_a_F_rewriteConfigRewriteLine_0))
 											mBase = m.M
 											v61 = m.ExcPending
 											if v61 != 0 {
@@ -7043,7 +7043,7 @@ L18:
 	goto L16
 L19:
 	;
-	v59 = F_sdscatlen(m, v55, int32(_a66), int32(1))
+	v59 = F_sdscatlen(m, v55, int32(_a_F_rewriteConfigSdsOption_0), int32(1))
 	mBase = m.M
 	v60 = m.ExcPending
 	if v60 != 0 {
@@ -8324,8 +8324,8 @@ L1:
 	return
 L2:
 	;
-	*(*int32)(unsafe.Add(mBase, uint32(v14)+304)) = int32(_a1336)
-	v24 = F_sdscatprintf(m, v16, int32(_a1364), v14+int32(304))
+	*(*int32)(unsafe.Add(mBase, uint32(v14)+304)) = int32(_a_F_rewriteConfigSentinelOption_0)
+	v24 = F_sdscatprintf(m, v16, int32(_a_F_rewriteConfigSentinelOption_1), v14+int32(304))
 	mBase = m.M
 	v25 = m.ExcPending
 	if v25 != 0 {
@@ -8335,7 +8335,7 @@ L2:
 	}
 L3:
 	;
-	v27 = F_rewriteConfigRewriteLine(m, l0, int32(_a1365), v24, int32(1))
+	v27 = F_rewriteConfigRewriteLine(m, l0, int32(_a_F_rewriteConfigSentinelOption_2), v24, int32(1))
 	mBase = m.M
 	v28 = m.ExcPending
 	if v28 != 0 {
@@ -8355,7 +8355,7 @@ L4:
 	}
 L5:
 	;
-	v34 = *(*int32)(unsafe.Add(mBase, _consts[746]))
+	v34 = *(*int32)(unsafe.Add(mBase, _c_F_rewriteConfigSentinelOption[0]))
 	if v34 != 0 {
 		goto L6
 	} else {
@@ -8363,16 +8363,16 @@ L5:
 	}
 L6:
 	;
-	v35 = int32(_a483)
+	v35 = int32(_a_F_rewriteConfigSentinelOption_3)
 	goto L8
 L7:
 	;
-	v35 = int32(_a484)
+	v35 = int32(_a_F_rewriteConfigSentinelOption_4)
 	goto L8
 L8:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v14)+288)) = v35
-	v41 = F_sdscatprintf(m, v29, int32(_a1366), v14+int32(288))
+	v41 = F_sdscatprintf(m, v29, int32(_a_F_rewriteConfigSentinelOption_5), v14+int32(288))
 	mBase = m.M
 	v42 = m.ExcPending
 	if v42 != 0 {
@@ -8382,8 +8382,8 @@ L8:
 	}
 L9:
 	;
-	v44 = *(*int32)(unsafe.Add(mBase, _consts[746]))
-	v47 = F_rewriteConfigRewriteLine(m, l0, int32(_a1367), v41, base.B2i32(v44 != int32(1)))
+	v44 = *(*int32)(unsafe.Add(mBase, _c_F_rewriteConfigSentinelOption[0]))
+	v47 = F_rewriteConfigRewriteLine(m, l0, int32(_a_F_rewriteConfigSentinelOption_6), v41, base.B2i32(v44 != int32(1)))
 	mBase = m.M
 	v48 = m.ExcPending
 	if v48 != 0 {
@@ -8403,7 +8403,7 @@ L10:
 	}
 L11:
 	;
-	v54 = *(*int32)(unsafe.Add(mBase, _consts[729]))
+	v54 = *(*int32)(unsafe.Add(mBase, _c_F_rewriteConfigSentinelOption[1]))
 	if v54 != 0 {
 		goto L12
 	} else {
@@ -8411,16 +8411,16 @@ L11:
 	}
 L12:
 	;
-	v55 = int32(_a483)
+	v55 = int32(_a_F_rewriteConfigSentinelOption_3)
 	goto L14
 L13:
 	;
-	v55 = int32(_a484)
+	v55 = int32(_a_F_rewriteConfigSentinelOption_4)
 	goto L14
 L14:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v14)+272)) = v55
-	v61 = F_sdscatprintf(m, v49, int32(_a1368), v14+int32(272))
+	v61 = F_sdscatprintf(m, v49, int32(_a_F_rewriteConfigSentinelOption_7), v14+int32(272))
 	mBase = m.M
 	v62 = m.ExcPending
 	if v62 != 0 {
@@ -8431,8 +8431,8 @@ L14:
 L15:
 	;
 	v63 = int32(0)
-	v64 = *(*int32)(unsafe.Add(mBase, _consts[729]))
-	v67 = F_rewriteConfigRewriteLine(m, l0, int32(_a1369), v61, base.B2i32(v64 != v63))
+	v64 = *(*int32)(unsafe.Add(mBase, _c_F_rewriteConfigSentinelOption[1]))
+	v67 = F_rewriteConfigRewriteLine(m, l0, int32(_a_F_rewriteConfigSentinelOption_8), v61, base.B2i32(v64 != v63))
 	mBase = m.M
 	v68 = m.ExcPending
 	if v68 != 0 {
@@ -8452,7 +8452,7 @@ L16:
 	}
 L17:
 	;
-	v74 = *(*int32)(unsafe.Add(mBase, _consts[734]))
+	v74 = *(*int32)(unsafe.Add(mBase, _c_F_rewriteConfigSentinelOption[2]))
 	if v74 != 0 {
 		goto L18
 	} else {
@@ -8460,16 +8460,16 @@ L17:
 	}
 L18:
 	;
-	v75 = int32(_a483)
+	v75 = int32(_a_F_rewriteConfigSentinelOption_3)
 	goto L20
 L19:
 	;
-	v75 = int32(_a484)
+	v75 = int32(_a_F_rewriteConfigSentinelOption_4)
 	goto L20
 L20:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v14)+256)) = v75
-	v81 = F_sdscatprintf(m, v69, int32(_a1370), v14+int32(256))
+	v81 = F_sdscatprintf(m, v69, int32(_a_F_rewriteConfigSentinelOption_9), v14+int32(256))
 	mBase = m.M
 	v82 = m.ExcPending
 	if v82 != 0 {
@@ -8480,8 +8480,8 @@ L20:
 L21:
 	;
 	v83 = int32(0)
-	v84 = *(*int32)(unsafe.Add(mBase, _consts[734]))
-	v87 = F_rewriteConfigRewriteLine(m, l0, int32(_a1371), v81, base.B2i32(v84 != v83))
+	v84 = *(*int32)(unsafe.Add(mBase, _c_F_rewriteConfigSentinelOption[2]))
+	v87 = F_rewriteConfigRewriteLine(m, l0, int32(_a_F_rewriteConfigSentinelOption_10), v81, base.B2i32(v84 != v83))
 	mBase = m.M
 	v88 = m.ExcPending
 	if v88 != 0 {
@@ -8491,7 +8491,7 @@ L21:
 	}
 L22:
 	;
-	v90 = *(*int32)(unsafe.Add(mBase, _consts[733]))
+	v90 = *(*int32)(unsafe.Add(mBase, _c_F_rewriteConfigSentinelOption[3]))
 	v91 = F_dictGetIterator(m, v90)
 	mBase = m.M
 	v92 = m.ExcPending
@@ -8762,7 +8762,7 @@ L59:
 L60:
 	;
 	v230 = int32(0)
-	v231 = *(*int32)(unsafe.Add(mBase, _consts[734]))
+	v231 = *(*int32)(unsafe.Add(mBase, _c_F_rewriteConfigSentinelOption[2]))
 	v237 = *(*int32)(unsafe.Add(mBase, uint32(v227+base.B2i32(v231 == v230)<<(uint(int32(2))%32))))
 	v238 = *(*int32)(unsafe.Add(mBase, uint32(v213)+152))
 	v239 = *(*int32)(unsafe.Add(mBase, uint32(v227)+8))
@@ -8771,7 +8771,7 @@ L60:
 	*(*int32)(unsafe.Add(mBase, uint32(v14)+244)) = v237
 	*(*int32)(unsafe.Add(mBase, uint32(v14)+248)) = v239
 	*(*int32)(unsafe.Add(mBase, uint32(v14)+252)) = v238
-	v249 = F_sdscatprintf(m, v228, int32(_a1372), v14+int32(240))
+	v249 = F_sdscatprintf(m, v228, int32(_a_F_rewriteConfigSentinelOption_11), v14+int32(240))
 	mBase = m.M
 	v250 = m.ExcPending
 	if v250 != 0 {
@@ -8781,7 +8781,7 @@ L60:
 	}
 L61:
 	;
-	v252 = F_rewriteConfigRewriteLine(m, l0, int32(_a1373), v249, int32(1))
+	v252 = F_rewriteConfigRewriteLine(m, l0, int32(_a_F_rewriteConfigSentinelOption_12), v249, int32(1))
 	mBase = m.M
 	v253 = m.ExcPending
 	if v253 != 0 {
@@ -8792,7 +8792,7 @@ L61:
 L62:
 	;
 	v254 = *(*int64)(unsafe.Add(mBase, uint32(v213)+72))
-	v256 = *(*int64)(unsafe.Add(mBase, _consts[747]))
+	v256 = *(*int64)(unsafe.Add(mBase, _c_F_rewriteConfigSentinelOption[4]))
 	if v254 == v256 {
 		goto L63
 	} else {
@@ -8801,7 +8801,7 @@ L62:
 L63:
 	;
 	v275 = *(*int64)(unsafe.Add(mBase, uint32(v213)+264))
-	v277 = *(*int64)(unsafe.Add(mBase, _consts[735]))
+	v277 = *(*int64)(unsafe.Add(mBase, _c_F_rewriteConfigSentinelOption[5]))
 	if v275 == v277 {
 		goto L68
 	} else {
@@ -8823,7 +8823,7 @@ L65:
 	v261 = *(*int64)(unsafe.Add(mBase, uint32(v213)+72))
 	*(*uint32)(unsafe.Add(mBase, uint32(v14)+228)) = uint32(v261)
 	*(*int32)(unsafe.Add(mBase, uint32(v14)+224)) = v260
-	v268 = F_sdscatprintf(m, v258, int32(_a1374), v14+int32(224))
+	v268 = F_sdscatprintf(m, v258, int32(_a_F_rewriteConfigSentinelOption_13), v14+int32(224))
 	mBase = m.M
 	v269 = m.ExcPending
 	if v269 != 0 {
@@ -8833,7 +8833,7 @@ L65:
 	}
 L66:
 	;
-	v271 = F_rewriteConfigRewriteLine(m, l0, int32(_a1375), v268, int32(1))
+	v271 = F_rewriteConfigRewriteLine(m, l0, int32(_a_F_rewriteConfigSentinelOption_14), v268, int32(1))
 	mBase = m.M
 	v272 = m.ExcPending
 	if v272 != 0 {
@@ -8868,7 +8868,7 @@ L70:
 	v282 = *(*int64)(unsafe.Add(mBase, uint32(v213)+264))
 	*(*uint32)(unsafe.Add(mBase, uint32(v14)+212)) = uint32(v282)
 	*(*int32)(unsafe.Add(mBase, uint32(v14)+208)) = v281
-	v289 = F_sdscatprintf(m, v279, int32(_a1376), v14+int32(208))
+	v289 = F_sdscatprintf(m, v279, int32(_a_F_rewriteConfigSentinelOption_15), v14+int32(208))
 	mBase = m.M
 	v290 = m.ExcPending
 	if v290 != 0 {
@@ -8878,7 +8878,7 @@ L70:
 	}
 L71:
 	;
-	v292 = F_rewriteConfigRewriteLine(m, l0, int32(_a1377), v289, int32(1))
+	v292 = F_rewriteConfigRewriteLine(m, l0, int32(_a_F_rewriteConfigSentinelOption_16), v289, int32(1))
 	mBase = m.M
 	v293 = m.ExcPending
 	if v293 != 0 {
@@ -8913,7 +8913,7 @@ L75:
 	v302 = *(*int32)(unsafe.Add(mBase, uint32(v213)+156))
 	*(*int32)(unsafe.Add(mBase, uint32(v14)+196)) = v302
 	*(*int32)(unsafe.Add(mBase, uint32(v14)+192)) = v301
-	v309 = F_sdscatprintf(m, v299, int32(_a1378), v14+int32(192))
+	v309 = F_sdscatprintf(m, v299, int32(_a_F_rewriteConfigSentinelOption_17), v14+int32(192))
 	mBase = m.M
 	v310 = m.ExcPending
 	if v310 != 0 {
@@ -8923,7 +8923,7 @@ L75:
 	}
 L76:
 	;
-	v312 = F_rewriteConfigRewriteLine(m, l0, int32(_a1379), v309, int32(1))
+	v312 = F_rewriteConfigRewriteLine(m, l0, int32(_a_F_rewriteConfigSentinelOption_18), v309, int32(1))
 	mBase = m.M
 	v313 = m.ExcPending
 	if v313 != 0 {
@@ -8956,7 +8956,7 @@ L80:
 	;
 	v321 = *(*int32)(unsafe.Add(mBase, uint32(v213)+4))
 	*(*int32)(unsafe.Add(mBase, uint32(v14)+176)) = v321
-	v326 = F_sdscatprintf(m, v319, int32(_a1380), v14+int32(176))
+	v326 = F_sdscatprintf(m, v319, int32(_a_F_rewriteConfigSentinelOption_19), v14+int32(176))
 	mBase = m.M
 	v327 = m.ExcPending
 	if v327 != 0 {
@@ -9019,7 +9019,7 @@ L87:
 	goto L82
 L88:
 	;
-	v354 = F_rewriteConfigRewriteLine(m, l0, int32(_a1381), v351, int32(1))
+	v354 = F_rewriteConfigRewriteLine(m, l0, int32(_a_F_rewriteConfigSentinelOption_20), v351, int32(1))
 	mBase = m.M
 	v355 = m.ExcPending
 	if v355 != 0 {
@@ -9052,7 +9052,7 @@ L92:
 	;
 	v365 = *(*int32)(unsafe.Add(mBase, uint32(v213)+4))
 	*(*int32)(unsafe.Add(mBase, uint32(v14)+160)) = v365
-	v370 = F_sdscatprintf(m, v363, int32(_a1382), v14+int32(160))
+	v370 = F_sdscatprintf(m, v363, int32(_a_F_rewriteConfigSentinelOption_21), v14+int32(160))
 	mBase = m.M
 	v371 = m.ExcPending
 	if v371 != 0 {
@@ -9115,7 +9115,7 @@ L99:
 	goto L94
 L100:
 	;
-	v398 = F_rewriteConfigRewriteLine(m, l0, int32(_a1383), v395, int32(1))
+	v398 = F_rewriteConfigRewriteLine(m, l0, int32(_a_F_rewriteConfigSentinelOption_22), v395, int32(1))
 	mBase = m.M
 	v399 = m.ExcPending
 	if v399 != 0 {
@@ -9148,7 +9148,7 @@ L104:
 	;
 	v409 = *(*int32)(unsafe.Add(mBase, uint32(v213)+4))
 	*(*int32)(unsafe.Add(mBase, uint32(v14)+144)) = v409
-	v414 = F_sdscatprintf(m, v407, int32(_a1384), v14+int32(144))
+	v414 = F_sdscatprintf(m, v407, int32(_a_F_rewriteConfigSentinelOption_23), v14+int32(144))
 	mBase = m.M
 	v415 = m.ExcPending
 	if v415 != 0 {
@@ -9211,7 +9211,7 @@ L111:
 	goto L106
 L112:
 	;
-	v442 = F_rewriteConfigRewriteLine(m, l0, int32(_a1385), v439, int32(1))
+	v442 = F_rewriteConfigRewriteLine(m, l0, int32(_a_F_rewriteConfigSentinelOption_24), v439, int32(1))
 	mBase = m.M
 	v443 = m.ExcPending
 	if v443 != 0 {
@@ -9244,7 +9244,7 @@ L116:
 	;
 	v453 = *(*int32)(unsafe.Add(mBase, uint32(v213)+4))
 	*(*int32)(unsafe.Add(mBase, uint32(v14)+128)) = v453
-	v458 = F_sdscatprintf(m, v451, int32(_a1386), v14+int32(128))
+	v458 = F_sdscatprintf(m, v451, int32(_a_F_rewriteConfigSentinelOption_25), v14+int32(128))
 	mBase = m.M
 	v459 = m.ExcPending
 	if v459 != 0 {
@@ -9307,7 +9307,7 @@ L123:
 	goto L118
 L124:
 	;
-	v486 = F_rewriteConfigRewriteLine(m, l0, int32(_a1387), v483, int32(1))
+	v486 = F_rewriteConfigRewriteLine(m, l0, int32(_a_F_rewriteConfigSentinelOption_26), v483, int32(1))
 	mBase = m.M
 	v487 = m.ExcPending
 	if v487 != 0 {
@@ -9344,7 +9344,7 @@ L128:
 	v498 = *(*int64)(unsafe.Add(mBase, uint32(v213)+80))
 	*(*uint32)(unsafe.Add(mBase, uint32(v14)+116)) = uint32(v498)
 	*(*int32)(unsafe.Add(mBase, uint32(v14)+112)) = v497
-	v505 = F_sdscatprintf(m, v495, int32(_a1388), v14+int32(112))
+	v505 = F_sdscatprintf(m, v495, int32(_a_F_rewriteConfigSentinelOption_27), v14+int32(112))
 	mBase = m.M
 	v506 = m.ExcPending
 	if v506 != 0 {
@@ -9354,7 +9354,7 @@ L128:
 	}
 L129:
 	;
-	v508 = F_rewriteConfigRewriteLine(m, l0, int32(_a1389), v505, int32(1))
+	v508 = F_rewriteConfigRewriteLine(m, l0, int32(_a_F_rewriteConfigSentinelOption_28), v505, int32(1))
 	mBase = m.M
 	v509 = m.ExcPending
 	if v509 != 0 {
@@ -9371,7 +9371,7 @@ L131:
 	v515 = *(*int64)(unsafe.Add(mBase, uint32(v213)+16))
 	*(*int64)(unsafe.Add(mBase, uint32(v14)+104)) = v515
 	*(*int32)(unsafe.Add(mBase, uint32(v14)+96)) = v514
-	v522 = F_sdscatprintf(m, v512, int32(_a1390), v14+int32(96))
+	v522 = F_sdscatprintf(m, v512, int32(_a_F_rewriteConfigSentinelOption_29), v14+int32(96))
 	mBase = m.M
 	v523 = m.ExcPending
 	if v523 != 0 {
@@ -9381,7 +9381,7 @@ L131:
 	}
 L132:
 	;
-	v525 = F_rewriteConfigRewriteLine(m, l0, int32(_a1391), v522, int32(1))
+	v525 = F_rewriteConfigRewriteLine(m, l0, int32(_a_F_rewriteConfigSentinelOption_30), v522, int32(1))
 	mBase = m.M
 	v526 = m.ExcPending
 	if v526 != 0 {
@@ -9405,7 +9405,7 @@ L134:
 	v530 = *(*int64)(unsafe.Add(mBase, uint32(v213)+224))
 	*(*int64)(unsafe.Add(mBase, uint32(v14)+88)) = v530
 	*(*int32)(unsafe.Add(mBase, uint32(v14)+80)) = v529
-	v537 = F_sdscatprintf(m, v527, int32(_a1392), v14+int32(80))
+	v537 = F_sdscatprintf(m, v527, int32(_a_F_rewriteConfigSentinelOption_31), v14+int32(80))
 	mBase = m.M
 	v538 = m.ExcPending
 	if v538 != 0 {
@@ -9415,7 +9415,7 @@ L134:
 	}
 L135:
 	;
-	v540 = F_rewriteConfigRewriteLine(m, l0, int32(_a1393), v537, int32(1))
+	v540 = F_rewriteConfigRewriteLine(m, l0, int32(_a_F_rewriteConfigSentinelOption_32), v537, int32(1))
 	mBase = m.M
 	v541 = m.ExcPending
 	if v541 != 0 {
@@ -9843,14 +9843,14 @@ L193:
 L194:
 	;
 	v749 = int32(0)
-	v750 = *(*int32)(unsafe.Add(mBase, _consts[734]))
+	v750 = *(*int32)(unsafe.Add(mBase, _c_F_rewriteConfigSentinelOption[2]))
 	v756 = *(*int32)(unsafe.Add(mBase, uint32(v746+base.B2i32(v750 == v749)<<(uint(int32(2))%32))))
 	v757 = *(*int32)(unsafe.Add(mBase, uint32(v746)+8))
 	v758 = *(*int32)(unsafe.Add(mBase, uint32(v213)+4))
 	*(*int32)(unsafe.Add(mBase, uint32(v14)+64)) = v758
 	*(*int32)(unsafe.Add(mBase, uint32(v14)+68)) = v756
 	*(*int32)(unsafe.Add(mBase, uint32(v14)+72)) = v757
-	v766 = F_sdscatprintf(m, v747, int32(_a1394), v14+int32(64))
+	v766 = F_sdscatprintf(m, v747, int32(_a_F_rewriteConfigSentinelOption_33), v14+int32(64))
 	mBase = m.M
 	v767 = m.ExcPending
 	if v767 != 0 {
@@ -9880,7 +9880,7 @@ L196:
 	}
 L197:
 	;
-	v771 = F_rewriteConfigRewriteLine(m, l0, int32(_a1395), v768, int32(0))
+	v771 = F_rewriteConfigRewriteLine(m, l0, int32(_a_F_rewriteConfigSentinelOption_34), v768, int32(0))
 	mBase = m.M
 	v772 = m.ExcPending
 	if v772 != 0 {
@@ -9897,7 +9897,7 @@ L198:
 	}
 L199:
 	;
-	v775 = F_rewriteConfigRewriteLine(m, l0, int32(_a1396), v766, int32(1))
+	v775 = F_rewriteConfigRewriteLine(m, l0, int32(_a_F_rewriteConfigSentinelOption_35), v766, int32(1))
 	mBase = m.M
 	v776 = m.ExcPending
 	if v776 != 0 {
@@ -10156,14 +10156,14 @@ L236:
 	;
 	v911 = *(*int32)(unsafe.Add(mBase, uint32(v904)+24))
 	v912 = int32(0)
-	v913 = *(*int32)(unsafe.Add(mBase, _consts[734]))
+	v913 = *(*int32)(unsafe.Add(mBase, _c_F_rewriteConfigSentinelOption[2]))
 	v919 = *(*int32)(unsafe.Add(mBase, uint32(v911+base.B2i32(v913 == v912)<<(uint(int32(2))%32))))
 	v920 = *(*int32)(unsafe.Add(mBase, uint32(v911)+8))
 	v921 = *(*int32)(unsafe.Add(mBase, uint32(v213)+4))
 	*(*int32)(unsafe.Add(mBase, uint32(v14)+48)) = v921
 	*(*int32)(unsafe.Add(mBase, uint32(v14)+52)) = v919
 	*(*int32)(unsafe.Add(mBase, uint32(v14)+56)) = v920
-	v928 = F_sdscatprintf(m, v909, int32(_a1397), v14+int32(48))
+	v928 = F_sdscatprintf(m, v909, int32(_a_F_rewriteConfigSentinelOption_36), v14+int32(48))
 	mBase = m.M
 	v929 = m.ExcPending
 	if v929 != 0 {
@@ -10226,7 +10226,7 @@ L243:
 	goto L238
 L244:
 	;
-	v955 = F_rewriteConfigRewriteLine(m, l0, int32(_a1398), v952, int32(1))
+	v955 = F_rewriteConfigRewriteLine(m, l0, int32(_a_F_rewriteConfigSentinelOption_37), v952, int32(1))
 	mBase = m.M
 	v956 = m.ExcPending
 	if v956 != 0 {
@@ -10478,7 +10478,7 @@ L280:
 	;
 	v1086 = *(*int32)(unsafe.Add(mBase, uint32(v213)+4))
 	*(*int32)(unsafe.Add(mBase, uint32(v14)+32)) = v1086
-	v1091 = F_sdscatprintf(m, v1084, int32(_a1399), v14+int32(32))
+	v1091 = F_sdscatprintf(m, v1084, int32(_a_F_rewriteConfigSentinelOption_38), v14+int32(32))
 	mBase = m.M
 	v1092 = m.ExcPending
 	if v1092 != 0 {
@@ -10541,7 +10541,7 @@ L287:
 	goto L282
 L288:
 	;
-	v1119 = F_sdscatlen(m, v1115, int32(_a66), int32(1))
+	v1119 = F_sdscatlen(m, v1115, int32(_a_F_rewriteConfigSentinelOption_39), int32(1))
 	mBase = m.M
 	v1120 = m.ExcPending
 	if v1120 != 0 {
@@ -10603,7 +10603,7 @@ L295:
 	goto L290
 L296:
 	;
-	v1145 = F_rewriteConfigRewriteLine(m, l0, int32(_a1400), v1142, int32(1))
+	v1145 = F_rewriteConfigRewriteLine(m, l0, int32(_a_F_rewriteConfigSentinelOption_40), v1142, int32(1))
 	mBase = m.M
 	v1146 = m.ExcPending
 	if v1146 != 0 {
@@ -10815,9 +10815,9 @@ L325:
 	goto L53
 L326:
 	;
-	v1270 = *(*int64)(unsafe.Add(mBase, _consts[748]))
+	v1270 = *(*int64)(unsafe.Add(mBase, _c_F_rewriteConfigSentinelOption[6]))
 	*(*int64)(unsafe.Add(mBase, uint32(v14)+16)) = v1270
-	v1276 = F_sdscatprintf(m, v1267, int32(_a1401), v14+int32(16))
+	v1276 = F_sdscatprintf(m, v1267, int32(_a_F_rewriteConfigSentinelOption_41), v14+int32(16))
 	mBase = m.M
 	v1277 = m.ExcPending
 	if v1277 != 0 {
@@ -10827,7 +10827,7 @@ L326:
 	}
 L327:
 	;
-	v1279 = F_rewriteConfigRewriteLine(m, l0, int32(_a1402), v1276, int32(1))
+	v1279 = F_rewriteConfigRewriteLine(m, l0, int32(_a_F_rewriteConfigSentinelOption_42), v1276, int32(1))
 	mBase = m.M
 	v1280 = m.ExcPending
 	if v1280 != 0 {
@@ -10838,7 +10838,7 @@ L327:
 L328:
 	;
 	v1281 = int32(0)
-	v1282 = *(*int32)(unsafe.Add(mBase, _consts[749]))
+	v1282 = *(*int32)(unsafe.Add(mBase, _c_F_rewriteConfigSentinelOption[7]))
 	if v1282 == v1281 {
 		goto L330
 	} else {
@@ -10847,7 +10847,7 @@ L328:
 L329:
 	;
 	v1324 = int32(0)
-	v1325 = *(*int32)(unsafe.Add(mBase, _consts[750]))
+	v1325 = *(*int32)(unsafe.Add(mBase, _c_F_rewriteConfigSentinelOption[8]))
 	if v1325 == v1324 {
 		goto L343
 	} else {
@@ -10855,7 +10855,7 @@ L329:
 	}
 L330:
 	;
-	F_rewriteConfigMarkAsProcessed(m, l0, int32(_a1403))
+	F_rewriteConfigMarkAsProcessed(m, l0, int32(_a_F_rewriteConfigSentinelOption_43))
 	mBase = m.M
 	v1319 = m.ExcPending
 	if v1319 != 0 {
@@ -10865,7 +10865,7 @@ L330:
 	}
 L331:
 	;
-	v1287 = F_sdsnew(m, int32(_a1404))
+	v1287 = F_sdsnew(m, int32(_a_F_rewriteConfigSentinelOption_44))
 	mBase = m.M
 	v1288 = m.ExcPending
 	if v1288 != 0 {
@@ -10875,7 +10875,7 @@ L331:
 	}
 L332:
 	;
-	v1290 = *(*int32)(unsafe.Add(mBase, _consts[749]))
+	v1290 = *(*int32)(unsafe.Add(mBase, _c_F_rewriteConfigSentinelOption[7]))
 	v1293 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v1290+int32(-1)))))
 	switch v1293 & int32(7) {
 	case 0:
@@ -10928,7 +10928,7 @@ L338:
 	goto L333
 L339:
 	;
-	v1315 = F_rewriteConfigRewriteLine(m, l0, int32(_a1403), v1312, int32(1))
+	v1315 = F_rewriteConfigRewriteLine(m, l0, int32(_a_F_rewriteConfigSentinelOption_43), v1312, int32(1))
 	mBase = m.M
 	v1316 = m.ExcPending
 	if v1316 != 0 {
@@ -10945,7 +10945,7 @@ L341:
 L342:
 	;
 	v1344 = int32(0)
-	v1346 = *(*int32)(unsafe.Add(mBase, _consts[751]))
+	v1346 = *(*int32)(unsafe.Add(mBase, _c_F_rewriteConfigSentinelOption[9]))
 	if v1346 == v1344 {
 		goto L350
 	} else {
@@ -10953,7 +10953,7 @@ L342:
 	}
 L343:
 	;
-	F_rewriteConfigMarkAsProcessed(m, l0, int32(_a1405))
+	F_rewriteConfigMarkAsProcessed(m, l0, int32(_a_F_rewriteConfigSentinelOption_45))
 	mBase = m.M
 	v1342 = m.ExcPending
 	if v1342 != 0 {
@@ -10973,9 +10973,9 @@ L344:
 	}
 L345:
 	;
-	v1331 = *(*int32)(unsafe.Add(mBase, _consts[750]))
+	v1331 = *(*int32)(unsafe.Add(mBase, _c_F_rewriteConfigSentinelOption[8]))
 	*(*int32)(unsafe.Add(mBase, uint32(v14))) = v1331
-	v1335 = F_sdscatprintf(m, v1328, int32(_a1406), v14)
+	v1335 = F_sdscatprintf(m, v1328, int32(_a_F_rewriteConfigSentinelOption_46), v14)
 	mBase = m.M
 	v1336 = m.ExcPending
 	if v1336 != 0 {
@@ -10985,7 +10985,7 @@ L345:
 	}
 L346:
 	;
-	v1338 = F_rewriteConfigRewriteLine(m, l0, int32(_a1405), v1335, int32(1))
+	v1338 = F_rewriteConfigRewriteLine(m, l0, int32(_a_F_rewriteConfigSentinelOption_45), v1335, int32(1))
 	mBase = m.M
 	v1339 = m.ExcPending
 	if v1339 != 0 {
@@ -11002,7 +11002,7 @@ L348:
 L349:
 	;
 	v1387 = int32(0)
-	v1389 = *(*int32)(unsafe.Add(mBase, _consts[752]))
+	v1389 = *(*int32)(unsafe.Add(mBase, _c_F_rewriteConfigSentinelOption[10]))
 	if v1389 == v1387 {
 		goto L363
 	} else {
@@ -11010,7 +11010,7 @@ L349:
 	}
 L350:
 	;
-	F_rewriteConfigMarkAsProcessed(m, l0, int32(_a1407))
+	F_rewriteConfigMarkAsProcessed(m, l0, int32(_a_F_rewriteConfigSentinelOption_47))
 	mBase = m.M
 	v1382 = m.ExcPending
 	if v1382 != 0 {
@@ -11020,7 +11020,7 @@ L350:
 	}
 L351:
 	;
-	v1350 = F_sdsnew(m, int32(_a1408))
+	v1350 = F_sdsnew(m, int32(_a_F_rewriteConfigSentinelOption_48))
 	mBase = m.M
 	v1351 = m.ExcPending
 	if v1351 != 0 {
@@ -11030,7 +11030,7 @@ L351:
 	}
 L352:
 	;
-	v1353 = *(*int32)(unsafe.Add(mBase, _consts[751]))
+	v1353 = *(*int32)(unsafe.Add(mBase, _c_F_rewriteConfigSentinelOption[9]))
 	v1356 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v1353+int32(-1)))))
 	switch v1356 & int32(7) {
 	case 0:
@@ -11083,7 +11083,7 @@ L358:
 	goto L353
 L359:
 	;
-	v1378 = F_rewriteConfigRewriteLine(m, l0, int32(_a1407), v1375, int32(1))
+	v1378 = F_rewriteConfigRewriteLine(m, l0, int32(_a_F_rewriteConfigSentinelOption_47), v1375, int32(1))
 	mBase = m.M
 	v1379 = m.ExcPending
 	if v1379 != 0 {
@@ -11109,7 +11109,7 @@ L362:
 	}
 L363:
 	;
-	F_rewriteConfigMarkAsProcessed(m, l0, int32(_a1409))
+	F_rewriteConfigMarkAsProcessed(m, l0, int32(_a_F_rewriteConfigSentinelOption_49))
 	mBase = m.M
 	v1425 = m.ExcPending
 	if v1425 != 0 {
@@ -11119,7 +11119,7 @@ L363:
 	}
 L364:
 	;
-	v1393 = F_sdsnew(m, int32(_a1410))
+	v1393 = F_sdsnew(m, int32(_a_F_rewriteConfigSentinelOption_50))
 	mBase = m.M
 	v1394 = m.ExcPending
 	if v1394 != 0 {
@@ -11129,7 +11129,7 @@ L364:
 	}
 L365:
 	;
-	v1396 = *(*int32)(unsafe.Add(mBase, _consts[752]))
+	v1396 = *(*int32)(unsafe.Add(mBase, _c_F_rewriteConfigSentinelOption[10]))
 	v1399 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v1396+int32(-1)))))
 	switch v1399 & int32(7) {
 	case 0:
@@ -11182,7 +11182,7 @@ L371:
 	goto L366
 L372:
 	;
-	v1421 = F_rewriteConfigRewriteLine(m, l0, int32(_a1409), v1418, int32(1))
+	v1421 = F_rewriteConfigRewriteLine(m, l0, int32(_a_F_rewriteConfigSentinelOption_49), v1418, int32(1))
 	mBase = m.M
 	v1422 = m.ExcPending
 	if v1422 != 0 {
@@ -11198,7 +11198,7 @@ L374:
 	goto L362
 L375:
 	;
-	F_rewriteConfigMarkAsProcessed(m, l0, int32(_a1373))
+	F_rewriteConfigMarkAsProcessed(m, l0, int32(_a_F_rewriteConfigSentinelOption_12))
 	mBase = m.M
 	v1434 = m.ExcPending
 	if v1434 != 0 {
@@ -11208,7 +11208,7 @@ L375:
 	}
 L376:
 	;
-	F_rewriteConfigMarkAsProcessed(m, l0, int32(_a1375))
+	F_rewriteConfigMarkAsProcessed(m, l0, int32(_a_F_rewriteConfigSentinelOption_14))
 	mBase = m.M
 	v1437 = m.ExcPending
 	if v1437 != 0 {
@@ -11218,7 +11218,7 @@ L376:
 	}
 L377:
 	;
-	F_rewriteConfigMarkAsProcessed(m, l0, int32(_a1377))
+	F_rewriteConfigMarkAsProcessed(m, l0, int32(_a_F_rewriteConfigSentinelOption_16))
 	mBase = m.M
 	v1440 = m.ExcPending
 	if v1440 != 0 {
@@ -11228,7 +11228,7 @@ L377:
 	}
 L378:
 	;
-	F_rewriteConfigMarkAsProcessed(m, l0, int32(_a1379))
+	F_rewriteConfigMarkAsProcessed(m, l0, int32(_a_F_rewriteConfigSentinelOption_18))
 	mBase = m.M
 	v1443 = m.ExcPending
 	if v1443 != 0 {
@@ -11238,7 +11238,7 @@ L378:
 	}
 L379:
 	;
-	F_rewriteConfigMarkAsProcessed(m, l0, int32(_a1381))
+	F_rewriteConfigMarkAsProcessed(m, l0, int32(_a_F_rewriteConfigSentinelOption_20))
 	mBase = m.M
 	v1446 = m.ExcPending
 	if v1446 != 0 {
@@ -11248,7 +11248,7 @@ L379:
 	}
 L380:
 	;
-	F_rewriteConfigMarkAsProcessed(m, l0, int32(_a1383))
+	F_rewriteConfigMarkAsProcessed(m, l0, int32(_a_F_rewriteConfigSentinelOption_22))
 	mBase = m.M
 	v1449 = m.ExcPending
 	if v1449 != 0 {
@@ -11258,7 +11258,7 @@ L380:
 	}
 L381:
 	;
-	F_rewriteConfigMarkAsProcessed(m, l0, int32(_a1385))
+	F_rewriteConfigMarkAsProcessed(m, l0, int32(_a_F_rewriteConfigSentinelOption_24))
 	mBase = m.M
 	v1452 = m.ExcPending
 	if v1452 != 0 {
@@ -11268,7 +11268,7 @@ L381:
 	}
 L382:
 	;
-	F_rewriteConfigMarkAsProcessed(m, l0, int32(_a1387))
+	F_rewriteConfigMarkAsProcessed(m, l0, int32(_a_F_rewriteConfigSentinelOption_26))
 	mBase = m.M
 	v1455 = m.ExcPending
 	if v1455 != 0 {
@@ -11278,7 +11278,7 @@ L382:
 	}
 L383:
 	;
-	F_rewriteConfigMarkAsProcessed(m, l0, int32(_a1391))
+	F_rewriteConfigMarkAsProcessed(m, l0, int32(_a_F_rewriteConfigSentinelOption_30))
 	mBase = m.M
 	v1458 = m.ExcPending
 	if v1458 != 0 {
@@ -11288,7 +11288,7 @@ L383:
 	}
 L384:
 	;
-	F_rewriteConfigMarkAsProcessed(m, l0, int32(_a1393))
+	F_rewriteConfigMarkAsProcessed(m, l0, int32(_a_F_rewriteConfigSentinelOption_32))
 	mBase = m.M
 	v1461 = m.ExcPending
 	if v1461 != 0 {
@@ -11298,7 +11298,7 @@ L384:
 	}
 L385:
 	;
-	F_rewriteConfigMarkAsProcessed(m, l0, int32(_a1396))
+	F_rewriteConfigMarkAsProcessed(m, l0, int32(_a_F_rewriteConfigSentinelOption_35))
 	mBase = m.M
 	v1464 = m.ExcPending
 	if v1464 != 0 {
@@ -11308,7 +11308,7 @@ L385:
 	}
 L386:
 	;
-	F_rewriteConfigMarkAsProcessed(m, l0, int32(_a1398))
+	F_rewriteConfigMarkAsProcessed(m, l0, int32(_a_F_rewriteConfigSentinelOption_37))
 	mBase = m.M
 	v1467 = m.ExcPending
 	if v1467 != 0 {
@@ -11318,7 +11318,7 @@ L386:
 	}
 L387:
 	;
-	F_rewriteConfigMarkAsProcessed(m, l0, int32(_a1400))
+	F_rewriteConfigMarkAsProcessed(m, l0, int32(_a_F_rewriteConfigSentinelOption_40))
 	mBase = m.M
 	v1470 = m.ExcPending
 	if v1470 != 0 {
@@ -11328,7 +11328,7 @@ L387:
 	}
 L388:
 	;
-	F_rewriteConfigMarkAsProcessed(m, l0, int32(_a1389))
+	F_rewriteConfigMarkAsProcessed(m, l0, int32(_a_F_rewriteConfigSentinelOption_28))
 	mBase = m.M
 	v1473 = m.ExcPending
 	if v1473 != 0 {
@@ -11367,7 +11367,7 @@ func F_setConfigDirOption(m *base.Module, l0 int32, l1 int32, l2 int32, l3 int32
 			if v12 != int32(-1) {
 				v23 = int32(1)
 			} else {
-				v16 = *(*int32)(unsafe.Add(mBase, _consts[5]))
+				v16 = *(*int32)(unsafe.Add(mBase, _c_F_setConfigDirOption[0]))
 				v17 = F___strerror_l(m, v16, v16)
 				mBase = m.M
 				v19 = v17
@@ -11375,12 +11375,12 @@ func F_setConfigDirOption(m *base.Module, l0 int32, l1 int32, l2 int32, l3 int32
 				v23 = int32(0)
 			}
 		} else {
-			v19 = int32(_a519)
+			v19 = int32(_a_F_setConfigDirOption_0)
 			*(*int32)(unsafe.Add(mBase, uint32(l3))) = v19
 			v23 = int32(0)
 		}
 	} else {
-		v19 = int32(_a520)
+		v19 = int32(_a_F_setConfigDirOption_1)
 		*(*int32)(unsafe.Add(mBase, uint32(l3))) = v19
 		v23 = int32(0)
 	}
@@ -11414,11 +11414,11 @@ L1:
 	goto L7
 L2:
 	;
-	*(*int32)(unsafe.Add(mBase, uint32(l3))) = int32(_a520)
+	*(*int32)(unsafe.Add(mBase, uint32(l3))) = int32(_a_F_setConfigNotifyKeyspaceEventsOption_0)
 	return int32(0)
 L3:
 	;
-	*(*int32)(unsafe.Add(mBase, _consts[289])) = v39
+	*(*int32)(unsafe.Add(mBase, _c_F_setConfigNotifyKeyspaceEventsOption[0])) = v39
 	return int32(1)
 L4:
 	;
@@ -11538,7 +11538,7 @@ L23:
 	goto L9
 L24:
 	;
-	*(*int32)(unsafe.Add(mBase, uint32(l3))) = int32(_a521)
+	*(*int32)(unsafe.Add(mBase, uint32(l3))) = int32(_a_F_setConfigNotifyKeyspaceEventsOption_1)
 	return int32(0)
 }
 func F_setConfigRdmaBindOption(m *base.Module, l0 int32, l1 int32, l2 int32, l3 int32) int32 {
@@ -11546,7 +11546,7 @@ func F_setConfigRdmaBindOption(m *base.Module, l0 int32, l1 int32, l2 int32, l3 
 	_ = v11
 	var v14 int32
 	_ = v14
-	v11 = F_setConfigBindOption(m, l1, l2, l3, int32(_a512), int32(_a522))
+	v11 = F_setConfigBindOption(m, l1, l2, l3, int32(_a_F_setConfigRdmaBindOption_0), int32(_a_F_setConfigRdmaBindOption_1))
 	v14 = m.ExcPending
 	if v14 != 0 {
 		return int32(0)
@@ -11685,7 +11685,7 @@ L1:
 	return v132
 L2:
 	;
-	v16 = *(*int32)(unsafe.Add(mBase, _consts[130]))
+	v16 = *(*int32)(unsafe.Add(mBase, _c_F_setConfigReplicaOfOption[0]))
 	F_sdsfree(m, v16)
 	mBase = m.M
 	v20 = m.ExcPending
@@ -11696,7 +11696,7 @@ L2:
 	}
 L3:
 	;
-	*(*int32)(unsafe.Add(mBase, uint32(l3))) = int32(_a520)
+	*(*int32)(unsafe.Add(mBase, uint32(l3))) = int32(_a_F_setConfigReplicaOfOption_0)
 	v132 = int32(0)
 	goto L1
 L4:
@@ -11704,10 +11704,10 @@ L4:
 	return int32(0)
 L5:
 	;
-	*(*int32)(unsafe.Add(mBase, _consts[130])) = int32(0)
+	*(*int32)(unsafe.Add(mBase, _c_F_setConfigReplicaOfOption[0])) = int32(0)
 	v24 = *(*int32)(unsafe.Add(mBase, uint32(l1)+4))
 	v25 = *(*int32)(unsafe.Add(mBase, uint32(l1)))
-	v26 = int32(_a484)
+	v26 = int32(_a_F_setConfigReplicaOfOption_1)
 	v29 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v25))))
 	if v29 != 0 {
 		goto L9
@@ -11810,7 +11810,7 @@ L18:
 	goto L13
 L19:
 	;
-	v65 = int32(_a523)
+	v65 = int32(_a_F_setConfigReplicaOfOption_2)
 	v68 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v24))))
 	if v68 != 0 {
 		goto L22
@@ -11911,7 +11911,7 @@ L32:
 	goto L1
 L33:
 	;
-	*(*int32)(unsafe.Add(mBase, _consts[290])) = v111
+	*(*int32)(unsafe.Add(mBase, _c_F_setConfigReplicaOfOption[1])) = v111
 	if base.Ui32(int32(65535)) < base.Ui32(v111) {
 		goto L35
 	} else {
@@ -11930,7 +11930,7 @@ L34:
 	}
 L35:
 	;
-	*(*int32)(unsafe.Add(mBase, uint32(l3))) = int32(_a524)
+	*(*int32)(unsafe.Add(mBase, uint32(l3))) = int32(_a_F_setConfigReplicaOfOption_3)
 	v132 = int32(0)
 	goto L1
 L36:
@@ -11947,9 +11947,9 @@ L37:
 	goto L35
 L38:
 	;
-	v126 = int32(_a44)
-	*(*int32)(unsafe.Add(mBase, _consts[193])) = int32(1)
-	*(*int32)(unsafe.Add(mBase, _consts[130])) = v124
+	v126 = int32(_a_F_setConfigReplicaOfOption_4)
+	*(*int32)(unsafe.Add(mBase, _c_F_setConfigReplicaOfOption[2])) = int32(1)
+	*(*int32)(unsafe.Add(mBase, _c_F_setConfigReplicaOfOption[0])) = v124
 	v132 = int32(1)
 	goto L1
 }

@@ -64,7 +64,7 @@ func F_addHashIteratorCursorToReply(m *base.Module, l0 int32, l1 int32, l2 int32
 			}
 		}
 	default:
-		F__serverPanic_1(m, int32(_a1483), int32(1251), int32(_a855), int32(0))
+		F__serverPanic_1(m, int32(_a_F_addHashIteratorCursorToReply_0), int32(1251), int32(_a_F_addHashIteratorCursorToReply_1), int32(0))
 		mBase = m.M
 		v42 = m.ExcPending
 		if v42 != 0 {
@@ -243,7 +243,7 @@ func F_freeHashObject(m *base.Module, l0 int32) {
 					}
 					v55 = v30 + int32(1) + v51 + int32(1)
 				}
-				v70 = *(*int32)(unsafe.Add(mBase, _consts[249]))
+				v70 = *(*int32)(unsafe.Add(mBase, _c_F_freeHashObject[0]))
 				F_hashtableRelease(m, v55+v70)
 				mBase = m.M
 				v74 = m.ExcPending
@@ -255,7 +255,7 @@ func F_freeHashObject(m *base.Module, l0 int32) {
 			}
 		}
 	default:
-		F__serverPanic_1(m, int32(_a838), int32(601), int32(_a845), int32(0))
+		F__serverPanic_1(m, int32(_a_F_freeHashObject_0), int32(601), int32(_a_F_freeHashObject_1), int32(0))
 		mBase = m.M
 		v147 = m.ExcPending
 		if v147 != 0 {
@@ -312,7 +312,7 @@ func F_freeHashObject(m *base.Module, l0 int32) {
 				}
 				v119 = v94 + int32(1) + v115 + int32(1)
 			}
-			v134 = *(*int32)(unsafe.Add(mBase, _consts[249]))
+			v134 = *(*int32)(unsafe.Add(mBase, _c_F_freeHashObject[0]))
 			F_lpFree(m, v119+v134)
 			mBase = m.M
 			v138 = m.ExcPending
@@ -404,7 +404,7 @@ func F_hashTypeCurrentFromListpack(m *base.Module, l0 int32, l1 int32, l2 int32,
 			return
 		}
 	} else {
-		F__serverAssert(m, int32(_a1488), int32(_a1483), int32(716))
+		F__serverAssert(m, int32(_a_F_hashTypeCurrentFromListpack_0), int32(_a_F_hashTypeCurrentFromListpack_1), int32(716))
 		mBase = m.M
 		v13 = m.ExcPending
 		if v13 != 0 {
@@ -486,7 +486,7 @@ func F_hashTypeCurrentObjectNewSds(m *base.Module, l0 int32, l1 int32) int32 {
 			}
 		}
 	default:
-		F__serverPanic_1(m, int32(_a1483), int32(755), int32(_a855), int32(0))
+		F__serverPanic_1(m, int32(_a_F_hashTypeCurrentObjectNewSds_0), int32(755), int32(_a_F_hashTypeCurrentObjectNewSds_1), int32(0))
 		mBase = m.M
 		v43 = m.ExcPending
 		if v43 != 0 {
@@ -611,7 +611,7 @@ func F_hashTypeFreeVolatileSet(m *base.Module, l0 int32) {
 		} else {
 			v29 = F_objectGetVal(m, l0)
 			mBase = m.M
-			*(*int32)(unsafe.Add(mBase, uint32(v29))) = int32(_a1482)
+			*(*int32)(unsafe.Add(mBase, uint32(v29))) = int32(_a_F_hashTypeFreeVolatileSet_0)
 		}
 		return
 	} else {
@@ -626,7 +626,7 @@ func F_hashTypeFreeVolatileSet(m *base.Module, l0 int32) {
 			} else {
 				v29 = F_objectGetVal(m, l0)
 				mBase = m.M
-				*(*int32)(unsafe.Add(mBase, uint32(v29))) = int32(_a1482)
+				*(*int32)(unsafe.Add(mBase, uint32(v29))) = int32(_a_F_hashTypeFreeVolatileSet_0)
 			}
 			return
 		}
@@ -755,7 +755,7 @@ func F_hashTypeGetExpiry(m *base.Module, l0 int32, l1 int32, l2 int32) int32 {
 			return v94
 		}
 	default:
-		F__serverPanic_1(m, int32(_a1483), int32(276), int32(_a855), int32(0))
+		F__serverPanic_1(m, int32(_a_F_hashTypeGetExpiry_0), int32(276), int32(_a_F_hashTypeGetExpiry_1), int32(0))
 		mBase = m.M
 		v104 = m.ExcPending
 		if v104 != 0 {
@@ -1101,7 +1101,7 @@ func F_hashTypeGetValue(m *base.Module, l0 int32, l1 int32, l2 int32, l3 int32, 
 					}
 				}
 				if v153 == int32(0) {
-					F__serverAssert(m, int32(_a1485), int32(_a1483), int32(247))
+					F__serverAssert(m, int32(_a_F_hashTypeGetValue_0), int32(_a_F_hashTypeGetValue_1), int32(247))
 					mBase = m.M
 					v218 = m.ExcPending
 					if v218 != 0 {
@@ -1171,7 +1171,7 @@ func F_hashTypeGetValue(m *base.Module, l0 int32, l1 int32, l2 int32, l3 int32, 
 			}
 		}
 	default:
-		F__serverPanic_1(m, int32(_a1483), int32(254), int32(_a855), int32(0))
+		F__serverPanic_1(m, int32(_a_F_hashTypeGetValue_1), int32(254), int32(_a_F_hashTypeGetValue_2), int32(0))
 		mBase = m.M
 		v212 = m.ExcPending
 		if v212 != 0 {
@@ -1374,7 +1374,7 @@ func F_hashTypeInitVolatileIterator(m *base.Module, l0 int32, l1 int32) {
 	case 0:
 		v15 = *(*int32)(unsafe.Add(mBase, uint32(l0)))
 		if v15&int32(240) != int32(32) {
-			F__serverAssert(m, int32(_a1484), int32(_a1483), int32(65))
+			F__serverAssert(m, int32(_a_F_hashTypeInitVolatileIterator_0), int32(_a_F_hashTypeInitVolatileIterator_1), int32(65))
 			mBase = m.M
 			v54 = m.ExcPending
 			if v54 != 0 {
@@ -1424,7 +1424,7 @@ func F_hashTypeInitVolatileIterator(m *base.Module, l0 int32, l1 int32) {
 			return
 		}
 	default:
-		F__serverPanic_1(m, int32(_a1483), int32(652), int32(_a855), int32(0))
+		F__serverPanic_1(m, int32(_a_F_hashTypeInitVolatileIterator_1), int32(652), int32(_a_F_hashTypeInitVolatileIterator_2), int32(0))
 		mBase = m.M
 		v61 = m.ExcPending
 		if v61 != 0 {
@@ -1468,7 +1468,7 @@ func F_hashTypeLength(m *base.Module, l0 int32) int32 {
 		v11 = *(*int32)(unsafe.Add(mBase, uint32(v9)+16))
 		return v10 + v11
 	default:
-		F__serverPanic_1(m, int32(_a1483), int32(622), int32(_a855), int32(0))
+		F__serverPanic_1(m, int32(_a_F_hashTypeLength_0), int32(622), int32(_a_F_hashTypeLength_1), int32(0))
 		mBase = m.M
 		v21 = m.ExcPending
 		if v21 != 0 {
@@ -1634,7 +1634,7 @@ func F_hashTypeSetExpire(m *base.Module, l0 int32, l1 int32, l2 int64, l3 int32)
 	}
 L1:
 	;
-	F__serverAssert(m, int32(_a1484), int32(_a1483), int32(500))
+	F__serverAssert(m, int32(_a_F_hashTypeSetExpire_1), int32(_a_F_hashTypeSetExpire_2), int32(500))
 	mBase = m.M
 	v192 = m.ExcPending
 	if v192 != 0 {
@@ -1644,7 +1644,7 @@ L1:
 	}
 L2:
 	;
-	F__serverAssert(m, int32(_a1496), int32(_a1483), int32(492))
+	F__serverAssert(m, int32(_a_F_hashTypeSetExpire_3), int32(_a_F_hashTypeSetExpire_2), int32(492))
 	mBase = m.M
 	v186 = m.ExcPending
 	if v186 != 0 {
@@ -1658,7 +1658,7 @@ L3:
 	return v173
 L4:
 	;
-	v21 = *(*int32)(unsafe.Add(mBase, _consts[88]))
+	v21 = *(*int32)(unsafe.Add(mBase, _c_F_hashTypeSetExpire[0]))
 	if v21 == int32(0) {
 		goto L7
 	} else {
@@ -1701,9 +1701,9 @@ L9:
 	goto L7
 L10:
 	;
-	v30 = int32(_a69)
-	v31 = *(*int32)(unsafe.Add(mBase, _consts[64]))
-	v33 = *(*int32)(unsafe.Add(mBase, _consts[116]))
+	v30 = int32(_a_F_hashTypeSetExpire_0)
+	v31 = *(*int32)(unsafe.Add(mBase, _c_F_hashTypeSetExpire[1]))
+	v33 = *(*int32)(unsafe.Add(mBase, _c_F_hashTypeSetExpire[2]))
 	if v33 != 0 {
 		v39 = v27
 		goto L6
@@ -1720,7 +1720,7 @@ L11:
 	}
 L12:
 	;
-	v35 = *(*int32)(unsafe.Add(mBase, _consts[218]))
+	v35 = *(*int32)(unsafe.Add(mBase, _c_F_hashTypeSetExpire[3]))
 	v39 = base.B2i32(v35 == int32(0))
 	goto L6
 L13:
@@ -2041,7 +2041,7 @@ L60:
 	}
 L61:
 	;
-	F__serverAssert(m, int32(_a1496), int32(_a1483), int32(543))
+	F__serverAssert(m, int32(_a_F_hashTypeSetExpire_3), int32(_a_F_hashTypeSetExpire_2), int32(543))
 	mBase = m.M
 	v165 = m.ExcPending
 	if v165 != 0 {
@@ -2144,7 +2144,7 @@ func F_hashTypeTrackEntry(m *base.Module, l0 int32, l1 int32) {
 					return
 				} else {
 					if v35 == int32(0) {
-						F__serverAssert(m, int32(_a502), int32(_a1483), int32(119))
+						F__serverAssert(m, int32(_a_F_hashTypeTrackEntry_0), int32(_a_F_hashTypeTrackEntry_1), int32(119))
 						mBase = m.M
 						v49 = m.ExcPending
 						if v49 != 0 {
@@ -2164,7 +2164,7 @@ func F_hashTypeTrackEntry(m *base.Module, l0 int32, l1 int32) {
 		} else {
 			v7 = *(*int32)(unsafe.Add(mBase, uint32(l0)))
 			if v7&int32(240) != int32(32) {
-				F__serverAssert(m, int32(_a1484), int32(_a1483), int32(65))
+				F__serverAssert(m, int32(_a_F_hashTypeTrackEntry_2), int32(_a_F_hashTypeTrackEntry_1), int32(65))
 				mBase = m.M
 				v43 = m.ExcPending
 				if v43 != 0 {
@@ -2212,7 +2212,7 @@ func F_hashTypeTrackEntry(m *base.Module, l0 int32, l1 int32) {
 					return
 				} else {
 					if v35 == int32(0) {
-						F__serverAssert(m, int32(_a502), int32(_a1483), int32(119))
+						F__serverAssert(m, int32(_a_F_hashTypeTrackEntry_0), int32(_a_F_hashTypeTrackEntry_1), int32(119))
 						mBase = m.M
 						v49 = m.ExcPending
 						if v49 != 0 {
@@ -2285,7 +2285,7 @@ func F_hashTypeTrackUpdateEntry(m *base.Module, l0 int32, l1 int32, l2 int32, l3
 		if v21 != 0 {
 			return
 		} else {
-			v25 = *(*int32)(unsafe.Add(mBase, _consts[122]))
+			v25 = *(*int32)(unsafe.Add(mBase, _c_F_hashTypeTrackUpdateEntry[0]))
 			if v12^int32(1)|base.B2i32(v25 == int32(0)) != 0 {
 				v32 = F_vsetUpdateEntry(m, v20, int32(1087), l1, l2, l3, l4)
 				mBase = m.M
@@ -2294,7 +2294,7 @@ func F_hashTypeTrackUpdateEntry(m *base.Module, l0 int32, l1 int32, l2 int32, l3
 					return
 				} else {
 					if v32 == int32(0) {
-						F__serverAssert(m, int32(_a1486), int32(_a1483), int32(142))
+						F__serverAssert(m, int32(_a_F_hashTypeTrackUpdateEntry_0), int32(_a_F_hashTypeTrackUpdateEntry_1), int32(142))
 						mBase = m.M
 						v83 = m.ExcPending
 						if v83 != 0 {
@@ -2343,7 +2343,7 @@ func F_hashTypeTrackUpdateEntry(m *base.Module, l0 int32, l1 int32, l2 int32, l3
 									} else {
 										v66 = F_objectGetVal(m, l0)
 										mBase = m.M
-										*(*int32)(unsafe.Add(mBase, uint32(v66))) = int32(_a1482)
+										*(*int32)(unsafe.Add(mBase, uint32(v66))) = int32(_a_F_hashTypeTrackUpdateEntry_2)
 									}
 									return
 								} else {
@@ -2358,7 +2358,7 @@ func F_hashTypeTrackUpdateEntry(m *base.Module, l0 int32, l1 int32, l2 int32, l3
 										} else {
 											v66 = F_objectGetVal(m, l0)
 											mBase = m.M
-											*(*int32)(unsafe.Add(mBase, uint32(v66))) = int32(_a1482)
+											*(*int32)(unsafe.Add(mBase, uint32(v66))) = int32(_a_F_hashTypeTrackUpdateEntry_2)
 										}
 										return
 									}
@@ -2375,7 +2375,7 @@ func F_hashTypeTrackUpdateEntry(m *base.Module, l0 int32, l1 int32, l2 int32, l3
 					return
 				} else {
 					if v29 != 0 {
-						F__serverAssert(m, int32(_a1487), int32(_a1483), int32(140))
+						F__serverAssert(m, int32(_a_F_hashTypeTrackUpdateEntry_3), int32(_a_F_hashTypeTrackUpdateEntry_1), int32(140))
 						mBase = m.M
 						v77 = m.ExcPending
 						if v77 != 0 {
@@ -2395,7 +2395,7 @@ func F_hashTypeTrackUpdateEntry(m *base.Module, l0 int32, l1 int32, l2 int32, l3
 							return
 						} else {
 							if v32 == int32(0) {
-								F__serverAssert(m, int32(_a1486), int32(_a1483), int32(142))
+								F__serverAssert(m, int32(_a_F_hashTypeTrackUpdateEntry_0), int32(_a_F_hashTypeTrackUpdateEntry_1), int32(142))
 								mBase = m.M
 								v83 = m.ExcPending
 								if v83 != 0 {
@@ -2444,7 +2444,7 @@ func F_hashTypeTrackUpdateEntry(m *base.Module, l0 int32, l1 int32, l2 int32, l3
 											} else {
 												v66 = F_objectGetVal(m, l0)
 												mBase = m.M
-												*(*int32)(unsafe.Add(mBase, uint32(v66))) = int32(_a1482)
+												*(*int32)(unsafe.Add(mBase, uint32(v66))) = int32(_a_F_hashTypeTrackUpdateEntry_2)
 											}
 											return
 										} else {
@@ -2459,7 +2459,7 @@ func F_hashTypeTrackUpdateEntry(m *base.Module, l0 int32, l1 int32, l2 int32, l3
 												} else {
 													v66 = F_objectGetVal(m, l0)
 													mBase = m.M
-													*(*int32)(unsafe.Add(mBase, uint32(v66))) = int32(_a1482)
+													*(*int32)(unsafe.Add(mBase, uint32(v66))) = int32(_a_F_hashTypeTrackUpdateEntry_2)
 												}
 												return
 											}
@@ -2483,7 +2483,7 @@ func F_hashTypeTrackUpdateEntry(m *base.Module, l0 int32, l1 int32, l2 int32, l3
 			if v21 != 0 {
 				return
 			} else {
-				v25 = *(*int32)(unsafe.Add(mBase, _consts[122]))
+				v25 = *(*int32)(unsafe.Add(mBase, _c_F_hashTypeTrackUpdateEntry[0]))
 				if v12^int32(1)|base.B2i32(v25 == int32(0)) != 0 {
 					v32 = F_vsetUpdateEntry(m, v20, int32(1087), l1, l2, l3, l4)
 					mBase = m.M
@@ -2492,7 +2492,7 @@ func F_hashTypeTrackUpdateEntry(m *base.Module, l0 int32, l1 int32, l2 int32, l3
 						return
 					} else {
 						if v32 == int32(0) {
-							F__serverAssert(m, int32(_a1486), int32(_a1483), int32(142))
+							F__serverAssert(m, int32(_a_F_hashTypeTrackUpdateEntry_0), int32(_a_F_hashTypeTrackUpdateEntry_1), int32(142))
 							mBase = m.M
 							v83 = m.ExcPending
 							if v83 != 0 {
@@ -2541,7 +2541,7 @@ func F_hashTypeTrackUpdateEntry(m *base.Module, l0 int32, l1 int32, l2 int32, l3
 										} else {
 											v66 = F_objectGetVal(m, l0)
 											mBase = m.M
-											*(*int32)(unsafe.Add(mBase, uint32(v66))) = int32(_a1482)
+											*(*int32)(unsafe.Add(mBase, uint32(v66))) = int32(_a_F_hashTypeTrackUpdateEntry_2)
 										}
 										return
 									} else {
@@ -2556,7 +2556,7 @@ func F_hashTypeTrackUpdateEntry(m *base.Module, l0 int32, l1 int32, l2 int32, l3
 											} else {
 												v66 = F_objectGetVal(m, l0)
 												mBase = m.M
-												*(*int32)(unsafe.Add(mBase, uint32(v66))) = int32(_a1482)
+												*(*int32)(unsafe.Add(mBase, uint32(v66))) = int32(_a_F_hashTypeTrackUpdateEntry_2)
 											}
 											return
 										}
@@ -2573,7 +2573,7 @@ func F_hashTypeTrackUpdateEntry(m *base.Module, l0 int32, l1 int32, l2 int32, l3
 						return
 					} else {
 						if v29 != 0 {
-							F__serverAssert(m, int32(_a1487), int32(_a1483), int32(140))
+							F__serverAssert(m, int32(_a_F_hashTypeTrackUpdateEntry_3), int32(_a_F_hashTypeTrackUpdateEntry_1), int32(140))
 							mBase = m.M
 							v77 = m.ExcPending
 							if v77 != 0 {
@@ -2593,7 +2593,7 @@ func F_hashTypeTrackUpdateEntry(m *base.Module, l0 int32, l1 int32, l2 int32, l3
 								return
 							} else {
 								if v32 == int32(0) {
-									F__serverAssert(m, int32(_a1486), int32(_a1483), int32(142))
+									F__serverAssert(m, int32(_a_F_hashTypeTrackUpdateEntry_0), int32(_a_F_hashTypeTrackUpdateEntry_1), int32(142))
 									mBase = m.M
 									v83 = m.ExcPending
 									if v83 != 0 {
@@ -2642,7 +2642,7 @@ func F_hashTypeTrackUpdateEntry(m *base.Module, l0 int32, l1 int32, l2 int32, l3
 												} else {
 													v66 = F_objectGetVal(m, l0)
 													mBase = m.M
-													*(*int32)(unsafe.Add(mBase, uint32(v66))) = int32(_a1482)
+													*(*int32)(unsafe.Add(mBase, uint32(v66))) = int32(_a_F_hashTypeTrackUpdateEntry_2)
 												}
 												return
 											} else {
@@ -2657,7 +2657,7 @@ func F_hashTypeTrackUpdateEntry(m *base.Module, l0 int32, l1 int32, l2 int32, l3
 													} else {
 														v66 = F_objectGetVal(m, l0)
 														mBase = m.M
-														*(*int32)(unsafe.Add(mBase, uint32(v66))) = int32(_a1482)
+														*(*int32)(unsafe.Add(mBase, uint32(v66))) = int32(_a_F_hashTypeTrackUpdateEntry_2)
 													}
 													return
 												}
@@ -2754,7 +2754,7 @@ L2:
 L3:
 	;
 	v18 = base.I32_div_s(l3-l2+int32(1), int32(2))
-	v20 = *(*int32)(unsafe.Add(mBase, _consts[1076]))
+	v20 = *(*int32)(unsafe.Add(mBase, _c_F_hashTypeTryConversion[0]))
 	if base.Ui32(v20) < base.Ui32(v18) {
 		goto L1
 	} else {
@@ -2833,7 +2833,7 @@ L11:
 	goto L9
 L12:
 	;
-	v64 = *(*int32)(unsafe.Add(mBase, _consts[1077]))
+	v64 = *(*int32)(unsafe.Add(mBase, _c_F_hashTypeTryConversion[1]))
 	if base.Ui32(v62) <= base.Ui32(v64) {
 		v69 = v62
 		goto L11

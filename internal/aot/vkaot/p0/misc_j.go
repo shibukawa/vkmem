@@ -116,7 +116,7 @@ func F_jumponcond(m *base.Module, l0 int32, l1 int32, l2 int32) int32 {
 				} else {
 					v45 = m.G3
 					v46 = *(*int32)(unsafe.Add(mBase, uint32(l0)+12))
-					F_luaX_syntaxerror(m, v46, v45+int32(_a2263))
+					F_luaX_syntaxerror(m, v46, v45+int32(_a_F_jumponcond_0))
 					mBase = m.M
 					v50 = m.ExcPending
 					if v50 != 0 {
@@ -272,7 +272,7 @@ func F_jumponcond(m *base.Module, l0 int32, l1 int32, l2 int32) int32 {
 			} else {
 				v45 = m.G3
 				v46 = *(*int32)(unsafe.Add(mBase, uint32(l0)+12))
-				F_luaX_syntaxerror(m, v46, v45+int32(_a2263))
+				F_luaX_syntaxerror(m, v46, v45+int32(_a_F_jumponcond_0))
 				mBase = m.M
 				v50 = m.ExcPending
 				if v50 != 0 {

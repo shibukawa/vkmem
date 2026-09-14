@@ -129,7 +129,7 @@ func F_configRewriteCommand(m *base.Module, l0 int32) {
 	v4 = m.G0
 	v6 = v4 - int32(32)
 	m.G0 = v6
-	v9 = *(*int32)(unsafe.Add(mBase, _consts[178]))
+	v9 = *(*int32)(unsafe.Add(mBase, _c_F_configRewriteCommand[0]))
 	if v9 != 0 {
 		v14 = F_rewriteConfig(m, v9, int32(0))
 		mBase = m.M
@@ -138,9 +138,9 @@ func F_configRewriteCommand(m *base.Module, l0 int32) {
 			return
 		} else {
 			if v14 != int32(-1) {
-				v38 = *(*int32)(unsafe.Add(mBase, _consts[15]))
+				v38 = *(*int32)(unsafe.Add(mBase, _c_F_configRewriteCommand[1]))
 				if int32(2) < v38 {
-					v47 = *(*int32)(unsafe.Add(mBase, _consts[77]))
+					v47 = *(*int32)(unsafe.Add(mBase, _c_F_configRewriteCommand[2]))
 					F_addReply(m, l0, v47)
 					mBase = m.M
 					v49 = m.ExcPending
@@ -151,13 +151,13 @@ func F_configRewriteCommand(m *base.Module, l0 int32) {
 						return
 					}
 				} else {
-					F__serverLog(m, int32(2), int32(_a466), int32(0))
+					F__serverLog(m, int32(2), int32(_a_F_configRewriteCommand_0), int32(0))
 					mBase = m.M
 					v45 = m.ExcPending
 					if v45 != 0 {
 						return
 					} else {
-						v47 = *(*int32)(unsafe.Add(mBase, _consts[77]))
+						v47 = *(*int32)(unsafe.Add(mBase, _c_F_configRewriteCommand[2]))
 						F_addReply(m, l0, v47)
 						mBase = m.M
 						v49 = m.ExcPending
@@ -170,13 +170,13 @@ func F_configRewriteCommand(m *base.Module, l0 int32) {
 					}
 				}
 			} else {
-				v19 = *(*int32)(unsafe.Add(mBase, _consts[9]))
-				v21 = *(*int32)(unsafe.Add(mBase, _consts[15]))
+				v19 = *(*int32)(unsafe.Add(mBase, _c_F_configRewriteCommand[3]))
+				v21 = *(*int32)(unsafe.Add(mBase, _c_F_configRewriteCommand[1]))
 				if int32(3) < v21 {
 					v32 = F___strerror_l(m, v19, v19)
 					mBase = m.M
 					*(*int32)(unsafe.Add(mBase, uint32(v6))) = v32
-					F_addReplyErrorFormat(m, l0, int32(_a467), v6)
+					F_addReplyErrorFormat(m, l0, int32(_a_F_configRewriteCommand_1), v6)
 					mBase = m.M
 					v36 = m.ExcPending
 					if v36 != 0 {
@@ -189,7 +189,7 @@ func F_configRewriteCommand(m *base.Module, l0 int32) {
 					v24 = F___strerror_l(m, v19, v19)
 					mBase = m.M
 					*(*int32)(unsafe.Add(mBase, uint32(v6)+16)) = v24
-					F__serverLog(m, int32(3), int32(_a468), v6+int32(16))
+					F__serverLog(m, int32(3), int32(_a_F_configRewriteCommand_2), v6+int32(16))
 					mBase = m.M
 					v31 = m.ExcPending
 					if v31 != 0 {
@@ -198,7 +198,7 @@ func F_configRewriteCommand(m *base.Module, l0 int32) {
 						v32 = F___strerror_l(m, v19, v19)
 						mBase = m.M
 						*(*int32)(unsafe.Add(mBase, uint32(v6))) = v32
-						F_addReplyErrorFormat(m, l0, int32(_a467), v6)
+						F_addReplyErrorFormat(m, l0, int32(_a_F_configRewriteCommand_1), v6)
 						mBase = m.M
 						v36 = m.ExcPending
 						if v36 != 0 {
@@ -212,7 +212,7 @@ func F_configRewriteCommand(m *base.Module, l0 int32) {
 			}
 		}
 	} else {
-		F_addReplyError(m, l0, int32(_a469))
+		F_addReplyError(m, l0, int32(_a_F_configRewriteCommand_3))
 		mBase = m.M
 		v12 = m.ExcPending
 		if v12 != 0 {
@@ -613,7 +613,7 @@ L2:
 	}
 L3:
 	;
-	v37 = *(*int32)(unsafe.Add(mBase, _consts[59]))
+	v37 = *(*int32)(unsafe.Add(mBase, _c_F_configSetCommand[0]))
 	F_addReplyErrorObject(m, l0, v37)
 	mBase = m.M
 	v39 = m.ExcPending
@@ -720,7 +720,7 @@ L14:
 	}
 L15:
 	;
-	v676 = *(*int32)(unsafe.Add(mBase, _consts[170]))
+	v676 = *(*int32)(unsafe.Add(mBase, _c_F_configSetCommand[1]))
 	F_addReplyErrorObject(m, l0, v676)
 	mBase = m.M
 	v678 = m.ExcPending
@@ -764,7 +764,7 @@ L19:
 	v94 = *(*int32)(unsafe.Add(mBase, uint32(v86+v92)))
 	v95 = F_objectGetVal(m, v94)
 	mBase = m.M
-	v97 = *(*int32)(unsafe.Add(mBase, _consts[171]))
+	v97 = *(*int32)(unsafe.Add(mBase, _c_F_configSetCommand[2]))
 	v98 = F_dictFind(m, v97, v95)
 	mBase = m.M
 	v99 = m.ExcPending
@@ -881,7 +881,7 @@ L34:
 	goto L21
 L35:
 	;
-	v166 = *(*int32)(unsafe.Add(mBase, _consts[116]))
+	v166 = *(*int32)(unsafe.Add(mBase, _c_F_configSetCommand[3]))
 	if v166 == int32(0) {
 		goto L47
 	} else {
@@ -904,7 +904,7 @@ L37:
 	}
 L38:
 	;
-	v133 = *(*int32)(unsafe.Add(mBase, _consts[172]))
+	v133 = *(*int32)(unsafe.Add(mBase, _c_F_configSetCommand[4]))
 	switch v133 + int32(-1) {
 	case 0:
 		goto L35
@@ -957,11 +957,11 @@ L43:
 	goto L36
 L44:
 	;
-	v156 = int32(_a398)
+	v156 = int32(_a_F_configSetCommand_0)
 	goto L46
 L45:
 	;
-	v156 = int32(_a399)
+	v156 = int32(_a_F_configSetCommand_1)
 	goto L46
 L46:
 	;
@@ -1021,7 +1021,7 @@ L51:
 	goto L53
 L52:
 	;
-	*(*int32)(unsafe.Add(mBase, uint32(v23)+104)) = int32(_a400)
+	*(*int32)(unsafe.Add(mBase, uint32(v23)+104)) = int32(_a_F_configSetCommand_2)
 	v210 = *(*int32)(unsafe.Add(mBase, uint32(l0)+20))
 	v212 = *(*int32)(unsafe.Add(mBase, uint32(v210+v92)))
 	v213 = F_objectGetVal(m, v212)
@@ -1180,7 +1180,7 @@ L72:
 	}
 L73:
 	;
-	*(*int32)(unsafe.Add(mBase, uint32(v23)+108)) = int32(_a401)
+	*(*int32)(unsafe.Add(mBase, uint32(v23)+108)) = int32(_a_F_configSetCommand_3)
 	v411 = int32(0)
 	goto L75
 L74:
@@ -1232,7 +1232,7 @@ L78:
 	}
 L79:
 	;
-	v425 = *(*int32)(unsafe.Add(mBase, _consts[15]))
+	v425 = *(*int32)(unsafe.Add(mBase, _c_F_configSetCommand[5]))
 	if int32(3) < v425 {
 		goto L77
 	} else {
@@ -1245,7 +1245,7 @@ L80:
 	*(*int32)(unsafe.Add(mBase, uint32(v23)+68)) = v419
 	v431 = *(*int32)(unsafe.Add(mBase, uint32(v23)+108))
 	*(*int32)(unsafe.Add(mBase, uint32(v23)+72)) = v431
-	F__serverLog(m, int32(3), int32(_a402), v23+int32(64))
+	F__serverLog(m, int32(3), int32(_a_F_configSetCommand_4), v23+int32(64))
 	mBase = m.M
 	v438 = m.ExcPending
 	if v438 != 0 {
@@ -1388,7 +1388,7 @@ L100:
 	}
 L101:
 	;
-	v570 = *(*int32)(unsafe.Add(mBase, _consts[15]))
+	v570 = *(*int32)(unsafe.Add(mBase, _c_F_configSetCommand[5]))
 	if int32(3) < v570 {
 		goto L102
 	} else {
@@ -1411,7 +1411,7 @@ L103:
 	v580 = *(*int32)(unsafe.Add(mBase, uint32(v46+v576<<(uint(v573)%32))))
 	v581 = *(*int32)(unsafe.Add(mBase, uint32(v580)))
 	*(*int32)(unsafe.Add(mBase, uint32(v23)+48)) = v581
-	F__serverLog(m, int32(3), int32(_a403), v23+int32(48))
+	F__serverLog(m, int32(3), int32(_a_F_configSetCommand_5), v23+int32(48))
 	mBase = m.M
 	v588 = m.ExcPending
 	if v588 != 0 {
@@ -1463,7 +1463,7 @@ L109:
 	}
 L110:
 	;
-	F_serverLogRaw(m, int32(3), int32(_a404))
+	F_serverLogRaw(m, int32(3), int32(_a_F_configSetCommand_6))
 	mBase = m.M
 	v636 = m.ExcPending
 	if v636 != 0 {
@@ -1494,7 +1494,7 @@ L113:
 	goto L15
 L114:
 	;
-	v650 = *(*int32)(unsafe.Add(mBase, _consts[77]))
+	v650 = *(*int32)(unsafe.Add(mBase, _c_F_configSetCommand[6]))
 	F_addReply(m, l0, v650)
 	mBase = m.M
 	v652 = m.ExcPending
@@ -1524,7 +1524,7 @@ L118:
 L119:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v23)+32)) = v681
-	F_addReplyErrorFormat(m, l0, int32(_a405), v23+int32(32))
+	F_addReplyErrorFormat(m, l0, int32(_a_F_configSetCommand_7), v23+int32(32))
 	mBase = m.M
 	v706 = m.ExcPending
 	if v706 != 0 {
@@ -1538,7 +1538,7 @@ L120:
 L121:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v23))) = v707
-	F_addReplyErrorFormat(m, l0, int32(_a406), v23)
+	F_addReplyErrorFormat(m, l0, int32(_a_F_configSetCommand_8), v23)
 	mBase = m.M
 	v721 = m.ExcPending
 	if v721 != 0 {
@@ -1550,7 +1550,7 @@ L122:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v23)+20)) = v708
 	*(*int32)(unsafe.Add(mBase, uint32(v23)+16)) = v707
-	F_addReplyErrorFormat(m, l0, int32(_a407), v23+int32(16))
+	F_addReplyErrorFormat(m, l0, int32(_a_F_configSetCommand_9), v23+int32(16))
 	mBase = m.M
 	v717 = m.ExcPending
 	if v717 != 0 {
@@ -1735,58 +1735,58 @@ func F_getConfigClientOutputBufferLimitOption(m *base.Module, l0 int32) int32 {
 	if v12 != 0 {
 		return int32(0)
 	} else {
-		v22 = *(*int32)(unsafe.Add(mBase, _consts[193]))
-		v28 = int32(_a69)
-		v29 = *(*int64)(unsafe.Add(mBase, _consts[194]))
+		v22 = *(*int32)(unsafe.Add(mBase, _c_F_getConfigClientOutputBufferLimitOption[0]))
+		v28 = int32(_a_F_getConfigClientOutputBufferLimitOption_0)
+		v29 = *(*int64)(unsafe.Add(mBase, _c_F_getConfigClientOutputBufferLimitOption[1]))
 		*(*int64)(unsafe.Add(mBase, uint32(v7+int32(80)))) = v29
-		v36 = *(*int64)(unsafe.Add(mBase, _consts[195]))
+		v36 = *(*int64)(unsafe.Add(mBase, _c_F_getConfigClientOutputBufferLimitOption[2]))
 		*(*uint32)(unsafe.Add(mBase, uint32(v7+int32(88)))) = uint32(v36)
 		*(*int32)(unsafe.Add(mBase, uint32(v7)+64)) = v22
-		v40 = *(*int64)(unsafe.Add(mBase, _consts[196]))
+		v40 = *(*int64)(unsafe.Add(mBase, _c_F_getConfigClientOutputBufferLimitOption[3]))
 		*(*int64)(unsafe.Add(mBase, uint32(v7)+72)) = v40
-		v45 = F_sdscatprintf(m, v9, int32(_a456), v7+int32(64))
+		v45 = F_sdscatprintf(m, v9, int32(_a_F_getConfigClientOutputBufferLimitOption_1), v7+int32(64))
 		mBase = m.M
 		v46 = m.ExcPending
 		if v46 != 0 {
 			return int32(0)
 		} else {
-			v49 = F_sdscatlen(m, v45, int32(_a10), int32(1))
+			v49 = F_sdscatlen(m, v45, int32(_a_F_getConfigClientOutputBufferLimitOption_2), int32(1))
 			mBase = m.M
 			v50 = m.ExcPending
 			if v50 != 0 {
 				return int32(0)
 			} else {
-				v60 = *(*int32)(unsafe.Add(mBase, _consts[197]))
-				v66 = int32(_a69)
-				v67 = *(*int64)(unsafe.Add(mBase, _consts[198]))
+				v60 = *(*int32)(unsafe.Add(mBase, _c_F_getConfigClientOutputBufferLimitOption[4]))
+				v66 = int32(_a_F_getConfigClientOutputBufferLimitOption_0)
+				v67 = *(*int64)(unsafe.Add(mBase, _c_F_getConfigClientOutputBufferLimitOption[5]))
 				*(*int64)(unsafe.Add(mBase, uint32(v7+int32(48)))) = v67
-				v74 = *(*int64)(unsafe.Add(mBase, _consts[199]))
+				v74 = *(*int64)(unsafe.Add(mBase, _c_F_getConfigClientOutputBufferLimitOption[6]))
 				*(*uint32)(unsafe.Add(mBase, uint32(v7+int32(56)))) = uint32(v74)
 				*(*int32)(unsafe.Add(mBase, uint32(v7)+32)) = v60
-				v78 = *(*int64)(unsafe.Add(mBase, _consts[200]))
+				v78 = *(*int64)(unsafe.Add(mBase, _c_F_getConfigClientOutputBufferLimitOption[7]))
 				*(*int64)(unsafe.Add(mBase, uint32(v7)+40)) = v78
-				v83 = F_sdscatprintf(m, v49, int32(_a456), v7+int32(32))
+				v83 = F_sdscatprintf(m, v49, int32(_a_F_getConfigClientOutputBufferLimitOption_1), v7+int32(32))
 				mBase = m.M
 				v84 = m.ExcPending
 				if v84 != 0 {
 					return int32(0)
 				} else {
-					v87 = F_sdscatlen(m, v83, int32(_a10), int32(1))
+					v87 = F_sdscatlen(m, v83, int32(_a_F_getConfigClientOutputBufferLimitOption_2), int32(1))
 					mBase = m.M
 					v88 = m.ExcPending
 					if v88 != 0 {
 						return int32(0)
 					} else {
-						v98 = *(*int32)(unsafe.Add(mBase, _consts[201]))
-						v102 = int32(_a69)
-						v103 = *(*int64)(unsafe.Add(mBase, _consts[202]))
+						v98 = *(*int32)(unsafe.Add(mBase, _c_F_getConfigClientOutputBufferLimitOption[8]))
+						v102 = int32(_a_F_getConfigClientOutputBufferLimitOption_0)
+						v103 = *(*int64)(unsafe.Add(mBase, _c_F_getConfigClientOutputBufferLimitOption[9]))
 						*(*int64)(unsafe.Add(mBase, uint32(v7+int32(16)))) = v103
-						v108 = *(*int64)(unsafe.Add(mBase, _consts[203]))
+						v108 = *(*int64)(unsafe.Add(mBase, _c_F_getConfigClientOutputBufferLimitOption[10]))
 						*(*uint32)(unsafe.Add(mBase, uint32(v7+int32(24)))) = uint32(v108)
 						*(*int32)(unsafe.Add(mBase, uint32(v7))) = v98
-						v112 = *(*int64)(unsafe.Add(mBase, _consts[204]))
+						v112 = *(*int64)(unsafe.Add(mBase, _c_F_getConfigClientOutputBufferLimitOption[11]))
 						*(*int64)(unsafe.Add(mBase, uint32(v7)+8)) = v112
-						v115 = F_sdscatprintf(m, v87, int32(_a456), v7)
+						v115 = F_sdscatprintf(m, v87, int32(_a_F_getConfigClientOutputBufferLimitOption_1), v7)
 						mBase = m.M
 						v116 = m.ExcPending
 						if v116 != 0 {
@@ -1862,7 +1862,7 @@ L1:
 	return int32(0)
 L2:
 	;
-	v16 = *(*int32)(unsafe.Add(mBase, _consts[174]))
+	v16 = *(*int32)(unsafe.Add(mBase, _c_F_getConfigSaveOption[0]))
 	if v16 < int32(1) {
 		v56 = v11
 		goto L3
@@ -1880,13 +1880,13 @@ L4:
 	goto L5
 L5:
 	;
-	v27 = *(*int32)(unsafe.Add(mBase, _consts[175]))
+	v27 = *(*int32)(unsafe.Add(mBase, _c_F_getConfigSaveOption[1]))
 	v30 = v27 + v23<<(uint(int32(4))%32)
 	v31 = *(*int32)(unsafe.Add(mBase, uint32(v30)+8))
 	v32 = *(*int64)(unsafe.Add(mBase, uint32(v30)))
 	*(*int64)(unsafe.Add(mBase, uint32(v9))) = v32
 	*(*int32)(unsafe.Add(mBase, uint32(v9)+8)) = v31
-	v36 = F_sdscatprintf(m, v22, int32(_a455), v9)
+	v36 = F_sdscatprintf(m, v22, int32(_a_F_getConfigSaveOption_0), v9)
 	mBase = m.M
 	v37 = m.ExcPending
 	if v37 != 0 {
@@ -1900,7 +1900,7 @@ L6:
 	goto L3
 L7:
 	;
-	v39 = *(*int32)(unsafe.Add(mBase, _consts[174]))
+	v39 = *(*int32)(unsafe.Add(mBase, _c_F_getConfigSaveOption[0]))
 	if v23 == v39+int32(-1) {
 		v49 = v36
 		v50 = v39
@@ -1920,7 +1920,7 @@ L8:
 	}
 L9:
 	;
-	v45 = F_sdscatlen(m, v36, int32(_a10), int32(1))
+	v45 = F_sdscatlen(m, v36, int32(_a_F_getConfigSaveOption_1), int32(1))
 	mBase = m.M
 	v46 = m.ExcPending
 	if v46 != 0 {
@@ -1930,7 +1930,7 @@ L9:
 	}
 L10:
 	;
-	v48 = *(*int32)(unsafe.Add(mBase, _consts[174]))
+	v48 = *(*int32)(unsafe.Add(mBase, _c_F_getConfigSaveOption[0]))
 	v49 = v45
 	v50 = v48
 	goto L8
@@ -2205,7 +2205,7 @@ L4:
 	return int32(-1)
 L5:
 	;
-	v17 = *(*int32)(unsafe.Add(mBase, _consts[171]))
+	v17 = *(*int32)(unsafe.Add(mBase, _c_F_rewriteConfig[0]))
 	v18 = F_dictGetIterator(m, v17)
 	mBase = m.M
 	v19 = m.ExcPending
@@ -2688,7 +2688,7 @@ L72:
 	}
 L73:
 	;
-	v264 = *(*int32)(unsafe.Add(mBase, _consts[173]))
+	v264 = *(*int32)(unsafe.Add(mBase, _c_F_rewriteConfig[1]))
 	if v264 == int32(0) {
 		goto L74
 	} else {
@@ -2729,7 +2729,7 @@ L77:
 	}
 L78:
 	;
-	v274 = *(*int32)(unsafe.Add(mBase, _consts[178]))
+	v274 = *(*int32)(unsafe.Add(mBase, _c_F_rewriteConfig[2]))
 	v275 = F_rewriteConfigOverwriteFile(m, v274, v271)
 	mBase = m.M
 	v276 = m.ExcPending
@@ -2885,7 +2885,7 @@ L3:
 	return
 L4:
 	;
-	v25 = F_sdscatlen(m, v13, int32(_a10), int32(1))
+	v25 = F_sdscatlen(m, v13, int32(_a_F_rewriteConfigDirOption_0), int32(1))
 	mBase = m.M
 	v26 = m.ExcPending
 	if v26 != 0 {
@@ -3070,7 +3070,7 @@ func F_rewriteConfigFormatMemory(m *base.Module, l0 int32, l1 int32, l2 int64) i
 		if l2 == int64(0) {
 			if l2 == int64(0) {
 				*(*int64)(unsafe.Add(mBase, uint32(v8)+48)) = l2
-				v52 = F_snprintf(m, l0, l1, int32(_a408), v8+int32(48))
+				v52 = F_snprintf(m, l0, l1, int32(_a_F_rewriteConfigFormatMemory_0), v8+int32(48))
 				mBase = m.M
 				v53 = m.ExcPending
 				if v53 != 0 {
@@ -3083,7 +3083,7 @@ func F_rewriteConfigFormatMemory(m *base.Module, l0 int32, l1 int32, l2 int64) i
 			} else {
 				if l2&int64(1023) != int64(0) {
 					*(*int64)(unsafe.Add(mBase, uint32(v8)+48)) = l2
-					v52 = F_snprintf(m, l0, l1, int32(_a408), v8+int32(48))
+					v52 = F_snprintf(m, l0, l1, int32(_a_F_rewriteConfigFormatMemory_0), v8+int32(48))
 					mBase = m.M
 					v53 = m.ExcPending
 					if v53 != 0 {
@@ -3095,7 +3095,7 @@ func F_rewriteConfigFormatMemory(m *base.Module, l0 int32, l1 int32, l2 int64) i
 					}
 				} else {
 					*(*int64)(unsafe.Add(mBase, uint32(v8)+32)) = int64(base.Ui64(l2) >> (uint(int64(10)) % 64))
-					v46 = F_snprintf(m, l0, l1, int32(_a409), v8+int32(32))
+					v46 = F_snprintf(m, l0, l1, int32(_a_F_rewriteConfigFormatMemory_1), v8+int32(32))
 					mBase = m.M
 					v47 = m.ExcPending
 					if v47 != 0 {
@@ -3111,7 +3111,7 @@ func F_rewriteConfigFormatMemory(m *base.Module, l0 int32, l1 int32, l2 int64) i
 			if l2&int64(1048575) != int64(0) {
 				if l2 == int64(0) {
 					*(*int64)(unsafe.Add(mBase, uint32(v8)+48)) = l2
-					v52 = F_snprintf(m, l0, l1, int32(_a408), v8+int32(48))
+					v52 = F_snprintf(m, l0, l1, int32(_a_F_rewriteConfigFormatMemory_0), v8+int32(48))
 					mBase = m.M
 					v53 = m.ExcPending
 					if v53 != 0 {
@@ -3124,7 +3124,7 @@ func F_rewriteConfigFormatMemory(m *base.Module, l0 int32, l1 int32, l2 int64) i
 				} else {
 					if l2&int64(1023) != int64(0) {
 						*(*int64)(unsafe.Add(mBase, uint32(v8)+48)) = l2
-						v52 = F_snprintf(m, l0, l1, int32(_a408), v8+int32(48))
+						v52 = F_snprintf(m, l0, l1, int32(_a_F_rewriteConfigFormatMemory_0), v8+int32(48))
 						mBase = m.M
 						v53 = m.ExcPending
 						if v53 != 0 {
@@ -3136,7 +3136,7 @@ func F_rewriteConfigFormatMemory(m *base.Module, l0 int32, l1 int32, l2 int64) i
 						}
 					} else {
 						*(*int64)(unsafe.Add(mBase, uint32(v8)+32)) = int64(base.Ui64(l2) >> (uint(int64(10)) % 64))
-						v46 = F_snprintf(m, l0, l1, int32(_a409), v8+int32(32))
+						v46 = F_snprintf(m, l0, l1, int32(_a_F_rewriteConfigFormatMemory_1), v8+int32(32))
 						mBase = m.M
 						v47 = m.ExcPending
 						if v47 != 0 {
@@ -3150,7 +3150,7 @@ func F_rewriteConfigFormatMemory(m *base.Module, l0 int32, l1 int32, l2 int64) i
 				}
 			} else {
 				*(*int64)(unsafe.Add(mBase, uint32(v8)+16)) = int64(base.Ui64(l2) >> (uint(int64(20)) % 64))
-				v34 = F_snprintf(m, l0, l1, int32(_a410), v8+int32(16))
+				v34 = F_snprintf(m, l0, l1, int32(_a_F_rewriteConfigFormatMemory_2), v8+int32(16))
 				mBase = m.M
 				v35 = m.ExcPending
 				if v35 != 0 {
@@ -3167,7 +3167,7 @@ func F_rewriteConfigFormatMemory(m *base.Module, l0 int32, l1 int32, l2 int64) i
 			if l2 == int64(0) {
 				if l2 == int64(0) {
 					*(*int64)(unsafe.Add(mBase, uint32(v8)+48)) = l2
-					v52 = F_snprintf(m, l0, l1, int32(_a408), v8+int32(48))
+					v52 = F_snprintf(m, l0, l1, int32(_a_F_rewriteConfigFormatMemory_0), v8+int32(48))
 					mBase = m.M
 					v53 = m.ExcPending
 					if v53 != 0 {
@@ -3180,7 +3180,7 @@ func F_rewriteConfigFormatMemory(m *base.Module, l0 int32, l1 int32, l2 int64) i
 				} else {
 					if l2&int64(1023) != int64(0) {
 						*(*int64)(unsafe.Add(mBase, uint32(v8)+48)) = l2
-						v52 = F_snprintf(m, l0, l1, int32(_a408), v8+int32(48))
+						v52 = F_snprintf(m, l0, l1, int32(_a_F_rewriteConfigFormatMemory_0), v8+int32(48))
 						mBase = m.M
 						v53 = m.ExcPending
 						if v53 != 0 {
@@ -3192,7 +3192,7 @@ func F_rewriteConfigFormatMemory(m *base.Module, l0 int32, l1 int32, l2 int64) i
 						}
 					} else {
 						*(*int64)(unsafe.Add(mBase, uint32(v8)+32)) = int64(base.Ui64(l2) >> (uint(int64(10)) % 64))
-						v46 = F_snprintf(m, l0, l1, int32(_a409), v8+int32(32))
+						v46 = F_snprintf(m, l0, l1, int32(_a_F_rewriteConfigFormatMemory_1), v8+int32(32))
 						mBase = m.M
 						v47 = m.ExcPending
 						if v47 != 0 {
@@ -3208,7 +3208,7 @@ func F_rewriteConfigFormatMemory(m *base.Module, l0 int32, l1 int32, l2 int64) i
 				if l2&int64(1048575) != int64(0) {
 					if l2 == int64(0) {
 						*(*int64)(unsafe.Add(mBase, uint32(v8)+48)) = l2
-						v52 = F_snprintf(m, l0, l1, int32(_a408), v8+int32(48))
+						v52 = F_snprintf(m, l0, l1, int32(_a_F_rewriteConfigFormatMemory_0), v8+int32(48))
 						mBase = m.M
 						v53 = m.ExcPending
 						if v53 != 0 {
@@ -3221,7 +3221,7 @@ func F_rewriteConfigFormatMemory(m *base.Module, l0 int32, l1 int32, l2 int64) i
 					} else {
 						if l2&int64(1023) != int64(0) {
 							*(*int64)(unsafe.Add(mBase, uint32(v8)+48)) = l2
-							v52 = F_snprintf(m, l0, l1, int32(_a408), v8+int32(48))
+							v52 = F_snprintf(m, l0, l1, int32(_a_F_rewriteConfigFormatMemory_0), v8+int32(48))
 							mBase = m.M
 							v53 = m.ExcPending
 							if v53 != 0 {
@@ -3233,7 +3233,7 @@ func F_rewriteConfigFormatMemory(m *base.Module, l0 int32, l1 int32, l2 int64) i
 							}
 						} else {
 							*(*int64)(unsafe.Add(mBase, uint32(v8)+32)) = int64(base.Ui64(l2) >> (uint(int64(10)) % 64))
-							v46 = F_snprintf(m, l0, l1, int32(_a409), v8+int32(32))
+							v46 = F_snprintf(m, l0, l1, int32(_a_F_rewriteConfigFormatMemory_1), v8+int32(32))
 							mBase = m.M
 							v47 = m.ExcPending
 							if v47 != 0 {
@@ -3247,7 +3247,7 @@ func F_rewriteConfigFormatMemory(m *base.Module, l0 int32, l1 int32, l2 int64) i
 					}
 				} else {
 					*(*int64)(unsafe.Add(mBase, uint32(v8)+16)) = int64(base.Ui64(l2) >> (uint(int64(20)) % 64))
-					v34 = F_snprintf(m, l0, l1, int32(_a410), v8+int32(16))
+					v34 = F_snprintf(m, l0, l1, int32(_a_F_rewriteConfigFormatMemory_2), v8+int32(16))
 					mBase = m.M
 					v35 = m.ExcPending
 					if v35 != 0 {
@@ -3261,7 +3261,7 @@ func F_rewriteConfigFormatMemory(m *base.Module, l0 int32, l1 int32, l2 int64) i
 			}
 		} else {
 			*(*int64)(unsafe.Add(mBase, uint32(v8))) = int64(base.Ui64(l2) >> (uint(int64(30)) % 64))
-			v20 = F_snprintf(m, l0, l1, int32(_a411), v8)
+			v20 = F_snprintf(m, l0, l1, int32(_a_F_rewriteConfigFormatMemory_3), v8)
 			mBase = m.M
 			v23 = m.ExcPending
 			if v23 != 0 {
@@ -3351,7 +3351,7 @@ L1:
 	return
 L2:
 	;
-	v15 = *(*int32)(unsafe.Add(mBase, _consts[180]))
+	v15 = *(*int32)(unsafe.Add(mBase, _c_F_rewriteConfigLatencyTrackingInfoPercentilesOutputOption[0]))
 	if v15 == int32(0) {
 		goto L4
 	} else {
@@ -3369,7 +3369,7 @@ L3:
 	}
 L4:
 	;
-	v82 = F_sdscat(m, v12, int32(_a419))
+	v82 = F_sdscat(m, v12, int32(_a_F_rewriteConfigLatencyTrackingInfoPercentilesOutputOption_0))
 	mBase = m.M
 	v83 = m.ExcPending
 	if v83 != 0 {
@@ -3393,11 +3393,11 @@ L6:
 	goto L7
 L7:
 	;
-	v29 = *(*int32)(unsafe.Add(mBase, _consts[181]))
+	v29 = *(*int32)(unsafe.Add(mBase, _c_F_rewriteConfigLatencyTrackingInfoPercentilesOutputOption[1]))
 	v33 = *(*float64)(unsafe.Add(mBase, uint32(v29+v27<<(uint(int32(3))%32))))
 	*(*float64)(unsafe.Add(mBase, uint32(v10))) = v33
 	v36 = v10 + int32(16)
-	v43 = F_snprintf(m, v36, int32(128), int32(_a420), v10)
+	v43 = F_snprintf(m, v36, int32(128), int32(_a_F_rewriteConfigLatencyTrackingInfoPercentilesOutputOption_1), v10)
 	mBase = m.M
 	v44 = m.ExcPending
 	if v44 != 0 {
@@ -3464,7 +3464,7 @@ L17:
 L18:
 	;
 	v77 = v27 + int32(1)
-	v79 = *(*int32)(unsafe.Add(mBase, _consts[180]))
+	v79 = *(*int32)(unsafe.Add(mBase, _c_F_rewriteConfigLatencyTrackingInfoPercentilesOutputOption[0]))
 	if v77 < v79 {
 		v25 = v74
 		v27 = v77
@@ -3696,7 +3696,7 @@ func F_rewriteConfigLoadmoduleOption(m *base.Module, l0 int32) {
 	_ = v247
 	var v251 int32
 	_ = v251
-	v5 = *(*int32)(unsafe.Add(mBase, _consts[177]))
+	v5 = *(*int32)(unsafe.Add(mBase, _c_F_rewriteConfigLoadmoduleOption[0]))
 	v6 = F_dictGetIterator(m, v5)
 	mBase = m.M
 	v7 = m.ExcPending
@@ -3943,7 +3943,7 @@ L34:
 	}
 L35:
 	;
-	v122 = int32(_a417)
+	v122 = int32(_a_F_rewriteConfigLoadmoduleOption_0)
 	v124 = F_moduleLoadQueueEntryToLoadmoduleOptionStr(m, v120, v122)
 	mBase = m.M
 	v125 = m.ExcPending
@@ -4157,7 +4157,7 @@ L64:
 	goto L32
 L65:
 	;
-	v242 = F_sdsnew(m, int32(_a417))
+	v242 = F_sdsnew(m, int32(_a_F_rewriteConfigLoadmoduleOption_0))
 	mBase = m.M
 	v243 = m.ExcPending
 	if v243 != 0 {
@@ -4207,11 +4207,11 @@ func F_rewriteConfigRdmaBindOption(m *base.Module, l0 int32, l1 int32, l2 int32)
 	_ = v6
 	var v13 int32
 	_ = v13
-	v6 = *(*int32)(unsafe.Add(mBase, _consts[205]))
+	v6 = *(*int32)(unsafe.Add(mBase, _c_F_rewriteConfigRdmaBindOption[0]))
 	if v6 == int32(0) {
 		return
 	} else {
-		F_rewriteConfigBindOption(m, l1, l2, int32(_a462), v6)
+		F_rewriteConfigBindOption(m, l1, l2, int32(_a_F_rewriteConfigRdmaBindOption_0), v6)
 		mBase = m.M
 		v13 = m.ExcPending
 		if v13 != 0 {
@@ -4705,7 +4705,7 @@ L35:
 	}
 L36:
 	;
-	v166 = *(*int32)(unsafe.Add(mBase, _consts[15]))
+	v166 = *(*int32)(unsafe.Add(mBase, _c_F_rewriteConfigRemoveOrphaned[0]))
 	if int32(0) < v166 {
 		goto L35
 	} else {
@@ -4780,7 +4780,7 @@ L45:
 L46:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v10))) = v132
-	F__serverLog(m, int32(0), int32(_a418), v10)
+	F__serverLog(m, int32(0), int32(_a_F_rewriteConfigRemoveOrphaned_0), v10)
 	mBase = m.M
 	v173 = m.ExcPending
 	if v173 != 0 {
@@ -5026,7 +5026,7 @@ func F_rewriteConfigReplicaOfOption(m *base.Module, l0 int32, l1 int32, l2 int32
 	v6 = m.G0
 	v8 = v6 - int32(16)
 	m.G0 = v8
-	v11 = *(*int32)(unsafe.Add(mBase, _consts[63]))
+	v11 = *(*int32)(unsafe.Add(mBase, _c_F_rewriteConfigReplicaOfOption[0]))
 	if v11 != 0 {
 		v14 = F_sdsnew(m, l1)
 		mBase = m.M
@@ -5058,7 +5058,7 @@ func F_rewriteConfigReplicaOfOption(m *base.Module, l0 int32, l1 int32, l2 int32
 			}
 		}
 	} else {
-		v13 = *(*int32)(unsafe.Add(mBase, _consts[64]))
+		v13 = *(*int32)(unsafe.Add(mBase, _c_F_rewriteConfigReplicaOfOption[1]))
 		if v13 != 0 {
 			v24 = F_sdsempty(m)
 			mBase = m.M
@@ -5067,9 +5067,9 @@ func F_rewriteConfigReplicaOfOption(m *base.Module, l0 int32, l1 int32, l2 int32
 				return
 			} else {
 				*(*int32)(unsafe.Add(mBase, uint32(v8))) = l1
-				v28 = *(*int64)(unsafe.Add(mBase, _consts[64]))
+				v28 = *(*int64)(unsafe.Add(mBase, _c_F_rewriteConfigReplicaOfOption[1]))
 				*(*int64)(unsafe.Add(mBase, uint32(v8)+4)) = v28
-				v31 = F_sdscatprintf(m, v24, int32(_a416), v8)
+				v31 = F_sdscatprintf(m, v24, int32(_a_F_rewriteConfigReplicaOfOption_0), v8)
 				mBase = m.M
 				v32 = m.ExcPending
 				if v32 != 0 {
@@ -5193,7 +5193,7 @@ func F_rewriteConfigSaveOption(m *base.Module, l0 int32, l1 int32, l2 int32) {
 	v9 = m.G0
 	v11 = v9 - int32(16)
 	m.G0 = v11
-	v14 = *(*int32)(unsafe.Add(mBase, _consts[173]))
+	v14 = *(*int32)(unsafe.Add(mBase, _c_F_rewriteConfigSaveOption[0]))
 	if v14 == int32(0) {
 		goto L3
 	} else {
@@ -5215,7 +5215,7 @@ L2:
 	}
 L3:
 	;
-	v24 = *(*int32)(unsafe.Add(mBase, _consts[174]))
+	v24 = *(*int32)(unsafe.Add(mBase, _c_F_rewriteConfigSaveOption[1]))
 	if v24 != 0 {
 		goto L10
 	} else {
@@ -5278,7 +5278,7 @@ L10:
 	}
 L11:
 	;
-	v26 = F_sdsnew(m, int32(_a412))
+	v26 = F_sdsnew(m, int32(_a_F_rewriteConfigSaveOption_0))
 	mBase = m.M
 	v27 = m.ExcPending
 	if v27 != 0 {
@@ -5292,7 +5292,7 @@ L12:
 	goto L9
 L13:
 	;
-	v31 = *(*int32)(unsafe.Add(mBase, _consts[174]))
+	v31 = *(*int32)(unsafe.Add(mBase, _c_F_rewriteConfigSaveOption[1]))
 	if v31 < int32(1) {
 		v65 = v28
 		goto L9
@@ -5306,13 +5306,13 @@ L14:
 	goto L15
 L15:
 	;
-	v44 = *(*int32)(unsafe.Add(mBase, _consts[175]))
+	v44 = *(*int32)(unsafe.Add(mBase, _c_F_rewriteConfigSaveOption[2]))
 	v47 = v44 + v39<<(uint(int32(4))%32)
 	v48 = *(*int32)(unsafe.Add(mBase, uint32(v47)+8))
 	v49 = *(*int64)(unsafe.Add(mBase, uint32(v47)))
 	*(*uint32)(unsafe.Add(mBase, uint32(v11))) = uint32(v49)
 	*(*int32)(unsafe.Add(mBase, uint32(v11)+4)) = v48
-	v53 = F_sdscatprintf(m, v40, int32(_a413), v11)
+	v53 = F_sdscatprintf(m, v40, int32(_a_F_rewriteConfigSaveOption_1), v11)
 	mBase = m.M
 	v54 = m.ExcPending
 	if v54 != 0 {
@@ -5327,7 +5327,7 @@ L16:
 L17:
 	;
 	v56 = v39 + int32(1)
-	v58 = *(*int32)(unsafe.Add(mBase, _consts[174]))
+	v58 = *(*int32)(unsafe.Add(mBase, _c_F_rewriteConfigSaveOption[1]))
 	if v56 < v58 {
 		v39 = v56
 		v40 = v53
@@ -5464,7 +5464,7 @@ func F_rewriteConfigUserOption(m *base.Module, l0 int32) {
 	v5 = m.G0
 	v7 = v5 - int32(304)
 	m.G0 = v7
-	v10 = *(*int32)(unsafe.Add(mBase, _consts[176]))
+	v10 = *(*int32)(unsafe.Add(mBase, _c_F_rewriteConfigUserOption[0]))
 	v11 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v10))))
 	if v11 == int32(0) {
 		goto L2
@@ -5477,7 +5477,7 @@ L1:
 	return
 L2:
 	;
-	v26 = *(*int32)(unsafe.Add(mBase, _consts[6]))
+	v26 = *(*int32)(unsafe.Add(mBase, _c_F_rewriteConfigUserOption[1]))
 	*(*int32)(unsafe.Add(mBase, uint32(v7)+4)) = v26
 	*(*int32)(unsafe.Add(mBase, uint32(v7))) = int32(2)
 	*(*int32)(unsafe.Add(mBase, uint32(v7)+20)) = int32(128)
@@ -5490,7 +5490,7 @@ L2:
 	goto L9
 L3:
 	;
-	v15 = F_sdsnew(m, int32(_a414))
+	v15 = F_sdsnew(m, int32(_a_F_rewriteConfigUserOption_0))
 	mBase = m.M
 	v16 = m.ExcPending
 	if v16 != 0 {
@@ -5535,7 +5535,7 @@ L8:
 L9:
 	;
 	v45 = int32(0)
-	v47 = F_raxSeek(m, v7, int32(_a4), v45, v45)
+	v47 = F_raxSeek(m, v7, int32(_a_F_rewriteConfigUserOption_1), v45, v45)
 	mBase = m.M
 	v48 = m.ExcPending
 	if v48 != 0 {
@@ -5576,7 +5576,7 @@ L13:
 L14:
 	;
 	v57 = *(*int32)(unsafe.Add(mBase, uint32(v7)+12))
-	v59 = F_sdsnew(m, int32(_a415))
+	v59 = F_sdsnew(m, int32(_a_F_rewriteConfigUserOption_2))
 	mBase = m.M
 	v60 = m.ExcPending
 	if v60 != 0 {
@@ -5600,7 +5600,7 @@ L16:
 	}
 L17:
 	;
-	v66 = F_sdscatlen(m, v62, int32(_a10), int32(1))
+	v66 = F_sdscatlen(m, v62, int32(_a_F_rewriteConfigUserOption_3), int32(1))
 	mBase = m.M
 	v67 = m.ExcPending
 	if v67 != 0 {
@@ -5642,7 +5642,7 @@ L20:
 	}
 L21:
 	;
-	v77 = F_rewriteConfigRewriteLine(m, l0, int32(_a414), v71, int32(1))
+	v77 = F_rewriteConfigRewriteLine(m, l0, int32(_a_F_rewriteConfigUserOption_0), v71, int32(1))
 	mBase = m.M
 	v78 = m.ExcPending
 	if v78 != 0 {
@@ -5672,7 +5672,7 @@ L24:
 	goto L15
 L25:
 	;
-	v88 = F_sdsnew(m, int32(_a414))
+	v88 = F_sdsnew(m, int32(_a_F_rewriteConfigUserOption_0))
 	mBase = m.M
 	v89 = m.ExcPending
 	if v89 != 0 {
@@ -5773,7 +5773,7 @@ L1:
 	}
 L2:
 	;
-	*(*int32)(unsafe.Add(mBase, uint32(l2))) = int32(_a458)
+	*(*int32)(unsafe.Add(mBase, uint32(l2))) = int32(_a_F_setConfigBindOption_0)
 	return int32(0)
 L3:
 	;
@@ -5923,7 +5923,7 @@ func F_setConfigSocketBindOption(m *base.Module, l0 int32, l1 int32, l2 int32, l
 	_ = v11
 	var v14 int32
 	_ = v14
-	v11 = F_setConfigBindOption(m, l1, l2, l3, int32(_a452), int32(_a457))
+	v11 = F_setConfigBindOption(m, l1, l2, l3, int32(_a_F_setConfigSocketBindOption_0), int32(_a_F_setConfigSocketBindOption_1))
 	v14 = m.ExcPending
 	if v14 != 0 {
 		return int32(0)

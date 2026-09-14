@@ -20,6 +20,6 @@ func F_zmalloc_get_smap_bytes_by_field(m *base.Module, l0 int32, l1 int32) int32
 func F_zmalloc_set_oom_handler(m *base.Module, l0 int32) {
 	mBase := m.M
 	_ = mBase
-	*(*int32)(unsafe.Add(mBase, _consts[1129])) = l0
+	*(*int32)(unsafe.Add(mBase, _c_F_zmalloc_set_oom_handler[0])) = l0
 	return
 }

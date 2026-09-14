@@ -95,7 +95,7 @@ func F_kvstoreCreate(m *base.Module, l0 int32, l1 int32, l2 int32) int32 {
 	}
 L1:
 	;
-	F__serverAssert(m, int32(_a863), int32(_a864), int32(296))
+	F__serverAssert(m, int32(_a_F_kvstoreCreate_0), int32(_a_F_kvstoreCreate_1), int32(296))
 	mBase = m.M
 	v125 = m.ExcPending
 	if v125 != 0 {
@@ -105,7 +105,7 @@ L1:
 	}
 L2:
 	;
-	F__serverAssert(m, int32(_a865), int32(_a864), int32(295))
+	F__serverAssert(m, int32(_a_F_kvstoreCreate_2), int32(_a_F_kvstoreCreate_1), int32(295))
 	mBase = m.M
 	v119 = m.ExcPending
 	if v119 != 0 {
@@ -115,7 +115,7 @@ L2:
 	}
 L3:
 	;
-	F__serverAssert(m, int32(_a866), int32(_a864), int32(294))
+	F__serverAssert(m, int32(_a_F_kvstoreCreate_3), int32(_a_F_kvstoreCreate_1), int32(294))
 	mBase = m.M
 	v113 = m.ExcPending
 	if v113 != 0 {
@@ -125,7 +125,7 @@ L3:
 	}
 L4:
 	;
-	F__serverAssert(m, int32(_a867), int32(_a864), int32(293))
+	F__serverAssert(m, int32(_a_F_kvstoreCreate_4), int32(_a_F_kvstoreCreate_1), int32(293))
 	mBase = m.M
 	v107 = m.ExcPending
 	if v107 != 0 {
@@ -135,7 +135,7 @@ L4:
 	}
 L5:
 	;
-	F__serverAssert(m, int32(_a868), int32(_a864), int32(289))
+	F__serverAssert(m, int32(_a_F_kvstoreCreate_5), int32(_a_F_kvstoreCreate_1), int32(289))
 	mBase = m.M
 	v101 = m.ExcPending
 	if v101 != 0 {
@@ -206,7 +206,7 @@ L12:
 L13:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v21)+8)) = v33
-	v37 = F_hashtableCreate(m, int32(_a869))
+	v37 = F_hashtableCreate(m, int32(_a_F_kvstoreCreate_6))
 	mBase = m.M
 	v38 = m.ExcPending
 	if v38 != 0 {
@@ -774,7 +774,7 @@ func F_kvstoreGetNextNonEmptyHashtableIndex(m *base.Module, l0 int32, l1 int32) 
 					return v95
 				} else {
 					if base.Ui64(v59) < base.Ui64(v49&int64(4294967295)) {
-						F__serverAssert(m, int32(_a874), int32(_a864), int32(576))
+						F__serverAssert(m, int32(_a_F_kvstoreGetNextNonEmptyHashtableIndex_0), int32(_a_F_kvstoreGetNextNonEmptyHashtableIndex_1), int32(576))
 						mBase = m.M
 						v105 = m.ExcPending
 						if v105 != 0 {
@@ -828,7 +828,7 @@ func F_kvstoreGetNextNonEmptyHashtableIndex(m *base.Module, l0 int32, l1 int32) 
 			v95 = int32(-1)
 			return v95
 		} else {
-			F__serverAssert(m, int32(_a875), int32(_a864), int32(606))
+			F__serverAssert(m, int32(_a_F_kvstoreGetNextNonEmptyHashtableIndex_2), int32(_a_F_kvstoreGetNextNonEmptyHashtableIndex_1), int32(606))
 			mBase = m.M
 			v20 = m.ExcPending
 			if v20 != 0 {
@@ -1781,7 +1781,7 @@ func F_kvstoreIncrementallyRehash(m *base.Module, l0 int32, l1 int64) int64 {
 	}
 L1:
 	;
-	v12 = *(*int32)(unsafe.Add(mBase, _consts[23]))
+	v12 = *(*int32)(unsafe.Add(mBase, _c_F_kvstoreIncrementallyRehash[0]))
 	v13 = m.T0[v12].(func(*base.Module) int64)(m)
 	mBase = m.M
 	v16 = int64(0)
@@ -1822,7 +1822,7 @@ L7:
 	return int64(0)
 L8:
 	;
-	v30 = *(*int32)(unsafe.Add(mBase, _consts[23]))
+	v30 = *(*int32)(unsafe.Add(mBase, _c_F_kvstoreIncrementallyRehash[0]))
 	v31 = m.T0[v30].(func(*base.Module) int64)(m)
 	mBase = m.M
 	v32 = v31 - v13
@@ -1972,7 +1972,7 @@ L12:
 	goto L4
 L13:
 	;
-	F__serverAssert(m, int32(_a870), int32(_a864), int32(346))
+	F__serverAssert(m, int32(_a_F_kvstoreRelease_0), int32(_a_F_kvstoreRelease_1), int32(346))
 	mBase = m.M
 	v59 = m.ExcPending
 	if v59 != 0 {
@@ -2181,7 +2181,7 @@ L3:
 	goto L1
 L4:
 	;
-	F__serverAssert(m, int32(_a873), int32(_a864), int32(150))
+	F__serverAssert(m, int32(_a_F_kvstoreScan_3), int32(_a_F_kvstoreScan_1), int32(150))
 	mBase = m.M
 	v181 = m.ExcPending
 	if v181 != 0 {
@@ -2191,7 +2191,7 @@ L4:
 	}
 L5:
 	;
-	F__serverAssert(m, int32(_a872), int32(_a864), int32(430))
+	F__serverAssert(m, int32(_a_F_kvstoreScan_2), int32(_a_F_kvstoreScan_1), int32(430))
 	mBase = m.M
 	v175 = m.ExcPending
 	if v175 != 0 {
@@ -2201,7 +2201,7 @@ L5:
 	}
 L6:
 	;
-	F__serverAssert(m, int32(_a871), int32(_a864), int32(429))
+	F__serverAssert(m, int32(_a_F_kvstoreScan_0), int32(_a_F_kvstoreScan_1), int32(429))
 	mBase = m.M
 	v169 = m.ExcPending
 	if v169 != 0 {
@@ -2574,7 +2574,7 @@ func F_kvstoreSetIsImporting(m *base.Module, l0 int32, l1 int32, l2 int32) {
 	var v59 int32
 	_ = v59
 	if l1 < int32(0) {
-		F__serverAssert(m, int32(_a873), int32(_a864), int32(952))
+		F__serverAssert(m, int32(_a_F_kvstoreSetIsImporting_0), int32(_a_F_kvstoreSetIsImporting_1), int32(952))
 		mBase = m.M
 		v53 = m.ExcPending
 		if v53 != 0 {
@@ -2589,7 +2589,7 @@ func F_kvstoreSetIsImporting(m *base.Module, l0 int32, l1 int32, l2 int32) {
 	} else {
 		v7 = *(*int32)(unsafe.Add(mBase, uint32(l0)+12))
 		if v7 <= l1 {
-			F__serverAssert(m, int32(_a873), int32(_a864), int32(952))
+			F__serverAssert(m, int32(_a_F_kvstoreSetIsImporting_0), int32(_a_F_kvstoreSetIsImporting_1), int32(952))
 			mBase = m.M
 			v53 = m.ExcPending
 			if v53 != 0 {
@@ -2656,7 +2656,7 @@ func F_kvstoreSetIsImporting(m *base.Module, l0 int32, l1 int32, l2 int32) {
 					v18 = *(*int32)(unsafe.Add(mBase, uint32(v13)+20))
 					v19 = *(*int32)(unsafe.Add(mBase, uint32(v13)+16))
 					if v18+v19 != 0 {
-						F__serverAssert(m, int32(_a876), int32(_a864), int32(958))
+						F__serverAssert(m, int32(_a_F_kvstoreSetIsImporting_2), int32(_a_F_kvstoreSetIsImporting_1), int32(958))
 						mBase = m.M
 						v59 = m.ExcPending
 						if v59 != 0 {

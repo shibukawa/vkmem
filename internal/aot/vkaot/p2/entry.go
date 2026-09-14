@@ -157,7 +157,7 @@ func F_entrySetExpiry(m *base.Module, l0 int32, l1 int64) int32 {
 				if base.Ui32(int32(4)) < base.Ui32(v74) {
 					v82 = int32(0)
 				} else {
-					v81 = *(*int32)(unsafe.Add(mBase, uint32(v74<<(uint(int32(2))%32))+uint32(_consts[412])))
+					v81 = *(*int32)(unsafe.Add(mBase, uint32(v74<<(uint(int32(2))%32))+uint32(_c_F_entrySetExpiry[0])))
 					v82 = v81
 				}
 				v86 = *(*int32)(unsafe.Add(mBase, uint32(l0+v82+int32(-4))))
@@ -201,7 +201,7 @@ func F_entrySetExpiry(m *base.Module, l0 int32, l1 int64) int32 {
 					if base.Ui32(int32(4)) < base.Ui32(v74) {
 						v82 = int32(0)
 					} else {
-						v81 = *(*int32)(unsafe.Add(mBase, uint32(v74<<(uint(int32(2))%32))+uint32(_consts[412])))
+						v81 = *(*int32)(unsafe.Add(mBase, uint32(v74<<(uint(int32(2))%32))+uint32(_c_F_entrySetExpiry[0])))
 						v82 = v81
 					}
 					v86 = *(*int32)(unsafe.Add(mBase, uint32(l0+v82+int32(-4))))
@@ -245,7 +245,7 @@ func F_entrySetExpiry(m *base.Module, l0 int32, l1 int64) int32 {
 						if base.Ui32(int32(4)) < base.Ui32(v74) {
 							v82 = int32(0)
 						} else {
-							v81 = *(*int32)(unsafe.Add(mBase, uint32(v74<<(uint(int32(2))%32))+uint32(_consts[412])))
+							v81 = *(*int32)(unsafe.Add(mBase, uint32(v74<<(uint(int32(2))%32))+uint32(_c_F_entrySetExpiry[0])))
 							v82 = v81
 						}
 						v86 = *(*int32)(unsafe.Add(mBase, uint32(l0+v82+int32(-4))))
@@ -267,7 +267,7 @@ func F_entrySetExpiry(m *base.Module, l0 int32, l1 int64) int32 {
 				if base.Ui32(int32(4)) < base.Ui32(v26) {
 					v34 = int32(0)
 				} else {
-					v33 = *(*int32)(unsafe.Add(mBase, uint32(v26<<(uint(int32(2))%32))+uint32(_consts[412])))
+					v33 = *(*int32)(unsafe.Add(mBase, uint32(v26<<(uint(int32(2))%32))+uint32(_c_F_entrySetExpiry[0])))
 					v34 = v33
 				}
 				v38 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v7))))
@@ -366,7 +366,7 @@ func F_removeEntryFromRaxBucket(m *base.Module, l0 int32, l1 int32, l2 int32, l3
 	*(*uint8)(unsafe.Add(mBase, uint32(v10)+15)) = uint8(v7)
 	switch l2 + int32(1) {
 	case 0:
-		F__serverPanic_1(m, int32(_a1861), int32(1422), int32(_a1866), int32(0))
+		F__serverPanic_1(m, int32(_a_F_removeEntryFromRaxBucket_0), int32(1422), int32(_a_F_removeEntryFromRaxBucket_1), int32(0))
 		mBase = m.M
 		v123 = m.ExcPending
 		if v123 != 0 {
@@ -379,7 +379,7 @@ func F_removeEntryFromRaxBucket(m *base.Module, l0 int32, l1 int32, l2 int32, l3
 			}
 		}
 	case 1:
-		F__serverAssert(m, int32(_a1864), int32(_a1861), int32(781))
+		F__serverAssert(m, int32(_a_F_removeEntryFromRaxBucket_2), int32(_a_F_removeEntryFromRaxBucket_0), int32(781))
 		mBase = m.M
 		v22 = m.ExcPending
 		if v22 != 0 {
@@ -401,7 +401,7 @@ func F_removeEntryFromRaxBucket(m *base.Module, l0 int32, l1 int32, l2 int32, l3
 			} else {
 				switch l0 + int32(1) {
 				case 0:
-					F__serverAssert(m, int32(_a1867), int32(_a1861), int32(807))
+					F__serverAssert(m, int32(_a_F_removeEntryFromRaxBucket_3), int32(_a_F_removeEntryFromRaxBucket_0), int32(807))
 					mBase = m.M
 					v167 = m.ExcPending
 					if v167 != 0 {
@@ -414,7 +414,7 @@ func F_removeEntryFromRaxBucket(m *base.Module, l0 int32, l1 int32, l2 int32, l3
 						}
 					}
 				case 1:
-					F__serverAssert(m, int32(_a1864), int32(_a1861), int32(781))
+					F__serverAssert(m, int32(_a_F_removeEntryFromRaxBucket_2), int32(_a_F_removeEntryFromRaxBucket_0), int32(781))
 					mBase = m.M
 					v39 = m.ExcPending
 					if v39 != 0 {
@@ -428,7 +428,7 @@ func F_removeEntryFromRaxBucket(m *base.Module, l0 int32, l1 int32, l2 int32, l3
 					}
 				default:
 					if l0&int32(7) != int32(6) {
-						F__serverAssert(m, int32(_a1867), int32(_a1861), int32(807))
+						F__serverAssert(m, int32(_a_F_removeEntryFromRaxBucket_3), int32(_a_F_removeEntryFromRaxBucket_0), int32(807))
 						mBase = m.M
 						v167 = m.ExcPending
 						if v167 != 0 {
@@ -472,7 +472,7 @@ func F_removeEntryFromRaxBucket(m *base.Module, l0 int32, l1 int32, l2 int32, l3
 						case 0:
 							switch l0 + int32(1) {
 							case 0:
-								F__serverAssert(m, int32(_a1867), int32(_a1861), int32(807))
+								F__serverAssert(m, int32(_a_F_removeEntryFromRaxBucket_3), int32(_a_F_removeEntryFromRaxBucket_0), int32(807))
 								mBase = m.M
 								v173 = m.ExcPending
 								if v173 != 0 {
@@ -485,7 +485,7 @@ func F_removeEntryFromRaxBucket(m *base.Module, l0 int32, l1 int32, l2 int32, l3
 									}
 								}
 							case 1:
-								F__serverAssert(m, int32(_a1864), int32(_a1861), int32(781))
+								F__serverAssert(m, int32(_a_F_removeEntryFromRaxBucket_2), int32(_a_F_removeEntryFromRaxBucket_0), int32(781))
 								mBase = m.M
 								v70 = m.ExcPending
 								if v70 != 0 {
@@ -499,7 +499,7 @@ func F_removeEntryFromRaxBucket(m *base.Module, l0 int32, l1 int32, l2 int32, l3
 								}
 							default:
 								if l0&int32(7) != int32(6) {
-									F__serverAssert(m, int32(_a1867), int32(_a1861), int32(807))
+									F__serverAssert(m, int32(_a_F_removeEntryFromRaxBucket_3), int32(_a_F_removeEntryFromRaxBucket_0), int32(807))
 									mBase = m.M
 									v173 = m.ExcPending
 									if v173 != 0 {
@@ -525,7 +525,7 @@ func F_removeEntryFromRaxBucket(m *base.Module, l0 int32, l1 int32, l2 int32, l3
 								}
 							}
 						case 1:
-							F__serverAssert(m, int32(_a1864), int32(_a1861), int32(781))
+							F__serverAssert(m, int32(_a_F_removeEntryFromRaxBucket_2), int32(_a_F_removeEntryFromRaxBucket_0), int32(781))
 							mBase = m.M
 							v62 = m.ExcPending
 							if v62 != 0 {
@@ -560,7 +560,7 @@ func F_removeEntryFromRaxBucket(m *base.Module, l0 int32, l1 int32, l2 int32, l3
 					}
 				}
 			default:
-				F__serverPanic_1(m, int32(_a1861), int32(1422), int32(_a1866), int32(0))
+				F__serverPanic_1(m, int32(_a_F_removeEntryFromRaxBucket_0), int32(1422), int32(_a_F_removeEntryFromRaxBucket_1), int32(0))
 				mBase = m.M
 				v123 = m.ExcPending
 				if v123 != 0 {

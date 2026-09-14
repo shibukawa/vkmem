@@ -105,7 +105,7 @@ L2:
 	}
 L3:
 	;
-	F__serverAssert(m, int32(_a169), int32(_a1723), int32(1000))
+	F__serverAssert(m, int32(_a_F_zzlFirstInRange_0), int32(_a_F_zzlFirstInRange_1), int32(1000))
 	mBase = m.M
 	v124 = m.ExcPending
 	if v124 != 0 {
@@ -199,10 +199,10 @@ L15:
 	v52 = F___errno_location(m)
 	mBase = m.M
 	*(*int32)(unsafe.Add(mBase, uint32(v52))) = v44
-	v58 = *(*int64)(unsafe.Add(mBase, _consts[378]))
+	v58 = *(*int64)(unsafe.Add(mBase, _c_F_zzlFirstInRange[0]))
 	*(*int64)(unsafe.Add(mBase, uint32(v50+int32(8)))) = v58
 	*(*int64)(unsafe.Add(mBase, uint32(v50)+24)) = int64(0)
-	v63 = *(*int64)(unsafe.Add(mBase, _consts[379]))
+	v63 = *(*int64)(unsafe.Add(mBase, _c_F_zzlFirstInRange[1]))
 	*(*int64)(unsafe.Add(mBase, uint32(v50))) = v63
 	F_ffc_from_chars_double_options(m, v50+int32(16), v39, v39+v43, v50+int32(24), v50)
 	mBase = m.M
@@ -453,7 +453,7 @@ L6:
 	goto L8
 L7:
 	;
-	F__serverAssert(m, int32(_a169), int32(_a1723), int32(1027))
+	F__serverAssert(m, int32(_a_F_zzlLastInRange_0), int32(_a_F_zzlLastInRange_1), int32(1027))
 	mBase = m.M
 	v118 = m.ExcPending
 	if v118 != 0 {
@@ -473,7 +473,7 @@ L8:
 	}
 L9:
 	;
-	F__serverAssert(m, int32(_a1724), int32(_a1723), int32(1040))
+	F__serverAssert(m, int32(_a_F_zzlLastInRange_2), int32(_a_F_zzlLastInRange_1), int32(1040))
 	mBase = m.M
 	v112 = m.ExcPending
 	if v112 != 0 {
@@ -529,10 +529,10 @@ L15:
 	v50 = F___errno_location(m)
 	mBase = m.M
 	*(*int32)(unsafe.Add(mBase, uint32(v50))) = v42
-	v56 = *(*int64)(unsafe.Add(mBase, _consts[378]))
+	v56 = *(*int64)(unsafe.Add(mBase, _c_F_zzlLastInRange[0]))
 	*(*int64)(unsafe.Add(mBase, uint32(v48+int32(8)))) = v56
 	*(*int64)(unsafe.Add(mBase, uint32(v48)+24)) = int64(0)
-	v61 = *(*int64)(unsafe.Add(mBase, _consts[379]))
+	v61 = *(*int64)(unsafe.Add(mBase, _c_F_zzlLastInRange[1]))
 	*(*int64)(unsafe.Add(mBase, uint32(v48))) = v61
 	F_ffc_from_chars_double_options(m, v48+int32(16), v37, v37+v41, v48+int32(24), v48)
 	mBase = m.M
@@ -829,10 +829,10 @@ L13:
 	v44 = F___errno_location(m)
 	mBase = m.M
 	*(*int32)(unsafe.Add(mBase, uint32(v44))) = v36
-	v50 = *(*int64)(unsafe.Add(mBase, _consts[378]))
+	v50 = *(*int64)(unsafe.Add(mBase, _c_F_zzlValidateScores[0]))
 	*(*int64)(unsafe.Add(mBase, uint32(v42+int32(8)))) = v50
 	*(*int64)(unsafe.Add(mBase, uint32(v42)+24)) = int64(0)
-	v55 = *(*int64)(unsafe.Add(mBase, _consts[379]))
+	v55 = *(*int64)(unsafe.Add(mBase, _c_F_zzlValidateScores[1]))
 	*(*int64)(unsafe.Add(mBase, uint32(v42))) = v55
 	F_ffc_from_chars_double_options(m, v42+int32(16), v31, v31+v35, v42+int32(24), v42)
 	mBase = m.M

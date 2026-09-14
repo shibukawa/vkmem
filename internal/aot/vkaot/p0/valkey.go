@@ -1038,7 +1038,7 @@ func F_valkeyAsyncHandleRead(m *base.Module, l0 int32) {
 	v3 = *(*int32)(unsafe.Add(mBase, uint32(l0)+140))
 	if v3&int32(16) != 0 {
 		v19 = m.G3
-		m.Env.X__assert_fail(m, v19+int32(_a1698), v19+int32(_a1688), int32(725), v19+int32(_a1699))
+		m.Env.X__assert_fail(m, v19+int32(_a_F_valkeyAsyncHandleRead_0), v19+int32(_a_F_valkeyAsyncHandleRead_1), int32(725), v19+int32(_a_F_valkeyAsyncHandleRead_2))
 		mBase = m.M
 		base.Wasm_trap_unreachable()
 		for {
@@ -1107,7 +1107,7 @@ func F_valkeyAsyncHandleWrite(m *base.Module, l0 int32) {
 	v3 = *(*int32)(unsafe.Add(mBase, uint32(l0)+140))
 	if v3&int32(16) != 0 {
 		v19 = m.G3
-		m.Env.X__assert_fail(m, v19+int32(_a1698), v19+int32(_a1688), int32(760), v19+int32(_a1702))
+		m.Env.X__assert_fail(m, v19+int32(_a_F_valkeyAsyncHandleWrite_0), v19+int32(_a_F_valkeyAsyncHandleWrite_1), int32(760), v19+int32(_a_F_valkeyAsyncHandleWrite_2))
 		mBase = m.M
 		base.Wasm_trap_unreachable()
 		for {
@@ -1381,7 +1381,7 @@ L14:
 L15:
 	;
 	v39 = m.G3
-	m.Env.X__assert_fail(m, v39+int32(_a1700), v39+int32(_a1688), int32(423), v39+int32(_a1701))
+	m.Env.X__assert_fail(m, v39+int32(_a_F_valkeyAsyncWrite_0), v39+int32(_a_F_valkeyAsyncWrite_1), int32(423), v39+int32(_a_F_valkeyAsyncWrite_2))
 	mBase = m.M
 	base.Wasm_trap_unreachable()
 	for {
@@ -1733,7 +1733,7 @@ func F_valkeyCheckConnectDone(m *base.Module, l0 int32, l1 int32) int32 {
 	mBase = m.M
 	if v14 != 0 {
 		v19 = int32(9116376)
-		v20 = *(*int32)(unsafe.Add(mBase, _consts[9]))
+		v20 = *(*int32)(unsafe.Add(mBase, _c_F_valkeyCheckConnectDone[0]))
 		if v20 != int32(26) {
 			v39 = v20
 			switch v39 + int32(-6) {
@@ -1773,7 +1773,7 @@ func F_valkeyCheckConnectDone(m *base.Module, l0 int32, l1 int32) int32 {
 					*(*int32)(unsafe.Add(mBase, uint32(l1))) = int32(1)
 					v52 = int32(0)
 				} else {
-					*(*int32)(unsafe.Add(mBase, _consts[9])) = v33
+					*(*int32)(unsafe.Add(mBase, _c_F_valkeyCheckConnectDone[0])) = v33
 					v37 = v33
 					v39 = v37
 					switch v39 + int32(-6) {
@@ -1883,7 +1883,7 @@ L1:
 	v125 = m.G3
 	v131 = m.G8
 	v132 = *(*int32)(unsafe.Add(mBase, uint32(v131)))
-	m.T0[v132].(func(*base.Module, int32, int32, int32))(m, v125+int32(_a1733), v125+int32(_a1734), int32(622))
+	m.T0[v132].(func(*base.Module, int32, int32, int32))(m, v125+int32(_a_F_valkeyCommandHandler_0), v125+int32(_a_F_valkeyCommandHandler_1), int32(622))
 	mBase = m.M
 	v134 = m.ExcPending
 	if v134 != 0 {
@@ -1918,7 +1918,7 @@ L3:
 L4:
 	;
 	v29 = m.G3
-	F_lua_getfield(m, v14, int32(-10002), v29+int32(_a1390))
+	F_lua_getfield(m, v14, int32(-10002), v29+int32(_a_F_valkeyCommandHandler_2))
 	mBase = m.M
 	v33 = m.ExcPending
 	if v33 != 0 {
@@ -1941,7 +1941,7 @@ L7:
 	v21 = m.G3
 	v24 = m.G19
 	v25 = *(*int32)(unsafe.Add(mBase, uint32(v24)))
-	m.T0[v25].(func(*base.Module, int32))(m, v21+int32(_a1740))
+	m.T0[v25].(func(*base.Module, int32))(m, v21+int32(_a_F_valkeyCommandHandler_3))
 	mBase = m.M
 	v27 = m.ExcPending
 	if v27 != 0 {
@@ -1954,7 +1954,7 @@ L8:
 	goto L3
 L9:
 	;
-	F_lua_pushstring(m, v14, v29+int32(_a1741))
+	F_lua_pushstring(m, v14, v29+int32(_a_F_valkeyCommandHandler_4))
 	mBase = m.M
 	v37 = m.ExcPending
 	if v37 != 0 {
@@ -2236,7 +2236,7 @@ func F_valkeyConnectWithOptions(m *base.Module, l0 int32) int32 {
 				} else {
 					*(*int32)(unsafe.Add(mBase, uint32(v18)+144)) = v24
 					v27 = m.G3
-					v30 = F_valkeyReaderCreateWithFunctions(m, v27+int32(_a1709))
+					v30 = F_valkeyReaderCreateWithFunctions(m, v27+int32(_a_F_valkeyConnectWithOptions_0))
 					mBase = m.M
 					v31 = m.ExcPending
 					if v31 != 0 {
@@ -2452,9 +2452,9 @@ func F_valkeyConnectWithOptions(m *base.Module, l0 int32) int32 {
 													v220 = int32(0)
 													*(*uint8)(unsafe.Add(mBase, uint32(v18)+21)) = uint8(v220)
 													v222 = m.G3
-													v225 = *(*int64)(unsafe.Add(mBase, uint32(v222)+uint32(_consts[1133])))
+													v225 = *(*int64)(unsafe.Add(mBase, uint32(v222)+uint32(_c_F_valkeyConnectWithOptions[0])))
 													*(*int64)(unsafe.Add(mBase, uint32(v18)+8)) = v225
-													v231 = *(*int64)(unsafe.Add(mBase, uint32(v222)+uint32(_consts[1134])))
+													v231 = *(*int64)(unsafe.Add(mBase, uint32(v222)+uint32(_c_F_valkeyConnectWithOptions[1])))
 													*(*int64)(unsafe.Add(mBase, uint32(v18+int32(13)))) = v231
 													v237 = v18
 													m.G0 = v8 + int32(16)
@@ -2666,9 +2666,9 @@ func F_valkeyConnectWithOptions(m *base.Module, l0 int32) int32 {
 														v220 = int32(0)
 														*(*uint8)(unsafe.Add(mBase, uint32(v18)+21)) = uint8(v220)
 														v222 = m.G3
-														v225 = *(*int64)(unsafe.Add(mBase, uint32(v222)+uint32(_consts[1133])))
+														v225 = *(*int64)(unsafe.Add(mBase, uint32(v222)+uint32(_c_F_valkeyConnectWithOptions[0])))
 														*(*int64)(unsafe.Add(mBase, uint32(v18)+8)) = v225
-														v231 = *(*int64)(unsafe.Add(mBase, uint32(v222)+uint32(_consts[1134])))
+														v231 = *(*int64)(unsafe.Add(mBase, uint32(v222)+uint32(_c_F_valkeyConnectWithOptions[1])))
 														*(*int64)(unsafe.Add(mBase, uint32(v18+int32(13)))) = v231
 														v237 = v18
 														m.G0 = v8 + int32(16)
@@ -2753,9 +2753,9 @@ func F_valkeyConnectWithOptions(m *base.Module, l0 int32) int32 {
 												v220 = int32(0)
 												*(*uint8)(unsafe.Add(mBase, uint32(v18)+21)) = uint8(v220)
 												v222 = m.G3
-												v225 = *(*int64)(unsafe.Add(mBase, uint32(v222)+uint32(_consts[1133])))
+												v225 = *(*int64)(unsafe.Add(mBase, uint32(v222)+uint32(_c_F_valkeyConnectWithOptions[0])))
 												*(*int64)(unsafe.Add(mBase, uint32(v18)+8)) = v225
-												v231 = *(*int64)(unsafe.Add(mBase, uint32(v222)+uint32(_consts[1134])))
+												v231 = *(*int64)(unsafe.Add(mBase, uint32(v222)+uint32(_c_F_valkeyConnectWithOptions[1])))
 												*(*int64)(unsafe.Add(mBase, uint32(v18+int32(13)))) = v231
 												v237 = v18
 												m.G0 = v8 + int32(16)
@@ -2901,9 +2901,9 @@ func F_valkeyConnectWithOptions(m *base.Module, l0 int32) int32 {
 																v220 = int32(0)
 																*(*uint8)(unsafe.Add(mBase, uint32(v18)+21)) = uint8(v220)
 																v222 = m.G3
-																v225 = *(*int64)(unsafe.Add(mBase, uint32(v222)+uint32(_consts[1133])))
+																v225 = *(*int64)(unsafe.Add(mBase, uint32(v222)+uint32(_c_F_valkeyConnectWithOptions[0])))
 																*(*int64)(unsafe.Add(mBase, uint32(v18)+8)) = v225
-																v231 = *(*int64)(unsafe.Add(mBase, uint32(v222)+uint32(_consts[1134])))
+																v231 = *(*int64)(unsafe.Add(mBase, uint32(v222)+uint32(_c_F_valkeyConnectWithOptions[1])))
 																*(*int64)(unsafe.Add(mBase, uint32(v18+int32(13)))) = v231
 																v237 = v18
 																m.G0 = v8 + int32(16)
@@ -3015,7 +3015,7 @@ func F_valkeyContextRegisterUserfdFuncs(m *base.Module) {
 	var v5 int32
 	_ = v5
 	v1 = m.G3
-	v5 = F_valkeyContextRegisterFuncs(m, v1+int32(_a1703), int32(2))
+	v5 = F_valkeyContextRegisterFuncs(m, v1+int32(_a_F_valkeyContextRegisterUserfdFuncs_0), int32(2))
 	return
 }
 func F_valkeyGetSubscribeCallback(m *base.Module, l0 int32, l1 int32, l2 int32) {
@@ -3452,7 +3452,7 @@ func F_valkeyGetSubscribeCallback(m *base.Module, l0 int32, l1 int32, l2 int32) 
 L1:
 	;
 	v543 = m.G3
-	m.Env.X__assert_fail(m, v543+int32(_a1687), v543+int32(_a1688), int32(511), v543+int32(_a1689))
+	m.Env.X__assert_fail(m, v543+int32(_a_F_valkeyGetSubscribeCallback_0), v543+int32(_a_F_valkeyGetSubscribeCallback_1), int32(511), v543+int32(_a_F_valkeyGetSubscribeCallback_2))
 	mBase = m.M
 	base.Wasm_trap_unreachable()
 	for {
@@ -3460,7 +3460,7 @@ L1:
 L2:
 	;
 	v534 = m.G3
-	m.Env.X__assert_fail(m, v534+int32(_a1690), v534+int32(_a1688), int32(500), v534+int32(_a1689))
+	m.Env.X__assert_fail(m, v534+int32(_a_F_valkeyGetSubscribeCallback_3), v534+int32(_a_F_valkeyGetSubscribeCallback_1), int32(500), v534+int32(_a_F_valkeyGetSubscribeCallback_2))
 	mBase = m.M
 	base.Wasm_trap_unreachable()
 	for {
@@ -3468,7 +3468,7 @@ L2:
 L3:
 	;
 	v525 = m.G3
-	m.Env.X__assert_fail(m, v525+int32(_a1691), v525+int32(_a1688), int32(477), v525+int32(_a1689))
+	m.Env.X__assert_fail(m, v525+int32(_a_F_valkeyGetSubscribeCallback_4), v525+int32(_a_F_valkeyGetSubscribeCallback_1), int32(477), v525+int32(_a_F_valkeyGetSubscribeCallback_2))
 	mBase = m.M
 	base.Wasm_trap_unreachable()
 	for {
@@ -3480,7 +3480,7 @@ L4:
 L5:
 	;
 	v500 = m.G3
-	F_valkeySetError(m, l0, int32(5), v500+int32(_a1692))
+	F_valkeySetError(m, l0, int32(5), v500+int32(_a_F_valkeyGetSubscribeCallback_5))
 	mBase = m.M
 	if l0 == int32(0) {
 		goto L4
@@ -3567,7 +3567,7 @@ L17:
 	}
 L18:
 	;
-	v49 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v42)+uint32(_consts[1130]))))
+	v49 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v42)+uint32(_c_F_valkeyGetSubscribeCallback[0]))))
 	if v49 != 0 {
 		goto L21
 	} else {
@@ -3583,7 +3583,7 @@ L20:
 	goto L17
 L21:
 	;
-	v51 = v42 + int32(_a1693)
+	v51 = v42 + int32(_a_F_valkeyGetSubscribeCallback_6)
 	v52 = v31
 	v53 = int32(2)
 	v54 = v49
@@ -3680,7 +3680,7 @@ L33:
 	}
 L34:
 	;
-	v107 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v100)+uint32(_consts[1131]))))
+	v107 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v100)+uint32(_c_F_valkeyGetSubscribeCallback[1]))))
 	if v107 != 0 {
 		goto L37
 	} else {
@@ -3696,7 +3696,7 @@ L36:
 	goto L33
 L37:
 	;
-	v109 = v100 + int32(_a1694)
+	v109 = v100 + int32(_a_F_valkeyGetSubscribeCallback_7)
 	v110 = v31
 	v111 = int32(2)
 	v112 = v107
@@ -3789,7 +3789,7 @@ L49:
 	goto L16
 L50:
 	;
-	v165 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v158)+uint32(_consts[1132]))))
+	v165 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v158)+uint32(_c_F_valkeyGetSubscribeCallback[2]))))
 	if v165 != 0 {
 		goto L53
 	} else {
@@ -3805,7 +3805,7 @@ L52:
 	goto L49
 L53:
 	;
-	v167 = v158 + int32(_a1695)
+	v167 = v158 + int32(_a_F_valkeyGetSubscribeCallback_8)
 	v168 = v31
 	v169 = int32(3)
 	v170 = v165
@@ -3926,7 +3926,7 @@ L70:
 	;
 	v259 = v31 + v41 + v216
 	v260 = m.G3
-	v262 = v260 + int32(_a1696)
+	v262 = v260 + int32(_a_F_valkeyGetSubscribeCallback_9)
 	v265 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v259))))
 	if v265 != 0 {
 		goto L82
@@ -3999,7 +3999,7 @@ L78:
 L79:
 	;
 	v311 = m.G3
-	v313 = v311 + int32(_a1697)
+	v313 = v311 + int32(_a_F_valkeyGetSubscribeCallback_10)
 	v316 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v259))))
 	if v316 != 0 {
 		goto L98
@@ -4502,7 +4502,7 @@ func F_valkeyNetRead(m *base.Module, l0 int32, l1 int32, l2 int32) int32 {
 	mBase = m.M
 	switch v8 + int32(1) {
 	case 0:
-		v12 = *(*int32)(unsafe.Add(mBase, _consts[9]))
+		v12 = *(*int32)(unsafe.Add(mBase, _c_F_valkeyNetRead[0]))
 		if v12 == int32(73) {
 			v27 = int32(*(*uint8)(unsafe.Add(mBase, uint32(l0)+140)))
 			if v27&int32(1) == int32(0) {
@@ -4512,7 +4512,7 @@ func F_valkeyNetRead(m *base.Module, l0 int32, l1 int32, l2 int32) int32 {
 				mBase = m.M
 			} else {
 				v33 = m.G3
-				F_valkeySetError(m, l0, int32(6), v33+int32(_a1704))
+				F_valkeySetError(m, l0, int32(6), v33+int32(_a_F_valkeyNetRead_0))
 				mBase = m.M
 			}
 			v50 = int32(-1)
@@ -4545,7 +4545,7 @@ func F_valkeyNetRead(m *base.Module, l0 int32, l1 int32, l2 int32) int32 {
 		}
 	case 1:
 		v38 = m.G3
-		F_valkeySetError(m, l0, int32(3), v38+int32(_a1705))
+		F_valkeySetError(m, l0, int32(3), v38+int32(_a_F_valkeyNetRead_1))
 		mBase = m.M
 		v50 = int32(-1)
 		return v50
@@ -5097,7 +5097,7 @@ L24:
 L25:
 	;
 	v104 = m.G3
-	m.Env.X__assert_fail(m, v104+int32(_a1706), v104+int32(_a1707), int32(707), v104+int32(_a1708))
+	m.Env.X__assert_fail(m, v104+int32(_a_F_valkeySetError_0), v104+int32(_a_F_valkeySetError_1), int32(707), v104+int32(_a_F_valkeySetError_2))
 	mBase = m.M
 	base.Wasm_trap_unreachable()
 	for {
@@ -5107,7 +5107,7 @@ L26:
 	goto L27
 L27:
 	;
-	v78 = *(*int32)(unsafe.Add(mBase, _consts[9]))
+	v78 = *(*int32)(unsafe.Add(mBase, _c_F_valkeySetError[0]))
 	v80 = l0 + int32(8)
 	v83 = F_strerror(m, v78)
 	mBase = m.M
@@ -5163,7 +5163,7 @@ func F_valkey_realloc(m *base.Module, l0 int32, l1 int32) int32 {
 			if v4 != 0 {
 				return v4
 			} else {
-				v11 = *(*int32)(unsafe.Add(mBase, _consts[1129]))
+				v11 = *(*int32)(unsafe.Add(mBase, _c_F_valkey_realloc[0]))
 				m.T0[v11].(func(*base.Module, int32))(m, l1)
 				mBase = m.M
 				v13 = m.ExcPending
@@ -5218,7 +5218,7 @@ func F_valkey_strtod_sds(m *base.Module, l0 int32, l1 int32) float64 {
 	m.G0 = v10
 	v12 = int32(9116376)
 	v13 = int32(0)
-	*(*int32)(unsafe.Add(mBase, _consts[9])) = v13
+	*(*int32)(unsafe.Add(mBase, _c_F_valkey_strtod_sds[0])) = v13
 	v18 = int32(*(*uint8)(unsafe.Add(mBase, uint32(l0+int32(-1)))))
 	switch v18 & int32(7) {
 	case 0:
@@ -5239,10 +5239,10 @@ func F_valkey_strtod_sds(m *base.Module, l0 int32, l1 int32) float64 {
 		v35 = v13
 	}
 	v38 = int32(0)
-	v39 = *(*int64)(unsafe.Add(mBase, _consts[1101]))
+	v39 = *(*int64)(unsafe.Add(mBase, _c_F_valkey_strtod_sds[1]))
 	*(*int64)(unsafe.Add(mBase, uint32(v10+int32(8)))) = v39
 	*(*int64)(unsafe.Add(mBase, uint32(v10)+24)) = int64(0)
-	v44 = *(*int64)(unsafe.Add(mBase, _consts[1102]))
+	v44 = *(*int64)(unsafe.Add(mBase, _c_F_valkey_strtod_sds[2]))
 	*(*int64)(unsafe.Add(mBase, uint32(v10))) = v44
 	F_ffc_from_chars_double_options(m, v10+int32(16), l0, l0+v35, v10+int32(24), v10)
 	mBase = m.M
@@ -5254,7 +5254,7 @@ func F_valkey_strtod_sds(m *base.Module, l0 int32, l1 int32) float64 {
 		} else {
 			v59 = int32(28)
 		}
-		*(*int32)(unsafe.Add(mBase, _consts[9])) = v59
+		*(*int32)(unsafe.Add(mBase, _c_F_valkey_strtod_sds[0])) = v59
 	}
 	if l1 == int32(0) {
 	} else {

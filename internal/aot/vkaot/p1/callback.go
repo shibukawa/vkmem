@@ -33,33 +33,33 @@ func F_callbackHash(m *base.Module, l0 int32) int64 {
 	v7 = int32(*(*uint8)(unsafe.Add(mBase, uint32(l0+int32(-1)))))
 	switch v7 & int32(7) {
 	case 0:
-		v13 = F_siphash(m, l0, int32(base.Ui32(v7)>>(uint(int32(3))%32)), int32(_a245))
+		v13 = F_siphash(m, l0, int32(base.Ui32(v7)>>(uint(int32(3))%32)), int32(_a_F_callbackHash_0))
 		mBase = m.M
 		return v13
 	case 1:
 		v17 = int32(*(*uint8)(unsafe.Add(mBase, uint32(l0+int32(-3)))))
-		v19 = F_siphash(m, l0, v17, int32(_a245))
+		v19 = F_siphash(m, l0, v17, int32(_a_F_callbackHash_0))
 		mBase = m.M
 		return v19
 	case 2:
 		v23 = int32(*(*uint16)(unsafe.Add(mBase, uint32(l0+int32(-5)))))
-		v25 = F_siphash(m, l0, v23, int32(_a245))
+		v25 = F_siphash(m, l0, v23, int32(_a_F_callbackHash_0))
 		mBase = m.M
 		return v25
 	case 3:
 		v29 = *(*int32)(unsafe.Add(mBase, uint32(l0+int32(-9))))
-		v31 = F_siphash(m, l0, v29, int32(_a245))
+		v31 = F_siphash(m, l0, v29, int32(_a_F_callbackHash_0))
 		mBase = m.M
 		return v31
 	case 4:
 		v35 = *(*int32)(unsafe.Add(mBase, uint32(l0+int32(-17))))
 		v36 = v35
-		v38 = F_siphash(m, l0, v36, int32(_a245))
+		v38 = F_siphash(m, l0, v36, int32(_a_F_callbackHash_0))
 		mBase = m.M
 		return v38
 	default:
 		v36 = int32(0)
-		v38 = F_siphash(m, l0, v36, int32(_a245))
+		v38 = F_siphash(m, l0, v36, int32(_a_F_callbackHash_0))
 		mBase = m.M
 		return v38
 	}
@@ -467,7 +467,7 @@ func F_setStartCallback(m *base.Module, l0 int32, l1 int32) {
 				return
 			} else {
 				v44 = m.G3
-				F_lua_pushstring(m, v31, v44+int32(_a2432))
+				F_lua_pushstring(m, v31, v44+int32(_a_F_setStartCallback_0))
 				mBase = m.M
 				v48 = m.ExcPending
 				if v48 != 0 {

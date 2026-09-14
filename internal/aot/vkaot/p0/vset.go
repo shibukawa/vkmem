@@ -222,7 +222,7 @@ L2:
 	}
 L3:
 	;
-	F__serverAssert(m, int32(_a1674), int32(_a1670), int32(600))
+	F__serverAssert(m, int32(_a_F_vsetAddEntry_0), int32(_a_F_vsetAddEntry_1), int32(600))
 	mBase = m.M
 	v325 = m.ExcPending
 	if v325 != 0 {
@@ -232,7 +232,7 @@ L3:
 	}
 L4:
 	;
-	F__serverAssert(m, int32(_a1675), int32(_a1670), int32(816))
+	F__serverAssert(m, int32(_a_F_vsetAddEntry_2), int32(_a_F_vsetAddEntry_1), int32(816))
 	mBase = m.M
 	v319 = m.ExcPending
 	if v319 != 0 {
@@ -242,7 +242,7 @@ L4:
 	}
 L5:
 	;
-	F__serverAssert(m, int32(_a1675), int32(_a1670), int32(816))
+	F__serverAssert(m, int32(_a_F_vsetAddEntry_2), int32(_a_F_vsetAddEntry_1), int32(816))
 	mBase = m.M
 	v313 = m.ExcPending
 	if v313 != 0 {
@@ -252,7 +252,7 @@ L5:
 	}
 L6:
 	;
-	F__serverAssert(m, int32(_a1674), int32(_a1670), int32(600))
+	F__serverAssert(m, int32(_a_F_vsetAddEntry_0), int32(_a_F_vsetAddEntry_1), int32(600))
 	mBase = m.M
 	v307 = m.ExcPending
 	if v307 != 0 {
@@ -262,7 +262,7 @@ L6:
 	}
 L7:
 	;
-	F__serverAssert(m, int32(_a1674), int32(_a1670), int32(600))
+	F__serverAssert(m, int32(_a_F_vsetAddEntry_0), int32(_a_F_vsetAddEntry_1), int32(600))
 	mBase = m.M
 	v301 = m.ExcPending
 	if v301 != 0 {
@@ -272,7 +272,7 @@ L7:
 	}
 L8:
 	;
-	F__serverAssert(m, int32(_a1675), int32(_a1670), int32(816))
+	F__serverAssert(m, int32(_a_F_vsetAddEntry_2), int32(_a_F_vsetAddEntry_1), int32(816))
 	mBase = m.M
 	v295 = m.ExcPending
 	if v295 != 0 {
@@ -282,7 +282,7 @@ L8:
 	}
 L9:
 	;
-	F__serverAssert(m, int32(_a1676), int32(_a1670), int32(1784))
+	F__serverAssert(m, int32(_a_F_vsetAddEntry_3), int32(_a_F_vsetAddEntry_1), int32(1784))
 	mBase = m.M
 	v289 = m.ExcPending
 	if v289 != 0 {
@@ -322,7 +322,7 @@ L13:
 	}
 L14:
 	;
-	F__serverPanic_1(m, int32(_a1670), int32(1830), int32(_a1677), int32(0))
+	F__serverPanic_1(m, int32(_a_F_vsetAddEntry_1), int32(1830), int32(_a_F_vsetAddEntry_4), int32(0))
 	mBase = m.M
 	v262 = m.ExcPending
 	if v262 != 0 {
@@ -859,7 +859,7 @@ func F_vsetCompareEntries(m *base.Module, l0 int32, l1 int32) int32 {
 	var v14 int32
 	_ = v14
 	v5 = *(*int32)(unsafe.Add(mBase, uint32(l0)))
-	v7 = *(*int32)(unsafe.Add(mBase, _consts[1128]))
+	v7 = *(*int32)(unsafe.Add(mBase, _c_F_vsetCompareEntries[0]))
 	v8 = m.T0[v7].(func(*base.Module, int32) int64)(m, v5)
 	mBase = m.M
 	v11 = m.ExcPending
@@ -914,7 +914,7 @@ func F_vsetResetIterator(m *base.Module, l0 int32) {
 				}
 			}
 		case 1:
-			F__serverAssert(m, int32(_a1638), int32(_a1670), int32(781))
+			F__serverAssert(m, int32(_a_F_vsetResetIterator_0), int32(_a_F_vsetResetIterator_1), int32(781))
 			mBase = m.M
 			v26 = m.ExcPending
 			if v26 != 0 {
@@ -963,7 +963,7 @@ func F_vsetResetIterator(m *base.Module, l0 int32) {
 			}
 		}
 	case 1:
-		F__serverAssert(m, int32(_a1638), int32(_a1670), int32(781))
+		F__serverAssert(m, int32(_a_F_vsetResetIterator_0), int32(_a_F_vsetResetIterator_1), int32(781))
 		mBase = m.M
 		v12 = m.ExcPending
 		if v12 != 0 {
@@ -993,7 +993,7 @@ func F_vsetResetIterator(m *base.Module, l0 int32) {
 				}
 			}
 		case 1:
-			F__serverAssert(m, int32(_a1638), int32(_a1670), int32(781))
+			F__serverAssert(m, int32(_a_F_vsetResetIterator_0), int32(_a_F_vsetResetIterator_1), int32(781))
 			mBase = m.M
 			v26 = m.ExcPending
 			if v26 != 0 {

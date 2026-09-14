@@ -34,12 +34,12 @@ func F_isValidAOFdirname(m *base.Module, l0 int32, l1 int32) int32 {
 		if v15 != 0 {
 			v22 = int32(1)
 		} else {
-			v17 = int32(_a435)
+			v17 = int32(_a_F_isValidAOFdirname_0)
 			*(*int32)(unsafe.Add(mBase, uint32(l1))) = v17
 			v22 = int32(0)
 		}
 	} else {
-		v17 = int32(_a436)
+		v17 = int32(_a_F_isValidAOFdirname_1)
 		*(*int32)(unsafe.Add(mBase, uint32(l1))) = v17
 		v22 = int32(0)
 	}
@@ -74,12 +74,12 @@ func F_isValidAOFfilename(m *base.Module, l0 int32, l1 int32) int32 {
 		if v15 != 0 {
 			v22 = int32(1)
 		} else {
-			v17 = int32(_a433)
+			v17 = int32(_a_F_isValidAOFfilename_0)
 			*(*int32)(unsafe.Add(mBase, uint32(l1))) = v17
 			v22 = int32(0)
 		}
 	} else {
-		v17 = int32(_a434)
+		v17 = int32(_a_F_isValidAOFfilename_1)
 		*(*int32)(unsafe.Add(mBase, uint32(l1))) = v17
 		v22 = int32(0)
 	}
@@ -238,7 +238,7 @@ L19:
 	goto L18
 L20:
 	;
-	v101 = int32(_a429)
+	v101 = int32(_a_F_isValidAnnouncedHostname_0)
 	goto L2
 L21:
 	;
@@ -283,7 +283,7 @@ L27:
 	}
 L28:
 	;
-	v101 = int32(_a430)
+	v101 = int32(_a_F_isValidAnnouncedHostname_1)
 	goto L2
 L29:
 	;
@@ -434,7 +434,7 @@ L14:
 	}
 L15:
 	;
-	v80 = int32(_a427)
+	v80 = int32(_a_F_isValidAnnouncedIp_0)
 	goto L2
 L16:
 	;
@@ -480,7 +480,7 @@ L22:
 	}
 L23:
 	;
-	v66 = F_memchr(m, int32(_a198), v59, int32(15))
+	v66 = F_memchr(m, int32(_a_F_isValidAnnouncedIp_1), v59, int32(15))
 	mBase = m.M
 	if v66 != 0 {
 		v72 = v57
@@ -503,7 +503,7 @@ L25:
 	goto L21
 L26:
 	;
-	v80 = int32(_a428)
+	v80 = int32(_a_F_isValidAnnouncedIp_2)
 	goto L2
 }
 func F_isValidDBfilename(m *base.Module, l0 int32, l1 int32) int32 {
@@ -535,12 +535,12 @@ func F_isValidDBfilename(m *base.Module, l0 int32, l1 int32) int32 {
 		if v15 != 0 {
 			v22 = int32(1)
 		} else {
-			v17 = int32(_a431)
+			v17 = int32(_a_F_isValidDBfilename_0)
 			*(*int32)(unsafe.Add(mBase, uint32(l1))) = v17
 			v22 = int32(0)
 		}
 	} else {
-		v17 = int32(_a432)
+		v17 = int32(_a_F_isValidDBfilename_1)
 		*(*int32)(unsafe.Add(mBase, uint32(l1))) = v17
 		v22 = int32(0)
 	}

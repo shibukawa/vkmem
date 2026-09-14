@@ -52,7 +52,7 @@ func F_luaO_log2(m *base.Module, l0 int32) int32 {
 		v20 = l0
 	}
 	v22 = m.G3
-	v26 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v22+int32(_a2665)+v20))))
+	v26 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v22+int32(_a_F_luaO_log2_0)+v20))))
 	return v19 + v26
 }
 func F_luaO_pushfstring(m *base.Module, l0 int32, l1 int32, l2 int32) int32 {
@@ -444,7 +444,7 @@ func F_luaO_pushvfstring(m *base.Module, l0 int32, l1 int32, l2 int32) int32 {
 	m.G0 = v12
 	v14 = m.G3
 	v15 = *(*int32)(unsafe.Add(mBase, uint32(l0)+8))
-	v19 = F_luaS_newlstr(m, l0, v14+int32(_a320), int32(0))
+	v19 = F_luaS_newlstr(m, l0, v14+int32(_a_F_luaO_pushvfstring_0), int32(0))
 	mBase = m.M
 	v22 = m.ExcPending
 	if v22 != 0 {
@@ -616,7 +616,7 @@ L19:
 L20:
 	;
 	v453 = m.G3
-	v457 = F_luaS_newlstr(m, l0, v453+int32(_a2666), int32(1))
+	v457 = F_luaS_newlstr(m, l0, v453+int32(_a_F_luaO_pushvfstring_1), int32(1))
 	mBase = m.M
 	v458 = m.ExcPending
 	if v458 != 0 {
@@ -650,7 +650,7 @@ L23:
 	v282 = *(*int32)(unsafe.Add(mBase, uint32(v51)))
 	*(*int32)(unsafe.Add(mBase, uint32(v12))) = v282
 	v286 = m.G3
-	v289 = F_siprintf(m, v12+int32(16), v286+int32(_a2667), v12)
+	v289 = F_siprintf(m, v12+int32(16), v286+int32(_a_F_luaO_pushvfstring_2), v12)
 	mBase = m.M
 	v290 = m.ExcPending
 	if v290 != 0 {
@@ -713,7 +713,7 @@ L28:
 	goto L30
 L29:
 	;
-	v84 = v80 + int32(_a2668)
+	v84 = v80 + int32(_a_F_luaO_pushvfstring_3)
 	goto L30
 L30:
 	;

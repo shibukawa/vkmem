@@ -133,7 +133,7 @@ func F_mapStartCallback(m *base.Module, l0 int32, l1 int32) {
 				return
 			} else {
 				v44 = m.G3
-				F_lua_pushstring(m, v31, v44+int32(_a2238))
+				F_lua_pushstring(m, v31, v44+int32(_a_F_mapStartCallback_0))
 				mBase = m.M
 				v48 = m.ExcPending
 				if v48 != 0 {

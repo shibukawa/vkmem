@@ -323,7 +323,7 @@ func F_setDeferredAttributeLen(m *base.Module, l0 int32, l1 int32, l2 int32) {
 	m.G0 = v7
 	v9 = int32(*(*uint8)(unsafe.Add(mBase, uint32(l0)+224)))
 	if base.Ui32(v9) <= base.Ui32(int32(2)) {
-		F__serverAssert(m, int32(_a990), int32(_a977), int32(1294))
+		F__serverAssert(m, int32(_a_F_setDeferredAttributeLen_0), int32(_a_F_setDeferredAttributeLen_1), int32(1294))
 		mBase = m.M
 		v80 = m.ExcPending
 		if v80 != 0 {
@@ -337,7 +337,7 @@ func F_setDeferredAttributeLen(m *base.Module, l0 int32, l1 int32, l2 int32) {
 		}
 	} else {
 		if l2 <= int32(-1) {
-			F__serverAssert(m, int32(_a991), int32(_a977), int32(1246))
+			F__serverAssert(m, int32(_a_F_setDeferredAttributeLen_2), int32(_a_F_setDeferredAttributeLen_1), int32(1246))
 			mBase = m.M
 			v86 = m.ExcPending
 			if v86 != 0 {

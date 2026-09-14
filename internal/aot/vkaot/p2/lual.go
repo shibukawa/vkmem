@@ -92,7 +92,7 @@ L1:
 L2:
 	;
 	v73 = m.G3
-	v78 = F_lua_getinfo(m, l0, v73+int32(_a2061), v8+int32(44))
+	v78 = F_lua_getinfo(m, l0, v73+int32(_a_F_luaL_argerror_0), v8+int32(44))
 	mBase = m.M
 	v79 = m.ExcPending
 	if v79 != 0 {
@@ -136,7 +136,7 @@ L16:
 	*(*int32)(unsafe.Add(mBase, uint32(v8)+4)) = l2
 	*(*int32)(unsafe.Add(mBase, uint32(v8))) = l1
 	v66 = m.G3
-	v69 = F_luaL_error(m, l0, v66+int32(_a2062), v8)
+	v69 = F_luaL_error(m, l0, v66+int32(_a_F_luaL_argerror_1), v8)
 	mBase = m.M
 	v72 = m.ExcPending
 	if v72 != 0 {
@@ -154,7 +154,7 @@ L18:
 L19:
 	;
 	v80 = *(*int32)(unsafe.Add(mBase, uint32(v8)+52))
-	v85 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v73)+uint32(_consts[1017]))))
+	v85 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v73)+uint32(_c_F_luaL_argerror[0]))))
 	v86 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v80))))
 	if v86 == int32(0) {
 		v109 = v85
@@ -195,7 +195,7 @@ L23:
 L24:
 	;
 	v92 = v80
-	v93 = v73 + int32(_a2063)
+	v93 = v73 + int32(_a_F_luaL_argerror_2)
 	goto L25
 L25:
 	;
@@ -241,7 +241,7 @@ L30:
 	*(*int32)(unsafe.Add(mBase, uint32(v8)+16)) = v116
 	*(*int32)(unsafe.Add(mBase, uint32(v8)+20)) = l2
 	v119 = m.G3
-	v124 = F_luaL_error(m, l0, v119+int32(_a2064), v8+int32(16))
+	v124 = F_luaL_error(m, l0, v119+int32(_a_F_luaL_argerror_3), v8+int32(16))
 	mBase = m.M
 	v125 = m.ExcPending
 	if v125 != 0 {
@@ -259,7 +259,7 @@ L32:
 	*(*int32)(unsafe.Add(mBase, uint32(v8)+36)) = v132
 	*(*int32)(unsafe.Add(mBase, uint32(v8)+32)) = v126
 	v136 = m.G3
-	v141 = F_luaL_error(m, l0, v136+int32(_a2065), v8+int32(32))
+	v141 = F_luaL_error(m, l0, v136+int32(_a_F_luaL_argerror_4), v8+int32(32))
 	mBase = m.M
 	v142 = m.ExcPending
 	if v142 != 0 {
@@ -270,7 +270,7 @@ L32:
 L33:
 	;
 	v128 = m.G3
-	v130 = v128 + int32(_a357)
+	v130 = v128 + int32(_a_F_luaL_argerror_5)
 	*(*int32)(unsafe.Add(mBase, uint32(v8)+48)) = v130
 	v132 = v130
 	goto L32
@@ -450,12 +450,12 @@ func F_luaL_checklstring(m *base.Module, l0 int32, l1 int32, l2 int32) int32 {
 				v94 = *(*int32)(unsafe.Add(mBase, uint32(v90+v83<<(uint(int32(2))%32))))
 				v95 = v94
 			} else {
-				v95 = v85 + int32(_a2018)
+				v95 = v85 + int32(_a_F_luaL_checklstring_0)
 			}
 			*(*int32)(unsafe.Add(mBase, uint32(v8)+4)) = v95
 			*(*int32)(unsafe.Add(mBase, uint32(v8))) = v25
 			v98 = m.G3
-			v101 = F_lua_pushfstring(m, l0, v98+int32(_a2066), v8)
+			v101 = F_lua_pushfstring(m, l0, v98+int32(_a_F_luaL_checklstring_1), v8)
 			mBase = m.M
 			v102 = m.ExcPending
 			if v102 != 0 {
@@ -728,7 +728,7 @@ L2:
 L3:
 	;
 	v41 = m.G3
-	v45 = F_luaL_findtable(m, l0, int32(-10000), v41+int32(_a2067), int32(1))
+	v45 = F_luaL_findtable(m, l0, int32(-10000), v41+int32(_a_F_luaL_openlib_0), int32(1))
 	mBase = m.M
 	v46 = m.ExcPending
 	if v46 != 0 {
@@ -845,7 +845,7 @@ L38:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v11))) = l1
 	v144 = m.G3
-	v147 = F_luaL_error(m, l0, v144+int32(_a2068), v11)
+	v147 = F_luaL_error(m, l0, v144+int32(_a_F_luaL_openlib_1), v11)
 	mBase = m.M
 	v148 = m.ExcPending
 	if v148 != 0 {
@@ -1769,12 +1769,12 @@ func F_luaL_typerror(m *base.Module, l0 int32, l1 int32, l2 int32) int32 {
 		v76 = *(*int32)(unsafe.Add(mBase, uint32(v72+v65<<(uint(int32(2))%32))))
 		v77 = v76
 	} else {
-		v77 = v67 + int32(_a2018)
+		v77 = v67 + int32(_a_F_luaL_typerror_0)
 	}
 	*(*int32)(unsafe.Add(mBase, uint32(v7)+4)) = v77
 	*(*int32)(unsafe.Add(mBase, uint32(v7))) = l2
 	v80 = m.G3
-	v83 = F_lua_pushfstring(m, l0, v80+int32(_a2066), v7)
+	v83 = F_lua_pushfstring(m, l0, v80+int32(_a_F_luaL_typerror_1), v7)
 	mBase = m.M
 	v86 = m.ExcPending
 	if v86 != 0 {

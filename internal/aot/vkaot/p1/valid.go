@@ -132,7 +132,7 @@ L14:
 	}
 L15:
 	;
-	v46 = F_memchr(m, int32(_a515), v39, int32(15))
+	v46 = F_memchr(m, int32(_a_F_isValidAnnouncedNodename_0), v39, int32(15))
 	mBase = m.M
 	if v46 != 0 {
 		v52 = v37
@@ -155,7 +155,7 @@ L17:
 	goto L13
 L18:
 	;
-	*(*int32)(unsafe.Add(mBase, uint32(l1))) = int32(_a516)
+	*(*int32)(unsafe.Add(mBase, uint32(l1))) = int32(_a_F_isValidAnnouncedNodename_1)
 	v62 = int32(0)
 	goto L7
 }
@@ -170,7 +170,7 @@ func F_isValidClusterConfigFile(m *base.Module, l0 int32, l1 int32) int32 {
 	if v5 != 0 {
 		v9 = int32(1)
 	} else {
-		*(*int32)(unsafe.Add(mBase, uint32(l1))) = int32(_a514)
+		*(*int32)(unsafe.Add(mBase, uint32(l1))) = int32(_a_F_isValidClusterConfigFile_0)
 		v9 = int32(0)
 	}
 	return v9
@@ -203,7 +203,7 @@ func F_isValidIpV4(m *base.Module, l0 int32, l1 int32) int32 {
 		if v16 != 0 {
 			v20 = v9
 		} else {
-			*(*int32)(unsafe.Add(mBase, uint32(l1))) = int32(_a513)
+			*(*int32)(unsafe.Add(mBase, uint32(l1))) = int32(_a_F_isValidIpV4_0)
 			v20 = int32(0)
 		}
 	}
@@ -228,7 +228,7 @@ func F_isValidProcTitleTemplate(m *base.Module, l0 int32, l1 int32) int32 {
 		if v5 != 0 {
 			v12 = int32(1)
 		} else {
-			*(*int32)(unsafe.Add(mBase, uint32(l1))) = int32(_a517)
+			*(*int32)(unsafe.Add(mBase, uint32(l1))) = int32(_a_F_isValidProcTitleTemplate_0)
 			v12 = int32(0)
 		}
 		return v12
@@ -245,7 +245,7 @@ func F_isValidShutdownOnSigFlags(m *base.Module, l0 int32, l1 int32) int32 {
 	if l0&v5 != v5 {
 		v12 = int32(1)
 	} else {
-		*(*int32)(unsafe.Add(mBase, uint32(l1))) = int32(_a519)
+		*(*int32)(unsafe.Add(mBase, uint32(l1))) = int32(_a_F_isValidShutdownOnSigFlags_0)
 		v12 = int32(0)
 	}
 	return v12

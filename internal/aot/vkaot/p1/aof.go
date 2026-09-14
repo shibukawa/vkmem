@@ -49,24 +49,24 @@ func F_aofDelTempIncrAofFile(m *base.Module) {
 	if v9 != 0 {
 		return
 	} else {
-		*(*int32)(unsafe.Add(mBase, uint32(v6)+16)) = int32(_a133)
-		*(*int32)(unsafe.Add(mBase, uint32(v6)+24)) = int32(_a134)
-		v15 = *(*int32)(unsafe.Add(mBase, _consts[36]))
+		*(*int32)(unsafe.Add(mBase, uint32(v6)+16)) = int32(_a_F_aofDelTempIncrAofFile_0)
+		*(*int32)(unsafe.Add(mBase, uint32(v6)+24)) = int32(_a_F_aofDelTempIncrAofFile_1)
+		v15 = *(*int32)(unsafe.Add(mBase, _c_F_aofDelTempIncrAofFile[0]))
 		*(*int32)(unsafe.Add(mBase, uint32(v6)+20)) = v15
-		v20 = F_sdscatprintf(m, v8, int32(_a135), v6+int32(16))
+		v20 = F_sdscatprintf(m, v8, int32(_a_F_aofDelTempIncrAofFile_2), v6+int32(16))
 		mBase = m.M
 		v21 = m.ExcPending
 		if v21 != 0 {
 			return
 		} else {
-			v23 = *(*int32)(unsafe.Add(mBase, _consts[37]))
+			v23 = *(*int32)(unsafe.Add(mBase, _c_F_aofDelTempIncrAofFile[1]))
 			v24 = F_makePath(m, v23, v20)
 			mBase = m.M
 			v25 = m.ExcPending
 			if v25 != 0 {
 				return
 			} else {
-				v27 = *(*int32)(unsafe.Add(mBase, _consts[28]))
+				v27 = *(*int32)(unsafe.Add(mBase, _c_F_aofDelTempIncrAofFile[2]))
 				if int32(2) < v27 {
 					v35 = F_bg_unlink(m, v24)
 					mBase = m.M
@@ -93,7 +93,7 @@ func F_aofDelTempIncrAofFile(m *base.Module) {
 					}
 				} else {
 					*(*int32)(unsafe.Add(mBase, uint32(v6))) = v20
-					F__serverLog(m, int32(2), int32(_a136), v6)
+					F__serverLog(m, int32(2), int32(_a_F_aofDelTempIncrAofFile_3), v6)
 					mBase = m.M
 					v34 = m.ExcPending
 					if v34 != 0 {
@@ -140,7 +140,7 @@ func F_aofListFree(m *base.Module, l0 int32) {
 	var v16 int32
 	_ = v16
 	if l0 == int32(0) {
-		F__serverAssert(m, int32(_a122), int32(_a123), int32(105))
+		F__serverAssert(m, int32(_a_F_aofListFree_0), int32(_a_F_aofListFree_1), int32(105))
 		mBase = m.M
 		v16 = m.ExcPending
 		if v16 != 0 {
@@ -230,7 +230,7 @@ func F_aofManifestDup(m *base.Module, l0 int32) int32 {
 	var v63 int32
 	_ = v63
 	if l0 == int32(0) {
-		F__serverAssert(m, int32(_a125), int32(_a123), int32(392))
+		F__serverAssert(m, int32(_a_F_aofManifestDup_0), int32(_a_F_aofManifestDup_1), int32(392))
 		mBase = m.M
 		v51 = m.ExcPending
 		if v51 != 0 {
@@ -274,7 +274,7 @@ func F_aofManifestDup(m *base.Module, l0 int32) int32 {
 					} else {
 						*(*int32)(unsafe.Add(mBase, uint32(v8)+8)) = v39
 						if v35 == int32(0) {
-							F__serverAssert(m, int32(_a126), int32(_a123), int32(405))
+							F__serverAssert(m, int32(_a_F_aofManifestDup_2), int32(_a_F_aofManifestDup_1), int32(405))
 							mBase = m.M
 							v57 = m.ExcPending
 							if v57 != 0 {
@@ -288,7 +288,7 @@ func F_aofManifestDup(m *base.Module, l0 int32) int32 {
 							}
 						} else {
 							if v39 == int32(0) {
-								F__serverAssert(m, int32(_a127), int32(_a123), int32(406))
+								F__serverAssert(m, int32(_a_F_aofManifestDup_3), int32(_a_F_aofManifestDup_1), int32(406))
 								mBase = m.M
 								v63 = m.ExcPending
 								if v63 != 0 {
@@ -343,7 +343,7 @@ func F_aofManifestDup(m *base.Module, l0 int32) int32 {
 							} else {
 								*(*int32)(unsafe.Add(mBase, uint32(v8)+8)) = v39
 								if v35 == int32(0) {
-									F__serverAssert(m, int32(_a126), int32(_a123), int32(405))
+									F__serverAssert(m, int32(_a_F_aofManifestDup_2), int32(_a_F_aofManifestDup_1), int32(405))
 									mBase = m.M
 									v57 = m.ExcPending
 									if v57 != 0 {
@@ -357,7 +357,7 @@ func F_aofManifestDup(m *base.Module, l0 int32) int32 {
 									}
 								} else {
 									if v39 == int32(0) {
-										F__serverAssert(m, int32(_a127), int32(_a123), int32(406))
+										F__serverAssert(m, int32(_a_F_aofManifestDup_3), int32(_a_F_aofManifestDup_1), int32(406))
 										mBase = m.M
 										v63 = m.ExcPending
 										if v63 != 0 {
@@ -513,14 +513,14 @@ func F_aofOpenIfNeededOnServerStart(m *base.Module) {
 	v8 = m.G0
 	v10 = v8 - int32(80)
 	m.G0 = v10
-	v13 = *(*int32)(unsafe.Add(mBase, _consts[38]))
+	v13 = *(*int32)(unsafe.Add(mBase, _c_F_aofOpenIfNeededOnServerStart[0]))
 	if v13 != int32(1) {
 		m.G0 = v10 + int32(80)
 		return
 	} else {
-		v17 = *(*int32)(unsafe.Add(mBase, _consts[39]))
+		v17 = *(*int32)(unsafe.Add(mBase, _c_F_aofOpenIfNeededOnServerStart[1]))
 		if v17 == int32(0) {
-			F__serverAssert(m, int32(_a137), int32(_a123), int32(705))
+			F__serverAssert(m, int32(_a_F_aofOpenIfNeededOnServerStart_0), int32(_a_F_aofOpenIfNeededOnServerStart_1), int32(705))
 			mBase = m.M
 			v193 = m.ExcPending
 			if v193 != 0 {
@@ -533,9 +533,9 @@ func F_aofOpenIfNeededOnServerStart(m *base.Module) {
 				}
 			}
 		} else {
-			v21 = *(*int32)(unsafe.Add(mBase, _consts[40]))
+			v21 = *(*int32)(unsafe.Add(mBase, _c_F_aofOpenIfNeededOnServerStart[2]))
 			if v21 != int32(-1) {
-				F__serverAssert(m, int32(_a138), int32(_a123), int32(706))
+				F__serverAssert(m, int32(_a_F_aofOpenIfNeededOnServerStart_2), int32(_a_F_aofOpenIfNeededOnServerStart_1), int32(706))
 				mBase = m.M
 				v199 = m.ExcPending
 				if v199 != 0 {
@@ -548,7 +548,7 @@ func F_aofOpenIfNeededOnServerStart(m *base.Module) {
 					}
 				}
 			} else {
-				v25 = *(*int32)(unsafe.Add(mBase, _consts[37]))
+				v25 = *(*int32)(unsafe.Add(mBase, _c_F_aofOpenIfNeededOnServerStart[3]))
 				v26 = int32(0)
 				v29 = m.G0
 				v31 = v29 - int32(96)
@@ -582,19 +582,19 @@ func F_aofOpenIfNeededOnServerStart(m *base.Module) {
 				}
 				m.G0 = v31 + int32(96)
 				if v51 != int32(-1) {
-					v77 = *(*int32)(unsafe.Add(mBase, _consts[39]))
+					v77 = *(*int32)(unsafe.Add(mBase, _c_F_aofOpenIfNeededOnServerStart[1]))
 					v78 = *(*int32)(unsafe.Add(mBase, uint32(v77)+4))
 					v79 = *(*int32)(unsafe.Add(mBase, uint32(v78)+20))
 					v80 = *(*int32)(unsafe.Add(mBase, uint32(v77)))
 					if v80 != 0 {
-						v107 = *(*int32)(unsafe.Add(mBase, _consts[39]))
+						v107 = *(*int32)(unsafe.Add(mBase, _c_F_aofOpenIfNeededOnServerStart[1]))
 						v108 = F_getLastIncrAofName(m, v107)
 						mBase = m.M
 						v109 = m.ExcPending
 						if v109 != 0 {
 							return
 						} else {
-							v111 = *(*int32)(unsafe.Add(mBase, _consts[37]))
+							v111 = *(*int32)(unsafe.Add(mBase, _c_F_aofOpenIfNeededOnServerStart[3]))
 							v112 = F_makePath(m, v111, v108)
 							mBase = m.M
 							v113 = m.ExcPending
@@ -604,16 +604,16 @@ func F_aofOpenIfNeededOnServerStart(m *base.Module) {
 								*(*int32)(unsafe.Add(mBase, uint32(v10)+48)) = int32(438)
 								v120 = F_open(m, v112, int32(1089), v10+int32(48))
 								mBase = m.M
-								*(*int32)(unsafe.Add(mBase, _consts[40])) = v120
+								*(*int32)(unsafe.Add(mBase, _c_F_aofOpenIfNeededOnServerStart[2])) = v120
 								F_sdsfree(m, v112)
 								mBase = m.M
 								v123 = m.ExcPending
 								if v123 != 0 {
 									return
 								} else {
-									v125 = *(*int32)(unsafe.Add(mBase, _consts[40]))
+									v125 = *(*int32)(unsafe.Add(mBase, _c_F_aofOpenIfNeededOnServerStart[2]))
 									if v125 != int32(-1) {
-										v146 = *(*int32)(unsafe.Add(mBase, _consts[39]))
+										v146 = *(*int32)(unsafe.Add(mBase, _c_F_aofOpenIfNeededOnServerStart[1]))
 										v147 = *(*int32)(unsafe.Add(mBase, uint32(v146)+32))
 										if v147 == int32(0) {
 											v162 = F_getAppendOnlyFileSize(m, v108, int32(0))
@@ -622,19 +622,19 @@ func F_aofOpenIfNeededOnServerStart(m *base.Module) {
 											if v163 != 0 {
 												return
 											} else {
-												*(*int64)(unsafe.Add(mBase, _consts[41])) = v162
-												v165 = int32(_a20)
-												*(*int64)(unsafe.Add(mBase, _consts[42])) = v162
-												v168 = *(*int32)(unsafe.Add(mBase, _consts[28]))
+												*(*int64)(unsafe.Add(mBase, _c_F_aofOpenIfNeededOnServerStart[4])) = v162
+												v165 = int32(_a_F_aofOpenIfNeededOnServerStart_3)
+												*(*int64)(unsafe.Add(mBase, _c_F_aofOpenIfNeededOnServerStart[5])) = v162
+												v168 = *(*int32)(unsafe.Add(mBase, _c_F_aofOpenIfNeededOnServerStart[6]))
 												if int32(2) < v168 {
 													m.G0 = v10 + int32(80)
 													return
 												} else {
 													*(*int32)(unsafe.Add(mBase, uint32(v10)+32)) = v108
 													if v79 != 0 {
-														v175 = int32(_a139)
+														v175 = int32(_a_F_aofOpenIfNeededOnServerStart_4)
 													} else {
-														v175 = int32(_a140)
+														v175 = int32(_a_F_aofOpenIfNeededOnServerStart_5)
 													}
 													F__serverLog(m, int32(2), v175, v10+int32(32))
 													mBase = m.M
@@ -680,19 +680,19 @@ func F_aofOpenIfNeededOnServerStart(m *base.Module) {
 															if v163 != 0 {
 																return
 															} else {
-																*(*int64)(unsafe.Add(mBase, _consts[41])) = v162
-																v165 = int32(_a20)
-																*(*int64)(unsafe.Add(mBase, _consts[42])) = v162
-																v168 = *(*int32)(unsafe.Add(mBase, _consts[28]))
+																*(*int64)(unsafe.Add(mBase, _c_F_aofOpenIfNeededOnServerStart[4])) = v162
+																v165 = int32(_a_F_aofOpenIfNeededOnServerStart_3)
+																*(*int64)(unsafe.Add(mBase, _c_F_aofOpenIfNeededOnServerStart[5])) = v162
+																v168 = *(*int32)(unsafe.Add(mBase, _c_F_aofOpenIfNeededOnServerStart[6]))
 																if int32(2) < v168 {
 																	m.G0 = v10 + int32(80)
 																	return
 																} else {
 																	*(*int32)(unsafe.Add(mBase, uint32(v10)+32)) = v108
 																	if v79 != 0 {
-																		v175 = int32(_a139)
+																		v175 = int32(_a_F_aofOpenIfNeededOnServerStart_4)
 																	} else {
-																		v175 = int32(_a140)
+																		v175 = int32(_a_F_aofOpenIfNeededOnServerStart_5)
 																	}
 																	F__serverLog(m, int32(2), v175, v10+int32(32))
 																	mBase = m.M
@@ -711,7 +711,7 @@ func F_aofOpenIfNeededOnServerStart(m *base.Module) {
 											}
 										}
 									} else {
-										v129 = *(*int32)(unsafe.Add(mBase, _consts[28]))
+										v129 = *(*int32)(unsafe.Add(mBase, _c_F_aofOpenIfNeededOnServerStart[6]))
 										if int32(3) < v129 {
 											m.Env.Exit(m, int32(1))
 											mBase = m.M
@@ -719,12 +719,12 @@ func F_aofOpenIfNeededOnServerStart(m *base.Module) {
 											for {
 											}
 										} else {
-											v133 = *(*int32)(unsafe.Add(mBase, _consts[18]))
+											v133 = *(*int32)(unsafe.Add(mBase, _c_F_aofOpenIfNeededOnServerStart[7]))
 											v134 = F___strerror_l(m, v133, v133)
 											mBase = m.M
 											*(*int32)(unsafe.Add(mBase, uint32(v10)+20)) = v134
 											*(*int32)(unsafe.Add(mBase, uint32(v10)+16)) = v108
-											F__serverLog(m, int32(3), int32(_a141), v10+int32(16))
+											F__serverLog(m, int32(3), int32(_a_F_aofOpenIfNeededOnServerStart_6), v10+int32(16))
 											mBase = m.M
 											v142 = m.ExcPending
 											if v142 != 0 {
@@ -743,14 +743,14 @@ func F_aofOpenIfNeededOnServerStart(m *base.Module) {
 						}
 					} else {
 						if v79 != 0 {
-							v107 = *(*int32)(unsafe.Add(mBase, _consts[39]))
+							v107 = *(*int32)(unsafe.Add(mBase, _c_F_aofOpenIfNeededOnServerStart[1]))
 							v108 = F_getLastIncrAofName(m, v107)
 							mBase = m.M
 							v109 = m.ExcPending
 							if v109 != 0 {
 								return
 							} else {
-								v111 = *(*int32)(unsafe.Add(mBase, _consts[37]))
+								v111 = *(*int32)(unsafe.Add(mBase, _c_F_aofOpenIfNeededOnServerStart[3]))
 								v112 = F_makePath(m, v111, v108)
 								mBase = m.M
 								v113 = m.ExcPending
@@ -760,16 +760,16 @@ func F_aofOpenIfNeededOnServerStart(m *base.Module) {
 									*(*int32)(unsafe.Add(mBase, uint32(v10)+48)) = int32(438)
 									v120 = F_open(m, v112, int32(1089), v10+int32(48))
 									mBase = m.M
-									*(*int32)(unsafe.Add(mBase, _consts[40])) = v120
+									*(*int32)(unsafe.Add(mBase, _c_F_aofOpenIfNeededOnServerStart[2])) = v120
 									F_sdsfree(m, v112)
 									mBase = m.M
 									v123 = m.ExcPending
 									if v123 != 0 {
 										return
 									} else {
-										v125 = *(*int32)(unsafe.Add(mBase, _consts[40]))
+										v125 = *(*int32)(unsafe.Add(mBase, _c_F_aofOpenIfNeededOnServerStart[2]))
 										if v125 != int32(-1) {
-											v146 = *(*int32)(unsafe.Add(mBase, _consts[39]))
+											v146 = *(*int32)(unsafe.Add(mBase, _c_F_aofOpenIfNeededOnServerStart[1]))
 											v147 = *(*int32)(unsafe.Add(mBase, uint32(v146)+32))
 											if v147 == int32(0) {
 												v162 = F_getAppendOnlyFileSize(m, v108, int32(0))
@@ -778,19 +778,19 @@ func F_aofOpenIfNeededOnServerStart(m *base.Module) {
 												if v163 != 0 {
 													return
 												} else {
-													*(*int64)(unsafe.Add(mBase, _consts[41])) = v162
-													v165 = int32(_a20)
-													*(*int64)(unsafe.Add(mBase, _consts[42])) = v162
-													v168 = *(*int32)(unsafe.Add(mBase, _consts[28]))
+													*(*int64)(unsafe.Add(mBase, _c_F_aofOpenIfNeededOnServerStart[4])) = v162
+													v165 = int32(_a_F_aofOpenIfNeededOnServerStart_3)
+													*(*int64)(unsafe.Add(mBase, _c_F_aofOpenIfNeededOnServerStart[5])) = v162
+													v168 = *(*int32)(unsafe.Add(mBase, _c_F_aofOpenIfNeededOnServerStart[6]))
 													if int32(2) < v168 {
 														m.G0 = v10 + int32(80)
 														return
 													} else {
 														*(*int32)(unsafe.Add(mBase, uint32(v10)+32)) = v108
 														if v79 != 0 {
-															v175 = int32(_a139)
+															v175 = int32(_a_F_aofOpenIfNeededOnServerStart_4)
 														} else {
-															v175 = int32(_a140)
+															v175 = int32(_a_F_aofOpenIfNeededOnServerStart_5)
 														}
 														F__serverLog(m, int32(2), v175, v10+int32(32))
 														mBase = m.M
@@ -836,19 +836,19 @@ func F_aofOpenIfNeededOnServerStart(m *base.Module) {
 																if v163 != 0 {
 																	return
 																} else {
-																	*(*int64)(unsafe.Add(mBase, _consts[41])) = v162
-																	v165 = int32(_a20)
-																	*(*int64)(unsafe.Add(mBase, _consts[42])) = v162
-																	v168 = *(*int32)(unsafe.Add(mBase, _consts[28]))
+																	*(*int64)(unsafe.Add(mBase, _c_F_aofOpenIfNeededOnServerStart[4])) = v162
+																	v165 = int32(_a_F_aofOpenIfNeededOnServerStart_3)
+																	*(*int64)(unsafe.Add(mBase, _c_F_aofOpenIfNeededOnServerStart[5])) = v162
+																	v168 = *(*int32)(unsafe.Add(mBase, _c_F_aofOpenIfNeededOnServerStart[6]))
 																	if int32(2) < v168 {
 																		m.G0 = v10 + int32(80)
 																		return
 																	} else {
 																		*(*int32)(unsafe.Add(mBase, uint32(v10)+32)) = v108
 																		if v79 != 0 {
-																			v175 = int32(_a139)
+																			v175 = int32(_a_F_aofOpenIfNeededOnServerStart_4)
 																		} else {
-																			v175 = int32(_a140)
+																			v175 = int32(_a_F_aofOpenIfNeededOnServerStart_5)
 																		}
 																		F__serverLog(m, int32(2), v175, v10+int32(32))
 																		mBase = m.M
@@ -867,7 +867,7 @@ func F_aofOpenIfNeededOnServerStart(m *base.Module) {
 												}
 											}
 										} else {
-											v129 = *(*int32)(unsafe.Add(mBase, _consts[28]))
+											v129 = *(*int32)(unsafe.Add(mBase, _c_F_aofOpenIfNeededOnServerStart[6]))
 											if int32(3) < v129 {
 												m.Env.Exit(m, int32(1))
 												mBase = m.M
@@ -875,12 +875,12 @@ func F_aofOpenIfNeededOnServerStart(m *base.Module) {
 												for {
 												}
 											} else {
-												v133 = *(*int32)(unsafe.Add(mBase, _consts[18]))
+												v133 = *(*int32)(unsafe.Add(mBase, _c_F_aofOpenIfNeededOnServerStart[7]))
 												v134 = F___strerror_l(m, v133, v133)
 												mBase = m.M
 												*(*int32)(unsafe.Add(mBase, uint32(v10)+20)) = v134
 												*(*int32)(unsafe.Add(mBase, uint32(v10)+16)) = v108
-												F__serverLog(m, int32(3), int32(_a141), v10+int32(16))
+												F__serverLog(m, int32(3), int32(_a_F_aofOpenIfNeededOnServerStart_6), v10+int32(16))
 												mBase = m.M
 												v142 = m.ExcPending
 												if v142 != 0 {
@@ -898,14 +898,14 @@ func F_aofOpenIfNeededOnServerStart(m *base.Module) {
 								}
 							}
 						} else {
-							v82 = *(*int32)(unsafe.Add(mBase, _consts[43]))
+							v82 = *(*int32)(unsafe.Add(mBase, _c_F_aofOpenIfNeededOnServerStart[8]))
 							v83 = F_getNewBaseFileNameAndMarkPreAsHistory(m, v77, v82)
 							mBase = m.M
 							v84 = m.ExcPending
 							if v84 != 0 {
 								return
 							} else {
-								v86 = *(*int32)(unsafe.Add(mBase, _consts[37]))
+								v86 = *(*int32)(unsafe.Add(mBase, _c_F_aofOpenIfNeededOnServerStart[3]))
 								v87 = F_makePath(m, v86, v83)
 								mBase = m.M
 								v88 = m.ExcPending
@@ -931,16 +931,16 @@ func F_aofOpenIfNeededOnServerStart(m *base.Module) {
 											if v92 != 0 {
 												return
 											} else {
-												v94 = *(*int32)(unsafe.Add(mBase, _consts[28]))
+												v94 = *(*int32)(unsafe.Add(mBase, _c_F_aofOpenIfNeededOnServerStart[6]))
 												if int32(2) < v94 {
-													v107 = *(*int32)(unsafe.Add(mBase, _consts[39]))
+													v107 = *(*int32)(unsafe.Add(mBase, _c_F_aofOpenIfNeededOnServerStart[1]))
 													v108 = F_getLastIncrAofName(m, v107)
 													mBase = m.M
 													v109 = m.ExcPending
 													if v109 != 0 {
 														return
 													} else {
-														v111 = *(*int32)(unsafe.Add(mBase, _consts[37]))
+														v111 = *(*int32)(unsafe.Add(mBase, _c_F_aofOpenIfNeededOnServerStart[3]))
 														v112 = F_makePath(m, v111, v108)
 														mBase = m.M
 														v113 = m.ExcPending
@@ -950,16 +950,16 @@ func F_aofOpenIfNeededOnServerStart(m *base.Module) {
 															*(*int32)(unsafe.Add(mBase, uint32(v10)+48)) = int32(438)
 															v120 = F_open(m, v112, int32(1089), v10+int32(48))
 															mBase = m.M
-															*(*int32)(unsafe.Add(mBase, _consts[40])) = v120
+															*(*int32)(unsafe.Add(mBase, _c_F_aofOpenIfNeededOnServerStart[2])) = v120
 															F_sdsfree(m, v112)
 															mBase = m.M
 															v123 = m.ExcPending
 															if v123 != 0 {
 																return
 															} else {
-																v125 = *(*int32)(unsafe.Add(mBase, _consts[40]))
+																v125 = *(*int32)(unsafe.Add(mBase, _c_F_aofOpenIfNeededOnServerStart[2]))
 																if v125 != int32(-1) {
-																	v146 = *(*int32)(unsafe.Add(mBase, _consts[39]))
+																	v146 = *(*int32)(unsafe.Add(mBase, _c_F_aofOpenIfNeededOnServerStart[1]))
 																	v147 = *(*int32)(unsafe.Add(mBase, uint32(v146)+32))
 																	if v147 == int32(0) {
 																		v162 = F_getAppendOnlyFileSize(m, v108, int32(0))
@@ -968,19 +968,19 @@ func F_aofOpenIfNeededOnServerStart(m *base.Module) {
 																		if v163 != 0 {
 																			return
 																		} else {
-																			*(*int64)(unsafe.Add(mBase, _consts[41])) = v162
-																			v165 = int32(_a20)
-																			*(*int64)(unsafe.Add(mBase, _consts[42])) = v162
-																			v168 = *(*int32)(unsafe.Add(mBase, _consts[28]))
+																			*(*int64)(unsafe.Add(mBase, _c_F_aofOpenIfNeededOnServerStart[4])) = v162
+																			v165 = int32(_a_F_aofOpenIfNeededOnServerStart_3)
+																			*(*int64)(unsafe.Add(mBase, _c_F_aofOpenIfNeededOnServerStart[5])) = v162
+																			v168 = *(*int32)(unsafe.Add(mBase, _c_F_aofOpenIfNeededOnServerStart[6]))
 																			if int32(2) < v168 {
 																				m.G0 = v10 + int32(80)
 																				return
 																			} else {
 																				*(*int32)(unsafe.Add(mBase, uint32(v10)+32)) = v108
 																				if v79 != 0 {
-																					v175 = int32(_a139)
+																					v175 = int32(_a_F_aofOpenIfNeededOnServerStart_4)
 																				} else {
-																					v175 = int32(_a140)
+																					v175 = int32(_a_F_aofOpenIfNeededOnServerStart_5)
 																				}
 																				F__serverLog(m, int32(2), v175, v10+int32(32))
 																				mBase = m.M
@@ -1026,19 +1026,19 @@ func F_aofOpenIfNeededOnServerStart(m *base.Module) {
 																						if v163 != 0 {
 																							return
 																						} else {
-																							*(*int64)(unsafe.Add(mBase, _consts[41])) = v162
-																							v165 = int32(_a20)
-																							*(*int64)(unsafe.Add(mBase, _consts[42])) = v162
-																							v168 = *(*int32)(unsafe.Add(mBase, _consts[28]))
+																							*(*int64)(unsafe.Add(mBase, _c_F_aofOpenIfNeededOnServerStart[4])) = v162
+																							v165 = int32(_a_F_aofOpenIfNeededOnServerStart_3)
+																							*(*int64)(unsafe.Add(mBase, _c_F_aofOpenIfNeededOnServerStart[5])) = v162
+																							v168 = *(*int32)(unsafe.Add(mBase, _c_F_aofOpenIfNeededOnServerStart[6]))
 																							if int32(2) < v168 {
 																								m.G0 = v10 + int32(80)
 																								return
 																							} else {
 																								*(*int32)(unsafe.Add(mBase, uint32(v10)+32)) = v108
 																								if v79 != 0 {
-																									v175 = int32(_a139)
+																									v175 = int32(_a_F_aofOpenIfNeededOnServerStart_4)
 																								} else {
-																									v175 = int32(_a140)
+																									v175 = int32(_a_F_aofOpenIfNeededOnServerStart_5)
 																								}
 																								F__serverLog(m, int32(2), v175, v10+int32(32))
 																								mBase = m.M
@@ -1057,7 +1057,7 @@ func F_aofOpenIfNeededOnServerStart(m *base.Module) {
 																		}
 																	}
 																} else {
-																	v129 = *(*int32)(unsafe.Add(mBase, _consts[28]))
+																	v129 = *(*int32)(unsafe.Add(mBase, _c_F_aofOpenIfNeededOnServerStart[6]))
 																	if int32(3) < v129 {
 																		m.Env.Exit(m, int32(1))
 																		mBase = m.M
@@ -1065,12 +1065,12 @@ func F_aofOpenIfNeededOnServerStart(m *base.Module) {
 																		for {
 																		}
 																	} else {
-																		v133 = *(*int32)(unsafe.Add(mBase, _consts[18]))
+																		v133 = *(*int32)(unsafe.Add(mBase, _c_F_aofOpenIfNeededOnServerStart[7]))
 																		v134 = F___strerror_l(m, v133, v133)
 																		mBase = m.M
 																		*(*int32)(unsafe.Add(mBase, uint32(v10)+20)) = v134
 																		*(*int32)(unsafe.Add(mBase, uint32(v10)+16)) = v108
-																		F__serverLog(m, int32(3), int32(_a141), v10+int32(16))
+																		F__serverLog(m, int32(3), int32(_a_F_aofOpenIfNeededOnServerStart_6), v10+int32(16))
 																		mBase = m.M
 																		v142 = m.ExcPending
 																		if v142 != 0 {
@@ -1089,20 +1089,20 @@ func F_aofOpenIfNeededOnServerStart(m *base.Module) {
 													}
 												} else {
 													*(*int32)(unsafe.Add(mBase, uint32(v10)+64)) = v83
-													F__serverLog(m, int32(2), int32(_a142), v10+int32(64))
+													F__serverLog(m, int32(2), int32(_a_F_aofOpenIfNeededOnServerStart_7), v10+int32(64))
 													mBase = m.M
 													v103 = m.ExcPending
 													if v103 != 0 {
 														return
 													} else {
-														v107 = *(*int32)(unsafe.Add(mBase, _consts[39]))
+														v107 = *(*int32)(unsafe.Add(mBase, _c_F_aofOpenIfNeededOnServerStart[1]))
 														v108 = F_getLastIncrAofName(m, v107)
 														mBase = m.M
 														v109 = m.ExcPending
 														if v109 != 0 {
 															return
 														} else {
-															v111 = *(*int32)(unsafe.Add(mBase, _consts[37]))
+															v111 = *(*int32)(unsafe.Add(mBase, _c_F_aofOpenIfNeededOnServerStart[3]))
 															v112 = F_makePath(m, v111, v108)
 															mBase = m.M
 															v113 = m.ExcPending
@@ -1112,16 +1112,16 @@ func F_aofOpenIfNeededOnServerStart(m *base.Module) {
 																*(*int32)(unsafe.Add(mBase, uint32(v10)+48)) = int32(438)
 																v120 = F_open(m, v112, int32(1089), v10+int32(48))
 																mBase = m.M
-																*(*int32)(unsafe.Add(mBase, _consts[40])) = v120
+																*(*int32)(unsafe.Add(mBase, _c_F_aofOpenIfNeededOnServerStart[2])) = v120
 																F_sdsfree(m, v112)
 																mBase = m.M
 																v123 = m.ExcPending
 																if v123 != 0 {
 																	return
 																} else {
-																	v125 = *(*int32)(unsafe.Add(mBase, _consts[40]))
+																	v125 = *(*int32)(unsafe.Add(mBase, _c_F_aofOpenIfNeededOnServerStart[2]))
 																	if v125 != int32(-1) {
-																		v146 = *(*int32)(unsafe.Add(mBase, _consts[39]))
+																		v146 = *(*int32)(unsafe.Add(mBase, _c_F_aofOpenIfNeededOnServerStart[1]))
 																		v147 = *(*int32)(unsafe.Add(mBase, uint32(v146)+32))
 																		if v147 == int32(0) {
 																			v162 = F_getAppendOnlyFileSize(m, v108, int32(0))
@@ -1130,19 +1130,19 @@ func F_aofOpenIfNeededOnServerStart(m *base.Module) {
 																			if v163 != 0 {
 																				return
 																			} else {
-																				*(*int64)(unsafe.Add(mBase, _consts[41])) = v162
-																				v165 = int32(_a20)
-																				*(*int64)(unsafe.Add(mBase, _consts[42])) = v162
-																				v168 = *(*int32)(unsafe.Add(mBase, _consts[28]))
+																				*(*int64)(unsafe.Add(mBase, _c_F_aofOpenIfNeededOnServerStart[4])) = v162
+																				v165 = int32(_a_F_aofOpenIfNeededOnServerStart_3)
+																				*(*int64)(unsafe.Add(mBase, _c_F_aofOpenIfNeededOnServerStart[5])) = v162
+																				v168 = *(*int32)(unsafe.Add(mBase, _c_F_aofOpenIfNeededOnServerStart[6]))
 																				if int32(2) < v168 {
 																					m.G0 = v10 + int32(80)
 																					return
 																				} else {
 																					*(*int32)(unsafe.Add(mBase, uint32(v10)+32)) = v108
 																					if v79 != 0 {
-																						v175 = int32(_a139)
+																						v175 = int32(_a_F_aofOpenIfNeededOnServerStart_4)
 																					} else {
-																						v175 = int32(_a140)
+																						v175 = int32(_a_F_aofOpenIfNeededOnServerStart_5)
 																					}
 																					F__serverLog(m, int32(2), v175, v10+int32(32))
 																					mBase = m.M
@@ -1188,19 +1188,19 @@ func F_aofOpenIfNeededOnServerStart(m *base.Module) {
 																							if v163 != 0 {
 																								return
 																							} else {
-																								*(*int64)(unsafe.Add(mBase, _consts[41])) = v162
-																								v165 = int32(_a20)
-																								*(*int64)(unsafe.Add(mBase, _consts[42])) = v162
-																								v168 = *(*int32)(unsafe.Add(mBase, _consts[28]))
+																								*(*int64)(unsafe.Add(mBase, _c_F_aofOpenIfNeededOnServerStart[4])) = v162
+																								v165 = int32(_a_F_aofOpenIfNeededOnServerStart_3)
+																								*(*int64)(unsafe.Add(mBase, _c_F_aofOpenIfNeededOnServerStart[5])) = v162
+																								v168 = *(*int32)(unsafe.Add(mBase, _c_F_aofOpenIfNeededOnServerStart[6]))
 																								if int32(2) < v168 {
 																									m.G0 = v10 + int32(80)
 																									return
 																								} else {
 																									*(*int32)(unsafe.Add(mBase, uint32(v10)+32)) = v108
 																									if v79 != 0 {
-																										v175 = int32(_a139)
+																										v175 = int32(_a_F_aofOpenIfNeededOnServerStart_4)
 																									} else {
-																										v175 = int32(_a140)
+																										v175 = int32(_a_F_aofOpenIfNeededOnServerStart_5)
 																									}
 																									F__serverLog(m, int32(2), v175, v10+int32(32))
 																									mBase = m.M
@@ -1219,7 +1219,7 @@ func F_aofOpenIfNeededOnServerStart(m *base.Module) {
 																			}
 																		}
 																	} else {
-																		v129 = *(*int32)(unsafe.Add(mBase, _consts[28]))
+																		v129 = *(*int32)(unsafe.Add(mBase, _c_F_aofOpenIfNeededOnServerStart[6]))
 																		if int32(3) < v129 {
 																			m.Env.Exit(m, int32(1))
 																			mBase = m.M
@@ -1227,12 +1227,12 @@ func F_aofOpenIfNeededOnServerStart(m *base.Module) {
 																			for {
 																			}
 																		} else {
-																			v133 = *(*int32)(unsafe.Add(mBase, _consts[18]))
+																			v133 = *(*int32)(unsafe.Add(mBase, _c_F_aofOpenIfNeededOnServerStart[7]))
 																			v134 = F___strerror_l(m, v133, v133)
 																			mBase = m.M
 																			*(*int32)(unsafe.Add(mBase, uint32(v10)+20)) = v134
 																			*(*int32)(unsafe.Add(mBase, uint32(v10)+16)) = v108
-																			F__serverLog(m, int32(3), int32(_a141), v10+int32(16))
+																			F__serverLog(m, int32(3), int32(_a_F_aofOpenIfNeededOnServerStart_6), v10+int32(16))
 																			mBase = m.M
 																			v142 = m.ExcPending
 																			if v142 != 0 {
@@ -1259,7 +1259,7 @@ func F_aofOpenIfNeededOnServerStart(m *base.Module) {
 						}
 					}
 				} else {
-					v59 = *(*int32)(unsafe.Add(mBase, _consts[28]))
+					v59 = *(*int32)(unsafe.Add(mBase, _c_F_aofOpenIfNeededOnServerStart[6]))
 					if int32(3) < v59 {
 						m.Env.Exit(m, int32(1))
 						mBase = m.M
@@ -1267,13 +1267,13 @@ func F_aofOpenIfNeededOnServerStart(m *base.Module) {
 						for {
 						}
 					} else {
-						v63 = *(*int32)(unsafe.Add(mBase, _consts[37]))
-						v65 = *(*int32)(unsafe.Add(mBase, _consts[18]))
+						v63 = *(*int32)(unsafe.Add(mBase, _c_F_aofOpenIfNeededOnServerStart[3]))
+						v65 = *(*int32)(unsafe.Add(mBase, _c_F_aofOpenIfNeededOnServerStart[7]))
 						v66 = F___strerror_l(m, v65, v65)
 						mBase = m.M
 						*(*int32)(unsafe.Add(mBase, uint32(v10)+4)) = v66
 						*(*int32)(unsafe.Add(mBase, uint32(v10))) = v63
-						F__serverLog(m, int32(3), int32(_a143), v10)
+						F__serverLog(m, int32(3), int32(_a_F_aofOpenIfNeededOnServerStart_8), v10)
 						mBase = m.M
 						v72 = m.ExcPending
 						if v72 != 0 {
@@ -1390,7 +1390,7 @@ func F_getAofManifestAsString(m *base.Module, l0 int32) int32 {
 	}
 L1:
 	;
-	F__serverAssert(m, int32(_a124), int32(_a123), int32(191))
+	F__serverAssert(m, int32(_a_F_getAofManifestAsString_0), int32(_a_F_getAofManifestAsString_1), int32(191))
 	mBase = m.M
 	v125 = m.ExcPending
 	if v125 != 0 {
@@ -1623,7 +1623,7 @@ func F_updateAofAutoGCEnabled(m *base.Module, l0 int32) int32 {
 	_ = v4
 	var v7 int32
 	_ = v7
-	v3 = *(*int32)(unsafe.Add(mBase, _consts[255]))
+	v3 = *(*int32)(unsafe.Add(mBase, _c_F_updateAofAutoGCEnabled[0]))
 	if v3 != 0 {
 		return int32(1)
 	} else {

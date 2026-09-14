@@ -108,11 +108,11 @@ func F_anetCreateSocket(m *base.Module, l0 int32, l1 int32, l2 int32, l3 int32, 
 			}
 			m.G0 = v54 + int32(16)
 			if v107 == int32(-1) {
-				v115 = *(*int32)(unsafe.Add(mBase, _consts[9]))
+				v115 = *(*int32)(unsafe.Add(mBase, _c_F_anetCreateSocket[0]))
 				v116 = F___strerror_l(m, v115, v115)
 				mBase = m.M
 				*(*int32)(unsafe.Add(mBase, uint32(v11)+16)) = v116
-				F_anetSetError(m, l0, int32(_a58), v11+int32(16))
+				F_anetSetError(m, l0, int32(_a_F_anetCreateSocket_0), v11+int32(16))
 				mBase = m.M
 				v122 = m.ExcPending
 				if v122 != 0 {
@@ -135,11 +135,11 @@ func F_anetCreateSocket(m *base.Module, l0 int32, l1 int32, l2 int32, l3 int32, 
 			return v124
 		}
 	} else {
-		v31 = *(*int32)(unsafe.Add(mBase, _consts[9]))
+		v31 = *(*int32)(unsafe.Add(mBase, _c_F_anetCreateSocket[0]))
 		v32 = F___strerror_l(m, v31, v31)
 		mBase = m.M
 		*(*int32)(unsafe.Add(mBase, uint32(v11))) = v32
-		F_anetSetError(m, l0, int32(_a59), v11)
+		F_anetSetError(m, l0, int32(_a_F_anetCreateSocket_1), v11)
 		mBase = m.M
 		v38 = m.ExcPending
 		if v38 != 0 {
@@ -197,11 +197,11 @@ func F_anetDisableTcpNoDelay(m *base.Module, l0 int32, l1 int32) int32 {
 		m.G0 = v7 + int32(16)
 		return v92
 	} else {
-		v83 = *(*int32)(unsafe.Add(mBase, _consts[9]))
+		v83 = *(*int32)(unsafe.Add(mBase, _c_F_anetDisableTcpNoDelay[0]))
 		v84 = F___strerror_l(m, v83, v83)
 		mBase = m.M
 		*(*int32)(unsafe.Add(mBase, uint32(v7))) = v84
-		F_anetSetError(m, l0, int32(_a55), v7)
+		F_anetSetError(m, l0, int32(_a_F_anetDisableTcpNoDelay_0), v7)
 		mBase = m.M
 		v90 = m.ExcPending
 		if v90 != 0 {
@@ -334,7 +334,7 @@ L11:
 	goto L12
 L12:
 	;
-	v32 = *(*int32)(unsafe.Add(mBase, _consts[9]))
+	v32 = *(*int32)(unsafe.Add(mBase, _c_F_anetGenericAccept[0]))
 	if v32 == int32(27) {
 		goto L9
 	} else {
@@ -346,7 +346,7 @@ L13:
 	goto L3
 L14:
 	;
-	v36 = *(*int32)(unsafe.Add(mBase, _consts[9]))
+	v36 = *(*int32)(unsafe.Add(mBase, _c_F_anetGenericAccept[0]))
 	if v36 == int32(27) {
 		goto L5
 	} else {
@@ -358,7 +358,7 @@ L15:
 L16:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v9))) = v39
-	F_anetSetError(m, l0, int32(_a61), v9)
+	F_anetSetError(m, l0, int32(_a_F_anetGenericAccept_0), v9)
 	mBase = m.M
 	v45 = m.ExcPending
 	if v45 != 0 {
@@ -396,7 +396,7 @@ L22:
 	goto L23
 L23:
 	;
-	v65 = *(*int32)(unsafe.Add(mBase, _consts[9]))
+	v65 = *(*int32)(unsafe.Add(mBase, _c_F_anetGenericAccept[0]))
 	if v65 == int32(27) {
 		goto L20
 	} else {
@@ -408,7 +408,7 @@ L24:
 L25:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v9)+16)) = v75
-	F_anetSetError(m, l0, int32(_a62), v9+int32(16))
+	F_anetSetError(m, l0, int32(_a_F_anetGenericAccept_1), v9+int32(16))
 	mBase = m.M
 	v81 = m.ExcPending
 	if v81 != 0 {
@@ -434,7 +434,7 @@ L28:
 	}
 L29:
 	;
-	v111 = int32(_a54)
+	v111 = int32(_a_F_anetGenericAccept_2)
 	goto L27
 L30:
 	;
@@ -452,7 +452,7 @@ L31:
 	goto L1
 L32:
 	;
-	v111 = int32(_a53)
+	v111 = int32(_a_F_anetGenericAccept_3)
 	goto L27
 L33:
 	;
@@ -460,7 +460,7 @@ L33:
 	goto L1
 L34:
 	;
-	v113 = *(*int32)(unsafe.Add(mBase, _consts[9]))
+	v113 = *(*int32)(unsafe.Add(mBase, _c_F_anetGenericAccept[0]))
 	v114 = F___strerror_l(m, v113, v113)
 	mBase = m.M
 	goto L35
@@ -560,8 +560,8 @@ func F_anetNonBlock(m *base.Module, l0 int32, l1 int32) int32 {
 				m.G0 = v8 + int32(32)
 				return v39
 			} else {
-				v29 = int32(_a53)
-				v31 = *(*int32)(unsafe.Add(mBase, _consts[9]))
+				v29 = int32(_a_F_anetNonBlock_0)
+				v31 = *(*int32)(unsafe.Add(mBase, _c_F_anetNonBlock[0]))
 				v32 = F___strerror_l(m, v31, v31)
 				mBase = m.M
 				*(*int32)(unsafe.Add(mBase, uint32(v8))) = v32
@@ -578,8 +578,8 @@ func F_anetNonBlock(m *base.Module, l0 int32, l1 int32) int32 {
 			}
 		}
 	} else {
-		v29 = int32(_a54)
-		v31 = *(*int32)(unsafe.Add(mBase, _consts[9]))
+		v29 = int32(_a_F_anetNonBlock_1)
+		v31 = *(*int32)(unsafe.Add(mBase, _c_F_anetNonBlock[0]))
 		v32 = F___strerror_l(m, v31, v31)
 		mBase = m.M
 		*(*int32)(unsafe.Add(mBase, uint32(v8))) = v32
@@ -776,7 +776,7 @@ L13:
 	}
 L14:
 	;
-	v73 = int32(_a56)
+	v73 = int32(_a_F_anetResolve_0)
 	v75 = v67 + int32(1)
 	if v75 == int32(0) {
 		v95 = v73
@@ -787,7 +787,7 @@ L14:
 L15:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v10))) = v95 + base.B2i32(v97 == int32(0))
-	F_anetSetError(m, l0, int32(_a57), v10)
+	F_anetSetError(m, l0, int32(_a_F_anetResolve_1), v10)
 	mBase = m.M
 	v106 = m.ExcPending
 	if v106 != 0 {
@@ -1115,7 +1115,7 @@ L19:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v11)+4)) = int32(108)
 	*(*int32)(unsafe.Add(mBase, uint32(v11))) = v67
-	F_anetSetError(m, l0, int32(_a60), v11)
+	F_anetSetError(m, l0, int32(_a_F_anetUnixServer_0), v11)
 	mBase = m.M
 	v77 = m.ExcPending
 	if v77 != 0 {

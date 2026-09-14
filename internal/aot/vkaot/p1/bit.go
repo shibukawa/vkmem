@@ -82,7 +82,7 @@ func F_bit_lshift(m *base.Module, l0 int32) int32 {
 							return int32(1)
 						} else {
 							v33 = m.G3
-							v36 = F_luaL_typerror(m, l0, int32(2), v33+int32(_a2760))
+							v36 = F_luaL_typerror(m, l0, int32(2), v33+int32(_a_F_bit_lshift_0))
 							mBase = m.M
 							v37 = m.ExcPending
 							if v37 != 0 {
@@ -137,7 +137,7 @@ func F_bit_lshift(m *base.Module, l0 int32) int32 {
 									return int32(1)
 								} else {
 									v33 = m.G3
-									v36 = F_luaL_typerror(m, l0, int32(2), v33+int32(_a2760))
+									v36 = F_luaL_typerror(m, l0, int32(2), v33+int32(_a_F_bit_lshift_0))
 									mBase = m.M
 									v37 = m.ExcPending
 									if v37 != 0 {
@@ -156,7 +156,7 @@ func F_bit_lshift(m *base.Module, l0 int32) int32 {
 					}
 				} else {
 					v17 = m.G3
-					v20 = F_luaL_typerror(m, l0, int32(1), v17+int32(_a2760))
+					v20 = F_luaL_typerror(m, l0, int32(1), v17+int32(_a_F_bit_lshift_0))
 					mBase = m.M
 					v21 = m.ExcPending
 					if v21 != 0 {
@@ -192,7 +192,7 @@ func F_bit_lshift(m *base.Module, l0 int32) int32 {
 										return int32(1)
 									} else {
 										v33 = m.G3
-										v36 = F_luaL_typerror(m, l0, int32(2), v33+int32(_a2760))
+										v36 = F_luaL_typerror(m, l0, int32(2), v33+int32(_a_F_bit_lshift_0))
 										mBase = m.M
 										v37 = m.ExcPending
 										if v37 != 0 {
@@ -292,7 +292,7 @@ func F_bit_ror(m *base.Module, l0 int32) int32 {
 							return int32(1)
 						} else {
 							v33 = m.G3
-							v36 = F_luaL_typerror(m, l0, int32(2), v33+int32(_a2760))
+							v36 = F_luaL_typerror(m, l0, int32(2), v33+int32(_a_F_bit_ror_0))
 							mBase = m.M
 							v37 = m.ExcPending
 							if v37 != 0 {
@@ -347,7 +347,7 @@ func F_bit_ror(m *base.Module, l0 int32) int32 {
 									return int32(1)
 								} else {
 									v33 = m.G3
-									v36 = F_luaL_typerror(m, l0, int32(2), v33+int32(_a2760))
+									v36 = F_luaL_typerror(m, l0, int32(2), v33+int32(_a_F_bit_ror_0))
 									mBase = m.M
 									v37 = m.ExcPending
 									if v37 != 0 {
@@ -366,7 +366,7 @@ func F_bit_ror(m *base.Module, l0 int32) int32 {
 					}
 				} else {
 					v17 = m.G3
-					v20 = F_luaL_typerror(m, l0, int32(1), v17+int32(_a2760))
+					v20 = F_luaL_typerror(m, l0, int32(1), v17+int32(_a_F_bit_ror_0))
 					mBase = m.M
 					v21 = m.ExcPending
 					if v21 != 0 {
@@ -402,7 +402,7 @@ func F_bit_ror(m *base.Module, l0 int32) int32 {
 										return int32(1)
 									} else {
 										v33 = m.G3
-										v36 = F_luaL_typerror(m, l0, int32(2), v33+int32(_a2760))
+										v36 = F_luaL_typerror(m, l0, int32(2), v33+int32(_a_F_bit_ror_0))
 										mBase = m.M
 										v37 = m.ExcPending
 										if v37 != 0 {
@@ -478,7 +478,7 @@ func F_bit_tobit(m *base.Module, l0 int32) int32 {
 					return int32(1)
 				} else {
 					v16 = m.G3
-					v19 = F_luaL_typerror(m, l0, int32(1), v16+int32(_a2760))
+					v19 = F_luaL_typerror(m, l0, int32(1), v16+int32(_a_F_bit_tobit_0))
 					mBase = m.M
 					v20 = m.ExcPending
 					if v20 != 0 {
@@ -637,9 +637,9 @@ func F_bit_tohex(m *base.Module, l0 int32) int32 {
 				} else {
 					v128 = v122 + (v11 + int32(8))
 					if v109 < int32(0) {
-						v135 = v123 + int32(_a2761)
+						v135 = v123 + int32(_a_F_bit_tohex_0)
 					} else {
-						v135 = v123 + int32(_a2762)
+						v135 = v123 + int32(_a_F_bit_tohex_1)
 					}
 					v139 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v135+v21&int32(15)))))
 					*(*uint8)(unsafe.Add(mBase, uint32(v128+int32(-1)))) = uint8(v139)
@@ -721,9 +721,9 @@ func F_bit_tohex(m *base.Module, l0 int32) int32 {
 						} else {
 							v128 = v122 + (v11 + int32(8))
 							if v109 < int32(0) {
-								v135 = v123 + int32(_a2761)
+								v135 = v123 + int32(_a_F_bit_tohex_0)
 							} else {
-								v135 = v123 + int32(_a2762)
+								v135 = v123 + int32(_a_F_bit_tohex_1)
 							}
 							v139 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v135+v21&int32(15)))))
 							*(*uint8)(unsafe.Add(mBase, uint32(v128+int32(-1)))) = uint8(v139)
@@ -805,9 +805,9 @@ func F_bit_tohex(m *base.Module, l0 int32) int32 {
 								} else {
 									v128 = v122 + (v11 + int32(8))
 									if v109 < int32(0) {
-										v135 = v123 + int32(_a2761)
+										v135 = v123 + int32(_a_F_bit_tohex_0)
 									} else {
-										v135 = v123 + int32(_a2762)
+										v135 = v123 + int32(_a_F_bit_tohex_1)
 									}
 									v139 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v135+v21&int32(15)))))
 									*(*uint8)(unsafe.Add(mBase, uint32(v128+int32(-1)))) = uint8(v139)
@@ -858,7 +858,7 @@ func F_bit_tohex(m *base.Module, l0 int32) int32 {
 								}
 							} else {
 								v104 = m.G3
-								v107 = F_luaL_typerror(m, l0, int32(2), v104+int32(_a2760))
+								v107 = F_luaL_typerror(m, l0, int32(2), v104+int32(_a_F_bit_tohex_2))
 								mBase = m.M
 								v108 = m.ExcPending
 								if v108 != 0 {
@@ -888,9 +888,9 @@ func F_bit_tohex(m *base.Module, l0 int32) int32 {
 									} else {
 										v128 = v122 + (v11 + int32(8))
 										if v109 < int32(0) {
-											v135 = v123 + int32(_a2761)
+											v135 = v123 + int32(_a_F_bit_tohex_0)
 										} else {
-											v135 = v123 + int32(_a2762)
+											v135 = v123 + int32(_a_F_bit_tohex_1)
 										}
 										v139 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v135+v21&int32(15)))))
 										*(*uint8)(unsafe.Add(mBase, uint32(v128+int32(-1)))) = uint8(v139)
@@ -992,9 +992,9 @@ func F_bit_tohex(m *base.Module, l0 int32) int32 {
 						} else {
 							v128 = v122 + (v11 + int32(8))
 							if v109 < int32(0) {
-								v135 = v123 + int32(_a2761)
+								v135 = v123 + int32(_a_F_bit_tohex_0)
 							} else {
-								v135 = v123 + int32(_a2762)
+								v135 = v123 + int32(_a_F_bit_tohex_1)
 							}
 							v139 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v135+v21&int32(15)))))
 							*(*uint8)(unsafe.Add(mBase, uint32(v128+int32(-1)))) = uint8(v139)
@@ -1076,9 +1076,9 @@ func F_bit_tohex(m *base.Module, l0 int32) int32 {
 								} else {
 									v128 = v122 + (v11 + int32(8))
 									if v109 < int32(0) {
-										v135 = v123 + int32(_a2761)
+										v135 = v123 + int32(_a_F_bit_tohex_0)
 									} else {
-										v135 = v123 + int32(_a2762)
+										v135 = v123 + int32(_a_F_bit_tohex_1)
 									}
 									v139 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v135+v21&int32(15)))))
 									*(*uint8)(unsafe.Add(mBase, uint32(v128+int32(-1)))) = uint8(v139)
@@ -1160,9 +1160,9 @@ func F_bit_tohex(m *base.Module, l0 int32) int32 {
 										} else {
 											v128 = v122 + (v11 + int32(8))
 											if v109 < int32(0) {
-												v135 = v123 + int32(_a2761)
+												v135 = v123 + int32(_a_F_bit_tohex_0)
 											} else {
-												v135 = v123 + int32(_a2762)
+												v135 = v123 + int32(_a_F_bit_tohex_1)
 											}
 											v139 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v135+v21&int32(15)))))
 											*(*uint8)(unsafe.Add(mBase, uint32(v128+int32(-1)))) = uint8(v139)
@@ -1213,7 +1213,7 @@ func F_bit_tohex(m *base.Module, l0 int32) int32 {
 										}
 									} else {
 										v104 = m.G3
-										v107 = F_luaL_typerror(m, l0, int32(2), v104+int32(_a2760))
+										v107 = F_luaL_typerror(m, l0, int32(2), v104+int32(_a_F_bit_tohex_2))
 										mBase = m.M
 										v108 = m.ExcPending
 										if v108 != 0 {
@@ -1243,9 +1243,9 @@ func F_bit_tohex(m *base.Module, l0 int32) int32 {
 											} else {
 												v128 = v122 + (v11 + int32(8))
 												if v109 < int32(0) {
-													v135 = v123 + int32(_a2761)
+													v135 = v123 + int32(_a_F_bit_tohex_0)
 												} else {
-													v135 = v123 + int32(_a2762)
+													v135 = v123 + int32(_a_F_bit_tohex_1)
 												}
 												v139 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v135+v21&int32(15)))))
 												*(*uint8)(unsafe.Add(mBase, uint32(v128+int32(-1)))) = uint8(v139)
@@ -1302,7 +1302,7 @@ func F_bit_tohex(m *base.Module, l0 int32) int32 {
 					}
 				} else {
 					v26 = m.G3
-					v29 = F_luaL_typerror(m, l0, int32(1), v26+int32(_a2760))
+					v29 = F_luaL_typerror(m, l0, int32(1), v26+int32(_a_F_bit_tohex_2))
 					mBase = m.M
 					v30 = m.ExcPending
 					if v30 != 0 {
@@ -1347,9 +1347,9 @@ func F_bit_tohex(m *base.Module, l0 int32) int32 {
 							} else {
 								v128 = v122 + (v11 + int32(8))
 								if v109 < int32(0) {
-									v135 = v123 + int32(_a2761)
+									v135 = v123 + int32(_a_F_bit_tohex_0)
 								} else {
-									v135 = v123 + int32(_a2762)
+									v135 = v123 + int32(_a_F_bit_tohex_1)
 								}
 								v139 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v135+v21&int32(15)))))
 								*(*uint8)(unsafe.Add(mBase, uint32(v128+int32(-1)))) = uint8(v139)
@@ -1431,9 +1431,9 @@ func F_bit_tohex(m *base.Module, l0 int32) int32 {
 									} else {
 										v128 = v122 + (v11 + int32(8))
 										if v109 < int32(0) {
-											v135 = v123 + int32(_a2761)
+											v135 = v123 + int32(_a_F_bit_tohex_0)
 										} else {
-											v135 = v123 + int32(_a2762)
+											v135 = v123 + int32(_a_F_bit_tohex_1)
 										}
 										v139 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v135+v21&int32(15)))))
 										*(*uint8)(unsafe.Add(mBase, uint32(v128+int32(-1)))) = uint8(v139)
@@ -1515,9 +1515,9 @@ func F_bit_tohex(m *base.Module, l0 int32) int32 {
 											} else {
 												v128 = v122 + (v11 + int32(8))
 												if v109 < int32(0) {
-													v135 = v123 + int32(_a2761)
+													v135 = v123 + int32(_a_F_bit_tohex_0)
 												} else {
-													v135 = v123 + int32(_a2762)
+													v135 = v123 + int32(_a_F_bit_tohex_1)
 												}
 												v139 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v135+v21&int32(15)))))
 												*(*uint8)(unsafe.Add(mBase, uint32(v128+int32(-1)))) = uint8(v139)
@@ -1568,7 +1568,7 @@ func F_bit_tohex(m *base.Module, l0 int32) int32 {
 											}
 										} else {
 											v104 = m.G3
-											v107 = F_luaL_typerror(m, l0, int32(2), v104+int32(_a2760))
+											v107 = F_luaL_typerror(m, l0, int32(2), v104+int32(_a_F_bit_tohex_2))
 											mBase = m.M
 											v108 = m.ExcPending
 											if v108 != 0 {
@@ -1598,9 +1598,9 @@ func F_bit_tohex(m *base.Module, l0 int32) int32 {
 												} else {
 													v128 = v122 + (v11 + int32(8))
 													if v109 < int32(0) {
-														v135 = v123 + int32(_a2761)
+														v135 = v123 + int32(_a_F_bit_tohex_0)
 													} else {
-														v135 = v123 + int32(_a2762)
+														v135 = v123 + int32(_a_F_bit_tohex_1)
 													}
 													v139 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v135+v21&int32(15)))))
 													*(*uint8)(unsafe.Add(mBase, uint32(v128+int32(-1)))) = uint8(v139)

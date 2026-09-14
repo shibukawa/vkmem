@@ -20,7 +20,7 @@ func F_initDeferredReplyBuffer(m *base.Module, l0 int32) {
 	_ = v10
 	var v15 int64
 	_ = v15
-	v4 = *(*int32)(unsafe.Add(mBase, _consts[441]))
+	v4 = *(*int32)(unsafe.Add(mBase, _c_F_initDeferredReplyBuffer[0]))
 	v5 = *(*int32)(unsafe.Add(mBase, uint32(v4)+20))
 	if v5 == int32(0) {
 		return
@@ -287,7 +287,7 @@ func F_setDeferredReply(m *base.Module, l0 int32, l1 int32, l2 int32, l3 int32) 
 	}
 L1:
 	;
-	F__serverAssert(m, int32(_a1651), int32(_a1630), int32(1181))
+	F__serverAssert(m, int32(_a_F_setDeferredReply_0), int32(_a_F_setDeferredReply_1), int32(1181))
 	mBase = m.M
 	v309 = m.ExcPending
 	if v309 != 0 {

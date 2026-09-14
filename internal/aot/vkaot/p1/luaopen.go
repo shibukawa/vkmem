@@ -44,7 +44,7 @@ func F_luaopen_cjson(m *base.Module, l0 int32) int32 {
 		v67 = *(*int32)(unsafe.Add(mBase, uint32(l0)+8))
 		*(*int32)(unsafe.Add(mBase, uint32(l0)+8)) = v67 + int32(16)
 		v72 = m.G3
-		F_lua_setfield(m, l0, int32(-10002), v72+int32(_a2739))
+		F_lua_setfield(m, l0, int32(-10002), v72+int32(_a_F_luaopen_cjson_0))
 		mBase = m.M
 		v76 = m.ExcPending
 		if v76 != 0 {
@@ -93,7 +93,7 @@ func F_luaopen_cmsgpack(m *base.Module, l0 int32) int32 {
 		v67 = *(*int32)(unsafe.Add(mBase, uint32(l0)+8))
 		*(*int32)(unsafe.Add(mBase, uint32(l0)+8)) = v67 + int32(16)
 		v72 = m.G3
-		F_lua_setfield(m, l0, int32(-10002), v72+int32(_a2759))
+		F_lua_setfield(m, l0, int32(-10002), v72+int32(_a_F_luaopen_cmsgpack_0))
 		mBase = m.M
 		v76 = m.ExcPending
 		if v76 != 0 {
@@ -153,19 +153,19 @@ func F_luaopen_string(m *base.Module, l0 int32) int32 {
 	var v215 int32
 	_ = v215
 	v3 = m.G3
-	F_luaL_register(m, l0, v3+int32(_a2645), v3+int32(_a2717))
+	F_luaL_register(m, l0, v3+int32(_a_F_luaopen_string_0), v3+int32(_a_F_luaopen_string_1))
 	mBase = m.M
 	v11 = m.ExcPending
 	if v11 != 0 {
 		return int32(0)
 	} else {
-		F_lua_getfield(m, l0, int32(-1), v3+int32(_a2718))
+		F_lua_getfield(m, l0, int32(-1), v3+int32(_a_F_luaopen_string_2))
 		mBase = m.M
 		v16 = m.ExcPending
 		if v16 != 0 {
 			return int32(0)
 		} else {
-			F_lua_setfield(m, l0, int32(-2), v3+int32(_a2719))
+			F_lua_setfield(m, l0, int32(-2), v3+int32(_a_F_luaopen_string_3))
 			mBase = m.M
 			v21 = m.ExcPending
 			if v21 != 0 {
@@ -177,7 +177,7 @@ func F_luaopen_string(m *base.Module, l0 int32) int32 {
 				if v25 != 0 {
 					return int32(0)
 				} else {
-					F_lua_pushlstring(m, l0, v3+int32(_a320), int32(0))
+					F_lua_pushlstring(m, l0, v3+int32(_a_F_luaopen_string_4), int32(0))
 					mBase = m.M
 					v30 = m.ExcPending
 					if v30 != 0 {
@@ -209,7 +209,7 @@ func F_luaopen_string(m *base.Module, l0 int32) int32 {
 							*(*int32)(unsafe.Add(mBase, uint32(v183)+8)) = v186
 							v188 = *(*int32)(unsafe.Add(mBase, uint32(l0)+8))
 							*(*int32)(unsafe.Add(mBase, uint32(l0)+8)) = v188 + int32(16)
-							F_lua_setfield(m, l0, int32(-2), v3+int32(_a2626))
+							F_lua_setfield(m, l0, int32(-2), v3+int32(_a_F_luaopen_string_5))
 							mBase = m.M
 							v196 = m.ExcPending
 							if v196 != 0 {
@@ -232,7 +232,7 @@ func F_luaopen_table(m *base.Module, l0 int32) int32 {
 	var v11 int32
 	_ = v11
 	v3 = m.G3
-	F_luaL_register(m, l0, v3+int32(_a2713), v3+int32(_a2714))
+	F_luaL_register(m, l0, v3+int32(_a_F_luaopen_table_0), v3+int32(_a_F_luaopen_table_1))
 	v11 = m.ExcPending
 	if v11 != 0 {
 		return int32(0)

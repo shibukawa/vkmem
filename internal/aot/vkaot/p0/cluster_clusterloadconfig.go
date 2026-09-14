@@ -2363,7 +2363,7 @@ func F_clusterLoadConfig(m *base.Module, l0 int32) int32 {
 	v26 = m.G0
 	v28 = v26 - int32(224)
 	m.G0 = v28
-	v31 = F_fopen(m, l0, int32(_a178))
+	v31 = F_fopen(m, l0, int32(_a_F_clusterLoadConfig_0))
 	mBase = m.M
 	if v31 != 0 {
 		goto L8
@@ -2373,7 +2373,7 @@ func F_clusterLoadConfig(m *base.Module, l0 int32) int32 {
 L1:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v28)+32)) = v108
-	F__serverPanic_1(m, int32(_a179), int32(1043), int32(_a180), v28+int32(32))
+	F__serverPanic_1(m, int32(_a_F_clusterLoadConfig_1), int32(1043), int32(_a_F_clusterLoadConfig_2), v28+int32(32))
 	mBase = m.M
 	v3551 = m.ExcPending
 	if v3551 != 0 {
@@ -2383,7 +2383,7 @@ L1:
 	}
 L2:
 	;
-	F__serverAssert(m, int32(_a181), int32(_a179), int32(1029))
+	F__serverAssert(m, int32(_a_F_clusterLoadConfig_3), int32(_a_F_clusterLoadConfig_1), int32(1029))
 	mBase = m.M
 	v3517 = m.ExcPending
 	if v3517 != 0 {
@@ -2393,7 +2393,7 @@ L2:
 	}
 L3:
 	;
-	F__serverAssert(m, int32(_a182), int32(_a179), int32(2220))
+	F__serverAssert(m, int32(_a_F_clusterLoadConfig_4), int32(_a_F_clusterLoadConfig_1), int32(2220))
 	mBase = m.M
 	v3511 = m.ExcPending
 	if v3511 != 0 {
@@ -2403,7 +2403,7 @@ L3:
 	}
 L4:
 	;
-	F__serverAssert(m, int32(_a183), int32(_a179), int32(981))
+	F__serverAssert(m, int32(_a_F_clusterLoadConfig_5), int32(_a_F_clusterLoadConfig_1), int32(981))
 	mBase = m.M
 	v3505 = m.ExcPending
 	if v3505 != 0 {
@@ -2413,8 +2413,8 @@ L4:
 	}
 L5:
 	;
-	*(*int32)(unsafe.Add(mBase, uint32(v28)+96)) = int32(_a184)
-	F__serverPanic_1(m, int32(_a179), int32(915), int32(_a185), v28+int32(96))
+	*(*int32)(unsafe.Add(mBase, uint32(v28)+96)) = int32(_a_F_clusterLoadConfig_6)
+	F__serverPanic_1(m, int32(_a_F_clusterLoadConfig_1), int32(915), int32(_a_F_clusterLoadConfig_7), v28+int32(96))
 	mBase = m.M
 	v3499 = m.ExcPending
 	if v3499 != 0 {
@@ -2424,7 +2424,7 @@ L5:
 	}
 L6:
 	;
-	F__serverAssert(m, int32(_a186), int32(_a179), int32(893))
+	F__serverAssert(m, int32(_a_F_clusterLoadConfig_8), int32(_a_F_clusterLoadConfig_1), int32(893))
 	mBase = m.M
 	v3489 = m.ExcPending
 	if v3489 != 0 {
@@ -2449,7 +2449,7 @@ L9:
 	goto L10
 L10:
 	;
-	v34 = *(*int32)(unsafe.Add(mBase, _consts[9]))
+	v34 = *(*int32)(unsafe.Add(mBase, _c_F_clusterLoadConfig[0]))
 	if v34 == int32(44) {
 		v3459 = int32(-1)
 		goto L7
@@ -2458,7 +2458,7 @@ L10:
 	}
 L11:
 	;
-	v38 = *(*int32)(unsafe.Add(mBase, _consts[15]))
+	v38 = *(*int32)(unsafe.Add(mBase, _c_F_clusterLoadConfig[1]))
 	if int32(3) < v38 {
 		goto L12
 	} else {
@@ -2480,7 +2480,7 @@ L14:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v28)+4)) = v41
 	*(*int32)(unsafe.Add(mBase, uint32(v28))) = l0
-	F__serverLog(m, int32(3), int32(_a187), v28)
+	F__serverLog(m, int32(3), int32(_a_F_clusterLoadConfig_9), v28)
 	mBase = m.M
 	v49 = m.ExcPending
 	if v49 != 0 {
@@ -2558,7 +2558,7 @@ L25:
 	}
 L26:
 	;
-	v80 = F___fstatat(m, v71, int32(_a188), v28+int32(128), int32(4096))
+	v80 = F___fstatat(m, v71, int32(_a_F_clusterLoadConfig_10), v28+int32(128), int32(4096))
 	mBase = m.M
 	v81 = v80
 	goto L25
@@ -2570,7 +2570,7 @@ L27:
 	goto L25
 L28:
 	;
-	v85 = *(*int32)(unsafe.Add(mBase, _consts[15]))
+	v85 = *(*int32)(unsafe.Add(mBase, _c_F_clusterLoadConfig[1]))
 	if int32(3) < v85 {
 		goto L29
 	} else {
@@ -2588,7 +2588,7 @@ L30:
 	goto L31
 L31:
 	;
-	v89 = *(*int32)(unsafe.Add(mBase, _consts[9]))
+	v89 = *(*int32)(unsafe.Add(mBase, _c_F_clusterLoadConfig[0]))
 	v90 = F___strerror_l(m, v89, v89)
 	mBase = m.M
 	goto L32
@@ -2596,7 +2596,7 @@ L32:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v28)+20)) = v90
 	*(*int32)(unsafe.Add(mBase, uint32(v28)+16)) = l0
-	F__serverLog(m, int32(3), int32(_a189), v28+int32(16))
+	F__serverLog(m, int32(3), int32(_a_F_clusterLoadConfig_11), v28+int32(16))
 	mBase = m.M
 	v98 = m.ExcPending
 	if v98 != 0 {
@@ -2633,7 +2633,7 @@ L36:
 	goto L7
 L37:
 	;
-	v111 = F_dictCreate(m, int32(_a190))
+	v111 = F_dictCreate(m, int32(_a_F_clusterLoadConfig_12))
 	mBase = m.M
 	v112 = m.ExcPending
 	if v112 != 0 {
@@ -2674,7 +2674,7 @@ L40:
 	}
 L41:
 	;
-	v3127 = *(*int32)(unsafe.Add(mBase, _consts[90]))
+	v3127 = *(*int32)(unsafe.Add(mBase, _c_F_clusterLoadConfig[2]))
 	v3128 = *(*int32)(unsafe.Add(mBase, uint32(v3127)))
 	if v3128 != 0 {
 		goto L39
@@ -2734,7 +2734,7 @@ L49:
 	;
 	v150 = *(*int32)(unsafe.Add(mBase, uint32(v28)+124))
 	v151 = *(*int32)(unsafe.Add(mBase, uint32(v146)))
-	v152 = int32(_a191)
+	v152 = int32(_a_F_clusterLoadConfig_13)
 	v155 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v151))))
 	if v155 != 0 {
 		goto L54
@@ -2869,7 +2869,7 @@ L67:
 	;
 	v225 = v146 + v202<<(uint(int32(2))%32)
 	v226 = *(*int32)(unsafe.Add(mBase, uint32(v225)))
-	v227 = int32(_a192)
+	v227 = int32(_a_F_clusterLoadConfig_14)
 	v230 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v226))))
 	if v230 != 0 {
 		goto L73
@@ -2888,7 +2888,7 @@ L69:
 	}
 L70:
 	;
-	v274 = int32(_a193)
+	v274 = int32(_a_F_clusterLoadConfig_15)
 	v277 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v226))))
 	if v277 != 0 {
 		goto L88
@@ -2991,12 +2991,12 @@ L83:
 	goto L84
 L84:
 	;
-	v272 = *(*int32)(unsafe.Add(mBase, _consts[90]))
+	v272 = *(*int32)(unsafe.Add(mBase, _c_F_clusterLoadConfig[2]))
 	*(*int64)(unsafe.Add(mBase, uint32(v272)+8)) = v270
 	goto L69
 L85:
 	;
-	v322 = *(*int32)(unsafe.Add(mBase, _consts[15]))
+	v322 = *(*int32)(unsafe.Add(mBase, _c_F_clusterLoadConfig[1]))
 	if int32(2) < v322 {
 		goto L69
 	} else {
@@ -3098,13 +3098,13 @@ L98:
 	goto L99
 L99:
 	;
-	v319 = *(*int32)(unsafe.Add(mBase, _consts[90]))
-	*(*int64)(unsafe.Add(mBase, uint32(v319)+uint32(_consts[91]))) = v317
+	v319 = *(*int32)(unsafe.Add(mBase, _c_F_clusterLoadConfig[2]))
+	*(*int64)(unsafe.Add(mBase, uint32(v319)+uint32(_c_F_clusterLoadConfig[3]))) = v317
 	goto L69
 L100:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v28)+64)) = v226
-	F__serverLog(m, int32(2), int32(_a194), v28+int32(64))
+	F__serverLog(m, int32(2), int32(_a_F_clusterLoadConfig_16), v28+int32(64))
 	mBase = m.M
 	v331 = m.ExcPending
 	if v331 != 0 {
@@ -3311,7 +3311,7 @@ L129:
 	}
 L130:
 	;
-	F__serverAssert(m, int32(_a182), int32(_a179), int32(2220))
+	F__serverAssert(m, int32(_a_F_clusterLoadConfig_4), int32(_a_F_clusterLoadConfig_1), int32(2220))
 	mBase = m.M
 	v535 = m.ExcPending
 	if v535 != 0 {
@@ -3396,7 +3396,7 @@ L141:
 	}
 L142:
 	;
-	v458 = *(*int32)(unsafe.Add(mBase, _consts[90]))
+	v458 = *(*int32)(unsafe.Add(mBase, _c_F_clusterLoadConfig[2]))
 	v459 = *(*int32)(unsafe.Add(mBase, uint32(v458)+32))
 	v460 = F_dictFind(m, v459, v455)
 	mBase = m.M
@@ -3439,7 +3439,7 @@ L147:
 	goto L132
 L148:
 	;
-	v475 = *(*int32)(unsafe.Add(mBase, _consts[90]))
+	v475 = *(*int32)(unsafe.Add(mBase, _c_F_clusterLoadConfig[2]))
 	v476 = *(*int32)(unsafe.Add(mBase, uint32(v475)+32))
 	v480 = F_sdsnewlen(m, v472+int32(8), int32(40))
 	mBase = m.M
@@ -3543,7 +3543,7 @@ L160:
 	}
 L161:
 	;
-	v517 = *(*int32)(unsafe.Add(mBase, _consts[15]))
+	v517 = *(*int32)(unsafe.Add(mBase, _c_F_clusterLoadConfig[1]))
 	if int32(3) < v517 {
 		goto L162
 	} else {
@@ -3564,7 +3564,7 @@ L163:
 	;
 	v520 = *(*int32)(unsafe.Add(mBase, uint32(v146)))
 	*(*int32)(unsafe.Add(mBase, uint32(v28)+112)) = v520
-	F__serverLog(m, int32(3), int32(_a195), v28+int32(112))
+	F__serverLog(m, int32(3), int32(_a_F_clusterLoadConfig_17), v28+int32(112))
 	mBase = m.M
 	v527 = m.ExcPending
 	if v527 != 0 {
@@ -3587,7 +3587,7 @@ L166:
 	}
 L167:
 	;
-	v567 = F_sdssplitlen(m, v542, v562, int32(_a196), int32(1), v28+int32(120))
+	v567 = F_sdssplitlen(m, v542, v562, int32(_a_F_clusterLoadConfig_18), int32(1), v28+int32(120))
 	mBase = m.M
 	v568 = m.ExcPending
 	if v568 != 0 {
@@ -3904,7 +3904,7 @@ L210:
 	goto L206
 L211:
 	;
-	v716 = F_sdssplitlen(m, v691, v711, int32(_a197), int32(1), v28+int32(116))
+	v716 = F_sdssplitlen(m, v691, v711, int32(_a_F_clusterLoadConfig_19), int32(1), v28+int32(116))
 	mBase = m.M
 	v717 = m.ExcPending
 	if v717 != 0 {
@@ -4055,7 +4055,7 @@ L234:
 	}
 L235:
 	;
-	v764 = F_memchr(m, int32(_a198), v757, int32(15))
+	v764 = F_memchr(m, int32(_a_F_clusterLoadConfig_20), v757, int32(15))
 	mBase = m.M
 	if v764 != 0 {
 		v770 = v755
@@ -4170,7 +4170,7 @@ L251:
 	}
 L252:
 	;
-	v822 = F_memchr(m, int32(_a198), v815, int32(15))
+	v822 = F_memchr(m, int32(_a_F_clusterLoadConfig_20), v815, int32(15))
 	mBase = m.M
 	if v822 != 0 {
 		v828 = v813
@@ -4251,7 +4251,7 @@ L260:
 L261:
 	;
 	v910 = v878 << (uint(int32(4)) % 32)
-	v913 = *(*int32)(unsafe.Add(mBase, uint32(v910)+uint32(_consts[92])))
+	v913 = *(*int32)(unsafe.Add(mBase, uint32(v910)+uint32(_c_F_clusterLoadConfig[4])))
 	if v913&int32(3) == int32(0) {
 		v935 = v913
 		goto L270
@@ -4558,7 +4558,7 @@ L307:
 	}
 L308:
 	;
-	v1062 = *(*int32)(unsafe.Add(mBase, uint32(v910)+uint32(_consts[93])))
+	v1062 = *(*int32)(unsafe.Add(mBase, uint32(v910)+uint32(_c_F_clusterLoadConfig[5])))
 	v1063 = m.T0[v1062].(func(*base.Module, int32, int32, int32) int32)(m, v540, v1041, v1061)
 	mBase = m.M
 	v1064 = m.ExcPending
@@ -4847,7 +4847,7 @@ L355:
 	goto L357
 L356:
 	;
-	v1358 = *(*int32)(unsafe.Add(mBase, _consts[89]))
+	v1358 = *(*int32)(unsafe.Add(mBase, _c_F_clusterLoadConfig[6]))
 	if v1358 == int32(0) {
 		goto L371
 	} else {
@@ -5183,7 +5183,7 @@ L406:
 	}
 L407:
 	;
-	v1518 = *(*int32)(unsafe.Add(mBase, _consts[89]))
+	v1518 = *(*int32)(unsafe.Add(mBase, _c_F_clusterLoadConfig[6]))
 	if v1518 != 0 {
 		goto L424
 	} else {
@@ -5342,7 +5342,7 @@ L431:
 	goto L428
 L432:
 	;
-	v1569 = int32(_a199)
+	v1569 = int32(_a_F_clusterLoadConfig_21)
 	v1572 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v1532))))
 	if v1572 != 0 {
 		goto L442
@@ -5382,7 +5382,7 @@ L438:
 	}
 L439:
 	;
-	v1618 = int32(_a200)
+	v1618 = int32(_a_F_clusterLoadConfig_22)
 	v1621 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v1532))))
 	if v1621 != 0 {
 		goto L458
@@ -5479,7 +5479,7 @@ L451:
 	goto L446
 L452:
 	;
-	v1609 = *(*int32)(unsafe.Add(mBase, _consts[90]))
+	v1609 = *(*int32)(unsafe.Add(mBase, _c_F_clusterLoadConfig[2]))
 	v1610 = *(*int32)(unsafe.Add(mBase, uint32(v1609)))
 	if v1610 != 0 {
 		goto L6
@@ -5489,13 +5489,13 @@ L452:
 L453:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v1609))) = v540
-	*(*int32)(unsafe.Add(mBase, _consts[94])) = v540
+	*(*int32)(unsafe.Add(mBase, _c_F_clusterLoadConfig[7])) = v540
 	v1614 = *(*int32)(unsafe.Add(mBase, uint32(v540)+88))
 	*(*int32)(unsafe.Add(mBase, uint32(v540)+88)) = v1614 | int32(16)
 	goto L438
 L454:
 	;
-	v1702 = int32(_a201)
+	v1702 = int32(_a_F_clusterLoadConfig_23)
 	v1705 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v1532))))
 	if v1705 != 0 {
 		goto L486
@@ -5597,7 +5597,7 @@ L467:
 	goto L462
 L468:
 	;
-	v1659 = int32(_a202)
+	v1659 = int32(_a_F_clusterLoadConfig_24)
 	v1662 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v1532))))
 	if v1662 != 0 {
 		goto L471
@@ -5697,7 +5697,7 @@ L481:
 	goto L455
 L482:
 	;
-	v1786 = int32(_a203)
+	v1786 = int32(_a_F_clusterLoadConfig_25)
 	v1789 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v1532))))
 	if v1789 != 0 {
 		goto L513
@@ -5799,7 +5799,7 @@ L495:
 	goto L490
 L496:
 	;
-	v1743 = int32(_a204)
+	v1743 = int32(_a_F_clusterLoadConfig_26)
 	v1746 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v1532))))
 	if v1746 != 0 {
 		goto L499
@@ -5899,7 +5899,7 @@ L509:
 	goto L483
 L510:
 	;
-	v1829 = int32(_a205)
+	v1829 = int32(_a_F_clusterLoadConfig_27)
 	v1832 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v1532))))
 	if v1832 != 0 {
 		goto L527
@@ -6001,7 +6001,7 @@ L523:
 	goto L438
 L524:
 	;
-	v1874 = int32(_a206)
+	v1874 = int32(_a_F_clusterLoadConfig_28)
 	v1877 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v1532))))
 	if v1877 != 0 {
 		goto L541
@@ -6106,7 +6106,7 @@ L537:
 	goto L438
 L538:
 	;
-	v1917 = int32(_a207)
+	v1917 = int32(_a_F_clusterLoadConfig_29)
 	v1920 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v1532))))
 	if v1920 != 0 {
 		goto L555
@@ -6208,7 +6208,7 @@ L551:
 	goto L438
 L552:
 	;
-	v1962 = int32(_a208)
+	v1962 = int32(_a_F_clusterLoadConfig_30)
 	v1965 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v1532))))
 	if v1965 != 0 {
 		goto L569
@@ -6313,7 +6313,7 @@ L565:
 	goto L438
 L566:
 	;
-	v2005 = int32(_a209)
+	v2005 = int32(_a_F_clusterLoadConfig_31)
 	v2008 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v1532))))
 	if v2008 != 0 {
 		goto L582
@@ -6514,7 +6514,7 @@ L594:
 	goto L662
 L595:
 	;
-	v2337 = *(*int32)(unsafe.Add(mBase, _consts[95]))
+	v2337 = *(*int32)(unsafe.Add(mBase, _c_F_clusterLoadConfig[8]))
 	v2338 = m.T0[v2337].(func(*base.Module, int32) int32)(m, v540)
 	mBase = m.M
 	v2339 = m.ExcPending
@@ -6655,7 +6655,7 @@ L614:
 	goto L1
 L615:
 	;
-	v2175 = *(*int32)(unsafe.Add(mBase, _consts[95]))
+	v2175 = *(*int32)(unsafe.Add(mBase, _c_F_clusterLoadConfig[8]))
 	v2176 = m.T0[v2175].(func(*base.Module, int32) int32)(m, v540)
 	mBase = m.M
 	v2177 = m.ExcPending
@@ -6913,7 +6913,7 @@ L649:
 	goto L646
 L650:
 	;
-	v2282 = *(*int32)(unsafe.Add(mBase, _consts[15]))
+	v2282 = *(*int32)(unsafe.Add(mBase, _c_F_clusterLoadConfig[1]))
 	if int32(2) < v2282 {
 		goto L651
 	} else {
@@ -6936,7 +6936,7 @@ L652:
 	v2287 = int32(8)
 	*(*int32)(unsafe.Add(mBase, uint32(v28)+88)) = v2173 + v2287
 	*(*int32)(unsafe.Add(mBase, uint32(v28)+80)) = v540 + v2287
-	F__serverLog(m, int32(2), int32(_a210), v28+int32(80))
+	F__serverLog(m, int32(2), int32(_a_F_clusterLoadConfig_32), v28+int32(80))
 	mBase = m.M
 	v2298 = m.ExcPending
 	if v2298 != 0 {
@@ -7543,7 +7543,7 @@ L744:
 	goto L1
 L745:
 	;
-	v2692 = *(*int32)(unsafe.Add(mBase, _consts[90]))
+	v2692 = *(*int32)(unsafe.Add(mBase, _c_F_clusterLoadConfig[2]))
 	if v2518&int32(255) != int32(62) {
 		goto L766
 	} else {
@@ -7613,7 +7613,7 @@ L755:
 	}
 L756:
 	;
-	v2665 = *(*int32)(unsafe.Add(mBase, _consts[90]))
+	v2665 = *(*int32)(unsafe.Add(mBase, _c_F_clusterLoadConfig[2]))
 	v2666 = *(*int32)(unsafe.Add(mBase, uint32(v2665)+32))
 	v2667 = F_dictFind(m, v2666, v2662)
 	mBase = m.M
@@ -7657,7 +7657,7 @@ L761:
 	goto L746
 L762:
 	;
-	v2680 = *(*int32)(unsafe.Add(mBase, _consts[90]))
+	v2680 = *(*int32)(unsafe.Add(mBase, _c_F_clusterLoadConfig[2]))
 	v2681 = *(*int32)(unsafe.Add(mBase, uint32(v2680)+32))
 	v2685 = F_sdsnewlen(m, v2677+int32(8), int32(40))
 	mBase = m.M
@@ -7719,7 +7719,7 @@ L768:
 	}
 L769:
 	;
-	v2708 = *(*int32)(unsafe.Add(mBase, _consts[90]))
+	v2708 = *(*int32)(unsafe.Add(mBase, _c_F_clusterLoadConfig[2]))
 	v2709 = *(*int32)(unsafe.Add(mBase, uint32(v2708)+44))
 	if v2698 == int32(0) {
 		goto L773
@@ -7735,7 +7735,7 @@ L770:
 	}
 L771:
 	;
-	v2703 = *(*int32)(unsafe.Add(mBase, _consts[90]))
+	v2703 = *(*int32)(unsafe.Add(mBase, _c_F_clusterLoadConfig[2]))
 	v2704 = *(*int32)(unsafe.Add(mBase, uint32(v2703)+44))
 	v2705 = F_dictDelete(m, v2704, v2570)
 	mBase = m.M
@@ -7777,7 +7777,7 @@ L777:
 	}
 L778:
 	;
-	v2726 = *(*int32)(unsafe.Add(mBase, _consts[90]))
+	v2726 = *(*int32)(unsafe.Add(mBase, _c_F_clusterLoadConfig[2]))
 	v2727 = *(*int32)(unsafe.Add(mBase, uint32(v2726)+48))
 	if v2716 == int32(0) {
 		goto L782
@@ -7793,7 +7793,7 @@ L779:
 	}
 L780:
 	;
-	v2721 = *(*int32)(unsafe.Add(mBase, _consts[90]))
+	v2721 = *(*int32)(unsafe.Add(mBase, _c_F_clusterLoadConfig[2]))
 	v2722 = *(*int32)(unsafe.Add(mBase, uint32(v2721)+48))
 	v2723 = F_dictDelete(m, v2722, v2570)
 	mBase = m.M
@@ -8159,7 +8159,7 @@ L835:
 	}
 L836:
 	;
-	v2895 = *(*int32)(unsafe.Add(mBase, _consts[90]))
+	v2895 = *(*int32)(unsafe.Add(mBase, _c_F_clusterLoadConfig[2]))
 	v2896 = v2887
 	v2899 = v2895
 	goto L837
@@ -8201,19 +8201,19 @@ L840:
 	}
 L841:
 	;
-	v2979 = int32(_a69)
-	v2980 = *(*int32)(unsafe.Add(mBase, _consts[90]))
+	v2979 = int32(_a_F_clusterLoadConfig_33)
+	v2980 = *(*int32)(unsafe.Add(mBase, _c_F_clusterLoadConfig[2]))
 	*(*int32)(unsafe.Add(mBase, uint32(v2980+v2922)+52)) = v540
 	v2985 = v2980 + int32(base.Ui32(v2896)>>(uint(int32(3))%32))
-	v2986 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v2985)+uint32(_consts[96]))))
+	v2986 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v2985)+uint32(_c_F_clusterLoadConfig[9]))))
 	v2991 = v2986 & base.I32_rotl(int32(-2), v2896&int32(7))
-	*(*uint8)(unsafe.Add(mBase, uint32(v2985)+uint32(_consts[96]))) = uint8(v2991)
-	v2994 = *(*int32)(unsafe.Add(mBase, _consts[90]))
+	*(*uint8)(unsafe.Add(mBase, uint32(v2985)+uint32(_c_F_clusterLoadConfig[9]))) = uint8(v2991)
+	v2994 = *(*int32)(unsafe.Add(mBase, _c_F_clusterLoadConfig[2]))
 	v2997 = v2994 + v2896*int32(24)
 	v3000 = int64(0)
-	*(*int64)(unsafe.Add(mBase, uint32(v2997)+uint32(_consts[97]))) = v3000
-	*(*int64)(unsafe.Add(mBase, uint32(v2997)+uint32(_consts[98]))) = v3000
-	*(*int64)(unsafe.Add(mBase, uint32(v2997)+uint32(_consts[99]))) = v3000
+	*(*int64)(unsafe.Add(mBase, uint32(v2997)+uint32(_c_F_clusterLoadConfig[10]))) = v3000
+	*(*int64)(unsafe.Add(mBase, uint32(v2997)+uint32(_c_F_clusterLoadConfig[11]))) = v3000
+	*(*int64)(unsafe.Add(mBase, uint32(v2997)+uint32(_c_F_clusterLoadConfig[12]))) = v3000
 	goto L853
 L842:
 	;
@@ -8232,7 +8232,7 @@ L843:
 	}
 L844:
 	;
-	v2950 = *(*int32)(unsafe.Add(mBase, _consts[90]))
+	v2950 = *(*int32)(unsafe.Add(mBase, _c_F_clusterLoadConfig[2]))
 	v2951 = *(*int32)(unsafe.Add(mBase, uint32(v2950)+32))
 	F_dictInitIterator(m, v2930, v2951)
 	mBase = m.M
@@ -8288,7 +8288,7 @@ L852:
 	goto L842
 L853:
 	;
-	v3011 = *(*int32)(unsafe.Add(mBase, _consts[90]))
+	v3011 = *(*int32)(unsafe.Add(mBase, _c_F_clusterLoadConfig[2]))
 	v3012 = v3011
 	goto L839
 L854:
@@ -8345,7 +8345,7 @@ L863:
 	}
 L864:
 	;
-	v3141 = *(*int32)(unsafe.Add(mBase, _consts[15]))
+	v3141 = *(*int32)(unsafe.Add(mBase, _c_F_clusterLoadConfig[1]))
 	if int32(2) < v3141 {
 		goto L865
 	} else {
@@ -8353,7 +8353,7 @@ L864:
 	}
 L865:
 	;
-	v3157 = *(*int32)(unsafe.Add(mBase, _consts[90]))
+	v3157 = *(*int32)(unsafe.Add(mBase, _c_F_clusterLoadConfig[2]))
 	v3158 = *(*int32)(unsafe.Add(mBase, uint32(v3157)+32))
 	v3159 = F_dictGetSafeIterator(m, v3158)
 	mBase = m.M
@@ -8365,9 +8365,9 @@ L865:
 	}
 L866:
 	;
-	v3145 = *(*int32)(unsafe.Add(mBase, _consts[94]))
+	v3145 = *(*int32)(unsafe.Add(mBase, _c_F_clusterLoadConfig[7]))
 	*(*int32)(unsafe.Add(mBase, uint32(v28)+48)) = v3145 + int32(8)
-	F__serverLog(m, int32(2), int32(_a211), v28+int32(48))
+	F__serverLog(m, int32(2), int32(_a_F_clusterLoadConfig_34), v28+int32(48))
 	mBase = m.M
 	v3154 = m.ExcPending
 	if v3154 != 0 {
@@ -8614,7 +8614,7 @@ L902:
 L903:
 	;
 	v3301 = int32(0)
-	v3303 = *(*int32)(unsafe.Add(mBase, _consts[90]))
+	v3303 = *(*int32)(unsafe.Add(mBase, _c_F_clusterLoadConfig[2]))
 	v3304 = *(*int64)(unsafe.Add(mBase, uint32(v3303)+8))
 	if base.Ui64(v3169) <= base.Ui64(v3304) {
 		v3459 = v3301
@@ -8868,7 +8868,7 @@ L939:
 	goto L907
 L940:
 	;
-	v3451 = *(*int32)(unsafe.Add(mBase, _consts[90]))
+	v3451 = *(*int32)(unsafe.Add(mBase, _c_F_clusterLoadConfig[2]))
 	v3452 = *(*int64)(unsafe.Add(mBase, uint32(v3451)+8))
 	if base.Ui64(v3452) < base.Ui64(v3318) {
 		goto L941

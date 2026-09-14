@@ -22,7 +22,7 @@ func F_freeVsetBucket(m *base.Module, l0 int32) {
 	case 0:
 		return
 	case 1:
-		F__serverAssert(m, int32(_a2513), int32(_a2500), int32(781))
+		F__serverAssert(m, int32(_a_F_freeVsetBucket_0), int32(_a_F_freeVsetBucket_1), int32(781))
 		v8 = m.ExcPending
 		if v8 != 0 {
 			return
@@ -38,7 +38,7 @@ func F_freeVsetBucket(m *base.Module, l0 int32) {
 		} else {
 			switch l0 & int32(6) {
 			default:
-				F__serverPanic_1(m, int32(_a2500), int32(1136), int32(_a2532), int32(0))
+				F__serverPanic_1(m, int32(_a_F_freeVsetBucket_1), int32(1136), int32(_a_F_freeVsetBucket_2), int32(0))
 				v30 = m.ExcPending
 				if v30 != 0 {
 					return
@@ -232,7 +232,7 @@ L6:
 	}
 L7:
 	;
-	F__serverAssert(m, int32(_a2513), int32(_a2500), int32(781))
+	F__serverAssert(m, int32(_a_F_vsetNext_0), int32(_a_F_vsetNext_1), int32(781))
 	mBase = m.M
 	v36 = m.ExcPending
 	if v36 != 0 {
@@ -269,7 +269,7 @@ L12:
 	}
 L13:
 	;
-	F__serverAssert(m, int32(_a2513), int32(_a2500), int32(781))
+	F__serverAssert(m, int32(_a_F_vsetNext_0), int32(_a_F_vsetNext_1), int32(781))
 	mBase = m.M
 	v226 = m.ExcPending
 	if v226 != 0 {
@@ -279,7 +279,7 @@ L13:
 	}
 L14:
 	;
-	F__serverPanic_1(m, int32(_a2500), int32(2239), int32(_a2533), int32(0))
+	F__serverPanic_1(m, int32(_a_F_vsetNext_1), int32(2239), int32(_a_F_vsetNext_2), int32(0))
 	mBase = m.M
 	v220 = m.ExcPending
 	if v220 != 0 {
@@ -384,7 +384,7 @@ L24:
 L25:
 	;
 	v66 = int32(0)
-	v68 = F_raxSeek(m, l0, int32(_a67), v66, v66)
+	v68 = F_raxSeek(m, l0, int32(_a_F_vsetNext_3), v66, v66)
 	mBase = m.M
 	v69 = m.ExcPending
 	if v69 != 0 {
@@ -440,7 +440,7 @@ L30:
 	}
 L31:
 	;
-	F__serverAssert(m, int32(_a2513), int32(_a2500), int32(781))
+	F__serverAssert(m, int32(_a_F_vsetNext_0), int32(_a_F_vsetNext_1), int32(781))
 	mBase = m.M
 	v81 = m.ExcPending
 	if v81 != 0 {
@@ -686,7 +686,7 @@ func F_vsetRemoveEntryWithExpiry(m *base.Module, l0 int32, l1 int32, l2 int32, l
 	m.G0 = v10
 	v12 = *(*int32)(unsafe.Add(mBase, uint32(l0)))
 	if v12 == int32(0) {
-		F__serverAssert(m, int32(_a2520), int32(_a2500), int32(1840))
+		F__serverAssert(m, int32(_a_F_vsetRemoveEntryWithExpiry_0), int32(_a_F_vsetRemoveEntryWithExpiry_1), int32(1840))
 		mBase = m.M
 		v89 = m.ExcPending
 		if v89 != 0 {
@@ -721,7 +721,7 @@ func F_vsetRemoveEntryWithExpiry(m *base.Module, l0 int32, l1 int32, l2 int32, l
 			} else {
 				switch v12 & int32(6) {
 				default:
-					F__serverPanic_1(m, int32(_a2500), int32(1859), int32(_a2521), int32(0))
+					F__serverPanic_1(m, int32(_a_F_vsetRemoveEntryWithExpiry_1), int32(1859), int32(_a_F_vsetRemoveEntryWithExpiry_2), int32(0))
 					mBase = m.M
 					v67 = m.ExcPending
 					if v67 != 0 {
@@ -775,7 +775,7 @@ func F_vsetRemoveEntryWithExpiry(m *base.Module, l0 int32, l1 int32, l2 int32, l
 						return int32(0)
 					} else {
 						if v46 == int32(-1) {
-							F__serverAssert(m, int32(_a2522), int32(_a2500), int32(1465))
+							F__serverAssert(m, int32(_a_F_vsetRemoveEntryWithExpiry_3), int32(_a_F_vsetRemoveEntryWithExpiry_1), int32(1465))
 							mBase = m.M
 							v95 = m.ExcPending
 							if v95 != 0 {
@@ -1059,7 +1059,7 @@ L2:
 	}
 L3:
 	;
-	F__serverAssert(m, int32(_a2513), int32(_a2500), int32(781))
+	F__serverAssert(m, int32(_a_F_vsetRemoveExpired_0), int32(_a_F_vsetRemoveExpired_1), int32(781))
 	mBase = m.M
 	v32 = m.ExcPending
 	if v32 != 0 {
@@ -1127,7 +1127,7 @@ L10:
 	}
 L11:
 	;
-	F__serverPanic_1(m, int32(_a2500), int32(2135), int32(_a2529), int32(0))
+	F__serverPanic_1(m, int32(_a_F_vsetRemoveExpired_1), int32(2135), int32(_a_F_vsetRemoveExpired_2), int32(0))
 	mBase = m.M
 	v380 = m.ExcPending
 	if v380 != 0 {
@@ -1187,7 +1187,7 @@ L19:
 L20:
 	;
 	v84 = int32(0)
-	v86 = F_raxSeek(m, v20+int32(28), int32(_a67), v84, v84)
+	v86 = F_raxSeek(m, v20+int32(28), int32(_a_F_vsetRemoveExpired_3), v84, v84)
 	mBase = m.M
 	v87 = m.ExcPending
 	if v87 != 0 {
@@ -1217,7 +1217,7 @@ L22:
 	}
 L23:
 	;
-	F__serverAssert(m, int32(_a2507), int32(_a2500), int32(600))
+	F__serverAssert(m, int32(_a_F_vsetRemoveExpired_4), int32(_a_F_vsetRemoveExpired_1), int32(600))
 	mBase = m.M
 	v324 = m.ExcPending
 	if v324 != 0 {
@@ -1227,7 +1227,7 @@ L23:
 	}
 L24:
 	;
-	F__serverAssert(m, int32(_a2503), int32(_a2500), int32(797))
+	F__serverAssert(m, int32(_a_F_vsetRemoveExpired_5), int32(_a_F_vsetRemoveExpired_1), int32(797))
 	mBase = m.M
 	v318 = m.ExcPending
 	if v318 != 0 {
@@ -1237,7 +1237,7 @@ L24:
 	}
 L25:
 	;
-	F__serverAssert(m, int32(_a2530), int32(_a2500), int32(1566))
+	F__serverAssert(m, int32(_a_F_vsetRemoveExpired_6), int32(_a_F_vsetRemoveExpired_1), int32(1566))
 	mBase = m.M
 	v312 = m.ExcPending
 	if v312 != 0 {
@@ -1286,7 +1286,7 @@ L29:
 	}
 L30:
 	;
-	F__serverAssert(m, int32(_a2513), int32(_a2500), int32(781))
+	F__serverAssert(m, int32(_a_F_vsetRemoveExpired_0), int32(_a_F_vsetRemoveExpired_1), int32(781))
 	mBase = m.M
 	v104 = m.ExcPending
 	if v104 != 0 {
@@ -1380,7 +1380,7 @@ L41:
 	}
 L42:
 	;
-	F__serverPanic_1(m, int32(_a2500), int32(1589), int32(_a2531), int32(0))
+	F__serverPanic_1(m, int32(_a_F_vsetRemoveExpired_1), int32(1589), int32(_a_F_vsetRemoveExpired_7), int32(0))
 	mBase = m.M
 	v248 = m.ExcPending
 	if v248 != 0 {
@@ -1765,7 +1765,7 @@ L100:
 	}
 L101:
 	;
-	F__serverAssert(m, int32(_a2507), int32(_a2500), int32(600))
+	F__serverAssert(m, int32(_a_F_vsetRemoveExpired_4), int32(_a_F_vsetRemoveExpired_1), int32(600))
 	mBase = m.M
 	v440 = m.ExcPending
 	if v440 != 0 {
@@ -2116,7 +2116,7 @@ L4:
 	}
 L5:
 	;
-	F__serverAssert(m, int32(_a2525), int32(_a2500), int32(663))
+	F__serverAssert(m, int32(_a_F_vsetUpdateEntry_0), int32(_a_F_vsetUpdateEntry_1), int32(663))
 	mBase = m.M
 	v243 = m.ExcPending
 	if v243 != 0 {
@@ -2126,7 +2126,7 @@ L5:
 	}
 L6:
 	;
-	F__serverAssert(m, int32(_a2525), int32(_a2500), int32(663))
+	F__serverAssert(m, int32(_a_F_vsetUpdateEntry_0), int32(_a_F_vsetUpdateEntry_1), int32(663))
 	mBase = m.M
 	v237 = m.ExcPending
 	if v237 != 0 {
@@ -2136,7 +2136,7 @@ L6:
 	}
 L7:
 	;
-	F__serverAssert(m, int32(_a2526), int32(_a2500), int32(2044))
+	F__serverAssert(m, int32(_a_F_vsetUpdateEntry_2), int32(_a_F_vsetUpdateEntry_1), int32(2044))
 	mBase = m.M
 	v231 = m.ExcPending
 	if v231 != 0 {
@@ -2220,7 +2220,7 @@ L17:
 	}
 L18:
 	;
-	F__serverAssert(m, int32(_a2513), int32(_a2500), int32(781))
+	F__serverAssert(m, int32(_a_F_vsetUpdateEntry_3), int32(_a_F_vsetUpdateEntry_1), int32(781))
 	mBase = m.M
 	v42 = m.ExcPending
 	if v42 != 0 {
@@ -2438,7 +2438,7 @@ L46:
 	}
 L47:
 	;
-	F__serverAssert(m, int32(_a2513), int32(_a2500), int32(781))
+	F__serverAssert(m, int32(_a_F_vsetUpdateEntry_3), int32(_a_F_vsetUpdateEntry_1), int32(781))
 	mBase = m.M
 	v133 = m.ExcPending
 	if v133 != 0 {
@@ -2455,7 +2455,7 @@ L48:
 	}
 L49:
 	;
-	F__serverPanic_1(m, int32(_a2500), int32(1991), int32(_a2527), int32(0))
+	F__serverPanic_1(m, int32(_a_F_vsetUpdateEntry_1), int32(1991), int32(_a_F_vsetUpdateEntry_4), int32(0))
 	mBase = m.M
 	v200 = m.ExcPending
 	if v200 != 0 {
@@ -2594,7 +2594,7 @@ L68:
 	}
 L69:
 	;
-	F__serverAssert(m, int32(_a2528), int32(_a2500), int32(1955))
+	F__serverAssert(m, int32(_a_F_vsetUpdateEntry_5), int32(_a_F_vsetUpdateEntry_1), int32(1955))
 	mBase = m.M
 	v193 = m.ExcPending
 	if v193 != 0 {

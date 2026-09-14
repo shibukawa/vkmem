@@ -30,7 +30,7 @@ func F_copyReplicaOutputBuffer(m *base.Module, l0 int32, l1 int32) {
 	_ = v26
 	v4 = *(*int32)(unsafe.Add(mBase, uint32(l1)+180))
 	if v4 != 0 {
-		F__serverAssert(m, int32(_a1661), int32(_a1630), int32(1784))
+		F__serverAssert(m, int32(_a_F_copyReplicaOutputBuffer_0), int32(_a_F_copyReplicaOutputBuffer_1), int32(1784))
 		mBase = m.M
 		v26 = m.ExcPending
 		if v26 != 0 {
@@ -46,7 +46,7 @@ func F_copyReplicaOutputBuffer(m *base.Module, l0 int32, l1 int32) {
 		v5 = *(*int32)(unsafe.Add(mBase, uint32(l1)+132))
 		v6 = *(*int32)(unsafe.Add(mBase, uint32(v5)+20))
 		if v6 != 0 {
-			F__serverAssert(m, int32(_a1661), int32(_a1630), int32(1784))
+			F__serverAssert(m, int32(_a_F_copyReplicaOutputBuffer_0), int32(_a_F_copyReplicaOutputBuffer_1), int32(1784))
 			mBase = m.M
 			v26 = m.ExcPending
 			if v26 != 0 {
@@ -114,8 +114,8 @@ func F_freeReplicaKeysWithExpireAsync(m *base.Module, l0 int32) {
 		}
 	} else {
 		v13 = int32(0)
-		v15 = *(*int32)(unsafe.Add(mBase, _consts[373]))
-		*(*int32)(unsafe.Add(mBase, _consts[373])) = v15 + v10
+		v15 = *(*int32)(unsafe.Add(mBase, _c_F_freeReplicaKeysWithExpireAsync[0]))
+		*(*int32)(unsafe.Add(mBase, _c_F_freeReplicaKeysWithExpireAsync[0])) = v15 + v10
 		*(*int32)(unsafe.Add(mBase, uint32(v6))) = l0
 		F_bioCreateLazyFreeJob(m, int32(558), int32(1), v6)
 		mBase = m.M
@@ -201,7 +201,7 @@ func F_freeReplicaReferencedReplBuffer(m *base.Module, l0 int32) {
 			v81 = *(*int32)(unsafe.Add(mBase, uint32(v78)+8))
 			v82 = *(*int32)(unsafe.Add(mBase, uint32(v81)))
 			if v82 <= int32(0) {
-				F__serverAssert(m, int32(_a1920), int32(_a1913), int32(435))
+				F__serverAssert(m, int32(_a_F_freeReplicaReferencedReplBuffer_0), int32(_a_F_freeReplicaReferencedReplBuffer_1), int32(435))
 				mBase = m.M
 				v103 = m.ExcPending
 				if v103 != 0 {
@@ -239,7 +239,7 @@ func F_freeReplicaReferencedReplBuffer(m *base.Module, l0 int32) {
 		v27 = int64(4278190080)
 		v29 = int64(8)
 		*(*int64)(unsafe.Add(mBase, uint32(v8)+24)) = v15<<(uint(v16)%64) | v15&v18<<(uint(v20)%64) | (v15&v23<<(uint(v25)%64) | v15&v27<<(uint(v29)%64)) | (int64(base.Ui64(v15)>>(uint(v29)%64))&v27 | int64(base.Ui64(v15)>>(uint(v25)%64))&v23 | (int64(base.Ui64(v15)>>(uint(v20)%64))&v18 | int64(base.Ui64(v15)>>(uint(v16)%64))))
-		v53 = *(*int32)(unsafe.Add(mBase, _consts[569]))
+		v53 = *(*int32)(unsafe.Add(mBase, _c_F_freeReplicaReferencedReplBuffer[0]))
 		v58 = F_raxRemove(m, v53, v8+int32(24), int32(8), int32(0))
 		mBase = m.M
 		v59 = m.ExcPending
@@ -258,7 +258,7 @@ func F_freeReplicaReferencedReplBuffer(m *base.Module, l0 int32) {
 					v81 = *(*int32)(unsafe.Add(mBase, uint32(v78)+8))
 					v82 = *(*int32)(unsafe.Add(mBase, uint32(v81)))
 					if v82 <= int32(0) {
-						F__serverAssert(m, int32(_a1920), int32(_a1913), int32(435))
+						F__serverAssert(m, int32(_a_F_freeReplicaReferencedReplBuffer_0), int32(_a_F_freeReplicaReferencedReplBuffer_1), int32(435))
 						mBase = m.M
 						v103 = m.ExcPending
 						if v103 != 0 {
@@ -287,7 +287,7 @@ func F_freeReplicaReferencedReplBuffer(m *base.Module, l0 int32) {
 					}
 				}
 			} else {
-				v63 = *(*int32)(unsafe.Add(mBase, _consts[28]))
+				v63 = *(*int32)(unsafe.Add(mBase, _c_F_freeReplicaReferencedReplBuffer[1]))
 				if int32(0) < v63 {
 					v77 = *(*int32)(unsafe.Add(mBase, uint32(l0)+104))
 					v78 = *(*int32)(unsafe.Add(mBase, uint32(v77)+184))
@@ -300,7 +300,7 @@ func F_freeReplicaReferencedReplBuffer(m *base.Module, l0 int32) {
 						v81 = *(*int32)(unsafe.Add(mBase, uint32(v78)+8))
 						v82 = *(*int32)(unsafe.Add(mBase, uint32(v81)))
 						if v82 <= int32(0) {
-							F__serverAssert(m, int32(_a1920), int32(_a1913), int32(435))
+							F__serverAssert(m, int32(_a_F_freeReplicaReferencedReplBuffer_0), int32(_a_F_freeReplicaReferencedReplBuffer_1), int32(435))
 							mBase = m.M
 							v103 = m.ExcPending
 							if v103 != 0 {
@@ -338,7 +338,7 @@ func F_freeReplicaReferencedReplBuffer(m *base.Module, l0 int32) {
 						v68 = *(*int64)(unsafe.Add(mBase, uint32(l0)))
 						*(*int64)(unsafe.Add(mBase, uint32(v8)+8)) = v68
 						*(*int32)(unsafe.Add(mBase, uint32(v8))) = v66
-						F__serverLog(m, int32(0), int32(_a1923), v8)
+						F__serverLog(m, int32(0), int32(_a_F_freeReplicaReferencedReplBuffer_2), v8)
 						mBase = m.M
 						v74 = m.ExcPending
 						if v74 != 0 {
@@ -355,7 +355,7 @@ func F_freeReplicaReferencedReplBuffer(m *base.Module, l0 int32) {
 								v81 = *(*int32)(unsafe.Add(mBase, uint32(v78)+8))
 								v82 = *(*int32)(unsafe.Add(mBase, uint32(v81)))
 								if v82 <= int32(0) {
-									F__serverAssert(m, int32(_a1920), int32(_a1913), int32(435))
+									F__serverAssert(m, int32(_a_F_freeReplicaReferencedReplBuffer_0), int32(_a_F_freeReplicaReferencedReplBuffer_1), int32(435))
 									mBase = m.M
 									v103 = m.ExcPending
 									if v103 != 0 {
@@ -404,7 +404,7 @@ func F_getReplicaKeyWithExpireCount(m *base.Module) int32 {
 	var v11 int32
 	_ = v11
 	v1 = int32(0)
-	v5 = *(*int32)(unsafe.Add(mBase, _consts[330]))
+	v5 = *(*int32)(unsafe.Add(mBase, _c_F_getReplicaKeyWithExpireCount[0]))
 	if v5 == v1 {
 		v11 = v1
 	} else {
@@ -601,7 +601,7 @@ func F_removeReplicaFromPsyncWait(m *base.Module, l0 int32) {
 	v27 = int64(8)
 	*(*int64)(unsafe.Add(mBase, uint32(v10)+40)) = v13<<(uint(v14)%64) | v13&v16<<(uint(v18)%64) | (v13&v21<<(uint(v23)%64) | v13&v25<<(uint(v27)%64)) | (int64(base.Ui64(v13)>>(uint(v27)%64))&v25 | int64(base.Ui64(v13)>>(uint(v23)%64))&v21 | (int64(base.Ui64(v13)>>(uint(v18)%64))&v16 | int64(base.Ui64(v13)>>(uint(v14)%64))))
 	*(*int32)(unsafe.Add(mBase, uint32(v10)+36)) = int32(0)
-	v53 = *(*int32)(unsafe.Add(mBase, _consts[569]))
+	v53 = *(*int32)(unsafe.Add(mBase, _c_F_removeReplicaFromPsyncWait[0]))
 	v55 = v10 + int32(40)
 	v56 = int32(8)
 	v58 = v10 + int32(36)
@@ -610,7 +610,7 @@ func F_removeReplicaFromPsyncWait(m *base.Module, l0 int32) {
 	goto L4
 L1:
 	;
-	v254 = int32(_a1919)
+	v254 = int32(_a_F_removeReplicaFromPsyncWait_0)
 	v255 = *(*int32)(unsafe.Add(mBase, uint32(v10)+36))
 	v256 = *(*int32)(unsafe.Add(mBase, uint32(v255)+104))
 	v257 = *(*int32)(unsafe.Add(mBase, uint32(v256)+184))
@@ -880,7 +880,7 @@ L38:
 	goto L34
 L39:
 	;
-	F__serverAssert(m, int32(_a1920), int32(_a1913), int32(303))
+	F__serverAssert(m, int32(_a_F_removeReplicaFromPsyncWait_1), int32(_a_F_removeReplicaFromPsyncWait_2), int32(303))
 	mBase = m.M
 	v349 = m.ExcPending
 	if v349 != 0 {
@@ -894,7 +894,7 @@ L40:
 	*(*int32)(unsafe.Add(mBase, uint32(v256)+184)) = v272
 	v274 = *(*int32)(unsafe.Add(mBase, uint32(v255)+204))
 	*(*int32)(unsafe.Add(mBase, uint32(v255)+204)) = v274 & int32(-33554433)
-	v279 = *(*int32)(unsafe.Add(mBase, _consts[28]))
+	v279 = *(*int32)(unsafe.Add(mBase, _c_F_removeReplicaFromPsyncWait[1]))
 	if v272 < v279 {
 		goto L44
 	} else {
@@ -920,7 +920,7 @@ L42:
 L43:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v260))) = v263 + int32(-1)
-	v270 = int32(_a1921)
+	v270 = int32(_a_F_removeReplicaFromPsyncWait_3)
 	goto L40
 L44:
 	;
@@ -933,7 +933,7 @@ L44:
 	v309 = int64(4278190080)
 	v311 = int64(8)
 	*(*int64)(unsafe.Add(mBase, uint32(v10)+40)) = v297<<(uint(v298)%64) | v297&v300<<(uint(v302)%64) | (v297&v305<<(uint(v307)%64) | v297&v309<<(uint(v311)%64)) | (int64(base.Ui64(v297)>>(uint(v311)%64))&v309 | int64(base.Ui64(v297)>>(uint(v307)%64))&v305 | (int64(base.Ui64(v297)>>(uint(v302)%64))&v300 | int64(base.Ui64(v297)>>(uint(v298)%64))))
-	v335 = *(*int32)(unsafe.Add(mBase, _consts[569]))
+	v335 = *(*int32)(unsafe.Add(mBase, _c_F_removeReplicaFromPsyncWait[0]))
 	v340 = F_raxRemove(m, v335, v10+int32(40), int32(8), int32(0))
 	mBase = m.M
 	v341 = m.ExcPending
@@ -962,7 +962,7 @@ L47:
 	*(*int32)(unsafe.Add(mBase, uint32(v10+int32(16)))) = v270
 	*(*int64)(unsafe.Add(mBase, uint32(v10)+8)) = v285
 	*(*int32)(unsafe.Add(mBase, uint32(v10))) = v282
-	F__serverLog(m, int32(0), int32(_a1922), v10)
+	F__serverLog(m, int32(0), int32(_a_F_removeReplicaFromPsyncWait_4), v10)
 	mBase = m.M
 	v294 = m.ExcPending
 	if v294 != 0 {
@@ -1023,7 +1023,7 @@ func F_replicaStartCommandStream(m *base.Module, l0 int32) {
 	m.G0 = v5
 	v7 = int32(*(*uint8)(unsafe.Add(mBase, uint32(l0)+205)))
 	if v7&int32(32) != 0 {
-		F__serverAssert(m, int32(_a1943), int32(_a1913), int32(1617))
+		F__serverAssert(m, int32(_a_F_replicaStartCommandStream_0), int32(_a_F_replicaStartCommandStream_1), int32(1617))
 		mBase = m.M
 		v58 = m.ExcPending
 		if v58 != 0 {
@@ -1038,7 +1038,7 @@ func F_replicaStartCommandStream(m *base.Module, l0 int32) {
 	} else {
 		v10 = *(*int32)(unsafe.Add(mBase, uint32(l0)+104))
 		*(*int32)(unsafe.Add(mBase, uint32(v10)+4)) = int32(0)
-		v14 = *(*int64)(unsafe.Add(mBase, _consts[47]))
+		v14 = *(*int64)(unsafe.Add(mBase, _c_F_replicaStartCommandStream[0]))
 		if v14 != int64(0) {
 			v28 = *(*int32)(unsafe.Add(mBase, uint32(l0)+200))
 			if v28&int32(4194304) != 0 {
@@ -1051,7 +1051,7 @@ func F_replicaStartCommandStream(m *base.Module, l0 int32) {
 					} else {
 						v41 = *(*int32)(unsafe.Add(mBase, uint32(l0)+200))
 						*(*int32)(unsafe.Add(mBase, uint32(l0)+200)) = v41 | int32(4194304)
-						v46 = *(*int32)(unsafe.Add(mBase, _consts[478]))
+						v46 = *(*int32)(unsafe.Add(mBase, _c_F_replicaStartCommandStream[1]))
 						F_listLinkNodeHead(m, v46, l0+int32(168))
 						mBase = m.M
 					}
@@ -1065,7 +1065,7 @@ func F_replicaStartCommandStream(m *base.Module, l0 int32) {
 						} else {
 							v41 = *(*int32)(unsafe.Add(mBase, uint32(l0)+200))
 							*(*int32)(unsafe.Add(mBase, uint32(l0)+200)) = v41 | int32(4194304)
-							v46 = *(*int32)(unsafe.Add(mBase, _consts[478]))
+							v46 = *(*int32)(unsafe.Add(mBase, _c_F_replicaStartCommandStream[1]))
 							F_listLinkNodeHead(m, v46, l0+int32(168))
 							mBase = m.M
 						}
@@ -1082,7 +1082,7 @@ func F_replicaStartCommandStream(m *base.Module, l0 int32) {
 								} else {
 									v41 = *(*int32)(unsafe.Add(mBase, uint32(l0)+200))
 									*(*int32)(unsafe.Add(mBase, uint32(l0)+200)) = v41 | int32(4194304)
-									v46 = *(*int32)(unsafe.Add(mBase, _consts[478]))
+									v46 = *(*int32)(unsafe.Add(mBase, _c_F_replicaStartCommandStream[1]))
 									F_listLinkNodeHead(m, v46, l0+int32(168))
 									mBase = m.M
 								}
@@ -1094,7 +1094,7 @@ func F_replicaStartCommandStream(m *base.Module, l0 int32) {
 			m.G0 = v5 + int32(16)
 			return
 		} else {
-			v18 = *(*int32)(unsafe.Add(mBase, _consts[594]))
+			v18 = *(*int32)(unsafe.Add(mBase, _c_F_replicaStartCommandStream[2]))
 			*(*int32)(unsafe.Add(mBase, uint32(v5)+12)) = v18
 			F_replicationFeedReplicas(m, int32(-1), v5+int32(12), int32(1))
 			mBase = m.M
@@ -1113,7 +1113,7 @@ func F_replicaStartCommandStream(m *base.Module, l0 int32) {
 						} else {
 							v41 = *(*int32)(unsafe.Add(mBase, uint32(l0)+200))
 							*(*int32)(unsafe.Add(mBase, uint32(l0)+200)) = v41 | int32(4194304)
-							v46 = *(*int32)(unsafe.Add(mBase, _consts[478]))
+							v46 = *(*int32)(unsafe.Add(mBase, _c_F_replicaStartCommandStream[1]))
 							F_listLinkNodeHead(m, v46, l0+int32(168))
 							mBase = m.M
 						}
@@ -1127,7 +1127,7 @@ func F_replicaStartCommandStream(m *base.Module, l0 int32) {
 							} else {
 								v41 = *(*int32)(unsafe.Add(mBase, uint32(l0)+200))
 								*(*int32)(unsafe.Add(mBase, uint32(l0)+200)) = v41 | int32(4194304)
-								v46 = *(*int32)(unsafe.Add(mBase, _consts[478]))
+								v46 = *(*int32)(unsafe.Add(mBase, _c_F_replicaStartCommandStream[1]))
 								F_listLinkNodeHead(m, v46, l0+int32(168))
 								mBase = m.M
 							}
@@ -1144,7 +1144,7 @@ func F_replicaStartCommandStream(m *base.Module, l0 int32) {
 									} else {
 										v41 = *(*int32)(unsafe.Add(mBase, uint32(l0)+200))
 										*(*int32)(unsafe.Add(mBase, uint32(l0)+200)) = v41 | int32(4194304)
-										v46 = *(*int32)(unsafe.Add(mBase, _consts[478]))
+										v46 = *(*int32)(unsafe.Add(mBase, _c_F_replicaStartCommandStream[1]))
 										F_listLinkNodeHead(m, v46, l0+int32(168))
 										mBase = m.M
 									}

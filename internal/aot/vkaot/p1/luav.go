@@ -266,7 +266,7 @@ L5:
 	v47 = *(*float64)(unsafe.Add(mBase, uint32(v28)))
 	*(*float64)(unsafe.Add(mBase, uint32(v13)+32)) = v47
 	v51 = m.G3
-	v56 = F___small_sprintf(m, v13+int32(48), v51+int32(_a2688), v13+int32(32))
+	v56 = F___small_sprintf(m, v13+int32(48), v51+int32(_a_F_luaV_concat_0), v13+int32(32))
 	mBase = m.M
 	v57 = m.ExcPending
 	if v57 != 0 {
@@ -496,7 +496,7 @@ L37:
 	v152 = *(*float64)(unsafe.Add(mBase, uint32(v146)))
 	*(*float64)(unsafe.Add(mBase, uint32(v13)+16)) = v152
 	v156 = m.G3
-	v161 = F___small_sprintf(m, v13+int32(48), v156+int32(_a2688), v13+int32(16))
+	v161 = F___small_sprintf(m, v13+int32(48), v156+int32(_a_F_luaV_concat_0), v13+int32(16))
 	mBase = m.M
 	v162 = m.ExcPending
 	if v162 != 0 {
@@ -621,7 +621,7 @@ L56:
 L57:
 	;
 	v232 = m.G3
-	F_luaG_runerror(m, l0, v232+int32(_a2689), int32(0))
+	F_luaG_runerror(m, l0, v232+int32(_a_F_luaV_concat_1), int32(0))
 	mBase = m.M
 	v237 = m.ExcPending
 	if v237 != 0 {
@@ -693,7 +693,7 @@ L68:
 	v299 = *(*float64)(unsafe.Add(mBase, uint32(v30)))
 	*(*float64)(unsafe.Add(mBase, uint32(v13))) = v299
 	v303 = m.G3
-	v306 = F___small_sprintf(m, v13+int32(48), v303+int32(_a2688), v13)
+	v306 = F___small_sprintf(m, v13+int32(48), v303+int32(_a_F_luaV_concat_0), v13)
 	mBase = m.M
 	v307 = m.ExcPending
 	if v307 != 0 {
@@ -1741,7 +1741,7 @@ L2:
 	v13 = *(*float64)(unsafe.Add(mBase, uint32(l1)))
 	*(*float64)(unsafe.Add(mBase, uint32(v7))) = v13
 	v17 = m.G3
-	v20 = F___small_sprintf(m, v7+int32(16), v17+int32(_a2688), v7)
+	v20 = F___small_sprintf(m, v7+int32(16), v17+int32(_a_F_luaV_tostring_0), v7)
 	mBase = m.M
 	v23 = m.ExcPending
 	if v23 != 0 {

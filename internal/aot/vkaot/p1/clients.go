@@ -59,7 +59,7 @@ func F_clientsCronHandleTimeout(m *base.Module, l0 int32, l1 int64) int32 {
 	var v71 int32
 	_ = v71
 	v5 = base.I64_div_s(l1, int64(1000))
-	v7 = *(*int32)(unsafe.Add(mBase, _consts[877]))
+	v7 = *(*int32)(unsafe.Add(mBase, _c_F_clientsCronHandleTimeout[0]))
 	if v7 == int32(0) {
 		v53 = int32(0)
 		v54 = int32(*(*uint8)(unsafe.Add(mBase, uint32(l0)+200)))
@@ -67,7 +67,7 @@ func F_clientsCronHandleTimeout(m *base.Module, l0 int32, l1 int64) int32 {
 			v71 = v53
 			return v71
 		} else {
-			v60 = *(*int32)(unsafe.Add(mBase, _consts[110]))
+			v60 = *(*int32)(unsafe.Add(mBase, _c_F_clientsCronHandleTimeout[1]))
 			if v60 == int32(0) {
 				v71 = v53
 				return v71
@@ -105,7 +105,7 @@ func F_clientsCronHandleTimeout(m *base.Module, l0 int32, l1 int64) int32 {
 				v71 = v53
 				return v71
 			} else {
-				v60 = *(*int32)(unsafe.Add(mBase, _consts[110]))
+				v60 = *(*int32)(unsafe.Add(mBase, _c_F_clientsCronHandleTimeout[1]))
 				if v60 == int32(0) {
 					v71 = v53
 					return v71
@@ -163,7 +163,7 @@ func F_clientsCronHandleTimeout(m *base.Module, l0 int32, l1 int64) int32 {
 					v71 = v53
 					return v71
 				} else {
-					v60 = *(*int32)(unsafe.Add(mBase, _consts[110]))
+					v60 = *(*int32)(unsafe.Add(mBase, _c_F_clientsCronHandleTimeout[1]))
 					if v60 == int32(0) {
 						v71 = v53
 						return v71
@@ -201,7 +201,7 @@ func F_clientsCronHandleTimeout(m *base.Module, l0 int32, l1 int64) int32 {
 						v71 = v53
 						return v71
 					} else {
-						v60 = *(*int32)(unsafe.Add(mBase, _consts[110]))
+						v60 = *(*int32)(unsafe.Add(mBase, _c_F_clientsCronHandleTimeout[1]))
 						if v60 == int32(0) {
 							v71 = v53
 							return v71
@@ -232,7 +232,7 @@ func F_clientsCronHandleTimeout(m *base.Module, l0 int32, l1 int64) int32 {
 					}
 				} else {
 					v33 = *(*int64)(unsafe.Add(mBase, uint32(l0)+88))
-					v36 = int64(*(*int32)(unsafe.Add(mBase, _consts[877])))
+					v36 = int64(*(*int32)(unsafe.Add(mBase, _c_F_clientsCronHandleTimeout[0])))
 					if v5-v33 <= v36 {
 						v53 = int32(0)
 						v54 = int32(*(*uint8)(unsafe.Add(mBase, uint32(l0)+200)))
@@ -240,7 +240,7 @@ func F_clientsCronHandleTimeout(m *base.Module, l0 int32, l1 int64) int32 {
 							v71 = v53
 							return v71
 						} else {
-							v60 = *(*int32)(unsafe.Add(mBase, _consts[110]))
+							v60 = *(*int32)(unsafe.Add(mBase, _c_F_clientsCronHandleTimeout[1]))
 							if v60 == int32(0) {
 								v71 = v53
 								return v71
@@ -270,7 +270,7 @@ func F_clientsCronHandleTimeout(m *base.Module, l0 int32, l1 int64) int32 {
 							}
 						}
 					} else {
-						v39 = *(*int32)(unsafe.Add(mBase, _consts[28]))
+						v39 = *(*int32)(unsafe.Add(mBase, _c_F_clientsCronHandleTimeout[2]))
 						if int32(1) < v39 {
 							v49 = F_freeClient(m, l0)
 							mBase = m.M
@@ -281,7 +281,7 @@ func F_clientsCronHandleTimeout(m *base.Module, l0 int32, l1 int64) int32 {
 								return int32(1)
 							}
 						} else {
-							F__serverLog(m, int32(1), int32(_a2463), int32(0))
+							F__serverLog(m, int32(1), int32(_a_F_clientsCronHandleTimeout_0), int32(0))
 							mBase = m.M
 							v48 = m.ExcPending
 							if v48 != 0 {
@@ -460,7 +460,7 @@ L2:
 L3:
 	;
 	v34 = *(*int64)(unsafe.Add(mBase, uint32(l0)+88))
-	v36 = *(*int64)(unsafe.Add(mBase, _consts[109]))
+	v36 = *(*int64)(unsafe.Add(mBase, _c_F_clientsCronResizeQueryBuffer[0]))
 	v37 = *(*int32)(unsafe.Add(mBase, uint32(l0)+12))
 	v38 = int32(-1)
 	v40 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v37+v38))))

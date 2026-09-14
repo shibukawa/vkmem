@@ -90,130 +90,130 @@ func F_receiveChildInfo(m *base.Module) {
 	_ = v138
 	var v140 int64
 	_ = v140
-	v7 = *(*int32)(unsafe.Add(mBase, _consts[108]))
+	v7 = *(*int32)(unsafe.Add(mBase, _c_F_receiveChildInfo[0]))
 	if v7 == int32(-1) {
 	} else {
-		v11 = *(*int32)(unsafe.Add(mBase, _consts[109]))
+		v11 = *(*int32)(unsafe.Add(mBase, _c_F_receiveChildInfo[1]))
 		if v11 != int32(32) {
 			v18 = v11
 		} else {
 			v14 = int32(0)
-			*(*int32)(unsafe.Add(mBase, _consts[109])) = v14
+			*(*int32)(unsafe.Add(mBase, _c_F_receiveChildInfo[1])) = v14
 			v18 = v14
 		}
-		v19 = int32(_a44)
-		v20 = *(*int32)(unsafe.Add(mBase, _consts[108]))
-		v25 = F_read(m, v20, v18+int32(_a201), int32(32)-v18)
+		v19 = int32(_a_F_receiveChildInfo_0)
+		v20 = *(*int32)(unsafe.Add(mBase, _c_F_receiveChildInfo[0]))
+		v25 = F_read(m, v20, v18+int32(_a_F_receiveChildInfo_1), int32(32)-v18)
 		mBase = m.M
-		v27 = *(*int32)(unsafe.Add(mBase, _consts[109]))
+		v27 = *(*int32)(unsafe.Add(mBase, _c_F_receiveChildInfo[1]))
 		if v25 < int32(1) {
 			v33 = v27
 		} else {
 			v31 = v27 + v25
-			*(*int32)(unsafe.Add(mBase, _consts[109])) = v31
+			*(*int32)(unsafe.Add(mBase, _c_F_receiveChildInfo[1])) = v31
 			v33 = v31
 		}
 		if v33 != int32(32) {
 		} else {
 			v36 = int32(0)
-			v37 = *(*int32)(unsafe.Add(mBase, _consts[110]))
-			v39 = *(*int32)(unsafe.Add(mBase, _consts[111]))
-			v41 = *(*int32)(unsafe.Add(mBase, _consts[112]))
+			v37 = *(*int32)(unsafe.Add(mBase, _c_F_receiveChildInfo[2]))
+			v39 = *(*int32)(unsafe.Add(mBase, _c_F_receiveChildInfo[3]))
+			v41 = *(*int32)(unsafe.Add(mBase, _c_F_receiveChildInfo[4]))
 			if base.Ui32(v39) <= base.Ui32(v41) {
 				v45 = v41
 			} else {
-				*(*int32)(unsafe.Add(mBase, _consts[112])) = v39
+				*(*int32)(unsafe.Add(mBase, _c_F_receiveChildInfo[4])) = v39
 				v45 = v39
 			}
 			switch v37 {
 			case 0:
 				v61 = int32(0)
-				v62 = *(*float64)(unsafe.Add(mBase, _consts[113]))
-				v64 = *(*int64)(unsafe.Add(mBase, _consts[114]))
-				v65 = int32(_a44)
-				v67 = *(*int32)(unsafe.Add(mBase, _consts[115]))
-				*(*int32)(unsafe.Add(mBase, _consts[116])) = v67
-				*(*int64)(unsafe.Add(mBase, _consts[117])) = v64
-				*(*int32)(unsafe.Add(mBase, _consts[118])) = v39
+				v62 = *(*float64)(unsafe.Add(mBase, _c_F_receiveChildInfo[5]))
+				v64 = *(*int64)(unsafe.Add(mBase, _c_F_receiveChildInfo[6]))
+				v65 = int32(_a_F_receiveChildInfo_0)
+				v67 = *(*int32)(unsafe.Add(mBase, _c_F_receiveChildInfo[7]))
+				*(*int32)(unsafe.Add(mBase, _c_F_receiveChildInfo[8])) = v67
+				*(*int64)(unsafe.Add(mBase, _c_F_receiveChildInfo[9])) = v64
+				*(*int32)(unsafe.Add(mBase, _c_F_receiveChildInfo[10])) = v39
 				if base.F64_eq(v62, float64(-1)) != 0 {
 				} else {
-					*(*float64)(unsafe.Add(mBase, _consts[119])) = v62
+					*(*float64)(unsafe.Add(mBase, _c_F_receiveChildInfo[11])) = v62
 				}
 			case 1:
-				*(*int32)(unsafe.Add(mBase, _consts[120])) = v45
+				*(*int32)(unsafe.Add(mBase, _c_F_receiveChildInfo[12])) = v45
 			case 2:
-				*(*int32)(unsafe.Add(mBase, _consts[121])) = v45
+				*(*int32)(unsafe.Add(mBase, _c_F_receiveChildInfo[13])) = v45
 			case 3:
-				*(*int32)(unsafe.Add(mBase, _consts[122])) = v45
+				*(*int32)(unsafe.Add(mBase, _c_F_receiveChildInfo[14])) = v45
 			case 4:
-				*(*int32)(unsafe.Add(mBase, _consts[123])) = v45
+				*(*int32)(unsafe.Add(mBase, _c_F_receiveChildInfo[15])) = v45
 			case 5:
-				v46 = int32(_a44)
-				v48 = *(*int64)(unsafe.Add(mBase, _consts[124]))
-				v50 = int64(*(*uint32)(unsafe.Add(mBase, _consts[125])))
-				*(*int64)(unsafe.Add(mBase, _consts[124])) = v48 + v50
+				v46 = int32(_a_F_receiveChildInfo_0)
+				v48 = *(*int64)(unsafe.Add(mBase, _c_F_receiveChildInfo[16]))
+				v50 = int64(*(*uint32)(unsafe.Add(mBase, _c_F_receiveChildInfo[17])))
+				*(*int64)(unsafe.Add(mBase, _c_F_receiveChildInfo[16])) = v48 + v50
 			default:
 			}
 			for {
-				v84 = int32(_a44)
-				*(*int32)(unsafe.Add(mBase, _consts[109])) = int32(0)
-				v88 = *(*int32)(unsafe.Add(mBase, _consts[108]))
-				v91 = F_read(m, v88, int32(_a201), int32(32))
+				v84 = int32(_a_F_receiveChildInfo_0)
+				*(*int32)(unsafe.Add(mBase, _c_F_receiveChildInfo[1])) = int32(0)
+				v88 = *(*int32)(unsafe.Add(mBase, _c_F_receiveChildInfo[0]))
+				v91 = F_read(m, v88, int32(_a_F_receiveChildInfo_1), int32(32))
 				mBase = m.M
-				v93 = *(*int32)(unsafe.Add(mBase, _consts[109]))
+				v93 = *(*int32)(unsafe.Add(mBase, _c_F_receiveChildInfo[1]))
 				if v91 < int32(1) {
 					v99 = v93
 				} else {
 					v97 = v93 + v91
-					*(*int32)(unsafe.Add(mBase, _consts[109])) = v97
+					*(*int32)(unsafe.Add(mBase, _c_F_receiveChildInfo[1])) = v97
 					v99 = v97
 				}
 				if v99 != int32(32) {
 					break
 				} else {
-					v103 = *(*int32)(unsafe.Add(mBase, _consts[111]))
-					v105 = *(*int32)(unsafe.Add(mBase, _consts[112]))
+					v103 = *(*int32)(unsafe.Add(mBase, _c_F_receiveChildInfo[3]))
+					v105 = *(*int32)(unsafe.Add(mBase, _c_F_receiveChildInfo[4]))
 					if base.Ui32(v103) <= base.Ui32(v105) {
 						v109 = v105
 					} else {
-						*(*int32)(unsafe.Add(mBase, _consts[112])) = v103
+						*(*int32)(unsafe.Add(mBase, _c_F_receiveChildInfo[4])) = v103
 						v109 = v103
 					}
-					v111 = *(*int32)(unsafe.Add(mBase, _consts[110]))
+					v111 = *(*int32)(unsafe.Add(mBase, _c_F_receiveChildInfo[2]))
 					switch v111 {
 					case 0:
 						v112 = int32(0)
-						v113 = *(*float64)(unsafe.Add(mBase, _consts[113]))
-						v115 = *(*int64)(unsafe.Add(mBase, _consts[114]))
-						v116 = int32(_a44)
-						v118 = *(*int32)(unsafe.Add(mBase, _consts[115]))
-						*(*int32)(unsafe.Add(mBase, _consts[116])) = v118
-						*(*int64)(unsafe.Add(mBase, _consts[117])) = v115
-						*(*int32)(unsafe.Add(mBase, _consts[118])) = v103
+						v113 = *(*float64)(unsafe.Add(mBase, _c_F_receiveChildInfo[5]))
+						v115 = *(*int64)(unsafe.Add(mBase, _c_F_receiveChildInfo[6]))
+						v116 = int32(_a_F_receiveChildInfo_0)
+						v118 = *(*int32)(unsafe.Add(mBase, _c_F_receiveChildInfo[7]))
+						*(*int32)(unsafe.Add(mBase, _c_F_receiveChildInfo[8])) = v118
+						*(*int64)(unsafe.Add(mBase, _c_F_receiveChildInfo[9])) = v115
+						*(*int32)(unsafe.Add(mBase, _c_F_receiveChildInfo[10])) = v103
 						if base.F64_eq(v113, float64(-1)) != 0 {
 							continue
 						} else {
-							*(*float64)(unsafe.Add(mBase, _consts[119])) = v113
+							*(*float64)(unsafe.Add(mBase, _c_F_receiveChildInfo[11])) = v113
 							continue
 						}
 						continue
 					case 1:
-						*(*int32)(unsafe.Add(mBase, _consts[120])) = v109
+						*(*int32)(unsafe.Add(mBase, _c_F_receiveChildInfo[12])) = v109
 						continue
 					case 2:
-						*(*int32)(unsafe.Add(mBase, _consts[121])) = v109
+						*(*int32)(unsafe.Add(mBase, _c_F_receiveChildInfo[13])) = v109
 						continue
 					case 3:
-						*(*int32)(unsafe.Add(mBase, _consts[122])) = v109
+						*(*int32)(unsafe.Add(mBase, _c_F_receiveChildInfo[14])) = v109
 						continue
 					case 4:
-						*(*int32)(unsafe.Add(mBase, _consts[123])) = v109
+						*(*int32)(unsafe.Add(mBase, _c_F_receiveChildInfo[15])) = v109
 						continue
 					case 5:
-						v136 = int32(_a44)
-						v138 = *(*int64)(unsafe.Add(mBase, _consts[124]))
-						v140 = int64(*(*uint32)(unsafe.Add(mBase, _consts[125])))
-						*(*int64)(unsafe.Add(mBase, _consts[124])) = v138 + v140
+						v136 = int32(_a_F_receiveChildInfo_0)
+						v138 = *(*int64)(unsafe.Add(mBase, _c_F_receiveChildInfo[16]))
+						v140 = int64(*(*uint32)(unsafe.Add(mBase, _c_F_receiveChildInfo[17])))
+						*(*int64)(unsafe.Add(mBase, _c_F_receiveChildInfo[16])) = v138 + v140
 						continue
 					default:
 						continue
@@ -255,42 +255,42 @@ func F_resetChildState(m *base.Module) {
 	_ = v54
 	v1 = int32(0)
 	v3 = int64(0)
-	*(*int64)(unsafe.Add(mBase, _consts[119])) = v3
-	*(*int64)(unsafe.Add(mBase, _consts[45])) = int64(4294967295)
-	*(*int64)(unsafe.Add(mBase, _consts[112])) = v3
-	*(*int64)(unsafe.Add(mBase, _consts[117])) = v3
-	*(*int64)(unsafe.Add(mBase, _consts[116])) = v3
-	v19 = *(*int32)(unsafe.Add(mBase, _consts[399]))
-	v25 = *(*int32)(unsafe.Add(mBase, _consts[400]))
+	*(*int64)(unsafe.Add(mBase, _c_F_resetChildState[0])) = v3
+	*(*int64)(unsafe.Add(mBase, _c_F_resetChildState[1])) = int64(4294967295)
+	*(*int64)(unsafe.Add(mBase, _c_F_resetChildState[2])) = v3
+	*(*int64)(unsafe.Add(mBase, _c_F_resetChildState[3])) = v3
+	*(*int64)(unsafe.Add(mBase, _c_F_resetChildState[4])) = v3
+	v19 = *(*int32)(unsafe.Add(mBase, _c_F_resetChildState[5]))
+	v25 = *(*int32)(unsafe.Add(mBase, _c_F_resetChildState[6]))
 	if v25 != 0 {
 		v26 = int32(2)
 	} else {
 		v26 = base.B2i32(v19 == v1) << (uint(int32(1)) % 32)
 	}
-	*(*int32)(unsafe.Add(mBase, _consts[798])) = v26
-	*(*int32)(unsafe.Add(mBase, _consts[427])) = v26
-	v33 = *(*int32)(unsafe.Add(mBase, _consts[108]))
+	*(*int32)(unsafe.Add(mBase, _c_F_resetChildState[7])) = v26
+	*(*int32)(unsafe.Add(mBase, _c_F_resetChildState[8])) = v26
+	v33 = *(*int32)(unsafe.Add(mBase, _c_F_resetChildState[9]))
 	if v33 != int32(-1) {
 		v40 = F_close(m, v33)
 		mBase = m.M
-		v41 = int32(_a44)
-		v42 = *(*int32)(unsafe.Add(mBase, _consts[650]))
+		v41 = int32(_a_F_resetChildState_0)
+		v42 = *(*int32)(unsafe.Add(mBase, _c_F_resetChildState[10]))
 		v43 = F_close(m, v42)
 		mBase = m.M
-		*(*int32)(unsafe.Add(mBase, _consts[109])) = int32(0)
-		*(*int64)(unsafe.Add(mBase, _consts[108])) = int64(-1)
+		*(*int32)(unsafe.Add(mBase, _c_F_resetChildState[11])) = int32(0)
+		*(*int64)(unsafe.Add(mBase, _c_F_resetChildState[9])) = int64(-1)
 	} else {
-		v37 = *(*int32)(unsafe.Add(mBase, _consts[650]))
+		v37 = *(*int32)(unsafe.Add(mBase, _c_F_resetChildState[10]))
 		if v37 == int32(-1) {
 		} else {
 			v40 = F_close(m, v33)
 			mBase = m.M
-			v41 = int32(_a44)
-			v42 = *(*int32)(unsafe.Add(mBase, _consts[650]))
+			v41 = int32(_a_F_resetChildState_0)
+			v42 = *(*int32)(unsafe.Add(mBase, _c_F_resetChildState[10]))
 			v43 = F_close(m, v42)
 			mBase = m.M
-			*(*int32)(unsafe.Add(mBase, _consts[109])) = int32(0)
-			*(*int64)(unsafe.Add(mBase, _consts[108])) = int64(-1)
+			*(*int32)(unsafe.Add(mBase, _c_F_resetChildState[11])) = int32(0)
+			*(*int64)(unsafe.Add(mBase, _c_F_resetChildState[9])) = int64(-1)
 		}
 	}
 	F_moduleFireServerEvent(m, int64(13), int32(1), int32(0))

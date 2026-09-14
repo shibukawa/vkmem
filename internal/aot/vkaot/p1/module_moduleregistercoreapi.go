@@ -4516,7 +4516,7 @@ func F_moduleRegisterCoreAPI(m *base.Module) {
 	_ = v4509
 	var v4510 int32
 	_ = v4510
-	v3 = F_dictCreate(m, int32(_a835))
+	v3 = F_dictCreate(m, int32(_a_F_moduleRegisterCoreAPI_0))
 	mBase = m.M
 	v4 = m.ExcPending
 	if v4 != 0 {
@@ -4529,8 +4529,8 @@ L1:
 	return
 L2:
 	;
-	*(*int32)(unsafe.Add(mBase, _consts[382])) = v3
-	v8 = F_dictCreate(m, int32(_a835))
+	*(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0])) = v3
+	v8 = F_dictCreate(m, int32(_a_F_moduleRegisterCoreAPI_0))
 	mBase = m.M
 	v9 = m.ExcPending
 	if v9 != 0 {
@@ -4540,9 +4540,9 @@ L2:
 	}
 L3:
 	;
-	*(*int32)(unsafe.Add(mBase, _consts[445])) = v8
-	v12 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v15 = F_dictAdd(m, v12, int32(_a836), int32(571))
+	*(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[1])) = v8
+	v12 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v15 = F_dictAdd(m, v12, int32(_a_F_moduleRegisterCoreAPI_1), int32(571))
 	mBase = m.M
 	v16 = m.ExcPending
 	if v16 != 0 {
@@ -4552,8 +4552,8 @@ L3:
 	}
 L4:
 	;
-	v18 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v21 = F_dictAdd(m, v18, int32(_a837), int32(571))
+	v18 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v21 = F_dictAdd(m, v18, int32(_a_F_moduleRegisterCoreAPI_2), int32(571))
 	mBase = m.M
 	v22 = m.ExcPending
 	if v22 != 0 {
@@ -4563,8 +4563,8 @@ L4:
 	}
 L5:
 	;
-	v24 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v27 = F_dictAdd(m, v24, int32(_a838), int32(572))
+	v24 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v27 = F_dictAdd(m, v24, int32(_a_F_moduleRegisterCoreAPI_3), int32(572))
 	mBase = m.M
 	v28 = m.ExcPending
 	if v28 != 0 {
@@ -4574,8 +4574,8 @@ L5:
 	}
 L6:
 	;
-	v30 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v33 = F_dictAdd(m, v30, int32(_a839), int32(572))
+	v30 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v33 = F_dictAdd(m, v30, int32(_a_F_moduleRegisterCoreAPI_4), int32(572))
 	mBase = m.M
 	v34 = m.ExcPending
 	if v34 != 0 {
@@ -4585,8 +4585,8 @@ L6:
 	}
 L7:
 	;
-	v36 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v39 = F_dictAdd(m, v36, int32(_a840), int32(573))
+	v36 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v39 = F_dictAdd(m, v36, int32(_a_F_moduleRegisterCoreAPI_5), int32(573))
 	mBase = m.M
 	v40 = m.ExcPending
 	if v40 != 0 {
@@ -4596,8 +4596,8 @@ L7:
 	}
 L8:
 	;
-	v42 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v45 = F_dictAdd(m, v42, int32(_a841), int32(573))
+	v42 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v45 = F_dictAdd(m, v42, int32(_a_F_moduleRegisterCoreAPI_6), int32(573))
 	mBase = m.M
 	v46 = m.ExcPending
 	if v46 != 0 {
@@ -4607,8 +4607,8 @@ L8:
 	}
 L9:
 	;
-	v48 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v51 = F_dictAdd(m, v48, int32(_a842), int32(574))
+	v48 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v51 = F_dictAdd(m, v48, int32(_a_F_moduleRegisterCoreAPI_7), int32(574))
 	mBase = m.M
 	v52 = m.ExcPending
 	if v52 != 0 {
@@ -4618,8 +4618,8 @@ L9:
 	}
 L10:
 	;
-	v54 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v57 = F_dictAdd(m, v54, int32(_a843), int32(574))
+	v54 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v57 = F_dictAdd(m, v54, int32(_a_F_moduleRegisterCoreAPI_8), int32(574))
 	mBase = m.M
 	v58 = m.ExcPending
 	if v58 != 0 {
@@ -4629,8 +4629,8 @@ L10:
 	}
 L11:
 	;
-	v60 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v63 = F_dictAdd(m, v60, int32(_a844), int32(575))
+	v60 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v63 = F_dictAdd(m, v60, int32(_a_F_moduleRegisterCoreAPI_9), int32(575))
 	mBase = m.M
 	v64 = m.ExcPending
 	if v64 != 0 {
@@ -4640,8 +4640,8 @@ L11:
 	}
 L12:
 	;
-	v66 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v69 = F_dictAdd(m, v66, int32(_a845), int32(575))
+	v66 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v69 = F_dictAdd(m, v66, int32(_a_F_moduleRegisterCoreAPI_10), int32(575))
 	mBase = m.M
 	v70 = m.ExcPending
 	if v70 != 0 {
@@ -4651,8 +4651,8 @@ L12:
 	}
 L13:
 	;
-	v72 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v75 = F_dictAdd(m, v72, int32(_a846), int32(576))
+	v72 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v75 = F_dictAdd(m, v72, int32(_a_F_moduleRegisterCoreAPI_11), int32(576))
 	mBase = m.M
 	v76 = m.ExcPending
 	if v76 != 0 {
@@ -4662,8 +4662,8 @@ L13:
 	}
 L14:
 	;
-	v78 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v81 = F_dictAdd(m, v78, int32(_a847), int32(576))
+	v78 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v81 = F_dictAdd(m, v78, int32(_a_F_moduleRegisterCoreAPI_12), int32(576))
 	mBase = m.M
 	v82 = m.ExcPending
 	if v82 != 0 {
@@ -4673,8 +4673,8 @@ L14:
 	}
 L15:
 	;
-	v84 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v87 = F_dictAdd(m, v84, int32(_a848), int32(577))
+	v84 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v87 = F_dictAdd(m, v84, int32(_a_F_moduleRegisterCoreAPI_13), int32(577))
 	mBase = m.M
 	v88 = m.ExcPending
 	if v88 != 0 {
@@ -4684,8 +4684,8 @@ L15:
 	}
 L16:
 	;
-	v90 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v93 = F_dictAdd(m, v90, int32(_a849), int32(577))
+	v90 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v93 = F_dictAdd(m, v90, int32(_a_F_moduleRegisterCoreAPI_14), int32(577))
 	mBase = m.M
 	v94 = m.ExcPending
 	if v94 != 0 {
@@ -4695,8 +4695,8 @@ L16:
 	}
 L17:
 	;
-	v96 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v99 = F_dictAdd(m, v96, int32(_a850), int32(578))
+	v96 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v99 = F_dictAdd(m, v96, int32(_a_F_moduleRegisterCoreAPI_15), int32(578))
 	mBase = m.M
 	v100 = m.ExcPending
 	if v100 != 0 {
@@ -4706,8 +4706,8 @@ L17:
 	}
 L18:
 	;
-	v102 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v105 = F_dictAdd(m, v102, int32(_a851), int32(578))
+	v102 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v105 = F_dictAdd(m, v102, int32(_a_F_moduleRegisterCoreAPI_16), int32(578))
 	mBase = m.M
 	v106 = m.ExcPending
 	if v106 != 0 {
@@ -4717,8 +4717,8 @@ L18:
 	}
 L19:
 	;
-	v108 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v111 = F_dictAdd(m, v108, int32(_a852), int32(579))
+	v108 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v111 = F_dictAdd(m, v108, int32(_a_F_moduleRegisterCoreAPI_17), int32(579))
 	mBase = m.M
 	v112 = m.ExcPending
 	if v112 != 0 {
@@ -4728,8 +4728,8 @@ L19:
 	}
 L20:
 	;
-	v114 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v117 = F_dictAdd(m, v114, int32(_a853), int32(579))
+	v114 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v117 = F_dictAdd(m, v114, int32(_a_F_moduleRegisterCoreAPI_18), int32(579))
 	mBase = m.M
 	v118 = m.ExcPending
 	if v118 != 0 {
@@ -4739,8 +4739,8 @@ L20:
 	}
 L21:
 	;
-	v120 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v123 = F_dictAdd(m, v120, int32(_a854), int32(580))
+	v120 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v123 = F_dictAdd(m, v120, int32(_a_F_moduleRegisterCoreAPI_19), int32(580))
 	mBase = m.M
 	v124 = m.ExcPending
 	if v124 != 0 {
@@ -4750,8 +4750,8 @@ L21:
 	}
 L22:
 	;
-	v126 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v129 = F_dictAdd(m, v126, int32(_a855), int32(580))
+	v126 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v129 = F_dictAdd(m, v126, int32(_a_F_moduleRegisterCoreAPI_20), int32(580))
 	mBase = m.M
 	v130 = m.ExcPending
 	if v130 != 0 {
@@ -4761,8 +4761,8 @@ L22:
 	}
 L23:
 	;
-	v132 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v135 = F_dictAdd(m, v132, int32(_a856), int32(581))
+	v132 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v135 = F_dictAdd(m, v132, int32(_a_F_moduleRegisterCoreAPI_21), int32(581))
 	mBase = m.M
 	v136 = m.ExcPending
 	if v136 != 0 {
@@ -4772,8 +4772,8 @@ L23:
 	}
 L24:
 	;
-	v138 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v141 = F_dictAdd(m, v138, int32(_a857), int32(581))
+	v138 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v141 = F_dictAdd(m, v138, int32(_a_F_moduleRegisterCoreAPI_22), int32(581))
 	mBase = m.M
 	v142 = m.ExcPending
 	if v142 != 0 {
@@ -4783,8 +4783,8 @@ L24:
 	}
 L25:
 	;
-	v144 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v147 = F_dictAdd(m, v144, int32(_a858), int32(582))
+	v144 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v147 = F_dictAdd(m, v144, int32(_a_F_moduleRegisterCoreAPI_23), int32(582))
 	mBase = m.M
 	v148 = m.ExcPending
 	if v148 != 0 {
@@ -4794,8 +4794,8 @@ L25:
 	}
 L26:
 	;
-	v150 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v153 = F_dictAdd(m, v150, int32(_a859), int32(582))
+	v150 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v153 = F_dictAdd(m, v150, int32(_a_F_moduleRegisterCoreAPI_24), int32(582))
 	mBase = m.M
 	v154 = m.ExcPending
 	if v154 != 0 {
@@ -4805,8 +4805,8 @@ L26:
 	}
 L27:
 	;
-	v156 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v159 = F_dictAdd(m, v156, int32(_a860), int32(583))
+	v156 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v159 = F_dictAdd(m, v156, int32(_a_F_moduleRegisterCoreAPI_25), int32(583))
 	mBase = m.M
 	v160 = m.ExcPending
 	if v160 != 0 {
@@ -4816,8 +4816,8 @@ L27:
 	}
 L28:
 	;
-	v162 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v165 = F_dictAdd(m, v162, int32(_a861), int32(583))
+	v162 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v165 = F_dictAdd(m, v162, int32(_a_F_moduleRegisterCoreAPI_26), int32(583))
 	mBase = m.M
 	v166 = m.ExcPending
 	if v166 != 0 {
@@ -4827,8 +4827,8 @@ L28:
 	}
 L29:
 	;
-	v168 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v171 = F_dictAdd(m, v168, int32(_a862), int32(584))
+	v168 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v171 = F_dictAdd(m, v168, int32(_a_F_moduleRegisterCoreAPI_27), int32(584))
 	mBase = m.M
 	v172 = m.ExcPending
 	if v172 != 0 {
@@ -4838,8 +4838,8 @@ L29:
 	}
 L30:
 	;
-	v174 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v177 = F_dictAdd(m, v174, int32(_a863), int32(584))
+	v174 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v177 = F_dictAdd(m, v174, int32(_a_F_moduleRegisterCoreAPI_28), int32(584))
 	mBase = m.M
 	v178 = m.ExcPending
 	if v178 != 0 {
@@ -4849,8 +4849,8 @@ L30:
 	}
 L31:
 	;
-	v180 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v183 = F_dictAdd(m, v180, int32(_a864), int32(585))
+	v180 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v183 = F_dictAdd(m, v180, int32(_a_F_moduleRegisterCoreAPI_29), int32(585))
 	mBase = m.M
 	v184 = m.ExcPending
 	if v184 != 0 {
@@ -4860,8 +4860,8 @@ L31:
 	}
 L32:
 	;
-	v186 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v189 = F_dictAdd(m, v186, int32(_a865), int32(585))
+	v186 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v189 = F_dictAdd(m, v186, int32(_a_F_moduleRegisterCoreAPI_30), int32(585))
 	mBase = m.M
 	v190 = m.ExcPending
 	if v190 != 0 {
@@ -4871,8 +4871,8 @@ L32:
 	}
 L33:
 	;
-	v192 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v195 = F_dictAdd(m, v192, int32(_a866), int32(586))
+	v192 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v195 = F_dictAdd(m, v192, int32(_a_F_moduleRegisterCoreAPI_31), int32(586))
 	mBase = m.M
 	v196 = m.ExcPending
 	if v196 != 0 {
@@ -4882,8 +4882,8 @@ L33:
 	}
 L34:
 	;
-	v198 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v201 = F_dictAdd(m, v198, int32(_a867), int32(586))
+	v198 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v201 = F_dictAdd(m, v198, int32(_a_F_moduleRegisterCoreAPI_32), int32(586))
 	mBase = m.M
 	v202 = m.ExcPending
 	if v202 != 0 {
@@ -4893,8 +4893,8 @@ L34:
 	}
 L35:
 	;
-	v204 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v207 = F_dictAdd(m, v204, int32(_a868), int32(587))
+	v204 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v207 = F_dictAdd(m, v204, int32(_a_F_moduleRegisterCoreAPI_33), int32(587))
 	mBase = m.M
 	v208 = m.ExcPending
 	if v208 != 0 {
@@ -4904,8 +4904,8 @@ L35:
 	}
 L36:
 	;
-	v210 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v213 = F_dictAdd(m, v210, int32(_a869), int32(587))
+	v210 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v213 = F_dictAdd(m, v210, int32(_a_F_moduleRegisterCoreAPI_34), int32(587))
 	mBase = m.M
 	v214 = m.ExcPending
 	if v214 != 0 {
@@ -4915,8 +4915,8 @@ L36:
 	}
 L37:
 	;
-	v216 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v219 = F_dictAdd(m, v216, int32(_a870), int32(588))
+	v216 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v219 = F_dictAdd(m, v216, int32(_a_F_moduleRegisterCoreAPI_35), int32(588))
 	mBase = m.M
 	v220 = m.ExcPending
 	if v220 != 0 {
@@ -4926,8 +4926,8 @@ L37:
 	}
 L38:
 	;
-	v222 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v225 = F_dictAdd(m, v222, int32(_a871), int32(588))
+	v222 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v225 = F_dictAdd(m, v222, int32(_a_F_moduleRegisterCoreAPI_36), int32(588))
 	mBase = m.M
 	v226 = m.ExcPending
 	if v226 != 0 {
@@ -4937,8 +4937,8 @@ L38:
 	}
 L39:
 	;
-	v228 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v231 = F_dictAdd(m, v228, int32(_a872), int32(589))
+	v228 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v231 = F_dictAdd(m, v228, int32(_a_F_moduleRegisterCoreAPI_37), int32(589))
 	mBase = m.M
 	v232 = m.ExcPending
 	if v232 != 0 {
@@ -4948,8 +4948,8 @@ L39:
 	}
 L40:
 	;
-	v234 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v237 = F_dictAdd(m, v234, int32(_a873), int32(589))
+	v234 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v237 = F_dictAdd(m, v234, int32(_a_F_moduleRegisterCoreAPI_38), int32(589))
 	mBase = m.M
 	v238 = m.ExcPending
 	if v238 != 0 {
@@ -4959,8 +4959,8 @@ L40:
 	}
 L41:
 	;
-	v240 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v243 = F_dictAdd(m, v240, int32(_a874), int32(590))
+	v240 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v243 = F_dictAdd(m, v240, int32(_a_F_moduleRegisterCoreAPI_39), int32(590))
 	mBase = m.M
 	v244 = m.ExcPending
 	if v244 != 0 {
@@ -4970,8 +4970,8 @@ L41:
 	}
 L42:
 	;
-	v246 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v249 = F_dictAdd(m, v246, int32(_a875), int32(590))
+	v246 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v249 = F_dictAdd(m, v246, int32(_a_F_moduleRegisterCoreAPI_40), int32(590))
 	mBase = m.M
 	v250 = m.ExcPending
 	if v250 != 0 {
@@ -4981,8 +4981,8 @@ L42:
 	}
 L43:
 	;
-	v252 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v255 = F_dictAdd(m, v252, int32(_a876), int32(591))
+	v252 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v255 = F_dictAdd(m, v252, int32(_a_F_moduleRegisterCoreAPI_41), int32(591))
 	mBase = m.M
 	v256 = m.ExcPending
 	if v256 != 0 {
@@ -4992,8 +4992,8 @@ L43:
 	}
 L44:
 	;
-	v258 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v261 = F_dictAdd(m, v258, int32(_a877), int32(591))
+	v258 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v261 = F_dictAdd(m, v258, int32(_a_F_moduleRegisterCoreAPI_42), int32(591))
 	mBase = m.M
 	v262 = m.ExcPending
 	if v262 != 0 {
@@ -5003,8 +5003,8 @@ L44:
 	}
 L45:
 	;
-	v264 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v267 = F_dictAdd(m, v264, int32(_a878), int32(592))
+	v264 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v267 = F_dictAdd(m, v264, int32(_a_F_moduleRegisterCoreAPI_43), int32(592))
 	mBase = m.M
 	v268 = m.ExcPending
 	if v268 != 0 {
@@ -5014,8 +5014,8 @@ L45:
 	}
 L46:
 	;
-	v270 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v273 = F_dictAdd(m, v270, int32(_a879), int32(592))
+	v270 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v273 = F_dictAdd(m, v270, int32(_a_F_moduleRegisterCoreAPI_44), int32(592))
 	mBase = m.M
 	v274 = m.ExcPending
 	if v274 != 0 {
@@ -5025,8 +5025,8 @@ L46:
 	}
 L47:
 	;
-	v276 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v279 = F_dictAdd(m, v276, int32(_a880), int32(593))
+	v276 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v279 = F_dictAdd(m, v276, int32(_a_F_moduleRegisterCoreAPI_45), int32(593))
 	mBase = m.M
 	v280 = m.ExcPending
 	if v280 != 0 {
@@ -5036,8 +5036,8 @@ L47:
 	}
 L48:
 	;
-	v282 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v285 = F_dictAdd(m, v282, int32(_a881), int32(593))
+	v282 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v285 = F_dictAdd(m, v282, int32(_a_F_moduleRegisterCoreAPI_46), int32(593))
 	mBase = m.M
 	v286 = m.ExcPending
 	if v286 != 0 {
@@ -5047,8 +5047,8 @@ L48:
 	}
 L49:
 	;
-	v288 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v291 = F_dictAdd(m, v288, int32(_a882), int32(594))
+	v288 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v291 = F_dictAdd(m, v288, int32(_a_F_moduleRegisterCoreAPI_47), int32(594))
 	mBase = m.M
 	v292 = m.ExcPending
 	if v292 != 0 {
@@ -5058,8 +5058,8 @@ L49:
 	}
 L50:
 	;
-	v294 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v297 = F_dictAdd(m, v294, int32(_a883), int32(594))
+	v294 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v297 = F_dictAdd(m, v294, int32(_a_F_moduleRegisterCoreAPI_48), int32(594))
 	mBase = m.M
 	v298 = m.ExcPending
 	if v298 != 0 {
@@ -5069,8 +5069,8 @@ L50:
 	}
 L51:
 	;
-	v300 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v303 = F_dictAdd(m, v300, int32(_a884), int32(595))
+	v300 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v303 = F_dictAdd(m, v300, int32(_a_F_moduleRegisterCoreAPI_49), int32(595))
 	mBase = m.M
 	v304 = m.ExcPending
 	if v304 != 0 {
@@ -5080,8 +5080,8 @@ L51:
 	}
 L52:
 	;
-	v306 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v309 = F_dictAdd(m, v306, int32(_a885), int32(595))
+	v306 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v309 = F_dictAdd(m, v306, int32(_a_F_moduleRegisterCoreAPI_50), int32(595))
 	mBase = m.M
 	v310 = m.ExcPending
 	if v310 != 0 {
@@ -5091,8 +5091,8 @@ L52:
 	}
 L53:
 	;
-	v312 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v315 = F_dictAdd(m, v312, int32(_a886), int32(596))
+	v312 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v315 = F_dictAdd(m, v312, int32(_a_F_moduleRegisterCoreAPI_51), int32(596))
 	mBase = m.M
 	v316 = m.ExcPending
 	if v316 != 0 {
@@ -5102,8 +5102,8 @@ L53:
 	}
 L54:
 	;
-	v318 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v321 = F_dictAdd(m, v318, int32(_a887), int32(596))
+	v318 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v321 = F_dictAdd(m, v318, int32(_a_F_moduleRegisterCoreAPI_52), int32(596))
 	mBase = m.M
 	v322 = m.ExcPending
 	if v322 != 0 {
@@ -5113,8 +5113,8 @@ L54:
 	}
 L55:
 	;
-	v324 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v327 = F_dictAdd(m, v324, int32(_a888), int32(597))
+	v324 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v327 = F_dictAdd(m, v324, int32(_a_F_moduleRegisterCoreAPI_53), int32(597))
 	mBase = m.M
 	v328 = m.ExcPending
 	if v328 != 0 {
@@ -5124,8 +5124,8 @@ L55:
 	}
 L56:
 	;
-	v330 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v333 = F_dictAdd(m, v330, int32(_a889), int32(597))
+	v330 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v333 = F_dictAdd(m, v330, int32(_a_F_moduleRegisterCoreAPI_54), int32(597))
 	mBase = m.M
 	v334 = m.ExcPending
 	if v334 != 0 {
@@ -5135,8 +5135,8 @@ L56:
 	}
 L57:
 	;
-	v336 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v339 = F_dictAdd(m, v336, int32(_a890), int32(598))
+	v336 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v339 = F_dictAdd(m, v336, int32(_a_F_moduleRegisterCoreAPI_55), int32(598))
 	mBase = m.M
 	v340 = m.ExcPending
 	if v340 != 0 {
@@ -5146,8 +5146,8 @@ L57:
 	}
 L58:
 	;
-	v342 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v345 = F_dictAdd(m, v342, int32(_a891), int32(598))
+	v342 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v345 = F_dictAdd(m, v342, int32(_a_F_moduleRegisterCoreAPI_56), int32(598))
 	mBase = m.M
 	v346 = m.ExcPending
 	if v346 != 0 {
@@ -5157,8 +5157,8 @@ L58:
 	}
 L59:
 	;
-	v348 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v351 = F_dictAdd(m, v348, int32(_a892), int32(599))
+	v348 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v351 = F_dictAdd(m, v348, int32(_a_F_moduleRegisterCoreAPI_57), int32(599))
 	mBase = m.M
 	v352 = m.ExcPending
 	if v352 != 0 {
@@ -5168,8 +5168,8 @@ L59:
 	}
 L60:
 	;
-	v354 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v357 = F_dictAdd(m, v354, int32(_a893), int32(599))
+	v354 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v357 = F_dictAdd(m, v354, int32(_a_F_moduleRegisterCoreAPI_58), int32(599))
 	mBase = m.M
 	v358 = m.ExcPending
 	if v358 != 0 {
@@ -5179,8 +5179,8 @@ L60:
 	}
 L61:
 	;
-	v360 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v363 = F_dictAdd(m, v360, int32(_a894), int32(600))
+	v360 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v363 = F_dictAdd(m, v360, int32(_a_F_moduleRegisterCoreAPI_59), int32(600))
 	mBase = m.M
 	v364 = m.ExcPending
 	if v364 != 0 {
@@ -5190,8 +5190,8 @@ L61:
 	}
 L62:
 	;
-	v366 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v369 = F_dictAdd(m, v366, int32(_a895), int32(600))
+	v366 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v369 = F_dictAdd(m, v366, int32(_a_F_moduleRegisterCoreAPI_60), int32(600))
 	mBase = m.M
 	v370 = m.ExcPending
 	if v370 != 0 {
@@ -5201,8 +5201,8 @@ L62:
 	}
 L63:
 	;
-	v372 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v375 = F_dictAdd(m, v372, int32(_a896), int32(601))
+	v372 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v375 = F_dictAdd(m, v372, int32(_a_F_moduleRegisterCoreAPI_61), int32(601))
 	mBase = m.M
 	v376 = m.ExcPending
 	if v376 != 0 {
@@ -5212,8 +5212,8 @@ L63:
 	}
 L64:
 	;
-	v378 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v381 = F_dictAdd(m, v378, int32(_a897), int32(601))
+	v378 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v381 = F_dictAdd(m, v378, int32(_a_F_moduleRegisterCoreAPI_62), int32(601))
 	mBase = m.M
 	v382 = m.ExcPending
 	if v382 != 0 {
@@ -5223,8 +5223,8 @@ L64:
 	}
 L65:
 	;
-	v384 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v387 = F_dictAdd(m, v384, int32(_a898), int32(602))
+	v384 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v387 = F_dictAdd(m, v384, int32(_a_F_moduleRegisterCoreAPI_63), int32(602))
 	mBase = m.M
 	v388 = m.ExcPending
 	if v388 != 0 {
@@ -5234,8 +5234,8 @@ L65:
 	}
 L66:
 	;
-	v390 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v393 = F_dictAdd(m, v390, int32(_a899), int32(602))
+	v390 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v393 = F_dictAdd(m, v390, int32(_a_F_moduleRegisterCoreAPI_64), int32(602))
 	mBase = m.M
 	v394 = m.ExcPending
 	if v394 != 0 {
@@ -5245,8 +5245,8 @@ L66:
 	}
 L67:
 	;
-	v396 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v399 = F_dictAdd(m, v396, int32(_a900), int32(603))
+	v396 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v399 = F_dictAdd(m, v396, int32(_a_F_moduleRegisterCoreAPI_65), int32(603))
 	mBase = m.M
 	v400 = m.ExcPending
 	if v400 != 0 {
@@ -5256,8 +5256,8 @@ L67:
 	}
 L68:
 	;
-	v402 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v405 = F_dictAdd(m, v402, int32(_a901), int32(603))
+	v402 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v405 = F_dictAdd(m, v402, int32(_a_F_moduleRegisterCoreAPI_66), int32(603))
 	mBase = m.M
 	v406 = m.ExcPending
 	if v406 != 0 {
@@ -5267,8 +5267,8 @@ L68:
 	}
 L69:
 	;
-	v408 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v411 = F_dictAdd(m, v408, int32(_a902), int32(604))
+	v408 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v411 = F_dictAdd(m, v408, int32(_a_F_moduleRegisterCoreAPI_67), int32(604))
 	mBase = m.M
 	v412 = m.ExcPending
 	if v412 != 0 {
@@ -5278,8 +5278,8 @@ L69:
 	}
 L70:
 	;
-	v414 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v417 = F_dictAdd(m, v414, int32(_a903), int32(604))
+	v414 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v417 = F_dictAdd(m, v414, int32(_a_F_moduleRegisterCoreAPI_68), int32(604))
 	mBase = m.M
 	v418 = m.ExcPending
 	if v418 != 0 {
@@ -5289,8 +5289,8 @@ L70:
 	}
 L71:
 	;
-	v420 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v423 = F_dictAdd(m, v420, int32(_a904), int32(605))
+	v420 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v423 = F_dictAdd(m, v420, int32(_a_F_moduleRegisterCoreAPI_69), int32(605))
 	mBase = m.M
 	v424 = m.ExcPending
 	if v424 != 0 {
@@ -5300,8 +5300,8 @@ L71:
 	}
 L72:
 	;
-	v426 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v429 = F_dictAdd(m, v426, int32(_a905), int32(605))
+	v426 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v429 = F_dictAdd(m, v426, int32(_a_F_moduleRegisterCoreAPI_70), int32(605))
 	mBase = m.M
 	v430 = m.ExcPending
 	if v430 != 0 {
@@ -5311,8 +5311,8 @@ L72:
 	}
 L73:
 	;
-	v432 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v435 = F_dictAdd(m, v432, int32(_a906), int32(606))
+	v432 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v435 = F_dictAdd(m, v432, int32(_a_F_moduleRegisterCoreAPI_71), int32(606))
 	mBase = m.M
 	v436 = m.ExcPending
 	if v436 != 0 {
@@ -5322,8 +5322,8 @@ L73:
 	}
 L74:
 	;
-	v438 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v441 = F_dictAdd(m, v438, int32(_a907), int32(606))
+	v438 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v441 = F_dictAdd(m, v438, int32(_a_F_moduleRegisterCoreAPI_72), int32(606))
 	mBase = m.M
 	v442 = m.ExcPending
 	if v442 != 0 {
@@ -5333,8 +5333,8 @@ L74:
 	}
 L75:
 	;
-	v444 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v447 = F_dictAdd(m, v444, int32(_a908), int32(607))
+	v444 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v447 = F_dictAdd(m, v444, int32(_a_F_moduleRegisterCoreAPI_73), int32(607))
 	mBase = m.M
 	v448 = m.ExcPending
 	if v448 != 0 {
@@ -5344,8 +5344,8 @@ L75:
 	}
 L76:
 	;
-	v450 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v453 = F_dictAdd(m, v450, int32(_a909), int32(607))
+	v450 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v453 = F_dictAdd(m, v450, int32(_a_F_moduleRegisterCoreAPI_74), int32(607))
 	mBase = m.M
 	v454 = m.ExcPending
 	if v454 != 0 {
@@ -5355,8 +5355,8 @@ L76:
 	}
 L77:
 	;
-	v456 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v459 = F_dictAdd(m, v456, int32(_a910), int32(608))
+	v456 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v459 = F_dictAdd(m, v456, int32(_a_F_moduleRegisterCoreAPI_75), int32(608))
 	mBase = m.M
 	v460 = m.ExcPending
 	if v460 != 0 {
@@ -5366,8 +5366,8 @@ L77:
 	}
 L78:
 	;
-	v462 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v465 = F_dictAdd(m, v462, int32(_a911), int32(608))
+	v462 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v465 = F_dictAdd(m, v462, int32(_a_F_moduleRegisterCoreAPI_76), int32(608))
 	mBase = m.M
 	v466 = m.ExcPending
 	if v466 != 0 {
@@ -5377,8 +5377,8 @@ L78:
 	}
 L79:
 	;
-	v468 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v471 = F_dictAdd(m, v468, int32(_a912), int32(609))
+	v468 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v471 = F_dictAdd(m, v468, int32(_a_F_moduleRegisterCoreAPI_77), int32(609))
 	mBase = m.M
 	v472 = m.ExcPending
 	if v472 != 0 {
@@ -5388,8 +5388,8 @@ L79:
 	}
 L80:
 	;
-	v474 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v477 = F_dictAdd(m, v474, int32(_a913), int32(609))
+	v474 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v477 = F_dictAdd(m, v474, int32(_a_F_moduleRegisterCoreAPI_78), int32(609))
 	mBase = m.M
 	v478 = m.ExcPending
 	if v478 != 0 {
@@ -5399,8 +5399,8 @@ L80:
 	}
 L81:
 	;
-	v480 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v483 = F_dictAdd(m, v480, int32(_a914), int32(610))
+	v480 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v483 = F_dictAdd(m, v480, int32(_a_F_moduleRegisterCoreAPI_79), int32(610))
 	mBase = m.M
 	v484 = m.ExcPending
 	if v484 != 0 {
@@ -5410,8 +5410,8 @@ L81:
 	}
 L82:
 	;
-	v486 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v489 = F_dictAdd(m, v486, int32(_a915), int32(610))
+	v486 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v489 = F_dictAdd(m, v486, int32(_a_F_moduleRegisterCoreAPI_80), int32(610))
 	mBase = m.M
 	v490 = m.ExcPending
 	if v490 != 0 {
@@ -5421,8 +5421,8 @@ L82:
 	}
 L83:
 	;
-	v492 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v495 = F_dictAdd(m, v492, int32(_a916), int32(611))
+	v492 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v495 = F_dictAdd(m, v492, int32(_a_F_moduleRegisterCoreAPI_81), int32(611))
 	mBase = m.M
 	v496 = m.ExcPending
 	if v496 != 0 {
@@ -5432,8 +5432,8 @@ L83:
 	}
 L84:
 	;
-	v498 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v501 = F_dictAdd(m, v498, int32(_a917), int32(611))
+	v498 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v501 = F_dictAdd(m, v498, int32(_a_F_moduleRegisterCoreAPI_82), int32(611))
 	mBase = m.M
 	v502 = m.ExcPending
 	if v502 != 0 {
@@ -5443,8 +5443,8 @@ L84:
 	}
 L85:
 	;
-	v504 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v507 = F_dictAdd(m, v504, int32(_a918), int32(612))
+	v504 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v507 = F_dictAdd(m, v504, int32(_a_F_moduleRegisterCoreAPI_83), int32(612))
 	mBase = m.M
 	v508 = m.ExcPending
 	if v508 != 0 {
@@ -5454,8 +5454,8 @@ L85:
 	}
 L86:
 	;
-	v510 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v513 = F_dictAdd(m, v510, int32(_a919), int32(612))
+	v510 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v513 = F_dictAdd(m, v510, int32(_a_F_moduleRegisterCoreAPI_84), int32(612))
 	mBase = m.M
 	v514 = m.ExcPending
 	if v514 != 0 {
@@ -5465,8 +5465,8 @@ L86:
 	}
 L87:
 	;
-	v516 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v519 = F_dictAdd(m, v516, int32(_a920), int32(613))
+	v516 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v519 = F_dictAdd(m, v516, int32(_a_F_moduleRegisterCoreAPI_85), int32(613))
 	mBase = m.M
 	v520 = m.ExcPending
 	if v520 != 0 {
@@ -5476,8 +5476,8 @@ L87:
 	}
 L88:
 	;
-	v522 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v525 = F_dictAdd(m, v522, int32(_a921), int32(613))
+	v522 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v525 = F_dictAdd(m, v522, int32(_a_F_moduleRegisterCoreAPI_86), int32(613))
 	mBase = m.M
 	v526 = m.ExcPending
 	if v526 != 0 {
@@ -5487,8 +5487,8 @@ L88:
 	}
 L89:
 	;
-	v528 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v531 = F_dictAdd(m, v528, int32(_a922), int32(614))
+	v528 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v531 = F_dictAdd(m, v528, int32(_a_F_moduleRegisterCoreAPI_87), int32(614))
 	mBase = m.M
 	v532 = m.ExcPending
 	if v532 != 0 {
@@ -5498,8 +5498,8 @@ L89:
 	}
 L90:
 	;
-	v534 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v537 = F_dictAdd(m, v534, int32(_a923), int32(614))
+	v534 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v537 = F_dictAdd(m, v534, int32(_a_F_moduleRegisterCoreAPI_88), int32(614))
 	mBase = m.M
 	v538 = m.ExcPending
 	if v538 != 0 {
@@ -5509,8 +5509,8 @@ L90:
 	}
 L91:
 	;
-	v540 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v543 = F_dictAdd(m, v540, int32(_a924), int32(615))
+	v540 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v543 = F_dictAdd(m, v540, int32(_a_F_moduleRegisterCoreAPI_89), int32(615))
 	mBase = m.M
 	v544 = m.ExcPending
 	if v544 != 0 {
@@ -5520,8 +5520,8 @@ L91:
 	}
 L92:
 	;
-	v546 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v549 = F_dictAdd(m, v546, int32(_a925), int32(615))
+	v546 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v549 = F_dictAdd(m, v546, int32(_a_F_moduleRegisterCoreAPI_90), int32(615))
 	mBase = m.M
 	v550 = m.ExcPending
 	if v550 != 0 {
@@ -5531,8 +5531,8 @@ L92:
 	}
 L93:
 	;
-	v552 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v555 = F_dictAdd(m, v552, int32(_a926), int32(616))
+	v552 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v555 = F_dictAdd(m, v552, int32(_a_F_moduleRegisterCoreAPI_91), int32(616))
 	mBase = m.M
 	v556 = m.ExcPending
 	if v556 != 0 {
@@ -5542,8 +5542,8 @@ L93:
 	}
 L94:
 	;
-	v558 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v561 = F_dictAdd(m, v558, int32(_a927), int32(616))
+	v558 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v561 = F_dictAdd(m, v558, int32(_a_F_moduleRegisterCoreAPI_92), int32(616))
 	mBase = m.M
 	v562 = m.ExcPending
 	if v562 != 0 {
@@ -5553,8 +5553,8 @@ L94:
 	}
 L95:
 	;
-	v564 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v567 = F_dictAdd(m, v564, int32(_a928), int32(617))
+	v564 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v567 = F_dictAdd(m, v564, int32(_a_F_moduleRegisterCoreAPI_93), int32(617))
 	mBase = m.M
 	v568 = m.ExcPending
 	if v568 != 0 {
@@ -5564,8 +5564,8 @@ L95:
 	}
 L96:
 	;
-	v570 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v573 = F_dictAdd(m, v570, int32(_a929), int32(617))
+	v570 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v573 = F_dictAdd(m, v570, int32(_a_F_moduleRegisterCoreAPI_94), int32(617))
 	mBase = m.M
 	v574 = m.ExcPending
 	if v574 != 0 {
@@ -5575,8 +5575,8 @@ L96:
 	}
 L97:
 	;
-	v576 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v579 = F_dictAdd(m, v576, int32(_a930), int32(618))
+	v576 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v579 = F_dictAdd(m, v576, int32(_a_F_moduleRegisterCoreAPI_95), int32(618))
 	mBase = m.M
 	v580 = m.ExcPending
 	if v580 != 0 {
@@ -5586,8 +5586,8 @@ L97:
 	}
 L98:
 	;
-	v582 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v585 = F_dictAdd(m, v582, int32(_a931), int32(618))
+	v582 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v585 = F_dictAdd(m, v582, int32(_a_F_moduleRegisterCoreAPI_96), int32(618))
 	mBase = m.M
 	v586 = m.ExcPending
 	if v586 != 0 {
@@ -5597,8 +5597,8 @@ L98:
 	}
 L99:
 	;
-	v588 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v591 = F_dictAdd(m, v588, int32(_a932), int32(619))
+	v588 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v591 = F_dictAdd(m, v588, int32(_a_F_moduleRegisterCoreAPI_97), int32(619))
 	mBase = m.M
 	v592 = m.ExcPending
 	if v592 != 0 {
@@ -5608,8 +5608,8 @@ L99:
 	}
 L100:
 	;
-	v594 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v597 = F_dictAdd(m, v594, int32(_a933), int32(619))
+	v594 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v597 = F_dictAdd(m, v594, int32(_a_F_moduleRegisterCoreAPI_98), int32(619))
 	mBase = m.M
 	v598 = m.ExcPending
 	if v598 != 0 {
@@ -5619,8 +5619,8 @@ L100:
 	}
 L101:
 	;
-	v600 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v603 = F_dictAdd(m, v600, int32(_a934), int32(620))
+	v600 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v603 = F_dictAdd(m, v600, int32(_a_F_moduleRegisterCoreAPI_99), int32(620))
 	mBase = m.M
 	v604 = m.ExcPending
 	if v604 != 0 {
@@ -5630,8 +5630,8 @@ L101:
 	}
 L102:
 	;
-	v606 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v609 = F_dictAdd(m, v606, int32(_a935), int32(620))
+	v606 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v609 = F_dictAdd(m, v606, int32(_a_F_moduleRegisterCoreAPI_100), int32(620))
 	mBase = m.M
 	v610 = m.ExcPending
 	if v610 != 0 {
@@ -5641,8 +5641,8 @@ L102:
 	}
 L103:
 	;
-	v612 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v615 = F_dictAdd(m, v612, int32(_a936), int32(621))
+	v612 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v615 = F_dictAdd(m, v612, int32(_a_F_moduleRegisterCoreAPI_101), int32(621))
 	mBase = m.M
 	v616 = m.ExcPending
 	if v616 != 0 {
@@ -5652,8 +5652,8 @@ L103:
 	}
 L104:
 	;
-	v618 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v621 = F_dictAdd(m, v618, int32(_a937), int32(621))
+	v618 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v621 = F_dictAdd(m, v618, int32(_a_F_moduleRegisterCoreAPI_102), int32(621))
 	mBase = m.M
 	v622 = m.ExcPending
 	if v622 != 0 {
@@ -5663,8 +5663,8 @@ L104:
 	}
 L105:
 	;
-	v624 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v627 = F_dictAdd(m, v624, int32(_a938), int32(622))
+	v624 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v627 = F_dictAdd(m, v624, int32(_a_F_moduleRegisterCoreAPI_103), int32(622))
 	mBase = m.M
 	v628 = m.ExcPending
 	if v628 != 0 {
@@ -5674,8 +5674,8 @@ L105:
 	}
 L106:
 	;
-	v630 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v633 = F_dictAdd(m, v630, int32(_a939), int32(622))
+	v630 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v633 = F_dictAdd(m, v630, int32(_a_F_moduleRegisterCoreAPI_104), int32(622))
 	mBase = m.M
 	v634 = m.ExcPending
 	if v634 != 0 {
@@ -5685,8 +5685,8 @@ L106:
 	}
 L107:
 	;
-	v636 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v639 = F_dictAdd(m, v636, int32(_a940), int32(623))
+	v636 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v639 = F_dictAdd(m, v636, int32(_a_F_moduleRegisterCoreAPI_105), int32(623))
 	mBase = m.M
 	v640 = m.ExcPending
 	if v640 != 0 {
@@ -5696,8 +5696,8 @@ L107:
 	}
 L108:
 	;
-	v642 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v645 = F_dictAdd(m, v642, int32(_a941), int32(623))
+	v642 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v645 = F_dictAdd(m, v642, int32(_a_F_moduleRegisterCoreAPI_106), int32(623))
 	mBase = m.M
 	v646 = m.ExcPending
 	if v646 != 0 {
@@ -5707,8 +5707,8 @@ L108:
 	}
 L109:
 	;
-	v648 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v651 = F_dictAdd(m, v648, int32(_a942), int32(624))
+	v648 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v651 = F_dictAdd(m, v648, int32(_a_F_moduleRegisterCoreAPI_107), int32(624))
 	mBase = m.M
 	v652 = m.ExcPending
 	if v652 != 0 {
@@ -5718,8 +5718,8 @@ L109:
 	}
 L110:
 	;
-	v654 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v657 = F_dictAdd(m, v654, int32(_a943), int32(624))
+	v654 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v657 = F_dictAdd(m, v654, int32(_a_F_moduleRegisterCoreAPI_108), int32(624))
 	mBase = m.M
 	v658 = m.ExcPending
 	if v658 != 0 {
@@ -5729,8 +5729,8 @@ L110:
 	}
 L111:
 	;
-	v660 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v663 = F_dictAdd(m, v660, int32(_a944), int32(625))
+	v660 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v663 = F_dictAdd(m, v660, int32(_a_F_moduleRegisterCoreAPI_109), int32(625))
 	mBase = m.M
 	v664 = m.ExcPending
 	if v664 != 0 {
@@ -5740,8 +5740,8 @@ L111:
 	}
 L112:
 	;
-	v666 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v669 = F_dictAdd(m, v666, int32(_a945), int32(625))
+	v666 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v669 = F_dictAdd(m, v666, int32(_a_F_moduleRegisterCoreAPI_110), int32(625))
 	mBase = m.M
 	v670 = m.ExcPending
 	if v670 != 0 {
@@ -5751,8 +5751,8 @@ L112:
 	}
 L113:
 	;
-	v672 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v675 = F_dictAdd(m, v672, int32(_a946), int32(626))
+	v672 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v675 = F_dictAdd(m, v672, int32(_a_F_moduleRegisterCoreAPI_111), int32(626))
 	mBase = m.M
 	v676 = m.ExcPending
 	if v676 != 0 {
@@ -5762,8 +5762,8 @@ L113:
 	}
 L114:
 	;
-	v678 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v681 = F_dictAdd(m, v678, int32(_a947), int32(626))
+	v678 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v681 = F_dictAdd(m, v678, int32(_a_F_moduleRegisterCoreAPI_112), int32(626))
 	mBase = m.M
 	v682 = m.ExcPending
 	if v682 != 0 {
@@ -5773,8 +5773,8 @@ L114:
 	}
 L115:
 	;
-	v684 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v687 = F_dictAdd(m, v684, int32(_a948), int32(627))
+	v684 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v687 = F_dictAdd(m, v684, int32(_a_F_moduleRegisterCoreAPI_113), int32(627))
 	mBase = m.M
 	v688 = m.ExcPending
 	if v688 != 0 {
@@ -5784,8 +5784,8 @@ L115:
 	}
 L116:
 	;
-	v690 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v693 = F_dictAdd(m, v690, int32(_a949), int32(627))
+	v690 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v693 = F_dictAdd(m, v690, int32(_a_F_moduleRegisterCoreAPI_114), int32(627))
 	mBase = m.M
 	v694 = m.ExcPending
 	if v694 != 0 {
@@ -5795,8 +5795,8 @@ L116:
 	}
 L117:
 	;
-	v696 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v699 = F_dictAdd(m, v696, int32(_a950), int32(628))
+	v696 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v699 = F_dictAdd(m, v696, int32(_a_F_moduleRegisterCoreAPI_115), int32(628))
 	mBase = m.M
 	v700 = m.ExcPending
 	if v700 != 0 {
@@ -5806,8 +5806,8 @@ L117:
 	}
 L118:
 	;
-	v702 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v705 = F_dictAdd(m, v702, int32(_a951), int32(628))
+	v702 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v705 = F_dictAdd(m, v702, int32(_a_F_moduleRegisterCoreAPI_116), int32(628))
 	mBase = m.M
 	v706 = m.ExcPending
 	if v706 != 0 {
@@ -5817,8 +5817,8 @@ L118:
 	}
 L119:
 	;
-	v708 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v711 = F_dictAdd(m, v708, int32(_a952), int32(629))
+	v708 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v711 = F_dictAdd(m, v708, int32(_a_F_moduleRegisterCoreAPI_117), int32(629))
 	mBase = m.M
 	v712 = m.ExcPending
 	if v712 != 0 {
@@ -5828,8 +5828,8 @@ L119:
 	}
 L120:
 	;
-	v714 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v717 = F_dictAdd(m, v714, int32(_a953), int32(629))
+	v714 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v717 = F_dictAdd(m, v714, int32(_a_F_moduleRegisterCoreAPI_118), int32(629))
 	mBase = m.M
 	v718 = m.ExcPending
 	if v718 != 0 {
@@ -5839,8 +5839,8 @@ L120:
 	}
 L121:
 	;
-	v720 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v723 = F_dictAdd(m, v720, int32(_a954), int32(630))
+	v720 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v723 = F_dictAdd(m, v720, int32(_a_F_moduleRegisterCoreAPI_119), int32(630))
 	mBase = m.M
 	v724 = m.ExcPending
 	if v724 != 0 {
@@ -5850,8 +5850,8 @@ L121:
 	}
 L122:
 	;
-	v726 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v729 = F_dictAdd(m, v726, int32(_a955), int32(630))
+	v726 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v729 = F_dictAdd(m, v726, int32(_a_F_moduleRegisterCoreAPI_120), int32(630))
 	mBase = m.M
 	v730 = m.ExcPending
 	if v730 != 0 {
@@ -5861,8 +5861,8 @@ L122:
 	}
 L123:
 	;
-	v732 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v735 = F_dictAdd(m, v732, int32(_a956), int32(631))
+	v732 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v735 = F_dictAdd(m, v732, int32(_a_F_moduleRegisterCoreAPI_121), int32(631))
 	mBase = m.M
 	v736 = m.ExcPending
 	if v736 != 0 {
@@ -5872,8 +5872,8 @@ L123:
 	}
 L124:
 	;
-	v738 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v741 = F_dictAdd(m, v738, int32(_a957), int32(631))
+	v738 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v741 = F_dictAdd(m, v738, int32(_a_F_moduleRegisterCoreAPI_122), int32(631))
 	mBase = m.M
 	v742 = m.ExcPending
 	if v742 != 0 {
@@ -5883,8 +5883,8 @@ L124:
 	}
 L125:
 	;
-	v744 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v747 = F_dictAdd(m, v744, int32(_a958), int32(632))
+	v744 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v747 = F_dictAdd(m, v744, int32(_a_F_moduleRegisterCoreAPI_123), int32(632))
 	mBase = m.M
 	v748 = m.ExcPending
 	if v748 != 0 {
@@ -5894,8 +5894,8 @@ L125:
 	}
 L126:
 	;
-	v750 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v753 = F_dictAdd(m, v750, int32(_a959), int32(632))
+	v750 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v753 = F_dictAdd(m, v750, int32(_a_F_moduleRegisterCoreAPI_124), int32(632))
 	mBase = m.M
 	v754 = m.ExcPending
 	if v754 != 0 {
@@ -5905,8 +5905,8 @@ L126:
 	}
 L127:
 	;
-	v756 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v759 = F_dictAdd(m, v756, int32(_a960), int32(633))
+	v756 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v759 = F_dictAdd(m, v756, int32(_a_F_moduleRegisterCoreAPI_125), int32(633))
 	mBase = m.M
 	v760 = m.ExcPending
 	if v760 != 0 {
@@ -5916,8 +5916,8 @@ L127:
 	}
 L128:
 	;
-	v762 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v765 = F_dictAdd(m, v762, int32(_a961), int32(633))
+	v762 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v765 = F_dictAdd(m, v762, int32(_a_F_moduleRegisterCoreAPI_126), int32(633))
 	mBase = m.M
 	v766 = m.ExcPending
 	if v766 != 0 {
@@ -5927,8 +5927,8 @@ L128:
 	}
 L129:
 	;
-	v768 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v771 = F_dictAdd(m, v768, int32(_a962), int32(634))
+	v768 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v771 = F_dictAdd(m, v768, int32(_a_F_moduleRegisterCoreAPI_127), int32(634))
 	mBase = m.M
 	v772 = m.ExcPending
 	if v772 != 0 {
@@ -5938,8 +5938,8 @@ L129:
 	}
 L130:
 	;
-	v774 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v777 = F_dictAdd(m, v774, int32(_a963), int32(634))
+	v774 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v777 = F_dictAdd(m, v774, int32(_a_F_moduleRegisterCoreAPI_128), int32(634))
 	mBase = m.M
 	v778 = m.ExcPending
 	if v778 != 0 {
@@ -5949,8 +5949,8 @@ L130:
 	}
 L131:
 	;
-	v780 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v783 = F_dictAdd(m, v780, int32(_a964), int32(635))
+	v780 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v783 = F_dictAdd(m, v780, int32(_a_F_moduleRegisterCoreAPI_129), int32(635))
 	mBase = m.M
 	v784 = m.ExcPending
 	if v784 != 0 {
@@ -5960,8 +5960,8 @@ L131:
 	}
 L132:
 	;
-	v786 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v789 = F_dictAdd(m, v786, int32(_a965), int32(635))
+	v786 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v789 = F_dictAdd(m, v786, int32(_a_F_moduleRegisterCoreAPI_130), int32(635))
 	mBase = m.M
 	v790 = m.ExcPending
 	if v790 != 0 {
@@ -5971,8 +5971,8 @@ L132:
 	}
 L133:
 	;
-	v792 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v795 = F_dictAdd(m, v792, int32(_a966), int32(636))
+	v792 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v795 = F_dictAdd(m, v792, int32(_a_F_moduleRegisterCoreAPI_131), int32(636))
 	mBase = m.M
 	v796 = m.ExcPending
 	if v796 != 0 {
@@ -5982,8 +5982,8 @@ L133:
 	}
 L134:
 	;
-	v798 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v801 = F_dictAdd(m, v798, int32(_a967), int32(636))
+	v798 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v801 = F_dictAdd(m, v798, int32(_a_F_moduleRegisterCoreAPI_132), int32(636))
 	mBase = m.M
 	v802 = m.ExcPending
 	if v802 != 0 {
@@ -5993,8 +5993,8 @@ L134:
 	}
 L135:
 	;
-	v804 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v807 = F_dictAdd(m, v804, int32(_a968), int32(637))
+	v804 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v807 = F_dictAdd(m, v804, int32(_a_F_moduleRegisterCoreAPI_133), int32(637))
 	mBase = m.M
 	v808 = m.ExcPending
 	if v808 != 0 {
@@ -6004,8 +6004,8 @@ L135:
 	}
 L136:
 	;
-	v810 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v813 = F_dictAdd(m, v810, int32(_a969), int32(637))
+	v810 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v813 = F_dictAdd(m, v810, int32(_a_F_moduleRegisterCoreAPI_134), int32(637))
 	mBase = m.M
 	v814 = m.ExcPending
 	if v814 != 0 {
@@ -6015,8 +6015,8 @@ L136:
 	}
 L137:
 	;
-	v816 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v819 = F_dictAdd(m, v816, int32(_a970), int32(638))
+	v816 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v819 = F_dictAdd(m, v816, int32(_a_F_moduleRegisterCoreAPI_135), int32(638))
 	mBase = m.M
 	v820 = m.ExcPending
 	if v820 != 0 {
@@ -6026,8 +6026,8 @@ L137:
 	}
 L138:
 	;
-	v822 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v825 = F_dictAdd(m, v822, int32(_a971), int32(638))
+	v822 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v825 = F_dictAdd(m, v822, int32(_a_F_moduleRegisterCoreAPI_136), int32(638))
 	mBase = m.M
 	v826 = m.ExcPending
 	if v826 != 0 {
@@ -6037,8 +6037,8 @@ L138:
 	}
 L139:
 	;
-	v828 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v831 = F_dictAdd(m, v828, int32(_a972), int32(639))
+	v828 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v831 = F_dictAdd(m, v828, int32(_a_F_moduleRegisterCoreAPI_137), int32(639))
 	mBase = m.M
 	v832 = m.ExcPending
 	if v832 != 0 {
@@ -6048,8 +6048,8 @@ L139:
 	}
 L140:
 	;
-	v834 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v837 = F_dictAdd(m, v834, int32(_a973), int32(639))
+	v834 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v837 = F_dictAdd(m, v834, int32(_a_F_moduleRegisterCoreAPI_138), int32(639))
 	mBase = m.M
 	v838 = m.ExcPending
 	if v838 != 0 {
@@ -6059,8 +6059,8 @@ L140:
 	}
 L141:
 	;
-	v840 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v843 = F_dictAdd(m, v840, int32(_a974), int32(640))
+	v840 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v843 = F_dictAdd(m, v840, int32(_a_F_moduleRegisterCoreAPI_139), int32(640))
 	mBase = m.M
 	v844 = m.ExcPending
 	if v844 != 0 {
@@ -6070,8 +6070,8 @@ L141:
 	}
 L142:
 	;
-	v846 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v849 = F_dictAdd(m, v846, int32(_a975), int32(640))
+	v846 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v849 = F_dictAdd(m, v846, int32(_a_F_moduleRegisterCoreAPI_140), int32(640))
 	mBase = m.M
 	v850 = m.ExcPending
 	if v850 != 0 {
@@ -6081,8 +6081,8 @@ L142:
 	}
 L143:
 	;
-	v852 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v855 = F_dictAdd(m, v852, int32(_a976), int32(641))
+	v852 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v855 = F_dictAdd(m, v852, int32(_a_F_moduleRegisterCoreAPI_141), int32(641))
 	mBase = m.M
 	v856 = m.ExcPending
 	if v856 != 0 {
@@ -6092,8 +6092,8 @@ L143:
 	}
 L144:
 	;
-	v858 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v861 = F_dictAdd(m, v858, int32(_a977), int32(641))
+	v858 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v861 = F_dictAdd(m, v858, int32(_a_F_moduleRegisterCoreAPI_142), int32(641))
 	mBase = m.M
 	v862 = m.ExcPending
 	if v862 != 0 {
@@ -6103,8 +6103,8 @@ L144:
 	}
 L145:
 	;
-	v864 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v867 = F_dictAdd(m, v864, int32(_a978), int32(642))
+	v864 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v867 = F_dictAdd(m, v864, int32(_a_F_moduleRegisterCoreAPI_143), int32(642))
 	mBase = m.M
 	v868 = m.ExcPending
 	if v868 != 0 {
@@ -6114,8 +6114,8 @@ L145:
 	}
 L146:
 	;
-	v870 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v873 = F_dictAdd(m, v870, int32(_a979), int32(642))
+	v870 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v873 = F_dictAdd(m, v870, int32(_a_F_moduleRegisterCoreAPI_144), int32(642))
 	mBase = m.M
 	v874 = m.ExcPending
 	if v874 != 0 {
@@ -6125,8 +6125,8 @@ L146:
 	}
 L147:
 	;
-	v876 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v879 = F_dictAdd(m, v876, int32(_a980), int32(643))
+	v876 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v879 = F_dictAdd(m, v876, int32(_a_F_moduleRegisterCoreAPI_145), int32(643))
 	mBase = m.M
 	v880 = m.ExcPending
 	if v880 != 0 {
@@ -6136,8 +6136,8 @@ L147:
 	}
 L148:
 	;
-	v882 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v885 = F_dictAdd(m, v882, int32(_a981), int32(643))
+	v882 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v885 = F_dictAdd(m, v882, int32(_a_F_moduleRegisterCoreAPI_146), int32(643))
 	mBase = m.M
 	v886 = m.ExcPending
 	if v886 != 0 {
@@ -6147,8 +6147,8 @@ L148:
 	}
 L149:
 	;
-	v888 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v891 = F_dictAdd(m, v888, int32(_a982), int32(644))
+	v888 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v891 = F_dictAdd(m, v888, int32(_a_F_moduleRegisterCoreAPI_147), int32(644))
 	mBase = m.M
 	v892 = m.ExcPending
 	if v892 != 0 {
@@ -6158,8 +6158,8 @@ L149:
 	}
 L150:
 	;
-	v894 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v897 = F_dictAdd(m, v894, int32(_a983), int32(644))
+	v894 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v897 = F_dictAdd(m, v894, int32(_a_F_moduleRegisterCoreAPI_148), int32(644))
 	mBase = m.M
 	v898 = m.ExcPending
 	if v898 != 0 {
@@ -6169,8 +6169,8 @@ L150:
 	}
 L151:
 	;
-	v900 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v903 = F_dictAdd(m, v900, int32(_a984), int32(645))
+	v900 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v903 = F_dictAdd(m, v900, int32(_a_F_moduleRegisterCoreAPI_149), int32(645))
 	mBase = m.M
 	v904 = m.ExcPending
 	if v904 != 0 {
@@ -6180,8 +6180,8 @@ L151:
 	}
 L152:
 	;
-	v906 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v909 = F_dictAdd(m, v906, int32(_a985), int32(645))
+	v906 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v909 = F_dictAdd(m, v906, int32(_a_F_moduleRegisterCoreAPI_150), int32(645))
 	mBase = m.M
 	v910 = m.ExcPending
 	if v910 != 0 {
@@ -6191,8 +6191,8 @@ L152:
 	}
 L153:
 	;
-	v912 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v915 = F_dictAdd(m, v912, int32(_a986), int32(646))
+	v912 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v915 = F_dictAdd(m, v912, int32(_a_F_moduleRegisterCoreAPI_151), int32(646))
 	mBase = m.M
 	v916 = m.ExcPending
 	if v916 != 0 {
@@ -6202,8 +6202,8 @@ L153:
 	}
 L154:
 	;
-	v918 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v921 = F_dictAdd(m, v918, int32(_a987), int32(646))
+	v918 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v921 = F_dictAdd(m, v918, int32(_a_F_moduleRegisterCoreAPI_152), int32(646))
 	mBase = m.M
 	v922 = m.ExcPending
 	if v922 != 0 {
@@ -6213,8 +6213,8 @@ L154:
 	}
 L155:
 	;
-	v924 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v927 = F_dictAdd(m, v924, int32(_a988), int32(647))
+	v924 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v927 = F_dictAdd(m, v924, int32(_a_F_moduleRegisterCoreAPI_153), int32(647))
 	mBase = m.M
 	v928 = m.ExcPending
 	if v928 != 0 {
@@ -6224,8 +6224,8 @@ L155:
 	}
 L156:
 	;
-	v930 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v933 = F_dictAdd(m, v930, int32(_a989), int32(647))
+	v930 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v933 = F_dictAdd(m, v930, int32(_a_F_moduleRegisterCoreAPI_154), int32(647))
 	mBase = m.M
 	v934 = m.ExcPending
 	if v934 != 0 {
@@ -6235,8 +6235,8 @@ L156:
 	}
 L157:
 	;
-	v936 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v939 = F_dictAdd(m, v936, int32(_a990), int32(648))
+	v936 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v939 = F_dictAdd(m, v936, int32(_a_F_moduleRegisterCoreAPI_155), int32(648))
 	mBase = m.M
 	v940 = m.ExcPending
 	if v940 != 0 {
@@ -6246,8 +6246,8 @@ L157:
 	}
 L158:
 	;
-	v942 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v945 = F_dictAdd(m, v942, int32(_a991), int32(648))
+	v942 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v945 = F_dictAdd(m, v942, int32(_a_F_moduleRegisterCoreAPI_156), int32(648))
 	mBase = m.M
 	v946 = m.ExcPending
 	if v946 != 0 {
@@ -6257,8 +6257,8 @@ L158:
 	}
 L159:
 	;
-	v948 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v951 = F_dictAdd(m, v948, int32(_a992), int32(649))
+	v948 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v951 = F_dictAdd(m, v948, int32(_a_F_moduleRegisterCoreAPI_157), int32(649))
 	mBase = m.M
 	v952 = m.ExcPending
 	if v952 != 0 {
@@ -6268,8 +6268,8 @@ L159:
 	}
 L160:
 	;
-	v954 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v957 = F_dictAdd(m, v954, int32(_a993), int32(649))
+	v954 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v957 = F_dictAdd(m, v954, int32(_a_F_moduleRegisterCoreAPI_158), int32(649))
 	mBase = m.M
 	v958 = m.ExcPending
 	if v958 != 0 {
@@ -6279,8 +6279,8 @@ L160:
 	}
 L161:
 	;
-	v960 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v963 = F_dictAdd(m, v960, int32(_a994), int32(650))
+	v960 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v963 = F_dictAdd(m, v960, int32(_a_F_moduleRegisterCoreAPI_159), int32(650))
 	mBase = m.M
 	v964 = m.ExcPending
 	if v964 != 0 {
@@ -6290,8 +6290,8 @@ L161:
 	}
 L162:
 	;
-	v966 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v969 = F_dictAdd(m, v966, int32(_a995), int32(650))
+	v966 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v969 = F_dictAdd(m, v966, int32(_a_F_moduleRegisterCoreAPI_160), int32(650))
 	mBase = m.M
 	v970 = m.ExcPending
 	if v970 != 0 {
@@ -6301,8 +6301,8 @@ L162:
 	}
 L163:
 	;
-	v972 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v975 = F_dictAdd(m, v972, int32(_a996), int32(651))
+	v972 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v975 = F_dictAdd(m, v972, int32(_a_F_moduleRegisterCoreAPI_161), int32(651))
 	mBase = m.M
 	v976 = m.ExcPending
 	if v976 != 0 {
@@ -6312,8 +6312,8 @@ L163:
 	}
 L164:
 	;
-	v978 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v981 = F_dictAdd(m, v978, int32(_a997), int32(651))
+	v978 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v981 = F_dictAdd(m, v978, int32(_a_F_moduleRegisterCoreAPI_162), int32(651))
 	mBase = m.M
 	v982 = m.ExcPending
 	if v982 != 0 {
@@ -6323,8 +6323,8 @@ L164:
 	}
 L165:
 	;
-	v984 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v987 = F_dictAdd(m, v984, int32(_a998), int32(652))
+	v984 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v987 = F_dictAdd(m, v984, int32(_a_F_moduleRegisterCoreAPI_163), int32(652))
 	mBase = m.M
 	v988 = m.ExcPending
 	if v988 != 0 {
@@ -6334,8 +6334,8 @@ L165:
 	}
 L166:
 	;
-	v990 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v993 = F_dictAdd(m, v990, int32(_a999), int32(652))
+	v990 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v993 = F_dictAdd(m, v990, int32(_a_F_moduleRegisterCoreAPI_164), int32(652))
 	mBase = m.M
 	v994 = m.ExcPending
 	if v994 != 0 {
@@ -6345,8 +6345,8 @@ L166:
 	}
 L167:
 	;
-	v996 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v999 = F_dictAdd(m, v996, int32(_a1000), int32(653))
+	v996 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v999 = F_dictAdd(m, v996, int32(_a_F_moduleRegisterCoreAPI_165), int32(653))
 	mBase = m.M
 	v1000 = m.ExcPending
 	if v1000 != 0 {
@@ -6356,8 +6356,8 @@ L167:
 	}
 L168:
 	;
-	v1002 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1005 = F_dictAdd(m, v1002, int32(_a1001), int32(653))
+	v1002 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1005 = F_dictAdd(m, v1002, int32(_a_F_moduleRegisterCoreAPI_166), int32(653))
 	mBase = m.M
 	v1006 = m.ExcPending
 	if v1006 != 0 {
@@ -6367,8 +6367,8 @@ L168:
 	}
 L169:
 	;
-	v1008 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1011 = F_dictAdd(m, v1008, int32(_a1002), int32(654))
+	v1008 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1011 = F_dictAdd(m, v1008, int32(_a_F_moduleRegisterCoreAPI_167), int32(654))
 	mBase = m.M
 	v1012 = m.ExcPending
 	if v1012 != 0 {
@@ -6378,8 +6378,8 @@ L169:
 	}
 L170:
 	;
-	v1014 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1017 = F_dictAdd(m, v1014, int32(_a1003), int32(654))
+	v1014 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1017 = F_dictAdd(m, v1014, int32(_a_F_moduleRegisterCoreAPI_168), int32(654))
 	mBase = m.M
 	v1018 = m.ExcPending
 	if v1018 != 0 {
@@ -6389,8 +6389,8 @@ L170:
 	}
 L171:
 	;
-	v1020 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1023 = F_dictAdd(m, v1020, int32(_a1004), int32(655))
+	v1020 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1023 = F_dictAdd(m, v1020, int32(_a_F_moduleRegisterCoreAPI_169), int32(655))
 	mBase = m.M
 	v1024 = m.ExcPending
 	if v1024 != 0 {
@@ -6400,8 +6400,8 @@ L171:
 	}
 L172:
 	;
-	v1026 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1029 = F_dictAdd(m, v1026, int32(_a1005), int32(655))
+	v1026 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1029 = F_dictAdd(m, v1026, int32(_a_F_moduleRegisterCoreAPI_170), int32(655))
 	mBase = m.M
 	v1030 = m.ExcPending
 	if v1030 != 0 {
@@ -6411,8 +6411,8 @@ L172:
 	}
 L173:
 	;
-	v1032 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1035 = F_dictAdd(m, v1032, int32(_a1006), int32(656))
+	v1032 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1035 = F_dictAdd(m, v1032, int32(_a_F_moduleRegisterCoreAPI_171), int32(656))
 	mBase = m.M
 	v1036 = m.ExcPending
 	if v1036 != 0 {
@@ -6422,8 +6422,8 @@ L173:
 	}
 L174:
 	;
-	v1038 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1041 = F_dictAdd(m, v1038, int32(_a1007), int32(656))
+	v1038 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1041 = F_dictAdd(m, v1038, int32(_a_F_moduleRegisterCoreAPI_172), int32(656))
 	mBase = m.M
 	v1042 = m.ExcPending
 	if v1042 != 0 {
@@ -6433,8 +6433,8 @@ L174:
 	}
 L175:
 	;
-	v1044 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1047 = F_dictAdd(m, v1044, int32(_a1008), int32(657))
+	v1044 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1047 = F_dictAdd(m, v1044, int32(_a_F_moduleRegisterCoreAPI_173), int32(657))
 	mBase = m.M
 	v1048 = m.ExcPending
 	if v1048 != 0 {
@@ -6444,8 +6444,8 @@ L175:
 	}
 L176:
 	;
-	v1050 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1053 = F_dictAdd(m, v1050, int32(_a1009), int32(657))
+	v1050 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1053 = F_dictAdd(m, v1050, int32(_a_F_moduleRegisterCoreAPI_174), int32(657))
 	mBase = m.M
 	v1054 = m.ExcPending
 	if v1054 != 0 {
@@ -6455,8 +6455,8 @@ L176:
 	}
 L177:
 	;
-	v1056 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1059 = F_dictAdd(m, v1056, int32(_a1010), int32(658))
+	v1056 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1059 = F_dictAdd(m, v1056, int32(_a_F_moduleRegisterCoreAPI_175), int32(658))
 	mBase = m.M
 	v1060 = m.ExcPending
 	if v1060 != 0 {
@@ -6466,8 +6466,8 @@ L177:
 	}
 L178:
 	;
-	v1062 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1065 = F_dictAdd(m, v1062, int32(_a1011), int32(658))
+	v1062 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1065 = F_dictAdd(m, v1062, int32(_a_F_moduleRegisterCoreAPI_176), int32(658))
 	mBase = m.M
 	v1066 = m.ExcPending
 	if v1066 != 0 {
@@ -6477,8 +6477,8 @@ L178:
 	}
 L179:
 	;
-	v1068 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1071 = F_dictAdd(m, v1068, int32(_a1012), int32(659))
+	v1068 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1071 = F_dictAdd(m, v1068, int32(_a_F_moduleRegisterCoreAPI_177), int32(659))
 	mBase = m.M
 	v1072 = m.ExcPending
 	if v1072 != 0 {
@@ -6488,8 +6488,8 @@ L179:
 	}
 L180:
 	;
-	v1074 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1077 = F_dictAdd(m, v1074, int32(_a1013), int32(659))
+	v1074 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1077 = F_dictAdd(m, v1074, int32(_a_F_moduleRegisterCoreAPI_178), int32(659))
 	mBase = m.M
 	v1078 = m.ExcPending
 	if v1078 != 0 {
@@ -6499,8 +6499,8 @@ L180:
 	}
 L181:
 	;
-	v1080 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1083 = F_dictAdd(m, v1080, int32(_a1014), int32(660))
+	v1080 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1083 = F_dictAdd(m, v1080, int32(_a_F_moduleRegisterCoreAPI_179), int32(660))
 	mBase = m.M
 	v1084 = m.ExcPending
 	if v1084 != 0 {
@@ -6510,8 +6510,8 @@ L181:
 	}
 L182:
 	;
-	v1086 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1089 = F_dictAdd(m, v1086, int32(_a1015), int32(660))
+	v1086 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1089 = F_dictAdd(m, v1086, int32(_a_F_moduleRegisterCoreAPI_180), int32(660))
 	mBase = m.M
 	v1090 = m.ExcPending
 	if v1090 != 0 {
@@ -6521,8 +6521,8 @@ L182:
 	}
 L183:
 	;
-	v1092 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1095 = F_dictAdd(m, v1092, int32(_a1016), int32(661))
+	v1092 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1095 = F_dictAdd(m, v1092, int32(_a_F_moduleRegisterCoreAPI_181), int32(661))
 	mBase = m.M
 	v1096 = m.ExcPending
 	if v1096 != 0 {
@@ -6532,8 +6532,8 @@ L183:
 	}
 L184:
 	;
-	v1098 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1101 = F_dictAdd(m, v1098, int32(_a1017), int32(661))
+	v1098 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1101 = F_dictAdd(m, v1098, int32(_a_F_moduleRegisterCoreAPI_182), int32(661))
 	mBase = m.M
 	v1102 = m.ExcPending
 	if v1102 != 0 {
@@ -6543,8 +6543,8 @@ L184:
 	}
 L185:
 	;
-	v1104 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1107 = F_dictAdd(m, v1104, int32(_a1018), int32(662))
+	v1104 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1107 = F_dictAdd(m, v1104, int32(_a_F_moduleRegisterCoreAPI_183), int32(662))
 	mBase = m.M
 	v1108 = m.ExcPending
 	if v1108 != 0 {
@@ -6554,8 +6554,8 @@ L185:
 	}
 L186:
 	;
-	v1110 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1113 = F_dictAdd(m, v1110, int32(_a1019), int32(662))
+	v1110 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1113 = F_dictAdd(m, v1110, int32(_a_F_moduleRegisterCoreAPI_184), int32(662))
 	mBase = m.M
 	v1114 = m.ExcPending
 	if v1114 != 0 {
@@ -6565,8 +6565,8 @@ L186:
 	}
 L187:
 	;
-	v1116 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1119 = F_dictAdd(m, v1116, int32(_a1020), int32(663))
+	v1116 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1119 = F_dictAdd(m, v1116, int32(_a_F_moduleRegisterCoreAPI_185), int32(663))
 	mBase = m.M
 	v1120 = m.ExcPending
 	if v1120 != 0 {
@@ -6576,8 +6576,8 @@ L187:
 	}
 L188:
 	;
-	v1122 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1125 = F_dictAdd(m, v1122, int32(_a1021), int32(663))
+	v1122 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1125 = F_dictAdd(m, v1122, int32(_a_F_moduleRegisterCoreAPI_186), int32(663))
 	mBase = m.M
 	v1126 = m.ExcPending
 	if v1126 != 0 {
@@ -6587,8 +6587,8 @@ L188:
 	}
 L189:
 	;
-	v1128 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1131 = F_dictAdd(m, v1128, int32(_a1022), int32(664))
+	v1128 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1131 = F_dictAdd(m, v1128, int32(_a_F_moduleRegisterCoreAPI_187), int32(664))
 	mBase = m.M
 	v1132 = m.ExcPending
 	if v1132 != 0 {
@@ -6598,8 +6598,8 @@ L189:
 	}
 L190:
 	;
-	v1134 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1137 = F_dictAdd(m, v1134, int32(_a1023), int32(664))
+	v1134 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1137 = F_dictAdd(m, v1134, int32(_a_F_moduleRegisterCoreAPI_188), int32(664))
 	mBase = m.M
 	v1138 = m.ExcPending
 	if v1138 != 0 {
@@ -6609,8 +6609,8 @@ L190:
 	}
 L191:
 	;
-	v1140 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1143 = F_dictAdd(m, v1140, int32(_a1024), int32(665))
+	v1140 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1143 = F_dictAdd(m, v1140, int32(_a_F_moduleRegisterCoreAPI_189), int32(665))
 	mBase = m.M
 	v1144 = m.ExcPending
 	if v1144 != 0 {
@@ -6620,8 +6620,8 @@ L191:
 	}
 L192:
 	;
-	v1146 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1149 = F_dictAdd(m, v1146, int32(_a1025), int32(665))
+	v1146 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1149 = F_dictAdd(m, v1146, int32(_a_F_moduleRegisterCoreAPI_190), int32(665))
 	mBase = m.M
 	v1150 = m.ExcPending
 	if v1150 != 0 {
@@ -6631,8 +6631,8 @@ L192:
 	}
 L193:
 	;
-	v1152 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1155 = F_dictAdd(m, v1152, int32(_a1026), int32(666))
+	v1152 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1155 = F_dictAdd(m, v1152, int32(_a_F_moduleRegisterCoreAPI_191), int32(666))
 	mBase = m.M
 	v1156 = m.ExcPending
 	if v1156 != 0 {
@@ -6642,8 +6642,8 @@ L193:
 	}
 L194:
 	;
-	v1158 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1161 = F_dictAdd(m, v1158, int32(_a1027), int32(666))
+	v1158 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1161 = F_dictAdd(m, v1158, int32(_a_F_moduleRegisterCoreAPI_192), int32(666))
 	mBase = m.M
 	v1162 = m.ExcPending
 	if v1162 != 0 {
@@ -6653,8 +6653,8 @@ L194:
 	}
 L195:
 	;
-	v1164 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1167 = F_dictAdd(m, v1164, int32(_a1028), int32(667))
+	v1164 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1167 = F_dictAdd(m, v1164, int32(_a_F_moduleRegisterCoreAPI_193), int32(667))
 	mBase = m.M
 	v1168 = m.ExcPending
 	if v1168 != 0 {
@@ -6664,8 +6664,8 @@ L195:
 	}
 L196:
 	;
-	v1170 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1173 = F_dictAdd(m, v1170, int32(_a1029), int32(667))
+	v1170 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1173 = F_dictAdd(m, v1170, int32(_a_F_moduleRegisterCoreAPI_194), int32(667))
 	mBase = m.M
 	v1174 = m.ExcPending
 	if v1174 != 0 {
@@ -6675,8 +6675,8 @@ L196:
 	}
 L197:
 	;
-	v1176 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1179 = F_dictAdd(m, v1176, int32(_a1030), int32(668))
+	v1176 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1179 = F_dictAdd(m, v1176, int32(_a_F_moduleRegisterCoreAPI_195), int32(668))
 	mBase = m.M
 	v1180 = m.ExcPending
 	if v1180 != 0 {
@@ -6686,8 +6686,8 @@ L197:
 	}
 L198:
 	;
-	v1182 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1185 = F_dictAdd(m, v1182, int32(_a1031), int32(668))
+	v1182 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1185 = F_dictAdd(m, v1182, int32(_a_F_moduleRegisterCoreAPI_196), int32(668))
 	mBase = m.M
 	v1186 = m.ExcPending
 	if v1186 != 0 {
@@ -6697,8 +6697,8 @@ L198:
 	}
 L199:
 	;
-	v1188 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1191 = F_dictAdd(m, v1188, int32(_a1032), int32(669))
+	v1188 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1191 = F_dictAdd(m, v1188, int32(_a_F_moduleRegisterCoreAPI_197), int32(669))
 	mBase = m.M
 	v1192 = m.ExcPending
 	if v1192 != 0 {
@@ -6708,8 +6708,8 @@ L199:
 	}
 L200:
 	;
-	v1194 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1197 = F_dictAdd(m, v1194, int32(_a1033), int32(669))
+	v1194 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1197 = F_dictAdd(m, v1194, int32(_a_F_moduleRegisterCoreAPI_198), int32(669))
 	mBase = m.M
 	v1198 = m.ExcPending
 	if v1198 != 0 {
@@ -6719,8 +6719,8 @@ L200:
 	}
 L201:
 	;
-	v1200 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1203 = F_dictAdd(m, v1200, int32(_a1034), int32(670))
+	v1200 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1203 = F_dictAdd(m, v1200, int32(_a_F_moduleRegisterCoreAPI_199), int32(670))
 	mBase = m.M
 	v1204 = m.ExcPending
 	if v1204 != 0 {
@@ -6730,8 +6730,8 @@ L201:
 	}
 L202:
 	;
-	v1206 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1209 = F_dictAdd(m, v1206, int32(_a1035), int32(670))
+	v1206 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1209 = F_dictAdd(m, v1206, int32(_a_F_moduleRegisterCoreAPI_200), int32(670))
 	mBase = m.M
 	v1210 = m.ExcPending
 	if v1210 != 0 {
@@ -6741,8 +6741,8 @@ L202:
 	}
 L203:
 	;
-	v1212 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1215 = F_dictAdd(m, v1212, int32(_a1036), int32(671))
+	v1212 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1215 = F_dictAdd(m, v1212, int32(_a_F_moduleRegisterCoreAPI_201), int32(671))
 	mBase = m.M
 	v1216 = m.ExcPending
 	if v1216 != 0 {
@@ -6752,8 +6752,8 @@ L203:
 	}
 L204:
 	;
-	v1218 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1221 = F_dictAdd(m, v1218, int32(_a1037), int32(671))
+	v1218 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1221 = F_dictAdd(m, v1218, int32(_a_F_moduleRegisterCoreAPI_202), int32(671))
 	mBase = m.M
 	v1222 = m.ExcPending
 	if v1222 != 0 {
@@ -6763,8 +6763,8 @@ L204:
 	}
 L205:
 	;
-	v1224 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1227 = F_dictAdd(m, v1224, int32(_a1038), int32(672))
+	v1224 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1227 = F_dictAdd(m, v1224, int32(_a_F_moduleRegisterCoreAPI_203), int32(672))
 	mBase = m.M
 	v1228 = m.ExcPending
 	if v1228 != 0 {
@@ -6774,8 +6774,8 @@ L205:
 	}
 L206:
 	;
-	v1230 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1233 = F_dictAdd(m, v1230, int32(_a1039), int32(672))
+	v1230 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1233 = F_dictAdd(m, v1230, int32(_a_F_moduleRegisterCoreAPI_204), int32(672))
 	mBase = m.M
 	v1234 = m.ExcPending
 	if v1234 != 0 {
@@ -6785,8 +6785,8 @@ L206:
 	}
 L207:
 	;
-	v1236 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1239 = F_dictAdd(m, v1236, int32(_a1040), int32(673))
+	v1236 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1239 = F_dictAdd(m, v1236, int32(_a_F_moduleRegisterCoreAPI_205), int32(673))
 	mBase = m.M
 	v1240 = m.ExcPending
 	if v1240 != 0 {
@@ -6796,8 +6796,8 @@ L207:
 	}
 L208:
 	;
-	v1242 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1245 = F_dictAdd(m, v1242, int32(_a1041), int32(673))
+	v1242 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1245 = F_dictAdd(m, v1242, int32(_a_F_moduleRegisterCoreAPI_206), int32(673))
 	mBase = m.M
 	v1246 = m.ExcPending
 	if v1246 != 0 {
@@ -6807,8 +6807,8 @@ L208:
 	}
 L209:
 	;
-	v1248 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1251 = F_dictAdd(m, v1248, int32(_a1042), int32(674))
+	v1248 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1251 = F_dictAdd(m, v1248, int32(_a_F_moduleRegisterCoreAPI_207), int32(674))
 	mBase = m.M
 	v1252 = m.ExcPending
 	if v1252 != 0 {
@@ -6818,8 +6818,8 @@ L209:
 	}
 L210:
 	;
-	v1254 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1257 = F_dictAdd(m, v1254, int32(_a1043), int32(674))
+	v1254 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1257 = F_dictAdd(m, v1254, int32(_a_F_moduleRegisterCoreAPI_208), int32(674))
 	mBase = m.M
 	v1258 = m.ExcPending
 	if v1258 != 0 {
@@ -6829,8 +6829,8 @@ L210:
 	}
 L211:
 	;
-	v1260 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1263 = F_dictAdd(m, v1260, int32(_a1044), int32(675))
+	v1260 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1263 = F_dictAdd(m, v1260, int32(_a_F_moduleRegisterCoreAPI_209), int32(675))
 	mBase = m.M
 	v1264 = m.ExcPending
 	if v1264 != 0 {
@@ -6840,8 +6840,8 @@ L211:
 	}
 L212:
 	;
-	v1266 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1269 = F_dictAdd(m, v1266, int32(_a1045), int32(675))
+	v1266 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1269 = F_dictAdd(m, v1266, int32(_a_F_moduleRegisterCoreAPI_210), int32(675))
 	mBase = m.M
 	v1270 = m.ExcPending
 	if v1270 != 0 {
@@ -6851,8 +6851,8 @@ L212:
 	}
 L213:
 	;
-	v1272 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1275 = F_dictAdd(m, v1272, int32(_a1046), int32(676))
+	v1272 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1275 = F_dictAdd(m, v1272, int32(_a_F_moduleRegisterCoreAPI_211), int32(676))
 	mBase = m.M
 	v1276 = m.ExcPending
 	if v1276 != 0 {
@@ -6862,8 +6862,8 @@ L213:
 	}
 L214:
 	;
-	v1278 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1281 = F_dictAdd(m, v1278, int32(_a1047), int32(676))
+	v1278 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1281 = F_dictAdd(m, v1278, int32(_a_F_moduleRegisterCoreAPI_212), int32(676))
 	mBase = m.M
 	v1282 = m.ExcPending
 	if v1282 != 0 {
@@ -6873,8 +6873,8 @@ L214:
 	}
 L215:
 	;
-	v1284 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1287 = F_dictAdd(m, v1284, int32(_a1048), int32(677))
+	v1284 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1287 = F_dictAdd(m, v1284, int32(_a_F_moduleRegisterCoreAPI_213), int32(677))
 	mBase = m.M
 	v1288 = m.ExcPending
 	if v1288 != 0 {
@@ -6884,8 +6884,8 @@ L215:
 	}
 L216:
 	;
-	v1290 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1293 = F_dictAdd(m, v1290, int32(_a1049), int32(677))
+	v1290 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1293 = F_dictAdd(m, v1290, int32(_a_F_moduleRegisterCoreAPI_214), int32(677))
 	mBase = m.M
 	v1294 = m.ExcPending
 	if v1294 != 0 {
@@ -6895,8 +6895,8 @@ L216:
 	}
 L217:
 	;
-	v1296 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1299 = F_dictAdd(m, v1296, int32(_a1050), int32(678))
+	v1296 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1299 = F_dictAdd(m, v1296, int32(_a_F_moduleRegisterCoreAPI_215), int32(678))
 	mBase = m.M
 	v1300 = m.ExcPending
 	if v1300 != 0 {
@@ -6906,8 +6906,8 @@ L217:
 	}
 L218:
 	;
-	v1302 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1305 = F_dictAdd(m, v1302, int32(_a1051), int32(678))
+	v1302 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1305 = F_dictAdd(m, v1302, int32(_a_F_moduleRegisterCoreAPI_216), int32(678))
 	mBase = m.M
 	v1306 = m.ExcPending
 	if v1306 != 0 {
@@ -6917,8 +6917,8 @@ L218:
 	}
 L219:
 	;
-	v1308 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1311 = F_dictAdd(m, v1308, int32(_a1052), int32(679))
+	v1308 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1311 = F_dictAdd(m, v1308, int32(_a_F_moduleRegisterCoreAPI_217), int32(679))
 	mBase = m.M
 	v1312 = m.ExcPending
 	if v1312 != 0 {
@@ -6928,8 +6928,8 @@ L219:
 	}
 L220:
 	;
-	v1314 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1317 = F_dictAdd(m, v1314, int32(_a1053), int32(679))
+	v1314 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1317 = F_dictAdd(m, v1314, int32(_a_F_moduleRegisterCoreAPI_218), int32(679))
 	mBase = m.M
 	v1318 = m.ExcPending
 	if v1318 != 0 {
@@ -6939,8 +6939,8 @@ L220:
 	}
 L221:
 	;
-	v1320 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1323 = F_dictAdd(m, v1320, int32(_a1054), int32(680))
+	v1320 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1323 = F_dictAdd(m, v1320, int32(_a_F_moduleRegisterCoreAPI_219), int32(680))
 	mBase = m.M
 	v1324 = m.ExcPending
 	if v1324 != 0 {
@@ -6950,8 +6950,8 @@ L221:
 	}
 L222:
 	;
-	v1326 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1329 = F_dictAdd(m, v1326, int32(_a1055), int32(680))
+	v1326 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1329 = F_dictAdd(m, v1326, int32(_a_F_moduleRegisterCoreAPI_220), int32(680))
 	mBase = m.M
 	v1330 = m.ExcPending
 	if v1330 != 0 {
@@ -6961,8 +6961,8 @@ L222:
 	}
 L223:
 	;
-	v1332 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1335 = F_dictAdd(m, v1332, int32(_a1056), int32(681))
+	v1332 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1335 = F_dictAdd(m, v1332, int32(_a_F_moduleRegisterCoreAPI_221), int32(681))
 	mBase = m.M
 	v1336 = m.ExcPending
 	if v1336 != 0 {
@@ -6972,8 +6972,8 @@ L223:
 	}
 L224:
 	;
-	v1338 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1341 = F_dictAdd(m, v1338, int32(_a1057), int32(681))
+	v1338 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1341 = F_dictAdd(m, v1338, int32(_a_F_moduleRegisterCoreAPI_222), int32(681))
 	mBase = m.M
 	v1342 = m.ExcPending
 	if v1342 != 0 {
@@ -6983,8 +6983,8 @@ L224:
 	}
 L225:
 	;
-	v1344 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1347 = F_dictAdd(m, v1344, int32(_a1058), int32(682))
+	v1344 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1347 = F_dictAdd(m, v1344, int32(_a_F_moduleRegisterCoreAPI_223), int32(682))
 	mBase = m.M
 	v1348 = m.ExcPending
 	if v1348 != 0 {
@@ -6994,8 +6994,8 @@ L225:
 	}
 L226:
 	;
-	v1350 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1353 = F_dictAdd(m, v1350, int32(_a1059), int32(682))
+	v1350 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1353 = F_dictAdd(m, v1350, int32(_a_F_moduleRegisterCoreAPI_224), int32(682))
 	mBase = m.M
 	v1354 = m.ExcPending
 	if v1354 != 0 {
@@ -7005,8 +7005,8 @@ L226:
 	}
 L227:
 	;
-	v1356 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1359 = F_dictAdd(m, v1356, int32(_a1060), int32(683))
+	v1356 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1359 = F_dictAdd(m, v1356, int32(_a_F_moduleRegisterCoreAPI_225), int32(683))
 	mBase = m.M
 	v1360 = m.ExcPending
 	if v1360 != 0 {
@@ -7016,8 +7016,8 @@ L227:
 	}
 L228:
 	;
-	v1362 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1365 = F_dictAdd(m, v1362, int32(_a1061), int32(683))
+	v1362 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1365 = F_dictAdd(m, v1362, int32(_a_F_moduleRegisterCoreAPI_226), int32(683))
 	mBase = m.M
 	v1366 = m.ExcPending
 	if v1366 != 0 {
@@ -7027,8 +7027,8 @@ L228:
 	}
 L229:
 	;
-	v1368 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1371 = F_dictAdd(m, v1368, int32(_a1062), int32(684))
+	v1368 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1371 = F_dictAdd(m, v1368, int32(_a_F_moduleRegisterCoreAPI_227), int32(684))
 	mBase = m.M
 	v1372 = m.ExcPending
 	if v1372 != 0 {
@@ -7038,8 +7038,8 @@ L229:
 	}
 L230:
 	;
-	v1374 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1377 = F_dictAdd(m, v1374, int32(_a1063), int32(684))
+	v1374 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1377 = F_dictAdd(m, v1374, int32(_a_F_moduleRegisterCoreAPI_228), int32(684))
 	mBase = m.M
 	v1378 = m.ExcPending
 	if v1378 != 0 {
@@ -7049,8 +7049,8 @@ L230:
 	}
 L231:
 	;
-	v1380 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1383 = F_dictAdd(m, v1380, int32(_a1064), int32(685))
+	v1380 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1383 = F_dictAdd(m, v1380, int32(_a_F_moduleRegisterCoreAPI_229), int32(685))
 	mBase = m.M
 	v1384 = m.ExcPending
 	if v1384 != 0 {
@@ -7060,8 +7060,8 @@ L231:
 	}
 L232:
 	;
-	v1386 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1389 = F_dictAdd(m, v1386, int32(_a1065), int32(685))
+	v1386 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1389 = F_dictAdd(m, v1386, int32(_a_F_moduleRegisterCoreAPI_230), int32(685))
 	mBase = m.M
 	v1390 = m.ExcPending
 	if v1390 != 0 {
@@ -7071,8 +7071,8 @@ L232:
 	}
 L233:
 	;
-	v1392 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1395 = F_dictAdd(m, v1392, int32(_a1066), int32(686))
+	v1392 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1395 = F_dictAdd(m, v1392, int32(_a_F_moduleRegisterCoreAPI_231), int32(686))
 	mBase = m.M
 	v1396 = m.ExcPending
 	if v1396 != 0 {
@@ -7082,8 +7082,8 @@ L233:
 	}
 L234:
 	;
-	v1398 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1401 = F_dictAdd(m, v1398, int32(_a1067), int32(686))
+	v1398 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1401 = F_dictAdd(m, v1398, int32(_a_F_moduleRegisterCoreAPI_232), int32(686))
 	mBase = m.M
 	v1402 = m.ExcPending
 	if v1402 != 0 {
@@ -7093,8 +7093,8 @@ L234:
 	}
 L235:
 	;
-	v1404 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1407 = F_dictAdd(m, v1404, int32(_a1068), int32(687))
+	v1404 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1407 = F_dictAdd(m, v1404, int32(_a_F_moduleRegisterCoreAPI_233), int32(687))
 	mBase = m.M
 	v1408 = m.ExcPending
 	if v1408 != 0 {
@@ -7104,8 +7104,8 @@ L235:
 	}
 L236:
 	;
-	v1410 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1413 = F_dictAdd(m, v1410, int32(_a1069), int32(687))
+	v1410 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1413 = F_dictAdd(m, v1410, int32(_a_F_moduleRegisterCoreAPI_234), int32(687))
 	mBase = m.M
 	v1414 = m.ExcPending
 	if v1414 != 0 {
@@ -7115,8 +7115,8 @@ L236:
 	}
 L237:
 	;
-	v1416 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1419 = F_dictAdd(m, v1416, int32(_a1070), int32(688))
+	v1416 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1419 = F_dictAdd(m, v1416, int32(_a_F_moduleRegisterCoreAPI_235), int32(688))
 	mBase = m.M
 	v1420 = m.ExcPending
 	if v1420 != 0 {
@@ -7126,8 +7126,8 @@ L237:
 	}
 L238:
 	;
-	v1422 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1425 = F_dictAdd(m, v1422, int32(_a1071), int32(688))
+	v1422 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1425 = F_dictAdd(m, v1422, int32(_a_F_moduleRegisterCoreAPI_236), int32(688))
 	mBase = m.M
 	v1426 = m.ExcPending
 	if v1426 != 0 {
@@ -7137,8 +7137,8 @@ L238:
 	}
 L239:
 	;
-	v1428 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1431 = F_dictAdd(m, v1428, int32(_a1072), int32(689))
+	v1428 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1431 = F_dictAdd(m, v1428, int32(_a_F_moduleRegisterCoreAPI_237), int32(689))
 	mBase = m.M
 	v1432 = m.ExcPending
 	if v1432 != 0 {
@@ -7148,8 +7148,8 @@ L239:
 	}
 L240:
 	;
-	v1434 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1437 = F_dictAdd(m, v1434, int32(_a1073), int32(689))
+	v1434 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1437 = F_dictAdd(m, v1434, int32(_a_F_moduleRegisterCoreAPI_238), int32(689))
 	mBase = m.M
 	v1438 = m.ExcPending
 	if v1438 != 0 {
@@ -7159,8 +7159,8 @@ L240:
 	}
 L241:
 	;
-	v1440 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1443 = F_dictAdd(m, v1440, int32(_a1074), int32(690))
+	v1440 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1443 = F_dictAdd(m, v1440, int32(_a_F_moduleRegisterCoreAPI_239), int32(690))
 	mBase = m.M
 	v1444 = m.ExcPending
 	if v1444 != 0 {
@@ -7170,8 +7170,8 @@ L241:
 	}
 L242:
 	;
-	v1446 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1449 = F_dictAdd(m, v1446, int32(_a1075), int32(690))
+	v1446 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1449 = F_dictAdd(m, v1446, int32(_a_F_moduleRegisterCoreAPI_240), int32(690))
 	mBase = m.M
 	v1450 = m.ExcPending
 	if v1450 != 0 {
@@ -7181,8 +7181,8 @@ L242:
 	}
 L243:
 	;
-	v1452 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1455 = F_dictAdd(m, v1452, int32(_a1076), int32(691))
+	v1452 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1455 = F_dictAdd(m, v1452, int32(_a_F_moduleRegisterCoreAPI_241), int32(691))
 	mBase = m.M
 	v1456 = m.ExcPending
 	if v1456 != 0 {
@@ -7192,8 +7192,8 @@ L243:
 	}
 L244:
 	;
-	v1458 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1461 = F_dictAdd(m, v1458, int32(_a1077), int32(691))
+	v1458 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1461 = F_dictAdd(m, v1458, int32(_a_F_moduleRegisterCoreAPI_242), int32(691))
 	mBase = m.M
 	v1462 = m.ExcPending
 	if v1462 != 0 {
@@ -7203,8 +7203,8 @@ L244:
 	}
 L245:
 	;
-	v1464 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1467 = F_dictAdd(m, v1464, int32(_a1078), int32(692))
+	v1464 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1467 = F_dictAdd(m, v1464, int32(_a_F_moduleRegisterCoreAPI_243), int32(692))
 	mBase = m.M
 	v1468 = m.ExcPending
 	if v1468 != 0 {
@@ -7214,8 +7214,8 @@ L245:
 	}
 L246:
 	;
-	v1470 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1473 = F_dictAdd(m, v1470, int32(_a1079), int32(692))
+	v1470 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1473 = F_dictAdd(m, v1470, int32(_a_F_moduleRegisterCoreAPI_244), int32(692))
 	mBase = m.M
 	v1474 = m.ExcPending
 	if v1474 != 0 {
@@ -7225,8 +7225,8 @@ L246:
 	}
 L247:
 	;
-	v1476 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1479 = F_dictAdd(m, v1476, int32(_a1080), int32(693))
+	v1476 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1479 = F_dictAdd(m, v1476, int32(_a_F_moduleRegisterCoreAPI_245), int32(693))
 	mBase = m.M
 	v1480 = m.ExcPending
 	if v1480 != 0 {
@@ -7236,8 +7236,8 @@ L247:
 	}
 L248:
 	;
-	v1482 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1485 = F_dictAdd(m, v1482, int32(_a1081), int32(693))
+	v1482 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1485 = F_dictAdd(m, v1482, int32(_a_F_moduleRegisterCoreAPI_246), int32(693))
 	mBase = m.M
 	v1486 = m.ExcPending
 	if v1486 != 0 {
@@ -7247,8 +7247,8 @@ L248:
 	}
 L249:
 	;
-	v1488 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1491 = F_dictAdd(m, v1488, int32(_a1082), int32(694))
+	v1488 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1491 = F_dictAdd(m, v1488, int32(_a_F_moduleRegisterCoreAPI_247), int32(694))
 	mBase = m.M
 	v1492 = m.ExcPending
 	if v1492 != 0 {
@@ -7258,8 +7258,8 @@ L249:
 	}
 L250:
 	;
-	v1494 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1497 = F_dictAdd(m, v1494, int32(_a1083), int32(694))
+	v1494 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1497 = F_dictAdd(m, v1494, int32(_a_F_moduleRegisterCoreAPI_248), int32(694))
 	mBase = m.M
 	v1498 = m.ExcPending
 	if v1498 != 0 {
@@ -7269,8 +7269,8 @@ L250:
 	}
 L251:
 	;
-	v1500 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1503 = F_dictAdd(m, v1500, int32(_a1084), int32(695))
+	v1500 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1503 = F_dictAdd(m, v1500, int32(_a_F_moduleRegisterCoreAPI_249), int32(695))
 	mBase = m.M
 	v1504 = m.ExcPending
 	if v1504 != 0 {
@@ -7280,8 +7280,8 @@ L251:
 	}
 L252:
 	;
-	v1506 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1509 = F_dictAdd(m, v1506, int32(_a1085), int32(695))
+	v1506 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1509 = F_dictAdd(m, v1506, int32(_a_F_moduleRegisterCoreAPI_250), int32(695))
 	mBase = m.M
 	v1510 = m.ExcPending
 	if v1510 != 0 {
@@ -7291,8 +7291,8 @@ L252:
 	}
 L253:
 	;
-	v1512 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1515 = F_dictAdd(m, v1512, int32(_a1086), int32(696))
+	v1512 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1515 = F_dictAdd(m, v1512, int32(_a_F_moduleRegisterCoreAPI_251), int32(696))
 	mBase = m.M
 	v1516 = m.ExcPending
 	if v1516 != 0 {
@@ -7302,8 +7302,8 @@ L253:
 	}
 L254:
 	;
-	v1518 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1521 = F_dictAdd(m, v1518, int32(_a1087), int32(696))
+	v1518 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1521 = F_dictAdd(m, v1518, int32(_a_F_moduleRegisterCoreAPI_252), int32(696))
 	mBase = m.M
 	v1522 = m.ExcPending
 	if v1522 != 0 {
@@ -7313,8 +7313,8 @@ L254:
 	}
 L255:
 	;
-	v1524 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1527 = F_dictAdd(m, v1524, int32(_a1088), int32(697))
+	v1524 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1527 = F_dictAdd(m, v1524, int32(_a_F_moduleRegisterCoreAPI_253), int32(697))
 	mBase = m.M
 	v1528 = m.ExcPending
 	if v1528 != 0 {
@@ -7324,8 +7324,8 @@ L255:
 	}
 L256:
 	;
-	v1530 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1533 = F_dictAdd(m, v1530, int32(_a1089), int32(697))
+	v1530 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1533 = F_dictAdd(m, v1530, int32(_a_F_moduleRegisterCoreAPI_254), int32(697))
 	mBase = m.M
 	v1534 = m.ExcPending
 	if v1534 != 0 {
@@ -7335,8 +7335,8 @@ L256:
 	}
 L257:
 	;
-	v1536 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1539 = F_dictAdd(m, v1536, int32(_a1090), int32(698))
+	v1536 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1539 = F_dictAdd(m, v1536, int32(_a_F_moduleRegisterCoreAPI_255), int32(698))
 	mBase = m.M
 	v1540 = m.ExcPending
 	if v1540 != 0 {
@@ -7346,8 +7346,8 @@ L257:
 	}
 L258:
 	;
-	v1542 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1545 = F_dictAdd(m, v1542, int32(_a1091), int32(698))
+	v1542 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1545 = F_dictAdd(m, v1542, int32(_a_F_moduleRegisterCoreAPI_256), int32(698))
 	mBase = m.M
 	v1546 = m.ExcPending
 	if v1546 != 0 {
@@ -7357,8 +7357,8 @@ L258:
 	}
 L259:
 	;
-	v1548 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1551 = F_dictAdd(m, v1548, int32(_a1092), int32(699))
+	v1548 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1551 = F_dictAdd(m, v1548, int32(_a_F_moduleRegisterCoreAPI_257), int32(699))
 	mBase = m.M
 	v1552 = m.ExcPending
 	if v1552 != 0 {
@@ -7368,8 +7368,8 @@ L259:
 	}
 L260:
 	;
-	v1554 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1557 = F_dictAdd(m, v1554, int32(_a1093), int32(699))
+	v1554 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1557 = F_dictAdd(m, v1554, int32(_a_F_moduleRegisterCoreAPI_258), int32(699))
 	mBase = m.M
 	v1558 = m.ExcPending
 	if v1558 != 0 {
@@ -7379,8 +7379,8 @@ L260:
 	}
 L261:
 	;
-	v1560 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1563 = F_dictAdd(m, v1560, int32(_a1094), int32(700))
+	v1560 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1563 = F_dictAdd(m, v1560, int32(_a_F_moduleRegisterCoreAPI_259), int32(700))
 	mBase = m.M
 	v1564 = m.ExcPending
 	if v1564 != 0 {
@@ -7390,8 +7390,8 @@ L261:
 	}
 L262:
 	;
-	v1566 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1569 = F_dictAdd(m, v1566, int32(_a1095), int32(700))
+	v1566 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1569 = F_dictAdd(m, v1566, int32(_a_F_moduleRegisterCoreAPI_260), int32(700))
 	mBase = m.M
 	v1570 = m.ExcPending
 	if v1570 != 0 {
@@ -7401,8 +7401,8 @@ L262:
 	}
 L263:
 	;
-	v1572 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1575 = F_dictAdd(m, v1572, int32(_a1096), int32(701))
+	v1572 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1575 = F_dictAdd(m, v1572, int32(_a_F_moduleRegisterCoreAPI_261), int32(701))
 	mBase = m.M
 	v1576 = m.ExcPending
 	if v1576 != 0 {
@@ -7412,8 +7412,8 @@ L263:
 	}
 L264:
 	;
-	v1578 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1581 = F_dictAdd(m, v1578, int32(_a1097), int32(701))
+	v1578 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1581 = F_dictAdd(m, v1578, int32(_a_F_moduleRegisterCoreAPI_262), int32(701))
 	mBase = m.M
 	v1582 = m.ExcPending
 	if v1582 != 0 {
@@ -7423,8 +7423,8 @@ L264:
 	}
 L265:
 	;
-	v1584 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1587 = F_dictAdd(m, v1584, int32(_a1098), int32(702))
+	v1584 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1587 = F_dictAdd(m, v1584, int32(_a_F_moduleRegisterCoreAPI_263), int32(702))
 	mBase = m.M
 	v1588 = m.ExcPending
 	if v1588 != 0 {
@@ -7434,8 +7434,8 @@ L265:
 	}
 L266:
 	;
-	v1590 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1593 = F_dictAdd(m, v1590, int32(_a1099), int32(702))
+	v1590 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1593 = F_dictAdd(m, v1590, int32(_a_F_moduleRegisterCoreAPI_264), int32(702))
 	mBase = m.M
 	v1594 = m.ExcPending
 	if v1594 != 0 {
@@ -7445,8 +7445,8 @@ L266:
 	}
 L267:
 	;
-	v1596 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1599 = F_dictAdd(m, v1596, int32(_a1100), int32(703))
+	v1596 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1599 = F_dictAdd(m, v1596, int32(_a_F_moduleRegisterCoreAPI_265), int32(703))
 	mBase = m.M
 	v1600 = m.ExcPending
 	if v1600 != 0 {
@@ -7456,8 +7456,8 @@ L267:
 	}
 L268:
 	;
-	v1602 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1605 = F_dictAdd(m, v1602, int32(_a1101), int32(703))
+	v1602 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1605 = F_dictAdd(m, v1602, int32(_a_F_moduleRegisterCoreAPI_266), int32(703))
 	mBase = m.M
 	v1606 = m.ExcPending
 	if v1606 != 0 {
@@ -7467,8 +7467,8 @@ L268:
 	}
 L269:
 	;
-	v1608 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1611 = F_dictAdd(m, v1608, int32(_a1102), int32(704))
+	v1608 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1611 = F_dictAdd(m, v1608, int32(_a_F_moduleRegisterCoreAPI_267), int32(704))
 	mBase = m.M
 	v1612 = m.ExcPending
 	if v1612 != 0 {
@@ -7478,8 +7478,8 @@ L269:
 	}
 L270:
 	;
-	v1614 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1617 = F_dictAdd(m, v1614, int32(_a1103), int32(704))
+	v1614 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1617 = F_dictAdd(m, v1614, int32(_a_F_moduleRegisterCoreAPI_268), int32(704))
 	mBase = m.M
 	v1618 = m.ExcPending
 	if v1618 != 0 {
@@ -7489,8 +7489,8 @@ L270:
 	}
 L271:
 	;
-	v1620 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1623 = F_dictAdd(m, v1620, int32(_a1104), int32(705))
+	v1620 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1623 = F_dictAdd(m, v1620, int32(_a_F_moduleRegisterCoreAPI_269), int32(705))
 	mBase = m.M
 	v1624 = m.ExcPending
 	if v1624 != 0 {
@@ -7500,8 +7500,8 @@ L271:
 	}
 L272:
 	;
-	v1626 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1629 = F_dictAdd(m, v1626, int32(_a1105), int32(705))
+	v1626 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1629 = F_dictAdd(m, v1626, int32(_a_F_moduleRegisterCoreAPI_270), int32(705))
 	mBase = m.M
 	v1630 = m.ExcPending
 	if v1630 != 0 {
@@ -7511,8 +7511,8 @@ L272:
 	}
 L273:
 	;
-	v1632 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1635 = F_dictAdd(m, v1632, int32(_a1106), int32(706))
+	v1632 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1635 = F_dictAdd(m, v1632, int32(_a_F_moduleRegisterCoreAPI_271), int32(706))
 	mBase = m.M
 	v1636 = m.ExcPending
 	if v1636 != 0 {
@@ -7522,8 +7522,8 @@ L273:
 	}
 L274:
 	;
-	v1638 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1641 = F_dictAdd(m, v1638, int32(_a1107), int32(706))
+	v1638 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1641 = F_dictAdd(m, v1638, int32(_a_F_moduleRegisterCoreAPI_272), int32(706))
 	mBase = m.M
 	v1642 = m.ExcPending
 	if v1642 != 0 {
@@ -7533,8 +7533,8 @@ L274:
 	}
 L275:
 	;
-	v1644 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1647 = F_dictAdd(m, v1644, int32(_a1108), int32(707))
+	v1644 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1647 = F_dictAdd(m, v1644, int32(_a_F_moduleRegisterCoreAPI_273), int32(707))
 	mBase = m.M
 	v1648 = m.ExcPending
 	if v1648 != 0 {
@@ -7544,8 +7544,8 @@ L275:
 	}
 L276:
 	;
-	v1650 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1653 = F_dictAdd(m, v1650, int32(_a1109), int32(707))
+	v1650 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1653 = F_dictAdd(m, v1650, int32(_a_F_moduleRegisterCoreAPI_274), int32(707))
 	mBase = m.M
 	v1654 = m.ExcPending
 	if v1654 != 0 {
@@ -7555,8 +7555,8 @@ L276:
 	}
 L277:
 	;
-	v1656 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1659 = F_dictAdd(m, v1656, int32(_a1110), int32(708))
+	v1656 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1659 = F_dictAdd(m, v1656, int32(_a_F_moduleRegisterCoreAPI_275), int32(708))
 	mBase = m.M
 	v1660 = m.ExcPending
 	if v1660 != 0 {
@@ -7566,8 +7566,8 @@ L277:
 	}
 L278:
 	;
-	v1662 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1665 = F_dictAdd(m, v1662, int32(_a1111), int32(708))
+	v1662 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1665 = F_dictAdd(m, v1662, int32(_a_F_moduleRegisterCoreAPI_276), int32(708))
 	mBase = m.M
 	v1666 = m.ExcPending
 	if v1666 != 0 {
@@ -7577,8 +7577,8 @@ L278:
 	}
 L279:
 	;
-	v1668 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1671 = F_dictAdd(m, v1668, int32(_a1112), int32(709))
+	v1668 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1671 = F_dictAdd(m, v1668, int32(_a_F_moduleRegisterCoreAPI_277), int32(709))
 	mBase = m.M
 	v1672 = m.ExcPending
 	if v1672 != 0 {
@@ -7588,8 +7588,8 @@ L279:
 	}
 L280:
 	;
-	v1674 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1677 = F_dictAdd(m, v1674, int32(_a1113), int32(709))
+	v1674 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1677 = F_dictAdd(m, v1674, int32(_a_F_moduleRegisterCoreAPI_278), int32(709))
 	mBase = m.M
 	v1678 = m.ExcPending
 	if v1678 != 0 {
@@ -7599,8 +7599,8 @@ L280:
 	}
 L281:
 	;
-	v1680 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1683 = F_dictAdd(m, v1680, int32(_a1114), int32(710))
+	v1680 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1683 = F_dictAdd(m, v1680, int32(_a_F_moduleRegisterCoreAPI_279), int32(710))
 	mBase = m.M
 	v1684 = m.ExcPending
 	if v1684 != 0 {
@@ -7610,8 +7610,8 @@ L281:
 	}
 L282:
 	;
-	v1686 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1689 = F_dictAdd(m, v1686, int32(_a1115), int32(710))
+	v1686 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1689 = F_dictAdd(m, v1686, int32(_a_F_moduleRegisterCoreAPI_280), int32(710))
 	mBase = m.M
 	v1690 = m.ExcPending
 	if v1690 != 0 {
@@ -7621,8 +7621,8 @@ L282:
 	}
 L283:
 	;
-	v1692 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1695 = F_dictAdd(m, v1692, int32(_a1116), int32(711))
+	v1692 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1695 = F_dictAdd(m, v1692, int32(_a_F_moduleRegisterCoreAPI_281), int32(711))
 	mBase = m.M
 	v1696 = m.ExcPending
 	if v1696 != 0 {
@@ -7632,8 +7632,8 @@ L283:
 	}
 L284:
 	;
-	v1698 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1701 = F_dictAdd(m, v1698, int32(_a1117), int32(711))
+	v1698 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1701 = F_dictAdd(m, v1698, int32(_a_F_moduleRegisterCoreAPI_282), int32(711))
 	mBase = m.M
 	v1702 = m.ExcPending
 	if v1702 != 0 {
@@ -7643,8 +7643,8 @@ L284:
 	}
 L285:
 	;
-	v1704 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1707 = F_dictAdd(m, v1704, int32(_a1118), int32(712))
+	v1704 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1707 = F_dictAdd(m, v1704, int32(_a_F_moduleRegisterCoreAPI_283), int32(712))
 	mBase = m.M
 	v1708 = m.ExcPending
 	if v1708 != 0 {
@@ -7654,8 +7654,8 @@ L285:
 	}
 L286:
 	;
-	v1710 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1713 = F_dictAdd(m, v1710, int32(_a1119), int32(712))
+	v1710 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1713 = F_dictAdd(m, v1710, int32(_a_F_moduleRegisterCoreAPI_284), int32(712))
 	mBase = m.M
 	v1714 = m.ExcPending
 	if v1714 != 0 {
@@ -7665,8 +7665,8 @@ L286:
 	}
 L287:
 	;
-	v1716 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1719 = F_dictAdd(m, v1716, int32(_a1120), int32(713))
+	v1716 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1719 = F_dictAdd(m, v1716, int32(_a_F_moduleRegisterCoreAPI_285), int32(713))
 	mBase = m.M
 	v1720 = m.ExcPending
 	if v1720 != 0 {
@@ -7676,8 +7676,8 @@ L287:
 	}
 L288:
 	;
-	v1722 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1725 = F_dictAdd(m, v1722, int32(_a1121), int32(713))
+	v1722 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1725 = F_dictAdd(m, v1722, int32(_a_F_moduleRegisterCoreAPI_286), int32(713))
 	mBase = m.M
 	v1726 = m.ExcPending
 	if v1726 != 0 {
@@ -7687,8 +7687,8 @@ L288:
 	}
 L289:
 	;
-	v1728 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1731 = F_dictAdd(m, v1728, int32(_a1122), int32(714))
+	v1728 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1731 = F_dictAdd(m, v1728, int32(_a_F_moduleRegisterCoreAPI_287), int32(714))
 	mBase = m.M
 	v1732 = m.ExcPending
 	if v1732 != 0 {
@@ -7698,8 +7698,8 @@ L289:
 	}
 L290:
 	;
-	v1734 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1737 = F_dictAdd(m, v1734, int32(_a1123), int32(714))
+	v1734 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1737 = F_dictAdd(m, v1734, int32(_a_F_moduleRegisterCoreAPI_288), int32(714))
 	mBase = m.M
 	v1738 = m.ExcPending
 	if v1738 != 0 {
@@ -7709,8 +7709,8 @@ L290:
 	}
 L291:
 	;
-	v1740 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1743 = F_dictAdd(m, v1740, int32(_a1124), int32(715))
+	v1740 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1743 = F_dictAdd(m, v1740, int32(_a_F_moduleRegisterCoreAPI_289), int32(715))
 	mBase = m.M
 	v1744 = m.ExcPending
 	if v1744 != 0 {
@@ -7720,8 +7720,8 @@ L291:
 	}
 L292:
 	;
-	v1746 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1749 = F_dictAdd(m, v1746, int32(_a1125), int32(715))
+	v1746 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1749 = F_dictAdd(m, v1746, int32(_a_F_moduleRegisterCoreAPI_290), int32(715))
 	mBase = m.M
 	v1750 = m.ExcPending
 	if v1750 != 0 {
@@ -7731,8 +7731,8 @@ L292:
 	}
 L293:
 	;
-	v1752 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1755 = F_dictAdd(m, v1752, int32(_a1126), int32(716))
+	v1752 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1755 = F_dictAdd(m, v1752, int32(_a_F_moduleRegisterCoreAPI_291), int32(716))
 	mBase = m.M
 	v1756 = m.ExcPending
 	if v1756 != 0 {
@@ -7742,8 +7742,8 @@ L293:
 	}
 L294:
 	;
-	v1758 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1761 = F_dictAdd(m, v1758, int32(_a1127), int32(716))
+	v1758 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1761 = F_dictAdd(m, v1758, int32(_a_F_moduleRegisterCoreAPI_292), int32(716))
 	mBase = m.M
 	v1762 = m.ExcPending
 	if v1762 != 0 {
@@ -7753,8 +7753,8 @@ L294:
 	}
 L295:
 	;
-	v1764 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1767 = F_dictAdd(m, v1764, int32(_a1128), int32(717))
+	v1764 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1767 = F_dictAdd(m, v1764, int32(_a_F_moduleRegisterCoreAPI_293), int32(717))
 	mBase = m.M
 	v1768 = m.ExcPending
 	if v1768 != 0 {
@@ -7764,8 +7764,8 @@ L295:
 	}
 L296:
 	;
-	v1770 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1773 = F_dictAdd(m, v1770, int32(_a1129), int32(717))
+	v1770 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1773 = F_dictAdd(m, v1770, int32(_a_F_moduleRegisterCoreAPI_294), int32(717))
 	mBase = m.M
 	v1774 = m.ExcPending
 	if v1774 != 0 {
@@ -7775,8 +7775,8 @@ L296:
 	}
 L297:
 	;
-	v1776 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1779 = F_dictAdd(m, v1776, int32(_a1130), int32(718))
+	v1776 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1779 = F_dictAdd(m, v1776, int32(_a_F_moduleRegisterCoreAPI_295), int32(718))
 	mBase = m.M
 	v1780 = m.ExcPending
 	if v1780 != 0 {
@@ -7786,8 +7786,8 @@ L297:
 	}
 L298:
 	;
-	v1782 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1785 = F_dictAdd(m, v1782, int32(_a1131), int32(718))
+	v1782 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1785 = F_dictAdd(m, v1782, int32(_a_F_moduleRegisterCoreAPI_296), int32(718))
 	mBase = m.M
 	v1786 = m.ExcPending
 	if v1786 != 0 {
@@ -7797,8 +7797,8 @@ L298:
 	}
 L299:
 	;
-	v1788 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1791 = F_dictAdd(m, v1788, int32(_a1132), int32(719))
+	v1788 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1791 = F_dictAdd(m, v1788, int32(_a_F_moduleRegisterCoreAPI_297), int32(719))
 	mBase = m.M
 	v1792 = m.ExcPending
 	if v1792 != 0 {
@@ -7808,8 +7808,8 @@ L299:
 	}
 L300:
 	;
-	v1794 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1797 = F_dictAdd(m, v1794, int32(_a1133), int32(719))
+	v1794 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1797 = F_dictAdd(m, v1794, int32(_a_F_moduleRegisterCoreAPI_298), int32(719))
 	mBase = m.M
 	v1798 = m.ExcPending
 	if v1798 != 0 {
@@ -7819,8 +7819,8 @@ L300:
 	}
 L301:
 	;
-	v1800 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1803 = F_dictAdd(m, v1800, int32(_a1134), int32(720))
+	v1800 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1803 = F_dictAdd(m, v1800, int32(_a_F_moduleRegisterCoreAPI_299), int32(720))
 	mBase = m.M
 	v1804 = m.ExcPending
 	if v1804 != 0 {
@@ -7830,8 +7830,8 @@ L301:
 	}
 L302:
 	;
-	v1806 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1809 = F_dictAdd(m, v1806, int32(_a1135), int32(720))
+	v1806 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1809 = F_dictAdd(m, v1806, int32(_a_F_moduleRegisterCoreAPI_300), int32(720))
 	mBase = m.M
 	v1810 = m.ExcPending
 	if v1810 != 0 {
@@ -7841,8 +7841,8 @@ L302:
 	}
 L303:
 	;
-	v1812 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1815 = F_dictAdd(m, v1812, int32(_a1136), int32(721))
+	v1812 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1815 = F_dictAdd(m, v1812, int32(_a_F_moduleRegisterCoreAPI_301), int32(721))
 	mBase = m.M
 	v1816 = m.ExcPending
 	if v1816 != 0 {
@@ -7852,8 +7852,8 @@ L303:
 	}
 L304:
 	;
-	v1818 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1821 = F_dictAdd(m, v1818, int32(_a1137), int32(721))
+	v1818 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1821 = F_dictAdd(m, v1818, int32(_a_F_moduleRegisterCoreAPI_302), int32(721))
 	mBase = m.M
 	v1822 = m.ExcPending
 	if v1822 != 0 {
@@ -7863,8 +7863,8 @@ L304:
 	}
 L305:
 	;
-	v1824 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1827 = F_dictAdd(m, v1824, int32(_a1138), int32(722))
+	v1824 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1827 = F_dictAdd(m, v1824, int32(_a_F_moduleRegisterCoreAPI_303), int32(722))
 	mBase = m.M
 	v1828 = m.ExcPending
 	if v1828 != 0 {
@@ -7874,8 +7874,8 @@ L305:
 	}
 L306:
 	;
-	v1830 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1833 = F_dictAdd(m, v1830, int32(_a1139), int32(722))
+	v1830 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1833 = F_dictAdd(m, v1830, int32(_a_F_moduleRegisterCoreAPI_304), int32(722))
 	mBase = m.M
 	v1834 = m.ExcPending
 	if v1834 != 0 {
@@ -7885,8 +7885,8 @@ L306:
 	}
 L307:
 	;
-	v1836 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1839 = F_dictAdd(m, v1836, int32(_a1140), int32(723))
+	v1836 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1839 = F_dictAdd(m, v1836, int32(_a_F_moduleRegisterCoreAPI_305), int32(723))
 	mBase = m.M
 	v1840 = m.ExcPending
 	if v1840 != 0 {
@@ -7896,8 +7896,8 @@ L307:
 	}
 L308:
 	;
-	v1842 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1845 = F_dictAdd(m, v1842, int32(_a1141), int32(723))
+	v1842 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1845 = F_dictAdd(m, v1842, int32(_a_F_moduleRegisterCoreAPI_306), int32(723))
 	mBase = m.M
 	v1846 = m.ExcPending
 	if v1846 != 0 {
@@ -7907,8 +7907,8 @@ L308:
 	}
 L309:
 	;
-	v1848 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1851 = F_dictAdd(m, v1848, int32(_a1142), int32(724))
+	v1848 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1851 = F_dictAdd(m, v1848, int32(_a_F_moduleRegisterCoreAPI_307), int32(724))
 	mBase = m.M
 	v1852 = m.ExcPending
 	if v1852 != 0 {
@@ -7918,8 +7918,8 @@ L309:
 	}
 L310:
 	;
-	v1854 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1857 = F_dictAdd(m, v1854, int32(_a1143), int32(724))
+	v1854 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1857 = F_dictAdd(m, v1854, int32(_a_F_moduleRegisterCoreAPI_308), int32(724))
 	mBase = m.M
 	v1858 = m.ExcPending
 	if v1858 != 0 {
@@ -7929,8 +7929,8 @@ L310:
 	}
 L311:
 	;
-	v1860 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1863 = F_dictAdd(m, v1860, int32(_a1144), int32(725))
+	v1860 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1863 = F_dictAdd(m, v1860, int32(_a_F_moduleRegisterCoreAPI_309), int32(725))
 	mBase = m.M
 	v1864 = m.ExcPending
 	if v1864 != 0 {
@@ -7940,8 +7940,8 @@ L311:
 	}
 L312:
 	;
-	v1866 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1869 = F_dictAdd(m, v1866, int32(_a1145), int32(725))
+	v1866 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1869 = F_dictAdd(m, v1866, int32(_a_F_moduleRegisterCoreAPI_310), int32(725))
 	mBase = m.M
 	v1870 = m.ExcPending
 	if v1870 != 0 {
@@ -7951,8 +7951,8 @@ L312:
 	}
 L313:
 	;
-	v1872 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1875 = F_dictAdd(m, v1872, int32(_a1146), int32(726))
+	v1872 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1875 = F_dictAdd(m, v1872, int32(_a_F_moduleRegisterCoreAPI_311), int32(726))
 	mBase = m.M
 	v1876 = m.ExcPending
 	if v1876 != 0 {
@@ -7962,8 +7962,8 @@ L313:
 	}
 L314:
 	;
-	v1878 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1881 = F_dictAdd(m, v1878, int32(_a1147), int32(726))
+	v1878 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1881 = F_dictAdd(m, v1878, int32(_a_F_moduleRegisterCoreAPI_312), int32(726))
 	mBase = m.M
 	v1882 = m.ExcPending
 	if v1882 != 0 {
@@ -7973,8 +7973,8 @@ L314:
 	}
 L315:
 	;
-	v1884 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1887 = F_dictAdd(m, v1884, int32(_a1148), int32(727))
+	v1884 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1887 = F_dictAdd(m, v1884, int32(_a_F_moduleRegisterCoreAPI_313), int32(727))
 	mBase = m.M
 	v1888 = m.ExcPending
 	if v1888 != 0 {
@@ -7984,8 +7984,8 @@ L315:
 	}
 L316:
 	;
-	v1890 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1893 = F_dictAdd(m, v1890, int32(_a1149), int32(727))
+	v1890 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1893 = F_dictAdd(m, v1890, int32(_a_F_moduleRegisterCoreAPI_314), int32(727))
 	mBase = m.M
 	v1894 = m.ExcPending
 	if v1894 != 0 {
@@ -7995,8 +7995,8 @@ L316:
 	}
 L317:
 	;
-	v1896 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1899 = F_dictAdd(m, v1896, int32(_a1150), int32(728))
+	v1896 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1899 = F_dictAdd(m, v1896, int32(_a_F_moduleRegisterCoreAPI_315), int32(728))
 	mBase = m.M
 	v1900 = m.ExcPending
 	if v1900 != 0 {
@@ -8006,8 +8006,8 @@ L317:
 	}
 L318:
 	;
-	v1902 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1905 = F_dictAdd(m, v1902, int32(_a1151), int32(728))
+	v1902 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1905 = F_dictAdd(m, v1902, int32(_a_F_moduleRegisterCoreAPI_316), int32(728))
 	mBase = m.M
 	v1906 = m.ExcPending
 	if v1906 != 0 {
@@ -8017,8 +8017,8 @@ L318:
 	}
 L319:
 	;
-	v1908 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1911 = F_dictAdd(m, v1908, int32(_a1152), int32(729))
+	v1908 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1911 = F_dictAdd(m, v1908, int32(_a_F_moduleRegisterCoreAPI_317), int32(729))
 	mBase = m.M
 	v1912 = m.ExcPending
 	if v1912 != 0 {
@@ -8028,8 +8028,8 @@ L319:
 	}
 L320:
 	;
-	v1914 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1917 = F_dictAdd(m, v1914, int32(_a1153), int32(729))
+	v1914 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1917 = F_dictAdd(m, v1914, int32(_a_F_moduleRegisterCoreAPI_318), int32(729))
 	mBase = m.M
 	v1918 = m.ExcPending
 	if v1918 != 0 {
@@ -8039,8 +8039,8 @@ L320:
 	}
 L321:
 	;
-	v1920 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1923 = F_dictAdd(m, v1920, int32(_a1154), int32(730))
+	v1920 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1923 = F_dictAdd(m, v1920, int32(_a_F_moduleRegisterCoreAPI_319), int32(730))
 	mBase = m.M
 	v1924 = m.ExcPending
 	if v1924 != 0 {
@@ -8050,8 +8050,8 @@ L321:
 	}
 L322:
 	;
-	v1926 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1929 = F_dictAdd(m, v1926, int32(_a1155), int32(730))
+	v1926 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1929 = F_dictAdd(m, v1926, int32(_a_F_moduleRegisterCoreAPI_320), int32(730))
 	mBase = m.M
 	v1930 = m.ExcPending
 	if v1930 != 0 {
@@ -8061,8 +8061,8 @@ L322:
 	}
 L323:
 	;
-	v1932 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1935 = F_dictAdd(m, v1932, int32(_a1156), int32(731))
+	v1932 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1935 = F_dictAdd(m, v1932, int32(_a_F_moduleRegisterCoreAPI_321), int32(731))
 	mBase = m.M
 	v1936 = m.ExcPending
 	if v1936 != 0 {
@@ -8072,8 +8072,8 @@ L323:
 	}
 L324:
 	;
-	v1938 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1941 = F_dictAdd(m, v1938, int32(_a1157), int32(731))
+	v1938 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1941 = F_dictAdd(m, v1938, int32(_a_F_moduleRegisterCoreAPI_322), int32(731))
 	mBase = m.M
 	v1942 = m.ExcPending
 	if v1942 != 0 {
@@ -8083,8 +8083,8 @@ L324:
 	}
 L325:
 	;
-	v1944 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1947 = F_dictAdd(m, v1944, int32(_a1158), int32(732))
+	v1944 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1947 = F_dictAdd(m, v1944, int32(_a_F_moduleRegisterCoreAPI_323), int32(732))
 	mBase = m.M
 	v1948 = m.ExcPending
 	if v1948 != 0 {
@@ -8094,8 +8094,8 @@ L325:
 	}
 L326:
 	;
-	v1950 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1953 = F_dictAdd(m, v1950, int32(_a1159), int32(732))
+	v1950 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1953 = F_dictAdd(m, v1950, int32(_a_F_moduleRegisterCoreAPI_324), int32(732))
 	mBase = m.M
 	v1954 = m.ExcPending
 	if v1954 != 0 {
@@ -8105,8 +8105,8 @@ L326:
 	}
 L327:
 	;
-	v1956 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1959 = F_dictAdd(m, v1956, int32(_a1160), int32(733))
+	v1956 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1959 = F_dictAdd(m, v1956, int32(_a_F_moduleRegisterCoreAPI_325), int32(733))
 	mBase = m.M
 	v1960 = m.ExcPending
 	if v1960 != 0 {
@@ -8116,8 +8116,8 @@ L327:
 	}
 L328:
 	;
-	v1962 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1965 = F_dictAdd(m, v1962, int32(_a1161), int32(733))
+	v1962 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1965 = F_dictAdd(m, v1962, int32(_a_F_moduleRegisterCoreAPI_326), int32(733))
 	mBase = m.M
 	v1966 = m.ExcPending
 	if v1966 != 0 {
@@ -8127,8 +8127,8 @@ L328:
 	}
 L329:
 	;
-	v1968 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1971 = F_dictAdd(m, v1968, int32(_a1162), int32(734))
+	v1968 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1971 = F_dictAdd(m, v1968, int32(_a_F_moduleRegisterCoreAPI_327), int32(734))
 	mBase = m.M
 	v1972 = m.ExcPending
 	if v1972 != 0 {
@@ -8138,8 +8138,8 @@ L329:
 	}
 L330:
 	;
-	v1974 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1977 = F_dictAdd(m, v1974, int32(_a1163), int32(734))
+	v1974 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1977 = F_dictAdd(m, v1974, int32(_a_F_moduleRegisterCoreAPI_328), int32(734))
 	mBase = m.M
 	v1978 = m.ExcPending
 	if v1978 != 0 {
@@ -8149,8 +8149,8 @@ L330:
 	}
 L331:
 	;
-	v1980 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1983 = F_dictAdd(m, v1980, int32(_a1164), int32(735))
+	v1980 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1983 = F_dictAdd(m, v1980, int32(_a_F_moduleRegisterCoreAPI_329), int32(735))
 	mBase = m.M
 	v1984 = m.ExcPending
 	if v1984 != 0 {
@@ -8160,8 +8160,8 @@ L331:
 	}
 L332:
 	;
-	v1986 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1989 = F_dictAdd(m, v1986, int32(_a1165), int32(735))
+	v1986 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1989 = F_dictAdd(m, v1986, int32(_a_F_moduleRegisterCoreAPI_330), int32(735))
 	mBase = m.M
 	v1990 = m.ExcPending
 	if v1990 != 0 {
@@ -8171,8 +8171,8 @@ L332:
 	}
 L333:
 	;
-	v1992 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v1995 = F_dictAdd(m, v1992, int32(_a1166), int32(736))
+	v1992 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v1995 = F_dictAdd(m, v1992, int32(_a_F_moduleRegisterCoreAPI_331), int32(736))
 	mBase = m.M
 	v1996 = m.ExcPending
 	if v1996 != 0 {
@@ -8182,8 +8182,8 @@ L333:
 	}
 L334:
 	;
-	v1998 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2001 = F_dictAdd(m, v1998, int32(_a1167), int32(736))
+	v1998 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2001 = F_dictAdd(m, v1998, int32(_a_F_moduleRegisterCoreAPI_332), int32(736))
 	mBase = m.M
 	v2002 = m.ExcPending
 	if v2002 != 0 {
@@ -8193,8 +8193,8 @@ L334:
 	}
 L335:
 	;
-	v2004 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2007 = F_dictAdd(m, v2004, int32(_a1168), int32(737))
+	v2004 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2007 = F_dictAdd(m, v2004, int32(_a_F_moduleRegisterCoreAPI_333), int32(737))
 	mBase = m.M
 	v2008 = m.ExcPending
 	if v2008 != 0 {
@@ -8204,8 +8204,8 @@ L335:
 	}
 L336:
 	;
-	v2010 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2013 = F_dictAdd(m, v2010, int32(_a1169), int32(737))
+	v2010 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2013 = F_dictAdd(m, v2010, int32(_a_F_moduleRegisterCoreAPI_334), int32(737))
 	mBase = m.M
 	v2014 = m.ExcPending
 	if v2014 != 0 {
@@ -8215,8 +8215,8 @@ L336:
 	}
 L337:
 	;
-	v2016 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2019 = F_dictAdd(m, v2016, int32(_a1170), int32(738))
+	v2016 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2019 = F_dictAdd(m, v2016, int32(_a_F_moduleRegisterCoreAPI_335), int32(738))
 	mBase = m.M
 	v2020 = m.ExcPending
 	if v2020 != 0 {
@@ -8226,8 +8226,8 @@ L337:
 	}
 L338:
 	;
-	v2022 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2025 = F_dictAdd(m, v2022, int32(_a1171), int32(738))
+	v2022 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2025 = F_dictAdd(m, v2022, int32(_a_F_moduleRegisterCoreAPI_336), int32(738))
 	mBase = m.M
 	v2026 = m.ExcPending
 	if v2026 != 0 {
@@ -8237,8 +8237,8 @@ L338:
 	}
 L339:
 	;
-	v2028 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2031 = F_dictAdd(m, v2028, int32(_a1172), int32(739))
+	v2028 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2031 = F_dictAdd(m, v2028, int32(_a_F_moduleRegisterCoreAPI_337), int32(739))
 	mBase = m.M
 	v2032 = m.ExcPending
 	if v2032 != 0 {
@@ -8248,8 +8248,8 @@ L339:
 	}
 L340:
 	;
-	v2034 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2037 = F_dictAdd(m, v2034, int32(_a1173), int32(739))
+	v2034 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2037 = F_dictAdd(m, v2034, int32(_a_F_moduleRegisterCoreAPI_338), int32(739))
 	mBase = m.M
 	v2038 = m.ExcPending
 	if v2038 != 0 {
@@ -8259,8 +8259,8 @@ L340:
 	}
 L341:
 	;
-	v2040 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2043 = F_dictAdd(m, v2040, int32(_a1174), int32(740))
+	v2040 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2043 = F_dictAdd(m, v2040, int32(_a_F_moduleRegisterCoreAPI_339), int32(740))
 	mBase = m.M
 	v2044 = m.ExcPending
 	if v2044 != 0 {
@@ -8270,8 +8270,8 @@ L341:
 	}
 L342:
 	;
-	v2046 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2049 = F_dictAdd(m, v2046, int32(_a1175), int32(740))
+	v2046 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2049 = F_dictAdd(m, v2046, int32(_a_F_moduleRegisterCoreAPI_340), int32(740))
 	mBase = m.M
 	v2050 = m.ExcPending
 	if v2050 != 0 {
@@ -8281,8 +8281,8 @@ L342:
 	}
 L343:
 	;
-	v2052 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2055 = F_dictAdd(m, v2052, int32(_a1176), int32(741))
+	v2052 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2055 = F_dictAdd(m, v2052, int32(_a_F_moduleRegisterCoreAPI_341), int32(741))
 	mBase = m.M
 	v2056 = m.ExcPending
 	if v2056 != 0 {
@@ -8292,8 +8292,8 @@ L343:
 	}
 L344:
 	;
-	v2058 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2061 = F_dictAdd(m, v2058, int32(_a1177), int32(741))
+	v2058 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2061 = F_dictAdd(m, v2058, int32(_a_F_moduleRegisterCoreAPI_342), int32(741))
 	mBase = m.M
 	v2062 = m.ExcPending
 	if v2062 != 0 {
@@ -8303,8 +8303,8 @@ L344:
 	}
 L345:
 	;
-	v2064 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2067 = F_dictAdd(m, v2064, int32(_a1178), int32(742))
+	v2064 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2067 = F_dictAdd(m, v2064, int32(_a_F_moduleRegisterCoreAPI_343), int32(742))
 	mBase = m.M
 	v2068 = m.ExcPending
 	if v2068 != 0 {
@@ -8314,8 +8314,8 @@ L345:
 	}
 L346:
 	;
-	v2070 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2073 = F_dictAdd(m, v2070, int32(_a1179), int32(742))
+	v2070 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2073 = F_dictAdd(m, v2070, int32(_a_F_moduleRegisterCoreAPI_344), int32(742))
 	mBase = m.M
 	v2074 = m.ExcPending
 	if v2074 != 0 {
@@ -8325,8 +8325,8 @@ L346:
 	}
 L347:
 	;
-	v2076 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2079 = F_dictAdd(m, v2076, int32(_a1180), int32(743))
+	v2076 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2079 = F_dictAdd(m, v2076, int32(_a_F_moduleRegisterCoreAPI_345), int32(743))
 	mBase = m.M
 	v2080 = m.ExcPending
 	if v2080 != 0 {
@@ -8336,8 +8336,8 @@ L347:
 	}
 L348:
 	;
-	v2082 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2085 = F_dictAdd(m, v2082, int32(_a1181), int32(743))
+	v2082 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2085 = F_dictAdd(m, v2082, int32(_a_F_moduleRegisterCoreAPI_346), int32(743))
 	mBase = m.M
 	v2086 = m.ExcPending
 	if v2086 != 0 {
@@ -8347,8 +8347,8 @@ L348:
 	}
 L349:
 	;
-	v2088 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2091 = F_dictAdd(m, v2088, int32(_a1182), int32(744))
+	v2088 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2091 = F_dictAdd(m, v2088, int32(_a_F_moduleRegisterCoreAPI_347), int32(744))
 	mBase = m.M
 	v2092 = m.ExcPending
 	if v2092 != 0 {
@@ -8358,8 +8358,8 @@ L349:
 	}
 L350:
 	;
-	v2094 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2097 = F_dictAdd(m, v2094, int32(_a1183), int32(744))
+	v2094 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2097 = F_dictAdd(m, v2094, int32(_a_F_moduleRegisterCoreAPI_348), int32(744))
 	mBase = m.M
 	v2098 = m.ExcPending
 	if v2098 != 0 {
@@ -8369,8 +8369,8 @@ L350:
 	}
 L351:
 	;
-	v2100 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2103 = F_dictAdd(m, v2100, int32(_a1184), int32(745))
+	v2100 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2103 = F_dictAdd(m, v2100, int32(_a_F_moduleRegisterCoreAPI_349), int32(745))
 	mBase = m.M
 	v2104 = m.ExcPending
 	if v2104 != 0 {
@@ -8380,8 +8380,8 @@ L351:
 	}
 L352:
 	;
-	v2106 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2109 = F_dictAdd(m, v2106, int32(_a1185), int32(745))
+	v2106 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2109 = F_dictAdd(m, v2106, int32(_a_F_moduleRegisterCoreAPI_350), int32(745))
 	mBase = m.M
 	v2110 = m.ExcPending
 	if v2110 != 0 {
@@ -8391,8 +8391,8 @@ L352:
 	}
 L353:
 	;
-	v2112 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2115 = F_dictAdd(m, v2112, int32(_a1186), int32(746))
+	v2112 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2115 = F_dictAdd(m, v2112, int32(_a_F_moduleRegisterCoreAPI_351), int32(746))
 	mBase = m.M
 	v2116 = m.ExcPending
 	if v2116 != 0 {
@@ -8402,8 +8402,8 @@ L353:
 	}
 L354:
 	;
-	v2118 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2121 = F_dictAdd(m, v2118, int32(_a1187), int32(746))
+	v2118 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2121 = F_dictAdd(m, v2118, int32(_a_F_moduleRegisterCoreAPI_352), int32(746))
 	mBase = m.M
 	v2122 = m.ExcPending
 	if v2122 != 0 {
@@ -8413,8 +8413,8 @@ L354:
 	}
 L355:
 	;
-	v2124 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2127 = F_dictAdd(m, v2124, int32(_a1188), int32(747))
+	v2124 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2127 = F_dictAdd(m, v2124, int32(_a_F_moduleRegisterCoreAPI_353), int32(747))
 	mBase = m.M
 	v2128 = m.ExcPending
 	if v2128 != 0 {
@@ -8424,8 +8424,8 @@ L355:
 	}
 L356:
 	;
-	v2130 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2133 = F_dictAdd(m, v2130, int32(_a1189), int32(747))
+	v2130 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2133 = F_dictAdd(m, v2130, int32(_a_F_moduleRegisterCoreAPI_354), int32(747))
 	mBase = m.M
 	v2134 = m.ExcPending
 	if v2134 != 0 {
@@ -8435,8 +8435,8 @@ L356:
 	}
 L357:
 	;
-	v2136 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2139 = F_dictAdd(m, v2136, int32(_a1190), int32(748))
+	v2136 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2139 = F_dictAdd(m, v2136, int32(_a_F_moduleRegisterCoreAPI_355), int32(748))
 	mBase = m.M
 	v2140 = m.ExcPending
 	if v2140 != 0 {
@@ -8446,8 +8446,8 @@ L357:
 	}
 L358:
 	;
-	v2142 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2145 = F_dictAdd(m, v2142, int32(_a1191), int32(748))
+	v2142 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2145 = F_dictAdd(m, v2142, int32(_a_F_moduleRegisterCoreAPI_356), int32(748))
 	mBase = m.M
 	v2146 = m.ExcPending
 	if v2146 != 0 {
@@ -8457,8 +8457,8 @@ L358:
 	}
 L359:
 	;
-	v2148 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2151 = F_dictAdd(m, v2148, int32(_a1192), int32(749))
+	v2148 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2151 = F_dictAdd(m, v2148, int32(_a_F_moduleRegisterCoreAPI_357), int32(749))
 	mBase = m.M
 	v2152 = m.ExcPending
 	if v2152 != 0 {
@@ -8468,8 +8468,8 @@ L359:
 	}
 L360:
 	;
-	v2154 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2157 = F_dictAdd(m, v2154, int32(_a1193), int32(749))
+	v2154 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2157 = F_dictAdd(m, v2154, int32(_a_F_moduleRegisterCoreAPI_358), int32(749))
 	mBase = m.M
 	v2158 = m.ExcPending
 	if v2158 != 0 {
@@ -8479,8 +8479,8 @@ L360:
 	}
 L361:
 	;
-	v2160 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2163 = F_dictAdd(m, v2160, int32(_a1194), int32(750))
+	v2160 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2163 = F_dictAdd(m, v2160, int32(_a_F_moduleRegisterCoreAPI_359), int32(750))
 	mBase = m.M
 	v2164 = m.ExcPending
 	if v2164 != 0 {
@@ -8490,8 +8490,8 @@ L361:
 	}
 L362:
 	;
-	v2166 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2169 = F_dictAdd(m, v2166, int32(_a1195), int32(750))
+	v2166 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2169 = F_dictAdd(m, v2166, int32(_a_F_moduleRegisterCoreAPI_360), int32(750))
 	mBase = m.M
 	v2170 = m.ExcPending
 	if v2170 != 0 {
@@ -8501,8 +8501,8 @@ L362:
 	}
 L363:
 	;
-	v2172 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2175 = F_dictAdd(m, v2172, int32(_a1196), int32(751))
+	v2172 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2175 = F_dictAdd(m, v2172, int32(_a_F_moduleRegisterCoreAPI_361), int32(751))
 	mBase = m.M
 	v2176 = m.ExcPending
 	if v2176 != 0 {
@@ -8512,8 +8512,8 @@ L363:
 	}
 L364:
 	;
-	v2178 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2181 = F_dictAdd(m, v2178, int32(_a1197), int32(751))
+	v2178 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2181 = F_dictAdd(m, v2178, int32(_a_F_moduleRegisterCoreAPI_362), int32(751))
 	mBase = m.M
 	v2182 = m.ExcPending
 	if v2182 != 0 {
@@ -8523,8 +8523,8 @@ L364:
 	}
 L365:
 	;
-	v2184 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2187 = F_dictAdd(m, v2184, int32(_a1198), int32(752))
+	v2184 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2187 = F_dictAdd(m, v2184, int32(_a_F_moduleRegisterCoreAPI_363), int32(752))
 	mBase = m.M
 	v2188 = m.ExcPending
 	if v2188 != 0 {
@@ -8534,8 +8534,8 @@ L365:
 	}
 L366:
 	;
-	v2190 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2193 = F_dictAdd(m, v2190, int32(_a1199), int32(752))
+	v2190 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2193 = F_dictAdd(m, v2190, int32(_a_F_moduleRegisterCoreAPI_364), int32(752))
 	mBase = m.M
 	v2194 = m.ExcPending
 	if v2194 != 0 {
@@ -8545,8 +8545,8 @@ L366:
 	}
 L367:
 	;
-	v2196 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2199 = F_dictAdd(m, v2196, int32(_a1200), int32(753))
+	v2196 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2199 = F_dictAdd(m, v2196, int32(_a_F_moduleRegisterCoreAPI_365), int32(753))
 	mBase = m.M
 	v2200 = m.ExcPending
 	if v2200 != 0 {
@@ -8556,8 +8556,8 @@ L367:
 	}
 L368:
 	;
-	v2202 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2205 = F_dictAdd(m, v2202, int32(_a1201), int32(753))
+	v2202 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2205 = F_dictAdd(m, v2202, int32(_a_F_moduleRegisterCoreAPI_366), int32(753))
 	mBase = m.M
 	v2206 = m.ExcPending
 	if v2206 != 0 {
@@ -8567,8 +8567,8 @@ L368:
 	}
 L369:
 	;
-	v2208 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2211 = F_dictAdd(m, v2208, int32(_a1202), int32(754))
+	v2208 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2211 = F_dictAdd(m, v2208, int32(_a_F_moduleRegisterCoreAPI_367), int32(754))
 	mBase = m.M
 	v2212 = m.ExcPending
 	if v2212 != 0 {
@@ -8578,8 +8578,8 @@ L369:
 	}
 L370:
 	;
-	v2214 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2217 = F_dictAdd(m, v2214, int32(_a1203), int32(754))
+	v2214 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2217 = F_dictAdd(m, v2214, int32(_a_F_moduleRegisterCoreAPI_368), int32(754))
 	mBase = m.M
 	v2218 = m.ExcPending
 	if v2218 != 0 {
@@ -8589,8 +8589,8 @@ L370:
 	}
 L371:
 	;
-	v2220 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2223 = F_dictAdd(m, v2220, int32(_a1204), int32(755))
+	v2220 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2223 = F_dictAdd(m, v2220, int32(_a_F_moduleRegisterCoreAPI_369), int32(755))
 	mBase = m.M
 	v2224 = m.ExcPending
 	if v2224 != 0 {
@@ -8600,8 +8600,8 @@ L371:
 	}
 L372:
 	;
-	v2226 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2229 = F_dictAdd(m, v2226, int32(_a1205), int32(755))
+	v2226 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2229 = F_dictAdd(m, v2226, int32(_a_F_moduleRegisterCoreAPI_370), int32(755))
 	mBase = m.M
 	v2230 = m.ExcPending
 	if v2230 != 0 {
@@ -8611,8 +8611,8 @@ L372:
 	}
 L373:
 	;
-	v2232 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2235 = F_dictAdd(m, v2232, int32(_a1206), int32(756))
+	v2232 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2235 = F_dictAdd(m, v2232, int32(_a_F_moduleRegisterCoreAPI_371), int32(756))
 	mBase = m.M
 	v2236 = m.ExcPending
 	if v2236 != 0 {
@@ -8622,8 +8622,8 @@ L373:
 	}
 L374:
 	;
-	v2238 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2241 = F_dictAdd(m, v2238, int32(_a1207), int32(756))
+	v2238 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2241 = F_dictAdd(m, v2238, int32(_a_F_moduleRegisterCoreAPI_372), int32(756))
 	mBase = m.M
 	v2242 = m.ExcPending
 	if v2242 != 0 {
@@ -8633,8 +8633,8 @@ L374:
 	}
 L375:
 	;
-	v2244 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2247 = F_dictAdd(m, v2244, int32(_a1208), int32(757))
+	v2244 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2247 = F_dictAdd(m, v2244, int32(_a_F_moduleRegisterCoreAPI_373), int32(757))
 	mBase = m.M
 	v2248 = m.ExcPending
 	if v2248 != 0 {
@@ -8644,8 +8644,8 @@ L375:
 	}
 L376:
 	;
-	v2250 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2253 = F_dictAdd(m, v2250, int32(_a1209), int32(757))
+	v2250 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2253 = F_dictAdd(m, v2250, int32(_a_F_moduleRegisterCoreAPI_374), int32(757))
 	mBase = m.M
 	v2254 = m.ExcPending
 	if v2254 != 0 {
@@ -8655,8 +8655,8 @@ L376:
 	}
 L377:
 	;
-	v2256 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2259 = F_dictAdd(m, v2256, int32(_a1210), int32(758))
+	v2256 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2259 = F_dictAdd(m, v2256, int32(_a_F_moduleRegisterCoreAPI_375), int32(758))
 	mBase = m.M
 	v2260 = m.ExcPending
 	if v2260 != 0 {
@@ -8666,8 +8666,8 @@ L377:
 	}
 L378:
 	;
-	v2262 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2265 = F_dictAdd(m, v2262, int32(_a1211), int32(758))
+	v2262 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2265 = F_dictAdd(m, v2262, int32(_a_F_moduleRegisterCoreAPI_376), int32(758))
 	mBase = m.M
 	v2266 = m.ExcPending
 	if v2266 != 0 {
@@ -8677,8 +8677,8 @@ L378:
 	}
 L379:
 	;
-	v2268 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2271 = F_dictAdd(m, v2268, int32(_a1212), int32(759))
+	v2268 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2271 = F_dictAdd(m, v2268, int32(_a_F_moduleRegisterCoreAPI_377), int32(759))
 	mBase = m.M
 	v2272 = m.ExcPending
 	if v2272 != 0 {
@@ -8688,8 +8688,8 @@ L379:
 	}
 L380:
 	;
-	v2274 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2277 = F_dictAdd(m, v2274, int32(_a1213), int32(759))
+	v2274 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2277 = F_dictAdd(m, v2274, int32(_a_F_moduleRegisterCoreAPI_378), int32(759))
 	mBase = m.M
 	v2278 = m.ExcPending
 	if v2278 != 0 {
@@ -8699,8 +8699,8 @@ L380:
 	}
 L381:
 	;
-	v2280 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2283 = F_dictAdd(m, v2280, int32(_a1214), int32(760))
+	v2280 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2283 = F_dictAdd(m, v2280, int32(_a_F_moduleRegisterCoreAPI_379), int32(760))
 	mBase = m.M
 	v2284 = m.ExcPending
 	if v2284 != 0 {
@@ -8710,8 +8710,8 @@ L381:
 	}
 L382:
 	;
-	v2286 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2289 = F_dictAdd(m, v2286, int32(_a1215), int32(760))
+	v2286 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2289 = F_dictAdd(m, v2286, int32(_a_F_moduleRegisterCoreAPI_380), int32(760))
 	mBase = m.M
 	v2290 = m.ExcPending
 	if v2290 != 0 {
@@ -8721,8 +8721,8 @@ L382:
 	}
 L383:
 	;
-	v2292 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2295 = F_dictAdd(m, v2292, int32(_a1216), int32(761))
+	v2292 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2295 = F_dictAdd(m, v2292, int32(_a_F_moduleRegisterCoreAPI_381), int32(761))
 	mBase = m.M
 	v2296 = m.ExcPending
 	if v2296 != 0 {
@@ -8732,8 +8732,8 @@ L383:
 	}
 L384:
 	;
-	v2298 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2301 = F_dictAdd(m, v2298, int32(_a1217), int32(761))
+	v2298 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2301 = F_dictAdd(m, v2298, int32(_a_F_moduleRegisterCoreAPI_382), int32(761))
 	mBase = m.M
 	v2302 = m.ExcPending
 	if v2302 != 0 {
@@ -8743,8 +8743,8 @@ L384:
 	}
 L385:
 	;
-	v2304 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2307 = F_dictAdd(m, v2304, int32(_a1218), int32(762))
+	v2304 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2307 = F_dictAdd(m, v2304, int32(_a_F_moduleRegisterCoreAPI_383), int32(762))
 	mBase = m.M
 	v2308 = m.ExcPending
 	if v2308 != 0 {
@@ -8754,8 +8754,8 @@ L385:
 	}
 L386:
 	;
-	v2310 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2313 = F_dictAdd(m, v2310, int32(_a1219), int32(762))
+	v2310 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2313 = F_dictAdd(m, v2310, int32(_a_F_moduleRegisterCoreAPI_384), int32(762))
 	mBase = m.M
 	v2314 = m.ExcPending
 	if v2314 != 0 {
@@ -8765,8 +8765,8 @@ L386:
 	}
 L387:
 	;
-	v2316 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2319 = F_dictAdd(m, v2316, int32(_a1220), int32(763))
+	v2316 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2319 = F_dictAdd(m, v2316, int32(_a_F_moduleRegisterCoreAPI_385), int32(763))
 	mBase = m.M
 	v2320 = m.ExcPending
 	if v2320 != 0 {
@@ -8776,8 +8776,8 @@ L387:
 	}
 L388:
 	;
-	v2322 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2325 = F_dictAdd(m, v2322, int32(_a1221), int32(763))
+	v2322 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2325 = F_dictAdd(m, v2322, int32(_a_F_moduleRegisterCoreAPI_386), int32(763))
 	mBase = m.M
 	v2326 = m.ExcPending
 	if v2326 != 0 {
@@ -8787,8 +8787,8 @@ L388:
 	}
 L389:
 	;
-	v2328 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2331 = F_dictAdd(m, v2328, int32(_a1222), int32(764))
+	v2328 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2331 = F_dictAdd(m, v2328, int32(_a_F_moduleRegisterCoreAPI_387), int32(764))
 	mBase = m.M
 	v2332 = m.ExcPending
 	if v2332 != 0 {
@@ -8798,8 +8798,8 @@ L389:
 	}
 L390:
 	;
-	v2334 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2337 = F_dictAdd(m, v2334, int32(_a1223), int32(764))
+	v2334 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2337 = F_dictAdd(m, v2334, int32(_a_F_moduleRegisterCoreAPI_388), int32(764))
 	mBase = m.M
 	v2338 = m.ExcPending
 	if v2338 != 0 {
@@ -8809,8 +8809,8 @@ L390:
 	}
 L391:
 	;
-	v2340 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2343 = F_dictAdd(m, v2340, int32(_a1224), int32(765))
+	v2340 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2343 = F_dictAdd(m, v2340, int32(_a_F_moduleRegisterCoreAPI_389), int32(765))
 	mBase = m.M
 	v2344 = m.ExcPending
 	if v2344 != 0 {
@@ -8820,8 +8820,8 @@ L391:
 	}
 L392:
 	;
-	v2346 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2349 = F_dictAdd(m, v2346, int32(_a1225), int32(765))
+	v2346 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2349 = F_dictAdd(m, v2346, int32(_a_F_moduleRegisterCoreAPI_390), int32(765))
 	mBase = m.M
 	v2350 = m.ExcPending
 	if v2350 != 0 {
@@ -8831,8 +8831,8 @@ L392:
 	}
 L393:
 	;
-	v2352 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2355 = F_dictAdd(m, v2352, int32(_a1226), int32(766))
+	v2352 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2355 = F_dictAdd(m, v2352, int32(_a_F_moduleRegisterCoreAPI_391), int32(766))
 	mBase = m.M
 	v2356 = m.ExcPending
 	if v2356 != 0 {
@@ -8842,8 +8842,8 @@ L393:
 	}
 L394:
 	;
-	v2358 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2361 = F_dictAdd(m, v2358, int32(_a1227), int32(766))
+	v2358 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2361 = F_dictAdd(m, v2358, int32(_a_F_moduleRegisterCoreAPI_392), int32(766))
 	mBase = m.M
 	v2362 = m.ExcPending
 	if v2362 != 0 {
@@ -8853,8 +8853,8 @@ L394:
 	}
 L395:
 	;
-	v2364 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2367 = F_dictAdd(m, v2364, int32(_a1228), int32(767))
+	v2364 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2367 = F_dictAdd(m, v2364, int32(_a_F_moduleRegisterCoreAPI_393), int32(767))
 	mBase = m.M
 	v2368 = m.ExcPending
 	if v2368 != 0 {
@@ -8864,8 +8864,8 @@ L395:
 	}
 L396:
 	;
-	v2370 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2373 = F_dictAdd(m, v2370, int32(_a1229), int32(767))
+	v2370 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2373 = F_dictAdd(m, v2370, int32(_a_F_moduleRegisterCoreAPI_394), int32(767))
 	mBase = m.M
 	v2374 = m.ExcPending
 	if v2374 != 0 {
@@ -8875,8 +8875,8 @@ L396:
 	}
 L397:
 	;
-	v2376 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2379 = F_dictAdd(m, v2376, int32(_a1230), int32(768))
+	v2376 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2379 = F_dictAdd(m, v2376, int32(_a_F_moduleRegisterCoreAPI_395), int32(768))
 	mBase = m.M
 	v2380 = m.ExcPending
 	if v2380 != 0 {
@@ -8886,8 +8886,8 @@ L397:
 	}
 L398:
 	;
-	v2382 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2385 = F_dictAdd(m, v2382, int32(_a1231), int32(768))
+	v2382 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2385 = F_dictAdd(m, v2382, int32(_a_F_moduleRegisterCoreAPI_396), int32(768))
 	mBase = m.M
 	v2386 = m.ExcPending
 	if v2386 != 0 {
@@ -8897,8 +8897,8 @@ L398:
 	}
 L399:
 	;
-	v2388 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2391 = F_dictAdd(m, v2388, int32(_a1232), int32(769))
+	v2388 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2391 = F_dictAdd(m, v2388, int32(_a_F_moduleRegisterCoreAPI_397), int32(769))
 	mBase = m.M
 	v2392 = m.ExcPending
 	if v2392 != 0 {
@@ -8908,8 +8908,8 @@ L399:
 	}
 L400:
 	;
-	v2394 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2397 = F_dictAdd(m, v2394, int32(_a1233), int32(769))
+	v2394 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2397 = F_dictAdd(m, v2394, int32(_a_F_moduleRegisterCoreAPI_398), int32(769))
 	mBase = m.M
 	v2398 = m.ExcPending
 	if v2398 != 0 {
@@ -8919,8 +8919,8 @@ L400:
 	}
 L401:
 	;
-	v2400 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2403 = F_dictAdd(m, v2400, int32(_a1234), int32(770))
+	v2400 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2403 = F_dictAdd(m, v2400, int32(_a_F_moduleRegisterCoreAPI_399), int32(770))
 	mBase = m.M
 	v2404 = m.ExcPending
 	if v2404 != 0 {
@@ -8930,8 +8930,8 @@ L401:
 	}
 L402:
 	;
-	v2406 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2409 = F_dictAdd(m, v2406, int32(_a1235), int32(770))
+	v2406 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2409 = F_dictAdd(m, v2406, int32(_a_F_moduleRegisterCoreAPI_400), int32(770))
 	mBase = m.M
 	v2410 = m.ExcPending
 	if v2410 != 0 {
@@ -8941,8 +8941,8 @@ L402:
 	}
 L403:
 	;
-	v2412 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2415 = F_dictAdd(m, v2412, int32(_a1236), int32(771))
+	v2412 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2415 = F_dictAdd(m, v2412, int32(_a_F_moduleRegisterCoreAPI_401), int32(771))
 	mBase = m.M
 	v2416 = m.ExcPending
 	if v2416 != 0 {
@@ -8952,8 +8952,8 @@ L403:
 	}
 L404:
 	;
-	v2418 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2421 = F_dictAdd(m, v2418, int32(_a1237), int32(771))
+	v2418 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2421 = F_dictAdd(m, v2418, int32(_a_F_moduleRegisterCoreAPI_402), int32(771))
 	mBase = m.M
 	v2422 = m.ExcPending
 	if v2422 != 0 {
@@ -8963,8 +8963,8 @@ L404:
 	}
 L405:
 	;
-	v2424 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2427 = F_dictAdd(m, v2424, int32(_a1238), int32(772))
+	v2424 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2427 = F_dictAdd(m, v2424, int32(_a_F_moduleRegisterCoreAPI_403), int32(772))
 	mBase = m.M
 	v2428 = m.ExcPending
 	if v2428 != 0 {
@@ -8974,8 +8974,8 @@ L405:
 	}
 L406:
 	;
-	v2430 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2433 = F_dictAdd(m, v2430, int32(_a1239), int32(772))
+	v2430 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2433 = F_dictAdd(m, v2430, int32(_a_F_moduleRegisterCoreAPI_404), int32(772))
 	mBase = m.M
 	v2434 = m.ExcPending
 	if v2434 != 0 {
@@ -8985,8 +8985,8 @@ L406:
 	}
 L407:
 	;
-	v2436 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2439 = F_dictAdd(m, v2436, int32(_a1240), int32(773))
+	v2436 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2439 = F_dictAdd(m, v2436, int32(_a_F_moduleRegisterCoreAPI_405), int32(773))
 	mBase = m.M
 	v2440 = m.ExcPending
 	if v2440 != 0 {
@@ -8996,8 +8996,8 @@ L407:
 	}
 L408:
 	;
-	v2442 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2445 = F_dictAdd(m, v2442, int32(_a1241), int32(773))
+	v2442 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2445 = F_dictAdd(m, v2442, int32(_a_F_moduleRegisterCoreAPI_406), int32(773))
 	mBase = m.M
 	v2446 = m.ExcPending
 	if v2446 != 0 {
@@ -9007,8 +9007,8 @@ L408:
 	}
 L409:
 	;
-	v2448 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2451 = F_dictAdd(m, v2448, int32(_a1242), int32(774))
+	v2448 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2451 = F_dictAdd(m, v2448, int32(_a_F_moduleRegisterCoreAPI_407), int32(774))
 	mBase = m.M
 	v2452 = m.ExcPending
 	if v2452 != 0 {
@@ -9018,8 +9018,8 @@ L409:
 	}
 L410:
 	;
-	v2454 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2457 = F_dictAdd(m, v2454, int32(_a1243), int32(774))
+	v2454 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2457 = F_dictAdd(m, v2454, int32(_a_F_moduleRegisterCoreAPI_408), int32(774))
 	mBase = m.M
 	v2458 = m.ExcPending
 	if v2458 != 0 {
@@ -9029,8 +9029,8 @@ L410:
 	}
 L411:
 	;
-	v2460 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2463 = F_dictAdd(m, v2460, int32(_a1244), int32(775))
+	v2460 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2463 = F_dictAdd(m, v2460, int32(_a_F_moduleRegisterCoreAPI_409), int32(775))
 	mBase = m.M
 	v2464 = m.ExcPending
 	if v2464 != 0 {
@@ -9040,8 +9040,8 @@ L411:
 	}
 L412:
 	;
-	v2466 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2469 = F_dictAdd(m, v2466, int32(_a1245), int32(775))
+	v2466 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2469 = F_dictAdd(m, v2466, int32(_a_F_moduleRegisterCoreAPI_410), int32(775))
 	mBase = m.M
 	v2470 = m.ExcPending
 	if v2470 != 0 {
@@ -9051,8 +9051,8 @@ L412:
 	}
 L413:
 	;
-	v2472 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2475 = F_dictAdd(m, v2472, int32(_a1246), int32(776))
+	v2472 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2475 = F_dictAdd(m, v2472, int32(_a_F_moduleRegisterCoreAPI_411), int32(776))
 	mBase = m.M
 	v2476 = m.ExcPending
 	if v2476 != 0 {
@@ -9062,8 +9062,8 @@ L413:
 	}
 L414:
 	;
-	v2478 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2481 = F_dictAdd(m, v2478, int32(_a1247), int32(776))
+	v2478 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2481 = F_dictAdd(m, v2478, int32(_a_F_moduleRegisterCoreAPI_412), int32(776))
 	mBase = m.M
 	v2482 = m.ExcPending
 	if v2482 != 0 {
@@ -9073,8 +9073,8 @@ L414:
 	}
 L415:
 	;
-	v2484 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2487 = F_dictAdd(m, v2484, int32(_a1248), int32(777))
+	v2484 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2487 = F_dictAdd(m, v2484, int32(_a_F_moduleRegisterCoreAPI_413), int32(777))
 	mBase = m.M
 	v2488 = m.ExcPending
 	if v2488 != 0 {
@@ -9084,8 +9084,8 @@ L415:
 	}
 L416:
 	;
-	v2490 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2493 = F_dictAdd(m, v2490, int32(_a1249), int32(777))
+	v2490 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2493 = F_dictAdd(m, v2490, int32(_a_F_moduleRegisterCoreAPI_414), int32(777))
 	mBase = m.M
 	v2494 = m.ExcPending
 	if v2494 != 0 {
@@ -9095,8 +9095,8 @@ L416:
 	}
 L417:
 	;
-	v2496 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2499 = F_dictAdd(m, v2496, int32(_a1250), int32(778))
+	v2496 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2499 = F_dictAdd(m, v2496, int32(_a_F_moduleRegisterCoreAPI_415), int32(778))
 	mBase = m.M
 	v2500 = m.ExcPending
 	if v2500 != 0 {
@@ -9106,8 +9106,8 @@ L417:
 	}
 L418:
 	;
-	v2502 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2505 = F_dictAdd(m, v2502, int32(_a1251), int32(778))
+	v2502 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2505 = F_dictAdd(m, v2502, int32(_a_F_moduleRegisterCoreAPI_416), int32(778))
 	mBase = m.M
 	v2506 = m.ExcPending
 	if v2506 != 0 {
@@ -9117,8 +9117,8 @@ L418:
 	}
 L419:
 	;
-	v2508 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2511 = F_dictAdd(m, v2508, int32(_a1252), int32(779))
+	v2508 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2511 = F_dictAdd(m, v2508, int32(_a_F_moduleRegisterCoreAPI_417), int32(779))
 	mBase = m.M
 	v2512 = m.ExcPending
 	if v2512 != 0 {
@@ -9128,8 +9128,8 @@ L419:
 	}
 L420:
 	;
-	v2514 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2517 = F_dictAdd(m, v2514, int32(_a1253), int32(779))
+	v2514 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2517 = F_dictAdd(m, v2514, int32(_a_F_moduleRegisterCoreAPI_418), int32(779))
 	mBase = m.M
 	v2518 = m.ExcPending
 	if v2518 != 0 {
@@ -9139,8 +9139,8 @@ L420:
 	}
 L421:
 	;
-	v2520 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2523 = F_dictAdd(m, v2520, int32(_a1254), int32(780))
+	v2520 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2523 = F_dictAdd(m, v2520, int32(_a_F_moduleRegisterCoreAPI_419), int32(780))
 	mBase = m.M
 	v2524 = m.ExcPending
 	if v2524 != 0 {
@@ -9150,8 +9150,8 @@ L421:
 	}
 L422:
 	;
-	v2526 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2529 = F_dictAdd(m, v2526, int32(_a1255), int32(780))
+	v2526 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2529 = F_dictAdd(m, v2526, int32(_a_F_moduleRegisterCoreAPI_420), int32(780))
 	mBase = m.M
 	v2530 = m.ExcPending
 	if v2530 != 0 {
@@ -9161,8 +9161,8 @@ L422:
 	}
 L423:
 	;
-	v2532 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2535 = F_dictAdd(m, v2532, int32(_a1256), int32(781))
+	v2532 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2535 = F_dictAdd(m, v2532, int32(_a_F_moduleRegisterCoreAPI_421), int32(781))
 	mBase = m.M
 	v2536 = m.ExcPending
 	if v2536 != 0 {
@@ -9172,8 +9172,8 @@ L423:
 	}
 L424:
 	;
-	v2538 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2541 = F_dictAdd(m, v2538, int32(_a1257), int32(781))
+	v2538 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2541 = F_dictAdd(m, v2538, int32(_a_F_moduleRegisterCoreAPI_422), int32(781))
 	mBase = m.M
 	v2542 = m.ExcPending
 	if v2542 != 0 {
@@ -9183,8 +9183,8 @@ L424:
 	}
 L425:
 	;
-	v2544 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2547 = F_dictAdd(m, v2544, int32(_a1258), int32(782))
+	v2544 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2547 = F_dictAdd(m, v2544, int32(_a_F_moduleRegisterCoreAPI_423), int32(782))
 	mBase = m.M
 	v2548 = m.ExcPending
 	if v2548 != 0 {
@@ -9194,8 +9194,8 @@ L425:
 	}
 L426:
 	;
-	v2550 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2553 = F_dictAdd(m, v2550, int32(_a1259), int32(782))
+	v2550 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2553 = F_dictAdd(m, v2550, int32(_a_F_moduleRegisterCoreAPI_424), int32(782))
 	mBase = m.M
 	v2554 = m.ExcPending
 	if v2554 != 0 {
@@ -9205,8 +9205,8 @@ L426:
 	}
 L427:
 	;
-	v2556 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2559 = F_dictAdd(m, v2556, int32(_a1260), int32(783))
+	v2556 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2559 = F_dictAdd(m, v2556, int32(_a_F_moduleRegisterCoreAPI_425), int32(783))
 	mBase = m.M
 	v2560 = m.ExcPending
 	if v2560 != 0 {
@@ -9216,8 +9216,8 @@ L427:
 	}
 L428:
 	;
-	v2562 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2565 = F_dictAdd(m, v2562, int32(_a1261), int32(783))
+	v2562 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2565 = F_dictAdd(m, v2562, int32(_a_F_moduleRegisterCoreAPI_426), int32(783))
 	mBase = m.M
 	v2566 = m.ExcPending
 	if v2566 != 0 {
@@ -9227,8 +9227,8 @@ L428:
 	}
 L429:
 	;
-	v2568 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2571 = F_dictAdd(m, v2568, int32(_a1262), int32(784))
+	v2568 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2571 = F_dictAdd(m, v2568, int32(_a_F_moduleRegisterCoreAPI_427), int32(784))
 	mBase = m.M
 	v2572 = m.ExcPending
 	if v2572 != 0 {
@@ -9238,8 +9238,8 @@ L429:
 	}
 L430:
 	;
-	v2574 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2577 = F_dictAdd(m, v2574, int32(_a1263), int32(784))
+	v2574 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2577 = F_dictAdd(m, v2574, int32(_a_F_moduleRegisterCoreAPI_428), int32(784))
 	mBase = m.M
 	v2578 = m.ExcPending
 	if v2578 != 0 {
@@ -9249,8 +9249,8 @@ L430:
 	}
 L431:
 	;
-	v2580 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2583 = F_dictAdd(m, v2580, int32(_a1264), int32(785))
+	v2580 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2583 = F_dictAdd(m, v2580, int32(_a_F_moduleRegisterCoreAPI_429), int32(785))
 	mBase = m.M
 	v2584 = m.ExcPending
 	if v2584 != 0 {
@@ -9260,8 +9260,8 @@ L431:
 	}
 L432:
 	;
-	v2586 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2589 = F_dictAdd(m, v2586, int32(_a1265), int32(785))
+	v2586 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2589 = F_dictAdd(m, v2586, int32(_a_F_moduleRegisterCoreAPI_430), int32(785))
 	mBase = m.M
 	v2590 = m.ExcPending
 	if v2590 != 0 {
@@ -9271,8 +9271,8 @@ L432:
 	}
 L433:
 	;
-	v2592 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2595 = F_dictAdd(m, v2592, int32(_a1266), int32(786))
+	v2592 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2595 = F_dictAdd(m, v2592, int32(_a_F_moduleRegisterCoreAPI_431), int32(786))
 	mBase = m.M
 	v2596 = m.ExcPending
 	if v2596 != 0 {
@@ -9282,8 +9282,8 @@ L433:
 	}
 L434:
 	;
-	v2598 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2601 = F_dictAdd(m, v2598, int32(_a1267), int32(786))
+	v2598 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2601 = F_dictAdd(m, v2598, int32(_a_F_moduleRegisterCoreAPI_432), int32(786))
 	mBase = m.M
 	v2602 = m.ExcPending
 	if v2602 != 0 {
@@ -9293,8 +9293,8 @@ L434:
 	}
 L435:
 	;
-	v2604 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2607 = F_dictAdd(m, v2604, int32(_a1268), int32(787))
+	v2604 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2607 = F_dictAdd(m, v2604, int32(_a_F_moduleRegisterCoreAPI_433), int32(787))
 	mBase = m.M
 	v2608 = m.ExcPending
 	if v2608 != 0 {
@@ -9304,8 +9304,8 @@ L435:
 	}
 L436:
 	;
-	v2610 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2613 = F_dictAdd(m, v2610, int32(_a1269), int32(787))
+	v2610 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2613 = F_dictAdd(m, v2610, int32(_a_F_moduleRegisterCoreAPI_434), int32(787))
 	mBase = m.M
 	v2614 = m.ExcPending
 	if v2614 != 0 {
@@ -9315,8 +9315,8 @@ L436:
 	}
 L437:
 	;
-	v2616 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2619 = F_dictAdd(m, v2616, int32(_a1270), int32(788))
+	v2616 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2619 = F_dictAdd(m, v2616, int32(_a_F_moduleRegisterCoreAPI_435), int32(788))
 	mBase = m.M
 	v2620 = m.ExcPending
 	if v2620 != 0 {
@@ -9326,8 +9326,8 @@ L437:
 	}
 L438:
 	;
-	v2622 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2625 = F_dictAdd(m, v2622, int32(_a1271), int32(788))
+	v2622 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2625 = F_dictAdd(m, v2622, int32(_a_F_moduleRegisterCoreAPI_436), int32(788))
 	mBase = m.M
 	v2626 = m.ExcPending
 	if v2626 != 0 {
@@ -9337,8 +9337,8 @@ L438:
 	}
 L439:
 	;
-	v2628 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2631 = F_dictAdd(m, v2628, int32(_a1272), int32(789))
+	v2628 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2631 = F_dictAdd(m, v2628, int32(_a_F_moduleRegisterCoreAPI_437), int32(789))
 	mBase = m.M
 	v2632 = m.ExcPending
 	if v2632 != 0 {
@@ -9348,8 +9348,8 @@ L439:
 	}
 L440:
 	;
-	v2634 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2637 = F_dictAdd(m, v2634, int32(_a1273), int32(789))
+	v2634 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2637 = F_dictAdd(m, v2634, int32(_a_F_moduleRegisterCoreAPI_438), int32(789))
 	mBase = m.M
 	v2638 = m.ExcPending
 	if v2638 != 0 {
@@ -9359,8 +9359,8 @@ L440:
 	}
 L441:
 	;
-	v2640 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2643 = F_dictAdd(m, v2640, int32(_a1274), int32(790))
+	v2640 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2643 = F_dictAdd(m, v2640, int32(_a_F_moduleRegisterCoreAPI_439), int32(790))
 	mBase = m.M
 	v2644 = m.ExcPending
 	if v2644 != 0 {
@@ -9370,8 +9370,8 @@ L441:
 	}
 L442:
 	;
-	v2646 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2649 = F_dictAdd(m, v2646, int32(_a1275), int32(790))
+	v2646 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2649 = F_dictAdd(m, v2646, int32(_a_F_moduleRegisterCoreAPI_440), int32(790))
 	mBase = m.M
 	v2650 = m.ExcPending
 	if v2650 != 0 {
@@ -9381,8 +9381,8 @@ L442:
 	}
 L443:
 	;
-	v2652 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2655 = F_dictAdd(m, v2652, int32(_a1276), int32(791))
+	v2652 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2655 = F_dictAdd(m, v2652, int32(_a_F_moduleRegisterCoreAPI_441), int32(791))
 	mBase = m.M
 	v2656 = m.ExcPending
 	if v2656 != 0 {
@@ -9392,8 +9392,8 @@ L443:
 	}
 L444:
 	;
-	v2658 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2661 = F_dictAdd(m, v2658, int32(_a1277), int32(791))
+	v2658 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2661 = F_dictAdd(m, v2658, int32(_a_F_moduleRegisterCoreAPI_442), int32(791))
 	mBase = m.M
 	v2662 = m.ExcPending
 	if v2662 != 0 {
@@ -9403,8 +9403,8 @@ L444:
 	}
 L445:
 	;
-	v2664 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2667 = F_dictAdd(m, v2664, int32(_a1278), int32(792))
+	v2664 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2667 = F_dictAdd(m, v2664, int32(_a_F_moduleRegisterCoreAPI_443), int32(792))
 	mBase = m.M
 	v2668 = m.ExcPending
 	if v2668 != 0 {
@@ -9414,8 +9414,8 @@ L445:
 	}
 L446:
 	;
-	v2670 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2673 = F_dictAdd(m, v2670, int32(_a1279), int32(792))
+	v2670 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2673 = F_dictAdd(m, v2670, int32(_a_F_moduleRegisterCoreAPI_444), int32(792))
 	mBase = m.M
 	v2674 = m.ExcPending
 	if v2674 != 0 {
@@ -9425,8 +9425,8 @@ L446:
 	}
 L447:
 	;
-	v2676 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2679 = F_dictAdd(m, v2676, int32(_a1280), int32(793))
+	v2676 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2679 = F_dictAdd(m, v2676, int32(_a_F_moduleRegisterCoreAPI_445), int32(793))
 	mBase = m.M
 	v2680 = m.ExcPending
 	if v2680 != 0 {
@@ -9436,8 +9436,8 @@ L447:
 	}
 L448:
 	;
-	v2682 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2685 = F_dictAdd(m, v2682, int32(_a1281), int32(793))
+	v2682 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2685 = F_dictAdd(m, v2682, int32(_a_F_moduleRegisterCoreAPI_446), int32(793))
 	mBase = m.M
 	v2686 = m.ExcPending
 	if v2686 != 0 {
@@ -9447,8 +9447,8 @@ L448:
 	}
 L449:
 	;
-	v2688 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2691 = F_dictAdd(m, v2688, int32(_a1282), int32(794))
+	v2688 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2691 = F_dictAdd(m, v2688, int32(_a_F_moduleRegisterCoreAPI_447), int32(794))
 	mBase = m.M
 	v2692 = m.ExcPending
 	if v2692 != 0 {
@@ -9458,8 +9458,8 @@ L449:
 	}
 L450:
 	;
-	v2694 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2697 = F_dictAdd(m, v2694, int32(_a1283), int32(794))
+	v2694 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2697 = F_dictAdd(m, v2694, int32(_a_F_moduleRegisterCoreAPI_448), int32(794))
 	mBase = m.M
 	v2698 = m.ExcPending
 	if v2698 != 0 {
@@ -9469,8 +9469,8 @@ L450:
 	}
 L451:
 	;
-	v2700 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2703 = F_dictAdd(m, v2700, int32(_a1284), int32(795))
+	v2700 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2703 = F_dictAdd(m, v2700, int32(_a_F_moduleRegisterCoreAPI_449), int32(795))
 	mBase = m.M
 	v2704 = m.ExcPending
 	if v2704 != 0 {
@@ -9480,8 +9480,8 @@ L451:
 	}
 L452:
 	;
-	v2706 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2709 = F_dictAdd(m, v2706, int32(_a1285), int32(795))
+	v2706 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2709 = F_dictAdd(m, v2706, int32(_a_F_moduleRegisterCoreAPI_450), int32(795))
 	mBase = m.M
 	v2710 = m.ExcPending
 	if v2710 != 0 {
@@ -9491,8 +9491,8 @@ L452:
 	}
 L453:
 	;
-	v2712 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2715 = F_dictAdd(m, v2712, int32(_a1286), int32(796))
+	v2712 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2715 = F_dictAdd(m, v2712, int32(_a_F_moduleRegisterCoreAPI_451), int32(796))
 	mBase = m.M
 	v2716 = m.ExcPending
 	if v2716 != 0 {
@@ -9502,8 +9502,8 @@ L453:
 	}
 L454:
 	;
-	v2718 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2721 = F_dictAdd(m, v2718, int32(_a1287), int32(796))
+	v2718 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2721 = F_dictAdd(m, v2718, int32(_a_F_moduleRegisterCoreAPI_452), int32(796))
 	mBase = m.M
 	v2722 = m.ExcPending
 	if v2722 != 0 {
@@ -9513,8 +9513,8 @@ L454:
 	}
 L455:
 	;
-	v2724 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2727 = F_dictAdd(m, v2724, int32(_a1288), int32(797))
+	v2724 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2727 = F_dictAdd(m, v2724, int32(_a_F_moduleRegisterCoreAPI_453), int32(797))
 	mBase = m.M
 	v2728 = m.ExcPending
 	if v2728 != 0 {
@@ -9524,8 +9524,8 @@ L455:
 	}
 L456:
 	;
-	v2730 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2733 = F_dictAdd(m, v2730, int32(_a1289), int32(797))
+	v2730 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2733 = F_dictAdd(m, v2730, int32(_a_F_moduleRegisterCoreAPI_454), int32(797))
 	mBase = m.M
 	v2734 = m.ExcPending
 	if v2734 != 0 {
@@ -9535,8 +9535,8 @@ L456:
 	}
 L457:
 	;
-	v2736 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2739 = F_dictAdd(m, v2736, int32(_a1290), int32(798))
+	v2736 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2739 = F_dictAdd(m, v2736, int32(_a_F_moduleRegisterCoreAPI_455), int32(798))
 	mBase = m.M
 	v2740 = m.ExcPending
 	if v2740 != 0 {
@@ -9546,8 +9546,8 @@ L457:
 	}
 L458:
 	;
-	v2742 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2745 = F_dictAdd(m, v2742, int32(_a1291), int32(798))
+	v2742 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2745 = F_dictAdd(m, v2742, int32(_a_F_moduleRegisterCoreAPI_456), int32(798))
 	mBase = m.M
 	v2746 = m.ExcPending
 	if v2746 != 0 {
@@ -9557,8 +9557,8 @@ L458:
 	}
 L459:
 	;
-	v2748 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2751 = F_dictAdd(m, v2748, int32(_a1292), int32(799))
+	v2748 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2751 = F_dictAdd(m, v2748, int32(_a_F_moduleRegisterCoreAPI_457), int32(799))
 	mBase = m.M
 	v2752 = m.ExcPending
 	if v2752 != 0 {
@@ -9568,8 +9568,8 @@ L459:
 	}
 L460:
 	;
-	v2754 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2757 = F_dictAdd(m, v2754, int32(_a1293), int32(799))
+	v2754 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2757 = F_dictAdd(m, v2754, int32(_a_F_moduleRegisterCoreAPI_458), int32(799))
 	mBase = m.M
 	v2758 = m.ExcPending
 	if v2758 != 0 {
@@ -9579,8 +9579,8 @@ L460:
 	}
 L461:
 	;
-	v2760 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2763 = F_dictAdd(m, v2760, int32(_a1294), int32(800))
+	v2760 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2763 = F_dictAdd(m, v2760, int32(_a_F_moduleRegisterCoreAPI_459), int32(800))
 	mBase = m.M
 	v2764 = m.ExcPending
 	if v2764 != 0 {
@@ -9590,8 +9590,8 @@ L461:
 	}
 L462:
 	;
-	v2766 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2769 = F_dictAdd(m, v2766, int32(_a1295), int32(800))
+	v2766 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2769 = F_dictAdd(m, v2766, int32(_a_F_moduleRegisterCoreAPI_460), int32(800))
 	mBase = m.M
 	v2770 = m.ExcPending
 	if v2770 != 0 {
@@ -9601,8 +9601,8 @@ L462:
 	}
 L463:
 	;
-	v2772 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2775 = F_dictAdd(m, v2772, int32(_a1296), int32(801))
+	v2772 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2775 = F_dictAdd(m, v2772, int32(_a_F_moduleRegisterCoreAPI_461), int32(801))
 	mBase = m.M
 	v2776 = m.ExcPending
 	if v2776 != 0 {
@@ -9612,8 +9612,8 @@ L463:
 	}
 L464:
 	;
-	v2778 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2781 = F_dictAdd(m, v2778, int32(_a1297), int32(801))
+	v2778 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2781 = F_dictAdd(m, v2778, int32(_a_F_moduleRegisterCoreAPI_462), int32(801))
 	mBase = m.M
 	v2782 = m.ExcPending
 	if v2782 != 0 {
@@ -9623,8 +9623,8 @@ L464:
 	}
 L465:
 	;
-	v2784 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2787 = F_dictAdd(m, v2784, int32(_a1298), int32(802))
+	v2784 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2787 = F_dictAdd(m, v2784, int32(_a_F_moduleRegisterCoreAPI_463), int32(802))
 	mBase = m.M
 	v2788 = m.ExcPending
 	if v2788 != 0 {
@@ -9634,8 +9634,8 @@ L465:
 	}
 L466:
 	;
-	v2790 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2793 = F_dictAdd(m, v2790, int32(_a1299), int32(802))
+	v2790 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2793 = F_dictAdd(m, v2790, int32(_a_F_moduleRegisterCoreAPI_464), int32(802))
 	mBase = m.M
 	v2794 = m.ExcPending
 	if v2794 != 0 {
@@ -9645,8 +9645,8 @@ L466:
 	}
 L467:
 	;
-	v2796 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2799 = F_dictAdd(m, v2796, int32(_a1300), int32(803))
+	v2796 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2799 = F_dictAdd(m, v2796, int32(_a_F_moduleRegisterCoreAPI_465), int32(803))
 	mBase = m.M
 	v2800 = m.ExcPending
 	if v2800 != 0 {
@@ -9656,8 +9656,8 @@ L467:
 	}
 L468:
 	;
-	v2802 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2805 = F_dictAdd(m, v2802, int32(_a1301), int32(803))
+	v2802 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2805 = F_dictAdd(m, v2802, int32(_a_F_moduleRegisterCoreAPI_466), int32(803))
 	mBase = m.M
 	v2806 = m.ExcPending
 	if v2806 != 0 {
@@ -9667,8 +9667,8 @@ L468:
 	}
 L469:
 	;
-	v2808 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2811 = F_dictAdd(m, v2808, int32(_a1302), int32(804))
+	v2808 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2811 = F_dictAdd(m, v2808, int32(_a_F_moduleRegisterCoreAPI_467), int32(804))
 	mBase = m.M
 	v2812 = m.ExcPending
 	if v2812 != 0 {
@@ -9678,8 +9678,8 @@ L469:
 	}
 L470:
 	;
-	v2814 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2817 = F_dictAdd(m, v2814, int32(_a1303), int32(804))
+	v2814 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2817 = F_dictAdd(m, v2814, int32(_a_F_moduleRegisterCoreAPI_468), int32(804))
 	mBase = m.M
 	v2818 = m.ExcPending
 	if v2818 != 0 {
@@ -9689,8 +9689,8 @@ L470:
 	}
 L471:
 	;
-	v2820 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2823 = F_dictAdd(m, v2820, int32(_a1304), int32(805))
+	v2820 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2823 = F_dictAdd(m, v2820, int32(_a_F_moduleRegisterCoreAPI_469), int32(805))
 	mBase = m.M
 	v2824 = m.ExcPending
 	if v2824 != 0 {
@@ -9700,8 +9700,8 @@ L471:
 	}
 L472:
 	;
-	v2826 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2829 = F_dictAdd(m, v2826, int32(_a1305), int32(805))
+	v2826 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2829 = F_dictAdd(m, v2826, int32(_a_F_moduleRegisterCoreAPI_470), int32(805))
 	mBase = m.M
 	v2830 = m.ExcPending
 	if v2830 != 0 {
@@ -9711,8 +9711,8 @@ L472:
 	}
 L473:
 	;
-	v2832 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2835 = F_dictAdd(m, v2832, int32(_a1306), int32(806))
+	v2832 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2835 = F_dictAdd(m, v2832, int32(_a_F_moduleRegisterCoreAPI_471), int32(806))
 	mBase = m.M
 	v2836 = m.ExcPending
 	if v2836 != 0 {
@@ -9722,8 +9722,8 @@ L473:
 	}
 L474:
 	;
-	v2838 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2841 = F_dictAdd(m, v2838, int32(_a1307), int32(806))
+	v2838 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2841 = F_dictAdd(m, v2838, int32(_a_F_moduleRegisterCoreAPI_472), int32(806))
 	mBase = m.M
 	v2842 = m.ExcPending
 	if v2842 != 0 {
@@ -9733,8 +9733,8 @@ L474:
 	}
 L475:
 	;
-	v2844 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2847 = F_dictAdd(m, v2844, int32(_a1308), int32(807))
+	v2844 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2847 = F_dictAdd(m, v2844, int32(_a_F_moduleRegisterCoreAPI_473), int32(807))
 	mBase = m.M
 	v2848 = m.ExcPending
 	if v2848 != 0 {
@@ -9744,8 +9744,8 @@ L475:
 	}
 L476:
 	;
-	v2850 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2853 = F_dictAdd(m, v2850, int32(_a1309), int32(807))
+	v2850 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2853 = F_dictAdd(m, v2850, int32(_a_F_moduleRegisterCoreAPI_474), int32(807))
 	mBase = m.M
 	v2854 = m.ExcPending
 	if v2854 != 0 {
@@ -9755,8 +9755,8 @@ L476:
 	}
 L477:
 	;
-	v2856 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2859 = F_dictAdd(m, v2856, int32(_a1310), int32(808))
+	v2856 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2859 = F_dictAdd(m, v2856, int32(_a_F_moduleRegisterCoreAPI_475), int32(808))
 	mBase = m.M
 	v2860 = m.ExcPending
 	if v2860 != 0 {
@@ -9766,8 +9766,8 @@ L477:
 	}
 L478:
 	;
-	v2862 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2865 = F_dictAdd(m, v2862, int32(_a1311), int32(808))
+	v2862 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2865 = F_dictAdd(m, v2862, int32(_a_F_moduleRegisterCoreAPI_476), int32(808))
 	mBase = m.M
 	v2866 = m.ExcPending
 	if v2866 != 0 {
@@ -9777,8 +9777,8 @@ L478:
 	}
 L479:
 	;
-	v2868 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2871 = F_dictAdd(m, v2868, int32(_a1312), int32(809))
+	v2868 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2871 = F_dictAdd(m, v2868, int32(_a_F_moduleRegisterCoreAPI_477), int32(809))
 	mBase = m.M
 	v2872 = m.ExcPending
 	if v2872 != 0 {
@@ -9788,8 +9788,8 @@ L479:
 	}
 L480:
 	;
-	v2874 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2877 = F_dictAdd(m, v2874, int32(_a1313), int32(809))
+	v2874 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2877 = F_dictAdd(m, v2874, int32(_a_F_moduleRegisterCoreAPI_478), int32(809))
 	mBase = m.M
 	v2878 = m.ExcPending
 	if v2878 != 0 {
@@ -9799,8 +9799,8 @@ L480:
 	}
 L481:
 	;
-	v2880 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2883 = F_dictAdd(m, v2880, int32(_a1314), int32(810))
+	v2880 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2883 = F_dictAdd(m, v2880, int32(_a_F_moduleRegisterCoreAPI_479), int32(810))
 	mBase = m.M
 	v2884 = m.ExcPending
 	if v2884 != 0 {
@@ -9810,8 +9810,8 @@ L481:
 	}
 L482:
 	;
-	v2886 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2889 = F_dictAdd(m, v2886, int32(_a1315), int32(810))
+	v2886 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2889 = F_dictAdd(m, v2886, int32(_a_F_moduleRegisterCoreAPI_480), int32(810))
 	mBase = m.M
 	v2890 = m.ExcPending
 	if v2890 != 0 {
@@ -9821,8 +9821,8 @@ L482:
 	}
 L483:
 	;
-	v2892 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2895 = F_dictAdd(m, v2892, int32(_a1316), int32(811))
+	v2892 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2895 = F_dictAdd(m, v2892, int32(_a_F_moduleRegisterCoreAPI_481), int32(811))
 	mBase = m.M
 	v2896 = m.ExcPending
 	if v2896 != 0 {
@@ -9832,8 +9832,8 @@ L483:
 	}
 L484:
 	;
-	v2898 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2901 = F_dictAdd(m, v2898, int32(_a1317), int32(811))
+	v2898 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2901 = F_dictAdd(m, v2898, int32(_a_F_moduleRegisterCoreAPI_482), int32(811))
 	mBase = m.M
 	v2902 = m.ExcPending
 	if v2902 != 0 {
@@ -9843,8 +9843,8 @@ L484:
 	}
 L485:
 	;
-	v2904 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2907 = F_dictAdd(m, v2904, int32(_a1318), int32(812))
+	v2904 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2907 = F_dictAdd(m, v2904, int32(_a_F_moduleRegisterCoreAPI_483), int32(812))
 	mBase = m.M
 	v2908 = m.ExcPending
 	if v2908 != 0 {
@@ -9854,8 +9854,8 @@ L485:
 	}
 L486:
 	;
-	v2910 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2913 = F_dictAdd(m, v2910, int32(_a1319), int32(812))
+	v2910 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2913 = F_dictAdd(m, v2910, int32(_a_F_moduleRegisterCoreAPI_484), int32(812))
 	mBase = m.M
 	v2914 = m.ExcPending
 	if v2914 != 0 {
@@ -9865,8 +9865,8 @@ L486:
 	}
 L487:
 	;
-	v2916 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2919 = F_dictAdd(m, v2916, int32(_a1320), int32(813))
+	v2916 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2919 = F_dictAdd(m, v2916, int32(_a_F_moduleRegisterCoreAPI_485), int32(813))
 	mBase = m.M
 	v2920 = m.ExcPending
 	if v2920 != 0 {
@@ -9876,8 +9876,8 @@ L487:
 	}
 L488:
 	;
-	v2922 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2925 = F_dictAdd(m, v2922, int32(_a1321), int32(813))
+	v2922 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2925 = F_dictAdd(m, v2922, int32(_a_F_moduleRegisterCoreAPI_486), int32(813))
 	mBase = m.M
 	v2926 = m.ExcPending
 	if v2926 != 0 {
@@ -9887,8 +9887,8 @@ L488:
 	}
 L489:
 	;
-	v2928 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2931 = F_dictAdd(m, v2928, int32(_a1322), int32(814))
+	v2928 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2931 = F_dictAdd(m, v2928, int32(_a_F_moduleRegisterCoreAPI_487), int32(814))
 	mBase = m.M
 	v2932 = m.ExcPending
 	if v2932 != 0 {
@@ -9898,8 +9898,8 @@ L489:
 	}
 L490:
 	;
-	v2934 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2937 = F_dictAdd(m, v2934, int32(_a1323), int32(814))
+	v2934 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2937 = F_dictAdd(m, v2934, int32(_a_F_moduleRegisterCoreAPI_488), int32(814))
 	mBase = m.M
 	v2938 = m.ExcPending
 	if v2938 != 0 {
@@ -9909,8 +9909,8 @@ L490:
 	}
 L491:
 	;
-	v2940 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2943 = F_dictAdd(m, v2940, int32(_a1324), int32(815))
+	v2940 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2943 = F_dictAdd(m, v2940, int32(_a_F_moduleRegisterCoreAPI_489), int32(815))
 	mBase = m.M
 	v2944 = m.ExcPending
 	if v2944 != 0 {
@@ -9920,8 +9920,8 @@ L491:
 	}
 L492:
 	;
-	v2946 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2949 = F_dictAdd(m, v2946, int32(_a1325), int32(815))
+	v2946 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2949 = F_dictAdd(m, v2946, int32(_a_F_moduleRegisterCoreAPI_490), int32(815))
 	mBase = m.M
 	v2950 = m.ExcPending
 	if v2950 != 0 {
@@ -9931,8 +9931,8 @@ L492:
 	}
 L493:
 	;
-	v2952 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2955 = F_dictAdd(m, v2952, int32(_a1326), int32(816))
+	v2952 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2955 = F_dictAdd(m, v2952, int32(_a_F_moduleRegisterCoreAPI_491), int32(816))
 	mBase = m.M
 	v2956 = m.ExcPending
 	if v2956 != 0 {
@@ -9942,8 +9942,8 @@ L493:
 	}
 L494:
 	;
-	v2958 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2961 = F_dictAdd(m, v2958, int32(_a1327), int32(816))
+	v2958 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2961 = F_dictAdd(m, v2958, int32(_a_F_moduleRegisterCoreAPI_492), int32(816))
 	mBase = m.M
 	v2962 = m.ExcPending
 	if v2962 != 0 {
@@ -9953,8 +9953,8 @@ L494:
 	}
 L495:
 	;
-	v2964 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2967 = F_dictAdd(m, v2964, int32(_a1328), int32(817))
+	v2964 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2967 = F_dictAdd(m, v2964, int32(_a_F_moduleRegisterCoreAPI_493), int32(817))
 	mBase = m.M
 	v2968 = m.ExcPending
 	if v2968 != 0 {
@@ -9964,8 +9964,8 @@ L495:
 	}
 L496:
 	;
-	v2970 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2973 = F_dictAdd(m, v2970, int32(_a1329), int32(817))
+	v2970 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2973 = F_dictAdd(m, v2970, int32(_a_F_moduleRegisterCoreAPI_494), int32(817))
 	mBase = m.M
 	v2974 = m.ExcPending
 	if v2974 != 0 {
@@ -9975,8 +9975,8 @@ L496:
 	}
 L497:
 	;
-	v2976 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2979 = F_dictAdd(m, v2976, int32(_a1330), int32(818))
+	v2976 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2979 = F_dictAdd(m, v2976, int32(_a_F_moduleRegisterCoreAPI_495), int32(818))
 	mBase = m.M
 	v2980 = m.ExcPending
 	if v2980 != 0 {
@@ -9986,8 +9986,8 @@ L497:
 	}
 L498:
 	;
-	v2982 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2985 = F_dictAdd(m, v2982, int32(_a1331), int32(818))
+	v2982 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2985 = F_dictAdd(m, v2982, int32(_a_F_moduleRegisterCoreAPI_496), int32(818))
 	mBase = m.M
 	v2986 = m.ExcPending
 	if v2986 != 0 {
@@ -9997,8 +9997,8 @@ L498:
 	}
 L499:
 	;
-	v2988 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2991 = F_dictAdd(m, v2988, int32(_a1332), int32(819))
+	v2988 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2991 = F_dictAdd(m, v2988, int32(_a_F_moduleRegisterCoreAPI_497), int32(819))
 	mBase = m.M
 	v2992 = m.ExcPending
 	if v2992 != 0 {
@@ -10008,8 +10008,8 @@ L499:
 	}
 L500:
 	;
-	v2994 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v2997 = F_dictAdd(m, v2994, int32(_a1333), int32(819))
+	v2994 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v2997 = F_dictAdd(m, v2994, int32(_a_F_moduleRegisterCoreAPI_498), int32(819))
 	mBase = m.M
 	v2998 = m.ExcPending
 	if v2998 != 0 {
@@ -10019,8 +10019,8 @@ L500:
 	}
 L501:
 	;
-	v3000 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3003 = F_dictAdd(m, v3000, int32(_a1334), int32(820))
+	v3000 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3003 = F_dictAdd(m, v3000, int32(_a_F_moduleRegisterCoreAPI_499), int32(820))
 	mBase = m.M
 	v3004 = m.ExcPending
 	if v3004 != 0 {
@@ -10030,8 +10030,8 @@ L501:
 	}
 L502:
 	;
-	v3006 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3009 = F_dictAdd(m, v3006, int32(_a1335), int32(820))
+	v3006 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3009 = F_dictAdd(m, v3006, int32(_a_F_moduleRegisterCoreAPI_500), int32(820))
 	mBase = m.M
 	v3010 = m.ExcPending
 	if v3010 != 0 {
@@ -10041,8 +10041,8 @@ L502:
 	}
 L503:
 	;
-	v3012 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3015 = F_dictAdd(m, v3012, int32(_a1336), int32(821))
+	v3012 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3015 = F_dictAdd(m, v3012, int32(_a_F_moduleRegisterCoreAPI_501), int32(821))
 	mBase = m.M
 	v3016 = m.ExcPending
 	if v3016 != 0 {
@@ -10052,8 +10052,8 @@ L503:
 	}
 L504:
 	;
-	v3018 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3021 = F_dictAdd(m, v3018, int32(_a1337), int32(821))
+	v3018 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3021 = F_dictAdd(m, v3018, int32(_a_F_moduleRegisterCoreAPI_502), int32(821))
 	mBase = m.M
 	v3022 = m.ExcPending
 	if v3022 != 0 {
@@ -10063,8 +10063,8 @@ L504:
 	}
 L505:
 	;
-	v3024 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3027 = F_dictAdd(m, v3024, int32(_a1338), int32(822))
+	v3024 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3027 = F_dictAdd(m, v3024, int32(_a_F_moduleRegisterCoreAPI_503), int32(822))
 	mBase = m.M
 	v3028 = m.ExcPending
 	if v3028 != 0 {
@@ -10074,8 +10074,8 @@ L505:
 	}
 L506:
 	;
-	v3030 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3033 = F_dictAdd(m, v3030, int32(_a1339), int32(822))
+	v3030 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3033 = F_dictAdd(m, v3030, int32(_a_F_moduleRegisterCoreAPI_504), int32(822))
 	mBase = m.M
 	v3034 = m.ExcPending
 	if v3034 != 0 {
@@ -10085,8 +10085,8 @@ L506:
 	}
 L507:
 	;
-	v3036 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3039 = F_dictAdd(m, v3036, int32(_a1340), int32(823))
+	v3036 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3039 = F_dictAdd(m, v3036, int32(_a_F_moduleRegisterCoreAPI_505), int32(823))
 	mBase = m.M
 	v3040 = m.ExcPending
 	if v3040 != 0 {
@@ -10096,8 +10096,8 @@ L507:
 	}
 L508:
 	;
-	v3042 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3045 = F_dictAdd(m, v3042, int32(_a1341), int32(823))
+	v3042 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3045 = F_dictAdd(m, v3042, int32(_a_F_moduleRegisterCoreAPI_506), int32(823))
 	mBase = m.M
 	v3046 = m.ExcPending
 	if v3046 != 0 {
@@ -10107,8 +10107,8 @@ L508:
 	}
 L509:
 	;
-	v3048 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3051 = F_dictAdd(m, v3048, int32(_a1342), int32(824))
+	v3048 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3051 = F_dictAdd(m, v3048, int32(_a_F_moduleRegisterCoreAPI_507), int32(824))
 	mBase = m.M
 	v3052 = m.ExcPending
 	if v3052 != 0 {
@@ -10118,8 +10118,8 @@ L509:
 	}
 L510:
 	;
-	v3054 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3057 = F_dictAdd(m, v3054, int32(_a1343), int32(824))
+	v3054 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3057 = F_dictAdd(m, v3054, int32(_a_F_moduleRegisterCoreAPI_508), int32(824))
 	mBase = m.M
 	v3058 = m.ExcPending
 	if v3058 != 0 {
@@ -10129,8 +10129,8 @@ L510:
 	}
 L511:
 	;
-	v3060 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3063 = F_dictAdd(m, v3060, int32(_a1344), int32(825))
+	v3060 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3063 = F_dictAdd(m, v3060, int32(_a_F_moduleRegisterCoreAPI_509), int32(825))
 	mBase = m.M
 	v3064 = m.ExcPending
 	if v3064 != 0 {
@@ -10140,8 +10140,8 @@ L511:
 	}
 L512:
 	;
-	v3066 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3069 = F_dictAdd(m, v3066, int32(_a1345), int32(825))
+	v3066 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3069 = F_dictAdd(m, v3066, int32(_a_F_moduleRegisterCoreAPI_510), int32(825))
 	mBase = m.M
 	v3070 = m.ExcPending
 	if v3070 != 0 {
@@ -10151,8 +10151,8 @@ L512:
 	}
 L513:
 	;
-	v3072 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3075 = F_dictAdd(m, v3072, int32(_a1346), int32(826))
+	v3072 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3075 = F_dictAdd(m, v3072, int32(_a_F_moduleRegisterCoreAPI_511), int32(826))
 	mBase = m.M
 	v3076 = m.ExcPending
 	if v3076 != 0 {
@@ -10162,8 +10162,8 @@ L513:
 	}
 L514:
 	;
-	v3078 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3081 = F_dictAdd(m, v3078, int32(_a1347), int32(826))
+	v3078 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3081 = F_dictAdd(m, v3078, int32(_a_F_moduleRegisterCoreAPI_512), int32(826))
 	mBase = m.M
 	v3082 = m.ExcPending
 	if v3082 != 0 {
@@ -10173,8 +10173,8 @@ L514:
 	}
 L515:
 	;
-	v3084 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3087 = F_dictAdd(m, v3084, int32(_a1348), int32(827))
+	v3084 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3087 = F_dictAdd(m, v3084, int32(_a_F_moduleRegisterCoreAPI_513), int32(827))
 	mBase = m.M
 	v3088 = m.ExcPending
 	if v3088 != 0 {
@@ -10184,8 +10184,8 @@ L515:
 	}
 L516:
 	;
-	v3090 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3093 = F_dictAdd(m, v3090, int32(_a1349), int32(827))
+	v3090 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3093 = F_dictAdd(m, v3090, int32(_a_F_moduleRegisterCoreAPI_514), int32(827))
 	mBase = m.M
 	v3094 = m.ExcPending
 	if v3094 != 0 {
@@ -10195,8 +10195,8 @@ L516:
 	}
 L517:
 	;
-	v3096 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3099 = F_dictAdd(m, v3096, int32(_a1350), int32(828))
+	v3096 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3099 = F_dictAdd(m, v3096, int32(_a_F_moduleRegisterCoreAPI_515), int32(828))
 	mBase = m.M
 	v3100 = m.ExcPending
 	if v3100 != 0 {
@@ -10206,8 +10206,8 @@ L517:
 	}
 L518:
 	;
-	v3102 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3105 = F_dictAdd(m, v3102, int32(_a1351), int32(828))
+	v3102 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3105 = F_dictAdd(m, v3102, int32(_a_F_moduleRegisterCoreAPI_516), int32(828))
 	mBase = m.M
 	v3106 = m.ExcPending
 	if v3106 != 0 {
@@ -10217,8 +10217,8 @@ L518:
 	}
 L519:
 	;
-	v3108 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3111 = F_dictAdd(m, v3108, int32(_a1352), int32(829))
+	v3108 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3111 = F_dictAdd(m, v3108, int32(_a_F_moduleRegisterCoreAPI_517), int32(829))
 	mBase = m.M
 	v3112 = m.ExcPending
 	if v3112 != 0 {
@@ -10228,8 +10228,8 @@ L519:
 	}
 L520:
 	;
-	v3114 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3117 = F_dictAdd(m, v3114, int32(_a1353), int32(829))
+	v3114 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3117 = F_dictAdd(m, v3114, int32(_a_F_moduleRegisterCoreAPI_518), int32(829))
 	mBase = m.M
 	v3118 = m.ExcPending
 	if v3118 != 0 {
@@ -10239,8 +10239,8 @@ L520:
 	}
 L521:
 	;
-	v3120 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3123 = F_dictAdd(m, v3120, int32(_a1354), int32(830))
+	v3120 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3123 = F_dictAdd(m, v3120, int32(_a_F_moduleRegisterCoreAPI_519), int32(830))
 	mBase = m.M
 	v3124 = m.ExcPending
 	if v3124 != 0 {
@@ -10250,8 +10250,8 @@ L521:
 	}
 L522:
 	;
-	v3126 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3129 = F_dictAdd(m, v3126, int32(_a1355), int32(830))
+	v3126 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3129 = F_dictAdd(m, v3126, int32(_a_F_moduleRegisterCoreAPI_520), int32(830))
 	mBase = m.M
 	v3130 = m.ExcPending
 	if v3130 != 0 {
@@ -10261,8 +10261,8 @@ L522:
 	}
 L523:
 	;
-	v3132 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3135 = F_dictAdd(m, v3132, int32(_a1356), int32(831))
+	v3132 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3135 = F_dictAdd(m, v3132, int32(_a_F_moduleRegisterCoreAPI_521), int32(831))
 	mBase = m.M
 	v3136 = m.ExcPending
 	if v3136 != 0 {
@@ -10272,8 +10272,8 @@ L523:
 	}
 L524:
 	;
-	v3138 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3141 = F_dictAdd(m, v3138, int32(_a1357), int32(831))
+	v3138 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3141 = F_dictAdd(m, v3138, int32(_a_F_moduleRegisterCoreAPI_522), int32(831))
 	mBase = m.M
 	v3142 = m.ExcPending
 	if v3142 != 0 {
@@ -10283,8 +10283,8 @@ L524:
 	}
 L525:
 	;
-	v3144 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3147 = F_dictAdd(m, v3144, int32(_a1358), int32(832))
+	v3144 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3147 = F_dictAdd(m, v3144, int32(_a_F_moduleRegisterCoreAPI_523), int32(832))
 	mBase = m.M
 	v3148 = m.ExcPending
 	if v3148 != 0 {
@@ -10294,8 +10294,8 @@ L525:
 	}
 L526:
 	;
-	v3150 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3153 = F_dictAdd(m, v3150, int32(_a1359), int32(832))
+	v3150 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3153 = F_dictAdd(m, v3150, int32(_a_F_moduleRegisterCoreAPI_524), int32(832))
 	mBase = m.M
 	v3154 = m.ExcPending
 	if v3154 != 0 {
@@ -10305,8 +10305,8 @@ L526:
 	}
 L527:
 	;
-	v3156 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3159 = F_dictAdd(m, v3156, int32(_a1360), int32(833))
+	v3156 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3159 = F_dictAdd(m, v3156, int32(_a_F_moduleRegisterCoreAPI_525), int32(833))
 	mBase = m.M
 	v3160 = m.ExcPending
 	if v3160 != 0 {
@@ -10316,8 +10316,8 @@ L527:
 	}
 L528:
 	;
-	v3162 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3165 = F_dictAdd(m, v3162, int32(_a1361), int32(833))
+	v3162 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3165 = F_dictAdd(m, v3162, int32(_a_F_moduleRegisterCoreAPI_526), int32(833))
 	mBase = m.M
 	v3166 = m.ExcPending
 	if v3166 != 0 {
@@ -10327,8 +10327,8 @@ L528:
 	}
 L529:
 	;
-	v3168 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3171 = F_dictAdd(m, v3168, int32(_a1362), int32(834))
+	v3168 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3171 = F_dictAdd(m, v3168, int32(_a_F_moduleRegisterCoreAPI_527), int32(834))
 	mBase = m.M
 	v3172 = m.ExcPending
 	if v3172 != 0 {
@@ -10338,8 +10338,8 @@ L529:
 	}
 L530:
 	;
-	v3174 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3177 = F_dictAdd(m, v3174, int32(_a1363), int32(834))
+	v3174 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3177 = F_dictAdd(m, v3174, int32(_a_F_moduleRegisterCoreAPI_528), int32(834))
 	mBase = m.M
 	v3178 = m.ExcPending
 	if v3178 != 0 {
@@ -10349,8 +10349,8 @@ L530:
 	}
 L531:
 	;
-	v3180 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3183 = F_dictAdd(m, v3180, int32(_a1364), int32(835))
+	v3180 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3183 = F_dictAdd(m, v3180, int32(_a_F_moduleRegisterCoreAPI_529), int32(835))
 	mBase = m.M
 	v3184 = m.ExcPending
 	if v3184 != 0 {
@@ -10360,8 +10360,8 @@ L531:
 	}
 L532:
 	;
-	v3186 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3189 = F_dictAdd(m, v3186, int32(_a1365), int32(835))
+	v3186 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3189 = F_dictAdd(m, v3186, int32(_a_F_moduleRegisterCoreAPI_530), int32(835))
 	mBase = m.M
 	v3190 = m.ExcPending
 	if v3190 != 0 {
@@ -10371,8 +10371,8 @@ L532:
 	}
 L533:
 	;
-	v3192 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3195 = F_dictAdd(m, v3192, int32(_a1366), int32(836))
+	v3192 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3195 = F_dictAdd(m, v3192, int32(_a_F_moduleRegisterCoreAPI_531), int32(836))
 	mBase = m.M
 	v3196 = m.ExcPending
 	if v3196 != 0 {
@@ -10382,8 +10382,8 @@ L533:
 	}
 L534:
 	;
-	v3198 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3201 = F_dictAdd(m, v3198, int32(_a1367), int32(836))
+	v3198 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3201 = F_dictAdd(m, v3198, int32(_a_F_moduleRegisterCoreAPI_532), int32(836))
 	mBase = m.M
 	v3202 = m.ExcPending
 	if v3202 != 0 {
@@ -10393,8 +10393,8 @@ L534:
 	}
 L535:
 	;
-	v3204 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3207 = F_dictAdd(m, v3204, int32(_a1368), int32(837))
+	v3204 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3207 = F_dictAdd(m, v3204, int32(_a_F_moduleRegisterCoreAPI_533), int32(837))
 	mBase = m.M
 	v3208 = m.ExcPending
 	if v3208 != 0 {
@@ -10404,8 +10404,8 @@ L535:
 	}
 L536:
 	;
-	v3210 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3213 = F_dictAdd(m, v3210, int32(_a1369), int32(837))
+	v3210 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3213 = F_dictAdd(m, v3210, int32(_a_F_moduleRegisterCoreAPI_534), int32(837))
 	mBase = m.M
 	v3214 = m.ExcPending
 	if v3214 != 0 {
@@ -10415,8 +10415,8 @@ L536:
 	}
 L537:
 	;
-	v3216 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3219 = F_dictAdd(m, v3216, int32(_a1370), int32(838))
+	v3216 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3219 = F_dictAdd(m, v3216, int32(_a_F_moduleRegisterCoreAPI_535), int32(838))
 	mBase = m.M
 	v3220 = m.ExcPending
 	if v3220 != 0 {
@@ -10426,8 +10426,8 @@ L537:
 	}
 L538:
 	;
-	v3222 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3225 = F_dictAdd(m, v3222, int32(_a1371), int32(838))
+	v3222 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3225 = F_dictAdd(m, v3222, int32(_a_F_moduleRegisterCoreAPI_536), int32(838))
 	mBase = m.M
 	v3226 = m.ExcPending
 	if v3226 != 0 {
@@ -10437,8 +10437,8 @@ L538:
 	}
 L539:
 	;
-	v3228 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3231 = F_dictAdd(m, v3228, int32(_a1372), int32(839))
+	v3228 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3231 = F_dictAdd(m, v3228, int32(_a_F_moduleRegisterCoreAPI_537), int32(839))
 	mBase = m.M
 	v3232 = m.ExcPending
 	if v3232 != 0 {
@@ -10448,8 +10448,8 @@ L539:
 	}
 L540:
 	;
-	v3234 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3237 = F_dictAdd(m, v3234, int32(_a1373), int32(839))
+	v3234 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3237 = F_dictAdd(m, v3234, int32(_a_F_moduleRegisterCoreAPI_538), int32(839))
 	mBase = m.M
 	v3238 = m.ExcPending
 	if v3238 != 0 {
@@ -10459,8 +10459,8 @@ L540:
 	}
 L541:
 	;
-	v3240 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3243 = F_dictAdd(m, v3240, int32(_a1374), int32(840))
+	v3240 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3243 = F_dictAdd(m, v3240, int32(_a_F_moduleRegisterCoreAPI_539), int32(840))
 	mBase = m.M
 	v3244 = m.ExcPending
 	if v3244 != 0 {
@@ -10470,8 +10470,8 @@ L541:
 	}
 L542:
 	;
-	v3246 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3249 = F_dictAdd(m, v3246, int32(_a1375), int32(840))
+	v3246 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3249 = F_dictAdd(m, v3246, int32(_a_F_moduleRegisterCoreAPI_540), int32(840))
 	mBase = m.M
 	v3250 = m.ExcPending
 	if v3250 != 0 {
@@ -10481,8 +10481,8 @@ L542:
 	}
 L543:
 	;
-	v3252 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3255 = F_dictAdd(m, v3252, int32(_a1376), int32(841))
+	v3252 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3255 = F_dictAdd(m, v3252, int32(_a_F_moduleRegisterCoreAPI_541), int32(841))
 	mBase = m.M
 	v3256 = m.ExcPending
 	if v3256 != 0 {
@@ -10492,8 +10492,8 @@ L543:
 	}
 L544:
 	;
-	v3258 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3261 = F_dictAdd(m, v3258, int32(_a1377), int32(841))
+	v3258 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3261 = F_dictAdd(m, v3258, int32(_a_F_moduleRegisterCoreAPI_542), int32(841))
 	mBase = m.M
 	v3262 = m.ExcPending
 	if v3262 != 0 {
@@ -10503,8 +10503,8 @@ L544:
 	}
 L545:
 	;
-	v3264 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3267 = F_dictAdd(m, v3264, int32(_a1378), int32(842))
+	v3264 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3267 = F_dictAdd(m, v3264, int32(_a_F_moduleRegisterCoreAPI_543), int32(842))
 	mBase = m.M
 	v3268 = m.ExcPending
 	if v3268 != 0 {
@@ -10514,8 +10514,8 @@ L545:
 	}
 L546:
 	;
-	v3270 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3273 = F_dictAdd(m, v3270, int32(_a1379), int32(842))
+	v3270 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3273 = F_dictAdd(m, v3270, int32(_a_F_moduleRegisterCoreAPI_544), int32(842))
 	mBase = m.M
 	v3274 = m.ExcPending
 	if v3274 != 0 {
@@ -10525,8 +10525,8 @@ L546:
 	}
 L547:
 	;
-	v3276 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3279 = F_dictAdd(m, v3276, int32(_a1380), int32(843))
+	v3276 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3279 = F_dictAdd(m, v3276, int32(_a_F_moduleRegisterCoreAPI_545), int32(843))
 	mBase = m.M
 	v3280 = m.ExcPending
 	if v3280 != 0 {
@@ -10536,8 +10536,8 @@ L547:
 	}
 L548:
 	;
-	v3282 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3285 = F_dictAdd(m, v3282, int32(_a1381), int32(843))
+	v3282 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3285 = F_dictAdd(m, v3282, int32(_a_F_moduleRegisterCoreAPI_546), int32(843))
 	mBase = m.M
 	v3286 = m.ExcPending
 	if v3286 != 0 {
@@ -10547,8 +10547,8 @@ L548:
 	}
 L549:
 	;
-	v3288 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3291 = F_dictAdd(m, v3288, int32(_a1382), int32(844))
+	v3288 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3291 = F_dictAdd(m, v3288, int32(_a_F_moduleRegisterCoreAPI_547), int32(844))
 	mBase = m.M
 	v3292 = m.ExcPending
 	if v3292 != 0 {
@@ -10558,8 +10558,8 @@ L549:
 	}
 L550:
 	;
-	v3294 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3297 = F_dictAdd(m, v3294, int32(_a1383), int32(844))
+	v3294 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3297 = F_dictAdd(m, v3294, int32(_a_F_moduleRegisterCoreAPI_548), int32(844))
 	mBase = m.M
 	v3298 = m.ExcPending
 	if v3298 != 0 {
@@ -10569,8 +10569,8 @@ L550:
 	}
 L551:
 	;
-	v3300 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3303 = F_dictAdd(m, v3300, int32(_a1384), int32(845))
+	v3300 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3303 = F_dictAdd(m, v3300, int32(_a_F_moduleRegisterCoreAPI_549), int32(845))
 	mBase = m.M
 	v3304 = m.ExcPending
 	if v3304 != 0 {
@@ -10580,8 +10580,8 @@ L551:
 	}
 L552:
 	;
-	v3306 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3309 = F_dictAdd(m, v3306, int32(_a1385), int32(845))
+	v3306 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3309 = F_dictAdd(m, v3306, int32(_a_F_moduleRegisterCoreAPI_550), int32(845))
 	mBase = m.M
 	v3310 = m.ExcPending
 	if v3310 != 0 {
@@ -10591,8 +10591,8 @@ L552:
 	}
 L553:
 	;
-	v3312 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3315 = F_dictAdd(m, v3312, int32(_a1386), int32(846))
+	v3312 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3315 = F_dictAdd(m, v3312, int32(_a_F_moduleRegisterCoreAPI_551), int32(846))
 	mBase = m.M
 	v3316 = m.ExcPending
 	if v3316 != 0 {
@@ -10602,8 +10602,8 @@ L553:
 	}
 L554:
 	;
-	v3318 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3321 = F_dictAdd(m, v3318, int32(_a1387), int32(846))
+	v3318 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3321 = F_dictAdd(m, v3318, int32(_a_F_moduleRegisterCoreAPI_552), int32(846))
 	mBase = m.M
 	v3322 = m.ExcPending
 	if v3322 != 0 {
@@ -10613,8 +10613,8 @@ L554:
 	}
 L555:
 	;
-	v3324 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3327 = F_dictAdd(m, v3324, int32(_a1388), int32(847))
+	v3324 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3327 = F_dictAdd(m, v3324, int32(_a_F_moduleRegisterCoreAPI_553), int32(847))
 	mBase = m.M
 	v3328 = m.ExcPending
 	if v3328 != 0 {
@@ -10624,8 +10624,8 @@ L555:
 	}
 L556:
 	;
-	v3330 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3333 = F_dictAdd(m, v3330, int32(_a1389), int32(847))
+	v3330 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3333 = F_dictAdd(m, v3330, int32(_a_F_moduleRegisterCoreAPI_554), int32(847))
 	mBase = m.M
 	v3334 = m.ExcPending
 	if v3334 != 0 {
@@ -10635,8 +10635,8 @@ L556:
 	}
 L557:
 	;
-	v3336 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3339 = F_dictAdd(m, v3336, int32(_a1390), int32(848))
+	v3336 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3339 = F_dictAdd(m, v3336, int32(_a_F_moduleRegisterCoreAPI_555), int32(848))
 	mBase = m.M
 	v3340 = m.ExcPending
 	if v3340 != 0 {
@@ -10646,8 +10646,8 @@ L557:
 	}
 L558:
 	;
-	v3342 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3345 = F_dictAdd(m, v3342, int32(_a1391), int32(848))
+	v3342 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3345 = F_dictAdd(m, v3342, int32(_a_F_moduleRegisterCoreAPI_556), int32(848))
 	mBase = m.M
 	v3346 = m.ExcPending
 	if v3346 != 0 {
@@ -10657,8 +10657,8 @@ L558:
 	}
 L559:
 	;
-	v3348 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3351 = F_dictAdd(m, v3348, int32(_a1392), int32(849))
+	v3348 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3351 = F_dictAdd(m, v3348, int32(_a_F_moduleRegisterCoreAPI_557), int32(849))
 	mBase = m.M
 	v3352 = m.ExcPending
 	if v3352 != 0 {
@@ -10668,8 +10668,8 @@ L559:
 	}
 L560:
 	;
-	v3354 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3357 = F_dictAdd(m, v3354, int32(_a1393), int32(849))
+	v3354 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3357 = F_dictAdd(m, v3354, int32(_a_F_moduleRegisterCoreAPI_558), int32(849))
 	mBase = m.M
 	v3358 = m.ExcPending
 	if v3358 != 0 {
@@ -10679,8 +10679,8 @@ L560:
 	}
 L561:
 	;
-	v3360 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3363 = F_dictAdd(m, v3360, int32(_a1394), int32(850))
+	v3360 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3363 = F_dictAdd(m, v3360, int32(_a_F_moduleRegisterCoreAPI_559), int32(850))
 	mBase = m.M
 	v3364 = m.ExcPending
 	if v3364 != 0 {
@@ -10690,8 +10690,8 @@ L561:
 	}
 L562:
 	;
-	v3366 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3369 = F_dictAdd(m, v3366, int32(_a1395), int32(850))
+	v3366 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3369 = F_dictAdd(m, v3366, int32(_a_F_moduleRegisterCoreAPI_560), int32(850))
 	mBase = m.M
 	v3370 = m.ExcPending
 	if v3370 != 0 {
@@ -10701,8 +10701,8 @@ L562:
 	}
 L563:
 	;
-	v3372 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3375 = F_dictAdd(m, v3372, int32(_a1396), int32(851))
+	v3372 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3375 = F_dictAdd(m, v3372, int32(_a_F_moduleRegisterCoreAPI_561), int32(851))
 	mBase = m.M
 	v3376 = m.ExcPending
 	if v3376 != 0 {
@@ -10712,8 +10712,8 @@ L563:
 	}
 L564:
 	;
-	v3378 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3381 = F_dictAdd(m, v3378, int32(_a1397), int32(851))
+	v3378 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3381 = F_dictAdd(m, v3378, int32(_a_F_moduleRegisterCoreAPI_562), int32(851))
 	mBase = m.M
 	v3382 = m.ExcPending
 	if v3382 != 0 {
@@ -10723,8 +10723,8 @@ L564:
 	}
 L565:
 	;
-	v3384 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3387 = F_dictAdd(m, v3384, int32(_a1398), int32(852))
+	v3384 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3387 = F_dictAdd(m, v3384, int32(_a_F_moduleRegisterCoreAPI_563), int32(852))
 	mBase = m.M
 	v3388 = m.ExcPending
 	if v3388 != 0 {
@@ -10734,8 +10734,8 @@ L565:
 	}
 L566:
 	;
-	v3390 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3393 = F_dictAdd(m, v3390, int32(_a1399), int32(852))
+	v3390 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3393 = F_dictAdd(m, v3390, int32(_a_F_moduleRegisterCoreAPI_564), int32(852))
 	mBase = m.M
 	v3394 = m.ExcPending
 	if v3394 != 0 {
@@ -10745,8 +10745,8 @@ L566:
 	}
 L567:
 	;
-	v3396 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3399 = F_dictAdd(m, v3396, int32(_a1400), int32(853))
+	v3396 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3399 = F_dictAdd(m, v3396, int32(_a_F_moduleRegisterCoreAPI_565), int32(853))
 	mBase = m.M
 	v3400 = m.ExcPending
 	if v3400 != 0 {
@@ -10756,8 +10756,8 @@ L567:
 	}
 L568:
 	;
-	v3402 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3405 = F_dictAdd(m, v3402, int32(_a1401), int32(853))
+	v3402 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3405 = F_dictAdd(m, v3402, int32(_a_F_moduleRegisterCoreAPI_566), int32(853))
 	mBase = m.M
 	v3406 = m.ExcPending
 	if v3406 != 0 {
@@ -10767,8 +10767,8 @@ L568:
 	}
 L569:
 	;
-	v3408 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3411 = F_dictAdd(m, v3408, int32(_a1402), int32(854))
+	v3408 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3411 = F_dictAdd(m, v3408, int32(_a_F_moduleRegisterCoreAPI_567), int32(854))
 	mBase = m.M
 	v3412 = m.ExcPending
 	if v3412 != 0 {
@@ -10778,8 +10778,8 @@ L569:
 	}
 L570:
 	;
-	v3414 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3417 = F_dictAdd(m, v3414, int32(_a1403), int32(854))
+	v3414 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3417 = F_dictAdd(m, v3414, int32(_a_F_moduleRegisterCoreAPI_568), int32(854))
 	mBase = m.M
 	v3418 = m.ExcPending
 	if v3418 != 0 {
@@ -10789,8 +10789,8 @@ L570:
 	}
 L571:
 	;
-	v3420 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3423 = F_dictAdd(m, v3420, int32(_a1404), int32(855))
+	v3420 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3423 = F_dictAdd(m, v3420, int32(_a_F_moduleRegisterCoreAPI_569), int32(855))
 	mBase = m.M
 	v3424 = m.ExcPending
 	if v3424 != 0 {
@@ -10800,8 +10800,8 @@ L571:
 	}
 L572:
 	;
-	v3426 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3429 = F_dictAdd(m, v3426, int32(_a1405), int32(855))
+	v3426 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3429 = F_dictAdd(m, v3426, int32(_a_F_moduleRegisterCoreAPI_570), int32(855))
 	mBase = m.M
 	v3430 = m.ExcPending
 	if v3430 != 0 {
@@ -10811,8 +10811,8 @@ L572:
 	}
 L573:
 	;
-	v3432 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3435 = F_dictAdd(m, v3432, int32(_a1406), int32(856))
+	v3432 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3435 = F_dictAdd(m, v3432, int32(_a_F_moduleRegisterCoreAPI_571), int32(856))
 	mBase = m.M
 	v3436 = m.ExcPending
 	if v3436 != 0 {
@@ -10822,8 +10822,8 @@ L573:
 	}
 L574:
 	;
-	v3438 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3441 = F_dictAdd(m, v3438, int32(_a1407), int32(856))
+	v3438 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3441 = F_dictAdd(m, v3438, int32(_a_F_moduleRegisterCoreAPI_572), int32(856))
 	mBase = m.M
 	v3442 = m.ExcPending
 	if v3442 != 0 {
@@ -10833,8 +10833,8 @@ L574:
 	}
 L575:
 	;
-	v3444 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3447 = F_dictAdd(m, v3444, int32(_a1408), int32(857))
+	v3444 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3447 = F_dictAdd(m, v3444, int32(_a_F_moduleRegisterCoreAPI_573), int32(857))
 	mBase = m.M
 	v3448 = m.ExcPending
 	if v3448 != 0 {
@@ -10844,8 +10844,8 @@ L575:
 	}
 L576:
 	;
-	v3450 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3453 = F_dictAdd(m, v3450, int32(_a1409), int32(857))
+	v3450 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3453 = F_dictAdd(m, v3450, int32(_a_F_moduleRegisterCoreAPI_574), int32(857))
 	mBase = m.M
 	v3454 = m.ExcPending
 	if v3454 != 0 {
@@ -10855,8 +10855,8 @@ L576:
 	}
 L577:
 	;
-	v3456 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3459 = F_dictAdd(m, v3456, int32(_a1410), int32(858))
+	v3456 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3459 = F_dictAdd(m, v3456, int32(_a_F_moduleRegisterCoreAPI_575), int32(858))
 	mBase = m.M
 	v3460 = m.ExcPending
 	if v3460 != 0 {
@@ -10866,8 +10866,8 @@ L577:
 	}
 L578:
 	;
-	v3462 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3465 = F_dictAdd(m, v3462, int32(_a1411), int32(858))
+	v3462 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3465 = F_dictAdd(m, v3462, int32(_a_F_moduleRegisterCoreAPI_576), int32(858))
 	mBase = m.M
 	v3466 = m.ExcPending
 	if v3466 != 0 {
@@ -10877,8 +10877,8 @@ L578:
 	}
 L579:
 	;
-	v3468 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3471 = F_dictAdd(m, v3468, int32(_a1412), int32(859))
+	v3468 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3471 = F_dictAdd(m, v3468, int32(_a_F_moduleRegisterCoreAPI_577), int32(859))
 	mBase = m.M
 	v3472 = m.ExcPending
 	if v3472 != 0 {
@@ -10888,8 +10888,8 @@ L579:
 	}
 L580:
 	;
-	v3474 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3477 = F_dictAdd(m, v3474, int32(_a1413), int32(859))
+	v3474 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3477 = F_dictAdd(m, v3474, int32(_a_F_moduleRegisterCoreAPI_578), int32(859))
 	mBase = m.M
 	v3478 = m.ExcPending
 	if v3478 != 0 {
@@ -10899,8 +10899,8 @@ L580:
 	}
 L581:
 	;
-	v3480 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3483 = F_dictAdd(m, v3480, int32(_a1414), int32(860))
+	v3480 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3483 = F_dictAdd(m, v3480, int32(_a_F_moduleRegisterCoreAPI_579), int32(860))
 	mBase = m.M
 	v3484 = m.ExcPending
 	if v3484 != 0 {
@@ -10910,8 +10910,8 @@ L581:
 	}
 L582:
 	;
-	v3486 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3489 = F_dictAdd(m, v3486, int32(_a1415), int32(860))
+	v3486 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3489 = F_dictAdd(m, v3486, int32(_a_F_moduleRegisterCoreAPI_580), int32(860))
 	mBase = m.M
 	v3490 = m.ExcPending
 	if v3490 != 0 {
@@ -10921,8 +10921,8 @@ L582:
 	}
 L583:
 	;
-	v3492 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3495 = F_dictAdd(m, v3492, int32(_a1416), int32(861))
+	v3492 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3495 = F_dictAdd(m, v3492, int32(_a_F_moduleRegisterCoreAPI_581), int32(861))
 	mBase = m.M
 	v3496 = m.ExcPending
 	if v3496 != 0 {
@@ -10932,8 +10932,8 @@ L583:
 	}
 L584:
 	;
-	v3498 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3501 = F_dictAdd(m, v3498, int32(_a1417), int32(861))
+	v3498 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3501 = F_dictAdd(m, v3498, int32(_a_F_moduleRegisterCoreAPI_582), int32(861))
 	mBase = m.M
 	v3502 = m.ExcPending
 	if v3502 != 0 {
@@ -10943,8 +10943,8 @@ L584:
 	}
 L585:
 	;
-	v3504 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3507 = F_dictAdd(m, v3504, int32(_a1418), int32(862))
+	v3504 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3507 = F_dictAdd(m, v3504, int32(_a_F_moduleRegisterCoreAPI_583), int32(862))
 	mBase = m.M
 	v3508 = m.ExcPending
 	if v3508 != 0 {
@@ -10954,8 +10954,8 @@ L585:
 	}
 L586:
 	;
-	v3510 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3513 = F_dictAdd(m, v3510, int32(_a1419), int32(862))
+	v3510 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3513 = F_dictAdd(m, v3510, int32(_a_F_moduleRegisterCoreAPI_584), int32(862))
 	mBase = m.M
 	v3514 = m.ExcPending
 	if v3514 != 0 {
@@ -10965,8 +10965,8 @@ L586:
 	}
 L587:
 	;
-	v3516 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3519 = F_dictAdd(m, v3516, int32(_a1420), int32(863))
+	v3516 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3519 = F_dictAdd(m, v3516, int32(_a_F_moduleRegisterCoreAPI_585), int32(863))
 	mBase = m.M
 	v3520 = m.ExcPending
 	if v3520 != 0 {
@@ -10976,8 +10976,8 @@ L587:
 	}
 L588:
 	;
-	v3522 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3525 = F_dictAdd(m, v3522, int32(_a1421), int32(863))
+	v3522 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3525 = F_dictAdd(m, v3522, int32(_a_F_moduleRegisterCoreAPI_586), int32(863))
 	mBase = m.M
 	v3526 = m.ExcPending
 	if v3526 != 0 {
@@ -10987,8 +10987,8 @@ L588:
 	}
 L589:
 	;
-	v3528 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3531 = F_dictAdd(m, v3528, int32(_a1422), int32(864))
+	v3528 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3531 = F_dictAdd(m, v3528, int32(_a_F_moduleRegisterCoreAPI_587), int32(864))
 	mBase = m.M
 	v3532 = m.ExcPending
 	if v3532 != 0 {
@@ -10998,8 +10998,8 @@ L589:
 	}
 L590:
 	;
-	v3534 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3537 = F_dictAdd(m, v3534, int32(_a1423), int32(864))
+	v3534 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3537 = F_dictAdd(m, v3534, int32(_a_F_moduleRegisterCoreAPI_588), int32(864))
 	mBase = m.M
 	v3538 = m.ExcPending
 	if v3538 != 0 {
@@ -11009,8 +11009,8 @@ L590:
 	}
 L591:
 	;
-	v3540 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3543 = F_dictAdd(m, v3540, int32(_a1424), int32(865))
+	v3540 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3543 = F_dictAdd(m, v3540, int32(_a_F_moduleRegisterCoreAPI_589), int32(865))
 	mBase = m.M
 	v3544 = m.ExcPending
 	if v3544 != 0 {
@@ -11020,8 +11020,8 @@ L591:
 	}
 L592:
 	;
-	v3546 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3549 = F_dictAdd(m, v3546, int32(_a1425), int32(865))
+	v3546 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3549 = F_dictAdd(m, v3546, int32(_a_F_moduleRegisterCoreAPI_590), int32(865))
 	mBase = m.M
 	v3550 = m.ExcPending
 	if v3550 != 0 {
@@ -11031,8 +11031,8 @@ L592:
 	}
 L593:
 	;
-	v3552 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3555 = F_dictAdd(m, v3552, int32(_a1426), int32(866))
+	v3552 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3555 = F_dictAdd(m, v3552, int32(_a_F_moduleRegisterCoreAPI_591), int32(866))
 	mBase = m.M
 	v3556 = m.ExcPending
 	if v3556 != 0 {
@@ -11042,8 +11042,8 @@ L593:
 	}
 L594:
 	;
-	v3558 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3561 = F_dictAdd(m, v3558, int32(_a1427), int32(866))
+	v3558 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3561 = F_dictAdd(m, v3558, int32(_a_F_moduleRegisterCoreAPI_592), int32(866))
 	mBase = m.M
 	v3562 = m.ExcPending
 	if v3562 != 0 {
@@ -11053,8 +11053,8 @@ L594:
 	}
 L595:
 	;
-	v3564 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3567 = F_dictAdd(m, v3564, int32(_a1428), int32(867))
+	v3564 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3567 = F_dictAdd(m, v3564, int32(_a_F_moduleRegisterCoreAPI_593), int32(867))
 	mBase = m.M
 	v3568 = m.ExcPending
 	if v3568 != 0 {
@@ -11064,8 +11064,8 @@ L595:
 	}
 L596:
 	;
-	v3570 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3573 = F_dictAdd(m, v3570, int32(_a1429), int32(867))
+	v3570 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3573 = F_dictAdd(m, v3570, int32(_a_F_moduleRegisterCoreAPI_594), int32(867))
 	mBase = m.M
 	v3574 = m.ExcPending
 	if v3574 != 0 {
@@ -11075,8 +11075,8 @@ L596:
 	}
 L597:
 	;
-	v3576 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3579 = F_dictAdd(m, v3576, int32(_a1430), int32(868))
+	v3576 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3579 = F_dictAdd(m, v3576, int32(_a_F_moduleRegisterCoreAPI_595), int32(868))
 	mBase = m.M
 	v3580 = m.ExcPending
 	if v3580 != 0 {
@@ -11086,8 +11086,8 @@ L597:
 	}
 L598:
 	;
-	v3582 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3585 = F_dictAdd(m, v3582, int32(_a1431), int32(868))
+	v3582 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3585 = F_dictAdd(m, v3582, int32(_a_F_moduleRegisterCoreAPI_596), int32(868))
 	mBase = m.M
 	v3586 = m.ExcPending
 	if v3586 != 0 {
@@ -11097,8 +11097,8 @@ L598:
 	}
 L599:
 	;
-	v3588 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3591 = F_dictAdd(m, v3588, int32(_a1432), int32(869))
+	v3588 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3591 = F_dictAdd(m, v3588, int32(_a_F_moduleRegisterCoreAPI_597), int32(869))
 	mBase = m.M
 	v3592 = m.ExcPending
 	if v3592 != 0 {
@@ -11108,8 +11108,8 @@ L599:
 	}
 L600:
 	;
-	v3594 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3597 = F_dictAdd(m, v3594, int32(_a1433), int32(869))
+	v3594 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3597 = F_dictAdd(m, v3594, int32(_a_F_moduleRegisterCoreAPI_598), int32(869))
 	mBase = m.M
 	v3598 = m.ExcPending
 	if v3598 != 0 {
@@ -11119,8 +11119,8 @@ L600:
 	}
 L601:
 	;
-	v3600 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3603 = F_dictAdd(m, v3600, int32(_a1434), int32(870))
+	v3600 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3603 = F_dictAdd(m, v3600, int32(_a_F_moduleRegisterCoreAPI_599), int32(870))
 	mBase = m.M
 	v3604 = m.ExcPending
 	if v3604 != 0 {
@@ -11130,8 +11130,8 @@ L601:
 	}
 L602:
 	;
-	v3606 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3609 = F_dictAdd(m, v3606, int32(_a1435), int32(870))
+	v3606 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3609 = F_dictAdd(m, v3606, int32(_a_F_moduleRegisterCoreAPI_600), int32(870))
 	mBase = m.M
 	v3610 = m.ExcPending
 	if v3610 != 0 {
@@ -11141,8 +11141,8 @@ L602:
 	}
 L603:
 	;
-	v3612 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3615 = F_dictAdd(m, v3612, int32(_a1436), int32(871))
+	v3612 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3615 = F_dictAdd(m, v3612, int32(_a_F_moduleRegisterCoreAPI_601), int32(871))
 	mBase = m.M
 	v3616 = m.ExcPending
 	if v3616 != 0 {
@@ -11152,8 +11152,8 @@ L603:
 	}
 L604:
 	;
-	v3618 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3621 = F_dictAdd(m, v3618, int32(_a1437), int32(871))
+	v3618 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3621 = F_dictAdd(m, v3618, int32(_a_F_moduleRegisterCoreAPI_602), int32(871))
 	mBase = m.M
 	v3622 = m.ExcPending
 	if v3622 != 0 {
@@ -11163,8 +11163,8 @@ L604:
 	}
 L605:
 	;
-	v3624 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3627 = F_dictAdd(m, v3624, int32(_a1438), int32(872))
+	v3624 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3627 = F_dictAdd(m, v3624, int32(_a_F_moduleRegisterCoreAPI_603), int32(872))
 	mBase = m.M
 	v3628 = m.ExcPending
 	if v3628 != 0 {
@@ -11174,8 +11174,8 @@ L605:
 	}
 L606:
 	;
-	v3630 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3633 = F_dictAdd(m, v3630, int32(_a1439), int32(872))
+	v3630 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3633 = F_dictAdd(m, v3630, int32(_a_F_moduleRegisterCoreAPI_604), int32(872))
 	mBase = m.M
 	v3634 = m.ExcPending
 	if v3634 != 0 {
@@ -11185,8 +11185,8 @@ L606:
 	}
 L607:
 	;
-	v3636 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3639 = F_dictAdd(m, v3636, int32(_a1440), int32(873))
+	v3636 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3639 = F_dictAdd(m, v3636, int32(_a_F_moduleRegisterCoreAPI_605), int32(873))
 	mBase = m.M
 	v3640 = m.ExcPending
 	if v3640 != 0 {
@@ -11196,8 +11196,8 @@ L607:
 	}
 L608:
 	;
-	v3642 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3645 = F_dictAdd(m, v3642, int32(_a1441), int32(873))
+	v3642 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3645 = F_dictAdd(m, v3642, int32(_a_F_moduleRegisterCoreAPI_606), int32(873))
 	mBase = m.M
 	v3646 = m.ExcPending
 	if v3646 != 0 {
@@ -11207,8 +11207,8 @@ L608:
 	}
 L609:
 	;
-	v3648 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3651 = F_dictAdd(m, v3648, int32(_a1442), int32(874))
+	v3648 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3651 = F_dictAdd(m, v3648, int32(_a_F_moduleRegisterCoreAPI_607), int32(874))
 	mBase = m.M
 	v3652 = m.ExcPending
 	if v3652 != 0 {
@@ -11218,8 +11218,8 @@ L609:
 	}
 L610:
 	;
-	v3654 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3657 = F_dictAdd(m, v3654, int32(_a1443), int32(874))
+	v3654 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3657 = F_dictAdd(m, v3654, int32(_a_F_moduleRegisterCoreAPI_608), int32(874))
 	mBase = m.M
 	v3658 = m.ExcPending
 	if v3658 != 0 {
@@ -11229,8 +11229,8 @@ L610:
 	}
 L611:
 	;
-	v3660 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3663 = F_dictAdd(m, v3660, int32(_a1444), int32(875))
+	v3660 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3663 = F_dictAdd(m, v3660, int32(_a_F_moduleRegisterCoreAPI_609), int32(875))
 	mBase = m.M
 	v3664 = m.ExcPending
 	if v3664 != 0 {
@@ -11240,8 +11240,8 @@ L611:
 	}
 L612:
 	;
-	v3666 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3669 = F_dictAdd(m, v3666, int32(_a1445), int32(875))
+	v3666 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3669 = F_dictAdd(m, v3666, int32(_a_F_moduleRegisterCoreAPI_610), int32(875))
 	mBase = m.M
 	v3670 = m.ExcPending
 	if v3670 != 0 {
@@ -11251,8 +11251,8 @@ L612:
 	}
 L613:
 	;
-	v3672 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3675 = F_dictAdd(m, v3672, int32(_a1446), int32(876))
+	v3672 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3675 = F_dictAdd(m, v3672, int32(_a_F_moduleRegisterCoreAPI_611), int32(876))
 	mBase = m.M
 	v3676 = m.ExcPending
 	if v3676 != 0 {
@@ -11262,8 +11262,8 @@ L613:
 	}
 L614:
 	;
-	v3678 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3681 = F_dictAdd(m, v3678, int32(_a1447), int32(876))
+	v3678 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3681 = F_dictAdd(m, v3678, int32(_a_F_moduleRegisterCoreAPI_612), int32(876))
 	mBase = m.M
 	v3682 = m.ExcPending
 	if v3682 != 0 {
@@ -11273,8 +11273,8 @@ L614:
 	}
 L615:
 	;
-	v3684 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3687 = F_dictAdd(m, v3684, int32(_a1448), int32(877))
+	v3684 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3687 = F_dictAdd(m, v3684, int32(_a_F_moduleRegisterCoreAPI_613), int32(877))
 	mBase = m.M
 	v3688 = m.ExcPending
 	if v3688 != 0 {
@@ -11284,8 +11284,8 @@ L615:
 	}
 L616:
 	;
-	v3690 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3693 = F_dictAdd(m, v3690, int32(_a1449), int32(877))
+	v3690 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3693 = F_dictAdd(m, v3690, int32(_a_F_moduleRegisterCoreAPI_614), int32(877))
 	mBase = m.M
 	v3694 = m.ExcPending
 	if v3694 != 0 {
@@ -11295,8 +11295,8 @@ L616:
 	}
 L617:
 	;
-	v3696 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3699 = F_dictAdd(m, v3696, int32(_a1450), int32(878))
+	v3696 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3699 = F_dictAdd(m, v3696, int32(_a_F_moduleRegisterCoreAPI_615), int32(878))
 	mBase = m.M
 	v3700 = m.ExcPending
 	if v3700 != 0 {
@@ -11306,8 +11306,8 @@ L617:
 	}
 L618:
 	;
-	v3702 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3705 = F_dictAdd(m, v3702, int32(_a1451), int32(878))
+	v3702 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3705 = F_dictAdd(m, v3702, int32(_a_F_moduleRegisterCoreAPI_616), int32(878))
 	mBase = m.M
 	v3706 = m.ExcPending
 	if v3706 != 0 {
@@ -11317,8 +11317,8 @@ L618:
 	}
 L619:
 	;
-	v3708 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3711 = F_dictAdd(m, v3708, int32(_a1452), int32(879))
+	v3708 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3711 = F_dictAdd(m, v3708, int32(_a_F_moduleRegisterCoreAPI_617), int32(879))
 	mBase = m.M
 	v3712 = m.ExcPending
 	if v3712 != 0 {
@@ -11328,8 +11328,8 @@ L619:
 	}
 L620:
 	;
-	v3714 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3717 = F_dictAdd(m, v3714, int32(_a1453), int32(879))
+	v3714 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3717 = F_dictAdd(m, v3714, int32(_a_F_moduleRegisterCoreAPI_618), int32(879))
 	mBase = m.M
 	v3718 = m.ExcPending
 	if v3718 != 0 {
@@ -11339,8 +11339,8 @@ L620:
 	}
 L621:
 	;
-	v3720 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3723 = F_dictAdd(m, v3720, int32(_a1454), int32(880))
+	v3720 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3723 = F_dictAdd(m, v3720, int32(_a_F_moduleRegisterCoreAPI_619), int32(880))
 	mBase = m.M
 	v3724 = m.ExcPending
 	if v3724 != 0 {
@@ -11350,8 +11350,8 @@ L621:
 	}
 L622:
 	;
-	v3726 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3729 = F_dictAdd(m, v3726, int32(_a1455), int32(880))
+	v3726 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3729 = F_dictAdd(m, v3726, int32(_a_F_moduleRegisterCoreAPI_620), int32(880))
 	mBase = m.M
 	v3730 = m.ExcPending
 	if v3730 != 0 {
@@ -11361,8 +11361,8 @@ L622:
 	}
 L623:
 	;
-	v3732 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3735 = F_dictAdd(m, v3732, int32(_a1456), int32(881))
+	v3732 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3735 = F_dictAdd(m, v3732, int32(_a_F_moduleRegisterCoreAPI_621), int32(881))
 	mBase = m.M
 	v3736 = m.ExcPending
 	if v3736 != 0 {
@@ -11372,8 +11372,8 @@ L623:
 	}
 L624:
 	;
-	v3738 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3741 = F_dictAdd(m, v3738, int32(_a1457), int32(881))
+	v3738 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3741 = F_dictAdd(m, v3738, int32(_a_F_moduleRegisterCoreAPI_622), int32(881))
 	mBase = m.M
 	v3742 = m.ExcPending
 	if v3742 != 0 {
@@ -11383,8 +11383,8 @@ L624:
 	}
 L625:
 	;
-	v3744 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3747 = F_dictAdd(m, v3744, int32(_a1458), int32(882))
+	v3744 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3747 = F_dictAdd(m, v3744, int32(_a_F_moduleRegisterCoreAPI_623), int32(882))
 	mBase = m.M
 	v3748 = m.ExcPending
 	if v3748 != 0 {
@@ -11394,8 +11394,8 @@ L625:
 	}
 L626:
 	;
-	v3750 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3753 = F_dictAdd(m, v3750, int32(_a1459), int32(882))
+	v3750 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3753 = F_dictAdd(m, v3750, int32(_a_F_moduleRegisterCoreAPI_624), int32(882))
 	mBase = m.M
 	v3754 = m.ExcPending
 	if v3754 != 0 {
@@ -11405,8 +11405,8 @@ L626:
 	}
 L627:
 	;
-	v3756 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3759 = F_dictAdd(m, v3756, int32(_a1460), int32(883))
+	v3756 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3759 = F_dictAdd(m, v3756, int32(_a_F_moduleRegisterCoreAPI_625), int32(883))
 	mBase = m.M
 	v3760 = m.ExcPending
 	if v3760 != 0 {
@@ -11416,8 +11416,8 @@ L627:
 	}
 L628:
 	;
-	v3762 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3765 = F_dictAdd(m, v3762, int32(_a1461), int32(883))
+	v3762 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3765 = F_dictAdd(m, v3762, int32(_a_F_moduleRegisterCoreAPI_626), int32(883))
 	mBase = m.M
 	v3766 = m.ExcPending
 	if v3766 != 0 {
@@ -11427,8 +11427,8 @@ L628:
 	}
 L629:
 	;
-	v3768 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3771 = F_dictAdd(m, v3768, int32(_a1462), int32(884))
+	v3768 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3771 = F_dictAdd(m, v3768, int32(_a_F_moduleRegisterCoreAPI_627), int32(884))
 	mBase = m.M
 	v3772 = m.ExcPending
 	if v3772 != 0 {
@@ -11438,8 +11438,8 @@ L629:
 	}
 L630:
 	;
-	v3774 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3777 = F_dictAdd(m, v3774, int32(_a1463), int32(884))
+	v3774 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3777 = F_dictAdd(m, v3774, int32(_a_F_moduleRegisterCoreAPI_628), int32(884))
 	mBase = m.M
 	v3778 = m.ExcPending
 	if v3778 != 0 {
@@ -11449,8 +11449,8 @@ L630:
 	}
 L631:
 	;
-	v3780 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3783 = F_dictAdd(m, v3780, int32(_a1464), int32(885))
+	v3780 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3783 = F_dictAdd(m, v3780, int32(_a_F_moduleRegisterCoreAPI_629), int32(885))
 	mBase = m.M
 	v3784 = m.ExcPending
 	if v3784 != 0 {
@@ -11460,8 +11460,8 @@ L631:
 	}
 L632:
 	;
-	v3786 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3789 = F_dictAdd(m, v3786, int32(_a1465), int32(885))
+	v3786 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3789 = F_dictAdd(m, v3786, int32(_a_F_moduleRegisterCoreAPI_630), int32(885))
 	mBase = m.M
 	v3790 = m.ExcPending
 	if v3790 != 0 {
@@ -11471,8 +11471,8 @@ L632:
 	}
 L633:
 	;
-	v3792 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3795 = F_dictAdd(m, v3792, int32(_a1466), int32(886))
+	v3792 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3795 = F_dictAdd(m, v3792, int32(_a_F_moduleRegisterCoreAPI_631), int32(886))
 	mBase = m.M
 	v3796 = m.ExcPending
 	if v3796 != 0 {
@@ -11482,8 +11482,8 @@ L633:
 	}
 L634:
 	;
-	v3798 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3801 = F_dictAdd(m, v3798, int32(_a1467), int32(886))
+	v3798 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3801 = F_dictAdd(m, v3798, int32(_a_F_moduleRegisterCoreAPI_632), int32(886))
 	mBase = m.M
 	v3802 = m.ExcPending
 	if v3802 != 0 {
@@ -11493,8 +11493,8 @@ L634:
 	}
 L635:
 	;
-	v3804 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3807 = F_dictAdd(m, v3804, int32(_a1468), int32(887))
+	v3804 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3807 = F_dictAdd(m, v3804, int32(_a_F_moduleRegisterCoreAPI_633), int32(887))
 	mBase = m.M
 	v3808 = m.ExcPending
 	if v3808 != 0 {
@@ -11504,8 +11504,8 @@ L635:
 	}
 L636:
 	;
-	v3810 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3813 = F_dictAdd(m, v3810, int32(_a1469), int32(887))
+	v3810 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3813 = F_dictAdd(m, v3810, int32(_a_F_moduleRegisterCoreAPI_634), int32(887))
 	mBase = m.M
 	v3814 = m.ExcPending
 	if v3814 != 0 {
@@ -11515,8 +11515,8 @@ L636:
 	}
 L637:
 	;
-	v3816 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3819 = F_dictAdd(m, v3816, int32(_a1470), int32(888))
+	v3816 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3819 = F_dictAdd(m, v3816, int32(_a_F_moduleRegisterCoreAPI_635), int32(888))
 	mBase = m.M
 	v3820 = m.ExcPending
 	if v3820 != 0 {
@@ -11526,8 +11526,8 @@ L637:
 	}
 L638:
 	;
-	v3822 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3825 = F_dictAdd(m, v3822, int32(_a1471), int32(888))
+	v3822 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3825 = F_dictAdd(m, v3822, int32(_a_F_moduleRegisterCoreAPI_636), int32(888))
 	mBase = m.M
 	v3826 = m.ExcPending
 	if v3826 != 0 {
@@ -11537,8 +11537,8 @@ L638:
 	}
 L639:
 	;
-	v3828 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3831 = F_dictAdd(m, v3828, int32(_a1472), int32(889))
+	v3828 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3831 = F_dictAdd(m, v3828, int32(_a_F_moduleRegisterCoreAPI_637), int32(889))
 	mBase = m.M
 	v3832 = m.ExcPending
 	if v3832 != 0 {
@@ -11548,8 +11548,8 @@ L639:
 	}
 L640:
 	;
-	v3834 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3837 = F_dictAdd(m, v3834, int32(_a1473), int32(889))
+	v3834 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3837 = F_dictAdd(m, v3834, int32(_a_F_moduleRegisterCoreAPI_638), int32(889))
 	mBase = m.M
 	v3838 = m.ExcPending
 	if v3838 != 0 {
@@ -11559,8 +11559,8 @@ L640:
 	}
 L641:
 	;
-	v3840 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3843 = F_dictAdd(m, v3840, int32(_a1474), int32(890))
+	v3840 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3843 = F_dictAdd(m, v3840, int32(_a_F_moduleRegisterCoreAPI_639), int32(890))
 	mBase = m.M
 	v3844 = m.ExcPending
 	if v3844 != 0 {
@@ -11570,8 +11570,8 @@ L641:
 	}
 L642:
 	;
-	v3846 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3849 = F_dictAdd(m, v3846, int32(_a1475), int32(890))
+	v3846 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3849 = F_dictAdd(m, v3846, int32(_a_F_moduleRegisterCoreAPI_640), int32(890))
 	mBase = m.M
 	v3850 = m.ExcPending
 	if v3850 != 0 {
@@ -11581,8 +11581,8 @@ L642:
 	}
 L643:
 	;
-	v3852 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3855 = F_dictAdd(m, v3852, int32(_a1476), int32(891))
+	v3852 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3855 = F_dictAdd(m, v3852, int32(_a_F_moduleRegisterCoreAPI_641), int32(891))
 	mBase = m.M
 	v3856 = m.ExcPending
 	if v3856 != 0 {
@@ -11592,8 +11592,8 @@ L643:
 	}
 L644:
 	;
-	v3858 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3861 = F_dictAdd(m, v3858, int32(_a1477), int32(891))
+	v3858 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3861 = F_dictAdd(m, v3858, int32(_a_F_moduleRegisterCoreAPI_642), int32(891))
 	mBase = m.M
 	v3862 = m.ExcPending
 	if v3862 != 0 {
@@ -11603,8 +11603,8 @@ L644:
 	}
 L645:
 	;
-	v3864 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3867 = F_dictAdd(m, v3864, int32(_a1478), int32(892))
+	v3864 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3867 = F_dictAdd(m, v3864, int32(_a_F_moduleRegisterCoreAPI_643), int32(892))
 	mBase = m.M
 	v3868 = m.ExcPending
 	if v3868 != 0 {
@@ -11614,8 +11614,8 @@ L645:
 	}
 L646:
 	;
-	v3870 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3873 = F_dictAdd(m, v3870, int32(_a1479), int32(892))
+	v3870 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3873 = F_dictAdd(m, v3870, int32(_a_F_moduleRegisterCoreAPI_644), int32(892))
 	mBase = m.M
 	v3874 = m.ExcPending
 	if v3874 != 0 {
@@ -11625,8 +11625,8 @@ L646:
 	}
 L647:
 	;
-	v3876 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3879 = F_dictAdd(m, v3876, int32(_a1480), int32(893))
+	v3876 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3879 = F_dictAdd(m, v3876, int32(_a_F_moduleRegisterCoreAPI_645), int32(893))
 	mBase = m.M
 	v3880 = m.ExcPending
 	if v3880 != 0 {
@@ -11636,8 +11636,8 @@ L647:
 	}
 L648:
 	;
-	v3882 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3885 = F_dictAdd(m, v3882, int32(_a1481), int32(893))
+	v3882 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3885 = F_dictAdd(m, v3882, int32(_a_F_moduleRegisterCoreAPI_646), int32(893))
 	mBase = m.M
 	v3886 = m.ExcPending
 	if v3886 != 0 {
@@ -11647,8 +11647,8 @@ L648:
 	}
 L649:
 	;
-	v3888 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3891 = F_dictAdd(m, v3888, int32(_a1482), int32(894))
+	v3888 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3891 = F_dictAdd(m, v3888, int32(_a_F_moduleRegisterCoreAPI_647), int32(894))
 	mBase = m.M
 	v3892 = m.ExcPending
 	if v3892 != 0 {
@@ -11658,8 +11658,8 @@ L649:
 	}
 L650:
 	;
-	v3894 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3897 = F_dictAdd(m, v3894, int32(_a1483), int32(894))
+	v3894 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3897 = F_dictAdd(m, v3894, int32(_a_F_moduleRegisterCoreAPI_648), int32(894))
 	mBase = m.M
 	v3898 = m.ExcPending
 	if v3898 != 0 {
@@ -11669,8 +11669,8 @@ L650:
 	}
 L651:
 	;
-	v3900 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3903 = F_dictAdd(m, v3900, int32(_a1484), int32(895))
+	v3900 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3903 = F_dictAdd(m, v3900, int32(_a_F_moduleRegisterCoreAPI_649), int32(895))
 	mBase = m.M
 	v3904 = m.ExcPending
 	if v3904 != 0 {
@@ -11680,8 +11680,8 @@ L651:
 	}
 L652:
 	;
-	v3906 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3909 = F_dictAdd(m, v3906, int32(_a1485), int32(895))
+	v3906 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3909 = F_dictAdd(m, v3906, int32(_a_F_moduleRegisterCoreAPI_650), int32(895))
 	mBase = m.M
 	v3910 = m.ExcPending
 	if v3910 != 0 {
@@ -11691,8 +11691,8 @@ L652:
 	}
 L653:
 	;
-	v3912 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3915 = F_dictAdd(m, v3912, int32(_a1486), int32(896))
+	v3912 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3915 = F_dictAdd(m, v3912, int32(_a_F_moduleRegisterCoreAPI_651), int32(896))
 	mBase = m.M
 	v3916 = m.ExcPending
 	if v3916 != 0 {
@@ -11702,8 +11702,8 @@ L653:
 	}
 L654:
 	;
-	v3918 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3921 = F_dictAdd(m, v3918, int32(_a1487), int32(896))
+	v3918 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3921 = F_dictAdd(m, v3918, int32(_a_F_moduleRegisterCoreAPI_652), int32(896))
 	mBase = m.M
 	v3922 = m.ExcPending
 	if v3922 != 0 {
@@ -11713,8 +11713,8 @@ L654:
 	}
 L655:
 	;
-	v3924 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3927 = F_dictAdd(m, v3924, int32(_a1488), int32(897))
+	v3924 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3927 = F_dictAdd(m, v3924, int32(_a_F_moduleRegisterCoreAPI_653), int32(897))
 	mBase = m.M
 	v3928 = m.ExcPending
 	if v3928 != 0 {
@@ -11724,8 +11724,8 @@ L655:
 	}
 L656:
 	;
-	v3930 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3933 = F_dictAdd(m, v3930, int32(_a1489), int32(897))
+	v3930 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3933 = F_dictAdd(m, v3930, int32(_a_F_moduleRegisterCoreAPI_654), int32(897))
 	mBase = m.M
 	v3934 = m.ExcPending
 	if v3934 != 0 {
@@ -11735,8 +11735,8 @@ L656:
 	}
 L657:
 	;
-	v3936 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3939 = F_dictAdd(m, v3936, int32(_a1490), int32(898))
+	v3936 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3939 = F_dictAdd(m, v3936, int32(_a_F_moduleRegisterCoreAPI_655), int32(898))
 	mBase = m.M
 	v3940 = m.ExcPending
 	if v3940 != 0 {
@@ -11746,8 +11746,8 @@ L657:
 	}
 L658:
 	;
-	v3942 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3945 = F_dictAdd(m, v3942, int32(_a1491), int32(898))
+	v3942 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3945 = F_dictAdd(m, v3942, int32(_a_F_moduleRegisterCoreAPI_656), int32(898))
 	mBase = m.M
 	v3946 = m.ExcPending
 	if v3946 != 0 {
@@ -11757,8 +11757,8 @@ L658:
 	}
 L659:
 	;
-	v3948 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3951 = F_dictAdd(m, v3948, int32(_a1492), int32(899))
+	v3948 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3951 = F_dictAdd(m, v3948, int32(_a_F_moduleRegisterCoreAPI_657), int32(899))
 	mBase = m.M
 	v3952 = m.ExcPending
 	if v3952 != 0 {
@@ -11768,8 +11768,8 @@ L659:
 	}
 L660:
 	;
-	v3954 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3957 = F_dictAdd(m, v3954, int32(_a1493), int32(899))
+	v3954 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3957 = F_dictAdd(m, v3954, int32(_a_F_moduleRegisterCoreAPI_658), int32(899))
 	mBase = m.M
 	v3958 = m.ExcPending
 	if v3958 != 0 {
@@ -11779,8 +11779,8 @@ L660:
 	}
 L661:
 	;
-	v3960 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3963 = F_dictAdd(m, v3960, int32(_a1494), int32(900))
+	v3960 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3963 = F_dictAdd(m, v3960, int32(_a_F_moduleRegisterCoreAPI_659), int32(900))
 	mBase = m.M
 	v3964 = m.ExcPending
 	if v3964 != 0 {
@@ -11790,8 +11790,8 @@ L661:
 	}
 L662:
 	;
-	v3966 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3969 = F_dictAdd(m, v3966, int32(_a1495), int32(900))
+	v3966 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3969 = F_dictAdd(m, v3966, int32(_a_F_moduleRegisterCoreAPI_660), int32(900))
 	mBase = m.M
 	v3970 = m.ExcPending
 	if v3970 != 0 {
@@ -11801,8 +11801,8 @@ L662:
 	}
 L663:
 	;
-	v3972 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3975 = F_dictAdd(m, v3972, int32(_a1496), int32(901))
+	v3972 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3975 = F_dictAdd(m, v3972, int32(_a_F_moduleRegisterCoreAPI_661), int32(901))
 	mBase = m.M
 	v3976 = m.ExcPending
 	if v3976 != 0 {
@@ -11812,8 +11812,8 @@ L663:
 	}
 L664:
 	;
-	v3978 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3981 = F_dictAdd(m, v3978, int32(_a1497), int32(901))
+	v3978 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3981 = F_dictAdd(m, v3978, int32(_a_F_moduleRegisterCoreAPI_662), int32(901))
 	mBase = m.M
 	v3982 = m.ExcPending
 	if v3982 != 0 {
@@ -11823,8 +11823,8 @@ L664:
 	}
 L665:
 	;
-	v3984 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3987 = F_dictAdd(m, v3984, int32(_a1498), int32(902))
+	v3984 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3987 = F_dictAdd(m, v3984, int32(_a_F_moduleRegisterCoreAPI_663), int32(902))
 	mBase = m.M
 	v3988 = m.ExcPending
 	if v3988 != 0 {
@@ -11834,8 +11834,8 @@ L665:
 	}
 L666:
 	;
-	v3990 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3993 = F_dictAdd(m, v3990, int32(_a1499), int32(902))
+	v3990 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3993 = F_dictAdd(m, v3990, int32(_a_F_moduleRegisterCoreAPI_664), int32(902))
 	mBase = m.M
 	v3994 = m.ExcPending
 	if v3994 != 0 {
@@ -11845,8 +11845,8 @@ L666:
 	}
 L667:
 	;
-	v3996 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v3999 = F_dictAdd(m, v3996, int32(_a1500), int32(903))
+	v3996 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v3999 = F_dictAdd(m, v3996, int32(_a_F_moduleRegisterCoreAPI_665), int32(903))
 	mBase = m.M
 	v4000 = m.ExcPending
 	if v4000 != 0 {
@@ -11856,8 +11856,8 @@ L667:
 	}
 L668:
 	;
-	v4002 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v4005 = F_dictAdd(m, v4002, int32(_a1501), int32(903))
+	v4002 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v4005 = F_dictAdd(m, v4002, int32(_a_F_moduleRegisterCoreAPI_666), int32(903))
 	mBase = m.M
 	v4006 = m.ExcPending
 	if v4006 != 0 {
@@ -11867,8 +11867,8 @@ L668:
 	}
 L669:
 	;
-	v4008 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v4011 = F_dictAdd(m, v4008, int32(_a1502), int32(904))
+	v4008 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v4011 = F_dictAdd(m, v4008, int32(_a_F_moduleRegisterCoreAPI_667), int32(904))
 	mBase = m.M
 	v4012 = m.ExcPending
 	if v4012 != 0 {
@@ -11878,8 +11878,8 @@ L669:
 	}
 L670:
 	;
-	v4014 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v4017 = F_dictAdd(m, v4014, int32(_a1503), int32(904))
+	v4014 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v4017 = F_dictAdd(m, v4014, int32(_a_F_moduleRegisterCoreAPI_668), int32(904))
 	mBase = m.M
 	v4018 = m.ExcPending
 	if v4018 != 0 {
@@ -11889,8 +11889,8 @@ L670:
 	}
 L671:
 	;
-	v4020 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v4023 = F_dictAdd(m, v4020, int32(_a1504), int32(905))
+	v4020 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v4023 = F_dictAdd(m, v4020, int32(_a_F_moduleRegisterCoreAPI_669), int32(905))
 	mBase = m.M
 	v4024 = m.ExcPending
 	if v4024 != 0 {
@@ -11900,8 +11900,8 @@ L671:
 	}
 L672:
 	;
-	v4026 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v4029 = F_dictAdd(m, v4026, int32(_a1505), int32(905))
+	v4026 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v4029 = F_dictAdd(m, v4026, int32(_a_F_moduleRegisterCoreAPI_670), int32(905))
 	mBase = m.M
 	v4030 = m.ExcPending
 	if v4030 != 0 {
@@ -11911,8 +11911,8 @@ L672:
 	}
 L673:
 	;
-	v4032 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v4035 = F_dictAdd(m, v4032, int32(_a1506), int32(906))
+	v4032 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v4035 = F_dictAdd(m, v4032, int32(_a_F_moduleRegisterCoreAPI_671), int32(906))
 	mBase = m.M
 	v4036 = m.ExcPending
 	if v4036 != 0 {
@@ -11922,8 +11922,8 @@ L673:
 	}
 L674:
 	;
-	v4038 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v4041 = F_dictAdd(m, v4038, int32(_a1507), int32(906))
+	v4038 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v4041 = F_dictAdd(m, v4038, int32(_a_F_moduleRegisterCoreAPI_672), int32(906))
 	mBase = m.M
 	v4042 = m.ExcPending
 	if v4042 != 0 {
@@ -11933,8 +11933,8 @@ L674:
 	}
 L675:
 	;
-	v4044 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v4047 = F_dictAdd(m, v4044, int32(_a1508), int32(907))
+	v4044 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v4047 = F_dictAdd(m, v4044, int32(_a_F_moduleRegisterCoreAPI_673), int32(907))
 	mBase = m.M
 	v4048 = m.ExcPending
 	if v4048 != 0 {
@@ -11944,8 +11944,8 @@ L675:
 	}
 L676:
 	;
-	v4050 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v4053 = F_dictAdd(m, v4050, int32(_a1509), int32(907))
+	v4050 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v4053 = F_dictAdd(m, v4050, int32(_a_F_moduleRegisterCoreAPI_674), int32(907))
 	mBase = m.M
 	v4054 = m.ExcPending
 	if v4054 != 0 {
@@ -11955,8 +11955,8 @@ L676:
 	}
 L677:
 	;
-	v4056 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v4059 = F_dictAdd(m, v4056, int32(_a1510), int32(908))
+	v4056 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v4059 = F_dictAdd(m, v4056, int32(_a_F_moduleRegisterCoreAPI_675), int32(908))
 	mBase = m.M
 	v4060 = m.ExcPending
 	if v4060 != 0 {
@@ -11966,8 +11966,8 @@ L677:
 	}
 L678:
 	;
-	v4062 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v4065 = F_dictAdd(m, v4062, int32(_a1511), int32(908))
+	v4062 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v4065 = F_dictAdd(m, v4062, int32(_a_F_moduleRegisterCoreAPI_676), int32(908))
 	mBase = m.M
 	v4066 = m.ExcPending
 	if v4066 != 0 {
@@ -11977,8 +11977,8 @@ L678:
 	}
 L679:
 	;
-	v4068 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v4071 = F_dictAdd(m, v4068, int32(_a1512), int32(909))
+	v4068 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v4071 = F_dictAdd(m, v4068, int32(_a_F_moduleRegisterCoreAPI_677), int32(909))
 	mBase = m.M
 	v4072 = m.ExcPending
 	if v4072 != 0 {
@@ -11988,8 +11988,8 @@ L679:
 	}
 L680:
 	;
-	v4074 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v4077 = F_dictAdd(m, v4074, int32(_a1513), int32(909))
+	v4074 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v4077 = F_dictAdd(m, v4074, int32(_a_F_moduleRegisterCoreAPI_678), int32(909))
 	mBase = m.M
 	v4078 = m.ExcPending
 	if v4078 != 0 {
@@ -11999,8 +11999,8 @@ L680:
 	}
 L681:
 	;
-	v4080 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v4083 = F_dictAdd(m, v4080, int32(_a1514), int32(910))
+	v4080 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v4083 = F_dictAdd(m, v4080, int32(_a_F_moduleRegisterCoreAPI_679), int32(910))
 	mBase = m.M
 	v4084 = m.ExcPending
 	if v4084 != 0 {
@@ -12010,8 +12010,8 @@ L681:
 	}
 L682:
 	;
-	v4086 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v4089 = F_dictAdd(m, v4086, int32(_a1515), int32(910))
+	v4086 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v4089 = F_dictAdd(m, v4086, int32(_a_F_moduleRegisterCoreAPI_680), int32(910))
 	mBase = m.M
 	v4090 = m.ExcPending
 	if v4090 != 0 {
@@ -12021,8 +12021,8 @@ L682:
 	}
 L683:
 	;
-	v4092 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v4095 = F_dictAdd(m, v4092, int32(_a1516), int32(911))
+	v4092 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v4095 = F_dictAdd(m, v4092, int32(_a_F_moduleRegisterCoreAPI_681), int32(911))
 	mBase = m.M
 	v4096 = m.ExcPending
 	if v4096 != 0 {
@@ -12032,8 +12032,8 @@ L683:
 	}
 L684:
 	;
-	v4098 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v4101 = F_dictAdd(m, v4098, int32(_a1517), int32(911))
+	v4098 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v4101 = F_dictAdd(m, v4098, int32(_a_F_moduleRegisterCoreAPI_682), int32(911))
 	mBase = m.M
 	v4102 = m.ExcPending
 	if v4102 != 0 {
@@ -12043,8 +12043,8 @@ L684:
 	}
 L685:
 	;
-	v4104 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v4107 = F_dictAdd(m, v4104, int32(_a1518), int32(912))
+	v4104 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v4107 = F_dictAdd(m, v4104, int32(_a_F_moduleRegisterCoreAPI_683), int32(912))
 	mBase = m.M
 	v4108 = m.ExcPending
 	if v4108 != 0 {
@@ -12054,8 +12054,8 @@ L685:
 	}
 L686:
 	;
-	v4110 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v4113 = F_dictAdd(m, v4110, int32(_a1519), int32(912))
+	v4110 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v4113 = F_dictAdd(m, v4110, int32(_a_F_moduleRegisterCoreAPI_684), int32(912))
 	mBase = m.M
 	v4114 = m.ExcPending
 	if v4114 != 0 {
@@ -12065,8 +12065,8 @@ L686:
 	}
 L687:
 	;
-	v4116 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v4119 = F_dictAdd(m, v4116, int32(_a1520), int32(913))
+	v4116 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v4119 = F_dictAdd(m, v4116, int32(_a_F_moduleRegisterCoreAPI_685), int32(913))
 	mBase = m.M
 	v4120 = m.ExcPending
 	if v4120 != 0 {
@@ -12076,8 +12076,8 @@ L687:
 	}
 L688:
 	;
-	v4122 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v4125 = F_dictAdd(m, v4122, int32(_a1521), int32(913))
+	v4122 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v4125 = F_dictAdd(m, v4122, int32(_a_F_moduleRegisterCoreAPI_686), int32(913))
 	mBase = m.M
 	v4126 = m.ExcPending
 	if v4126 != 0 {
@@ -12087,8 +12087,8 @@ L688:
 	}
 L689:
 	;
-	v4128 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v4131 = F_dictAdd(m, v4128, int32(_a1522), int32(914))
+	v4128 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v4131 = F_dictAdd(m, v4128, int32(_a_F_moduleRegisterCoreAPI_687), int32(914))
 	mBase = m.M
 	v4132 = m.ExcPending
 	if v4132 != 0 {
@@ -12098,8 +12098,8 @@ L689:
 	}
 L690:
 	;
-	v4134 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v4137 = F_dictAdd(m, v4134, int32(_a1523), int32(914))
+	v4134 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v4137 = F_dictAdd(m, v4134, int32(_a_F_moduleRegisterCoreAPI_688), int32(914))
 	mBase = m.M
 	v4138 = m.ExcPending
 	if v4138 != 0 {
@@ -12109,8 +12109,8 @@ L690:
 	}
 L691:
 	;
-	v4140 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v4143 = F_dictAdd(m, v4140, int32(_a1524), int32(915))
+	v4140 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v4143 = F_dictAdd(m, v4140, int32(_a_F_moduleRegisterCoreAPI_689), int32(915))
 	mBase = m.M
 	v4144 = m.ExcPending
 	if v4144 != 0 {
@@ -12120,8 +12120,8 @@ L691:
 	}
 L692:
 	;
-	v4146 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v4149 = F_dictAdd(m, v4146, int32(_a1525), int32(915))
+	v4146 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v4149 = F_dictAdd(m, v4146, int32(_a_F_moduleRegisterCoreAPI_690), int32(915))
 	mBase = m.M
 	v4150 = m.ExcPending
 	if v4150 != 0 {
@@ -12131,8 +12131,8 @@ L692:
 	}
 L693:
 	;
-	v4152 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v4155 = F_dictAdd(m, v4152, int32(_a1526), int32(916))
+	v4152 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v4155 = F_dictAdd(m, v4152, int32(_a_F_moduleRegisterCoreAPI_691), int32(916))
 	mBase = m.M
 	v4156 = m.ExcPending
 	if v4156 != 0 {
@@ -12142,8 +12142,8 @@ L693:
 	}
 L694:
 	;
-	v4158 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v4161 = F_dictAdd(m, v4158, int32(_a1527), int32(916))
+	v4158 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v4161 = F_dictAdd(m, v4158, int32(_a_F_moduleRegisterCoreAPI_692), int32(916))
 	mBase = m.M
 	v4162 = m.ExcPending
 	if v4162 != 0 {
@@ -12153,8 +12153,8 @@ L694:
 	}
 L695:
 	;
-	v4164 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v4167 = F_dictAdd(m, v4164, int32(_a1528), int32(917))
+	v4164 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v4167 = F_dictAdd(m, v4164, int32(_a_F_moduleRegisterCoreAPI_693), int32(917))
 	mBase = m.M
 	v4168 = m.ExcPending
 	if v4168 != 0 {
@@ -12164,8 +12164,8 @@ L695:
 	}
 L696:
 	;
-	v4170 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v4173 = F_dictAdd(m, v4170, int32(_a1529), int32(917))
+	v4170 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v4173 = F_dictAdd(m, v4170, int32(_a_F_moduleRegisterCoreAPI_694), int32(917))
 	mBase = m.M
 	v4174 = m.ExcPending
 	if v4174 != 0 {
@@ -12175,8 +12175,8 @@ L696:
 	}
 L697:
 	;
-	v4176 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v4179 = F_dictAdd(m, v4176, int32(_a1530), int32(918))
+	v4176 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v4179 = F_dictAdd(m, v4176, int32(_a_F_moduleRegisterCoreAPI_695), int32(918))
 	mBase = m.M
 	v4180 = m.ExcPending
 	if v4180 != 0 {
@@ -12186,8 +12186,8 @@ L697:
 	}
 L698:
 	;
-	v4182 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v4185 = F_dictAdd(m, v4182, int32(_a1531), int32(918))
+	v4182 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v4185 = F_dictAdd(m, v4182, int32(_a_F_moduleRegisterCoreAPI_696), int32(918))
 	mBase = m.M
 	v4186 = m.ExcPending
 	if v4186 != 0 {
@@ -12197,8 +12197,8 @@ L698:
 	}
 L699:
 	;
-	v4188 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v4191 = F_dictAdd(m, v4188, int32(_a1532), int32(919))
+	v4188 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v4191 = F_dictAdd(m, v4188, int32(_a_F_moduleRegisterCoreAPI_697), int32(919))
 	mBase = m.M
 	v4192 = m.ExcPending
 	if v4192 != 0 {
@@ -12208,8 +12208,8 @@ L699:
 	}
 L700:
 	;
-	v4194 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v4197 = F_dictAdd(m, v4194, int32(_a1533), int32(919))
+	v4194 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v4197 = F_dictAdd(m, v4194, int32(_a_F_moduleRegisterCoreAPI_698), int32(919))
 	mBase = m.M
 	v4198 = m.ExcPending
 	if v4198 != 0 {
@@ -12219,8 +12219,8 @@ L700:
 	}
 L701:
 	;
-	v4200 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v4203 = F_dictAdd(m, v4200, int32(_a1534), int32(920))
+	v4200 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v4203 = F_dictAdd(m, v4200, int32(_a_F_moduleRegisterCoreAPI_699), int32(920))
 	mBase = m.M
 	v4204 = m.ExcPending
 	if v4204 != 0 {
@@ -12230,8 +12230,8 @@ L701:
 	}
 L702:
 	;
-	v4206 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v4209 = F_dictAdd(m, v4206, int32(_a1535), int32(920))
+	v4206 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v4209 = F_dictAdd(m, v4206, int32(_a_F_moduleRegisterCoreAPI_700), int32(920))
 	mBase = m.M
 	v4210 = m.ExcPending
 	if v4210 != 0 {
@@ -12241,8 +12241,8 @@ L702:
 	}
 L703:
 	;
-	v4212 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v4215 = F_dictAdd(m, v4212, int32(_a1536), int32(921))
+	v4212 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v4215 = F_dictAdd(m, v4212, int32(_a_F_moduleRegisterCoreAPI_701), int32(921))
 	mBase = m.M
 	v4216 = m.ExcPending
 	if v4216 != 0 {
@@ -12252,8 +12252,8 @@ L703:
 	}
 L704:
 	;
-	v4218 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v4221 = F_dictAdd(m, v4218, int32(_a1537), int32(921))
+	v4218 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v4221 = F_dictAdd(m, v4218, int32(_a_F_moduleRegisterCoreAPI_702), int32(921))
 	mBase = m.M
 	v4222 = m.ExcPending
 	if v4222 != 0 {
@@ -12263,8 +12263,8 @@ L704:
 	}
 L705:
 	;
-	v4224 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v4227 = F_dictAdd(m, v4224, int32(_a1538), int32(922))
+	v4224 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v4227 = F_dictAdd(m, v4224, int32(_a_F_moduleRegisterCoreAPI_703), int32(922))
 	mBase = m.M
 	v4228 = m.ExcPending
 	if v4228 != 0 {
@@ -12274,8 +12274,8 @@ L705:
 	}
 L706:
 	;
-	v4230 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v4233 = F_dictAdd(m, v4230, int32(_a1539), int32(922))
+	v4230 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v4233 = F_dictAdd(m, v4230, int32(_a_F_moduleRegisterCoreAPI_704), int32(922))
 	mBase = m.M
 	v4234 = m.ExcPending
 	if v4234 != 0 {
@@ -12285,8 +12285,8 @@ L706:
 	}
 L707:
 	;
-	v4236 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v4239 = F_dictAdd(m, v4236, int32(_a1540), int32(923))
+	v4236 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v4239 = F_dictAdd(m, v4236, int32(_a_F_moduleRegisterCoreAPI_705), int32(923))
 	mBase = m.M
 	v4240 = m.ExcPending
 	if v4240 != 0 {
@@ -12296,8 +12296,8 @@ L707:
 	}
 L708:
 	;
-	v4242 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v4245 = F_dictAdd(m, v4242, int32(_a1541), int32(923))
+	v4242 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v4245 = F_dictAdd(m, v4242, int32(_a_F_moduleRegisterCoreAPI_706), int32(923))
 	mBase = m.M
 	v4246 = m.ExcPending
 	if v4246 != 0 {
@@ -12307,8 +12307,8 @@ L708:
 	}
 L709:
 	;
-	v4248 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v4251 = F_dictAdd(m, v4248, int32(_a1542), int32(924))
+	v4248 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v4251 = F_dictAdd(m, v4248, int32(_a_F_moduleRegisterCoreAPI_707), int32(924))
 	mBase = m.M
 	v4252 = m.ExcPending
 	if v4252 != 0 {
@@ -12318,8 +12318,8 @@ L709:
 	}
 L710:
 	;
-	v4254 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v4257 = F_dictAdd(m, v4254, int32(_a1543), int32(924))
+	v4254 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v4257 = F_dictAdd(m, v4254, int32(_a_F_moduleRegisterCoreAPI_708), int32(924))
 	mBase = m.M
 	v4258 = m.ExcPending
 	if v4258 != 0 {
@@ -12329,8 +12329,8 @@ L710:
 	}
 L711:
 	;
-	v4260 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v4263 = F_dictAdd(m, v4260, int32(_a1544), int32(925))
+	v4260 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v4263 = F_dictAdd(m, v4260, int32(_a_F_moduleRegisterCoreAPI_709), int32(925))
 	mBase = m.M
 	v4264 = m.ExcPending
 	if v4264 != 0 {
@@ -12340,8 +12340,8 @@ L711:
 	}
 L712:
 	;
-	v4266 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v4269 = F_dictAdd(m, v4266, int32(_a1545), int32(925))
+	v4266 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v4269 = F_dictAdd(m, v4266, int32(_a_F_moduleRegisterCoreAPI_710), int32(925))
 	mBase = m.M
 	v4270 = m.ExcPending
 	if v4270 != 0 {
@@ -12351,8 +12351,8 @@ L712:
 	}
 L713:
 	;
-	v4272 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v4275 = F_dictAdd(m, v4272, int32(_a1546), int32(926))
+	v4272 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v4275 = F_dictAdd(m, v4272, int32(_a_F_moduleRegisterCoreAPI_711), int32(926))
 	mBase = m.M
 	v4276 = m.ExcPending
 	if v4276 != 0 {
@@ -12362,8 +12362,8 @@ L713:
 	}
 L714:
 	;
-	v4278 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v4281 = F_dictAdd(m, v4278, int32(_a1547), int32(926))
+	v4278 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v4281 = F_dictAdd(m, v4278, int32(_a_F_moduleRegisterCoreAPI_712), int32(926))
 	mBase = m.M
 	v4282 = m.ExcPending
 	if v4282 != 0 {
@@ -12373,8 +12373,8 @@ L714:
 	}
 L715:
 	;
-	v4284 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v4287 = F_dictAdd(m, v4284, int32(_a1548), int32(927))
+	v4284 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v4287 = F_dictAdd(m, v4284, int32(_a_F_moduleRegisterCoreAPI_713), int32(927))
 	mBase = m.M
 	v4288 = m.ExcPending
 	if v4288 != 0 {
@@ -12384,8 +12384,8 @@ L715:
 	}
 L716:
 	;
-	v4290 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v4293 = F_dictAdd(m, v4290, int32(_a1549), int32(927))
+	v4290 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v4293 = F_dictAdd(m, v4290, int32(_a_F_moduleRegisterCoreAPI_714), int32(927))
 	mBase = m.M
 	v4294 = m.ExcPending
 	if v4294 != 0 {
@@ -12395,8 +12395,8 @@ L716:
 	}
 L717:
 	;
-	v4296 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v4299 = F_dictAdd(m, v4296, int32(_a1550), int32(928))
+	v4296 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v4299 = F_dictAdd(m, v4296, int32(_a_F_moduleRegisterCoreAPI_715), int32(928))
 	mBase = m.M
 	v4300 = m.ExcPending
 	if v4300 != 0 {
@@ -12406,8 +12406,8 @@ L717:
 	}
 L718:
 	;
-	v4302 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v4305 = F_dictAdd(m, v4302, int32(_a1551), int32(928))
+	v4302 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v4305 = F_dictAdd(m, v4302, int32(_a_F_moduleRegisterCoreAPI_716), int32(928))
 	mBase = m.M
 	v4306 = m.ExcPending
 	if v4306 != 0 {
@@ -12417,8 +12417,8 @@ L718:
 	}
 L719:
 	;
-	v4308 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v4311 = F_dictAdd(m, v4308, int32(_a1552), int32(929))
+	v4308 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v4311 = F_dictAdd(m, v4308, int32(_a_F_moduleRegisterCoreAPI_717), int32(929))
 	mBase = m.M
 	v4312 = m.ExcPending
 	if v4312 != 0 {
@@ -12428,8 +12428,8 @@ L719:
 	}
 L720:
 	;
-	v4314 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v4317 = F_dictAdd(m, v4314, int32(_a1553), int32(929))
+	v4314 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v4317 = F_dictAdd(m, v4314, int32(_a_F_moduleRegisterCoreAPI_718), int32(929))
 	mBase = m.M
 	v4318 = m.ExcPending
 	if v4318 != 0 {
@@ -12439,8 +12439,8 @@ L720:
 	}
 L721:
 	;
-	v4320 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v4323 = F_dictAdd(m, v4320, int32(_a1554), int32(930))
+	v4320 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v4323 = F_dictAdd(m, v4320, int32(_a_F_moduleRegisterCoreAPI_719), int32(930))
 	mBase = m.M
 	v4324 = m.ExcPending
 	if v4324 != 0 {
@@ -12450,8 +12450,8 @@ L721:
 	}
 L722:
 	;
-	v4326 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v4329 = F_dictAdd(m, v4326, int32(_a1555), int32(930))
+	v4326 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v4329 = F_dictAdd(m, v4326, int32(_a_F_moduleRegisterCoreAPI_720), int32(930))
 	mBase = m.M
 	v4330 = m.ExcPending
 	if v4330 != 0 {
@@ -12461,8 +12461,8 @@ L722:
 	}
 L723:
 	;
-	v4332 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v4335 = F_dictAdd(m, v4332, int32(_a1556), int32(931))
+	v4332 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v4335 = F_dictAdd(m, v4332, int32(_a_F_moduleRegisterCoreAPI_721), int32(931))
 	mBase = m.M
 	v4336 = m.ExcPending
 	if v4336 != 0 {
@@ -12472,8 +12472,8 @@ L723:
 	}
 L724:
 	;
-	v4338 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v4341 = F_dictAdd(m, v4338, int32(_a1557), int32(931))
+	v4338 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v4341 = F_dictAdd(m, v4338, int32(_a_F_moduleRegisterCoreAPI_722), int32(931))
 	mBase = m.M
 	v4342 = m.ExcPending
 	if v4342 != 0 {
@@ -12483,8 +12483,8 @@ L724:
 	}
 L725:
 	;
-	v4344 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v4347 = F_dictAdd(m, v4344, int32(_a1558), int32(932))
+	v4344 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v4347 = F_dictAdd(m, v4344, int32(_a_F_moduleRegisterCoreAPI_723), int32(932))
 	mBase = m.M
 	v4348 = m.ExcPending
 	if v4348 != 0 {
@@ -12494,8 +12494,8 @@ L725:
 	}
 L726:
 	;
-	v4350 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v4353 = F_dictAdd(m, v4350, int32(_a1559), int32(932))
+	v4350 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v4353 = F_dictAdd(m, v4350, int32(_a_F_moduleRegisterCoreAPI_724), int32(932))
 	mBase = m.M
 	v4354 = m.ExcPending
 	if v4354 != 0 {
@@ -12505,8 +12505,8 @@ L726:
 	}
 L727:
 	;
-	v4356 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v4359 = F_dictAdd(m, v4356, int32(_a1560), int32(933))
+	v4356 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v4359 = F_dictAdd(m, v4356, int32(_a_F_moduleRegisterCoreAPI_725), int32(933))
 	mBase = m.M
 	v4360 = m.ExcPending
 	if v4360 != 0 {
@@ -12516,8 +12516,8 @@ L727:
 	}
 L728:
 	;
-	v4362 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v4365 = F_dictAdd(m, v4362, int32(_a1561), int32(933))
+	v4362 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v4365 = F_dictAdd(m, v4362, int32(_a_F_moduleRegisterCoreAPI_726), int32(933))
 	mBase = m.M
 	v4366 = m.ExcPending
 	if v4366 != 0 {
@@ -12527,8 +12527,8 @@ L728:
 	}
 L729:
 	;
-	v4368 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v4371 = F_dictAdd(m, v4368, int32(_a1562), int32(934))
+	v4368 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v4371 = F_dictAdd(m, v4368, int32(_a_F_moduleRegisterCoreAPI_727), int32(934))
 	mBase = m.M
 	v4372 = m.ExcPending
 	if v4372 != 0 {
@@ -12538,8 +12538,8 @@ L729:
 	}
 L730:
 	;
-	v4374 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v4377 = F_dictAdd(m, v4374, int32(_a1563), int32(934))
+	v4374 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v4377 = F_dictAdd(m, v4374, int32(_a_F_moduleRegisterCoreAPI_728), int32(934))
 	mBase = m.M
 	v4378 = m.ExcPending
 	if v4378 != 0 {
@@ -12549,8 +12549,8 @@ L730:
 	}
 L731:
 	;
-	v4380 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v4383 = F_dictAdd(m, v4380, int32(_a1564), int32(935))
+	v4380 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v4383 = F_dictAdd(m, v4380, int32(_a_F_moduleRegisterCoreAPI_729), int32(935))
 	mBase = m.M
 	v4384 = m.ExcPending
 	if v4384 != 0 {
@@ -12560,8 +12560,8 @@ L731:
 	}
 L732:
 	;
-	v4386 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v4389 = F_dictAdd(m, v4386, int32(_a1565), int32(935))
+	v4386 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v4389 = F_dictAdd(m, v4386, int32(_a_F_moduleRegisterCoreAPI_730), int32(935))
 	mBase = m.M
 	v4390 = m.ExcPending
 	if v4390 != 0 {
@@ -12571,8 +12571,8 @@ L732:
 	}
 L733:
 	;
-	v4392 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v4395 = F_dictAdd(m, v4392, int32(_a1566), int32(936))
+	v4392 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v4395 = F_dictAdd(m, v4392, int32(_a_F_moduleRegisterCoreAPI_731), int32(936))
 	mBase = m.M
 	v4396 = m.ExcPending
 	if v4396 != 0 {
@@ -12582,8 +12582,8 @@ L733:
 	}
 L734:
 	;
-	v4398 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v4401 = F_dictAdd(m, v4398, int32(_a1567), int32(936))
+	v4398 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v4401 = F_dictAdd(m, v4398, int32(_a_F_moduleRegisterCoreAPI_732), int32(936))
 	mBase = m.M
 	v4402 = m.ExcPending
 	if v4402 != 0 {
@@ -12593,8 +12593,8 @@ L734:
 	}
 L735:
 	;
-	v4404 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v4407 = F_dictAdd(m, v4404, int32(_a1568), int32(937))
+	v4404 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v4407 = F_dictAdd(m, v4404, int32(_a_F_moduleRegisterCoreAPI_733), int32(937))
 	mBase = m.M
 	v4408 = m.ExcPending
 	if v4408 != 0 {
@@ -12604,8 +12604,8 @@ L735:
 	}
 L736:
 	;
-	v4410 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v4413 = F_dictAdd(m, v4410, int32(_a1569), int32(937))
+	v4410 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v4413 = F_dictAdd(m, v4410, int32(_a_F_moduleRegisterCoreAPI_734), int32(937))
 	mBase = m.M
 	v4414 = m.ExcPending
 	if v4414 != 0 {
@@ -12615,8 +12615,8 @@ L736:
 	}
 L737:
 	;
-	v4416 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v4419 = F_dictAdd(m, v4416, int32(_a1570), int32(938))
+	v4416 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v4419 = F_dictAdd(m, v4416, int32(_a_F_moduleRegisterCoreAPI_735), int32(938))
 	mBase = m.M
 	v4420 = m.ExcPending
 	if v4420 != 0 {
@@ -12626,8 +12626,8 @@ L737:
 	}
 L738:
 	;
-	v4422 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v4425 = F_dictAdd(m, v4422, int32(_a1571), int32(938))
+	v4422 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v4425 = F_dictAdd(m, v4422, int32(_a_F_moduleRegisterCoreAPI_736), int32(938))
 	mBase = m.M
 	v4426 = m.ExcPending
 	if v4426 != 0 {
@@ -12637,8 +12637,8 @@ L738:
 	}
 L739:
 	;
-	v4428 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v4431 = F_dictAdd(m, v4428, int32(_a1572), int32(939))
+	v4428 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v4431 = F_dictAdd(m, v4428, int32(_a_F_moduleRegisterCoreAPI_737), int32(939))
 	mBase = m.M
 	v4432 = m.ExcPending
 	if v4432 != 0 {
@@ -12648,8 +12648,8 @@ L739:
 	}
 L740:
 	;
-	v4434 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v4437 = F_dictAdd(m, v4434, int32(_a1573), int32(939))
+	v4434 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v4437 = F_dictAdd(m, v4434, int32(_a_F_moduleRegisterCoreAPI_738), int32(939))
 	mBase = m.M
 	v4438 = m.ExcPending
 	if v4438 != 0 {
@@ -12659,8 +12659,8 @@ L740:
 	}
 L741:
 	;
-	v4440 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v4443 = F_dictAdd(m, v4440, int32(_a1574), int32(940))
+	v4440 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v4443 = F_dictAdd(m, v4440, int32(_a_F_moduleRegisterCoreAPI_739), int32(940))
 	mBase = m.M
 	v4444 = m.ExcPending
 	if v4444 != 0 {
@@ -12670,8 +12670,8 @@ L741:
 	}
 L742:
 	;
-	v4446 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v4449 = F_dictAdd(m, v4446, int32(_a1575), int32(940))
+	v4446 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v4449 = F_dictAdd(m, v4446, int32(_a_F_moduleRegisterCoreAPI_740), int32(940))
 	mBase = m.M
 	v4450 = m.ExcPending
 	if v4450 != 0 {
@@ -12681,8 +12681,8 @@ L742:
 	}
 L743:
 	;
-	v4452 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v4455 = F_dictAdd(m, v4452, int32(_a1576), int32(941))
+	v4452 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v4455 = F_dictAdd(m, v4452, int32(_a_F_moduleRegisterCoreAPI_741), int32(941))
 	mBase = m.M
 	v4456 = m.ExcPending
 	if v4456 != 0 {
@@ -12692,8 +12692,8 @@ L743:
 	}
 L744:
 	;
-	v4458 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v4461 = F_dictAdd(m, v4458, int32(_a1577), int32(941))
+	v4458 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v4461 = F_dictAdd(m, v4458, int32(_a_F_moduleRegisterCoreAPI_742), int32(941))
 	mBase = m.M
 	v4462 = m.ExcPending
 	if v4462 != 0 {
@@ -12703,8 +12703,8 @@ L744:
 	}
 L745:
 	;
-	v4464 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v4467 = F_dictAdd(m, v4464, int32(_a1578), int32(942))
+	v4464 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v4467 = F_dictAdd(m, v4464, int32(_a_F_moduleRegisterCoreAPI_743), int32(942))
 	mBase = m.M
 	v4468 = m.ExcPending
 	if v4468 != 0 {
@@ -12714,8 +12714,8 @@ L745:
 	}
 L746:
 	;
-	v4470 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v4473 = F_dictAdd(m, v4470, int32(_a1579), int32(942))
+	v4470 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v4473 = F_dictAdd(m, v4470, int32(_a_F_moduleRegisterCoreAPI_744), int32(942))
 	mBase = m.M
 	v4474 = m.ExcPending
 	if v4474 != 0 {
@@ -12725,8 +12725,8 @@ L746:
 	}
 L747:
 	;
-	v4476 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v4479 = F_dictAdd(m, v4476, int32(_a1580), int32(943))
+	v4476 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v4479 = F_dictAdd(m, v4476, int32(_a_F_moduleRegisterCoreAPI_745), int32(943))
 	mBase = m.M
 	v4480 = m.ExcPending
 	if v4480 != 0 {
@@ -12736,8 +12736,8 @@ L747:
 	}
 L748:
 	;
-	v4482 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v4485 = F_dictAdd(m, v4482, int32(_a1581), int32(943))
+	v4482 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v4485 = F_dictAdd(m, v4482, int32(_a_F_moduleRegisterCoreAPI_746), int32(943))
 	mBase = m.M
 	v4486 = m.ExcPending
 	if v4486 != 0 {
@@ -12747,8 +12747,8 @@ L748:
 	}
 L749:
 	;
-	v4488 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v4491 = F_dictAdd(m, v4488, int32(_a1582), int32(944))
+	v4488 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v4491 = F_dictAdd(m, v4488, int32(_a_F_moduleRegisterCoreAPI_747), int32(944))
 	mBase = m.M
 	v4492 = m.ExcPending
 	if v4492 != 0 {
@@ -12758,8 +12758,8 @@ L749:
 	}
 L750:
 	;
-	v4494 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v4497 = F_dictAdd(m, v4494, int32(_a1583), int32(944))
+	v4494 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v4497 = F_dictAdd(m, v4494, int32(_a_F_moduleRegisterCoreAPI_748), int32(944))
 	mBase = m.M
 	v4498 = m.ExcPending
 	if v4498 != 0 {
@@ -12769,8 +12769,8 @@ L750:
 	}
 L751:
 	;
-	v4500 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v4503 = F_dictAdd(m, v4500, int32(_a1584), int32(945))
+	v4500 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v4503 = F_dictAdd(m, v4500, int32(_a_F_moduleRegisterCoreAPI_749), int32(945))
 	mBase = m.M
 	v4504 = m.ExcPending
 	if v4504 != 0 {
@@ -12780,8 +12780,8 @@ L751:
 	}
 L752:
 	;
-	v4506 = *(*int32)(unsafe.Add(mBase, _consts[382]))
-	v4509 = F_dictAdd(m, v4506, int32(_a1585), int32(945))
+	v4506 = *(*int32)(unsafe.Add(mBase, _c_F_moduleRegisterCoreAPI[0]))
+	v4509 = F_dictAdd(m, v4506, int32(_a_F_moduleRegisterCoreAPI_750), int32(945))
 	mBase = m.M
 	v4510 = m.ExcPending
 	if v4510 != 0 {

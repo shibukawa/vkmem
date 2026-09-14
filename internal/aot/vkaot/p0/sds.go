@@ -35,7 +35,7 @@ func F_sdsCatPatternString(m *base.Module, l0 int32, l1 int32) int32 {
 	v3 = *(*int32)(unsafe.Add(mBase, uint32(l1)))
 	switch v3 + int32(-1) {
 	case 0:
-		v8 = F_sdscatlen(m, l0, int32(_a13), int32(3))
+		v8 = F_sdscatlen(m, l0, int32(_a_F_sdsCatPatternString_0), int32(3))
 		mBase = m.M
 		v11 = m.ExcPending
 		if v11 != 0 {
@@ -53,7 +53,7 @@ func F_sdsCatPatternString(m *base.Module, l0 int32, l1 int32) int32 {
 			}
 		}
 	case 1:
-		v14 = F_sdscatlen(m, l0, int32(_a14), int32(3))
+		v14 = F_sdscatlen(m, l0, int32(_a_F_sdsCatPatternString_1), int32(3))
 		mBase = m.M
 		v15 = m.ExcPending
 		if v15 != 0 {
@@ -71,7 +71,7 @@ func F_sdsCatPatternString(m *base.Module, l0 int32, l1 int32) int32 {
 			}
 		}
 	case 2:
-		v25 = F_sdscatlen(m, l0, int32(_a15), int32(1))
+		v25 = F_sdscatlen(m, l0, int32(_a_F_sdsCatPatternString_2), int32(1))
 		mBase = m.M
 		v26 = m.ExcPending
 		if v26 != 0 {
@@ -89,7 +89,7 @@ func F_sdsCatPatternString(m *base.Module, l0 int32, l1 int32) int32 {
 			}
 		}
 	default:
-		F__serverPanic_1(m, int32(_a6), int32(347), int32(_a16), int32(0))
+		F__serverPanic_1(m, int32(_a_F_sdsCatPatternString_3), int32(347), int32(_a_F_sdsCatPatternString_4), int32(0))
 		mBase = m.M
 		v21 = m.ExcPending
 		if v21 != 0 {
@@ -1930,7 +1930,7 @@ L12:
 	goto L7
 L13:
 	;
-	F__serverAssert(m, int32(_a1126), int32(_a1127), int32(399))
+	F__serverAssert(m, int32(_a_F_sdsResize_0), int32(_a_F_sdsResize_1), int32(399))
 	mBase = m.M
 	v456 = m.ExcPending
 	if v456 != 0 {
@@ -2087,7 +2087,7 @@ L36:
 	}
 L37:
 	;
-	v84 = *(*int32)(unsafe.Add(mBase, uint32(v78<<(uint(int32(2))%32))+uint32(_consts[638])))
+	v84 = *(*int32)(unsafe.Add(mBase, uint32(v78<<(uint(int32(2))%32))+uint32(_c_F_sdsResize[0])))
 	if base.Ui32(v23) <= base.Ui32(v78) {
 		goto L29
 	} else {
@@ -2515,7 +2515,7 @@ L102:
 	}
 L103:
 	;
-	F__serverAssert(m, int32(_a1128), int32(_a1127), int32(389))
+	F__serverAssert(m, int32(_a_F_sdsResize_2), int32(_a_F_sdsResize_1), int32(389))
 	mBase = m.M
 	v305 = m.ExcPending
 	if v305 != 0 {

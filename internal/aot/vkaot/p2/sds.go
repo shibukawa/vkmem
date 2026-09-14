@@ -336,7 +336,7 @@ L5:
 	goto L1
 L6:
 	;
-	F__serverAssert(m, int32(_a1324), int32(_a1321), int32(303))
+	F__serverAssert(m, int32(_a_F__sdsMakeRoomFor_0), int32(_a_F__sdsMakeRoomFor_1), int32(303))
 	mBase = m.M
 	v472 = m.ExcPending
 	if v472 != 0 {
@@ -346,7 +346,7 @@ L6:
 	}
 L7:
 	;
-	F__serverAssert(m, int32(_a1325), int32(_a1321), int32(277))
+	F__serverAssert(m, int32(_a_F__sdsMakeRoomFor_2), int32(_a_F__sdsMakeRoomFor_1), int32(277))
 	mBase = m.M
 	v466 = m.ExcPending
 	if v466 != 0 {
@@ -356,7 +356,7 @@ L7:
 	}
 L8:
 	;
-	F__serverAssert(m, int32(_a1326), int32(_a1321), int32(261))
+	F__serverAssert(m, int32(_a_F__sdsMakeRoomFor_3), int32(_a_F__sdsMakeRoomFor_1), int32(261))
 	mBase = m.M
 	v460 = m.ExcPending
 	if v460 != 0 {
@@ -514,7 +514,7 @@ L32:
 	goto L33
 L33:
 	;
-	v108 = *(*int32)(unsafe.Add(mBase, uint32(v103<<(uint(int32(2))%32))+uint32(_consts[722])))
+	v108 = *(*int32)(unsafe.Add(mBase, uint32(v103<<(uint(int32(2))%32))+uint32(_c_F__sdsMakeRoomFor[0])))
 	v111 = v87 + v108 + int32(1)
 	if base.Ui32(v111) <= base.Ui32(v77) {
 		goto L7
@@ -1787,7 +1787,7 @@ func F_sdsIncrLen(m *base.Module, l0 int32, l1 int32) {
 		v14 = int32(base.Ui32(v10) >> (uint(int32(3)) % 32))
 		if l1 < int32(1) {
 			if l1 == int32(0) {
-				F__serverAssert(m, int32(_a1327), int32(_a1321), int32(460))
+				F__serverAssert(m, int32(_a_F_sdsIncrLen_0), int32(_a_F_sdsIncrLen_1), int32(460))
 				mBase = m.M
 				v146 = m.ExcPending
 				if v146 != 0 {
@@ -1801,7 +1801,7 @@ func F_sdsIncrLen(m *base.Module, l0 int32, l1 int32) {
 				}
 			} else {
 				if base.Ui32(v14) < base.Ui32(int32(0)-l1) {
-					F__serverAssert(m, int32(_a1327), int32(_a1321), int32(460))
+					F__serverAssert(m, int32(_a_F_sdsIncrLen_0), int32(_a_F_sdsIncrLen_1), int32(460))
 					mBase = m.M
 					v146 = m.ExcPending
 					if v146 != 0 {
@@ -1834,7 +1834,7 @@ func F_sdsIncrLen(m *base.Module, l0 int32, l1 int32) {
 				*(*uint8)(unsafe.Add(mBase, uint32(l0+v107))) = uint8(v111)
 				return
 			} else {
-				F__serverAssert(m, int32(_a1327), int32(_a1321), int32(460))
+				F__serverAssert(m, int32(_a_F_sdsIncrLen_0), int32(_a_F_sdsIncrLen_1), int32(460))
 				mBase = m.M
 				v146 = m.ExcPending
 				if v146 != 0 {
@@ -1853,7 +1853,7 @@ func F_sdsIncrLen(m *base.Module, l0 int32, l1 int32) {
 		if l1 < int32(0) {
 			v40 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v31))))
 			if base.Ui32(v40) < base.Ui32(int32(0)-l1) {
-				F__serverAssert(m, int32(_a1328), int32(_a1321), int32(467))
+				F__serverAssert(m, int32(_a_F_sdsIncrLen_2), int32(_a_F_sdsIncrLen_1), int32(467))
 				mBase = m.M
 				v139 = m.ExcPending
 				if v139 != 0 {
@@ -1886,7 +1886,7 @@ func F_sdsIncrLen(m *base.Module, l0 int32, l1 int32) {
 				*(*uint8)(unsafe.Add(mBase, uint32(l0+v107))) = uint8(v111)
 				return
 			} else {
-				F__serverAssert(m, int32(_a1328), int32(_a1321), int32(467))
+				F__serverAssert(m, int32(_a_F_sdsIncrLen_2), int32(_a_F_sdsIncrLen_1), int32(467))
 				mBase = m.M
 				v139 = m.ExcPending
 				if v139 != 0 {
@@ -1905,7 +1905,7 @@ func F_sdsIncrLen(m *base.Module, l0 int32, l1 int32) {
 		if l1 < int32(0) {
 			v59 = int32(*(*uint16)(unsafe.Add(mBase, uint32(v50))))
 			if base.Ui32(v59) < base.Ui32(int32(0)-l1) {
-				F__serverAssert(m, int32(_a1328), int32(_a1321), int32(473))
+				F__serverAssert(m, int32(_a_F_sdsIncrLen_2), int32(_a_F_sdsIncrLen_1), int32(473))
 				mBase = m.M
 				v132 = m.ExcPending
 				if v132 != 0 {
@@ -1938,7 +1938,7 @@ func F_sdsIncrLen(m *base.Module, l0 int32, l1 int32) {
 				*(*uint8)(unsafe.Add(mBase, uint32(l0+v107))) = uint8(v111)
 				return
 			} else {
-				F__serverAssert(m, int32(_a1328), int32(_a1321), int32(473))
+				F__serverAssert(m, int32(_a_F_sdsIncrLen_2), int32(_a_F_sdsIncrLen_1), int32(473))
 				mBase = m.M
 				v132 = m.ExcPending
 				if v132 != 0 {
@@ -1957,7 +1957,7 @@ func F_sdsIncrLen(m *base.Module, l0 int32, l1 int32) {
 		if l1 < int32(0) {
 			v78 = *(*int32)(unsafe.Add(mBase, uint32(v69)))
 			if base.Ui32(v78) < base.Ui32(int32(0)-l1) {
-				F__serverAssert(m, int32(_a1329), int32(_a1321), int32(480))
+				F__serverAssert(m, int32(_a_F_sdsIncrLen_3), int32(_a_F_sdsIncrLen_1), int32(480))
 				mBase = m.M
 				v125 = m.ExcPending
 				if v125 != 0 {
@@ -1990,7 +1990,7 @@ func F_sdsIncrLen(m *base.Module, l0 int32, l1 int32) {
 				*(*uint8)(unsafe.Add(mBase, uint32(l0+v107))) = uint8(v111)
 				return
 			} else {
-				F__serverAssert(m, int32(_a1329), int32(_a1321), int32(480))
+				F__serverAssert(m, int32(_a_F_sdsIncrLen_3), int32(_a_F_sdsIncrLen_1), int32(480))
 				mBase = m.M
 				v125 = m.ExcPending
 				if v125 != 0 {
@@ -2009,7 +2009,7 @@ func F_sdsIncrLen(m *base.Module, l0 int32, l1 int32) {
 		if l1 < int32(0) {
 			v96 = *(*int64)(unsafe.Add(mBase, uint32(v86)))
 			if base.Ui64(v96) < base.Ui64(base.I64_extend_i32_u(int32(0)-l1)) {
-				F__serverAssert(m, int32(_a1330), int32(_a1321), int32(486))
+				F__serverAssert(m, int32(_a_F_sdsIncrLen_4), int32(_a_F_sdsIncrLen_1), int32(486))
 				mBase = m.M
 				v118 = m.ExcPending
 				if v118 != 0 {
@@ -2042,7 +2042,7 @@ func F_sdsIncrLen(m *base.Module, l0 int32, l1 int32) {
 				*(*uint8)(unsafe.Add(mBase, uint32(l0+v107))) = uint8(v111)
 				return
 			} else {
-				F__serverAssert(m, int32(_a1330), int32(_a1321), int32(486))
+				F__serverAssert(m, int32(_a_F_sdsIncrLen_4), int32(_a_F_sdsIncrLen_1), int32(486))
 				mBase = m.M
 				v118 = m.ExcPending
 				if v118 != 0 {
@@ -2457,8 +2457,8 @@ L33:
 	goto L28
 L34:
 	;
-	v94 = *(*int32)(unsafe.Add(mBase, _consts[136]))
-	v95 = *(*int32)(unsafe.Add(mBase, uint32(v94)+uint32(_consts[150])))
-	*(*int32)(unsafe.Add(mBase, uint32(v94)+uint32(_consts[150]))) = v95 | int32(4)
+	v94 = *(*int32)(unsafe.Add(mBase, _c_F_updateSdsExtensionField[0]))
+	v95 = *(*int32)(unsafe.Add(mBase, uint32(v94)+uint32(_c_F_updateSdsExtensionField[1])))
+	*(*int32)(unsafe.Add(mBase, uint32(v94)+uint32(_c_F_updateSdsExtensionField[1]))) = v95 | int32(4)
 	goto L1
 }

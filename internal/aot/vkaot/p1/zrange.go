@@ -605,7 +605,7 @@ L11:
 	v110 = *(*int32)(unsafe.Add(mBase, uint32(v106+v108)))
 	v111 = F_objectGetVal(m, v110)
 	mBase = m.M
-	v112 = int32(_a457)
+	v112 = int32(_a_F_zrangeGenericCommand_0)
 	v115 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v111))))
 	if v115 != 0 {
 		goto L29
@@ -617,7 +617,7 @@ L12:
 	v63 = *(*int32)(unsafe.Add(mBase, uint32(v59+v54<<(uint(int32(2))%32))))
 	v64 = F_objectGetVal(m, v63)
 	mBase = m.M
-	v65 = int32(_a2452)
+	v65 = int32(_a_F_zrangeGenericCommand_1)
 	v68 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v64))))
 	if v68 != 0 {
 		goto L16
@@ -889,7 +889,7 @@ L48:
 	v180 = *(*int32)(unsafe.Add(mBase, uint32(v176+v54<<(uint(int32(2))%32))))
 	v181 = F_objectGetVal(m, v180)
 	mBase = m.M
-	v182 = int32(_a2453)
+	v182 = int32(_a_F_zrangeGenericCommand_2)
 	v185 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v181))))
 	if v185 != 0 {
 		goto L51
@@ -993,7 +993,7 @@ L61:
 	goto L10
 L62:
 	;
-	v316 = *(*int32)(unsafe.Add(mBase, _consts[33]))
+	v316 = *(*int32)(unsafe.Add(mBase, _c_F_zrangeGenericCommand[0]))
 	F_addReplyErrorObject(m, v19, v316)
 	mBase = m.M
 	v318 = m.ExcPending
@@ -1008,7 +1008,7 @@ L63:
 	v224 = *(*int32)(unsafe.Add(mBase, uint32(v222+v108)))
 	v225 = F_objectGetVal(m, v224)
 	mBase = m.M
-	v226 = int32(_a2454)
+	v226 = int32(_a_F_zrangeGenericCommand_3)
 	v229 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v225))))
 	if v229 != 0 {
 		goto L67
@@ -1022,7 +1022,7 @@ L64:
 	v271 = *(*int32)(unsafe.Add(mBase, uint32(v267+v54<<(uint(v266)%32))))
 	v272 = F_objectGetVal(m, v271)
 	mBase = m.M
-	v273 = int32(_a2455)
+	v273 = int32(_a_F_zrangeGenericCommand_4)
 	v276 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v272))))
 	if v276 != 0 {
 		goto L80
@@ -1242,7 +1242,7 @@ L94:
 	}
 L95:
 	;
-	F_addReplyError(m, v19, int32(_a2456))
+	F_addReplyError(m, v19, int32(_a_F_zrangeGenericCommand_5))
 	mBase = m.M
 	v336 = m.ExcPending
 	if v336 != 0 {
@@ -1288,7 +1288,7 @@ L100:
 	}
 L101:
 	;
-	F_addReplyError(m, v19, int32(_a2457))
+	F_addReplyError(m, v19, int32(_a_F_zrangeGenericCommand_6))
 	mBase = m.M
 	v349 = m.ExcPending
 	if v349 != 0 {
@@ -1412,7 +1412,7 @@ L116:
 	goto L109
 L117:
 	;
-	F_addReplyError(m, v19, int32(_a2445))
+	F_addReplyError(m, v19, int32(_a_F_zrangeGenericCommand_7))
 	mBase = m.M
 	v415 = m.ExcPending
 	if v415 != 0 {
@@ -1432,7 +1432,7 @@ L119:
 	}
 L120:
 	;
-	F_addReplyError(m, v19, int32(_a2449))
+	F_addReplyError(m, v19, int32(_a_F_zrangeGenericCommand_8))
 	mBase = m.M
 	v433 = m.ExcPending
 	if v433 != 0 {
@@ -1494,7 +1494,7 @@ L127:
 	}
 L128:
 	;
-	v459 = *(*int32)(unsafe.Add(mBase, _consts[861]))
+	v459 = *(*int32)(unsafe.Add(mBase, _c_F_zrangeGenericCommand[1]))
 	F_addReply(m, v19, v459)
 	mBase = m.M
 	v461 = m.ExcPending
@@ -1597,10 +1597,10 @@ L140:
 	goto L124
 L141:
 	;
-	v495 = int32(_a388)
-	v496 = *(*int32)(unsafe.Add(mBase, _consts[420]))
+	v495 = int32(_a_F_zrangeGenericCommand_9)
+	v496 = *(*int32)(unsafe.Add(mBase, _c_F_zrangeGenericCommand[2]))
 	v497 = *(*int32)(unsafe.Add(mBase, uint32(v17)+24))
-	v499 = *(*int32)(unsafe.Add(mBase, _consts[419]))
+	v499 = *(*int32)(unsafe.Add(mBase, _c_F_zrangeGenericCommand[3]))
 	if v497 == v499 {
 		v508 = v499
 		v509 = v496
@@ -1637,9 +1637,9 @@ L144:
 	}
 L145:
 	;
-	v504 = int32(_a388)
-	v505 = *(*int32)(unsafe.Add(mBase, _consts[420]))
-	v507 = *(*int32)(unsafe.Add(mBase, _consts[419]))
+	v504 = int32(_a_F_zrangeGenericCommand_9)
+	v505 = *(*int32)(unsafe.Add(mBase, _c_F_zrangeGenericCommand[2]))
+	v507 = *(*int32)(unsafe.Add(mBase, _c_F_zrangeGenericCommand[3]))
 	v508 = v507
 	v509 = v505
 	goto L142

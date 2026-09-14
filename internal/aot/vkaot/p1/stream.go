@@ -745,7 +745,7 @@ L7:
 	goto L4
 L8:
 	;
-	v45 = *(*int64)(unsafe.Add(mBase, _consts[12]))
+	v45 = *(*int64)(unsafe.Add(mBase, _c_F_streamAppendItem[0]))
 	goto L15
 L9:
 	;
@@ -787,7 +787,7 @@ L13:
 	goto L14
 L14:
 	;
-	*(*int32)(unsafe.Add(mBase, _consts[18])) = int32(18)
+	*(*int32)(unsafe.Add(mBase, _c_F_streamAppendItem[1])) = int32(18)
 	v1553 = int32(-1)
 	goto L1
 L15:
@@ -953,13 +953,13 @@ L36:
 	goto L37
 L37:
 	;
-	*(*int32)(unsafe.Add(mBase, _consts[18])) = int32(68)
+	*(*int32)(unsafe.Add(mBase, _c_F_streamAppendItem[1])) = int32(68)
 	v1553 = int32(-1)
 	goto L1
 L38:
 	;
 	v199 = int32(0)
-	v201 = F_raxSeek(m, v24+int32(56), int32(_a1933), v199, v199)
+	v201 = F_raxSeek(m, v24+int32(56), int32(_a_F_streamAppendItem_0), v199, v199)
 	mBase = m.M
 	v204 = m.ExcPending
 	if v204 != 0 {
@@ -976,7 +976,7 @@ L40:
 	goto L50
 L41:
 	;
-	F__serverAssert(m, int32(_a2401), int32(_a2402), int32(282))
+	F__serverAssert(m, int32(_a_F_streamAppendItem_1), int32(_a_F_streamAppendItem_2), int32(282))
 	mBase = m.M
 	v1538 = m.ExcPending
 	if v1538 != 0 {
@@ -986,7 +986,7 @@ L41:
 	}
 L42:
 	;
-	F__serverAssert(m, int32(_a2401), int32(_a2402), int32(282))
+	F__serverAssert(m, int32(_a_F_streamAppendItem_1), int32(_a_F_streamAppendItem_2), int32(282))
 	mBase = m.M
 	v1532 = m.ExcPending
 	if v1532 != 0 {
@@ -996,7 +996,7 @@ L42:
 	}
 L43:
 	;
-	F__serverAssert(m, int32(_a2404), int32(_a2402), int32(578))
+	F__serverAssert(m, int32(_a_F_streamAppendItem_3), int32(_a_F_streamAppendItem_2), int32(578))
 	mBase = m.M
 	v1526 = m.ExcPending
 	if v1526 != 0 {
@@ -1006,7 +1006,7 @@ L43:
 	}
 L44:
 	;
-	F__serverAssert(m, int32(_a2401), int32(_a2402), int32(282))
+	F__serverAssert(m, int32(_a_F_streamAppendItem_1), int32(_a_F_streamAppendItem_2), int32(282))
 	mBase = m.M
 	v1520 = m.ExcPending
 	if v1520 != 0 {
@@ -1016,7 +1016,7 @@ L44:
 	}
 L45:
 	;
-	F__serverAssert(m, int32(_a2401), int32(_a2402), int32(282))
+	F__serverAssert(m, int32(_a_F_streamAppendItem_1), int32(_a_F_streamAppendItem_2), int32(282))
 	mBase = m.M
 	v1514 = m.ExcPending
 	if v1514 != 0 {
@@ -1053,7 +1053,7 @@ L48:
 	v582 = int64(8)
 	*(*int64)(unsafe.Add(mBase, uint32(v24)+40)) = v82<<(uint(v569)%64) | v82&v571<<(uint(v573)%64) | (v82&v576<<(uint(v578)%64) | v82&v580<<(uint(v582)%64)) | (int64(base.Ui64(v82)>>(uint(v582)%64))&v580 | int64(base.Ui64(v82)>>(uint(v578)%64))&v576 | (int64(base.Ui64(v82)>>(uint(v573)%64))&v571 | int64(base.Ui64(v82)>>(uint(v569)%64))))
 	*(*int64)(unsafe.Add(mBase, uint32(v24)+32)) = v83<<(uint(v569)%64) | v83&v571<<(uint(v573)%64) | (v83&v576<<(uint(v578)%64) | v83&v580<<(uint(v582)%64)) | (int64(base.Ui64(v83)>>(uint(v582)%64))&v580 | int64(base.Ui64(v83)>>(uint(v578)%64))&v576 | (int64(base.Ui64(v83)>>(uint(v573)%64))&v571 | int64(base.Ui64(v83)>>(uint(v569)%64))))
-	v643 = *(*int32)(unsafe.Add(mBase, _consts[864]))
+	v643 = *(*int32)(unsafe.Add(mBase, _c_F_streamAppendItem[2]))
 	if base.Ui32(v643+int32(-1)) < base.Ui32(int32(4095)) {
 		goto L132
 	} else {
@@ -1103,7 +1103,7 @@ L54:
 	}
 L55:
 	;
-	v227 = *(*int32)(unsafe.Add(mBase, _consts[864]))
+	v227 = *(*int32)(unsafe.Add(mBase, _c_F_streamAppendItem[2]))
 	if base.Ui32(v227+int32(-1073741825)) < base.Ui32(int32(-1073741824)) {
 		goto L57
 	} else {
@@ -1136,7 +1136,7 @@ L59:
 	}
 L60:
 	;
-	v235 = *(*int64)(unsafe.Add(mBase, _consts[865]))
+	v235 = *(*int64)(unsafe.Add(mBase, _c_F_streamAppendItem[3]))
 	if v235 == int64(0) {
 		goto L47
 	} else {
@@ -1384,7 +1384,7 @@ L94:
 	goto L62
 L95:
 	;
-	v548 = *(*int64)(unsafe.Add(mBase, _consts[865]))
+	v548 = *(*int64)(unsafe.Add(mBase, _c_F_streamAppendItem[3]))
 	if v545+v391 < v548 {
 		goto L47
 	} else {
@@ -2867,7 +2867,7 @@ L298:
 	}
 L299:
 	;
-	*(*int32)(unsafe.Add(mBase, _consts[18])) = int32(18)
+	*(*int32)(unsafe.Add(mBase, _c_F_streamAppendItem[1])) = int32(18)
 	v1553 = int32(-1)
 	goto L1
 }
@@ -2993,7 +2993,7 @@ func F_streamDelConsumer(m *base.Module, l0 int32, l1 int32) {
 L1:
 	;
 	v29 = int32(0)
-	v33 = F_raxSeek(m, v9, int32(_a67), v29, v29)
+	v33 = F_raxSeek(m, v9, int32(_a_F_streamDelConsumer_0), v29, v29)
 	mBase = m.M
 	v34 = m.ExcPending
 	if v34 != 0 {
@@ -3231,7 +3231,7 @@ func F_streamEntryExists(m *base.Module, l0 int32, l1 int32) int32 {
 					v31 = *(*int64)(unsafe.Add(mBase, uint32(l1)))
 					v32 = *(*int64)(unsafe.Add(mBase, uint32(v7)+16))
 					if v31 != v32 {
-						F__serverAssert(m, int32(_a2405), int32(_a2402), int32(1324))
+						F__serverAssert(m, int32(_a_F_streamEntryExists_0), int32(_a_F_streamEntryExists_1), int32(1324))
 						mBase = m.M
 						v43 = m.ExcPending
 						if v43 != 0 {
@@ -3251,7 +3251,7 @@ func F_streamEntryExists(m *base.Module, l0 int32, l1 int32) int32 {
 							m.G0 = v7 + int32(480)
 							return v45
 						} else {
-							F__serverAssert(m, int32(_a2405), int32(_a2402), int32(1324))
+							F__serverAssert(m, int32(_a_F_streamEntryExists_0), int32(_a_F_streamEntryExists_1), int32(1324))
 							mBase = m.M
 							v43 = m.ExcPending
 							if v43 != 0 {
@@ -3326,9 +3326,9 @@ func F_streamGetEdgeID(m *base.Module, l0 int32, l1 int32, l2 int32, l3 int32) {
 	*(*int32)(unsafe.Add(mBase, uint32(v24)+8)) = v9 + v29
 	*(*int32)(unsafe.Add(mBase, uint32(v24)+156)) = v9 + int32(272)
 	if l1 != 0 {
-		v45 = int32(_a67)
+		v45 = int32(_a_F_streamGetEdgeID_0)
 	} else {
-		v45 = int32(_a1933)
+		v45 = int32(_a_F_streamGetEdgeID_1)
 	}
 	v46 = int32(0)
 	v48 = F_raxSeek(m, v24, v45, v46, v46)
@@ -3519,7 +3519,7 @@ func F_streamIteratorStart(m *base.Module, l0 int32, l1 int32, l2 int32, l3 int3
 			if v175|v176 == int64(0) {
 				v268 = v55
 				v270 = int32(0)
-				v272 = F_raxSeek(m, v268, int32(_a1933), v270, v270)
+				v272 = F_raxSeek(m, v268, int32(_a_F_streamIteratorStart_0), v270, v270)
 				mBase = m.M
 				v273 = m.ExcPending
 				if v273 != 0 {
@@ -3542,7 +3542,7 @@ func F_streamIteratorStart(m *base.Module, l0 int32, l1 int32, l2 int32, l3 int3
 				v193 = int64(8)
 				*(*int64)(unsafe.Add(mBase, uint32(v12)+8)) = v176<<(uint(v180)%64) | v176&v182<<(uint(v184)%64) | (v176&v187<<(uint(v189)%64) | v176&v191<<(uint(v193)%64)) | (int64(base.Ui64(v176)>>(uint(v193)%64))&v191 | int64(base.Ui64(v176)>>(uint(v189)%64))&v187 | (int64(base.Ui64(v176)>>(uint(v184)%64))&v182 | int64(base.Ui64(v176)>>(uint(v180)%64))))
 				*(*int64)(unsafe.Add(mBase, uint32(v12))) = v175<<(uint(v180)%64) | v175&v182<<(uint(v184)%64) | (v175&v187<<(uint(v189)%64) | v175&v191<<(uint(v193)%64)) | (int64(base.Ui64(v175)>>(uint(v193)%64))&v191 | int64(base.Ui64(v175)>>(uint(v189)%64))&v187 | (int64(base.Ui64(v175)>>(uint(v184)%64))&v182 | int64(base.Ui64(v175)>>(uint(v180)%64))))
-				v254 = F_raxSeek(m, v55, int32(_a2403), v12, int32(16))
+				v254 = F_raxSeek(m, v55, int32(_a_F_streamIteratorStart_1), v12, int32(16))
 				mBase = m.M
 				v255 = m.ExcPending
 				if v255 != 0 {
@@ -3558,7 +3558,7 @@ func F_streamIteratorStart(m *base.Module, l0 int32, l1 int32, l2 int32, l3 int3
 						return
 					} else {
 						v262 = int32(0)
-						v264 = F_raxSeek(m, v55, int32(_a1933), v262, v262)
+						v264 = F_raxSeek(m, v55, int32(_a_F_streamIteratorStart_0), v262, v262)
 						mBase = m.M
 						v265 = m.ExcPending
 						if v265 != 0 {
@@ -3578,7 +3578,7 @@ func F_streamIteratorStart(m *base.Module, l0 int32, l1 int32, l2 int32, l3 int3
 			v74 = v55
 			if l2 == int32(0) {
 				v171 = int32(0)
-				v173 = F_raxSeek(m, v74, int32(_a67), v171, v171)
+				v173 = F_raxSeek(m, v74, int32(_a_F_streamIteratorStart_2), v171, v171)
 				mBase = m.M
 				v174 = m.ExcPending
 				if v174 != 0 {
@@ -3596,7 +3596,7 @@ func F_streamIteratorStart(m *base.Module, l0 int32, l1 int32, l2 int32, l3 int3
 				v78 = *(*int64)(unsafe.Add(mBase, uint32(l2)+8))
 				if v77|v78 == int64(0) {
 					v171 = int32(0)
-					v173 = F_raxSeek(m, v74, int32(_a67), v171, v171)
+					v173 = F_raxSeek(m, v74, int32(_a_F_streamIteratorStart_2), v171, v171)
 					mBase = m.M
 					v174 = m.ExcPending
 					if v174 != 0 {
@@ -3619,7 +3619,7 @@ func F_streamIteratorStart(m *base.Module, l0 int32, l1 int32, l2 int32, l3 int3
 					v95 = int64(8)
 					*(*int64)(unsafe.Add(mBase, uint32(v12)+8)) = v78<<(uint(v82)%64) | v78&v84<<(uint(v86)%64) | (v78&v89<<(uint(v91)%64) | v78&v93<<(uint(v95)%64)) | (int64(base.Ui64(v78)>>(uint(v95)%64))&v93 | int64(base.Ui64(v78)>>(uint(v91)%64))&v89 | (int64(base.Ui64(v78)>>(uint(v86)%64))&v84 | int64(base.Ui64(v78)>>(uint(v82)%64))))
 					*(*int64)(unsafe.Add(mBase, uint32(v12))) = v77<<(uint(v82)%64) | v77&v84<<(uint(v86)%64) | (v77&v89<<(uint(v91)%64) | v77&v93<<(uint(v95)%64)) | (int64(base.Ui64(v77)>>(uint(v95)%64))&v93 | int64(base.Ui64(v77)>>(uint(v91)%64))&v89 | (int64(base.Ui64(v77)>>(uint(v86)%64))&v84 | int64(base.Ui64(v77)>>(uint(v82)%64))))
-					v156 = F_raxSeek(m, v74, int32(_a2403), v12, int32(16))
+					v156 = F_raxSeek(m, v74, int32(_a_F_streamIteratorStart_1), v12, int32(16))
 					mBase = m.M
 					v157 = m.ExcPending
 					if v157 != 0 {
@@ -3635,7 +3635,7 @@ func F_streamIteratorStart(m *base.Module, l0 int32, l1 int32, l2 int32, l3 int3
 							return
 						} else {
 							v164 = int32(0)
-							v166 = F_raxSeek(m, v74, int32(_a67), v164, v164)
+							v166 = F_raxSeek(m, v74, int32(_a_F_streamIteratorStart_2), v164, v164)
 							mBase = m.M
 							v167 = m.ExcPending
 							if v167 != 0 {
@@ -3672,7 +3672,7 @@ func F_streamIteratorStart(m *base.Module, l0 int32, l1 int32, l2 int32, l3 int3
 			v74 = v29
 			if l2 == int32(0) {
 				v171 = int32(0)
-				v173 = F_raxSeek(m, v74, int32(_a67), v171, v171)
+				v173 = F_raxSeek(m, v74, int32(_a_F_streamIteratorStart_2), v171, v171)
 				mBase = m.M
 				v174 = m.ExcPending
 				if v174 != 0 {
@@ -3690,7 +3690,7 @@ func F_streamIteratorStart(m *base.Module, l0 int32, l1 int32, l2 int32, l3 int3
 				v78 = *(*int64)(unsafe.Add(mBase, uint32(l2)+8))
 				if v77|v78 == int64(0) {
 					v171 = int32(0)
-					v173 = F_raxSeek(m, v74, int32(_a67), v171, v171)
+					v173 = F_raxSeek(m, v74, int32(_a_F_streamIteratorStart_2), v171, v171)
 					mBase = m.M
 					v174 = m.ExcPending
 					if v174 != 0 {
@@ -3713,7 +3713,7 @@ func F_streamIteratorStart(m *base.Module, l0 int32, l1 int32, l2 int32, l3 int3
 					v95 = int64(8)
 					*(*int64)(unsafe.Add(mBase, uint32(v12)+8)) = v78<<(uint(v82)%64) | v78&v84<<(uint(v86)%64) | (v78&v89<<(uint(v91)%64) | v78&v93<<(uint(v95)%64)) | (int64(base.Ui64(v78)>>(uint(v95)%64))&v93 | int64(base.Ui64(v78)>>(uint(v91)%64))&v89 | (int64(base.Ui64(v78)>>(uint(v86)%64))&v84 | int64(base.Ui64(v78)>>(uint(v82)%64))))
 					*(*int64)(unsafe.Add(mBase, uint32(v12))) = v77<<(uint(v82)%64) | v77&v84<<(uint(v86)%64) | (v77&v89<<(uint(v91)%64) | v77&v93<<(uint(v95)%64)) | (int64(base.Ui64(v77)>>(uint(v95)%64))&v93 | int64(base.Ui64(v77)>>(uint(v91)%64))&v89 | (int64(base.Ui64(v77)>>(uint(v86)%64))&v84 | int64(base.Ui64(v77)>>(uint(v82)%64))))
-					v156 = F_raxSeek(m, v74, int32(_a2403), v12, int32(16))
+					v156 = F_raxSeek(m, v74, int32(_a_F_streamIteratorStart_1), v12, int32(16))
 					mBase = m.M
 					v157 = m.ExcPending
 					if v157 != 0 {
@@ -3729,7 +3729,7 @@ func F_streamIteratorStart(m *base.Module, l0 int32, l1 int32, l2 int32, l3 int3
 							return
 						} else {
 							v164 = int32(0)
-							v166 = F_raxSeek(m, v74, int32(_a67), v164, v164)
+							v166 = F_raxSeek(m, v74, int32(_a_F_streamIteratorStart_2), v164, v164)
 							mBase = m.M
 							v167 = m.ExcPending
 							if v167 != 0 {
@@ -3749,7 +3749,7 @@ func F_streamIteratorStart(m *base.Module, l0 int32, l1 int32, l2 int32, l3 int3
 		} else {
 			v268 = v29
 			v270 = int32(0)
-			v272 = F_raxSeek(m, v268, int32(_a1933), v270, v270)
+			v272 = F_raxSeek(m, v268, int32(_a_F_streamIteratorStart_0), v270, v270)
 			mBase = m.M
 			v273 = m.ExcPending
 			if v273 != 0 {
@@ -3997,7 +3997,7 @@ func F_streamPropagateXCLAIM(m *base.Module, l0 int32, l1 int32, l2 int32, l3 in
 	m.G0 = v11
 	*(*int32)(unsafe.Add(mBase, uint32(v11)+8)) = l3
 	*(*int32)(unsafe.Add(mBase, uint32(v11)+4)) = l1
-	v16 = *(*int32)(unsafe.Add(mBase, _consts[866]))
+	v16 = *(*int32)(unsafe.Add(mBase, _c_F_streamPropagateXCLAIM[0]))
 	*(*int32)(unsafe.Add(mBase, uint32(v11))) = v16
 	v19 = *(*int32)(unsafe.Add(mBase, uint32(l5)+16))
 	v20 = *(*int32)(unsafe.Add(mBase, uint32(v19)+16))
@@ -4058,10 +4058,10 @@ L8:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v11)+20)) = l4
 	*(*int32)(unsafe.Add(mBase, uint32(v11)+12)) = v41
-	v45 = int32(_a388)
-	v46 = *(*int32)(unsafe.Add(mBase, _consts[506]))
+	v45 = int32(_a_F_streamPropagateXCLAIM_0)
+	v46 = *(*int32)(unsafe.Add(mBase, _c_F_streamPropagateXCLAIM[1]))
 	*(*int32)(unsafe.Add(mBase, uint32(v11)+16)) = v46
-	v49 = *(*int32)(unsafe.Add(mBase, _consts[867]))
+	v49 = *(*int32)(unsafe.Add(mBase, _c_F_streamPropagateXCLAIM[2]))
 	*(*int32)(unsafe.Add(mBase, uint32(v11)+24)) = v49
 	v51 = *(*int64)(unsafe.Add(mBase, uint32(l5)))
 	v52 = F_createStringObjectFromLongLong(m, v51)
@@ -4075,7 +4075,7 @@ L8:
 L9:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v11)+28)) = v52
-	v56 = *(*int32)(unsafe.Add(mBase, _consts[868]))
+	v56 = *(*int32)(unsafe.Add(mBase, _c_F_streamPropagateXCLAIM[3]))
 	*(*int32)(unsafe.Add(mBase, uint32(v11)+32)) = v56
 	v58 = *(*int64)(unsafe.Add(mBase, uint32(l5)+8))
 	v59 = F_createStringObjectFromLongLong(m, v58)
@@ -4089,10 +4089,10 @@ L9:
 L10:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v11)+36)) = v59
-	v62 = int32(_a388)
-	v63 = *(*int64)(unsafe.Add(mBase, _consts[869]))
+	v62 = int32(_a_F_streamPropagateXCLAIM_0)
+	v63 = *(*int64)(unsafe.Add(mBase, _c_F_streamPropagateXCLAIM[4]))
 	*(*int64)(unsafe.Add(mBase, uint32(v11)+40)) = v63
-	v66 = *(*int32)(unsafe.Add(mBase, _consts[870]))
+	v66 = *(*int32)(unsafe.Add(mBase, _c_F_streamPropagateXCLAIM[5]))
 	*(*int32)(unsafe.Add(mBase, uint32(v11)+48)) = v66
 	v69 = v11 + int32(64)
 	v73 = *(*int64)(unsafe.Add(mBase, uint32(l2)))
@@ -4332,7 +4332,7 @@ L48:
 	;
 	v158 = int64(100)
 	v159 = base.I64_div_u_s(v152, v158)
-	v168 = int32(*(*uint16)(unsafe.Add(mBase, uint32(base.I32_wrap_i64(v152-v159*v158)<<(uint(int32(1))%32))+uint32(_consts[871]))))
+	v168 = int32(*(*uint16)(unsafe.Add(mBase, uint32(base.I32_wrap_i64(v152-v159*v158)<<(uint(int32(1))%32))+uint32(_c_F_streamPropagateXCLAIM[6]))))
 	*(*uint16)(unsafe.Add(mBase, uint32(v11+int32(63)+v154))) = uint16(v168)
 	v171 = v154 + int32(-2)
 	if base.Ui64(int64(9999)) < base.Ui64(v152) {
@@ -4352,7 +4352,7 @@ L50:
 	goto L49
 L51:
 	;
-	v195 = int32(*(*uint16)(unsafe.Add(mBase, uint32(base.I32_wrap_i64(v179)<<(uint(int32(1))%32))+uint32(_consts[871]))))
+	v195 = int32(*(*uint16)(unsafe.Add(mBase, uint32(base.I32_wrap_i64(v179)<<(uint(int32(1))%32))+uint32(_c_F_streamPropagateXCLAIM[6]))))
 	*(*uint16)(unsafe.Add(mBase, uint32(v181+int32(-1)))) = uint16(v195)
 	v209 = v139
 	goto L11
@@ -4592,7 +4592,7 @@ L92:
 	;
 	v304 = int64(100)
 	v305 = base.I64_div_u_s(v298, v304)
-	v314 = int32(*(*uint16)(unsafe.Add(mBase, uint32(base.I32_wrap_i64(v298-v305*v304)<<(uint(int32(1))%32))+uint32(_consts[871]))))
+	v314 = int32(*(*uint16)(unsafe.Add(mBase, uint32(base.I32_wrap_i64(v298-v305*v304)<<(uint(int32(1))%32))+uint32(_c_F_streamPropagateXCLAIM[6]))))
 	*(*uint16)(unsafe.Add(mBase, uint32(v210+int32(0)+v300))) = uint16(v314)
 	v317 = v300 + int32(-2)
 	if base.Ui64(int64(9999)) < base.Ui64(v298) {
@@ -4612,7 +4612,7 @@ L94:
 	goto L93
 L95:
 	;
-	v341 = int32(*(*uint16)(unsafe.Add(mBase, uint32(base.I32_wrap_i64(v325)<<(uint(int32(1))%32))+uint32(_consts[871]))))
+	v341 = int32(*(*uint16)(unsafe.Add(mBase, uint32(base.I32_wrap_i64(v325)<<(uint(int32(1))%32))+uint32(_c_F_streamPropagateXCLAIM[6]))))
 	*(*uint16)(unsafe.Add(mBase, uint32(v327+int32(-1)))) = uint16(v341)
 	v355 = v285
 	goto L55
@@ -4823,7 +4823,7 @@ func F_streamReplDataBufToDb(m *base.Module, l0 int32) int32 {
 	}
 L1:
 	;
-	F__serverAssert(m, int32(_a1962), int32(_a1913), int32(3362))
+	F__serverAssert(m, int32(_a_F_streamReplDataBufToDb_0), int32(_a_F_streamReplDataBufToDb_1), int32(3362))
 	mBase = m.M
 	v167 = m.ExcPending
 	if v167 != 0 {
@@ -4834,8 +4834,8 @@ L1:
 L2:
 	;
 	v14 = int32(0)
-	v19 = *(*int32)(unsafe.Add(mBase, _consts[416]))
-	*(*int32)(unsafe.Add(mBase, _consts[416])) = v19 + int32(1)
+	v19 = *(*int32)(unsafe.Add(mBase, _c_F_streamReplDataBufToDb[0]))
+	*(*int32)(unsafe.Add(mBase, _c_F_streamReplDataBufToDb[0])) = v19 + int32(1)
 	if v19 != 0 {
 		goto L4
 	} else {
@@ -4845,7 +4845,7 @@ L3:
 	;
 	v47 = F_mstime(m)
 	mBase = m.M
-	v49 = *(*int32)(unsafe.Add(mBase, _consts[606]))
+	v49 = *(*int32)(unsafe.Add(mBase, _c_F_streamReplDataBufToDb[1]))
 	if v49 == int32(0) {
 		goto L6
 	} else {
@@ -4859,23 +4859,23 @@ L5:
 	v23 = int32(0)
 	v24 = F_ustime(m)
 	mBase = m.M
-	*(*int64)(unsafe.Add(mBase, _consts[178])) = v24
+	*(*int64)(unsafe.Add(mBase, _c_F_streamReplDataBufToDb[2])) = v24
 	v28 = base.I64_div_s(v24, int64(1000))
-	*(*int64)(unsafe.Add(mBase, _consts[54])) = v28
+	*(*int64)(unsafe.Add(mBase, _c_F_streamReplDataBufToDb[3])) = v28
 	v32 = base.I64_div_s(v24, int64(1000000))
-	*(*int64)(unsafe.Add(mBase, _consts[109])) = v32
-	v35 = *(*int32)(unsafe.Add(mBase, _consts[179]))
+	*(*int64)(unsafe.Add(mBase, _c_F_streamReplDataBufToDb[4])) = v32
+	v35 = *(*int32)(unsafe.Add(mBase, _c_F_streamReplDataBufToDb[5]))
 	F_lrulfu_updateClockAndPolicy(m, v28, int32(base.Ui32(v35&int32(2))>>(uint(int32(1))%32)))
 	mBase = m.M
-	v43 = *(*int64)(unsafe.Add(mBase, _consts[54]))
-	*(*int64)(unsafe.Add(mBase, _consts[417])) = v43
+	v43 = *(*int64)(unsafe.Add(mBase, _c_F_streamReplDataBufToDb[3]))
+	*(*int64)(unsafe.Add(mBase, _c_F_streamReplDataBufToDb[6])) = v43
 	goto L4
 L6:
 	;
 	v147 = int32(0)
-	v150 = *(*int32)(unsafe.Add(mBase, _consts[416]))
+	v150 = *(*int32)(unsafe.Add(mBase, _c_F_streamReplDataBufToDb[0]))
 	v152 = v150 + int32(-1)
-	*(*int32)(unsafe.Add(mBase, _consts[416])) = v152
+	*(*int32)(unsafe.Add(mBase, _c_F_streamReplDataBufToDb[0])) = v152
 	if v152 != 0 {
 		goto L26
 	} else {
@@ -4930,12 +4930,12 @@ L12:
 	}
 L13:
 	;
-	v81 = int32(_a20)
-	v83 = *(*int32)(unsafe.Add(mBase, _consts[607]))
-	*(*int32)(unsafe.Add(mBase, _consts[607])) = v83 - v68
-	v88 = *(*int32)(unsafe.Add(mBase, _consts[608]))
-	*(*int32)(unsafe.Add(mBase, _consts[608])) = v88 - v68 + int32(-20)
-	v94 = *(*int32)(unsafe.Add(mBase, _consts[606]))
+	v81 = int32(_a_F_streamReplDataBufToDb_2)
+	v83 = *(*int32)(unsafe.Add(mBase, _c_F_streamReplDataBufToDb[7]))
+	*(*int32)(unsafe.Add(mBase, _c_F_streamReplDataBufToDb[7])) = v83 - v68
+	v88 = *(*int32)(unsafe.Add(mBase, _c_F_streamReplDataBufToDb[8]))
+	*(*int32)(unsafe.Add(mBase, _c_F_streamReplDataBufToDb[8])) = v88 - v68 + int32(-20)
+	v94 = *(*int32)(unsafe.Add(mBase, _c_F_streamReplDataBufToDb[1]))
 	F_listDelNode(m, v94, v61)
 	mBase = m.M
 	v96 = m.ExcPending
@@ -4949,7 +4949,7 @@ L14:
 	v97 = v68 + v56
 	v98 = F_mstime(m)
 	mBase = m.M
-	v100 = *(*int64)(unsafe.Add(mBase, _consts[609]))
+	v100 = *(*int64)(unsafe.Add(mBase, _c_F_streamReplDataBufToDb[9]))
 	if v100 == int64(0) {
 		v135 = v54
 		goto L15
@@ -4958,7 +4958,7 @@ L14:
 	}
 L15:
 	;
-	v138 = *(*int32)(unsafe.Add(mBase, _consts[606]))
+	v138 = *(*int32)(unsafe.Add(mBase, _c_F_streamReplDataBufToDb[1]))
 	if v138 != 0 {
 		v54 = v135
 		v55 = v138
@@ -4979,7 +4979,7 @@ L16:
 	}
 L17:
 	;
-	v111 = *(*int64)(unsafe.Add(mBase, _consts[610]))
+	v111 = *(*int64)(unsafe.Add(mBase, _c_F_streamReplDataBufToDb[10]))
 	if v98-v54 <= v111 {
 		v135 = v54
 		goto L15
@@ -4991,7 +4991,7 @@ L18:
 	v113 = int32(0)
 	v114 = F___time(m, v113)
 	mBase = m.M
-	v116 = *(*int64)(unsafe.Add(mBase, _consts[598]))
+	v116 = *(*int64)(unsafe.Add(mBase, _c_F_streamReplDataBufToDb[11]))
 	if v114 == v116 {
 		goto L19
 	} else {
@@ -5012,8 +5012,8 @@ L20:
 	v118 = int32(0)
 	v120 = F___time(m, v118)
 	mBase = m.M
-	*(*int64)(unsafe.Add(mBase, _consts[598])) = v120
-	v123 = *(*int32)(unsafe.Add(mBase, _consts[592]))
+	*(*int64)(unsafe.Add(mBase, _c_F_streamReplDataBufToDb[11])) = v120
+	v123 = *(*int32)(unsafe.Add(mBase, _c_F_streamReplDataBufToDb[12]))
 	if v123 == v118 {
 		goto L19
 	} else {
@@ -5023,7 +5023,7 @@ L21:
 	;
 	v128 = *(*int32)(unsafe.Add(mBase, uint32(v123)))
 	v129 = *(*int32)(unsafe.Add(mBase, uint32(v128)+68))
-	v130 = m.T0[v129].(func(*base.Module, int32, int32, int32) int32)(m, v123, int32(_a26), int32(1))
+	v130 = m.T0[v129].(func(*base.Module, int32, int32, int32) int32)(m, v123, int32(_a_F_streamReplDataBufToDb_3), int32(1))
 	mBase = m.M
 	v131 = m.ExcPending
 	if v131 != 0 {
@@ -5043,7 +5043,7 @@ L24:
 	goto L9
 L25:
 	;
-	v160 = *(*int32)(unsafe.Add(mBase, _consts[606]))
+	v160 = *(*int32)(unsafe.Add(mBase, _c_F_streamReplDataBufToDb[1]))
 	if v160 != 0 {
 		goto L28
 	} else {
@@ -5054,7 +5054,7 @@ L26:
 	goto L25
 L27:
 	;
-	*(*int64)(unsafe.Add(mBase, _consts[417])) = int64(0)
+	*(*int64)(unsafe.Add(mBase, _c_F_streamReplDataBufToDb[6])) = int64(0)
 	goto L26
 L28:
 	;
@@ -5692,7 +5692,7 @@ func F_streamReplyWithRange(m *base.Module, l0 int32, l1 int32, l2 int32, l3 int
 	}
 L1:
 	;
-	F__serverPanic_1(m, int32(_a2402), int32(1773), int32(_a2406), int32(0))
+	F__serverPanic_1(m, int32(_a_F_streamReplyWithRange_0), int32(1773), int32(_a_F_streamReplyWithRange_1), int32(0))
 	mBase = m.M
 	v1326 = m.ExcPending
 	if v1326 != 0 {
@@ -5702,7 +5702,7 @@ L1:
 	}
 L2:
 	;
-	F__serverAssert(m, int32(_a1778), int32(_a2402), int32(1763))
+	F__serverAssert(m, int32(_a_F_streamReplyWithRange_2), int32(_a_F_streamReplyWithRange_0), int32(1763))
 	mBase = m.M
 	v1319 = m.ExcPending
 	if v1319 != 0 {
@@ -6536,7 +6536,7 @@ L129:
 	;
 	v356 = int64(100)
 	v357 = base.I64_div_u_s(v350, v356)
-	v366 = int32(*(*uint16)(unsafe.Add(mBase, uint32(base.I32_wrap_i64(v350-v357*v356)<<(uint(int32(1))%32))+uint32(_consts[871]))))
+	v366 = int32(*(*uint16)(unsafe.Add(mBase, uint32(base.I32_wrap_i64(v350-v357*v356)<<(uint(int32(1))%32))+uint32(_c_F_streamReplyWithRange[0]))))
 	*(*uint16)(unsafe.Add(mBase, uint32(v21+int32(31)+v352))) = uint16(v366)
 	v369 = v352 + int32(-2)
 	if base.Ui64(int64(9999)) < base.Ui64(v350) {
@@ -6556,7 +6556,7 @@ L131:
 	goto L130
 L132:
 	;
-	v393 = int32(*(*uint16)(unsafe.Add(mBase, uint32(base.I32_wrap_i64(v377)<<(uint(int32(1))%32))+uint32(_consts[871]))))
+	v393 = int32(*(*uint16)(unsafe.Add(mBase, uint32(base.I32_wrap_i64(v377)<<(uint(int32(1))%32))+uint32(_c_F_streamReplyWithRange[0]))))
 	*(*uint16)(unsafe.Add(mBase, uint32(v379+int32(-1)))) = uint16(v393)
 	v407 = v337
 	goto L92
@@ -6796,7 +6796,7 @@ L173:
 	;
 	v501 = int64(100)
 	v502 = base.I64_div_u_s(v495, v501)
-	v511 = int32(*(*uint16)(unsafe.Add(mBase, uint32(base.I32_wrap_i64(v495-v502*v501)<<(uint(int32(1))%32))+uint32(_consts[871]))))
+	v511 = int32(*(*uint16)(unsafe.Add(mBase, uint32(base.I32_wrap_i64(v495-v502*v501)<<(uint(int32(1))%32))+uint32(_c_F_streamReplyWithRange[0]))))
 	*(*uint16)(unsafe.Add(mBase, uint32(v408+int32(0)+v497))) = uint16(v511)
 	v514 = v497 + int32(-2)
 	if base.Ui64(int64(9999)) < base.Ui64(v495) {
@@ -6816,7 +6816,7 @@ L175:
 	goto L174
 L176:
 	;
-	v538 = int32(*(*uint16)(unsafe.Add(mBase, uint32(base.I32_wrap_i64(v522)<<(uint(int32(1))%32))+uint32(_consts[871]))))
+	v538 = int32(*(*uint16)(unsafe.Add(mBase, uint32(base.I32_wrap_i64(v522)<<(uint(int32(1))%32))+uint32(_c_F_streamReplyWithRange[0]))))
 	*(*uint16)(unsafe.Add(mBase, uint32(v524+int32(-1)))) = uint16(v538)
 	v552 = v482
 	goto L136
@@ -6945,7 +6945,7 @@ L191:
 	}
 L192:
 	;
-	v703 = *(*int64)(unsafe.Add(mBase, _consts[12]))
+	v703 = *(*int64)(unsafe.Add(mBase, _c_F_streamReplyWithRange[1]))
 	goto L193
 L193:
 	;
@@ -6981,7 +6981,7 @@ L195:
 	}
 L196:
 	;
-	v946 = *(*int64)(unsafe.Add(mBase, _consts[12]))
+	v946 = *(*int64)(unsafe.Add(mBase, _c_F_streamReplyWithRange[1]))
 	goto L244
 L197:
 	;
@@ -7297,7 +7297,7 @@ L238:
 L239:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v921)+16)) = l7
-	v930 = *(*int64)(unsafe.Add(mBase, _consts[12]))
+	v930 = *(*int64)(unsafe.Add(mBase, _c_F_streamReplyWithRange[1]))
 	goto L240
 L240:
 	;
@@ -7573,7 +7573,7 @@ L283:
 	;
 	v1039 = int64(100)
 	v1040 = base.I64_div_u_s(v1033, v1039)
-	v1049 = int32(*(*uint16)(unsafe.Add(mBase, uint32(base.I32_wrap_i64(v1033-v1040*v1039)<<(uint(int32(1))%32))+uint32(_consts[871]))))
+	v1049 = int32(*(*uint16)(unsafe.Add(mBase, uint32(base.I32_wrap_i64(v1033-v1040*v1039)<<(uint(int32(1))%32))+uint32(_c_F_streamReplyWithRange[0]))))
 	*(*uint16)(unsafe.Add(mBase, uint32(v21+int32(559)+v1035))) = uint16(v1049)
 	v1052 = v1035 + int32(-2)
 	if base.Ui64(int64(9999)) < base.Ui64(v1033) {
@@ -7593,7 +7593,7 @@ L285:
 	goto L284
 L286:
 	;
-	v1076 = int32(*(*uint16)(unsafe.Add(mBase, uint32(base.I32_wrap_i64(v1060)<<(uint(int32(1))%32))+uint32(_consts[871]))))
+	v1076 = int32(*(*uint16)(unsafe.Add(mBase, uint32(base.I32_wrap_i64(v1060)<<(uint(int32(1))%32))+uint32(_c_F_streamReplyWithRange[0]))))
 	*(*uint16)(unsafe.Add(mBase, uint32(v1062+int32(-1)))) = uint16(v1076)
 	v1090 = v1020
 	goto L246
@@ -7833,7 +7833,7 @@ L327:
 	;
 	v1184 = int64(100)
 	v1185 = base.I64_div_u_s(v1178, v1184)
-	v1194 = int32(*(*uint16)(unsafe.Add(mBase, uint32(base.I32_wrap_i64(v1178-v1185*v1184)<<(uint(int32(1))%32))+uint32(_consts[871]))))
+	v1194 = int32(*(*uint16)(unsafe.Add(mBase, uint32(base.I32_wrap_i64(v1178-v1185*v1184)<<(uint(int32(1))%32))+uint32(_c_F_streamReplyWithRange[0]))))
 	*(*uint16)(unsafe.Add(mBase, uint32(v1091+int32(0)+v1180))) = uint16(v1194)
 	v1197 = v1180 + int32(-2)
 	if base.Ui64(int64(9999)) < base.Ui64(v1178) {
@@ -7853,7 +7853,7 @@ L329:
 	goto L328
 L330:
 	;
-	v1221 = int32(*(*uint16)(unsafe.Add(mBase, uint32(base.I32_wrap_i64(v1205)<<(uint(int32(1))%32))+uint32(_consts[871]))))
+	v1221 = int32(*(*uint16)(unsafe.Add(mBase, uint32(base.I32_wrap_i64(v1205)<<(uint(int32(1))%32))+uint32(_c_F_streamReplyWithRange[0]))))
 	*(*uint16)(unsafe.Add(mBase, uint32(v1207+int32(-1)))) = uint16(v1221)
 	v1235 = v1165
 	goto L290
@@ -8303,7 +8303,7 @@ L2:
 L3:
 	;
 	v116 = int32(16)
-	v119 = F_raxSeek(m, v13+int32(32), int32(_a2407), v13+v116, v116)
+	v119 = F_raxSeek(m, v13+int32(32), int32(_a_F_streamReplyWithRangeFromConsumerPEL_0), v13+v116, v116)
 	mBase = m.M
 	v120 = m.ExcPending
 	if v120 != 0 {
@@ -8518,7 +8518,7 @@ L30:
 L31:
 	;
 	v591 = *(*int32)(unsafe.Add(mBase, uint32(v13)+44))
-	v593 = *(*int64)(unsafe.Add(mBase, _consts[12]))
+	v593 = *(*int64)(unsafe.Add(mBase, _c_F_streamReplyWithRangeFromConsumerPEL[0]))
 	goto L126
 L32:
 	;
@@ -8777,7 +8777,7 @@ L72:
 	;
 	v384 = int64(100)
 	v385 = base.I64_div_u_s(v378, v384)
-	v394 = int32(*(*uint16)(unsafe.Add(mBase, uint32(base.I32_wrap_i64(v378-v385*v384)<<(uint(int32(1))%32))+uint32(_consts[871]))))
+	v394 = int32(*(*uint16)(unsafe.Add(mBase, uint32(base.I32_wrap_i64(v378-v385*v384)<<(uint(int32(1))%32))+uint32(_c_F_streamReplyWithRangeFromConsumerPEL[1]))))
 	*(*uint16)(unsafe.Add(mBase, uint32(v13+int32(335)+v380))) = uint16(v394)
 	v397 = v380 + int32(-2)
 	if base.Ui64(int64(9999)) < base.Ui64(v378) {
@@ -8797,7 +8797,7 @@ L74:
 	goto L73
 L75:
 	;
-	v421 = int32(*(*uint16)(unsafe.Add(mBase, uint32(base.I32_wrap_i64(v405)<<(uint(int32(1))%32))+uint32(_consts[871]))))
+	v421 = int32(*(*uint16)(unsafe.Add(mBase, uint32(base.I32_wrap_i64(v405)<<(uint(int32(1))%32))+uint32(_c_F_streamReplyWithRangeFromConsumerPEL[1]))))
 	*(*uint16)(unsafe.Add(mBase, uint32(v407+int32(-1)))) = uint16(v421)
 	v435 = v365
 	goto L35
@@ -9037,7 +9037,7 @@ L116:
 	;
 	v529 = int64(100)
 	v530 = base.I64_div_u_s(v523, v529)
-	v539 = int32(*(*uint16)(unsafe.Add(mBase, uint32(base.I32_wrap_i64(v523-v530*v529)<<(uint(int32(1))%32))+uint32(_consts[871]))))
+	v539 = int32(*(*uint16)(unsafe.Add(mBase, uint32(base.I32_wrap_i64(v523-v530*v529)<<(uint(int32(1))%32))+uint32(_c_F_streamReplyWithRangeFromConsumerPEL[1]))))
 	*(*uint16)(unsafe.Add(mBase, uint32(v436+int32(0)+v525))) = uint16(v539)
 	v542 = v525 + int32(-2)
 	if base.Ui64(int64(9999)) < base.Ui64(v523) {
@@ -9057,7 +9057,7 @@ L118:
 	goto L117
 L119:
 	;
-	v566 = int32(*(*uint16)(unsafe.Add(mBase, uint32(base.I32_wrap_i64(v550)<<(uint(int32(1))%32))+uint32(_consts[871]))))
+	v566 = int32(*(*uint16)(unsafe.Add(mBase, uint32(base.I32_wrap_i64(v550)<<(uint(int32(1))%32))+uint32(_c_F_streamReplyWithRangeFromConsumerPEL[1]))))
 	*(*uint16)(unsafe.Add(mBase, uint32(v552+int32(-1)))) = uint16(v566)
 	v580 = v510
 	goto L79
@@ -9374,7 +9374,7 @@ L5:
 L6:
 	;
 	v50 = int32(0)
-	v52 = F_raxSeek(m, v30, int32(_a67), v50, v50)
+	v52 = F_raxSeek(m, v30, int32(_a_F_streamRewriteTrimArgument_0), v50, v50)
 	mBase = m.M
 	v53 = m.ExcPending
 	if v53 != 0 {
@@ -9657,7 +9657,7 @@ L50:
 	;
 	v162 = int64(100)
 	v163 = base.I64_div_u_s(v156, v162)
-	v172 = int32(*(*uint16)(unsafe.Add(mBase, uint32(base.I32_wrap_i64(v156-v163*v162)<<(uint(int32(1))%32))+uint32(_consts[871]))))
+	v172 = int32(*(*uint16)(unsafe.Add(mBase, uint32(base.I32_wrap_i64(v156-v163*v162)<<(uint(int32(1))%32))+uint32(_c_F_streamRewriteTrimArgument[0]))))
 	*(*uint16)(unsafe.Add(mBase, uint32(v10+int32(31)+v158))) = uint16(v172)
 	v175 = v158 + int32(-2)
 	if base.Ui64(int64(9999)) < base.Ui64(v156) {
@@ -9677,7 +9677,7 @@ L52:
 	goto L51
 L53:
 	;
-	v199 = int32(*(*uint16)(unsafe.Add(mBase, uint32(base.I32_wrap_i64(v183)<<(uint(int32(1))%32))+uint32(_consts[871]))))
+	v199 = int32(*(*uint16)(unsafe.Add(mBase, uint32(base.I32_wrap_i64(v183)<<(uint(int32(1))%32))+uint32(_c_F_streamRewriteTrimArgument[0]))))
 	*(*uint16)(unsafe.Add(mBase, uint32(v185+int32(-1)))) = uint16(v199)
 	v213 = v143
 	goto L13
@@ -9936,7 +9936,7 @@ L97:
 	;
 	v309 = int64(100)
 	v310 = base.I64_div_u_s(v303, v309)
-	v319 = int32(*(*uint16)(unsafe.Add(mBase, uint32(base.I32_wrap_i64(v303-v310*v309)<<(uint(int32(1))%32))+uint32(_consts[871]))))
+	v319 = int32(*(*uint16)(unsafe.Add(mBase, uint32(base.I32_wrap_i64(v303-v310*v309)<<(uint(int32(1))%32))+uint32(_c_F_streamRewriteTrimArgument[0]))))
 	*(*uint16)(unsafe.Add(mBase, uint32(v214+int32(0)+v305))) = uint16(v319)
 	v322 = v305 + int32(-2)
 	if base.Ui64(int64(9999)) < base.Ui64(v303) {
@@ -9956,7 +9956,7 @@ L99:
 	goto L98
 L100:
 	;
-	v346 = int32(*(*uint16)(unsafe.Add(mBase, uint32(base.I32_wrap_i64(v330)<<(uint(int32(1))%32))+uint32(_consts[871]))))
+	v346 = int32(*(*uint16)(unsafe.Add(mBase, uint32(base.I32_wrap_i64(v330)<<(uint(int32(1))%32))+uint32(_c_F_streamRewriteTrimArgument[0]))))
 	*(*uint16)(unsafe.Add(mBase, uint32(v332+int32(-1)))) = uint16(v346)
 	v360 = v290
 	goto L60

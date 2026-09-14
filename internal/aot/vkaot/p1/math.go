@@ -318,7 +318,7 @@ func F_math_randomseed(m *base.Module, l0 int32) int32 {
 	if v6 != 0 {
 		return int32(0)
 	} else {
-		*(*int64)(unsafe.Add(mBase, _consts[343])) = base.I64_extend_i32_u(v3 + int32(-1))
+		*(*int64)(unsafe.Add(mBase, _c_F_math_randomseed[0])) = base.I64_extend_i32_u(v3 + int32(-1))
 		return int32(0)
 	}
 }

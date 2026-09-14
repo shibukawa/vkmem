@@ -237,7 +237,7 @@ func F_rioFileWrite(m *base.Module, l0 int32, l1 int32, l2 int32) int32 {
 	}
 L1:
 	;
-	F__serverAssert(m, int32(_a2015), int32(_a2016), int32(132))
+	F__serverAssert(m, int32(_a_F_rioFileWrite_0), int32(_a_F_rioFileWrite_1), int32(132))
 	mBase = m.M
 	v163 = m.ExcPending
 	if v163 != 0 {
@@ -247,7 +247,7 @@ L1:
 	}
 L2:
 	;
-	F__serverAssert(m, int32(_a2017), int32(_a2016), int32(131))
+	F__serverAssert(m, int32(_a_F_rioFileWrite_2), int32(_a_F_rioFileWrite_1), int32(131))
 	mBase = m.M
 	v157 = m.ExcPending
 	if v157 != 0 {
@@ -257,7 +257,7 @@ L2:
 	}
 L3:
 	;
-	F__serverAssert(m, int32(_a2018), int32(_a2016), int32(119))
+	F__serverAssert(m, int32(_a_F_rioFileWrite_3), int32(_a_F_rioFileWrite_1), int32(119))
 	mBase = m.M
 	v151 = m.ExcPending
 	if v151 != 0 {
@@ -574,7 +574,7 @@ func F_rioInitWithBuffer(m *base.Module, l0 int32, l1 int32) {
 	_ = mBase
 	var v7 int32
 	_ = v7
-	v7 = F__emscripten_memcpy_bulkmem(m, l0, int32(_a201), int32(80))
+	v7 = F__emscripten_memcpy_bulkmem(m, l0, int32(_a_F_rioInitWithBuffer_0), int32(80))
 	mBase = m.M
 	*(*int64)(unsafe.Add(mBase, uint32(v7)+56)) = int64(0)
 	*(*int32)(unsafe.Add(mBase, uint32(v7)+48)) = l1
@@ -641,7 +641,7 @@ func F_rioInitWithConnset(m *base.Module, l0 int32, l1 int32, l2 int32) {
 	_ = v101
 	var v102 int32
 	_ = v102
-	v13 = F__emscripten_memcpy_bulkmem(m, l0, int32(_a2019), int32(80))
+	v13 = F__emscripten_memcpy_bulkmem(m, l0, int32(_a_F_rioInitWithConnset_0), int32(80))
 	mBase = m.M
 	v16 = l2 << (uint(int32(2)) % 32)
 	v17 = F_valkey_malloc(m, v16)
@@ -917,7 +917,7 @@ func F_rioRead_2(m *base.Module, l0 int32, l1 int32) int32 {
 	var v51 int32
 	_ = v51
 	v3 = int32(0)
-	v7 = int32(*(*uint8)(unsafe.Add(mBase, _consts[916])))
+	v7 = int32(*(*uint8)(unsafe.Add(mBase, _c_F_rioRead_2[0])))
 	if v7&int32(5) != 0 {
 		v51 = v3
 		goto L1
@@ -934,7 +934,7 @@ L2:
 	goto L3
 L3:
 	;
-	v16 = *(*int32)(unsafe.Add(mBase, _consts[917]))
+	v16 = *(*int32)(unsafe.Add(mBase, _c_F_rioRead_2[1]))
 	if base.Ui32(v16) < base.Ui32(v11) {
 		goto L6
 	} else {
@@ -947,7 +947,7 @@ L4:
 L5:
 	;
 	v34 = int32(0)
-	v35 = *(*int32)(unsafe.Add(mBase, _consts[918]))
+	v35 = *(*int32)(unsafe.Add(mBase, _c_F_rioRead_2[2]))
 	if v35 == v34 {
 		goto L15
 	} else {
@@ -978,8 +978,8 @@ L10:
 	goto L11
 L11:
 	;
-	v21 = *(*int32)(unsafe.Add(mBase, _consts[919]))
-	v22 = m.T0[v21].(func(*base.Module, int32, int32, int32) int32)(m, int32(_a2497), v10, v19)
+	v21 = *(*int32)(unsafe.Add(mBase, _c_F_rioRead_2[3]))
+	v22 = m.T0[v21].(func(*base.Module, int32, int32, int32) int32)(m, int32(_a_F_rioRead_2_0), v10, v19)
 	mBase = m.M
 	v25 = m.ExcPending
 	if v25 != 0 {
@@ -1000,14 +1000,14 @@ L13:
 L14:
 	;
 	v26 = int32(0)
-	v28 = *(*int64)(unsafe.Add(mBase, _consts[916]))
-	*(*int64)(unsafe.Add(mBase, _consts[916])) = v28 | int64(1)
+	v28 = *(*int64)(unsafe.Add(mBase, _c_F_rioRead_2[0]))
+	*(*int64)(unsafe.Add(mBase, _c_F_rioRead_2[0])) = v28 | int64(1)
 	return v26
 L15:
 	;
 	v41 = int32(0)
-	v43 = *(*int32)(unsafe.Add(mBase, _consts[920]))
-	*(*int32)(unsafe.Add(mBase, _consts[920])) = v43 + v19
+	v43 = *(*int32)(unsafe.Add(mBase, _c_F_rioRead_2[4]))
+	*(*int32)(unsafe.Add(mBase, _c_F_rioRead_2[4])) = v43 + v19
 	v47 = v11 - v19
 	if v47 != 0 {
 		v10 = v10 + v19
@@ -1018,7 +1018,7 @@ L15:
 	}
 L16:
 	;
-	m.T0[v35].(func(*base.Module, int32, int32, int32))(m, int32(_a2497), v10, v19)
+	m.T0[v35].(func(*base.Module, int32, int32, int32))(m, int32(_a_F_rioRead_2_0), v10, v19)
 	mBase = m.M
 	v40 = m.ExcPending
 	if v40 != 0 {

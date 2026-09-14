@@ -79,7 +79,7 @@ func F_clientsCronResizeOutputBuffer(m *base.Module, l0 int32, l1 int64) int32 {
 	var v106 int32
 	_ = v106
 	v3 = int32(0)
-	v8 = *(*int32)(unsafe.Add(mBase, _consts[681]))
+	v8 = *(*int32)(unsafe.Add(mBase, _c_F_clientsCronResizeOutputBuffer[0]))
 	if v8 == v3 {
 		return int32(0)
 	} else {
@@ -100,7 +100,7 @@ func F_clientsCronResizeOutputBuffer(m *base.Module, l0 int32, l1 int64) int32 {
 						v62 = v35
 						v63 = v36
 						v65 = int32(0)
-						v66 = *(*int32)(unsafe.Add(mBase, _consts[682]))
+						v66 = *(*int32)(unsafe.Add(mBase, _c_F_clientsCronResizeOutputBuffer[1]))
 						if v66 < v65 {
 						} else {
 							v69 = *(*int64)(unsafe.Add(mBase, uint32(l0)+312))
@@ -150,7 +150,7 @@ func F_clientsCronResizeOutputBuffer(m *base.Module, l0 int32, l1 int64) int32 {
 							v62 = v35
 							v63 = v36
 							v65 = int32(0)
-							v66 = *(*int32)(unsafe.Add(mBase, _consts[682]))
+							v66 = *(*int32)(unsafe.Add(mBase, _c_F_clientsCronResizeOutputBuffer[1]))
 							if v66 < v65 {
 							} else {
 								v69 = *(*int64)(unsafe.Add(mBase, uint32(l0)+312))
@@ -196,13 +196,13 @@ func F_clientsCronResizeOutputBuffer(m *base.Module, l0 int32, l1 int64) int32 {
 							}
 						} else {
 							v43 = int32(0)
-							v46 = *(*int64)(unsafe.Add(mBase, _consts[683]))
-							*(*int64)(unsafe.Add(mBase, _consts[683])) = v46 + int64(1)
+							v46 = *(*int64)(unsafe.Add(mBase, _c_F_clientsCronResizeOutputBuffer[2]))
+							*(*int64)(unsafe.Add(mBase, _c_F_clientsCronResizeOutputBuffer[2])) = v46 + int64(1)
 							if v38 == v43 {
 								v62 = v43
 								v63 = v36
 								v65 = int32(0)
-								v66 = *(*int32)(unsafe.Add(mBase, _consts[682]))
+								v66 = *(*int32)(unsafe.Add(mBase, _c_F_clientsCronResizeOutputBuffer[1]))
 								if v66 < v65 {
 								} else {
 									v69 = *(*int64)(unsafe.Add(mBase, uint32(l0)+312))
@@ -256,7 +256,7 @@ func F_clientsCronResizeOutputBuffer(m *base.Module, l0 int32, l1 int64) int32 {
 								v56 = v55
 								v60 = *(*int32)(unsafe.Add(mBase, uint32(l0)+180))
 								if base.Ui32(v56) < base.Ui32(v60) {
-									F__serverAssertWithInfo(m, l0, int32(0), int32(_a1239), int32(_a1240), int32(984))
+									F__serverAssertWithInfo(m, l0, int32(0), int32(_a_F_clientsCronResizeOutputBuffer_0), int32(_a_F_clientsCronResizeOutputBuffer_1), int32(984))
 									mBase = m.M
 									v106 = m.ExcPending
 									if v106 != 0 {
@@ -272,7 +272,7 @@ func F_clientsCronResizeOutputBuffer(m *base.Module, l0 int32, l1 int64) int32 {
 									v62 = v56
 									v63 = int32(0)
 									v65 = int32(0)
-									v66 = *(*int32)(unsafe.Add(mBase, _consts[682]))
+									v66 = *(*int32)(unsafe.Add(mBase, _c_F_clientsCronResizeOutputBuffer[1]))
 									if v66 < v65 {
 									} else {
 										v69 = *(*int64)(unsafe.Add(mBase, uint32(l0)+312))
@@ -330,7 +330,7 @@ func F_clientsCronResizeOutputBuffer(m *base.Module, l0 int32, l1 int64) int32 {
 							v62 = v35
 							v63 = v36
 							v65 = int32(0)
-							v66 = *(*int32)(unsafe.Add(mBase, _consts[682]))
+							v66 = *(*int32)(unsafe.Add(mBase, _c_F_clientsCronResizeOutputBuffer[1]))
 							if v66 < v65 {
 							} else {
 								v69 = *(*int64)(unsafe.Add(mBase, uint32(l0)+312))
@@ -380,7 +380,7 @@ func F_clientsCronResizeOutputBuffer(m *base.Module, l0 int32, l1 int64) int32 {
 								v62 = v35
 								v63 = v36
 								v65 = int32(0)
-								v66 = *(*int32)(unsafe.Add(mBase, _consts[682]))
+								v66 = *(*int32)(unsafe.Add(mBase, _c_F_clientsCronResizeOutputBuffer[1]))
 								if v66 < v65 {
 								} else {
 									v69 = *(*int64)(unsafe.Add(mBase, uint32(l0)+312))
@@ -426,13 +426,13 @@ func F_clientsCronResizeOutputBuffer(m *base.Module, l0 int32, l1 int64) int32 {
 								}
 							} else {
 								v43 = int32(0)
-								v46 = *(*int64)(unsafe.Add(mBase, _consts[683]))
-								*(*int64)(unsafe.Add(mBase, _consts[683])) = v46 + int64(1)
+								v46 = *(*int64)(unsafe.Add(mBase, _c_F_clientsCronResizeOutputBuffer[2]))
+								*(*int64)(unsafe.Add(mBase, _c_F_clientsCronResizeOutputBuffer[2])) = v46 + int64(1)
 								if v38 == v43 {
 									v62 = v43
 									v63 = v36
 									v65 = int32(0)
-									v66 = *(*int32)(unsafe.Add(mBase, _consts[682]))
+									v66 = *(*int32)(unsafe.Add(mBase, _c_F_clientsCronResizeOutputBuffer[1]))
 									if v66 < v65 {
 									} else {
 										v69 = *(*int64)(unsafe.Add(mBase, uint32(l0)+312))
@@ -486,7 +486,7 @@ func F_clientsCronResizeOutputBuffer(m *base.Module, l0 int32, l1 int64) int32 {
 									v56 = v55
 									v60 = *(*int32)(unsafe.Add(mBase, uint32(l0)+180))
 									if base.Ui32(v56) < base.Ui32(v60) {
-										F__serverAssertWithInfo(m, l0, int32(0), int32(_a1239), int32(_a1240), int32(984))
+										F__serverAssertWithInfo(m, l0, int32(0), int32(_a_F_clientsCronResizeOutputBuffer_0), int32(_a_F_clientsCronResizeOutputBuffer_1), int32(984))
 										mBase = m.M
 										v106 = m.ExcPending
 										if v106 != 0 {
@@ -502,7 +502,7 @@ func F_clientsCronResizeOutputBuffer(m *base.Module, l0 int32, l1 int64) int32 {
 										v62 = v56
 										v63 = int32(0)
 										v65 = int32(0)
-										v66 = *(*int32)(unsafe.Add(mBase, _consts[682]))
+										v66 = *(*int32)(unsafe.Add(mBase, _c_F_clientsCronResizeOutputBuffer[1]))
 										if v66 < v65 {
 										} else {
 											v69 = *(*int64)(unsafe.Add(mBase, uint32(l0)+312))
@@ -552,8 +552,8 @@ func F_clientsCronResizeOutputBuffer(m *base.Module, l0 int32, l1 int64) int32 {
 						}
 					} else {
 						v22 = int32(0)
-						v24 = *(*int64)(unsafe.Add(mBase, _consts[684]))
-						*(*int64)(unsafe.Add(mBase, _consts[684])) = v24 + int64(1)
+						v24 = *(*int64)(unsafe.Add(mBase, _c_F_clientsCronResizeOutputBuffer[3]))
+						*(*int64)(unsafe.Add(mBase, _c_F_clientsCronResizeOutputBuffer[3])) = v24 + int64(1)
 						v28 = int32(1023)
 						if base.Ui32(v28) < base.Ui32(v18) {
 							v31 = v18
@@ -563,7 +563,7 @@ func F_clientsCronResizeOutputBuffer(m *base.Module, l0 int32, l1 int64) int32 {
 						v56 = v31 + int32(1)
 						v60 = *(*int32)(unsafe.Add(mBase, uint32(l0)+180))
 						if base.Ui32(v56) < base.Ui32(v60) {
-							F__serverAssertWithInfo(m, l0, int32(0), int32(_a1239), int32(_a1240), int32(984))
+							F__serverAssertWithInfo(m, l0, int32(0), int32(_a_F_clientsCronResizeOutputBuffer_0), int32(_a_F_clientsCronResizeOutputBuffer_1), int32(984))
 							mBase = m.M
 							v106 = m.ExcPending
 							if v106 != 0 {
@@ -579,7 +579,7 @@ func F_clientsCronResizeOutputBuffer(m *base.Module, l0 int32, l1 int64) int32 {
 							v62 = v56
 							v63 = int32(0)
 							v65 = int32(0)
-							v66 = *(*int32)(unsafe.Add(mBase, _consts[682]))
+							v66 = *(*int32)(unsafe.Add(mBase, _c_F_clientsCronResizeOutputBuffer[1]))
 							if v66 < v65 {
 							} else {
 								v69 = *(*int64)(unsafe.Add(mBase, uint32(l0)+312))
@@ -752,7 +752,7 @@ func F_freeClientsInAsyncFreeQueue(m *base.Module) int32 {
 	v7 = m.G0
 	v9 = v7 - int32(48)
 	m.G0 = v9
-	v12 = *(*int32)(unsafe.Add(mBase, _consts[413]))
+	v12 = *(*int32)(unsafe.Add(mBase, _c_F_freeClientsInAsyncFreeQueue[0]))
 	v14 = v9 + int32(40)
 	v15 = *(*int32)(unsafe.Add(mBase, uint32(v12)))
 	*(*int32)(unsafe.Add(mBase, uint32(v14)+4)) = int32(0)
@@ -836,11 +836,11 @@ L11:
 	}
 L12:
 	;
-	v86 = int32(_a69)
-	v87 = *(*int64)(unsafe.Add(mBase, _consts[37]))
+	v86 = int32(_a_F_freeClientsInAsyncFreeQueue_0)
+	v87 = *(*int64)(unsafe.Add(mBase, _c_F_freeClientsInAsyncFreeQueue[1]))
 	v88 = *(*int32)(unsafe.Add(mBase, uint32(v42)+104))
 	v89 = *(*int64)(unsafe.Add(mBase, uint32(v88)+176))
-	v92 = int64(*(*int32)(unsafe.Add(mBase, _consts[429])))
+	v92 = int64(*(*int32)(unsafe.Add(mBase, _c_F_freeClientsInAsyncFreeQueue[2])))
 	if v87-v89 <= v92 {
 		v139 = v37
 		goto L9
@@ -858,10 +858,10 @@ L13:
 L14:
 	;
 	v62 = *(*int32)(unsafe.Add(mBase, uint32(v42)+104))
-	v63 = int32(_a69)
-	v64 = *(*int64)(unsafe.Add(mBase, _consts[37]))
+	v63 = int32(_a_F_freeClientsInAsyncFreeQueue_0)
+	v64 = *(*int64)(unsafe.Add(mBase, _c_F_freeClientsInAsyncFreeQueue[1]))
 	*(*int64)(unsafe.Add(mBase, uint32(v62)+176)) = v64
-	v67 = *(*int32)(unsafe.Add(mBase, _consts[15]))
+	v67 = *(*int32)(unsafe.Add(mBase, _c_F_freeClientsInAsyncFreeQueue[3]))
 	if int32(1) < v67 {
 		goto L12
 	} else {
@@ -900,9 +900,9 @@ L19:
 	;
 	*(*int64)(unsafe.Add(mBase, uint32(v9)+16)) = v70
 	*(*int32)(unsafe.Add(mBase, uint32(v9)+24)) = v71
-	v76 = *(*int32)(unsafe.Add(mBase, _consts[429]))
+	v76 = *(*int32)(unsafe.Add(mBase, _c_F_freeClientsInAsyncFreeQueue[2]))
 	*(*int32)(unsafe.Add(mBase, uint32(v9)+28)) = v76
-	F__serverLog(m, int32(1), int32(_a801), v9+int32(16))
+	F__serverLog(m, int32(1), int32(_a_F_freeClientsInAsyncFreeQueue_1), v9+int32(16))
 	mBase = m.M
 	v83 = m.ExcPending
 	if v83 != 0 {
@@ -915,7 +915,7 @@ L20:
 	goto L12
 L21:
 	;
-	v95 = *(*int32)(unsafe.Add(mBase, _consts[15]))
+	v95 = *(*int32)(unsafe.Add(mBase, _c_F_freeClientsInAsyncFreeQueue[3]))
 	if int32(2) < v95 {
 		goto L22
 	} else {
@@ -932,10 +932,10 @@ L23:
 	v99 = *(*int64)(unsafe.Add(mBase, uint32(v98)+176))
 	v100 = *(*int64)(unsafe.Add(mBase, uint32(v42)))
 	*(*int64)(unsafe.Add(mBase, uint32(v9)+8)) = v100
-	v103 = *(*int64)(unsafe.Add(mBase, _consts[37]))
+	v103 = *(*int64)(unsafe.Add(mBase, _c_F_freeClientsInAsyncFreeQueue[1]))
 	v104 = v103 - v99
 	*(*uint32)(unsafe.Add(mBase, uint32(v9))) = uint32(v104)
-	F__serverLog(m, int32(2), int32(_a802), v9)
+	F__serverLog(m, int32(2), int32(_a_F_freeClientsInAsyncFreeQueue_2), v9)
 	mBase = m.M
 	v109 = m.ExcPending
 	if v109 != 0 {
@@ -985,7 +985,7 @@ L29:
 	}
 L30:
 	;
-	v134 = *(*int32)(unsafe.Add(mBase, _consts[413]))
+	v134 = *(*int32)(unsafe.Add(mBase, _c_F_freeClientsInAsyncFreeQueue[0]))
 	F_listDelNode(m, v134, v38)
 	mBase = m.M
 	v136 = m.ExcPending
@@ -1216,7 +1216,7 @@ func F_processClientsWaitingReplicas(m *base.Module) {
 	v12 = m.G0
 	v14 = v12 - int32(16)
 	m.G0 = v14
-	v17 = *(*int32)(unsafe.Add(mBase, _consts[595]))
+	v17 = *(*int32)(unsafe.Add(mBase, _c_F_processClientsWaitingReplicas[0]))
 	v18 = *(*int32)(unsafe.Add(mBase, uint32(v17)))
 	*(*int32)(unsafe.Add(mBase, uint32(v14)+4)) = int32(0)
 	*(*int32)(unsafe.Add(mBase, uint32(v14))) = v18
@@ -1303,7 +1303,7 @@ L11:
 	}
 L12:
 	;
-	v245 = *(*int64)(unsafe.Add(mBase, _consts[524]))
+	v245 = *(*int64)(unsafe.Add(mBase, _c_F_processClientsWaitingReplicas[1]))
 	v246 = base.B2i32(v242 <= v245)
 	if v241 <= v246 {
 		goto L60
@@ -1367,7 +1367,7 @@ L18:
 	}
 L19:
 	;
-	v61 = *(*int32)(unsafe.Add(mBase, _consts[182]))
+	v61 = *(*int32)(unsafe.Add(mBase, _c_F_processClientsWaitingReplicas[2]))
 	if v61 != 0 {
 		goto L16
 	} else {
@@ -1375,7 +1375,7 @@ L19:
 	}
 L20:
 	;
-	F_addReplyError(m, v51, int32(_a1055))
+	F_addReplyError(m, v51, int32(_a_F_processClientsWaitingReplicas_0))
 	mBase = m.M
 	v64 = m.ExcPending
 	if v64 != 0 {
@@ -1395,7 +1395,7 @@ L22:
 	goto L10
 L23:
 	;
-	v73 = *(*int32)(unsafe.Add(mBase, _consts[188]))
+	v73 = *(*int32)(unsafe.Add(mBase, _c_F_processClientsWaitingReplicas[3]))
 	v75 = v14 + int32(8)
 	v76 = *(*int32)(unsafe.Add(mBase, uint32(v73)))
 	*(*int32)(unsafe.Add(mBase, uint32(v75)+4)) = int32(0)
@@ -1502,7 +1502,7 @@ L39:
 	goto L15
 L40:
 	;
-	v138 = *(*int32)(unsafe.Add(mBase, _consts[188]))
+	v138 = *(*int32)(unsafe.Add(mBase, _c_F_processClientsWaitingReplicas[3]))
 	v140 = v14 + int32(8)
 	v141 = *(*int32)(unsafe.Add(mBase, uint32(v138)))
 	*(*int32)(unsafe.Add(mBase, uint32(v140)+4)) = int32(0)

@@ -501,7 +501,7 @@ L7:
 	}
 L8:
 	;
-	v136 = F_sdsnew(m, int32(_a636))
+	v136 = F_sdsnew(m, int32(_a_F_functionsCreateWithLibraryCtx_0))
 	mBase = m.M
 	v137 = m.ExcPending
 	if v137 != 0 {
@@ -628,7 +628,7 @@ L29:
 L30:
 	;
 	v149 = int32(0)
-	v150 = *(*int32)(unsafe.Add(mBase, _consts[332]))
+	v150 = *(*int32)(unsafe.Add(mBase, _c_F_functionsCreateWithLibraryCtx[0]))
 	if v150 == v149 {
 		goto L41
 	} else {
@@ -654,7 +654,7 @@ L32:
 L33:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v22))) = v139
-	v146 = F_sdscatfmt(m, v142, int32(_a637), v22)
+	v146 = F_sdscatfmt(m, v142, int32(_a_F_functionsCreateWithLibraryCtx_1), v22)
 	mBase = m.M
 	v147 = m.ExcPending
 	if v147 != 0 {
@@ -679,7 +679,7 @@ L35:
 	}
 L36:
 	;
-	F__serverAssert(m, int32(_a638), int32(_a639), int32(278))
+	F__serverAssert(m, int32(_a_F_functionsCreateWithLibraryCtx_2), int32(_a_F_functionsCreateWithLibraryCtx_3), int32(278))
 	mBase = m.M
 	v722 = m.ExcPending
 	if v722 != 0 {
@@ -689,7 +689,7 @@ L36:
 	}
 L37:
 	;
-	F__serverAssert(m, int32(_a640), int32(_a639), int32(277))
+	F__serverAssert(m, int32(_a_F_functionsCreateWithLibraryCtx_4), int32(_a_F_functionsCreateWithLibraryCtx_3), int32(277))
 	mBase = m.M
 	v716 = m.ExcPending
 	if v716 != 0 {
@@ -699,7 +699,7 @@ L37:
 	}
 L38:
 	;
-	F__serverAssert(m, int32(_a641), int32(_a639), int32(1055))
+	F__serverAssert(m, int32(_a_F_functionsCreateWithLibraryCtx_5), int32(_a_F_functionsCreateWithLibraryCtx_3), int32(1055))
 	mBase = m.M
 	v710 = m.ExcPending
 	if v710 != 0 {
@@ -709,7 +709,7 @@ L38:
 	}
 L39:
 	;
-	F__serverAssert(m, int32(_a642), int32(_a639), int32(1049))
+	F__serverAssert(m, int32(_a_F_functionsCreateWithLibraryCtx_6), int32(_a_F_functionsCreateWithLibraryCtx_3), int32(1049))
 	mBase = m.M
 	v704 = m.ExcPending
 	if v704 != 0 {
@@ -719,7 +719,7 @@ L39:
 	}
 L40:
 	;
-	F__serverAssert(m, int32(_a643), int32(_a639), int32(1048))
+	F__serverAssert(m, int32(_a_F_functionsCreateWithLibraryCtx_7), int32(_a_F_functionsCreateWithLibraryCtx_3), int32(1048))
 	mBase = m.M
 	v698 = m.ExcPending
 	if v698 != 0 {
@@ -729,7 +729,7 @@ L40:
 	}
 L41:
 	;
-	F__serverAssert(m, int32(_a644), int32(_a639), int32(257))
+	F__serverAssert(m, int32(_a_F_functionsCreateWithLibraryCtx_8), int32(_a_F_functionsCreateWithLibraryCtx_3), int32(257))
 	mBase = m.M
 	v692 = m.ExcPending
 	if v692 != 0 {
@@ -778,7 +778,7 @@ L45:
 	}
 L46:
 	;
-	v160 = *(*int32)(unsafe.Add(mBase, _consts[332]))
+	v160 = *(*int32)(unsafe.Add(mBase, _c_F_functionsCreateWithLibraryCtx[0]))
 	v161 = *(*int32)(unsafe.Add(mBase, uint32(v160)+12))
 	v162 = F_dictAdd(m, v161, v139, v157)
 	mBase = m.M
@@ -825,7 +825,7 @@ L51:
 L52:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v22)+32)) = v36
-	v176 = F_sdscatfmt(m, v170, int32(_a645), v22+int32(32))
+	v176 = F_sdscatfmt(m, v170, int32(_a_F_functionsCreateWithLibraryCtx_9), v22+int32(32))
 	mBase = m.M
 	v177 = m.ExcPending
 	if v177 != 0 {
@@ -872,7 +872,7 @@ L57:
 	}
 L58:
 	;
-	v189 = F_dictCreate(m, int32(_a646))
+	v189 = F_dictCreate(m, int32(_a_F_functionsCreateWithLibraryCtx_10))
 	mBase = m.M
 	v190 = m.ExcPending
 	if v190 != 0 {
@@ -1102,7 +1102,7 @@ L84:
 	}
 L85:
 	;
-	v410 = F_sdsnew(m, int32(_a647))
+	v410 = F_sdsnew(m, int32(_a_F_functionsCreateWithLibraryCtx_11))
 	mBase = m.M
 	v411 = m.ExcPending
 	if v411 != 0 {
@@ -1268,7 +1268,7 @@ L109:
 	}
 L110:
 	;
-	v369 = F_sdsnew(m, int32(_a648))
+	v369 = F_sdsnew(m, int32(_a_F_functionsCreateWithLibraryCtx_12))
 	mBase = m.M
 	v370 = m.ExcPending
 	if v370 != 0 {
@@ -1312,7 +1312,7 @@ L114:
 	}
 L115:
 	;
-	F__serverAssert(m, int32(_a649), int32(_a639), int32(300))
+	F__serverAssert(m, int32(_a_F_functionsCreateWithLibraryCtx_13), int32(_a_F_functionsCreateWithLibraryCtx_3), int32(300))
 	mBase = m.M
 	v388 = m.ExcPending
 	if v388 != 0 {
@@ -1399,7 +1399,7 @@ L127:
 	}
 L128:
 	;
-	v516 = F_sdsnew(m, int32(_a650))
+	v516 = F_sdsnew(m, int32(_a_F_functionsCreateWithLibraryCtx_14))
 	mBase = m.M
 	v517 = m.ExcPending
 	if v517 != 0 {
@@ -1665,7 +1665,7 @@ L164:
 	v662 = F_objectGetVal(m, v661)
 	mBase = m.M
 	*(*int32)(unsafe.Add(mBase, uint32(v22)+16)) = v662
-	v667 = F_sdscatfmt(m, v658, int32(_a651), v22+int32(16))
+	v667 = F_sdscatfmt(m, v658, int32(_a_F_functionsCreateWithLibraryCtx_15), v22+int32(16))
 	mBase = m.M
 	v668 = m.ExcPending
 	if v668 != 0 {
@@ -1917,21 +1917,21 @@ func F_functionsInit(m *base.Module) int32 {
 	if v6 != 0 {
 		return int32(0)
 	} else {
-		v8 = F_dictCreate(m, int32(_a617))
+		v8 = F_dictCreate(m, int32(_a_F_functionsInit_0))
 		mBase = m.M
 		v9 = m.ExcPending
 		if v9 != 0 {
 			return int32(0)
 		} else {
 			*(*int32)(unsafe.Add(mBase, uint32(v3))) = v8
-			v12 = F_dictCreate(m, int32(_a618))
+			v12 = F_dictCreate(m, int32(_a_F_functionsInit_1))
 			mBase = m.M
 			v13 = m.ExcPending
 			if v13 != 0 {
 				return int32(0)
 			} else {
 				*(*int32)(unsafe.Add(mBase, uint32(v3)+4)) = v12
-				v16 = F_dictCreate(m, int32(_a619))
+				v16 = F_dictCreate(m, int32(_a_F_functionsInit_2))
 				mBase = m.M
 				v17 = m.ExcPending
 				if v17 != 0 {
@@ -1946,7 +1946,7 @@ func F_functionsInit(m *base.Module) int32 {
 					} else {
 						v22 = int32(0)
 						*(*int32)(unsafe.Add(mBase, uint32(v3)+8)) = v22
-						*(*int32)(unsafe.Add(mBase, _consts[332])) = v3
+						*(*int32)(unsafe.Add(mBase, _c_F_functionsInit[0])) = v3
 						return v22
 					}
 				}
@@ -2189,7 +2189,7 @@ func F_functionsLibCtxReleaseCurrent(m *base.Module, l0 int32, l1 int32) {
 	var v32 int32
 	_ = v32
 	if l0 == int32(0) {
-		v15 = *(*int32)(unsafe.Add(mBase, _consts[332]))
+		v15 = *(*int32)(unsafe.Add(mBase, _c_F_functionsLibCtxReleaseCurrent[0]))
 		F_functionsLibCtxClear(m, v15, l1)
 		mBase = m.M
 		v17 = m.ExcPending
@@ -2249,7 +2249,7 @@ func F_functionsLibCtxReleaseCurrent(m *base.Module, l0 int32, l1 int32) {
 			if v9 != 0 {
 				return
 			} else {
-				v11 = *(*int32)(unsafe.Add(mBase, _consts[332]))
+				v11 = *(*int32)(unsafe.Add(mBase, _c_F_functionsLibCtxReleaseCurrent[0]))
 				F_freeFunctionsAsync(m, v11, v6)
 				mBase = m.M
 				v13 = m.ExcPending
@@ -2269,7 +2269,7 @@ func F_functionsLibGet(m *base.Module) int32 {
 	_ = v2
 	var v3 int32
 	_ = v3
-	v2 = *(*int32)(unsafe.Add(mBase, _consts[332]))
+	v2 = *(*int32)(unsafe.Add(mBase, _c_F_functionsLibGet[0]))
 	v3 = *(*int32)(unsafe.Add(mBase, uint32(v2)))
 	return v3
 }

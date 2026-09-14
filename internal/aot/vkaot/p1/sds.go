@@ -21,7 +21,7 @@ func F_sdsAllocPtr(m *base.Module, l0 int32) int32 {
 	if base.Ui32(int32(4)) < base.Ui32(v9) {
 		v17 = int32(0)
 	} else {
-		v16 = *(*int32)(unsafe.Add(mBase, uint32(v9<<(uint(int32(2))%32))+uint32(_consts[307])))
+		v16 = *(*int32)(unsafe.Add(mBase, uint32(v9<<(uint(int32(2))%32))+uint32(_c_F_sdsAllocPtr[0])))
 		v17 = v16
 	}
 	return l0 + v17
@@ -61,7 +61,7 @@ func F_sdsConfigGet(m *base.Module, l0 int32) int32 {
 		v14 = *(*int32)(unsafe.Add(mBase, uint32(v13)))
 		v15 = v14
 		if v15 == int32(0) {
-			v25 = F_sdsnew(m, int32(_a320))
+			v25 = F_sdsnew(m, int32(_a_F_sdsConfigGet_0))
 			mBase = m.M
 			v26 = m.ExcPending
 			if v26 != 0 {
@@ -96,7 +96,7 @@ func F_sdsConfigGet(m *base.Module, l0 int32) int32 {
 		} else {
 			v15 = v9
 			if v15 == int32(0) {
-				v25 = F_sdsnew(m, int32(_a320))
+				v25 = F_sdsnew(m, int32(_a_F_sdsConfigGet_0))
 				mBase = m.M
 				v26 = m.ExcPending
 				if v26 != 0 {
@@ -137,7 +137,7 @@ func F_sdsHdrSize(m *base.Module, l0 int32) int32 {
 	if base.Ui32(int32(4)) < base.Ui32(v5) {
 		v13 = int32(0)
 	} else {
-		v12 = *(*int32)(unsafe.Add(mBase, uint32(v5<<(uint(int32(2))%32))+uint32(_consts[309])))
+		v12 = *(*int32)(unsafe.Add(mBase, uint32(v5<<(uint(int32(2))%32))+uint32(_c_F_sdsHdrSize[0])))
 		v13 = v12
 	}
 	return v13

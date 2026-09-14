@@ -103,7 +103,7 @@ func F_findReplica(m *base.Module, l0 int32, l1 int32) int32 {
 	v8 = m.G0
 	v10 = v8 - int32(64)
 	m.G0 = v10
-	v13 = *(*int32)(unsafe.Add(mBase, _consts[158]))
+	v13 = *(*int32)(unsafe.Add(mBase, _c_F_findReplica[0]))
 	v15 = v10 + int32(56)
 	v16 = *(*int32)(unsafe.Add(mBase, uint32(v13)))
 	*(*int32)(unsafe.Add(mBase, uint32(v15)+4)) = int32(0)
@@ -354,7 +354,7 @@ func F_flushReplicaKeysWithExpireList(m *base.Module, l0 int32) {
 	var v13 int32
 	_ = v13
 	v2 = int32(0)
-	v4 = *(*int32)(unsafe.Add(mBase, _consts[422]))
+	v4 = *(*int32)(unsafe.Add(mBase, _c_F_flushReplicaKeysWithExpireList[0]))
 	if v4 == v2 {
 		return
 	} else {
@@ -366,7 +366,7 @@ func F_flushReplicaKeysWithExpireList(m *base.Module, l0 int32) {
 				return
 			} else {
 				v13 = int32(0)
-				*(*int32)(unsafe.Add(mBase, _consts[422])) = v13
+				*(*int32)(unsafe.Add(mBase, _c_F_flushReplicaKeysWithExpireList[0])) = v13
 				return
 			}
 		} else {
@@ -377,7 +377,7 @@ func F_flushReplicaKeysWithExpireList(m *base.Module, l0 int32) {
 				return
 			} else {
 				v13 = int32(0)
-				*(*int32)(unsafe.Add(mBase, _consts[422])) = v13
+				*(*int32)(unsafe.Add(mBase, _c_F_flushReplicaKeysWithExpireList[0])) = v13
 				return
 			}
 		}

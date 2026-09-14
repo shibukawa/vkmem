@@ -37,7 +37,7 @@ func F_dbAsyncDelete(m *base.Module, l0 int32, l1 int32) int32 {
 	_ = v16
 	v4 = F_objectGetVal(m, l1)
 	mBase = m.M
-	v6 = *(*int32)(unsafe.Add(mBase, _consts[139]))
+	v6 = *(*int32)(unsafe.Add(mBase, _c_F_dbAsyncDelete[0]))
 	if v6 != 0 {
 		v8 = F_getKeySlot(m, v4)
 		mBase = m.M
@@ -103,7 +103,7 @@ func F_dbExpand(m *base.Module, l0 int32, l1 int64, l2 int32) int32 {
 	var v37 int32
 	_ = v37
 	v5 = *(*int32)(unsafe.Add(mBase, uint32(l0)))
-	v7 = *(*int32)(unsafe.Add(mBase, _consts[139]))
+	v7 = *(*int32)(unsafe.Add(mBase, _c_F_dbExpand[0]))
 	if v7 == int32(0) {
 		v35 = F_kvstoreExpand(m, v5, l1, l2, int32(0))
 		mBase = m.M
@@ -115,7 +115,7 @@ func F_dbExpand(m *base.Module, l0 int32, l1 int64, l2 int32) int32 {
 			return v37 + int32(-1)
 		}
 	} else {
-		v12 = *(*int32)(unsafe.Add(mBase, _consts[136]))
+		v12 = *(*int32)(unsafe.Add(mBase, _c_F_dbExpand[1]))
 		v13 = *(*int32)(unsafe.Add(mBase, uint32(v12)))
 		v14 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v13)+88)))
 		if v14&int32(2) == int32(0) {
@@ -200,7 +200,7 @@ func F_dbGenericDelete(m *base.Module, l0 int32, l1 int32, l2 int32, l3 int32) i
 	_ = v18
 	v6 = F_objectGetVal(m, l1)
 	mBase = m.M
-	v8 = *(*int32)(unsafe.Add(mBase, _consts[139]))
+	v8 = *(*int32)(unsafe.Add(mBase, _c_F_dbGenericDelete[0]))
 	if v8 != 0 {
 		v15 = F_getKeySlot(m, v6)
 		mBase = m.M
@@ -395,7 +395,7 @@ func F_dbGenericDeleteWithDictIndex(m *base.Module, l0 int32, l1 int32, l2 int32
 									v51 = v50
 								}
 								if v51 == int64(-1) {
-									v65 = *(*int32)(unsafe.Add(mBase, _consts[88]))
+									v65 = *(*int32)(unsafe.Add(mBase, _c_F_dbGenericDeleteWithDictIndex[0]))
 									if v65 == int32(0) {
 										v72 = *(*int32)(unsafe.Add(mBase, uint32(v33)))
 										if v72&int32(15) != int32(4) {
@@ -465,7 +465,7 @@ func F_dbGenericDeleteWithDictIndex(m *base.Module, l0 int32, l1 int32, l2 int32
 														v99 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v98))))
 														v104 = v98 + v99 + int32(1)
 													}
-													v106 = *(*int32)(unsafe.Add(mBase, _consts[139]))
+													v106 = *(*int32)(unsafe.Add(mBase, _c_F_dbGenericDeleteWithDictIndex[1]))
 													if v106 != 0 {
 														v108 = F_getKeySlot(m, v104)
 														mBase = m.M
@@ -574,7 +574,7 @@ func F_dbGenericDeleteWithDictIndex(m *base.Module, l0 int32, l1 int32, l2 int32
 											return int32(0)
 										} else {
 											if v70 != 0 {
-												F__serverAssert(m, int32(_a554), int32(_a550), int32(499))
+												F__serverAssert(m, int32(_a_F_dbGenericDeleteWithDictIndex_0), int32(_a_F_dbGenericDeleteWithDictIndex_1), int32(499))
 												mBase = m.M
 												v158 = m.ExcPending
 												if v158 != 0 {
@@ -655,7 +655,7 @@ func F_dbGenericDeleteWithDictIndex(m *base.Module, l0 int32, l1 int32, l2 int32
 																v99 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v98))))
 																v104 = v98 + v99 + int32(1)
 															}
-															v106 = *(*int32)(unsafe.Add(mBase, _consts[139]))
+															v106 = *(*int32)(unsafe.Add(mBase, _c_F_dbGenericDeleteWithDictIndex[1]))
 															if v106 != 0 {
 																v108 = F_getKeySlot(m, v104)
 																mBase = m.M
@@ -835,7 +835,7 @@ func F_dbGenericDeleteWithDictIndex(m *base.Module, l0 int32, l1 int32, l2 int32
 															v99 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v98))))
 															v104 = v98 + v99 + int32(1)
 														}
-														v106 = *(*int32)(unsafe.Add(mBase, _consts[139]))
+														v106 = *(*int32)(unsafe.Add(mBase, _c_F_dbGenericDeleteWithDictIndex[1]))
 														if v106 != 0 {
 															v108 = F_getKeySlot(m, v104)
 															mBase = m.M
@@ -934,7 +934,7 @@ func F_dbGenericDeleteWithDictIndex(m *base.Module, l0 int32, l1 int32, l2 int32
 												}
 											}
 										} else {
-											F__serverAssert(m, int32(_a555), int32(_a550), int32(497))
+											F__serverAssert(m, int32(_a_F_dbGenericDeleteWithDictIndex_2), int32(_a_F_dbGenericDeleteWithDictIndex_1), int32(497))
 											mBase = m.M
 											v62 = m.ExcPending
 											if v62 != 0 {
@@ -1279,7 +1279,7 @@ L28:
 	goto L27
 L29:
 	;
-	v118 = *(*int32)(unsafe.Add(mBase, _consts[131]))
+	v118 = *(*int32)(unsafe.Add(mBase, _c_F_dbRandomKey[0]))
 	if v118 == int32(0) {
 		goto L30
 	} else {
@@ -1300,9 +1300,9 @@ L31:
 	goto L11
 L32:
 	;
-	v142 = int32(_a44)
-	v143 = *(*int32)(unsafe.Add(mBase, _consts[132]))
-	v145 = *(*int32)(unsafe.Add(mBase, _consts[130]))
+	v142 = int32(_a_F_dbRandomKey_0)
+	v143 = *(*int32)(unsafe.Add(mBase, _c_F_dbRandomKey[1]))
+	v145 = *(*int32)(unsafe.Add(mBase, _c_F_dbRandomKey[2]))
 	if v145 != 0 {
 		goto L40
 	} else {
@@ -1361,7 +1361,7 @@ L41:
 	}
 L42:
 	;
-	v149 = *(*int32)(unsafe.Add(mBase, _consts[67]))
+	v149 = *(*int32)(unsafe.Add(mBase, _c_F_dbRandomKey[3]))
 	if v149 == int32(0) {
 		goto L40
 	} else {
@@ -1414,7 +1414,7 @@ L48:
 	}
 L49:
 	;
-	v161 = *(*int32)(unsafe.Add(mBase, _consts[337]))
+	v161 = *(*int32)(unsafe.Add(mBase, _c_F_dbRandomKey[4]))
 	goto L50
 L50:
 	;
@@ -1806,7 +1806,7 @@ L14:
 	}
 L15:
 	;
-	v74 = *(*int32)(unsafe.Add(mBase, _consts[139]))
+	v74 = *(*int32)(unsafe.Add(mBase, _c_F_dbReclaimExpiredFields[0]))
 	if v74 != 0 {
 		goto L19
 	} else {
@@ -1875,8 +1875,8 @@ L25:
 L26:
 	;
 	v111 = int32(0)
-	v115 = *(*int32)(unsafe.Add(mBase, _consts[95]))
-	*(*int32)(unsafe.Add(mBase, _consts[95])) = v115 + int32(1)
+	v115 = *(*int32)(unsafe.Add(mBase, _c_F_dbReclaimExpiredFields[1]))
+	*(*int32)(unsafe.Add(mBase, _c_F_dbReclaimExpiredFields[1])) = v115 + int32(1)
 	goto L29
 L27:
 	;
@@ -1904,16 +1904,16 @@ L30:
 L31:
 	;
 	v125 = int32(0)
-	*(*int64)(unsafe.Add(mBase, _consts[96])) = v123
+	*(*int64)(unsafe.Add(mBase, _c_F_dbReclaimExpiredFields[2])) = v123
 	v129 = base.I64_div_s(v123, int64(1000))
-	*(*int64)(unsafe.Add(mBase, _consts[35])) = v129
+	*(*int64)(unsafe.Add(mBase, _c_F_dbReclaimExpiredFields[3])) = v129
 	v133 = base.I64_div_s(v123, int64(1000000))
-	*(*int64)(unsafe.Add(mBase, _consts[47])) = v133
-	v136 = *(*int32)(unsafe.Add(mBase, _consts[97]))
+	*(*int64)(unsafe.Add(mBase, _c_F_dbReclaimExpiredFields[4])) = v133
+	v136 = *(*int32)(unsafe.Add(mBase, _c_F_dbReclaimExpiredFields[5]))
 	F_lrulfu_updateClockAndPolicy(m, v129, int32(base.Ui32(v136&int32(2))>>(uint(int32(1))%32)))
 	mBase = m.M
-	v144 = *(*int64)(unsafe.Add(mBase, _consts[35]))
-	*(*int64)(unsafe.Add(mBase, _consts[98])) = v144
+	v144 = *(*int64)(unsafe.Add(mBase, _c_F_dbReclaimExpiredFields[3]))
+	*(*int64)(unsafe.Add(mBase, _c_F_dbReclaimExpiredFields[6])) = v144
 	goto L28
 L32:
 	;
@@ -1941,9 +1941,9 @@ L35:
 	goto L34
 L36:
 	;
-	v174 = int32(_a44)
-	v175 = *(*int32)(unsafe.Add(mBase, _consts[349]))
-	*(*int32)(unsafe.Add(mBase, _consts[349])) = int32(1)
+	v174 = int32(_a_F_dbReclaimExpiredFields_0)
+	v175 = *(*int32)(unsafe.Add(mBase, _c_F_dbReclaimExpiredFields[7]))
+	*(*int32)(unsafe.Add(mBase, _c_F_dbReclaimExpiredFields[7])) = int32(1)
 	v179 = int32(0)
 	v182 = *(*int32)(unsafe.Add(mBase, uint32(l0)+4))
 	if v182&int32(2) == v179 {
@@ -1973,9 +1973,9 @@ L39:
 	goto L38
 L40:
 	;
-	*(*int32)(unsafe.Add(mBase, uint32(v16)+uint32(_consts[352]))) = v203
-	v207 = *(*int32)(unsafe.Add(mBase, _consts[353]))
-	*(*int32)(unsafe.Add(mBase, uint32(v16)+uint32(_consts[354]))) = v207
+	*(*int32)(unsafe.Add(mBase, uint32(v16)+uint32(_c_F_dbReclaimExpiredFields[8]))) = v203
+	v207 = *(*int32)(unsafe.Add(mBase, _c_F_dbReclaimExpiredFields[9]))
+	*(*int32)(unsafe.Add(mBase, uint32(v16)+uint32(_c_F_dbReclaimExpiredFields[10]))) = v207
 	v209 = int32(1024)
 	if base.Ui32(v41) < base.Ui32(v209) {
 		goto L41
@@ -2020,7 +2020,7 @@ L46:
 	goto L45
 L47:
 	;
-	*(*int32)(unsafe.Add(mBase, _consts[349])) = v175
+	*(*int32)(unsafe.Add(mBase, _c_F_dbReclaimExpiredFields[7])) = v175
 	v239 = int32(0)
 	goto L48
 L48:
@@ -2037,7 +2037,7 @@ L48:
 L49:
 	;
 	v256 = *(*int32)(unsafe.Add(mBase, uint32(l1)+28))
-	F_notifyKeyspaceEvent(m, int32(256), int32(_a584), v172, v256)
+	F_notifyKeyspaceEvent(m, int32(256), int32(_a_F_dbReclaimExpiredFields_1), v172, v256)
 	mBase = m.M
 	v258 = m.ExcPending
 	if v258 != 0 {
@@ -2086,11 +2086,11 @@ L54:
 	}
 L55:
 	;
-	v259 = int32(_a44)
-	v260 = *(*int32)(unsafe.Add(mBase, _consts[133]))
+	v259 = int32(_a_F_dbReclaimExpiredFields_0)
+	v260 = *(*int32)(unsafe.Add(mBase, _c_F_dbReclaimExpiredFields[11]))
 	v261 = F_objectGetVal(m, v172)
 	mBase = m.M
-	v263 = *(*int32)(unsafe.Add(mBase, _consts[139]))
+	v263 = *(*int32)(unsafe.Add(mBase, _c_F_dbReclaimExpiredFields[0]))
 	if v263 != 0 {
 		goto L57
 	} else {
@@ -2126,11 +2126,11 @@ L59:
 	goto L56
 L60:
 	;
-	v271 = int32(_a44)
-	v272 = *(*int32)(unsafe.Add(mBase, _consts[349]))
-	*(*int32)(unsafe.Add(mBase, _consts[349])) = int32(1)
-	v277 = *(*int32)(unsafe.Add(mBase, _consts[350]))
-	*(*int32)(unsafe.Add(mBase, uint32(v16)+uint32(_consts[352]))) = v172
+	v271 = int32(_a_F_dbReclaimExpiredFields_0)
+	v272 = *(*int32)(unsafe.Add(mBase, _c_F_dbReclaimExpiredFields[7]))
+	*(*int32)(unsafe.Add(mBase, _c_F_dbReclaimExpiredFields[7])) = int32(1)
+	v277 = *(*int32)(unsafe.Add(mBase, _c_F_dbReclaimExpiredFields[12]))
+	*(*int32)(unsafe.Add(mBase, uint32(v16)+uint32(_c_F_dbReclaimExpiredFields[8]))) = v172
 	if v277 != 0 {
 		goto L61
 	} else {
@@ -2146,8 +2146,8 @@ L62:
 	goto L63
 L63:
 	;
-	v284 = *(*int32)(unsafe.Add(mBase, uint32(v282)+uint32(_consts[84])))
-	*(*int32)(unsafe.Add(mBase, uint32(v16)+uint32(_consts[354]))) = v284
+	v284 = *(*int32)(unsafe.Add(mBase, uint32(v282)+uint32(_c_F_dbReclaimExpiredFields[13])))
+	*(*int32)(unsafe.Add(mBase, uint32(v16)+uint32(_c_F_dbReclaimExpiredFields[10]))) = v284
 	v286 = *(*int32)(unsafe.Add(mBase, uint32(l1)+28))
 	F_alsoPropagate(m, v286, v16+int32(4096), int32(2), int32(3), l4)
 	mBase = m.M
@@ -2159,9 +2159,9 @@ L63:
 	}
 L64:
 	;
-	*(*int32)(unsafe.Add(mBase, _consts[349])) = v272
+	*(*int32)(unsafe.Add(mBase, _c_F_dbReclaimExpiredFields[7])) = v272
 	v297 = *(*int32)(unsafe.Add(mBase, uint32(l1)+28))
-	F_notifyKeyspaceEvent(m, int32(4), int32(_a213), v172, v297)
+	F_notifyKeyspaceEvent(m, int32(4), int32(_a_F_dbReclaimExpiredFields_2), v172, v297)
 	mBase = m.M
 	v299 = m.ExcPending
 	if v299 != 0 {
@@ -2191,7 +2191,7 @@ L67:
 	}
 L68:
 	;
-	v327 = *(*int32)(unsafe.Add(mBase, _consts[139]))
+	v327 = *(*int32)(unsafe.Add(mBase, _c_F_dbReclaimExpiredFields[0]))
 	if v327 != 0 {
 		goto L72
 	} else {
@@ -2270,8 +2270,8 @@ L79:
 L80:
 	;
 	v367 = int32(0)
-	v369 = *(*int32)(unsafe.Add(mBase, _consts[95]))
-	*(*int32)(unsafe.Add(mBase, _consts[95])) = v369 + int32(-1)
+	v369 = *(*int32)(unsafe.Add(mBase, _c_F_dbReclaimExpiredFields[1]))
+	*(*int32)(unsafe.Add(mBase, _c_F_dbReclaimExpiredFields[1])) = v369 + int32(-1)
 	goto L81
 L81:
 	;
@@ -2409,7 +2409,7 @@ func F_dbUpdateObjectWithVolatileItemsTracking(m *base.Module, l0 int32, l1 int3
 					v73 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v72))))
 					v78 = v72 + v73 + int32(1)
 				}
-				v80 = *(*int32)(unsafe.Add(mBase, _consts[139]))
+				v80 = *(*int32)(unsafe.Add(mBase, _c_F_dbUpdateObjectWithVolatileItemsTracking[0]))
 				if v80 != 0 {
 					v82 = F_getKeySlot(m, v78)
 					mBase = m.M
@@ -2481,7 +2481,7 @@ func F_dbUpdateObjectWithVolatileItemsTracking(m *base.Module, l0 int32, l1 int3
 								v40 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v39))))
 								v45 = v39 + v40 + int32(1)
 							}
-							v47 = *(*int32)(unsafe.Add(mBase, _consts[139]))
+							v47 = *(*int32)(unsafe.Add(mBase, _c_F_dbUpdateObjectWithVolatileItemsTracking[0]))
 							if v47 != 0 {
 								v49 = F_getKeySlot(m, v45)
 								mBase = m.M
@@ -2664,7 +2664,7 @@ func F_db_debug(m *base.Module, l0 int32) int32 {
 	v10 = m.G3
 	v15 = m.G397
 	v16 = *(*int32)(unsafe.Add(mBase, uint32(v15)))
-	v17 = F_fwrite(m, v10+int32(_a2079), int32(11), int32(1), v16)
+	v17 = F_fwrite(m, v10+int32(_a_F_db_debug_0), int32(11), int32(1), v16)
 	mBase = m.M
 	v20 = m.ExcPending
 	if v20 != 0 {
@@ -2704,7 +2704,7 @@ L5:
 L6:
 	;
 	v33 = m.G3
-	v35 = v33 + int32(_a2080)
+	v35 = v33 + int32(_a_F_db_debug_1)
 	v36 = int32(6)
 	goto L12
 L7:
@@ -2840,7 +2840,7 @@ L26:
 	}
 L27:
 	;
-	v161 = F_luaL_loadbuffer(m, l0, v8, v158, v103+int32(_a2081))
+	v161 = F_luaL_loadbuffer(m, l0, v8, v158, v103+int32(_a_F_db_debug_2))
 	mBase = m.M
 	v162 = m.ExcPending
 	if v162 != 0 {
@@ -2981,7 +2981,7 @@ L49:
 L50:
 	;
 	v207 = m.G3
-	v212 = F_fwrite(m, v207+int32(_a2079), int32(11), int32(1), v16)
+	v212 = F_fwrite(m, v207+int32(_a_F_db_debug_0), int32(11), int32(1), v16)
 	mBase = m.M
 	v213 = m.ExcPending
 	if v213 != 0 {
@@ -3486,7 +3486,7 @@ L1:
 	;
 	v137 = v134 | int32(2)
 	v138 = m.G3
-	v142 = F_luaL_optlstring(m, l0, v137, v138+int32(_a2082), int32(0))
+	v142 = F_luaL_optlstring(m, l0, v137, v138+int32(_a_F_db_getinfo_0), int32(0))
 	mBase = m.M
 	v145 = m.ExcPending
 	if v145 != 0 {
@@ -3602,7 +3602,7 @@ L38:
 L39:
 	;
 	v1124 = m.G3
-	v1127 = F_luaL_argerror(m, l0, v147, v1124+int32(_a2083))
+	v1127 = F_luaL_argerror(m, l0, v147, v1124+int32(_a_F_db_getinfo_1))
 	mBase = m.M
 	v1128 = m.ExcPending
 	if v1128 != 0 {
@@ -3856,7 +3856,7 @@ L75:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v9))) = v142
 	v275 = m.G3
-	v278 = F_lua_pushfstring(m, l0, v275+int32(_a2084), v9)
+	v278 = F_lua_pushfstring(m, l0, v275+int32(_a_F_db_getinfo_2), v9)
 	mBase = m.M
 	v279 = m.ExcPending
 	if v279 != 0 {
@@ -4037,7 +4037,7 @@ L105:
 L106:
 	;
 	v449 = m.G3
-	v452 = F_luaL_argerror(m, l0, v137, v449+int32(_a2085))
+	v452 = F_luaL_argerror(m, l0, v137, v449+int32(_a_F_db_getinfo_3))
 	mBase = m.M
 	v453 = m.ExcPending
 	if v453 != 0 {
@@ -4103,7 +4103,7 @@ L114:
 L115:
 	;
 	v472 = m.G3
-	F_lua_setfield(m, l0, int32(-2), v472+int32(_a2086))
+	F_lua_setfield(m, l0, int32(-2), v472+int32(_a_F_db_getinfo_4))
 	mBase = m.M
 	v476 = m.ExcPending
 	if v476 != 0 {
@@ -4123,7 +4123,7 @@ L116:
 	}
 L117:
 	;
-	F_lua_setfield(m, l0, int32(-2), v472+int32(_a2087))
+	F_lua_setfield(m, l0, int32(-2), v472+int32(_a_F_db_getinfo_5))
 	mBase = m.M
 	v485 = m.ExcPending
 	if v485 != 0 {
@@ -4142,7 +4142,7 @@ L118:
 	goto L119
 L119:
 	;
-	F_lua_setfield(m, l0, int32(-2), v472+int32(_a2088))
+	F_lua_setfield(m, l0, int32(-2), v472+int32(_a_F_db_getinfo_6))
 	mBase = m.M
 	v501 = m.ExcPending
 	if v501 != 0 {
@@ -4161,7 +4161,7 @@ L120:
 	goto L121
 L121:
 	;
-	F_lua_setfield(m, l0, int32(-2), v472+int32(_a2089))
+	F_lua_setfield(m, l0, int32(-2), v472+int32(_a_F_db_getinfo_7))
 	mBase = m.M
 	v517 = m.ExcPending
 	if v517 != 0 {
@@ -4182,7 +4182,7 @@ L122:
 	}
 L123:
 	;
-	F_lua_setfield(m, l0, int32(-2), v472+int32(_a2090))
+	F_lua_setfield(m, l0, int32(-2), v472+int32(_a_F_db_getinfo_8))
 	mBase = m.M
 	v525 = m.ExcPending
 	if v525 != 0 {
@@ -4234,7 +4234,7 @@ L130:
 L131:
 	;
 	v549 = m.G3
-	F_lua_setfield(m, l0, int32(-2), v549+int32(_a2091))
+	F_lua_setfield(m, l0, int32(-2), v549+int32(_a_F_db_getinfo_9))
 	mBase = m.M
 	v553 = m.ExcPending
 	if v553 != 0 {
@@ -4286,7 +4286,7 @@ L138:
 L139:
 	;
 	v576 = m.G3
-	F_lua_setfield(m, l0, int32(-2), v576+int32(_a2092))
+	F_lua_setfield(m, l0, int32(-2), v576+int32(_a_F_db_getinfo_10))
 	mBase = m.M
 	v580 = m.ExcPending
 	if v580 != 0 {
@@ -4340,7 +4340,7 @@ L146:
 L147:
 	;
 	v595 = m.G3
-	F_lua_setfield(m, l0, int32(-2), v595+int32(_a807))
+	F_lua_setfield(m, l0, int32(-2), v595+int32(_a_F_db_getinfo_11))
 	mBase = m.M
 	v599 = m.ExcPending
 	if v599 != 0 {
@@ -4361,7 +4361,7 @@ L148:
 	}
 L149:
 	;
-	F_lua_setfield(m, l0, int32(-2), v595+int32(_a2093))
+	F_lua_setfield(m, l0, int32(-2), v595+int32(_a_F_db_getinfo_12))
 	mBase = m.M
 	v607 = m.ExcPending
 	if v607 != 0 {
@@ -4412,7 +4412,7 @@ L156:
 L157:
 	;
 	v861 = m.G3
-	F_lua_setfield(m, l0, int32(-2), v861+int32(_a2094))
+	F_lua_setfield(m, l0, int32(-2), v861+int32(_a_F_db_getinfo_13))
 	mBase = m.M
 	v865 = m.ExcPending
 	if v865 != 0 {
@@ -4566,7 +4566,7 @@ L212:
 L213:
 	;
 	v1119 = m.G3
-	F_lua_setfield(m, l0, int32(-2), v1119+int32(_a2095))
+	F_lua_setfield(m, l0, int32(-2), v1119+int32(_a_F_db_getinfo_14))
 	mBase = m.M
 	v1123 = m.ExcPending
 	if v1123 != 0 {
@@ -4967,7 +4967,7 @@ func F_db_setfenv(m *base.Module, l0 int32) int32 {
 			return int32(1)
 		} else {
 			v142 = m.G3
-			v146 = F_luaL_error(m, l0, v142+int32(_a2096), int32(0))
+			v146 = F_luaL_error(m, l0, v142+int32(_a_F_db_setfenv_0), int32(0))
 			mBase = m.M
 			v147 = m.ExcPending
 			if v147 != 0 {

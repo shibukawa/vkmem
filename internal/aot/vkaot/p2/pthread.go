@@ -49,9 +49,9 @@ func F_pthread_attr_init(m *base.Module, l0 int32) int32 {
 	v18 = F__emscripten_memcpy_bulkmem(m, l0, v5+int32(4), int32(44))
 	mBase = m.M
 	v20 = int32(0)
-	v21 = *(*int32)(unsafe.Add(mBase, _consts[1075]))
+	v21 = *(*int32)(unsafe.Add(mBase, _c_F_pthread_attr_init[0]))
 	*(*int32)(unsafe.Add(mBase, uint32(v18))) = v21
-	v24 = *(*int32)(unsafe.Add(mBase, _consts[1076]))
+	v24 = *(*int32)(unsafe.Add(mBase, _c_F_pthread_attr_init[1]))
 	*(*int32)(unsafe.Add(mBase, uint32(v18)+4)) = v24
 	m.G0 = v5 + int32(48)
 	return int32(0)

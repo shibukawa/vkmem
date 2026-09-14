@@ -310,7 +310,7 @@ L4:
 L5:
 	;
 	v29 = m.G3
-	F_luaPushErrorBuff(m, l1, v29+int32(_a2224))
+	F_luaPushErrorBuff(m, l1, v29+int32(_a_F_luaArgsToServerArgv_0))
 	mBase = m.M
 	v35 = m.ExcPending
 	if v35 != 0 {
@@ -789,7 +789,7 @@ L79:
 	v269 = m.G3
 	v272 = int64(100)
 	v273 = base.I64_div_u_s(v259, v272)
-	v281 = int32(*(*uint16)(unsafe.Add(mBase, uint32(v269+int32(_a2225)+base.I32_wrap_i64(v259-v273*v272)<<(uint(int32(1))%32)))))
+	v281 = int32(*(*uint16)(unsafe.Add(mBase, uint32(v269+int32(_a_F_luaArgsToServerArgv_1)+base.I32_wrap_i64(v259-v273*v272)<<(uint(int32(1))%32)))))
 	*(*uint16)(unsafe.Add(mBase, uint32(v154+v254+int32(-1)))) = uint16(v281)
 	v284 = v254 + int32(-2)
 	if base.Ui64(int64(9999)) < base.Ui64(v259) {
@@ -817,7 +817,7 @@ L82:
 L83:
 	;
 	v315 = m.G3
-	v322 = int32(*(*uint16)(unsafe.Add(mBase, uint32(v315+int32(_a2225)+base.I32_wrap_i64(v298)<<(uint(int32(1))%32)))))
+	v322 = int32(*(*uint16)(unsafe.Add(mBase, uint32(v315+int32(_a_F_luaArgsToServerArgv_1)+base.I32_wrap_i64(v298)<<(uint(int32(1))%32)))))
 	*(*uint16)(unsafe.Add(mBase, uint32(v154+v293+int32(-1)))) = uint16(v322)
 	goto L82
 L84:
@@ -1057,7 +1057,7 @@ L115:
 L116:
 	;
 	v592 = m.G3
-	F_luaPushErrorBuff(m, l1, v592+int32(_a2226))
+	F_luaPushErrorBuff(m, l1, v592+int32(_a_F_luaArgsToServerArgv_2))
 	mBase = m.M
 	v596 = m.ExcPending
 	if v596 != 0 {
@@ -1176,7 +1176,7 @@ func F_luaEngineCompileCode(m *base.Module, l0 int32, l1 int32, l2 int32, l3 int
 	} else {
 		v14 = m.G3
 		v15 = *(*int32)(unsafe.Add(mBase, uint32(l1)))
-		v18 = F_luaL_loadbuffer(m, v15, l3, l4, v14+int32(_a2127))
+		v18 = F_luaL_loadbuffer(m, v15, l3, l4, v14+int32(_a_F_luaEngineCompileCode_0))
 		mBase = m.M
 		v21 = m.ExcPending
 		if v21 != 0 {
@@ -1196,7 +1196,7 @@ func F_luaEngineCompileCode(m *base.Module, l0 int32, l1 int32, l2 int32, l3 int
 					v174 = m.G3
 					v180 = m.G8
 					v181 = *(*int32)(unsafe.Add(mBase, uint32(v180)))
-					m.T0[v181].(func(*base.Module, int32, int32, int32))(m, v174+int32(_a2128), v174+int32(_a2119), int32(263))
+					m.T0[v181].(func(*base.Module, int32, int32, int32))(m, v174+int32(_a_F_luaEngineCompileCode_1), v174+int32(_a_F_luaEngineCompileCode_2), int32(263))
 					mBase = m.M
 					v183 = m.ExcPending
 					if v183 != 0 {
@@ -1269,7 +1269,7 @@ func F_luaEngineCompileCode(m *base.Module, l0 int32, l1 int32, l2 int32, l3 int
 				} else {
 					*(*int32)(unsafe.Add(mBase, uint32(v12))) = v29
 					v32 = m.G3
-					v35 = m.T0[v25].(func(*base.Module, int32, int32, int32) int32)(m, l0, v32+int32(_a2129), v12)
+					v35 = m.T0[v25].(func(*base.Module, int32, int32, int32) int32)(m, l0, v32+int32(_a_F_luaEngineCompileCode_3), v12)
 					mBase = m.M
 					v36 = m.ExcPending
 					if v36 != 0 {
@@ -1388,7 +1388,7 @@ func F_luaEngineFunctionCall(m *base.Module, l0 int32, l1 int32, l2 int32, l3 in
 	v15 = *(*int32)(unsafe.Add(mBase, uint32(l3)+12))
 	v16 = *(*int32)(unsafe.Add(mBase, uint32(v15)+4))
 	v22 = *(*int32)(unsafe.Add(mBase, uint32(l1+base.B2i32(l4 != v10)<<(uint(int32(2))%32))))
-	F_lua_pushstring(m, v22, v13+int32(_a2130))
+	F_lua_pushstring(m, v22, v13+int32(_a_F_luaEngineFunctionCall_0))
 	mBase = m.M
 	v26 = m.ExcPending
 	if v26 != 0 {
@@ -1450,7 +1450,7 @@ func F_luaEngineFunctionCall(m *base.Module, l0 int32, l1 int32, l2 int32, l3 in
 				v191 = m.G3
 				v197 = m.G8
 				v198 = *(*int32)(unsafe.Add(mBase, uint32(v197)))
-				m.T0[v198].(func(*base.Module, int32, int32, int32))(m, v191+int32(_a2131), v191+int32(_a2119), int32(312))
+				m.T0[v198].(func(*base.Module, int32, int32, int32))(m, v191+int32(_a_F_luaEngineFunctionCall_1), v191+int32(_a_F_luaEngineFunctionCall_2), int32(312))
 				mBase = m.M
 				v200 = m.ExcPending
 				if v200 != 0 {
@@ -1983,7 +1983,7 @@ L1:
 L2:
 	;
 	v90 = m.G3
-	F_lua_getfield(m, l0, int32(-1), v90+int32(_a1411))
+	F_lua_getfield(m, l0, int32(-1), v90+int32(_a_F_luaExtractErrorInformation_0))
 	mBase = m.M
 	v94 = m.ExcPending
 	if v94 != 0 {
@@ -2040,7 +2040,7 @@ L20:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v8))) = v76
 	v79 = m.G3
-	v82 = F_lm_asprintf(m, v79+int32(_a2227), v8)
+	v82 = F_lm_asprintf(m, v79+int32(_a_F_luaExtractErrorInformation_1), v8)
 	mBase = m.M
 	v83 = m.ExcPending
 	if v83 != 0 {
@@ -2226,7 +2226,7 @@ L60:
 L61:
 	;
 	v260 = m.G3
-	F_lua_getfield(m, l0, int32(-1), v260+int32(_a2228))
+	F_lua_getfield(m, l0, int32(-1), v260+int32(_a_F_luaExtractErrorInformation_2))
 	mBase = m.M
 	v264 = m.ExcPending
 	if v264 != 0 {
@@ -2414,7 +2414,7 @@ L107:
 L108:
 	;
 	v430 = m.G3
-	F_lua_getfield(m, l0, int32(-1), v430+int32(_a2229))
+	F_lua_getfield(m, l0, int32(-1), v430+int32(_a_F_luaExtractErrorInformation_3))
 	mBase = m.M
 	v434 = m.ExcPending
 	if v434 != 0 {
@@ -2602,7 +2602,7 @@ L154:
 L155:
 	;
 	v600 = m.G3
-	F_lua_getfield(m, l0, int32(-1), v600+int32(_a2230))
+	F_lua_getfield(m, l0, int32(-1), v600+int32(_a_F_luaExtractErrorInformation_4))
 	mBase = m.M
 	v604 = m.ExcPending
 	if v604 != 0 {
@@ -2727,11 +2727,11 @@ L208:
 L209:
 	;
 	v765 = m.G3
-	v770 = int32(*(*uint16)(unsafe.Add(mBase, uint32(v765)+uint32(_consts[1197]))))
+	v770 = int32(*(*uint16)(unsafe.Add(mBase, uint32(v765)+uint32(_c_F_luaExtractErrorInformation[0]))))
 	*(*uint16)(unsafe.Add(mBase, uint32(v761+int32(16)))) = uint16(v770)
-	v776 = *(*int64)(unsafe.Add(mBase, uint32(v765)+uint32(_consts[1198])))
+	v776 = *(*int64)(unsafe.Add(mBase, uint32(v765)+uint32(_c_F_luaExtractErrorInformation[1])))
 	*(*int64)(unsafe.Add(mBase, uint32(v761+int32(8)))) = v776
-	v778 = *(*int64)(unsafe.Add(mBase, uint32(v765)+uint32(_consts[1199])))
+	v778 = *(*int64)(unsafe.Add(mBase, uint32(v765)+uint32(_c_F_luaExtractErrorInformation[2])))
 	*(*int64)(unsafe.Add(mBase, uint32(v761))) = v778
 	*(*int32)(unsafe.Add(mBase, uint32(l1))) = v761
 	goto L1
@@ -3527,7 +3527,7 @@ func F_luaFunctionRegisterFunction(m *base.Module, l0 int32) int32 {
 	v15 = v13 - int32(16)
 	m.G0 = v15
 	v17 = m.G3
-	v20 = F_luaGetFromRegistry(m, l0, v17+int32(_a2133))
+	v20 = F_luaGetFromRegistry(m, l0, v17+int32(_a_F_luaFunctionRegisterFunction_0))
 	mBase = m.M
 	v23 = m.ExcPending
 	if v23 != 0 {
@@ -3564,7 +3564,7 @@ L4:
 L5:
 	;
 	v24 = m.G3
-	F_luaPushError(m, l0, v24+int32(_a2134))
+	F_luaPushError(m, l0, v24+int32(_a_F_luaFunctionRegisterFunction_1))
 	mBase = m.M
 	v28 = m.ExcPending
 	if v28 != 0 {
@@ -3633,7 +3633,7 @@ L12:
 L13:
 	;
 	v46 = m.G3
-	F_luaPushError(m, l0, v46+int32(_a2135))
+	F_luaPushError(m, l0, v46+int32(_a_F_luaFunctionRegisterFunction_2))
 	mBase = m.M
 	v50 = m.ExcPending
 	if v50 != 0 {
@@ -3698,7 +3698,7 @@ L32:
 	goto L18
 L33:
 	;
-	F_luaPushError(m, l0, v53+int32(_a2136))
+	F_luaPushError(m, l0, v53+int32(_a_F_luaFunctionRegisterFunction_3))
 	mBase = m.M
 	v117 = m.ExcPending
 	if v117 != 0 {
@@ -3737,7 +3737,7 @@ L37:
 	}
 L38:
 	;
-	F_luaPushError(m, l0, v125+int32(_a2137))
+	F_luaPushError(m, l0, v125+int32(_a_F_luaFunctionRegisterFunction_4))
 	mBase = m.M
 	v132 = m.ExcPending
 	if v132 != 0 {
@@ -3863,13 +3863,13 @@ L65:
 	goto L51
 L66:
 	;
-	v1203 = v149 + int32(_a2138)
+	v1203 = v149 + int32(_a_F_luaFunctionRegisterFunction_5)
 	v1206 = v144
 	goto L49
 L67:
 	;
 	v338 = m.G3
-	v340 = v338 + int32(_a2139)
+	v340 = v338 + int32(_a_F_luaFunctionRegisterFunction_6)
 	v343 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v217))))
 	if v343 != 0 {
 		goto L105
@@ -3878,7 +3878,7 @@ L67:
 	}
 L68:
 	;
-	v220 = v214 + int32(_a2140)
+	v220 = v214 + int32(_a_F_luaFunctionRegisterFunction_7)
 	v223 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v217))))
 	if v223 != 0 {
 		goto L71
@@ -4023,7 +4023,7 @@ L97:
 	goto L83
 L98:
 	;
-	v1337 = v259 + int32(_a2141)
+	v1337 = v259 + int32(_a_F_luaFunctionRegisterFunction_8)
 	v1339 = v143
 	v1340 = v144
 	goto L41
@@ -4051,14 +4051,14 @@ L100:
 	}
 L101:
 	;
-	v1337 = v324 + int32(_a2141)
+	v1337 = v324 + int32(_a_F_luaFunctionRegisterFunction_8)
 	v1339 = v143
 	v1340 = v144
 	goto L41
 L102:
 	;
 	v460 = m.G3
-	v462 = v460 + int32(_a2142)
+	v462 = v460 + int32(_a_F_luaFunctionRegisterFunction_9)
 	v465 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v217))))
 	if v465 != 0 {
 		goto L139
@@ -4203,7 +4203,7 @@ L131:
 	goto L117
 L132:
 	;
-	v1203 = v379 + int32(_a2143)
+	v1203 = v379 + int32(_a_F_luaFunctionRegisterFunction_10)
 	v1206 = int32(0)
 	goto L49
 L133:
@@ -4230,13 +4230,13 @@ L134:
 	}
 L135:
 	;
-	v1203 = v445 + int32(_a2143)
+	v1203 = v445 + int32(_a_F_luaFunctionRegisterFunction_10)
 	v1206 = int32(0)
 	goto L49
 L136:
 	;
 	v574 = m.G3
-	v576 = v574 + int32(_a2144)
+	v576 = v574 + int32(_a_F_luaFunctionRegisterFunction_11)
 	v579 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v217))))
 	if v579 != 0 {
 		goto L172
@@ -4380,7 +4380,7 @@ L165:
 	goto L151
 L166:
 	;
-	v1203 = v501 + int32(_a2145)
+	v1203 = v501 + int32(_a_F_luaFunctionRegisterFunction_12)
 	v1206 = v144
 	goto L49
 L167:
@@ -4497,7 +4497,7 @@ L181:
 	goto L176
 L182:
 	;
-	v1203 = v574 + int32(_a2146)
+	v1203 = v574 + int32(_a_F_luaFunctionRegisterFunction_13)
 	v1206 = v144
 	goto L49
 L183:
@@ -4542,7 +4542,7 @@ L198:
 	goto L184
 L199:
 	;
-	v1203 = v619 + int32(_a2147)
+	v1203 = v619 + int32(_a_F_luaFunctionRegisterFunction_14)
 	v1206 = v144
 	goto L49
 L200:
@@ -4654,7 +4654,7 @@ L237:
 L238:
 	;
 	v880 = m.G3
-	v885 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v880)+uint32(_consts[1144]))))
+	v885 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v880)+uint32(_c_F_luaFunctionRegisterFunction[0]))))
 	if v885 != 0 {
 		goto L256
 	} else {
@@ -4662,7 +4662,7 @@ L238:
 	}
 L239:
 	;
-	v842 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v833)+uint32(_consts[1145]))))
+	v842 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v833)+uint32(_c_F_luaFunctionRegisterFunction[1]))))
 	if v842 != 0 {
 		goto L242
 	} else {
@@ -4685,7 +4685,7 @@ L241:
 	goto L240
 L242:
 	;
-	v844 = v833 + int32(_a2148)
+	v844 = v833 + int32(_a_F_luaFunctionRegisterFunction_15)
 	v845 = v838
 	v846 = v842
 	goto L245
@@ -4758,12 +4758,12 @@ L251:
 	goto L246
 L252:
 	;
-	v1060 = v833 + int32(_a2149)
+	v1060 = v833 + int32(_a_F_luaFunctionRegisterFunction_16)
 	goto L237
 L253:
 	;
 	v925 = m.G3
-	v930 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v925)+uint32(_consts[1146]))))
+	v930 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v925)+uint32(_c_F_luaFunctionRegisterFunction[2]))))
 	if v930 != 0 {
 		goto L270
 	} else {
@@ -4786,7 +4786,7 @@ L255:
 	goto L254
 L256:
 	;
-	v887 = v880 + int32(_a2150)
+	v887 = v880 + int32(_a_F_luaFunctionRegisterFunction_17)
 	v888 = v838
 	v889 = v885
 	goto L259
@@ -4859,12 +4859,12 @@ L265:
 	goto L260
 L266:
 	;
-	v1060 = v880 + int32(_a2151)
+	v1060 = v880 + int32(_a_F_luaFunctionRegisterFunction_18)
 	goto L237
 L267:
 	;
 	v970 = m.G3
-	v975 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v970)+uint32(_consts[1147]))))
+	v975 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v970)+uint32(_c_F_luaFunctionRegisterFunction[3]))))
 	if v975 != 0 {
 		goto L284
 	} else {
@@ -4887,7 +4887,7 @@ L269:
 	goto L268
 L270:
 	;
-	v932 = v925 + int32(_a2152)
+	v932 = v925 + int32(_a_F_luaFunctionRegisterFunction_19)
 	v933 = v838
 	v934 = v930
 	goto L273
@@ -4960,12 +4960,12 @@ L279:
 	goto L274
 L280:
 	;
-	v1060 = v925 + int32(_a2153)
+	v1060 = v925 + int32(_a_F_luaFunctionRegisterFunction_20)
 	goto L237
 L281:
 	;
 	v1015 = m.G3
-	v1020 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v1015)+uint32(_consts[1148]))))
+	v1020 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v1015)+uint32(_c_F_luaFunctionRegisterFunction[4]))))
 	if v1020 != 0 {
 		goto L297
 	} else {
@@ -4988,7 +4988,7 @@ L283:
 	goto L282
 L284:
 	;
-	v977 = v970 + int32(_a2154)
+	v977 = v970 + int32(_a_F_luaFunctionRegisterFunction_21)
 	v978 = v838
 	v979 = v975
 	goto L287
@@ -5061,7 +5061,7 @@ L293:
 	goto L288
 L294:
 	;
-	v1060 = v970 + int32(_a2155)
+	v1060 = v970 + int32(_a_F_luaFunctionRegisterFunction_22)
 	goto L237
 L295:
 	;
@@ -5080,7 +5080,7 @@ L296:
 	goto L295
 L297:
 	;
-	v1022 = v1015 + int32(_a2156)
+	v1022 = v1015 + int32(_a_F_luaFunctionRegisterFunction_23)
 	v1023 = v838
 	v1024 = v1020
 	goto L300
@@ -5153,7 +5153,7 @@ L306:
 	goto L301
 L307:
 	;
-	v1060 = v1015 + int32(_a2157)
+	v1060 = v1015 + int32(_a_F_luaFunctionRegisterFunction_24)
 	goto L237
 L308:
 	;
@@ -5226,7 +5226,7 @@ L333:
 L334:
 	;
 	v1196 = m.G3
-	v1203 = v1196 + int32(_a2158)
+	v1203 = v1196 + int32(_a_F_luaFunctionRegisterFunction_25)
 	v1206 = v144
 	goto L49
 L335:
@@ -5297,13 +5297,13 @@ L361:
 	}
 L362:
 	;
-	v1337 = v1309 + int32(_a2137)
+	v1337 = v1309 + int32(_a_F_luaFunctionRegisterFunction_4)
 	v1339 = v1300
 	v1340 = v1301
 	goto L41
 L363:
 	;
-	v1320 = v1312 + int32(_a2159)
+	v1320 = v1312 + int32(_a_F_luaFunctionRegisterFunction_26)
 	v1322 = int32(0)
 	v1323 = v1301
 	v1324 = v1302
@@ -5437,7 +5437,7 @@ L389:
 	goto L375
 L390:
 	;
-	v1539 = v1372 + int32(_a2160)
+	v1539 = v1372 + int32(_a_F_luaFunctionRegisterFunction_27)
 	goto L373
 L391:
 	;
@@ -5463,7 +5463,7 @@ L393:
 	}
 L394:
 	;
-	v1539 = v1437 + int32(_a2160)
+	v1539 = v1437 + int32(_a_F_luaFunctionRegisterFunction_27)
 	goto L373
 L395:
 	;
@@ -5551,7 +5551,7 @@ L413:
 L414:
 	;
 	v1536 = m.G3
-	v1539 = v1536 + int32(_a2161)
+	v1539 = v1536 + int32(_a_F_luaFunctionRegisterFunction_28)
 	goto L373
 L415:
 	;
@@ -6526,7 +6526,7 @@ func F_luaNewIndexAllowList(m *base.Module, l0 int32) int32 {
 	v7 = v5 - int32(16)
 	m.G0 = v7
 	v9 = m.G3
-	v12 = F_luaGetFromRegistry(m, l0, v9+int32(_a2168))
+	v12 = F_luaGetFromRegistry(m, l0, v9+int32(_a_F_luaNewIndexAllowList_0))
 	mBase = m.M
 	v15 = m.ExcPending
 	if v15 != 0 {
@@ -6558,7 +6558,7 @@ L5:
 	v24 = *(*int32)(unsafe.Add(mBase, uint32(v12)))
 	v30 = m.G10
 	v31 = *(*int32)(unsafe.Add(mBase, uint32(v30)))
-	m.T0[v31].(func(*base.Module, int32, int32, int32, int32))(m, v24, v23+int32(_a716), v23+int32(_a2169), int32(0))
+	m.T0[v31].(func(*base.Module, int32, int32, int32, int32))(m, v24, v23+int32(_a_F_luaNewIndexAllowList_1), v23+int32(_a_F_luaNewIndexAllowList_2), int32(0))
 	mBase = m.M
 	v33 = m.ExcPending
 	if v33 != 0 {
@@ -6568,7 +6568,7 @@ L5:
 	}
 L6:
 	;
-	v37 = F_luaL_error(m, l0, v23+int32(_a2170), int32(0))
+	v37 = F_luaL_error(m, l0, v23+int32(_a_F_luaNewIndexAllowList_3), int32(0))
 	mBase = m.M
 	v38 = m.ExcPending
 	if v38 != 0 {
@@ -6617,7 +6617,7 @@ L23:
 L24:
 	;
 	v100 = m.G3
-	v104 = F_luaL_error(m, l0, v100+int32(_a2171), int32(0))
+	v104 = F_luaL_error(m, l0, v100+int32(_a_F_luaNewIndexAllowList_4), int32(0))
 	mBase = m.M
 	v105 = m.ExcPending
 	if v105 != 0 {
@@ -6691,7 +6691,7 @@ L43:
 L44:
 	;
 	v171 = m.G3
-	v175 = F_luaL_error(m, l0, v171+int32(_a2172), int32(0))
+	v175 = F_luaL_error(m, l0, v171+int32(_a_F_luaNewIndexAllowList_5), int32(0))
 	mBase = m.M
 	v176 = m.ExcPending
 	if v176 != 0 {
@@ -6719,7 +6719,7 @@ L47:
 L48:
 	;
 	v186 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v182))))
-	v187 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v177)+uint32(_consts[1149]))))
+	v187 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v177)+uint32(_c_F_luaNewIndexAllowList[0]))))
 	if v187 == int32(0) {
 		v210 = v186
 		v211 = v187
@@ -6748,7 +6748,7 @@ L51:
 	}
 L52:
 	;
-	v193 = v177 + int32(_a2173)
+	v193 = v177 + int32(_a_F_luaNewIndexAllowList_6)
 	v194 = v182
 	goto L53
 L53:
@@ -6784,7 +6784,7 @@ L57:
 	;
 	v217 = m.G3
 	v222 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v182))))
-	v223 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v217)+uint32(_consts[1150]))))
+	v223 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v217)+uint32(_c_F_luaNewIndexAllowList[1]))))
 	if v223 == int32(0) {
 		v246 = v222
 		v247 = v223
@@ -6813,7 +6813,7 @@ L60:
 	}
 L61:
 	;
-	v229 = v217 + int32(_a2174)
+	v229 = v217 + int32(_a_F_luaNewIndexAllowList_7)
 	v230 = v182
 	goto L62
 L62:
@@ -6849,7 +6849,7 @@ L66:
 	;
 	v253 = m.G3
 	v258 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v182))))
-	v259 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v253)+uint32(_consts[1151]))))
+	v259 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v253)+uint32(_c_F_luaNewIndexAllowList[2]))))
 	if v259 == int32(0) {
 		v282 = v258
 		v283 = v259
@@ -6878,7 +6878,7 @@ L69:
 	}
 L70:
 	;
-	v265 = v253 + int32(_a2175)
+	v265 = v253 + int32(_a_F_luaNewIndexAllowList_8)
 	v266 = v182
 	goto L71
 L71:
@@ -6914,7 +6914,7 @@ L75:
 	;
 	v289 = m.G3
 	v294 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v182))))
-	v295 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v289)+uint32(_consts[1152]))))
+	v295 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v289)+uint32(_c_F_luaNewIndexAllowList[3]))))
 	if v295 == int32(0) {
 		v318 = v294
 		v319 = v295
@@ -6943,7 +6943,7 @@ L78:
 	}
 L79:
 	;
-	v301 = v289 + int32(_a2176)
+	v301 = v289 + int32(_a_F_luaNewIndexAllowList_9)
 	v302 = v182
 	goto L80
 L80:
@@ -6979,7 +6979,7 @@ L84:
 	;
 	v325 = m.G3
 	v330 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v182))))
-	v331 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v325)+uint32(_consts[1153]))))
+	v331 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v325)+uint32(_c_F_luaNewIndexAllowList[4]))))
 	if v331 == int32(0) {
 		v354 = v330
 		v355 = v331
@@ -7008,7 +7008,7 @@ L87:
 	}
 L88:
 	;
-	v337 = v325 + int32(_a2177)
+	v337 = v325 + int32(_a_F_luaNewIndexAllowList_10)
 	v338 = v182
 	goto L89
 L89:
@@ -7044,7 +7044,7 @@ L93:
 	;
 	v361 = m.G3
 	v366 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v182))))
-	v367 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v361)+uint32(_consts[1125]))))
+	v367 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v361)+uint32(_c_F_luaNewIndexAllowList[5]))))
 	if v367 == int32(0) {
 		v390 = v366
 		v391 = v367
@@ -7073,7 +7073,7 @@ L96:
 	}
 L97:
 	;
-	v373 = v361 + int32(_a1662)
+	v373 = v361 + int32(_a_F_luaNewIndexAllowList_11)
 	v374 = v182
 	goto L98
 L98:
@@ -7109,7 +7109,7 @@ L102:
 	;
 	v397 = m.G3
 	v402 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v182))))
-	v403 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v397)+uint32(_consts[1154]))))
+	v403 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v397)+uint32(_c_F_luaNewIndexAllowList[6]))))
 	if v403 == int32(0) {
 		v426 = v402
 		v427 = v403
@@ -7138,7 +7138,7 @@ L105:
 	}
 L106:
 	;
-	v409 = v397 + int32(_a2178)
+	v409 = v397 + int32(_a_F_luaNewIndexAllowList_12)
 	v410 = v182
 	goto L107
 L107:
@@ -7174,7 +7174,7 @@ L111:
 	;
 	v433 = m.G3
 	v438 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v182))))
-	v439 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v433)+uint32(_consts[1155]))))
+	v439 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v433)+uint32(_c_F_luaNewIndexAllowList[7]))))
 	if v439 == int32(0) {
 		v462 = v438
 		v463 = v439
@@ -7203,7 +7203,7 @@ L114:
 	}
 L115:
 	;
-	v445 = v433 + int32(_a2179)
+	v445 = v433 + int32(_a_F_luaNewIndexAllowList_13)
 	v446 = v182
 	goto L116
 L116:
@@ -7239,7 +7239,7 @@ L120:
 	;
 	v469 = m.G3
 	v474 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v182))))
-	v475 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v469)+uint32(_consts[1156]))))
+	v475 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v469)+uint32(_c_F_luaNewIndexAllowList[8]))))
 	if v475 == int32(0) {
 		v498 = v474
 		v499 = v475
@@ -7268,7 +7268,7 @@ L123:
 	}
 L124:
 	;
-	v481 = v469 + int32(_a1390)
+	v481 = v469 + int32(_a_F_luaNewIndexAllowList_14)
 	v482 = v182
 	goto L125
 L125:
@@ -7304,7 +7304,7 @@ L129:
 	;
 	v505 = m.G3
 	v510 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v182))))
-	v511 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v505)+uint32(_consts[1157]))))
+	v511 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v505)+uint32(_c_F_luaNewIndexAllowList[9]))))
 	if v511 == int32(0) {
 		v534 = v510
 		v535 = v511
@@ -7333,7 +7333,7 @@ L132:
 	}
 L133:
 	;
-	v517 = v505 + int32(_a1396)
+	v517 = v505 + int32(_a_F_luaNewIndexAllowList_15)
 	v518 = v182
 	goto L134
 L134:
@@ -7369,7 +7369,7 @@ L138:
 	;
 	v541 = m.G3
 	v546 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v182))))
-	v547 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v541)+uint32(_consts[1158]))))
+	v547 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v541)+uint32(_c_F_luaNewIndexAllowList[10]))))
 	if v547 == int32(0) {
 		v570 = v546
 		v571 = v547
@@ -7398,7 +7398,7 @@ L141:
 	}
 L142:
 	;
-	v553 = v541 + int32(_a2180)
+	v553 = v541 + int32(_a_F_luaNewIndexAllowList_16)
 	v554 = v182
 	goto L143
 L143:
@@ -7434,7 +7434,7 @@ L147:
 	;
 	v577 = m.G3
 	v582 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v182))))
-	v583 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v577)+uint32(_consts[1159]))))
+	v583 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v577)+uint32(_c_F_luaNewIndexAllowList[11]))))
 	if v583 == int32(0) {
 		v606 = v582
 		v607 = v583
@@ -7463,7 +7463,7 @@ L150:
 	}
 L151:
 	;
-	v589 = v577 + int32(_a2181)
+	v589 = v577 + int32(_a_F_luaNewIndexAllowList_17)
 	v590 = v182
 	goto L152
 L152:
@@ -7499,7 +7499,7 @@ L156:
 	;
 	v613 = m.G3
 	v618 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v182))))
-	v619 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v613)+uint32(_consts[1160]))))
+	v619 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v613)+uint32(_c_F_luaNewIndexAllowList[12]))))
 	if v619 == int32(0) {
 		v642 = v618
 		v643 = v619
@@ -7528,7 +7528,7 @@ L159:
 	}
 L160:
 	;
-	v625 = v613 + int32(_a2182)
+	v625 = v613 + int32(_a_F_luaNewIndexAllowList_18)
 	v626 = v182
 	goto L161
 L161:
@@ -7564,7 +7564,7 @@ L165:
 	;
 	v649 = m.G3
 	v654 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v182))))
-	v655 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v649)+uint32(_consts[1161]))))
+	v655 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v649)+uint32(_c_F_luaNewIndexAllowList[13]))))
 	if v655 == int32(0) {
 		v678 = v654
 		v679 = v655
@@ -7593,7 +7593,7 @@ L168:
 	}
 L169:
 	;
-	v661 = v649 + int32(_a2183)
+	v661 = v649 + int32(_a_F_luaNewIndexAllowList_19)
 	v662 = v182
 	goto L170
 L170:
@@ -7629,7 +7629,7 @@ L174:
 	;
 	v685 = m.G3
 	v690 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v182))))
-	v691 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v685)+uint32(_consts[1162]))))
+	v691 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v685)+uint32(_c_F_luaNewIndexAllowList[14]))))
 	if v691 == int32(0) {
 		v714 = v690
 		v715 = v691
@@ -7658,7 +7658,7 @@ L177:
 	}
 L178:
 	;
-	v697 = v685 + int32(_a2184)
+	v697 = v685 + int32(_a_F_luaNewIndexAllowList_20)
 	v698 = v182
 	goto L179
 L179:
@@ -7694,7 +7694,7 @@ L183:
 	;
 	v721 = m.G3
 	v726 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v182))))
-	v727 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v721)+uint32(_consts[1163]))))
+	v727 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v721)+uint32(_c_F_luaNewIndexAllowList[15]))))
 	if v727 == int32(0) {
 		v750 = v726
 		v751 = v727
@@ -7723,7 +7723,7 @@ L186:
 	}
 L187:
 	;
-	v733 = v721 + int32(_a2185)
+	v733 = v721 + int32(_a_F_luaNewIndexAllowList_21)
 	v734 = v182
 	goto L188
 L188:
@@ -7759,7 +7759,7 @@ L192:
 	;
 	v757 = m.G3
 	v762 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v182))))
-	v763 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v757)+uint32(_consts[1164]))))
+	v763 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v757)+uint32(_c_F_luaNewIndexAllowList[16]))))
 	if v763 == int32(0) {
 		v786 = v762
 		v787 = v763
@@ -7788,7 +7788,7 @@ L195:
 	}
 L196:
 	;
-	v769 = v757 + int32(_a2186)
+	v769 = v757 + int32(_a_F_luaNewIndexAllowList_22)
 	v770 = v182
 	goto L197
 L197:
@@ -7824,7 +7824,7 @@ L201:
 	;
 	v793 = m.G3
 	v798 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v182))))
-	v799 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v793)+uint32(_consts[1165]))))
+	v799 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v793)+uint32(_c_F_luaNewIndexAllowList[17]))))
 	if v799 == int32(0) {
 		v822 = v798
 		v823 = v799
@@ -7853,7 +7853,7 @@ L204:
 	}
 L205:
 	;
-	v805 = v793 + int32(_a2187)
+	v805 = v793 + int32(_a_F_luaNewIndexAllowList_23)
 	v806 = v182
 	goto L206
 L206:
@@ -7889,7 +7889,7 @@ L210:
 	;
 	v829 = m.G3
 	v834 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v182))))
-	v835 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v829)+uint32(_consts[1166]))))
+	v835 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v829)+uint32(_c_F_luaNewIndexAllowList[18]))))
 	if v835 == int32(0) {
 		v858 = v834
 		v859 = v835
@@ -7918,7 +7918,7 @@ L213:
 	}
 L214:
 	;
-	v841 = v829 + int32(_a2188)
+	v841 = v829 + int32(_a_F_luaNewIndexAllowList_24)
 	v842 = v182
 	goto L215
 L215:
@@ -7954,7 +7954,7 @@ L219:
 	;
 	v865 = m.G3
 	v870 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v182))))
-	v871 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v865)+uint32(_consts[1167]))))
+	v871 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v865)+uint32(_c_F_luaNewIndexAllowList[19]))))
 	if v871 == int32(0) {
 		v894 = v870
 		v895 = v871
@@ -7983,7 +7983,7 @@ L222:
 	}
 L223:
 	;
-	v877 = v865 + int32(_a2189)
+	v877 = v865 + int32(_a_F_luaNewIndexAllowList_25)
 	v878 = v182
 	goto L224
 L224:
@@ -8019,7 +8019,7 @@ L228:
 	;
 	v901 = m.G3
 	v906 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v182))))
-	v907 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v901)+uint32(_consts[1168]))))
+	v907 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v901)+uint32(_c_F_luaNewIndexAllowList[20]))))
 	if v907 == int32(0) {
 		v930 = v906
 		v931 = v907
@@ -8048,7 +8048,7 @@ L231:
 	}
 L232:
 	;
-	v913 = v901 + int32(_a2190)
+	v913 = v901 + int32(_a_F_luaNewIndexAllowList_26)
 	v914 = v182
 	goto L233
 L233:
@@ -8084,7 +8084,7 @@ L237:
 	;
 	v937 = m.G3
 	v942 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v182))))
-	v943 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v937)+uint32(_consts[1169]))))
+	v943 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v937)+uint32(_c_F_luaNewIndexAllowList[21]))))
 	if v943 == int32(0) {
 		v966 = v942
 		v967 = v943
@@ -8113,7 +8113,7 @@ L240:
 	}
 L241:
 	;
-	v949 = v937 + int32(_a2191)
+	v949 = v937 + int32(_a_F_luaNewIndexAllowList_27)
 	v950 = v182
 	goto L242
 L242:
@@ -8149,7 +8149,7 @@ L246:
 	;
 	v973 = m.G3
 	v978 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v182))))
-	v979 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v973)+uint32(_consts[1170]))))
+	v979 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v973)+uint32(_c_F_luaNewIndexAllowList[22]))))
 	if v979 == int32(0) {
 		v1002 = v978
 		v1003 = v979
@@ -8178,7 +8178,7 @@ L249:
 	}
 L250:
 	;
-	v985 = v973 + int32(_a2192)
+	v985 = v973 + int32(_a_F_luaNewIndexAllowList_28)
 	v986 = v182
 	goto L251
 L251:
@@ -8214,7 +8214,7 @@ L255:
 	;
 	v1009 = m.G3
 	v1014 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v182))))
-	v1015 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v1009)+uint32(_consts[1171]))))
+	v1015 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v1009)+uint32(_c_F_luaNewIndexAllowList[23]))))
 	if v1015 == int32(0) {
 		v1038 = v1014
 		v1039 = v1015
@@ -8243,7 +8243,7 @@ L258:
 	}
 L259:
 	;
-	v1021 = v1009 + int32(_a2193)
+	v1021 = v1009 + int32(_a_F_luaNewIndexAllowList_29)
 	v1022 = v182
 	goto L260
 L260:
@@ -8279,7 +8279,7 @@ L264:
 	;
 	v1045 = m.G3
 	v1050 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v182))))
-	v1051 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v1045)+uint32(_consts[1172]))))
+	v1051 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v1045)+uint32(_c_F_luaNewIndexAllowList[24]))))
 	if v1051 == int32(0) {
 		v1074 = v1050
 		v1075 = v1051
@@ -8308,7 +8308,7 @@ L267:
 	}
 L268:
 	;
-	v1057 = v1045 + int32(_a63)
+	v1057 = v1045 + int32(_a_F_luaNewIndexAllowList_30)
 	v1058 = v182
 	goto L269
 L269:
@@ -8344,7 +8344,7 @@ L273:
 	;
 	v1081 = m.G3
 	v1086 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v182))))
-	v1087 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v1081)+uint32(_consts[1173]))))
+	v1087 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v1081)+uint32(_c_F_luaNewIndexAllowList[25]))))
 	if v1087 == int32(0) {
 		v1110 = v1086
 		v1111 = v1087
@@ -8373,7 +8373,7 @@ L276:
 	}
 L277:
 	;
-	v1093 = v1081 + int32(_a2194)
+	v1093 = v1081 + int32(_a_F_luaNewIndexAllowList_31)
 	v1094 = v182
 	goto L278
 L278:
@@ -8409,7 +8409,7 @@ L282:
 	;
 	v1117 = m.G3
 	v1122 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v182))))
-	v1123 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v1117)+uint32(_consts[1174]))))
+	v1123 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v1117)+uint32(_c_F_luaNewIndexAllowList[26]))))
 	if v1123 == int32(0) {
 		v1146 = v1122
 		v1147 = v1123
@@ -8438,7 +8438,7 @@ L285:
 	}
 L286:
 	;
-	v1129 = v1117 + int32(_a1400)
+	v1129 = v1117 + int32(_a_F_luaNewIndexAllowList_32)
 	v1130 = v182
 	goto L287
 L287:
@@ -8474,7 +8474,7 @@ L291:
 	;
 	v1153 = m.G3
 	v1158 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v182))))
-	v1159 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v1153)+uint32(_consts[1175]))))
+	v1159 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v1153)+uint32(_c_F_luaNewIndexAllowList[27]))))
 	if v1159 == int32(0) {
 		v1182 = v1158
 		v1183 = v1159
@@ -8503,7 +8503,7 @@ L294:
 	}
 L295:
 	;
-	v1165 = v1153 + int32(_a2195)
+	v1165 = v1153 + int32(_a_F_luaNewIndexAllowList_33)
 	v1166 = v182
 	goto L296
 L296:
@@ -8539,7 +8539,7 @@ L300:
 	;
 	v1189 = m.G3
 	v1194 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v182))))
-	v1195 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v1189)+uint32(_consts[1176]))))
+	v1195 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v1189)+uint32(_c_F_luaNewIndexAllowList[28]))))
 	if v1195 == int32(0) {
 		v1218 = v1194
 		v1219 = v1195
@@ -8568,7 +8568,7 @@ L303:
 	}
 L304:
 	;
-	v1201 = v1189 + int32(_a2196)
+	v1201 = v1189 + int32(_a_F_luaNewIndexAllowList_34)
 	v1202 = v182
 	goto L305
 L305:
@@ -8604,7 +8604,7 @@ L309:
 	;
 	v1225 = m.G3
 	v1230 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v182))))
-	v1231 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v1225)+uint32(_consts[1177]))))
+	v1231 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v1225)+uint32(_c_F_luaNewIndexAllowList[29]))))
 	if v1231 == int32(0) {
 		v1254 = v1230
 		v1255 = v1231
@@ -8633,7 +8633,7 @@ L312:
 	}
 L313:
 	;
-	v1237 = v1225 + int32(_a2197)
+	v1237 = v1225 + int32(_a_F_luaNewIndexAllowList_35)
 	v1238 = v182
 	goto L314
 L314:
@@ -8669,7 +8669,7 @@ L318:
 	;
 	v1261 = m.G3
 	v1266 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v182))))
-	v1267 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v1261)+uint32(_consts[1178]))))
+	v1267 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v1261)+uint32(_c_F_luaNewIndexAllowList[30]))))
 	if v1267 == int32(0) {
 		v1290 = v1266
 		v1291 = v1267
@@ -8698,7 +8698,7 @@ L321:
 	}
 L322:
 	;
-	v1273 = v1261 + int32(_a2198)
+	v1273 = v1261 + int32(_a_F_luaNewIndexAllowList_36)
 	v1274 = v182
 	goto L323
 L323:
@@ -8734,7 +8734,7 @@ L327:
 	;
 	v1297 = m.G3
 	v1302 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v182))))
-	v1303 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v1297)+uint32(_consts[1179]))))
+	v1303 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v1297)+uint32(_c_F_luaNewIndexAllowList[31]))))
 	if v1303 == int32(0) {
 		v1326 = v1302
 		v1327 = v1303
@@ -8763,7 +8763,7 @@ L330:
 	}
 L331:
 	;
-	v1309 = v1297 + int32(_a2199)
+	v1309 = v1297 + int32(_a_F_luaNewIndexAllowList_37)
 	v1310 = v182
 	goto L332
 L332:
@@ -8799,7 +8799,7 @@ L336:
 	;
 	v1333 = m.G3
 	v1338 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v182))))
-	v1339 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v1333)+uint32(_consts[1180]))))
+	v1339 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v1333)+uint32(_c_F_luaNewIndexAllowList[32]))))
 	if v1339 == int32(0) {
 		v1362 = v1338
 		v1363 = v1339
@@ -8828,7 +8828,7 @@ L339:
 	}
 L340:
 	;
-	v1345 = v1333 + int32(_a2200)
+	v1345 = v1333 + int32(_a_F_luaNewIndexAllowList_38)
 	v1346 = v182
 	goto L341
 L341:
@@ -8864,7 +8864,7 @@ L345:
 	;
 	v1369 = m.G3
 	v1374 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v182))))
-	v1375 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v1369)+uint32(_consts[1181]))))
+	v1375 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v1369)+uint32(_c_F_luaNewIndexAllowList[33]))))
 	if v1375 == int32(0) {
 		v1398 = v1374
 		v1399 = v1375
@@ -8893,7 +8893,7 @@ L348:
 	}
 L349:
 	;
-	v1381 = v1369 + int32(_a2201)
+	v1381 = v1369 + int32(_a_F_luaNewIndexAllowList_39)
 	v1382 = v182
 	goto L350
 L350:
@@ -8929,7 +8929,7 @@ L354:
 	;
 	v1405 = m.G3
 	v1410 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v182))))
-	v1411 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v1405)+uint32(_consts[1182]))))
+	v1411 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v1405)+uint32(_c_F_luaNewIndexAllowList[34]))))
 	if v1411 == int32(0) {
 		v1434 = v1410
 		v1435 = v1411
@@ -8958,7 +8958,7 @@ L357:
 	}
 L358:
 	;
-	v1417 = v1405 + int32(_a756)
+	v1417 = v1405 + int32(_a_F_luaNewIndexAllowList_40)
 	v1418 = v182
 	goto L359
 L359:
@@ -8994,7 +8994,7 @@ L363:
 	;
 	v1441 = m.G3
 	v1446 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v182))))
-	v1447 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v1441)+uint32(_consts[1183]))))
+	v1447 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v1441)+uint32(_c_F_luaNewIndexAllowList[35]))))
 	if v1447 == int32(0) {
 		v1470 = v1446
 		v1471 = v1447
@@ -9023,7 +9023,7 @@ L366:
 	}
 L367:
 	;
-	v1453 = v1441 + int32(_a2202)
+	v1453 = v1441 + int32(_a_F_luaNewIndexAllowList_41)
 	v1454 = v182
 	goto L368
 L368:
@@ -9059,7 +9059,7 @@ L372:
 	;
 	v1477 = m.G3
 	v1482 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v182))))
-	v1483 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v1477)+uint32(_consts[1184]))))
+	v1483 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v1477)+uint32(_c_F_luaNewIndexAllowList[36]))))
 	if v1483 == int32(0) {
 		v1506 = v1482
 		v1507 = v1483
@@ -9088,7 +9088,7 @@ L375:
 	}
 L376:
 	;
-	v1489 = v1477 + int32(_a713)
+	v1489 = v1477 + int32(_a_F_luaNewIndexAllowList_42)
 	v1490 = v182
 	goto L377
 L377:
@@ -9124,7 +9124,7 @@ L381:
 	;
 	v1513 = m.G3
 	v1518 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v182))))
-	v1519 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v1513)+uint32(_consts[1185]))))
+	v1519 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v1513)+uint32(_c_F_luaNewIndexAllowList[37]))))
 	if v1519 == int32(0) {
 		v1542 = v1518
 		v1543 = v1519
@@ -9136,7 +9136,7 @@ L382:
 	;
 	v1625 = m.G3
 	v1630 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v182))))
-	v1631 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v1625)+uint32(_consts[1186]))))
+	v1631 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v1625)+uint32(_c_F_luaNewIndexAllowList[38]))))
 	if v1631 == int32(0) {
 		v1654 = v1630
 		v1655 = v1631
@@ -9173,7 +9173,7 @@ L386:
 	}
 L387:
 	;
-	v1525 = v1513 + int32(_a2203)
+	v1525 = v1513 + int32(_a_F_luaNewIndexAllowList_43)
 	v1526 = v182
 	goto L388
 L388:
@@ -9209,7 +9209,7 @@ L392:
 	;
 	v1549 = m.G3
 	v1554 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v182))))
-	v1555 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v1549)+uint32(_consts[1187]))))
+	v1555 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v1549)+uint32(_c_F_luaNewIndexAllowList[39]))))
 	if v1555 == int32(0) {
 		v1578 = v1554
 		v1579 = v1555
@@ -9238,7 +9238,7 @@ L395:
 	}
 L396:
 	;
-	v1561 = v1549 + int32(_a2204)
+	v1561 = v1549 + int32(_a_F_luaNewIndexAllowList_44)
 	v1562 = v182
 	goto L397
 L397:
@@ -9274,7 +9274,7 @@ L401:
 	;
 	v1585 = m.G3
 	v1590 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v182))))
-	v1591 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v1585)+uint32(_consts[1188]))))
+	v1591 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v1585)+uint32(_c_F_luaNewIndexAllowList[40]))))
 	if v1591 == int32(0) {
 		v1614 = v1590
 		v1615 = v1591
@@ -9303,7 +9303,7 @@ L404:
 	}
 L405:
 	;
-	v1597 = v1585 + int32(_a2205)
+	v1597 = v1585 + int32(_a_F_luaNewIndexAllowList_45)
 	v1598 = v182
 	goto L406
 L406:
@@ -9364,7 +9364,7 @@ L414:
 	}
 L415:
 	;
-	v1637 = v1625 + int32(_a2206)
+	v1637 = v1625 + int32(_a_F_luaNewIndexAllowList_46)
 	v1638 = v182
 	goto L416
 L416:
@@ -9400,7 +9400,7 @@ L420:
 	;
 	v1661 = m.G3
 	v1666 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v182))))
-	v1667 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v1661)+uint32(_consts[1189]))))
+	v1667 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v1661)+uint32(_c_F_luaNewIndexAllowList[41]))))
 	if v1667 == int32(0) {
 		v1690 = v1666
 		v1691 = v1667
@@ -9429,7 +9429,7 @@ L423:
 	}
 L424:
 	;
-	v1673 = v1661 + int32(_a2207)
+	v1673 = v1661 + int32(_a_F_luaNewIndexAllowList_47)
 	v1674 = v182
 	goto L425
 L425:
@@ -9465,7 +9465,7 @@ L429:
 	;
 	v1697 = m.G3
 	v1702 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v182))))
-	v1703 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v1697)+uint32(_consts[1190]))))
+	v1703 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v1697)+uint32(_c_F_luaNewIndexAllowList[42]))))
 	if v1703 == int32(0) {
 		v1726 = v1702
 		v1727 = v1703
@@ -9494,7 +9494,7 @@ L432:
 	}
 L433:
 	;
-	v1709 = v1697 + int32(_a2208)
+	v1709 = v1697 + int32(_a_F_luaNewIndexAllowList_48)
 	v1710 = v182
 	goto L434
 L434:
@@ -9533,7 +9533,7 @@ L438:
 	v1736 = m.G3
 	v1741 = m.G10
 	v1742 = *(*int32)(unsafe.Add(mBase, uint32(v1741)))
-	m.T0[v1742].(func(*base.Module, int32, int32, int32, int32))(m, v1734, v1736+int32(_a716), v1736+int32(_a2209), v7)
+	m.T0[v1742].(func(*base.Module, int32, int32, int32, int32))(m, v1734, v1736+int32(_a_F_luaNewIndexAllowList_1), v1736+int32(_a_F_luaNewIndexAllowList_49), v7)
 	mBase = m.M
 	v1744 = m.ExcPending
 	if v1744 != 0 {
@@ -9807,7 +9807,7 @@ func F_luaRedisAclCheckCmdPermissionsCommand(m *base.Module, l0 int32) int32 {
 	v14 = v12 - int32(16)
 	m.G0 = v14
 	v16 = m.G3
-	v19 = F_luaGetFromRegistry(m, l0, v16+int32(_a2168))
+	v19 = F_luaGetFromRegistry(m, l0, v16+int32(_a_F_luaRedisAclCheckCmdPermissionsCommand_0))
 	mBase = m.M
 	v22 = m.ExcPending
 	if v22 != 0 {
@@ -9820,7 +9820,7 @@ L1:
 	v339 = m.G3
 	v345 = m.G8
 	v346 = *(*int32)(unsafe.Add(mBase, uint32(v345)))
-	m.T0[v346].(func(*base.Module, int32, int32, int32))(m, v339+int32(_a2210), v339+int32(_a2211), int32(1386))
+	m.T0[v346].(func(*base.Module, int32, int32, int32))(m, v339+int32(_a_F_luaRedisAclCheckCmdPermissionsCommand_1), v339+int32(_a_F_luaRedisAclCheckCmdPermissionsCommand_2), int32(1386))
 	mBase = m.M
 	v348 = m.ExcPending
 	if v348 != 0 {
@@ -9960,7 +9960,7 @@ L16:
 	goto L17
 L17:
 	;
-	v64 = *(*int32)(unsafe.Add(mBase, _consts[9]))
+	v64 = *(*int32)(unsafe.Add(mBase, _c_F_luaRedisAclCheckCmdPermissionsCommand[0]))
 	if v64 == int32(2) {
 		v199 = int32(0)
 		goto L14
@@ -9979,7 +9979,7 @@ L19:
 	v187 = m.G3
 	v193 = m.G8
 	v194 = *(*int32)(unsafe.Add(mBase, uint32(v193)))
-	m.T0[v194].(func(*base.Module, int32, int32, int32))(m, v187+int32(_a2218), v187+int32(_a2211), int32(1406))
+	m.T0[v194].(func(*base.Module, int32, int32, int32))(m, v187+int32(_a_F_luaRedisAclCheckCmdPermissionsCommand_3), v187+int32(_a_F_luaRedisAclCheckCmdPermissionsCommand_2), int32(1406))
 	mBase = m.M
 	v196 = m.ExcPending
 	if v196 != 0 {
@@ -9990,7 +9990,7 @@ L19:
 L20:
 	;
 	v69 = m.G3
-	F_luaPushErrorBuff(m, l0, v69+int32(_a2219))
+	F_luaPushErrorBuff(m, l0, v69+int32(_a_F_luaRedisAclCheckCmdPermissionsCommand_4))
 	mBase = m.M
 	v73 = m.ExcPending
 	if v73 != 0 {
@@ -10468,7 +10468,7 @@ L2:
 L3:
 	;
 	v77 = m.G3
-	F_luaPushErrorBuff(m, l0, v77+int32(_a2215))
+	F_luaPushErrorBuff(m, l0, v77+int32(_a_F_luaRedisErrorReplyCommand_0))
 	mBase = m.M
 	v83 = m.ExcPending
 	if v83 != 0 {
@@ -10557,7 +10557,7 @@ L27:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v8))) = v86
 	v92 = m.G3
-	v95 = F_lm_asprintf(m, v92+int32(_a704), v8)
+	v95 = F_lm_asprintf(m, v92+int32(_a_F_luaRedisErrorReplyCommand_1), v8)
 	mBase = m.M
 	v96 = m.ExcPending
 	if v96 != 0 {
@@ -10757,7 +10757,7 @@ func F_luaRedisSetReplCommand(m *base.Module, l0 int32) int32 {
 	v5 = m.G3
 	v6 = *(*int32)(unsafe.Add(mBase, uint32(l0)+8))
 	v7 = *(*int32)(unsafe.Add(mBase, uint32(l0)+12))
-	v13 = F_luaGetFromRegistry(m, l0, v5+int32(_a2168))
+	v13 = F_luaGetFromRegistry(m, l0, v5+int32(_a_F_luaRedisSetReplCommand_0))
 	mBase = m.M
 	v16 = m.ExcPending
 	if v16 != 0 {
@@ -10767,7 +10767,7 @@ func F_luaRedisSetReplCommand(m *base.Module, l0 int32) int32 {
 			v53 = m.G3
 			v59 = m.G8
 			v60 = *(*int32)(unsafe.Add(mBase, uint32(v59)))
-			m.T0[v60].(func(*base.Module, int32, int32, int32))(m, v53+int32(_a2210), v53+int32(_a2211), int32(1363))
+			m.T0[v60].(func(*base.Module, int32, int32, int32))(m, v53+int32(_a_F_luaRedisSetReplCommand_1), v53+int32(_a_F_luaRedisSetReplCommand_2), int32(1363))
 			mBase = m.M
 			v62 = m.ExcPending
 			if v62 != 0 {
@@ -10798,7 +10798,7 @@ func F_luaRedisSetReplCommand(m *base.Module, l0 int32) int32 {
 						return int32(0)
 					} else {
 						v42 = m.G3
-						F_luaPushErrorBuff(m, l0, v42+int32(_a2216))
+						F_luaPushErrorBuff(m, l0, v42+int32(_a_F_luaRedisSetReplCommand_3))
 						mBase = m.M
 						v46 = m.ExcPending
 						if v46 != 0 {
@@ -10817,7 +10817,7 @@ func F_luaRedisSetReplCommand(m *base.Module, l0 int32) int32 {
 				}
 			} else {
 				v21 = m.G3
-				F_luaPushErrorBuff(m, l0, v21+int32(_a2217))
+				F_luaPushErrorBuff(m, l0, v21+int32(_a_F_luaRedisSetReplCommand_4))
 				mBase = m.M
 				v25 = m.ExcPending
 				if v25 != 0 {
@@ -10918,9 +10918,9 @@ func F_luaRedisSha1hexCommand(m *base.Module, l0 int32) int32 {
 				v54 = int32(1)
 				v56 = v26 + v51<<(uint(v54)%32)
 				v60 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v37+v51))))
-				v65 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v60&int32(15))+uint32(_consts[259]))))
+				v65 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v60&int32(15))+uint32(_c_F_luaRedisSha1hexCommand[0]))))
 				*(*uint8)(unsafe.Add(mBase, uint32(v56+v54))) = uint8(v65)
-				v71 = int32(*(*uint8)(unsafe.Add(mBase, uint32(int32(base.Ui32(v60)>>(uint(int32(4))%32)))+uint32(_consts[259]))))
+				v71 = int32(*(*uint8)(unsafe.Add(mBase, uint32(int32(base.Ui32(v60)>>(uint(int32(4))%32)))+uint32(_c_F_luaRedisSha1hexCommand[0]))))
 				*(*uint8)(unsafe.Add(mBase, uint32(v56))) = uint8(v71)
 				v74 = v51 + v54
 				if v74 != int32(20) {
@@ -10947,7 +10947,7 @@ func F_luaRedisSha1hexCommand(m *base.Module, l0 int32) int32 {
 		}
 	} else {
 		v16 = m.G3
-		F_luaPushErrorBuff(m, l0, v16+int32(_a2214))
+		F_luaPushErrorBuff(m, l0, v16+int32(_a_F_luaRedisSha1hexCommand_0))
 		mBase = m.M
 		v22 = m.ExcPending
 		if v22 != 0 {
@@ -11013,7 +11013,7 @@ func F_luaRedisStatusReplyCommand(m *base.Module, l0 int32) int32 {
 	v3 = *(*int32)(unsafe.Add(mBase, uint32(l0)+12))
 	if (v2-v3)>>(uint(int32(4))%32) != int32(1) {
 		v69 = m.G3
-		F_luaPushErrorBuff(m, l0, v69+int32(_a2215))
+		F_luaPushErrorBuff(m, l0, v69+int32(_a_F_luaRedisStatusReplyCommand_0))
 		mBase = m.M
 		v75 = m.ExcPending
 		if v75 != 0 {
@@ -11040,7 +11040,7 @@ func F_luaRedisStatusReplyCommand(m *base.Module, l0 int32) int32 {
 				return int32(0)
 			} else {
 				v82 = m.G3
-				F_lua_pushstring(m, l0, v82+int32(_a294))
+				F_lua_pushstring(m, l0, v82+int32(_a_F_luaRedisStatusReplyCommand_1))
 				mBase = m.M
 				v86 = m.ExcPending
 				if v86 != 0 {
@@ -11067,7 +11067,7 @@ func F_luaRedisStatusReplyCommand(m *base.Module, l0 int32) int32 {
 			}
 		} else {
 			v69 = m.G3
-			F_luaPushErrorBuff(m, l0, v69+int32(_a2215))
+			F_luaPushErrorBuff(m, l0, v69+int32(_a_F_luaRedisStatusReplyCommand_0))
 			mBase = m.M
 			v75 = m.ExcPending
 			if v75 != 0 {
@@ -11128,7 +11128,7 @@ func F_luaRegisterVersion(m *base.Module, l0 int32, l1 int32) {
 	var v70 int32
 	_ = v70
 	v4 = m.G3
-	F_lua_pushstring(m, l1, v4+int32(_a2163))
+	F_lua_pushstring(m, l1, v4+int32(_a_F_luaRegisterVersion_0))
 	mBase = m.M
 	v8 = m.ExcPending
 	if v8 != 0 {
@@ -11146,7 +11146,7 @@ func F_luaRegisterVersion(m *base.Module, l0 int32, l1 int32) {
 		if v22 != 0 {
 			return
 		} else {
-			F_lua_pushstring(m, l1, v4+int32(_a2164))
+			F_lua_pushstring(m, l1, v4+int32(_a_F_luaRegisterVersion_1))
 			mBase = m.M
 			v26 = m.ExcPending
 			if v26 != 0 {
@@ -11165,7 +11165,7 @@ func F_luaRegisterVersion(m *base.Module, l0 int32, l1 int32) {
 					if v32 != 0 {
 						return
 					} else {
-						F_lua_pushstring(m, l1, v4+int32(_a2165))
+						F_lua_pushstring(m, l1, v4+int32(_a_F_luaRegisterVersion_2))
 						mBase = m.M
 						v36 = m.ExcPending
 						if v36 != 0 {
@@ -11183,7 +11183,7 @@ func F_luaRegisterVersion(m *base.Module, l0 int32, l1 int32) {
 							if v50 != 0 {
 								return
 							} else {
-								F_lua_pushstring(m, l1, v4+int32(_a2166))
+								F_lua_pushstring(m, l1, v4+int32(_a_F_luaRegisterVersion_3))
 								mBase = m.M
 								v54 = m.ExcPending
 								if v54 != 0 {
@@ -11202,7 +11202,7 @@ func F_luaRegisterVersion(m *base.Module, l0 int32, l1 int32) {
 										if v60 != 0 {
 											return
 										} else {
-											F_lua_pushstring(m, l1, v4+int32(_a2167))
+											F_lua_pushstring(m, l1, v4+int32(_a_F_luaRegisterVersion_4))
 											mBase = m.M
 											v64 = m.ExcPending
 											if v64 != 0 {
@@ -11371,7 +11371,7 @@ L5:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v8))) = v22
 	v25 = m.G3
-	v28 = m.T0[v20].(func(*base.Module, int32, int32, int32) int32)(m, int32(0), v25+int32(_a2132), v8)
+	v28 = m.T0[v20].(func(*base.Module, int32, int32, int32) int32)(m, int32(0), v25+int32(_a_F_luaServerDebugCommand_0), v8)
 	mBase = m.M
 	v31 = m.ExcPending
 	if v31 != 0 {
@@ -11429,7 +11429,7 @@ L12:
 	v48 = m.G3
 	v52 = m.G16
 	v53 = *(*int32)(unsafe.Add(mBase, uint32(v52)))
-	v54 = m.T0[v53].(func(*base.Module, int32, int32, int32, int32) int32)(m, int32(0), v44, v48+int32(_a438), int32(2))
+	v54 = m.T0[v53].(func(*base.Module, int32, int32, int32, int32) int32)(m, int32(0), v44, v48+int32(_a_F_luaServerDebugCommand_1), int32(2))
 	mBase = m.M
 	v55 = m.ExcPending
 	if v55 != 0 {
@@ -11711,7 +11711,7 @@ func F_luaServerGenericCommand(m *base.Module, l0 int32, l1 int32) int32 {
 	v15 = v13 - int32(2112)
 	m.G0 = v15
 	v17 = m.G3
-	v20 = F_luaGetFromRegistry(m, l0, v17+int32(_a2168))
+	v20 = F_luaGetFromRegistry(m, l0, v17+int32(_a_F_luaServerGenericCommand_0))
 	mBase = m.M
 	v23 = m.ExcPending
 	if v23 != 0 {
@@ -11724,7 +11724,7 @@ L1:
 	v386 = m.G3
 	v392 = m.G8
 	v393 = *(*int32)(unsafe.Add(mBase, uint32(v392)))
-	m.T0[v393].(func(*base.Module, int32, int32, int32))(m, v386+int32(_a2220), v386+int32(_a2211), int32(1216))
+	m.T0[v393].(func(*base.Module, int32, int32, int32))(m, v386+int32(_a_F_luaServerGenericCommand_1), v386+int32(_a_F_luaServerGenericCommand_2), int32(1216))
 	mBase = m.M
 	v395 = m.ExcPending
 	if v395 != 0 {
@@ -11737,7 +11737,7 @@ L2:
 	v374 = m.G3
 	v380 = m.G8
 	v381 = *(*int32)(unsafe.Add(mBase, uint32(v380)))
-	m.T0[v381].(func(*base.Module, int32, int32, int32))(m, v374+int32(_a2210), v374+int32(_a2211), int32(1140))
+	m.T0[v381].(func(*base.Module, int32, int32, int32))(m, v374+int32(_a_F_luaServerGenericCommand_3), v374+int32(_a_F_luaServerGenericCommand_2), int32(1140))
 	mBase = m.M
 	v383 = m.ExcPending
 	if v383 != 0 {
@@ -11784,7 +11784,7 @@ L7:
 L8:
 	;
 	v34 = m.G3
-	v37 = *(*int32)(unsafe.Add(mBase, uint32(v34)+uint32(_consts[1194])))
+	v37 = *(*int32)(unsafe.Add(mBase, uint32(v34)+uint32(_c_F_luaServerGenericCommand[0])))
 	if v37 == int32(0) {
 		goto L12
 	} else {
@@ -11811,7 +11811,7 @@ L11:
 L12:
 	;
 	v58 = m.G3
-	*(*int32)(unsafe.Add(mBase, uint32(v58)+uint32(_consts[1194]))) = int32(1)
+	*(*int32)(unsafe.Add(mBase, uint32(v58)+uint32(_c_F_luaServerGenericCommand[0]))) = int32(1)
 	v63 = int32(0)
 	v64 = m.G6
 	v65 = *(*int32)(unsafe.Add(mBase, uint32(v64)))
@@ -11821,11 +11821,11 @@ L13:
 	;
 	v40 = m.G3
 	v41 = *(*int32)(unsafe.Add(mBase, uint32(v20)))
-	v43 = v40 + int32(_a2221)
+	v43 = v40 + int32(_a_F_luaServerGenericCommand_4)
 	*(*int32)(unsafe.Add(mBase, uint32(v15)+32)) = v43
 	v51 = m.G10
 	v52 = *(*int32)(unsafe.Add(mBase, uint32(v51)))
-	m.T0[v52].(func(*base.Module, int32, int32, int32, int32))(m, v41, v40+int32(_a716), v40+int32(_a57), v15+int32(32))
+	m.T0[v52].(func(*base.Module, int32, int32, int32, int32))(m, v41, v40+int32(_a_F_luaServerGenericCommand_5), v40+int32(_a_F_luaServerGenericCommand_6), v15+int32(32))
 	mBase = m.M
 	v54 = m.ExcPending
 	if v54 != 0 {
@@ -11881,9 +11881,9 @@ L19:
 L20:
 	;
 	v81 = m.G3
-	v86 = int32(*(*uint16)(unsafe.Add(mBase, uint32(v81)+uint32(_consts[1195]))))
+	v86 = int32(*(*uint16)(unsafe.Add(mBase, uint32(v81)+uint32(_c_F_luaServerGenericCommand[1]))))
 	*(*uint16)(unsafe.Add(mBase, uint32(v77+int32(8)))) = uint16(v86)
-	v88 = *(*int64)(unsafe.Add(mBase, uint32(v81)+uint32(_consts[1196])))
+	v88 = *(*int64)(unsafe.Add(mBase, uint32(v81)+uint32(_c_F_luaServerGenericCommand[2])))
 	*(*int64)(unsafe.Add(mBase, uint32(v77))) = v88
 	v90 = *(*int32)(unsafe.Add(mBase, uint32(v15)+2108))
 	if int32(1) <= v90 {
@@ -11940,7 +11940,7 @@ L27:
 	*(*int32)(unsafe.Add(mBase, uint32(v15)+4)) = v90 + int32(-11)
 	v112 = m.G3
 	v113 = m.G11
-	v116 = F_lm_asprintf(m, v112+int32(_a2222), v15)
+	v116 = F_lm_asprintf(m, v112+int32(_a_F_luaServerGenericCommand_7), v15)
 	mBase = m.M
 	v117 = m.ExcPending
 	if v117 != 0 {
@@ -11969,7 +11969,7 @@ L30:
 	*(*int32)(unsafe.Add(mBase, uint32(v15)+16)) = v100
 	v132 = m.G3
 	v133 = m.G11
-	v138 = F_lm_asprintf(m, v132+int32(_a423), v15+int32(16))
+	v138 = F_lm_asprintf(m, v132+int32(_a_F_luaServerGenericCommand_8), v15+int32(16))
 	mBase = m.M
 	v139 = m.ExcPending
 	if v139 != 0 {
@@ -12026,7 +12026,7 @@ L36:
 	goto L37
 L37:
 	;
-	*(*int32)(unsafe.Add(mBase, _consts[9])) = int32(0)
+	*(*int32)(unsafe.Add(mBase, _c_F_luaServerGenericCommand[3])) = int32(0)
 	if v177&int32(1) != 0 {
 		goto L38
 	} else {
@@ -12074,7 +12074,7 @@ L45:
 L46:
 	;
 	v213 = m.G3
-	v218 = F_VM_CallArgv(m, v187, v31, v172, v212, v213+int32(_a2223), v15+int32(44))
+	v218 = F_VM_CallArgv(m, v187, v31, v172, v212, v213+int32(_a_F_luaServerGenericCommand_9), v15+int32(44))
 	mBase = m.M
 	v219 = m.ExcPending
 	if v219 != 0 {
@@ -12239,8 +12239,8 @@ L64:
 L65:
 	;
 	v331 = m.G3
-	v334 = *(*int32)(unsafe.Add(mBase, uint32(v331)+uint32(_consts[1194])))
-	*(*int32)(unsafe.Add(mBase, uint32(v331)+uint32(_consts[1194]))) = v334 + int32(-1)
+	v334 = *(*int32)(unsafe.Add(mBase, uint32(v331)+uint32(_c_F_luaServerGenericCommand[0])))
+	*(*int32)(unsafe.Add(mBase, uint32(v331)+uint32(_c_F_luaServerGenericCommand[0]))) = v334 + int32(-1)
 	v338 = int32(1)
 	if l1 == int32(0) {
 		v363 = v338
@@ -12325,7 +12325,7 @@ func F_luaSetResp(m *base.Module, l0 int32) int32 {
 	var v64 int32
 	_ = v64
 	v5 = m.G3
-	v8 = F_luaGetFromRegistry(m, l0, v5+int32(_a2168))
+	v8 = F_luaGetFromRegistry(m, l0, v5+int32(_a_F_luaSetResp_0))
 	mBase = m.M
 	v11 = m.ExcPending
 	if v11 != 0 {
@@ -12335,7 +12335,7 @@ func F_luaSetResp(m *base.Module, l0 int32) int32 {
 			v55 = m.G3
 			v61 = m.G8
 			v62 = *(*int32)(unsafe.Add(mBase, uint32(v61)))
-			m.T0[v62].(func(*base.Module, int32, int32, int32))(m, v55+int32(_a2210), v55+int32(_a2211), int32(1478))
+			m.T0[v62].(func(*base.Module, int32, int32, int32))(m, v55+int32(_a_F_luaSetResp_1), v55+int32(_a_F_luaSetResp_2), int32(1478))
 			mBase = m.M
 			v64 = m.ExcPending
 			if v64 != 0 {
@@ -12368,7 +12368,7 @@ func F_luaSetResp(m *base.Module, l0 int32) int32 {
 						return int32(0)
 					} else {
 						v44 = m.G3
-						F_luaPushErrorBuff(m, l0, v44+int32(_a2212))
+						F_luaPushErrorBuff(m, l0, v44+int32(_a_F_luaSetResp_3))
 						mBase = m.M
 						v48 = m.ExcPending
 						if v48 != 0 {
@@ -12387,7 +12387,7 @@ func F_luaSetResp(m *base.Module, l0 int32) int32 {
 				}
 			} else {
 				v21 = m.G3
-				F_luaPushErrorBuff(m, l0, v21+int32(_a2213))
+				F_luaPushErrorBuff(m, l0, v21+int32(_a_F_luaSetResp_4))
 				mBase = m.M
 				v25 = m.ExcPending
 				if v25 != 0 {
@@ -12476,7 +12476,7 @@ func F_luaSetTableProtectionForBasicTypes(m *base.Module, l0 int32) {
 L1:
 	;
 	v6 = m.G3
-	v12 = *(*int32)(unsafe.Add(mBase, uint32(v6+int32(_a2162)+v5<<(uint(int32(2))%32))))
+	v12 = *(*int32)(unsafe.Add(mBase, uint32(v6+int32(_a_F_luaSetTableProtectionForBasicTypes_0)+v5<<(uint(int32(2))%32))))
 	switch v12 {
 	case 0:
 		goto L7
@@ -12555,7 +12555,7 @@ L9:
 L10:
 	;
 	v13 = m.G3
-	F_lua_pushstring(m, l0, v13+int32(_a188))
+	F_lua_pushstring(m, l0, v13+int32(_a_F_luaSetTableProtectionForBasicTypes_1))
 	mBase = m.M
 	v17 = m.ExcPending
 	if v17 != 0 {
@@ -13132,7 +13132,7 @@ func F_lua_concat(m *base.Module, l0 int32, l1 int32) {
 		} else {
 			v28 = m.G3
 			v29 = *(*int32)(unsafe.Add(mBase, uint32(l0)+8))
-			v33 = F_luaS_newlstr(m, l0, v28+int32(_a188), int32(0))
+			v33 = F_luaS_newlstr(m, l0, v28+int32(_a_F_lua_concat_0), int32(0))
 			mBase = m.M
 			v34 = m.ExcPending
 			if v34 != 0 {
@@ -13928,14 +13928,14 @@ L10:
 	*(*int64)(unsafe.Add(mBase, uint32(l2)+28)) = int64(-1)
 	*(*int32)(unsafe.Add(mBase, uint32(l2)+20)) = int32(-1)
 	v306 = m.G3
-	*(*int32)(unsafe.Add(mBase, uint32(l2)+12)) = v306 + int32(_a2243)
-	v311 = v306 + int32(_a188)
+	*(*int32)(unsafe.Add(mBase, uint32(l2)+12)) = v306 + int32(_a_F_lua_getinfo_0)
+	v311 = v306 + int32(_a_F_lua_getinfo_1)
 	*(*int32)(unsafe.Add(mBase, uint32(l2)+4)) = v311
 	*(*int32)(unsafe.Add(mBase, uint32(l2)+8)) = v311
-	v315 = v306 + int32(_a2244)
+	v315 = v306 + int32(_a_F_lua_getinfo_2)
 	*(*int32)(unsafe.Add(mBase, uint32(l2)+16)) = v315
 	v318 = l2 + int32(36)
-	v322 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v306)+uint32(_consts[1200]))))
+	v322 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v306)+uint32(_c_F_lua_getinfo[0]))))
 	switch v322 + int32(-61) {
 	case 0:
 		goto L71
@@ -14088,19 +14088,19 @@ L27:
 	v76 = int32(-1)
 	*(*int32)(unsafe.Add(mBase, uint32(l2)+28)) = v76
 	v79 = m.G3
-	v81 = v79 + int32(_a2245)
+	v81 = v79 + int32(_a_F_lua_getinfo_3)
 	*(*int32)(unsafe.Add(mBase, uint32(l2)+16)) = v81
 	v100 = v76
-	v101 = v79 + int32(_a2246)
+	v101 = v79 + int32(_a_F_lua_getinfo_4)
 	v102 = v81
 	goto L25
 L28:
 	;
-	v96 = int32(_a2247)
+	v96 = int32(_a_F_lua_getinfo_5)
 	goto L30
 L29:
 	;
-	v96 = int32(_a2248)
+	v96 = int32(_a_F_lua_getinfo_6)
 	goto L30
 L30:
 	;
@@ -14117,11 +14117,11 @@ L31:
 L32:
 	;
 	v135 = m.G3
-	v138 = F_strcspn(m, v102, v135+int32(_a2249))
+	v138 = F_strcspn(m, v102, v135+int32(_a_F_lua_getinfo_7))
 	mBase = m.M
-	v145 = int32(*(*uint16)(unsafe.Add(mBase, uint32(v135)+uint32(_consts[1201]))))
+	v145 = int32(*(*uint16)(unsafe.Add(mBase, uint32(v135)+uint32(_c_F_lua_getinfo[1]))))
 	*(*uint16)(unsafe.Add(mBase, uint32(l2+int32(44)))) = uint16(v145)
-	v147 = *(*int64)(unsafe.Add(mBase, uint32(v135)+uint32(_consts[1202])))
+	v147 = *(*int64)(unsafe.Add(mBase, uint32(v135)+uint32(_c_F_lua_getinfo[2])))
 	*(*int64)(unsafe.Add(mBase, uint32(v44))) = v147
 	v150 = int32(43)
 	if base.Ui32(v138) < base.Ui32(v150) {
@@ -14168,9 +14168,9 @@ L37:
 	mBase = m.M
 	v165 = v44 + v164
 	v166 = m.G3
-	v169 = int32(*(*uint16)(unsafe.Add(mBase, uint32(v166)+uint32(_consts[1203]))))
+	v169 = int32(*(*uint16)(unsafe.Add(mBase, uint32(v166)+uint32(_c_F_lua_getinfo[3]))))
 	*(*uint16)(unsafe.Add(mBase, uint32(v165))) = uint16(v169)
-	v175 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v166)+uint32(_consts[1204]))))
+	v175 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v166)+uint32(_c_F_lua_getinfo[4]))))
 	*(*uint8)(unsafe.Add(mBase, uint32(v165+int32(2)))) = uint8(v175)
 	goto L31
 L38:
@@ -14282,7 +14282,7 @@ L53:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(l2)+4)) = int32(0)
 	v283 = m.G3
-	*(*int32)(unsafe.Add(mBase, uint32(l2)+8)) = v283 + int32(_a188)
+	*(*int32)(unsafe.Add(mBase, uint32(l2)+8)) = v283 + int32(_a_F_lua_getinfo_1)
 	v57 = v57 + int32(1)
 	goto L16
 L54:
@@ -14407,11 +14407,11 @@ L68:
 L69:
 	;
 	v349 = m.G3
-	v352 = F_strcspn(m, v315, v349+int32(_a2249))
+	v352 = F_strcspn(m, v315, v349+int32(_a_F_lua_getinfo_7))
 	mBase = m.M
-	v359 = int32(*(*uint16)(unsafe.Add(mBase, uint32(v349)+uint32(_consts[1201]))))
+	v359 = int32(*(*uint16)(unsafe.Add(mBase, uint32(v349)+uint32(_c_F_lua_getinfo[1]))))
 	*(*uint16)(unsafe.Add(mBase, uint32(l2+int32(44)))) = uint16(v359)
-	v361 = *(*int64)(unsafe.Add(mBase, uint32(v349)+uint32(_consts[1202])))
+	v361 = *(*int64)(unsafe.Add(mBase, uint32(v349)+uint32(_c_F_lua_getinfo[2])))
 	*(*int64)(unsafe.Add(mBase, uint32(v318))) = v361
 	v364 = int32(43)
 	if base.Ui32(v352) < base.Ui32(v364) {
@@ -14421,7 +14421,7 @@ L69:
 	}
 L70:
 	;
-	v334 = v306 + int32(_a2250)
+	v334 = v306 + int32(_a_F_lua_getinfo_8)
 	v335 = F_strlen(m, v334)
 	mBase = m.M
 	v336 = int32(0)
@@ -14435,7 +14435,7 @@ L70:
 	}
 L71:
 	;
-	v327 = F_strncpy(m, v318, v306+int32(_a2250), int32(60))
+	v327 = F_strncpy(m, v318, v306+int32(_a_F_lua_getinfo_8), int32(60))
 	mBase = m.M
 	v331 = int32(0)
 	*(*uint8)(unsafe.Add(mBase, uint32(v327+int32(59)))) = uint8(v331)
@@ -14458,9 +14458,9 @@ L74:
 	mBase = m.M
 	v379 = v318 + v378
 	v380 = m.G3
-	v383 = int32(*(*uint16)(unsafe.Add(mBase, uint32(v380)+uint32(_consts[1203]))))
+	v383 = int32(*(*uint16)(unsafe.Add(mBase, uint32(v380)+uint32(_c_F_lua_getinfo[3]))))
 	*(*uint16)(unsafe.Add(mBase, uint32(v379))) = uint16(v383)
-	v389 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v380)+uint32(_consts[1204]))))
+	v389 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v380)+uint32(_c_F_lua_getinfo[4]))))
 	*(*uint8)(unsafe.Add(mBase, uint32(v379+int32(2)))) = uint8(v389)
 	goto L68
 L75:
@@ -14999,7 +14999,7 @@ L25:
 L26:
 	;
 	v102 = v91
-	v103 = v92 + int32(_a2242)
+	v103 = v92 + int32(_a_F_lua_getlocal_0)
 	goto L2
 L27:
 	;
@@ -15487,7 +15487,7 @@ func F_lua_load(m *base.Module, l0 int32, l1 int32, l2 int32, l3 int32) int32 {
 	if l3 != 0 {
 		v22 = l3
 	} else {
-		v22 = v19 + int32(_a176)
+		v22 = v19 + int32(_a_F_lua_load_0)
 	}
 	v23 = F_luaD_protectedparser(m, l0, v8+int32(12), v22)
 	mBase = m.M
@@ -15865,7 +15865,7 @@ L23:
 	;
 	v116 = m.G3
 	v117 = *(*int32)(unsafe.Add(mBase, uint32(v68)+24))
-	if v117 != v116+int32(_a2240) {
+	if v117 != v116+int32(_a_F_lua_objlen_0) {
 		goto L36
 	} else {
 		goto L37
@@ -16940,7 +16940,7 @@ func F_lua_rawseti(m *base.Module, l0 int32, l1 int32, l2 int32) {
 		}
 	} else {
 		v63 = m.G3
-		F_luaG_runerror(m, l0, v63+int32(_a2241), int32(0))
+		F_luaG_runerror(m, l0, v63+int32(_a_F_lua_rawseti_0), int32(0))
 		mBase = m.M
 		v68 = m.ExcPending
 		if v68 != 0 {
@@ -17405,7 +17405,7 @@ func F_lua_replace(m *base.Module, l0 int32, l1 int32) {
 			return
 		} else {
 			v10 = m.G3
-			F_luaG_runerror(m, l0, v10+int32(_a2239), int32(0))
+			F_luaG_runerror(m, l0, v10+int32(_a_F_lua_replace_0), int32(0))
 			mBase = m.M
 			v15 = m.ExcPending
 			if v15 != 0 {
@@ -18035,7 +18035,7 @@ L25:
 L26:
 	;
 	v102 = v91
-	v103 = v92 + int32(_a2242)
+	v103 = v92 + int32(_a_F_lua_setlocal_0)
 	goto L2
 }
 func F_lua_settop(m *base.Module, l0 int32, l1 int32) {
@@ -18301,7 +18301,7 @@ func F_lua_setupvalue(m *base.Module, l0 int32, l1 int32, l2 int32) int32 {
 				} else {
 					v72 = m.G3
 					v97 = l2<<(uint(int32(4))%32) + v64 + int32(8)
-					v98 = v72 + int32(_a188)
+					v98 = v72 + int32(_a_F_lua_setupvalue_0)
 					v100 = *(*int32)(unsafe.Add(mBase, uint32(l0)+8))
 					v102 = v100 + int32(-16)
 					*(*int32)(unsafe.Add(mBase, uint32(l0)+8)) = v102

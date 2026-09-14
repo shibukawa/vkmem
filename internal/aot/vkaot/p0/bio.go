@@ -38,8 +38,8 @@ func F_bioCreateFsyncJob(m *base.Module, l0 int32, l1 int64, l2 int32) {
 		v19 = v12&int32(253) | l2<<(uint(v10)%32)&int32(2)
 		*(*uint8)(unsafe.Add(mBase, uint32(v6)+16)) = uint8(v19)
 		v21 = int32(0)
-		v23 = *(*int32)(unsafe.Add(mBase, _consts[58]))
-		*(*int32)(unsafe.Add(mBase, _consts[58])) = v23 + v10
+		v23 = *(*int32)(unsafe.Add(mBase, _c_F_bioCreateFsyncJob[0]))
+		*(*int32)(unsafe.Add(mBase, _c_F_bioCreateFsyncJob[0])) = v23 + v10
 		F_bioExecuteJob(m, v6)
 		mBase = m.M
 		v28 = m.ExcPending
@@ -106,35 +106,35 @@ func F_bioInit(m *base.Module) {
 	if v8 != 0 {
 		return
 	} else {
-		*(*int32)(unsafe.Add(mBase, _consts[53])) = v7
+		*(*int32)(unsafe.Add(mBase, _c_F_bioInit[0])) = v7
 		v11 = F_mutexQueueCreate(m)
 		mBase = m.M
 		v12 = m.ExcPending
 		if v12 != 0 {
 			return
 		} else {
-			*(*int32)(unsafe.Add(mBase, _consts[54])) = v11
+			*(*int32)(unsafe.Add(mBase, _c_F_bioInit[1])) = v11
 			v15 = F_mutexQueueCreate(m)
 			mBase = m.M
 			v16 = m.ExcPending
 			if v16 != 0 {
 				return
 			} else {
-				*(*int32)(unsafe.Add(mBase, _consts[55])) = v15
+				*(*int32)(unsafe.Add(mBase, _c_F_bioInit[2])) = v15
 				v19 = F_mutexQueueCreate(m)
 				mBase = m.M
 				v20 = m.ExcPending
 				if v20 != 0 {
 					return
 				} else {
-					*(*int32)(unsafe.Add(mBase, _consts[56])) = v19
+					*(*int32)(unsafe.Add(mBase, _c_F_bioInit[3])) = v19
 					v23 = F_mutexQueueCreate(m)
 					mBase = m.M
 					v24 = m.ExcPending
 					if v24 != 0 {
 						return
 					} else {
-						*(*int32)(unsafe.Add(mBase, _consts[57])) = v23
+						*(*int32)(unsafe.Add(mBase, _c_F_bioInit[4])) = v23
 						v27 = v4 + int32(4)
 						v31 = m.G0
 						v33 = v31 - int32(16)
@@ -280,7 +280,7 @@ func F_handleBioThreadFinishedRDBDownload(m *base.Module) {
 	v5 = m.G0
 	v7 = v5 - int32(80)
 	m.G0 = v7
-	v10 = *(*int32)(unsafe.Add(mBase, _consts[552]))
+	v10 = *(*int32)(unsafe.Add(mBase, _c_F_handleBioThreadFinishedRDBDownload[0]))
 	if base.Ui32(v10) < base.Ui32(int32(2)) {
 		goto L3
 	} else {
@@ -288,7 +288,7 @@ func F_handleBioThreadFinishedRDBDownload(m *base.Module) {
 	}
 L1:
 	;
-	F__serverAssert(m, int32(_a1058), int32(_a913), int32(5242))
+	F__serverAssert(m, int32(_a_F_handleBioThreadFinishedRDBDownload_4), int32(_a_F_handleBioThreadFinishedRDBDownload_5), int32(5242))
 	mBase = m.M
 	v186 = m.ExcPending
 	if v186 != 0 {
@@ -298,7 +298,7 @@ L1:
 	}
 L2:
 	;
-	F__serverAssert(m, int32(_a1060), int32(_a913), int32(5221))
+	F__serverAssert(m, int32(_a_F_handleBioThreadFinishedRDBDownload_7), int32(_a_F_handleBioThreadFinishedRDBDownload_5), int32(5221))
 	mBase = m.M
 	v180 = m.ExcPending
 	if v180 != 0 {
@@ -326,7 +326,7 @@ L5:
 	}
 L6:
 	;
-	v16 = *(*int32)(unsafe.Add(mBase, _consts[15]))
+	v16 = *(*int32)(unsafe.Add(mBase, _c_F_handleBioThreadFinishedRDBDownload[3]))
 	if int32(3) < v16 {
 		goto L7
 	} else {
@@ -344,7 +344,7 @@ L7:
 	}
 L8:
 	;
-	F__serverLog(m, int32(3), int32(_a1061), int32(0))
+	F__serverLog(m, int32(3), int32(_a_F_handleBioThreadFinishedRDBDownload_8), int32(0))
 	mBase = m.M
 	v23 = m.ExcPending
 	if v23 != 0 {
@@ -363,15 +363,15 @@ L11:
 	goto L3
 L12:
 	;
-	v31 = int32(_a69)
-	*(*int32)(unsafe.Add(mBase, _consts[552])) = int32(0)
-	v35 = *(*int64)(unsafe.Add(mBase, _consts[554]))
+	v31 = int32(_a_F_handleBioThreadFinishedRDBDownload_0)
+	*(*int32)(unsafe.Add(mBase, _c_F_handleBioThreadFinishedRDBDownload[0])) = int32(0)
+	v35 = *(*int64)(unsafe.Add(mBase, _c_F_handleBioThreadFinishedRDBDownload[1]))
 	v37 = int64(0)
-	*(*int64)(unsafe.Add(mBase, _consts[554])) = v37
-	v41 = int32(_a1056)
-	v42 = *(*int64)(unsafe.Add(mBase, _consts[556]))
-	*(*int64)(unsafe.Add(mBase, _consts[556])) = v37
-	v46 = *(*int32)(unsafe.Add(mBase, _consts[15]))
+	*(*int64)(unsafe.Add(mBase, _c_F_handleBioThreadFinishedRDBDownload[1])) = v37
+	v41 = int32(_a_F_handleBioThreadFinishedRDBDownload_1)
+	v42 = *(*int64)(unsafe.Add(mBase, _c_F_handleBioThreadFinishedRDBDownload[2]))
+	*(*int64)(unsafe.Add(mBase, _c_F_handleBioThreadFinishedRDBDownload[2])) = v37
+	v46 = *(*int32)(unsafe.Add(mBase, _c_F_handleBioThreadFinishedRDBDownload[3]))
 	if int32(2) < v46 {
 		goto L15
 	} else {
@@ -379,7 +379,7 @@ L12:
 	}
 L13:
 	;
-	v30 = *(*int32)(unsafe.Add(mBase, _consts[122]))
+	v30 = *(*int32)(unsafe.Add(mBase, _c_F_handleBioThreadFinishedRDBDownload[14]))
 	if v30 != 0 {
 		goto L2
 	} else {
@@ -391,23 +391,23 @@ L14:
 L15:
 	;
 	v65 = int32(0)
-	v66 = *(*int64)(unsafe.Add(mBase, _consts[542]))
+	v66 = *(*int64)(unsafe.Add(mBase, _c_F_handleBioThreadFinishedRDBDownload[4]))
 	*(*int64)(unsafe.Add(mBase, uint32(v7+int32(72)))) = v66
-	v71 = *(*int64)(unsafe.Add(mBase, _consts[543]))
+	v71 = *(*int64)(unsafe.Add(mBase, _c_F_handleBioThreadFinishedRDBDownload[5]))
 	*(*int64)(unsafe.Add(mBase, uint32(v7+int32(64)))) = v71
-	v76 = *(*int64)(unsafe.Add(mBase, _consts[544]))
+	v76 = *(*int64)(unsafe.Add(mBase, _c_F_handleBioThreadFinishedRDBDownload[6]))
 	*(*int64)(unsafe.Add(mBase, uint32(v7+int32(56)))) = v76
-	v81 = *(*int64)(unsafe.Add(mBase, _consts[545]))
+	v81 = *(*int64)(unsafe.Add(mBase, _c_F_handleBioThreadFinishedRDBDownload[7]))
 	*(*int64)(unsafe.Add(mBase, uint32(v7+int32(48)))) = v81
-	v86 = *(*int64)(unsafe.Add(mBase, _consts[546]))
+	v86 = *(*int64)(unsafe.Add(mBase, _c_F_handleBioThreadFinishedRDBDownload[8]))
 	*(*int64)(unsafe.Add(mBase, uint32(v7+int32(40)))) = v86
-	v91 = *(*int64)(unsafe.Add(mBase, _consts[547]))
+	v91 = *(*int64)(unsafe.Add(mBase, _c_F_handleBioThreadFinishedRDBDownload[9]))
 	*(*int64)(unsafe.Add(mBase, uint32(v7+int32(32)))) = v91
-	v96 = *(*int64)(unsafe.Add(mBase, _consts[548]))
+	v96 = *(*int64)(unsafe.Add(mBase, _c_F_handleBioThreadFinishedRDBDownload[10]))
 	*(*int64)(unsafe.Add(mBase, uint32(v7+int32(24)))) = v96
-	v99 = *(*int64)(unsafe.Add(mBase, _consts[549]))
+	v99 = *(*int64)(unsafe.Add(mBase, _c_F_handleBioThreadFinishedRDBDownload[11]))
 	*(*int64)(unsafe.Add(mBase, uint32(v7)+16)) = v99
-	v105 = *(*int32)(unsafe.Add(mBase, _consts[572]))
+	v105 = *(*int32)(unsafe.Add(mBase, _c_F_handleBioThreadFinishedRDBDownload[12]))
 	if v105 != 0 {
 		goto L20
 	} else {
@@ -415,7 +415,7 @@ L15:
 	}
 L16:
 	;
-	F__serverLog(m, int32(2), int32(_a1059), int32(0))
+	F__serverLog(m, int32(2), int32(_a_F_handleBioThreadFinishedRDBDownload_6), int32(0))
 	mBase = m.M
 	v53 = m.ExcPending
 	if v53 != 0 {
@@ -425,7 +425,7 @@ L16:
 	}
 L17:
 	;
-	v55 = *(*int32)(unsafe.Add(mBase, _consts[15]))
+	v55 = *(*int32)(unsafe.Add(mBase, _c_F_handleBioThreadFinishedRDBDownload[3]))
 	if int32(2) < v55 {
 		goto L15
 	} else {
@@ -433,7 +433,7 @@ L17:
 	}
 L18:
 	;
-	F__serverLog(m, int32(2), int32(_a1062), int32(0))
+	F__serverLog(m, int32(2), int32(_a_F_handleBioThreadFinishedRDBDownload_9), int32(0))
 	mBase = m.M
 	v62 = m.ExcPending
 	if v62 != 0 {
@@ -454,8 +454,8 @@ L21:
 	goto L22
 L22:
 	;
-	v108 = *(*int32)(unsafe.Add(mBase, uint32(v106)+uint32(_consts[115])))
-	v110 = *(*int32)(unsafe.Add(mBase, _consts[122]))
+	v108 = *(*int32)(unsafe.Add(mBase, uint32(v106)+uint32(_c_F_handleBioThreadFinishedRDBDownload[13])))
+	v110 = *(*int32)(unsafe.Add(mBase, _c_F_handleBioThreadFinishedRDBDownload[14]))
 	if v110 == int32(0) {
 		goto L23
 	} else {
@@ -463,7 +463,7 @@ L22:
 	}
 L23:
 	;
-	v116 = *(*int32)(unsafe.Add(mBase, _consts[27]))
+	v116 = *(*int32)(unsafe.Add(mBase, _c_F_handleBioThreadFinishedRDBDownload[15]))
 	if v116 == int32(0) {
 		goto L26
 	} else {
@@ -481,7 +481,7 @@ L25:
 	goto L23
 L26:
 	;
-	v122 = *(*int32)(unsafe.Add(mBase, _consts[38]))
+	v122 = *(*int32)(unsafe.Add(mBase, _c_F_handleBioThreadFinishedRDBDownload[16]))
 	if v122 != int32(1) {
 		goto L29
 	} else {
@@ -514,7 +514,7 @@ L29:
 	}
 L30:
 	;
-	v126 = *(*int32)(unsafe.Add(mBase, _consts[15]))
+	v126 = *(*int32)(unsafe.Add(mBase, _c_F_handleBioThreadFinishedRDBDownload[3]))
 	if int32(2) < v126 {
 		goto L31
 	} else {
@@ -532,9 +532,9 @@ L31:
 	}
 L32:
 	;
-	v130 = *(*int32)(unsafe.Add(mBase, _consts[39]))
+	v130 = *(*int32)(unsafe.Add(mBase, _c_F_handleBioThreadFinishedRDBDownload[19]))
 	*(*int32)(unsafe.Add(mBase, uint32(v7))) = v130
-	F__serverLog(m, int32(2), int32(_a1057), v7)
+	F__serverLog(m, int32(2), int32(_a_F_handleBioThreadFinishedRDBDownload_3), v7)
 	mBase = m.M
 	v135 = m.ExcPending
 	if v135 != 0 {
@@ -577,7 +577,7 @@ L37:
 	}
 L38:
 	;
-	v150 = *(*int32)(unsafe.Add(mBase, _consts[15]))
+	v150 = *(*int32)(unsafe.Add(mBase, _c_F_handleBioThreadFinishedRDBDownload[3]))
 	if int32(3) < v150 {
 		goto L39
 	} else {
@@ -595,7 +595,7 @@ L39:
 	}
 L40:
 	;
-	F__serverLog(m, int32(3), int32(_a966), int32(0))
+	F__serverLog(m, int32(3), int32(_a_F_handleBioThreadFinishedRDBDownload_2), int32(0))
 	mBase = m.M
 	v157 = m.ExcPending
 	if v157 != 0 {
@@ -611,9 +611,9 @@ L42:
 	goto L3
 L43:
 	;
-	v166 = int32(_a69)
-	*(*int64)(unsafe.Add(mBase, _consts[596])) = v42
-	*(*int64)(unsafe.Add(mBase, _consts[537])) = v35
+	v166 = int32(_a_F_handleBioThreadFinishedRDBDownload_0)
+	*(*int64)(unsafe.Add(mBase, _c_F_handleBioThreadFinishedRDBDownload[17])) = v42
+	*(*int64)(unsafe.Add(mBase, _c_F_handleBioThreadFinishedRDBDownload[18])) = v35
 	goto L3
 L44:
 	;

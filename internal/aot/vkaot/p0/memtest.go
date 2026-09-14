@@ -74,7 +74,7 @@ func F_memtest_compare(m *base.Module, l0 int32, l1 int32, l2 int32) int32 {
 	}
 L1:
 	;
-	F__serverAssert(m, int32(_a690), int32(_a691), int32(199))
+	F__serverAssert(m, int32(_a_F_memtest_compare_0), int32(_a_F_memtest_compare_1), int32(199))
 	mBase = m.M
 	v140 = m.ExcPending
 	if v140 != 0 {
@@ -100,7 +100,7 @@ L4:
 L5:
 	;
 	v19 = int32(base.Ui32(l1) >> (uint(int32(3)) % 32))
-	v24 = *(*int32)(unsafe.Add(mBase, _consts[344]))
+	v24 = *(*int32)(unsafe.Add(mBase, _c_F_memtest_compare[0]))
 	v25 = base.I64_extend_i32_u(v19)
 	v27 = l0
 	v31 = l0 + v19<<(uint(int32(2))%32)
@@ -138,7 +138,7 @@ L10:
 	*(*int32)(unsafe.Add(mBase, uint32(v12)+8)) = v36
 	*(*int32)(unsafe.Add(mBase, uint32(v12)+4)) = v31
 	*(*int32)(unsafe.Add(mBase, uint32(v12))) = v27
-	v45 = F_iprintf(m, int32(_a692), v12)
+	v45 = F_iprintf(m, int32(_a_F_memtest_compare_2), v12)
 	mBase = m.M
 	v48 = m.ExcPending
 	if v48 != 0 {
@@ -182,8 +182,8 @@ L15:
 L16:
 	;
 	v57 = int32(0)
-	v59 = *(*int32)(unsafe.Add(mBase, _consts[343]))
-	v61 = int64(*(*uint32)(unsafe.Add(mBase, _consts[342])))
+	v59 = *(*int32)(unsafe.Add(mBase, _c_F_memtest_compare[1]))
+	v61 = int64(*(*uint32)(unsafe.Add(mBase, _c_F_memtest_compare[2])))
 	v63 = base.I64_div_u_s(v34*v61, v25)
 	v64 = base.I32_wrap_i64(v63)
 	if v59 == v64 {
@@ -193,7 +193,7 @@ L16:
 	}
 L17:
 	;
-	*(*int32)(unsafe.Add(mBase, _consts[343])) = v64
+	*(*int32)(unsafe.Add(mBase, _c_F_memtest_compare[1])) = v64
 	v95 = F_fflush(m, v24)
 	mBase = m.M
 	v96 = m.ExcPending
@@ -222,7 +222,7 @@ L20:
 L21:
 	;
 	v79 = v67 + int32(1)
-	v81 = *(*int32)(unsafe.Add(mBase, _consts[343]))
+	v81 = *(*int32)(unsafe.Add(mBase, _c_F_memtest_compare[1]))
 	if base.Ui32(v79) < base.Ui32(v64-v81) {
 		v67 = v79
 		goto L19
@@ -312,7 +312,7 @@ func F_memtest_fill_value(m *base.Module, l0 int32, l1 int32, l2 int32, l3 int32
 	}
 L1:
 	;
-	F__serverAssert(m, int32(_a690), int32(_a691), int32(176))
+	F__serverAssert(m, int32(_a_F_memtest_fill_value_0), int32(_a_F_memtest_fill_value_1), int32(176))
 	mBase = m.M
 	v200 = m.ExcPending
 	if v200 != 0 {
@@ -323,7 +323,7 @@ L1:
 L2:
 	;
 	v23 = base.I64_extend_i32_u(int32(base.Ui32(l1) >> (uint(int32(13)) % 32)))
-	v25 = *(*int32)(unsafe.Add(mBase, _consts[344]))
+	v25 = *(*int32)(unsafe.Add(mBase, _c_F_memtest_fill_value[0]))
 	v27 = int32(base.Ui32(l1) >> (uint(int32(3)) % 32))
 	v43 = int64(0)
 	goto L3
@@ -405,8 +405,8 @@ L13:
 L14:
 	;
 	v91 = int32(0)
-	v93 = *(*int32)(unsafe.Add(mBase, _consts[343]))
-	v96 = int64(*(*uint32)(unsafe.Add(mBase, _consts[342])))
+	v93 = *(*int32)(unsafe.Add(mBase, _c_F_memtest_fill_value[1]))
+	v96 = int64(*(*uint32)(unsafe.Add(mBase, _c_F_memtest_fill_value[2])))
 	v98 = base.I64_div_u_s((v81+v43*v23)*v96, base.I64_extend_i32_u(v27))
 	v99 = base.I32_wrap_i64(v98)
 	if v93 == v99 {
@@ -416,7 +416,7 @@ L14:
 	}
 L15:
 	;
-	*(*int32)(unsafe.Add(mBase, _consts[343])) = v99
+	*(*int32)(unsafe.Add(mBase, _c_F_memtest_fill_value[1])) = v99
 	v147 = F_fflush(m, v25)
 	mBase = m.M
 	v148 = m.ExcPending
@@ -448,7 +448,7 @@ L19:
 L20:
 	;
 	v122 = v102 + int32(1)
-	v124 = *(*int32)(unsafe.Add(mBase, _consts[343]))
+	v124 = *(*int32)(unsafe.Add(mBase, _c_F_memtest_fill_value[1]))
 	if base.Ui32(v122) < base.Ui32(v99-v124) {
 		v102 = v122
 		goto L17
@@ -540,7 +540,7 @@ func F_memtest_progress_start(m *base.Module, l0 int32, l1 int32) {
 	v5 = m.G0
 	v7 = v5 - int32(16)
 	m.G0 = v7
-	v12 = F_iprintf(m, int32(_a685), v3)
+	v12 = F_iprintf(m, int32(_a_F_memtest_progress_start_0), v3)
 	mBase = m.M
 	v13 = m.ExcPending
 	if v13 != 0 {
@@ -554,8 +554,8 @@ L1:
 L2:
 	;
 	v14 = int32(0)
-	v15 = int32(*(*uint16)(unsafe.Add(mBase, _consts[340])))
-	v19 = int32(*(*uint16)(unsafe.Add(mBase, _consts[341])))
+	v15 = int32(*(*uint16)(unsafe.Add(mBase, _c_F_memtest_progress_start[0])))
+	v19 = int32(*(*uint16)(unsafe.Add(mBase, _c_F_memtest_progress_start[1])))
 	if (v15+int32(-2))*v19 < int32(1) {
 		goto L3
 	} else {
@@ -563,7 +563,7 @@ L2:
 	}
 L3:
 	;
-	v45 = F_puts(m, int32(_a686))
+	v45 = F_puts(m, int32(_a_F_memtest_progress_start_1))
 	mBase = m.M
 	v46 = m.ExcPending
 	if v46 != 0 {
@@ -592,8 +592,8 @@ L7:
 	;
 	v31 = v26 + int32(1)
 	v32 = int32(0)
-	v33 = int32(*(*uint16)(unsafe.Add(mBase, _consts[340])))
-	v37 = int32(*(*uint16)(unsafe.Add(mBase, _consts[341])))
+	v33 = int32(*(*uint16)(unsafe.Add(mBase, _c_F_memtest_progress_start[0])))
+	v37 = int32(*(*uint16)(unsafe.Add(mBase, _c_F_memtest_progress_start[1])))
 	if v31 < (v33+int32(-2))*v37 {
 		v26 = v31
 		goto L5
@@ -605,7 +605,7 @@ L8:
 	goto L6
 L9:
 	;
-	v49 = F_iprintf(m, int32(_a687), int32(0))
+	v49 = F_iprintf(m, int32(_a_F_memtest_progress_start_2), int32(0))
 	mBase = m.M
 	v50 = m.ExcPending
 	if v50 != 0 {
@@ -615,7 +615,7 @@ L9:
 	}
 L10:
 	;
-	v53 = F_iprintf(m, int32(_a688), int32(0))
+	v53 = F_iprintf(m, int32(_a_F_memtest_progress_start_3), int32(0))
 	mBase = m.M
 	v54 = m.ExcPending
 	if v54 != 0 {
@@ -627,7 +627,7 @@ L11:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v7)+4)) = l1
 	*(*int32)(unsafe.Add(mBase, uint32(v7))) = l0
-	v58 = F_iprintf(m, int32(_a689), v7)
+	v58 = F_iprintf(m, int32(_a_F_memtest_progress_start_4), v7)
 	mBase = m.M
 	v59 = m.ExcPending
 	if v59 != 0 {
@@ -638,11 +638,11 @@ L11:
 L12:
 	;
 	v60 = int32(0)
-	v62 = int32(*(*uint16)(unsafe.Add(mBase, _consts[340])))
-	v66 = int32(*(*uint16)(unsafe.Add(mBase, _consts[341])))
-	*(*int32)(unsafe.Add(mBase, _consts[342])) = (v62 + int32(-3)) * v66
-	*(*int32)(unsafe.Add(mBase, _consts[343])) = v60
-	v73 = *(*int32)(unsafe.Add(mBase, _consts[344]))
+	v62 = int32(*(*uint16)(unsafe.Add(mBase, _c_F_memtest_progress_start[0])))
+	v66 = int32(*(*uint16)(unsafe.Add(mBase, _c_F_memtest_progress_start[1])))
+	*(*int32)(unsafe.Add(mBase, _c_F_memtest_progress_start[2])) = (v62 + int32(-3)) * v66
+	*(*int32)(unsafe.Add(mBase, _c_F_memtest_progress_start[3])) = v60
+	v73 = *(*int32)(unsafe.Add(mBase, _c_F_memtest_progress_start[4]))
 	v74 = F_fflush(m, v73)
 	mBase = m.M
 	v75 = m.ExcPending

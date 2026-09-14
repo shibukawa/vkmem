@@ -85,10 +85,10 @@ func F_addRdbReplicaToPsyncWait(m *base.Module, l0 int32) {
 	v7 = m.G0
 	v9 = v7 - int32(32)
 	m.G0 = v9
-	v12 = *(*int32)(unsafe.Add(mBase, _consts[448]))
+	v12 = *(*int32)(unsafe.Add(mBase, _c_F_addRdbReplicaToPsyncWait[0]))
 	if v12 != 0 {
 		v34 = int32(1)
-		v36 = *(*int32)(unsafe.Add(mBase, _consts[314]))
+		v36 = *(*int32)(unsafe.Add(mBase, _c_F_addRdbReplicaToPsyncWait[1]))
 		v37 = *(*int32)(unsafe.Add(mBase, uint32(v36)+4))
 		if v37 != 0 {
 			v39 = *(*int32)(unsafe.Add(mBase, uint32(v37)+8))
@@ -105,7 +105,7 @@ func F_addRdbReplicaToPsyncWait(m *base.Module, l0 int32) {
 			v47 = int32(0)
 			v48 = v34
 		}
-		v51 = *(*int32)(unsafe.Add(mBase, _consts[15]))
+		v51 = *(*int32)(unsafe.Add(mBase, _c_F_addRdbReplicaToPsyncWait[2]))
 		if int32(0) < v51 {
 			v71 = *(*int32)(unsafe.Add(mBase, uint32(l0)+104))
 			if v48 != 0 {
@@ -125,7 +125,7 @@ func F_addRdbReplicaToPsyncWait(m *base.Module, l0 int32) {
 			v91 = int64(4278190080)
 			v93 = int64(8)
 			*(*int64)(unsafe.Add(mBase, uint32(v9)+24)) = v79<<(uint(v80)%64) | v79&v82<<(uint(v84)%64) | (v79&v87<<(uint(v89)%64) | v79&v91<<(uint(v93)%64)) | (int64(base.Ui64(v79)>>(uint(v93)%64))&v91 | int64(base.Ui64(v79)>>(uint(v89)%64))&v87 | (int64(base.Ui64(v79)>>(uint(v84)%64))&v82 | int64(base.Ui64(v79)>>(uint(v80)%64))))
-			v117 = *(*int32)(unsafe.Add(mBase, _consts[505]))
+			v117 = *(*int32)(unsafe.Add(mBase, _c_F_addRdbReplicaToPsyncWait[3]))
 			v122 = F_raxInsert(m, v117, v9+int32(24), int32(8), l0, int32(0))
 			mBase = m.M
 			v123 = m.ExcPending
@@ -144,14 +144,14 @@ func F_addRdbReplicaToPsyncWait(m *base.Module, l0 int32) {
 			} else {
 				v56 = *(*int64)(unsafe.Add(mBase, uint32(l0)))
 				if v48 != 0 {
-					v61 = int32(_a908)
+					v61 = int32(_a_F_addRdbReplicaToPsyncWait_0)
 				} else {
-					v61 = int32(_a909)
+					v61 = int32(_a_F_addRdbReplicaToPsyncWait_1)
 				}
 				*(*int32)(unsafe.Add(mBase, uint32(v9+int32(16)))) = v61
 				*(*int64)(unsafe.Add(mBase, uint32(v9)+8)) = v56
 				*(*int32)(unsafe.Add(mBase, uint32(v9))) = v54
-				F__serverLog(m, int32(0), int32(_a910), v9)
+				F__serverLog(m, int32(0), int32(_a_F_addRdbReplicaToPsyncWait_2), v9)
 				mBase = m.M
 				v68 = m.ExcPending
 				if v68 != 0 {
@@ -175,7 +175,7 @@ func F_addRdbReplicaToPsyncWait(m *base.Module, l0 int32) {
 					v91 = int64(4278190080)
 					v93 = int64(8)
 					*(*int64)(unsafe.Add(mBase, uint32(v9)+24)) = v79<<(uint(v80)%64) | v79&v82<<(uint(v84)%64) | (v79&v87<<(uint(v89)%64) | v79&v91<<(uint(v93)%64)) | (int64(base.Ui64(v79)>>(uint(v93)%64))&v91 | int64(base.Ui64(v79)>>(uint(v89)%64))&v87 | (int64(base.Ui64(v79)>>(uint(v84)%64))&v82 | int64(base.Ui64(v79)>>(uint(v80)%64))))
-					v117 = *(*int32)(unsafe.Add(mBase, _consts[505]))
+					v117 = *(*int32)(unsafe.Add(mBase, _c_F_addRdbReplicaToPsyncWait[3]))
 					v122 = F_raxInsert(m, v117, v9+int32(24), int32(8), l0, int32(0))
 					mBase = m.M
 					v123 = m.ExcPending
@@ -195,7 +195,7 @@ func F_addRdbReplicaToPsyncWait(m *base.Module, l0 int32) {
 		if v16 != 0 {
 			return
 		} else {
-			*(*int32)(unsafe.Add(mBase, _consts[448])) = v15
+			*(*int32)(unsafe.Add(mBase, _c_F_addRdbReplicaToPsyncWait[0])) = v15
 			*(*int64)(unsafe.Add(mBase, uint32(v15))) = int64(0)
 			v20 = F_raxNew(m)
 			mBase = m.M
@@ -203,15 +203,15 @@ func F_addRdbReplicaToPsyncWait(m *base.Module, l0 int32) {
 			if v21 != 0 {
 				return
 			} else {
-				v22 = int32(_a69)
-				v23 = *(*int32)(unsafe.Add(mBase, _consts[448]))
+				v22 = int32(_a_F_addRdbReplicaToPsyncWait_3)
+				v23 = *(*int32)(unsafe.Add(mBase, _c_F_addRdbReplicaToPsyncWait[0]))
 				*(*int64)(unsafe.Add(mBase, uint32(v23)+16)) = int64(0)
 				*(*int32)(unsafe.Add(mBase, uint32(v23)+8)) = v20
-				v28 = *(*int64)(unsafe.Add(mBase, _consts[31]))
+				v28 = *(*int64)(unsafe.Add(mBase, _c_F_addRdbReplicaToPsyncWait[4]))
 				*(*int64)(unsafe.Add(mBase, uint32(v23)+24)) = v28 + int64(1)
 				v47 = int32(0)
 				v48 = int32(1)
-				v51 = *(*int32)(unsafe.Add(mBase, _consts[15]))
+				v51 = *(*int32)(unsafe.Add(mBase, _c_F_addRdbReplicaToPsyncWait[2]))
 				if int32(0) < v51 {
 					v71 = *(*int32)(unsafe.Add(mBase, uint32(l0)+104))
 					if v48 != 0 {
@@ -231,7 +231,7 @@ func F_addRdbReplicaToPsyncWait(m *base.Module, l0 int32) {
 					v91 = int64(4278190080)
 					v93 = int64(8)
 					*(*int64)(unsafe.Add(mBase, uint32(v9)+24)) = v79<<(uint(v80)%64) | v79&v82<<(uint(v84)%64) | (v79&v87<<(uint(v89)%64) | v79&v91<<(uint(v93)%64)) | (int64(base.Ui64(v79)>>(uint(v93)%64))&v91 | int64(base.Ui64(v79)>>(uint(v89)%64))&v87 | (int64(base.Ui64(v79)>>(uint(v84)%64))&v82 | int64(base.Ui64(v79)>>(uint(v80)%64))))
-					v117 = *(*int32)(unsafe.Add(mBase, _consts[505]))
+					v117 = *(*int32)(unsafe.Add(mBase, _c_F_addRdbReplicaToPsyncWait[3]))
 					v122 = F_raxInsert(m, v117, v9+int32(24), int32(8), l0, int32(0))
 					mBase = m.M
 					v123 = m.ExcPending
@@ -250,14 +250,14 @@ func F_addRdbReplicaToPsyncWait(m *base.Module, l0 int32) {
 					} else {
 						v56 = *(*int64)(unsafe.Add(mBase, uint32(l0)))
 						if v48 != 0 {
-							v61 = int32(_a908)
+							v61 = int32(_a_F_addRdbReplicaToPsyncWait_0)
 						} else {
-							v61 = int32(_a909)
+							v61 = int32(_a_F_addRdbReplicaToPsyncWait_1)
 						}
 						*(*int32)(unsafe.Add(mBase, uint32(v9+int32(16)))) = v61
 						*(*int64)(unsafe.Add(mBase, uint32(v9)+8)) = v56
 						*(*int32)(unsafe.Add(mBase, uint32(v9))) = v54
-						F__serverLog(m, int32(0), int32(_a910), v9)
+						F__serverLog(m, int32(0), int32(_a_F_addRdbReplicaToPsyncWait_2), v9)
 						mBase = m.M
 						v68 = m.ExcPending
 						if v68 != 0 {
@@ -281,7 +281,7 @@ func F_addRdbReplicaToPsyncWait(m *base.Module, l0 int32) {
 							v91 = int64(4278190080)
 							v93 = int64(8)
 							*(*int64)(unsafe.Add(mBase, uint32(v9)+24)) = v79<<(uint(v80)%64) | v79&v82<<(uint(v84)%64) | (v79&v87<<(uint(v89)%64) | v79&v91<<(uint(v93)%64)) | (int64(base.Ui64(v79)>>(uint(v93)%64))&v91 | int64(base.Ui64(v79)>>(uint(v89)%64))&v87 | (int64(base.Ui64(v79)>>(uint(v84)%64))&v82 | int64(base.Ui64(v79)>>(uint(v80)%64))))
-							v117 = *(*int32)(unsafe.Add(mBase, _consts[505]))
+							v117 = *(*int32)(unsafe.Add(mBase, _c_F_addRdbReplicaToPsyncWait[3]))
 							v122 = F_raxInsert(m, v117, v9+int32(24), int32(8), l0, int32(0))
 							mBase = m.M
 							v123 = m.ExcPending
@@ -507,8 +507,8 @@ L1:
 	;
 	v333 = *(*int32)(unsafe.Add(mBase, uint32(l1)))
 	*(*int32)(unsafe.Add(mBase, uint32(v9))) = v333
-	v336 = *(*int32)(unsafe.Add(mBase, _consts[642]))
-	v338 = F_fiprintf(m, v336, int32(_a1657), v9)
+	v336 = *(*int32)(unsafe.Add(mBase, _c_F_parseCheckRdbOptions[0]))
+	v338 = F_fiprintf(m, v336, int32(_a_F_parseCheckRdbOptions_0), v9)
 	mBase = m.M
 	v339 = m.ExcPending
 	if v339 != 0 {
@@ -518,7 +518,7 @@ L1:
 	}
 L2:
 	;
-	*(*int32)(unsafe.Add(mBase, _consts[1117])) = int32(1)
+	*(*int32)(unsafe.Add(mBase, _c_F_parseCheckRdbOptions[1])) = int32(1)
 	if l0 < int32(3) {
 		goto L6
 	} else {
@@ -566,8 +566,8 @@ L9:
 	goto L6
 L10:
 	;
-	v39 = int32(_a1658)
-	v42 = int32(*(*uint8)(unsafe.Add(mBase, _consts[1118])))
+	v39 = int32(_a_F_parseCheckRdbOptions_1)
+	v42 = int32(*(*uint8)(unsafe.Add(mBase, _c_F_parseCheckRdbOptions[2])))
 	v43 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v29))))
 	if v43 == int32(0) {
 		v66 = v42
@@ -651,8 +651,8 @@ L21:
 L22:
 	;
 	v76 = *(*int32)(unsafe.Add(mBase, uint32(l1+v25<<(uint(int32(2))%32))))
-	v77 = int32(_a1659)
-	v80 = int32(*(*uint8)(unsafe.Add(mBase, _consts[1119])))
+	v77 = int32(_a_F_parseCheckRdbOptions_2)
+	v80 = int32(*(*uint8)(unsafe.Add(mBase, _c_F_parseCheckRdbOptions[3])))
 	v81 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v76))))
 	if v81 == int32(0) {
 		v104 = v80
@@ -672,8 +672,8 @@ L23:
 	}
 L24:
 	;
-	v112 = int32(_a1660)
-	v115 = int32(*(*uint8)(unsafe.Add(mBase, _consts[1120])))
+	v112 = int32(_a_F_parseCheckRdbOptions_3)
+	v115 = int32(*(*uint8)(unsafe.Add(mBase, _c_F_parseCheckRdbOptions[4])))
 	v116 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v76))))
 	if v116 == int32(0) {
 		v139 = v115
@@ -737,13 +737,13 @@ L32:
 	goto L30
 L33:
 	;
-	*(*int32)(unsafe.Add(mBase, _consts[1121])) = int32(1)
+	*(*int32)(unsafe.Add(mBase, _c_F_parseCheckRdbOptions[5])) = int32(1)
 	v301 = v25
 	goto L23
 L34:
 	;
-	v157 = int32(_a1661)
-	v160 = int32(*(*uint8)(unsafe.Add(mBase, _consts[1122])))
+	v157 = int32(_a_F_parseCheckRdbOptions_4)
+	v160 = int32(*(*uint8)(unsafe.Add(mBase, _c_F_parseCheckRdbOptions[6])))
 	v161 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v76))))
 	if v161 == int32(0) {
 		v184 = v160
@@ -823,8 +823,8 @@ L44:
 L45:
 	;
 	v152 = int32(0)
-	*(*int32)(unsafe.Add(mBase, _consts[1123])) = int32(1)
-	*(*int32)(unsafe.Add(mBase, _consts[1124])) = v150
+	*(*int32)(unsafe.Add(mBase, _c_F_parseCheckRdbOptions[7])) = int32(1)
+	*(*int32)(unsafe.Add(mBase, _c_F_parseCheckRdbOptions[8])) = v150
 	v301 = v145
 	goto L23
 L46:
@@ -891,8 +891,8 @@ L55:
 	;
 	v191 = v25 + int32(1)
 	v195 = *(*int32)(unsafe.Add(mBase, uint32(l1+v191<<(uint(int32(2))%32))))
-	v196 = int32(_a1662)
-	v199 = int32(*(*uint8)(unsafe.Add(mBase, _consts[1125])))
+	v196 = int32(_a_F_parseCheckRdbOptions_5)
+	v199 = int32(*(*uint8)(unsafe.Add(mBase, _c_F_parseCheckRdbOptions[9])))
 	v200 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v195))))
 	if v200 == int32(0) {
 		v223 = v199
@@ -903,8 +903,8 @@ L55:
 	}
 L56:
 	;
-	v231 = int32(_a1663)
-	v234 = int32(*(*uint8)(unsafe.Add(mBase, _consts[1126])))
+	v231 = int32(_a_F_parseCheckRdbOptions_6)
+	v234 = int32(*(*uint8)(unsafe.Add(mBase, _c_F_parseCheckRdbOptions[10])))
 	v235 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v195))))
 	if v235 == int32(0) {
 		v258 = v234
@@ -968,13 +968,13 @@ L64:
 	goto L62
 L65:
 	;
-	*(*int32)(unsafe.Add(mBase, _consts[1117])) = int32(1)
+	*(*int32)(unsafe.Add(mBase, _c_F_parseCheckRdbOptions[1])) = int32(1)
 	v301 = v191
 	goto L23
 L66:
 	;
-	v266 = int32(_a1664)
-	v269 = int32(*(*uint8)(unsafe.Add(mBase, _consts[1127])))
+	v266 = int32(_a_F_parseCheckRdbOptions_7)
+	v269 = int32(*(*uint8)(unsafe.Add(mBase, _c_F_parseCheckRdbOptions[11])))
 	v270 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v195))))
 	if v270 == int32(0) {
 		v293 = v269
@@ -1038,7 +1038,7 @@ L74:
 	goto L72
 L75:
 	;
-	*(*int32)(unsafe.Add(mBase, _consts[1117])) = int32(2)
+	*(*int32)(unsafe.Add(mBase, _c_F_parseCheckRdbOptions[1])) = int32(2)
 	v301 = v191
 	goto L23
 L76:
@@ -1097,7 +1097,7 @@ L83:
 L84:
 	;
 	v298 = int32(0)
-	*(*int32)(unsafe.Add(mBase, _consts[1117])) = v298
+	*(*int32)(unsafe.Add(mBase, _c_F_parseCheckRdbOptions[1])) = v298
 	v301 = v191
 	goto L23
 L85:
@@ -1106,7 +1106,7 @@ L85:
 L86:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v9)+16)) = v315
-	v321 = F_iprintf(m, int32(_a1665), v9+int32(16))
+	v321 = F_iprintf(m, int32(_a_F_parseCheckRdbOptions_8), v9+int32(16))
 	mBase = m.M
 	v322 = m.ExcPending
 	if v322 != 0 {
@@ -1176,7 +1176,7 @@ func F_rdbGetObjectType(m *base.Module, l0 int32, l1 int32) int32 {
 			v93 = int32(18)
 			return v93
 		default:
-			F__serverPanic_1(m, int32(_a875), int32(720), int32(_a852), int32(0))
+			F__serverPanic_1(m, int32(_a_F_rdbGetObjectType_0), int32(720), int32(_a_F_rdbGetObjectType_1), int32(0))
 			mBase = m.M
 			v22 = m.ExcPending
 			if v22 != 0 {
@@ -1195,7 +1195,7 @@ func F_rdbGetObjectType(m *base.Module, l0 int32, l1 int32) int32 {
 			v93 = int32(2)
 			return v93
 		default:
-			F__serverPanic_1(m, int32(_a875), int32(729), int32(_a853), int32(0))
+			F__serverPanic_1(m, int32(_a_F_rdbGetObjectType_0), int32(729), int32(_a_F_rdbGetObjectType_2), int32(0))
 			mBase = m.M
 			v38 = m.ExcPending
 			if v38 != 0 {
@@ -1218,7 +1218,7 @@ func F_rdbGetObjectType(m *base.Module, l0 int32, l1 int32) int32 {
 		case 0:
 			return int32(5)
 		default:
-			F__serverPanic_1(m, int32(_a875), int32(736), int32(_a854), int32(0))
+			F__serverPanic_1(m, int32(_a_F_rdbGetObjectType_0), int32(736), int32(_a_F_rdbGetObjectType_3), int32(0))
 			mBase = m.M
 			v54 = m.ExcPending
 			if v54 != 0 {
@@ -1256,7 +1256,7 @@ func F_rdbGetObjectType(m *base.Module, l0 int32, l1 int32) int32 {
 				}
 			}
 		default:
-			F__serverPanic_1(m, int32(_a875), int32(749), int32(_a855), int32(0))
+			F__serverPanic_1(m, int32(_a_F_rdbGetObjectType_0), int32(749), int32(_a_F_rdbGetObjectType_4), int32(0))
 			mBase = m.M
 			v79 = m.ExcPending
 			if v79 != 0 {
@@ -1277,7 +1277,7 @@ func F_rdbGetObjectType(m *base.Module, l0 int32, l1 int32) int32 {
 	case 6:
 		return int32(21)
 	default:
-		F__serverPanic_1(m, int32(_a875), int32(752), int32(_a123), int32(0))
+		F__serverPanic_1(m, int32(_a_F_rdbGetObjectType_0), int32(752), int32(_a_F_rdbGetObjectType_5), int32(0))
 		mBase = m.M
 		v90 = m.ExcPending
 		if v90 != 0 {
@@ -1310,7 +1310,7 @@ func F_rdbIsVersionAccepted(m *base.Module, l0 int32, l1 int32, l2 int32) int32 
 			if base.B2i32(int32(79) < l0)&l2 != 0 {
 				v23 = v4
 			} else {
-				v15 = *(*int32)(unsafe.Add(mBase, _consts[474]))
+				v15 = *(*int32)(unsafe.Add(mBase, _c_F_rdbIsVersionAccepted[0]))
 				if v15 != 0 {
 					v23 = int32(1)
 				} else {
@@ -1606,7 +1606,7 @@ L2:
 	}
 L3:
 	;
-	v201 = F_createStringObject_1(m, int32(_a883), int32(18))
+	v201 = F_createStringObject_1(m, int32(_a_F_rdbLoadCheckModuleValue_0), int32(18))
 	mBase = m.M
 	v202 = m.ExcPending
 	if v202 != 0 {
@@ -1681,7 +1681,7 @@ L13:
 L14:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v11))) = l1
-	F_rdbReportError(m, int32(1), int32(1742), int32(_a884), v11)
+	F_rdbReportError(m, int32(1), int32(1742), int32(_a_F_rdbLoadCheckModuleValue_1), v11)
 	mBase = m.M
 	v49 = m.ExcPending
 	if v49 != 0 {
@@ -1705,7 +1705,7 @@ L16:
 L17:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v11)+32)) = l1
-	F_rdbReportError(m, int32(1), int32(1753), int32(_a885), v11+int32(32))
+	F_rdbReportError(m, int32(1), int32(1753), int32(_a_F_rdbLoadCheckModuleValue_2), v11+int32(32))
 	mBase = m.M
 	v170 = m.ExcPending
 	if v170 != 0 {
@@ -1760,7 +1760,7 @@ L22:
 L23:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v11)+16)) = l1
-	F_rdbReportError(m, int32(1), int32(1747), int32(_a886), v11+int32(16))
+	F_rdbReportError(m, int32(1), int32(1747), int32(_a_F_rdbLoadCheckModuleValue_3), v11+int32(16))
 	mBase = m.M
 	v66 = m.ExcPending
 	if v66 != 0 {
@@ -1872,7 +1872,7 @@ L41:
 L42:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v11)+48)) = l1
-	F_rdbReportError(m, int32(1), int32(1758), int32(_a887), v11+int32(48))
+	F_rdbReportError(m, int32(1), int32(1758), int32(_a_F_rdbLoadCheckModuleValue_4), v11+int32(48))
 	mBase = m.M
 	v154 = m.ExcPending
 	if v154 != 0 {
@@ -2249,21 +2249,21 @@ L19:
 L20:
 	;
 	v62 = int32(0)
-	v64 = *(*float64)(unsafe.Add(mBase, _consts[478]))
+	v64 = *(*float64)(unsafe.Add(mBase, _c_F_rdbLoadDoubleValue[0]))
 	*(*float64)(unsafe.Add(mBase, uint32(l1))) = v64
 	v131 = v62
 	goto L1
 L21:
 	;
 	v58 = int32(0)
-	v60 = *(*float64)(unsafe.Add(mBase, _consts[479]))
+	v60 = *(*float64)(unsafe.Add(mBase, _c_F_rdbLoadDoubleValue[1]))
 	*(*float64)(unsafe.Add(mBase, uint32(l1))) = v60
 	v131 = v58
 	goto L1
 L22:
 	;
 	v54 = int32(0)
-	v56 = *(*float64)(unsafe.Add(mBase, _consts[480]))
+	v56 = *(*float64)(unsafe.Add(mBase, _c_F_rdbLoadDoubleValue[2]))
 	*(*float64)(unsafe.Add(mBase, uint32(l1))) = v56
 	v131 = v54
 	goto L1
@@ -2282,7 +2282,7 @@ L24:
 	v115 = int32(0)
 	*(*uint8)(unsafe.Add(mBase, uint32(v113+v110))) = uint8(v115)
 	*(*int32)(unsafe.Add(mBase, uint32(v11))) = l1
-	v123 = F_sscanf(m, v113, int32(_a874), v11)
+	v123 = F_sscanf(m, v113, int32(_a_F_rdbLoadDoubleValue_0), v11)
 	mBase = m.M
 	v124 = m.ExcPending
 	if v124 != 0 {
@@ -2843,9 +2843,9 @@ func F_rdbReportError(m *base.Module, l0 int32, l1 int32, l2 int32, l3 int32) {
 	v8 = v6 - int32(1168)
 	m.G0 = v8
 	*(*int32)(unsafe.Add(mBase, uint32(v8)+104)) = l1
-	v12 = *(*int64)(unsafe.Add(mBase, _consts[397]))
+	v12 = *(*int64)(unsafe.Add(mBase, _c_F_rdbReportError[0]))
 	*(*int64)(unsafe.Add(mBase, uint32(v8)+96)) = v12
-	v20 = F_snprintf(m, v8+int32(128), int32(1024), int32(_a869), v8+int32(96))
+	v20 = F_snprintf(m, v8+int32(128), int32(1024), int32(_a_F_rdbReportError_0), v8+int32(96))
 	mBase = m.M
 	v21 = m.ExcPending
 	if v21 != 0 {
@@ -2858,22 +2858,22 @@ func F_rdbReportError(m *base.Module, l0 int32, l1 int32, l2 int32, l3 int32) {
 		if v29 != 0 {
 			return
 		} else {
-			v31 = *(*int32)(unsafe.Add(mBase, _consts[88]))
+			v31 = *(*int32)(unsafe.Add(mBase, _c_F_rdbReportError[1]))
 			if v31 == int32(0) {
 				v50 = int32(0)
-				v51 = *(*int32)(unsafe.Add(mBase, _consts[475]))
+				v51 = *(*int32)(unsafe.Add(mBase, _c_F_rdbReportError[2]))
 				if v51 == v50 {
 					v62 = int32(0)
-					v63 = *(*int32)(unsafe.Add(mBase, _consts[476]))
+					v63 = *(*int32)(unsafe.Add(mBase, _c_F_rdbReportError[3]))
 					if v63 == v62 {
-						v110 = *(*int32)(unsafe.Add(mBase, _consts[15]))
+						v110 = *(*int32)(unsafe.Add(mBase, _c_F_rdbReportError[4]))
 						if l0 == int32(0) {
 							if int32(3) < v110 {
 								m.G0 = v8 + int32(1168)
 								return
 							} else {
 								*(*int32)(unsafe.Add(mBase, uint32(v8))) = v8 + int32(128)
-								F__serverLog(m, int32(3), int32(_a870), v8)
+								F__serverLog(m, int32(3), int32(_a_F_rdbReportError_1), v8)
 								mBase = m.M
 								v132 = m.ExcPending
 								if v132 != 0 {
@@ -2892,13 +2892,13 @@ func F_rdbReportError(m *base.Module, l0 int32, l1 int32, l2 int32, l3 int32) {
 								}
 							} else {
 								*(*int32)(unsafe.Add(mBase, uint32(v8)+16)) = v8 + int32(128)
-								F__serverLog(m, int32(3), int32(_a871), v8+int32(16))
+								F__serverLog(m, int32(3), int32(_a_F_rdbReportError_2), v8+int32(16))
 								mBase = m.M
 								v123 = m.ExcPending
 								if v123 != 0 {
 									return
 								} else {
-									v145 = *(*int32)(unsafe.Add(mBase, _consts[15]))
+									v145 = *(*int32)(unsafe.Add(mBase, _c_F_rdbReportError[4]))
 									if int32(3) < v145 {
 										m.Env.Exit(m, int32(1))
 										mBase = m.M
@@ -2906,7 +2906,7 @@ func F_rdbReportError(m *base.Module, l0 int32, l1 int32, l2 int32, l3 int32) {
 										for {
 										}
 									} else {
-										F__serverLog(m, int32(3), int32(_a872), int32(0))
+										F__serverLog(m, int32(3), int32(_a_F_rdbReportError_3), int32(0))
 										mBase = m.M
 										v152 = m.ExcPending
 										if v152 != 0 {
@@ -2923,11 +2923,11 @@ func F_rdbReportError(m *base.Module, l0 int32, l1 int32, l2 int32, l3 int32) {
 							}
 						}
 					} else {
-						v67 = *(*int32)(unsafe.Add(mBase, _consts[15]))
+						v67 = *(*int32)(unsafe.Add(mBase, _c_F_rdbReportError[4]))
 						if int32(3) < v67 {
 							v81 = v63
 							*(*int32)(unsafe.Add(mBase, uint32(v8)+124)) = v81
-							*(*int32)(unsafe.Add(mBase, uint32(v8)+120)) = int32(_a188)
+							*(*int32)(unsafe.Add(mBase, uint32(v8)+120)) = int32(_a_F_rdbReportError_4)
 							v87 = m.G0
 							v88 = int32(96)
 							v89 = v87 - v88
@@ -2938,7 +2938,7 @@ func F_rdbReportError(m *base.Module, l0 int32, l1 int32, l2 int32, l3 int32) {
 							m.G0 = v89 + v88
 							if base.B2i32(v91 != int32(-1))&base.B2i32(v92&int32(61440) == int32(4096)) != 0 {
 								*(*int32)(unsafe.Add(mBase, uint32(v8)+32)) = v81
-								F_rdbCheckError(m, int32(_a873), v8+int32(32))
+								F_rdbCheckError(m, int32(_a_F_rdbReportError_5), v8+int32(32))
 								mBase = m.M
 								v138 = m.ExcPending
 								if v138 != 0 {
@@ -2954,7 +2954,7 @@ func F_rdbReportError(m *base.Module, l0 int32, l1 int32, l2 int32, l3 int32) {
 								if v108 != 0 {
 									return
 								} else {
-									v145 = *(*int32)(unsafe.Add(mBase, _consts[15]))
+									v145 = *(*int32)(unsafe.Add(mBase, _c_F_rdbReportError[4]))
 									if int32(3) < v145 {
 										m.Env.Exit(m, int32(1))
 										mBase = m.M
@@ -2962,7 +2962,7 @@ func F_rdbReportError(m *base.Module, l0 int32, l1 int32, l2 int32, l3 int32) {
 										for {
 										}
 									} else {
-										F__serverLog(m, int32(3), int32(_a872), int32(0))
+										F__serverLog(m, int32(3), int32(_a_F_rdbReportError_3), int32(0))
 										mBase = m.M
 										v152 = m.ExcPending
 										if v152 != 0 {
@@ -2979,16 +2979,16 @@ func F_rdbReportError(m *base.Module, l0 int32, l1 int32, l2 int32, l3 int32) {
 							}
 						} else {
 							*(*int32)(unsafe.Add(mBase, uint32(v8)+48)) = v8 + int32(128)
-							F__serverLog(m, int32(3), int32(_a57), v8+int32(48))
+							F__serverLog(m, int32(3), int32(_a_F_rdbReportError_6), v8+int32(48))
 							mBase = m.M
 							v78 = m.ExcPending
 							if v78 != 0 {
 								return
 							} else {
-								v80 = *(*int32)(unsafe.Add(mBase, _consts[476]))
+								v80 = *(*int32)(unsafe.Add(mBase, _c_F_rdbReportError[3]))
 								v81 = v80
 								*(*int32)(unsafe.Add(mBase, uint32(v8)+124)) = v81
-								*(*int32)(unsafe.Add(mBase, uint32(v8)+120)) = int32(_a188)
+								*(*int32)(unsafe.Add(mBase, uint32(v8)+120)) = int32(_a_F_rdbReportError_4)
 								v87 = m.G0
 								v88 = int32(96)
 								v89 = v87 - v88
@@ -2999,7 +2999,7 @@ func F_rdbReportError(m *base.Module, l0 int32, l1 int32, l2 int32, l3 int32) {
 								m.G0 = v89 + v88
 								if base.B2i32(v91 != int32(-1))&base.B2i32(v92&int32(61440) == int32(4096)) != 0 {
 									*(*int32)(unsafe.Add(mBase, uint32(v8)+32)) = v81
-									F_rdbCheckError(m, int32(_a873), v8+int32(32))
+									F_rdbCheckError(m, int32(_a_F_rdbReportError_5), v8+int32(32))
 									mBase = m.M
 									v138 = m.ExcPending
 									if v138 != 0 {
@@ -3015,7 +3015,7 @@ func F_rdbReportError(m *base.Module, l0 int32, l1 int32, l2 int32, l3 int32) {
 									if v108 != 0 {
 										return
 									} else {
-										v145 = *(*int32)(unsafe.Add(mBase, _consts[15]))
+										v145 = *(*int32)(unsafe.Add(mBase, _c_F_rdbReportError[4]))
 										if int32(3) < v145 {
 											m.Env.Exit(m, int32(1))
 											mBase = m.M
@@ -3023,7 +3023,7 @@ func F_rdbReportError(m *base.Module, l0 int32, l1 int32, l2 int32, l3 int32) {
 											for {
 											}
 										} else {
-											F__serverLog(m, int32(3), int32(_a872), int32(0))
+											F__serverLog(m, int32(3), int32(_a_F_rdbReportError_3), int32(0))
 											mBase = m.M
 											v152 = m.ExcPending
 											if v152 != 0 {
@@ -3043,13 +3043,13 @@ func F_rdbReportError(m *base.Module, l0 int32, l1 int32, l2 int32, l3 int32) {
 					}
 				} else {
 					*(*int32)(unsafe.Add(mBase, uint32(v8)+64)) = v8 + int32(128)
-					F_rdbCheckError(m, int32(_a57), v8+int32(64))
+					F_rdbCheckError(m, int32(_a_F_rdbReportError_6), v8+int32(64))
 					mBase = m.M
 					v61 = m.ExcPending
 					if v61 != 0 {
 						return
 					} else {
-						v145 = *(*int32)(unsafe.Add(mBase, _consts[15]))
+						v145 = *(*int32)(unsafe.Add(mBase, _c_F_rdbReportError[4]))
 						if int32(3) < v145 {
 							m.Env.Exit(m, int32(1))
 							mBase = m.M
@@ -3057,7 +3057,7 @@ func F_rdbReportError(m *base.Module, l0 int32, l1 int32, l2 int32, l3 int32) {
 							for {
 							}
 						} else {
-							F__serverLog(m, int32(3), int32(_a872), int32(0))
+							F__serverLog(m, int32(3), int32(_a_F_rdbReportError_3), int32(0))
 							mBase = m.M
 							v152 = m.ExcPending
 							if v152 != 0 {
@@ -3076,19 +3076,19 @@ func F_rdbReportError(m *base.Module, l0 int32, l1 int32, l2 int32, l3 int32) {
 				v34 = *(*int64)(unsafe.Add(mBase, uint32(v31)))
 				if v34 == int64(-1) {
 					v50 = int32(0)
-					v51 = *(*int32)(unsafe.Add(mBase, _consts[475]))
+					v51 = *(*int32)(unsafe.Add(mBase, _c_F_rdbReportError[2]))
 					if v51 == v50 {
 						v62 = int32(0)
-						v63 = *(*int32)(unsafe.Add(mBase, _consts[476]))
+						v63 = *(*int32)(unsafe.Add(mBase, _c_F_rdbReportError[3]))
 						if v63 == v62 {
-							v110 = *(*int32)(unsafe.Add(mBase, _consts[15]))
+							v110 = *(*int32)(unsafe.Add(mBase, _c_F_rdbReportError[4]))
 							if l0 == int32(0) {
 								if int32(3) < v110 {
 									m.G0 = v8 + int32(1168)
 									return
 								} else {
 									*(*int32)(unsafe.Add(mBase, uint32(v8))) = v8 + int32(128)
-									F__serverLog(m, int32(3), int32(_a870), v8)
+									F__serverLog(m, int32(3), int32(_a_F_rdbReportError_1), v8)
 									mBase = m.M
 									v132 = m.ExcPending
 									if v132 != 0 {
@@ -3107,13 +3107,13 @@ func F_rdbReportError(m *base.Module, l0 int32, l1 int32, l2 int32, l3 int32) {
 									}
 								} else {
 									*(*int32)(unsafe.Add(mBase, uint32(v8)+16)) = v8 + int32(128)
-									F__serverLog(m, int32(3), int32(_a871), v8+int32(16))
+									F__serverLog(m, int32(3), int32(_a_F_rdbReportError_2), v8+int32(16))
 									mBase = m.M
 									v123 = m.ExcPending
 									if v123 != 0 {
 										return
 									} else {
-										v145 = *(*int32)(unsafe.Add(mBase, _consts[15]))
+										v145 = *(*int32)(unsafe.Add(mBase, _c_F_rdbReportError[4]))
 										if int32(3) < v145 {
 											m.Env.Exit(m, int32(1))
 											mBase = m.M
@@ -3121,7 +3121,7 @@ func F_rdbReportError(m *base.Module, l0 int32, l1 int32, l2 int32, l3 int32) {
 											for {
 											}
 										} else {
-											F__serverLog(m, int32(3), int32(_a872), int32(0))
+											F__serverLog(m, int32(3), int32(_a_F_rdbReportError_3), int32(0))
 											mBase = m.M
 											v152 = m.ExcPending
 											if v152 != 0 {
@@ -3138,11 +3138,11 @@ func F_rdbReportError(m *base.Module, l0 int32, l1 int32, l2 int32, l3 int32) {
 								}
 							}
 						} else {
-							v67 = *(*int32)(unsafe.Add(mBase, _consts[15]))
+							v67 = *(*int32)(unsafe.Add(mBase, _c_F_rdbReportError[4]))
 							if int32(3) < v67 {
 								v81 = v63
 								*(*int32)(unsafe.Add(mBase, uint32(v8)+124)) = v81
-								*(*int32)(unsafe.Add(mBase, uint32(v8)+120)) = int32(_a188)
+								*(*int32)(unsafe.Add(mBase, uint32(v8)+120)) = int32(_a_F_rdbReportError_4)
 								v87 = m.G0
 								v88 = int32(96)
 								v89 = v87 - v88
@@ -3153,7 +3153,7 @@ func F_rdbReportError(m *base.Module, l0 int32, l1 int32, l2 int32, l3 int32) {
 								m.G0 = v89 + v88
 								if base.B2i32(v91 != int32(-1))&base.B2i32(v92&int32(61440) == int32(4096)) != 0 {
 									*(*int32)(unsafe.Add(mBase, uint32(v8)+32)) = v81
-									F_rdbCheckError(m, int32(_a873), v8+int32(32))
+									F_rdbCheckError(m, int32(_a_F_rdbReportError_5), v8+int32(32))
 									mBase = m.M
 									v138 = m.ExcPending
 									if v138 != 0 {
@@ -3169,7 +3169,7 @@ func F_rdbReportError(m *base.Module, l0 int32, l1 int32, l2 int32, l3 int32) {
 									if v108 != 0 {
 										return
 									} else {
-										v145 = *(*int32)(unsafe.Add(mBase, _consts[15]))
+										v145 = *(*int32)(unsafe.Add(mBase, _c_F_rdbReportError[4]))
 										if int32(3) < v145 {
 											m.Env.Exit(m, int32(1))
 											mBase = m.M
@@ -3177,7 +3177,7 @@ func F_rdbReportError(m *base.Module, l0 int32, l1 int32, l2 int32, l3 int32) {
 											for {
 											}
 										} else {
-											F__serverLog(m, int32(3), int32(_a872), int32(0))
+											F__serverLog(m, int32(3), int32(_a_F_rdbReportError_3), int32(0))
 											mBase = m.M
 											v152 = m.ExcPending
 											if v152 != 0 {
@@ -3194,16 +3194,16 @@ func F_rdbReportError(m *base.Module, l0 int32, l1 int32, l2 int32, l3 int32) {
 								}
 							} else {
 								*(*int32)(unsafe.Add(mBase, uint32(v8)+48)) = v8 + int32(128)
-								F__serverLog(m, int32(3), int32(_a57), v8+int32(48))
+								F__serverLog(m, int32(3), int32(_a_F_rdbReportError_6), v8+int32(48))
 								mBase = m.M
 								v78 = m.ExcPending
 								if v78 != 0 {
 									return
 								} else {
-									v80 = *(*int32)(unsafe.Add(mBase, _consts[476]))
+									v80 = *(*int32)(unsafe.Add(mBase, _c_F_rdbReportError[3]))
 									v81 = v80
 									*(*int32)(unsafe.Add(mBase, uint32(v8)+124)) = v81
-									*(*int32)(unsafe.Add(mBase, uint32(v8)+120)) = int32(_a188)
+									*(*int32)(unsafe.Add(mBase, uint32(v8)+120)) = int32(_a_F_rdbReportError_4)
 									v87 = m.G0
 									v88 = int32(96)
 									v89 = v87 - v88
@@ -3214,7 +3214,7 @@ func F_rdbReportError(m *base.Module, l0 int32, l1 int32, l2 int32, l3 int32) {
 									m.G0 = v89 + v88
 									if base.B2i32(v91 != int32(-1))&base.B2i32(v92&int32(61440) == int32(4096)) != 0 {
 										*(*int32)(unsafe.Add(mBase, uint32(v8)+32)) = v81
-										F_rdbCheckError(m, int32(_a873), v8+int32(32))
+										F_rdbCheckError(m, int32(_a_F_rdbReportError_5), v8+int32(32))
 										mBase = m.M
 										v138 = m.ExcPending
 										if v138 != 0 {
@@ -3230,7 +3230,7 @@ func F_rdbReportError(m *base.Module, l0 int32, l1 int32, l2 int32, l3 int32) {
 										if v108 != 0 {
 											return
 										} else {
-											v145 = *(*int32)(unsafe.Add(mBase, _consts[15]))
+											v145 = *(*int32)(unsafe.Add(mBase, _c_F_rdbReportError[4]))
 											if int32(3) < v145 {
 												m.Env.Exit(m, int32(1))
 												mBase = m.M
@@ -3238,7 +3238,7 @@ func F_rdbReportError(m *base.Module, l0 int32, l1 int32, l2 int32, l3 int32) {
 												for {
 												}
 											} else {
-												F__serverLog(m, int32(3), int32(_a872), int32(0))
+												F__serverLog(m, int32(3), int32(_a_F_rdbReportError_3), int32(0))
 												mBase = m.M
 												v152 = m.ExcPending
 												if v152 != 0 {
@@ -3258,13 +3258,13 @@ func F_rdbReportError(m *base.Module, l0 int32, l1 int32, l2 int32, l3 int32) {
 						}
 					} else {
 						*(*int32)(unsafe.Add(mBase, uint32(v8)+64)) = v8 + int32(128)
-						F_rdbCheckError(m, int32(_a57), v8+int32(64))
+						F_rdbCheckError(m, int32(_a_F_rdbReportError_6), v8+int32(64))
 						mBase = m.M
 						v61 = m.ExcPending
 						if v61 != 0 {
 							return
 						} else {
-							v145 = *(*int32)(unsafe.Add(mBase, _consts[15]))
+							v145 = *(*int32)(unsafe.Add(mBase, _c_F_rdbReportError[4]))
 							if int32(3) < v145 {
 								m.Env.Exit(m, int32(1))
 								mBase = m.M
@@ -3272,7 +3272,7 @@ func F_rdbReportError(m *base.Module, l0 int32, l1 int32, l2 int32, l3 int32) {
 								for {
 								}
 							} else {
-								F__serverLog(m, int32(3), int32(_a872), int32(0))
+								F__serverLog(m, int32(3), int32(_a_F_rdbReportError_3), int32(0))
 								mBase = m.M
 								v152 = m.ExcPending
 								if v152 != 0 {
@@ -3288,13 +3288,13 @@ func F_rdbReportError(m *base.Module, l0 int32, l1 int32, l2 int32, l3 int32) {
 						}
 					}
 				} else {
-					v38 = *(*int32)(unsafe.Add(mBase, _consts[15]))
+					v38 = *(*int32)(unsafe.Add(mBase, _c_F_rdbReportError[4]))
 					if int32(1) < v38 {
 						m.G0 = v8 + int32(1168)
 						return
 					} else {
 						*(*int32)(unsafe.Add(mBase, uint32(v8)+80)) = v8 + int32(128)
-						F__serverLog(m, int32(1), int32(_a57), v8+int32(80))
+						F__serverLog(m, int32(1), int32(_a_F_rdbReportError_6), v8+int32(80))
 						mBase = m.M
 						v49 = m.ExcPending
 						if v49 != 0 {
@@ -4140,7 +4140,7 @@ func F_rdbSaveDb(m *base.Module, l0 int32, l1 int32, l2 int32, l3 int32, l4 int3
 	v18 = m.G0
 	v20 = v18 - int32(32)
 	m.G0 = v20
-	v24 = *(*int32)(unsafe.Add(mBase, _consts[23]))
+	v24 = *(*int32)(unsafe.Add(mBase, _c_F_rdbSaveDb[0]))
 	v28 = *(*int32)(unsafe.Add(mBase, uint32(v24+l1<<(uint(int32(2))%32))))
 	if v28 == v6 {
 		v490 = v6
@@ -4580,11 +4580,11 @@ L63:
 	}
 L64:
 	;
-	v227 = int32(_a88)
+	v227 = int32(_a_F_rdbSaveDb_0)
 	goto L66
 L65:
 	;
-	v227 = int32(_a880)
+	v227 = int32(_a_F_rdbSaveDb_1)
 	goto L66
 L66:
 	;
@@ -4623,7 +4623,7 @@ L69:
 	}
 L71:
 	;
-	v250 = *(*int32)(unsafe.Add(mBase, _consts[63]))
+	v250 = *(*int32)(unsafe.Add(mBase, _c_F_rdbSaveDb[1]))
 	if v250 == int32(0) {
 		v355 = v235
 		v357 = v244
@@ -4716,7 +4716,7 @@ L82:
 	*(*int32)(unsafe.Add(mBase, uint32(v20)+8)) = v273
 	*(*int32)(unsafe.Add(mBase, uint32(v20)+4)) = v264
 	*(*int32)(unsafe.Add(mBase, uint32(v20))) = v247
-	v288 = F_sdscatprintf(m, v254, int32(_a881), v20)
+	v288 = F_sdscatprintf(m, v254, int32(_a_F_rdbSaveDb_2), v20)
 	mBase = m.M
 	v289 = m.ExcPending
 	if v289 != 0 {
@@ -4744,7 +4744,7 @@ L85:
 	}
 L86:
 	;
-	v347 = F_rdbSaveAuxField(m, l0, int32(_a882), int32(9), v288, v346)
+	v347 = F_rdbSaveAuxField(m, l0, int32(_a_F_rdbSaveDb_3), int32(9), v288, v346)
 	mBase = m.M
 	v348 = m.ExcPending
 	if v348 != 0 {
@@ -4900,7 +4900,7 @@ L111:
 	}
 L112:
 	;
-	v408 = *(*int32)(unsafe.Add(mBase, _consts[46]))
+	v408 = *(*int32)(unsafe.Add(mBase, _c_F_rdbSaveDb[2]))
 	if v408 == int32(0) {
 		goto L113
 	} else {
@@ -4936,7 +4936,7 @@ L117:
 	;
 	v419 = F_mstime(m)
 	mBase = m.M
-	v421 = *(*int64)(unsafe.Add(mBase, _consts[481]))
+	v421 = *(*int64)(unsafe.Add(mBase, _c_F_rdbSaveDb[3]))
 	if v419-v421 < int64(1000) {
 		goto L116
 	} else {
@@ -4955,7 +4955,7 @@ L118:
 	}
 L119:
 	;
-	*(*int64)(unsafe.Add(mBase, _consts[481])) = v419
+	*(*int64)(unsafe.Add(mBase, _c_F_rdbSaveDb[3])) = v419
 	goto L116
 L120:
 	;
@@ -5147,7 +5147,7 @@ func F_rdbSaveFunctions(m *base.Module, l0 int32) int32 {
 	v10 = m.G0
 	v12 = v10 - int32(16)
 	m.G0 = v12
-	v16 = *(*int32)(unsafe.Add(mBase, _consts[18]))
+	v16 = *(*int32)(unsafe.Add(mBase, _c_F_rdbSaveFunctions[0]))
 	v17 = *(*int32)(unsafe.Add(mBase, uint32(v16)))
 	goto L1
 L1:
@@ -5819,7 +5819,7 @@ func F_rdbSaveKeyValuePair(m *base.Module, l0 int32, l1 int32, l2 int32, l3 int6
 	v14 = m.G0
 	v16 = v14 - int32(48)
 	m.G0 = v16
-	v19 = *(*int32)(unsafe.Add(mBase, _consts[167]))
+	v19 = *(*int32)(unsafe.Add(mBase, _c_F_rdbSaveKeyValuePair[0]))
 	if l3 == int64(-1) {
 		goto L3
 	} else {
@@ -6476,9 +6476,9 @@ L99:
 	}
 L100:
 	;
-	v337 = int32(_a69)
-	v338 = *(*int32)(unsafe.Add(mBase, _consts[15]))
-	v340 = *(*int32)(unsafe.Add(mBase, _consts[151]))
+	v337 = int32(_a_F_rdbSaveKeyValuePair_0)
+	v338 = *(*int32)(unsafe.Add(mBase, _c_F_rdbSaveKeyValuePair[1]))
+	v340 = *(*int32)(unsafe.Add(mBase, _c_F_rdbSaveKeyValuePair[2]))
 	if v340 == int32(0) {
 		goto L101
 	} else {
@@ -6506,7 +6506,7 @@ L103:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v16)+20)) = l5
 	*(*int32)(unsafe.Add(mBase, uint32(v16)+16)) = l4
-	F__serverLog(m, int32(3), int32(_a877), v16+int32(16))
+	F__serverLog(m, int32(3), int32(_a_F_rdbSaveKeyValuePair_1), v16+int32(16))
 	mBase = m.M
 	v353 = m.ExcPending
 	if v353 != 0 {
@@ -6525,7 +6525,7 @@ L105:
 	*(*int32)(unsafe.Add(mBase, uint32(v16)+8)) = l5
 	*(*int32)(unsafe.Add(mBase, uint32(v16)+4)) = l4
 	*(*int32)(unsafe.Add(mBase, uint32(v16))) = v357
-	F__serverLog(m, int32(3), int32(_a878), v16)
+	F__serverLog(m, int32(3), int32(_a_F_rdbSaveKeyValuePair_2), v16)
 	mBase = m.M
 	v364 = m.ExcPending
 	if v364 != 0 {
@@ -6683,7 +6683,7 @@ L127:
 L128:
 	;
 	v432 = int32(1)
-	v434 = *(*int32)(unsafe.Add(mBase, _consts[49]))
+	v434 = *(*int32)(unsafe.Add(mBase, _c_F_rdbSaveKeyValuePair[3]))
 	if v434 == int32(0) {
 		v463 = v432
 		goto L1
@@ -8007,7 +8007,7 @@ L4:
 	}
 L5:
 	;
-	v15 = *(*int32)(unsafe.Add(mBase, _consts[477]))
+	v15 = *(*int32)(unsafe.Add(mBase, _c_F_rdbSaveLzfStringObject[0]))
 	if v15 != 0 {
 		v29 = v15
 		goto L3
@@ -8029,7 +8029,7 @@ L7:
 	return int32(0)
 L8:
 	;
-	*(*int32)(unsafe.Add(mBase, _consts[477])) = v18
+	*(*int32)(unsafe.Add(mBase, _c_F_rdbSaveLzfStringObject[0])) = v18
 	v29 = v18
 	goto L3
 L9:
@@ -8046,7 +8046,7 @@ L10:
 	goto L3
 L11:
 	;
-	v553 = *(*int32)(unsafe.Add(mBase, _consts[477]))
+	v553 = *(*int32)(unsafe.Add(mBase, _c_F_rdbSaveLzfStringObject[0]))
 	if v29 == v553 {
 		v558 = v551
 		goto L1
@@ -9575,7 +9575,7 @@ L9:
 	}
 L10:
 	;
-	F__serverPanic_1(m, int32(_a875), int32(1165), int32(_a123), int32(0))
+	F__serverPanic_1(m, int32(_a_F_rdbSaveObject_0), int32(1165), int32(_a_F_rdbSaveObject_1), int32(0))
 	mBase = m.M
 	v1194 = m.ExcPending
 	if v1194 != 0 {
@@ -9649,7 +9649,7 @@ L16:
 	}
 L17:
 	;
-	F__serverPanic_1(m, int32(_a875), int32(909), int32(_a852), int32(0))
+	F__serverPanic_1(m, int32(_a_F_rdbSaveObject_0), int32(909), int32(_a_F_rdbSaveObject_2), int32(0))
 	mBase = m.M
 	v210 = m.ExcPending
 	if v210 != 0 {
@@ -10048,7 +10048,7 @@ L74:
 	}
 L75:
 	;
-	F__serverPanic_1(m, int32(_a875), int32(943), int32(_a853), int32(0))
+	F__serverPanic_1(m, int32(_a_F_rdbSaveObject_0), int32(943), int32(_a_F_rdbSaveObject_3), int32(0))
 	mBase = m.M
 	v325 = m.ExcPending
 	if v325 != 0 {
@@ -10275,7 +10275,7 @@ L106:
 	}
 L107:
 	;
-	F__serverPanic_1(m, int32(_a875), int32(977), int32(_a854), int32(0))
+	F__serverPanic_1(m, int32(_a_F_rdbSaveObject_0), int32(977), int32(_a_F_rdbSaveObject_4), int32(0))
 	mBase = m.M
 	v472 = m.ExcPending
 	if v472 != 0 {
@@ -10565,7 +10565,7 @@ L148:
 	}
 L149:
 	;
-	F__serverPanic_1(m, int32(_a875), int32(1026), int32(_a855), int32(0))
+	F__serverPanic_1(m, int32(_a_F_rdbSaveObject_0), int32(1026), int32(_a_F_rdbSaveObject_5), int32(0))
 	mBase = m.M
 	v842 = m.ExcPending
 	if v842 != 0 {
@@ -10620,7 +10620,7 @@ L155:
 	goto L158
 L156:
 	;
-	F__serverAssert(m, int32(_a876), int32(_a875), int32(987))
+	F__serverAssert(m, int32(_a_F_rdbSaveObject_6), int32(_a_F_rdbSaveObject_0), int32(987))
 	mBase = m.M
 	v494 = m.ExcPending
 	if v494 != 0 {
@@ -11300,7 +11300,7 @@ L255:
 L256:
 	;
 	v870 = int32(0)
-	v872 = F_raxSeek(m, v18, int32(_a4), v870, v870)
+	v872 = F_raxSeek(m, v18, int32(_a_F_rdbSaveObject_7), v870, v870)
 	mBase = m.M
 	v873 = m.ExcPending
 	if v873 != 0 {
@@ -11632,7 +11632,7 @@ L294:
 L295:
 	;
 	v1006 = int32(0)
-	v1008 = F_raxSeek(m, v18, int32(_a4), v1006, v1006)
+	v1008 = F_raxSeek(m, v18, int32(_a_F_rdbSaveObject_7), v1006, v1006)
 	mBase = m.M
 	v1009 = m.ExcPending
 	if v1009 != 0 {
@@ -12279,7 +12279,7 @@ L1:
 	return int32(0)
 L2:
 	;
-	v32 = F___memcpy(m, v12+int32(8), int32(_a157), int32(80))
+	v32 = F___memcpy(m, v12+int32(8), int32(_a_F_rdbSaveSingleModuleAux_0), int32(80))
 	mBase = m.M
 	*(*int64)(unsafe.Add(mBase, uint32(v32)+56)) = int64(0)
 	*(*int32)(unsafe.Add(mBase, uint32(v32)+48)) = v26
@@ -12962,7 +12962,7 @@ L100:
 	goto L87
 L101:
 	;
-	F__serverAssert(m, int32(_a879), int32(_a875), int32(1347))
+	F__serverAssert(m, int32(_a_F_rdbSaveSingleModuleAux_1), int32(_a_F_rdbSaveSingleModuleAux_2), int32(1347))
 	mBase = m.M
 	v345 = m.ExcPending
 	if v345 != 0 {
@@ -13222,7 +13222,7 @@ L5:
 L6:
 	;
 	v47 = int32(0)
-	v49 = F_raxSeek(m, v13+int32(8), int32(_a4), v47, v47)
+	v49 = F_raxSeek(m, v13+int32(8), int32(_a_F_rdbSaveStreamConsumers_0), v47, v47)
 	mBase = m.M
 	v50 = m.ExcPending
 	if v50 != 0 {
@@ -13726,7 +13726,7 @@ L5:
 L6:
 	;
 	v45 = int32(0)
-	v47 = F_raxSeek(m, v13+int32(8), int32(_a4), v45, v45)
+	v47 = F_raxSeek(m, v13+int32(8), int32(_a_F_rdbSaveStreamPEL_0), v45, v45)
 	mBase = m.M
 	v48 = m.ExcPending
 	if v48 != 0 {

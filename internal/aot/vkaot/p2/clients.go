@@ -217,10 +217,10 @@ func F_clientsTimeProc(m *base.Module, l0 int32, l1 int64, l2 int32) int64 {
 	var v316 int64
 	_ = v316
 	v5 = int32(0)
-	v18 = *(*int32)(unsafe.Add(mBase, _consts[23]))
+	v18 = *(*int32)(unsafe.Add(mBase, _c_F_clientsTimeProc[0]))
 	v19 = m.T0[v18].(func(*base.Module) int64)(m)
 	mBase = m.M
-	v21 = *(*int32)(unsafe.Add(mBase, _consts[3]))
+	v21 = *(*int32)(unsafe.Add(mBase, _c_F_clientsTimeProc[1]))
 	v22 = *(*int32)(unsafe.Add(mBase, uint32(v21)+20))
 	v23 = int32(5)
 	if v22 < v23 {
@@ -230,7 +230,7 @@ func F_clientsTimeProc(m *base.Module, l0 int32, l1 int64, l2 int32) int64 {
 	}
 L1:
 	;
-	v61 = *(*int32)(unsafe.Add(mBase, _consts[394]))
+	v61 = *(*int32)(unsafe.Add(mBase, _c_F_clientsTimeProc[2]))
 	if v61 != 0 {
 		goto L15
 	} else {
@@ -252,7 +252,7 @@ L4:
 	goto L5
 L5:
 	;
-	v28 = *(*int32)(unsafe.Add(mBase, _consts[219]))
+	v28 = *(*int32)(unsafe.Add(mBase, _c_F_clientsTimeProc[3]))
 	v29 = base.I32_div_s(v22, v28)
 	if v29 < int32(5) {
 		goto L6
@@ -314,26 +314,26 @@ L15:
 	;
 	v306 = int32(0)
 	v308 = base.I32_div_s(int32(1000), v59)
-	*(*int32)(unsafe.Add(mBase, _consts[803])) = v308
-	v312 = *(*int32)(unsafe.Add(mBase, _consts[23]))
+	*(*int32)(unsafe.Add(mBase, _c_F_clientsTimeProc[4])) = v308
+	v312 = *(*int32)(unsafe.Add(mBase, _c_F_clientsTimeProc[0]))
 	v313 = m.T0[v312].(func(*base.Module) int64)(m)
 	mBase = m.M
-	v316 = *(*int64)(unsafe.Add(mBase, _consts[804]))
-	*(*int64)(unsafe.Add(mBase, _consts[804])) = v313 - v19 + v316
+	v316 = *(*int64)(unsafe.Add(mBase, _c_F_clientsTimeProc[5]))
+	*(*int64)(unsafe.Add(mBase, _c_F_clientsTimeProc[5])) = v313 - v19 + v316
 	return base.I64_extend_i32_s(v59)
 L16:
 	;
 	v62 = F_mstime(m)
 	mBase = m.M
 	v63 = int32(0)
-	v64 = *(*int64)(unsafe.Add(mBase, _consts[47]))
+	v64 = *(*int64)(unsafe.Add(mBase, _c_F_clientsTimeProc[6]))
 	v66 = base.I64_rem_s(v64, int64(8))
 	v67 = base.I32_wrap_i64(v66)
 	v72 = base.I32_rem_s(base.I32_extend8_s(v67+int32(1)), int32(8))
 	v74 = v72 << (uint(int32(2)) % 32)
-	*(*int32)(unsafe.Add(mBase, uint32(v74)+uint32(_consts[805]))) = v63
-	*(*int32)(unsafe.Add(mBase, uint32(v74)+uint32(_consts[806]))) = v63
-	v84 = *(*int32)(unsafe.Add(mBase, _consts[3]))
+	*(*int32)(unsafe.Add(mBase, uint32(v74)+uint32(_c_F_clientsTimeProc[7]))) = v63
+	*(*int32)(unsafe.Add(mBase, uint32(v74)+uint32(_c_F_clientsTimeProc[8]))) = v63
+	v84 = *(*int32)(unsafe.Add(mBase, _c_F_clientsTimeProc[1]))
 	v85 = *(*int32)(unsafe.Add(mBase, uint32(v84)+20))
 	if v85 == v63 {
 		goto L15
@@ -392,7 +392,7 @@ L23:
 	goto L22
 L24:
 	;
-	v288 = *(*int32)(unsafe.Add(mBase, _consts[3]))
+	v288 = *(*int32)(unsafe.Add(mBase, _c_F_clientsTimeProc[1]))
 	v289 = *(*int32)(unsafe.Add(mBase, uint32(v288)+20))
 	if v289 != 0 {
 		v98 = v288
@@ -579,7 +579,7 @@ L49:
 L50:
 	;
 	v267 = v199 + (v198 + v187)
-	v268 = *(*int32)(unsafe.Add(mBase, uint32(v89)+uint32(_consts[805])))
+	v268 = *(*int32)(unsafe.Add(mBase, uint32(v89)+uint32(_c_F_clientsTimeProc[7])))
 	if base.Ui32(v267) <= base.Ui32(v268) {
 		goto L63
 	} else {
@@ -657,7 +657,7 @@ L60:
 	goto L59
 L61:
 	;
-	v243 = *(*int32)(unsafe.Add(mBase, _consts[217]))
+	v243 = *(*int32)(unsafe.Add(mBase, _c_F_clientsTimeProc[9]))
 	v244 = *(*int32)(unsafe.Add(mBase, uint32(v243)+4))
 	v245 = *(*int32)(unsafe.Add(mBase, uint32(v244)+8))
 	v246 = *(*int64)(unsafe.Add(mBase, uint32(v245)+16))
@@ -675,7 +675,7 @@ L62:
 	goto L50
 L63:
 	;
-	v271 = *(*int32)(unsafe.Add(mBase, uint32(v89)+uint32(_consts[806])))
+	v271 = *(*int32)(unsafe.Add(mBase, uint32(v89)+uint32(_c_F_clientsTimeProc[8])))
 	if base.Ui32(v265) <= base.Ui32(v271) {
 		goto L65
 	} else {
@@ -683,7 +683,7 @@ L63:
 	}
 L64:
 	;
-	*(*int32)(unsafe.Add(mBase, uint32(v89)+uint32(_consts[805]))) = v267
+	*(*int32)(unsafe.Add(mBase, uint32(v89)+uint32(_c_F_clientsTimeProc[7]))) = v267
 	goto L63
 L65:
 	;
@@ -697,7 +697,7 @@ L65:
 	}
 L66:
 	;
-	*(*int32)(unsafe.Add(mBase, uint32(v89)+uint32(_consts[806]))) = v265
+	*(*int32)(unsafe.Add(mBase, uint32(v89)+uint32(_c_F_clientsTimeProc[8]))) = v265
 	goto L65
 L67:
 	;
@@ -1002,7 +1002,7 @@ func F_handleClientsBlockedOnKeys(m *base.Module) {
 	v16 = m.G0
 	v18 = v16 - int32(16)
 	m.G0 = v18
-	v21 = int32(*(*uint8)(unsafe.Add(mBase, _consts[90])))
+	v21 = int32(*(*uint8)(unsafe.Add(mBase, _c_F_handleClientsBlockedOnKeys[0])))
 	if v21 != 0 {
 		v501 = v18
 		goto L3
@@ -1011,7 +1011,7 @@ func F_handleClientsBlockedOnKeys(m *base.Module) {
 	}
 L1:
 	;
-	F__serverAssert(m, int32(_a198), int32(_a196), int32(740))
+	F__serverAssert(m, int32(_a_F_handleClientsBlockedOnKeys_0), int32(_a_F_handleClientsBlockedOnKeys_1), int32(740))
 	mBase = m.M
 	v529 = m.ExcPending
 	if v529 != 0 {
@@ -1021,7 +1021,7 @@ L1:
 	}
 L2:
 	;
-	F__serverAssert(m, int32(_a199), int32(_a196), int32(392))
+	F__serverAssert(m, int32(_a_F_handleClientsBlockedOnKeys_2), int32(_a_F_handleClientsBlockedOnKeys_1), int32(392))
 	mBase = m.M
 	v523 = m.ExcPending
 	if v523 != 0 {
@@ -1036,8 +1036,8 @@ L3:
 L4:
 	;
 	v23 = int32(1)
-	*(*uint8)(unsafe.Add(mBase, _consts[90])) = uint8(v23)
-	v26 = *(*int32)(unsafe.Add(mBase, _consts[91]))
+	*(*uint8)(unsafe.Add(mBase, _c_F_handleClientsBlockedOnKeys[0])) = uint8(v23)
+	v26 = *(*int32)(unsafe.Add(mBase, _c_F_handleClientsBlockedOnKeys[1]))
 	if v26 != 0 {
 		goto L2
 	} else {
@@ -1045,7 +1045,7 @@ L4:
 	}
 L5:
 	;
-	v28 = *(*int32)(unsafe.Add(mBase, _consts[92]))
+	v28 = *(*int32)(unsafe.Add(mBase, _c_F_handleClientsBlockedOnKeys[2]))
 	v29 = *(*int32)(unsafe.Add(mBase, uint32(v28)+20))
 	if v29 == int32(0) {
 		v483 = v18
@@ -1056,7 +1056,7 @@ L5:
 L6:
 	;
 	v498 = int32(0)
-	*(*uint8)(unsafe.Add(mBase, _consts[90])) = uint8(v498)
+	*(*uint8)(unsafe.Add(mBase, _c_F_handleClientsBlockedOnKeys[0])) = uint8(v498)
 	v501 = v483
 	goto L3
 L7:
@@ -1083,7 +1083,7 @@ L10:
 	return
 L11:
 	;
-	*(*int32)(unsafe.Add(mBase, _consts[92])) = v50
+	*(*int32)(unsafe.Add(mBase, _c_F_handleClientsBlockedOnKeys[2])) = v50
 	v53 = *(*int32)(unsafe.Add(mBase, uint32(v35)+20))
 	if v53 == int32(0) {
 		goto L12
@@ -1404,7 +1404,7 @@ L54:
 	}
 L55:
 	;
-	v239 = *(*int32)(unsafe.Add(mBase, uint32(v232<<(uint(int32(2))%32))+uint32(_consts[93])))
+	v239 = *(*int32)(unsafe.Add(mBase, uint32(v232<<(uint(int32(2))%32))+uint32(_c_F_handleClientsBlockedOnKeys[3])))
 	v240 = v239
 	goto L54
 L56:
@@ -1425,11 +1425,11 @@ L58:
 	goto L51
 L59:
 	;
-	v371 = int32(_a44)
-	v372 = *(*int32)(unsafe.Add(mBase, _consts[67]))
-	*(*int32)(unsafe.Add(mBase, _consts[67])) = v215
-	v376 = *(*int64)(unsafe.Add(mBase, _consts[94]))
-	v378 = *(*int32)(unsafe.Add(mBase, _consts[23]))
+	v371 = int32(_a_F_handleClientsBlockedOnKeys_3)
+	v372 = *(*int32)(unsafe.Add(mBase, _c_F_handleClientsBlockedOnKeys[4]))
+	*(*int32)(unsafe.Add(mBase, _c_F_handleClientsBlockedOnKeys[4])) = v215
+	v376 = *(*int64)(unsafe.Add(mBase, _c_F_handleClientsBlockedOnKeys[5]))
+	v378 = *(*int32)(unsafe.Add(mBase, _c_F_handleClientsBlockedOnKeys[6]))
 	v379 = m.T0[v378].(func(*base.Module) int64)(m)
 	mBase = m.M
 	v380 = F_moduleTryServeClientBlockedOnKey(m, v215, v254)
@@ -1501,12 +1501,12 @@ L66:
 L67:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v215)+204)) = v274&int32(-2097155) | int32(2097152)
-	v284 = int32(_a44)
-	v285 = *(*int32)(unsafe.Add(mBase, _consts[67]))
-	*(*int32)(unsafe.Add(mBase, _consts[67])) = v215
+	v284 = int32(_a_F_handleClientsBlockedOnKeys_3)
+	v285 = *(*int32)(unsafe.Add(mBase, _c_F_handleClientsBlockedOnKeys[4]))
+	*(*int32)(unsafe.Add(mBase, _c_F_handleClientsBlockedOnKeys[4])) = v215
 	v290 = int32(0)
-	v294 = *(*int32)(unsafe.Add(mBase, _consts[95]))
-	*(*int32)(unsafe.Add(mBase, _consts[95])) = v294 + int32(1)
+	v294 = *(*int32)(unsafe.Add(mBase, _c_F_handleClientsBlockedOnKeys[7]))
+	*(*int32)(unsafe.Add(mBase, _c_F_handleClientsBlockedOnKeys[7])) = v294 + int32(1)
 	goto L70
 L68:
 	;
@@ -1534,16 +1534,16 @@ L71:
 L72:
 	;
 	v304 = int32(0)
-	*(*int64)(unsafe.Add(mBase, _consts[96])) = v302
+	*(*int64)(unsafe.Add(mBase, _c_F_handleClientsBlockedOnKeys[8])) = v302
 	v308 = base.I64_div_s(v302, int64(1000))
-	*(*int64)(unsafe.Add(mBase, _consts[35])) = v308
+	*(*int64)(unsafe.Add(mBase, _c_F_handleClientsBlockedOnKeys[9])) = v308
 	v312 = base.I64_div_s(v302, int64(1000000))
-	*(*int64)(unsafe.Add(mBase, _consts[47])) = v312
-	v315 = *(*int32)(unsafe.Add(mBase, _consts[97]))
+	*(*int64)(unsafe.Add(mBase, _c_F_handleClientsBlockedOnKeys[10])) = v312
+	v315 = *(*int32)(unsafe.Add(mBase, _c_F_handleClientsBlockedOnKeys[11]))
 	F_lrulfu_updateClockAndPolicy(m, v308, int32(base.Ui32(v315&int32(2))>>(uint(int32(1))%32)))
 	mBase = m.M
-	v323 = *(*int64)(unsafe.Add(mBase, _consts[35]))
-	*(*int64)(unsafe.Add(mBase, _consts[98])) = v323
+	v323 = *(*int64)(unsafe.Add(mBase, _c_F_handleClientsBlockedOnKeys[9]))
+	*(*int64)(unsafe.Add(mBase, _c_F_handleClientsBlockedOnKeys[12])) = v323
 	goto L69
 L73:
 	;
@@ -1568,18 +1568,18 @@ L75:
 L76:
 	;
 	v331 = int32(0)
-	v333 = *(*int32)(unsafe.Add(mBase, _consts[95]))
-	*(*int32)(unsafe.Add(mBase, _consts[95])) = v333 + int32(-1)
+	v333 = *(*int32)(unsafe.Add(mBase, _c_F_handleClientsBlockedOnKeys[7]))
+	*(*int32)(unsafe.Add(mBase, _c_F_handleClientsBlockedOnKeys[7])) = v333 + int32(-1)
 	goto L77
 L77:
 	;
-	*(*int32)(unsafe.Add(mBase, _consts[67])) = v285
+	*(*int32)(unsafe.Add(mBase, _c_F_handleClientsBlockedOnKeys[4])) = v285
 	goto L39
 L78:
 	;
 	v357 = int32(0)
-	v359 = *(*int32)(unsafe.Add(mBase, _consts[95]))
-	*(*int32)(unsafe.Add(mBase, _consts[95])) = v359 + int32(-1)
+	v359 = *(*int32)(unsafe.Add(mBase, _c_F_handleClientsBlockedOnKeys[7]))
+	*(*int32)(unsafe.Add(mBase, _c_F_handleClientsBlockedOnKeys[7])) = v359 + int32(-1)
 	goto L85
 L79:
 	;
@@ -1611,7 +1611,7 @@ L82:
 L83:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v215)+200)) = v339 | int32(128)
-	v354 = *(*int32)(unsafe.Add(mBase, _consts[99]))
+	v354 = *(*int32)(unsafe.Add(mBase, _c_F_handleClientsBlockedOnKeys[13]))
 	v355 = F_listAddNodeTail(m, v354, v215)
 	mBase = m.M
 	v356 = m.ExcPending
@@ -1637,7 +1637,7 @@ L86:
 	;
 	v365 = *(*int32)(unsafe.Add(mBase, uint32(v215)+204))
 	*(*int32)(unsafe.Add(mBase, uint32(v215)+204)) = v365 & int32(-2097153)
-	*(*int32)(unsafe.Add(mBase, _consts[67])) = v285
+	*(*int32)(unsafe.Add(mBase, _c_F_handleClientsBlockedOnKeys[4])) = v285
 	goto L39
 L87:
 	;
@@ -1659,10 +1659,10 @@ L88:
 L89:
 	;
 	v384 = int32(0)
-	v386 = *(*int32)(unsafe.Add(mBase, _consts[23]))
+	v386 = *(*int32)(unsafe.Add(mBase, _c_F_handleClientsBlockedOnKeys[6]))
 	v387 = m.T0[v386].(func(*base.Module) int64)(m)
 	mBase = m.M
-	v391 = *(*int64)(unsafe.Add(mBase, _consts[94]))
+	v391 = *(*int64)(unsafe.Add(mBase, _c_F_handleClientsBlockedOnKeys[5]))
 	F_updateStatsOnUnblock(m, v215, v384, base.I32_wrap_i64(v387-v379), base.B2i32(v391 != v376)<<(uint(int32(1))%32))
 	mBase = m.M
 	v396 = m.ExcPending
@@ -1686,7 +1686,7 @@ L91:
 	goto L87
 L92:
 	;
-	*(*int32)(unsafe.Add(mBase, _consts[67])) = v372
+	*(*int32)(unsafe.Add(mBase, _c_F_handleClientsBlockedOnKeys[4])) = v372
 	goto L39
 L93:
 	;
@@ -1727,7 +1727,7 @@ L98:
 	goto L15
 L99:
 	;
-	v479 = *(*int32)(unsafe.Add(mBase, _consts[92]))
+	v479 = *(*int32)(unsafe.Add(mBase, _c_F_handleClientsBlockedOnKeys[2]))
 	v482 = *(*int32)(unsafe.Add(mBase, uint32(v479)+20))
 	if v482 != 0 {
 		v35 = v479
@@ -1832,7 +1832,7 @@ func F_handleClientsWithPendingWrites(m *base.Module) int32 {
 	v6 = m.G0
 	v8 = v6 - int32(16)
 	m.G0 = v8
-	v11 = *(*int32)(unsafe.Add(mBase, _consts[216]))
+	v11 = *(*int32)(unsafe.Add(mBase, _c_F_handleClientsWithPendingWrites[0]))
 	v12 = *(*int32)(unsafe.Add(mBase, uint32(v11)+20))
 	if v12 != 0 {
 		goto L3
@@ -1841,7 +1841,7 @@ func F_handleClientsWithPendingWrites(m *base.Module) int32 {
 	}
 L1:
 	;
-	F__serverAssert(m, int32(_a1021), int32(_a977), int32(3358))
+	F__serverAssert(m, int32(_a_F_handleClientsWithPendingWrites_0), int32(_a_F_handleClientsWithPendingWrites_1), int32(3358))
 	mBase = m.M
 	v111 = m.ExcPending
 	if v111 != 0 {
@@ -1938,7 +1938,7 @@ L14:
 L15:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v42)+200)) = v43 & int32(2143288319)
-	v57 = *(*int32)(unsafe.Add(mBase, _consts[216]))
+	v57 = *(*int32)(unsafe.Add(mBase, _c_F_handleClientsWithPendingWrites[0]))
 	F_listUnlinkNode(m, v57, v38)
 	mBase = m.M
 	v61 = m.ExcPending
@@ -2326,7 +2326,7 @@ func F_processClientsCommandsBatch(m *base.Module) {
 	v10 = m.G0
 	v12 = v10 - int32(16)
 	m.G0 = v12
-	v15 = *(*int32)(unsafe.Add(mBase, _consts[507]))
+	v15 = *(*int32)(unsafe.Add(mBase, _c_F_processClientsCommandsBatch[0]))
 	if v15 == v1 {
 		goto L1
 	} else {
@@ -2513,7 +2513,7 @@ L26:
 	}
 L27:
 	;
-	v152 = *(*int32)(unsafe.Add(mBase, _consts[507]))
+	v152 = *(*int32)(unsafe.Add(mBase, _c_F_processClientsCommandsBatch[0]))
 	v154 = v152
 	goto L23
 L28:
@@ -2551,7 +2551,7 @@ L33:
 	v183 = *(*int32)(unsafe.Add(mBase, uint32(v177+v181)))
 	v184 = F_objectGetVal(m, v183)
 	mBase = m.M
-	v186 = *(*int32)(unsafe.Add(mBase, _consts[507]))
+	v186 = *(*int32)(unsafe.Add(mBase, _c_F_processClientsCommandsBatch[0]))
 	v187 = *(*int32)(unsafe.Add(mBase, uint32(v186)+28))
 	*(*int32)(unsafe.Add(mBase, uint32(v187+v181))) = v184
 	v191 = v176 + int32(1)
@@ -2576,9 +2576,9 @@ L35:
 	goto L34
 L36:
 	;
-	v196 = int32(_a44)
-	v198 = *(*int64)(unsafe.Add(mBase, _consts[508]))
-	*(*int64)(unsafe.Add(mBase, _consts[508])) = v198 + int64(1)
+	v196 = int32(_a_F_processClientsCommandsBatch_0)
+	v198 = *(*int64)(unsafe.Add(mBase, _c_F_processClientsCommandsBatch[1]))
+	*(*int64)(unsafe.Add(mBase, _c_F_processClientsCommandsBatch[1])) = v198 + int64(1)
 	v202 = *(*int32)(unsafe.Add(mBase, uint32(v186)+36))
 	v205 = v186
 	v209 = int32(0)
@@ -2639,7 +2639,7 @@ L42:
 	goto L43
 L43:
 	;
-	v227 = *(*int32)(unsafe.Add(mBase, _consts[507]))
+	v227 = *(*int32)(unsafe.Add(mBase, _c_F_processClientsCommandsBatch[0]))
 	if v223+v224 != 0 {
 		goto L40
 	} else {
@@ -2654,7 +2654,7 @@ L45:
 	return
 L46:
 	;
-	v247 = *(*int32)(unsafe.Add(mBase, _consts[507]))
+	v247 = *(*int32)(unsafe.Add(mBase, _c_F_processClientsCommandsBatch[0]))
 	v248 = v247
 	goto L39
 L47:
@@ -2669,7 +2669,7 @@ L48:
 L49:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v12))) = v277
-	F__serverPanic_1(m, int32(_a910), int32(165), int32(_a911), v12)
+	F__serverPanic_1(m, int32(_a_F_processClientsCommandsBatch_1), int32(165), int32(_a_F_processClientsCommandsBatch_2), v12)
 	mBase = m.M
 	v350 = m.ExcPending
 	if v350 != 0 {
@@ -2737,7 +2737,7 @@ L57:
 L58:
 	;
 	v290 = int32(0)
-	v291 = *(*int32)(unsafe.Add(mBase, _consts[507]))
+	v291 = *(*int32)(unsafe.Add(mBase, _c_F_processClientsCommandsBatch[0]))
 	if v288 == v290 {
 		goto L59
 	} else {
@@ -2745,9 +2745,9 @@ L58:
 	}
 L59:
 	;
-	v300 = int32(_a44)
-	v301 = *(*int32)(unsafe.Add(mBase, _consts[436]))
-	v303 = *(*int32)(unsafe.Add(mBase, _consts[509]))
+	v300 = int32(_a_F_processClientsCommandsBatch_0)
+	v301 = *(*int32)(unsafe.Add(mBase, _c_F_processClientsCommandsBatch[2]))
+	v303 = *(*int32)(unsafe.Add(mBase, _c_F_processClientsCommandsBatch[3]))
 	if v301 < v303 {
 		goto L61
 	} else {
@@ -2769,9 +2769,9 @@ L61:
 L62:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v276))) = int32(2)
-	v307 = int32(_a44)
-	v309 = *(*int64)(unsafe.Add(mBase, _consts[510]))
-	*(*int64)(unsafe.Add(mBase, _consts[510])) = v309 + int64(1)
+	v307 = int32(_a_F_processClientsCommandsBatch_0)
+	v309 = *(*int64)(unsafe.Add(mBase, _c_F_processClientsCommandsBatch[4]))
+	*(*int64)(unsafe.Add(mBase, _c_F_processClientsCommandsBatch[4])) = v309 + int64(1)
 	v313 = *(*int32)(unsafe.Add(mBase, uint32(v291)+4))
 	*(*int32)(unsafe.Add(mBase, uint32(v291)+4)) = v313 + int32(1)
 	v255 = v291
@@ -2779,10 +2779,10 @@ L62:
 L63:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v276))) = int32(2)
-	v333 = int32(_a44)
-	v335 = *(*int64)(unsafe.Add(mBase, _consts[510]))
-	*(*int64)(unsafe.Add(mBase, _consts[510])) = v335 + int64(1)
-	v340 = *(*int32)(unsafe.Add(mBase, _consts[507]))
+	v333 = int32(_a_F_processClientsCommandsBatch_0)
+	v335 = *(*int64)(unsafe.Add(mBase, _c_F_processClientsCommandsBatch[4]))
+	*(*int64)(unsafe.Add(mBase, _c_F_processClientsCommandsBatch[4])) = v335 + int64(1)
+	v340 = *(*int32)(unsafe.Add(mBase, _c_F_processClientsCommandsBatch[0]))
 	v341 = *(*int32)(unsafe.Add(mBase, uint32(v340)+4))
 	*(*int32)(unsafe.Add(mBase, uint32(v340)+4)) = v341 + int32(1)
 	v255 = v340
@@ -2822,7 +2822,7 @@ L68:
 	*(*int32)(unsafe.Add(mBase, uint32(v400)+20)) = int32(0)
 	*(*int64)(unsafe.Add(mBase, uint32(v400+int32(8)))) = v408
 	v416 = *(*int32)(unsafe.Add(mBase, uint32(v400)+16))
-	v418 = *(*int32)(unsafe.Add(mBase, _consts[511]))
+	v418 = *(*int32)(unsafe.Add(mBase, _c_F_processClientsCommandsBatch[5]))
 	if v416 == v418 {
 		goto L1
 	} else {
@@ -2850,7 +2850,7 @@ L71:
 L72:
 	;
 	v394 = v370 + int32(1)
-	v396 = *(*int32)(unsafe.Add(mBase, _consts[507]))
+	v396 = *(*int32)(unsafe.Add(mBase, _c_F_processClientsCommandsBatch[0]))
 	v397 = *(*int32)(unsafe.Add(mBase, uint32(v396)+12))
 	if base.Ui32(v394) < base.Ui32(v397) {
 		v366 = v396

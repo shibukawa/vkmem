@@ -160,7 +160,7 @@ func F_luaD_pcall(m *base.Module, l0 int32, l1 int32, l2 int32, l3 int32, l4 int
 					}
 				case 2:
 					v30 = m.G3
-					v34 = F_luaS_newlstr(m, l0, v30+int32(_a2256), int32(17))
+					v34 = F_luaS_newlstr(m, l0, v30+int32(_a_F_luaD_pcall_0), int32(17))
 					mBase = m.M
 					v35 = m.ExcPending
 					if v35 != 0 {
@@ -207,7 +207,7 @@ func F_luaD_pcall(m *base.Module, l0 int32, l1 int32, l2 int32, l3 int32, l4 int
 					}
 				case 3:
 					v38 = m.G3
-					v42 = F_luaS_newlstr(m, l0, v38+int32(_a2257), int32(23))
+					v42 = F_luaS_newlstr(m, l0, v38+int32(_a_F_luaD_pcall_1), int32(23))
 					mBase = m.M
 					v43 = m.ExcPending
 					if v43 != 0 {
@@ -1311,7 +1311,7 @@ func F_luaD_throw(m *base.Module, l0 int32, l1 int32) {
 					}
 				case 2:
 					v19 = m.G3
-					v23 = F_luaS_newlstr(m, l0, v19+int32(_a2256), int32(17))
+					v23 = F_luaS_newlstr(m, l0, v19+int32(_a_F_luaD_throw_0), int32(17))
 					mBase = m.M
 					v24 = m.ExcPending
 					if v24 != 0 {
@@ -1394,7 +1394,7 @@ func F_luaD_throw(m *base.Module, l0 int32, l1 int32) {
 					}
 				case 3:
 					v27 = m.G3
-					v31 = F_luaS_newlstr(m, l0, v27+int32(_a2257), int32(23))
+					v31 = F_luaS_newlstr(m, l0, v27+int32(_a_F_luaD_throw_1), int32(23))
 					mBase = m.M
 					v32 = m.ExcPending
 					if v32 != 0 {

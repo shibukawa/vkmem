@@ -513,7 +513,7 @@ L2:
 	v87 = *(*int32)(unsafe.Add(mBase, uint32(v86)+4))
 	v88 = F_objectGetVal(m, v87)
 	mBase = m.M
-	v89 = int32(_a1784)
+	v89 = int32(_a_F_pubsubCommand_0)
 	v92 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v88))))
 	if v92 != 0 {
 		goto L22
@@ -526,7 +526,7 @@ L3:
 	v17 = *(*int32)(unsafe.Add(mBase, uint32(v16)+4))
 	v18 = F_objectGetVal(m, v17)
 	mBase = m.M
-	v19 = int32(_a98)
+	v19 = int32(_a_F_pubsubCommand_1)
 	v22 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v18))))
 	if v22 != 0 {
 		goto L6
@@ -624,17 +624,17 @@ L15:
 L16:
 	;
 	v60 = int32(0)
-	v61 = *(*int64)(unsafe.Add(mBase, _consts[518]))
+	v61 = *(*int64)(unsafe.Add(mBase, _c_F_pubsubCommand[0]))
 	*(*int64)(unsafe.Add(mBase, uint32(v11+int32(40)))) = v61
-	v66 = *(*int64)(unsafe.Add(mBase, _consts[519]))
+	v66 = *(*int64)(unsafe.Add(mBase, _c_F_pubsubCommand[1]))
 	*(*int64)(unsafe.Add(mBase, uint32(v11+int32(32)))) = v66
-	v71 = *(*int64)(unsafe.Add(mBase, _consts[520]))
+	v71 = *(*int64)(unsafe.Add(mBase, _c_F_pubsubCommand[2]))
 	*(*int64)(unsafe.Add(mBase, uint32(v11+int32(24)))) = v71
-	v76 = *(*int64)(unsafe.Add(mBase, _consts[521]))
+	v76 = *(*int64)(unsafe.Add(mBase, _c_F_pubsubCommand[3]))
 	*(*int64)(unsafe.Add(mBase, uint32(v11+int32(16)))) = v76
-	v79 = *(*int64)(unsafe.Add(mBase, _consts[522]))
+	v79 = *(*int64)(unsafe.Add(mBase, _c_F_pubsubCommand[4]))
 	*(*int64)(unsafe.Add(mBase, uint32(v11)+8)) = v79
-	v82 = *(*int64)(unsafe.Add(mBase, _consts[523]))
+	v82 = *(*int64)(unsafe.Add(mBase, _c_F_pubsubCommand[5]))
 	*(*int64)(unsafe.Add(mBase, uint32(v11))) = v82
 	F_addReplyHelp(m, l0, v11)
 	mBase = m.M
@@ -656,7 +656,7 @@ L19:
 	v146 = *(*int32)(unsafe.Add(mBase, uint32(v145)+4))
 	v147 = F_objectGetVal(m, v146)
 	mBase = m.M
-	v148 = int32(_a1785)
+	v148 = int32(_a_F_pubsubCommand_2)
 	v151 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v147))))
 	if v151 != 0 {
 		goto L40
@@ -769,7 +769,7 @@ L33:
 	}
 L34:
 	;
-	v141 = *(*int32)(unsafe.Add(mBase, _consts[24]))
+	v141 = *(*int32)(unsafe.Add(mBase, _c_F_pubsubCommand[6]))
 	F_channelList(m, l0, v139, v141)
 	mBase = m.M
 	v143 = m.ExcPending
@@ -795,7 +795,7 @@ L37:
 	v241 = *(*int32)(unsafe.Add(mBase, uint32(v240)+4))
 	v242 = F_objectGetVal(m, v241)
 	mBase = m.M
-	v243 = int32(_a1786)
+	v243 = int32(_a_F_pubsubCommand_3)
 	v246 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v242))))
 	if v246 != 0 {
 		goto L66
@@ -925,7 +925,7 @@ L54:
 	;
 	v208 = int32(0)
 	*(*int32)(unsafe.Add(mBase, uint32(v11))) = v208
-	v211 = *(*int32)(unsafe.Add(mBase, _consts[24]))
+	v211 = *(*int32)(unsafe.Add(mBase, _c_F_pubsubCommand[6]))
 	v213 = *(*int32)(unsafe.Add(mBase, uint32(l0)+20))
 	v215 = v203 << (uint(int32(2)) % 32)
 	v217 = *(*int32)(unsafe.Add(mBase, uint32(v213+v215)))
@@ -996,7 +996,7 @@ L63:
 	v294 = *(*int32)(unsafe.Add(mBase, uint32(v293)+4))
 	v295 = F_objectGetVal(m, v294)
 	mBase = m.M
-	v296 = int32(_a1787)
+	v296 = int32(_a_F_pubsubCommand_4)
 	v299 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v295))))
 	if v299 != 0 {
 		goto L82
@@ -1101,7 +1101,7 @@ L76:
 	}
 L77:
 	;
-	v286 = *(*int32)(unsafe.Add(mBase, _consts[23]))
+	v286 = *(*int32)(unsafe.Add(mBase, _c_F_pubsubCommand[7]))
 	v287 = *(*int32)(unsafe.Add(mBase, uint32(v286)+16))
 	v288 = *(*int32)(unsafe.Add(mBase, uint32(v286)+12))
 	F_addReplyLongLong(m, l0, base.I64_extend_i32_u(v287+v288))
@@ -1121,7 +1121,7 @@ L79:
 	v353 = *(*int32)(unsafe.Add(mBase, uint32(v352)+4))
 	v354 = F_objectGetVal(m, v353)
 	mBase = m.M
-	v355 = int32(_a1788)
+	v355 = int32(_a_F_pubsubCommand_5)
 	v358 = int32(*(*uint8)(unsafe.Add(mBase, uint32(v354))))
 	if v358 != 0 {
 		goto L100
@@ -1234,7 +1234,7 @@ L93:
 	}
 L94:
 	;
-	v348 = *(*int32)(unsafe.Add(mBase, _consts[25]))
+	v348 = *(*int32)(unsafe.Add(mBase, _c_F_pubsubCommand[8]))
 	F_channelList(m, l0, v346, v348)
 	mBase = m.M
 	v350 = m.ExcPending
@@ -1391,7 +1391,7 @@ L114:
 	v420 = F_objectGetVal(m, v419)
 	mBase = m.M
 	v421 = int32(0)
-	v423 = *(*int32)(unsafe.Add(mBase, _consts[110]))
+	v423 = *(*int32)(unsafe.Add(mBase, _c_F_pubsubCommand[9]))
 	if v423 == v421 {
 		v514 = v421
 		goto L116
@@ -1401,7 +1401,7 @@ L114:
 L116:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(v11))) = int32(0)
-	v519 = *(*int32)(unsafe.Add(mBase, _consts[25]))
+	v519 = *(*int32)(unsafe.Add(mBase, _c_F_pubsubCommand[8]))
 	v520 = *(*int32)(unsafe.Add(mBase, uint32(l0)+20))
 	v522 = *(*int32)(unsafe.Add(mBase, uint32(v520+v417)))
 	v523 = F_kvstoreHashtableFind(m, v519, v514, v522, v11)
@@ -1676,23 +1676,23 @@ func F_pubsubPublishMessage(m *base.Module, l0 int32, l1 int32, l2 int32) int32 
 	m.G0 = v7
 	if l2 == int32(0) {
 		v31 = int32(0)
-		v32 = *(*int32)(unsafe.Add(mBase, _consts[508]))
+		v32 = *(*int32)(unsafe.Add(mBase, _c_F_pubsubPublishMessage[0]))
 		*(*int32)(unsafe.Add(mBase, uint32(v7+int32(56)))) = v32
-		v37 = *(*int64)(unsafe.Add(mBase, _consts[509]))
+		v37 = *(*int64)(unsafe.Add(mBase, _c_F_pubsubPublishMessage[1]))
 		*(*int64)(unsafe.Add(mBase, uint32(v7+int32(48)))) = v37
-		v42 = *(*int64)(unsafe.Add(mBase, _consts[510]))
+		v42 = *(*int64)(unsafe.Add(mBase, _c_F_pubsubPublishMessage[2]))
 		*(*int64)(unsafe.Add(mBase, uint32(v7+int32(40)))) = v42
-		v45 = *(*int64)(unsafe.Add(mBase, _consts[511]))
+		v45 = *(*int64)(unsafe.Add(mBase, _c_F_pubsubPublishMessage[3]))
 		*(*int64)(unsafe.Add(mBase, uint32(v7)+32)) = v45
 	} else {
 		v13 = int32(0)
-		v14 = *(*int32)(unsafe.Add(mBase, _consts[512]))
+		v14 = *(*int32)(unsafe.Add(mBase, _c_F_pubsubPublishMessage[4]))
 		*(*int32)(unsafe.Add(mBase, uint32(v7+int32(56)))) = v14
-		v19 = *(*int64)(unsafe.Add(mBase, _consts[513]))
+		v19 = *(*int64)(unsafe.Add(mBase, _c_F_pubsubPublishMessage[5]))
 		*(*int64)(unsafe.Add(mBase, uint32(v7+int32(48)))) = v19
-		v24 = *(*int64)(unsafe.Add(mBase, _consts[514]))
+		v24 = *(*int64)(unsafe.Add(mBase, _c_F_pubsubPublishMessage[6]))
 		*(*int64)(unsafe.Add(mBase, uint32(v7+int32(40)))) = v24
-		v27 = *(*int64)(unsafe.Add(mBase, _consts[515]))
+		v27 = *(*int64)(unsafe.Add(mBase, _c_F_pubsubPublishMessage[7]))
 		*(*int64)(unsafe.Add(mBase, uint32(v7)+32)) = v27
 	}
 	v53 = *(*int32)(unsafe.Add(mBase, uint32(v7+int32(56))))
@@ -1761,23 +1761,23 @@ func F_pubsubPublishMessageAndPropagateToCluster(m *base.Module, l0 int32, l1 in
 	m.G0 = v8
 	if l2 == int32(0) {
 		v32 = int32(0)
-		v33 = *(*int32)(unsafe.Add(mBase, _consts[508]))
+		v33 = *(*int32)(unsafe.Add(mBase, _c_F_pubsubPublishMessageAndPropagateToCluster[0]))
 		*(*int32)(unsafe.Add(mBase, uint32(v8+int32(56)))) = v33
-		v38 = *(*int64)(unsafe.Add(mBase, _consts[509]))
+		v38 = *(*int64)(unsafe.Add(mBase, _c_F_pubsubPublishMessageAndPropagateToCluster[1]))
 		*(*int64)(unsafe.Add(mBase, uint32(v8+int32(48)))) = v38
-		v43 = *(*int64)(unsafe.Add(mBase, _consts[510]))
+		v43 = *(*int64)(unsafe.Add(mBase, _c_F_pubsubPublishMessageAndPropagateToCluster[2]))
 		*(*int64)(unsafe.Add(mBase, uint32(v8+int32(40)))) = v43
-		v46 = *(*int64)(unsafe.Add(mBase, _consts[511]))
+		v46 = *(*int64)(unsafe.Add(mBase, _c_F_pubsubPublishMessageAndPropagateToCluster[3]))
 		*(*int64)(unsafe.Add(mBase, uint32(v8)+32)) = v46
 	} else {
 		v14 = int32(0)
-		v15 = *(*int32)(unsafe.Add(mBase, _consts[512]))
+		v15 = *(*int32)(unsafe.Add(mBase, _c_F_pubsubPublishMessageAndPropagateToCluster[4]))
 		*(*int32)(unsafe.Add(mBase, uint32(v8+int32(56)))) = v15
-		v20 = *(*int64)(unsafe.Add(mBase, _consts[513]))
+		v20 = *(*int64)(unsafe.Add(mBase, _c_F_pubsubPublishMessageAndPropagateToCluster[5]))
 		*(*int64)(unsafe.Add(mBase, uint32(v8+int32(48)))) = v20
-		v25 = *(*int64)(unsafe.Add(mBase, _consts[514]))
+		v25 = *(*int64)(unsafe.Add(mBase, _c_F_pubsubPublishMessageAndPropagateToCluster[6]))
 		*(*int64)(unsafe.Add(mBase, uint32(v8+int32(40)))) = v25
-		v28 = *(*int64)(unsafe.Add(mBase, _consts[515]))
+		v28 = *(*int64)(unsafe.Add(mBase, _c_F_pubsubPublishMessageAndPropagateToCluster[7]))
 		*(*int64)(unsafe.Add(mBase, uint32(v8)+32)) = v28
 	}
 	v54 = *(*int32)(unsafe.Add(mBase, uint32(v8+int32(56))))
@@ -1794,7 +1794,7 @@ func F_pubsubPublishMessageAndPropagateToCluster(m *base.Module, l0 int32, l1 in
 	if v77 != 0 {
 		return int32(0)
 	} else {
-		v79 = *(*int32)(unsafe.Add(mBase, _consts[110]))
+		v79 = *(*int32)(unsafe.Add(mBase, _c_F_pubsubPublishMessageAndPropagateToCluster[8]))
 		if v79 == int32(0) {
 			m.G0 = v8 + int32(64)
 			return v74
@@ -1974,7 +1974,7 @@ L3:
 L4:
 	;
 	*(*int32)(unsafe.Add(mBase, uint32(l0)+100)) = v15
-	v21 = F_hashtableCreate(m, int32(_a1780))
+	v21 = F_hashtableCreate(m, int32(_a_F_pubsubSubscribeChannel_3))
 	mBase = m.M
 	v22 = m.ExcPending
 	if v22 != 0 {
@@ -1986,7 +1986,7 @@ L5:
 	;
 	v23 = *(*int32)(unsafe.Add(mBase, uint32(l0)+100))
 	*(*int32)(unsafe.Add(mBase, uint32(v23))) = v21
-	v26 = F_hashtableCreate(m, int32(_a1780))
+	v26 = F_hashtableCreate(m, int32(_a_F_pubsubSubscribeChannel_3))
 	mBase = m.M
 	v27 = m.ExcPending
 	if v27 != 0 {
@@ -1998,7 +1998,7 @@ L6:
 	;
 	v28 = *(*int32)(unsafe.Add(mBase, uint32(l0)+100))
 	*(*int32)(unsafe.Add(mBase, uint32(v28)+4)) = v26
-	v31 = F_hashtableCreate(m, int32(_a1780))
+	v31 = F_hashtableCreate(m, int32(_a_F_pubsubSubscribeChannel_3))
 	mBase = m.M
 	v32 = m.ExcPending
 	if v32 != 0 {
@@ -2015,7 +2015,7 @@ L7:
 	goto L1
 L8:
 	;
-	F__serverAssert(m, int32(_a1782), int32(_a1777), int32(321))
+	F__serverAssert(m, int32(_a_F_pubsubSubscribeChannel_1), int32(_a_F_pubsubSubscribeChannel_2), int32(321))
 	mBase = m.M
 	v148 = m.ExcPending
 	if v148 != 0 {
@@ -2057,7 +2057,7 @@ L11:
 L12:
 	;
 	v52 = int32(0)
-	v54 = *(*int32)(unsafe.Add(mBase, _consts[110]))
+	v54 = *(*int32)(unsafe.Add(mBase, _c_F_pubsubSubscribeChannel[1]))
 	if v54 == v52 {
 		v63 = v52
 		goto L13
@@ -2113,7 +2113,7 @@ L17:
 	}
 L18:
 	;
-	v77 = F_hashtableCreate(m, int32(_a1781))
+	v77 = F_hashtableCreate(m, int32(_a_F_pubsubSubscribeChannel_0))
 	mBase = m.M
 	v78 = m.ExcPending
 	if v78 != 0 {
@@ -2233,7 +2233,7 @@ L32:
 	}
 L33:
 	;
-	v118 = *(*int32)(unsafe.Add(mBase, _consts[517]))
+	v118 = *(*int32)(unsafe.Add(mBase, _c_F_pubsubSubscribeChannel[0]))
 	F_addReply(m, l0, v118)
 	mBase = m.M
 	v120 = m.ExcPending
@@ -2605,7 +2605,7 @@ L25:
 	}
 L26:
 	;
-	v115 = *(*int32)(unsafe.Add(mBase, _consts[517]))
+	v115 = *(*int32)(unsafe.Add(mBase, _c_F_pubsubUnsubscribeAllChannelsInternal[0]))
 	F_addReply(m, l0, v115)
 	mBase = m.M
 	v117 = m.ExcPending
@@ -2809,7 +2809,7 @@ L2:
 	}
 L3:
 	;
-	F__serverAssertWithInfo(m, l0, int32(0), int32(_a1776), int32(_a1777), int32(352))
+	F__serverAssertWithInfo(m, l0, int32(0), int32(_a_F_pubsubUnsubscribeChannel_0), int32(_a_F_pubsubUnsubscribeChannel_1), int32(352))
 	mBase = m.M
 	v197 = m.ExcPending
 	if v197 != 0 {
@@ -2819,7 +2819,7 @@ L3:
 	}
 L4:
 	;
-	F__serverAssertWithInfo(m, l0, int32(0), int32(_a1778), int32(_a1777), int32(350))
+	F__serverAssertWithInfo(m, l0, int32(0), int32(_a_F_pubsubUnsubscribeChannel_2), int32(_a_F_pubsubUnsubscribeChannel_1), int32(350))
 	mBase = m.M
 	v190 = m.ExcPending
 	if v190 != 0 {
@@ -2855,7 +2855,7 @@ L7:
 L8:
 	;
 	v26 = int32(0)
-	v28 = *(*int32)(unsafe.Add(mBase, _consts[110]))
+	v28 = *(*int32)(unsafe.Add(mBase, _c_F_pubsubUnsubscribeChannel[0]))
 	if v28 == v26 {
 		v125 = v26
 		goto L9
@@ -3268,7 +3268,7 @@ func F_pubsubUnsubscribePattern(m *base.Module, l0 int32, l1 int32, l2 int32) in
 						}
 					}
 				} else {
-					v43 = *(*int32)(unsafe.Add(mBase, _consts[23]))
+					v43 = *(*int32)(unsafe.Add(mBase, _c_F_pubsubUnsubscribePattern[0]))
 					v44 = F_dictFind(m, v43, l1)
 					mBase = m.M
 					v45 = m.ExcPending
@@ -3276,7 +3276,7 @@ func F_pubsubUnsubscribePattern(m *base.Module, l0 int32, l1 int32, l2 int32) in
 						return int32(0)
 					} else {
 						if v44 == int32(0) {
-							F__serverAssertWithInfo(m, l0, int32(0), int32(_a1779), int32(_a1777), int32(432))
+							F__serverAssertWithInfo(m, l0, int32(0), int32(_a_F_pubsubUnsubscribePattern_0), int32(_a_F_pubsubUnsubscribePattern_1), int32(432))
 							mBase = m.M
 							v73 = m.ExcPending
 							if v73 != 0 {
@@ -3297,7 +3297,7 @@ func F_pubsubUnsubscribePattern(m *base.Module, l0 int32, l1 int32, l2 int32) in
 								return int32(0)
 							} else {
 								if v49 == int32(0) {
-									F__serverAssertWithInfo(m, l0, int32(0), int32(_a1776), int32(_a1777), int32(434))
+									F__serverAssertWithInfo(m, l0, int32(0), int32(_a_F_pubsubUnsubscribePattern_2), int32(_a_F_pubsubUnsubscribePattern_1), int32(434))
 									mBase = m.M
 									v80 = m.ExcPending
 									if v80 != 0 {
@@ -3340,7 +3340,7 @@ func F_pubsubUnsubscribePattern(m *base.Module, l0 int32, l1 int32, l2 int32) in
 											}
 										}
 									} else {
-										v57 = *(*int32)(unsafe.Add(mBase, _consts[23]))
+										v57 = *(*int32)(unsafe.Add(mBase, _c_F_pubsubUnsubscribePattern[0]))
 										v58 = F_dictDelete(m, v57, l1)
 										mBase = m.M
 										v59 = m.ExcPending
@@ -3390,7 +3390,7 @@ func F_pubsubUnsubscribePattern(m *base.Module, l0 int32, l1 int32, l2 int32) in
 			return int32(0)
 		} else {
 			*(*int32)(unsafe.Add(mBase, uint32(l0)+100)) = v8
-			v14 = F_hashtableCreate(m, int32(_a1780))
+			v14 = F_hashtableCreate(m, int32(_a_F_pubsubUnsubscribePattern_3))
 			mBase = m.M
 			v15 = m.ExcPending
 			if v15 != 0 {
@@ -3398,7 +3398,7 @@ func F_pubsubUnsubscribePattern(m *base.Module, l0 int32, l1 int32, l2 int32) in
 			} else {
 				v16 = *(*int32)(unsafe.Add(mBase, uint32(l0)+100))
 				*(*int32)(unsafe.Add(mBase, uint32(v16))) = v14
-				v19 = F_hashtableCreate(m, int32(_a1780))
+				v19 = F_hashtableCreate(m, int32(_a_F_pubsubUnsubscribePattern_3))
 				mBase = m.M
 				v20 = m.ExcPending
 				if v20 != 0 {
@@ -3406,7 +3406,7 @@ func F_pubsubUnsubscribePattern(m *base.Module, l0 int32, l1 int32, l2 int32) in
 				} else {
 					v21 = *(*int32)(unsafe.Add(mBase, uint32(l0)+100))
 					*(*int32)(unsafe.Add(mBase, uint32(v21)+4)) = v19
-					v24 = F_hashtableCreate(m, int32(_a1780))
+					v24 = F_hashtableCreate(m, int32(_a_F_pubsubUnsubscribePattern_3))
 					mBase = m.M
 					v25 = m.ExcPending
 					if v25 != 0 {
@@ -3458,7 +3458,7 @@ func F_pubsubUnsubscribePattern(m *base.Module, l0 int32, l1 int32, l2 int32) in
 										}
 									}
 								} else {
-									v43 = *(*int32)(unsafe.Add(mBase, _consts[23]))
+									v43 = *(*int32)(unsafe.Add(mBase, _c_F_pubsubUnsubscribePattern[0]))
 									v44 = F_dictFind(m, v43, l1)
 									mBase = m.M
 									v45 = m.ExcPending
@@ -3466,7 +3466,7 @@ func F_pubsubUnsubscribePattern(m *base.Module, l0 int32, l1 int32, l2 int32) in
 										return int32(0)
 									} else {
 										if v44 == int32(0) {
-											F__serverAssertWithInfo(m, l0, int32(0), int32(_a1779), int32(_a1777), int32(432))
+											F__serverAssertWithInfo(m, l0, int32(0), int32(_a_F_pubsubUnsubscribePattern_0), int32(_a_F_pubsubUnsubscribePattern_1), int32(432))
 											mBase = m.M
 											v73 = m.ExcPending
 											if v73 != 0 {
@@ -3487,7 +3487,7 @@ func F_pubsubUnsubscribePattern(m *base.Module, l0 int32, l1 int32, l2 int32) in
 												return int32(0)
 											} else {
 												if v49 == int32(0) {
-													F__serverAssertWithInfo(m, l0, int32(0), int32(_a1776), int32(_a1777), int32(434))
+													F__serverAssertWithInfo(m, l0, int32(0), int32(_a_F_pubsubUnsubscribePattern_2), int32(_a_F_pubsubUnsubscribePattern_1), int32(434))
 													mBase = m.M
 													v80 = m.ExcPending
 													if v80 != 0 {
@@ -3530,7 +3530,7 @@ func F_pubsubUnsubscribePattern(m *base.Module, l0 int32, l1 int32, l2 int32) in
 															}
 														}
 													} else {
-														v57 = *(*int32)(unsafe.Add(mBase, _consts[23]))
+														v57 = *(*int32)(unsafe.Add(mBase, _c_F_pubsubUnsubscribePattern[0]))
 														v58 = F_dictDelete(m, v57, l1)
 														mBase = m.M
 														v59 = m.ExcPending

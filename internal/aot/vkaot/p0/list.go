@@ -163,7 +163,7 @@ func F_addListRangeReply(m *base.Module, l0 int32, l1 int32, l2 int32, l3 int32,
 		}
 		v20 = l3>>(uint(int32(31))%32)&v9 + l3
 		if v20 < v16 {
-			v24 = *(*int32)(unsafe.Add(mBase, _consts[289]))
+			v24 = *(*int32)(unsafe.Add(mBase, _c_F_addListRangeReply[0]))
 			F_addReply(m, l0, v24)
 			mBase = m.M
 			v26 = m.ExcPending
@@ -197,7 +197,7 @@ func F_addListRangeReply(m *base.Module, l0 int32, l1 int32, l2 int32, l3 int32,
 						return
 					}
 				default:
-					F__serverPanic_1(m, int32(_a1497), int32(729), int32(_a852), int32(0))
+					F__serverPanic_1(m, int32(_a_F_addListRangeReply_0), int32(729), int32(_a_F_addListRangeReply_1), int32(0))
 					mBase = m.M
 					v49 = m.ExcPending
 					if v49 != 0 {
@@ -220,7 +220,7 @@ func F_addListRangeReply(m *base.Module, l0 int32, l1 int32, l2 int32, l3 int32,
 					}
 				}
 			} else {
-				v24 = *(*int32)(unsafe.Add(mBase, _consts[289]))
+				v24 = *(*int32)(unsafe.Add(mBase, _c_F_addListRangeReply[0]))
 				F_addReply(m, l0, v24)
 				mBase = m.M
 				v26 = m.ExcPending
@@ -396,7 +396,7 @@ func F_freeListObject(m *base.Module, l0 int32) {
 				}
 				v53 = v28 + int32(1) + v49 + int32(1)
 			}
-			v68 = *(*int32)(unsafe.Add(mBase, _consts[249]))
+			v68 = *(*int32)(unsafe.Add(mBase, _c_F_freeListObject[0]))
 			F_quicklistRelease(m, v53+v68)
 			mBase = m.M
 			v72 = m.ExcPending
@@ -407,7 +407,7 @@ func F_freeListObject(m *base.Module, l0 int32) {
 			}
 		}
 	default:
-		F__serverPanic_1(m, int32(_a838), int32(567), int32(_a844), int32(0))
+		F__serverPanic_1(m, int32(_a_F_freeListObject_0), int32(567), int32(_a_F_freeListObject_1), int32(0))
 		mBase = m.M
 		v145 = m.ExcPending
 		if v145 != 0 {
@@ -464,7 +464,7 @@ func F_freeListObject(m *base.Module, l0 int32) {
 				}
 				v117 = v92 + int32(1) + v113 + int32(1)
 			}
-			v132 = *(*int32)(unsafe.Add(mBase, _consts[249]))
+			v132 = *(*int32)(unsafe.Add(mBase, _c_F_freeListObject[0]))
 			F_lpFree(m, v117+v132)
 			mBase = m.M
 			v136 = m.ExcPending
@@ -1024,13 +1024,13 @@ L49:
 	goto L52
 L50:
 	;
-	v208 = v162 + int32(_a1717)
-	v213 = v162 + int32(_a1718)
+	v208 = v162 + int32(_a_F_listCommandHandler_0)
+	v213 = v162 + int32(_a_F_listCommandHandler_1)
 	goto L48
 L51:
 	;
-	v208 = v188 + int32(_a1719)
-	v213 = v188 + int32(_a1720)
+	v208 = v188 + int32(_a_F_listCommandHandler_2)
+	v213 = v188 + int32(_a_F_listCommandHandler_3)
 	goto L48
 L52:
 	;
@@ -1044,8 +1044,8 @@ L52:
 	}
 L53:
 	;
-	v208 = v195 + int32(_a1717)
-	v213 = v195 + int32(_a1718)
+	v208 = v195 + int32(_a_F_listCommandHandler_0)
+	v213 = v195 + int32(_a_F_listCommandHandler_1)
 	goto L48
 L54:
 	;
@@ -1075,7 +1075,7 @@ L58:
 	v224 = m.G15
 	v225 = *(*int32)(unsafe.Add(mBase, uint32(v224)))
 	v226 = m.G12
-	v230 = m.T0[v225].(func(*base.Module, int32, int32, int32) int32)(m, int32(0), v223+int32(_a1721), v12)
+	v230 = m.T0[v225].(func(*base.Module, int32, int32, int32) int32)(m, int32(0), v223+int32(_a_F_listCommandHandler_4), v12)
 	mBase = m.M
 	v231 = m.ExcPending
 	if v231 != 0 {
@@ -1147,9 +1147,9 @@ func F_listElementsRemoved(m *base.Module, l0 int32, l1 int32, l2 int32, l3 int3
 	var v47 int64
 	_ = v47
 	if l2 != 0 {
-		v10 = int32(_a1501)
+		v10 = int32(_a_F_listElementsRemoved_0)
 	} else {
-		v10 = int32(_a1502)
+		v10 = int32(_a_F_listElementsRemoved_1)
 	}
 	v11 = *(*int32)(unsafe.Add(mBase, uint32(l0)+96))
 	v12 = *(*int32)(unsafe.Add(mBase, uint32(v11)+28))
@@ -1184,9 +1184,9 @@ func F_listElementsRemoved(m *base.Module, l0 int32, l1 int32, l2 int32, l3 int3
 					if v44 != 0 {
 						return
 					} else {
-						v45 = int32(_a69)
-						v47 = *(*int64)(unsafe.Add(mBase, _consts[60]))
-						*(*int64)(unsafe.Add(mBase, _consts[60])) = v47 + base.I64_extend_i32_s(l4)
+						v45 = int32(_a_F_listElementsRemoved_2)
+						v47 = *(*int64)(unsafe.Add(mBase, _c_F_listElementsRemoved[0]))
+						*(*int64)(unsafe.Add(mBase, _c_F_listElementsRemoved[0])) = v47 + base.I64_extend_i32_s(l4)
 						return
 					}
 				}
@@ -1204,7 +1204,7 @@ func F_listElementsRemoved(m *base.Module, l0 int32, l1 int32, l2 int32, l3 int3
 				} else {
 					v26 = *(*int32)(unsafe.Add(mBase, uint32(l0)+96))
 					v27 = *(*int32)(unsafe.Add(mBase, uint32(v26)+28))
-					F_notifyKeyspaceEvent(m, int32(4), int32(_a132), l1, v27)
+					F_notifyKeyspaceEvent(m, int32(4), int32(_a_F_listElementsRemoved_3), l1, v27)
 					mBase = m.M
 					v29 = m.ExcPending
 					if v29 != 0 {
@@ -1217,9 +1217,9 @@ func F_listElementsRemoved(m *base.Module, l0 int32, l1 int32, l2 int32, l3 int3
 						if v44 != 0 {
 							return
 						} else {
-							v45 = int32(_a69)
-							v47 = *(*int64)(unsafe.Add(mBase, _consts[60]))
-							*(*int64)(unsafe.Add(mBase, _consts[60])) = v47 + base.I64_extend_i32_s(l4)
+							v45 = int32(_a_F_listElementsRemoved_2)
+							v47 = *(*int64)(unsafe.Add(mBase, _c_F_listElementsRemoved[0]))
+							*(*int64)(unsafe.Add(mBase, _c_F_listElementsRemoved[0])) = v47 + base.I64_extend_i32_s(l4)
 							return
 						}
 					}
@@ -1627,7 +1627,7 @@ func F_listTypeDelete(m *base.Module, l0 int32, l1 int32) {
 			return
 		}
 	default:
-		F__serverPanic_1(m, int32(_a1497), int32(424), int32(_a852), int32(0))
+		F__serverPanic_1(m, int32(_a_F_listTypeDelete_0), int32(424), int32(_a_F_listTypeDelete_1), int32(0))
 		mBase = m.M
 		v139 = m.ExcPending
 		if v139 != 0 {
@@ -1853,7 +1853,7 @@ func F_listTypeDup(m *base.Module, l0 int32) int32 {
 	_ = v46
 	v3 = *(*int32)(unsafe.Add(mBase, uint32(l0)))
 	if v3&int32(15) != int32(1) {
-		F__serverAssert(m, int32(_a1498), int32(_a1497), int32(436))
+		F__serverAssert(m, int32(_a_F_listTypeDup_0), int32(_a_F_listTypeDup_1), int32(436))
 		mBase = m.M
 		v46 = m.ExcPending
 		if v46 != 0 {
@@ -1890,7 +1890,7 @@ func F_listTypeDup(m *base.Module, l0 int32) int32 {
 				}
 			}
 		default:
-			F__serverPanic_1(m, int32(_a1497), int32(441), int32(_a852), int32(0))
+			F__serverPanic_1(m, int32(_a_F_listTypeDup_1), int32(441), int32(_a_F_listTypeDup_2), int32(0))
 			mBase = m.M
 			v24 = m.ExcPending
 			if v24 != 0 {
@@ -2008,7 +2008,7 @@ func F_listTypeGet(m *base.Module, l0 int32) int32 {
 			}
 		}
 	default:
-		F__serverPanic_1(m, int32(_a1497), int32(307), int32(_a852), int32(0))
+		F__serverPanic_1(m, int32(_a_F_listTypeGet_0), int32(307), int32(_a_F_listTypeGet_1), int32(0))
 		mBase = m.M
 		v26 = m.ExcPending
 		if v26 != 0 {
@@ -2106,7 +2106,7 @@ func F_listTypeGetValue(m *base.Module, l0 int32, l1 int32, l2 int32) int32 {
 		m.G0 = v8 + int32(16)
 		return v38
 	default:
-		F__serverPanic_1(m, int32(_a1497), int32(307), int32(_a852), int32(0))
+		F__serverPanic_1(m, int32(_a_F_listTypeGetValue_0), int32(307), int32(_a_F_listTypeGetValue_1), int32(0))
 		mBase = m.M
 		v33 = m.ExcPending
 		if v33 != 0 {
@@ -2268,7 +2268,7 @@ func F_listTypeInsert(m *base.Module, l0 int32, l1 int32, l2 int32) {
 				}
 			}
 		default:
-			F__serverPanic_1(m, int32(_a1497), int32(341), int32(_a852), int32(0))
+			F__serverPanic_1(m, int32(_a_F_listTypeInsert_0), int32(341), int32(_a_F_listTypeInsert_1), int32(0))
 			mBase = m.M
 			v62 = m.ExcPending
 			if v62 != 0 {
@@ -2334,7 +2334,7 @@ func F_listTypeLength(m *base.Module, l0 int32) int32 {
 		v23 = *(*int32)(unsafe.Add(mBase, uint32(v22)+8))
 		return v23
 	default:
-		F__serverPanic_1(m, int32(_a1497), int32(218), int32(_a852), int32(0))
+		F__serverPanic_1(m, int32(_a_F_listTypeLength_0), int32(218), int32(_a_F_listTypeLength_1), int32(0))
 		mBase = m.M
 		v20 = m.ExcPending
 		if v20 != 0 {
@@ -2496,7 +2496,7 @@ func F_listTypePop(m *base.Module, l0 int32, l1 int32) int32 {
 			}
 		}
 	default:
-		F__serverPanic_1(m, int32(_a1497), int32(207), int32(_a852), int32(0))
+		F__serverPanic_1(m, int32(_a_F_listTypePop_0), int32(207), int32(_a_F_listTypePop_1), int32(0))
 		mBase = m.M
 		v162 = m.ExcPending
 		if v162 != 0 {
@@ -2814,7 +2814,7 @@ func F_listTypeSetIteratorDirection(m *base.Module, l0 int32, l1 int32, l2 int32
 			*(*int32)(unsafe.Add(mBase, uint32(v29)+16)) = base.B2i32(v3 == int32(0))
 			return
 		default:
-			F__serverPanic_1(m, int32(_a1497), int32(256), int32(_a852), int32(0))
+			F__serverPanic_1(m, int32(_a_F_listTypeSetIteratorDirection_0), int32(256), int32(_a_F_listTypeSetIteratorDirection_1), int32(0))
 			mBase = m.M
 			v27 = m.ExcPending
 			if v27 != 0 {

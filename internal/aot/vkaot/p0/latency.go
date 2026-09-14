@@ -232,7 +232,7 @@ func F_latencyCommandReplyWithLatestEvents(m *base.Module, l0 int32) {
 	_ = v268
 	var v278 int32
 	_ = v278
-	v7 = *(*int32)(unsafe.Add(mBase, _consts[322]))
+	v7 = *(*int32)(unsafe.Add(mBase, _c_F_latencyCommandReplyWithLatestEvents[0]))
 	v8 = *(*int32)(unsafe.Add(mBase, uint32(v7)+16))
 	v9 = *(*int32)(unsafe.Add(mBase, uint32(v7)+12))
 	F_addReplyArrayLen(m, l0, v8+v9)
@@ -248,7 +248,7 @@ L1:
 	return
 L2:
 	;
-	v14 = *(*int32)(unsafe.Add(mBase, _consts[322]))
+	v14 = *(*int32)(unsafe.Add(mBase, _c_F_latencyCommandReplyWithLatestEvents[0]))
 	v15 = F_dictGetIterator(m, v14)
 	mBase = m.M
 	v16 = m.ExcPending
@@ -997,7 +997,7 @@ func F_latencyResetEvent(m *base.Module, l0 int32) int32 {
 	_ = v278
 	var v283 int32
 	_ = v283
-	v6 = *(*int32)(unsafe.Add(mBase, _consts[322]))
+	v6 = *(*int32)(unsafe.Add(mBase, _c_F_latencyResetEvent[0]))
 	v7 = F_dictGetSafeIterator(m, v6)
 	mBase = m.M
 	v10 = m.ExcPending
@@ -1254,7 +1254,7 @@ L35:
 	}
 L36:
 	;
-	v169 = *(*int32)(unsafe.Add(mBase, _consts[322]))
+	v169 = *(*int32)(unsafe.Add(mBase, _c_F_latencyResetEvent[0]))
 	v170 = F_dictDelete(m, v169, v127)
 	mBase = m.M
 	v171 = m.ExcPending
