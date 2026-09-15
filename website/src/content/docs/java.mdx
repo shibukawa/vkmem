@@ -1,0 +1,132 @@
+---
+title: "Java guide"
+description: "Add vkmem with Maven or Gradle, use Jedis or Lettuce, and give each JUnit 5 test class a real Valkey server."
+---
+
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+
+The Java integration is a small launcher plus a JUnit 5 extension. It runs `vkmem-server` as a child process of the test JVM. There is no container and no daemon; the server starts in milliseconds and exits with the JVM.
+
+## Install
+
+Choose the binary classifier for the machine that runs the tests: `darwin-arm64`, `linux-amd64`, `linux-arm64`, `windows-amd64` or `windows-arm64`. If developers and CI use different platforms, declare every classifier you need; each jar holds one binary.
+
+<Tabs syncKey="java-build">
+  <TabItem label="Gradle (Kotlin)">
+
+```kotlin
+dependencies {
+    testImplementation("io.github.shibukawa.vkmem:vkmem:0.1.0")
+    testImplementation("io.github.shibukawa.vkmem:vkmem-server-binaries:0.1.0:linux-amd64")
+    testImplementation("redis.clients:jedis:5.2.0")
+    testImplementation("org.junit.jupiter:junit-jupiter:5.11.4")
+}
+```
+
+  </TabItem>
+  <TabItem label="Gradle (Groovy)">
+
+```groovy
+dependencies {
+    testImplementation 'io.github.shibukawa.vkmem:vkmem:0.1.0'
+    testImplementation 'io.github.shibukawa.vkmem:vkmem-server-binaries:0.1.0:linux-amd64'
+    testImplementation 'redis.clients:jedis:5.2.0'
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.11.4'
+}
+```
+
+  </TabItem>
+  <TabItem label="Maven">
+
+```xml
+<dependency>
+  <groupId>io.github.shibukawa.vkmem</groupId>
+  <artifactId>vkmem</artifactId>
+  <version>0.1.0</version>
+  <scope>test</scope>
+</dependency>
+<dependency>
+  <groupId>io.github.shibukawa.vkmem</groupId>
+  <artifactId>vkmem-server-binaries</artifactId>
+  <version>0.1.0</version>
+  <classifier>linux-amd64</classifier>
+  <scope>test</scope>
+</dependency>
+<dependency>
+  <groupId>redis.clients</groupId>
+  <artifactId>jedis</artifactId>
+  <version>5.2.0</version>
+  <scope>test</scope>
+</dependency>
+```
+
+  </TabItem>
+</Tabs>
+
+Jedis is only an example. Lettuce, Redisson and Valkey GLIDE connect to the same `host:port`.
+
+## One server per test class
+
+`VkmemExtension` starts a server before the class, runs `FLUSHALL` before every test method, and stops the server after the class. A test method can declare a `VkmemServer` parameter.
+
+```java
+import io.github.shibukawa.vkmem.VkmemExtension;
+import io.github.shibukawa.vkmem.VkmemServer;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.RegisterExtension;
+import redis.clients.jedis.JedisPooled;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+class VisitCounterTest {
+    @RegisterExtension
+    static VkmemExtension vkmem = VkmemExtension.create();
+
+    @Test
+    void countsVisits(VkmemServer server) {
+        try (JedisPooled jedis = new JedisPooled(server.host(), server.port())) {
+            jedis.incr("visits");
+            assertEquals("1", jedis.get("visits"));
+        }
+    }
+
+    @Test
+    void startsEmpty(VkmemServer server) {
+        assertEquals(0L, server.command("DBSIZE"));
+    }
+}
+```
+
+Configure the server with `VkmemExtension.builder(b -> b.args("--maxmemory", "64mb"))`. To keep the keyspace between test methods, pass `false` as the second argument: `VkmemExtension.builder(b -> {}, false)`.
+
+## Without JUnit
+
+`VkmemServer` is `AutoCloseable`:
+
+```java
+try (VkmemServer server = VkmemServer.builder().args("--maxmemory", "64mb").start()) {
+    Jedis jedis = new Jedis(server.host(), server.port());
+    jedis.set("greeting", "hello");
+    jedis.close();
+}
+```
+
+## Builder and server
+
+| Builder method | Meaning |
+|---|---|
+| `port(int)` | TCP port on `127.0.0.1`; the default picks a free one |
+| `unixSocket(String)` | Unix socket path; the default is a generated temp path |
+| `noUnixSocket()` | Serve TCP only |
+| `args(String...)` | Extra `valkey-server` arguments |
+| `binary(Path)` | Use this `vkmem-server` instead of the bundled one |
+| `quiet(false)` | Forward the Valkey log to stderr |
+| `startupTimeout(Duration)` | Default 30 seconds |
+
+A started server has `host()`, `port()`, `address()` (`host:port`), `url()` (`redis://127.0.0.1:port`), `unixSocket()` and `valkeyVersion()`. `command(String...)` sends one command over a fresh connection and returns a `String`, `Long`, `List` or `null`; error replies throw `VkmemException`. It is meant for test plumbing; use a real client for the code under test. `flushAll()` is `command("FLUSHALL")`.
+
+The Unix socket needs a client with Unix socket support, such as Lettuce with Netty's native transport. Loopback TCP is the portable choice on the JVM.
+
+## Where the binary comes from
+
+The launcher checks the `vkmem.server.bin` system property, then the `VKMEM_SERVER_BIN` environment variable, then the `vkmem-server-binaries` classifier jar on the classpath. It extracts the bundled binary to a temporary directory on first use. The process exits when `close()` runs, when the JVM exits (its stdin closes), or when the parent process disappears.

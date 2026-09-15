@@ -7,3 +7,6 @@ packages/node/platforms/*/bin/
 packages/node/**/node_modules/
 packages/java/target/
 packages/java/*/target/
+website/node_modules/
+website/dist/
+website/.astro/

@@ -9,8 +9,10 @@ socket, so any Valkey/Redis client library talks to it unchanged. Nothing
 touches the disk: the server's filesystem is in memory and disappears with
 the process.
 
-It is the sibling of [pgmem](../pgmem) (PostgreSQL) and follows the same
-host design.
+It is the sibling of [pgmem](https://github.com/shibukawa/pgmem) (PostgreSQL)
+and follows the same host design.
+
+Documentation: https://shibukawa.github.io/vkmem/ ([日本語](https://shibukawa.github.io/vkmem/ja/)).
 
 ```go
 import (
@@ -54,7 +56,10 @@ c, _ := valkey.NewClient(valkey.ClientOption{
 What works:
 
 - Startup in ~2 ms (the server is ordinary Go code; the 29 MB generated
-  package compiles once like any other dependency).
+  package compiles once like any other dependency). The same measurement
+  against docker run, Testcontainers and a Devbox service is on the
+  [performance page](https://shibukawa.github.io/vkmem/performance/)
+  (`bench/alternatives`).
 - Strings, hashes, sorted sets, INCR, expiry, `INFO`, `TIME`.
 - Lua scripting (`EVAL`, the static Lua engine module; setjmp/longjmp run on
   wasm exception handling).

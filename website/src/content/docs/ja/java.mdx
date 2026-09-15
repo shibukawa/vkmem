@@ -1,0 +1,132 @@
+---
+title: "Javaガイド"
+description: "MavenやGradleでvkmemを追加し、JedisやLettuceで接続して、JUnit 5のテストクラスごとに本物のValkeyサーバーを用意する。"
+---
+
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+
+Java向けの統合は、小さなランチャーとJUnit 5の拡張です。`vkmem-server`をテスト用JVMの子プロセスとして起動します。コンテナもデーモンも使いません。サーバーはミリ秒単位で起動し、JVMと一緒に終了します。
+
+## インストール
+
+テストを実行するマシンに合わせて、バイナリのclassifierを選びます。`darwin-arm64`、`linux-amd64`、`linux-arm64`、`windows-amd64`、`windows-arm64`のいずれかです。1つのjarに入っているバイナリは1つだけです。開発者のマシンとCIでプラットフォームが違うなら、必要なclassifierをすべて宣言します。
+
+<Tabs syncKey="java-build">
+  <TabItem label="Gradle (Kotlin)">
+
+```kotlin
+dependencies {
+    testImplementation("io.github.shibukawa.vkmem:vkmem:0.1.0")
+    testImplementation("io.github.shibukawa.vkmem:vkmem-server-binaries:0.1.0:linux-amd64")
+    testImplementation("redis.clients:jedis:5.2.0")
+    testImplementation("org.junit.jupiter:junit-jupiter:5.11.4")
+}
+```
+
+  </TabItem>
+  <TabItem label="Gradle (Groovy)">
+
+```groovy
+dependencies {
+    testImplementation 'io.github.shibukawa.vkmem:vkmem:0.1.0'
+    testImplementation 'io.github.shibukawa.vkmem:vkmem-server-binaries:0.1.0:linux-amd64'
+    testImplementation 'redis.clients:jedis:5.2.0'
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.11.4'
+}
+```
+
+  </TabItem>
+  <TabItem label="Maven">
+
+```xml
+<dependency>
+  <groupId>io.github.shibukawa.vkmem</groupId>
+  <artifactId>vkmem</artifactId>
+  <version>0.1.0</version>
+  <scope>test</scope>
+</dependency>
+<dependency>
+  <groupId>io.github.shibukawa.vkmem</groupId>
+  <artifactId>vkmem-server-binaries</artifactId>
+  <version>0.1.0</version>
+  <classifier>linux-amd64</classifier>
+  <scope>test</scope>
+</dependency>
+<dependency>
+  <groupId>redis.clients</groupId>
+  <artifactId>jedis</artifactId>
+  <version>5.2.0</version>
+  <scope>test</scope>
+</dependency>
+```
+
+  </TabItem>
+</Tabs>
+
+Jedisは一例です。Lettuce、Redisson、Valkey GLIDEも同じ`host:port`に接続できます。
+
+## テストクラスごとに1つのサーバーを使う
+
+`VkmemExtension`は、クラスの前にサーバーを起動し、各テストメソッドの前に`FLUSHALL`を実行し、クラスが終わるとサーバーを止めます。テストメソッドは`VkmemServer`を引数に取れます。
+
+```java
+import io.github.shibukawa.vkmem.VkmemExtension;
+import io.github.shibukawa.vkmem.VkmemServer;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.RegisterExtension;
+import redis.clients.jedis.JedisPooled;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+class VisitCounterTest {
+    @RegisterExtension
+    static VkmemExtension vkmem = VkmemExtension.create();
+
+    @Test
+    void countsVisits(VkmemServer server) {
+        try (JedisPooled jedis = new JedisPooled(server.host(), server.port())) {
+            jedis.incr("visits");
+            assertEquals("1", jedis.get("visits"));
+        }
+    }
+
+    @Test
+    void startsEmpty(VkmemServer server) {
+        assertEquals(0L, server.command("DBSIZE"));
+    }
+}
+```
+
+サーバーの設定は`VkmemExtension.builder(b -> b.args("--maxmemory", "64mb"))`で渡します。テストメソッドの間でキー空間を残したいなら、2番目の引数に`false`を渡します。`VkmemExtension.builder(b -> {}, false)`です。
+
+## JUnitを使わない場合
+
+`VkmemServer`は`AutoCloseable`です。
+
+```java
+try (VkmemServer server = VkmemServer.builder().args("--maxmemory", "64mb").start()) {
+    Jedis jedis = new Jedis(server.host(), server.port());
+    jedis.set("greeting", "hello");
+    jedis.close();
+}
+```
+
+## ビルダーとサーバー
+
+| ビルダーのメソッド | 意味 |
+|---|---|
+| `port(int)` | `127.0.0.1`のTCPポート。既定では空いているポートを選ぶ |
+| `unixSocket(String)` | Unixソケットのパス。既定では一時パスを生成する |
+| `noUnixSocket()` | TCPだけで待ち受ける |
+| `args(String...)` | `valkey-server`への追加の引数 |
+| `binary(Path)` | 同梱のものの代わりにこの`vkmem-server`を使う |
+| `quiet(false)` | Valkeyのログを標準エラーに流す |
+| `startupTimeout(Duration)` | 既定は30秒 |
+
+起動したサーバーには`host()`、`port()`、`address()`(`host:port`)、`url()`(`redis://127.0.0.1:port`)、`unixSocket()`、`valkeyVersion()`があります。`command(String...)`は新しい接続でコマンドを1つ送り、`String`、`Long`、`List`、`null`のいずれかを返します。エラー応答なら`VkmemException`を投げます。テストの下準備のためのもので、テスト対象のコードには本物のクライアントを使ってください。`flushAll()`は`command("FLUSHALL")`と同じです。
+
+Unixソケットを使うには、それに対応したクライアントが要ります。たとえばNettyのネイティブトランスポートを入れたLettuceです。JVMでは、どこでも動くループバックのTCPを選ぶのが無難です。
+
+## バイナリの取得元
+
+ランチャーはまずシステムプロパティ`vkmem.server.bin`を見て、次に環境変数`VKMEM_SERVER_BIN`、最後にクラスパス上の`vkmem-server-binaries`のclassifier付きjarを探します。同梱のバイナリは、初回に一時ディレクトリへ展開します。プロセスは、`close()`が呼ばれたとき、JVMが終了して標準入力が閉じたとき、親プロセスが消えたときに終了します。

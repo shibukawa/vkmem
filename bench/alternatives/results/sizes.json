@@ -1,0 +1,21 @@
+{
+  "arch": "arm64",
+  "machine": "Apple M3, 8 cores, 16 GiB",
+  "os": "macOS 27.0",
+  "go": "go1.27.0",
+  "docker": "29.4.0 (OrbStack)",
+  "devbox": "0.17.5",
+  "image": "valkey/valkey:9.1.2",
+  "image_download": 48429611,
+  "image_disk": 144751951,
+  "ryuk": "testcontainers/ryuk:0.14.0",
+  "ryuk_download": 2117632,
+  "devbox_valkey": "ldi6rshippfrrqrgajz7hv7783jd0iqx-valkey-9.1.1",
+  "devbox_download": 4546565,
+  "devbox_disk": 10538864,
+  "go_link_added": 15591056,
+  "go_link_added_stripped": 9659056,
+  "binary": 11764226,
+  "binary_gzip": 4670722,
+  "binary_zip": 4681326
+}
