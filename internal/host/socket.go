@@ -406,12 +406,21 @@ func (h *Host) selectSyscall(m Memory, nfds int32, rfds, wfds, efds, timeout uin
 	h.exitIfClosing()
 	var deadline time.Time
 	if timeout != 0 {
-		b, ok := m.Read(timeout, 16)
+		// musl's select() does not pass the caller's 16-byte struct
+		// timeval through: it normalizes it and hands the syscall a
+		// (long[]){sec, usec} pair, two 32-bit values on wasm32 (musl
+		// src/select/select.c). Reading 64-bit seconds from it turned
+		// Valkey's 100 ms timer into an endless wait, so blocked clients
+		// never timed out while the server was idle.
+		b, ok := m.Read(timeout, 8)
 		if !ok {
 			return errno(vfs.EFAULT)
 		}
-		sec := int64(binary.LittleEndian.Uint64(b[0:]))
-		usec := int64(int32(binary.LittleEndian.Uint32(b[8:])))
+		sec := int32(binary.LittleEndian.Uint32(b[0:]))
+		usec := int32(binary.LittleEndian.Uint32(b[4:]))
+		if sec < 0 || usec < 0 {
+			return errno(vfs.EINVAL)
+		}
 		deadline = time.Now().Add(time.Duration(sec)*time.Second + time.Duration(usec)*time.Microsecond)
 	}
 	if nfds < 0 || nfds > 1024 {
