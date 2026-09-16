@@ -15,6 +15,7 @@ vkmem is not a reimplementation of Valkey. It is Valkey 9.1.2's own C source, co
 | Host | `internal/host` implements the system calls, clock, memory growth and exit unwinding the module imports. SHA-1, SHA-256 and CRC-64 run on Go's `crypto` and `hash` packages. |
 | Sockets | `internal/host/socket.go` backs the guest's BSD sockets with real Go listeners and connections, for both TCP and Unix domain sockets. |
 | File system | `internal/vfs` is an in-memory POSIX-like file system. `SAVE` writes its RDB file there; nothing reaches the host disk. |
+| Data snapshots | `Server.Snapshot` runs `SAVE`, clones the VFS tree, and `Snapshot.Fork` boots a new guest from a private clone. It is a storage copy, not a Unix process fork. |
 | Engine | `internal/engine` starts the generated module with `valkey-server` arguments and stops it with `SHUTDOWN NOSAVE`. |
 | Public API | `vkmem.Start` for Go; `cmd/vkmem-server` wraps the same engine in a binary for Node.js, Java and anything else. |
 
@@ -33,7 +34,7 @@ The server is single threaded, as Valkey's command execution always is. Valkey's
 The changes live in `wasm/patches.py`, `wasm/vkmem_shim.c` and `wasm/vkmem_defs.h`.
 
 - **No threads.** Valkey's background jobs (lazy freeing, closing files, fsync) run inline at the point they are submitted, instead of on bio threads. A `FLUSHALL` therefore frees memory before it replies.
-- **No `fork`.** `BGSAVE`, `BGREWRITEAOF` and anything else that forks a child fail with an error. `SAVE` works.
+- **No Unix process `fork`.** `BGSAVE`, `BGREWRITEAOF` and anything else that forks a child fail with an error. `SAVE` works, and the Go API can use it to create data snapshots without copying connections or guest runtime state.
 - **Static Lua.** Valkey loads its Lua engine through `dlopen(NULL)` and `dlsym`; a small registry in the shim resolves those two symbols.
 - **Emscripten gaps.** Strong definitions replace Emscripten's "unsupported syscall" stubs for `setsockopt`, `getrlimit`/`setrlimit` and `getrusage`. `getTimeZone()` uses libc's `timezone`, because Emscripten's `gettimeofday` never fills `struct timezone`.
 - **Hashes on the host.** `sha1.c` and `sha256.c` hand their contexts to Go, and `crc64()` calls `hash/crc64` with the same Jones polynomial. `vectors_test.go` pins the resulting bytes (`SCRIPT LOAD` digests, ACL password hashes, a `DUMP` payload) against the unmodified C build.
@@ -50,15 +51,17 @@ The module is 32-bit WebAssembly. Its linear memory is an anonymous mapping of 2
 
 `Close` sends `SHUTDOWN NOSAVE`. If the server cannot take the command, for example because a client holds it in `DEBUG SLEEP`, the host marks itself closing, and the next `select`, `poll` or clock read unwinds the guest. A guest that still does not stop is left running rather than unmapped under it, and `Close` returns an error.
 
+`Server.Snapshot` first waits for a synchronous `SAVE` to finish, then clones the in-memory file system. Each `Snapshot.Fork` gets a private clone and starts a fresh guest, so writes in one fork cannot affect the template, the snapshot, or another fork. `SnapshotOptions.MaxForks` bounds concurrent fork servers.
+
 ## Other languages
 
-The Node.js and Java packages bundle `vkmem-server`, built from `cmd/vkmem-server`. The launcher spawns it with `--parent-pid` and a pipe on stdin, and reads one JSON line:
+The Python, Node.js and Java packages bundle or resolve `vkmem-server`, built from `cmd/vkmem-server`. The launcher spawns it with `--parent-pid` and a pipe on stdin, and reads one JSON line:
 
 ```json
-{"addr":"127.0.0.1:51234","port":51234,"unix":"/tmp/vkmem-1234-1.sock","pid":1234,"version":"0.1.0","valkey":"9.1.2"}
+{"event":"ready","protocol":1,"id":"template","addr":"127.0.0.1:51234","port":51234,"unix":"/tmp/vkmem-1234-1.sock","pid":1234,"version":"0.1.0","valkey":"9.1.2"}
 ```
 
-The binary exits when stdin closes, when the parent process disappears, or on `SIGINT`/`SIGTERM`. A crashed test runner therefore leaves no server behind. Arguments after `--` go to `valkey-server`.
+After the ready line, the binary also accepts versioned JSON-lines control requests for `snapshot`, `fork`, `close` and `shutdown`; the Python, Node.js and Java packages use this interface. These operations clone serialized Valkey data, not the process, guest memory or connection state. The binary exits when stdin closes, when the parent process disappears, or on `SIGINT`/`SIGTERM`. A crashed test runner therefore leaves no server behind. Arguments after `--` go to `valkey-server`.
 
 ## Rebuilding
 

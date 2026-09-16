@@ -16,7 +16,7 @@ The machine was not idle. Desktop processes kept the load average around 4–6 o
 | Path | What was measured |
 |---|---|
 | vkmem, in-process | `vkmem.Start()` inside the measuring Go process |
-| vkmem-server | The binary the Node.js and Java packages spawn, started as a child process |
+| vkmem-server | The binary the Python, Node.js and Java packages spawn, started as a child process |
 | docker run | `docker run -d --rm -p 127.0.0.1::6379 valkey/valkey:9.1.2` with persistence off |
 | Testcontainers | `testcontainers.Run` with the same image, waiting for "Ready to accept connections". A fresh process also starts the Ryuk reaper. |
 | Devbox | `devbox services up -b` with the valkey plugin's own service. A generated config includes the plugin's `valkey.conf` and turns persistence off. |

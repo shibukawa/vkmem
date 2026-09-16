@@ -45,6 +45,18 @@ jobs:
         working-directory: packages/node/core
         run: npm test
 
+      - uses: astral-sh/setup-uv@v6
+      - name: Python package
+        working-directory: packages/python
+        run: uv run pytest -q
+      - name: Python wheel
+        working-directory: packages/python
+        env:
+          GOOS: linux
+          GOARCH: amd64
+          VKMEM_SERVER_BIN: ${{ github.workspace }}/dist/linux-amd64/vkmem-server
+        run: uv build --wheel --out-dir "$RUNNER_TEMP/vkmem-wheel"
+
       - uses: actions/setup-java@v4
         with:
           distribution: temurin

@@ -99,6 +99,34 @@ class VisitCounterTest {
 
 サーバーの設定は`VkmemExtension.builder(b -> b.args("--maxmemory", "64mb"))`で渡します。テストメソッドの間でキー空間を残したいなら、2番目の引数に`false`を渡します。`VkmemExtension.builder(b -> {}, false)`です。
 
+## 一度準備して、テストごとにforkする
+
+準備に時間がかかる場合は、`VkmemExtension.prepared(...)`でtemplateを一度
+だけ準備し、各テストメソッドへ新しい`Fork`（`VkmemServer`として受け取る）を
+注入できます。
+
+```java
+import java.time.Duration;
+
+@RegisterExtension
+static VkmemExtension vkmem = VkmemExtension.prepared(
+    template -> template.command("SET", "prepared", "yes"),
+    4,
+    Duration.ofSeconds(30));
+
+@Test
+void startsWithPreparedData(VkmemServer server) {
+    try (JedisPooled jedis = new JedisPooled(server.host(), server.port())) {
+        assertEquals("yes", jedis.get("prepared"));
+        jedis.set("test-only", "yes");
+    }
+}
+```
+
+低レベルAPIは`template.snapshot(4).fork()`です。スナップショットがコピーする
+のはシリアライズされたキー空間で、クライアント接続や実行時状態はコピーしません。
+forkを閉じるとslotが解放され、timeoutを`null`にすると無期限で待ちます。
+
 ## JUnitを使わない場合
 
 `VkmemServer`は`AutoCloseable`です。

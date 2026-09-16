@@ -11,6 +11,7 @@ import (
 	"os"
 	"strconv"
 	"sync"
+	"sync/atomic"
 	"time"
 
 	"github.com/shibukawa/vkmem/internal/guest"
@@ -40,17 +41,21 @@ type Config struct {
 
 // Server is a running instance.
 type Server struct {
-	ctx     context.Context
-	cancel  context.CancelFunc
-	inst    guest.Instance
-	host    *host.Host
-	fs      *vfs.FS
-	addr    *net.TCPAddr
-	unix    string
-	done    chan error
-	once    sync.Once
-	err     error
-	stopped bool // the guest goroutine has returned
+	cfg        Config
+	ctx        context.Context
+	cancel     context.CancelFunc
+	inst       guest.Instance
+	host       *host.Host
+	fs         *vfs.FS
+	addr       *net.TCPAddr
+	unix       string
+	done       chan error
+	once       sync.Once
+	err        error
+	stopped    bool // the guest goroutine has returned
+	closed     atomic.Bool
+	snapshotMu sync.Mutex
+	onClose    func()
 }
 
 // lineWriter turns stdout/stderr chunks into log lines.
@@ -75,6 +80,13 @@ func (w *lineWriter) write(b []byte) {
 
 // Start boots valkey-server and returns once it accepts connections.
 func Start(cfg Config) (*Server, error) {
+	return StartWithFS(cfg, vfs.New())
+}
+
+// StartWithFS boots valkey-server over fs and returns once it accepts
+// connections. The caller transfers ownership of fs to the returned Server.
+// It is used by Snapshot.Fork to boot a fresh guest over a cloned data tree.
+func StartWithFS(cfg Config, fs *vfs.FS) (*Server, error) {
 	if cfg.StartTimeout == 0 {
 		cfg.StartTimeout = 30 * time.Second
 	}
@@ -89,7 +101,6 @@ func Start(cfg Config) (*Server, error) {
 	}
 	addr := ln.Addr().(*net.TCPAddr)
 
-	fs := vfs.New()
 	fs.MkdirAll("/data", 0o755)
 	lw := &lineWriter{fn: cfg.Log}
 	fs.Stdout = lw.write
@@ -141,7 +152,7 @@ func Start(cfg Config) (*Server, error) {
 	}
 
 	ctx, cancel := context.WithCancel(context.Background())
-	s := &Server{ctx: ctx, cancel: cancel, host: h, fs: fs, addr: addr, unix: cfg.UnixSocket, done: make(chan error, 1)}
+	s := &Server{cfg: cloneConfig(cfg), ctx: ctx, cancel: cancel, host: h, fs: fs, addr: addr, unix: cfg.UnixSocket, done: make(chan error, 1)}
 	fail := func(err error) (*Server, error) {
 		s.Close()
 		ln.Close()
@@ -214,6 +225,7 @@ func (s *Server) UnixAddr() string { return s.unix }
 // instance down.
 func (s *Server) Close() error {
 	s.once.Do(func() {
+		s.closed.Store(true)
 		if s.inst != nil {
 			s.shutdown()
 		}
@@ -229,8 +241,16 @@ func (s *Server) Close() error {
 		if s.unix != "" {
 			os.Remove(s.unix)
 		}
+		if s.onClose != nil {
+			s.onClose()
+		}
 	})
 	return s.err
+}
+
+func cloneConfig(cfg Config) Config {
+	cfg.Args = append([]string(nil), cfg.Args...)
+	return cfg
 }
 
 func (s *Server) shutdown() {

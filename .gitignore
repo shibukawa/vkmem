@@ -5,6 +5,11 @@ toolchain/
 dist/
 packages/node/platforms/*/bin/
 packages/node/**/node_modules/
+packages/python/src/vkmem/_bin/
+packages/python/.venv/
+packages/python/.pytest_cache/
+packages/python/**/__pycache__/
+.knowledge/.cache/
 packages/java/target/
 packages/java/*/target/
 website/node_modules/

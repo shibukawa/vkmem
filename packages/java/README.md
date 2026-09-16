@@ -42,6 +42,42 @@ extracted to a temp directory on first use. `-Dvkmem.server.bin=...` or
 RESP client for test plumbing (PING, FLUSHALL, CONFIG); use a real client
 for application code.
 
+## Prepared snapshots
+
+Prepare the template once, then start a private server for each test. The
+snapshot copies the serialized Valkey keyspace; connections and runtime state
+are not copied.
+
+```java
+try (VkmemServer template = VkmemServer.builder().noUnixSocket().start()) {
+    template.command("SET", "prepared", "yes");
+    try (Snapshot snapshot = template.snapshot(4);
+         Fork fork = snapshot.fork()) {
+        // Pass fork.url() or fork.host()/fork.port() to Jedis, Lettuce or valkey-java.
+        fork.command("SET", "test-only", "value");
+    }
+}
+```
+
+`snapshot(maxForks, timeout)` checkpoints the template with `SAVE`.
+`fork(timeout)` waits for a free slot; a `null` timeout waits indefinitely.
+Closing a fork releases its slot. `ProtocolException#code()` exposes
+`pool_timeout` and `snapshot_closed` for test assertions.
+
+For JUnit 5, the extension can prepare the template once and inject one fresh
+fork into each test:
+
+```java
+@RegisterExtension
+static VkmemExtension vkmem = VkmemExtension.prepared(
+    template -> template.command("SET", "prepared", "yes"));
+
+@Test
+void test(VkmemServer server) {
+    // server starts with prepared data; close is handled by the extension.
+}
+```
+
 Layout: `vkmem/` (launcher + extension), `binaries/` (pom-only module
 that attaches the classifier jars produced by
 `scripts/build-java-binaries.sh` during `mvn -Prelease deploy`). The

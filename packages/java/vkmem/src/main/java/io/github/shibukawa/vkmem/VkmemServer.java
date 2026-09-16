@@ -16,50 +16,79 @@ import java.nio.file.attribute.PosixFilePermissions;
 import java.time.Duration;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Locale;
+import java.util.Map;
+import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeUnit;
-import java.util.regex.Matcher;
-import java.util.regex.Pattern;
+import java.util.concurrent.TimeoutException;
 
 /**
- * A running vkmem-server process: a real Valkey server for tests.
+ * A running vkmem-server process, or an isolated Valkey server started from a
+ * {@link Snapshot}.
  *
  * <pre>{@code
- * try (VkmemServer server = VkmemServer.builder().start()) {
- *     // point Jedis, Lettuce or valkey-java at server.host()/server.port()
- *     server.command("FLUSHALL");
+ * try (VkmemServer template = VkmemServer.builder().start()) {
+ *     template.command("SET", "seed", "yes");
+ *     try (Snapshot snapshot = template.snapshot(4);
+ *          Fork fork = snapshot.fork()) {
+ *         // point Jedis, Lettuce or valkey-java at fork.host()/fork.port()
+ *     }
  * }
  * }</pre>
  *
- * The binary is located from the {@code vkmem.server.bin} system property, the {@code VKMEM_SERVER_BIN}
- * environment variable, or the classpath resource {@code /vkmem/bin/<os>-<arch>/vkmem-server} shipped in the
- * {@code vkmem-server-binaries} artifact with the matching classifier.
+ * The server is located from the {@code vkmem.server.bin} system property,
+ * the {@code VKMEM_SERVER_BIN} environment variable, or the classpath
+ * resource shipped in the {@code vkmem-server-binaries} artifact.
  */
-public final class VkmemServer implements AutoCloseable {
-    private static final Pattern PORT_RE = Pattern.compile("\"port\"\\s*:\\s*(\\d+)");
-    private static final Pattern UNIX_RE = Pattern.compile("\"unix\"\\s*:\\s*\"([^\"]+)\"");
-    private static final Pattern VALKEY_RE = Pattern.compile("\"valkey\"\\s*:\\s*\"([^\"]+)\"");
-
-    private final Process process;
+public class VkmemServer implements AutoCloseable {
+    private final Control control;
+    private final boolean ownsProcess;
+    private final String id;
+    private final String host;
     private final int port;
     private final String unixSocket;
+    private final String version;
+    private final int pid;
     private final String valkeyVersion;
+    private volatile boolean closed;
 
-    private VkmemServer(Process process, int port, String unixSocket, String valkeyVersion) {
-        this.process = process;
-        this.port = port;
-        this.unixSocket = unixSocket;
-        this.valkeyVersion = valkeyVersion;
+    VkmemServer(Control control, Map<String, Object> endpoint, boolean ownsProcess) {
+        this.control = control;
+        this.ownsProcess = ownsProcess;
+        this.id = String.valueOf(endpoint.getOrDefault("id", "template"));
+        this.host = String.valueOf(endpoint.getOrDefault("host", "127.0.0.1"));
+        this.port = number(endpoint.get("port"), "port").intValue();
+        this.unixSocket = endpoint.get("unix") == null ? null : String.valueOf(endpoint.get("unix"));
+        this.version = String.valueOf(endpoint.getOrDefault("version", ""));
+        this.pid = number(endpoint.get("pid"), "pid").intValue();
+        this.valkeyVersion = String.valueOf(endpoint.getOrDefault("valkey", ""));
+    }
+
+    private static Number number(Object value, String name) {
+        if (!(value instanceof Number)) throw new VkmemException("vkmem: readiness record has no " + name);
+        return (Number) value;
     }
 
     public static Builder builder() {
         return new Builder();
     }
 
+    /** The template server; provided for pgmem-style setup code. */
+    public VkmemServer template() {
+        return this;
+    }
+
+    /** Controller id; {@code template} for the server returned by {@link Builder#start()}. */
+    public String id() {
+        return id;
+    }
+
     /** Always {@code 127.0.0.1}. */
     public String host() {
-        return "127.0.0.1";
+        return host;
     }
 
     public int port() {
@@ -68,7 +97,7 @@ public final class VkmemServer implements AutoCloseable {
 
     /** {@code host:port}. */
     public String address() {
-        return host() + ":" + port;
+        return host + ":" + port;
     }
 
     /** {@code redis://127.0.0.1:port}, accepted by most clients. */
@@ -76,9 +105,24 @@ public final class VkmemServer implements AutoCloseable {
         return "redis://" + address();
     }
 
+    /** Alias of {@link #url()}, suitable for Redis-compatible clients. */
+    public String dsn() {
+        return url();
+    }
+
     /** Unix socket path, or {@code null} when disabled. */
     public String unixSocket() {
         return unixSocket;
+    }
+
+    /** The vkmem-server version. */
+    public String version() {
+        return version;
+    }
+
+    /** The server process id. */
+    public int pid() {
+        return pid;
     }
 
     /** The Valkey release compiled into the server. */
@@ -86,25 +130,51 @@ public final class VkmemServer implements AutoCloseable {
         return valkeyVersion;
     }
 
+    /** Checkpoints the keyspace and copies it into an independent snapshot. */
+    public Snapshot snapshot() {
+        return snapshot(0);
+    }
+
     /**
-     * Sends one command over a fresh TCP connection and returns the decoded reply: a {@link String} for
-     * simple and bulk strings, a {@link Long} for integers, {@code null} for nil, a {@link List} for arrays.
-     * Error replies throw {@link VkmemException}. Meant for test plumbing (PING, FLUSHALL, CONFIG); use a
-     * real client for application code.
+     * @param maxForks forks alive at once before {@link Snapshot#fork()} blocks;
+     *                 0 uses the available processor count
+     */
+    public Snapshot snapshot(int maxForks) {
+        return snapshot(maxForks, Duration.ofSeconds(30));
+    }
+
+    /**
+     * Creates a data snapshot. The timeout bounds synchronous snapshot creation;
+     * {@code null} waits indefinitely.
+     */
+    public Snapshot snapshot(int maxForks, Duration timeout) {
+        Map<String, Object> fields = new LinkedHashMap<>();
+        fields.put("server", id);
+        if (maxForks > 0) fields.put("max_forks", maxForks);
+        if (timeout != null) fields.put("timeout_ms", timeout.toMillis());
+        Map<String, Object> result = control.request("snapshot", fields);
+        return new Snapshot(control, String.valueOf(result.get("snapshot")), this);
+    }
+
+    /**
+     * Sends one command over a fresh TCP connection and returns the decoded reply:
+     * a {@link String} for simple and bulk strings, a {@link Long} for integers,
+     * {@code null} for nil, or a {@link List} for arrays. Use a real client for
+     * application code.
      */
     public Object command(String... args) {
-        try (Socket sock = new Socket()) {
-            sock.connect(new InetSocketAddress(host(), port), 5000);
-            sock.setSoTimeout(30000);
-            OutputStream out = sock.getOutputStream();
-            StringBuilder sb = new StringBuilder("*").append(args.length).append("\r\n");
-            for (String a : args) {
-                byte[] b = a.getBytes(StandardCharsets.UTF_8);
-                sb.append('$').append(b.length).append("\r\n").append(a).append("\r\n");
+        try (Socket socket = new Socket()) {
+            socket.connect(new InetSocketAddress(host(), port()), 5000);
+            socket.setSoTimeout(30000);
+            OutputStream out = socket.getOutputStream();
+            StringBuilder request = new StringBuilder("*").append(args.length).append("\r\n");
+            for (String arg : args) {
+                byte[] bytes = arg.getBytes(StandardCharsets.UTF_8);
+                request.append('$').append(bytes.length).append("\r\n").append(arg).append("\r\n");
             }
-            out.write(sb.toString().getBytes(StandardCharsets.UTF_8));
+            out.write(request.toString().getBytes(StandardCharsets.UTF_8));
             out.flush();
-            return readReply(new BufferedInputStream(sock.getInputStream()));
+            return readReply(new BufferedInputStream(socket.getInputStream()));
         } catch (IOException e) {
             throw new VkmemException("vkmem: " + String.join(" ", args) + ": " + e.getMessage(), e);
         }
@@ -126,24 +196,18 @@ public final class VkmemServer implements AutoCloseable {
             case ':':
                 return Long.parseLong(line);
             case '$': {
-                int n = Integer.parseInt(line);
-                if (n < 0) {
-                    return null;
-                }
-                byte[] b = in.readNBytes(n);
+                int length = Integer.parseInt(line);
+                if (length < 0) return null;
+                byte[] bytes = in.readNBytes(length);
                 readLine(in);
-                return new String(b, StandardCharsets.UTF_8);
+                return new String(bytes, StandardCharsets.UTF_8);
             }
             case '*': {
-                int n = Integer.parseInt(line);
-                if (n < 0) {
-                    return null;
-                }
-                List<Object> out = new ArrayList<>(n);
-                for (int i = 0; i < n; i++) {
-                    out.add(readReply(in));
-                }
-                return out;
+                int length = Integer.parseInt(line);
+                if (length < 0) return null;
+                List<Object> result = new ArrayList<>(length);
+                for (int i = 0; i < length; i++) result.add(readReply(in));
+                return result;
             }
             default:
                 throw new IOException("unexpected reply byte " + type);
@@ -151,52 +215,45 @@ public final class VkmemServer implements AutoCloseable {
     }
 
     private static String readLine(InputStream in) throws IOException {
-        StringBuilder sb = new StringBuilder();
+        StringBuilder result = new StringBuilder();
         int c;
         while ((c = in.read()) >= 0) {
             if (c == '\r') {
-                in.read(); // '\n'
-                return sb.toString();
+                in.read();
+                return result.toString();
             }
-            sb.append((char) c);
+            result.append((char) c);
         }
         throw new IOException("connection closed");
     }
 
-    /** Stops the process: closes stdin, then destroys it after a grace period. */
+    /** Stops this fork, or shuts down the controller for the template. */
     @Override
     public void close() {
-        if (!process.isAlive()) {
-            return;
-        }
-        try {
-            process.getOutputStream().close();
-        } catch (IOException ignored) {
-            // already closed
-        }
-        try {
-            if (!process.waitFor(5, TimeUnit.SECONDS)) {
-                process.destroyForcibly();
+        if (closed) return;
+        closed = true;
+        if (ownsProcess) {
+            control.close();
+        } else {
+            try {
+                control.request("close", Map.of("server", id));
+            } catch (ServerExitedException ignored) {
+                // The controller may already have exited.
             }
-        } catch (InterruptedException e) {
-            process.destroyForcibly();
-            Thread.currentThread().interrupt();
         }
+    }
+
+    public boolean isClosed() {
+        return closed;
     }
 
     /** Locates the vkmem-server binary, extracting the bundled one when needed. */
     public static Path resolveBinary(Path explicit) throws IOException {
-        if (explicit != null) {
-            return explicit;
-        }
-        String prop = System.getProperty("vkmem.server.bin");
-        if (prop != null && !prop.isEmpty()) {
-            return Path.of(prop);
-        }
-        String env = System.getenv("VKMEM_SERVER_BIN");
-        if (env != null && !env.isEmpty()) {
-            return Path.of(env);
-        }
+        if (explicit != null) return explicit;
+        String property = System.getProperty("vkmem.server.bin");
+        if (property != null && !property.isEmpty()) return Path.of(property);
+        String environment = System.getenv("VKMEM_SERVER_BIN");
+        if (environment != null && !environment.isEmpty()) return Path.of(environment);
         String platform = platformId();
         String name = platform.startsWith("windows") ? "vkmem-server.exe" : "vkmem-server";
         String resource = "/vkmem/bin/" + platform + "/" + name;
@@ -207,23 +264,24 @@ public final class VkmemServer implements AutoCloseable {
                         + " or set VKMEM_SERVER_BIN)");
             }
             Path dir = Files.createTempDirectory("vkmem-server");
-            Path bin = dir.resolve(name);
-            Files.copy(in, bin, StandardCopyOption.REPLACE_EXISTING);
+            Path binary = dir.resolve(name);
+            Files.copy(in, binary, StandardCopyOption.REPLACE_EXISTING);
             if (!platform.startsWith("windows")) {
-                Files.setPosixFilePermissions(bin, PosixFilePermissions.fromString("rwx------"));
+                Files.setPosixFilePermissions(binary, PosixFilePermissions.fromString("rwx------"));
             }
-            bin.toFile().deleteOnExit();
+            binary.toFile().deleteOnExit();
             dir.toFile().deleteOnExit();
-            return bin;
+            return binary;
         }
     }
 
     static String platformId() {
         String os = System.getProperty("os.name", "").toLowerCase(Locale.ROOT);
         String arch = System.getProperty("os.arch", "").toLowerCase(Locale.ROOT);
-        String o = os.contains("mac") || os.contains("darwin") ? "darwin" : os.contains("win") ? "windows" : "linux";
-        String a = arch.contains("aarch64") || arch.contains("arm64") ? "arm64" : "amd64";
-        return o + "-" + a;
+        String operatingSystem = os.contains("mac") || os.contains("darwin") ? "darwin"
+                : os.contains("win") ? "windows" : "linux";
+        String architecture = arch.contains("aarch64") || arch.contains("arm64") ? "arm64" : "amd64";
+        return operatingSystem + "-" + architecture;
     }
 
     /** Builder returned by {@link VkmemServer#builder()}; {@link #start()} launches the server. */
@@ -235,6 +293,8 @@ public final class VkmemServer implements AutoCloseable {
         private Path binary;
         private boolean quiet = true;
         private Duration startupTimeout = Duration.ofSeconds(30);
+
+        Builder() {}
 
         /** TCP port; 0 (the default) picks a free one. */
         public Builder port(int port) {
@@ -278,77 +338,90 @@ public final class VkmemServer implements AutoCloseable {
 
         /** Starts the server and waits for its ready line. */
         public VkmemServer start() {
-            List<String> cmd = new ArrayList<>();
+            List<String> command = new ArrayList<>();
             try {
-                cmd.add(resolveBinary(binary).toString());
+                command.add(resolveBinary(binary).toString());
             } catch (IOException e) {
                 throw new VkmemException("vkmem: cannot prepare binary: " + e.getMessage(), e);
             }
-            cmd.add("--parent-pid");
-            cmd.add(Long.toString(ProcessHandle.current().pid()));
+            command.add("--parent-pid");
+            command.add(Long.toString(ProcessHandle.current().pid()));
             if (port != 0) {
-                cmd.add("--port");
-                cmd.add(Integer.toString(port));
+                command.add("--port");
+                command.add(Integer.toString(port));
             }
             if (noUnixSocket) {
-                cmd.add("--no-unixsocket");
+                command.add("--no-unixsocket");
             } else if (unixSocket != null) {
-                cmd.add("--unixsocket");
-                cmd.add(unixSocket);
+                command.add("--unixsocket");
+                command.add(unixSocket);
             }
-            if (quiet) {
-                cmd.add("--quiet");
-            }
+            if (quiet) command.add("--quiet");
             if (!args.isEmpty()) {
-                cmd.add("--");
-                cmd.addAll(args);
+                command.add("--");
+                command.addAll(args);
             }
-            ProcessBuilder pb = new ProcessBuilder(cmd).redirectError(ProcessBuilder.Redirect.INHERIT);
-            Process p;
+            Process process;
             try {
-                p = pb.start();
+                process = new ProcessBuilder(command).redirectError(ProcessBuilder.Redirect.INHERIT).start();
             } catch (IOException e) {
-                throw new VkmemException("vkmem: failed to start " + cmd.get(0) + ": " + e.getMessage(), e);
+                throw new VkmemException("vkmem: failed to start " + command.get(0) + ": " + e.getMessage(), e);
             }
-            String ready = readReadyLine(p, startupTimeout);
-            Matcher m = PORT_RE.matcher(ready);
-            if (!m.find()) {
-                p.destroyForcibly();
-                throw new VkmemException("vkmem: malformed ready line: " + ready);
-            }
-            Matcher u = UNIX_RE.matcher(ready);
-            Matcher v = VALKEY_RE.matcher(ready);
-            return new VkmemServer(p, Integer.parseInt(m.group(1)), u.find() ? u.group(1) : null,
-                    v.find() ? v.group(1) : "");
+            BufferedReader stdout = new BufferedReader(new InputStreamReader(process.getInputStream(), StandardCharsets.UTF_8));
+            Map<String, Object> ready = readReady(process, stdout, startupTimeout);
+            return new VkmemServer(new Control(process, stdout), ready, true);
         }
 
-        private static String readReadyLine(Process p, Duration timeout) {
-            String[] result = new String[1];
-            Thread t = new Thread(() -> {
-                try (BufferedReader r = new BufferedReader(new InputStreamReader(p.getInputStream(), StandardCharsets.UTF_8))) {
-                    String line;
-                    while ((line = r.readLine()) != null) {
-                        if (line.contains("\"port\"")) {
-                            result[0] = line;
-                            return;
-                        }
-                    }
-                } catch (IOException ignored) {
-                    // process died
+        private static Map<String, Object> readReady(Process process, BufferedReader stdout, Duration timeout) {
+            CompletableFuture<String> first = CompletableFuture.supplyAsync(() -> {
+                try {
+                    return stdout.readLine();
+                } catch (IOException e) {
+                    return null;
                 }
-            }, "vkmem-ready-reader");
-            t.setDaemon(true);
-            t.start();
+            });
+            String line;
             try {
-                t.join(timeout.toMillis());
+                line = first.get(timeout.toMillis(), TimeUnit.MILLISECONDS);
+            } catch (TimeoutException e) {
+                process.destroyForcibly();
+                throw new VkmemException("vkmem: server did not start within " + timeout, e);
             } catch (InterruptedException e) {
                 Thread.currentThread().interrupt();
+                process.destroyForcibly();
+                throw new VkmemException("vkmem: interrupted while starting", e);
+            } catch (ExecutionException e) {
+                process.destroyForcibly();
+                throw new VkmemException("vkmem: cannot read readiness", e.getCause());
             }
-            if (result[0] == null) {
-                p.destroyForcibly();
-                throw new VkmemException("vkmem: server did not start within " + timeout);
+            if (line == null) {
+                int code;
+                try {
+                    code = process.waitFor();
+                } catch (InterruptedException e) {
+                    Thread.currentThread().interrupt();
+                    code = -1;
+                }
+                throw new VkmemException("vkmem: server exited with status " + code + " before becoming ready");
             }
-            return result[0];
+            Map<String, Object> ready;
+            try {
+                ready = Json.parseObject(line);
+            } catch (IllegalArgumentException e) {
+                process.destroyForcibly();
+                throw new VkmemException("vkmem: malformed ready line: " + line, e);
+            }
+            if (!"ready".equals(ready.get("event")) || !(ready.get("port") instanceof Number)) {
+                process.destroyForcibly();
+                throw new VkmemException("vkmem: unexpected ready line: " + line);
+            }
+            Object protocol = ready.get("protocol");
+            if (!(protocol instanceof Number) || ((Number) protocol).intValue() != Control.PROTOCOL) {
+                process.destroyForcibly();
+                throw new VkmemException("vkmem: server speaks protocol " + protocol
+                        + ", this client needs " + Control.PROTOCOL);
+            }
+            return ready;
         }
     }
 }

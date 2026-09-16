@@ -1,9 +1,9 @@
 ---
 title: "テストに本物のValkeyを。Dockerなしで。"
-description: "GoにコンパイルされたValkey 9.1.2。テストプロセスの中で2ミリ秒未満で起動し、Node.jsやJavaからは子プロセスとして使える。クライアントはそのまま。"
+description: "GoにコンパイルされたValkey 9.1.2。テストプロセスの中で2ミリ秒未満で起動し、Python、Node.js、Javaからは子プロセスとして使える。クライアントはそのまま。"
 template: splash
 hero:
-  tagline: Valkey 9.1.2自身のCのコードを、Goにコンパイルしました。テストプロセスの中なら2ミリ秒未満で起動し、Node.jsやJavaからは子プロセスとして使えます。クライアントは、今使っているもののままで構いません。
+  tagline: Valkey 9.1.2自身のCのコードを、Goにコンパイルしました。テストプロセスの中なら2ミリ秒未満で起動し、Python、Node.js、Javaからは子プロセスとして使えます。クライアントは、今使っているもののままで構いません。
   actions:
     - text: はじめる
       link: /vkmem/ja/getting-started/
@@ -27,7 +27,7 @@ Valkeyのコンテナは、起動に数百ミリ秒、停止にもさらに数�
     <p>新しく起動した5回の中央値。イメージとDevboxのパッケージは手元にある状態。</p>
     <div class="home-bar-chart" role="list" aria-label="起動時間: vkmemプロセス内 1.6ミリ秒、vkmem-server子プロセス 29ミリ秒、docker run 317ミリ秒、Devboxのサービス 434ミリ秒、Testcontainers Go 502ミリ秒">
       <div class="home-bar-row" role="listitem"><span>vkmem · Goのテストプロセスの中</span><strong>1.6 ms</strong><span class="home-bar-track" aria-hidden="true"><span class="home-bar home-bar--vkmem" style="--bar-size: 0.32%"></span></span></div>
-      <div class="home-bar-row" role="listitem"><span>vkmem-server · Node.jsとJava向けの子プロセス</span><strong>29 ms</strong><span class="home-bar-track" aria-hidden="true"><span class="home-bar home-bar--vkmem" style="--bar-size: 5.8%"></span></span></div>
+      <div class="home-bar-row" role="listitem"><span>vkmem-server · Python、Node.js、Java向けの子プロセス</span><strong>29 ms</strong><span class="home-bar-track" aria-hidden="true"><span class="home-bar home-bar--vkmem" style="--bar-size: 5.8%"></span></span></div>
       <div class="home-bar-row" role="listitem"><span>docker run · valkey/valkey:9.1.2</span><strong>317 ms</strong><span class="home-bar-track" aria-hidden="true"><span class="home-bar" style="--bar-size: 63.1%"></span></span></div>
       <div class="home-bar-row" role="listitem"><span>Devbox <code>services up -b</code> · valkey 9.1.1</span><strong>434 ms</strong><span class="home-bar-track" aria-hidden="true"><span class="home-bar home-bar--devbox" style="--bar-size: 86.5%"></span></span></div>
       <div class="home-bar-row" role="listitem"><span>Testcontainers Go · valkey/valkey:9.1.2</span><strong>502 ms</strong><span class="home-bar-track" aria-hidden="true"><span class="home-bar" style="--bar-size: 100%"></span></span></div>
@@ -78,4 +78,4 @@ Valkeyのコンテナは、起動に数百ミリ秒、停止にもさらに数�
 
 vkmemは、Valkeyに似せた別物ではありません。コマンド、データ構造、Luaエンジン、エラーメッセージ、応答の形式は、Valkey自身のCのコードを事前にGoへ変換したものです。トランザクション、スクリプトとFunctions、Streams、Pub/Sub、ブロッキングコマンドはValkeyサーバーと同じように振る舞い、valkey-go、go-redis、node-redis、iovalkey、Jedis、Lettuceはそのまま接続できます。
 
-手放しているものは、下にある土台から来ています。スレッドも`fork`も外向きの接続もなく、ディスクにも何も書きません。バックグラウンド保存、レプリケーション、クラスタモード、TLSは使えません。一覧は[互換性](/vkmem/ja/compatibility/)にあります。
+手放しているものは、下にある土台から来ています。スレッドもUnixプロセスの`fork`もなく、外向きの接続もディスクへの書き込みもありません。バックグラウンド保存、レプリケーション、クラスタモード、TLSは使えません。それでも各言語のアダプタではキー空間をシリアライズし、メモリ上のファイルシステムを複製してデータスナップショットを作れます。一覧は[互換性](/vkmem/ja/compatibility/)にあります。

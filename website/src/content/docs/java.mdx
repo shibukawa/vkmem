@@ -99,6 +99,33 @@ class VisitCounterTest {
 
 Configure the server with `VkmemExtension.builder(b -> b.args("--maxmemory", "64mb"))`. To keep the keyspace between test methods, pass `false` as the second argument: `VkmemExtension.builder(b -> {}, false)`.
 
+## Prepare once, fork per test
+
+For expensive setup, `VkmemExtension.prepared(...)` prepares a template once
+and injects a fresh `Fork` (as a `VkmemServer`) into each test method.
+
+```java
+import java.time.Duration;
+
+@RegisterExtension
+static VkmemExtension vkmem = VkmemExtension.prepared(
+    template -> template.command("SET", "prepared", "yes"),
+    4,
+    Duration.ofSeconds(30));
+
+@Test
+void startsWithPreparedData(VkmemServer server) {
+    try (JedisPooled jedis = new JedisPooled(server.host(), server.port())) {
+        assertEquals("yes", jedis.get("prepared"));
+        jedis.set("test-only", "yes");
+    }
+}
+```
+
+The lower-level API is `template.snapshot(4).fork()`. A snapshot copies the
+serialized keyspace, not client connections or runtime state. Closing a fork
+releases its slot; a `null` fork timeout waits indefinitely.
+
 ## Without JUnit
 
 `VkmemServer` is `AutoCloseable`:

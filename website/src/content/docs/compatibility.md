@@ -17,7 +17,7 @@ The items below were exercised by the test suite or checked against a running se
 - **Messaging.** `SUBSCRIBE`, `PSUBSCRIBE`, `PUBLISH`.
 - **Blocking commands with timeouts.** `BLPOP`, `BZPOPMIN`, `XREAD BLOCK` and `WAIT` return when their timeout expires, also on an otherwise idle server.
 - **Protocol and administration.** RESP2 and RESP3 (`HELLO 3`), `AUTH` and ACL users, `CONFIG GET`/`SET`, `INFO`, `COMMAND`, `CLIENT`. `DEBUG` commands work after `--enable-debug-command yes`.
-- **Snapshots in memory.** `SAVE` and `DEBUG RELOAD` write and read an RDB file in vkmem's in-memory file system.
+- **Snapshots in memory.** `SAVE` and `DEBUG RELOAD` write and read an RDB file in vkmem's in-memory file system. The Go, Python, Node.js and Java adapters build on the same mechanism to prepare data once and start isolated servers; they copy the serialized keyspace, not connections or process state.
 
 The Go test suite uses valkey-go. Other clients speak the same protocol to the same server code.
 

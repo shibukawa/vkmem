@@ -39,6 +39,25 @@ Options: `WithPort(n)`, `WithArgs("--maxmemory", "64mb", ...)` (any
 `valkey-server` flag), `WithLogger(func(line string))`,
 `WithUnixSocket(false)`.
 
+Prepared data can be copied for isolated tests without a Unix process fork:
+
+```go
+import "context"
+
+template, _ := vkmem.Start()
+defer template.Close()
+// load schema and seed data through a normal Valkey client
+snapshot, _ := template.Snapshot(context.Background(), vkmem.SnapshotOptions{MaxForks: 4})
+defer snapshot.Close()
+fork, _ := snapshot.Fork(context.Background())
+defer fork.Close()
+// connect the test client to fork.Addr(); writes stay in this fork
+```
+
+`Snapshot` writes a synchronous RDB into the in-memory filesystem and each
+`Fork` starts a new Valkey guest over a private copy. Connections and runtime
+state are not copied.
+
 `s.UnixAddr()` is the Unix socket path; it halves the round trip compared
 to TCP. With valkey-go:
 
@@ -103,7 +122,7 @@ Tried and rejected:
 those measurements (KEYS, SCAN MATCH, BITCOUNT, pattern PUBLISH, long keys,
 LPOS/SORT/SINTER/HGETALL).
 
-Not available (by design of a single-threaded, fork-less wasm build):
+Not available (by design of a single-threaded, Unix-fork-less wasm build):
 
 - `BGSAVE`, AOF rewrite, and anything else that needs `fork()`. `SAVE`
   works (into the in-memory filesystem). The server starts with
@@ -115,13 +134,18 @@ Not available (by design of a single-threaded, fork-less wasm build):
 
 `vkmem-server` (`cmd/vkmem-server`) is the same server as a standalone
 binary: it prints a JSON line such as
-`{"addr":"127.0.0.1:51234","port":51234,"unix":"/tmp/...sock","pid":...,"valkey":"9.1.2"}`
+`{"event":"ready","protocol":1,"id":"template","addr":"127.0.0.1:51234","port":51234,"unix":"/tmp/...sock","pid":...,"valkey":"9.1.2"}`
 when ready and exits when its stdin closes or `--parent-pid` disappears,
 so a test runner that spawns it never leaves it behind. Extra
-`valkey-server` flags follow `--`.
+`valkey-server` flags follow `--`. After readiness, JSON-lines control
+requests can create a storage `snapshot`, start a data `fork`, close one, or
+shut down the controller; this is the protocol used by the Python, Node.js and
+Java packages.
 
 - Node.js: `@vkmem/core` (`packages/node/core`), binaries in
   `@vkmem/<platform>` optional dependencies.
+- Python: `vkmem` (`packages/python`), with a `server.dsn` accepted by
+  redis-py, valkey-py, and other Redis-compatible clients.
 - Java: `io.github.shibukawa.vkmem:vkmem` launcher + JUnit 5 extension
   (`packages/java`), binaries as `vkmem-server-binaries` classifier jars.
 - Anything else: spawn the binary from a GitHub Release with a pipe on
@@ -130,8 +154,8 @@ so a test runner that spawns it never leaves it behind. Extra
 `scripts/build-binaries.sh` cross-compiles for darwin-arm64, linux-amd64,
 linux-arm64, windows-amd64 and windows-arm64 (pure Go, no toolchain
 needed); tagging `vX.Y.Z` runs `.github/workflows/release.yml`, which
-builds everything and publishes to npm (trusted publishing) and Maven
-Central (Central Portal token and GPG key in the `release` environment).
+builds everything and publishes to npm and PyPI (trusted publishing), and
+Maven Central (Central Portal token and GPG key in the `release` environment).
 
 ## Generated backend
 

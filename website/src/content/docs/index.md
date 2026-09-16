@@ -1,9 +1,9 @@
 ---
 title: "Real Valkey for tests. No Docker."
-description: "Valkey 9.1.2 compiled into Go: start a server inside your test process in under 2 ms, or as a child process from Node.js and Java, and keep your client."
+description: "Valkey 9.1.2 compiled into Go: start a server inside your test process in under 2 ms, or as a child process from Python, Node.js and Java, and keep your client."
 template: splash
 hero:
-  tagline: Valkey 9.1.2's own C code, compiled into Go. Start a server inside your test process in under 2 ms, or as a child process from Node.js and Java. Keep the client you already use.
+  tagline: Valkey 9.1.2's own C code, compiled into Go. Start a server inside your test process in under 2 ms, or as a child process from Python, Node.js and Java. Keep the client you already use.
   actions:
     - text: Get started
       link: /vkmem/getting-started/
@@ -27,7 +27,7 @@ A Valkey container takes a few hundred milliseconds to start and a few hundred m
     <p>Median of five fresh starts. Images and Devbox packages were already local.</p>
     <div class="home-bar-chart" role="list" aria-label="Startup: vkmem in-process 1.6 milliseconds, vkmem-server child process 29 milliseconds, docker run 317 milliseconds, Devbox services 434 milliseconds, Testcontainers Go 502 milliseconds">
       <div class="home-bar-row" role="listitem"><span>vkmem · in the Go test process</span><strong>1.6 ms</strong><span class="home-bar-track" aria-hidden="true"><span class="home-bar home-bar--vkmem" style="--bar-size: 0.32%"></span></span></div>
-      <div class="home-bar-row" role="listitem"><span>vkmem-server · child process for Node.js and Java</span><strong>29 ms</strong><span class="home-bar-track" aria-hidden="true"><span class="home-bar home-bar--vkmem" style="--bar-size: 5.8%"></span></span></div>
+      <div class="home-bar-row" role="listitem"><span>vkmem-server · child process for Python, Node.js and Java</span><strong>29 ms</strong><span class="home-bar-track" aria-hidden="true"><span class="home-bar home-bar--vkmem" style="--bar-size: 5.8%"></span></span></div>
       <div class="home-bar-row" role="listitem"><span>docker run · valkey/valkey:9.1.2</span><strong>317 ms</strong><span class="home-bar-track" aria-hidden="true"><span class="home-bar" style="--bar-size: 63.1%"></span></span></div>
       <div class="home-bar-row" role="listitem"><span>Devbox <code>services up -b</code> · valkey 9.1.1</span><strong>434 ms</strong><span class="home-bar-track" aria-hidden="true"><span class="home-bar home-bar--devbox" style="--bar-size: 86.5%"></span></span></div>
       <div class="home-bar-row" role="listitem"><span>Testcontainers Go · valkey/valkey:9.1.2</span><strong>502 ms</strong><span class="home-bar-track" aria-hidden="true"><span class="home-bar" style="--bar-size: 100%"></span></span></div>
@@ -78,4 +78,4 @@ A Valkey container takes a few hundred milliseconds to start and a few hundred m
 
 vkmem is not a Valkey look-alike. The commands, data structures, Lua engine, error messages and reply formats are Valkey's own C code, translated to Go ahead of time. Transactions, scripts and Functions, Streams, Pub/Sub and blocking commands behave as on a Valkey server, and valkey-go, go-redis, node-redis, iovalkey, Jedis and Lettuce connect to it unchanged.
 
-What it gives up comes from the platform underneath: no threads, no `fork`, no outgoing connections, nothing on disk. Background saves, replication, cluster mode and TLS are not available. The [compatibility page](/vkmem/compatibility/) has the list.
+What it gives up comes from the platform underneath: no threads, no Unix process `fork`, no outgoing connections, nothing on disk. Background saves, replication, cluster mode and TLS are not available. Every language adapter can still create data snapshots by serializing the keyspace and cloning the in-memory file system. The [compatibility page](/vkmem/compatibility/) has the list.

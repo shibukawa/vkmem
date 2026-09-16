@@ -116,6 +116,35 @@ func TestRateLimiter(t *testing.T) {
 
 共有サーバーのまま並列テストを走らせることもできます。条件は、テスト同士が互いのキーを見ないことです。テストごとにキーのプレフィックスを分けるか、`valkey.ClientOption{SelectDB: n}`で論理データベースを分けて`FLUSHDB`を使います。Valkeyのデータベースは既定で16個です。`FLUSHALL`はそのすべてを消すので、他のテストとサーバーを共有している間は使えません。
 
+## 一度準備して、テストごとにforkする
+
+初期データやスキーマの準備に時間がかかる場合は、テンプレートを準備してからデータのスナップショットを作り、それを元に分離されたサーバーを起動できます。
+
+```go
+ctx := context.Background()
+template, err := vkmem.Start()
+if err != nil {
+    log.Fatal(err)
+}
+defer template.Close()
+
+// templateに接続したクライアントで、先にスキーマと初期データを入れる。
+snapshot, err := template.Snapshot(ctx, vkmem.SnapshotOptions{MaxForks: 4})
+if err != nil {
+    log.Fatal(err)
+}
+defer snapshot.Close()
+
+fork, err := snapshot.Fork(ctx)
+if err != nil {
+    log.Fatal(err)
+}
+defer fork.Close()
+// テスト用クライアントをfork.Addr()に接続する。書き込みはこのforkだけに残る。
+```
+
+`Snapshot`は`SAVE`でキー空間を同期的にシリアライズしてから、メモリ上のファイルシステムを複製します。`Fork`はそのRDBから新しいValkeyインスタンスを起動します。接続、トランザクション、購読などの実行時状態はコピーされません。RDBに保存される有効期限の情報は保持されます。forkは通常の`*vkmem.Server`なので、それぞれに`Addr()`、`UnixAddr()`、`Close()`があります。`MaxForks`は生存できるfork数を制限し、空きができるまで待ちます。コンテキストをキャンセルすれば待機を中断できます。
+
 ## Unixソケット
 
 サーバーは、一時ディレクトリに生成したパスのUnixドメインソケットでも待ち受けます。どこでも動くのはループバックのTCPですが、ソケットを使うと1往復がおよそ半分になります。数千回コマンドを投げるテストでは、この差が効いてきます。

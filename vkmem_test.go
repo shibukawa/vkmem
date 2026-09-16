@@ -2,6 +2,7 @@ package vkmem
 
 import (
 	"bufio"
+	"context"
 	"net"
 	"strings"
 	"testing"
@@ -91,6 +92,64 @@ func TestPingSetGet(t *testing.T) {
 	if got := respCall(t, rw, "EVAL", "return redis.call('GET', KEYS[1])..'!'", "1", "k"); got != "hello!" {
 		t.Fatalf("EVAL: %q", got)
 	}
+}
+
+func TestSnapshotForksPreparedKeyspace(t *testing.T) {
+	template := startTestServer(t)
+	conn, err := net.DialTimeout("tcp", template.Addr(), 2*time.Second)
+	if err != nil {
+		t.Fatal(err)
+	}
+	rw := bufio.NewReadWriter(bufio.NewReader(conn), bufio.NewWriter(conn))
+	if got := respCall(t, rw, "SET", "prepared", "yes"); got != "+OK" {
+		t.Fatalf("prepare: %q", got)
+	}
+	conn.Close()
+
+	snapshot, err := template.Snapshot(context.Background(), SnapshotOptions{MaxForks: 2})
+	if err != nil {
+		t.Fatal(err)
+	}
+	defer snapshot.Close()
+	if got := respCallOnServer(t, template, "SET", "template-only", "yes"); got != "+OK" {
+		t.Fatalf("template write: %q", got)
+	}
+
+	a, err := snapshot.Fork(context.Background())
+	if err != nil {
+		t.Fatal(err)
+	}
+	defer a.Close()
+	b, err := snapshot.Fork(context.Background())
+	if err != nil {
+		t.Fatal(err)
+	}
+	defer b.Close()
+
+	if got := respCallOnServer(t, a, "GET", "prepared"); got != "yes" {
+		t.Fatalf("fork initial value: %q", got)
+	}
+	if got := respCallOnServer(t, a, "SET", "fork-only", "yes"); got != "+OK" {
+		t.Fatalf("fork write: %q", got)
+	}
+	if got := respCallOnServer(t, b, "GET", "fork-only"); got != "$-1" {
+		t.Fatalf("sibling saw fork write: %q", got)
+	}
+	if got := respCallOnServer(t, b, "GET", "template-only"); got != "$-1" {
+		t.Fatalf("fork saw template write: %q", got)
+	}
+}
+
+func respCallOnServer(t testing.TB, s *Server, args ...string) string {
+	t.Helper()
+	conn, err := net.DialTimeout("tcp", s.Addr(), 2*time.Second)
+	if err != nil {
+		t.Fatal(err)
+	}
+	defer conn.Close()
+	conn.SetDeadline(time.Now().Add(10 * time.Second))
+	rw := bufio.NewReadWriter(bufio.NewReader(conn), bufio.NewWriter(conn))
+	return respCall(t, rw, args...)
 }
 
 // TestCloseWithoutShutdown covers the fallback path: the server cannot

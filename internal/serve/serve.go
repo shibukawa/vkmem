@@ -4,7 +4,6 @@
 package serve
 
 import (
-	"bufio"
 	"context"
 	"encoding/json"
 	"fmt"
@@ -36,12 +35,15 @@ type Options struct {
 
 // Ready is the JSON line printed on stdout when the server is listening.
 type Ready struct {
-	Addr    string `json:"addr"` // "127.0.0.1:port"
-	Port    int    `json:"port"`
-	Unix    string `json:"unix,omitempty"` // Unix socket path
-	PID     int    `json:"pid"`
-	Version string `json:"version"`
-	Valkey  string `json:"valkey"`
+	Event    string `json:"event,omitempty"`
+	Protocol int    `json:"protocol,omitempty"`
+	ID       string `json:"id,omitempty"`
+	Addr     string `json:"addr"` // "127.0.0.1:port"
+	Port     int    `json:"port"`
+	Unix     string `json:"unix,omitempty"` // Unix socket path
+	PID      int    `json:"pid"`
+	Version  string `json:"version"`
+	Valkey   string `json:"valkey"`
 }
 
 // Run starts the server and blocks until ctx is cancelled, stdin closes
@@ -71,26 +73,15 @@ func Run(ctx context.Context, opts Options) error {
 	if err != nil {
 		return err
 	}
-	defer s.Close()
-	ready := Ready{Addr: s.Addr(), Port: s.Port(), Unix: s.UnixAddr(), PID: os.Getpid(), Version: opts.Version, Valkey: vkmem.ValkeyVersion}
+	c := newController(opts.Stdout, s, os.Getpid(), opts.Version)
+	ready := c.ready(os.Getpid(), opts.Version, s)
 	line, _ := json.Marshal(ready)
 	fmt.Fprintln(opts.Stdout, string(line))
 	if opts.Ready != nil {
 		opts.Ready(ready)
 	}
 
-	done := make(chan string, 2)
-	if opts.StdinWatch {
-		go func() {
-			r := bufio.NewReader(opts.Stdin)
-			for {
-				if _, err := r.ReadByte(); err != nil {
-					done <- "stdin closed"
-					return
-				}
-			}
-		}()
-	}
+	done := make(chan string, 1)
 	if opts.ParentPID > 0 {
 		go func() {
 			t := time.NewTicker(500 * time.Millisecond)
@@ -103,12 +94,29 @@ func Run(ctx context.Context, opts Options) error {
 			}
 		}()
 	}
+	childCtx, cancel := context.WithCancel(ctx)
+	defer cancel()
+	finished := make(chan struct{})
+	go func() {
+		if opts.StdinWatch {
+			c.serve(childCtx, opts.Stdin)
+		} else {
+			<-childCtx.Done()
+			c.closeAll()
+		}
+		close(finished)
+	}()
 	select {
-	case <-ctx.Done():
+	case <-finished:
 	case reason := <-done:
 		if !opts.Quiet {
 			fmt.Fprintln(opts.Stderr, "vkmem-server: exiting:", reason)
 		}
+		cancel()
+		<-finished
+	case <-ctx.Done():
+		cancel()
+		<-finished
 	}
 	return nil
 }

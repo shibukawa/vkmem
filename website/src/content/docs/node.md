@@ -63,6 +63,38 @@ The same code runs in Jest and Vitest. With `node:test`, import `before`, `after
 
 Each test file starts its own server in `beforeAll`, so files that run in parallel never share a keyspace.
 
+## Prepare once, fork per test
+
+When setup is expensive, prepare a template once and create an isolated
+server from a storage snapshot for each test. The snapshot contains the
+serialized keyspace; client connections and runtime state are not copied.
+
+```js
+const template = await VkmemServer.start({ unixSocket: false });
+await template.command("SET", "prepared", "yes");
+const snapshot = await template.snapshot({ maxForks: 4 });
+
+try {
+  const fork = await snapshot.fork();
+  try {
+    const client = createClient({ url: fork.dsn });
+    await client.connect();
+    // Starts with prepared data; writes stay in this fork.
+    await client.set("test-only", "yes");
+    await client.quit();
+  } finally {
+    await fork.close();
+  }
+} finally {
+  await snapshot.close();
+  await template.close();
+}
+```
+
+`maxForks` limits live forks. `snapshot.fork({ timeoutMs })` waits for a slot;
+`null` waits indefinitely. Every fork has its own port and can be passed to
+node-redis, iovalkey or ioredis.
+
 ## The Unix socket
 
 `server.unixSocket` is the path of the server's Unix domain socket. A round trip over it is roughly half that of loopback TCP.

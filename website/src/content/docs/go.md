@@ -112,6 +112,35 @@ func TestRateLimiter(t *testing.T) {
 
 A shared server also works with parallel tests if they cannot see each other's keys: give each test its own key prefix, or its own logical database with `valkey.ClientOption{SelectDB: n}` and `FLUSHDB`. Valkey has 16 databases by default. `FLUSHALL` clears all of them, so do not use it while other tests share the server.
 
+## Prepare once, fork per test
+
+When seed data or schema setup is expensive, take a data snapshot after preparing the template and start isolated servers from it:
+
+```go
+ctx := context.Background()
+template, err := vkmem.Start()
+if err != nil {
+    log.Fatal(err)
+}
+defer template.Close()
+
+// Use a client connected to template to load schema and seed data first.
+snapshot, err := template.Snapshot(ctx, vkmem.SnapshotOptions{MaxForks: 4})
+if err != nil {
+    log.Fatal(err)
+}
+defer snapshot.Close()
+
+fork, err := snapshot.Fork(ctx)
+if err != nil {
+    log.Fatal(err)
+}
+defer fork.Close()
+// Connect the test client to fork.Addr(). Writes stay in this fork.
+```
+
+`Snapshot` synchronously serializes the keyspace with `SAVE`, then clones the in-memory file system. `Fork` boots a fresh Valkey instance from that RDB. Connections, transactions, subscriptions and other runtime state are not copied; expiry metadata stored in the RDB is preserved. A fork is an ordinary `*vkmem.Server`, so it has its own `Addr()`, `UnixAddr()` and `Close()`. `MaxForks` limits live forks; a call waits for a slot until its context is cancelled.
+
 ## The Unix socket
 
 Every server also listens on a Unix domain socket, at a generated path in the temporary directory. Loopback TCP is the portable choice; the socket roughly halves each round trip, which matters for tests that issue thousands of commands.

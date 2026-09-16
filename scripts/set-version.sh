@@ -18,5 +18,15 @@ for p in pathlib.Path("packages/node").rglob("package.json"):
 for pom in [pathlib.Path("packages/java/pom.xml"), pathlib.Path("packages/java/vkmem/pom.xml"), pathlib.Path("packages/java/binaries/pom.xml")]:
     # the parent's own <version> and the <parent><version> of the modules
     pom.write_text(re.sub(r"(<artifactId>vkmem-parent</artifactId>\s*<version>)[^<]+(</version>)", rf"\g<1>{v}\g<2>", pom.read_text(), count=1))
+pyproject = pathlib.Path("packages/python/pyproject.toml")
+pyproject.write_text(re.sub(r'(?m)^version\s*=\s*"[^"]+"$', f'version = "{v}"', pyproject.read_text(), count=1))
+uv_lock = pathlib.Path("packages/python/uv.lock")
+if uv_lock.exists():
+    uv_lock.write_text(re.sub(
+        r'(?ms)(\[\[package\]\]\s*\nname = "vkmem"\s*\nversion = ")[^"]+("\s*)',
+        rf'\g<1>{v}\g<2>',
+        uv_lock.read_text(),
+        count=1,
+    ))
 print("version set to", v)
 PY

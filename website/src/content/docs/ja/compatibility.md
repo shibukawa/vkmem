@@ -17,7 +17,7 @@ description: "vkmemで動くもの、スレッド・fork・外向きの接続が
 - **メッセージング。** `SUBSCRIBE`、`PSUBSCRIBE`、`PUBLISH`。
 - **タイムアウト付きのブロッキングコマンド。** `BLPOP`、`BZPOPMIN`、`XREAD BLOCK`、`WAIT`は、ほかに通信のないサーバーでもタイムアウトで戻ります。
 - **プロトコルと管理。** RESP2とRESP3(`HELLO 3`)、`AUTH`とACLユーザー、`CONFIG GET`/`SET`、`INFO`、`COMMAND`、`CLIENT`。`DEBUG`系のコマンドは`--enable-debug-command yes`を付ければ使えます。
-- **メモリ上のスナップショット。** `SAVE`と`DEBUG RELOAD`は、vkmemのメモリ上のファイルシステムにRDBファイルを書き、読み戻します。
+- **メモリ上のスナップショット。** `SAVE`と`DEBUG RELOAD`は、vkmemのメモリ上のファイルシステムにRDBファイルを書き、読み戻します。Go、Python、Node.js、Javaの各アダプタも同じ仕組みを使い、データを一度だけ準備して分離されたサーバーを起動できます。コピーされるのはシリアライズされたキー空間で、接続やプロセスの状態ではありません。
 
 Goのテストスイートはvalkey-goを使っています。ほかのクライアントも、同じサーバーのコードに同じプロトコルで話しかけます。
 

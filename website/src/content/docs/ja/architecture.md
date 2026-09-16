@@ -15,6 +15,7 @@ description: "ValkeyのCサーバーがテストプロセスの中でGoのコー
 | ホスト | `internal/host`が、モジュールの要求するシステムコール、時計、メモリの拡張、exitによる巻き戻しを実装します。SHA-1、SHA-256、CRC-64はGoの`crypto`と`hash`パッケージで計算します。 |
 | ソケット | `internal/host/socket.go`が、ゲスト側のBSDソケットを本物のGoのリスナーと接続で裏打ちします。TCPとUnixドメインソケットの両方に対応します。 |
 | ファイルシステム | `internal/vfs`はメモリ上のPOSIX風ファイルシステムです。`SAVE`のRDBファイルもここに書かれ、ホストのディスクには何も残りません。 |
+| データスナップショット | `Server.Snapshot`が`SAVE`を実行してVFSツリーを複製し、`Snapshot.Fork`が専用の複製から新しいゲストを起動します。Unixプロセスのforkではなく、ストレージのコピーです。 |
 | エンジン | `internal/engine`が`valkey-server`の引数で生成モジュールを起動し、`SHUTDOWN NOSAVE`で止めます。 |
 | 公開API | Goからは`vkmem.Start`。同じエンジンを`cmd/vkmem-server`がバイナリにしていて、Node.js、Java、その他の言語はこちらを使います。 |
 
@@ -33,7 +34,7 @@ description: "ValkeyのCサーバーがテストプロセスの中でGoのコー
 変更点は`wasm/patches.py`、`wasm/vkmem_shim.c`、`wasm/vkmem_defs.h`にまとまっています。
 
 - **スレッドがない。** 遅延解放、ファイルのクローズ、fsyncといったバックグラウンドジョブは、bioスレッドに渡す代わりに投入した場所でその場で実行します。そのため`FLUSHALL`は、メモリを解放し終えてから応答します。
-- **`fork`がない。** `BGSAVE`、`BGREWRITEAOF`など子プロセスをforkする処理はエラーになります。`SAVE`は動きます。
+- **Unixプロセスの`fork`がない。** `BGSAVE`、`BGREWRITEAOF`など子プロセスをforkする処理はエラーになります。`SAVE`は動き、Go APIはこれを使って接続やゲストの実行時状態をコピーせずにデータスナップショットを作れます。
 - **Luaは静的リンク。** ValkeyはLuaエンジンを`dlopen(NULL)`と`dlsym`で探します。この2つのシンボルは、shimの中の小さな表で解決します。
 - **Emscriptenの穴埋め。** `setsockopt`、`getrlimit`/`setrlimit`、`getrusage`は、Emscriptenの「未対応syscall」スタブを強いシンボルで置き換えています。`getTimeZone()`はlibcの`timezone`を使うように変えました。Emscriptenの`gettimeofday`は`struct timezone`を埋めないからです。
 - **ハッシュはホストで計算する。** `sha1.c`と`sha256.c`はコンテキストをGoに渡し、`crc64()`は同じJones多項式で`hash/crc64`を呼びます。結果のバイト列(`SCRIPT LOAD`のダイジェスト、ACLのパスワードハッシュ、`DUMP`のペイロード)は、`vectors_test.go`で変更前のCビルドと一致することを確かめています。
@@ -50,15 +51,17 @@ description: "ValkeyのCサーバーがテストプロセスの中でGoのコー
 
 `Close`は`SHUTDOWN NOSAVE`を送ります。では、サーバーがコマンドを受け取れない状態ならどうなるでしょうか。たとえばクライアントが`DEBUG SLEEP`で握っている場合です。そのときホストは自分を終了中として印を付け、次の`select`、`poll`、時刻の読み取りでゲストを巻き戻します。それでも止まらないゲストは、動いたままのメモリを解放するような真似はせずに放置し、`Close`がエラーを返します。
 
+`Server.Snapshot`はまず同期的な`SAVE`の完了を待ち、そのあとメモリ上のファイルシステムを複製します。`Snapshot.Fork`ごとに専用の複製から新しいゲストを起動するので、あるforkへの書き込みがテンプレート、スナップショット、別のforkに影響することはありません。`SnapshotOptions.MaxForks`で同時に動くfork数を制限できます。
+
 ## 他の言語から
 
-Node.jsとJavaのパッケージは、`cmd/vkmem-server`からビルドした`vkmem-server`を同梱しています。ランチャーは`--parent-pid`と標準入力のパイプを付けてこれを起動し、JSONを1行読みます。
+Python、Node.js、Javaのパッケージは、`cmd/vkmem-server`からビルドした`vkmem-server`を同梱するか、解決して使います。ランチャーは`--parent-pid`と標準入力のパイプを付けてこれを起動し、JSONを1行読みます。
 
 ```json
-{"addr":"127.0.0.1:51234","port":51234,"unix":"/tmp/vkmem-1234-1.sock","pid":1234,"version":"0.1.0","valkey":"9.1.2"}
+{"event":"ready","protocol":1,"id":"template","addr":"127.0.0.1:51234","port":51234,"unix":"/tmp/vkmem-1234-1.sock","pid":1234,"version":"0.1.0","valkey":"9.1.2"}
 ```
 
-バイナリは、標準入力が閉じたとき、親プロセスが消えたとき、`SIGINT`や`SIGTERM`を受けたときに終了します。テストランナーが異常終了しても、サーバーが取り残されることはありません。`--`以降の引数は`valkey-server`にそのまま渡ります。
+ready行のあと、バイナリは`snapshot`、`fork`、`close`、`shutdown`のJSON Lines制御リクエストも受け付けます。これはPython、Node.js、Javaのパッケージが使うインターフェースです。操作が複製するのはシリアライズされたValkeyデータであり、プロセス、ゲストメモリ、接続状態ではありません。バイナリは、標準入力が閉じたとき、親プロセスが消えたとき、`SIGINT`や`SIGTERM`を受けたときに終了します。テストランナーが異常終了しても、サーバーが取り残されることはありません。`--`以降の引数は`valkey-server`にそのまま渡ります。
 
 ## 再ビルド
 

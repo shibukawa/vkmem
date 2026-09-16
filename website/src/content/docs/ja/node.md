@@ -63,6 +63,39 @@ test("counts visits", async () => {
 
 各テストファイルは`beforeAll`で自分のサーバーを起動します。並列に走るファイル同士が、キー空間を共有することはありません。
 
+## 一度準備して、テストごとにforkする
+
+準備に時間がかかる場合は、templateを一度だけ準備して、ストレージの
+スナップショットからテストごとに分離されたサーバーを起動できます。コピー
+されるのはシリアライズされたキー空間で、クライアント接続や実行時状態は
+コピーされません。
+
+```js
+const template = await VkmemServer.start({ unixSocket: false });
+await template.command("SET", "prepared", "yes");
+const snapshot = await template.snapshot({ maxForks: 4 });
+
+try {
+  const fork = await snapshot.fork();
+  try {
+    const client = createClient({ url: fork.dsn });
+    await client.connect();
+    // 準備済みデータから始まり、書き込みはこのforkだけに残る。
+    await client.set("test-only", "yes");
+    await client.quit();
+  } finally {
+    await fork.close();
+  }
+} finally {
+  await snapshot.close();
+  await template.close();
+}
+```
+
+`maxForks`は同時に生存できるfork数です。`snapshot.fork({ timeoutMs })`は
+slotが空くまで待ち、`null`なら無期限で待ちます。各forkは専用のポートを
+持ち、node-redis、iovalkey、ioredisに渡せます。
+
 ## Unixソケット
 
 `server.unixSocket`は、サーバーのUnixドメインソケットのパスです。これを使うと、1往復がループバックのTCPのおよそ半分になります。

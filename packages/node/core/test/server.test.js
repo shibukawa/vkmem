@@ -27,6 +27,46 @@ test("commands over the unix socket and TCP", async () => {
   await assert.rejects(server.command("NOSUCHCOMMAND"), /unknown command/);
 });
 
+test("snapshot forks start from prepared data and stay isolated", async () => {
+  const process = await VkmemServer.start({ unixSocket: false });
+  assert.equal(await process.template.command("SET", "prepared", "yes"), "OK");
+  const snapshot = await process.template.snapshot({ maxForks: 2 });
+  let first;
+  let second;
+  try {
+    // The snapshot was taken before this key was added to the template.
+    assert.equal(await process.template.command("SET", "template-only", "yes"), "OK");
+    first = await snapshot.fork();
+    second = await snapshot.fork();
+    assert.equal(await first.command("GET", "prepared"), "yes");
+    assert.equal(await first.command("SET", "fork-only", "yes"), "OK");
+    assert.equal(await second.command("GET", "fork-only"), null);
+    assert.equal(await second.command("GET", "template-only"), null);
+  } finally {
+    await Promise.all([first?.close(), second?.close()]);
+    await snapshot.close();
+    await process.close();
+  }
+});
+
+test("snapshot fork slots support timeout and release", async () => {
+  const process = await VkmemServer.start({ unixSocket: false });
+  const snapshot = await process.snapshot({ maxForks: 1 });
+  const first = await snapshot.fork();
+  try {
+    await assert.rejects(
+      snapshot.fork({ timeoutMs: 100 }),
+      (error) => error.code === "pool_timeout",
+    );
+    await first.close();
+    const second = await snapshot.fork({ timeoutMs: 1000 });
+    await second.close();
+  } finally {
+    await snapshot.close();
+    await process.close();
+  }
+});
+
 test("close stops the process and frees the port", async () => {
   const s = await VkmemServer.start();
   const port = s.port;

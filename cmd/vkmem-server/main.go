@@ -1,7 +1,8 @@
 // Command vkmem-server runs a real Valkey server for test suites in any
 // language. It prints a JSON line with the address when ready and exits
 // when stdin closes, so a parent test runner that spawns it with a pipe
-// never leaves it behind.
+// never leaves it behind. After the ready line it accepts JSON-lines control
+// requests (snapshot, fork, close, shutdown) on stdin.
 //
 //	vkmem-server [--port N] [--unixsocket PATH | --no-unixsocket] [--parent-pid N] [--quiet] [-- valkey-server args...]
 package main

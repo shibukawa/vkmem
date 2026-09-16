@@ -1225,6 +1225,7 @@ func (fs *FS) Clone() *FS {
 	nfs.root = cloneNode(fs.root, nil)
 	nfs.root.parent = nfs.root
 	nfs.cwd = nfs.root
+	nfs.nextIno = fs.nextIno
 	// Re-point fds 0-2 at the cloned /dev nodes.
 	dev := nfs.root.children["dev"]
 	if dev != nil {

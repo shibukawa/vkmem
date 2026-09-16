@@ -9,7 +9,7 @@ Tests that touch a cache or a queue usually reach for Valkey in a container. Tha
 
 vkmem is not a Valkey look-alike. The command implementations, data structures, Lua engine, error messages and reply formats are Valkey's own C code, translated to Go ahead of time. RESP2 and RESP3, transactions, Lua scripts and Functions, Streams, Pub/Sub, geo and HyperLogLog behave as they do on a Valkey server, because they are the same code.
 
-What changes is the platform underneath. vkmem has no threads and no `fork`, and it keeps everything in memory. Background saves and AOF rewrites fail, I/O threads never start, and replication, cluster mode and TLS are not available. The [compatibility page](../compatibility/) lists the details.
+What changes is the platform underneath. vkmem has no threads or Unix process `fork`, and it keeps everything in memory. Background saves and AOF rewrites fail, I/O threads never start, and replication, cluster mode and TLS are not available. The Go, Python, Node.js and Java adapters can still make data snapshots by cloning serialized state. The [compatibility page](../compatibility/) lists the details.
 
 ## Two ways to run it
 

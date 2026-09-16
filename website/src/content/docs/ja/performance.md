@@ -16,7 +16,7 @@ description: "vkmemとdocker run、Testcontainers、Devboxのサービスを並�
 | 経路 | 計測したもの |
 |---|---|
 | vkmem、プロセス内 | 計測しているGoのプロセスの中での`vkmem.Start()` |
-| vkmem-server | Node.jsとJavaのパッケージが起動するバイナリを、子プロセスとして起動したもの |
+| vkmem-server | Python、Node.js、Javaのパッケージが起動するバイナリを、子プロセスとして起動したもの |
 | docker run | 永続化を切った`docker run -d --rm -p 127.0.0.1::6379 valkey/valkey:9.1.2` |
 | Testcontainers | 同じイメージでの`testcontainers.Run`。「Ready to accept connections」を待つ。新しいプロセスではRyukも起動する |
 | Devbox | valkeyプラグイン自身のサービスを`devbox services up -b`で起動したもの。プラグインの`valkey.conf`をincludeし、永続化を切る設定ファイルを生成して渡す |
