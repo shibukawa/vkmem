@@ -16,7 +16,7 @@ What changes is the platform underneath. vkmem has no threads or Unix process `f
 | Your tests are in | Use | How the server runs |
 |---|---|---|
 | Go | package `vkmem` | inside the test process, reached over loopback TCP or a Unix socket |
-| Node.js, Java, anything else | `vkmem-server` through a language package | a child process of the test runner, on a loopback port and a Unix socket |
+| Python, Node.js, Java, anything else | `vkmem-server` through a language package | a child process of the test runner, on a loopback port and a Unix socket |
 
 Both are the same server. The child process prints its address as a JSON line and exits when the parent does, so a crashed test run leaves nothing behind.
 
@@ -61,7 +61,7 @@ func TestCounter(t *testing.T) {
 
 ## Where next
 
-- [Go guide](../go/), [Node.js guide](../node/), [Java guide](../java/)
+- [Go guide](../go/), [Python guide](../python/), [Node.js guide](../node/), [Java guide](../java/)
 - [Performance](../performance/): startup, latency, throughput, memory and download size next to Docker, Testcontainers and Devbox
 - [Compatibility](../compatibility/): what works, and what fails because there are no threads or `fork`
 - [Architecture](../architecture/): how a C server ends up as a Go package

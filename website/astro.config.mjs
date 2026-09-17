@@ -25,7 +25,7 @@ export default defineConfig({
         {
           label: 'Guides',
           translations: { ja: 'ガイド' },
-          items: [{ slug: 'go' }, { slug: 'node' }, { slug: 'java' }],
+          items: [{ slug: 'go' }, { slug: 'python' }, { slug: 'node' }, { slug: 'java' }],
         },
         {
           label: 'Reference',

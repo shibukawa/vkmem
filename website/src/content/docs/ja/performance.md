@@ -33,6 +33,12 @@ description: "vkmemとdocker run、Testcontainers、Devboxのサービスを並�
 
 起動の計時は、起動の呼び出しから、新しいTCP接続が`PONG`を受け取るまでです。イメージのpullと`devbox install`は計時の前に済ませています。`vkmem-server`は計時の前に一度起動しておきました。macOSは新しく書き込まれた実行ファイルを初回起動時に検査し、ビルドごとに一度、約350ミリ秒かかるからです。停止はそれぞれ`Close()`、子プロセスの標準入力を閉じる操作、`docker stop`、`TerminateContainer`、`devbox services stop`です。
 
+prepared storage forkは、新しいプロセスの起動とは別に、2026年9月17日に計測しました。templateの
+スナップショットを作成したあと、5回のfork要求は0.8〜5.6 msで、fork要求から
+新しいTCP接続が`PONG`を受け取るまでの中央値は0.9 msでした。スナップショットの
+作成時間は含めていません。最初のforkには、ゲストの起動に必要な一度きりの処理が
+含まれます。
+
 コンテナの行のコストを、テストスイートはテストプロセスかテストクラスにつき一度だけ払い、テストの間はキー空間をフラッシュして済ませます。vkmemはプロセス内なら起動と停止を合わせて約2ミリ秒です。これなら、テストの1つ1つに専用のサーバーを持たせられます。
 
 ## 往復
@@ -101,7 +107,7 @@ description: "vkmemとdocker run、Testcontainers、Devboxのサービスを並�
 | 最初の実行で入ってくるもの | サイズ |
 |---|---:|
 | Devbox: Valkey 9.1.1のNixクロージャ | ダウンロード4.5 MB、展開後10.5 MB |
-| npmとJavaのパッケージに入るvkmem-server(gzip圧縮) | 4.7 MB、非圧縮で11.8 MB |
+| Python、npm、Javaのパッケージに入るvkmem-server(gzip圧縮) | 4.7 MB、非圧縮で11.8 MB |
 | Go: テストバイナリにリンクされるvkmem | strip済みで+9.7 MB、シンボル付きで+15.6 MB |
 | linux/arm64の`valkey/valkey:9.1.2` | 圧縮で48.4 MB、ディスク上で144.8 MB |
 | TestcontainersのRyukイメージ(Valkeyのイメージとは別に) | 圧縮で2.1 MB |

@@ -8,6 +8,18 @@ hero:
     - text: はじめる
       link: /vkmem/ja/getting-started/
       icon: right-arrow
+    - text: Goガイド
+      link: /vkmem/ja/go/
+      icon: right-arrow
+    - text: Pythonガイド
+      link: /vkmem/ja/python/
+      icon: right-arrow
+    - text: Node.jsガイド
+      link: /vkmem/ja/node/
+      icon: right-arrow
+    - text: Javaガイド
+      link: /vkmem/ja/java/
+      icon: right-arrow
     - text: 計測結果を見る
       link: /vkmem/ja/performance/
       icon: right-arrow
@@ -24,8 +36,9 @@ Valkeyのコンテナは、起動に数百ミリ秒、停止にもさらに数�
 <div class="home-chart-grid">
   <section class="home-chart-card home-chart-card--full" aria-labelledby="home-startup-title">
     <h2 id="home-startup-title">サーバーがPINGに応答するまで</h2>
-    <p>新しく起動した5回の中央値。イメージとDevboxのパッケージは手元にある状態。</p>
-    <div class="home-bar-chart" role="list" aria-label="起動時間: vkmemプロセス内 1.6ミリ秒、vkmem-server子プロセス 29ミリ秒、docker run 317ミリ秒、Devboxのサービス 434ミリ秒、Testcontainers Go 502ミリ秒">
+    <p>5回の計測の中央値。prepared forkは既存のストレージスナップショットから起動し、イメージとDevboxのパッケージは手元にある状態。</p>
+    <div class="home-bar-chart" role="list" aria-label="起動時間: vkmemのprepared storage fork 0.9ミリ秒、vkmemプロセス内 1.6ミリ秒、vkmem-server子プロセス 29ミリ秒、docker run 317ミリ秒、Devboxのサービス 434ミリ秒、Testcontainers Go 502ミリ秒">
+      <div class="home-bar-row" role="listitem"><span>vkmem · prepared storage fork</span><strong>0.9 ms</strong><span class="home-bar-track" aria-hidden="true"><span class="home-bar home-bar--vkmem" style="--bar-size: 0.19%"></span></span></div>
       <div class="home-bar-row" role="listitem"><span>vkmem · Goのテストプロセスの中</span><strong>1.6 ms</strong><span class="home-bar-track" aria-hidden="true"><span class="home-bar home-bar--vkmem" style="--bar-size: 0.32%"></span></span></div>
       <div class="home-bar-row" role="listitem"><span>vkmem-server · Python、Node.js、Java向けの子プロセス</span><strong>29 ms</strong><span class="home-bar-track" aria-hidden="true"><span class="home-bar home-bar--vkmem" style="--bar-size: 5.8%"></span></span></div>
       <div class="home-bar-row" role="listitem"><span>docker run · valkey/valkey:9.1.2</span><strong>317 ms</strong><span class="home-bar-track" aria-hidden="true"><span class="home-bar" style="--bar-size: 63.1%"></span></span></div>
@@ -65,14 +78,14 @@ Valkeyのコンテナは、起動に数百ミリ秒、停止にもさらに数�
     <p>10進のMB。必要なランタイム(Go、Nix、コンテナエンジン)は含まない。</p>
     <div class="home-bar-chart" role="list" aria-label="サイズ: DevboxのValkey Nixクロージャ 4.5メガバイト、圧縮したvkmem-server 4.7メガバイト、strip済みGoバイナリへのvkmemの追加分 9.7メガバイト、valkey/valkey:9.1.2のarm64イメージ 48.4メガバイト">
       <div class="home-bar-row" role="listitem"><span>Devbox · Valkey 9.1.1のNixクロージャ</span><strong>4.5 MB</strong><span class="home-bar-track" aria-hidden="true"><span class="home-bar home-bar--devbox" style="--bar-size: 9.4%"></span></span></div>
-      <div class="home-bar-row" role="listitem"><span>vkmem-server · npmとJavaのパッケージ内、gzip</span><strong>4.7 MB</strong><span class="home-bar-track" aria-hidden="true"><span class="home-bar home-bar--vkmem" style="--bar-size: 9.6%"></span></span></div>
+      <div class="home-bar-row" role="listitem"><span>vkmem-server · Python、npm、Javaのパッケージ内、gzip</span><strong>4.7 MB</strong><span class="home-bar-track" aria-hidden="true"><span class="home-bar home-bar--vkmem" style="--bar-size: 9.6%"></span></span></div>
       <div class="home-bar-row" role="listitem"><span>vkmem · strip済みGoバイナリへの追加分</span><strong>9.7 MB</strong><span class="home-bar-track" aria-hidden="true"><span class="home-bar home-bar--vkmem" style="--bar-size: 19.9%"></span></span></div>
       <div class="home-bar-row" role="listitem"><span>valkey/valkey:9.1.2 · linux/arm64、圧縮</span><strong>48.4 MB</strong><span class="home-bar-track" aria-hidden="true"><span class="home-bar" style="--bar-size: 100%"></span></span></div>
     </div>
   </section>
 </div>
 
-<p class="home-method-note">2026年9月15日に、Apple M3、macOS 27.0、OrbStack上のDocker 29.4.0、Testcontainers for Go 0.44.0、Devbox 0.17.5で、すべてのサーバーの永続化を切って計測しました。DevboxはmacOS向けにビルドされたネイティブのValkey 9.1.1を動かし、コンテナの経路はDockerのVMの中で9.1.2を動かすので、往復にはポート転送の分が含まれます。計測中のマシンは空いてはいませんでした。条件、表の全体、メモリ、再現方法は<a href="/vkmem/ja/performance/">計測のページ</a>にあります。</p>
+<p class="home-method-note">起動、往復、サイズの計測は2026年9月15日に、Apple M3、macOS 27.0、OrbStack上のDocker 29.4.0、Testcontainers for Go 0.44.0、Devbox 0.17.5で、すべてのサーバーの永続化を切って実施しました。prepared forkの計測は同じマシンで2026年9月17日に実施しています。DevboxはmacOS向けにビルドされたネイティブのValkey 9.1.1を動かし、コンテナの経路はDockerのVMの中で9.1.2を動かすので、往復にはポート転送の分が含まれます。計測中のマシンは空いてはいませんでした。条件、表の全体、メモリ、再現方法は<a href="/vkmem/ja/performance/">計測のページ</a>にあります。</p>
 
 ## 中身はValkeyそのもの
 

@@ -8,6 +8,18 @@ hero:
     - text: Get started
       link: /vkmem/getting-started/
       icon: right-arrow
+    - text: Go guide
+      link: /vkmem/go/
+      icon: right-arrow
+    - text: Python guide
+      link: /vkmem/python/
+      icon: right-arrow
+    - text: Node.js guide
+      link: /vkmem/node/
+      icon: right-arrow
+    - text: Java guide
+      link: /vkmem/java/
+      icon: right-arrow
     - text: See the measurements
       link: /vkmem/performance/
       icon: right-arrow
@@ -24,8 +36,9 @@ A Valkey container takes a few hundred milliseconds to start and a few hundred m
 <div class="home-chart-grid">
   <section class="home-chart-card home-chart-card--full" aria-labelledby="home-startup-title">
     <h2 id="home-startup-title">Time until the server answers PING</h2>
-    <p>Median of five fresh starts. Images and Devbox packages were already local.</p>
-    <div class="home-bar-chart" role="list" aria-label="Startup: vkmem in-process 1.6 milliseconds, vkmem-server child process 29 milliseconds, docker run 317 milliseconds, Devbox services 434 milliseconds, Testcontainers Go 502 milliseconds">
+    <p>Median of five timings. The prepared fork starts from an existing storage snapshot; images and Devbox packages were already local.</p>
+    <div class="home-bar-chart" role="list" aria-label="Startup: vkmem prepared storage fork 0.9 milliseconds, vkmem in-process 1.6 milliseconds, vkmem-server child process 29 milliseconds, docker run 317 milliseconds, Devbox services 434 milliseconds, Testcontainers Go 502 milliseconds">
+      <div class="home-bar-row" role="listitem"><span>vkmem · prepared storage fork</span><strong>0.9 ms</strong><span class="home-bar-track" aria-hidden="true"><span class="home-bar home-bar--vkmem" style="--bar-size: 0.19%"></span></span></div>
       <div class="home-bar-row" role="listitem"><span>vkmem · in the Go test process</span><strong>1.6 ms</strong><span class="home-bar-track" aria-hidden="true"><span class="home-bar home-bar--vkmem" style="--bar-size: 0.32%"></span></span></div>
       <div class="home-bar-row" role="listitem"><span>vkmem-server · child process for Python, Node.js and Java</span><strong>29 ms</strong><span class="home-bar-track" aria-hidden="true"><span class="home-bar home-bar--vkmem" style="--bar-size: 5.8%"></span></span></div>
       <div class="home-bar-row" role="listitem"><span>docker run · valkey/valkey:9.1.2</span><strong>317 ms</strong><span class="home-bar-track" aria-hidden="true"><span class="home-bar" style="--bar-size: 63.1%"></span></span></div>
@@ -65,14 +78,14 @@ A Valkey container takes a few hundred milliseconds to start and a few hundred m
     <p>Decimal MB. The runtimes these need (Go, Nix, a container engine) are not counted.</p>
     <div class="home-bar-chart" role="list" aria-label="Size: Devbox Valkey Nix closure 4.5 megabytes, vkmem-server compressed 4.7 megabytes, vkmem linked into a stripped Go binary 9.7 megabytes, valkey/valkey:9.1.2 arm64 image 48.4 megabytes">
       <div class="home-bar-row" role="listitem"><span>Devbox · Valkey 9.1.1 Nix closure download</span><strong>4.5 MB</strong><span class="home-bar-track" aria-hidden="true"><span class="home-bar home-bar--devbox" style="--bar-size: 9.4%"></span></span></div>
-      <div class="home-bar-row" role="listitem"><span>vkmem-server · in the npm and Java packages, gzip</span><strong>4.7 MB</strong><span class="home-bar-track" aria-hidden="true"><span class="home-bar home-bar--vkmem" style="--bar-size: 9.6%"></span></span></div>
+      <div class="home-bar-row" role="listitem"><span>vkmem-server · in the Python, npm and Java packages, gzip</span><strong>4.7 MB</strong><span class="home-bar-track" aria-hidden="true"><span class="home-bar home-bar--vkmem" style="--bar-size: 9.6%"></span></span></div>
       <div class="home-bar-row" role="listitem"><span>vkmem · added to a stripped Go binary</span><strong>9.7 MB</strong><span class="home-bar-track" aria-hidden="true"><span class="home-bar home-bar--vkmem" style="--bar-size: 19.9%"></span></span></div>
       <div class="home-bar-row" role="listitem"><span>valkey/valkey:9.1.2 · linux/arm64, compressed</span><strong>48.4 MB</strong><span class="home-bar-track" aria-hidden="true"><span class="home-bar" style="--bar-size: 100%"></span></span></div>
     </div>
   </section>
 </div>
 
-<p class="home-method-note">Measured on 2026-09-15 on an Apple M3 with macOS 27.0, Docker 29.4.0 on OrbStack, Testcontainers for Go 0.44.0 and Devbox 0.17.5, with persistence off on every server. Devbox runs a native Valkey 9.1.1 built for macOS; the container paths run 9.1.2 in the Docker VM, so their round trips include port forwarding. The machine was not idle during the run. Conditions, the full tables, memory and how to reproduce are on the <a href="/vkmem/performance/">measurement page</a>.</p>
+<p class="home-method-note">The startup, round-trip and size measurements were made on 2026-09-15 on an Apple M3 with macOS 27.0, Docker 29.4.0 on OrbStack, Testcontainers for Go 0.44.0 and Devbox 0.17.5, with persistence off on every server. The prepared-fork timing was measured on 2026-09-17 on the same machine. Devbox runs a native Valkey 9.1.1 built for macOS; the container paths run 9.1.2 in the Docker VM, so their round trips include port forwarding. The machine was not idle during the runs. Conditions, the full tables, memory and how to reproduce are on the <a href="/vkmem/performance/">measurement page</a>.</p>
 
 ## It is Valkey
 

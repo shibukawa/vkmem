@@ -17,7 +17,7 @@ vkmem is not a reimplementation of Valkey. It is Valkey 9.1.2's own C source, co
 | File system | `internal/vfs` is an in-memory POSIX-like file system. `SAVE` writes its RDB file there; nothing reaches the host disk. |
 | Data snapshots | `Server.Snapshot` runs `SAVE`, clones the VFS tree, and `Snapshot.Fork` boots a new guest from a private clone. It is a storage copy, not a Unix process fork. |
 | Engine | `internal/engine` starts the generated module with `valkey-server` arguments and stops it with `SHUTDOWN NOSAVE`. |
-| Public API | `vkmem.Start` for Go; `cmd/vkmem-server` wraps the same engine in a binary for Node.js, Java and anything else. |
+| Public API | `vkmem.Start` for Go; `cmd/vkmem-server` wraps the same engine in a binary for Python, Node.js, Java and anything else. |
 
 ## A command's path
 

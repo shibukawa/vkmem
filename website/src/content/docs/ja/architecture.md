@@ -17,7 +17,7 @@ description: "ValkeyのCサーバーがテストプロセスの中でGoのコー
 | ファイルシステム | `internal/vfs`はメモリ上のPOSIX風ファイルシステムです。`SAVE`のRDBファイルもここに書かれ、ホストのディスクには何も残りません。 |
 | データスナップショット | `Server.Snapshot`が`SAVE`を実行してVFSツリーを複製し、`Snapshot.Fork`が専用の複製から新しいゲストを起動します。Unixプロセスのforkではなく、ストレージのコピーです。 |
 | エンジン | `internal/engine`が`valkey-server`の引数で生成モジュールを起動し、`SHUTDOWN NOSAVE`で止めます。 |
-| 公開API | Goからは`vkmem.Start`。同じエンジンを`cmd/vkmem-server`がバイナリにしていて、Node.js、Java、その他の言語はこちらを使います。 |
+| 公開API | Goからは`vkmem.Start`。同じエンジンを`cmd/vkmem-server`がバイナリにしていて、Python、Node.js、Java、その他の言語はこちらを使います。 |
 
 ## コマンドが通る道
 

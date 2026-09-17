@@ -33,6 +33,12 @@ The machine was not idle. Desktop processes kept the load average around 4–6 o
 
 The start timer runs from the start call until a new TCP connection receives `PONG`. Image pulls and `devbox install` happen before it. `vkmem-server` was launched once before timing, because macOS checks a newly written executable on its first launch, which costs about 350 ms once per build. Stop is `Close()`, closing the child's stdin, `docker stop`, `TerminateContainer` and `devbox services stop` respectively.
 
+The prepared storage fork path is separate from a fresh process start. On
+2026-09-17, after a template had already been snapshotted, five fork requests took 0.8–5.6 ms,
+with a 0.9 ms median from the fork request until a new TCP connection received
+`PONG`. Snapshot creation is not included; the first fork includes one-time
+guest startup work.
+
 A test suite pays the container rows once per test process or per test class, and flushes the keyspace between tests. Start and stop together cost vkmem about 2 ms in-process, little enough to give every test its own server.
 
 ## Round trips
@@ -101,7 +107,7 @@ Over TCP without pipelining, where the network dominates, vkmem matches the nati
 | What a first run brings | Size |
 |---|---:|
 | Devbox: the Valkey 9.1.1 Nix closure | 4.5 MB download, 10.5 MB unpacked |
-| vkmem-server in the npm and Java packages, gzip-compressed | 4.7 MB, 11.8 MB uncompressed |
+| vkmem-server in the Python, npm and Java packages, gzip-compressed | 4.7 MB, 11.8 MB uncompressed |
 | Go: vkmem linked into a test binary | +9.7 MB stripped, +15.6 MB with symbols |
 | `valkey/valkey:9.1.2` for linux/arm64 | 48.4 MB compressed, 144.8 MB on disk |
 | Testcontainers' Ryuk image, in addition to the Valkey image | 2.1 MB compressed |
