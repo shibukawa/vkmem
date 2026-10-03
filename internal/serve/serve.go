@@ -28,7 +28,11 @@ type Options struct {
 	Stdout     io.Writer
 	Stderr     io.Writer
 	Quiet      bool // do not forward the Valkey log to Stderr
-	Version    string
+	// Control opens the control socket on this loopback address (e.g.
+	// "127.0.0.1:0") so other processes, such as test workers, can fork and
+	// reset; "" disables it. The ready line carries its address and token.
+	Control string
+	Version string
 	// Ready is called with the ready record once the server listens (tests).
 	Ready func(Ready)
 }
@@ -44,6 +48,9 @@ type Ready struct {
 	PID      int    `json:"pid"`
 	Version  string `json:"version"`
 	Valkey   string `json:"valkey"`
+	// Server is the template endpoint in the same shape as fork replies.
+	Server  *endpoint    `json:"server,omitempty"`
+	Control *ControlInfo `json:"control,omitempty"`
 }
 
 // Run starts the server and blocks until ctx is cancelled, stdin closes
@@ -74,6 +81,12 @@ func Run(ctx context.Context, opts Options) error {
 		return err
 	}
 	c := newController(opts.Stdout, s, os.Getpid(), opts.Version)
+	if opts.Control != "" {
+		if err := c.listen(opts.Control); err != nil {
+			s.Close()
+			return err
+		}
+	}
 	ready := c.ready(os.Getpid(), opts.Version, s)
 	line, _ := json.Marshal(ready)
 	fmt.Fprintln(opts.Stdout, string(line))
@@ -101,6 +114,9 @@ func Run(ctx context.Context, opts Options) error {
 		if opts.StdinWatch {
 			c.serve(childCtx, opts.Stdin)
 		} else {
+			if c.ln != nil {
+				go c.acceptLoop(childCtx)
+			}
 			<-childCtx.Done()
 			c.closeAll()
 		}

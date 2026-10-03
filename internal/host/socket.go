@@ -100,6 +100,26 @@ func (h *Host) Wake() {
 	h.wakeup()
 }
 
+// Do runs fn on the guest goroutine the next time the guest waits in
+// select(), so fn may touch the filesystem the guest uses. It does not
+// wait for fn; a guest that never selects again never runs it.
+func (h *Host) Do(fn func()) {
+	h.mu.Lock()
+	h.tasks = append(h.tasks, fn)
+	h.mu.Unlock()
+	h.wakeup()
+}
+
+func (h *Host) runTasks() {
+	h.mu.Lock()
+	tasks := h.tasks
+	h.tasks = nil
+	h.mu.Unlock()
+	for _, fn := range tasks {
+		fn()
+	}
+}
+
 func (s *sock) startReader() {
 	go func() {
 		buf := make([]byte, 64<<10)
@@ -439,6 +459,7 @@ func (h *Host) selectSyscall(m Memory, nfds int32, rfds, wfds, efds, timeout uin
 	rIn, wIn, eIn := readSet(rfds), readSet(wfds), readSet(efds)
 	isSet := func(set []byte, fd int32) bool { return set != nil && set[fd/8]&(1<<(fd%8)) != 0 }
 	for {
+		h.runTasks()
 		rOut := make([]byte, nbytes)
 		wOut := make([]byte, nbytes)
 		n := 0
