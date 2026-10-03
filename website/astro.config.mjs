@@ -7,6 +7,11 @@ export default defineConfig({
   site: 'https://shibukawa.github.io',
   base: '/vkmem',
   trailingSlash: 'always',
+  // the Go guide was one page before it was split by test boundary
+  redirects: {
+    '/go/': '/vkmem/guides/go/basics/',
+    '/ja/go/': '/vkmem/ja/guides/go/basics/',
+  },
   integrations: [
     starlight({
       title: 'vkmem',
@@ -25,7 +30,20 @@ export default defineConfig({
         {
           label: 'Guides',
           translations: { ja: 'ガイド' },
-          items: [{ slug: 'go' }, { slug: 'python' }, { slug: 'node' }, { slug: 'java' }],
+          items: [
+            {
+              label: 'Go',
+              items: [
+                { label: 'Basics', translations: { ja: '基本' }, slug: 'guides/go/basics' },
+                { label: 'Unit tests', translations: { ja: 'ユニットテスト' }, slug: 'guides/go/testing' },
+                { label: 'API tests', translations: { ja: 'APIテスト' }, slug: 'guides/go/api-testing' },
+                { label: 'E2E tests', translations: { ja: 'E2Eテスト' }, slug: 'guides/go/e2e-testing' },
+              ],
+            },
+            { slug: 'python' },
+            { slug: 'node' },
+            { slug: 'java' },
+          ],
         },
         {
           label: 'Reference',

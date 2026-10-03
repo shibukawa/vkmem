@@ -61,7 +61,7 @@ func TestCounter(t *testing.T) {
 
 ## 次に読むもの
 
-- [Goガイド](../go/)、[Pythonガイド](../python/)、[Node.jsガイド](../node/)、[Javaガイド](../java/)
+- [Goガイド](../guides/go/basics/)、[Pythonガイド](../python/)、[Node.jsガイド](../node/)、[Javaガイド](../java/)
 - [パフォーマンス](../performance/): Docker、Testcontainers、Devboxと並べた起動時間、レイテンシ、スループット、メモリ、ダウンロードサイズ
 - [互換性](../compatibility/): 何が動き、スレッドや`fork`がないせいで何が失敗するか
 - [アーキテクチャ](../architecture/): CのサーバーがGoのパッケージになるまで

@@ -56,10 +56,44 @@ defer fork.Close()
 
 `Snapshot` writes a synchronous RDB into the in-memory filesystem and each
 `Fork` starts a new Valkey guest over a private copy. Connections and runtime
-state are not copied.
+state are not copied. `fork.Reset(ctx)` goes back to the snapshot in place
+(`DEBUG RELOAD` of the snapshot's RDB): the port and every open connection
+stay valid, so a long-lived application keeps its client between tests.
+
+`vkmemtest` wraps that for tests, in the same shape as pgmem's `pgmemtest`:
+
+```go
+var fx *vkmemtest.Fixture
+
+func TestMain(m *testing.M) {
+    os.Exit(vkmemtest.Run(m, vkmemtest.Options{
+        Prepare: func(ctx context.Context, srv *vkmem.Server) error {
+            return loadSeed(ctx, srv.DSN()) // any client
+        },
+    }, func(f *vkmemtest.Fixture) { fx = f }))
+}
+
+func TestSomething(t *testing.T) {
+    t.Parallel()
+    dsn := fx.UnixDSN(t) // a fresh fork, closed when t ends
+    // also fx.Fork(t), fx.Addr(t), fx.UnixAddr(t), fx.DSN(t)
+}
+
+func TestApp(t *testing.T) {
+    app := NewApp(prodConfig) // unchanged application code
+    // rewires the go-redis/valkey-go clients found inside app (reflection)
+    // and points REDIS_URL/VALKEY_URL (+HOST/PORT) at a fresh fork
+    fx.ShadowValkey(t, vkmemtest.ShadowOptions{Clients: []any{app}})
+    // ...
+}
+```
 
 `s.UnixAddr()` is the Unix socket path; it halves the round trip compared
-to TCP. With valkey-go:
+to TCP. `s.DSN()` (`redis://127.0.0.1:port`) and `s.UnixDSN()`
+(`unix:///path/to.sock`) are the same addresses as connection strings that
+go-redis, valkey-go and redis-py parse. There is no in-process `net.Pipe`
+dialer as in pgmem: the Unix socket is the fast path, and because it has an
+address it reaches an application through its ordinary configuration. With valkey-go:
 
 ```go
 c, _ := valkey.NewClient(valkey.ClientOption{
@@ -129,6 +163,8 @@ Not available (by design of a single-threaded, Unix-fork-less wasm build):
   `--save "" --appendonly no`.
 - I/O threads (`io-threads` stays 1), TLS, RDMA, loadable modules,
   replication/cluster (no outgoing `connect()`), IPv6 binding.
+- TinyGo: vkmem builds with the standard Go toolchain only, so it cannot
+  test TinyGo targets such as Cloudflare Workers.
 
 ## From other languages
 
@@ -138,9 +174,12 @@ binary: it prints a JSON line such as
 when ready and exits when its stdin closes or `--parent-pid` disappears,
 so a test runner that spawns it never leaves it behind. Extra
 `valkey-server` flags follow `--`. After readiness, JSON-lines control
-requests can create a storage `snapshot`, start a data `fork`, close one, or
-shut down the controller; this is the protocol used by the Python, Node.js and
-Java packages.
+requests can create a storage `snapshot`, start a data `fork`, `reset` one
+in place, close one, or shut down the controller; this is the
+protocol used by the Python, Node.js and Java packages. With
+`--control 127.0.0.1:0` the same protocol is also served on a loopback socket
+(address and token in the ready line) so test-runner workers can fork and
+reset against one server.
 
 - Node.js: `@vkmem/core` (`packages/node/core`), binaries in
   `@vkmem/<platform>` optional dependencies.
