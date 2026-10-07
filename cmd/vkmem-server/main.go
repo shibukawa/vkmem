@@ -2,9 +2,10 @@
 // language. It prints a JSON line with the address when ready and exits
 // when stdin closes, so a parent test runner that spawns it with a pipe
 // never leaves it behind. After the ready line it accepts JSON-lines control
-// requests (snapshot, fork, close, shutdown) on stdin.
+// requests (snapshot, fork, reset, close, shutdown) on stdin, and with
+// --control on a loopback socket for other processes.
 //
-//	vkmem-server [--port N] [--unixsocket PATH | --no-unixsocket] [--parent-pid N] [--quiet] [-- valkey-server args...]
+//	vkmem-server [--port N] [--unixsocket PATH | --no-unixsocket] [--parent-pid N] [--control ADDR] [--quiet] [-- valkey-server args...]
 package main
 
 import (
@@ -29,6 +30,7 @@ func main() {
 	parentPID := flag.Int("parent-pid", 0, "exit when this process id disappears")
 	noStdinWatch := flag.Bool("no-stdin-watch", false, "do not exit when stdin closes")
 	quiet := flag.Bool("quiet", false, "do not forward the Valkey log to stderr")
+	control := flag.String("control", "", "also serve the control protocol on this loopback address, e.g. 127.0.0.1:0")
 	showVersion := flag.Bool("version", false, "print the vkmem-server version and exit")
 	flag.Usage = func() {
 		fmt.Fprintf(os.Stderr, "usage: vkmem-server [flags] [-- valkey-server arguments]\n")
@@ -49,6 +51,7 @@ func main() {
 		StdinWatch: !*noStdinWatch,
 		ParentPID:  *parentPID,
 		Quiet:      *quiet,
+		Control:    *control,
 		Version:    version,
 	})
 	if err != nil {

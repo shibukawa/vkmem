@@ -61,7 +61,7 @@ func TestCounter(t *testing.T) {
 
 ## Where next
 
-- [Go guide](../go/), [Python guide](../python/), [Node.js guide](../node/), [Java guide](../java/)
+- [Go guide](../guides/go/basics/), [Python guide](../python/), [Node.js guide](../node/), [Java guide](../java/)
 - [Performance](../performance/): startup, latency, throughput, memory and download size next to Docker, Testcontainers and Devbox
 - [Compatibility](../compatibility/): what works, and what fails because there are no threads or `fork`
 - [Architecture](../architecture/): how a C server ends up as a Go package

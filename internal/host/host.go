@@ -79,6 +79,7 @@ type Host struct {
 	closing bool
 	wake    chan struct{}
 	socks   map[*sock]struct{}
+	tasks   []func() // run on the guest goroutine at its next select()
 
 	// live hash contexts handed to the guest (crypto.go), keyed by handle
 	hashes   map[int32]hash.Hash

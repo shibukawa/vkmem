@@ -53,6 +53,8 @@ The module is 32-bit WebAssembly. Its linear memory is an anonymous mapping of 2
 
 `Server.Snapshot` first waits for a synchronous `SAVE` to finish, then clones the in-memory file system. Each `Snapshot.Fork` gets a private clone and starts a fresh guest, so writes in one fork cannot affect the template, the snapshot, or another fork. `SnapshotOptions.MaxForks` bounds concurrent fork servers.
 
+`Server.Reset` and `Server.Restore` go the other way without a new guest. The host queues a task that runs on the guest's goroutine at its next `select`, which is the only moment the guest is not using its file system; the task writes the snapshot's RDB file over the server's. The host then sends `DEBUG RELOAD NOSAVE` over its own connection. Valkey empties the keyspace and the function libraries and loads the file inside one command, so the other clients, whose connections and session state are untouched, see the data before or after the reload and nothing in between. vkmem starts Valkey with `--enable-debug-command local` so the host may send `DEBUG`.
+
 ## Other languages
 
 The Python, Node.js and Java packages bundle or resolve `vkmem-server`, built from `cmd/vkmem-server`. The launcher spawns it with `--parent-pid` and a pipe on stdin, and reads one JSON line:
@@ -61,7 +63,7 @@ The Python, Node.js and Java packages bundle or resolve `vkmem-server`, built fr
 {"event":"ready","protocol":1,"id":"template","addr":"127.0.0.1:51234","port":51234,"unix":"/tmp/vkmem-1234-1.sock","pid":1234,"version":"0.1.0","valkey":"9.1.2"}
 ```
 
-After the ready line, the binary also accepts versioned JSON-lines control requests for `snapshot`, `fork`, `close` and `shutdown`; the Python, Node.js and Java packages use this interface. These operations clone serialized Valkey data, not the process, guest memory or connection state. The binary exits when stdin closes, when the parent process disappears, or on `SIGINT`/`SIGTERM`. A crashed test runner therefore leaves no server behind. Arguments after `--` go to `valkey-server`.
+After the ready line, the binary also accepts versioned JSON-lines control requests for `snapshot`, `fork`, `reset`, `close` and `shutdown`; the Python, Node.js and Java packages use this interface. With `--control 127.0.0.1:0` it serves the same protocol on a loopback socket for other processes, such as test-runner workers: the ready line gains `control` with the address and a token, each connection starts with `hello` and the token, and the forks a connection creates close when it ends, so a crashed worker gives its fork slots back. These operations clone serialized Valkey data, not the process, guest memory or connection state. The binary exits when stdin closes, when the parent process disappears, or on `SIGINT`/`SIGTERM`. A crashed test runner therefore leaves no server behind. Arguments after `--` go to `valkey-server`.
 
 ## Rebuilding
 

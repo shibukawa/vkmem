@@ -9,7 +9,7 @@ hero:
       link: /vkmem/ja/getting-started/
       icon: right-arrow
     - text: Goガイド
-      link: /vkmem/ja/go/
+      link: /vkmem/ja/guides/go/basics/
       icon: right-arrow
     - text: Pythonガイド
       link: /vkmem/ja/python/

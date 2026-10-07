@@ -7,8 +7,10 @@ package vkmem
 import (
 	"context"
 	"fmt"
+	"net/url"
 	"os"
 	"path/filepath"
+	"strings"
 	"sync/atomic"
 
 	"github.com/shibukawa/vkmem/internal/engine"
@@ -93,6 +95,27 @@ func (s *Server) Port() int { return s.e.Port() }
 // dials "unix", other clients usually take the path directly.
 func (s *Server) UnixAddr() string { return s.e.UnixAddr() }
 
+// DSN is the TCP address as a URL, "redis://127.0.0.1:port", for clients
+// and configuration that take a connection string (go-redis ParseURL,
+// valkey-go ParseURL, redis-py from_url).
+func (s *Server) DSN() string { return "redis://" + s.Addr() }
+
+// UnixDSN is the Unix socket as a URL, "unix:///path/to.sock" ("" when the
+// socket is disabled). go-redis, valkey-go and redis-py parse it; append
+// "?db=n" to select a database. On Windows the path has a drive letter,
+// which those parsers do not turn back into a socket path: use UnixAddr
+// there.
+func (s *Server) UnixDSN() string {
+	p := filepath.ToSlash(s.UnixAddr())
+	if p == "" {
+		return ""
+	}
+	if !strings.HasPrefix(p, "/") {
+		p = "/" + p
+	}
+	return (&url.URL{Scheme: "unix", Path: p}).String()
+}
+
 // Snapshot checkpoints the keyspace and copies it into an independent,
 // in-memory snapshot. The source server remains running.
 func (s *Server) Snapshot(ctx context.Context, opts SnapshotOptions) (*Snapshot, error) {
@@ -112,6 +135,22 @@ func (sn *Snapshot) Fork(ctx context.Context) (*Server, error) {
 	}
 	return &Server{e: e}, nil
 }
+
+// Reset returns a fork to the snapshot it was started from; see Restore.
+// It fails on a server that Snapshot.Fork did not start.
+func (s *Server) Reset(ctx context.Context) error { return s.e.Reset(ctx) }
+
+// Restore replaces the server's keyspace and function libraries with a
+// copy of sn while the server keeps its port, its Unix socket and its
+// client connections, so a connection string or a client captured earlier
+// stays valid. Connections keep their state (selected database, RESP
+// version, client name, subscriptions); the Lua script cache is kept, and
+// WATCHed keys count as modified.
+//
+// Restore runs DEBUG RELOAD NOSAVE, which vkmem enables for local
+// connections by default; it fails if WithArgs sets
+// --enable-debug-command no.
+func (s *Server) Restore(ctx context.Context, sn *Snapshot) error { return s.e.Restore(ctx, sn.e) }
 
 // Close prevents new forks. Existing forks keep working.
 func (sn *Snapshot) Close() error { return sn.e.Close() }

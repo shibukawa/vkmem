@@ -1,16 +1,12 @@
 package engine
 
 import (
-	"bufio"
 	"context"
 	"errors"
 	"fmt"
-	"io"
-	"net"
 	"os"
 	"path/filepath"
 	"runtime"
-	"strings"
 	"sync"
 	"sync/atomic"
 
@@ -27,6 +23,7 @@ type SnapshotOptions struct {
 // Snapshot is a frozen copy of a server's serialized Valkey state.
 type Snapshot struct {
 	cfg       Config
+	rdb       string // path of the RDB file in fs
 	fs        *vfs.FS
 	slots     chan struct{}
 	done      chan struct{}
@@ -49,7 +46,8 @@ func (s *Server) Snapshot(ctx context.Context, opts SnapshotOptions) (*Snapshot,
 	if opts.MaxForks <= 0 {
 		opts.MaxForks = runtime.GOMAXPROCS(0)
 	}
-	if err := s.save(ctx); err != nil {
+	rdb, err := s.save(ctx)
+	if err != nil {
 		return nil, fmt.Errorf("vkmem: snapshot: %w", err)
 	}
 	if s.closed.Load() {
@@ -59,6 +57,7 @@ func (s *Server) Snapshot(ctx context.Context, opts SnapshotOptions) (*Snapshot,
 	cfg.Port = 0
 	return &Snapshot{
 		cfg:   cfg,
+		rdb:   rdb,
 		fs:    s.fs.Clone(),
 		slots: make(chan struct{}, opts.MaxForks),
 		done:  make(chan struct{}),
@@ -90,6 +89,7 @@ func (sn *Snapshot) Fork(ctx context.Context) (*Server, error) {
 		return nil, err
 	}
 	s.onClose = sn.Release
+	s.origin = sn
 	return s, nil
 }
 
@@ -112,36 +112,23 @@ func (sn *Snapshot) Close() error {
 // Wait blocks until all forks created by this snapshot have closed.
 func (sn *Snapshot) Wait() { sn.forks.Wait() }
 
-// save asks the single-threaded Valkey server to synchronously write its RDB.
-// Once the +OK response arrives, the file is complete in the in-memory FS.
-func (s *Server) save(ctx context.Context) error {
-	d := net.Dialer{}
-	c, err := d.DialContext(ctx, "tcp", s.addr.String())
+// save asks the single-threaded Valkey server to synchronously write its RDB
+// and returns the file's path. Once the +OK response arrives, the file is
+// complete in the in-memory FS.
+func (s *Server) save(ctx context.Context) (string, error) {
+	rc, err := s.dial(ctx)
 	if err != nil {
-		return err
+		return "", err
 	}
-	defer c.Close()
-	if deadline, ok := ctx.Deadline(); ok {
-		_ = c.SetDeadline(deadline)
-	}
-	if _, err := io.WriteString(c, "*1\r\n$4\r\nSAVE\r\n"); err != nil {
-		return err
-	}
-	line, err := bufio.NewReader(c).ReadString('\n')
+	defer rc.Close()
+	path, err := rc.rdbPath(ctx)
 	if err != nil {
-		if ctx.Err() != nil {
-			return ctx.Err()
-		}
-		return err
+		return "", err
 	}
-	line = strings.TrimRight(line, "\r\n")
-	if line == "+OK" {
-		return nil
+	if _, err := rc.call(ctx, "SAVE"); err != nil {
+		return "", err
 	}
-	if strings.HasPrefix(line, "-") {
-		return errors.New(strings.TrimSpace(strings.TrimPrefix(line, "-")))
-	}
-	return fmt.Errorf("unexpected SAVE reply %q", line)
+	return path, nil
 }
 
 var forkSocketID atomic.Uint64

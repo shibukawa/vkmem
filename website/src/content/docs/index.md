@@ -9,7 +9,7 @@ hero:
       link: /vkmem/getting-started/
       icon: right-arrow
     - text: Go guide
-      link: /vkmem/go/
+      link: /vkmem/guides/go/basics/
       icon: right-arrow
     - text: Python guide
       link: /vkmem/python/

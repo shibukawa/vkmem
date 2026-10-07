@@ -3,6 +3,7 @@
 package engine
 
 import (
+	"bufio"
 	"bytes"
 	"context"
 	"errors"
@@ -10,6 +11,7 @@ import (
 	"net"
 	"os"
 	"strconv"
+	"strings"
 	"sync"
 	"sync/atomic"
 	"time"
@@ -56,6 +58,7 @@ type Server struct {
 	closed     atomic.Bool
 	snapshotMu sync.Mutex
 	onClose    func()
+	origin     *Snapshot // the snapshot a fork was started from
 }
 
 // lineWriter turns stdout/stderr chunks into log lines.
@@ -171,6 +174,8 @@ func StartWithFS(cfg Config, fs *vfs.FS) (*Server, error) {
 		"--appendonly", "no",
 		"--daemonize", "no",
 		"--protected-mode", "no",
+		// Restore reloads the keyspace with DEBUG RELOAD
+		"--enable-debug-command", "local",
 		"--dir", "/data",
 		"--logfile", "",
 	}
@@ -254,17 +259,38 @@ func cloneConfig(cfg Config) Config {
 }
 
 func (s *Server) shutdown() {
-	// The server exits without replying, so do not wait for one.
+	// SHUTDOWN exits without replying; an error reply (NOAUTH from a server
+	// whose password the host does not know, for one) means it will not.
+	refused := make(chan struct{})
 	c, err := net.DialTimeout("tcp", s.addr.String(), time.Second)
 	if err == nil {
-		c.Write([]byte("*2\r\n$8\r\nSHUTDOWN\r\n$6\r\nNOSAVE\r\n"))
 		defer c.Close()
+		var cmd strings.Builder
+		if pass, ok := s.password(); ok {
+			fmt.Fprintf(&cmd, "*2\r\n$4\r\nAUTH\r\n$%d\r\n%s\r\n", len(pass), pass)
+		}
+		cmd.WriteString("*2\r\n$8\r\nSHUTDOWN\r\n$6\r\nNOSAVE\r\n")
+		c.Write([]byte(cmd.String()))
+		go func() {
+			r := bufio.NewReader(c)
+			for {
+				line, err := r.ReadString('\n')
+				if err != nil {
+					return
+				}
+				if strings.HasPrefix(line, "-") {
+					close(refused)
+					return
+				}
+			}
+		}()
 	}
 	select {
 	case err := <-s.done:
 		s.err = err
 		s.stopped = true
 		return
+	case <-refused:
 	case <-time.After(3 * time.Second):
 	}
 	// Still running: pull the plug. Wake marks the host closing, and the
@@ -277,4 +303,17 @@ func (s *Server) shutdown() {
 	case <-time.After(5 * time.Second):
 		s.err = errors.New("vkmem: server did not stop")
 	}
+}
+
+// password is the requirepass the server was started with, if any; the
+// host authenticates its own connections with it. A password set later
+// with CONFIG SET or ACL is unknown to the host.
+func (s *Server) password() (string, bool) {
+	pass, ok := "", false
+	for i := 0; i+1 < len(s.cfg.Args); i++ {
+		if strings.EqualFold(s.cfg.Args[i], "--requirepass") {
+			pass, ok = s.cfg.Args[i+1], true
+		}
+	}
+	return pass, ok && pass != ""
 }
